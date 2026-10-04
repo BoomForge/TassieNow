@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 
 const FILE = new URL('../../src/data/places.json', import.meta.url);
-const USER_AGENT = 'TassieNow/0.7 (+https://tassienow.pages.dev)';
+const USER_AGENT = 'TassieNow/0.8 (+https://tassienow.pages.dev)';
 const TARGET = 420;
 const FULL = '-43.75,143.55,-39.15,148.65';
 const BOXES = [
@@ -64,13 +64,15 @@ for(const e of elements){const t=e.tags||{},k=kind(t);if(!k||!t.name||['private'
 console.log(`Usable candidates: ${candidates.length}; ${JSON.stringify(counts)}.`);
 const current=JSON.parse(await fs.readFile(FILE,'utf8'));
 const curated=current.filter(p=>p.sourceType!=='openstreetmap').map(p=>({...p,sourceType:p.sourceType||'curated',image:p.image||{...fallback(p.categories||[]),alt:`${p.name} category image`}}));
+const previousOsm=new Map(current.filter(p=>p.sourceType==='openstreetmap'&&p.sourceId).map(p=>[p.sourceId,p]));
 const usedNames=new Set(curated.map(p=>norm(p.name))),usedSlugs=new Set(curated.map(p=>p.slug)),accepted=[];
-for(const p of candidates){const n=norm(p.name);if(!n||usedNames.has(n)||usedSlugs.has(p.slug))continue;if(curated.some(c=>km(p.latitude,p.longitude,c.latitude,c.longitude)<.08))continue;usedNames.add(n);usedSlugs.add(p.slug);accepted.push(p)}
+for(const p of candidates){const n=norm(p.name);if(!n||usedNames.has(n)||usedSlugs.has(p.slug))continue;if(curated.some(c=>km(p.latitude,p.longitude,c.latitude,c.longitude)<.08))continue;const old=previousOsm.get(p.sourceId);if(old?.image&&!old.image.isFallback)p.image={...old.image,alt:old.image.alt||`${p.name}, Tasmania`};usedNames.add(n);usedSlugs.add(p.slug);accepted.push(p)}
 const selected=balanced(accepted,TARGET);
 if(selected.length<300)throw new Error(`Discovery returned only ${selected.length} usable new places; refusing to replace a healthy catalogue.`);
-const wd=await wikidata(selected.map(p=>p.wikidata));for(const p of selected)if(!p._commons&&p.wikidata&&wd.has(p.wikidata))p._commons=wd.get(p.wikidata);
-const cm=await commons(selected.map(p=>p._commons));
-for(const p of selected){p.image=p._commons&&cm.has(p._commons)?{...cm.get(p._commons),alt:`${p.name}, Tasmania`}:{...fallback(p.categories),alt:`${p.name} category image`};delete p._commons;delete p._score}
+const wd=await wikidata(selected.filter(p=>!p.image).map(p=>p.wikidata));for(const p of selected)if(!p.image&&!p._commons&&p.wikidata&&wd.has(p.wikidata))p._commons=wd.get(p.wikidata);
+const cm=await commons(selected.filter(p=>!p.image).map(p=>p._commons));
+let preservedImages=0;
+for(const p of selected){if(p.image&&!p.image.isFallback)preservedImages++;else p.image=p._commons&&cm.has(p._commons)?{...cm.get(p._commons),alt:`${p.name}, Tasmania`}:{...fallback(p.categories),alt:`${p.name} category image`};delete p._commons;delete p._score}
 const merged=[...curated,...selected].sort((a,b)=>a.region.localeCompare(b.region)||a.town.localeCompare(b.town)||a.name.localeCompare(b.name));
 await fs.writeFile(FILE,`${JSON.stringify(merged,null,2)}\n`);
-console.log(`Catalogue: ${curated.length} curated + ${selected.length} OSM = ${merged.length} places.`);
+console.log(`Catalogue: ${curated.length} curated + ${selected.length} OSM = ${merged.length} places; preserved ${preservedImages} licensed OSM image(s) from the previous catalogue.`);
