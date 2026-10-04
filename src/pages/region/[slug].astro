@@ -4,16 +4,16 @@ import places from '../../data/places.json';
 const slugify = (v) => v.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 export function getStaticPaths() {
   const localSlugify = (v) => v.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-  const active = places.filter((p) => p.status === 'active');
+  const active = places.filter((p) => p.status === 'active' && p.visibility !== 'suppressed').sort((a,b)=>(b.qualityScore||0)-(a.qualityScore||0)||a.name.localeCompare(b.name));
   return [...new Set(active.map((p) => p.region))].map((region) => ({ params: { slug: localSlugify(region) }, props: { region, regionPlaces: active.filter((p) => p.region === region) } }));
 }
 const { region, regionPlaces } = Astro.props;
 const towns = [...new Set(regionPlaces.map((p) => p.town))].sort();
 ---
-<BaseLayout title={`Things to do in ${region}, Tasmania | TassieNow`} description={`Explore attractions, walks, family activities, food, markets and local discoveries across ${region}, Tasmania.`}>
+<BaseLayout title={`Things to do in ${region}, Tasmania | TassieNow`} description={`Explore quality-ranked attractions, walks, family activities, food, markets and local discoveries across ${region}, Tasmania.`}>
   <section class="listing-page">
     <p class="eyebrow">Explore Tasmania</p><h1>{region}</h1>
-    <p class="hero-copy">{regionPlaces.length} places across {towns.length} towns and localities.</p>
+    <p class="hero-copy">{regionPlaces.length} useful places across {towns.length} towns and localities.</p>
     <div class="town-links">{towns.map((town) => <a class="tag-link" href={`/town/${slugify(town)}/`}>{town}</a>)}</div>
     <div class="place-grid compact-grid">{regionPlaces.map((place) => <article class="place-card"><a class="card-image-link" href={`/place/${place.slug}/`}><img class="card-image" src={place.image.url} alt={place.image.alt} loading="lazy" /><span class="image-badge">{place.categories[0]}</span></a><div class="card-body"><p class="location">{place.town}</p><h3>{place.name}</h3><p class="summary">{place.summary}</p><a class="card-link" href={`/place/${place.slug}/`}>View place →</a></div></article>)}</div>
   </section>
