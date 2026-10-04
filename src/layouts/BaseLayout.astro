@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'TassieNow — Find something to do in Tasmania',
+  description = 'A simple Tasmanian discovery directory for locals and visitors. Find places, activities and ideas by location and interest.'
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
+---
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#0f3d3e" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="TassieNow home">
+        <span class="brand-mark" aria-hidden="true">TN</span>
+        <span>TassieNow</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="/#explore">Explore</a>
+        <a href="/#places">Places</a>
+        <a href="/about/">About</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p><strong>TassieNow</strong> — an independent Tasmanian discovery project.</p>
+      <p>Always confirm opening, booking and access details with the official operator before travelling.</p>
+    </footer>
+  </body>
+</html>

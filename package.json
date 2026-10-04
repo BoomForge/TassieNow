@@ -1,0 +1,18 @@
+{
+  "name": "tassienow",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "npm run validate:data && astro build",
+    "preview": "astro preview",
+    "validate:data": "node scripts/validate-data.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.3.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

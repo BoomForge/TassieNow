@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import places from '../../data/places.json';
+
+export function getStaticPaths() {
+  return places
+    .filter((place) => place.status === 'active')
+    .map((place) => ({ params: { slug: place.slug }, props: { place } }));
+}
+
+const { place } = Astro.props;
+const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${place.latitude},${place.longitude}`;
+---
+<BaseLayout title={`${place.name} | TassieNow`} description={place.summary}>
+  <article class="content-page">
+    <p class="eyebrow">{place.town} · {place.region}</p>
+    <h1>{place.name}</h1>
+    <div class="detail-meta">
+      {place.categories.map((category) => <span class="tag">{category}</span>)}
+    </div>
+    <p>{place.summary}</p>
+    <div class="action-row">
+      <a class="action-link" href={place.website} target="_blank" rel="noopener noreferrer">Official website ↗</a>
+      <a class="action-link secondary" href={directionsUrl} target="_blank" rel="noopener noreferrer">Directions ↗</a>
+    </div>
+    <p class="notice">TassieNow is currently in its bootstrap stage. Opening hours, prices, bookings and access conditions can change, so confirm current details with the official operator before travelling.</p>
+    <p>Last source check: <strong>{place.lastChecked}</strong></p>
+    <p><a href="/">← Back to discovery</a></p>
+  </article>
+</BaseLayout>
