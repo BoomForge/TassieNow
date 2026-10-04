@@ -1,19 +1,21 @@
 import fs from 'node:fs/promises';
 
 const FILE=new URL('../../src/data/events.json',import.meta.url);
-const UA='TassieNow/0.9 (+https://tassienow.pages.dev)';
+const UA='TassieNow/1.0 (+https://tassienow.pages.dev)';
 const SOURCES=[
-  {name:'City of Hobart',url:'https://www.hobartcity.com.au/Things-To-Do/Upcoming-events',town:'Hobart',region:'Hobart & South',detail:/\/Things-To-Do\/Upcoming-events\//i},
-  {name:'City of Launceston',url:'https://www.launceston.tas.gov.au/Upcoming-Events',town:'Launceston',region:'Launceston & North',detail:/\/(?:Upcoming-Events|Events)\//i},
-  {name:'Burnie City Council',url:'https://www.burnie.tas.gov.au/Community/Whats-On-Events',town:'Burnie',region:'North West',detail:/\/Whats-On|\/Events\//i},
-  {name:'Glenorchy City Council',url:'https://www.gcc.tas.gov.au/our-city/events/',town:'Glenorchy',region:'Hobart & South',detail:/\/events\//i},
-  {name:'Devonport City Council',url:'https://www.devonport.tas.gov.au/whats-on-devonport/',town:'Devonport',region:'North West',detail:/\/events\//i},
-  {name:'City of Clarence',url:'https://www.ccc.tas.gov.au/explore/events/',town:'Rosny Park',region:'Hobart & South',detail:/\/event\//i}
+  {name:'City of Hobart',url:'https://www.hobartcity.com.au/Things-To-Do/Upcoming-events',town:'Hobart',region:'Hobart & South',detail:/\/Things-To-Do\/Upcoming-events\//i,textMode:'fallback'},
+  {name:'City of Launceston',url:'https://www.launceston.tas.gov.au/Upcoming-Events',town:'Launceston',region:'Launceston & North',detail:/\/(?:Upcoming-Events|Events)\//i,textMode:'fallback'},
+  {name:'Burnie City Council',url:'https://www.burnie.tas.gov.au/Community/Whats-On-Events',town:'Burnie',region:'North West',detail:/\/Whats-On|\/Events\//i,textMode:'fallback'},
+  {name:'Glenorchy City Council',url:'https://www.gcc.tas.gov.au/our-city/events/',town:'Glenorchy',region:'Hobart & South',detail:/\/events\//i,textMode:'always'},
+  {name:'Devonport City Council',url:'https://www.devonport.tas.gov.au/whats-on-devonport/',town:'Devonport',region:'North West',detail:/\/events\//i,textMode:'fallback'},
+  {name:'City of Clarence',url:'https://www.ccc.tas.gov.au/explore/events/',town:'Rosny Park',region:'Hobart & South',detail:/\/event\//i,textMode:'always'}
 ];
 const M={jan:1,january:1,feb:2,february:2,mar:3,march:3,apr:4,april:4,may:5,jun:6,june:6,jul:7,july:7,aug:8,august:8,september:9,sep:9,sept:9,oct:10,october:10,nov:11,november:11,dec:12,december:12};
 const MONTH='Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?';
 const DAY='Mon(?:day)?|Tue(?:sday)?|Wed(?:nesday)?|Thu(?:rsday)?|Fri(?:day)?|Sat(?:urday)?|Sun(?:day)?';
-const ADMIN_NOISE=/^(?:community noticeboard|fogo collection faq'?s?|recycling and landfill collection week)$/i;
+const ADMIN_NOISE=/\b(?:community noticeboard|fogo collection|recycling and landfill|waste collection|green[- ]lidded bin|veolia collects waste|please have bins|collection week)\b/i;
+const PAGE_FRAGMENT=/\b(?:living well devonport program|program dates?|time location|join the man walk|for visit the event on rosny farm|upcoming events?)\b/i;
+const VENUE_ONLY=/^(?:civic square(?: launceston)?|clarence sports centre(?: .*?)?|rosny farm|meercroft park|town hall)$/i;
 function tasDate(date=new Date()){const p=new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date);const g=t=>p.find(x=>x.type===t)?.value;return`${g('year')}-${g('month')}-${g('day')}`}
 const TODAY=tasDate();
 const h=new Date(`${TODAY}T00:00:00Z`);h.setUTCDate(h.getUTCDate()+240);const HORIZON=h.toISOString().slice(0,10);
@@ -59,17 +61,17 @@ function stripTemporal(value=''){
 }
 function plausibleName(v=''){
   const n=stripTemporal(v);
-  if(n.length<3||n.length>160||ADMIN_NOISE.test(n))return false;
+  if(n.length<3||n.length>110||ADMIN_NOISE.test(n)||PAGE_FRAGMENT.test(n)||VENUE_ONLY.test(n))return false;
   if(/^(?:home|events?|calendar|search|next|previous|today|am|pm)$/i.test(n))return false;
   if(!/[a-z]{3}/i.test(n))return false;
   if(/^(?:rosny farm event|community program)$/i.test(n))return false;
-  if(/\b(?:street|road|avenue|parade|drive|highway)\b.*\b(?:tas|tasmania|australia)\b/i.test(n))return false;
+  if(/\b(?:street|road|avenue|parade|drive|crescent|highway)\b/i.test(n)&&/\b(?:tas|tasmania|australia)\b/i.test(n))return false;
   return true;
 }
 function finalName(value=''){
   let n=stripTemporal(value);
-  if(n.length>150){const sentence=n.match(/^(.{12,145}?)(?:[.!?](?:\s|$))/)?.[1];if(sentence)n=sentence.trim();}
-  return n.slice(0,160).trim();
+  if(n.length>110){const sentence=n.match(/^(.{12,105}?)(?:[.!?](?:\s|$))/)?.[1];if(sentence)n=sentence.trim();}
+  return n.slice(0,110).trim();
 }
 function anchorTitle(inner=''){
   const headings=[...inner.matchAll(/<h[1-6]\b[^>]*>([\s\S]*?)<\/h[1-6]>/gi)].map(x=>finalName(x[1])).filter(plausibleName);
@@ -87,12 +89,12 @@ function makeEvent({name,s,startDate,endDate,town=s.town,venue=null,eventUrl=s.u
 function anchorEvents(html,s){const out=[],anchors=[...html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)];for(const a of anchors){let href;try{href=new URL(dec(a[1]),s.url).href}catch{continue}if(new URL(href).hostname!==new URL(s.url).hostname)continue;if(!s.detail.test(new URL(href).pathname))continue;const raw=clean(a[2]);const name=anchorTitle(a[2]);if(!plausibleName(name))continue;const before=html.slice(Math.max(0,a.index-500),a.index),after=html.slice(a.index+a[0].length,a.index+a[0].length+700);const r=dateRange(`${clean(before).slice(-300)} ${raw} ${clean(after).slice(0,420)}`);if(!validRange(r))continue;const e=makeEvent({name,s,startDate:r.startDate,endDate:r.endDate,eventUrl:href,description:clean(after).slice(0,220)});if(e)out.push(e)}return out}
 function textEvents(html,s){const l=lines(html),out=[];for(let i=0;i<l.length;i++){const r=dateRange(l[i]);if(!validRange(r))continue;let name=finalName(l[i].replace(r.raw,''));if(!plausibleName(name)){const options=[l[i-1],l[i+1],l[i-2],l[i+2],l[i-3],l[i+3]].map(finalName).filter(plausibleName);name=options[0]||''}if(!plausibleName(name))continue;const e=makeEvent({name,s,startDate:r.startDate,endDate:r.endDate,description:clean(l[i+1]||'').slice(0,180)});if(e)out.push(e)}return out}
 function structuredEvents(html,s){const out=[];for(const e of jsonld(html)){const startDate=dateValue(e.startDate),endDate=dateValue(e.endDate||e.startDate);if(!validRange({startDate,endDate}))continue;const name=finalName(e.name);if(!plausibleName(name))continue;const address=e.location?.address||{},town=clean(address.addressLocality||s.town)||s.town,venue=clean(e.location?.name||''),description=clean(e.description).slice(0,280);const item=makeEvent({name,s,startDate,endDate,town,venue,eventUrl:e.url||s.url,description});if(item)out.push(item)}return out}
-function preference(e){let s=0;if((e.eventUrl||'')!==(e.sourceUrl||''))s+=4;if(e.venue)s+=2;if(e.summary&&!/Check the official/i.test(e.summary))s+=1;if(e.name.length<=100)s+=1;return s}
+function preference(e){let s=0;if((e.eventUrl||'')!==(e.sourceUrl||''))s+=4;if(e.venue)s+=2;if(e.summary&&!/Check the official/i.test(e.summary))s+=1;if(e.name.length<=90)s+=1;return s}
 function dedupe(items){const out=[];for(const e of items){const en=norm(e.name);let match=-1;for(let i=0;i<out.length;i++){const o=out[i];if(o.startDate!==e.startDate||norm(o.town)!==norm(e.town))continue;const on=norm(o.name);if(en===on||(en.length>=8&&on.length>=8&&(en.includes(on)||on.includes(en)))){match=i;break}}if(match<0)out.push(e);else if(preference(e)>preference(out[match]))out[match]=e}return out}
 
 const previous=JSON.parse(await fs.readFile(FILE,'utf8')).filter(e=>e.status==='active'&&e.endDate>=TODAY);
 const found=[],freshSources=new Set();
-for(const s of SOURCES){try{const html=await fetchHtml(s.url);const structured=structuredEvents(html,s),anchors=anchorEvents(html,s),text=textEvents(html,s);const events=dedupe([...structured,...anchors,...text]);if(events.length){freshSources.add(s.name);found.push(...events)}console.log(`${s.name}: ${events.length} event(s) (${structured.length} structured, ${anchors.length} linked, ${text.length} text).`)}catch(e){console.warn(`${s.name}: ${e.message}`)}}
+for(const s of SOURCES){try{const html=await fetchHtml(s.url);const structured=structuredEvents(html,s),anchors=anchorEvents(html,s);const text=(s.textMode==='always'||(structured.length===0&&anchors.length===0))?textEvents(html,s):[];const events=dedupe([...structured,...anchors,...text]);if(events.length){freshSources.add(s.name);found.push(...events)}console.log(`${s.name}: ${events.length} event(s) (${structured.length} structured, ${anchors.length} linked, ${text.length} text used).`)}catch(e){console.warn(`${s.name}: ${e.message}`)}}
 for(const old of previous)if(!freshSources.has(old.sourceName))found.push(old);
 const unique=dedupe(found).sort((a,b)=>a.startDate.localeCompare(b.startDate)||a.name.localeCompare(b.name));
 if(unique.length<10&&previous.length>=10)throw new Error(`Event discovery produced only ${unique.length} future events from six official sources; refusing to replace ${previous.length} healthy records.`);
