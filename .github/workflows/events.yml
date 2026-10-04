@@ -15,16 +15,22 @@ concurrency:
 jobs:
   events:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
+          cache-dependency-path: package.json
       - name: Refresh events
         run: node scripts/discover/events.mjs
       - name: Validate catalogue
         run: node scripts/validate-data.mjs
+      - name: Install site dependencies
+        run: npm install --no-audit --no-fund
+      - name: Build refreshed site
+        run: npm run build
       - name: Commit event changes
         run: |
           if git diff --quiet -- src/data/events.json; then
