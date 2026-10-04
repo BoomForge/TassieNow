@@ -23,14 +23,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Use Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Discover places and events
-        run: node scripts/discover/refresh.mjs
+      - name: Discover Tasmanian places
+        run: node scripts/discover/osm-import.mjs
+      - name: Discover official council events
+        run: node scripts/discover/events.mjs
       - name: Audit external websites
         run: node scripts/audit-links.mjs
       - name: Validate catalogue
@@ -46,5 +46,3 @@ jobs:
           git add src/data/places.json src/data/events.json
           git commit -m "data: refresh Tasmanian discovery catalogue"
           git push
-
-# This workflow owns only generated catalogue refreshes; UI/code changes remain human-reviewed.

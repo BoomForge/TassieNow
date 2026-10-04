@@ -1,0 +1,38 @@
+name: Refresh TassieNow events
+
+on:
+  schedule:
+    - cron: '31 18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tassienow-catalogue-refresh
+  cancel-in-progress: false
+
+jobs:
+  events:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Refresh events
+        run: node scripts/discover/events.mjs
+      - name: Validate catalogue
+        run: node scripts/validate-data.mjs
+      - name: Commit event changes
+        run: |
+          if git diff --quiet -- src/data/events.json; then
+            echo "No event changes."
+            exit 0
+          fi
+          git config user.name "TassieNow Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add src/data/events.json
+          git commit -m "data: refresh current Tasmanian events"
+          git push
