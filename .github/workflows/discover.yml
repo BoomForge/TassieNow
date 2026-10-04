@@ -1,0 +1,48 @@
+name: Refresh TassieNow catalogue
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/discover/**'
+      - 'scripts/audit-links.mjs'
+      - '.github/workflows/discover.yml'
+  schedule:
+    - cron: '17 17 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tassienow-catalogue-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Discover places and events
+        run: node scripts/discover/refresh.mjs
+      - name: Audit external websites
+        run: node scripts/audit-links.mjs
+      - name: Validate catalogue
+        run: node scripts/validate-data.mjs
+      - name: Commit refreshed data
+        run: |
+          if git diff --quiet -- src/data/places.json src/data/events.json; then
+            echo "No catalogue changes."
+            exit 0
+          fi
+          git config user.name "TassieNow Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add src/data/places.json src/data/events.json
+          git commit -m "data: refresh Tasmanian discovery catalogue"
+          git push
