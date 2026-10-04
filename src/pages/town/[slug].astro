@@ -3,8 +3,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import places from '../../data/places.json';
 const slugify = (v) => v.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 export function getStaticPaths() {
+  const localSlugify = (v) => v.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const active = places.filter((p) => p.status === 'active');
-  return [...new Set(active.map((p) => p.town))].map((town) => ({ params: { slug: slugify(town) }, props: { town, townPlaces: active.filter((p) => p.town === town) } }));
+  return [...new Set(active.map((p) => p.town))].map((town) => ({ params: { slug: localSlugify(town) }, props: { town, townPlaces: active.filter((p) => p.town === town) } }));
 }
 const { town, townPlaces } = Astro.props;
 const region = townPlaces[0]?.region || 'Tasmania';
