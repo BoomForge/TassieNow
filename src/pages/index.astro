@@ -3,7 +3,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import places from '../data/places.json';
 import events from '../data/events.json';
 
-const today = new Date().toISOString().slice(0, 10);
+function hobartDate(date = new Date()) {
+  const parts = new Intl.DateTimeFormat('en-AU', { timeZone: 'Australia/Hobart', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(date);
+  const get = (type) => parts.find((part) => part.type === type)?.value;
+  return `${get('year')}-${get('month')}-${get('day')}`;
+}
+const today = hobartDate();
 const activePlaces = places.filter((place) => place.status === 'active');
 const activeEvents = events.filter((event) => event.status === 'active' && event.endDate >= today);
 const regions = [...new Set(activePlaces.map((place) => place.region))].sort();
