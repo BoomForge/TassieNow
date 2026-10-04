@@ -1,0 +1,19 @@
+---
+import { formatEventDate, imageFor } from '../lib/catalogue.js';
+const { event } = Astro.props;
+const image = imageFor(event, '/images/categories/events.svg');
+const dateLabel = event.startDate === event.endDate ? formatEventDate(event.startDate) : `${formatEventDate(event.startDate)} – ${formatEventDate(event.endDate)}`;
+---
+<article class="event-card" data-event-start={event.startDate} data-event-end={event.endDate}>
+  <a class="card-image-wrap" href={`/event/${event.slug}/`}>
+    <img class="card-image" src={image} alt={event.image?.alt || `${event.name} event image`} loading="lazy" decoding="async" data-image-fallback="/images/categories/events.svg" />
+    <span class="image-pill">{dateLabel}</span>
+  </a>
+  <div class="card-body">
+    <p class="location">{event.town} · {event.region}</p>
+    <h3><a class="card-title-link" href={`/event/${event.slug}/`}>{event.name}</a></h3>
+    <p class="summary">{event.summary}</p>
+    <div class="tags">{event.categories.slice(0, 4).map((category) => <span class="tag">{category}</span>)}</div>
+    <a class="card-link" href={`/event/${event.slug}/`}>Event details →</a>
+  </div>
+</article>

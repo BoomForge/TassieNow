@@ -1,0 +1,28 @@
+---
+import { imageFor } from '../lib/catalogue.js';
+const { place } = Astro.props;
+const image = imageFor(place);
+---
+<article class="place-card"
+  data-name={place.name.toLowerCase()}
+  data-town={place.town.toLowerCase()}
+  data-region={place.region.toLowerCase()}
+  data-categories={place.categories.map((category) => category.toLowerCase()).join('|')}
+  data-lat={place.latitude}
+  data-lon={place.longitude}
+  data-distance="">
+  <a class="card-image-wrap" href={`/place/${place.slug}/`} aria-label={`View ${place.name}`}>
+    <img class="card-image" src={image} alt={place.image?.alt || `${place.name}, Tasmania`} loading="lazy" decoding="async" data-image-fallback="/images/categories/discover.svg" />
+    <span class="image-pill">{place.categories[0]}</span>
+  </a>
+  <div class="card-body">
+    <p class="location">{place.town} · {place.region}</p>
+    <h3><a class="card-title-link" href={`/place/${place.slug}/`}>{place.name}</a></h3>
+    <p class="summary">{place.summary}</p>
+    <div class="tags">{place.categories.slice(0, 4).map((category) => <span class="tag">{category}</span>)}</div>
+    <div class="card-footer">
+      <a class="card-link" href={`/place/${place.slug}/`}>View place →</a>
+      <span class="distance" aria-live="polite"></span>
+    </div>
+  </div>
+</article>

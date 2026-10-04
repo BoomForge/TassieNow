@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PlaceCard from '../../components/PlaceCard.astro';
+import EventCard from '../../components/EventCard.astro';
+import places from '../../data/places.json';
+import events from '../../data/events.json';
+import { slugify } from '../../lib/catalogue.js';
+export function getStaticPaths() {
+  const regions = [...new Set(places.filter((p) => p.status === 'active').map((p) => p.region))];
+  return regions.map((region) => ({ params: { slug: slugify(region) }, props: { region } }));
+}
+const { region } = Astro.props;
+const regionPlaces = places.filter((p) => p.status === 'active' && p.region === region);
+const regionEvents = events.filter((e) => e.status === 'active' && e.region === region).slice(0, 9);
+const towns = [...new Set(regionPlaces.map((p) => p.town))].sort();
+---
+<BaseLayout title={`${region} things to do | TassieNow`} description={`Discover places, attractions, family activities and events across ${region}, Tasmania.`}>
+  <section class="collection-hero"><p class="eyebrow">Explore Tasmania</p><h1>{region}</h1><p>{regionPlaces.length} places in the current TassieNow catalogue.</p></section>
+  <section class="directory"><div class="town-links">{towns.map((town) => <a href={`/town/${slugify(town)}/`}>{town}</a>)}</div><div class="place-grid">{regionPlaces.map((place) => <PlaceCard place={place} />)}</div></section>
+  {regionEvents.length > 0 && <section class="directory"><div class="section-heading"><h2>Upcoming events</h2></div><div class="place-grid">{regionEvents.map((event) => <EventCard event={event} />)}</div></section>}
+</BaseLayout>

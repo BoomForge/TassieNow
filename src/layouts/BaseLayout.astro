@@ -1,47 +1,12 @@
 ---
 import '../styles/global.css';
-
-interface Props {
-  title?: string;
-  description?: string;
-}
-
-const {
-  title = 'TassieNow — Find something to do in Tasmania',
-  description = 'A simple Tasmanian discovery directory for locals and visitors. Find places, activities and ideas by location and interest.'
-} = Astro.props;
-
+import '../styles/catalogue.css';
+interface Props { title?: string; description?: string; }
+const { title = 'TassieNow — Find something to do in Tasmania', description = 'A Tasmanian discovery directory for locals and visitors. Find places, activities and ideas by location and interest.' } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
+const siteSchema = { '@context': 'https://schema.org', '@type': 'WebSite', name: 'TassieNow', url: (Astro.site ?? new URL('https://tassienow.pages.dev')).href, description };
 ---
-<!doctype html>
-<html lang="en-AU">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content={description} />
-    <meta name="theme-color" content="#0f3d3e" />
-    <link rel="canonical" href={canonical} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{title}</title>
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="/" aria-label="TassieNow home">
-        <span class="brand-mark" aria-hidden="true">TN</span>
-        <span>TassieNow</span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="/#explore">Explore</a>
-        <a href="/#places">Places</a>
-        <a href="/about/">About</a>
-      </nav>
-    </header>
-    <main>
-      <slot />
-    </main>
-    <footer class="site-footer">
-      <p><strong>TassieNow</strong> — an independent Tasmanian discovery project.</p>
-      <p>Always confirm opening, booking and access details with the official operator before travelling.</p>
-    </footer>
-  </body>
-</html>
+<!doctype html><html lang="en-AU"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width"/><meta name="description" content={description}/><meta name="theme-color" content="#0f3d3e"/><meta property="og:type" content="website"/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta name="twitter:card" content="summary_large_image"/><link rel="canonical" href={canonical}/><link rel="icon" type="image/svg+xml" href="/favicon.svg"/><title>{title}</title><script type="application/ld+json" set:html={JSON.stringify(siteSchema)} /></head><body>
+<header class="site-header"><a class="brand" href="/" aria-label="TassieNow home"><span class="brand-mark" aria-hidden="true">TN</span><span>TassieNow</span></a><nav aria-label="Primary navigation"><a href="/#explore">Explore</a><a href="/today/">Today</a><a href="/this-weekend/">Weekend</a><a href="/about/">About</a></nav></header><main><slot /></main><footer class="site-footer"><p><strong>TassieNow</strong> — an independent Tasmanian discovery project.</p><p>Place discovery data may include © OpenStreetMap contributors, licensed under ODbL. Photo attribution and licence information appears on individual listings.</p><p>Always confirm opening, booking and access details with the official operator before travelling.</p></footer>
+<script>document.addEventListener('error', (event) => { const img = event.target; if (!(img instanceof HTMLImageElement) || !img.dataset.imageFallback || img.dataset.fallbackApplied) return; img.dataset.fallbackApplied = 'true'; img.src = img.dataset.imageFallback; }, true);</script>
+</body></html>

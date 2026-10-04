@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PlaceCard from '../components/PlaceCard.astro';
+import EventCard from '../components/EventCard.astro';
+import places from '../data/places.json';
+import events from '../data/events.json';
+import { collections } from '../lib/catalogue.js';
+export function getStaticPaths() { return Object.entries(collections).map(([slug, definition]) => ({ params: { collection: slug }, props: { slug, definition } })); }
+const { slug, definition } = Astro.props;
+const filteredPlaces = definition.category ? places.filter((p) => p.status === 'active' && p.categories.includes(definition.category)) : [];
+const activeEvents = definition.events ? events.filter((e) => e.status === 'active') : [];
+---
+<BaseLayout title={`${definition.title} | TassieNow`} description={definition.description}>
+  <section class="collection-hero"><p class="eyebrow">TassieNow</p><h1>{definition.title}</h1><p>{definition.description}</p></section>
+  {definition.category && <section class="directory"><p class="result-count">{filteredPlaces.length} places</p><div class="place-grid">{filteredPlaces.map((place) => <PlaceCard place={place} />)}</div></section>}
+  {definition.events && <section class="directory"><p class="status-line" id="event-window-status">Showing current events for Tasmania.</p><div class="place-grid event-window" data-event-window={definition.events}>{activeEvents.map((event) => <EventCard event={event} />)}</div><div class="empty-state" id="event-empty">No matching events are currently in the automated feed.</div></section>}
+  {definition.events && <script>
+    function hobartDateParts(date = new Date()) { const parts = new Intl.DateTimeFormat('en-AU', { timeZone: 'Australia/Hobart', year: 'numeric', month: '2-digit', day: '2-digit', weekday: 'short' }).formatToParts(date); return Object.fromEntries(parts.map((p) => [p.type, p.value])); }
+    function isoFor(date) { const p = hobartDateParts(date); return `${p.year}-${p.month}-${p.day}`; }
+    const grid = document.querySelector('[data-event-window]'); const cards = [...grid.querySelectorAll('.event-card')]; const mode = grid.dataset.eventWindow; const now = new Date(); const current = hobartDateParts(now); let rangeStart = isoFor(now); let rangeEnd = rangeStart;
+    if (mode === 'weekend') { const weekdays = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']; const dayIndex = weekdays.indexOf(current.weekday); const daysToSaturday = dayIndex === 0 ? -1 : dayIndex === 6 ? 0 : 6 - dayIndex; const saturday = new Date(now.getTime() + daysToSaturday * 86400000); const sunday = new Date(saturday.getTime() + 86400000); rangeStart = isoFor(saturday); rangeEnd = isoFor(sunday); }
+    let visible = 0; cards.forEach((card) => { const show = card.dataset.eventStart <= rangeEnd && card.dataset.eventEnd >= rangeStart; card.hidden = !show; if (show) visible += 1; }); document.querySelector('#event-empty').style.display = visible ? 'none' : 'block'; document.querySelector('#event-window-status').textContent = mode === 'today' ? `Events active today (${rangeStart}).` : `Events overlapping this weekend (${rangeStart} to ${rangeEnd}).`;
+  </script>}
+</BaseLayout>

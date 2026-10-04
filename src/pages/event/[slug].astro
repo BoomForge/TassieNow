@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import events from '../../data/events.json';
+import { formatEventDate, imageFor, slugify } from '../../lib/catalogue.js';
+export function getStaticPaths() { return events.filter((event) => event.status === 'active').map((event) => ({ params: { slug: event.slug }, props: { event } })); }
+const { event } = Astro.props; const image = imageFor(event, '/images/categories/events.svg');
+const dateLabel = event.startDate === event.endDate ? formatEventDate(event.startDate) : `${formatEventDate(event.startDate)} – ${formatEventDate(event.endDate)}`;
+const schema = { '@context': 'https://schema.org', '@type': 'Event', name: event.name, description: event.summary, startDate: event.startDate, endDate: event.endDate, eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode', location: { '@type': 'Place', name: event.town, address: { '@type': 'PostalAddress', addressLocality: event.town, addressRegion: 'Tasmania', addressCountry: 'AU' } }, image: image.startsWith('http') ? [image] : [new URL(image, Astro.site ?? Astro.url.origin).href], url: new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin).href };
+---
+<BaseLayout title={`${event.name} | TassieNow`} description={event.summary}>
+  <article class="content-page detail-page"><p class="eyebrow"><a href={`/town/${slugify(event.town)}/`}>{event.town}</a> · {event.region}</p><h1>{event.name}</h1><figure class="detail-image"><img src={image} alt={event.image?.alt || `${event.name} event image`} data-image-fallback="/images/categories/events.svg"/><figcaption>Image: {event.image?.attribution || 'TassieNow'} · {event.image?.license || 'Site artwork'}</figcaption></figure><p class="event-date-large">{dateLabel}</p><div class="detail-meta">{event.categories.map((category) => <span class="tag">{category}</span>)}</div><p>{event.summary}</p><div class="action-row"><a class="action-link" href={event.eventUrl || event.sourceUrl} target="_blank" rel="noopener noreferrer">Official event source ↗</a></div><p class="notice">Event times, venues, tickets and cancellations can change. Always confirm details with the official source before travelling.</p><p>Last source check: <strong>{event.lastChecked}</strong></p></article>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+</BaseLayout>

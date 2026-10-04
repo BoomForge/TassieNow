@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PlaceCard from '../../components/PlaceCard.astro';
+import EventCard from '../../components/EventCard.astro';
+import places from '../../data/places.json';
+import events from '../../data/events.json';
+import { slugify } from '../../lib/catalogue.js';
+export function getStaticPaths() {
+  const towns = [...new Set(places.filter((p) => p.status === 'active').map((p) => p.town))];
+  return towns.map((town) => ({ params: { slug: slugify(town) }, props: { town } }));
+}
+const { town } = Astro.props;
+const townPlaces = places.filter((p) => p.status === 'active' && p.town === town);
+const townEvents = events.filter((e) => e.status === 'active' && e.town === town).slice(0, 12);
+const region = townPlaces[0]?.region || townEvents[0]?.region || 'Tasmania';
+---
+<BaseLayout title={`Things to do in ${town}, Tasmania | TassieNow`} description={`Find places, attractions and current events in ${town}, ${region}.`}>
+  <section class="collection-hero"><p class="eyebrow">{region}</p><h1>{town}</h1><p>{townPlaces.length} places in the current directory.</p></section>
+  <section class="directory"><div class="place-grid">{townPlaces.map((place) => <PlaceCard place={place} />)}</div></section>
+  {townEvents.length > 0 && <section class="directory"><div class="section-heading"><h2>Upcoming events</h2></div><div class="place-grid">{townEvents.map((event) => <EventCard event={event} />)}</div></section>}
+</BaseLayout>
