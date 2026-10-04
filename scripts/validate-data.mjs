@@ -10,29 +10,20 @@ const eventSlugs = new Set();
 
 function validHttpUrl(value) {
   if (!value) return false;
-  try {
-    const url = new URL(value);
-    return ['http:', 'https:'].includes(url.protocol);
-  } catch {
-    return false;
-  }
+  try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol); } catch { return false; }
 }
-
 function hobartDate(date = new Date()) {
   const parts = new Intl.DateTimeFormat('en-AU', { timeZone: 'Australia/Hobart', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(date);
   const get = (type) => parts.find((part) => part.type === type)?.value;
   return `${get('year')}-${get('month')}-${get('day')}`;
 }
-
 function validateImage(item, label) {
-  if (!item.image || typeof item.image !== 'object') {
-    problems.push(`${label}: missing image object`);
-    return;
-  }
+  if (!item.image || typeof item.image !== 'object') { problems.push(`${label}: missing image object`); return; }
   if (!item.image.url || !(item.image.url.startsWith('/') || validHttpUrl(item.image.url))) problems.push(`${label}: invalid image URL`);
   if (!item.image.alt) problems.push(`${label}: missing image alt text`);
   if (!item.image.attribution) problems.push(`${label}: missing image attribution`);
   if (!item.image.license) problems.push(`${label}: missing image licence/provenance`);
+  if (item.image.sourceUrl && !validHttpUrl(item.image.sourceUrl)) problems.push(`${label}: invalid image sourceUrl`);
 }
 
 const requiredPlaceFields = ['slug', 'name', 'town', 'region', 'latitude', 'longitude', 'categories', 'summary', 'sourceUrl', 'status', 'lastChecked'];
@@ -47,6 +38,11 @@ for (const [index, place] of places.entries()) {
   if (!validHttpUrl(place.sourceUrl)) problems.push(`${label}: invalid sourceUrl`);
   if (place.website !== null && place.website !== undefined && place.website !== '' && !validHttpUrl(place.website)) problems.push(`${label}: invalid website`);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(place.lastChecked || '')) problems.push(`${label}: lastChecked must be YYYY-MM-DD`);
+  if (place.visibility !== undefined && !['public','suppressed'].includes(place.visibility)) problems.push(`${label}: visibility must be public or suppressed`);
+  if (place.qualityScore !== undefined && (!Number.isFinite(place.qualityScore) || place.qualityScore < 0 || place.qualityScore > 100)) problems.push(`${label}: qualityScore must be 0-100`);
+  if (place.qualityTier !== undefined && !['featured','strong','standard','low'].includes(place.qualityTier)) problems.push(`${label}: invalid qualityTier`);
+  if (place.walk?.grade !== undefined && place.walk.grade !== null && (!Number.isInteger(place.walk.grade) || place.walk.grade < 1 || place.walk.grade > 5)) problems.push(`${label}: walk grade must be 1-5`);
+  if (place.officialSource?.url && !validHttpUrl(place.officialSource.url)) problems.push(`${label}: invalid officialSource URL`);
   validateImage(place, label);
 }
 
@@ -59,6 +55,7 @@ for (const [index, event] of events.entries()) {
   if (eventSlugs.has(event.slug)) problems.push(`${label}: duplicate slug ${event.slug}`);
   eventSlugs.add(event.slug);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(event.startDate || '') || !/^\d{4}-\d{2}-\d{2}$/.test(event.endDate || '')) problems.push(`${label}: invalid event date`);
+  if (event.startDate && event.endDate && event.endDate < event.startDate) problems.push(`${label}: endDate is before startDate`);
   if (event.endDate && event.endDate < today && event.status === 'active') problems.push(`${label}: expired event is still active`);
   if (!Array.isArray(event.categories) || event.categories.length === 0) problems.push(`${label}: categories must be a non-empty array`);
   if (!validHttpUrl(event.sourceUrl)) problems.push(`${label}: invalid sourceUrl`);
@@ -71,5 +68,5 @@ if (problems.length) {
   problems.forEach((problem) => console.error(`- ${problem}`));
   process.exit(1);
 }
-
-console.log(`Validated ${places.length} places and ${events.length} active events.`);
+const publicPlaces=places.filter((p)=>p.status==='active'&&p.visibility!=='suppressed').length;
+console.log(`Validated ${places.length} places (${publicPlaces} public) and ${events.length} active events.`);
