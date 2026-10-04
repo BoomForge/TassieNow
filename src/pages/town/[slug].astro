@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import places from '../../data/places.json';
+const slugify = (v) => v.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+export function getStaticPaths() {
+  const active = places.filter((p) => p.status === 'active');
+  return [...new Set(active.map((p) => p.town))].map((town) => ({ params: { slug: slugify(town) }, props: { town, townPlaces: active.filter((p) => p.town === town) } }));
+}
+const { town, townPlaces } = Astro.props;
+const region = townPlaces[0]?.region || 'Tasmania';
+---
+<BaseLayout title={`Things to do in ${town}, Tasmania | TassieNow`} description={`Find attractions, activities, walks, food and local discoveries in and around ${town}, Tasmania.`}>
+  <section class="listing-page"><p class="eyebrow">{region}</p><h1>{town}</h1><p class="hero-copy">{townPlaces.length} places currently listed around {town}.</p><div class="place-grid compact-grid">{townPlaces.map((place) => <article class="place-card"><a class="card-image-link" href={`/place/${place.slug}/`}><img class="card-image" src={place.image.url} alt={place.image.alt} loading="lazy" /><span class="image-badge">{place.categories[0]}</span></a><div class="card-body"><h3>{place.name}</h3><p class="summary">{place.summary}</p><div class="tags">{place.categories.slice(0,3).map((category)=><span class="tag">{category}</span>)}</div><a class="card-link" href={`/place/${place.slug}/`}>View place →</a></div></article>)}</div></section>
+</BaseLayout>
