@@ -29,12 +29,14 @@ function score(place) {
   if(place.wikidata){s+=7;signals.push('wikidata');}
   if(place.officialSource?.type==='government'){s+=14;signals.push('government-source');}
   if(place.walk?.grade){s+=7;signals.push('official-walk-data');}
-  if(place.image && !place.image.isFallback){s+=16;signals.push('real-image');}
-  else s-=2;
+  if(place.image && !place.image.isFallback){s+=16;signals.push('real-image');} else s-=2;
   const usefulCats=(place.categories||[]).filter(c=>recognised.has(c));
   s+=Math.min(10,usefulCats.length*2);
-  if((place.categories||[]).includes('Museums') || (place.categories||[]).includes('Wildlife')) s+=4;
-  if((place.categories||[]).includes('Markets') || (place.categories||[]).includes('Local Produce')) s+=3;
+  if((place.categories||[]).includes('Things to Do')) s+=5;
+  if((place.categories||[]).includes('Nature & Walks')) s+=4;
+  if((place.categories||[]).includes('Museums') || (place.categories||[]).includes('Wildlife')) s+=5;
+  if((place.categories||[]).includes('Markets') || (place.categories||[]).includes('Local Produce') || (place.categories||[]).includes('Food & Drink')) s+=4;
+  if((place.categories||[]).includes('Family')) s+=3;
   if(hardNoise.test(place.name||'')){s-=60;signals.push('commercial-noise');}
   if(weakNoise.test(place.name||'') && !/historic|museum|heritage/i.test(place.name||'')){s-=15;signals.push('weak-object');}
   if(/^lookout\b/i.test(place.name||'') && !place.website && !place.wikidata && !place.officialSource) s-=8;
@@ -49,9 +51,9 @@ const ranked=places.map(place=>{
   const result=score(place);
   const hard=hardNoise.test(place.name||'') || genericExact.has(String(place.name||'').trim().toLowerCase());
   const keep=place.sourceType==='curated' || place.officialSource?.type==='government' || place.sourceType==='parks-tasmania';
-  const visibility=(!keep && (hard || result.value<24)) ? 'suppressed' : 'public';
+  const visibility=(!keep && (hard || result.value<18)) ? 'suppressed' : 'public';
   if(visibility==='suppressed') suppressed++;
-  const qualityTier=result.value>=60?'featured':result.value>=45?'strong':result.value>=30?'standard':'low';
+  const qualityTier=result.value>=55?'featured':result.value>=40?'strong':result.value>=25?'standard':'low';
   if(qualityTier==='featured' && visibility==='public') featured++;
   return {...place,qualityScore:result.value,qualityTier,visibility,qualitySignals:result.signals,rankedAt:today};
 }).sort((a,b)=>{
