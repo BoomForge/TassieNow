@@ -18,14 +18,18 @@ function validHttpUrl(value) {
   }
 }
 
+function hobartDate(date = new Date()) {
+  const parts = new Intl.DateTimeFormat('en-AU', { timeZone: 'Australia/Hobart', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(date);
+  const get = (type) => parts.find((part) => part.type === type)?.value;
+  return `${get('year')}-${get('month')}-${get('day')}`;
+}
+
 function validateImage(item, label) {
   if (!item.image || typeof item.image !== 'object') {
     problems.push(`${label}: missing image object`);
     return;
   }
-  if (!item.image.url || !(item.image.url.startsWith('/') || validHttpUrl(item.image.url))) {
-    problems.push(`${label}: invalid image URL`);
-  }
+  if (!item.image.url || !(item.image.url.startsWith('/') || validHttpUrl(item.image.url))) problems.push(`${label}: invalid image URL`);
   if (!item.image.alt) problems.push(`${label}: missing image alt text`);
   if (!item.image.attribution) problems.push(`${label}: missing image attribution`);
   if (!item.image.license) problems.push(`${label}: missing image licence/provenance`);
@@ -34,9 +38,7 @@ function validateImage(item, label) {
 const requiredPlaceFields = ['slug', 'name', 'town', 'region', 'latitude', 'longitude', 'categories', 'summary', 'sourceUrl', 'status', 'lastChecked'];
 for (const [index, place] of places.entries()) {
   const label = `#${index + 1} ${place.name || '(unnamed place)'}`;
-  for (const field of requiredPlaceFields) {
-    if (place[field] === undefined || place[field] === null || place[field] === '') problems.push(`${label}: missing ${field}`);
-  }
+  for (const field of requiredPlaceFields) if (place[field] === undefined || place[field] === null || place[field] === '') problems.push(`${label}: missing ${field}`);
   if (placeSlugs.has(place.slug)) problems.push(`${label}: duplicate slug ${place.slug}`);
   placeSlugs.add(place.slug);
   if (!Array.isArray(place.categories) || place.categories.length === 0) problems.push(`${label}: categories must be a non-empty array`);
@@ -48,7 +50,7 @@ for (const [index, place] of places.entries()) {
   validateImage(place, label);
 }
 
-const today = new Date().toISOString().slice(0, 10);
+const today = hobartDate();
 for (const [index, event] of events.entries()) {
   const label = `event #${index + 1} ${event.name || '(unnamed event)'}`;
   for (const field of ['slug', 'name', 'town', 'region', 'startDate', 'endDate', 'categories', 'summary', 'sourceUrl', 'status', 'lastChecked']) {

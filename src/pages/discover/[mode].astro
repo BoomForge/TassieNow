@@ -2,16 +2,6 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import places from '../../data/places.json';
 import events from '../../data/events.json';
-const modes = {
-  'kids': { title:'Things to do with kids in Tasmania', categories:['Family'] },
-  'free': { title:'Free things to do in Tasmania', categories:['Free'] },
-  'rainy-day': { title:'Rainy day activities in Tasmania', categories:['Rainy Day'] },
-  'markets': { title:'Markets in Tasmania', categories:['Markets'] },
-  'nature': { title:'Walks and nature in Tasmania', categories:['Nature & Walks'] },
-  'food': { title:'Tasmanian food and local produce', categories:['Food & Drink','Local Produce'] },
-  'today': { title:'What’s on in Tasmania today', eventMode:'today' },
-  'this-weekend': { title:'What’s on in Tasmania this weekend', eventMode:'weekend' }
-};
 export function getStaticPaths(){
   const routes = [
     ['kids',{title:'Things to do with kids in Tasmania',categories:['Family']}],
@@ -26,8 +16,16 @@ export function getStaticPaths(){
   return routes.map(([mode,config])=>({params:{mode},props:{config}}));
 }
 const { config } = Astro.props;
-const now = new Date(); const today = now.toISOString().slice(0,10);
-const day = now.getUTCDay(); const sat = new Date(now); sat.setUTCDate(now.getUTCDate()+((6-day+7)%7)); const sun = new Date(sat); sun.setUTCDate(sat.getUTCDate()+1);
+function hobartDate(date = new Date()) {
+  const parts = new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date);
+  const get=(type)=>parts.find((part)=>part.type===type)?.value;
+  return `${get('year')}-${get('month')}-${get('day')}`;
+}
+const today = hobartDate();
+const calendar = new Date(`${today}T00:00:00Z`);
+const day = calendar.getUTCDay();
+const sat = new Date(calendar); sat.setUTCDate(calendar.getUTCDate()+((6-day+7)%7));
+const sun = new Date(sat); sun.setUTCDate(sat.getUTCDate()+1);
 const satDate=sat.toISOString().slice(0,10), sunDate=sun.toISOString().slice(0,10);
 const activePlaces=places.filter((p)=>p.status==='active');
 const matchedPlaces=config.categories ? activePlaces.filter((p)=>config.categories.some((c)=>p.categories.includes(c))) : [];
