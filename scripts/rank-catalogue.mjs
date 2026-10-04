@@ -3,8 +3,10 @@ import fs from 'node:fs/promises';
 const FILE = new URL('../src/data/places.json', import.meta.url);
 const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Hobart' }).format(new Date());
 const genericExact = new Set(['lookout','viewpoint','information','information sign','sign','interpretive sign','noticeboard','car park','carpark','parking','rest area','toilets','toilet','picnic area','memorial','monument','photo point','scenic view']);
-const hardNoise = /\b(car\s*(rental|hire)|rental\s*cars?|avis|budget rent|hertz|europcar|thrifty|sixt|bargain car rentals?|airport shuttle|taxi rank)\b/i;
+const hardNoise = /\b(car\s*(?:rentals?|hire)|rental\s*cars?|avis|budget\s*(?:rent|car)|hertz|europcar|thrifty|sixt|bargain car rentals?|airport shuttle|taxi rank)\b/i;
 const weakNoise = /\b(sign|marker|noticeboard|information board|parking|car ?park|toilets?)\b/i;
+const weakFeature = /\b(?:walker registration|registration point|beach entrance|access point|signpost|highest point on road|animal enclosure|monkey enclosure)\b/i;
+const corporateOnly = /\b(?:pty\.?\s*ltd|proprietary limited)\b/i;
 const recognised = new Set(['Things to Do','Museums','Art & Culture','Wildlife','Family','Markets','Food & Drink','Local Produce','Nature & Walks','Outdoor','Rainy Day','Free']);
 
 function properName(name='') {
@@ -39,6 +41,8 @@ function score(place) {
   if((place.categories||[]).includes('Family')) s+=3;
   if(hardNoise.test(place.name||'')){s-=60;signals.push('commercial-noise');}
   if(weakNoise.test(place.name||'') && !/historic|museum|heritage/i.test(place.name||'')){s-=15;signals.push('weak-object');}
+  if(weakFeature.test(place.name||'') && !place.website && !place.wikidata && !place.officialSource){s-=20;signals.push('minor-feature');}
+  if(corporateOnly.test(place.name||'') && !place.website && !place.wikidata){s-=12;signals.push('weak-commercial-name');}
   if(/^lookout\b/i.test(place.name||'') && !place.website && !place.wikidata && !place.officialSource) s-=8;
   if((place.name||'').split(/\s+/).length===1 && !place.website && !place.wikidata && place.sourceType==='openstreetmap') s-=7;
   if(/[.!?]$/.test(place.name||'') && !place.website && !place.wikidata) s-=3;

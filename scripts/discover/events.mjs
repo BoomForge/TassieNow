@@ -1,10 +1,10 @@
 import fs from 'node:fs/promises';
 
 const FILE=new URL('../../src/data/events.json',import.meta.url);
-const UA='TassieNow/0.8 (+https://tassienow.pages.dev)';
+const UA='TassieNow/0.9 (+https://tassienow.pages.dev)';
 const SOURCES=[
   {name:'City of Hobart',url:'https://www.hobartcity.com.au/Things-To-Do/Upcoming-events',town:'Hobart',region:'Hobart & South',detail:/\/Things-To-Do\/Upcoming-events\//i},
-  {name:'City of Launceston',url:'https://www.launceston.tas.gov.au/Upcoming-Events',town:'Launceston',region:'Launceston & North',detail:/\/Upcoming-Events\//i},
+  {name:'City of Launceston',url:'https://www.launceston.tas.gov.au/Upcoming-Events',town:'Launceston',region:'Launceston & North',detail:/\/(?:Upcoming-Events|Events)\//i},
   {name:'Burnie City Council',url:'https://www.burnie.tas.gov.au/Community/Whats-On-Events',town:'Burnie',region:'North West',detail:/\/Whats-On|\/Events\//i},
   {name:'Glenorchy City Council',url:'https://www.gcc.tas.gov.au/our-city/events/',town:'Glenorchy',region:'Hobart & South',detail:/\/events\//i},
   {name:'Devonport City Council',url:'https://www.devonport.tas.gov.au/whats-on-devonport/',town:'Devonport',region:'North West',detail:/\/events\//i},
@@ -12,6 +12,8 @@ const SOURCES=[
 ];
 const M={jan:1,january:1,feb:2,february:2,mar:3,march:3,apr:4,april:4,may:5,jun:6,june:6,jul:7,july:7,aug:8,august:8,september:9,sep:9,sept:9,oct:10,october:10,nov:11,november:11,dec:12,december:12};
 const MONTH='Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?';
+const DAY='Mon(?:day)?|Tue(?:sday)?|Wed(?:nesday)?|Thu(?:rsday)?|Fri(?:day)?|Sat(?:urday)?|Sun(?:day)?';
+const ADMIN_NOISE=/^(?:community noticeboard|fogo collection faq'?s?|recycling and landfill collection week)$/i;
 function tasDate(date=new Date()){const p=new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date);const g=t=>p.find(x=>x.type===t)?.value;return`${g('year')}-${g('month')}-${g('day')}`}
 const TODAY=tasDate();
 const h=new Date(`${TODAY}T00:00:00Z`);h.setUTCDate(h.getUTCDate()+240);const HORIZON=h.toISOString().slice(0,10);
@@ -39,12 +41,54 @@ function dateRange(text=''){
 }
 function validRange(r){return r?.startDate&&r?.endDate&&r.endDate>=TODAY&&r.startDate<=HORIZON}
 function categories(text=''){const c=['Events'];if(/\bfree\b/i.test(text))c.push('Free');if(/family|kids|children|child|school holiday/i.test(text))c.push('Family');if(/market/i.test(text))c.push('Markets');return[...new Set(c)]}
-function plausibleName(v=''){const n=clean(v).replace(/^(view detail|read more|details|more information)$/i,'');return n.length>=3&&n.length<=160&&!/^(home|events?|calendar|search|next|previous|today)$/i.test(n)}
+function stripTemporal(value=''){
+  let n=clean(value);
+  const patterns=[
+    `\\b\\d{1,2}\\s+(${MONTH})\\s*[-–—]\\s*\\d{1,2}\\s+(${MONTH})\\s+20\\d{2}\\b`,
+    `\\b\\d{1,2}\\s*[-–—]\\s*\\d{1,2}\\s+(${MONTH})\\s+20\\d{2}\\b`,
+    `\\b\\d{1,2}\\s+(${MONTH})\\s+20\\d{2}\\b`,
+    `\\b(${MONTH})\\s+\\d{1,2}(?:st|nd|rd|th)?(?:,)?\\s+20\\d{2}\\b`
+  ];
+  for(const p of patterns)n=n.replace(new RegExp(p,'gi'),' ');
+  n=n.replace(/\b\d{1,2}(?::\d{2})\s*(?:am|pm)\b/gi,' ')
+    .replace(new RegExp(`^\\s*(?:${DAY})\\s*[,|–—-]*\\s*`,'i'),' ')
+    .replace(/\b(?:add to calendar|view details?|read more|more information)\b/gi,' ')
+    .replace(/^[\s|·:–—-]+|[\s|·:–—-]+$/g,' ')
+    .replace(/\s+/g,' ').trim();
+  return n;
+}
+function plausibleName(v=''){
+  const n=stripTemporal(v);
+  if(n.length<3||n.length>160||ADMIN_NOISE.test(n))return false;
+  if(/^(?:home|events?|calendar|search|next|previous|today|am|pm)$/i.test(n))return false;
+  if(!/[a-z]{3}/i.test(n))return false;
+  if(/^(?:rosny farm event|community program)$/i.test(n))return false;
+  if(/\b(?:street|road|avenue|parade|drive|highway)\b.*\b(?:tas|tasmania|australia)\b/i.test(n))return false;
+  return true;
+}
+function finalName(value=''){
+  let n=stripTemporal(value);
+  if(n.length>150){const sentence=n.match(/^(.{12,145}?)(?:[.!?](?:\s|$))/)?.[1];if(sentence)n=sentence.trim();}
+  return n.slice(0,160).trim();
+}
+function anchorTitle(inner=''){
+  const headings=[...inner.matchAll(/<h[1-6]\b[^>]*>([\s\S]*?)<\/h[1-6]>/gi)].map(x=>finalName(x[1])).filter(plausibleName);
+  if(headings.length)return headings.at(-1);
+  const strong=[...inner.matchAll(/<(?:strong|b)\b[^>]*>([\s\S]*?)<\/(?:strong|b)>/gi)].map(x=>finalName(x[1])).filter(plausibleName);
+  if(strong.length)return strong.at(-1);
+  return finalName(inner);
+}
 function lines(html){return dec(String(html).replace(/<script[\s\S]*?<\/script>/gi,' ').replace(/<style[\s\S]*?<\/style>/gi,' ').replace(/<(?:br\s*\/?|\/p|\/div|\/li|\/article|\/a|\/h[1-6]|\/section|\/time)>/gi,'\n').replace(/<[^>]+>/g,' ')).split(/\n+/).map(x=>x.replace(/\s+/g,' ').trim()).filter(Boolean)}
-function anchorEvents(html,s){const out=[],anchors=[...html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)];for(const a of anchors){let href;try{href=new URL(dec(a[1]),s.url).href}catch{continue}if(new URL(href).hostname!==new URL(s.url).hostname)continue;const name=clean(a[2]);if(!plausibleName(name)||!s.detail.test(new URL(href).pathname))continue;const before=html.slice(Math.max(0,a.index-500),a.index),after=html.slice(a.index+a[0].length,a.index+a[0].length+700);const r=dateRange(`${clean(before).slice(-300)} ${name} ${clean(after).slice(0,420)}`);if(!validRange(r))continue;const context=`${name} ${clean(after).slice(0,260)}`;out.push({slug:slug(`${name}-${r.startDate}-${s.town}`),name,town:s.town,region:s.region,startDate:r.startDate,endDate:r.endDate,categories:categories(context),summary:`${name} in ${s.town}. Check the official ${s.name} listing for current time, venue and booking details.`,eventUrl:href,sourceUrl:s.url,sourceName:s.name,image:fallback(name),status:'active',lastChecked:TODAY});}return out}
-function textEvents(html,s){const l=lines(html),out=[];for(let i=0;i<l.length;i++){const r=dateRange(l[i]);if(!validRange(r))continue;let name=clean(l[i].replace(r.raw,'').replace(/^[\s|·:–—-]+|[\s|·:–—-]+$/g,''));if(!plausibleName(name)){const options=[l[i-1],l[i+1],l[i-2],l[i+2]].filter(plausibleName);name=clean(options[0]||'')}if(!plausibleName(name))continue;if(name.length>100&&/[.!?]\s/.test(name))name=name.split(/[.!?]\s/)[0].trim();if(!plausibleName(name))continue;const context=`${name} ${l[i+1]||''}`;out.push({slug:slug(`${name}-${r.startDate}-${s.town}`),name,town:s.town,region:s.region,startDate:r.startDate,endDate:r.endDate,categories:categories(context),summary:`${name} in ${s.town}. Check the official ${s.name} listing for current time, venue and booking details.`,eventUrl:s.url,sourceUrl:s.url,sourceName:s.name,image:fallback(name),status:'active',lastChecked:TODAY});}return out}
-function structuredEvents(html,s){const out=[];for(const e of jsonld(html)){const startDate=dateValue(e.startDate),endDate=dateValue(e.endDate||e.startDate);if(!validRange({startDate,endDate}))continue;const name=clean(e.name);if(!plausibleName(name))continue;const address=e.location?.address||{},town=clean(address.addressLocality||e.location?.name||s.town),description=clean(e.description).slice(0,280),context=`${name} ${description}`;out.push({slug:slug(`${name}-${startDate}-${town}`),name,town:town||s.town,region:s.region,startDate,endDate,categories:categories(context),summary:description||`Event in ${town||s.town}. Check the official event source for current details.`,eventUrl:e.url||s.url,sourceUrl:s.url,sourceName:s.name,image:fallback(name),status:'active',lastChecked:TODAY});}return out}
-function dedupe(items){const seen=new Map();for(const e of items){const key=`${norm(e.name)}|${e.startDate}|${norm(e.town)}`;const current=seen.get(key);if(!current||((e.eventUrl||'')!==(e.sourceUrl||'')&&(current.eventUrl||'')===(current.sourceUrl||'')))seen.set(key,e)}return[...seen.values()]}
+function makeEvent({name,s,startDate,endDate,town=s.town,venue=null,eventUrl=s.url,description=''}){
+  const cleanName=finalName(name);if(!plausibleName(cleanName))return null;
+  const context=`${cleanName} ${description}`;
+  return{slug:slug(`${cleanName}-${startDate}-${town}`),name:cleanName,town,region:s.region,startDate,endDate,categories:categories(context),summary:description?clean(description).slice(0,280):`${cleanName} in ${town}. Check the official ${s.name} listing for current time, venue and booking details.`,venue:venue||undefined,eventUrl,sourceUrl:s.url,sourceName:s.name,image:fallback(cleanName),status:'active',lastChecked:TODAY};
+}
+function anchorEvents(html,s){const out=[],anchors=[...html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)];for(const a of anchors){let href;try{href=new URL(dec(a[1]),s.url).href}catch{continue}if(new URL(href).hostname!==new URL(s.url).hostname)continue;if(!s.detail.test(new URL(href).pathname))continue;const raw=clean(a[2]);const name=anchorTitle(a[2]);if(!plausibleName(name))continue;const before=html.slice(Math.max(0,a.index-500),a.index),after=html.slice(a.index+a[0].length,a.index+a[0].length+700);const r=dateRange(`${clean(before).slice(-300)} ${raw} ${clean(after).slice(0,420)}`);if(!validRange(r))continue;const e=makeEvent({name,s,startDate:r.startDate,endDate:r.endDate,eventUrl:href,description:clean(after).slice(0,220)});if(e)out.push(e)}return out}
+function textEvents(html,s){const l=lines(html),out=[];for(let i=0;i<l.length;i++){const r=dateRange(l[i]);if(!validRange(r))continue;let name=finalName(l[i].replace(r.raw,''));if(!plausibleName(name)){const options=[l[i-1],l[i+1],l[i-2],l[i+2],l[i-3],l[i+3]].map(finalName).filter(plausibleName);name=options[0]||''}if(!plausibleName(name))continue;const e=makeEvent({name,s,startDate:r.startDate,endDate:r.endDate,description:clean(l[i+1]||'').slice(0,180)});if(e)out.push(e)}return out}
+function structuredEvents(html,s){const out=[];for(const e of jsonld(html)){const startDate=dateValue(e.startDate),endDate=dateValue(e.endDate||e.startDate);if(!validRange({startDate,endDate}))continue;const name=finalName(e.name);if(!plausibleName(name))continue;const address=e.location?.address||{},town=clean(address.addressLocality||s.town)||s.town,venue=clean(e.location?.name||''),description=clean(e.description).slice(0,280);const item=makeEvent({name,s,startDate,endDate,town,venue,eventUrl:e.url||s.url,description});if(item)out.push(item)}return out}
+function preference(e){let s=0;if((e.eventUrl||'')!==(e.sourceUrl||''))s+=4;if(e.venue)s+=2;if(e.summary&&!/Check the official/i.test(e.summary))s+=1;if(e.name.length<=100)s+=1;return s}
+function dedupe(items){const out=[];for(const e of items){const en=norm(e.name);let match=-1;for(let i=0;i<out.length;i++){const o=out[i];if(o.startDate!==e.startDate||norm(o.town)!==norm(e.town))continue;const on=norm(o.name);if(en===on||(en.length>=8&&on.length>=8&&(en.includes(on)||on.includes(en)))){match=i;break}}if(match<0)out.push(e);else if(preference(e)>preference(out[match]))out[match]=e}return out}
 
 const previous=JSON.parse(await fs.readFile(FILE,'utf8')).filter(e=>e.status==='active'&&e.endDate>=TODAY);
 const found=[],freshSources=new Set();
