@@ -1,8 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PlaceCard from '../components/PlaceCard.astro';
+import EventCard from '../components/EventCard.astro';
 import places from '../data/places.json';
+import events from '../data/events.json';
+import { slugify } from '../lib/catalogue.js';
 
 const activePlaces = places.filter((place) => place.status === 'active');
+const activeEvents = events.filter((event) => event.status === 'active').slice(0, 9);
 const regions = [...new Set(activePlaces.map((place) => place.region))].sort();
 const categories = [...new Set(activePlaces.flatMap((place) => place.categories))].sort();
 const quickCategories = ['Family', 'Free', 'Rainy Day', 'Nature & Walks', 'Markets', 'Wildlife'];
@@ -10,8 +15,15 @@ const quickCategories = ['Family', 'Free', 'Rainy Day', 'Nature & Walks', 'Marke
 <BaseLayout>
   <section class="hero">
     <p class="eyebrow">Tasmania, without the digging</p>
-    <h1>Find something to do.</h1>
-    <p class="hero-copy">A growing discovery directory for Tasmanians and visitors. Search by place, region or what you feel like doing — then check the official source before you head out.</p>
+    <h1>What are you doing in Tassie?</h1>
+    <p class="hero-copy">Find genuinely useful places and current ideas for locals and visitors — by location, weather, budget or what you feel like doing.</p>
+    <div class="hero-actions">
+      <a class="primary-button link-button" href="/today/">Today</a>
+      <a class="soft-button" href="/this-weekend/">This weekend</a>
+      <a class="soft-button" href="/kids/">With kids</a>
+      <a class="soft-button" href="/free/">Free</a>
+      <a class="soft-button" href="/rainy-day/">Rainy day</a>
+    </div>
   </section>
 
   <section class="directory" id="explore">
@@ -27,131 +39,49 @@ const quickCategories = ['Family', 'Free', 'Rainy Day', 'Nature & Walks', 'Marke
       </select>
       <button class="primary-button" id="near-me" type="button">Near me</button>
     </div>
-    <p class="status-line" id="location-status" aria-live="polite">Showing the first verified seed listings while TassieNow is being built.</p>
+    <p class="status-line" id="location-status" aria-live="polite">Search the growing statewide catalogue, or sort places by your current location.</p>
 
     <div class="quick-filters" aria-label="Quick filters">
       <button class="filter-chip" type="button" data-quick="" aria-pressed="true">All</button>
       {quickCategories.map((category) => <button class="filter-chip" type="button" data-quick={category.toLowerCase()} aria-pressed="false">{category}</button>)}
+      <button class="filter-chip surprise-chip" id="surprise-me" type="button">Surprise me</button>
+    </div>
+
+    <div class="region-strip" aria-label="Browse by region">
+      {regions.map((region) => <a href={`/region/${slugify(region)}/`}>{region}</a>)}
     </div>
 
     <div class="section-heading" id="places">
-      <h2>Explore Tasmania</h2>
+      <div><p class="eyebrow">Statewide directory</p><h2>Explore Tasmania</h2></div>
       <span class="result-count"><span id="result-count">{activePlaces.length}</span> places</span>
     </div>
-
-    <div class="place-grid" id="place-grid">
-      {activePlaces.map((place) => (
-        <article
-          class="place-card"
-          data-name={place.name.toLowerCase()}
-          data-town={place.town.toLowerCase()}
-          data-region={place.region.toLowerCase()}
-          data-categories={place.categories.map((category) => category.toLowerCase()).join('|')}
-          data-lat={place.latitude}
-          data-lon={place.longitude}
-          data-distance=""
-        >
-          <div class="card-art"><span>{place.categories[0]}</span></div>
-          <div class="card-body">
-            <p class="location">{place.town} · {place.region}</p>
-            <h3>{place.name}</h3>
-            <p class="summary">{place.summary}</p>
-            <div class="tags">
-              {place.categories.slice(0, 4).map((category) => <span class="tag">{category}</span>)}
-            </div>
-            <div class="card-footer">
-              <a class="card-link" href={`/place/${place.slug}/`}>View place →</a>
-              <span class="distance" aria-live="polite"></span>
-            </div>
-          </div>
-        </article>
-      ))}
-    </div>
+    <div class="place-grid" id="place-grid">{activePlaces.map((place) => <PlaceCard place={place} />)}</div>
     <div class="empty-state" id="empty-state">No places match those filters yet. Try broadening the search.</div>
   </section>
 
+  <section class="directory events-home" id="events">
+    <div class="section-heading"><div><p class="eyebrow">What’s happening</p><h2>Upcoming events</h2></div><a class="text-link" href="/this-weekend/">This weekend →</a></div>
+    {activeEvents.length ? <div class="place-grid">{activeEvents.map((event) => <EventCard event={event} />)}</div> : <p class="notice">The automated event feed is being populated from official council sources.</p>}
+  </section>
+
   <script>
-    const search = document.querySelector('#search');
-    const region = document.querySelector('#region');
-    const category = document.querySelector('#category');
-    const cards = [...document.querySelectorAll('.place-card')];
-    const count = document.querySelector('#result-count');
-    const emptyState = document.querySelector('#empty-state');
-    const nearMe = document.querySelector('#near-me');
-    const locationStatus = document.querySelector('#location-status');
-    const quickButtons = [...document.querySelectorAll('[data-quick]')];
-    let quickFilter = '';
-
+    const search = document.querySelector('#search'); const region = document.querySelector('#region'); const category = document.querySelector('#category');
+    const cards = [...document.querySelectorAll('#place-grid .place-card')]; const count = document.querySelector('#result-count'); const emptyState = document.querySelector('#empty-state');
+    const nearMe = document.querySelector('#near-me'); const surpriseMe = document.querySelector('#surprise-me'); const locationStatus = document.querySelector('#location-status'); const quickButtons = [...document.querySelectorAll('[data-quick]')]; let quickFilter = '';
+    function visibleCards() { return cards.filter((card) => !card.hidden); }
     function applyFilters() {
-      const query = search.value.trim().toLowerCase();
-      const regionValue = region.value;
-      const categoryValue = category.value;
-      let visible = 0;
-
-      cards.forEach((card) => {
-        const haystack = `${card.dataset.name} ${card.dataset.town} ${card.dataset.region} ${card.dataset.categories}`;
-        const matchesSearch = !query || haystack.includes(query);
-        const matchesRegion = !regionValue || card.dataset.region === regionValue;
-        const matchesCategory = !categoryValue || card.dataset.categories.split('|').includes(categoryValue);
-        const matchesQuick = !quickFilter || card.dataset.categories.split('|').includes(quickFilter);
-        const show = matchesSearch && matchesRegion && matchesCategory && matchesQuick;
-        card.hidden = !show;
-        if (show) visible += 1;
-      });
-
-      count.textContent = String(visible);
-      emptyState.style.display = visible === 0 ? 'block' : 'none';
+      const query = search.value.trim().toLowerCase(); const regionValue = region.value; const categoryValue = category.value; let visible = 0;
+      cards.forEach((card) => { const haystack = `${card.dataset.name} ${card.dataset.town} ${card.dataset.region} ${card.dataset.categories}`; const cats = card.dataset.categories.split('|'); const show = (!query || haystack.includes(query)) && (!regionValue || card.dataset.region === regionValue) && (!categoryValue || cats.includes(categoryValue)) && (!quickFilter || cats.includes(quickFilter)); card.hidden = !show; if (show) visible += 1; });
+      count.textContent = String(visible); emptyState.style.display = visible === 0 ? 'block' : 'none';
     }
-
-    search.addEventListener('input', applyFilters);
-    region.addEventListener('change', applyFilters);
-    category.addEventListener('change', applyFilters);
-
-    quickButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-        quickFilter = button.dataset.quick || '';
-        quickButtons.forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
-        applyFilters();
-      });
-    });
-
-    function distanceKm(lat1, lon1, lat2, lon2) {
-      const rad = (value) => value * Math.PI / 180;
-      const earthRadiusKm = 6371;
-      const dLat = rad(lat2 - lat1);
-      const dLon = rad(lon2 - lon1);
-      const a = Math.sin(dLat / 2) ** 2 + Math.cos(rad(lat1)) * Math.cos(rad(lat2)) * Math.sin(dLon / 2) ** 2;
-      return earthRadiusKm * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    }
-
+    search.addEventListener('input', applyFilters); region.addEventListener('change', applyFilters); category.addEventListener('change', applyFilters);
+    quickButtons.forEach((button) => button.addEventListener('click', () => { quickFilter = button.dataset.quick || ''; quickButtons.forEach((other) => other.setAttribute('aria-pressed', String(other === button))); applyFilters(); }));
+    function distanceKm(lat1, lon1, lat2, lon2) { const rad = (value) => value * Math.PI / 180; const earthRadiusKm = 6371; const dLat = rad(lat2 - lat1); const dLon = rad(lon2 - lon1); const a = Math.sin(dLat / 2) ** 2 + Math.cos(rad(lat1)) * Math.cos(rad(lat2)) * Math.sin(dLon / 2) ** 2; return earthRadiusKm * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)); }
     nearMe.addEventListener('click', () => {
-      if (!navigator.geolocation) {
-        locationStatus.textContent = 'Your browser does not support location access. You can still search by town or region.';
-        return;
-      }
-
+      if (!navigator.geolocation) { locationStatus.textContent = 'Your browser does not support location access. Search by town or region instead.'; return; }
       locationStatus.textContent = 'Finding your location…';
-      navigator.geolocation.getCurrentPosition(
-        ({ coords }) => {
-          cards.forEach((card) => {
-            const distance = distanceKm(coords.latitude, coords.longitude, Number(card.dataset.lat), Number(card.dataset.lon));
-            card.dataset.distance = String(distance);
-            const label = card.querySelector('.distance');
-            if (label) label.textContent = `${distance.toFixed(distance < 10 ? 1 : 0)} km away`;
-          });
-
-          const grid = document.querySelector('#place-grid');
-          cards
-            .sort((a, b) => Number(a.dataset.distance) - Number(b.dataset.distance))
-            .forEach((card) => grid.appendChild(card));
-          locationStatus.textContent = 'Sorted by straight-line distance from your current location.';
-          applyFilters();
-        },
-        () => {
-          locationStatus.textContent = 'Location access was not available. Search by town or region instead.';
-        },
-        { enableHighAccuracy: false, timeout: 8000, maximumAge: 300000 }
-      );
+      navigator.geolocation.getCurrentPosition(({ coords }) => { cards.forEach((card) => { const distance = distanceKm(coords.latitude, coords.longitude, Number(card.dataset.lat), Number(card.dataset.lon)); card.dataset.distance = String(distance); const label = card.querySelector('.distance'); if (label) label.textContent = `${distance.toFixed(distance < 10 ? 1 : 0)} km away`; }); const grid = document.querySelector('#place-grid'); cards.sort((a, b) => Number(a.dataset.distance) - Number(b.dataset.distance)).forEach((card) => grid.appendChild(card)); locationStatus.textContent = 'Sorted by straight-line distance from your current location.'; applyFilters(); }, () => { locationStatus.textContent = 'Location access was not available. Search by town or region instead.'; }, { enableHighAccuracy: false, timeout: 8000, maximumAge: 300000 });
     });
+    surpriseMe.addEventListener('click', () => { const available = visibleCards(); if (!available.length) return; const card = available[Math.floor(Math.random() * available.length)]; card.scrollIntoView({ behavior: 'smooth', block: 'center' }); card.classList.remove('surprise-hit'); requestAnimationFrame(() => card.classList.add('surprise-hit')); locationStatus.textContent = `Try this one: ${card.dataset.name}.`; });
   </script>
 </BaseLayout>

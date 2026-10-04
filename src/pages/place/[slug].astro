@@ -1,30 +1,23 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import places from '../../data/places.json';
-
-export function getStaticPaths() {
-  return places
-    .filter((place) => place.status === 'active')
-    .map((place) => ({ params: { slug: place.slug }, props: { place } }));
-}
-
+import { imageFor, slugify } from '../../lib/catalogue.js';
+export function getStaticPaths() { return places.filter((place) => place.status === 'active').map((place) => ({ params: { slug: place.slug }, props: { place } })); }
 const { place } = Astro.props;
 const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${place.latitude},${place.longitude}`;
+const image = imageFor(place);
+const schema = { '@context': 'https://schema.org', '@type': place.categories.includes('Museums') ? 'Museum' : 'TouristAttraction', name: place.name, description: place.summary, url: new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin).href, image: image.startsWith('http') ? image : new URL(image, Astro.site ?? Astro.url.origin).href, geo: { '@type': 'GeoCoordinates', latitude: place.latitude, longitude: place.longitude }, address: { '@type': 'PostalAddress', addressLocality: place.town, addressRegion: 'Tasmania', addressCountry: 'AU' }, isAccessibleForFree: place.categories.includes('Free') || undefined, sameAs: place.website || undefined };
 ---
 <BaseLayout title={`${place.name} | TassieNow`} description={place.summary}>
-  <article class="content-page">
-    <p class="eyebrow">{place.town} · {place.region}</p>
+  <article class="content-page detail-page">
+    <p class="eyebrow"><a href={`/town/${slugify(place.town)}/`}>{place.town}</a> · <a href={`/region/${slugify(place.region)}/`}>{place.region}</a></p>
     <h1>{place.name}</h1>
-    <div class="detail-meta">
-      {place.categories.map((category) => <span class="tag">{category}</span>)}
-    </div>
+    <figure class="detail-image"><img src={image} alt={place.image?.alt || `${place.name}, Tasmania`} data-image-fallback="/images/categories/discover.svg"/><figcaption>Image: {place.image?.attribution || 'TassieNow'} · {place.image?.license || 'Site artwork'}</figcaption></figure>
+    <div class="detail-meta">{place.categories.map((category) => <span class="tag">{category}</span>)}</div>
     <p>{place.summary}</p>
-    <div class="action-row">
-      <a class="action-link" href={place.website} target="_blank" rel="noopener noreferrer">Official website ↗</a>
-      <a class="action-link secondary" href={directionsUrl} target="_blank" rel="noopener noreferrer">Directions ↗</a>
-    </div>
-    <p class="notice">TassieNow is currently in its bootstrap stage. Opening hours, prices, bookings and access conditions can change, so confirm current details with the official operator before travelling.</p>
+    <div class="action-row">{place.website && <a class="action-link" href={place.website} target="_blank" rel="noopener noreferrer">Official website ↗</a>}<a class="action-link secondary" href={directionsUrl} target="_blank" rel="noopener noreferrer">Directions ↗</a><a class="action-link secondary" href={place.sourceUrl} target="_blank" rel="noopener noreferrer">Data source ↗</a></div>
+    <p class="notice">Opening hours, prices, bookings and access conditions can change. Confirm current details with the operator before travelling.</p>
     <p>Last source check: <strong>{place.lastChecked}</strong></p>
-    <p><a href="/">← Back to discovery</a></p>
   </article>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
 </BaseLayout>
