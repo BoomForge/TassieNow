@@ -1,0 +1,33 @@
+name: Notify IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/indexnow.mjs'
+      - 'public/30516139ed96092d5fbd7676d4852aa2.txt'
+      - '.github/workflows/indexnow.yml'
+  schedule:
+    - cron: '45 20 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tassienow-indexnow
+  cancel-in-progress: true
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Notify participating search engines of recent changes
+        env:
+          SITE_URL: https://tassienow.pages.dev
+        run: node scripts/indexnow.mjs

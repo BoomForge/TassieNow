@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'scripts/discover/**'
+      - 'scripts/rank-catalogue.mjs'
+      - 'scripts/enrich-images.mjs'
       - 'scripts/sanitize-generated.mjs'
       - 'scripts/audit-links.mjs'
       - '.github/workflows/discover.yml'
@@ -22,30 +24,44 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
+          cache-dependency-path: package.json
       - name: Discover Tasmanian places
         run: node scripts/discover/osm-import.mjs
+      - name: Enrich official Parks Tasmania walks
+        run: node scripts/discover/parks-tasmania.mjs
       - name: Discover official council events
         run: node scripts/discover/events.mjs
       - name: Audit external websites
         run: node scripts/audit-links.mjs
       - name: Sanitize generated records
         run: node scripts/sanitize-generated.mjs
+      - name: Rank and suppress low-value catalogue records
+        run: node scripts/rank-catalogue.mjs
+      - name: Upgrade high-value fallback images
+        run: node scripts/enrich-images.mjs
+      - name: Re-rank after image enrichment
+        run: node scripts/rank-catalogue.mjs
       - name: Validate catalogue
         run: node scripts/validate-data.mjs
+      - name: Install site dependencies
+        run: npm install --no-audit --no-fund
+      - name: Build refreshed site
+        run: npm run build
       - name: Commit refreshed data
         run: |
-          if git diff --quiet -- src/data/places.json src/data/events.json; then
+          if git diff --quiet -- src/data/places.json src/data/events.json src/data/parks-walks.json; then
             echo "No catalogue changes."
             exit 0
           fi
           git config user.name "TassieNow Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add src/data/places.json src/data/events.json
-          git commit -m "data: refresh Tasmanian discovery catalogue"
+          git add src/data/places.json src/data/events.json src/data/parks-walks.json
+          git commit -m "data: refresh ranked Tasmanian discovery catalogue"
           git push
