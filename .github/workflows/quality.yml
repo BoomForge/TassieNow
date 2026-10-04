@@ -26,5 +26,14 @@ jobs:
           cache-dependency-path: package.json
       - name: Install dependencies
         run: npm install --no-audit --no-fund
-      - name: Validate and build
+      - name: Syntax-check automation scripts
+        run: |
+          node --check scripts/discover/events.mjs
+          node --check scripts/discover/parks-tasmania.mjs
+          node --check scripts/enrich-images.mjs
+          node --check scripts/rank-catalogue.mjs
+          node --check scripts/indexnow.mjs
+      - name: Apply catalogue ranking in CI workspace
+        run: node scripts/rank-catalogue.mjs
+      - name: Validate and build ranked site
         run: npm run build
