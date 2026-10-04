@@ -12,7 +12,19 @@ const modes = {
   'today': { title:'What’s on in Tasmania today', eventMode:'today' },
   'this-weekend': { title:'What’s on in Tasmania this weekend', eventMode:'weekend' }
 };
-export function getStaticPaths(){ return Object.entries(modes).map(([mode, config]) => ({ params:{mode}, props:{mode,config} })); }
+export function getStaticPaths(){
+  const routes = [
+    ['kids',{title:'Things to do with kids in Tasmania',categories:['Family']}],
+    ['free',{title:'Free things to do in Tasmania',categories:['Free']}],
+    ['rainy-day',{title:'Rainy day activities in Tasmania',categories:['Rainy Day']}],
+    ['markets',{title:'Markets in Tasmania',categories:['Markets']}],
+    ['nature',{title:'Walks and nature in Tasmania',categories:['Nature & Walks']}],
+    ['food',{title:'Tasmanian food and local produce',categories:['Food & Drink','Local Produce']}],
+    ['today',{title:'What’s on in Tasmania today',eventMode:'today'}],
+    ['this-weekend',{title:'What’s on in Tasmania this weekend',eventMode:'weekend'}]
+  ];
+  return routes.map(([mode,config])=>({params:{mode},props:{config}}));
+}
 const { config } = Astro.props;
 const now = new Date(); const today = now.toISOString().slice(0,10);
 const day = now.getUTCDay(); const sat = new Date(now); sat.setUTCDate(now.getUTCDate()+((6-day+7)%7)); const sun = new Date(sat); sun.setUTCDate(sat.getUTCDate()+1);
