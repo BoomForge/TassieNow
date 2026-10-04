@@ -46,3 +46,5 @@ jobs:
           git add src/data/places.json src/data/events.json
           git commit -m "data: refresh Tasmanian discovery catalogue"
           git push
+
+# This workflow owns only generated catalogue refreshes; UI/code changes remain human-reviewed.
