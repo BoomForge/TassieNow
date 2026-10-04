@@ -3,8 +3,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import places from '../../data/places.json';
 const slugify = (v) => v.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 export function getStaticPaths() {
+  const localSlugify = (v) => v.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const active = places.filter((p) => p.status === 'active');
-  return [...new Set(active.map((p) => p.region))].map((region) => ({ params: { slug: slugify(region) }, props: { region, regionPlaces: active.filter((p) => p.region === region) } }));
+  return [...new Set(active.map((p) => p.region))].map((region) => ({ params: { slug: localSlugify(region) }, props: { region, regionPlaces: active.filter((p) => p.region === region) } }));
 }
 const { region, regionPlaces } = Astro.props;
 const towns = [...new Set(regionPlaces.map((p) => p.town))].sort();
