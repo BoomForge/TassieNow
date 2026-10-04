@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/discover/**'
+      - 'scripts/sanitize-generated.mjs'
       - 'scripts/audit-links.mjs'
       - '.github/workflows/discover.yml'
   schedule:
@@ -21,7 +22,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -33,6 +34,8 @@ jobs:
         run: node scripts/discover/events.mjs
       - name: Audit external websites
         run: node scripts/audit-links.mjs
+      - name: Sanitize generated records
+        run: node scripts/sanitize-generated.mjs
       - name: Validate catalogue
         run: node scripts/validate-data.mjs
       - name: Commit refreshed data

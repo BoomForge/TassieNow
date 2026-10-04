@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import places from '../../data/places.json';
+import events from '../../data/events.json';
+const modes = {
+  'kids': { title:'Things to do with kids in Tasmania', categories:['Family'] },
+  'free': { title:'Free things to do in Tasmania', categories:['Free'] },
+  'rainy-day': { title:'Rainy day activities in Tasmania', categories:['Rainy Day'] },
+  'markets': { title:'Markets in Tasmania', categories:['Markets'] },
+  'nature': { title:'Walks and nature in Tasmania', categories:['Nature & Walks'] },
+  'food': { title:'Tasmanian food and local produce', categories:['Food & Drink','Local Produce'] },
+  'today': { title:'What’s on in Tasmania today', eventMode:'today' },
+  'this-weekend': { title:'What’s on in Tasmania this weekend', eventMode:'weekend' }
+};
+export function getStaticPaths(){
+  const routes = [
+    ['kids',{title:'Things to do with kids in Tasmania',categories:['Family']}],
+    ['free',{title:'Free things to do in Tasmania',categories:['Free']}],
+    ['rainy-day',{title:'Rainy day activities in Tasmania',categories:['Rainy Day']}],
+    ['markets',{title:'Markets in Tasmania',categories:['Markets']}],
+    ['nature',{title:'Walks and nature in Tasmania',categories:['Nature & Walks']}],
+    ['food',{title:'Tasmanian food and local produce',categories:['Food & Drink','Local Produce']}],
+    ['today',{title:'What’s on in Tasmania today',eventMode:'today'}],
+    ['this-weekend',{title:'What’s on in Tasmania this weekend',eventMode:'weekend'}]
+  ];
+  return routes.map(([mode,config])=>({params:{mode},props:{config}}));
+}
+const { config } = Astro.props;
+const now = new Date(); const today = now.toISOString().slice(0,10);
+const day = now.getUTCDay(); const sat = new Date(now); sat.setUTCDate(now.getUTCDate()+((6-day+7)%7)); const sun = new Date(sat); sun.setUTCDate(sat.getUTCDate()+1);
+const satDate=sat.toISOString().slice(0,10), sunDate=sun.toISOString().slice(0,10);
+const activePlaces=places.filter((p)=>p.status==='active');
+const matchedPlaces=config.categories ? activePlaces.filter((p)=>config.categories.some((c)=>p.categories.includes(c))) : [];
+const activeEvents=events.filter((e)=>e.status==='active'&&e.endDate>=today);
+const matchedEvents=config.eventMode==='today' ? activeEvents.filter((e)=>e.startDate<=today&&e.endDate>=today) : config.eventMode==='weekend' ? activeEvents.filter((e)=>e.startDate<=sunDate&&e.endDate>=satDate) : [];
+---
+<BaseLayout title={`${config.title} | TassieNow`} description={`${config.title}. Browse current TassieNow listings and verify details with official sources.`}>
+  <section class="listing-page"><p class="eyebrow">Live discovery</p><h1>{config.title}</h1>
+  {config.eventMode ? <><p class="hero-copy">{matchedEvents.length} current event{matchedEvents.length===1?'':'s'} match this view.</p><div class="place-grid compact-grid">{matchedEvents.map((event)=><article class="place-card"><a class="card-image-link" href={`/event/${event.slug}/`}><img class="card-image" src={event.image.url} alt={event.image.alt} loading="lazy"/><span class="image-badge">Event</span></a><div class="card-body"><p class="location">{event.startDate}{event.endDate!==event.startDate?` – ${event.endDate}`:''} · {event.town}</p><h3>{event.name}</h3><p class="summary">{event.summary}</p><a class="card-link" href={`/event/${event.slug}/`}>Event details →</a></div></article>)}</div>{matchedEvents.length===0&&<p class="empty-state visible">No verified events match this window yet. The automated event feed refreshes daily.</p>}</> : <><p class="hero-copy">{matchedPlaces.length} places match this view.</p><div class="place-grid compact-grid">{matchedPlaces.map((place)=><article class="place-card"><a class="card-image-link" href={`/place/${place.slug}/`}><img class="card-image" src={place.image.url} alt={place.image.alt} loading="lazy"/><span class="image-badge">{place.categories[0]}</span></a><div class="card-body"><p class="location">{place.town} · {place.region}</p><h3>{place.name}</h3><p class="summary">{place.summary}</p><a class="card-link" href={`/place/${place.slug}/`}>View place →</a></div></article>)}</div></>}
+  </section>
+</BaseLayout>
