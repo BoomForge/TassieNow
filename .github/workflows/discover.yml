@@ -30,6 +30,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
+          cache-dependency-path: package.json
       - name: Discover Tasmanian places
         run: node scripts/discover/osm-import.mjs
       - name: Enrich official Parks Tasmania walks
@@ -48,6 +50,10 @@ jobs:
         run: node scripts/rank-catalogue.mjs
       - name: Validate catalogue
         run: node scripts/validate-data.mjs
+      - name: Install site dependencies
+        run: npm install --no-audit --no-fund
+      - name: Build refreshed site
+        run: npm run build
       - name: Commit refreshed data
         run: |
           if git diff --quiet -- src/data/places.json src/data/events.json src/data/parks-walks.json; then
