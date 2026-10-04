@@ -1,17 +1,35 @@
 [
   {
-    "slug": "bonorong-wildlife-sanctuary",
-    "name": "Bonorong Wildlife Sanctuary",
-    "town": "Brighton",
-    "region": "Hobart & South",
-    "latitude": -42.6985,
-    "longitude": 147.2544,
-    "categories": ["Wildlife", "Family", "Outdoor"],
-    "summary": "Wildlife sanctuary near Brighton focused on Tasmanian animals and conservation.",
-    "website": "https://www.bonorong.com.au/",
-    "sourceUrl": "https://www.bonorong.com.au/",
+    "slug": "freycinet-national-park",
+    "name": "Freycinet National Park",
+    "town": "Coles Bay",
+    "region": "East Coast",
+    "latitude": -42.1266,
+    "longitude": 148.2978,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "East Coast national park encompassing Wineglass Bay, coastal scenery and walking tracks.",
+    "website": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park",
+    "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park",
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-05",
+    "sourceType": "curated",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "alt": "Freycinet National Park category image"
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-04T21:26:32.483Z"
+    }
   },
   {
     "slug": "mona",
@@ -20,124 +38,64 @@
     "region": "Hobart & South",
     "latitude": -42.8121,
     "longitude": 147.2603,
-    "categories": ["Art & Culture", "Rainy Day", "Food & Drink"],
+    "categories": [
+      "Art & Culture",
+      "Rainy Day",
+      "Food & Drink"
+    ],
     "summary": "Major art museum and cultural destination on the River Derwent north of Hobart.",
     "website": "https://mona.net.au/",
     "sourceUrl": "https://mona.net.au/",
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-05",
+    "sourceType": "curated",
+    "image": {
+      "url": "/images/categories/culture.svg",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "alt": "Museum of Old and New Art (Mona) category image"
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-04T21:26:31.318Z"
+    }
   },
   {
-    "slug": "tasmanian-museum-and-art-gallery",
-    "name": "Tasmanian Museum and Art Gallery",
-    "town": "Hobart",
+    "slug": "bonorong-wildlife-sanctuary",
+    "name": "Bonorong Wildlife Sanctuary",
+    "town": "Brighton",
     "region": "Hobart & South",
-    "latitude": -42.8808,
-    "longitude": 147.3336,
-    "categories": ["Art & Culture", "History", "Family", "Rainy Day"],
-    "summary": "Museum, art gallery and heritage collection in central Hobart.",
-    "website": "https://www.tmag.tas.gov.au/",
-    "sourceUrl": "https://www.tmag.tas.gov.au/",
+    "latitude": -42.6985,
+    "longitude": 147.2544,
+    "categories": [
+      "Wildlife",
+      "Family",
+      "Outdoor"
+    ],
+    "summary": "Wildlife sanctuary near Brighton focused on Tasmanian animals and conservation.",
+    "website": "https://www.bonorong.com.au/",
+    "sourceUrl": "https://www.bonorong.com.au/",
     "status": "active",
-    "lastChecked": "2026-10-05"
-  },
-  {
-    "slug": "salamanca-market",
-    "name": "Salamanca Market",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "latitude": -42.8863,
-    "longitude": 147.3304,
-    "categories": ["Markets", "Food & Drink", "Family", "Outdoor"],
-    "summary": "Large Saturday market at Salamanca Place featuring Tasmanian produce, food, art and makers.",
-    "website": "https://www.salamancamarket.com.au/",
-    "sourceUrl": "https://www.salamancamarket.com.au/",
-    "status": "active",
-    "lastChecked": "2026-10-05"
-  },
-  {
-    "slug": "port-arthur-historic-site",
-    "name": "Port Arthur Historic Site",
-    "town": "Port Arthur",
-    "region": "Hobart & South",
-    "latitude": -43.1471,
-    "longitude": 147.8508,
-    "categories": ["History", "Family", "Outdoor"],
-    "summary": "World Heritage-listed historic site on the Tasman Peninsula.",
-    "website": "https://portarthur.org.au/",
-    "sourceUrl": "https://portarthur.org.au/",
-    "status": "active",
-    "lastChecked": "2026-10-05"
-  },
-  {
-    "slug": "cataract-gorge-reserve",
-    "name": "Cataract Gorge Reserve",
-    "town": "Launceston",
-    "region": "Launceston & North",
-    "latitude": -41.4467,
-    "longitude": 147.1131,
-    "categories": ["Nature & Walks", "Family", "Outdoor", "Free"],
-    "summary": "Bushland reserve and walking destination close to central Launceston.",
-    "website": "https://www.launceston.tas.gov.au/Community/Parks-and-Gardens/Cataract-Gorge-Reserve",
-    "sourceUrl": "https://www.launceston.tas.gov.au/Community/Parks-and-Gardens/Cataract-Gorge-Reserve",
-    "status": "active",
-    "lastChecked": "2026-10-05"
-  },
-  {
-    "slug": "queen-victoria-museum-and-art-gallery",
-    "name": "Queen Victoria Museum and Art Gallery",
-    "town": "Launceston",
-    "region": "Launceston & North",
-    "latitude": -41.4398,
-    "longitude": 147.1304,
-    "categories": ["Art & Culture", "History", "Family", "Rainy Day"],
-    "summary": "Launceston museum and art gallery operating across the Inveresk and Royal Park sites.",
-    "website": "https://www.qvmag.tas.gov.au/",
-    "sourceUrl": "https://www.qvmag.tas.gov.au/",
-    "status": "active",
-    "lastChecked": "2026-10-05"
-  },
-  {
-    "slug": "cradle-mountain-lake-st-clair-national-park",
-    "name": "Cradle Mountain-Lake St Clair National Park",
-    "town": "Cradle Mountain",
-    "region": "North West",
-    "latitude": -41.6844,
-    "longitude": 145.9525,
-    "categories": ["Nature & Walks", "Outdoor"],
-    "summary": "Tasmanian Wilderness World Heritage Area national park known for alpine scenery and walking tracks.",
-    "website": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain-lake-st-clair-national-park",
-    "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain-lake-st-clair-national-park",
-    "status": "active",
-    "lastChecked": "2026-10-05"
-  },
-  {
-    "slug": "freycinet-national-park",
-    "name": "Freycinet National Park",
-    "town": "Coles Bay",
-    "region": "East Coast",
-    "latitude": -42.1266,
-    "longitude": 148.2978,
-    "categories": ["Nature & Walks", "Outdoor"],
-    "summary": "East Coast national park encompassing Wineglass Bay, coastal scenery and walking tracks.",
-    "website": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park",
-    "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park",
-    "status": "active",
-    "lastChecked": "2026-10-05"
-  },
-  {
-    "slug": "mount-field-national-park",
-    "name": "Mount Field National Park",
-    "town": "National Park",
-    "region": "Hobart & South",
-    "latitude": -42.6825,
-    "longitude": 146.7171,
-    "categories": ["Nature & Walks", "Family", "Outdoor"],
-    "summary": "National park west of Hobart known for waterfalls, tall forest and alpine areas.",
-    "website": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park",
-    "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park",
-    "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-05",
+    "sourceType": "curated",
+    "image": {
+      "url": "/images/categories/wildlife.svg",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "alt": "Bonorong Wildlife Sanctuary category image"
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-04T21:26:32.786Z"
+    }
   },
   {
     "slug": "hastings-caves-and-thermal-springs",
@@ -146,12 +104,265 @@
     "region": "Hobart & South",
     "latitude": -43.4156,
     "longitude": 146.8734,
-    "categories": ["Nature & Walks", "Family", "Rainy Day"],
+    "categories": [
+      "Nature & Walks",
+      "Family",
+      "Rainy Day"
+    ],
     "summary": "Cave and thermal-pool visitor destination in southern Tasmania.",
     "website": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
     "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-05",
+    "sourceType": "curated",
+    "image": {
+      "url": "/images/categories/family.svg",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "alt": "Hastings Caves and Thermal Springs category image"
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-04T21:26:32.629Z"
+    }
+  },
+  {
+    "slug": "salamanca-market",
+    "name": "Salamanca Market",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "latitude": -42.8863,
+    "longitude": 147.3304,
+    "categories": [
+      "Markets",
+      "Food & Drink",
+      "Family",
+      "Outdoor"
+    ],
+    "summary": "Large Saturday market at Salamanca Place featuring Tasmanian produce, food, art and makers.",
+    "website": "https://www.salamancamarket.com.au/",
+    "sourceUrl": "https://www.salamancamarket.com.au/",
+    "status": "active",
+    "lastChecked": "2026-10-05",
+    "sourceType": "curated",
+    "image": {
+      "url": "/images/categories/food.svg",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "alt": "Salamanca Market category image"
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-04T21:26:33.143Z"
+    }
+  },
+  {
+    "slug": "tasmanian-museum-and-art-gallery",
+    "name": "Tasmanian Museum and Art Gallery",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "latitude": -42.8808,
+    "longitude": 147.3336,
+    "categories": [
+      "Art & Culture",
+      "History",
+      "Family",
+      "Rainy Day"
+    ],
+    "summary": "Museum, art gallery and heritage collection in central Hobart.",
+    "website": "https://www.tmag.tas.gov.au/",
+    "sourceUrl": "https://www.tmag.tas.gov.au/",
+    "status": "active",
+    "lastChecked": "2026-10-05",
+    "sourceType": "curated",
+    "image": {
+      "url": "/images/categories/culture.svg",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "alt": "Tasmanian Museum and Art Gallery category image"
+    },
+    "websiteCheck": {
+      "status": "inconclusive",
+      "code": 403,
+      "checkedAt": "2026-10-04T21:26:31.520Z"
+    }
+  },
+  {
+    "slug": "mount-field-national-park",
+    "name": "Mount Field National Park",
+    "town": "National Park",
+    "region": "Hobart & South",
+    "latitude": -42.6825,
+    "longitude": 146.7171,
+    "categories": [
+      "Nature & Walks",
+      "Family",
+      "Outdoor"
+    ],
+    "summary": "National park west of Hobart known for waterfalls, tall forest and alpine areas.",
+    "website": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park",
+    "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park",
+    "status": "active",
+    "lastChecked": "2026-10-05",
+    "sourceType": "curated",
+    "image": {
+      "url": "/images/categories/family.svg",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "alt": "Mount Field National Park category image"
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-04T21:26:32.977Z"
+    }
+  },
+  {
+    "slug": "port-arthur-historic-site",
+    "name": "Port Arthur Historic Site",
+    "town": "Port Arthur",
+    "region": "Hobart & South",
+    "latitude": -43.1471,
+    "longitude": 147.8508,
+    "categories": [
+      "History",
+      "Family",
+      "Outdoor"
+    ],
+    "summary": "World Heritage-listed historic site on the Tasman Peninsula.",
+    "website": "https://portarthur.org.au/",
+    "sourceUrl": "https://portarthur.org.au/",
+    "status": "active",
+    "lastChecked": "2026-10-05",
+    "sourceType": "curated",
+    "image": {
+      "url": "/images/categories/family.svg",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "alt": "Port Arthur Historic Site category image"
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-04T21:26:32.170Z"
+    }
+  },
+  {
+    "slug": "cataract-gorge-reserve",
+    "name": "Cataract Gorge Reserve",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "latitude": -41.4467,
+    "longitude": 147.1131,
+    "categories": [
+      "Nature & Walks",
+      "Family",
+      "Outdoor",
+      "Free"
+    ],
+    "summary": "Bushland reserve and walking destination close to central Launceston.",
+    "website": null,
+    "sourceUrl": "https://www.launceston.tas.gov.au/Community/Parks-and-Gardens/Cataract-Gorge-Reserve",
+    "status": "active",
+    "lastChecked": "2026-10-05",
+    "sourceType": "curated",
+    "image": {
+      "url": "/images/categories/family.svg",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "alt": "Cataract Gorge Reserve category image"
+    },
+    "websiteCheck": {
+      "status": "dead",
+      "code": 404,
+      "checkedAt": "2026-10-04T21:26:32.120Z"
+    }
+  },
+  {
+    "slug": "queen-victoria-museum-and-art-gallery",
+    "name": "Queen Victoria Museum and Art Gallery",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "latitude": -41.4398,
+    "longitude": 147.1304,
+    "categories": [
+      "Art & Culture",
+      "History",
+      "Family",
+      "Rainy Day"
+    ],
+    "summary": "Launceston museum and art gallery operating across the Inveresk and Royal Park sites.",
+    "website": "https://www.qvmag.tas.gov.au/",
+    "sourceUrl": "https://www.qvmag.tas.gov.au/",
+    "status": "active",
+    "lastChecked": "2026-10-05",
+    "sourceType": "curated",
+    "image": {
+      "url": "/images/categories/culture.svg",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "alt": "Queen Victoria Museum and Art Gallery category image"
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-04T21:26:33.164Z"
+    }
+  },
+  {
+    "slug": "cradle-mountain-lake-st-clair-national-park",
+    "name": "Cradle Mountain-Lake St Clair National Park",
+    "town": "Cradle Mountain",
+    "region": "North West",
+    "latitude": -41.6844,
+    "longitude": 145.9525,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Tasmanian Wilderness World Heritage Area national park known for alpine scenery and walking tracks.",
+    "website": null,
+    "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain-lake-st-clair-national-park",
+    "status": "active",
+    "lastChecked": "2026-10-05",
+    "sourceType": "curated",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "alt": "Cradle Mountain-Lake St Clair National Park category image"
+    },
+    "websiteCheck": {
+      "status": "dead",
+      "code": 404,
+      "checkedAt": "2026-10-04T21:26:32.997Z"
+    }
   },
   {
     "slug": "stanley-the-nut",
@@ -160,11 +371,29 @@
     "region": "North West",
     "latitude": -40.7592,
     "longitude": 145.3006,
-    "categories": ["Nature & Walks", "Outdoor"],
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
     "summary": "Distinctive volcanic landform and walking destination beside the town of Stanley.",
     "website": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
     "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-05",
+    "sourceType": "curated",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "alt": "The Nut State Reserve category image"
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-04T21:26:33.428Z"
+    }
   }
 ]
