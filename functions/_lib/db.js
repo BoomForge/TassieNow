@@ -26,6 +26,10 @@ CREATE TABLE IF NOT EXISTS ad_inquiries (
   phone TEXT,
   website TEXT,
   placement TEXT,
+  package_code TEXT,
+  duration_days INTEGER,
+  price_aud INTEGER,
+  payment_method TEXT NOT NULL DEFAULT 'paypal-transfer',
   desired_start TEXT,
   desired_end TEXT,
   message TEXT NOT NULL,
@@ -36,9 +40,25 @@ CREATE TABLE IF NOT EXISTS ad_inquiries (
 CREATE INDEX IF NOT EXISTS idx_inquiries_status ON ad_inquiries (status, created_at);
 `;
 
+const INQUIRY_COLUMNS = [
+  ['package_code', 'TEXT'],
+  ['duration_days', 'INTEGER'],
+  ['price_aud', 'INTEGER'],
+  ['payment_method', "TEXT NOT NULL DEFAULT 'paypal-transfer'"]
+];
+
+async function migrateInquiryColumns(database) {
+  const { results = [] } = await database.prepare('PRAGMA table_info(ad_inquiries)').all();
+  const existing = new Set(results.map((column) => column.name));
+  for (const [name, definition] of INQUIRY_COLUMNS) {
+    if (!existing.has(name)) await database.prepare(`ALTER TABLE ad_inquiries ADD COLUMN ${name} ${definition}`).run();
+  }
+}
+
 export async function db(env) {
   if (!env.DB) throw new Error('Cloudflare D1 binding DB is not configured');
   await env.DB.exec(SCHEMA);
+  await migrateInquiryColumns(env.DB);
   return env.DB;
 }
 
