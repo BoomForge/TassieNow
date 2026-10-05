@@ -7,10 +7,12 @@ on:
       - 'scripts/discover/**'
       - 'scripts/merge-previous-catalogue.mjs'
       - 'scripts/enrich-details.mjs'
+      - 'scripts/enrich-official-pages.mjs'
       - 'scripts/rank-catalogue.mjs'
       - 'scripts/enrich-images.mjs'
       - 'scripts/sanitize-generated.mjs'
       - 'scripts/audit-links.mjs'
+      - 'src/data/place-overrides.json'
       - '.github/workflows/discover.yml'
   schedule:
     - cron: '17 17 * * 1'
@@ -48,11 +50,13 @@ jobs:
         run: node scripts/audit-links.mjs
       - name: Sanitize generated records
         run: node scripts/sanitize-generated.mjs
-      - name: Enrich opening hours and listing details
+      - name: Enrich OSM and structured listing details
         run: node scripts/enrich-details.mjs
+      - name: Crawl official visit, hours, contact and date pages
+        run: node scripts/enrich-official-pages.mjs
       - name: Rank and suppress low-value catalogue records
         run: node scripts/rank-catalogue.mjs
-      - name: Upgrade high-value fallback images
+      - name: Upgrade licensed hero and gallery images
         run: node scripts/enrich-images.mjs
       - name: Re-rank after image enrichment
         run: node scripts/rank-catalogue.mjs
@@ -71,5 +75,5 @@ jobs:
           git config user.name "TassieNow Bot"
           git config user.email "actions@users.noreply.github.com"
           git add src/data/places.json src/data/events.json src/data/parks-walks.json
-          git commit -m "data: refresh ranked Tasmanian discovery catalogue"
+          git commit -m "data: refresh rich Tasmanian discovery catalogue"
           git push
