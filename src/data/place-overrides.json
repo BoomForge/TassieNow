@@ -1,0 +1,49 @@
+{
+  "salamanca-market": {
+    "openingHours": "Sa 08:30-15:00",
+    "phone": "03 6238 2430",
+    "email": "salamancamarket@hobartcity.com.au",
+    "address": "Salamanca Place, Hobart, TAS",
+    "operator": "City of Hobart",
+    "schedule": {
+      "summary": "Every Saturday, 8:30 am to 3:00 pm, year-round",
+      "frequency": "weekly",
+      "daysOfWeek": ["Saturday"],
+      "startTime": "08:30",
+      "endTime": "15:00",
+      "notes": "The market is normally held every Saturday. It is not held when Christmas Day or Anzac Day falls on a Saturday; the official market-dates page publishes any special arrangements.",
+      "sourceUrl": "https://www.salamancamarket.com.au/About-us/Market-dates"
+    },
+    "officialSource": {
+      "name": "Salamanca Market / City of Hobart",
+      "url": "https://www.salamancamarket.com.au/",
+      "type": "government"
+    },
+    "detailSources": {
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://www.salamancamarket.com.au/About-us/Market-dates"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://www.salamancamarket.com.au/Contact-us"
+      },
+      "email": {
+        "type": "official-website",
+        "url": "https://www.salamancamarket.com.au/Contact-us"
+      },
+      "address": {
+        "type": "official-website",
+        "url": "https://www.salamancamarket.com.au/Contact-us"
+      },
+      "operator": {
+        "type": "official-website",
+        "url": "https://www.salamancamarket.com.au/About-us"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://www.salamancamarket.com.au/About-us/Market-dates"
+      }
+    }
+  }
+}

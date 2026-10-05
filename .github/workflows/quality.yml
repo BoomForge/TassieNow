@@ -32,6 +32,7 @@ jobs:
           node --check scripts/discover/parks-tasmania.mjs
           node --check scripts/merge-previous-catalogue.mjs
           node --check scripts/enrich-details.mjs
+          node --check scripts/enrich-official-pages.mjs
           node --check scripts/enrich-images.mjs
           node --check scripts/rank-catalogue.mjs
           node --check scripts/indexnow.mjs

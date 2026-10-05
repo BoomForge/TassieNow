@@ -15,7 +15,7 @@ concurrency:
 jobs:
   enrich-catalogue:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 18
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,12 +29,15 @@ jobs:
           cache-dependency-path: package.json
       - name: Install dependencies
         run: npm install --no-audit --no-fund
-      - name: Enrich opening hours and listing details
+      - name: Enrich OSM and structured listing details
         run: node scripts/enrich-details.mjs
-      - name: Full image sweep on manual quality run
+      - name: Crawl official visit, hours, contact and date pages
+        run: node scripts/enrich-official-pages.mjs
+      - name: Full licensed hero and gallery sweep on manual quality run
         if: github.event_name == 'workflow_dispatch'
         env:
           MAX_IMAGE_ENRICH: '500'
+          GALLERY_SIZE: '3'
         run: node scripts/enrich-images.mjs
       - name: Re-rank catalogue using completeness
         run: node scripts/rank-catalogue.mjs
@@ -49,5 +52,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/data/places.json
-          git commit -m "chore(data): catalogue quality enrichment [skip ci]"
+          git commit -m "chore(data): rich catalogue quality enrichment [skip ci]"
           git push origin HEAD:main
