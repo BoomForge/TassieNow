@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import AdSlot from '../components/AdSlot.astro';
 import places from '../data/places.json';
 import events from '../data/events.json';
 
@@ -30,6 +31,8 @@ const quickModes = [
     </div>
   </section>
 
+  <AdSlot placement="homepage-top" />
+
   <section class="directory" id="explore">
     <div class="mode-grid" aria-label="Popular discovery modes">
       {quickModes.map(([slug, label]) => <a class="mode-card" href={`/discover/${slug}/`}>{label}<span>→</span></a>)}
@@ -38,6 +41,8 @@ const quickModes = [
     <div class="stats-strip">
       <strong>{activePlaces.length}</strong> useful places · <strong>{activeEvents.length}</strong> current events · <strong>{towns.length}</strong> towns
     </div>
+
+    <AdSlot placement="homepage-inline" />
 
     <div class="control-panel" aria-label="Directory filters">
       <input id="search" type="search" placeholder="Search places, towns or interests…" aria-label="Search places" />
