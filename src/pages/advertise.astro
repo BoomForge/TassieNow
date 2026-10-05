@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Advertise on TassieNow" description="Reach Tasmanians and visitors who are actively looking for things to do, places to visit and local experiences across Tasmania.">
+  <section class="content-shell advertise-page">
+    <p class="eyebrow">Advertise with TassieNow</p>
+    <h1>Reach people looking for what Tasmania offers.</h1>
+    <p class="hero-copy">TassieNow is built around high-intent local discovery: where to go, what to do, what’s on and what’s nearby. Advertising placements are clearly labelled and scheduled for specific campaigns.</p>
+
+    <div class="advertise-grid">
+      <article class="info-card"><h2>Homepage top</h2><p>High-visibility banner shown near the main discovery entry point.</p></article>
+      <article class="info-card"><h2>Homepage inline</h2><p>Placed inside the discovery experience without disguising advertising as a listing.</p></article>
+      <article class="info-card"><h2>Site footer</h2><p>Broad site-wide exposure across place, event, town and region pages.</p></article>
+    </div>
+
+    <section class="form-panel">
+      <h2>Advertising enquiry</h2>
+      <p>Tell us about your business, preferred placement and campaign dates. This form sends your enquiry directly into the TassieNow owner dashboard.</p>
+      <form id="advertise-form">
+        <div class="form-grid">
+          <label>Your name<input name="name" required maxlength="120" /></label>
+          <label>Business / organisation<input name="business" required maxlength="160" /></label>
+          <label>Email<input name="email" type="email" required maxlength="180" /></label>
+          <label>Phone (optional)<input name="phone" maxlength="80" /></label>
+          <label>Website (optional)<input name="website" type="url" placeholder="https://" /></label>
+          <label>Preferred placement<select name="placement"><option value="">Not sure yet</option><option value="homepage-top">Homepage top</option><option value="homepage-inline">Homepage inline</option><option value="site-footer">Site footer</option></select></label>
+          <label>Preferred start date<input name="desired_start" type="date" /></label>
+          <label>Preferred end date<input name="desired_end" type="date" /></label>
+        </div>
+        <label class="full-field">What would you like to promote?<textarea name="message" required rows="6" maxlength="2500"></textarea></label>
+        <label class="honeypot" aria-hidden="true">Company URL<input name="company_url" tabindex="-1" autocomplete="off" /></label>
+        <div class="form-actions"><button class="primary-button" type="submit">Send enquiry</button><span id="advertise-status" aria-live="polite"></span></div>
+      </form>
+    </section>
+  </section>
+
+  <script>
+    const form = document.querySelector('#advertise-form');
+    const status = document.querySelector('#advertise-status');
+    form?.addEventListener('submit', async (event) => {
+      event.preventDefault(); status.textContent = 'Sending…';
+      const data = Object.fromEntries(new FormData(form).entries());
+      try {
+        const response = await fetch('/api/advertise', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(data) });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.error || 'Could not send enquiry');
+        form.reset(); status.textContent = 'Thanks — your enquiry has been sent.';
+      } catch (error) { status.textContent = error.message || 'Could not send enquiry. Please try again.'; }
+    });
+  </script>
+  <style>
+    .advertise-page{padding:3rem 1.25rem 5rem}.advertise-page h1{max-width:820px}.advertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2rem 0}.info-card,.form-panel{background:#fff;border:1px solid #dce5e7;border-radius:18px;padding:1.25rem;box-shadow:0 10px 30px rgba(6,45,50,.05)}.info-card h2{font-size:1.1rem;margin-top:0}.form-panel{max-width:900px}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.form-panel label{display:grid;gap:.4rem;font-weight:700;color:#173f43}.form-panel input,.form-panel select,.form-panel textarea{width:100%;box-sizing:border-box;border:1px solid #bccdce;border-radius:10px;padding:.8rem;font:inherit;background:#fff}.full-field{margin-top:1rem}.form-actions{display:flex;gap:1rem;align-items:center;margin-top:1rem}.honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}@media(max-width:760px){.advertise-grid,.form-grid{grid-template-columns:1fr}}
+  </style>
+</BaseLayout>
