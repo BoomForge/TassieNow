@@ -81,6 +81,12 @@ for (const [index, event] of events.entries()) {
   if (!Array.isArray(event.categories) || event.categories.length === 0) problems.push(`${label}: categories must be a non-empty array`);
   if (!validHttpUrl(event.sourceUrl)) problems.push(`${label}: invalid sourceUrl`);
   if (event.eventUrl && !validHttpUrl(event.eventUrl)) problems.push(`${label}: invalid eventUrl`);
+  if (event.ticketUrl && !validHttpUrl(event.ticketUrl)) problems.push(`${label}: invalid ticketUrl`);
+  if (event.ticketLastChecked && !/^\d{4}-\d{2}-\d{2}$/.test(event.ticketLastChecked)) problems.push(`${label}: ticketLastChecked must be YYYY-MM-DD`);
+  if (event.priceFrom !== undefined && (!Number.isFinite(event.priceFrom) || event.priceFrom < 0)) problems.push(`${label}: priceFrom must be a non-negative number`);
+  if (event.priceTo !== undefined && (!Number.isFinite(event.priceTo) || event.priceTo < 0)) problems.push(`${label}: priceTo must be a non-negative number`);
+  if (event.priceFrom !== undefined && event.priceTo !== undefined && event.priceTo < event.priceFrom) problems.push(`${label}: priceTo is below priceFrom`);
+  if (event.priceCurrency !== undefined && !/^[A-Z]{3}$/.test(event.priceCurrency)) problems.push(`${label}: priceCurrency must be a three-letter currency code`);
   validateImage(event, label);
 }
 
