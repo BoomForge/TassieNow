@@ -35,6 +35,12 @@ function score(place) {
   if(place.officialSource?.type==='government'){s+=14;signals.push('government-source');}
   if(place.walk?.grade){s+=7;signals.push('official-walk-data');}
   if(place.image && !place.image.isFallback){s+=16;signals.push('real-image');} else s-=2;
+  if(place.openingHours){s+=6;signals.push('opening-hours');}
+  if(place.address){s+=3;signals.push('address');}
+  if(place.phone || place.email){s+=3;signals.push('contact-details');}
+  if(place.bookingUrl){s+=2;signals.push('booking-link');}
+  if(place.reviewLinks?.length){s+=2;signals.push('review-link');}
+  if(place.lastDetailsChecked){s+=2;signals.push('details-checked');}
   const usefulCats=(place.categories||[]).filter(c=>recognised.has(c));
   s+=Math.min(10,usefulCats.length*2);
   if((place.categories||[]).includes('Things to Do')) s+=5;
