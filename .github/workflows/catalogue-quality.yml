@@ -1,8 +1,6 @@
 name: TassieNow catalogue quality pass
 
 on:
-  push:
-    branches: [main]
   schedule:
     - cron: '47 18 * * *'
   workflow_dispatch:
@@ -16,7 +14,6 @@ concurrency:
 
 jobs:
   enrich-catalogue:
-    if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -34,8 +31,8 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Enrich opening hours and listing details
         run: node scripts/enrich-details.mjs
-      - name: Full image sweep after a production change
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+      - name: Full image sweep on manual quality run
+        if: github.event_name == 'workflow_dispatch'
         env:
           MAX_IMAGE_ENRICH: '500'
         run: node scripts/enrich-images.mjs

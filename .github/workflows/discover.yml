@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/discover/**'
+      - 'scripts/enrich-details.mjs'
       - 'scripts/rank-catalogue.mjs'
       - 'scripts/enrich-images.mjs'
       - 'scripts/sanitize-generated.mjs'
@@ -42,6 +43,8 @@ jobs:
         run: node scripts/audit-links.mjs
       - name: Sanitize generated records
         run: node scripts/sanitize-generated.mjs
+      - name: Enrich opening hours and listing details
+        run: node scripts/enrich-details.mjs
       - name: Rank and suppress low-value catalogue records
         run: node scripts/rank-catalogue.mjs
       - name: Upgrade high-value fallback images
