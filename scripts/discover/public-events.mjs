@@ -10,7 +10,10 @@ const SOURCES = [
   { name: 'Eventbrite Hobart', url: 'https://www.eventbrite.com.au/d/australia--hobart/events/', town: 'Hobart', region: 'Hobart & South', ticketProvider: 'Eventbrite' },
   { name: 'Eventbrite Launceston', url: 'https://www.eventbrite.com.au/d/australia--launceston/events/', town: 'Launceston', region: 'Launceston & North', ticketProvider: 'Eventbrite' },
   { name: 'Moshtix Tasmania', url: 'https://www.moshtix.com.au/v2/tas', town: 'Tasmania', region: 'Central Tasmania', ticketProvider: 'Moshtix', statewide: true },
-  { name: 'Ticketek Hobart', url: 'https://premier.ticketek.com.au/search/SearchResults.aspx?k=Hobart', town: 'Hobart', region: 'Hobart & South', ticketProvider: 'Ticketek', requireTasContext: true }
+  { name: 'Ticketek Hobart', url: 'https://premier.ticketek.com.au/search/SearchResults.aspx?k=Hobart', town: 'Hobart', region: 'Hobart & South', ticketProvider: 'Ticketek', requireTasContext: true },
+  { name: 'Theatre Royal Hobart', url: 'https://www.theatreroyal.com.au/what-s-on', town: 'Hobart', region: 'Hobart & South', officialHostOnly: true },
+  { name: 'MyState Bank Arena', url: 'https://www.mystatebankarena.com.au/events', town: 'Glenorchy', region: 'Hobart & South', officialHostOnly: true },
+  { name: 'Theatre North Launceston', url: 'https://theatrenorth.com.au/whats-on', town: 'Launceston', region: 'Launceston & North', officialHostOnly: true }
 ];
 const MONTHS = { jan:1,january:1,feb:2,february:2,mar:3,march:3,apr:4,april:4,may:5,jun:6,june:6,jul:7,july:7,aug:8,august:8,sep:9,september:9,sept:9,oct:10,october:10,nov:11,november:11,dec:12,december:12 };
 const MONTH = 'Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?';
@@ -42,6 +45,8 @@ function dateRange(text=''){
   m=value.match(new RegExp(`\\b(\\d{1,2})\\s+(${MONTH})\\s*[-–—]\\s*(\\d{1,2})\\s+(${MONTH})\\s+(20\\d{2})\\b`,'i'));if(m)return{startDate:iso(m[1],m[2],m[5]),endDate:iso(m[3],m[4],m[5])};
   m=value.match(new RegExp(`\\b(\\d{1,2})\\s*[-–—]\\s*(\\d{1,2})\\s+(${MONTH})\\s+(20\\d{2})\\b`,'i'));if(m)return{startDate:iso(m[1],m[3],m[4]),endDate:iso(m[2],m[3],m[4])};
   m=value.match(new RegExp(`\\b(\\d{1,2})\\s+(${MONTH})\\s+(20\\d{2})\\b`,'i'));if(m){const d=iso(m[1],m[2],m[3]);return{startDate:d,endDate:d};}
+  m=value.match(new RegExp(`\\b(\\d{1,2})\\s+(${MONTH})\\s*[-–—]\\s*(\\d{1,2})\\s+(${MONTH})\\b`,'i'));if(m){const start=inferYear(m[1],m[2]),end=inferYear(m[3],m[4]);return{startDate:start,endDate:end};}
+  m=value.match(new RegExp(`\\b(\\d{1,2})\\s*[-–—]\\s*(\\d{1,2})\\s+(${MONTH})\\b`,'i'));if(m){const start=inferYear(m[1],m[3]),end=inferYear(m[2],m[3]);return{startDate:start,endDate:end};}
   m=value.match(new RegExp(`\\b(${MONTH})\\s+(\\d{1,2})(?:st|nd|rd|th)?(?:,)?\\s+(20\\d{2})\\b`,'i'));if(m){const d=iso(m[2],m[1],m[3]);return{startDate:d,endDate:d};}
   m=value.match(new RegExp(`\\b(\\d{1,2})\\s+(${MONTH})\\b`,'i'));if(m){const d=inferYear(m[1],m[2]);return{startDate:d,endDate:d};}
   m=value.match(new RegExp(`\\b(${MONTH})\\s+(\\d{1,2})(?:st|nd|rd|th)?\\b`,'i'));if(m){const d=inferYear(m[2],m[1]);return{startDate:d,endDate:d};}
