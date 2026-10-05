@@ -106,8 +106,12 @@ function tokenOverlap(a, b) {
 }
 function bestLdNode(nodes, place) {
   const useful = nodes.filter((node) => node && (node.openingHours || node.openingHoursSpecification || node.telephone || node.email || node.address));
-  useful.sort((a, b) => tokenOverlap(b.name || '', place.name) - tokenOverlap(a.name || '', place.name));
-  return useful[0] || null;
+  const scored = useful.map((node) => ({ node, overlap: tokenOverlap(node.name || '', place.name), named: Boolean(clean(node.name)) })).sort((a, b) => b.overlap - a.overlap);
+  const best = scored[0];
+  if (!best) return null;
+  if (best.named && best.overlap === 0) return null;
+  if (!best.named && useful.length > 1) return null;
+  return best.node;
 }
 const DAY = { Monday: 'Mo', Tuesday: 'Tu', Wednesday: 'We', Thursday: 'Th', Friday: 'Fr', Saturday: 'Sa', Sunday: 'Su', Mo: 'Mo', Tu: 'Tu', We: 'We', Th: 'Th', Fr: 'Fr', Sa: 'Sa', Su: 'Su' };
 function dayCode(value) {
@@ -139,7 +143,7 @@ function officialFields(node = {}) {
     phone: phone(node.telephone),
     email: mail(node.email),
     address: addressFromLd(node.address),
-    bookingUrl: httpUrl(node.url || node.reservationUrl)
+    bookingUrl: httpUrl(node.reservationUrl || node.bookingUrl)
   };
 }
 function canFetchWebsite(value) {
