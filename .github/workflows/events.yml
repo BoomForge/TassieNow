@@ -7,6 +7,7 @@ on:
       - 'scripts/discover/events.mjs'
       - 'scripts/discover/public-events.mjs'
       - 'scripts/enrich-event-tickets.mjs'
+      - 'scripts/prune-expired-events.mjs'
       - 'scripts/catalogue-audit.mjs'
       - 'scripts/validate-data.mjs'
       - '.github/workflows/events.yml'
@@ -38,6 +39,8 @@ jobs:
         run: node scripts/discover/public-events.mjs
       - name: Enrich tickets prices and availability
         run: node scripts/enrich-event-tickets.mjs
+      - name: Prune expired events
+        run: node scripts/prune-expired-events.mjs
       - name: Generate catalogue coverage audit
         run: node scripts/catalogue-audit.mjs
       - name: Validate catalogue
