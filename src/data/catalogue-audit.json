@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2026-10-06",
+  "places": {
+    "total": 510,
+    "public": 499,
+    "suppressed": 11,
+    "imageCoverage": {
+      "count": 91,
+      "percent": 18.2
+    },
+    "galleryCoverage": {
+      "count": 24,
+      "percent": 4.8
+    },
+    "websiteCoverage": {
+      "count": 101,
+      "percent": 20.2
+    },
+    "scheduleCoverage": {
+      "count": 39,
+      "percent": 7.8
+    },
+    "officialSourceCoverage": {
+      "count": 37,
+      "percent": 7.4
+    },
+    "sourceTypes": {
+      "openstreetmap": 487,
+      "curated": 12
+    },
+    "regions": {
+      "Hobart & South": 143,
+      "Launceston & North": 128,
+      "North West": 87,
+      "East Coast": 70,
+      "West Coast": 58,
+      "King Island": 7,
+      "Flinders Island": 6
+    },
+    "towns": 131,
+    "categories": {
+      "Nature & Walks": 210,
+      "Things to Do": 195,
+      "Museums": 66,
+      "Art & Culture": 16,
+      "Wildlife": 10,
+      "History": 1,
+      "Markets": 1
+    }
+  },
+  "events": {
+    "active": 70,
+    "ticketCoverage": {
+      "count": 69,
+      "percent": 98.6
+    },
+    "priceCoverage": {
+      "count": 14,
+      "percent": 20
+    },
+    "providers": {
+      "Booking link": 36,
+      "Humanitix": 14,
+      "unknown": 14,
+      "Eventbrite": 5
+    },
+    "sources": {
+      "Burnie City Council": 24,
+      "Devonport City Council": 15,
+      "City of Clarence": 10,
+      "City of Hobart": 7,
+      "Humanitix Hobart": 4,
+      "Humanitix Launceston": 4,
+      "City of Launceston": 3,
+      "Glenorchy City Council": 3
+    },
+    "regions": {
+      "North West": 39,
+      "Hobart & South": 24,
+      "Launceston & North": 7
+    }
+  }
+}

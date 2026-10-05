@@ -7,7 +7,8 @@
     "startDate": "2026-09-29",
     "endDate": "2026-11-09",
     "categories": [
-      "Events"
+      "Events",
+      "Free"
     ],
     "summary": "Fundamental Pilates Living Well Devonport Program Improve strength, flexibility, balance and posture through this welcoming Pilates program suitable for a range of fitness levels. Whether attending a single session or the full program, participants will learn fundamental Pilates",
     "eventUrl": "https://www.devonport.tas.gov.au/events/fundamental-pilates/",
@@ -23,7 +24,13 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.devonport.tas.gov.au/events/fundamental-pilates/",
+    "priceFrom": 0,
+    "priceCurrency": "USD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "mandarin-lessons-2026-09-30-devonport",
@@ -33,7 +40,8 @@
     "startDate": "2026-09-30",
     "endDate": "2026-10-28",
     "categories": [
-      "Events"
+      "Events",
+      "Free"
     ],
     "summary": "Mandarin Lessons Living Well Devonport Program Discover the basics of the Mandarin language while learning about Chinese culture and communication in a supportive and engaging environment. Suitable for beginners, these sessions provide an opportunity to develop new skills, build",
     "eventUrl": "https://www.devonport.tas.gov.au/events/mandarin-lessons/",
@@ -49,7 +57,13 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.devonport.tas.gov.au/events/mandarin-lessons/",
+    "priceFrom": 0,
+    "priceCurrency": "USD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "self-defence-for-seniors-2026-09-30-devonport",
@@ -59,7 +73,8 @@
     "startDate": "2026-09-30",
     "endDate": "2026-10-28",
     "categories": [
-      "Events"
+      "Events",
+      "Free"
     ],
     "summary": "Self Defence for Seniors Living Well Devonport Program Build confidence, improve awareness and learn practical personal safety skills in a supportive and encouraging environment. Designed specifically for older adults, these sessions focus on simple self-defence techniques, confi",
     "venue": "Devonport Recreation Centre",
@@ -76,112 +91,13 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
-  },
-  {
-    "slug": "living-well-with-arthritis-session-2026-10-05-devonport",
-    "name": "Living Well with Arthritis Session",
-    "town": "Devonport",
-    "region": "North West",
-    "startDate": "2026-10-05",
-    "endDate": "2026-10-05",
-    "categories": [
-      "Events"
-    ],
-    "summary": "Living Well with Arthritis Living Well Devonport Program Date: Monday 5 October 2026 Time: 10:30am - 11:30am Location: Meercroft Pavilion Age: Adults Living with arthritis doesn't mean missing out on the things you enjoy. Presented by Arthritis & Osteoporosis Tasmania, this infor",
-    "venue": "Meercroft Park Pavilion",
-    "eventUrl": "https://www.devonport.tas.gov.au/events/living-well-with-arthritis-session/",
-    "sourceUrl": "https://www.devonport.tas.gov.au/whats-on-devonport/",
-    "sourceName": "Devonport City Council",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Living Well with Arthritis Session event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-10-05"
-  },
-  {
-    "slug": "october-open-workshop-2026-10-05-glenorchy",
-    "name": "October Open Workshop",
-    "town": "Glenorchy",
-    "region": "Hobart & South",
-    "startDate": "2026-10-05",
-    "endDate": "2026-10-05",
-    "categories": [
-      "Events"
-    ],
-    "summary": "Glenorchy City Council acknowledges the Muwinina people as the traditional owners of this Land. We recognise all Tasmanian Aboriginal people as the original owners and continuing c",
-    "eventUrl": "https://www.gcc.tas.gov.au/our-city/events/",
-    "sourceUrl": "https://www.gcc.tas.gov.au/our-city/events/",
-    "sourceName": "Glenorchy City Council",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "October Open Workshop event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-10-05"
-  },
-  {
-    "slug": "seniors-week-online-fitness-classes-2026-10-05-burnie",
-    "name": "Seniors Week - Online Fitness Classes",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-10-05",
-    "endDate": "2026-10-05",
-    "categories": [
-      "Events"
-    ],
-    "summary": "<source srcset=\"/files/sharedassets/public/v/2/images/waste-management/veolia-bin-truck.jpeg?di",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Seniors-Week-Online-Fitness-Classes",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
-    "sourceName": "Burnie City Council",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Seniors Week - Online Fitness Classes event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-10-05"
-  },
-  {
-    "slug": "voices-through-art-arch-lived-experience-art-campaign-2026-10-05-burnie",
-    "name": "Voices Through Art: Arch Lived Experience Art Campaign",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-10-05",
-    "endDate": "2026-10-05",
-    "categories": [
-      "Events"
-    ],
-    "summary": "<img class=\"",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Voices-Through-Art",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
-    "sourceName": "Burnie City Council",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Voices Through Art: Arch Lived Experience Art Campaign event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.devonport.tas.gov.au/events/self-defence-for-seniors/",
+    "priceFrom": 0,
+    "priceCurrency": "USD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "emergency-management-preparedness-workshop-devonport-session-1-2026-10-06-devonport",
@@ -191,7 +107,8 @@
     "startDate": "2026-10-06",
     "endDate": "2026-10-06",
     "categories": [
-      "Events"
+      "Events",
+      "Free"
     ],
     "summary": "Emergency Management Preparedness Workshop Living Well Devonport Program Meercroft Session Date: Tuesday 6 October 2026 Time: 10:00am - 12:00pm Location: Meercroft Pavilion Being prepared can make all the difference during an emergency. This informative workshop will help partici",
     "venue": "Meercroft Park Pavilion",
@@ -208,7 +125,13 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.devonport.tas.gov.au/events/emergency-management-preparedness-workshop-meercroft-session/",
+    "priceFrom": 0,
+    "priceCurrency": "USD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "fireside-chat-with-denise-fletcher-unspoken-2026-10-06-devonport",
@@ -235,7 +158,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06"
   },
   {
     "slug": "roller-skating-school-holiday-program-2026-10-06-devonport",
@@ -246,7 +169,8 @@
     "endDate": "2026-10-13",
     "categories": [
       "Events",
-      "Family"
+      "Family",
+      "Free"
     ],
     "summary": "Roller Skating Living Well Devonport Program Dates: Tuesday 6 October and Tuesday 13 October 2026 Time: 4:00pm - 5:00pm Location: Stadium, East Devonport Recreation Centre Age: All ages Learn the basics of roller skating with the Cradle Coast Junior Rollers. These beginner-friend",
     "venue": "East Devonport Recreation and Function Centre",
@@ -263,7 +187,13 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.devonport.tas.gov.au/events/roller-skating-school-holiday-program/",
+    "priceFrom": 0,
+    "priceCurrency": "USD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "school-holiday-activities-2026-10-06-burnie",
@@ -290,7 +220,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.eventbrite.com.au/o/burnie-library-7778560423",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "talk-on-aged-care-services-morning-tea-2026-10-06-launceston",
@@ -316,33 +250,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
-  },
-  {
-    "slug": "the-canopy-burnie-2026-10-06-burnie",
-    "name": "The Canopy Burnie",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-10-06",
-    "endDate": "2026-10-06",
-    "categories": [
-      "Events"
-    ],
-    "summary": "<source media=\"(min-width: 768px)\" srcset=\"/files/content/public/v/1/community/whats-on-events/2026/burnie-library-english-conversation-group/burnie-library-phot",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Canopy",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
-    "sourceName": "Burnie City Council",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "The Canopy Burnie event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.eventbrite.com/e/talk-on-aged-care-services-morning-tea-tickets-1998940908066?aff=oddtdtcreator",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "the-mum-connection-walking-group-burnie-2026-10-06-burnie",
@@ -368,7 +280,41 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
+  },
+  {
+    "slug": "voices-through-art-arch-lived-experience-art-campaign-2026-10-06-burnie",
+    "name": "Voices Through Art: Arch Lived Experience Art Campaign",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-10-06",
+    "endDate": "2026-10-06",
+    "categories": [
+      "Events"
+    ],
+    "summary": "<img class",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Voices-Through-Art",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Voices Through Art: Arch Lived Experience Art Campaign event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "burnie-library-english-conversation-group-2026-10-07-burnie",
@@ -380,7 +326,7 @@
     "categories": [
       "Events"
     ],
-    "summary": "<source srcset=\"/files/content/bafc/v/4/whats-on/performances/2026-live/signor-baffo/baffo-1080x1920-eff.png?dimension",
+    "summary": "Burnie Library - English Conversation Group in Burnie. Check the official Burnie City Council listing for current time, venue and booking details.",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Library-English-Conversation-Group",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -394,7 +340,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "grow-it-local-launch-party-2026-10-07-glenorchy",
@@ -406,7 +356,7 @@
     "categories": [
       "Events"
     ],
-    "summary": "October Open Workshop",
+    "summary": "Glenorchy City Council acknowledges the Muwinina people as the traditional owners of this Land. We recognise all Tasmanian Aboriginal people as the original owners and continuing c",
     "eventUrl": "https://www.gcc.tas.gov.au/our-city/events/",
     "sourceUrl": "https://www.gcc.tas.gov.au/our-city/events/",
     "sourceName": "Glenorchy City Council",
@@ -420,7 +370,71 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.gcc.tas.gov.au/our-city/facilities/make-a-booking/",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
+  },
+  {
+    "slug": "seniors-week-online-fitness-classes-2026-10-07-burnie",
+    "name": "Seniors Week - Online Fitness Classes",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-10-07",
+    "endDate": "2026-10-07",
+    "categories": [
+      "Events"
+    ],
+    "summary": "<source srcset=\"/files/content/bafc/v/4/whats-on/performances/2026-live/signor-baffo/baffo-1080x1920-eff.png?dimension",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Seniors-Week-Online-Fitness-Classes",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Seniors Week - Online Fitness Classes event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
+  },
+  {
+    "slug": "the-canopy-burnie-2026-10-07-burnie",
+    "name": "The Canopy Burnie",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-10-07",
+    "endDate": "2026-10-07",
+    "categories": [
+      "Events"
+    ],
+    "summary": "<source media=\"(min-width: 768px)\" srcset=\"/files/content/public/v/1/community/whats-on-events/2026/burnie-library-english-conversation-group/burnie-library-phot",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Canopy",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "The Canopy Burnie event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "burnie-orchid-society-show-2026-10-08-burnie",
@@ -446,7 +460,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "burnie-rostrum-club-2026-10-08-burnie",
@@ -472,7 +490,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "giant-bubble-workshop-kids-9-14-years-2026-10-08-rosny-park",
@@ -499,7 +521,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.ccc.tas.gov.au/living/your-home/no-spray-register/",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "outspace-2026-10-08-devonport",
@@ -509,7 +535,8 @@
     "startDate": "2026-10-08",
     "endDate": "2026-10-08",
     "categories": [
-      "Events"
+      "Events",
+      "Free"
     ],
     "summary": "OUTspace is a social and peer support group for LGBTIQA+ young people, and for young people who are not sure about their gender and/or sexuality. It’s an opportunity to meet, hang out and learn from your community. OUTspace is a confidential group, which means we can’t tell anyon",
     "venue": "Devonport Library",
@@ -526,7 +553,13 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.devonport.tas.gov.au/events/outspace/",
+    "priceFrom": 0,
+    "priceCurrency": "USD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "pinkup-burnie-2026-10-08-burnie",
@@ -552,7 +585,44 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
+  },
+  {
+    "slug": "thursday-night-live-isabella-mahoud-2026-10-08-hobart",
+    "name": "Thursday Night Live: Isabella Mahoud",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-10-08",
+    "endDate": "2026-10-08",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Thursday Night Live: Isabella Mahoud in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Founders Room",
+    "eventUrl": "https://events.humanitix.com/thursday-night-live-isabella-mahoud",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Thursday Night Live: Isabella Mahoud event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://events.humanitix.com/thursday-night-live-isabella-mahoud",
+    "ticketProvider": "Humanitix",
+    "priceCurrency": "AUD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "world-sight-day-community-eye-health-event-2026-10-08-devonport",
@@ -580,7 +650,13 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.devonport.tas.gov.au/events/world-sight-day-community-eye-health-event/",
+    "priceFrom": 0,
+    "priceCurrency": "USD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "youth-eoi-open-tin-camp-at-rosny-farm-2026-10-08-rosny-park",
@@ -606,7 +682,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.ccc.tas.gov.au/living/your-home/no-spray-register/",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "helping-hobart-help-wildlife-2026-10-09-hobart",
@@ -632,7 +712,46 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.eventbrite.com/e/helping-hobart-help-wildlife-tickets-1999240390827",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
+  },
+  {
+    "slug": "pickleball-school-holiday-sessions-2026-10-09-devonport",
+    "name": "Pickleball School Holiday Sessions",
+    "town": "Devonport",
+    "region": "North West",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-16",
+    "categories": [
+      "Events",
+      "Family",
+      "Free"
+    ],
+    "summary": "Pickleball Living Well Devonport Program Dates: Friday 9 October and Friday 16 October 2026 Time: 12:00pm - 2:00pm Location: Stadium, East Devonport Recreation Centre Age: All ages Pickleball is one of the fastest-growing sports in Australia and is suitable for all ages and skill",
+    "venue": "East Devonport Recreation and Function Centre",
+    "eventUrl": "https://www.devonport.tas.gov.au/events/pickleball-school-holiday-sessions/",
+    "sourceUrl": "https://www.devonport.tas.gov.au/whats-on-devonport/",
+    "sourceName": "Devonport City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Pickleball School Holiday Sessions event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.devonport.tas.gov.au/events/pickleball-school-holiday-sessions/",
+    "priceFrom": 0,
+    "priceCurrency": "USD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "professional-headshots-for-performers-2026-10-09-rosny-park",
@@ -658,7 +777,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.ccc.tas.gov.au/living/your-home/no-spray-register/",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "r-u-ok-community-breakfast-2026-10-09-devonport",
@@ -668,7 +791,8 @@
     "startDate": "2026-10-09",
     "endDate": "2026-10-09",
     "categories": [
-      "Events"
+      "Events",
+      "Free"
     ],
     "summary": "R U OK? Devonport Community Breakfast Join the Man Walk Devonport for a community breakfast and an opportunity to learn more about how a simple conversation can make a difference. 📅 Friday, 9 October 2026 ⏰ 8:00am - 10:00am 📍 Devonport Bluff Drop in for breakfast, helpful resou",
     "venue": "The Bluff",
@@ -685,7 +809,13 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.devonport.tas.gov.au/events/r-u-ok-community-breakfast/",
+    "priceFrom": 0,
+    "priceCurrency": "USD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "queen-victoria-community-market-2026-10-10-rosny-park",
@@ -712,7 +842,79 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.ccc.tas.gov.au/living/your-home/no-spray-register/",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
+  },
+  {
+    "slug": "spicymusic-clubnacht-w-double-pulse-laura-king-x-sammy-la-marca-naarm-melb-2026-10-10-laun",
+    "name": "SPICYMUSIC Clubnacht w/ DOUBLE PULSE [LAURA KING x SAMMY LA MARCA - Naarm/Melb]",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-10-10",
+    "endDate": "2026-10-10",
+    "categories": [
+      "Events",
+      "Music"
+    ],
+    "summary": "SPICYMUSIC Clubnacht w/ DOUBLE PULSE [LAURA KING x SAMMY LA MARCA - Naarm/Melb] in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "The Royal Oak Hotel",
+    "eventUrl": "https://events.humanitix.com/spicymusic-clubnacht-w-double-pulse-laura-king-x-sammy-la-marca-naarm-melb",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "SPICYMUSIC Clubnacht w/ DOUBLE PULSE [LAURA KING x SAMMY LA MARCA - Naarm/Melb] event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://events.humanitix.com/spicymusic-clubnacht-w-double-pulse-laura-king-x-sammy-la-marca-naarm-melb",
+    "ticketProvider": "Humanitix",
+    "priceCurrency": "AUD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
+  },
+  {
+    "slug": "tasmanian-fashion-festival-2026-2026-10-10-hobart",
+    "name": "Tasmanian Fashion Festival - 2026",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-10-10",
+    "endDate": "2026-10-11",
+    "categories": [
+      "Events",
+      "Music"
+    ],
+    "summary": "Tasmanian Fashion Festival - 2026 in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Princes Wharf No. 1",
+    "eventUrl": "https://events.humanitix.com/tasmanian-fashion-festival-2026",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Tasmanian Fashion Festival - 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://events.humanitix.com/tasmanian-fashion-festival-2026",
+    "ticketProvider": "Humanitix",
+    "priceCurrency": "AUD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "the-shape-of-time-and-the-humble-spoon-2026-10-10-rosny-park",
@@ -738,7 +940,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.ccc.tas.gov.au/living/your-home/no-spray-register/",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "tune-up-2-concert-2026-10-11-hobart",
@@ -764,7 +970,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.hobartcity.com.au/Environment-and-Sustainability/Weeds-and-vegetation/No-Spray-Register",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "cores-self-care-and-mental-wellbeing-workshop-2026-10-12-burnie",
@@ -790,7 +1000,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://events.humanitix.com/host/kentish-regional-clinic",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "cores-suicide-prevention-training-2026-10-12-burnie",
@@ -816,7 +1030,44 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://events.humanitix.com/host/kentish-regional-clinic",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
+  },
+  {
+    "slug": "no-lights-no-lycra-hobart-2026-2026-10-12-hobart",
+    "name": "No Lights No Lycra Hobart 2026",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-10-12",
+    "endDate": "2026-10-12",
+    "categories": [
+      "Events"
+    ],
+    "summary": "No Lights No Lycra Hobart 2026 in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Hobart North Uniting Church",
+    "eventUrl": "https://events.humanitix.com/no-lights-no-lycra-hobart-2026",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "No Lights No Lycra Hobart 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://events.humanitix.com/no-lights-no-lycra-hobart-2026",
+    "ticketProvider": "Humanitix",
+    "priceCurrency": "AUD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "giant-bubble-workshop-kids-5-8-years-2026-10-13-rosny-park",
@@ -843,7 +1094,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.ccc.tas.gov.au/living/your-home/no-spray-register/",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "roller-skating-school-holiday-program-2026-10-13-devonport",
@@ -854,7 +1109,8 @@
     "endDate": "2026-10-13",
     "categories": [
       "Events",
-      "Family"
+      "Family",
+      "Free"
     ],
     "summary": "Roller Skating Living Well Devonport Program Dates: Tuesday 6 October and Tuesday 13 October 2026 Time: 4:00pm – 5:00pm Location: Stadium, East Devonport Recreation Centre Age: All ages Learn the basics of roller skating",
     "eventUrl": "https://www.devonport.tas.gov.au/events/roller-skating-school-holiday-program/",
@@ -870,7 +1126,13 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.devonport.tas.gov.au/events/roller-skating-school-holiday-program/",
+    "priceFrom": 0,
+    "priceCurrency": "USD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "understanding-mental-wellbeing-for-effective-communication-2026-10-13-burnie",
@@ -896,7 +1158,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "50-years-ratepayers-luncheon-2026-10-14-devonport",
@@ -906,7 +1172,8 @@
     "startDate": "2026-10-14",
     "endDate": "2026-10-14",
     "categories": [
-      "Events"
+      "Events",
+      "Free"
     ],
     "summary": "Calling All Long-Time Devonport Locals Have you been paying rates in Devonport for 50 years or more? It’s time to celebrate YOU! As part of Seniors week 2026 you're invited to a very special 50+ Years Ratepayers Luncheon to honour your incredible contribution to our community. 📅",
     "venue": "paranaple centre",
@@ -923,7 +1190,13 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.devonport.tas.gov.au/events/50-years-ratepayers-luncheon/",
+    "priceFrom": 0,
+    "priceCurrency": "USD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "community-conversations-sport-and-recreational-organisations-2026-10-14-launceston",
@@ -950,7 +1223,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.eventbrite.com.au/signin/signup?referrer=%2Fmytickets",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "little-food-festival-2026-10-14-launceston",
@@ -976,7 +1253,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.launceston.tas.gov.au/Council-Region/Legislation-and-Policy/Delegations-Register",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "walk-with-us-2026-10-15-hobart",
@@ -1002,7 +1283,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://events.humanitix.com/walk-with-us-celebrating-international-white-cane-day-city-access-walk-and-panel-discussion",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "cutting-with-courage-2026-10-16-burnie",
@@ -1028,7 +1313,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://events.humanitix.com/cutting-with-courage-kb4qw2v9",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "emu-valley-rhododendron-garden-party-2026-10-17-burnie",
@@ -1040,7 +1329,7 @@
     "categories": [
       "Events"
     ],
-    "summary": "<img class=\"la",
+    "summary": "<source srcset=\"/files/assets/public/v/2/images/events/disc-golf/disc-golf-cob-open.jpeg?dimension=homepagelistin",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Emu-Valley-Rhododendron-Garden-Spring-Festival",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -1054,7 +1343,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "for-visit-the-event-on-rosny-farm-2026-10-17-rosny-park",
@@ -1080,7 +1373,44 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.ccc.tas.gov.au/living/your-home/no-spray-register/",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
+  },
+  {
+    "slug": "hola-margarita-launceston-tas-2026-10-17-launceston",
+    "name": "Hola Margarita! | Launceston (TAS)",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-10-17",
+    "endDate": "2026-10-17",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Hola Margarita! | Launceston (TAS) in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "Launceston",
+    "eventUrl": "https://events.humanitix.com/hmlaunceston2026",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Hola Margarita! | Launceston (TAS) event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://events.humanitix.com/hmlaunceston2026",
+    "ticketProvider": "Humanitix",
+    "priceCurrency": "AUD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "makerx-2026-10-17-burnie",
@@ -1106,7 +1436,45 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://events.humanitix.com/makerx-2026",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
+  },
+  {
+    "slug": "adam-sharp-an-idiom-abroad-free-event-2026-10-18-launceston",
+    "name": "Adam Sharp - An Idiom Abroad - FREE EVENT",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-10-18",
+    "endDate": "2026-10-18",
+    "categories": [
+      "Events",
+      "Free"
+    ],
+    "summary": "Adam Sharp - An Idiom Abroad - FREE EVENT in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "River's Edge",
+    "eventUrl": "https://events.humanitix.com/adam-sharp-an-idiom-abroad",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Adam Sharp - An Idiom Abroad - FREE EVENT event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://events.humanitix.com/adam-sharp-an-idiom-abroad",
+    "ticketProvider": "Humanitix",
+    "priceCurrency": "AUD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "community-bake-days-2026-10-18-hobart",
@@ -1132,7 +1500,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.hobartcity.com.au/Environment-and-Sustainability/Weeds-and-vegetation/No-Spray-Register",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "building-stronger-families-2026-10-19-burnie",
@@ -1158,7 +1530,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "burnie-ten-2026-10-21-burnie",
@@ -1184,7 +1560,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "intro-to-computing-at-burnie-library-2026-10-21-burnie",
@@ -1210,7 +1590,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.eventbrite.com/o/7778560423",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "acotar-6-midnight-release-event-2026-10-25-burnie",
@@ -1236,7 +1620,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "archery-come-n-try-2026-10-25-burnie",
@@ -1262,7 +1650,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "spring-fling-2026-10-25-devonport",
@@ -1291,7 +1683,13 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.devonport.tas.gov.au/events/spring-fling/",
+    "priceFrom": 0,
+    "priceCurrency": "USD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "in-conversation-with-monica-mcinerney-2026-10-26-burnie",
@@ -1318,7 +1716,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "jack-jumper-and-jewels-school-holiday-clinics-2026-10-26-rosny-park",
@@ -1345,7 +1747,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.ccc.tas.gov.au/living/your-home/no-spray-register/",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "second-glance-market-2026-10-27-burnie",
@@ -1372,7 +1778,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "free-household-chemical-disposal-2026-10-31-burnie",
@@ -1399,7 +1809,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "halloween-2026-10-31-burnie",
@@ -1425,7 +1839,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.burnie.tas.gov.au/Living/Pets/Register-your-dog",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "east-devonport-jobs-forum-2026-2026-11-05-devonport",
@@ -1453,7 +1871,13 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.devonport.tas.gov.au/events/east-devonport-jobs-forum-2/",
+    "priceFrom": 0,
+    "priceCurrency": "USD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "home-composting-workshop-2026-11-08-hobart",
@@ -1479,7 +1903,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.hobartcity.com.au/Environment-and-Sustainability/Weeds-and-vegetation/No-Spray-Register",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "city-of-hobart-floral-shows-2026-11-13-hobart",
@@ -1505,7 +1933,77 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.hobartcity.com.au/Environment-and-Sustainability/Weeds-and-vegetation/No-Spray-Register",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
+  },
+  {
+    "slug": "hobart-showcase-2026-2026-11-30-hobart",
+    "name": "Hobart Showcase 2026",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-30",
+    "endDate": "2026-11-30",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Hobart Showcase 2026 in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Village Cinemas Hobart",
+    "eventUrl": "https://events.humanitix.com/hobart-showcase-2026",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Hobart Showcase 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://events.humanitix.com/hobart-showcase-2026",
+    "ticketProvider": "Humanitix",
+    "priceCurrency": "AUD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
+  },
+  {
+    "slug": "launceston-showcase-2026-2026-12-01-launceston",
+    "name": "Launceston Showcase 2026",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-12-01",
+    "endDate": "2026-12-01",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Launceston Showcase 2026 in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "Village Cinemas Launceston",
+    "eventUrl": "https://events.humanitix.com/launceston-showcase-2026",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Launceston Showcase 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://events.humanitix.com/launceston-showcase-2026",
+    "ticketProvider": "Humanitix",
+    "priceCurrency": "AUD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "come-and-try-disability-golf-2026-12-03-rosny-park",
@@ -1532,7 +2030,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://events.humanitix.com/come-and-try-golf-for-the-disabled-golf-park-hobart-tas",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "santa-s-street-spectacular-2026-2026-12-06-devonport",
@@ -1542,7 +2044,8 @@
     "startDate": "2026-12-06",
     "endDate": "2026-12-06",
     "categories": [
-      "Events"
+      "Events",
+      "Free"
     ],
     "summary": "Christmas is coming to Devonport, and we're bringing together three festive favourites for one unforgettable community celebration. Join us on Sunday 6 December 2026 as the city comes alive with the Devonport Christmas Parade, Christmas Street Party and Christmas Carols. Enjoy an",
     "eventUrl": "https://www.devonport.tas.gov.au/events/santas-street-spectacular-2026/",
@@ -1558,7 +2061,13 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.devonport.tas.gov.au/events/santas-street-spectacular-2026/",
+    "priceFrom": 0,
+    "priceCurrency": "USD",
+    "availability": "InStock",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "hobart-respects-all-a-community-celebration-on-human-rights-day-2026-12-10-hobart",
@@ -1584,7 +2093,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.hobartcity.com.au/Environment-and-Sustainability/Weeds-and-vegetation/No-Spray-Register",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "carols-by-candlelight-2026-12-19-glenorchy",
@@ -1611,7 +2124,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.gcc.tas.gov.au/our-city/facilities/make-a-booking/",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "variety-kids-carols-2026-12-19-glenorchy",
@@ -1638,7 +2155,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.gcc.tas.gov.au/our-city/facilities/make-a-booking/",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   },
   {
     "slug": "henna-for-beginners-2027-01-14-rosny-park",
@@ -1664,6 +2185,10 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-05"
+    "lastChecked": "2026-10-06",
+    "ticketUrl": "https://www.ccc.tas.gov.au/living/your-home/no-spray-register/",
+    "ticketProvider": "Booking link",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-06"
   }
 ]
