@@ -17,14 +17,15 @@ function hobartDate(date = new Date()) {
   const get = (type) => parts.find((part) => part.type === type)?.value;
   return `${get('year')}-${get('month')}-${get('day')}`;
 }
-function validateImage(item, label) {
-  if (!item.image || typeof item.image !== 'object') { problems.push(`${label}: missing image object`); return; }
-  if (!item.image.url || !(item.image.url.startsWith('/') || validHttpUrl(item.image.url))) problems.push(`${label}: invalid image URL`);
-  if (!item.image.alt) problems.push(`${label}: missing image alt text`);
-  if (!item.image.attribution) problems.push(`${label}: missing image attribution`);
-  if (!item.image.license) problems.push(`${label}: missing image licence/provenance`);
-  if (item.image.sourceUrl && !validHttpUrl(item.image.sourceUrl)) problems.push(`${label}: invalid image sourceUrl`);
+function validateImageObject(image, label) {
+  if (!image || typeof image !== 'object') { problems.push(`${label}: missing image object`); return; }
+  if (!image.url || !(image.url.startsWith('/') || validHttpUrl(image.url))) problems.push(`${label}: invalid image URL`);
+  if (!image.alt) problems.push(`${label}: missing image alt text`);
+  if (!image.attribution) problems.push(`${label}: missing image attribution`);
+  if (!image.license) problems.push(`${label}: missing image licence/provenance`);
+  if (image.sourceUrl && !validHttpUrl(image.sourceUrl)) problems.push(`${label}: invalid image sourceUrl`);
 }
+function validateImage(item, label) { validateImageObject(item.image, label); }
 
 const requiredPlaceFields = ['slug', 'name', 'town', 'region', 'latitude', 'longitude', 'categories', 'summary', 'sourceUrl', 'status', 'lastChecked'];
 for (const [index, place] of places.entries()) {
@@ -43,7 +44,27 @@ for (const [index, place] of places.entries()) {
   if (place.qualityTier !== undefined && !['featured','strong','standard','low'].includes(place.qualityTier)) problems.push(`${label}: invalid qualityTier`);
   if (place.walk?.grade !== undefined && place.walk.grade !== null && (!Number.isInteger(place.walk.grade) || place.walk.grade < 1 || place.walk.grade > 5)) problems.push(`${label}: walk grade must be 1-5`);
   if (place.officialSource?.url && !validHttpUrl(place.officialSource.url)) problems.push(`${label}: invalid officialSource URL`);
+  if (place.schedule !== undefined) {
+    if (!place.schedule || typeof place.schedule !== 'object' || !place.schedule.summary) problems.push(`${label}: schedule must include a summary`);
+    if (place.schedule?.frequency && !['daily', 'weekly', 'monthly', 'seasonal', 'irregular'].includes(place.schedule.frequency)) problems.push(`${label}: invalid schedule frequency`);
+    if (place.schedule?.daysOfWeek && (!Array.isArray(place.schedule.daysOfWeek) || place.schedule.daysOfWeek.some((day) => !['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'].includes(day)))) problems.push(`${label}: invalid schedule daysOfWeek`);
+    if (place.schedule?.startTime && !/^\d{2}:\d{2}$/.test(place.schedule.startTime)) problems.push(`${label}: invalid schedule startTime`);
+    if (place.schedule?.endTime && !/^\d{2}:\d{2}$/.test(place.schedule.endTime)) problems.push(`${label}: invalid schedule endTime`);
+    if (place.schedule?.sourceUrl && !validHttpUrl(place.schedule.sourceUrl)) problems.push(`${label}: invalid schedule sourceUrl`);
+  }
   validateImage(place, label);
+  if (place.gallery !== undefined) {
+    if (!Array.isArray(place.gallery)) problems.push(`${label}: gallery must be an array`);
+    else {
+      const seen = new Set();
+      for (const [galleryIndex, image] of place.gallery.entries()) {
+        validateImageObject(image, `${label} gallery #${galleryIndex + 1}`);
+        const key = image?.sourceUrl || image?.url;
+        if (key && seen.has(key)) problems.push(`${label}: duplicate gallery image ${key}`);
+        if (key) seen.add(key);
+      }
+    }
+  }
 }
 
 const today = hobartDate();
@@ -68,5 +89,5 @@ if (problems.length) {
   problems.forEach((problem) => console.error(`- ${problem}`));
   process.exit(1);
 }
-const publicPlaces=places.filter((p)=>p.status==='active'&&p.visibility!=='suppressed').length;
+const publicPlaces = places.filter((place) => place.status === 'active' && place.visibility !== 'suppressed').length;
 console.log(`Validated ${places.length} places (${publicPlaces} public) and ${events.length} active events.`);
