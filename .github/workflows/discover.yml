@@ -10,6 +10,7 @@ on:
       - 'scripts/enrich-official-pages.mjs'
       - 'scripts/sanitize-events.mjs'
       - 'scripts/enrich-event-tickets.mjs'
+      - 'scripts/sanitize-ticket-data.mjs'
       - 'scripts/prune-expired-events.mjs'
       - 'scripts/rank-catalogue.mjs'
       - 'scripts/enrich-images.mjs'
@@ -62,6 +63,8 @@ jobs:
         run: node scripts/sanitize-events.mjs
       - name: Enrich event-specific tickets prices and availability
         run: node scripts/enrich-event-tickets.mjs
+      - name: Enforce verified ticket URLs and Australian pricing
+        run: node scripts/sanitize-ticket-data.mjs
       - name: Prune expired events
         run: node scripts/prune-expired-events.mjs
       - name: Audit external websites
