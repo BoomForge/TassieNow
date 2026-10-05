@@ -8,14 +8,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <p class="hero-copy">TassieNow is built around high-intent local discovery: where to go, what to do, what’s on and what’s nearby. Advertising placements are clearly labelled and scheduled for specific campaigns.</p>
 
     <div class="advertise-grid">
-      <article class="info-card"><h2>Homepage top</h2><p>High-visibility banner shown near the main discovery entry point.</p></article>
-      <article class="info-card"><h2>Homepage inline</h2><p>Placed inside the discovery experience without disguising advertising as a listing.</p></article>
-      <article class="info-card"><h2>Site footer</h2><p>Broad site-wide exposure across place, event, town and region pages.</p></article>
+      <article class="info-card featured-card"><p class="placement-label">Highest visibility</p><h2>Homepage top</h2><p>High-visibility banner shown near the main discovery entry point.</p><div class="price-row"><span><strong>$50</strong><small>7 days</small></span><span><strong>$149</strong><small>30 days</small></span></div></article>
+      <article class="info-card"><h2>Homepage inline</h2><p>Placed inside the discovery experience without disguising advertising as a listing.</p><div class="price-row"><span><strong>$35</strong><small>7 days</small></span><span><strong>$99</strong><small>30 days</small></span></div></article>
+      <article class="info-card"><h2>Site footer</h2><p>Broad site-wide exposure across place, event, town and region pages.</p><div class="price-row"><span><strong>$20</strong><small>7 days</small></span><span><strong>$49</strong><small>30 days</small></span></div></article>
+    </div>
+
+    <div class="rate-note">
+      <strong>Launch pricing in AUD.</strong> Founding advertisers who continue renewing can retain these launch rates for 12 months from their first paid campaign. GST is added only if applicable.
+    </div>
+
+    <div class="payment-note">
+      <div><p class="eyebrow">Payment</p><h2>PayPal transfer</h2></div>
+      <p>PayPal transfer is TassieNow’s primary payment option for now. No payment is taken when you submit an enquiry. Once your campaign is approved, payment details are provided directly before the advertisement is scheduled.</p>
     </div>
 
     <section class="form-panel">
       <h2>Advertising enquiry</h2>
-      <p>Tell us about your business, preferred placement and campaign dates. This form sends your enquiry directly into the TassieNow owner dashboard.</p>
+      <p>Choose a package, tell us what you want to promote, and pick a preferred start date. Your enquiry goes directly into the TassieNow owner dashboard.</p>
       <form id="advertise-form">
         <div class="form-grid">
           <label>Your name<input name="name" required maxlength="120" /></label>
@@ -23,9 +32,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <label>Email<input name="email" type="email" required maxlength="180" /></label>
           <label>Phone (optional)<input name="phone" maxlength="80" /></label>
           <label>Website (optional)<input name="website" type="url" placeholder="https://" /></label>
-          <label>Preferred placement<select name="placement"><option value="">Not sure yet</option><option value="homepage-top">Homepage top</option><option value="homepage-inline">Homepage inline</option><option value="site-footer">Site footer</option></select></label>
+          <label>Advertising package<select name="package_code" required><option value="">Choose a package…</option><optgroup label="Homepage top"><option value="homepage-top-7">Homepage top · 7 days · $50 AUD</option><option value="homepage-top-30">Homepage top · 30 days · $149 AUD</option></optgroup><optgroup label="Homepage inline"><option value="homepage-inline-7">Homepage inline · 7 days · $35 AUD</option><option value="homepage-inline-30">Homepage inline · 30 days · $99 AUD</option></optgroup><optgroup label="Site footer"><option value="site-footer-7">Site footer · 7 days · $20 AUD</option><option value="site-footer-30">Site footer · 30 days · $49 AUD</option></optgroup></select></label>
           <label>Preferred start date<input name="desired_start" type="date" /></label>
-          <label>Preferred end date<input name="desired_end" type="date" /></label>
+          <label>Payment method<input value="PayPal transfer" disabled /><small>Payment details are sent after campaign approval.</small></label>
         </div>
         <label class="full-field">What would you like to promote?<textarea name="message" required rows="6" maxlength="2500"></textarea></label>
         <label class="honeypot" aria-hidden="true">Company URL<input name="company_url" tabindex="-1" autocomplete="off" /></label>
@@ -44,11 +53,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         const response = await fetch('/api/advertise', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(data) });
         const result = await response.json();
         if (!response.ok) throw new Error(result.error || 'Could not send enquiry');
-        form.reset(); status.textContent = 'Thanks — your enquiry has been sent.';
+        form.reset(); status.textContent = `Thanks — your ${result.package?.durationDays || ''}-day advertising enquiry has been sent. No payment has been taken.`;
       } catch (error) { status.textContent = error.message || 'Could not send enquiry. Please try again.'; }
     });
   </script>
   <style>
-    .advertise-page{padding:3rem 1.25rem 5rem}.advertise-page h1{max-width:820px}.advertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2rem 0}.info-card,.form-panel{background:#fff;border:1px solid #dce5e7;border-radius:18px;padding:1.25rem;box-shadow:0 10px 30px rgba(6,45,50,.05)}.info-card h2{font-size:1.1rem;margin-top:0}.form-panel{max-width:900px}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.form-panel label{display:grid;gap:.4rem;font-weight:700;color:#173f43}.form-panel input,.form-panel select,.form-panel textarea{width:100%;box-sizing:border-box;border:1px solid #bccdce;border-radius:10px;padding:.8rem;font:inherit;background:#fff}.full-field{margin-top:1rem}.form-actions{display:flex;gap:1rem;align-items:center;margin-top:1rem}.honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}@media(max-width:760px){.advertise-grid,.form-grid{grid-template-columns:1fr}}
+    .advertise-page{padding:3rem 1.25rem 5rem}.advertise-page h1{max-width:820px}.advertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2rem 0}.info-card,.form-panel,.rate-note,.payment-note{background:#fff;border:1px solid #dce5e7;border-radius:18px;padding:1.25rem;box-shadow:0 10px 30px rgba(6,45,50,.05)}.info-card h2{font-size:1.1rem;margin:.15rem 0}.featured-card{border-color:#7bb9bd}.placement-label{margin:0;color:#027B87;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em}.price-row{display:flex;gap:.75rem;margin-top:1rem}.price-row span{display:grid;flex:1;background:#f1f7f7;border-radius:12px;padding:.7rem}.price-row strong{font-size:1.45rem;color:#0b5056}.price-row small{color:#66787a}.rate-note{margin:-.5rem 0 1rem;background:#f7fbfb}.payment-note{display:grid;grid-template-columns:minmax(180px,.4fr) 1fr;gap:1.5rem;align-items:center;margin:1rem 0 2rem}.payment-note h2{margin:.15rem 0}.payment-note p{margin:0}.form-panel{max-width:900px}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.form-panel label{display:grid;gap:.4rem;font-weight:700;color:#173f43}.form-panel label small{font-weight:400;color:#66787a}.form-panel input,.form-panel select,.form-panel textarea{width:100%;box-sizing:border-box;border:1px solid #bccdce;border-radius:10px;padding:.8rem;font:inherit;background:#fff}.form-panel input:disabled{background:#f3f7f7;color:#536568}.full-field{margin-top:1rem}.form-actions{display:flex;gap:1rem;align-items:center;margin-top:1rem}.honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}@media(max-width:760px){.advertise-grid,.form-grid,.payment-note{grid-template-columns:1fr}}
   </style>
 </BaseLayout>
