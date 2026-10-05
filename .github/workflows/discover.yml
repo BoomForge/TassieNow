@@ -8,7 +8,9 @@ on:
       - 'scripts/merge-previous-catalogue.mjs'
       - 'scripts/enrich-details.mjs'
       - 'scripts/enrich-official-pages.mjs'
+      - 'scripts/sanitize-events.mjs'
       - 'scripts/enrich-event-tickets.mjs'
+      - 'scripts/sanitize-ticket-data.mjs'
       - 'scripts/prune-expired-events.mjs'
       - 'scripts/rank-catalogue.mjs'
       - 'scripts/enrich-images.mjs'
@@ -35,6 +37,9 @@ jobs:
     timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -54,8 +59,12 @@ jobs:
         run: node scripts/discover/events.mjs
       - name: Discover tourism and ticket-marketplace events
         run: node scripts/discover/public-events.mjs
-      - name: Enrich event tickets prices and availability
+      - name: Sanitize discovered events
+        run: node scripts/sanitize-events.mjs
+      - name: Enrich event-specific tickets prices and availability
         run: node scripts/enrich-event-tickets.mjs
+      - name: Enforce verified ticket URLs and Australian pricing
+        run: node scripts/sanitize-ticket-data.mjs
       - name: Prune expired events
         run: node scripts/prune-expired-events.mjs
       - name: Audit external websites
@@ -90,4 +99,4 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add src/data/places.json src/data/events.json src/data/parks-walks.json src/data/catalogue-audit.json
           git commit -m "data: refresh multi-source Tasmanian discovery catalogue"
-          git push
+          git push origin HEAD:main

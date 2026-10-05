@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 
 const FILE = new URL('../src/data/events.json', import.meta.url);
-const USER_AGENT = 'TassieNow/1.2 (+https://tassienow.pages.dev)';
+const USER_AGENT = 'TassieNow/1.3 (+https://tassienow.pages.dev)';
 const MAX_FETCH = 120;
 const PROVIDERS = [
   ['Humanitix', /(^|\.)humanitix\.com$/i],
@@ -9,43 +9,169 @@ const PROVIDERS = [
   ['Ticketmaster', /(^|\.)ticketmaster\.(?:com|com\.au)$/i],
   ['TryBooking', /(^|\.)trybooking\.com$/i],
   ['Moshtix', /(^|\.)moshtix\.com\.au$/i],
-  ['Ticketek', /(^|\.)ticketek\.com\.au$/i]
+  ['Ticketek', /(^|\.)ticketek\.com\.au$/i],
+  ['Rezdy', /(^|\.)rezdy\.com$/i]
 ];
-function tasDate(date = new Date()) { const p=new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date); const g=(t)=>p.find((x)=>x.type===t)?.value; return `${g('year')}-${g('month')}-${g('day')}`; }
-const TODAY=tasDate();
-const clean=(v='')=>String(v).replace(/<[^>]*>/g,' ').replace(/&nbsp;|&#160;/gi,' ').replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replace(/&#39;|&apos;|&#x27;/gi,"'").replace(/\s+/g,' ').trim();
+const TICKET_FIELDS = ['ticketUrl','ticketProvider','priceFrom','priceTo','priceCurrency','availability','bookingRequired','ticketLastChecked'];
+const EXACT_BOOKING_TEXT = /^(?:tickets?|book(?: now| here| online)?|book tickets?|buy tickets?|get tickets?|find tickets?|purchase tickets?|register(?: now| here)?|registrations?|rsvp(?: now)?|reserve(?: now)?|make a booking)$/i;
+const BAD_BOOKING_TEXT = /\b(?:dog|pet|animal|rates|parking|bin|waste|library card|membership|venue hire|facility hire|planning|permit|licen[cs]e)\b/i;
+
+function tasDate(date = new Date()) {
+  const parts = new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date);
+  const get = (type) => parts.find((part) => part.type === type)?.value;
+  return `${get('year')}-${get('month')}-${get('day')}`;
+}
+const TODAY = tasDate();
+const clean = (value='') => String(value)
+  .replace(/<[^>]*>/g,' ')
+  .replace(/&nbsp;|&#160;/gi,' ')
+  .replace(/&amp;/gi,'&')
+  .replace(/&quot;/gi,'"')
+  .replace(/&#39;|&apos;|&#x27;/gi,"'")
+  .replace(/\s+/g,' ')
+  .trim();
 function validUrl(value){try{const u=new URL(value);return['http:','https:'].includes(u.protocol)?u.href:null;}catch{return null;}}
-function providerFromUrl(value=''){try{const host=new URL(value).hostname.replace(/^www\./,'');for(const[name,re]of PROVIDERS)if(re.test(host))return name;return null;}catch{return null;}}
-function flatten(value,out=[]){if(!value)return out;if(Array.isArray(value)){value.forEach((x)=>flatten(x,out));return out;}if(typeof value!=='object')return out;const types=Array.isArray(value['@type'])?value['@type']:[value['@type']];if(types.includes('Event'))out.push(value);for(const child of Object.values(value))if(child&&typeof child==='object')flatten(child,out);return out;}
-function jsonld(html){const out=[];for(const match of html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)){try{flatten(JSON.parse(match[1].trim()),out);}catch{}}return out;}
-function offerData(item){const offers=Array.isArray(item?.offers)?item.offers:item?.offers?[item.offers]:[];for(const offer of offers){if(!offer||typeof offer!=='object')continue;const ticketUrl=validUrl(offer.url);const low=Number(offer.lowPrice??offer.price);const high=Number(offer.highPrice);const availability=typeof offer.availability==='string'?offer.availability.split('/').pop():undefined;return{ticketUrl,priceFrom:Number.isFinite(low)?low:undefined,priceTo:Number.isFinite(high)?high:undefined,priceCurrency:offer.priceCurrency?String(offer.priceCurrency).toUpperCase():undefined,availability};}return{};}
-function ticketLinks(html,base){const candidates=[];for(const match of html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)){let href;try{href=new URL(match[1],base).href;}catch{continue;}const text=clean(match[2]);const provider=providerFromUrl(href);const explicit=/\b(?:ticket|tickets|book|booking|register|buy now|buy tickets|get tickets|purchase|find tickets)\b/i.test(text);if(provider||explicit)candidates.push({href,provider,text,score:(provider?5:0)+(explicit?3:0)+(/buy|get|book|find/i.test(text)?1:0)});}return candidates.sort((a,b)=>b.score-a.score);}
-async function fetchPage(url){const response=await fetch(url,{headers:{'user-agent':USER_AGENT,accept:'text/html,*/*;q=.8'},redirect:'follow',signal:AbortSignal.timeout(18000)});if(!response.ok)throw new Error(`${response.status} ${response.statusText}`);return{html:await response.text(),finalUrl:response.url};}
-function mergeOffer(event,offer){if(offer.ticketUrl&&!event.ticketUrl)event.ticketUrl=offer.ticketUrl;if(offer.priceFrom!==undefined)event.priceFrom=offer.priceFrom;if(offer.priceTo!==undefined)event.priceTo=offer.priceTo;if(offer.priceCurrency)event.priceCurrency=String(offer.priceCurrency).toUpperCase();if(offer.availability)event.availability=offer.availability;if(event.priceFrom===0)event.categories=[...new Set([...(event.categories||[]),'Free'])];}
+function providerFromUrl(value=''){
+  try{
+    const host = new URL(value).hostname.replace(/^www\./,'');
+    for(const [name,re] of PROVIDERS) if(re.test(host)) return name;
+    return null;
+  }catch{return null;}
+}
+function isSpecificTicketUrl(value=''){
+  const url = validUrl(value); if(!url) return false;
+  const parsed = new URL(url), host = parsed.hostname.replace(/^www\./,''), path = `${parsed.pathname}${parsed.search}`;
+  const provider = providerFromUrl(url);
+  if(!provider) return false;
+  if(provider === 'Humanitix') return host.startsWith('events.') || (!/^\/(?:events\/au--|au\/events(?:\/|$))/i.test(parsed.pathname) && parsed.pathname.length > 2);
+  if(provider === 'Eventbrite') return /\/e\//i.test(parsed.pathname);
+  if(provider === 'Ticketmaster') return /\/event\//i.test(parsed.pathname);
+  if(provider === 'TryBooking') return /\/events\/(?:landing\/)?\d+/i.test(parsed.pathname) || /\/events\/landing\//i.test(parsed.pathname);
+  if(provider === 'Moshtix') return /\/v2\/event\//i.test(parsed.pathname);
+  if(provider === 'Ticketek') return /\/shows\/show\.aspx/i.test(path) || /\beventid=/i.test(path);
+  if(provider === 'Rezdy') return parsed.pathname.length > 4 && /\d/.test(parsed.pathname);
+  return false;
+}
+function sameUrl(a,b){try{const x=new URL(a),y=new URL(b);return x.origin===y.origin&&x.pathname.replace(/\/$/,'')===y.pathname.replace(/\/$/,'');}catch{return false;}}
+function flatten(value,out=[]){
+  if(!value) return out;
+  if(Array.isArray(value)){value.forEach((x)=>flatten(x,out));return out;}
+  if(typeof value!=='object') return out;
+  const types=Array.isArray(value['@type'])?value['@type']:[value['@type']];
+  if(types.includes('Event')) out.push(value);
+  for(const child of Object.values(value)) if(child&&typeof child==='object') flatten(child,out);
+  return out;
+}
+function jsonld(html){
+  const out=[];
+  for(const match of html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)){
+    try{flatten(JSON.parse(match[1].trim()),out);}catch{}
+  }
+  return out;
+}
+function offerData(item,pageUrl){
+  const offers=Array.isArray(item?.offers)?item.offers:item?.offers?[item.offers]:[];
+  for(const offer of offers){
+    if(!offer||typeof offer!=='object') continue;
+    const candidate = validUrl(offer.url) || (isSpecificTicketUrl(pageUrl)?validUrl(pageUrl):null);
+    if(!candidate || !isSpecificTicketUrl(candidate)) continue;
+    const currency = offer.priceCurrency ? String(offer.priceCurrency).toUpperCase() : undefined;
+    // Tasmania-facing sources should be AUD. Reject foreign/default schema prices rather than publishing bad money data.
+    const allowPrice = !currency || currency === 'AUD';
+    const low = allowPrice ? Number(offer.lowPrice ?? offer.price) : Number.NaN;
+    const high = allowPrice ? Number(offer.highPrice) : Number.NaN;
+    const availability = typeof offer.availability==='string' ? offer.availability.split('/').pop() : undefined;
+    return {
+      ticketUrl:candidate,
+      priceFrom:Number.isFinite(low)?low:undefined,
+      priceTo:Number.isFinite(high)?high:undefined,
+      priceCurrency:Number.isFinite(low)||Number.isFinite(high)?(currency||'AUD'):undefined,
+      availability
+    };
+  }
+  return {};
+}
+function ticketLinks(html,base){
+  const candidates=[];
+  for(const match of html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)){
+    let href; try{href=new URL(match[1],base).href;}catch{continue;}
+    if(sameUrl(href,base)) continue;
+    const text=clean(match[2]);
+    if(!text || BAD_BOOKING_TEXT.test(text)) continue;
+    const provider=providerFromUrl(href);
+    if(provider && isSpecificTicketUrl(href)){
+      candidates.push({href,provider,text,score:20 + (EXACT_BOOKING_TEXT.test(text)?5:0)});
+      continue;
+    }
+    // Generic official-site booking links must have concise, explicit booking text and a booking-shaped URL.
+    if(EXACT_BOOKING_TEXT.test(text) && /\b(?:book|booking|ticket|register|registration|rsvp|reserve)\b/i.test(new URL(href).pathname)){
+      candidates.push({href,provider:null,text,score:8});
+    }
+  }
+  return candidates.sort((a,b)=>b.score-a.score);
+}
+async function fetchPage(url){
+  const response=await fetch(url,{headers:{'user-agent':USER_AGENT,accept:'text/html,*/*;q=.8'},redirect:'follow',signal:AbortSignal.timeout(18000)});
+  if(!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+  return {html:await response.text(),finalUrl:response.url};
+}
+function mergeOffer(event,offer){
+  if(offer.ticketUrl && !event.ticketUrl) event.ticketUrl=offer.ticketUrl;
+  if(offer.priceFrom!==undefined) event.priceFrom=offer.priceFrom;
+  if(offer.priceTo!==undefined) event.priceTo=offer.priceTo;
+  if(offer.priceCurrency) event.priceCurrency=String(offer.priceCurrency).toUpperCase();
+  if(offer.availability) event.availability=offer.availability;
+  if(event.priceFrom===0) event.categories=[...new Set([...(event.categories||[]),'Free'])];
+}
+function clearTicketData(event){for(const key of TICKET_FIELDS) delete event[key];}
 
 const events=JSON.parse(await fs.readFile(FILE,'utf8'));
-let fetched=0,changed=0;
+let fetched=0,changed=0,preservedDirect=0,rejectedStale=0;
 for(const event of events){
-  if(event.status!=='active'||event.endDate<TODAY)continue;
-  const directProvider=providerFromUrl(event.ticketUrl||event.eventUrl||'');
-  if(directProvider){event.ticketProvider=event.ticketProvider||directProvider;event.ticketUrl=event.ticketUrl||event.eventUrl;}
-  const stale=!event.ticketLastChecked||event.ticketLastChecked<TODAY;
-  if(!stale||fetched>=MAX_FETCH){if(event.ticketUrl)event.bookingRequired=true;continue;}
-  const pageUrl=validUrl(event.eventUrl||event.sourceUrl);if(!pageUrl)continue;
+  if(event.status!=='active'||event.endDate<TODAY) continue;
+  const before=JSON.stringify(Object.fromEntries(TICKET_FIELDS.map((key)=>[key,event[key]])));
+  const priorTicket=validUrl(event.ticketUrl);
+  const directEventUrl=validUrl(event.eventUrl);
+  const trustedDirect = isSpecificTicketUrl(priorTicket) ? priorTicket : isSpecificTicketUrl(directEventUrl) ? directEventUrl : null;
+  if(priorTicket && !isSpecificTicketUrl(priorTicket)) rejectedStale++;
+  clearTicketData(event);
+  if(trustedDirect){
+    event.ticketUrl=trustedDirect;
+    event.ticketProvider=providerFromUrl(trustedDirect);
+    event.bookingRequired=true;
+    preservedDirect++;
+  }
+  if(fetched>=MAX_FETCH){
+    const after=JSON.stringify(Object.fromEntries(TICKET_FIELDS.map((key)=>[key,event[key]])));
+    if(before!==after) changed++;
+    continue;
+  }
+  const pageUrl=validUrl(event.eventUrl||event.sourceUrl); if(!pageUrl) continue;
   fetched++;
   try{
-    const{html,finalUrl}=await fetchPage(pageUrl);
-    const before=JSON.stringify({ticketUrl:event.ticketUrl,ticketProvider:event.ticketProvider,priceFrom:event.priceFrom,priceTo:event.priceTo,priceCurrency:event.priceCurrency,availability:event.availability});
+    const {html,finalUrl}=await fetchPage(pageUrl);
     const structuredEvents=jsonld(html);
-    const structured=structuredEvents.find((item)=>clean(item.name||'').toLowerCase()===clean(event.name||'').toLowerCase())||structuredEvents[0];
-    if(structured)mergeOffer(event,offerData(structured));
-    if(!event.ticketUrl){const link=ticketLinks(html,finalUrl)[0];if(link){event.ticketUrl=link.href;event.ticketProvider=link.provider||providerFromUrl(link.href)||'Booking link';}}
-    event.ticketProvider=event.ticketProvider||providerFromUrl(event.ticketUrl||'')||undefined;
-    event.bookingRequired=Boolean(event.ticketUrl);
+    const eventName=clean(event.name||'').toLowerCase();
+    const structured=structuredEvents.find((item)=>clean(item.name||'').toLowerCase()===eventName);
+    if(structured) mergeOffer(event,offerData(structured,finalUrl));
+    if(!event.ticketUrl){
+      const link=ticketLinks(html,finalUrl)[0];
+      if(link){
+        event.ticketUrl=link.href;
+        event.ticketProvider=link.provider||'Booking link';
+        event.bookingRequired=true;
+      }
+    }
+    if(event.ticketUrl){
+      event.ticketProvider=event.ticketProvider||providerFromUrl(event.ticketUrl)||'Booking link';
+      event.bookingRequired=true;
+    }
     event.ticketLastChecked=TODAY;
-    const after=JSON.stringify({ticketUrl:event.ticketUrl,ticketProvider:event.ticketProvider,priceFrom:event.priceFrom,priceTo:event.priceTo,priceCurrency:event.priceCurrency,availability:event.availability});
-    if(before!==after)changed++;
-  }catch(error){console.warn(`${event.name}: ticket enrichment skipped (${error.message}).`);}
+  }catch(error){
+    console.warn(`${event.name}: ticket enrichment skipped (${error.message}).`);
+  }
+  const after=JSON.stringify(Object.fromEntries(TICKET_FIELDS.map((key)=>[key,event[key]])));
+  if(before!==after) changed++;
 }
 await fs.writeFile(FILE,`${JSON.stringify(events,null,2)}\n`);
-console.log(`Ticket enrichment: checked ${fetched} event page(s); updated ticket data for ${changed} event(s).`);
+console.log(`Ticket enrichment: checked ${fetched} event page(s); changed ticket data for ${changed} event(s); preserved ${preservedDirect} provider-specific event link(s); rejected ${rejectedStale} stale/generic ticket link(s).`);

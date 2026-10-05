@@ -35,7 +35,9 @@ jobs:
           node --check scripts/merge-previous-catalogue.mjs
           node --check scripts/enrich-details.mjs
           node --check scripts/enrich-official-pages.mjs
+          node --check scripts/sanitize-events.mjs
           node --check scripts/enrich-event-tickets.mjs
+          node --check scripts/sanitize-ticket-data.mjs
           node --check scripts/enrich-images.mjs
           node --check scripts/prune-expired-events.mjs
           node --check scripts/rank-catalogue.mjs
@@ -43,6 +45,10 @@ jobs:
           node --check scripts/automation-heartbeat.mjs
           node --check scripts/indexnow.mjs
           find functions -name '*.js' -print0 | xargs -0 -n1 node --check
+      - name: Sanitize event records in CI workspace
+        run: node scripts/sanitize-events.mjs
+      - name: Enforce verified ticket URLs and Australian pricing
+        run: node scripts/sanitize-ticket-data.mjs
       - name: Prune expired events in CI workspace
         run: node scripts/prune-expired-events.mjs
       - name: Apply catalogue ranking in CI workspace

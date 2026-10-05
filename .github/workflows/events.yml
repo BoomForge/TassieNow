@@ -6,7 +6,9 @@ on:
     paths:
       - 'scripts/discover/events.mjs'
       - 'scripts/discover/public-events.mjs'
+      - 'scripts/sanitize-events.mjs'
       - 'scripts/enrich-event-tickets.mjs'
+      - 'scripts/sanitize-ticket-data.mjs'
       - 'scripts/prune-expired-events.mjs'
       - 'scripts/catalogue-audit.mjs'
       - 'scripts/validate-data.mjs'
@@ -28,6 +30,9 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -37,8 +42,12 @@ jobs:
         run: node scripts/discover/events.mjs
       - name: Refresh tourism and ticket-marketplace events
         run: node scripts/discover/public-events.mjs
-      - name: Enrich tickets prices and availability
+      - name: Sanitize discovered events
+        run: node scripts/sanitize-events.mjs
+      - name: Enrich event-specific tickets prices and availability
         run: node scripts/enrich-event-tickets.mjs
+      - name: Enforce verified ticket URLs and Australian pricing
+        run: node scripts/sanitize-ticket-data.mjs
       - name: Prune expired events
         run: node scripts/prune-expired-events.mjs
       - name: Generate catalogue coverage audit
@@ -58,5 +67,5 @@ jobs:
           git config user.name "TassieNow Bot"
           git config user.email "actions@users.noreply.github.com"
           git add src/data/events.json src/data/catalogue-audit.json
-          git commit -m "data: refresh Tasmanian events and ticket availability"
-          git push
+          git commit -m "data: refresh Tasmanian events and verified booking links"
+          git push origin HEAD:main
