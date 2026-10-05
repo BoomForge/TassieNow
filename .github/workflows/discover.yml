@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/discover/**'
+      - 'scripts/merge-previous-catalogue.mjs'
       - 'scripts/enrich-details.mjs'
       - 'scripts/rank-catalogue.mjs'
       - 'scripts/enrich-images.mjs'
@@ -33,8 +34,12 @@ jobs:
           node-version: '22'
           cache: npm
           cache-dependency-path: package.json
+      - name: Preserve previous catalogue snapshot
+        run: cp src/data/places.json /tmp/tassienow-places-before-discovery.json
       - name: Discover Tasmanian places
         run: node scripts/discover/osm-import.mjs
+      - name: Recover prior listings if source coverage is partial
+        run: node scripts/merge-previous-catalogue.mjs /tmp/tassienow-places-before-discovery.json
       - name: Enrich official Parks Tasmania walks
         run: node scripts/discover/parks-tasmania.mjs
       - name: Discover official council events
