@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: tassienow-catalogue-refresh
+  group: tassienow-data-writes
   cancel-in-progress: false
 
 jobs:
