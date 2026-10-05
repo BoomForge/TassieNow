@@ -6,15 +6,27 @@ export function getStaticPaths() {
   return places.filter((place) => place.status === 'active' && place.visibility !== 'suppressed').map((place) => ({ params: { slug: place.slug }, props: { place } }));
 }
 const { place } = Astro.props;
-const officialUrl = place.officialSource?.url || place.website || place.sourceUrl;
-const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${place.latitude},${place.longitude}`;
+const operatorUrl = place.officialSource?.url || place.website || null;
+const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name} ${place.town || ''} Tasmania`)}`;
+const reviewUrl = place.reviewLinks?.find((item) => item.provider === 'google-maps')?.url || directionsUrl;
+const bookingUrl = place.bookingUrl || null;
+const phoneHref = place.phone ? `tel:${String(place.phone).replace(/[^+\d]/g, '')}` : null;
+const feeText = place.fee === 'no' ? 'Free entry' : place.fee === 'yes' ? 'Entry fee may apply' : place.fee || null;
+const wheelchairText = place.wheelchair === 'yes' ? 'Wheelchair accessible' : place.wheelchair === 'limited' ? 'Limited wheelchair access' : place.wheelchair === 'no' ? 'Not marked wheelchair accessible' : null;
+const prettyHours = (value = '') => String(value)
+  .replace(/\bMo\b/g, 'Mon').replace(/\bTu\b/g, 'Tue').replace(/\bWe\b/g, 'Wed')
+  .replace(/\bTh\b/g, 'Thu').replace(/\bFr\b/g, 'Fri').replace(/\bSa\b/g, 'Sat').replace(/\bSu\b/g, 'Sun')
+  .replace(/;/g, '; ');
 const schema = {
   '@context': 'https://schema.org', '@type': 'TouristAttraction', name: place.name,
   description: place.summary, url: new URL(`/place/${place.slug}/`, Astro.site ?? Astro.url.origin).href,
   image: place.image.url.startsWith('http') ? place.image.url : new URL(place.image.url, Astro.site ?? Astro.url.origin).href,
   geo: { '@type': 'GeoCoordinates', latitude: place.latitude, longitude: place.longitude },
-  address: { '@type': 'PostalAddress', addressLocality: place.town, addressRegion: 'TAS', addressCountry: 'AU' },
-  sameAs: officialUrl ? [officialUrl] : undefined
+  address: { '@type': 'PostalAddress', streetAddress: place.address || undefined, addressLocality: place.town, addressRegion: 'TAS', addressCountry: 'AU' },
+  openingHours: place.openingHours || undefined,
+  telephone: place.phone || undefined,
+  email: place.email || undefined,
+  sameAs: operatorUrl ? [operatorUrl] : undefined
 };
 ---
 <BaseLayout title={`${place.name} | TassieNow`} description={place.summary} image={place.image.url}>
@@ -28,13 +40,40 @@ const schema = {
     </figure>
     <div class="detail-meta">{place.categories.map((category) => <span class="tag">{category}</span>)}</div>
     <p>{place.summary}</p>
+
+    {(place.openingHours || place.phone || place.email || place.address || feeText || wheelchairText || place.operator) && (
+      <section class="visit-card" aria-labelledby="visit-heading">
+        <h2 id="visit-heading">Plan your visit</h2>
+        <div class="visit-grid">
+          {place.openingHours && <div><span>Opening hours</span><strong>{prettyHours(place.openingHours)}</strong></div>}
+          {place.address && <div><span>Address</span><strong>{place.address}</strong></div>}
+          {place.phone && <div><span>Phone</span><strong><a href={phoneHref}>{place.phone}</a></strong></div>}
+          {place.email && <div><span>Email</span><strong><a href={`mailto:${place.email}`}>{place.email}</a></strong></div>}
+          {feeText && <div><span>Entry</span><strong>{feeText}</strong></div>}
+          {wheelchairText && <div><span>Accessibility</span><strong>{wheelchairText}</strong></div>}
+          {place.operator && <div><span>Operator</span><strong>{place.operator}</strong></div>}
+        </div>
+      </section>
+    )}
+
     {place.walk && <p><strong>Walk details:</strong> {place.walk.duration || 'See official listing'}{place.walk.grade ? ` · Grade ${place.walk.grade}` : ''}</p>}
     <div class="action-row">
-      {officialUrl && <a class="action-link" href={officialUrl} target="_blank" rel="noopener noreferrer">Official/source website ↗</a>}
-      <a class="action-link secondary" href={directionsUrl} target="_blank" rel="noopener noreferrer">Directions ↗</a>
+      {operatorUrl && <a class="action-link" href={operatorUrl} target="_blank" rel="noopener noreferrer">Official website ↗</a>}
+      {bookingUrl && <a class="action-link" href={bookingUrl} target="_blank" rel="noopener noreferrer">Bookings ↗</a>}
+      <a class="action-link secondary" href={directionsUrl} target="_blank" rel="noopener noreferrer">Map & directions ↗</a>
+      <a class="action-link secondary" href={reviewUrl} target="_blank" rel="noopener noreferrer">Reviews & visitor photos ↗</a>
     </div>
-    <p class="notice">Opening hours, prices, bookings, walk conditions and access details can change. Confirm current information with the official operator or source before travelling.</p>
-    <p class="source-note">Data source: <a href={place.sourceUrl} target="_blank" rel="noopener noreferrer">source record ↗</a>{place.officialSource?.name ? <> · Official enrichment: <a href={place.officialSource.url} target="_blank" rel="noopener noreferrer">{place.officialSource.name} ↗</a></> : ''} · Last checked <strong>{place.lastChecked}</strong></p>
+
+    <p class="notice">Opening hours, prices, bookings, conditions and access details can change. TassieNow records sourced information where available; confirm time-sensitive details with the operator before travelling.</p>
+    <p class="source-note">
+      Data source: <a href={place.sourceUrl} target="_blank" rel="noopener noreferrer">source record ↗</a>
+      {place.officialSource?.name ? <> · Official enrichment: <a href={place.officialSource.url} target="_blank" rel="noopener noreferrer">{place.officialSource.name} ↗</a></> : ''}
+      {place.lastDetailsChecked ? <> · Details checked <strong>{place.lastDetailsChecked}</strong></> : <> · Last checked <strong>{place.lastChecked}</strong></>}
+    </p>
     <p><a href={`/town/${place.town.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}/`}>More around {place.town} →</a></p>
   </article>
+
+  <style>
+    .visit-card{margin:1.5rem 0;padding:1.2rem;border:1px solid #dce5e7;border-radius:18px;background:#f8fbfb}.visit-card h2{margin:0 0 1rem}.visit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}.visit-grid>div{display:grid;gap:.2rem;padding:.8rem;background:#fff;border:1px solid #e3ebec;border-radius:12px}.visit-grid span{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:#66787a}.visit-grid strong{font-size:.95rem;color:#173f43}.visit-grid a{color:#027B87}.action-row{display:flex;flex-wrap:wrap;gap:.65rem;margin:1.2rem 0}@media(max-width:700px){.visit-grid{grid-template-columns:1fr}}
+  </style>
 </BaseLayout>
