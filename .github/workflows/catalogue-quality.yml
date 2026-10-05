@@ -39,18 +39,22 @@ jobs:
           MAX_IMAGE_ENRICH: '500'
           GALLERY_SIZE: '3'
         run: node scripts/enrich-images.mjs
+      - name: Prune expired events
+        run: node scripts/prune-expired-events.mjs
       - name: Re-rank catalogue using completeness
         run: node scripts/rank-catalogue.mjs
+      - name: Generate catalogue coverage audit
+        run: node scripts/catalogue-audit.mjs
       - name: Validate enriched site
         run: npm run build
       - name: Commit catalogue improvements
         run: |
-          if git diff --quiet -- src/data/places.json; then
+          if git diff --quiet -- src/data/places.json src/data/events.json src/data/catalogue-audit.json; then
             echo "No catalogue quality changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/places.json
+          git add src/data/places.json src/data/events.json src/data/catalogue-audit.json
           git commit -m "chore(data): rich catalogue quality enrichment [skip ci]"
           git push origin HEAD:main

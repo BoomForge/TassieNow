@@ -8,10 +8,14 @@ on:
       - 'scripts/merge-previous-catalogue.mjs'
       - 'scripts/enrich-details.mjs'
       - 'scripts/enrich-official-pages.mjs'
+      - 'scripts/enrich-event-tickets.mjs'
+      - 'scripts/prune-expired-events.mjs'
       - 'scripts/rank-catalogue.mjs'
       - 'scripts/enrich-images.mjs'
       - 'scripts/sanitize-generated.mjs'
       - 'scripts/audit-links.mjs'
+      - 'scripts/catalogue-audit.mjs'
+      - 'scripts/validate-data.mjs'
       - 'src/data/place-overrides.json'
       - '.github/workflows/discover.yml'
   schedule:
@@ -28,7 +32,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -38,14 +42,22 @@ jobs:
           cache-dependency-path: package.json
       - name: Preserve previous catalogue snapshot
         run: cp src/data/places.json /tmp/tassienow-places-before-discovery.json
-      - name: Discover Tasmanian places
+      - name: Discover Tasmanian places from OpenStreetMap
         run: node scripts/discover/osm-import.mjs
-      - name: Recover prior listings if source coverage is partial
+      - name: Recover prior listings if OSM coverage is partial
         run: node scripts/merge-previous-catalogue.mjs /tmp/tassienow-places-before-discovery.json
+      - name: Discover independent Wikidata places
+        run: node scripts/discover/wikidata-import.mjs
       - name: Enrich official Parks Tasmania walks
         run: node scripts/discover/parks-tasmania.mjs
       - name: Discover official council events
         run: node scripts/discover/events.mjs
+      - name: Discover tourism and ticket-marketplace events
+        run: node scripts/discover/public-events.mjs
+      - name: Enrich event tickets prices and availability
+        run: node scripts/enrich-event-tickets.mjs
+      - name: Prune expired events
+        run: node scripts/prune-expired-events.mjs
       - name: Audit external websites
         run: node scripts/audit-links.mjs
       - name: Sanitize generated records
@@ -60,6 +72,8 @@ jobs:
         run: node scripts/enrich-images.mjs
       - name: Re-rank after image enrichment
         run: node scripts/rank-catalogue.mjs
+      - name: Generate catalogue coverage audit
+        run: node scripts/catalogue-audit.mjs
       - name: Validate catalogue
         run: node scripts/validate-data.mjs
       - name: Install site dependencies
@@ -68,12 +82,12 @@ jobs:
         run: npm run build
       - name: Commit refreshed data
         run: |
-          if git diff --quiet -- src/data/places.json src/data/events.json src/data/parks-walks.json; then
+          if git diff --quiet -- src/data/places.json src/data/events.json src/data/parks-walks.json src/data/catalogue-audit.json; then
             echo "No catalogue changes."
             exit 0
           fi
           git config user.name "TassieNow Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add src/data/places.json src/data/events.json src/data/parks-walks.json
-          git commit -m "data: refresh rich Tasmanian discovery catalogue"
+          git add src/data/places.json src/data/events.json src/data/parks-walks.json src/data/catalogue-audit.json
+          git commit -m "data: refresh multi-source Tasmanian discovery catalogue"
           git push

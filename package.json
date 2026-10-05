@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run validate:data && astro build",
+    "build": "node scripts/prune-expired-events.mjs && npm run validate:data && astro build",
     "preview": "astro preview",
-    "validate:data": "node scripts/validate-data.mjs"
+    "validate:data": "node scripts/validate-data.mjs",
+    "audit:data": "node scripts/catalogue-audit.mjs",
+    "refresh:events": "node scripts/discover/events.mjs && node scripts/discover/public-events.mjs && node scripts/enrich-event-tickets.mjs && node scripts/prune-expired-events.mjs && node scripts/catalogue-audit.mjs"
   },
   "dependencies": {
     "astro": "^7.3.0"

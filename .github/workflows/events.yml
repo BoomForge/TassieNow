@@ -1,8 +1,18 @@
 name: Refresh TassieNow events
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/discover/events.mjs'
+      - 'scripts/discover/public-events.mjs'
+      - 'scripts/enrich-event-tickets.mjs'
+      - 'scripts/prune-expired-events.mjs'
+      - 'scripts/catalogue-audit.mjs'
+      - 'scripts/validate-data.mjs'
+      - '.github/workflows/events.yml'
   schedule:
-    - cron: '31 18 * * *'
+    - cron: '11 0,6,12,18 * * *'
   workflow_dispatch:
 
 permissions:
@@ -15,7 +25,7 @@ concurrency:
 jobs:
   events:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -23,8 +33,16 @@ jobs:
           node-version: '22'
           cache: npm
           cache-dependency-path: package.json
-      - name: Refresh events
+      - name: Refresh official council events
         run: node scripts/discover/events.mjs
+      - name: Refresh tourism and ticket-marketplace events
+        run: node scripts/discover/public-events.mjs
+      - name: Enrich tickets prices and availability
+        run: node scripts/enrich-event-tickets.mjs
+      - name: Prune expired events
+        run: node scripts/prune-expired-events.mjs
+      - name: Generate catalogue coverage audit
+        run: node scripts/catalogue-audit.mjs
       - name: Validate catalogue
         run: node scripts/validate-data.mjs
       - name: Install site dependencies
@@ -33,12 +51,12 @@ jobs:
         run: npm run build
       - name: Commit event changes
         run: |
-          if git diff --quiet -- src/data/events.json; then
+          if git diff --quiet -- src/data/events.json src/data/catalogue-audit.json; then
             echo "No event changes."
             exit 0
           fi
           git config user.name "TassieNow Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add src/data/events.json
-          git commit -m "data: refresh current Tasmanian events"
+          git add src/data/events.json src/data/catalogue-audit.json
+          git commit -m "data: refresh Tasmanian events and ticket availability"
           git push
