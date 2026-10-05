@@ -5,6 +5,10 @@ on:
     branches: [main]
     paths:
       - 'scripts/indexnow.mjs'
+      - 'src/data/places.json'
+      - 'src/data/events.json'
+      - 'src/data/parks-walks.json'
+      - 'src/pages/**'
       - 'public/30516139ed96092d5fbd7676d4852aa2.txt'
       - '.github/workflows/indexnow.yml'
   schedule:
