@@ -39,6 +39,7 @@ jobs:
           node --check scripts/enrich-event-tickets.mjs
           node --check scripts/sanitize-ticket-data.mjs
           node --check scripts/enrich-images.mjs
+          node --check scripts/enrich-wikidata-images.mjs
           node --check scripts/prune-expired-events.mjs
           node --check scripts/rank-catalogue.mjs
           node --check scripts/catalogue-audit.mjs
