@@ -27,7 +27,9 @@ TassieNow uses multiple independent sources rather than treating any single dire
 - Humanitix public event discovery.
 - Ticketmaster public event discovery.
 - Eventbrite public event discovery where the public page is accessible.
-- Direct ticket/booking links found on official event pages, including Humanitix, Eventbrite, Ticketmaster, TryBooking and Moshtix.
+- Moshtix Tasmania public event discovery.
+- Ticketek Hobart/Tasmania-context public event discovery.
+- Direct ticket/booking links found on official event pages, including Humanitix, Eventbrite, Ticketmaster, TryBooking, Moshtix and Ticketek.
 
 Ticket enrichment is intentionally separate from the core event record. If a ticket provider is unavailable or changes markup, existing verified events remain intact.
 
@@ -55,9 +57,11 @@ GitHub Actions maintains the data and site:
 - `images.yml` upgrades licensed listing imagery.
 - `indexnow.yml` submits updated URLs for supported search engines.
 - `quality.yml` syntax-checks automation, validates data and builds the site on pushes and pull requests.
-- `automation-health.yml` records a daily persistent heartbeat when GitHub's scheduler actually executes, so unattended automation can be audited rather than assumed.
+- `automation-health.yml` records a persistent heartbeat when GitHub's scheduler actually executes, so unattended automation can be audited rather than assumed.
 
 All data-writing workflows use the shared `tassienow-data-writes` concurrency group to avoid overlapping commits.
+
+Expired active events are pruned using the Tasmania/Hobart date before every production build as a safety net. The event refresh also removes expired records normally, so stale event pages are not dependent on a scheduled workflow having run successfully that day.
 
 ## Catalogue audit
 
