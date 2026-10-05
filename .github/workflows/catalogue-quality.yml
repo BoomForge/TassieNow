@@ -1,0 +1,56 @@
+name: TassieNow catalogue quality pass
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '47 18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tassienow-catalogue-quality
+  cancel-in-progress: false
+
+jobs:
+  enrich-catalogue:
+    if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: package.json
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Enrich opening hours and listing details
+        run: node scripts/enrich-details.mjs
+      - name: Full image sweep after a production change
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        env:
+          MAX_IMAGE_ENRICH: '500'
+        run: node scripts/enrich-images.mjs
+      - name: Re-rank catalogue using completeness
+        run: node scripts/rank-catalogue.mjs
+      - name: Validate enriched site
+        run: npm run build
+      - name: Commit catalogue improvements
+        run: |
+          if git diff --quiet -- src/data/places.json; then
+            echo "No catalogue quality changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/places.json
+          git commit -m "chore(data): catalogue quality enrichment [skip ci]"
+          git push origin HEAD:main

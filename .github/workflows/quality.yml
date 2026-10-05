@@ -30,6 +30,7 @@ jobs:
         run: |
           node --check scripts/discover/events.mjs
           node --check scripts/discover/parks-tasmania.mjs
+          node --check scripts/enrich-details.mjs
           node --check scripts/enrich-images.mjs
           node --check scripts/rank-catalogue.mjs
           node --check scripts/indexnow.mjs
