@@ -27,6 +27,8 @@ jobs:
         run: node scripts/enrich-images.mjs
       - name: Re-rank catalogue
         run: node scripts/rank-catalogue.mjs
+      - name: Generate catalogue coverage audit
+        run: node scripts/catalogue-audit.mjs
       - name: Validate catalogue
         run: node scripts/validate-data.mjs
       - name: Install site dependencies
@@ -35,12 +37,12 @@ jobs:
         run: npm run build
       - name: Commit improved images
         run: |
-          if git diff --quiet -- src/data/places.json; then
+          if git diff --quiet -- src/data/places.json src/data/catalogue-audit.json; then
             echo "No image changes."
             exit 0
           fi
           git config user.name "TassieNow Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add src/data/places.json
+          git add src/data/places.json src/data/catalogue-audit.json
           git commit -m "data: improve licensed listing images"
           git push
