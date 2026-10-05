@@ -9,8 +9,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: tassienow-image-enrichment
-  cancel-in-progress: true
+  group: tassienow-data-writes
+  cancel-in-progress: false
 
 jobs:
   enrich:
