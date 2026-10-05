@@ -1,45 +1,46 @@
 {
   "generatedAt": "2026-10-06",
   "places": {
-    "total": 510,
-    "public": 499,
+    "total": 690,
+    "public": 679,
     "suppressed": 11,
     "imageCoverage": {
-      "count": 91,
-      "percent": 18.2
+      "count": 94,
+      "percent": 13.8
     },
     "galleryCoverage": {
-      "count": 24,
-      "percent": 4.8
+      "count": 20,
+      "percent": 2.9
     },
     "websiteCoverage": {
-      "count": 101,
-      "percent": 20.2
+      "count": 107,
+      "percent": 15.8
     },
     "scheduleCoverage": {
-      "count": 39,
-      "percent": 7.8
+      "count": 43,
+      "percent": 6.3
     },
     "officialSourceCoverage": {
-      "count": 37,
-      "percent": 7.4
+      "count": 41,
+      "percent": 6
     },
     "sourceTypes": {
       "openstreetmap": 487,
+      "wikidata": 180,
       "curated": 12
     },
     "regions": {
-      "Hobart & South": 143,
+      "East Coast": 202,
+      "Hobart & South": 144,
       "Launceston & North": 128,
-      "North West": 87,
-      "East Coast": 70,
-      "West Coast": 58,
-      "King Island": 7,
-      "Flinders Island": 6
+      "North West": 89,
+      "West Coast": 56,
+      "Flinders Island": 53,
+      "King Island": 7
     },
-    "towns": 131,
+    "towns": 132,
     "categories": {
-      "Nature & Walks": 210,
+      "Nature & Walks": 390,
       "Things to Do": 195,
       "Museums": 66,
       "Art & Culture": 16,
@@ -51,18 +52,17 @@
   "events": {
     "active": 70,
     "ticketCoverage": {
-      "count": 69,
-      "percent": 98.6
+      "count": 31,
+      "percent": 44.3
     },
     "priceCoverage": {
-      "count": 14,
-      "percent": 20
+      "count": 0,
+      "percent": 0
     },
     "providers": {
-      "Booking link": 36,
+      "Rezdy": 15,
       "Humanitix": 14,
-      "unknown": 14,
-      "Eventbrite": 5
+      "Eventbrite": 2
     },
     "sources": {
       "Burnie City Council": 24,
