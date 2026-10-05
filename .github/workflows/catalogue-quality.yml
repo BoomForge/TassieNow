@@ -33,6 +33,8 @@ jobs:
         run: node scripts/enrich-details.mjs
       - name: Crawl official visit, hours, contact and date pages
         run: node scripts/enrich-official-pages.mjs
+      - name: Upgrade exact Wikidata listing images
+        run: node scripts/enrich-wikidata-images.mjs
       - name: Full licensed hero and gallery sweep on manual quality run
         if: github.event_name == 'workflow_dispatch'
         env:
