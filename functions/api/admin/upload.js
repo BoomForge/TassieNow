@@ -33,7 +33,8 @@ export async function onRequestPost(context) {
     if (!matchesMagic(bytes, file.type)) return Response.json({ error: 'The uploaded file does not appear to be a valid image' }, { status: 400 });
 
     const result = await writeUploadedImage(context, bytes, { extension: TYPES.get(file.type), label });
-    return Response.json({ ok: true, url: result.url, path: result.path, deploymentRequired: true }, { status: 201 });
+    const url = new URL(result.url, context.request.url).href;
+    return Response.json({ ok: true, url, path: result.path, deploymentRequired: true }, { status: 201 });
   } catch (error) {
     return jsonError(error, error?.message?.includes('GitHub') ? 503 : 400);
   }
