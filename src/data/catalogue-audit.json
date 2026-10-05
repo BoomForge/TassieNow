@@ -1,67 +1,67 @@
 {
   "generatedAt": "2026-10-06",
   "places": {
-    "total": 870,
-    "public": 859,
+    "total": 1050,
+    "public": 1039,
     "suppressed": 11,
     "imageCoverage": {
-      "count": 150,
-      "percent": 17.5
+      "count": 168,
+      "percent": 16.2
     },
     "galleryCoverage": {
-      "count": 32,
-      "percent": 3.7
+      "count": 48,
+      "percent": 4.6
     },
     "websiteCoverage": {
-      "count": 111,
-      "percent": 12.9
+      "count": 119,
+      "percent": 11.5
     },
     "scheduleCoverage": {
-      "count": 46,
-      "percent": 5.4
+      "count": 45,
+      "percent": 4.3
     },
     "officialSourceCoverage": {
-      "count": 42,
-      "percent": 4.9
+      "count": 43,
+      "percent": 4.1
     },
     "sourceTypes": {
+      "wikidata": 540,
       "openstreetmap": 487,
-      "wikidata": 360,
       "curated": 12
     },
     "regions": {
-      "Hobart & South": 324,
+      "Hobart & South": 358,
       "East Coast": 202,
-      "Launceston & North": 128,
-      "North West": 89,
+      "Launceston & North": 189,
+      "North West": 151,
       "West Coast": 56,
       "Flinders Island": 53,
-      "King Island": 7
+      "King Island": 30
     },
-    "towns": 136,
+    "towns": 141,
     "categories": {
-      "Nature & Walks": 562,
-      "Things to Do": 196,
-      "Museums": 72,
+      "Nature & Walks": 736,
+      "Things to Do": 199,
+      "Museums": 73,
       "Art & Culture": 16,
-      "Wildlife": 11,
+      "Wildlife": 13,
       "History": 1,
       "Markets": 1
     }
   },
   "events": {
-    "active": 136,
+    "active": 137,
     "ticketCoverage": {
-      "count": 70,
-      "percent": 51.5
+      "count": 71,
+      "percent": 51.8
     },
     "priceCoverage": {
       "count": 33,
-      "percent": 24.3
+      "percent": 24.1
     },
     "providers": {
       "Ticketek": 36,
-      "Humanitix": 16,
+      "Humanitix": 17,
       "Rezdy": 15,
       "Eventbrite": 2,
       "Ticketmaster": 1
@@ -73,13 +73,13 @@
       "Devonport City Council": 15,
       "City of Clarence": 10,
       "City of Hobart": 7,
-      "Humanitix Hobart": 5,
+      "Humanitix Hobart": 6,
       "Humanitix Launceston": 5,
       "City of Launceston": 3,
       "Glenorchy City Council": 3
     },
     "regions": {
-      "Hobart & South": 72,
+      "Hobart & South": 73,
       "North West": 39,
       "Launceston & North": 25
     }
