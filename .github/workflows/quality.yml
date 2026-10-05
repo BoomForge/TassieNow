@@ -14,7 +14,7 @@ permissions:
 jobs:
   validate-and-build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,15 +29,22 @@ jobs:
       - name: Syntax-check automation and Pages Functions
         run: |
           node --check scripts/discover/events.mjs
+          node --check scripts/discover/public-events.mjs
+          node --check scripts/discover/wikidata-import.mjs
           node --check scripts/discover/parks-tasmania.mjs
           node --check scripts/merge-previous-catalogue.mjs
           node --check scripts/enrich-details.mjs
           node --check scripts/enrich-official-pages.mjs
+          node --check scripts/enrich-event-tickets.mjs
           node --check scripts/enrich-images.mjs
           node --check scripts/rank-catalogue.mjs
+          node --check scripts/catalogue-audit.mjs
+          node --check scripts/automation-heartbeat.mjs
           node --check scripts/indexnow.mjs
           find functions -name '*.js' -print0 | xargs -0 -n1 node --check
       - name: Apply catalogue ranking in CI workspace
         run: node scripts/rank-catalogue.mjs
+      - name: Generate catalogue coverage audit
+        run: node scripts/catalogue-audit.mjs
       - name: Validate and build ranked site
         run: npm run build
