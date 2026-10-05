@@ -3,6 +3,7 @@ import fs from 'node:fs/promises';
 const FILE = new URL('../src/data/events.json', import.meta.url);
 const USER_AGENT = 'TassieNow/1.3 (+https://tassienow.pages.dev)';
 const MAX_FETCH = 120;
+const MAX_TICKET_FETCH = 90;
 const PROVIDERS = [
   ['Humanitix', /(^|\.)humanitix\.com$/i],
   ['Eventbrite', /(^|\.)eventbrite\.(?:com|com\.au)$/i],
@@ -91,6 +92,40 @@ function offerData(item,pageUrl){
   }
   return {};
 }
+function htmlLines(html='') {
+  return String(html)
+    .replace(/<script[\s\S]*?<\/script>/gi,' ')
+    .replace(/<style[\s\S]*?<\/style>/gi,' ')
+    .replace(/<(?:br\s*\/?|\/p|\/div|\/li|\/article|\/section|\/h[1-6]|\/tr|\/td|\/th)>/gi,'\n')
+    .replace(/<[^>]+>/g,' ')
+    .split(/\n+/)
+    .map((line)=>clean(line))
+    .filter(Boolean);
+}
+function visiblePriceData(html='') {
+  const lines=htmlLines(html);
+  const heading=lines.findIndex((line)=>/^(?:pricing|ticket prices?|ticket price|tickets?|admission|entry fees?)\b/i.test(line));
+  if(heading<0) return {};
+  const values=[];
+  for(let i=heading;i<Math.min(lines.length,heading+60);i++){
+    const line=lines[i];
+    if(i>heading+2&&/^(?:show info|duration|venue|location|accessibility|contact|about|terms|important information)\b/i.test(line)) break;
+    if(/\b(?:transaction|processing|booking|service|handling)\s+fee\b|\bsurcharge\b/i.test(line)) continue;
+    for(const match of line.matchAll(/(?:A\$|AUD\s*|\$)\s*(\d{1,4}(?:\.\d{1,2})?)/gi)){
+      const value=Number(match[1]);
+      if(Number.isFinite(value)&&value>=0&&value<=5000) values.push(value);
+    }
+  }
+  if(!values.length) return {};
+  return {priceFrom:Math.min(...values),priceTo:Math.max(...values),priceCurrency:'AUD'};
+}
+function structuredOfferFromHtml(html,eventName,pageUrl){
+  const wanted=clean(eventName||'').toLowerCase();
+  const items=jsonld(html);
+  const exact=items.find((item)=>clean(item.name||'').toLowerCase()===wanted);
+  return offerData(exact||items[0],pageUrl);
+}
+
 function ticketLinks(html,base){
   const candidates=[];
   for(const match of html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)){
@@ -126,7 +161,7 @@ function mergeOffer(event,offer){
 function clearTicketData(event){for(const key of TICKET_FIELDS) delete event[key];}
 
 const events=JSON.parse(await fs.readFile(FILE,'utf8'));
-let fetched=0,changed=0,preservedDirect=0,rejectedStale=0;
+let fetched=0,ticketFetched=0,changed=0,preservedDirect=0,rejectedStale=0;
 for(const event of events){
   if(event.status!=='active'||event.endDate<TODAY) continue;
   const before=JSON.stringify(Object.fromEntries(TICKET_FIELDS.map((key)=>[key,event[key]])));
@@ -154,6 +189,7 @@ for(const event of events){
     const eventName=clean(event.name||'').toLowerCase();
     const structured=structuredEvents.find((item)=>clean(item.name||'').toLowerCase()===eventName);
     if(structured) mergeOffer(event,offerData(structured,finalUrl));
+    if(event.priceFrom===undefined&&event.priceTo===undefined) mergeOffer(event,visiblePriceData(html));
     if(!event.ticketUrl){
       const link=ticketLinks(html,finalUrl)[0];
       if(link){
@@ -165,6 +201,16 @@ for(const event of events){
     if(event.ticketUrl){
       event.ticketProvider=event.ticketProvider||providerFromUrl(event.ticketUrl)||'Booking link';
       event.bookingRequired=true;
+      if(ticketFetched<MAX_TICKET_FETCH&&!sameUrl(event.ticketUrl,finalUrl)&&(event.priceFrom===undefined||!event.availability)){
+        ticketFetched++;
+        try{
+          const ticketPage=await fetchPage(event.ticketUrl);
+          mergeOffer(event,structuredOfferFromHtml(ticketPage.html,event.name,ticketPage.finalUrl));
+          if(event.priceFrom===undefined&&event.priceTo===undefined) mergeOffer(event,visiblePriceData(ticketPage.html));
+        }catch(error){
+          console.warn(`${event.name}: ticket page detail skipped (${error.message}).`);
+        }
+      }
     }
     event.ticketLastChecked=TODAY;
   }catch(error){
@@ -174,4 +220,4 @@ for(const event of events){
   if(before!==after) changed++;
 }
 await fs.writeFile(FILE,`${JSON.stringify(events,null,2)}\n`);
-console.log(`Ticket enrichment: checked ${fetched} event page(s); changed ticket data for ${changed} event(s); preserved ${preservedDirect} provider-specific event link(s); rejected ${rejectedStale} stale/generic ticket link(s).`);
+console.log(`Ticket enrichment: checked ${fetched} event page(s) plus ${ticketFetched} ticket page(s); changed ticket data for ${changed} event(s); preserved ${preservedDirect} provider-specific event link(s); rejected ${rejectedStale} stale/generic ticket link(s).`);

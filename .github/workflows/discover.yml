@@ -14,6 +14,7 @@ on:
       - 'scripts/prune-expired-events.mjs'
       - 'scripts/rank-catalogue.mjs'
       - 'scripts/enrich-images.mjs'
+      - 'scripts/enrich-wikidata-images.mjs'
       - 'scripts/sanitize-generated.mjs'
       - 'scripts/audit-links.mjs'
       - 'scripts/catalogue-audit.mjs'
@@ -77,6 +78,8 @@ jobs:
         run: node scripts/enrich-official-pages.mjs
       - name: Rank and suppress low-value catalogue records
         run: node scripts/rank-catalogue.mjs
+      - name: Upgrade exact Wikidata listing images
+        run: node scripts/enrich-wikidata-images.mjs
       - name: Upgrade licensed hero and gallery images
         run: node scripts/enrich-images.mjs
       - name: Re-rank after image enrichment

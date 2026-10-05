@@ -23,6 +23,8 @@ jobs:
           node-version: '22'
           cache: npm
           cache-dependency-path: package.json
+      - name: Upgrade exact Wikidata listing images
+        run: node scripts/enrich-wikidata-images.mjs
       - name: Upgrade fallback images
         run: node scripts/enrich-images.mjs
       - name: Re-rank catalogue
