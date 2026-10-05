@@ -1,5 +1,6 @@
 const DEFAULT_REPO = 'BoomForge/TassieNow';
 const CATALOGUE_PATH = 'src/data/places.json';
+const UPLOAD_ROOT = 'public/uploads/admin';
 
 function bytesToBase64(bytes) {
   let binary = '';
@@ -44,6 +45,27 @@ export async function writeCatalogue(context, places, sha, message) {
     method: 'PUT',
     body: JSON.stringify({ message, content, sha, branch: 'main' })
   });
+}
+
+export async function writeUploadedImage(context, bytes, { extension, label = 'image' } = {}) {
+  const safeLabel = slugify(label) || 'image';
+  const date = hobartDate();
+  const month = date.slice(0, 7);
+  const suffix = crypto.randomUUID().replace(/-/g, '').slice(0, 12);
+  const filename = `${safeLabel.slice(0, 54)}-${suffix}.${extension}`;
+  const repoPath = `${UPLOAD_ROOT}/${month}/${filename}`;
+  await github(context, `/contents/${repoPath}`, {
+    method: 'PUT',
+    body: JSON.stringify({
+      message: `admin: upload ${filename}`,
+      content: bytesToBase64(bytes),
+      branch: 'main'
+    })
+  });
+  return {
+    path: repoPath,
+    url: `/${repoPath.replace(/^public\//, '')}`
+  };
 }
 
 export function slugify(value) {
