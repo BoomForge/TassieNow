@@ -17,6 +17,7 @@ function properName(name='') {
   return /[a-z]{3}/i.test(clean);
 }
 function sourceWeight(place) {
+  if(place.managedManually || place.sourceType==='manual') return 24;
   if(place.sourceType==='curated') return 28;
   if(place.officialSource?.type==='government' || place.sourceType==='parks-tasmania') return 24;
   if(place.sourceType==='openstreetmap') return 8;
@@ -25,6 +26,8 @@ function sourceWeight(place) {
 function score(place) {
   let s=sourceWeight(place);
   const signals=[];
+  if(place.managedManually || place.sourceType==='manual') signals.push('owner-managed');
+  if(place.managedManually && place.featured){s+=18;signals.push('owner-featured');}
   if(properName(place.name)){s+=8;signals.push('proper-name');} else {s-=12;signals.push('weak-name');}
   if(place.website){s+=10;signals.push('website');}
   if(place.websiteCheck?.status==='ok'){s+=4;signals.push('verified-website');}
@@ -54,14 +57,16 @@ let suppressed=0,featured=0;
 const ranked=places.map(place=>{
   const result=score(place);
   const hard=hardNoise.test(place.name||'') || genericExact.has(String(place.name||'').trim().toLowerCase());
-  const keep=place.sourceType==='curated' || place.officialSource?.type==='government' || place.sourceType==='parks-tasmania';
-  const visibility=(!keep && (hard || result.value<18)) ? 'suppressed' : 'public';
+  const ownerManaged=Boolean(place.managedManually || place.sourceType==='manual');
+  const keep=ownerManaged || place.sourceType==='curated' || place.officialSource?.type==='government' || place.sourceType==='parks-tasmania';
+  const visibility=ownerManaged ? (place.visibility==='suppressed'?'suppressed':'public') : ((!keep && (hard || result.value<18)) ? 'suppressed' : 'public');
   if(visibility==='suppressed') suppressed++;
-  const qualityTier=result.value>=55?'featured':result.value>=40?'strong':result.value>=25?'standard':'low';
+  const qualityTier=(ownerManaged&&place.featured)||result.value>=55?'featured':result.value>=40?'strong':result.value>=25?'standard':'low';
   if(qualityTier==='featured' && visibility==='public') featured++;
   return {...place,qualityScore:result.value,qualityTier,visibility,qualitySignals:result.signals,rankedAt:today};
 }).sort((a,b)=>{
   if(a.visibility!==b.visibility) return a.visibility==='public'?-1:1;
+  if(Boolean(a.featured)!==Boolean(b.featured)) return a.featured?-1:1;
   return (b.qualityScore||0)-(a.qualityScore||0) || a.name.localeCompare(b.name);
 });
 await fs.writeFile(FILE,`${JSON.stringify(ranked,null,2)}\n`);
