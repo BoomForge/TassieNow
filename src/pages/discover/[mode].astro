@@ -1,41 +1,411 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 import events from '../../data/events.json';
-export function getStaticPaths(){
+
+export function getStaticPaths() {
   const routes = [
-    ['kids',{title:'Things to do with kids in Tasmania',categories:['Family']}],
-    ['free',{title:'Free things to do in Tasmania',categories:['Free']}],
-    ['rainy-day',{title:'Rainy day activities in Tasmania',categories:['Rainy Day']}],
-    ['markets',{title:'Markets in Tasmania',categories:['Markets']}],
-    ['nature',{title:'Walks and nature in Tasmania',categories:['Nature & Walks']}],
-    ['food',{title:'Tasmanian food and local produce',categories:['Food & Drink','Local Produce']}],
-    ['today',{title:'What’s on in Tasmania today',eventMode:'today'}],
-    ['this-weekend',{title:'What’s on in Tasmania this weekend',eventMode:'weekend'}]
+    ['kids', {
+      label: 'Kids',
+      title: 'Things to do with kids in Tasmania',
+      intro: 'Family-friendly places and activities across Tasmania, from easy outdoor adventures to museums, wildlife and rainy-day ideas.',
+      categories: ['Family'],
+      fallback: '/images/categories/family.svg'
+    }],
+    ['free', {
+      label: 'Free',
+      title: 'Free things to do in Tasmania',
+      intro: 'Good Tasmanian days out that do not need to cost anything. Browse free places, walks, activities and local discoveries.',
+      categories: ['Free'],
+      fallback: '/images/categories/discover.svg'
+    }],
+    ['rainy-day', {
+      label: 'Rainy day',
+      title: 'Rainy day activities in Tasmania',
+      intro: 'Indoor and weather-friendly ideas for the days when Tasmania does what Tasmania does.',
+      categories: ['Rainy Day'],
+      fallback: '/images/categories/indoor.svg'
+    }],
+    ['markets', {
+      label: 'Markets',
+      title: 'Markets in Tasmania',
+      intro: 'Find local produce, makers, community markets and market-day discoveries around Tasmania.',
+      categories: ['Markets'],
+      fallback: '/images/categories/markets.svg'
+    }],
+    ['nature', {
+      label: 'Walks & nature',
+      title: 'Walks and nature in Tasmania',
+      intro: 'Trails, lookouts, beaches, reserves and wild places worth getting outside for.',
+      categories: ['Nature & Walks'],
+      fallback: '/images/categories/nature.svg'
+    }],
+    ['food', {
+      label: 'Food & produce',
+      title: 'Tasmanian food and local produce',
+      intro: 'Local flavours, farms, makers, produce and food stops worth building into a Tasmanian day out.',
+      categories: ['Food & Drink', 'Local Produce'],
+      fallback: '/images/categories/food.svg'
+    }],
+    ['today', {
+      label: 'Today',
+      title: 'What’s on in Tasmania today',
+      intro: 'Current events happening around Tasmania today, refreshed automatically from official and public sources.',
+      eventMode: 'today',
+      fallback: '/images/categories/events.svg'
+    }],
+    ['this-weekend', {
+      label: 'This weekend',
+      title: 'What’s on in Tasmania this weekend',
+      intro: 'Find current events around Tasmania this weekend without digging through separate calendars.',
+      eventMode: 'weekend',
+      fallback: '/images/categories/events.svg'
+    }]
   ];
-  return routes.map(([mode,config])=>({params:{mode},props:{config}}));
+
+  return routes.map(([mode, config]) => ({
+    params: { mode },
+    props: { mode, config }
+  }));
 }
-const { config } = Astro.props;
+
+const { mode, config } = Astro.props;
+
 function hobartDate(date = new Date()) {
-  const parts = new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date);
-  const get=(type)=>parts.find((part)=>part.type===type)?.value;
+  const parts = new Intl.DateTimeFormat('en-AU', {
+    timeZone: 'Australia/Hobart',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).formatToParts(date);
+  const get = (type) => parts.find((part) => part.type === type)?.value;
   return `${get('year')}-${get('month')}-${get('day')}`;
 }
-function money(event,value){if(value===undefined||value===null||Number.isNaN(Number(value)))return null;return new Intl.NumberFormat('en-AU',{style:'currency',currency:event.priceCurrency||'AUD',maximumFractionDigits:Number(value)%1===0?0:2}).format(Number(value));}
-function ticketLabel(event){if(event.priceFrom===0)return'Free';const from=money(event,event.priceFrom),to=money(event,event.priceTo);if(from&&to&&from!==to)return`${from}–${to}`;if(from)return`From ${from}`;return event.ticketProvider||'Tickets available';}
+
+function slugify(value = '') {
+  return String(value)
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+function money(event, value) {
+  if (value === undefined || value === null || Number.isNaN(Number(value))) return null;
+  return new Intl.NumberFormat('en-AU', {
+    style: 'currency',
+    currency: event.priceCurrency || 'AUD',
+    maximumFractionDigits: Number(value) % 1 === 0 ? 0 : 2
+  }).format(Number(value));
+}
+
+function ticketLabel(event) {
+  if (event.priceFrom === 0) return 'Free';
+  const from = money(event, event.priceFrom);
+  const to = money(event, event.priceTo);
+  if (from && to && from !== to) return `${from}–${to}`;
+  if (from) return `From ${from}`;
+  return event.ticketProvider || 'Tickets available';
+}
+
+function formatEventDate(startDate, endDate) {
+  const start = new Date(`${startDate}T12:00:00Z`);
+  const end = new Date(`${endDate}T12:00:00Z`);
+  const formatter = new Intl.DateTimeFormat('en-AU', {
+    timeZone: 'Australia/Hobart',
+    day: 'numeric',
+    month: 'short'
+  });
+  return startDate === endDate ? formatter.format(start) : `${formatter.format(start)} – ${formatter.format(end)}`;
+}
+
 const today = hobartDate();
 const calendar = new Date(`${today}T00:00:00Z`);
 const day = calendar.getUTCDay();
-const sat = new Date(calendar); sat.setUTCDate(calendar.getUTCDate()+((6-day+7)%7));
-const sun = new Date(sat); sun.setUTCDate(sat.getUTCDate()+1);
-const satDate=sat.toISOString().slice(0,10), sunDate=sun.toISOString().slice(0,10);
-const activePlaces=places.filter((p)=>p.status==='active'&&p.visibility!=='suppressed').sort((a,b)=>(b.qualityScore||0)-(a.qualityScore||0)||a.name.localeCompare(b.name));
-const matchedPlaces=config.categories ? activePlaces.filter((p)=>config.categories.some((c)=>p.categories.includes(c))) : [];
-const activeEvents=events.filter((e)=>e.status==='active'&&e.endDate>=today);
-const matchedEvents=(config.eventMode==='today' ? activeEvents.filter((e)=>e.startDate<=today&&e.endDate>=today) : config.eventMode==='weekend' ? activeEvents.filter((e)=>e.startDate<=sunDate&&e.endDate>=satDate) : []).sort((a,b)=>a.startDate.localeCompare(b.startDate)||a.name.localeCompare(b.name));
+const saturday = new Date(calendar);
+saturday.setUTCDate(calendar.getUTCDate() + ((6 - day + 7) % 7));
+const sunday = new Date(saturday);
+sunday.setUTCDate(saturday.getUTCDate() + 1);
+const saturdayDate = saturday.toISOString().slice(0, 10);
+const sundayDate = sunday.toISOString().slice(0, 10);
+
+const activePlaces = places
+  .filter((place) => place.status === 'active' && place.visibility !== 'suppressed')
+  .sort((a, b) =>
+    Number(Boolean(b.featured)) - Number(Boolean(a.featured)) ||
+    (b.qualityScore || 0) - (a.qualityScore || 0) ||
+    a.name.localeCompare(b.name)
+  );
+
+const matchedPlaces = config.categories
+  ? activePlaces.filter((place) => config.categories.some((category) => place.categories?.includes(category)))
+  : [];
+
+const activeEvents = events
+  .filter((event) => event.status === 'active' && event.endDate >= today)
+  .sort((a, b) => a.startDate.localeCompare(b.startDate) || a.name.localeCompare(b.name));
+
+const matchedEvents = config.eventMode === 'today'
+  ? activeEvents.filter((event) => event.startDate <= today && event.endDate >= today)
+  : config.eventMode === 'weekend'
+    ? activeEvents.filter((event) => event.startDate <= sundayDate && event.endDate >= saturdayDate)
+    : [];
+
+const isEventMode = Boolean(config.eventMode);
+const resultItems = isEventMode ? matchedEvents : matchedPlaces;
+const regions = [...new Set(resultItems.map((item) => item.region).filter(Boolean))].sort();
+
+const visualItems = [
+  ...resultItems.filter((item) => !item.image?.isFallback),
+  ...resultItems.filter((item) => item.image?.isFallback)
+].filter((item, index, array) => array.findIndex((candidate) => candidate.slug === item.slug) === index);
+
+const featuredItems = visualItems.slice(0, 6);
+const heroItem = featuredItems[0] || resultItems[0] || null;
+const heroImage = heroItem?.image?.url || config.fallback;
+const heroAlt = heroItem?.image?.alt || `${config.title} — TassieNow`;
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: config.title,
+  description: config.intro,
+  url: new URL(`/discover/${mode}/`, Astro.site ?? Astro.url.origin).href,
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: resultItems.slice(0, 40).map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      url: new URL(`${isEventMode ? '/event/' : '/place/'}${item.slug}/`, Astro.site ?? Astro.url.origin).href
+    }))
+  }
+};
+
+const siblingModes = [
+  ['Today', 'today'],
+  ['This weekend', 'this-weekend'],
+  ['Kids', 'kids'],
+  ['Free', 'free'],
+  ['Rainy day', 'rainy-day'],
+  ['Markets', 'markets'],
+  ['Walks & nature', 'nature'],
+  ['Food & produce', 'food']
+].filter(([, slug]) => slug !== mode);
 ---
-<BaseLayout title={`${config.title} | TassieNow`} description={`${config.title}. Browse current, quality-ranked TassieNow listings and verify time-sensitive details with official sources.`}>
-  <section class="listing-page"><p class="eyebrow">Live discovery</p><h1>{config.title}</h1>
-  {config.eventMode ? <><p class="hero-copy">{matchedEvents.length} current event{matchedEvents.length===1?'':'s'} match this view.</p><div class="place-grid compact-grid">{matchedEvents.map((event)=><article class="place-card"><a class="card-image-link" href={`/event/${event.slug}/`}><img class="card-image" src={event.image.url} alt={event.image.alt} loading="lazy"/><span class="image-badge">Event</span></a><div class="card-body"><p class="location">{event.startDate}{event.endDate!==event.startDate?` – ${event.endDate}`:''} · {event.town}</p><h3>{event.name}</h3><p class="summary">{event.summary}</p>{event.ticketUrl&&<p class="ticket-summary"><strong>{ticketLabel(event)}</strong>{event.ticketProvider&&event.priceFrom!==undefined&&<> · {event.ticketProvider}</>}</p>}<div class="card-footer"><a class="card-link" href={`/event/${event.slug}/`}>Event details →</a>{event.ticketUrl&&<a class="card-link" href={event.ticketUrl} target="_blank" rel="noopener noreferrer">Tickets ↗</a>}</div></div></article>)}</div>{matchedEvents.length===0&&<p class="empty-state visible">No verified events match this window yet. The automated event feed refreshes throughout the day.</p>}</> : <><p class="hero-copy">{matchedPlaces.length} useful places match this view.</p><div class="place-grid compact-grid">{matchedPlaces.map((place)=><article class="place-card"><a class="card-image-link" href={`/place/${place.slug}/`}><img class="card-image" src={place.image.url} alt={place.image.alt} loading="lazy"/><span class="image-badge">{place.categories[0]}</span></a><div class="card-body"><p class="location">{place.town} · {place.region}</p><h3>{place.name}</h3><p class="summary">{place.summary}</p><a class="card-link" href={`/place/${place.slug}/`}>View place →</a></div></article>)}</div></>}
-  </section>
+
+<BaseLayout
+  title={`${config.title} | TassieNow`}
+  description={config.intro}
+  image={heroImage}
+  imageAlt={heroAlt}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)}></script>
+  <BreadcrumbSchema items={[
+    { name: 'TassieNow', path: '/' },
+    { name: 'Discover', path: '/#directory' },
+    { name: config.label }
+  ]} />
+
+  <main class="discover-page">
+    <nav class="discover-breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">TassieNow</a><span>›</span><span>{config.label}</span>
+    </nav>
+
+    <section class="discover-hero">
+      <div class="discover-hero-media">
+        <img src={heroImage} alt={heroAlt} />
+        <span class="discover-shade"></span>
+        <span class="discover-hero-badge">Live discovery</span>
+      </div>
+
+      <div class="discover-hero-copy">
+        <p class="eyebrow">Explore Tasmania</p>
+        <h1>{config.title}</h1>
+        <p>{config.intro}</p>
+        <div class="discover-stats">
+          <span><strong>{resultItems.length}</strong> current match{resultItems.length === 1 ? '' : 'es'}</span>
+          <span><strong>{regions.length}</strong> region{regions.length === 1 ? '' : 's'}</span>
+          {isEventMode && <span>Refreshed from current event feeds</span>}
+        </div>
+        <div class="discover-actions">
+          <a class="primary-button link-button" href="#discover-results">Browse results</a>
+          <a class="secondary-button link-button" href="/">Back to TassieNow</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="discover-section" aria-labelledby="more-ways-heading">
+      <div class="discover-heading">
+        <div>
+          <p class="section-kicker">More ways to find a day out</p>
+          <h2 id="more-ways-heading">Keep exploring</h2>
+        </div>
+        <p>Jump between live discovery views without starting your search again.</p>
+      </div>
+      <div class="discover-mode-links">
+        {siblingModes.map(([label, slug]) => <a href={`/discover/${slug}/`}>{label}<span>→</span></a>)}
+      </div>
+    </section>
+
+    {featuredItems.length > 0 && (
+      <section class="discover-section" aria-labelledby="discover-featured-heading">
+        <div class="discover-heading compact">
+          <div>
+            <p class="section-kicker">{isEventMode ? 'Coming up' : 'A good place to start'}</p>
+            <h2 id="discover-featured-heading">{isEventMode ? 'Current picks' : 'Worth a look'}</h2>
+          </div>
+          <a class="discover-text-link" href="#discover-results">See all {resultItems.length} →</a>
+        </div>
+
+        <div class="discover-feature-grid">
+          {featuredItems.map((item, index) => (
+            <article class:list={['discover-feature-card', index === 0 && 'large']}>
+              <a href={`${isEventMode ? '/event/' : '/place/'}${item.slug}/`}>
+                <img src={item.image?.url || config.fallback} alt={item.image?.alt || item.name} loading={index < 2 ? 'eager' : 'lazy'} />
+                <span class="discover-shade"></span>
+                <span class="discover-card-badge">{isEventMode ? 'Event' : item.categories?.[0] || 'Discover'}</span>
+                <span class="discover-feature-copy">
+                  <small>{isEventMode ? `${formatEventDate(item.startDate, item.endDate)} · ${item.town}` : `${item.town} · ${item.region}`}</small>
+                  <strong>{item.name}</strong>
+                  <em>{isEventMode ? 'Event details →' : 'Explore →'}</em>
+                </span>
+              </a>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="discover-section results-section" id="discover-results" aria-labelledby="discover-results-heading">
+      <div class="discover-heading">
+        <div>
+          <p class="section-kicker">Full discovery view</p>
+          <h2 id="discover-results-heading">{config.label}</h2>
+        </div>
+        <p><strong id="discover-result-count">{resultItems.length}</strong> matching result{resultItems.length === 1 ? '' : 's'}</p>
+      </div>
+
+      <div class="discover-filter-panel">
+        <input id="discover-search" type="search" placeholder="Search names, towns or interests…" aria-label="Search discovery results" />
+        <select id="discover-region" aria-label="Filter by region">
+          <option value="">All regions</option>
+          {regions.map((region) => <option value={region.toLowerCase()}>{region}</option>)}
+        </select>
+        <button id="discover-clear" class="secondary-button" type="button">Clear</button>
+      </div>
+
+      <div class="place-grid discover-result-grid">
+        {resultItems.map((item, index) => (
+          <article
+            class="place-card discover-result-card"
+            hidden={index >= 18}
+            data-name={item.name.toLowerCase()}
+            data-town={String(item.town || '').toLowerCase()}
+            data-region={String(item.region || '').toLowerCase()}
+            data-categories={(item.categories || []).join('|').toLowerCase()}
+          >
+            <a class="card-image-link" href={`${isEventMode ? '/event/' : '/place/'}${item.slug}/`}>
+              <img class="card-image" src={item.image?.url || config.fallback} alt={item.image?.alt || item.name} loading="lazy" />
+              <span class="image-badge">{isEventMode ? 'Event' : item.categories?.[0] || 'Discover'}</span>
+            </a>
+            <div class="card-body">
+              <p class="location">
+                {isEventMode ? formatEventDate(item.startDate, item.endDate) : item.town}
+                {item.region && <> · <a href={`/region/${slugify(item.region)}/`}>{item.region}</a></>}
+              </p>
+              <h3><a href={`${isEventMode ? '/event/' : '/place/'}${item.slug}/`}>{item.name}</a></h3>
+              <p class="summary">{item.summary}</p>
+              {isEventMode && item.ticketUrl && <p class="ticket-summary"><strong>{ticketLabel(item)}</strong></p>}
+              {!isEventMode && <div class="tags">{(item.categories || []).slice(0, 3).map((category) => <span class="tag">{category}</span>)}</div>}
+              <div class="card-footer">
+                <a class="card-link" href={`${isEventMode ? '/event/' : '/place/'}${item.slug}/`}>
+                  {isEventMode ? 'Event details →' : 'View place →'}
+                </a>
+                {isEventMode && item.ticketUrl && <a class="card-link" href={item.ticketUrl} target="_blank" rel="noopener noreferrer">Tickets ↗</a>}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      {resultItems.length === 0 && (
+        <p class="empty-state visible">
+          No verified results match this view yet. TassieNow’s automated feeds will keep checking.
+        </p>
+      )}
+      <div class="empty-state" id="discover-empty-state">No results match those filters.</div>
+
+      <div class="discover-load-row">
+        <button class="secondary-button" id="discover-load-more" type="button">Show more</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const search = document.querySelector('#discover-search');
+    const region = document.querySelector('#discover-region');
+    const cards = [...document.querySelectorAll('.discover-result-card')];
+    const count = document.querySelector('#discover-result-count');
+    const empty = document.querySelector('#discover-empty-state');
+    const loadMore = document.querySelector('#discover-load-more');
+    const clear = document.querySelector('#discover-clear');
+
+    let visibleLimit = 18;
+
+    function matches(card) {
+      const query = search.value.trim().toLowerCase();
+      const regionValue = region.value;
+      const haystack = `${card.dataset.name} ${card.dataset.town} ${card.dataset.region} ${card.dataset.categories}`;
+      return (!query || haystack.includes(query))
+        && (!regionValue || card.dataset.region === regionValue);
+    }
+
+    function applyFilters() {
+      const filtered = Boolean(search.value.trim() || region.value);
+      const matching = cards.filter(matches);
+
+      cards.forEach((card) => {
+        const matchIndex = matching.indexOf(card);
+        card.hidden = matchIndex < 0 || (!filtered && matchIndex >= visibleLimit);
+      });
+
+      count.textContent = String(matching.length);
+      empty.style.display = matching.length || cards.length === 0 ? 'none' : 'block';
+      loadMore.hidden = filtered || visibleLimit >= matching.length;
+    }
+
+    search?.addEventListener('input', applyFilters);
+    region?.addEventListener('change', applyFilters);
+
+    clear?.addEventListener('click', () => {
+      search.value = '';
+      region.value = '';
+      visibleLimit = 18;
+      applyFilters();
+    });
+
+    loadMore?.addEventListener('click', () => {
+      visibleLimit += 18;
+      applyFilters();
+    });
+
+    applyFilters();
+  </script>
+
+  <style>
+    .discover-page{max-width:1180px;margin:0 auto;padding:2rem 1.25rem 6rem}
+    .discover-breadcrumbs{display:flex;gap:.45rem;align-items:center;margin-bottom:1rem;color:var(--muted);font-size:.8rem;font-weight:750}.discover-breadcrumbs a{text-decoration:none}.discover-breadcrumbs a:hover{color:var(--brand);text-decoration:underline}
+    .discover-hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(340px,.75fr);min-height:500px;border:1px solid var(--line);border-radius:1.8rem;overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
+    .discover-hero-media{position:relative;min-height:500px;background:#dce7df;overflow:hidden}.discover-hero-media img{width:100%;height:100%;min-height:500px;object-fit:cover;display:block}.discover-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,27,28,.04) 35%,rgba(8,27,28,.78) 100%)}.discover-hero-badge{position:absolute;top:1rem;left:1rem;padding:.48rem .7rem;border-radius:999px;background:rgba(255,253,248,.92);font-size:.72rem;font-weight:850}
+    .discover-hero-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(2rem,4vw,3.2rem)}.discover-hero-copy h1{font-size:clamp(2.75rem,5vw,5.15rem)}.discover-hero-copy>p:not(.eyebrow){margin:1.15rem 0 0;color:var(--muted);font-size:1.05rem;line-height:1.65}.discover-stats{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.3rem}.discover-stats span{padding:.5rem .65rem;border-radius:.7rem;background:#edf3ef;color:var(--muted);font-size:.78rem;font-weight:750}.discover-stats strong{color:var(--ink)}.discover-actions{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:1.4rem}
+    .discover-section{margin-top:4.4rem}.discover-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,.6fr);gap:2rem;align-items:end;margin-bottom:1.1rem}.discover-heading.compact{grid-template-columns:minmax(0,1fr) auto}.discover-heading h2{margin:.1rem 0 0;font-size:clamp(2rem,4vw,3rem);letter-spacing:-.05em}.discover-heading>p{margin:0;color:var(--muted);line-height:1.55;text-align:right}.section-kicker{margin:0;color:var(--brand-2);font-size:.72rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.discover-text-link{align-self:end;color:var(--brand);font-size:.88rem;font-weight:850;text-decoration:none}.discover-text-link:hover{text-decoration:underline}
+    .discover-mode-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.7rem}.discover-mode-links a{display:flex;align-items:center;justify-content:space-between;min-height:3.5rem;padding:0 .9rem;border:1px solid var(--line);border-radius:.9rem;background:var(--surface);font-size:.84rem;font-weight:820;text-decoration:none}.discover-mode-links a:hover{border-color:#b5cbc1;color:var(--brand-2)}
+    .discover-feature-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,205px);gap:.8rem}.discover-feature-card.large{grid-column:span 2;grid-row:span 2}.discover-feature-card a{position:relative;display:block;width:100%;height:100%;overflow:hidden;border-radius:1.15rem;background:#dce7df;text-decoration:none}.discover-feature-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s ease}.discover-feature-card a:hover img{transform:scale(1.025)}.discover-card-badge{position:absolute;top:.8rem;left:.8rem;padding:.4rem .62rem;border-radius:999px;background:rgba(255,253,248,.92);font-size:.68rem;font-weight:850}.discover-feature-copy{position:absolute;left:1rem;right:1rem;bottom:1rem;color:#fff}.discover-feature-copy small,.discover-feature-copy strong,.discover-feature-copy em{display:block}.discover-feature-copy small{color:rgba(255,255,255,.75);font-size:.72rem;font-weight:750}.discover-feature-copy strong{margin-top:.2rem;font-size:1.12rem}.discover-feature-card.large strong{font-size:clamp(1.5rem,3vw,2.25rem)}.discover-feature-copy em{margin-top:.4rem;font-size:.75rem;font-style:normal;font-weight:850}
+    .results-section{scroll-margin-top:1rem}.discover-filter-panel{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(180px,.7fr) auto;gap:.7rem;padding:1rem;border:1px solid var(--line);border-radius:1.2rem;background:rgba(255,253,248,.94);box-shadow:var(--shadow)}.discover-filter-panel input,.discover-filter-panel select{min-height:3.15rem;border:1px solid #cad7d1;border-radius:.8rem;background:#fff;color:var(--ink);padding:0 .9rem;outline:none}.discover-result-grid{margin-top:1rem}.discover-result-card[hidden]{display:none}.place-card h3 a{text-decoration:none}.ticket-summary{margin:.7rem 0 0;color:var(--ink);font-size:.82rem}.discover-load-row{display:flex;justify-content:center;margin-top:1.2rem}.discover-load-row button[hidden]{display:none}
+    @media(max-width:980px){.discover-hero{grid-template-columns:1fr;min-height:0}.discover-hero-media,.discover-hero-media img{min-height:380px}.discover-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:300px 200px 200px}.discover-feature-card.large{grid-column:span 2;grid-row:span 1}.discover-mode-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:760px){.discover-page{padding-top:1.2rem}.discover-section{margin-top:3.4rem}.discover-heading,.discover-heading.compact{grid-template-columns:1fr;gap:.6rem;align-items:start}.discover-heading>p{text-align:left}.discover-text-link{align-self:start}.discover-filter-panel{grid-template-columns:1fr 1fr}.discover-filter-panel input{grid-column:1/-1}}
+    @media(max-width:520px){.discover-hero{border-radius:1.25rem}.discover-hero-media,.discover-hero-media img{min-height:285px}.discover-hero-copy{padding:1.3rem}.discover-mode-links,.discover-feature-grid{grid-template-columns:1fr;grid-template-rows:none}.discover-feature-card,.discover-feature-card.large{grid-column:auto;grid-row:auto;height:235px}.discover-filter-panel{grid-template-columns:1fr}.discover-filter-panel input{grid-column:auto}}
+  </style>
 </BaseLayout>
