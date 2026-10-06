@@ -3,8 +3,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import places from '../../data/places.json';
 
 export function getStaticPaths() {
-  return places.filter((place) => place.status === 'active' && place.visibility !== 'suppressed').map((place) => ({ params: { slug: place.slug }, props: { place } }));
+  return places
+    .filter((place) => place.status === 'active' && place.visibility !== 'suppressed')
+    .map((place) => ({ params: { slug: place.slug }, props: { place } }));
 }
+
 const { place } = Astro.props;
 const operatorUrl = place.officialSource?.url || place.website || null;
 const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name} ${place.town || ''} Tasmania`)}`;
@@ -12,135 +15,307 @@ const reviewUrl = place.reviewLinks?.find((item) => item.provider === 'google-ma
 const bookingUrl = place.bookingUrl || null;
 const phoneHref = place.phone ? `tel:${String(place.phone).replace(/[^+\d]/g, '')}` : null;
 const feeText = place.fee === 'no' ? 'Free entry' : place.fee === 'yes' ? 'Entry fee may apply' : place.fee || null;
-const wheelchairText = place.wheelchair === 'yes' ? 'Wheelchair accessible' : place.wheelchair === 'limited' ? 'Limited wheelchair access' : place.wheelchair === 'no' ? 'Not marked wheelchair accessible' : null;
+const wheelchairText = place.wheelchair === 'yes'
+  ? 'Wheelchair accessible'
+  : place.wheelchair === 'limited'
+    ? 'Limited wheelchair access'
+    : place.wheelchair === 'no'
+      ? 'Not marked wheelchair accessible'
+      : null;
 const googleMapsApiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY || '';
+const townSlug = place.town.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const regionSlug = place.region.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const hasVisitDetails = Boolean(
+  place.openingHours ||
+  place.schedule?.summary ||
+  place.phone ||
+  place.email ||
+  place.address ||
+  feeText ||
+  wheelchairText ||
+  place.operator
+);
+
 const prettyHours = (value = '') => String(value)
   .replace(/\bMo\b/g, 'Mon').replace(/\bTu\b/g, 'Tue').replace(/\bWe\b/g, 'Wed')
   .replace(/\bTh\b/g, 'Thu').replace(/\bFr\b/g, 'Fri').replace(/\bSa\b/g, 'Sat').replace(/\bSu\b/g, 'Sun')
   .replace(/;/g, '; ');
+
 const dayNumber = { Sunday: 0, Monday: 1, Tuesday: 2, Wednesday: 3, Thursday: 4, Friday: 5, Saturday: 6 };
+
 function hobartTodayUtc() {
-  const parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Hobart', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Australia/Hobart',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).formatToParts(new Date());
   const get = (type) => Number(parts.find((part) => part.type === type)?.value || 0);
   return new Date(Date.UTC(get('year'), get('month') - 1, get('day'), 12));
 }
+
 function upcomingScheduleDates(schedule, limit = 8) {
   if (!schedule?.frequency) return [];
   const start = hobartTodayUtc();
   const dates = [];
-  const wantedDays = new Set((schedule.daysOfWeek || []).map((day) => dayNumber[day]).filter((day) => Number.isInteger(day)));
+  const wantedDays = new Set(
+    (schedule.daysOfWeek || [])
+      .map((day) => dayNumber[day])
+      .filter((day) => Number.isInteger(day))
+  );
   for (let offset = 0; offset < 120 && dates.length < limit; offset++) {
     const date = new Date(start);
     date.setUTCDate(start.getUTCDate() + offset);
-    if (schedule.frequency === 'daily' || (schedule.frequency === 'weekly' && wantedDays.has(date.getUTCDay()))) dates.push(date);
+    if (schedule.frequency === 'daily' || (schedule.frequency === 'weekly' && wantedDays.has(date.getUTCDay()))) {
+      dates.push(date);
+    }
   }
   return dates;
 }
+
 const upcomingDates = upcomingScheduleDates(place.schedule);
-const formatDate = (date) => new Intl.DateTimeFormat('en-AU', { timeZone: 'Australia/Hobart', weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' }).format(date);
-const allSchemaImages = [place.image, ...(place.gallery || [])].filter(Boolean).map((image) => image.url.startsWith('http') ? image.url : new URL(image.url, Astro.site ?? Astro.url.origin).href);
+const formatDate = (date) => new Intl.DateTimeFormat('en-AU', {
+  timeZone: 'Australia/Hobart',
+  weekday: 'short',
+  day: 'numeric',
+  month: 'short'
+}).format(date);
+
+const gallery = Array.isArray(place.gallery) ? place.gallery.filter(Boolean) : [];
+const allSchemaImages = [place.image, ...gallery]
+  .filter(Boolean)
+  .map((image) => image.url.startsWith('http') ? image.url : new URL(image.url, Astro.site ?? Astro.url.origin).href);
+
 const schema = {
-  '@context': 'https://schema.org', '@type': 'TouristAttraction', name: place.name,
-  description: place.summary, url: new URL(`/place/${place.slug}/`, Astro.site ?? Astro.url.origin).href,
+  '@context': 'https://schema.org',
+  '@type': 'TouristAttraction',
+  name: place.name,
+  description: place.summary,
+  url: new URL(`/place/${place.slug}/`, Astro.site ?? Astro.url.origin).href,
   image: allSchemaImages,
-  geo: { '@type': 'GeoCoordinates', latitude: place.latitude, longitude: place.longitude },
-  address: { '@type': 'PostalAddress', streetAddress: place.address || undefined, addressLocality: place.town, addressRegion: 'TAS', addressCountry: 'AU' },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: place.latitude,
+    longitude: place.longitude
+  },
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: place.address || undefined,
+    addressLocality: place.town,
+    addressRegion: 'TAS',
+    addressCountry: 'AU'
+  },
   openingHours: place.openingHours || undefined,
   telephone: place.phone || undefined,
   email: place.email || undefined,
   sameAs: operatorUrl ? [operatorUrl] : undefined
 };
 ---
+
 <BaseLayout title={`${place.name} | TassieNow`} description={place.summary} image={place.image.url}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
-  <article class="content-page">
-    <p class="eyebrow">{place.town} · {place.region}</p>
-    <h1>{place.name}</h1>
-    <figure class="detail-image-wrap">
-      <img class="detail-image" src={place.image.url} alt={place.image.alt} />
-      {!place.image.isFallback && <figcaption>Image: {place.image.attribution} · {place.image.license}</figcaption>}
-    </figure>
 
-    {place.gallery?.length > 0 && (
-      <section class="gallery-section" aria-labelledby="gallery-heading">
-        <h2 id="gallery-heading">More photos</h2>
-        <div class="photo-grid">
-          {place.gallery.map((image) => (
-            <figure>
-              <a href={image.url} target="_blank" rel="noopener noreferrer"><img src={image.url} alt={image.alt || `${place.name}, Tasmania`} loading="lazy" /></a>
-              <figcaption>{image.attribution} · {image.license}</figcaption>
-            </figure>
-          ))}
+  <article class="place-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">TassieNow</a>
+      <span>›</span>
+      <a href={`/region/${regionSlug}/`}>{place.region}</a>
+      <span>›</span>
+      <a href={`/town/${townSlug}/`}>{place.town}</a>
+    </nav>
+
+    <section class="place-hero">
+      <figure class:list={['hero-media', place.image?.isFallback && 'fallback-media']}>
+        <img src={place.image.url} alt={place.image.alt || `${place.name}, Tasmania`} />
+        <div class="hero-media-gradient"></div>
+        <div class="hero-badge-row">
+          {place.categories?.slice(0, 2).map((category) => <span>{category}</span>)}
         </div>
-      </section>
-    )}
-
-    <div class="detail-meta">{place.categories.map((category) => <span class="tag">{category}</span>)}</div>
-    <p>{place.summary}</p>
-
-    {(place.openingHours || place.schedule?.summary || place.phone || place.email || place.address || feeText || wheelchairText || place.operator) && (
-      <section class="visit-card" aria-labelledby="visit-heading">
-        <h2 id="visit-heading">Plan your visit</h2>
-        <div class="visit-grid">
-          {place.openingHours && <div><span>Opening hours</span><strong>{prettyHours(place.openingHours)}</strong></div>}
-          {place.schedule?.summary && <div class="wide"><span>When it is on</span><strong>{place.schedule.summary}</strong>{place.schedule.sourceUrl && <small><a href={place.schedule.sourceUrl} target="_blank" rel="noopener noreferrer">Official dates ↗</a></small>}</div>}
-          {place.address && <div><span>Address</span><strong>{place.address}</strong></div>}
-          {place.phone && <div><span>Phone</span><strong><a href={phoneHref}>{place.phone}</a></strong></div>}
-          {place.email && <div><span>Email</span><strong><a href={`mailto:${place.email}`}>{place.email}</a></strong></div>}
-          {feeText && <div><span>Entry</span><strong>{feeText}</strong></div>}
-          {wheelchairText && <div><span>Accessibility</span><strong>{wheelchairText}</strong></div>}
-          {place.operator && <div><span>Operator</span><strong>{place.operator}</strong></div>}
-        </div>
-        {upcomingDates.length > 0 && (
-          <div class="upcoming-dates">
-            <span>Next dates</span>
-            <div>{upcomingDates.map((date) => <time datetime={date.toISOString().slice(0, 10)}>{formatDate(date)}</time>)}</div>
-            {place.schedule?.notes && <p>{place.schedule.notes}</p>}
-          </div>
+        {!place.image.isFallback && (
+          <figcaption>{place.image.attribution} · {place.image.license}</figcaption>
         )}
-      </section>
-    )}
+      </figure>
 
-    {place.walk && <p><strong>Walk details:</strong> {place.walk.duration || 'See official listing'}{place.walk.grade ? ` · Grade ${place.walk.grade}` : ''}</p>}
-    <div class="action-row">
-      {operatorUrl && <a class="action-link" href={operatorUrl} target="_blank" rel="noopener noreferrer">Official website ↗</a>}
-      {bookingUrl && <a class="action-link" href={bookingUrl} target="_blank" rel="noopener noreferrer">Bookings ↗</a>}
-      <a class="action-link secondary" href={directionsUrl} target="_blank" rel="noopener noreferrer">Map & directions ↗</a>
-      <a class="action-link secondary" href={reviewUrl} target="_blank" rel="noopener noreferrer">Google reviews & visitor photos ↗</a>
+      <div class="hero-panel">
+        <p class="eyebrow">{place.town} · {place.region}</p>
+        <h1>{place.name}</h1>
+        <p class="hero-summary">{place.summary}</p>
+
+        <div class="hero-tags">
+          {place.categories?.slice(0, 5).map((category) => <span class="tag">{category}</span>)}
+        </div>
+
+        <div class="hero-actions">
+          {operatorUrl && <a class="action-link" href={operatorUrl} target="_blank" rel="noopener noreferrer">Official website ↗</a>}
+          {bookingUrl && <a class="action-link booking" href={bookingUrl} target="_blank" rel="noopener noreferrer">Book / tickets ↗</a>}
+          <a class="action-link secondary" href={directionsUrl} target="_blank" rel="noopener noreferrer">Directions ↗</a>
+          <a class="action-link secondary" href={reviewUrl} target="_blank" rel="noopener noreferrer">Google reviews ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <div class={hasVisitDetails ? 'place-shell' : 'place-shell single-column'}>
+      <main class="place-main">
+        {gallery.length > 0 && (
+          <section class="section-card gallery-section" aria-labelledby="gallery-heading">
+            <div class="section-heading-row">
+              <div>
+                <p class="section-kicker">See the place</p>
+                <h2 id="gallery-heading">More photos</h2>
+              </div>
+              <span>{gallery.length} image{gallery.length === 1 ? '' : 's'}</span>
+            </div>
+            <div class:list={['photo-grid', gallery.length === 1 && 'single-photo']}>
+              {gallery.map((image, index) => (
+                <figure class:list={[index === 0 && gallery.length >= 3 && 'feature-photo']}>
+                  <a href={image.url} target="_blank" rel="noopener noreferrer" aria-label={`Open photo of ${place.name}`}>
+                    <img src={image.url} alt={image.alt || `${place.name}, Tasmania`} loading="lazy" decoding="async" />
+                  </a>
+                  <figcaption>{image.attribution} · {image.license}</figcaption>
+                </figure>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {place.walk && (
+          <section class="section-card walk-card" aria-labelledby="walk-heading">
+            <p class="section-kicker">On the ground</p>
+            <h2 id="walk-heading">Walk details</h2>
+            <div class="walk-facts">
+              {place.walk.duration && <div><span>Duration</span><strong>{place.walk.duration}</strong></div>}
+              {place.walk.grade && <div><span>Grade</span><strong>{place.walk.grade}</strong></div>}
+            </div>
+            {!place.walk.duration && !place.walk.grade && <p>See the official listing for current walk information and conditions.</p>}
+          </section>
+        )}
+
+        {googleMapsApiKey && (
+          <section class="section-card google-card" aria-labelledby="google-heading">
+            <div class="section-heading-row google-heading-row">
+              <div>
+                <p class="section-kicker">Live Google information</p>
+                <h2 id="google-heading">Ratings, reviews & visitor photos</h2>
+              </div>
+              <a href={reviewUrl} target="_blank" rel="noopener noreferrer">View on Google Maps ↗</a>
+            </div>
+            <gmp-place-details>
+              {place.googlePlaceId
+                ? <gmp-place-details-place-request place={place.googlePlaceId}></gmp-place-details-place-request>
+                : <gmp-place-details-location-request location={`${place.latitude},${place.longitude}`}></gmp-place-details-location-request>}
+              <gmp-place-content-config>
+                <gmp-place-media lightbox-preferred></gmp-place-media>
+                <gmp-place-rating></gmp-place-rating>
+                <gmp-place-open-now-status></gmp-place-open-now-status>
+                <gmp-place-opening-hours></gmp-place-opening-hours>
+                <gmp-place-reviews></gmp-place-reviews>
+                <gmp-place-attribution light-scheme-color="gray" dark-scheme-color="white"></gmp-place-attribution>
+              </gmp-place-content-config>
+            </gmp-place-details>
+          </section>
+        )}
+
+        <div class="source-stack">
+          <p class="notice">Opening hours, dates, prices, bookings, conditions and access can change. Confirm time-sensitive details with the operator before travelling.</p>
+          <p class="source-note">
+            <span>Sources</span>
+            <a href={place.sourceUrl} target="_blank" rel="noopener noreferrer">Source record ↗</a>
+            {place.officialSource?.url && (
+              <a href={place.officialSource.url} target="_blank" rel="noopener noreferrer">
+                {place.officialSource.name || 'Official source'} ↗
+              </a>
+            )}
+            <small>
+              {place.lastDetailsChecked
+                ? <>Details checked <strong>{place.lastDetailsChecked}</strong></>
+                : <>Listing checked <strong>{place.lastChecked}</strong></>}
+            </small>
+          </p>
+        </div>
+      </main>
+
+      {hasVisitDetails && (
+        <aside class="visit-card" aria-labelledby="visit-heading">
+          <div class="visit-heading">
+            <p class="section-kicker">Useful before you go</p>
+            <h2 id="visit-heading">Plan your visit</h2>
+          </div>
+
+          <div class="visit-list">
+            {place.openingHours && (
+              <div class="visit-item">
+                <span>Opening hours</span>
+                <strong>{prettyHours(place.openingHours)}</strong>
+              </div>
+            )}
+            {place.schedule?.summary && (
+              <div class="visit-item">
+                <span>When it is on</span>
+                <strong>{place.schedule.summary}</strong>
+                {place.schedule.sourceUrl && <a href={place.schedule.sourceUrl} target="_blank" rel="noopener noreferrer">Official dates ↗</a>}
+              </div>
+            )}
+            {place.address && (
+              <div class="visit-item">
+                <span>Address</span>
+                <strong>{place.address}</strong>
+              </div>
+            )}
+            {feeText && (
+              <div class="visit-item">
+                <span>Entry</span>
+                <strong>{feeText}</strong>
+              </div>
+            )}
+            {wheelchairText && (
+              <div class="visit-item">
+                <span>Accessibility</span>
+                <strong>{wheelchairText}</strong>
+              </div>
+            )}
+            {place.phone && (
+              <div class="visit-item">
+                <span>Phone</span>
+                <strong><a href={phoneHref}>{place.phone}</a></strong>
+              </div>
+            )}
+            {place.email && (
+              <div class="visit-item">
+                <span>Email</span>
+                <strong class="break-word"><a href={`mailto:${place.email}`}>{place.email}</a></strong>
+              </div>
+            )}
+            {place.operator && (
+              <div class="visit-item">
+                <span>Operator</span>
+                <strong>{place.operator}</strong>
+              </div>
+            )}
+          </div>
+
+          {upcomingDates.length > 0 && (
+            <div class="upcoming-dates">
+              <span>Next dates</span>
+              <div>
+                {upcomingDates.map((date) => <time datetime={date.toISOString().slice(0, 10)}>{formatDate(date)}</time>)}
+              </div>
+              {place.schedule?.notes && <p>{place.schedule.notes}</p>}
+            </div>
+          )}
+
+          <a class="visit-directions" href={directionsUrl} target="_blank" rel="noopener noreferrer">Get directions ↗</a>
+        </aside>
+      )}
     </div>
 
-    {googleMapsApiKey && (
-      <section class="google-card" aria-labelledby="google-heading">
-        <div class="google-heading-row">
-          <div>
-            <p class="eyebrow">Live Google information</p>
-            <h2 id="google-heading">Ratings, reviews & visitor photos</h2>
-          </div>
-          <a href={reviewUrl} target="_blank" rel="noopener noreferrer">View on Google Maps ↗</a>
-        </div>
-        <gmp-place-details>
-          {place.googlePlaceId
-            ? <gmp-place-details-place-request place={place.googlePlaceId}></gmp-place-details-place-request>
-            : <gmp-place-details-location-request location={`${place.latitude},${place.longitude}`}></gmp-place-details-location-request>}
-          <gmp-place-content-config>
-            <gmp-place-media lightbox-preferred></gmp-place-media>
-            <gmp-place-rating></gmp-place-rating>
-            <gmp-place-open-now-status></gmp-place-open-now-status>
-            <gmp-place-opening-hours></gmp-place-opening-hours>
-            <gmp-place-reviews></gmp-place-reviews>
-            <gmp-place-attribution light-scheme-color="gray" dark-scheme-color="white"></gmp-place-attribution>
-          </gmp-place-content-config>
-        </gmp-place-details>
-      </section>
-    )}
-
-    <p class="notice">Opening hours, market dates, prices, bookings, conditions and access details can change. TassieNow records sourced information where available; confirm time-sensitive details with the operator before travelling.</p>
-    <p class="source-note">
-      Data source: <a href={place.sourceUrl} target="_blank" rel="noopener noreferrer">source record ↗</a>
-      {place.officialSource?.name ? <> · Official enrichment: <a href={place.officialSource.url} target="_blank" rel="noopener noreferrer">{place.officialSource.name} ↗</a></> : ''}
-      {place.lastDetailsChecked ? <> · Details checked <strong>{place.lastDetailsChecked}</strong></> : <> · Last checked <strong>{place.lastChecked}</strong></>}
-    </p>
-    <p><a href={`/town/${place.town.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}/`}>More around {place.town} →</a></p>
+    <section class="nearby-cta">
+      <div>
+        <p class="section-kicker">Keep exploring</p>
+        <h2>More around {place.town}</h2>
+        <p>Find more places, activities and local discoveries nearby.</p>
+      </div>
+      <a href={`/town/${townSlug}/`}>Explore {place.town} →</a>
+    </section>
   </article>
 
   {googleMapsApiKey && (
@@ -151,6 +326,120 @@ const schema = {
   )}
 
   <style>
-    .visit-card,.google-card{margin:1.5rem 0;padding:1.2rem;border:1px solid #dce5e7;border-radius:18px;background:#f8fbfb}.visit-card h2,.google-card h2,.gallery-section h2{margin:0 0 1rem}.visit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}.visit-grid>div{display:grid;gap:.2rem;padding:.8rem;background:#fff;border:1px solid #e3ebec;border-radius:12px}.visit-grid>div.wide{grid-column:1/-1}.visit-grid span,.upcoming-dates>span{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:#66787a}.visit-grid strong{font-size:.95rem;color:#173f43}.visit-grid a,.google-card a{color:#027B87}.visit-grid small{font-size:.8rem}.upcoming-dates{margin-top:1rem;padding-top:1rem;border-top:1px solid #dce5e7}.upcoming-dates>div{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.5rem}.upcoming-dates time{padding:.45rem .65rem;border-radius:999px;background:#fff;border:1px solid #dce5e7;font-size:.85rem;font-weight:700;color:#173f43}.upcoming-dates p{margin:.7rem 0 0;font-size:.86rem;color:#53686a}.action-row{display:flex;flex-wrap:wrap;gap:.65rem;margin:1.2rem 0}.gallery-section{margin:1.3rem 0}.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}.photo-grid figure{margin:0}.photo-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;display:block}.photo-grid figcaption{margin-top:.35rem;font-size:.72rem;color:#66787a}.google-heading-row{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start}.google-heading-row h2{margin:.1rem 0 .5rem}.google-card gmp-place-details{display:block;width:min(100%,400px);height:560px;margin-top:1rem;color-scheme:light}@media(max-width:700px){.visit-grid{grid-template-columns:1fr}.photo-grid{grid-template-columns:1fr}.google-heading-row{display:block}.google-card gmp-place-details{width:100%;height:620px}}
+    .place-page{max-width:1180px;margin:0 auto;padding:2.2rem 1.25rem 6rem}
+    .breadcrumbs{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;margin:0 0 1.1rem;color:var(--muted);font-size:.82rem;font-weight:750}
+    .breadcrumbs a{text-decoration:none}
+    .breadcrumbs a:hover{color:var(--brand);text-decoration:underline}
+    .breadcrumbs span{opacity:.55}
+
+    .place-hero{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(330px,.85fr);min-height:540px;background:var(--surface);border:1px solid var(--line);border-radius:1.8rem;overflow:hidden;box-shadow:var(--shadow)}
+    .hero-media{position:relative;margin:0;min-height:540px;background:#dce7df;overflow:hidden}
+    .hero-media img{width:100%;height:100%;min-height:540px;display:block;object-fit:cover}
+    .hero-media.fallback-media img{object-fit:cover;padding:3rem;background:#e4ece6}
+    .hero-media-gradient{position:absolute;inset:auto 0 0;height:34%;background:linear-gradient(to top,rgba(10,30,29,.64),transparent);pointer-events:none}
+    .hero-badge-row{position:absolute;left:1rem;top:1rem;display:flex;gap:.45rem;flex-wrap:wrap}
+    .hero-badge-row span{padding:.48rem .72rem;border-radius:999px;background:rgba(255,253,248,.94);color:var(--ink);font-size:.75rem;font-weight:850;box-shadow:0 6px 20px rgba(18,38,37,.12);backdrop-filter:blur(8px)}
+    .hero-media figcaption{position:absolute;left:1rem;right:1rem;bottom:.85rem;color:rgba(255,255,255,.86);font-size:.72rem;text-shadow:0 1px 3px rgba(0,0,0,.45)}
+
+    .hero-panel{display:flex;flex-direction:column;justify-content:center;padding:clamp(2rem,4vw,3.4rem)}
+    .hero-panel h1{font-size:clamp(2.75rem,5vw,5.15rem);line-height:.93;letter-spacing:-.058em}
+    .hero-summary{margin:1.25rem 0 0;color:var(--muted);font-size:1.08rem;line-height:1.68}
+    .hero-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.35rem 0 0}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:.55rem;margin:1.7rem 0 0}
+    .hero-actions .action-link{min-height:2.85rem;border-radius:.85rem;padding:0 .9rem;font-size:.86rem}
+    .action-link.booking{background:var(--accent)}
+    .action-link.booking:hover{filter:brightness(.94)}
+    .action-link.secondary{background:#e7eee9;color:var(--ink)}
+
+    .place-shell{display:grid;grid-template-columns:minmax(0,1fr) minmax(310px,360px);gap:1.25rem;align-items:start;margin-top:1.25rem}
+    .place-shell.single-column{grid-template-columns:1fr}
+    .place-main{min-width:0;display:grid;gap:1.25rem}
+    .section-card{background:rgba(255,253,248,.9);border:1px solid var(--line);border-radius:1.45rem;padding:1.25rem;box-shadow:0 10px 28px rgba(24,53,52,.045)}
+    .section-heading-row{display:flex;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:1rem}
+    .section-heading-row h2,.visit-card h2,.nearby-cta h2,.walk-card h2{margin:.12rem 0 0;font-size:clamp(1.55rem,3vw,2.15rem);letter-spacing:-.04em}
+    .section-heading-row>span{color:var(--muted);font-size:.82rem;font-weight:750}
+    .section-kicker{margin:0!important;color:var(--brand-2)!important;font-size:.73rem!important;font-weight:850;letter-spacing:.11em;text-transform:uppercase}
+
+    .photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:dense;gap:.75rem}
+    .photo-grid.single-photo{grid-template-columns:1fr}
+    .photo-grid figure{margin:0;min-width:0}
+    .photo-grid figure.feature-photo{grid-row:span 2}
+    .photo-grid a{display:block;height:100%;min-height:210px;border-radius:1rem;overflow:hidden;background:#dce7df}
+    .photo-grid .feature-photo a{min-height:100%}
+    .photo-grid img{width:100%;height:100%;min-height:210px;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .2s ease}
+    .photo-grid a:hover img{transform:scale(1.018)}
+    .photo-grid figcaption{margin:.38rem .15rem 0;color:var(--muted);font-size:.7rem;line-height:1.35}
+
+    .visit-card{position:sticky;top:1rem;padding:1.35rem;background:var(--surface);border:1px solid var(--line);border-radius:1.45rem;box-shadow:var(--shadow)}
+    .visit-heading{padding-bottom:1rem;border-bottom:1px solid var(--line)}
+    .visit-list{display:grid}
+    .visit-item{display:grid;gap:.28rem;padding:.9rem 0;border-bottom:1px solid #e8ece8}
+    .visit-item span,.upcoming-dates>span{color:var(--muted);font-size:.72rem;font-weight:850;letter-spacing:.075em;text-transform:uppercase}
+    .visit-item strong{color:var(--ink);font-size:.94rem;line-height:1.45}
+    .visit-item a{color:var(--brand);text-decoration:none}
+    .visit-item a:hover{text-decoration:underline}
+    .visit-item>a{font-size:.8rem;font-weight:750}
+    .break-word{overflow-wrap:anywhere}
+    .upcoming-dates{padding:1rem 0 .2rem}
+    .upcoming-dates>div{display:flex;flex-wrap:wrap;gap:.38rem;margin-top:.55rem}
+    .upcoming-dates time{padding:.42rem .58rem;border-radius:.65rem;background:#edf3ef;color:#31534f;font-size:.76rem;font-weight:820}
+    .upcoming-dates p{margin:.7rem 0 0!important;font-size:.8rem!important;line-height:1.5!important}
+    .visit-directions{display:flex;justify-content:center;align-items:center;min-height:3.2rem;margin-top:1rem;border-radius:.9rem;background:var(--brand);color:white;text-decoration:none;font-weight:850}
+    .visit-directions:hover{background:var(--brand-2)}
+
+    .walk-facts{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
+    .walk-facts>div{min-width:150px;padding:.9rem 1rem;border-radius:.9rem;background:#edf3ef}
+    .walk-facts span{display:block;color:var(--muted);font-size:.72rem;font-weight:850;letter-spacing:.07em;text-transform:uppercase}
+    .walk-facts strong{display:block;margin-top:.2rem;color:var(--ink)}
+
+    .google-heading-row a{color:var(--brand);font-size:.85rem;font-weight:800}
+    .google-card gmp-place-details{display:block;width:min(100%,520px);height:600px;margin-top:1rem;color-scheme:light}
+
+    .source-stack{display:grid;gap:.7rem}
+    .source-stack .notice{margin:0}
+    .source-note{display:flex;align-items:center;flex-wrap:wrap;gap:.55rem;margin:0!important;padding:.15rem .2rem;color:var(--muted)!important;font-size:.78rem!important}
+    .source-note>span{font-weight:850;text-transform:uppercase;letter-spacing:.07em}
+    .source-note a{color:var(--brand);font-weight:750;text-decoration:none}
+    .source-note small{margin-left:auto;color:var(--muted);font-size:.75rem}
+
+    .nearby-cta{display:flex;align-items:center;justify-content:space-between;gap:2rem;margin-top:1.25rem;padding:1.5rem 1.65rem;border-radius:1.45rem;background:#173f43;color:white}
+    .nearby-cta h2{color:white}
+    .nearby-cta p:not(.section-kicker){margin:.45rem 0 0;color:rgba(255,255,255,.76);font-size:.92rem}
+    .nearby-cta .section-kicker{color:#a9dadd!important}
+    .nearby-cta>a{flex:0 0 auto;display:inline-flex;align-items:center;min-height:3rem;padding:0 1rem;border-radius:.85rem;background:white;color:#173f43;text-decoration:none;font-weight:850}
+
+    @media(max-width:920px){
+      .place-hero{grid-template-columns:1fr;min-height:0}
+      .hero-media,.hero-media img{min-height:420px}
+      .hero-panel{padding:2rem}
+      .place-shell{grid-template-columns:1fr}
+      .visit-card{position:static;grid-row:1}
+    }
+
+    @media(max-width:620px){
+      .place-page{padding-top:1.2rem;padding-bottom:4rem}
+      .breadcrumbs{font-size:.76rem}
+      .place-hero{border-radius:1.3rem}
+      .hero-media,.hero-media img{min-height:320px}
+      .hero-panel{padding:1.35rem}
+      .hero-panel h1{font-size:clamp(2.5rem,13vw,4rem)}
+      .hero-summary{font-size:1rem}
+      .hero-actions{display:grid;grid-template-columns:1fr 1fr}
+      .hero-actions .action-link{justify-content:center;text-align:center;padding:.65rem}
+      .place-shell{gap:.9rem;margin-top:.9rem}
+      .section-card,.visit-card{border-radius:1.15rem;padding:1rem}
+      .photo-grid{grid-template-columns:1fr}
+      .photo-grid figure.feature-photo{grid-row:auto}
+      .photo-grid .feature-photo a,.photo-grid a{min-height:230px}
+      .section-heading-row{align-items:start}
+      .nearby-cta{display:grid;gap:1rem;border-radius:1.15rem;padding:1.25rem}
+      .nearby-cta>a{justify-content:center}
+      .source-note small{width:100%;margin-left:0}
+    }
+
+    @media(max-width:430px){
+      .hero-actions{grid-template-columns:1fr}
+      .hero-media,.hero-media img{min-height:270px}
+    }
   </style>
 </BaseLayout>
