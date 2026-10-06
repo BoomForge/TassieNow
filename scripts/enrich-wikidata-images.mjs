@@ -106,8 +106,15 @@ for(const place of targets){
   const gallery=(Array.isArray(place.gallery)?place.gallery:[]).filter((image)=>image&&!image.isFallback);
   for(const image of gallery)used.add(key(image));
   let candidates=(place.wikidataImages||[]).map((filename)=>exact.get(filename)).filter(Boolean).map((image)=>({...image,alt:`${place.name}, Tasmania`}));
-  if(place.image?.isFallback&&candidates.length){
-    place.image=candidates.shift();used.add(key(place.image));heroUpgraded++;
+  // A Wikidata P18 image is explicitly attached to the matched place and is a
+  // stronger identity signal than a text-search Commons result. Prefer it for
+  // generated listings, while never replacing owner-managed/manual artwork.
+  const canPromoteExact = candidates.length && !place.managedManually && place.sourceType !== 'manual' &&
+    (place.image?.isFallback || place.image?.sourceMethod === 'commons-search');
+  if(canPromoteExact){
+    const exactHero=candidates.shift();
+    if(key(exactHero)!==key(place.image)){place.image=exactHero;heroUpgraded++;}
+    used.add(key(place.image));
   }
   for(const image of candidates){
     if(gallery.length>=GALLERY_SIZE)break;

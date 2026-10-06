@@ -6,7 +6,8 @@ const MAX_PER_RUN = Math.max(1, Math.min(2000, Number.parseInt(process.env.MAX_I
 const GALLERY_SIZE = Math.max(1, Math.min(12, Number.parseInt(process.env.GALLERY_SIZE || '3', 10) || 3));
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const clean = (value = '') => String(value).replace(/<[^>]*>/g, ' ').replace(/&amp;/gi, '&').replace(/&quot;/gi, '"').replace(/&#39;|&apos;/gi, "'").replace(/\s+/g, ' ').trim();
-const tokens = (value = '') => clean(value).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().split(/[^a-z0-9]+/).filter((token) => token.length >= 4 && !['tasmania', 'tasmanian', 'the', 'park', 'walk', 'lookout', 'museum', 'gallery'].includes(token));
+const GENERIC_IMAGE_TOKENS = new Set(['tasmania','tasmanian','the','park','walk','lookout','museum','gallery','falls','fall','beach','bay','mount','mountain','river','lake','cliffs','cliff','point','rock','reserve','trail','track','island','wildlife','nature']);
+const tokens = (value = '') => clean(value).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().split(/[^a-z0-9]+/).filter((token) => token.length >= 4 && !GENERIC_IMAGE_TOKENS.has(token));
 
 function candidateScore(place, page, info) {
   const title = clean(page.title).toLowerCase();
@@ -15,13 +16,20 @@ function candidateScore(place, page, info) {
   if (/\b(logo|map|diagram|coat of arms|flag|icon|signage|sign|poster|brochure|floor plan|locator map)\b/.test(title)) return 0;
   const placeTokens = tokens(place.name);
   const titleTokens = tokens(title);
+  const titleHits = placeTokens.filter((token) => titleTokens.includes(token)).length;
+  const blobHits = placeTokens.filter((token) => blob.includes(token)).length;
+  const natureLike = place.categories?.some((category) => /nature|walk|outdoor/i.test(category));
   let score = 0;
-  for (const token of placeTokens) if (titleTokens.includes(token)) score += 18;
-  if (blob.includes('tasmania')) score += 18;
-  if (place.town && (`${title} ${blob}`).includes(String(place.town).toLowerCase())) score += 14;
-  if (placeTokens.some((token) => blob.includes(token))) score += 12;
-  if (/\.(?:jpe?g|webp)$/i.test(title)) score += 5;
-  if (place.categories?.some((category) => /museum|wildlife|nature|walk|attraction|food|market/i.test(category)) && blob.includes(String(place.categories[0] || '').toLowerCase())) score += 4;
+  score += titleHits * 24;
+  if (blob.includes('tasmania')) score += 14;
+  if (place.town && (`${title} ${blob}`).includes(String(place.town).toLowerCase())) score += 10;
+  score += Math.min(18, blobHits * 9);
+  if (/\.(?:jpe?g|webp)$/i.test(title)) score += 4;
+  if (place.categories?.some((category) => /museum|wildlife|nature|walk|attraction|food|market/i.test(category)) && blob.includes(String(place.categories[0] || '').toLowerCase())) score += 3;
+  // Search results are heuristic. For nature destinations in particular, a generic
+  // Tasmania/town match is not enough evidence that the photo depicts this place.
+  if (natureLike && placeTokens.length && titleHits === 0 && blobHits < 2) return 0;
+  if (placeTokens.length && titleHits === 0 && blobHits === 0) return 0;
   return score;
 }
 
@@ -62,7 +70,7 @@ async function queryCommons(place, searchText) {
       const info = page.imageinfo?.[0];
       if (!info) continue;
       const score = candidateScore(place, page, info);
-      if (score < 42) continue;
+      if (score < 55) continue;
       const image = imageFromCandidate(place, page, info, score);
       if (image) candidates.push({ image, score });
     }
@@ -70,6 +78,45 @@ async function queryCommons(place, searchText) {
   } catch {
     return [];
   }
+}
+
+function commonsFilename(image) {
+  if (!image?.sourceUrl || !/commons\.wikimedia\.org\/wiki\/File:/i.test(image.sourceUrl)) return null;
+  try { return decodeURIComponent(new URL(image.sourceUrl).pathname.replace(/^\/wiki\/File:/i, '')).replace(/_/g, ' '); } catch { return null; }
+}
+function fallbackImage(place) {
+  const value = (place.categories || []).join('|').toLowerCase();
+  let name = 'discover';
+  if (value.includes('museum') || value.includes('art & culture')) name = 'culture';
+  else if (value.includes('wildlife')) name = 'wildlife';
+  else if (value.includes('market') || value.includes('food') || value.includes('local produce')) name = 'food';
+  else if (value.includes('family')) name = 'family';
+  else if (value.includes('nature') || value.includes('outdoor')) name = 'nature';
+  return { url: `/images/categories/${name}.svg`, alt: `${place.name} category image`, attribution: 'TassieNow', license: 'Site artwork', licenseUrl: null, sourceUrl: null, isFallback: true };
+}
+async function existingCommonsMetadata(filenames) {
+  const out = new Map();
+  const unique = [...new Set(filenames.filter(Boolean))];
+  for (let i = 0; i < unique.length; i += 30) {
+    const batch = unique.slice(i, i + 30);
+    const url = new URL('https://commons.wikimedia.org/w/api.php');
+    url.searchParams.set('action', 'query');
+    url.searchParams.set('format', 'json');
+    url.searchParams.set('prop', 'imageinfo');
+    url.searchParams.set('iiprop', 'url|extmetadata');
+    url.searchParams.set('iiurlwidth', '1400');
+    url.searchParams.set('titles', batch.map((name) => `File:${name}`).join('|'));
+    try {
+      const response = await fetch(url, { headers: { 'user-agent': UA, accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
+      if (!response.ok) continue;
+      const data = await response.json();
+      for (const page of Object.values(data.query?.pages || {})) {
+        const info = page.imageinfo?.[0]; if (!info) continue;
+        out.set(String(page.title || '').replace(/^File:/i, '').replace(/_/g, ' '), { page, info });
+      }
+    } catch { /* keep existing media if Commons is temporarily unavailable */ }
+  }
+  return out;
 }
 
 async function searchImages(place) {
@@ -88,6 +135,31 @@ async function searchImages(place) {
 function imageKey(image) { return image?.sourceUrl || image?.url || ''; }
 
 const places = JSON.parse(await fs.readFile(FILE, 'utf8'));
+const generated = places.filter((place) => place.status === 'active' && place.visibility !== 'suppressed' && !place.managedManually && place.sourceType !== 'manual');
+const heuristicFiles = generated.flatMap((place) => [place.image, ...(place.gallery || [])])
+  .filter((image) => image?.sourceMethod === 'commons-search')
+  .map(commonsFilename)
+  .filter(Boolean);
+const existingMeta = await existingCommonsMetadata(heuristicFiles);
+let rejectedExisting = 0;
+for (const place of generated) {
+  const validSearchImage = (image) => {
+    if (!image || image.sourceMethod !== 'commons-search') return true;
+    const filename = commonsFilename(image); if (!filename) return true;
+    const meta = existingMeta.get(filename); if (!meta) return true;
+    return candidateScore(place, meta.page, meta.info) >= 55;
+  };
+  if (place.image && !validSearchImage(place.image)) {
+    place.image = fallbackImage(place);
+    rejectedExisting++;
+  }
+  if (Array.isArray(place.gallery)) {
+    const before = place.gallery.length;
+    place.gallery = place.gallery.filter(validSearchImage);
+    rejectedExisting += before - place.gallery.length;
+    if (!place.gallery.length) delete place.gallery;
+  }
+}
 const incomplete = places
   .filter((place) => place.status === 'active' && place.visibility !== 'suppressed' && (place.image?.isFallback || (place.gallery?.length || 0) < GALLERY_SIZE))
   .sort((a, b) => (b.qualityScore || 0) - (a.qualityScore || 0) || a.name.localeCompare(b.name));
@@ -128,5 +200,5 @@ await fs.writeFile(FILE, `${JSON.stringify(places, null, 2)}\n`);
 const publicPlaces = places.filter((place) => place.status === 'active' && place.visibility !== 'suppressed');
 const realHeroes = publicPlaces.filter((place) => place.image && !place.image.isFallback).length;
 const galleries = publicPlaces.filter((place) => place.gallery?.length).length;
-console.log(`Image enrichment: checked ${targets.length} incomplete listings from rotating offset ${offset}; upgraded ${heroUpgraded} hero image(s); added ${galleryAdded} gallery image(s).`);
+console.log(`Image enrichment: revalidated heuristic media and rejected ${rejectedExisting} weak match(es); checked ${targets.length} incomplete listings from rotating offset ${offset}; upgraded ${heroUpgraded} hero image(s); added ${galleryAdded} gallery image(s).`);
 console.log(`Image coverage: real hero images ${realHeroes}/${publicPlaces.length}; multi-image galleries ${galleries}/${publicPlaces.length}. ${Math.max(0, incomplete.length - targets.length)} incomplete listing(s) remain for future passes.`);
