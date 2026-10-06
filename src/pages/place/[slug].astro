@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 
 export function getStaticPaths() {
@@ -92,7 +93,9 @@ const schema = {
   name: place.name,
   description: place.summary,
   url: new URL(`/place/${place.slug}/`, Astro.site ?? Astro.url.origin).href,
+  mainEntityOfPage: new URL(`/place/${place.slug}/`, Astro.site ?? Astro.url.origin).href,
   image: allSchemaImages,
+  touristType: place.categories || undefined,
   geo: {
     '@type': 'GeoCoordinates',
     latitude: place.latitude,
@@ -112,8 +115,14 @@ const schema = {
 };
 ---
 
-<BaseLayout title={`${place.name} | TassieNow`} description={place.summary} image={place.image.url}>
+<BaseLayout title={`${place.name} | TassieNow`} description={place.summary} image={place.image.url} imageAlt={place.image.alt || `${place.name}, Tasmania`}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+  <BreadcrumbSchema items={[
+    { name: 'TassieNow', path: '/' },
+    { name: place.region, path: `/region/${regionSlug}/` },
+    { name: place.town, path: `/town/${townSlug}/` },
+    { name: place.name }
+  ]} />
 
   <article class="place-page">
     <nav class="breadcrumbs" aria-label="Breadcrumb">
