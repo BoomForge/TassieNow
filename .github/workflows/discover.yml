@@ -7,6 +7,7 @@ on:
       - 'scripts/discover/**'
       - 'scripts/merge-previous-catalogue.mjs'
       - 'scripts/enrich-details.mjs'
+      - 'scripts/link-wikidata.mjs'
       - 'scripts/enrich-official-pages.mjs'
       - 'scripts/sanitize-events.mjs'
       - 'scripts/enrich-event-tickets.mjs'
