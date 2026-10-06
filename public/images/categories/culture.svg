@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675"><rect width="1200" height="675" fill="#eee9ff"/><path d="M0 530C210 420 330 570 520 450S870 390 1200 510V675H0Z" fill="#745bd6" opacity=".22"/><text x="100" y="300" font-family="system-ui,sans-serif" font-size="68" font-weight="800" fill="#251f3d">Culture &amp; museums</text><text x="100" y="380" font-family="system-ui,sans-serif" font-size="30" fill="#554d72">Museums • galleries • heritage</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1=".06" y1=".05" x2=".95" y2=".94">
+      <stop offset="0" stop-color="#f0ebff"/>
+      <stop offset=".54" stop-color="#e7e4f6"/>
+      <stop offset="1" stop-color="#f7eee3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <circle cx="160" cy="185" r="170" fill="#745bd6" opacity=".07"/>
+  <circle cx="845" cy="820" r="230" fill="#FD5B01" opacity=".06"/>
+  <path d="M-70 790c220-120 380 30 580-52s350-82 570 8V1040H-70Z" fill="#4b4168" opacity=".08"/>
+  <circle cx="500" cy="500" r="150" fill="#fffdf8" fill-opacity=".94" stroke="#ffffff" stroke-width="18"/>
+  <path d="M500 399 382 452h236Z" fill="#745bd6"/>
+  <path d="M405 468v118M468 468v118M532 468v118M595 468v118" stroke="#4b4168" stroke-width="20" stroke-linecap="round"/>
+  <path d="M380 602h240M402 620h196" stroke="#4b4168" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="500" cy="426" r="14" fill="#FD5B01"/>
+</svg>
