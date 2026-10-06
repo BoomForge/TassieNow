@@ -6,7 +6,7 @@ const USER_AGENT = 'TassieNow/1.2 (+https://tassienow.com)';
 const TODAY = new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Hobart' }).format(new Date());
 const CONCURRENCY = 6;
 const TIMEOUT = 8500;
-const MAX_CHILD_PAGES = 4;
+const MAX_CHILD_PAGES = Math.max(2, Math.min(12, Number.parseInt(process.env.MAX_OFFICIAL_CHILD_PAGES || '6', 10) || 6));
 
 const clean = (value = '') => String(value ?? '')
   .replace(/&nbsp;/gi, ' ')
