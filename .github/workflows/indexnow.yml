@@ -1,4 +1,4 @@
-name: Notify search engines
+name: Notify search engines and preserve pages
 
 on:
   push:
@@ -12,6 +12,7 @@ on:
       - 'public/robots.txt'
       - 'public/30516139ed96092d5fbd7676d4852aa2.txt'
       - 'scripts/indexnow.mjs'
+      - 'scripts/archive-wayback.mjs'
       - 'astro.config.mjs'
       - '.github/workflows/indexnow.yml'
   schedule:
@@ -61,3 +62,11 @@ jobs:
           SITE_URL: https://tassienow.com
           FULL_SUBMIT: ${{ env.FULL_SUBMIT }}
         run: node scripts/indexnow.mjs
+
+      - name: Preserve changed public pages in Wayback Machine
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        env:
+          SITE_URL: https://tassienow.com
+          FULL_SUBMIT: ${{ env.FULL_SUBMIT }}
+          MAX_WAYBACK_URLS: '4'
+        run: node scripts/archive-wayback.mjs
