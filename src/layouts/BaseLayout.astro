@@ -22,6 +22,7 @@ const origin = Astro.site ?? Astro.url.origin;
 const canonical = new URL(Astro.url.pathname, origin);
 const socialImage = image.startsWith('http') ? image : new URL(image, origin);
 const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN || '';
+const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION || '';
 
 const websiteSchema = {
   '@context': 'https://schema.org',
@@ -60,6 +61,7 @@ const discoveryLinks = [
     <meta name="description" content={description} />
     <meta name="theme-color" content="#027B87" />
     <meta name="robots" content={noindex ? 'noindex,nofollow' : 'index,follow,max-image-preview:large'} />
+    {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="alternate" type="application/atom+xml" title="TassieNow updates" href="/feed.xml" />
