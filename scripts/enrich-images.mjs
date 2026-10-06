@@ -80,6 +80,45 @@ async function queryCommons(place, searchText) {
   }
 }
 
+function commonsFilename(image) {
+  if (!image?.sourceUrl || !/commons\.wikimedia\.org\/wiki\/File:/i.test(image.sourceUrl)) return null;
+  try { return decodeURIComponent(new URL(image.sourceUrl).pathname.replace(/^\/wiki\/File:/i, '')).replace(/_/g, ' '); } catch { return null; }
+}
+function fallbackImage(place) {
+  const value = (place.categories || []).join('|').toLowerCase();
+  let name = 'discover';
+  if (value.includes('museum') || value.includes('art & culture')) name = 'culture';
+  else if (value.includes('wildlife')) name = 'wildlife';
+  else if (value.includes('market') || value.includes('food') || value.includes('local produce')) name = 'food';
+  else if (value.includes('family')) name = 'family';
+  else if (value.includes('nature') || value.includes('outdoor')) name = 'nature';
+  return { url: `/images/categories/${name}.svg`, alt: `${place.name} category image`, attribution: 'TassieNow', license: 'Site artwork', licenseUrl: null, sourceUrl: null, isFallback: true };
+}
+async function existingCommonsMetadata(filenames) {
+  const out = new Map();
+  const unique = [...new Set(filenames.filter(Boolean))];
+  for (let i = 0; i < unique.length; i += 30) {
+    const batch = unique.slice(i, i + 30);
+    const url = new URL('https://commons.wikimedia.org/w/api.php');
+    url.searchParams.set('action', 'query');
+    url.searchParams.set('format', 'json');
+    url.searchParams.set('prop', 'imageinfo');
+    url.searchParams.set('iiprop', 'url|extmetadata');
+    url.searchParams.set('iiurlwidth', '1400');
+    url.searchParams.set('titles', batch.map((name) => `File:${name}`).join('|'));
+    try {
+      const response = await fetch(url, { headers: { 'user-agent': UA, accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
+      if (!response.ok) continue;
+      const data = await response.json();
+      for (const page of Object.values(data.query?.pages || {})) {
+        const info = page.imageinfo?.[0]; if (!info) continue;
+        out.set(String(page.title || '').replace(/^File:/i, '').replace(/_/g, ' '), { page, info });
+      }
+    } catch { /* keep existing media if Commons is temporarily unavailable */ }
+  }
+  return out;
+}
+
 async function searchImages(place) {
   const exact = await queryCommons(place, `"${place.name}" "${place.town || 'Tasmania'}" Tasmania`);
   await sleep(60);
@@ -96,6 +135,31 @@ async function searchImages(place) {
 function imageKey(image) { return image?.sourceUrl || image?.url || ''; }
 
 const places = JSON.parse(await fs.readFile(FILE, 'utf8'));
+const generated = places.filter((place) => place.status === 'active' && place.visibility !== 'suppressed' && !place.managedManually && place.sourceType !== 'manual');
+const heuristicFiles = generated.flatMap((place) => [place.image, ...(place.gallery || [])])
+  .filter((image) => image?.sourceMethod === 'commons-search')
+  .map(commonsFilename)
+  .filter(Boolean);
+const existingMeta = await existingCommonsMetadata(heuristicFiles);
+let rejectedExisting = 0;
+for (const place of generated) {
+  const validSearchImage = (image) => {
+    if (!image || image.sourceMethod !== 'commons-search') return true;
+    const filename = commonsFilename(image); if (!filename) return true;
+    const meta = existingMeta.get(filename); if (!meta) return true;
+    return candidateScore(place, meta.page, meta.info) >= 55;
+  };
+  if (place.image && !validSearchImage(place.image)) {
+    place.image = fallbackImage(place);
+    rejectedExisting++;
+  }
+  if (Array.isArray(place.gallery)) {
+    const before = place.gallery.length;
+    place.gallery = place.gallery.filter(validSearchImage);
+    rejectedExisting += before - place.gallery.length;
+    if (!place.gallery.length) delete place.gallery;
+  }
+}
 const incomplete = places
   .filter((place) => place.status === 'active' && place.visibility !== 'suppressed' && (place.image?.isFallback || (place.gallery?.length || 0) < GALLERY_SIZE))
   .sort((a, b) => (b.qualityScore || 0) - (a.qualityScore || 0) || a.name.localeCompare(b.name));
@@ -136,5 +200,5 @@ await fs.writeFile(FILE, `${JSON.stringify(places, null, 2)}\n`);
 const publicPlaces = places.filter((place) => place.status === 'active' && place.visibility !== 'suppressed');
 const realHeroes = publicPlaces.filter((place) => place.image && !place.image.isFallback).length;
 const galleries = publicPlaces.filter((place) => place.gallery?.length).length;
-console.log(`Image enrichment: checked ${targets.length} incomplete listings from rotating offset ${offset}; upgraded ${heroUpgraded} hero image(s); added ${galleryAdded} gallery image(s).`);
+console.log(`Image enrichment: revalidated heuristic media and rejected ${rejectedExisting} weak match(es); checked ${targets.length} incomplete listings from rotating offset ${offset}; upgraded ${heroUpgraded} hero image(s); added ${galleryAdded} gallery image(s).`);
 console.log(`Image coverage: real hero images ${realHeroes}/${publicPlaces.length}; multi-image galleries ${galleries}/${publicPlaces.length}. ${Math.max(0, incomplete.length - targets.length)} incomplete listing(s) remain for future passes.`);
