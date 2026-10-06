@@ -4,30 +4,96 @@
     "total": 1050,
     "public": 1039,
     "suppressed": 11,
-    "imageCoverage": {
-      "count": 173,
-      "percent": 16.7
+    "media": {
+      "realHeroCoverage": {
+        "count": 360,
+        "percent": 34.6
+      },
+      "twoPlusImages": {
+        "count": 245,
+        "percent": 23.6
+      },
+      "fourPlusImages": {
+        "count": 152,
+        "percent": 14.6
+      },
+      "sixPlusImages": {
+        "count": 110,
+        "percent": 10.6
+      },
+      "totalLicensedImages": 1445,
+      "averageImagesPerPublicListing": 1.39
     },
-    "galleryCoverage": {
-      "count": 50,
-      "percent": 4.8
+    "sources": {
+      "websiteCoverage": {
+        "count": 125,
+        "percent": 12
+      },
+      "officialSourceCoverage": {
+        "count": 104,
+        "percent": 10
+      },
+      "verifiedOfficialSourceCoverage": {
+        "count": 104,
+        "percent": 10
+      },
+      "wikidataLinkage": {
+        "count": 565,
+        "percent": 54.4
+      }
     },
-    "websiteCoverage": {
-      "count": 120,
-      "percent": 11.5
-    },
-    "scheduleCoverage": {
-      "count": 51,
-      "percent": 4.9
-    },
-    "officialSourceCoverage": {
-      "count": 43,
-      "percent": 4.1
+    "details": {
+      "openingHours": {
+        "count": 87,
+        "percent": 8.4
+      },
+      "recurringSchedule": {
+        "count": 53,
+        "percent": 5.1
+      },
+      "phone": {
+        "count": 103,
+        "percent": 9.9
+      },
+      "email": {
+        "count": 89,
+        "percent": 8.6
+      },
+      "address": {
+        "count": 74,
+        "percent": 7.1
+      },
+      "bookingUrl": {
+        "count": 1,
+        "percent": 0.1
+      },
+      "fee": {
+        "count": 26,
+        "percent": 2.5
+      },
+      "wheelchair": {
+        "count": 20,
+        "percent": 1.9
+      },
+      "operator": {
+        "count": 16,
+        "percent": 1.5
+      },
+      "reviewLinks": {
+        "count": 1039,
+        "percent": 100
+      }
     },
     "sourceTypes": {
       "wikidata": 540,
       "openstreetmap": 487,
       "curated": 12
+    },
+    "qualityTiers": {
+      "standard": 367,
+      "featured": 328,
+      "strong": 327,
+      "low": 17
     },
     "regions": {
       "Hobart & South": 358,
