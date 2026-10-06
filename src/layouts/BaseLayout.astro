@@ -6,6 +6,7 @@ interface Props {
   title?: string;
   description?: string;
   image?: string;
+  imageAlt?: string;
   noindex?: boolean;
 }
 
@@ -13,12 +14,14 @@ const {
   title = 'TassieNow — Find something to do in Tasmania',
   description = 'A Tasmanian discovery directory for locals and visitors. Find places, events and activities by location and interest.',
   image = '/images/categories/discover.svg',
+  imageAlt = 'TassieNow — discover Tasmania',
   noindex = false
 } = Astro.props;
 
 const origin = Astro.site ?? Astro.url.origin;
 const canonical = new URL(Astro.url.pathname, origin);
 const socialImage = image.startsWith('http') ? image : new URL(image, origin);
+const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN || '';
 
 const websiteSchema = {
   '@context': 'https://schema.org',
@@ -61,12 +64,26 @@ const discoveryLinks = [
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="alternate" type="application/atom+xml" title="TassieNow updates" href="/feed.xml" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="TassieNow" />
+    <meta property="og:locale" content="en_AU" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={socialImage} />
+    <meta property="og:image:alt" content={imageAlt} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    <meta name="twitter:image:alt" content={imageAlt} />
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)}></script>
+    {analyticsToken && (
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={JSON.stringify({ token: analyticsToken })}
+      ></script>
+    )}
     <title>{title}</title>
   </head>
   <body>
