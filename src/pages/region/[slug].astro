@@ -1,20 +1,434 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import places from '../../data/places.json';
-const slugify = (v) => v.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-export function getStaticPaths() {
-  const localSlugify = (v) => v.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-  const active = places.filter((p) => p.status === 'active' && p.visibility !== 'suppressed').sort((a,b)=>(b.qualityScore||0)-(a.qualityScore||0)||a.name.localeCompare(b.name));
-  return [...new Set(active.map((p) => p.region))].map((region) => ({ params: { slug: localSlugify(region) }, props: { region, regionPlaces: active.filter((p) => p.region === region) } }));
+import events from '../../data/events.json';
+
+const slugify = (value = '') => String(value)
+  .toLowerCase()
+  .replace(/&/g, 'and')
+  .replace(/[^a-z0-9]+/g, '-')
+  .replace(/^-|-$/g, '');
+
+function hobartDate(date = new Date()) {
+  const parts = new Intl.DateTimeFormat('en-AU', {
+    timeZone: 'Australia/Hobart',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).formatToParts(date);
+  const get = (type) => parts.find((part) => part.type === type)?.value;
+  return `${get('year')}-${get('month')}-${get('day')}`;
 }
+
+const active = places
+  .filter((place) => place.status === 'active' && place.visibility !== 'suppressed')
+  .sort((a, b) =>
+    Number(Boolean(b.featured)) - Number(Boolean(a.featured)) ||
+    (b.qualityScore || 0) - (a.qualityScore || 0) ||
+    a.name.localeCompare(b.name)
+  );
+
+export function getStaticPaths() {
+  const localSlugify = (value = '') => String(value)
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+
+  return [...new Set(active.map((place) => place.region))]
+    .map((region) => ({
+      params: { slug: localSlugify(region) },
+      props: { region, regionPlaces: active.filter((place) => place.region === region) }
+    }));
+}
+
 const { region, regionPlaces } = Astro.props;
-const towns = [...new Set(regionPlaces.map((p) => p.town))].sort();
+const today = hobartDate();
+
+const regionEvents = events
+  .filter((event) => event.status === 'active' && event.region === region && event.endDate >= today)
+  .sort((a, b) => a.startDate.localeCompare(b.startDate) || a.name.localeCompare(b.name));
+
+const categoryConfig = [
+  { label: 'Kids', slug: 'kids', matches: ['Family'], icon: '★' },
+  { label: 'Free', slug: 'free', matches: ['Free'], icon: '$0' },
+  { label: 'Rainy day', slug: 'rainy-day', matches: ['Rainy Day'], icon: '☂' },
+  { label: 'Markets', slug: 'markets', matches: ['Markets'], icon: '◫' },
+  { label: 'Walks & nature', slug: 'nature', matches: ['Nature & Walks'], icon: '△' },
+  { label: 'Food & produce', slug: 'food', matches: ['Food & Drink', 'Local Produce'], icon: '●' }
+];
+
+const localModes = categoryConfig
+  .map((mode) => ({
+    ...mode,
+    count: regionPlaces.filter((place) => mode.matches.some((category) => place.categories?.includes(category))).length
+  }))
+  .filter((mode) => mode.count > 0);
+
+const allCategories = [...new Set(regionPlaces.flatMap((place) => place.categories || []))].sort();
+
+const featuredPlaces = [
+  ...regionPlaces.filter((place) => !place.image?.isFallback),
+  ...regionPlaces.filter((place) => place.image?.isFallback)
+].filter((place, index, array) => array.findIndex((item) => item.slug === place.slug) === index).slice(0, 6);
+
+const heroPlace = featuredPlaces[0] || regionPlaces[0];
+
+const townCards = [...new Set(regionPlaces.map((place) => place.town).filter(Boolean))]
+  .map((town) => {
+    const townPlaces = regionPlaces.filter((place) => place.town === town);
+    const imagePlace = townPlaces.find((place) => !place.image?.isFallback) || townPlaces[0];
+    return {
+      town,
+      slug: slugify(town),
+      count: townPlaces.length,
+      image: imagePlace?.image || null,
+      quality: Math.max(...townPlaces.map((place) => place.qualityScore || 0))
+    };
+  })
+  .sort((a, b) => b.count - a.count || b.quality - a.quality || a.town.localeCompare(b.town));
+
+const formatEventDate = (startDate, endDate) => {
+  const start = new Date(`${startDate}T12:00:00Z`);
+  const end = new Date(`${endDate}T12:00:00Z`);
+  const formatter = new Intl.DateTimeFormat('en-AU', {
+    timeZone: 'Australia/Hobart',
+    day: 'numeric',
+    month: 'short'
+  });
+  return startDate === endDate ? formatter.format(start) : `${formatter.format(start)} – ${formatter.format(end)}`;
+};
 ---
-<BaseLayout title={`Things to do in ${region}, Tasmania | TassieNow`} description={`Explore quality-ranked attractions, walks, family activities, food, markets and local discoveries across ${region}, Tasmania.`}>
-  <section class="listing-page">
-    <p class="eyebrow">Explore Tasmania</p><h1>{region}</h1>
-    <p class="hero-copy">{regionPlaces.length} useful places across {towns.length} towns and localities.</p>
-    <div class="town-links">{towns.map((town) => <a class="tag-link" href={`/town/${slugify(town)}/`}>{town}</a>)}</div>
-    <div class="place-grid compact-grid">{regionPlaces.map((place) => <article class="place-card"><a class="card-image-link" href={`/place/${place.slug}/`}><img class="card-image" src={place.image.url} alt={place.image.alt} loading="lazy" /><span class="image-badge">{place.categories[0]}</span></a><div class="card-body"><p class="location">{place.town}</p><h3>{place.name}</h3><p class="summary">{place.summary}</p><a class="card-link" href={`/place/${place.slug}/`}>View place →</a></div></article>)}</div>
-  </section>
+
+<BaseLayout
+  title={`Things to do in ${region}, Tasmania | TassieNow`}
+  description={`Explore attractions, walks, family activities, food, markets, current events and local discoveries across ${region}, Tasmania.`}
+  image={heroPlace?.image?.url || '/images/categories/discover.svg'}
+>
+  <main class="destination-page">
+    <nav class="destination-breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">TassieNow</a><span>›</span><span>{region}</span>
+    </nav>
+
+    <section class="destination-hero">
+      <div class="destination-hero-media">
+        <img
+          src={heroPlace?.image?.url || '/images/categories/discover.svg'}
+          alt={heroPlace?.image?.alt || `${region}, Tasmania`}
+        />
+        <span class="destination-hero-shade"></span>
+        <span class="destination-hero-label">Explore Tasmania</span>
+      </div>
+
+      <div class="destination-hero-copy">
+        <p class="eyebrow">Regional guide</p>
+        <h1>{region}</h1>
+        <p>
+          Find useful places, current events and local ideas across {region}, ranked from TassieNow’s refreshed catalogue.
+        </p>
+        <div class="destination-stats">
+          <span><strong>{regionPlaces.length}</strong> places</span>
+          <span><strong>{townCards.length}</strong> towns & localities</span>
+          <span><strong>{regionEvents.length}</strong> current events</span>
+        </div>
+        <div class="destination-actions">
+          <a class="primary-button link-button" href="#browse-region">Browse all</a>
+          {regionEvents.length > 0 && <a class="secondary-button link-button" href="#region-events">What’s on</a>}
+        </div>
+      </div>
+    </section>
+
+    {localModes.length > 0 && (
+      <section class="destination-section" aria-labelledby="regional-needs-heading">
+        <div class="destination-heading">
+          <div>
+            <p class="section-kicker">Choose your kind of day</p>
+            <h2 id="regional-needs-heading">What are you looking for?</h2>
+          </div>
+          <p>See what this region is strongest in, then jump straight into the full local catalogue below.</p>
+        </div>
+
+        <div class="destination-mode-grid">
+          {localModes.map((mode) => (
+            <button
+              class="destination-mode-card"
+              type="button"
+              data-category-filter={mode.matches.join('|').toLowerCase()}
+            >
+              <span class="destination-mode-icon" aria-hidden="true">{mode.icon}</span>
+              <span>
+                <strong>{mode.label}</strong>
+                <small>{mode.count} local match{mode.count === 1 ? '' : 'es'}</small>
+              </span>
+              <span aria-hidden="true">→</span>
+            </button>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {featuredPlaces.length > 0 && (
+      <section class="destination-section" aria-labelledby="regional-featured-heading">
+        <div class="destination-heading compact">
+          <div>
+            <p class="section-kicker">A good place to start</p>
+            <h2 id="regional-featured-heading">Worth a look</h2>
+          </div>
+          <a class="destination-text-link" href="#browse-region">Search {region} →</a>
+        </div>
+
+        <div class="destination-feature-grid">
+          {featuredPlaces.map((place, index) => (
+            <article class:list={['destination-feature-card', index === 0 && 'large']}>
+              <a href={`/place/${place.slug}/`}>
+                <img src={place.image?.url || '/images/categories/discover.svg'} alt={place.image?.alt || place.name} loading={index < 2 ? 'eager' : 'lazy'} />
+                <span class="destination-image-shade"></span>
+                <span class="destination-image-badge">{place.categories?.[0] || 'Discover'}</span>
+                <span class="destination-feature-copy">
+                  <small>{place.town}</small>
+                  <strong>{place.name}</strong>
+                  <em>Explore →</em>
+                </span>
+              </a>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {townCards.length > 0 && (
+      <section class="destination-section" aria-labelledby="towns-heading">
+        <div class="destination-heading">
+          <div>
+            <p class="section-kicker">Explore geographically</p>
+            <h2 id="towns-heading">Towns & localities</h2>
+          </div>
+          <p>Choose a local area to narrow the catalogue and see what is nearby.</p>
+        </div>
+
+        <div class="destination-town-grid">
+          {townCards.slice(0, 12).map((item) => (
+            <a class="destination-town-card" href={`/town/${item.slug}/`}>
+              {item.image && <img src={item.image.url} alt="" loading="lazy" />}
+              <span class="destination-image-shade"></span>
+              <span class="destination-town-copy">
+                <strong>{item.town}</strong>
+                <small>{item.count} place{item.count === 1 ? '' : 's'}</small>
+              </span>
+              <span class="destination-town-arrow" aria-hidden="true">→</span>
+            </a>
+          ))}
+        </div>
+
+        {townCards.length > 12 && (
+          <details class="more-towns">
+            <summary>Show {townCards.length - 12} more localities</summary>
+            <div class="town-links">
+              {townCards.slice(12).map((item) => <a class="tag-link" href={`/town/${item.slug}/`}>{item.town}</a>)}
+            </div>
+          </details>
+        )}
+      </section>
+    )}
+
+    {regionEvents.length > 0 && (
+      <section class="destination-section" id="region-events" aria-labelledby="region-events-heading">
+        <div class="destination-heading compact">
+          <div>
+            <p class="section-kicker">Current & coming up</p>
+            <h2 id="region-events-heading">What’s happening in {region}</h2>
+          </div>
+          <a class="destination-text-link" href="/discover/this-weekend/">See this weekend →</a>
+        </div>
+
+        <div class="destination-event-grid">
+          {regionEvents.slice(0, 4).map((event) => (
+            <article class="destination-event-card">
+              <a href={`/event/${event.slug}/`} class="destination-event-image">
+                <img src={event.image?.url || '/images/categories/events.svg'} alt={event.image?.alt || event.name} loading="lazy" />
+              </a>
+              <div>
+                <p>{formatEventDate(event.startDate, event.endDate)} · {event.town}</p>
+                <h3><a href={`/event/${event.slug}/`}>{event.name}</a></h3>
+                <span>{event.summary}</span>
+                <a href={`/event/${event.slug}/`}>Event details →</a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="destination-section browse-section" id="browse-region" aria-labelledby="browse-region-heading">
+      <div class="destination-heading">
+        <div>
+          <p class="section-kicker">Full regional catalogue</p>
+          <h2 id="browse-region-heading">Explore {region}</h2>
+        </div>
+        <p><strong id="regional-result-count">{regionPlaces.length}</strong> matching places</p>
+      </div>
+
+      <div class="destination-filter-panel">
+        <input id="regional-search" type="search" placeholder={`Search ${region}…`} aria-label={`Search ${region}`} />
+        <select id="regional-category" aria-label="Filter by category">
+          <option value="">Everything</option>
+          {allCategories.map((category) => <option value={category.toLowerCase()}>{category}</option>)}
+        </select>
+        <button id="regional-clear" class="secondary-button" type="button">Clear</button>
+      </div>
+
+      <div class="place-grid destination-place-grid" id="regional-place-grid">
+        {regionPlaces.map((place, index) => (
+          <article
+            class="place-card regional-place-card"
+            hidden={index >= 18}
+            data-name={place.name.toLowerCase()}
+            data-town={place.town.toLowerCase()}
+            data-categories={(place.categories || []).map((category) => category.toLowerCase()).join('|')}
+          >
+            <a class="card-image-link" href={`/place/${place.slug}/`}>
+              <img class="card-image" src={place.image?.url || '/images/categories/discover.svg'} alt={place.image?.alt || place.name} loading="lazy" />
+              <span class="image-badge">{place.categories?.[0] || 'Discover'}</span>
+            </a>
+            <div class="card-body">
+              <p class="location"><a href={`/town/${slugify(place.town)}/`}>{place.town}</a></p>
+              <h3><a href={`/place/${place.slug}/`}>{place.name}</a></h3>
+              <p class="summary">{place.summary}</p>
+              <div class="tags">{(place.categories || []).slice(0, 3).map((category) => <span class="tag">{category}</span>)}</div>
+              <a class="card-link" href={`/place/${place.slug}/`}>View place →</a>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <div class="empty-state" id="regional-empty-state">No places match those filters yet.</div>
+      <div class="destination-load-row">
+        <button class="secondary-button" id="regional-load-more" type="button">Show more places</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const regionSearch = document.querySelector('#regional-search');
+    const regionCategory = document.querySelector('#regional-category');
+    const regionCards = [...document.querySelectorAll('.regional-place-card')];
+    const regionCount = document.querySelector('#regional-result-count');
+    const regionEmpty = document.querySelector('#regional-empty-state');
+    const regionLoad = document.querySelector('#regional-load-more');
+    const regionClear = document.querySelector('#regional-clear');
+    const categoryButtons = [...document.querySelectorAll('[data-category-filter]')];
+
+    let regionVisibleLimit = 18;
+    let multiCategoryFilter = [];
+
+    function regionalMatches(card) {
+      const query = regionSearch.value.trim().toLowerCase();
+      const category = regionCategory.value;
+      const categories = card.dataset.categories.split('|');
+      const haystack = `${card.dataset.name} ${card.dataset.town} ${card.dataset.categories}`;
+      const matchesMulti = !multiCategoryFilter.length || multiCategoryFilter.some((value) => categories.includes(value));
+      return (!query || haystack.includes(query))
+        && (!category || categories.includes(category))
+        && matchesMulti;
+    }
+
+    function applyRegionalFilters() {
+      const filtered = Boolean(regionSearch.value.trim() || regionCategory.value || multiCategoryFilter.length);
+      const matching = regionCards.filter(regionalMatches);
+
+      regionCards.forEach((card) => {
+        const matchIndex = matching.indexOf(card);
+        card.hidden = matchIndex < 0 || (!filtered && matchIndex >= regionVisibleLimit);
+      });
+
+      regionCount.textContent = String(matching.length);
+      regionEmpty.style.display = matching.length ? 'none' : 'block';
+      regionLoad.hidden = filtered || regionVisibleLimit >= matching.length;
+    }
+
+    regionSearch?.addEventListener('input', () => {
+      multiCategoryFilter = [];
+      applyRegionalFilters();
+    });
+
+    regionCategory?.addEventListener('change', () => {
+      multiCategoryFilter = [];
+      applyRegionalFilters();
+    });
+
+    regionLoad?.addEventListener('click', () => {
+      regionVisibleLimit += 18;
+      applyRegionalFilters();
+    });
+
+    regionClear?.addEventListener('click', () => {
+      regionSearch.value = '';
+      regionCategory.value = '';
+      multiCategoryFilter = [];
+      regionVisibleLimit = 18;
+      applyRegionalFilters();
+    });
+
+    categoryButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        multiCategoryFilter = button.dataset.categoryFilter.split('|');
+        regionSearch.value = '';
+        regionCategory.value = '';
+        document.querySelector('#browse-region')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.setTimeout(applyRegionalFilters, 300);
+      });
+    });
+
+    applyRegionalFilters();
+  </script>
+
+  <style>
+    .destination-page{max-width:1180px;margin:0 auto;padding:2rem 1.25rem 6rem}
+    .destination-breadcrumbs{display:flex;gap:.45rem;align-items:center;margin-bottom:1rem;color:var(--muted);font-size:.8rem;font-weight:750}
+    .destination-breadcrumbs a{text-decoration:none}.destination-breadcrumbs a:hover{color:var(--brand);text-decoration:underline}
+    .destination-hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(340px,.75fr);min-height:520px;border:1px solid var(--line);border-radius:1.8rem;overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
+    .destination-hero-media{position:relative;min-height:520px;background:#dce7df;overflow:hidden}
+    .destination-hero-media img{width:100%;height:100%;min-height:520px;object-fit:cover;display:block}
+    .destination-hero-shade,.destination-image-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,27,28,.04) 35%,rgba(8,27,28,.76) 100%)}
+    .destination-hero-label{position:absolute;top:1rem;left:1rem;padding:.48rem .7rem;border-radius:999px;background:rgba(255,253,248,.92);font-size:.72rem;font-weight:850}
+    .destination-hero-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(2rem,4vw,3.2rem)}
+    .destination-hero-copy h1{font-size:clamp(3rem,5.2vw,5.4rem)}
+    .destination-hero-copy>p:not(.eyebrow){margin:1.15rem 0 0;color:var(--muted);font-size:1.05rem;line-height:1.65}
+    .destination-stats{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.35rem}
+    .destination-stats span{padding:.5rem .65rem;border-radius:.7rem;background:#edf3ef;color:var(--muted);font-size:.78rem;font-weight:750}
+    .destination-stats strong{color:var(--ink)}
+    .destination-actions{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:1.4rem}
+    .destination-section{margin-top:4.6rem}
+    .destination-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.6fr);gap:2rem;align-items:end;margin-bottom:1.15rem}
+    .destination-heading.compact{grid-template-columns:minmax(0,1fr) auto}
+    .destination-heading h2{margin:.1rem 0 0;font-size:clamp(2rem,4vw,3.05rem);letter-spacing:-.05em}
+    .destination-heading>p{margin:0;color:var(--muted);line-height:1.55;text-align:right}
+    .section-kicker{margin:0;color:var(--brand-2);font-size:.72rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+    .destination-text-link{align-self:end;color:var(--brand);font-size:.88rem;font-weight:850;text-decoration:none}.destination-text-link:hover{text-decoration:underline}
+    .destination-mode-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}
+    .destination-mode-card{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:.8rem;align-items:center;min-height:92px;padding:1rem;border:1px solid var(--line);border-radius:1rem;background:var(--surface);color:var(--ink);text-align:left;box-shadow:0 8px 26px rgba(24,53,52,.04)}
+    .destination-mode-card:hover{border-color:#aec6bc;transform:translateY(-1px)}
+    .destination-mode-icon{display:grid;place-items:center;width:2.5rem;height:2.5rem;border-radius:.75rem;background:#e8f0ec;color:var(--brand-2);font-size:.8rem;font-weight:900}
+    .destination-mode-card strong,.destination-mode-card small{display:block}.destination-mode-card small{margin-top:.18rem;color:var(--muted)}
+    .destination-feature-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,205px);gap:.8rem}
+    .destination-feature-card.large{grid-column:span 2;grid-row:span 2}.destination-feature-card a{position:relative;display:block;width:100%;height:100%;overflow:hidden;border-radius:1.15rem;background:#dce7df;text-decoration:none}
+    .destination-feature-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s ease}.destination-feature-card a:hover img{transform:scale(1.025)}
+    .destination-image-badge{position:absolute;top:.8rem;left:.8rem;padding:.4rem .62rem;border-radius:999px;background:rgba(255,253,248,.92);font-size:.68rem;font-weight:850}
+    .destination-feature-copy{position:absolute;left:1rem;right:1rem;bottom:1rem;color:#fff}.destination-feature-copy small,.destination-feature-copy strong,.destination-feature-copy em{display:block}
+    .destination-feature-copy small{color:rgba(255,255,255,.75);font-size:.72rem;font-weight:750}.destination-feature-copy strong{margin-top:.2rem;font-size:1.12rem}.destination-feature-card.large strong{font-size:clamp(1.6rem,3vw,2.3rem)}.destination-feature-copy em{margin-top:.4rem;font-size:.75rem;font-style:normal;font-weight:850}
+    .destination-town-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}.destination-town-card{position:relative;min-height:160px;overflow:hidden;border-radius:1rem;background:#173f43;color:#fff;text-decoration:none}
+    .destination-town-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .25s ease}.destination-town-card:hover img{transform:scale(1.03)}
+    .destination-town-copy{position:absolute;left:1rem;right:2.8rem;bottom:1rem;display:grid;gap:.15rem}.destination-town-copy small{color:rgba(255,255,255,.74)}.destination-town-arrow{position:absolute;right:1rem;bottom:1rem;font-weight:900}
+    .more-towns{margin-top:1rem}.more-towns summary{display:inline-flex;cursor:pointer;color:var(--brand);font-weight:850}
+    .destination-event-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}.destination-event-card{display:grid;grid-template-columns:165px minmax(0,1fr);overflow:hidden;border:1px solid var(--line);border-radius:1rem;background:var(--surface)}
+    .destination-event-image{display:block;min-height:190px;background:#dce7df}.destination-event-image img{width:100%;height:100%;object-fit:cover;display:block}
+    .destination-event-card>div{padding:1rem}.destination-event-card p{margin:0;color:var(--brand-2);font-size:.72rem;font-weight:850;text-transform:uppercase}.destination-event-card h3{margin:.4rem 0;font-size:1.12rem}.destination-event-card h3 a{text-decoration:none}
+    .destination-event-card span{display:-webkit-box;overflow:hidden;color:var(--muted);font-size:.82rem;line-height:1.5;-webkit-box-orient:vertical;-webkit-line-clamp:3}.destination-event-card>div>a{display:inline-block;margin-top:.7rem;color:var(--brand);font-size:.8rem;font-weight:850;text-decoration:none}
+    .browse-section{scroll-margin-top:1rem}.destination-filter-panel{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(180px,.7fr) auto;gap:.7rem;padding:1rem;border:1px solid var(--line);border-radius:1.2rem;background:rgba(255,253,248,.94);box-shadow:var(--shadow)}
+    .destination-filter-panel input,.destination-filter-panel select{min-height:3.15rem;border:1px solid #cad7d1;border-radius:.8rem;background:#fff;color:var(--ink);padding:0 .9rem;outline:none}
+    .destination-place-grid{margin-top:1rem}.regional-place-card[hidden]{display:none}.place-card h3 a{text-decoration:none}.destination-load-row{display:flex;justify-content:center;margin-top:1.2rem}.destination-load-row button[hidden]{display:none}
+    @media(max-width:980px){.destination-hero{grid-template-columns:1fr;min-height:0}.destination-hero-media,.destination-hero-media img{min-height:390px}.destination-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:300px 200px 200px}.destination-feature-card.large{grid-column:span 2;grid-row:span 1}.destination-town-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:760px){.destination-page{padding-top:1.2rem}.destination-section{margin-top:3.5rem}.destination-heading,.destination-heading.compact{grid-template-columns:1fr;gap:.6rem;align-items:start}.destination-heading>p{text-align:left}.destination-text-link{align-self:start}.destination-mode-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.destination-town-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.destination-event-grid{grid-template-columns:1fr}.destination-filter-panel{grid-template-columns:1fr 1fr}.destination-filter-panel input{grid-column:1/-1}}
+    @media(max-width:520px){.destination-hero{border-radius:1.25rem}.destination-hero-media,.destination-hero-media img{min-height:300px}.destination-hero-copy{padding:1.3rem}.destination-mode-grid,.destination-feature-grid,.destination-town-grid{grid-template-columns:1fr;grid-template-rows:none}.destination-feature-card,.destination-feature-card.large{grid-column:auto;grid-row:auto;height:240px}.destination-town-card{min-height:155px}.destination-event-card{grid-template-columns:110px minmax(0,1fr)}.destination-filter-panel{grid-template-columns:1fr}.destination-filter-panel input{grid-column:auto}}
+  </style>
 </BaseLayout>
