@@ -6,38 +6,73 @@ const OUT = new URL('../src/data/catalogue-audit.json', import.meta.url);
 function pct(value,total){return total?Math.round((value/total)*1000)/10:0;}
 function countBy(items,keyFn){const out={};for(const item of items){const key=keyFn(item)||'unknown';out[key]=(out[key]||0)+1;}return Object.fromEntries(Object.entries(out).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])));}
 function tasDate(date=new Date()){const p=new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date);const g=(t)=>p.find((x)=>x.type===t)?.value;return`${g('year')}-${g('month')}-${g('day')}`;}
+function coverage(items,predicate){const count=items.filter(predicate).length;return{count,percent:pct(count,items.length)};}
+function mediaCount(place){
+  const keys=new Set();
+  if(place.image&&!place.image.isFallback)keys.add(place.image.sourceUrl||place.image.url);
+  for(const image of place.gallery||[])if(image&&!image.isFallback)keys.add(image.sourceUrl||image.url);
+  keys.delete(undefined);keys.delete(null);keys.delete('');
+  return keys.size;
+}
 const today=tasDate();
 const places=JSON.parse(await fs.readFile(PLACES,'utf8'));
 const events=JSON.parse(await fs.readFile(EVENTS,'utf8'));
 const publicPlaces=places.filter((p)=>p.status==='active'&&p.visibility!=='suppressed');
 const activeEvents=events.filter((e)=>e.status==='active'&&e.endDate>=today);
-const imageReady=publicPlaces.filter((p)=>p.image&&!p.image.isFallback);
-const galleryReady=publicPlaces.filter((p)=>Array.isArray(p.gallery)&&p.gallery.length>1);
-const websiteReady=publicPlaces.filter((p)=>p.website);
-const scheduleReady=publicPlaces.filter((p)=>p.schedule?.summary);
-const officialReady=publicPlaces.filter((p)=>p.officialSource?.url);
+const imageCounts=publicPlaces.map(mediaCount);
+const totalLicensedImages=imageCounts.reduce((sum,count)=>sum+count,0);
+const officialVerified=(p)=>p.officialSourceCheck?.status==='ok'||p.officialSource?.source==='wikidata:P856'||p.officialSource?.type==='government'||p.sourceType==='parks-tasmania';
 const ticketReady=activeEvents.filter((e)=>e.ticketUrl);
 const priced=activeEvents.filter((e)=>e.priceFrom!==undefined||e.priceTo!==undefined);
 const audit={
   generatedAt:today,
   places:{
-    total:places.length,public:publicPlaces.length,suppressed:places.length-publicPlaces.length,
-    imageCoverage:{count:imageReady.length,percent:pct(imageReady.length,publicPlaces.length)},
-    galleryCoverage:{count:galleryReady.length,percent:pct(galleryReady.length,publicPlaces.length)},
-    websiteCoverage:{count:websiteReady.length,percent:pct(websiteReady.length,publicPlaces.length)},
-    scheduleCoverage:{count:scheduleReady.length,percent:pct(scheduleReady.length,publicPlaces.length)},
-    officialSourceCoverage:{count:officialReady.length,percent:pct(officialReady.length,publicPlaces.length)},
-    sourceTypes:countBy(publicPlaces,(p)=>p.sourceType),regions:countBy(publicPlaces,(p)=>p.region),towns:Object.keys(countBy(publicPlaces,(p)=>p.town)).length,
+    total:places.length,
+    public:publicPlaces.length,
+    suppressed:places.length-publicPlaces.length,
+    media:{
+      realHeroCoverage:coverage(publicPlaces,(p)=>p.image&&!p.image.isFallback),
+      twoPlusImages:coverage(publicPlaces,(p)=>mediaCount(p)>=2),
+      fourPlusImages:coverage(publicPlaces,(p)=>mediaCount(p)>=4),
+      sixPlusImages:coverage(publicPlaces,(p)=>mediaCount(p)>=6),
+      totalLicensedImages,
+      averageImagesPerPublicListing:publicPlaces.length?Math.round((totalLicensedImages/publicPlaces.length)*100)/100:0
+    },
+    sources:{
+      websiteCoverage:coverage(publicPlaces,(p)=>Boolean(p.website)),
+      officialSourceCoverage:coverage(publicPlaces,(p)=>Boolean(p.officialSource?.url)),
+      verifiedOfficialSourceCoverage:coverage(publicPlaces,officialVerified),
+      wikidataLinkage:coverage(publicPlaces,(p)=>/^Q\d+$/.test(String(p.wikidata||((p.sourceType==='wikidata'&&p.sourceId)||''))))
+    },
+    details:{
+      openingHours:coverage(publicPlaces,(p)=>Boolean(p.openingHours)),
+      recurringSchedule:coverage(publicPlaces,(p)=>Boolean(p.schedule?.summary)),
+      phone:coverage(publicPlaces,(p)=>Boolean(p.phone)),
+      email:coverage(publicPlaces,(p)=>Boolean(p.email)),
+      address:coverage(publicPlaces,(p)=>Boolean(p.address)),
+      bookingUrl:coverage(publicPlaces,(p)=>Boolean(p.bookingUrl)),
+      fee:coverage(publicPlaces,(p)=>p.fee!==undefined&&p.fee!==null&&p.fee!==''),
+      wheelchair:coverage(publicPlaces,(p)=>Boolean(p.wheelchair)),
+      operator:coverage(publicPlaces,(p)=>Boolean(p.operator)),
+      reviewLinks:coverage(publicPlaces,(p)=>Boolean(p.reviewLinks?.length))
+    },
+    sourceTypes:countBy(publicPlaces,(p)=>p.sourceType),
+    qualityTiers:countBy(publicPlaces,(p)=>p.qualityTier),
+    regions:countBy(publicPlaces,(p)=>p.region),
+    towns:Object.keys(countBy(publicPlaces,(p)=>p.town)).length,
     categories:countBy(publicPlaces,(p)=>(p.categories||[])[0])
   },
   events:{
     active:activeEvents.length,
     ticketCoverage:{count:ticketReady.length,percent:pct(ticketReady.length,activeEvents.length)},
     priceCoverage:{count:priced.length,percent:pct(priced.length,activeEvents.length)},
-    providers:countBy(ticketReady,(e)=>e.ticketProvider),sources:countBy(activeEvents,(e)=>e.sourceName),regions:countBy(activeEvents,(e)=>e.region)
+    providers:countBy(ticketReady,(e)=>e.ticketProvider),
+    sources:countBy(activeEvents,(e)=>e.sourceName),
+    regions:countBy(activeEvents,(e)=>e.region)
   }
 };
 await fs.writeFile(OUT,`${JSON.stringify(audit,null,2)}\n`);
-console.log(`Catalogue audit: ${audit.places.public} public places across ${audit.places.towns} towns; ${audit.places.imageCoverage.percent}% with licensed/non-fallback hero images.`);
+console.log(`Catalogue audit: ${audit.places.public} public places across ${audit.places.towns} towns; ${audit.places.media.realHeroCoverage.percent}% real heroes; ${audit.places.media.fourPlusImages.percent}% with 4+ licensed images; ${audit.places.sources.verifiedOfficialSourceCoverage.percent}% verified official sources.`);
+console.log(`Detail coverage: hours ${audit.places.details.openingHours.percent}%, phone ${audit.places.details.phone.percent}%, email ${audit.places.details.email.percent}%, address ${audit.places.details.address.percent}%, booking ${audit.places.details.bookingUrl.percent}%, accessibility ${audit.places.details.wheelchair.percent}%.`);
 console.log(`Events audit: ${audit.events.active} active; ${audit.events.ticketCoverage.percent}% with direct ticket/booking links; ${audit.events.priceCoverage.percent}% with price data.`);
 console.log(`Place source mix: ${JSON.stringify(audit.places.sourceTypes)}.`);
