@@ -97,6 +97,10 @@ if (liveKey !== KEY) {
         console.warn(`IndexNow rate-limited this batch: ${message}`);
         break;
       }
+      if (response.status === 403 && /SiteVerificationNotCompleted|verification/i.test(message)) {
+        console.warn(`IndexNow is still verifying ${HOST}; the scheduled/content-change run will retry automatically.`);
+        break;
+      }
       throw new Error(`IndexNow ${response.status}: ${message}`);
     }
 
