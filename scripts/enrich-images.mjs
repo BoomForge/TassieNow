@@ -6,7 +6,8 @@ const MAX_PER_RUN = Math.max(1, Math.min(2000, Number.parseInt(process.env.MAX_I
 const GALLERY_SIZE = Math.max(1, Math.min(12, Number.parseInt(process.env.GALLERY_SIZE || '3', 10) || 3));
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const clean = (value = '') => String(value).replace(/<[^>]*>/g, ' ').replace(/&amp;/gi, '&').replace(/&quot;/gi, '"').replace(/&#39;|&apos;/gi, "'").replace(/\s+/g, ' ').trim();
-const tokens = (value = '') => clean(value).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().split(/[^a-z0-9]+/).filter((token) => token.length >= 4 && !['tasmania', 'tasmanian', 'the', 'park', 'walk', 'lookout', 'museum', 'gallery'].includes(token));
+const GENERIC_IMAGE_TOKENS = new Set(['tasmania','tasmanian','the','park','walk','lookout','museum','gallery','falls','fall','beach','bay','mount','mountain','river','lake','cliffs','cliff','point','rock','reserve','trail','track','island','wildlife','nature']);
+const tokens = (value = '') => clean(value).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().split(/[^a-z0-9]+/).filter((token) => token.length >= 4 && !GENERIC_IMAGE_TOKENS.has(token));
 
 function candidateScore(place, page, info) {
   const title = clean(page.title).toLowerCase();
@@ -15,13 +16,20 @@ function candidateScore(place, page, info) {
   if (/\b(logo|map|diagram|coat of arms|flag|icon|signage|sign|poster|brochure|floor plan|locator map)\b/.test(title)) return 0;
   const placeTokens = tokens(place.name);
   const titleTokens = tokens(title);
+  const titleHits = placeTokens.filter((token) => titleTokens.includes(token)).length;
+  const blobHits = placeTokens.filter((token) => blob.includes(token)).length;
+  const natureLike = place.categories?.some((category) => /nature|walk|outdoor/i.test(category));
   let score = 0;
-  for (const token of placeTokens) if (titleTokens.includes(token)) score += 18;
-  if (blob.includes('tasmania')) score += 18;
-  if (place.town && (`${title} ${blob}`).includes(String(place.town).toLowerCase())) score += 14;
-  if (placeTokens.some((token) => blob.includes(token))) score += 12;
-  if (/\.(?:jpe?g|webp)$/i.test(title)) score += 5;
-  if (place.categories?.some((category) => /museum|wildlife|nature|walk|attraction|food|market/i.test(category)) && blob.includes(String(place.categories[0] || '').toLowerCase())) score += 4;
+  score += titleHits * 24;
+  if (blob.includes('tasmania')) score += 14;
+  if (place.town && (`${title} ${blob}`).includes(String(place.town).toLowerCase())) score += 10;
+  score += Math.min(18, blobHits * 9);
+  if (/\.(?:jpe?g|webp)$/i.test(title)) score += 4;
+  if (place.categories?.some((category) => /museum|wildlife|nature|walk|attraction|food|market/i.test(category)) && blob.includes(String(place.categories[0] || '').toLowerCase())) score += 3;
+  // Search results are heuristic. For nature destinations in particular, a generic
+  // Tasmania/town match is not enough evidence that the photo depicts this place.
+  if (natureLike && placeTokens.length && titleHits === 0 && blobHits < 2) return 0;
+  if (placeTokens.length && titleHits === 0 && blobHits === 0) return 0;
   return score;
 }
 
@@ -62,7 +70,7 @@ async function queryCommons(place, searchText) {
       const info = page.imageinfo?.[0];
       if (!info) continue;
       const score = candidateScore(place, page, info);
-      if (score < 42) continue;
+      if (score < 55) continue;
       const image = imageFromCandidate(place, page, info, score);
       if (image) candidates.push({ image, score });
     }
