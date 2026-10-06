@@ -1,28 +1,163 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import events from '../../data/events.json';
-export function getStaticPaths(){return events.filter((e)=>e.status==='active').map((event)=>({params:{slug:event.slug},props:{event}}));}
-const { event }=Astro.props;
-const absoluteImage=event.image.url.startsWith('http')?event.image.url:new URL(event.image.url,Astro.site??Astro.url.origin).href;
-const offer=event.ticketUrl?{'@type':'Offer',url:event.ticketUrl,price:event.priceFrom,priceCurrency:event.priceCurrency||'AUD',availability:event.availability?`https://schema.org/${event.availability}`:undefined}:undefined;
-const schema={'@context':'https://schema.org','@type':'Event',name:event.name,startDate:event.startDate,endDate:event.endDate,description:event.summary,url:event.eventUrl||event.sourceUrl,location:{'@type':'Place',name:event.venue||event.town,address:{'@type':'PostalAddress',addressLocality:event.town,addressRegion:'TAS',addressCountry:'AU'}},image:[absoluteImage],offers:offer};
-function money(value){if(value===undefined||value===null||Number.isNaN(Number(value)))return null;return new Intl.NumberFormat('en-AU',{style:'currency',currency:event.priceCurrency||'AUD',maximumFractionDigits:Number(value)%1===0?0:2}).format(Number(value));}
-const priceFrom=money(event.priceFrom),priceTo=money(event.priceTo);
-const priceLabel=event.priceFrom===0?'Free':priceFrom?(priceTo&&priceTo!==priceFrom?`${priceFrom}–${priceTo}`:`From ${priceFrom}`):null;
+
+export function getStaticPaths() {
+  return events
+    .filter((event) => event.status === 'active')
+    .map((event) => ({ params: { slug: event.slug }, props: { event } }));
+}
+
+const { event } = Astro.props;
+const origin = Astro.site ?? Astro.url.origin;
+const pageUrl = new URL(`/event/${event.slug}/`, origin).href;
+const absoluteImage = event.image.url.startsWith('http') ? event.image.url : new URL(event.image.url, origin).href;
+
+const offer = event.ticketUrl ? {
+  '@type': 'Offer',
+  url: event.ticketUrl,
+  price: event.priceFrom,
+  priceCurrency: event.priceCurrency || 'AUD',
+  availability: event.availability ? `https://schema.org/${event.availability}` : undefined,
+  validFrom: event.ticketLastChecked || undefined
+} : undefined;
+
+const eventSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Event',
+  name: event.name,
+  startDate: event.startDate,
+  endDate: event.endDate,
+  description: event.summary,
+  url: pageUrl,
+  image: [absoluteImage],
+  eventStatus: 'https://schema.org/EventScheduled',
+  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  location: {
+    '@type': 'Place',
+    name: event.venue || undefined,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: event.address || undefined,
+      addressLocality: event.town,
+      addressRegion: 'TAS',
+      addressCountry: 'AU'
+    }
+  },
+  organizer: event.sourceName ? {
+    '@type': 'Organization',
+    name: event.sourceName,
+    url: event.sourceUrl
+  } : undefined,
+  offers: offer,
+  isAccessibleForFree: event.priceFrom === 0 || event.categories?.includes('Free') || undefined
+};
+
+function money(value) {
+  if (value === undefined || value === null || Number.isNaN(Number(value))) return null;
+  return new Intl.NumberFormat('en-AU', {
+    style: 'currency',
+    currency: event.priceCurrency || 'AUD',
+    maximumFractionDigits: Number(value) % 1 === 0 ? 0 : 2
+  }).format(Number(value));
+}
+
+const priceFrom = money(event.priceFrom);
+const priceTo = money(event.priceTo);
+const priceLabel = event.priceFrom === 0
+  ? 'Free'
+  : priceFrom
+    ? (priceTo && priceTo !== priceFrom ? `${priceFrom}–${priceTo}` : `From ${priceFrom}`)
+    : null;
+
+const regionSlug = String(event.region || '')
+  .toLowerCase()
+  .replace(/&/g, 'and')
+  .replace(/[^a-z0-9]+/g, '-')
+  .replace(/^-|-$/g, '');
+
+const townSlug = String(event.town || '')
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, '-')
+  .replace(/^-|-$/g, '');
 ---
-<BaseLayout title={`${event.name} | TassieNow`} description={event.summary} image={event.image.url}>
-  <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+
+<BaseLayout
+  title={`${event.name} | TassieNow`}
+  description={event.summary}
+  image={event.image.url}
+  imageAlt={event.image.alt || `${event.name}, Tasmania`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(eventSchema)}></script>
+  <BreadcrumbSchema items={[
+    { name: 'TassieNow', path: '/' },
+    { name: event.region, path: `/region/${regionSlug}/` },
+    { name: event.town, path: `/town/${townSlug}/` },
+    { name: event.name }
+  ]} />
+
   <article class="content-page">
+    <nav class="event-breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">TassieNow</a><span>›</span>
+      <a href={`/region/${regionSlug}/`}>{event.region}</a><span>›</span>
+      <a href={`/town/${townSlug}/`}>{event.town}</a>
+    </nav>
+
     <p class="eyebrow">{event.town} · {event.region}</p>
     <h1>{event.name}</h1>
-    <figure class="detail-image-wrap"><img class="detail-image" src={event.image.url} alt={event.image.alt}/>{!event.image.isFallback&&<figcaption>Image: {event.image.attribution} · {event.image.license}</figcaption>}</figure>
-    <p class="event-date"><strong>{event.startDate}</strong>{event.endDate!==event.startDate&&<> to <strong>{event.endDate}</strong></>}</p>
-    <div class="detail-meta">{event.categories.map((c)=><span class="tag">{c}</span>)}</div>
-    {event.venue&&<p><strong>Venue:</strong> {event.venue}</p>}
+
+    <figure class="detail-image-wrap">
+      <img class="detail-image" src={event.image.url} alt={event.image.alt} />
+      {!event.image.isFallback && <figcaption>Image: {event.image.attribution} · {event.image.license}</figcaption>}
+    </figure>
+
+    <p class="event-date">
+      <strong>{event.startDate}</strong>
+      {event.endDate !== event.startDate && <> to <strong>{event.endDate}</strong></>}
+    </p>
+
+    <div class="detail-meta">{event.categories.map((category) => <span class="tag">{category}</span>)}</div>
+    {event.venue && <p><strong>Venue:</strong> {event.venue}</p>}
+    {event.address && <p><strong>Address:</strong> {event.address}</p>}
     <p>{event.summary}</p>
-    {(event.ticketUrl||priceLabel||event.availability)&&<section class="ticket-panel" aria-label="Tickets and booking"><h2>Tickets & booking</h2>{priceLabel&&<p><strong>{priceLabel}</strong></p>}{event.availability&&<p>Availability: {String(event.availability).replace(/([a-z])([A-Z])/g,'$1 $2')}</p>}{event.ticketProvider&&<p>Ticket provider: {event.ticketProvider}</p>}<div class="action-row">{event.ticketUrl&&<a class="primary-button link-button" href={event.ticketUrl} target="_blank" rel="noopener noreferrer">Get tickets / Book ↗</a>}</div></section>}
-    <div class="action-row"><a class="action-link" href={event.eventUrl||event.sourceUrl} target="_blank" rel="noopener noreferrer">Official event details ↗</a></div>
-    <p class="notice">Event times, ticket availability, prices and venues can change. Confirm details with the organiser or ticket provider before travelling or purchasing.</p>
-    <p>Source: {event.sourceName||'Official event source'} · Last checked <strong>{event.lastChecked}</strong>{event.ticketLastChecked&&<> · Tickets checked <strong>{event.ticketLastChecked}</strong></>}</p>
+
+    {(event.ticketUrl || priceLabel || event.availability) && (
+      <section class="ticket-panel" aria-label="Tickets and booking">
+        <h2>Tickets & booking</h2>
+        {priceLabel && <p><strong>{priceLabel}</strong></p>}
+        {event.availability && <p>Availability: {String(event.availability).replace(/([a-z])([A-Z])/g, '$1 $2')}</p>}
+        {event.ticketProvider && <p>Ticket provider: {event.ticketProvider}</p>}
+        <div class="action-row">
+          {event.ticketUrl && (
+            <a class="primary-button link-button" href={event.ticketUrl} target="_blank" rel="noopener noreferrer">
+              Get tickets / Book ↗
+            </a>
+          )}
+        </div>
+      </section>
+    )}
+
+    <div class="action-row">
+      <a class="action-link" href={event.eventUrl || event.sourceUrl} target="_blank" rel="noopener noreferrer">
+        Official event details ↗
+      </a>
+    </div>
+
+    <p class="notice">
+      Event times, ticket availability, prices and venues can change. Confirm details with the organiser or ticket provider before travelling or purchasing.
+    </p>
+
+    <p>
+      Source: {event.sourceName || 'Official event source'} · Last checked <strong>{event.lastChecked}</strong>
+      {event.ticketLastChecked && <> · Tickets checked <strong>{event.ticketLastChecked}</strong></>}
+    </p>
   </article>
+
+  <style>
+    .event-breadcrumbs{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;margin:0 0 1rem;color:var(--muted);font-size:.8rem;font-weight:750}
+    .event-breadcrumbs a{text-decoration:none}
+    .event-breadcrumbs a:hover{color:var(--brand);text-decoration:underline}
+    .event-breadcrumbs span{opacity:.55}
+  </style>
 </BaseLayout>

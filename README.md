@@ -118,6 +118,15 @@ Use:
 
 Cloudflare Pages rebuilds the public site after changes land on `main`.
 
+### Launch measurement and search verification
+
+The public layout supports two optional Cloudflare Pages environment variables:
+
+- `PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN` — loads the Cloudflare Web Analytics beacon when a manual token is used. If Pages Web Analytics automatic injection is enabled in the Cloudflare dashboard, leave this unset to avoid a duplicate beacon.
+- `PUBLIC_GOOGLE_SITE_VERIFICATION` — renders Google's `google-site-verification` meta tag so Search Console ownership can be verified without another code change.
+
+Cloudflare Pages can also enable Web Analytics through the project's **Metrics → Web Analytics** control, which injects the beacon automatically on deployment.
+
 ## Data model
 
 Canonical data lives in:
