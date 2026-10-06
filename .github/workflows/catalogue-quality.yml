@@ -31,15 +31,22 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Enrich OSM and structured listing details
         run: node scripts/enrich-details.mjs
+      - name: Harvest Wikidata official metadata
+        run: node scripts/enrich-wikidata-metadata.mjs
+      - name: Verify and promote official sources
+        run: node scripts/verify-official-sources.mjs
       - name: Crawl official visit, hours, contact and date pages
         run: node scripts/enrich-official-pages.mjs
       - name: Upgrade exact Wikidata listing images
+        env:
+          MAX_WIKIDATA_MEDIA: '250'
+          WIKIDATA_GALLERY_SIZE: '6'
         run: node scripts/enrich-wikidata-images.mjs
       - name: Full licensed hero and gallery sweep on manual quality run
         if: github.event_name == 'workflow_dispatch'
         env:
-          MAX_IMAGE_ENRICH: '500'
-          GALLERY_SIZE: '3'
+          MAX_IMAGE_ENRICH: '1400'
+          GALLERY_SIZE: '8'
         run: node scripts/enrich-images.mjs
       - name: Prune expired events
         run: node scripts/prune-expired-events.mjs

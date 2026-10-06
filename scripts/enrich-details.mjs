@@ -77,7 +77,8 @@ function osmFields(tags = {}) {
     website: httpUrl(tags.website || tags['contact:website']),
     fee: clean(tags.fee) || null,
     wheelchair: clean(tags.wheelchair) || null,
-    operator: clean(tags.operator) || null
+    operator: clean(tags.operator) || null,
+    wikidata: /^Q\\d+$/.test(clean(tags.wikidata)) ? clean(tags.wikidata) : null
   };
 }
 
@@ -203,6 +204,7 @@ for (const place of osmPlaces) {
   const fields = osmFields(tags), srcUrl = place.sourceUrl || `https://www.openstreetmap.org/${place.sourceId}`;
   for (const key of ['openingHours', 'phone', 'email', 'address', 'bookingUrl', 'fee', 'wheelchair', 'operator']) if (applyField(place, key, fields[key], 'openstreetmap', srcUrl)) osmChanged++;
   if (!place.website && fields.website) { place.website = fields.website; osmChanged++; }
+  if (!place.wikidata && fields.wikidata) { place.wikidata = fields.wikidata; osmChanged++; }
 }
 
 const websiteTargets = places.filter((place) => place.status === 'active' && canFetchWebsite(place.officialSource?.url || place.website));

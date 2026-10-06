@@ -34,12 +34,15 @@ jobs:
           node --check scripts/discover/parks-tasmania.mjs
           node --check scripts/merge-previous-catalogue.mjs
           node --check scripts/enrich-details.mjs
+          node --check scripts/enrich-wikidata-metadata.mjs
+          node --check scripts/verify-official-sources.mjs
           node --check scripts/enrich-official-pages.mjs
           node --check scripts/sanitize-events.mjs
           node --check scripts/enrich-event-tickets.mjs
           node --check scripts/sanitize-ticket-data.mjs
           node --check scripts/enrich-images.mjs
           node --check scripts/enrich-wikidata-images.mjs
+          node --check scripts/catalogue-audit.mjs
           node --check scripts/prune-expired-events.mjs
           node --check scripts/rank-catalogue.mjs
           node --check scripts/catalogue-audit.mjs
