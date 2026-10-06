@@ -1145,6 +1145,7 @@
       "government-source",
       "official-walk-data",
       "real-image",
+      "contact-details",
       "review-link",
       "details-checked"
     ],
@@ -1183,7 +1184,21 @@
         "sourceMethod": "commons-search",
         "confidence": "medium"
       }
-    ]
+    ],
+    "email": "StHelensParks@parks.tas.gov.au",
+    "detailSources": {
+      "email": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
+        "checkedAt": "2026-10-06"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "phone": "03 6387 5510"
   },
   {
     "slug": "wineglass-bay-lookout",
@@ -1710,7 +1725,14 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-06"
+    "rankedAt": "2026-10-06",
+    "schedule": {
+      "summary": "Open 7 days -&#160;(closed between 12.30pm and 1pm daily)&#160;​",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
+      "frequency": "daily",
+      "startTime": "12:30",
+      "endTime": "13:00"
+    }
   },
   {
     "slug": "bonorong-wildlife-sanctuary",
@@ -2010,7 +2032,14 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-06"
+    "rankedAt": "2026-10-06",
+    "schedule": {
+      "summary": "Open 7 days -&#160;(closed between 12.30pm and 1pm daily)&#160;​",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track",
+      "frequency": "daily",
+      "startTime": "12:30",
+      "endTime": "13:00"
+    }
   },
   {
     "slug": "weldborough-pass-rainforest-walk",
@@ -2896,7 +2925,17 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-06"
+    "rankedAt": "2026-10-06",
+    "schedule": {
+      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
+      "daysOfWeek": [
+        "Tuesday",
+        "Wednesday"
+      ],
+      "startTime": "10:00",
+      "endTime": "16:00"
+    }
   },
   {
     "slug": "bird-hide",
@@ -3417,7 +3456,14 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-06"
+    "rankedAt": "2026-10-06",
+    "schedule": {
+      "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/sleepy-bay",
+      "frequency": "daily",
+      "startTime": "09:00",
+      "endTime": "16:00"
+    }
   },
   {
     "slug": "springlawn-bird-hide-lookout",
@@ -3509,7 +3555,14 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-06"
+    "rankedAt": "2026-10-06",
+    "schedule": {
+      "summary": "Open 7 days -&#160;(closed between 12.30pm and 1pm daily)&#160;​",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "frequency": "daily",
+      "startTime": "12:30",
+      "endTime": "13:00"
+    }
   },
   {
     "slug": "waratah-lookout",
@@ -14253,7 +14306,14 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-06"
+    "rankedAt": "2026-10-06",
+    "schedule": {
+      "summary": "Open daily, 7am to 5pm, 7 days a week",
+      "sourceUrl": "https://anvers-chocolate.com.au/home/about-us/",
+      "frequency": "daily",
+      "startTime": "07:00",
+      "endTime": "17:00"
+    }
   },
   {
     "slug": "sheffield-steam-and-heritage-centre",
@@ -40399,6 +40459,57 @@
     "rankedAt": "2026-10-06"
   },
   {
+    "slug": "kangaroo-bluff-battery",
+    "name": "Kangaroo Bluff Battery",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "latitude": -42.8817461,
+    "longitude": 147.3672448,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Hobart.",
+    "website": "https://www.parks.tas.gov.au/indeX.aspX?base=2665",
+    "sourceUrl": "https://www.openstreetmap.org/way/207539315",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/207539315",
+    "wikidata": null,
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "image": {
+      "url": "/images/categories/discover.svg",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "alt": "Kangaroo Bluff Battery category image"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Kangaroo%20Bluff%20Battery%20Hobart%20Tasmania"
+      }
+    ],
+    "lastDetailsChecked": "2026-10-06",
+    "websiteCheck": {
+      "status": "dead",
+      "code": 404,
+      "checkedAt": "2026-10-05T23:44:10.337Z"
+    },
+    "qualityScore": 35,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-06"
+  },
+  {
     "slug": "king-island-museum",
     "name": "King Island Museum",
     "town": "Currie",
@@ -46937,7 +47048,15 @@
     ],
     "rankedAt": "2026-10-06",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-06"
+    "discoveryStaleSince": "2026-10-06",
+    "wheelchair": "yes",
+    "detailSources": {
+      "wheelchair": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/324759855",
+        "checkedAt": "2026-10-06"
+      }
+    }
   },
   {
     "slug": "mount-stuart-lookout",
@@ -47177,7 +47296,15 @@
     ],
     "rankedAt": "2026-10-06",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-06"
+    "discoveryStaleSince": "2026-10-06",
+    "wheelchair": "no",
+    "detailSources": {
+      "wheelchair": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/661992445",
+        "checkedAt": "2026-10-06"
+      }
+    }
   },
   {
     "slug": "old-pier-pilings",
@@ -52274,56 +52401,6 @@
       }
     ],
     "lastDetailsChecked": "2026-10-06",
-    "qualityScore": 25,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-06"
-  },
-  {
-    "slug": "kangaroo-bluff-battery",
-    "name": "Kangaroo Bluff Battery",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "latitude": -42.8817461,
-    "longitude": 147.3672448,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Hobart.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/way/207539315",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/207539315",
-    "wikidata": null,
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true,
-      "alt": "Kangaroo Bluff Battery category image"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Kangaroo%20Bluff%20Battery%20Hobart%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-06",
-    "websiteCheck": {
-      "status": "dead",
-      "code": 404,
-      "checkedAt": "2026-10-05T23:44:10.337Z"
-    },
     "qualityScore": 25,
     "qualityTier": "standard",
     "visibility": "public",
