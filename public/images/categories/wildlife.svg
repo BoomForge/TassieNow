@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675"><rect width="1200" height="675" fill="#e1f5ea"/><path d="M0 530C210 420 330 570 520 450S870 390 1200 510V675H0Z" fill="#238a62" opacity=".22"/><text x="100" y="300" font-family="system-ui,sans-serif" font-size="68" font-weight="800" fill="#173a2a">Wildlife</text><text x="100" y="380" font-family="system-ui,sans-serif" font-size="30" fill="#3e6654">Animals • sanctuaries • nature</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1=".07" y1=".03" x2=".94" y2=".95">
+      <stop offset="0" stop-color="#e5f5ea"/>
+      <stop offset=".52" stop-color="#dceee5"/>
+      <stop offset="1" stop-color="#eaf0dc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <circle cx="825" cy="170" r="175" fill="#238a62" opacity=".08"/>
+  <circle cx="145" cy="825" r="230" fill="#027B87" opacity=".06"/>
+  <path d="M-70 760c200-105 355 45 555-45s350-75 600 15V1040H-70Z" fill="#315c46" opacity=".08"/>
+  <circle cx="500" cy="500" r="150" fill="#fffdf8" fill-opacity=".94" stroke="#ffffff" stroke-width="18"/>
+  <ellipse cx="500" cy="552" rx="74" ry="64" fill="#315c46"/>
+  <ellipse cx="426" cy="468" rx="34" ry="44" transform="rotate(-28 426 468)" fill="#4c8a67"/>
+  <ellipse cx="574" cy="468" rx="34" ry="44" transform="rotate(28 574 468)" fill="#4c8a67"/>
+  <ellipse cx="464" cy="420" rx="28" ry="38" transform="rotate(-10 464 420)" fill="#4c8a67"/>
+  <ellipse cx="536" cy="420" rx="28" ry="38" transform="rotate(10 536 420)" fill="#4c8a67"/>
+  <path d="M500 610c-12 28-36 46-68 52 20-32 22-58 8-83" fill="none" stroke="#FD5B01" stroke-opacity=".55" stroke-width="14" stroke-linecap="round"/>
+</svg>
