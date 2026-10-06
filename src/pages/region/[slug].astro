@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 import events from '../../data/events.json';
 
@@ -74,6 +75,23 @@ const featuredPlaces = [
 
 const heroPlace = featuredPlaces[0] || regionPlaces[0];
 
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: `Things to do in ${region}, Tasmania`,
+  description: `Explore attractions, walks, family activities, food, markets, current events and local discoveries across ${region}, Tasmania.`,
+  url: new URL(`/region/${slugify(region)}/`, Astro.site ?? Astro.url.origin).href,
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: regionPlaces.slice(0, 30).map((place, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: place.name,
+      url: new URL(`/place/${place.slug}/`, Astro.site ?? Astro.url.origin).href
+    }))
+  }
+};
+
 const townCards = [...new Set(regionPlaces.map((place) => place.town).filter(Boolean))]
   .map((town) => {
     const townPlaces = regionPlaces.filter((place) => place.town === town);
@@ -104,7 +122,13 @@ const formatEventDate = (startDate, endDate) => {
   title={`Things to do in ${region}, Tasmania | TassieNow`}
   description={`Explore attractions, walks, family activities, food, markets, current events and local discoveries across ${region}, Tasmania.`}
   image={heroPlace?.image?.url || '/images/categories/discover.svg'}
+  imageAlt={heroPlace?.image?.alt || `${region}, Tasmania`}
 >
+  <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)}></script>
+  <BreadcrumbSchema items={[
+    { name: 'TassieNow', path: '/' },
+    { name: region }
+  ]} />
   <main class="destination-page">
     <nav class="destination-breadcrumbs" aria-label="Breadcrumb">
       <a href="/">TassieNow</a><span>›</span><span>{region}</span>
