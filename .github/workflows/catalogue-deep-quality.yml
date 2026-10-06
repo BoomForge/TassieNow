@@ -38,11 +38,18 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Enrich every OSM and structured listing
         run: node scripts/enrich-details.mjs
+      - name: Resolve every safe Wikidata match
+        env:
+          MAX_WIKIDATA_LINKS: '1400'
+          WIKIDATA_LINK_CONCURRENCY: '5'
+        run: node scripts/link-wikidata.mjs
       - name: Harvest Wikidata official metadata for every linked listing
         run: node scripts/enrich-wikidata-metadata.mjs
       - name: Verify and promote official sources
         run: node scripts/verify-official-sources.mjs
       - name: Deep crawl verified official pages
+        env:
+          MAX_OFFICIAL_CHILD_PAGES: '10'
         run: node scripts/enrich-official-pages.mjs
       - name: Fill Wikidata and Commons-category media galleries
         env:
