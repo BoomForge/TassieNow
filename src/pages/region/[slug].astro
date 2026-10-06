@@ -20,20 +20,20 @@ function hobartDate(date = new Date()) {
   return `${get('year')}-${get('month')}-${get('day')}`;
 }
 
-const active = places
-  .filter((place) => place.status === 'active' && place.visibility !== 'suppressed')
-  .sort((a, b) =>
-    Number(Boolean(b.featured)) - Number(Boolean(a.featured)) ||
-    (b.qualityScore || 0) - (a.qualityScore || 0) ||
-    a.name.localeCompare(b.name)
-  );
-
 export function getStaticPaths() {
   const localSlugify = (value = '') => String(value)
     .toLowerCase()
     .replace(/&/g, 'and')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
+
+  const active = places
+    .filter((place) => place.status === 'active' && place.visibility !== 'suppressed')
+    .sort((a, b) =>
+      Number(Boolean(b.featured)) - Number(Boolean(a.featured)) ||
+      (b.qualityScore || 0) - (a.qualityScore || 0) ||
+      a.name.localeCompare(b.name)
+    );
 
   return [...new Set(active.map((place) => place.region))]
     .map((region) => ({
