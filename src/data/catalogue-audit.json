@@ -116,20 +116,20 @@
     }
   },
   "events": {
-    "active": 137,
+    "active": 140,
     "ticketCoverage": {
-      "count": 71,
-      "percent": 51.8
+      "count": 74,
+      "percent": 52.9
     },
     "priceCoverage": {
-      "count": 33,
-      "percent": 24.1
+      "count": 32,
+      "percent": 22.9
     },
     "providers": {
       "Ticketek": 36,
-      "Humanitix": 17,
+      "Humanitix": 21,
       "Rezdy": 15,
-      "Eventbrite": 2,
+      "Eventbrite": 1,
       "Ticketmaster": 1
     },
     "sources": {
@@ -137,17 +137,17 @@
       "Burnie City Council": 24,
       "Theatre North Launceston": 17,
       "Devonport City Council": 15,
-      "City of Clarence": 10,
+      "City of Clarence": 11,
       "City of Hobart": 7,
-      "Humanitix Hobart": 6,
-      "Humanitix Launceston": 5,
+      "Humanitix Hobart": 7,
+      "Humanitix Launceston": 6,
       "City of Launceston": 3,
       "Glenorchy City Council": 3
     },
     "regions": {
-      "Hobart & South": 73,
+      "Hobart & South": 75,
       "North West": 39,
-      "Launceston & North": 25
+      "Launceston & North": 26
     }
   }
 }
