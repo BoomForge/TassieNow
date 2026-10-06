@@ -48,6 +48,8 @@ jobs:
       - name: Verify and promote official sources
         run: node scripts/verify-official-sources.mjs
       - name: Deep crawl verified official pages
+        env:
+          MAX_OFFICIAL_CHILD_PAGES: '10'
         run: node scripts/enrich-official-pages.mjs
       - name: Fill Wikidata and Commons-category media galleries
         env:
