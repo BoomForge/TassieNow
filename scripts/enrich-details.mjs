@@ -11,9 +11,12 @@ const OVERPASS = [
 const BATCH = 90;
 const SITE_CONCURRENCY = 6;
 const SITE_TIMEOUT = 9000;
+const OSM_REFRESH_DAYS = Math.max(1, Number.parseInt(process.env.OSM_DETAIL_REFRESH_DAYS || '7', 10) || 7);
 
 const clean = (value = '') => String(value ?? '').replace(/<[^>]*>/g, ' ').replace(/&amp;/gi, '&').replace(/&quot;/gi, '"').replace(/&#39;|&apos;/gi, "'").replace(/\s+/g, ' ').trim();
 const normalizeName = (value = '') => clean(value).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+function daysSince(value){if(!/^\d{4}-\d{2}-\d{2}$/.test(String(value||'')))return Infinity;const ms=Date.now()-Date.parse(`${value}T00:00:00Z`);return Number.isFinite(ms)?Math.max(0,ms/86400000):Infinity;}
+function needsOsmRefresh(place){return daysSince(place.lastOsmDetailsChecked)>=OSM_REFRESH_DAYS;}
 function httpUrl(value) {
   if (!value) return null;
   const raw = String(value).trim();
@@ -187,7 +190,7 @@ function applyField(place, key, value, srcType, srcUrl) {
 }
 
 const places = JSON.parse(await fs.readFile(FILE, 'utf8'));
-const osmPlaces = places.filter((place) => place.sourceType === 'openstreetmap' && /^(node|way|relation)\/\d+$/.test(String(place.sourceId || '')));
+const osmPlaces = places.filter((place) => place.sourceType === 'openstreetmap' && /^(node|way|relation)\/\d+$/.test(String(place.sourceId || '')) && needsOsmRefresh(place));
 const osmTags = new Map();
 for (let i = 0; i < osmPlaces.length; i += BATCH) {
   const batch = osmPlaces.slice(i, i + BATCH);
@@ -205,6 +208,8 @@ for (const place of osmPlaces) {
   for (const key of ['openingHours', 'phone', 'email', 'address', 'bookingUrl', 'fee', 'wheelchair', 'operator']) if (applyField(place, key, fields[key], 'openstreetmap', srcUrl)) osmChanged++;
   if (!place.website && fields.website) { place.website = fields.website; osmChanged++; }
   if (!place.wikidata && fields.wikidata) { place.wikidata = fields.wikidata; osmChanged++; }
+  place.lastOsmDetailsChecked = TODAY;
+  place.lastDetailsChecked = TODAY;
 }
 
 const websiteTargets = places.filter((place) => place.status === 'active' && canFetchWebsite(place.officialSource?.url || place.website));
@@ -213,12 +218,13 @@ await mapLimit(websiteTargets, SITE_CONCURRENCY, async (place) => {
   const result = await enrichOfficial(place); if (!result) return;
   sitesWithStructuredDetails++;
   for (const key of ['openingHours', 'phone', 'email', 'address', 'bookingUrl']) if (applyField(place, key, result.fields[key], 'official-website', result.url)) officialChanged++;
+  place.lastOfficialDetailsChecked = TODAY;
+  place.lastDetailsChecked = TODAY;
 });
 
 for (const place of places) {
   if (place.status !== 'active') continue;
   place.reviewLinks = mergeReviewLinks(place);
-  place.lastDetailsChecked = TODAY;
 }
 
 await fs.writeFile(FILE, `${JSON.stringify(places, null, 2)}\n`);
