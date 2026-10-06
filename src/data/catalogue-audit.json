@@ -1,75 +1,75 @@
 {
   "generatedAt": "2026-10-06",
   "places": {
-    "total": 1050,
-    "public": 1039,
+    "total": 1084,
+    "public": 1073,
     "suppressed": 11,
     "media": {
       "realHeroCoverage": {
-        "count": 360,
-        "percent": 34.6
+        "count": 232,
+        "percent": 21.6
       },
       "twoPlusImages": {
-        "count": 245,
-        "percent": 23.6
+        "count": 139,
+        "percent": 13
       },
       "fourPlusImages": {
-        "count": 152,
-        "percent": 14.6
+        "count": 75,
+        "percent": 7
       },
       "sixPlusImages": {
-        "count": 112,
-        "percent": 10.8
+        "count": 51,
+        "percent": 4.8
       },
-      "totalLicensedImages": 1450,
-      "averageImagesPerPublicListing": 1.4
+      "totalLicensedImages": 716,
+      "averageImagesPerPublicListing": 0.67
     },
     "sources": {
       "websiteCoverage": {
-        "count": 125,
-        "percent": 12
+        "count": 115,
+        "percent": 10.7
       },
       "officialSourceCoverage": {
-        "count": 104,
-        "percent": 10
+        "count": 62,
+        "percent": 5.8
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 104,
-        "percent": 10
+        "count": 62,
+        "percent": 5.8
       },
       "wikidataLinkage": {
-        "count": 571,
-        "percent": 55
+        "count": 599,
+        "percent": 55.8
       }
     },
     "details": {
       "openingHours": {
         "count": 92,
-        "percent": 8.9
+        "percent": 8.6
       },
       "recurringSchedule": {
-        "count": 54,
-        "percent": 5.2
+        "count": 49,
+        "percent": 4.6
       },
       "phone": {
         "count": 103,
-        "percent": 9.9
+        "percent": 9.6
       },
       "email": {
         "count": 89,
-        "percent": 8.6
+        "percent": 8.3
       },
       "address": {
         "count": 74,
-        "percent": 7.1
+        "percent": 6.9
       },
       "bookingUrl": {
-        "count": 83,
-        "percent": 8
+        "count": 90,
+        "percent": 8.4
       },
       "fee": {
         "count": 26,
-        "percent": 2.5
+        "percent": 2.4
       },
       "wheelchair": {
         "count": 20,
@@ -80,33 +80,33 @@
         "percent": 1.5
       },
       "reviewLinks": {
-        "count": 1039,
+        "count": 1073,
         "percent": 100
       }
     },
     "sourceTypes": {
-      "wikidata": 540,
+      "wikidata": 574,
       "openstreetmap": 487,
       "curated": 12
     },
     "qualityTiers": {
-      "standard": 367,
-      "featured": 329,
-      "strong": 326,
-      "low": 17
+      "standard": 433,
+      "strong": 392,
+      "featured": 230,
+      "low": 18
     },
     "regions": {
       "Hobart & South": 358,
       "East Coast": 202,
       "Launceston & North": 189,
-      "North West": 151,
-      "West Coast": 56,
+      "North West": 168,
+      "West Coast": 73,
       "Flinders Island": 53,
       "King Island": 30
     },
     "towns": 141,
     "categories": {
-      "Nature & Walks": 736,
+      "Nature & Walks": 770,
       "Things to Do": 199,
       "Museums": 73,
       "Art & Culture": 16,
@@ -116,18 +116,18 @@
     }
   },
   "events": {
-    "active": 140,
+    "active": 141,
     "ticketCoverage": {
-      "count": 74,
-      "percent": 52.9
+      "count": 75,
+      "percent": 53.2
     },
     "priceCoverage": {
-      "count": 32,
-      "percent": 22.9
+      "count": 31,
+      "percent": 22
     },
     "providers": {
       "Ticketek": 36,
-      "Humanitix": 21,
+      "Humanitix": 22,
       "Rezdy": 15,
       "Eventbrite": 1,
       "Ticketmaster": 1
@@ -137,15 +137,15 @@
       "Burnie City Council": 24,
       "Theatre North Launceston": 17,
       "Devonport City Council": 15,
-      "City of Clarence": 11,
+      "City of Clarence": 10,
+      "Humanitix Hobart": 9,
       "City of Hobart": 7,
-      "Humanitix Hobart": 7,
       "Humanitix Launceston": 6,
       "City of Launceston": 3,
       "Glenorchy City Council": 3
     },
     "regions": {
-      "Hobart & South": 75,
+      "Hobart & South": 76,
       "North West": 39,
       "Launceston & North": 26
     }
