@@ -117,6 +117,130 @@ async function fetchHtml(url) {
   return { html: html.slice(0, 2_500_000), url: response.url || url };
 }
 
+function flattenLd(value, out = []) {
+  if (Array.isArray(value)) { for (const item of value) flattenLd(item, out); return out; }
+  if (!value || typeof value !== 'object') return out;
+  out.push(value);
+  if (value['@graph']) flattenLd(value['@graph'], out);
+  return out;
+}
+function parseLdJson(html = '') {
+  const nodes = [];
+  const re = /<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
+  for (const match of html.matchAll(re)) {
+    const raw = match[1].trim().replace(/^<!--|-->$/g, '').trim();
+    if (!raw) continue;
+    try { flattenLd(JSON.parse(raw), nodes); } catch { /* malformed publisher JSON-LD */ }
+  }
+  return nodes;
+}
+function tokenOverlap(a = '', b = '') {
+  const aa = new Set(tokens(a)), bb = new Set(tokens(b));
+  let hits = 0; for (const token of aa) if (bb.has(token)) hits++;
+  return hits;
+}
+function bestLdNode(nodes, place) {
+  const useful = nodes.filter((node) => node && (node.openingHours || node.openingHoursSpecification || node.telephone || node.email || node.address || node.reservationUrl || node.offers || node.potentialAction));
+  const scored = useful.map((node) => ({ node, overlap: tokenOverlap(node.name || node.headline || '', place.name), named: Boolean(clean(node.name || node.headline)) })).sort((a, b) => b.overlap - a.overlap);
+  const best = scored[0];
+  if (!best) return null;
+  if (best.named && best.overlap === 0) return null;
+  if (!best.named && useful.length > 1) return null;
+  return best.node;
+}
+function addressFromLd(value) {
+  if (!value) return null;
+  if (typeof value === 'string') return clean(value) || null;
+  const parts = [value.streetAddress, value.addressLocality, value.addressRegion, value.postalCode].map(clean).filter(Boolean);
+  return parts.length ? parts.join(', ') : null;
+}
+function hoursFromSpecification(spec) {
+  const rows = Array.isArray(spec) ? spec : spec ? [spec] : [];
+  return rows.map((row) => {
+    const days = (Array.isArray(row.dayOfWeek) ? row.dayOfWeek : row.dayOfWeek ? [row.dayOfWeek] : []).map((day) => {
+      const value = String(day || '').split('/').pop();
+      return DAY_MAP[String(value).toLowerCase()]?.[1] || value;
+    }).filter(Boolean).join(',');
+    const opens = normalizeTime(row.opens) || clean(row.opens);
+    const closes = normalizeTime(row.closes) || clean(row.closes);
+    return [days, opens && closes ? `${opens}-${closes}` : opens || closes].filter(Boolean).join(' ');
+  }).filter(Boolean).join('; ') || null;
+}
+function firstHttpFrom(value) {
+  if (!value) return null;
+  if (typeof value === 'string') return httpUrl(value);
+  if (Array.isArray(value)) { for (const item of value) { const found = firstHttpFrom(item); if (found) return found; } return null; }
+  if (typeof value === 'object') {
+    for (const key of ['url','urlTemplate','target','sameAs']) { const found = firstHttpFrom(value[key]); if (found) return found; }
+  }
+  return null;
+}
+function structuredFields(node = {}) {
+  const openingRaw = Array.isArray(node.openingHours) ? node.openingHours.map(clean).filter(Boolean).join('; ') : clean(node.openingHours);
+  const bookingUrl = firstHttpFrom(node.reservationUrl || node.bookingUrl || node.potentialAction || node.offers);
+  const operator = clean(node.provider?.name || node.organizer?.name || node.brand?.name || (typeof node.provider === 'string' ? node.provider : ''));
+  return {
+    openingHours: openingRaw || hoursFromSpecification(node.openingHoursSpecification),
+    phone: clean(node.telephone) || null,
+    email: clean(node.email) || null,
+    address: addressFromLd(node.address),
+    bookingUrl,
+    operator: operator || null
+  };
+}
+const BOOKING_HOST = /(?:^|\.)(?:rezdy\.com|fareharbor\.com|humanitix\.com|eventbrite\.(?:com|com\.au)|ticketek\.com\.au|ticketmaster\.com\.au|trybooking\.com|bookeasy\.com|checkfront\.com|roller\.app)$/i;
+function bookingLink(html = '', baseUrl = '') {
+  const found = [];
+  const re = /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
+  for (const match of html.matchAll(re)) {
+    const label = clean(match[2].replace(/<[^>]+>/g, ' '));
+    const hint = normalizeName(`${label} ${match[1]}`);
+    if (!/\b(book|booking|tickets?|admission|reserve|reservation)\b/.test(hint) || /login|sign in|staff/.test(hint)) continue;
+    try {
+      const u = new URL(match[1], baseUrl);
+      const host = u.hostname.replace(/^www\./, '');
+      if (!['http:','https:'].includes(u.protocol) || (!sameHost(u.href, baseUrl) && !BOOKING_HOST.test(host))) continue;
+      let score = 0;
+      if (/\bbook(?: now)?\b|\btickets?\b/.test(hint)) score += 10;
+      if (BOOKING_HOST.test(host)) score += 5;
+      if (sameHost(u.href, baseUrl)) score += 2;
+      found.push({ url: u.href, score });
+    } catch { /* malformed booking link */ }
+  }
+  return found.sort((a, b) => b.score - a.score)[0]?.url || null;
+}
+function dayKeysFromLine(lower = '') {
+  const keys = Object.keys(DAY_MAP);
+  if (/\b(?:daily|every day|seven days|7 days)\b/i.test(lower)) return keys;
+  const range = lower.match(/\b(monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b\s*(?:-|–|—|to|through|thru)\s*\b(monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b/i);
+  if (range) {
+    const a = keys.indexOf(range[1].toLowerCase()), b = keys.indexOf(range[2].toLowerCase());
+    if (a >= 0 && b >= 0) {
+      const out = []; let i = a;
+      while (true) { out.push(keys[i]); if (i === b || out.length === 7) break; i = (i + 1) % 7; }
+      return out;
+    }
+  }
+  return keys.filter((day) => new RegExp(`\\b${day}\\b`, 'i').test(lower));
+}
+function openingHoursFromText(text = '') {
+  const lines = text.split(/\n|(?<=[.!?])\s+/).map(clean).filter((line) => line.length >= 8 && line.length <= 260);
+  const rows = [];
+  for (const line of lines) {
+    if (/administration|office hours|phone hours|customer service|support hours/i.test(line)) continue;
+    const lower = line.toLowerCase();
+    const days = dayKeysFromLine(lower);
+    const times = [...line.matchAll(/\b((?:[01]?\d|2[0-3]):[0-5]\d|\d{1,2}(?::\d{2})?\s*(?:am|pm))\b/gi)].map((match) => normalizeTime(match[1])).filter(Boolean);
+    if (times.length < 2) continue;
+    if (!days.length && !/\bopen(?:ing)?\b|\bhours\b/i.test(line)) continue;
+    const actualDays = days.length ? days : Object.keys(DAY_MAP);
+    const codes = actualDays.map((day) => DAY_MAP[day][1]);
+    const dayText = codes.length === 7 ? 'Mo-Su' : codes.join(',');
+    rows.push(`${dayText} ${times[0]}-${times[1]}`);
+  }
+  return [...new Set(rows)].slice(0, 7).join('; ') || null;
+}
+
 function extractEmail(html = '', text = '') {
   const mailto = html.match(/href=["']mailto:([^"'?]+)[^"']*["']/i)?.[1];
   if (mailto && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mailto)) return clean(mailto);
@@ -146,7 +270,7 @@ function scheduleFromText(text = '', sourceUrl) {
   const scored = [];
   for (const line of lines) {
     const lower = line.toLowerCase();
-    const dayKeys = Object.keys(DAY_MAP).filter((day) => lower.includes(day));
+    const dayKeys = dayKeysFromLine(lower);
     const recurrence = /\b(every|each|weekly|daily|every day|seven days|7 days)\b/i.test(line);
     const timeMatches = [...line.matchAll(/\b(\d{1,2}(?:[:.]\d{2})?\s*(?:am|pm))\b/gi)].map((match) => match[1]);
     if (!dayKeys.length && !recurrence) continue;
@@ -176,7 +300,7 @@ function scheduleFromText(text = '', sourceUrl) {
 }
 function openingHoursFromSchedule(schedule) {
   if (!schedule?.startTime || !schedule?.endTime) return null;
-  if (schedule.frequency === 'daily' && !schedule.daysOfWeek?.length) return `Mo-Su ${schedule.startTime}-${schedule.endTime}`;
+  if (schedule.frequency === 'daily') return `Mo-Su ${schedule.startTime}-${schedule.endTime}`;
   const codes = (schedule.daysOfWeek || []).map((day) => DAY_MAP[String(day).toLowerCase()]?.[1]).filter(Boolean);
   return codes.length ? `${codes.join(',')} ${schedule.startTime}-${schedule.endTime}` : null;
 }
@@ -244,21 +368,31 @@ await mapLimit(targets, CONCURRENCY, async (place) => {
     }
     for (const page of pages) {
       const text = pageText(page.html);
+      const structured = bestLdNode(parseLdJson(page.html), place);
+      if (structured) {
+        const fields = structuredFields(structured);
+        for (const key of ['openingHours', 'phone', 'email', 'address', 'bookingUrl', 'operator']) {
+          if (fields[key] && applyField(place, key, fields[key], page.url)) fieldsChanged++;
+        }
+      }
       const email = extractEmail(page.html, text);
       const phone = extractPhone(page.html, text);
       if (!place.email && email && applyField(place, 'email', email, page.url)) fieldsChanged++;
       if (!place.phone && phone && applyField(place, 'phone', phone, page.url)) fieldsChanged++;
+      const textHours = openingHoursFromText(text);
+      if (textHours && applyField(place, 'openingHours', textHours, page.url)) fieldsChanged++;
+      const book = bookingLink(page.html, page.url);
+      if (!place.bookingUrl && book && applyField(place, 'bookingUrl', book, page.url)) fieldsChanged++;
       const schedule = scheduleFromText(text, page.url);
       if (schedule) {
         const note = exceptionNote(text);
         if (note && note !== schedule.summary) schedule.notes = note;
         if (applySchedule(place, schedule)) { schedulesFound++; fieldsChanged++; }
-        if (!place.openingHours) {
-          const hours = openingHoursFromSchedule(schedule);
-          if (hours && applyField(place, 'openingHours', hours, page.url)) fieldsChanged++;
-        }
+        const hours = openingHoursFromSchedule(schedule);
+        if (hours && !place.openingHours && applyField(place, 'openingHours', hours, page.url)) fieldsChanged++;
       }
     }
+    place.lastDetailsChecked = TODAY;
   } catch { /* website may block automated retrieval */ }
 });
 
