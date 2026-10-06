@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675"><rect width="1200" height="675" fill="#def5fb"/><path d="M0 530C210 420 330 570 520 450S870 390 1200 510V675H0Z" fill="#267a91" opacity=".22"/><text x="100" y="300" font-family="system-ui,sans-serif" font-size="68" font-weight="800" fill="#173942">Nature &amp; walks</text><text x="100" y="380" font-family="system-ui,sans-serif" font-size="30" fill="#466a74">Beaches • trails • viewpoints</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1=".08" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#def3f2"/>
+      <stop offset=".5" stop-color="#d9ece1"/>
+      <stop offset="1" stop-color="#eaf1dc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <circle cx="815" cy="205" r="120" fill="#fffdf8" opacity=".66"/>
+  <path d="M-80 735 250 380l190 220 155-190 405 370v260H-80Z" fill="#173f43" opacity=".09"/>
+  <path d="M-80 810 260 530l175 190 170-240 395 330v230H-80Z" fill="#027B87" opacity=".1"/>
+  <path d="M-60 850c210-80 355 10 510-45s330-60 610 25" fill="none" stroke="#267a91" stroke-opacity=".2" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="500" cy="500" r="150" fill="#fffdf8" fill-opacity=".92" stroke="#ffffff" stroke-width="18"/>
+  <path d="M414 555 480 448l58 82 40-58 72 110H350Z" fill="#315f52"/>
+  <path d="M480 448 503 482h-46Z" fill="#f4fbf6"/>
+  <path d="M500 425c-31 35-50 70-50 98 0 31 22 55 50 55s50-24 50-55c0-28-19-63-50-98Z" fill="#4e9274"/>
+  <rect x="490" y="560" width="20" height="54" rx="10" fill="#315f52"/>
+</svg>

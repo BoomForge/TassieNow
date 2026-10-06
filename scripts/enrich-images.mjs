@@ -87,12 +87,14 @@ function commonsFilename(image) {
 function fallbackImage(place) {
   const value = (place.categories || []).join('|').toLowerCase();
   let name = 'discover';
-  if (value.includes('museum') || value.includes('art & culture')) name = 'culture';
-  else if (value.includes('wildlife')) name = 'wildlife';
-  else if (value.includes('market') || value.includes('food') || value.includes('local produce')) name = 'food';
-  else if (value.includes('family')) name = 'family';
-  else if (value.includes('nature') || value.includes('outdoor')) name = 'nature';
-  return { url: `/images/categories/${name}.svg`, alt: `${place.name} category image`, attribution: 'TassieNow', license: 'Site artwork', licenseUrl: null, sourceUrl: null, isFallback: true };
+  if (/rainy day|indoor/.test(value)) name = 'indoor';
+  else if (/market/.test(value)) name = 'markets';
+  else if (/museum|gallery|heritage|art & culture|culture/.test(value)) name = 'culture';
+  else if (/wildlife|zoo|animal|sanctuary/.test(value)) name = 'wildlife';
+  else if (/family|kids|children/.test(value)) name = 'family';
+  else if (/food|local produce|farm|brewery|winery/.test(value)) name = 'food';
+  else if (/nature|walk|outdoor|beach|lookout|park|reserve/.test(value)) name = 'nature';
+  return { url: `/images/categories/${name}.svg`, alt: `${place.name} category artwork`, attribution: 'TassieNow', license: 'Site artwork', licenseUrl: null, sourceUrl: null, isFallback: true };
 }
 async function existingCommonsMetadata(filenames) {
   const out = new Map();
@@ -143,6 +145,7 @@ const heuristicFiles = generated.flatMap((place) => [place.image, ...(place.gall
 const existingMeta = await existingCommonsMetadata(heuristicFiles);
 let rejectedExisting = 0;
 for (const place of generated) {
+  if (place.image?.isFallback) place.image = fallbackImage(place);
   const validSearchImage = (image) => {
     if (!image || image.sourceMethod !== 'commons-search') return true;
     const filename = commonsFilename(image); if (!filename) return true;

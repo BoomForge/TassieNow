@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675"><rect width="1200" height="675" fill="#fff0dc"/><path d="M0 530C210 420 330 570 520 450S870 390 1200 510V675H0Z" fill="#b76621" opacity=".22"/><text x="100" y="300" font-family="system-ui,sans-serif" font-size="68" font-weight="800" fill="#4b2b12">Food &amp; local produce</text><text x="100" y="380" font-family="system-ui,sans-serif" font-size="30" fill="#755034">Markets • farms • makers</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1=".08" y1=".08" x2=".9" y2=".92">
+      <stop offset="0" stop-color="#fff1df"/>
+      <stop offset=".58" stop-color="#f8e4ca"/>
+      <stop offset="1" stop-color="#f2efe2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <circle cx="155" cy="205" r="170" fill="#FD5B01" opacity=".08"/>
+  <circle cx="845" cy="790" r="240" fill="#b76621" opacity=".08"/>
+  <path d="M-90 760c240-120 390 30 580-60s355-90 610 25V1040H-90Z" fill="#8b4d20" opacity=".08"/>
+  <circle cx="500" cy="500" r="150" fill="#fffdf8" fill-opacity=".94" stroke="#ffffff" stroke-width="18"/>
+  <path d="M396 487h208c-8 76-48 126-104 126s-96-50-104-126Z" fill="#8f4e27"/>
+  <path d="M420 484c4-30 23-53 50-61 11 18 13 39 6 60M525 483c5-43 28-76 65-88 10 27 7 61-10 88" fill="none" stroke="#527747" stroke-width="22" stroke-linecap="round"/>
+  <path d="M500 454c-18-34-53-46-85-34 12 36 42 58 85 58 43 0 73-22 85-58-32-12-67 0-85 34Z" fill="#FD5B01" opacity=".82"/>
+  <path d="M432 628h136" stroke="#5c351e" stroke-width="18" stroke-linecap="round"/>
+</svg>

@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675"><rect width="1200" height="675" fill="#ede6ff"/><path d="M0 530C210 420 330 570 520 450S870 390 1200 510V675H0Z" fill="#7a57c7" opacity=".22"/><text x="100" y="300" font-family="system-ui,sans-serif" font-size="68" font-weight="800" fill="#2f2449">Events</text><text x="100" y="380" font-family="system-ui,sans-serif" font-size="30" fill="#655779">Today • this week • what’s on</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1=".08" y1=".05" x2=".92" y2=".95">
+      <stop offset="0" stop-color="#f3ecff"/>
+      <stop offset=".55" stop-color="#e7e2fb"/>
+      <stop offset="1" stop-color="#f8e9df"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <circle cx="140" cy="160" r="170" fill="#745bd6" opacity=".09"/>
+  <circle cx="850" cy="820" r="230" fill="#FD5B01" opacity=".07"/>
+  <path d="M-100 730c230-145 390 15 585-82s330-120 620 18V1040H-100Z" fill="#3f315f" opacity=".08"/>
+  <g opacity=".16" fill="#745bd6">
+    <circle cx="205" cy="635" r="10"/><circle cx="258" cy="690" r="6"/><circle cx="777" cy="278" r="8"/>
+    <circle cx="720" cy="220" r="5"/><circle cx="810" cy="340" r="12"/>
+  </g>
+  <rect x="356" y="356" width="288" height="288" rx="70" fill="#fffdf8" fill-opacity=".94" stroke="#ffffff" stroke-width="18"/>
+  <rect x="391" y="411" width="218" height="178" rx="28" fill="#463466"/>
+  <rect x="391" y="411" width="218" height="46" rx="22" fill="#745bd6"/>
+  <path d="M435 385v52M565 385v52" stroke="#463466" stroke-width="22" stroke-linecap="round"/>
+  <path d="M500 474l16 39 39 16-39 16-16 39-16-39-39-16 39-16Z" fill="#f9d8c5"/>
+  <circle cx="500" cy="529" r="8" fill="#FD5B01"/>
+</svg>
