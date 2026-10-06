@@ -3,7 +3,7 @@ import events from '../data/events.json';
 const slugify=(v:string)=>v.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const maxDate=(values:string[])=>values.filter(Boolean).sort().at(-1)||new Date().toISOString().slice(0,10);
 export async function GET({ site }: { site: URL }) {
-  const base=site?.href||'https://tassienow.pages.dev/';
+  const base=site?.href||'https://tassienow.com/';
   const publicPlaces=places.filter((p:any)=>p.status==='active'&&p.visibility!=='suppressed');
   const activeEvents=events.filter((e:any)=>e.status==='active');
   const catalogueDate=maxDate([...publicPlaces.map((p:any)=>p.lastChecked),...activeEvents.map((e:any)=>e.lastChecked)]);
