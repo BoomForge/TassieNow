@@ -1,11 +1,18 @@
-name: Notify IndexNow
+name: Notify search engines
 
 on:
   push:
     branches: [main]
     paths:
-      - 'scripts/indexnow.mjs'
+      - 'src/pages/**'
+      - 'src/layouts/**'
+      - 'src/styles/**'
+      - 'src/data/places.json'
+      - 'src/data/events.json'
+      - 'public/robots.txt'
       - 'public/30516139ed96092d5fbd7676d4852aa2.txt'
+      - 'scripts/indexnow.mjs'
+      - 'astro.config.mjs'
       - '.github/workflows/indexnow.yml'
   schedule:
     - cron: '45 20 * * *'
@@ -15,19 +22,42 @@ permissions:
   contents: read
 
 concurrency:
-  group: tassienow-indexnow
+  group: tassienow-search-discovery
   cancel-in-progress: true
 
 jobs:
   submit:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 7
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Notify participating search engines of recent changes
+
+      - name: Decide whether this needs a full URL submission
+        shell: bash
+        run: |
+          FULL=0
+
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            FULL=1
+          elif [[ "${{ github.event_name }}" == "push" ]]; then
+            CHANGED="$(git diff --name-only HEAD^ HEAD || true)"
+            echo "Changed files:"
+            echo "$CHANGED"
+
+            if grep -Eq '^(src/pages/|src/layouts/|src/styles/|astro\.config\.mjs|public/robots\.txt)' <<<"$CHANGED"; then
+              FULL=1
+            fi
+          fi
+
+          echo "FULL_SUBMIT=$FULL" >> "$GITHUB_ENV"
+
+      - name: Notify IndexNow participants and Google WebSub
         env:
-          SITE_URL: https://tassienow.pages.dev
+          SITE_URL: https://tassienow.com
+          FULL_SUBMIT: ${{ env.FULL_SUBMIT }}
         run: node scripts/indexnow.mjs
