@@ -1,17 +1,9 @@
 name: TassieNow deep catalogue quality
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'scripts/enrich-details.mjs'
-      - 'scripts/enrich-wikidata-metadata.mjs'
-      - 'scripts/verify-official-sources.mjs'
-      - 'scripts/enrich-official-pages.mjs'
-      - 'scripts/enrich-wikidata-images.mjs'
-      - 'scripts/enrich-images.mjs'
-      - 'scripts/catalogue-audit.mjs'
-      - '.github/workflows/catalogue-deep-quality.yml'
+  workflow_run:
+    workflows: ['Refresh TassieNow catalogue']
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -23,6 +15,7 @@ concurrency:
 
 jobs:
   deep-enrichment:
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
