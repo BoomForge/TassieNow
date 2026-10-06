@@ -4,6 +4,10 @@ on:
   workflow_run:
     workflows: ['Refresh TassieNow catalogue']
     types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/catalogue-deep-quality.yml'
   workflow_dispatch:
 
 permissions:
