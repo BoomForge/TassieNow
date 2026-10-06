@@ -2,8 +2,8 @@ import fs from 'node:fs/promises';
 
 const FILE = new URL('../src/data/places.json', import.meta.url);
 const UA = 'TassieNow/1.2 (+https://tassienow.com)';
-const MAX_PER_RUN = Math.max(1, Math.min(500, Number.parseInt(process.env.MAX_IMAGE_ENRICH || '90', 10) || 90));
-const GALLERY_SIZE = Math.max(1, Math.min(6, Number.parseInt(process.env.GALLERY_SIZE || '3', 10) || 3));
+const MAX_PER_RUN = Math.max(1, Math.min(2000, Number.parseInt(process.env.MAX_IMAGE_ENRICH || '90', 10) || 90));
+const GALLERY_SIZE = Math.max(1, Math.min(12, Number.parseInt(process.env.GALLERY_SIZE || '3', 10) || 3));
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const clean = (value = '') => String(value).replace(/<[^>]*>/g, ' ').replace(/&amp;/gi, '&').replace(/&quot;/gi, '"').replace(/&#39;|&apos;/gi, "'").replace(/\s+/g, ' ').trim();
 const tokens = (value = '') => clean(value).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().split(/[^a-z0-9]+/).filter((token) => token.length >= 4 && !['tasmania', 'tasmanian', 'the', 'park', 'walk', 'lookout', 'museum', 'gallery'].includes(token));
