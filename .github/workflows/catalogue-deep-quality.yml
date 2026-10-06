@@ -4,10 +4,6 @@ on:
   workflow_run:
     workflows: ['Refresh TassieNow catalogue']
     types: [completed]
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/catalogue-deep-quality.yml'
   workflow_dispatch:
 
 permissions:
@@ -15,11 +11,11 @@ permissions:
 
 concurrency:
   group: tassienow-data-writes
-  cancel-in-progress: ${{ github.event_name == 'push' }}
+  cancel-in-progress: false
 
 jobs:
   deep-enrichment:
-    if: github.event_name == 'workflow_dispatch' || github.event_name == 'push' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
