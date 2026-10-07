@@ -1,0 +1,33 @@
+name: Promote TassieNow
+
+on:
+  schedule:
+    - cron: '30 21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tassienow-promotion
+  cancel-in-progress: false
+
+jobs:
+  bluesky:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Publish daily TassieNow promotion
+        env:
+          SITE_URL: https://tassienow.com
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+        run: node scripts/post-bluesky.mjs
