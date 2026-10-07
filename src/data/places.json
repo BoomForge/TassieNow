@@ -8606,7 +8606,7 @@
     "bookingUrl": "https://farmgatemarket.com.au/?s={search_term_string}",
     "lastWikidataLinkChecked": "2026-10-08",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-08",
       "url": "https://farmgatemarket.com.au/"
     }
@@ -11027,7 +11027,7 @@
     "openingHours": "",
     "phone": "0418684108President",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-08",
       "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/"
     },
@@ -25459,9 +25459,10 @@
     ],
     "rankedAt": "2026-10-08",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "unreachable",
       "checkedAt": "2026-10-08",
-      "url": "https://www.wingswildlifepark.com.au/"
+      "url": "https://www.wingswildlifepark.com.au/",
+      "error": "fetch failed"
     }
   },
   {
@@ -26120,6 +26121,104 @@
     }
   },
   {
+    "slug": "waratah-museum",
+    "name": "Waratah Museum",
+    "town": "Waratah",
+    "region": "West Coast",
+    "latitude": -41.4440726,
+    "longitude": 145.5310006,
+    "categories": [
+      "Museums",
+      "Art & Culture",
+      "Rainy Day"
+    ],
+    "summary": "Museum in or near Waratah.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/5679352551",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/5679352551",
+    "wikidata": "Q106713931",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-08",
+    "lastDetailsChecked": "2026-10-08",
+    "lastOsmDetailsChecked": "2026-10-08",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Waratah_Museum_20171121-072.jpg/1920px-Waratah_Museum_20171121-072.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Waratah Museum, Tasmania",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waratah_Museum_20171121-072.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Waratah%20Museum%20Waratah%20Tasmania"
+      }
+    ],
+    "qualityScore": 54,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-08",
+    "gallery": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/James_Smith_hut_Waratah_20171121-073.jpg/1920px-James_Smith_hut_Waratah_20171121-073.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Waratah Museum, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:James_Smith_hut_Waratah_20171121-073.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Cassiterite_-_Mt_Bischoff_mine%2C_Waratah%2C_Tasmania%2C_Australia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Waratah Museum, Tasmania",
+        "attribution": "Ralph Bottrill",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cassiterite_-_Mt_Bischoff_mine,_Waratah,_Tasmania,_Australia.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      }
+    ],
+    "lastWikidataLinkChecked": "2026-10-08",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Waratah Museum",
+      "distanceKm": 0.04,
+      "confidence": "high",
+      "checkedAt": "2026-10-08"
+    },
+    "wikidataImages": [
+      "Waratah Museum 20171121-072.jpg"
+    ]
+  },
+  {
     "slug": "bridestowe-lavender-estate",
     "name": "Bridestowe Lavender Estate",
     "town": "Nabowla",
@@ -26631,10 +26730,9 @@
       "checkedAt": "2026-10-08"
     },
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-08",
-      "url": "https://www.frogmorecreek.com.au/",
-      "error": "503 Service Unavailable"
+      "url": "https://www.frogmorecreek.com.au/"
     },
     "lastWikidataLinkChecked": "2026-10-08",
     "discoveryStale": true,
@@ -28422,6 +28520,79 @@
     ]
   },
   {
+    "slug": "pelion-gap",
+    "name": "Pelion Gap",
+    "town": "Tullah",
+    "region": "West Coast",
+    "latitude": -41.863984,
+    "longitude": 146.0580786,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Tullah.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/647695394",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/647695394",
+    "wikidata": "Q7161476",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-08",
+    "lastDetailsChecked": "2026-10-08",
+    "lastOsmDetailsChecked": "2026-10-08",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Pelion_Gap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "alt": "Pelion Gap, Tasmania",
+      "attribution": "PelionClimber",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelion_Gap.jpg",
+      "isFallback": false,
+      "sourceMethod": "wikidata-p18",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Pelion%20Gap%20Tullah%20Tasmania"
+      }
+    ],
+    "qualityScore": 51,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-08",
+    "lastWikidataLinkChecked": "2026-10-08",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Pelion Gap",
+      "distanceKm": 0.1,
+      "confidence": "high",
+      "checkedAt": "2026-10-08"
+    },
+    "wikidataImages": [
+      "Pelion Gap.jpg"
+    ]
+  },
+  {
     "slug": "pooley-wines",
     "name": "Pooley Wines",
     "town": "Richmond",
@@ -28824,6 +28995,111 @@
     ]
   },
   {
+    "slug": "whalers-lookout",
+    "name": "Whalers Lookout",
+    "town": "Bicheno",
+    "region": "East Coast",
+    "latitude": -41.8741372,
+    "longitude": 148.3074386,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Bicheno.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/2095715631",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2095715631",
+    "wikidata": "Q139753928",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-08",
+    "lastDetailsChecked": "2026-10-08",
+    "lastOsmDetailsChecked": "2026-10-08",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Whalers_Lookout_track_Bicheno_20190725-001.jpg/1920px-Whalers_Lookout_track_Bicheno_20190725-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Whalers Lookout, Tasmania",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whalers_Lookout_track_Bicheno_20190725-001.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Whalers%20Lookout%20Bicheno%20Tasmania"
+      }
+    ],
+    "qualityScore": 51,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-08",
+    "gallery": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Whalers_Lookout_track_Bicheno_20190725-002.jpg/1920px-Whalers_Lookout_track_Bicheno_20190725-002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Whalers Lookout, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whalers_Lookout_track_Bicheno_20190725-002.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Platform_Whalers_Lookout_Bicheno_201907025-010.jpg/1920px-Platform_Whalers_Lookout_Bicheno_201907025-010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Whalers Lookout, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Platform_Whalers_Lookout_Bicheno_201907025-010.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Tree_Whalers_Lookout_Bicheno_201907025-011.jpg/1920px-Tree_Whalers_Lookout_Bicheno_201907025-011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Whalers Lookout, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tree_Whalers_Lookout_Bicheno_201907025-011.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      }
+    ],
+    "lastWikidataLinkChecked": "2026-10-08",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Whalers Lookout Conservation Area",
+      "distanceKm": 0.05,
+      "confidence": "high",
+      "checkedAt": "2026-10-08"
+    }
+  },
+  {
     "slug": "world-heritage-cruises",
     "name": "World Heritage Cruises",
     "town": "Strahan",
@@ -29045,7 +29321,170 @@
       "status": "ok",
       "checkedAt": "2026-10-08",
       "url": "https://www.ashgrovecheese.com.au/"
-    }
+    },
+    "lastWikidataLinkChecked": "2026-10-08"
+  },
+  {
+    "slug": "bicheno-blowhole",
+    "name": "Bicheno Blowhole",
+    "town": "Bicheno",
+    "region": "East Coast",
+    "latitude": -41.8801923,
+    "longitude": 148.3088867,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Bicheno.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/2638346517",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2638346517",
+    "wikidata": "Q106727473",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-08",
+    "lastDetailsChecked": "2026-10-08",
+    "lastOsmDetailsChecked": "2026-10-08",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Bicheno_Blowhole_Tasmania_20190725-027.jpg/1920px-Bicheno_Blowhole_Tasmania_20190725-027.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Bicheno Blowhole, Tasmania",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bicheno_Blowhole_Tasmania_20190725-027.jpg",
+      "isFallback": false,
+      "sourceMethod": "wikidata-p18",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Bicheno%20Blowhole%20Bicheno%20Tasmania"
+      }
+    ],
+    "qualityScore": 50,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-08",
+    "gallery": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Bicheno_Blowhole%2C_Tasmania.jpg/1920px-Bicheno_Blowhole%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Bicheno Blowhole, Tasmania",
+        "attribution": "Siawash Ahura",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bicheno_Blowhole,_Tasmania.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Bicheno_Blowhole.jpg/1920px-Bicheno_Blowhole.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Bicheno Blowhole, Tasmania",
+        "attribution": "Siawash Ahura",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bicheno_Blowhole.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/The_Blowhole%2C_Bicheno.jpg/1920px-The_Blowhole%2C_Bicheno.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Bicheno Blowhole, Tasmania",
+        "attribution": "Reggaeh",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Blowhole,_Bicheno.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Bicheno_Blowhole_Tasmania_20190725-026.jpg/1920px-Bicheno_Blowhole_Tasmania_20190725-026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Bicheno Blowhole, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bicheno_Blowhole_Tasmania_20190725-026.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Bicheno_Blowhole_Tasmania_20190725-027.jpg/1920px-Bicheno_Blowhole_Tasmania_20190725-027.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Bicheno Blowhole, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bicheno_Blowhole_Tasmania_20190725-027.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Bicheno_Beach%2C_Tasmania.jpg/1920px-Bicheno_Beach%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Bicheno Blowhole, Tasmania",
+        "attribution": "Siawash Ahura",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bicheno_Beach,_Tasmania.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Coast_at_Bicheno_Tasmania_20190725-021.jpg/1920px-Coast_at_Bicheno_Tasmania_20190725-021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Bicheno Blowhole, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coast_at_Bicheno_Tasmania_20190725-021.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Coast_at_Bicheno_Tasmania_20190725-017.jpg/1920px-Coast_at_Bicheno_Tasmania_20190725-017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Bicheno Blowhole, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coast_at_Bicheno_Tasmania_20190725-017.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      }
+    ],
+    "lastWikidataLinkChecked": "2026-10-08",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Bicheno Blowhole Tasmania",
+      "distanceKm": 0.01,
+      "confidence": "medium",
+      "checkedAt": "2026-10-08"
+    },
+    "wikidataImages": [
+      "Bicheno Blowhole Tasmania 20190725-027.jpg"
+    ]
   },
   {
     "slug": "callington-mill",
@@ -29304,7 +29743,8 @@
       "status": "ok",
       "checkedAt": "2026-10-08",
       "url": "https://creationdiscoverycentre.com/"
-    }
+    },
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "cygnet-living-history-museum",
@@ -29460,7 +29900,8 @@
       "status": "ok",
       "checkedAt": "2026-10-08",
       "url": "https://donriverrailway.com.au/"
-    }
+    },
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "house-of-anvers-chocolate-factory",
@@ -29488,7 +29929,18 @@
     "fee": null,
     "wheelchair": null,
     "operator": null,
-    "detailSources": {},
+    "detailSources": {
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://anvers-chocolate.com.au/contact/",
+        "checkedAt": "2026-10-08"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://anvers-chocolate.com.au/home/about-us/",
+        "checkedAt": "2026-10-08"
+      }
+    },
     "status": "active",
     "lastChecked": "2026-10-08",
     "lastDetailsChecked": "2026-10-08",
@@ -29538,6 +29990,23 @@
       "status": "ok",
       "checkedAt": "2026-10-08",
       "url": "https://anvers-chocolate.com.au/"
+    },
+    "lastWikidataLinkChecked": "2026-10-08",
+    "schedule": {
+      "summary": "Open daily, 7am to 5pm, 7 days a week",
+      "sourceUrl": "https://anvers-chocolate.com.au/home/about-us/",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "07:00",
+      "endTime": "17:00"
     }
   },
   {
@@ -30702,7 +31171,8 @@
       "status": "ok",
       "checkedAt": "2026-10-08",
       "url": "https://www.sheffieldsteam.com.au/"
-    }
+    },
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "mole-creek-memorial-hall",
@@ -30764,7 +31234,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-08"
+    "rankedAt": "2026-10-08",
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "the-kudelka-shop",
@@ -30960,92 +31431,6 @@
     "lastWikidataLinkChecked": "2026-10-08",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-08"
-  },
-  {
-    "slug": "waratah-museum",
-    "name": "Waratah Museum",
-    "town": "Waratah",
-    "region": "West Coast",
-    "latitude": -41.4440726,
-    "longitude": 145.5310006,
-    "categories": [
-      "Museums",
-      "Art & Culture",
-      "Rainy Day"
-    ],
-    "summary": "Museum in or near Waratah.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/5679352551",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/5679352551",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-08",
-    "lastDetailsChecked": "2026-10-08",
-    "lastOsmDetailsChecked": "2026-10-08",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Waratah_Museum_20171121-072.jpg/1920px-Waratah_Museum_20171121-072.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Waratah Museum, Tasmania",
-      "attribution": "Gary Houston",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waratah_Museum_20171121-072.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Waratah%20Museum%20Waratah%20Tasmania"
-      }
-    ],
-    "qualityScore": 47,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "real-image",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-08",
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/James_Smith_hut_Waratah_20171121-073.jpg/1920px-James_Smith_hut_Waratah_20171121-073.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Waratah Museum, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:James_Smith_hut_Waratah_20171121-073.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Cassiterite_-_Mt_Bischoff_mine%2C_Waratah%2C_Tasmania%2C_Australia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Waratah Museum, Tasmania",
-        "attribution": "Ralph Bottrill",
-        "license": "CC BY 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cassiterite_-_Mt_Bischoff_mine,_Waratah,_Tasmania,_Australia.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      }
-    ]
   },
   {
     "slug": "derwent-valley-railway",
@@ -31521,7 +31906,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-08"
+    "rankedAt": "2026-10-08",
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "harvest-and-light",
@@ -31675,7 +32061,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-08"
+    "rankedAt": "2026-10-08",
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "mount-nelson-signal-station",
@@ -31816,67 +32203,6 @@
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-07",
     "lastWikidataLinkChecked": "2026-10-08"
-  },
-  {
-    "slug": "pelion-gap",
-    "name": "Pelion Gap",
-    "town": "Tullah",
-    "region": "West Coast",
-    "latitude": -41.863984,
-    "longitude": 146.0580786,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Tullah.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/647695394",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/647695394",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-08",
-    "lastDetailsChecked": "2026-10-08",
-    "lastOsmDetailsChecked": "2026-10-08",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Pelion_Gap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "alt": "Pelion Gap, Tasmania",
-      "attribution": "PelionClimber",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelion_Gap.jpg",
-      "isFallback": false,
-      "sourceMethod": "wikidata-p18",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Pelion%20Gap%20Tullah%20Tasmania"
-      }
-    ],
-    "qualityScore": 44,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "real-image",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-08"
   },
   {
     "slug": "pulpit-rock-lookout",
@@ -32137,7 +32463,8 @@
         "sourceMethod": "commons-search",
         "confidence": "high"
       }
-    ]
+    ],
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "table-cape-lookout",
@@ -32222,103 +32549,8 @@
         "sourceMethod": "commons-search",
         "confidence": "high"
       }
-    ]
-  },
-  {
-    "slug": "whalers-lookout",
-    "name": "Whalers Lookout",
-    "town": "Bicheno",
-    "region": "East Coast",
-    "latitude": -41.8741372,
-    "longitude": 148.3074386,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
     ],
-    "summary": "Scenic viewpoint in or near Bicheno.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/2095715631",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2095715631",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-08",
-    "lastDetailsChecked": "2026-10-08",
-    "lastOsmDetailsChecked": "2026-10-08",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Whalers_Lookout_track_Bicheno_20190725-001.jpg/1920px-Whalers_Lookout_track_Bicheno_20190725-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Whalers Lookout, Tasmania",
-      "attribution": "Gary Houston",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whalers_Lookout_track_Bicheno_20190725-001.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Whalers%20Lookout%20Bicheno%20Tasmania"
-      }
-    ],
-    "qualityScore": 44,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "real-image",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-08",
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Whalers_Lookout_track_Bicheno_20190725-002.jpg/1920px-Whalers_Lookout_track_Bicheno_20190725-002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Whalers Lookout, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whalers_Lookout_track_Bicheno_20190725-002.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Platform_Whalers_Lookout_Bicheno_201907025-010.jpg/1920px-Platform_Whalers_Lookout_Bicheno_201907025-010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Whalers Lookout, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Platform_Whalers_Lookout_Bicheno_201907025-010.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Tree_Whalers_Lookout_Bicheno_201907025-011.jpg/1920px-Tree_Whalers_Lookout_Bicheno_201907025-011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Whalers Lookout, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tree_Whalers_Lookout_Bicheno_201907025-011.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      }
-    ]
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "bank-of-australasia-building",
@@ -32378,157 +32610,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-08"
-  },
-  {
-    "slug": "bicheno-blowhole",
-    "name": "Bicheno Blowhole",
-    "town": "Bicheno",
-    "region": "East Coast",
-    "latitude": -41.8801923,
-    "longitude": 148.3088867,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Bicheno.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/2638346517",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2638346517",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-08",
-    "lastDetailsChecked": "2026-10-08",
-    "lastOsmDetailsChecked": "2026-10-08",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Rocks_near_Bicheno_Blowhole.jpg/1920px-Rocks_near_Bicheno_Blowhole.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Bicheno Blowhole, Tasmania",
-      "attribution": "Julian Bennison",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocks_near_Bicheno_Blowhole.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Bicheno%20Blowhole%20Bicheno%20Tasmania"
-      }
-    ],
-    "qualityScore": 43,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "real-image",
-      "review-link",
-      "details-checked"
-    ],
     "rankedAt": "2026-10-08",
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Bicheno_Blowhole%2C_Tasmania.jpg/1920px-Bicheno_Blowhole%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bicheno Blowhole, Tasmania",
-        "attribution": "Siawash Ahura",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bicheno_Blowhole,_Tasmania.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Bicheno_Blowhole.jpg/1920px-Bicheno_Blowhole.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bicheno Blowhole, Tasmania",
-        "attribution": "Siawash Ahura",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bicheno_Blowhole.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/The_Blowhole%2C_Bicheno.jpg/1920px-The_Blowhole%2C_Bicheno.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bicheno Blowhole, Tasmania",
-        "attribution": "Reggaeh",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Blowhole,_Bicheno.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Bicheno_Blowhole_Tasmania_20190725-026.jpg/1920px-Bicheno_Blowhole_Tasmania_20190725-026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bicheno Blowhole, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bicheno_Blowhole_Tasmania_20190725-026.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Bicheno_Blowhole_Tasmania_20190725-027.jpg/1920px-Bicheno_Blowhole_Tasmania_20190725-027.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bicheno Blowhole, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bicheno_Blowhole_Tasmania_20190725-027.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Bicheno_Beach%2C_Tasmania.jpg/1920px-Bicheno_Beach%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bicheno Blowhole, Tasmania",
-        "attribution": "Siawash Ahura",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bicheno_Beach,_Tasmania.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Coast_at_Bicheno_Tasmania_20190725-021.jpg/1920px-Coast_at_Bicheno_Tasmania_20190725-021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bicheno Blowhole, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coast_at_Bicheno_Tasmania_20190725-021.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Coast_at_Bicheno_Tasmania_20190725-017.jpg/1920px-Coast_at_Bicheno_Tasmania_20190725-017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bicheno Blowhole, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coast_at_Bicheno_Tasmania_20190725-017.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      }
-    ]
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "custom-house",
