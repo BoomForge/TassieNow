@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { regionFor } from './lib/regions.mjs';
 
 const PLACES_FILE = new URL('../../src/data/places.json', import.meta.url);
 const EVENTS_FILE = new URL('../../src/data/events.json', import.meta.url);
@@ -45,17 +46,6 @@ function haversineKm(aLat, aLon, bLat, bLon) {
   const rad = (value) => value * Math.PI / 180; const dLat = rad(bLat - aLat); const dLon = rad(bLon - aLon);
   const a = Math.sin(dLat / 2) ** 2 + Math.cos(rad(aLat)) * Math.cos(rad(bLat)) * Math.sin(dLon / 2) ** 2;
   return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-}
-function regionFor(lat, lon, town = '') {
-  const t = town.toLowerCase();
-  if (['currie', 'grassy', 'naracoopa', 'king island'].some((v) => t.includes(v)) || lon < 144.35) return 'King Island';
-  if (['whitemark', 'lady barron', 'flinders island'].some((v) => t.includes(v)) || (lat > -40.8 && lon > 147.55)) return 'Flinders Island';
-  if (['queenstown', 'strahan', 'zee', 'rosebery', 'tullah'].some((v) => t.includes(v)) || (lon < 145.65 && lat < -41.4)) return 'West Coast';
-  if (['stanley', 'smithton', 'burnie', 'wynyard', 'penguin', 'ulverstone', 'devonport', 'latrobe', 'sheffield', 'cradle mountain'].some((v) => t.includes(v)) || (lat > -42.05 && lon < 146.65)) return 'North West';
-  if (['launceston', 'george town', 'deloraine', 'longford', 'evandale', 'scottsdale', 'derby', 'bridport', 'beaconsfield'].some((v) => t.includes(v)) || (lat > -42.05 && lon >= 146.65 && lon < 148.0)) return 'Launceston & North';
-  if (['st helens', 'bicheno', 'swansea', 'coles bay', 'orford', 'triabunna', 'scamander'].some((v) => t.includes(v)) || (lon >= 147.75 && lat <= -40.8 && lat > -43.25)) return 'East Coast';
-  if (['hobart', 'richmond', 'sorell', 'huon', 'cygnet', 'geeveston', 'dover', 'port arthur', 'new norfolk', 'bruny'].some((v) => t.includes(v)) || lat <= -42.05) return 'Hobart & South';
-  return 'Central Tasmania';
 }
 function sourceKind(tags = {}) {
   if (tags.tourism && TYPE_LABELS[tags.tourism]) return tags.tourism;
