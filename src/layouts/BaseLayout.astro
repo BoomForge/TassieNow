@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import AdSlot from '../components/AdSlot.astro';
+import places from '../data/places.json';
+import events from '../data/events.json';
 
 interface Props {
   title?: string;
@@ -32,7 +34,7 @@ const websiteSchema = {
   description: 'Tasmanian local and tourism discovery directory for places, walks, events and activities.'
 };
 
-const regionLinks = [
+const canonicalRegionLinks = [
   ['Hobart & South', 'hobart-and-south'],
   ['Launceston & North', 'launceston-and-north'],
   ['East Coast', 'east-coast'],
@@ -42,6 +44,11 @@ const regionLinks = [
   ['King Island', 'king-island'],
   ['Flinders Island', 'flinders-island']
 ];
+const activeRegionNames = new Set([
+  ...places.filter((place) => place.status === 'active' && place.visibility !== 'suppressed').map((place) => place.region),
+  ...events.filter((event) => event.status === 'active').map((event) => event.region)
+].filter(Boolean));
+const regionLinks = canonicalRegionLinks.filter(([label]) => activeRegionNames.has(label));
 
 const discoveryLinks = [
   ['Kids', 'kids'],
@@ -57,7 +64,7 @@ const discoveryLinks = [
 <html lang="en-AU">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#027B87" />
     <meta name="robots" content={noindex ? 'noindex,nofollow' : 'index,follow,max-image-preview:large'} />
@@ -90,6 +97,7 @@ const discoveryLinks = [
     <title>{title}</title>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="/" aria-label="TassieNow home">
         <img class="brand-logo" src="/brand/tassienow-logo.svg" alt="TassieNow" />
@@ -138,7 +146,7 @@ const discoveryLinks = [
       </nav>
     </header>
 
-    <main><slot /></main>
+    <main id="main-content" tabindex="-1"><slot /></main>
 
     <footer class="site-footer">
       <AdSlot placement="site-footer" className="site-footer-ad" />
