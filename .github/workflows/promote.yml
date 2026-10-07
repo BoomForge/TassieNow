@@ -1,8 +1,6 @@
-name: Promote TassieNow
+name: Promote TassieNow (manual only)
 
 on:
-  schedule:
-    - cron: '30 21 * * *'
   workflow_dispatch:
 
 permissions:
