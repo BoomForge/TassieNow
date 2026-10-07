@@ -1,8 +1,15 @@
 {
-  "checkedAt": "2026-10-07T05:39:32.880Z",
+  "checkedAt": "2026-10-07T20:12:38.426Z",
   "added": [],
-  "addedEvents": [],
-  "correctedEvents": [],
+  "addedEvents": [
+    "book-market-burnie-emu-bay-lions-club-2026-11-07-wivenhoe",
+    "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe",
+    "second-glance-market-2026-10-31-burnie",
+    "tassie-pop-culture-market-2026-12-12-upper-burnie"
+  ],
+  "correctedEvents": [
+    "second-glance-market-2026-10-27-burnie"
+  ],
   "updated": [],
   "sources": [
     {
@@ -18,7 +25,7 @@
       "name": "Tasmanian Seasonal Produce Guide",
       "url": "https://tasproduceguide.au/markets/",
       "pagesFetched": 1,
-      "candidatesFound": 34,
+      "candidatesFound": 35,
       "errors": []
     },
     {
@@ -34,7 +41,7 @@
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
       "pagesFetched": 7,
-      "candidatesFound": 12,
+      "candidatesFound": 11,
       "errors": []
     },
     {
@@ -60,21 +67,37 @@
       "pagesFetched": 2,
       "candidatesFound": 1,
       "errors": []
+    },
+    {
+      "id": "huon-valley-markets",
+      "name": "Huon Valley Council",
+      "url": "https://www.huonvalley.tas.gov.au/events/",
+      "pagesFetched": 2,
+      "candidatesFound": 2,
+      "errors": []
+    },
+    {
+      "id": "wynyard-foreshore-market",
+      "name": "Waratah-Wynyard Council",
+      "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
+      "pagesFetched": 1,
+      "candidatesFound": 4,
+      "errors": []
     }
   ],
   "totals": {
-    "discovered": 61,
-    "review": 4,
-    "existing": 54,
+    "discovered": 67,
+    "review": 9,
+    "existing": 55,
     "added": 0,
     "events": 3,
-    "addedEvents": 0,
+    "addedEvents": 4,
     "updated": 0,
     "failedSources": 0
   },
   "run": {
-    "id": "37574454897",
+    "id": "37678920650",
     "event": "push",
-    "sourceCommit": "49a90ccd17fb4ddd7ca8d69c89306fe9b3aa3e8a"
+    "sourceCommit": "de5b8fa0d1031a52cff8de566bfec1e34b6ab899"
   }
 }
