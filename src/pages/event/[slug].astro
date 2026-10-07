@@ -23,6 +23,13 @@ const offer = event.ticketUrl ? {
   validFrom: event.ticketLastChecked || undefined
 } : undefined;
 
+const formatEventDate = (value) => new Intl.DateTimeFormat('en-AU', {
+  timeZone: 'Australia/Hobart',
+  day: 'numeric',
+  month: 'short',
+  year: 'numeric'
+}).format(new Date(`${value}T12:00:00Z`));
+
 const eventSchema = {
   '@context': 'https://schema.org',
   '@type': 'Event',
@@ -108,13 +115,13 @@ const townSlug = String(event.town || '')
     <h1>{event.name}</h1>
 
     <figure class="detail-image-wrap">
-      <img class="detail-image" src={event.image.url} alt={event.image.alt} />
+      <img class="detail-image" src={event.image.url} alt={event.image.alt} loading="eager" decoding="async" fetchpriority="high" />
       {!event.image.isFallback && <figcaption>Image: {event.image.attribution} · {event.image.license}</figcaption>}
     </figure>
 
     <p class="event-date">
-      <strong>{event.startDate}</strong>
-      {event.endDate !== event.startDate && <> to <strong>{event.endDate}</strong></>}
+      <strong>{formatEventDate(event.startDate)}</strong>
+      {event.endDate !== event.startDate && <> to <strong>{formatEventDate(event.endDate)}</strong></>}
     </p>
 
     <div class="detail-meta">{event.categories.map((category) => <span class="tag">{category}</span>)}</div>
