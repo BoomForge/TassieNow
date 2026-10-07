@@ -1,4 +1,5 @@
 import { db, cleanText, httpsUrl, jsonError } from '../_lib/db.js';
+import { verifyTurnstile } from '../_lib/turnstile.js';
 
 const PACKAGES = new Map([
   ['homepage-top-7', { placement: 'homepage-top', durationDays: 7, priceAud: 50 }],
@@ -23,6 +24,8 @@ export async function onRequestPost(context) {
   try {
     const body = await context.request.json();
     if (body.company_url) return Response.json({ ok: true });
+    const verification = await verifyTurnstile(context, body['cf-turnstile-response'] || body.turnstileToken);
+    if (!verification.ok) return Response.json({ error: verification.error }, { status: 400 });
 
     const name = cleanText(body.name, 120);
     const business = cleanText(body.business, 160);
