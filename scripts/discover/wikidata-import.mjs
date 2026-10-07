@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { regionFor } from './lib/regions.mjs';
 
 const FILE = new URL('../../src/data/places.json', import.meta.url);
 const USER_AGENT = 'TassieNow/1.1 (+https://tassienow.pages.dev)';
@@ -17,17 +18,6 @@ const clean = (value = '') => String(value).replace(/<[^>]*>/g, ' ').replace(/&a
 function validUrl(value) { try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) ? url.href : null; } catch { return null; } }
 function inTasmania(lat, lon) { return Number.isFinite(lat) && Number.isFinite(lon) && lat >= -44 && lat <= -39 && lon >= 143 && lon <= 149; }
 function km(a, b, c, d) { const r = (x) => x * Math.PI / 180; const dy = r(c - a), dx = r(d - b), z = Math.sin(dy / 2) ** 2 + Math.cos(r(a)) * Math.cos(r(c)) * Math.sin(dx / 2) ** 2; return 6371 * 2 * Math.atan2(Math.sqrt(z), Math.sqrt(1 - z)); }
-function region(lat, lon, town = '') {
-  const t = town.toLowerCase();
-  if (['currie', 'grassy', 'naracoopa', 'king island'].some((v) => t.includes(v)) || lon < 144.35) return 'King Island';
-  if (['whitemark', 'lady barron', 'flinders island'].some((v) => t.includes(v)) || (lat > -40.8 && lon > 147.55)) return 'Flinders Island';
-  if (['queenstown', 'strahan', 'zeehan', 'rosebery', 'tullah'].some((v) => t.includes(v)) || (lon < 145.65 && lat < -41.4)) return 'West Coast';
-  if (['stanley', 'smithton', 'burnie', 'wynyard', 'penguin', 'ulverstone', 'devonport', 'latrobe', 'sheffield', 'cradle mountain'].some((v) => t.includes(v)) || (lat > -42.05 && lon < 146.65)) return 'North West';
-  if (['launceston', 'george town', 'deloraine', 'longford', 'evandale', 'scottsdale', 'derby', 'bridport', 'beaconsfield'].some((v) => t.includes(v)) || (lat > -42.05 && lon >= 146.65 && lon < 148)) return 'Launceston & North';
-  if (['st helens', 'bicheno', 'swansea', 'coles bay', 'orford', 'triabunna', 'scamander'].some((v) => t.includes(v)) || (lon >= 147.75 && lat <= -40.8 && lat > -43.25)) return 'East Coast';
-  if (['hobart', 'richmond', 'sorell', 'huon', 'cygnet', 'geeveston', 'dover', 'port arthur', 'new norfolk', 'bruny'].some((v) => t.includes(v)) || lat <= -42.05) return 'Hobart & South';
-  return 'Central Tasmania';
-}
 function fallback(categories, name) {
   const value = categories.join('|').toLowerCase(); let type = 'discover';
   if (value.includes('museum') || value.includes('art & culture')) type = 'culture';
@@ -103,7 +93,7 @@ for (const binding of data.results?.bindings || []) {
   const categories = [...config.categories];
   const sourceUrl = `https://www.wikidata.org/wiki/${id}`;
   candidates.push({
-    slug: slugify(name), name, town, region: region(latitude, longitude, town), latitude, longitude, categories,
+    slug: slugify(name), name, town, region: regionFor(latitude, longitude, town), latitude, longitude, categories,
     summary: `${config.summary} in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.`,
     website: validUrl(binding.website?.value), sourceUrl, sourceType: 'wikidata', sourceId: id, wikidata: id,
     status: 'active', lastChecked: TODAY, image: fallback(categories, name)
