@@ -2153,9 +2153,14 @@
       "sourceUrl": null,
       "isFallback": true
     },
-    "status": "active",
+    "status": "superseded",
     "lastChecked": "2026-10-07",
-    "ticketLastChecked": "2026-10-07"
+    "ticketLastChecked": "2026-10-07",
+    "correction": {
+      "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
+      "reason": "Date absent from the verified council session calendar",
+      "checkedAt": "2026-10-07"
+    }
   },
   {
     "slug": "art-of-the-score-the-music-of-john-williams-2026-10-31-glenorchy",
