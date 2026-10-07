@@ -1,12 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
 ---
 <BaseLayout title="TassieNow Admin" description="TassieNow owner administration." noindex={true}>
+  {turnstileSiteKey && <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>}
   <section class="content-shell admin-page">
     <div id="login-panel" class="admin-card login-card">
       <img src="/brand/tassienow-emblem.svg" alt="" class="admin-emblem" />
       <p class="eyebrow">Owner access</p><h1>TassieNow Admin</h1>
-      <form id="login-form"><label>Username<input name="username" autocomplete="username" value="admin" required /></label><label>Password<input name="password" type="password" autocomplete="current-password" required /></label><button class="primary-button" type="submit">Log in</button><p id="login-status" class="admin-status" aria-live="polite"></p></form>
+      <form id="login-form"><label>Username<input name="username" autocomplete="username" value="admin" required /></label><label>Password<input name="password" type="password" autocomplete="current-password" required /></label>{turnstileSiteKey && <div class="cf-turnstile" data-sitekey={turnstileSiteKey} data-theme="auto"></div>}<button class="primary-button" type="submit">Log in</button><p id="login-status" class="admin-status" aria-live="polite"></p></form>
     </div>
 
     <div id="admin-panel" hidden>
@@ -60,7 +62,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     async function api(url,options={}){const r=await fetch(url,{...options,headers:{accept:'application/json',...(options.body?{'content-type':'application/json'}:{}),...(options.headers||{})},cache:'no-store'});const data=await r.json().catch(()=>({}));if(r.status===401){showLogin();throw new Error('Your admin session has expired.');}if(!r.ok)throw new Error(data.error||`Request failed (${r.status})`);return data;}
     async function uploadImage(file,label){const form=new FormData();form.append('file',file);form.append('label',label||'image');const r=await fetch('/api/admin/upload',{method:'POST',body:form,headers:{accept:'application/json'},cache:'no-store'});const data=await r.json().catch(()=>({}));if(r.status===401){showLogin();throw new Error('Your admin session has expired.');}if(!r.ok)throw new Error(data.error||`Upload failed (${r.status})`);return data;}
     function showLogin(){loginPanel.hidden=false;adminPanel.hidden=true}function showAdmin(){loginPanel.hidden=true;adminPanel.hidden=false;loadAll()}
-    document.querySelector('#login-form').addEventListener('submit',async e=>{e.preventDefault();const s=document.querySelector('#login-status');s.textContent='Logging in…';try{await api('/api/admin/login',{method:'POST',body:JSON.stringify(Object.fromEntries(new FormData(e.currentTarget).entries()))});s.textContent='';showAdmin()}catch(err){s.textContent=err.message}});
+    document.querySelector('#login-form').addEventListener('submit',async e=>{e.preventDefault();const s=document.querySelector('#login-status');s.textContent='Logging in…';try{await api('/api/admin/login',{method:'POST',body:JSON.stringify(Object.fromEntries(new FormData(e.currentTarget).entries()))});s.textContent='';showAdmin()}catch(err){window.turnstile?.reset();s.textContent=err.message}});
     document.querySelector('#logout').addEventListener('click',async()=>{try{await api('/api/admin/logout',{method:'POST',body:'{}'})}finally{showLogin()}});
     document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===btn));document.querySelectorAll('[data-panel]').forEach(p=>p.hidden=p.dataset.panel!==btn.dataset.tab)}));
     async function loadAll(){globalStatus.textContent='Loading…';const results=await Promise.allSettled([loadCatalogue(),loadAds(),loadInquiries()]);const failures=results.filter(x=>x.status==='rejected');globalStatus.textContent=failures.length?failures.map(x=>x.reason.message).join(' · '):''}
