@@ -10,19 +10,19 @@
         "percent": 22.6
       },
       "twoPlusImages": {
-        "count": 159,
-        "percent": 14.8
+        "count": 134,
+        "percent": 12.5
       },
       "fourPlusImages": {
-        "count": 86,
-        "percent": 8
+        "count": 77,
+        "percent": 7.2
       },
       "sixPlusImages": {
-        "count": 63,
-        "percent": 5.9
+        "count": 59,
+        "percent": 5.5
       },
-      "totalLicensedImages": 796,
-      "averageImagesPerPublicListing": 0.74
+      "totalLicensedImages": 733,
+      "averageImagesPerPublicListing": 0.68
     },
     "sources": {
       "websiteCoverage": {
@@ -30,16 +30,16 @@
         "percent": 10.7
       },
       "officialSourceCoverage": {
-        "count": 99,
-        "percent": 9.2
+        "count": 74,
+        "percent": 6.9
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 99,
-        "percent": 9.2
+        "count": 74,
+        "percent": 6.9
       },
       "wikidataLinkage": {
-        "count": 619,
-        "percent": 57.7
+        "count": 609,
+        "percent": 56.8
       }
     },
     "details": {
@@ -48,8 +48,8 @@
         "percent": 8.6
       },
       "recurringSchedule": {
-        "count": 52,
-        "percent": 4.8
+        "count": 49,
+        "percent": 4.6
       },
       "phone": {
         "count": 103,
@@ -90,8 +90,8 @@
       "curated": 12
     },
     "qualityTiers": {
-      "standard": 424,
-      "strong": 395,
+      "standard": 425,
+      "strong": 394,
       "featured": 237,
       "low": 17
     },
@@ -99,8 +99,8 @@
       "Hobart & South": 358,
       "East Coast": 202,
       "Launceston & North": 189,
-      "North West": 168,
-      "West Coast": 73,
+      "North West": 166,
+      "West Coast": 75,
       "Flinders Island": 53,
       "King Island": 30
     },
@@ -116,18 +116,20 @@
     }
   },
   "events": {
-    "active": 113,
+    "active": 123,
     "ticketCoverage": {
-      "count": 19,
-      "percent": 16.8
+      "count": 44,
+      "percent": 35.8
     },
     "priceCoverage": {
-      "count": 16,
-      "percent": 14.2
+      "count": 47,
+      "percent": 38.2
     },
     "providers": {
-      "Humanitix": 18,
-      "Eventbrite": 1
+      "Ticketek": 22,
+      "Humanitix": 20,
+      "Eventbrite": 1,
+      "Ticketmaster": 1
     },
     "sources": {
       "Burnie City Council": 24,
@@ -135,16 +137,17 @@
       "Theatre North Launceston": 17,
       "Devonport City Council": 14,
       "City of Clarence": 9,
+      "Humanitix Hobart": 8,
+      "Theatre Royal Hobart": 8,
       "City of Hobart": 7,
-      "Humanitix Hobart": 7,
-      "Humanitix Launceston": 5,
+      "Humanitix Launceston": 6,
       "City of Launceston": 3,
       "Glenorchy City Council": 3
     },
     "regions": {
-      "Hobart & South": 50,
+      "Hobart & South": 59,
       "North West": 38,
-      "Launceston & North": 25
+      "Launceston & North": 26
     }
   }
 }
