@@ -58,7 +58,7 @@ GitHub Actions maintains the data and site:
 - `indexnow.yml` submits updated URLs for supported search engines.
 - `quality.yml` syntax-checks automation, validates data and builds the site on pushes and pull requests.
 - `automation-health.yml` records a persistent heartbeat when GitHub's scheduler actually executes, so unattended automation can be audited rather than assumed.
-- `promote.yml` selects one useful TassieNow discovery, place or event each day and can publish it to Bluesky when the repository secrets are configured.
+- `promote.yml` is currently manual-only. It can publish one selected TassieNow discovery, place or event to Bluesky later, but scheduled social publishing is intentionally paused until the website is locked down and fine-tuned.
 
 The site exposes two Atom feeds:
 
@@ -67,7 +67,7 @@ The site exposes two Atom feeds:
 
 ### Promotion automation
 
-The daily promotion workflow runs at `21:30 UTC`, which lands in the Tasmanian morning year-round (about 07:30 AEST / 08:30 AEDT).
+The social publisher is currently **manual-only** while TassieNow remains in the website-lockdown and fine-tuning phase. No scheduled social publishing should run until that phase is explicitly lifted.
 
 Bluesky publishing is optional and uses the official AT Protocol password-session flow intended for bots/scripts. Configure these repository secrets:
 
