@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07",
+  "generatedAt": "2026-10-08",
   "places": {
     "total": 1113,
     "public": 1102,
@@ -117,17 +117,17 @@
     }
   },
   "events": {
-    "active": 132,
+    "active": 125,
     "ticketCoverage": {
-      "count": 50,
-      "percent": 37.9
+      "count": 47,
+      "percent": 37.6
     },
     "priceCoverage": {
-      "count": 40,
-      "percent": 30.3
+      "count": 46,
+      "percent": 36.8
     },
     "providers": {
-      "Humanitix": 25,
+      "Humanitix": 22,
       "Ticketek": 22,
       "Eventbrite": 2,
       "Ticketmaster": 1
@@ -137,18 +137,18 @@
       "MyState Bank Arena": 24,
       "Theatre North Launceston": 17,
       "Devonport City Council": 14,
-      "Humanitix Hobart": 10,
-      "City of Clarence": 9,
-      "Humanitix Launceston": 9,
-      "Theatre Royal Hobart": 9,
+      "City of Clarence": 8,
+      "Humanitix Hobart": 8,
+      "Theatre Royal Hobart": 8,
       "City of Hobart": 7,
-      "Glenorchy City Council": 5,
+      "Humanitix Launceston": 7,
+      "Glenorchy City Council": 4,
       "City of Launceston": 3
     },
     "regions": {
-      "Hobart & South": 64,
+      "Hobart & South": 59,
       "North West": 39,
-      "Launceston & North": 29
+      "Launceston & North": 27
     }
   }
 }
