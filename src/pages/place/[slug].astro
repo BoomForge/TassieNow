@@ -164,7 +164,7 @@ const schema = {
     </section>
 
     <div class={hasVisitDetails ? 'place-shell' : 'place-shell single-column'}>
-      <main class="place-main">
+      <div class="place-main">
         {gallery.length > 0 && (
           <section class="section-card gallery-section" aria-labelledby="gallery-heading">
             <div class="section-heading-row">
@@ -241,7 +241,7 @@ const schema = {
             </small>
           </p>
         </div>
-      </main>
+      </div>
 
       {hasVisitDetails && (
         <aside class="visit-card" aria-labelledby="visit-heading">
