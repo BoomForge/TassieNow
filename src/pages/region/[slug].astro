@@ -129,7 +129,7 @@ const formatEventDate = (startDate, endDate) => {
     { name: 'TassieNow', path: '/' },
     { name: region }
   ]} />
-  <main class="destination-page">
+  <div class="destination-page">
     <nav class="destination-breadcrumbs" aria-label="Breadcrumb">
       <a href="/">TassieNow</a><span>›</span><span>{region}</span>
     </nav>
@@ -330,7 +330,7 @@ const formatEventDate = (startDate, endDate) => {
         <button class="secondary-button" id="regional-load-more" type="button">Show more places</button>
       </div>
     </section>
-  </main>
+  </div>
 
   <script>
     const regionSearch = document.querySelector('#regional-search');
