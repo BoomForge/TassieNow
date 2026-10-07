@@ -135,7 +135,7 @@ const schema = {
 
     <section class="place-hero">
       <figure class:list={['hero-media', place.image?.isFallback && 'fallback-media']}>
-        <img src={place.image.url} alt={place.image.alt || `${place.name}, Tasmania`} />
+        <img src={place.image.url} alt={place.image.alt || `${place.name}, Tasmania`} loading="eager" decoding="async" fetchpriority="high" />
         <div class="hero-media-gradient"></div>
         <div class="hero-badge-row">
           {place.categories?.slice(0, 2).map((category) => <span>{category}</span>)}
