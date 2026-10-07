@@ -69315,5 +69315,1304 @@
     "rankedAt": "2026-10-07",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-07"
+  },
+  {
+    "slug": "sorell-community-market",
+    "name": "Sorell Community Market",
+    "town": "Sorell",
+    "region": "Hobart & South",
+    "latitude": -42.781,
+    "longitude": 147.563,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets"
+    ],
+    "summary": "Community market with fresh produce, craft stalls and secondhand goods.",
+    "address": "Sorell Memorial Hall and Oval, Sorell",
+    "website": "https://www.sorell.tas.gov.au/visitor-information/",
+    "sourceUrl": "https://www.sorell.tas.gov.au/visitor-information/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Every Sunday; check the organiser for current trading hours",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "sourceUrl": "https://tasmanpeninsula.com.au/markets",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling."
+    },
+    "officialSource": {
+      "name": "Sorell Community Market",
+      "url": "https://www.sorell.tas.gov.au/visitor-information/",
+      "type": "government"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Sorell Community Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://www.sorell.tas.gov.au/visitor-information/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://tasmanpeninsula.com.au/markets",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "qualityScore": 69,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "government-source",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "wynyard-foreshore-market",
+    "name": "Wynyard Foreshore Market",
+    "town": "Wynyard",
+    "region": "North West",
+    "latitude": -40.99,
+    "longitude": 145.736,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets"
+    ],
+    "summary": "Foreshore stalls offer local goods, garden plants and secondhand finds.",
+    "address": "East Wynyard Foreshore, Wynyard",
+    "website": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
+    "sourceUrl": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "First and third Sunday each month, 8 am–2 pm",
+      "frequency": "monthly",
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "sourceUrl": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "weeksOfMonth": [
+        1,
+        3
+      ],
+      "startTime": "08:00",
+      "endTime": "14:00"
+    },
+    "officialSource": {
+      "name": "Wynyard Foreshore Market",
+      "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
+      "type": "government"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Wynyard Foreshore Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "qualityScore": 69,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "government-source",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "farm-gate-market",
+    "name": "Farm Gate Market",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "latitude": -42.88,
+    "longitude": 147.325,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets",
+      "Local Produce",
+      "Food & Drink"
+    ],
+    "summary": "Tasmanian growers and food producers gather for a weekly street market in central Hobart.",
+    "address": "Bathurst Street, Hobart",
+    "website": "https://farmgatemarket.com.au/",
+    "sourceUrl": "https://farmgatemarket.com.au/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Every Sunday, 8:30 am–1 pm",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "sourceUrl": "https://farmgatemarket.com.au/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "startTime": "08:30",
+      "endTime": "13:00"
+    },
+    "officialSource": {
+      "name": "Farm Gate Market",
+      "url": "https://farmgatemarket.com.au/",
+      "type": "official-website"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Farm Gate Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://farmgatemarket.com.au/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://farmgatemarket.com.au/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "openingHours": "Su 08:30-13:00",
+    "qualityScore": 65,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "opening-hours",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "harvest-launceston-community-farmers-market",
+    "name": "Harvest Launceston Community Farmers Market",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "latitude": -41.434,
+    "longitude": 147.139,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets",
+      "Local Produce",
+      "Food & Drink"
+    ],
+    "summary": "Northern Tasmanian farmers and food producers gather at this weekly city market.",
+    "address": "71 Cimitiere Street, Launceston",
+    "website": "https://harvestmarket.org.au/",
+    "sourceUrl": "https://harvestmarket.org.au/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Every Saturday, 8:30 am–12:30 pm",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Saturday"
+      ],
+      "sourceUrl": "https://harvestmarket.org.au/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "startTime": "08:30",
+      "endTime": "12:30"
+    },
+    "officialSource": {
+      "name": "Harvest Launceston Community Farmers Market",
+      "url": "https://harvestmarket.org.au/",
+      "type": "official-website"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Harvest Launceston Community Farmers Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://harvestmarket.org.au/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://harvestmarket.org.au/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "openingHours": "Sa 08:30-12:30",
+    "qualityScore": 65,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "opening-hours",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "willie-smith-s-artisan-and-produce-market",
+    "name": "Willie Smith’s Artisan and Produce Market",
+    "town": "Grove",
+    "region": "Hobart & South",
+    "latitude": -42.998,
+    "longitude": 147.074,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets",
+      "Local Produce",
+      "Food & Drink"
+    ],
+    "summary": "Local growers and makers bring produce and handmade goods to the Apple Shed.",
+    "address": "Willie Smith’s Apple Shed, 2064 Huon Highway, Grove",
+    "website": "https://www.williesmiths.com.au/apple-shed",
+    "sourceUrl": "https://www.williesmiths.com.au/apple-shed",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Every Saturday, 10 am–2 pm",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Saturday"
+      ],
+      "sourceUrl": "https://www.williesmiths.com.au/apple-shed",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "startTime": "10:00",
+      "endTime": "14:00"
+    },
+    "officialSource": {
+      "name": "Willie Smith’s Artisan and Produce Market",
+      "url": "https://www.williesmiths.com.au/apple-shed",
+      "type": "official-website"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Willie Smith’s Artisan and Produce Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://www.williesmiths.com.au/apple-shed",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://www.williesmiths.com.au/apple-shed",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "openingHours": "Sa 10:00-14:00",
+    "qualityScore": 65,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "opening-hours",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "evandale-sunday-market",
+    "name": "Evandale Sunday Market",
+    "town": "Evandale",
+    "region": "Launceston & North",
+    "latitude": -41.572,
+    "longitude": 147.207,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets"
+    ],
+    "summary": "Country market with produce, collectibles and food stalls at Falls Park.",
+    "address": "Falls Park, 8 Logan Road, Evandale",
+    "website": "https://www.evandalemarket.com.au/visitor-info",
+    "sourceUrl": "https://www.evandalemarket.com.au/visitor-info",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Every Sunday, 8 am–1:30 pm",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "sourceUrl": "https://www.evandalemarket.com.au/visitor-info",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "startTime": "08:00",
+      "endTime": "13:30"
+    },
+    "officialSource": {
+      "name": "Evandale Sunday Market",
+      "url": "https://www.evandalemarket.com.au/visitor-info",
+      "type": "official-website"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Evandale Sunday Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://www.evandalemarket.com.au/visitor-info",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://www.evandalemarket.com.au/visitor-info",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "openingHours": "Su 08:00-13:30",
+    "qualityScore": 61,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "opening-hours",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "latrobe-village-market",
+    "name": "Latrobe Village Market",
+    "town": "Latrobe",
+    "region": "North West",
+    "latitude": -41.235,
+    "longitude": 146.411,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets"
+    ],
+    "summary": "Sunday village market in Latrobe.",
+    "address": "169–171 Gilbert Street, Latrobe",
+    "website": "https://cotatas.org.au/gd_activities/latrobe-village-market",
+    "sourceUrl": "https://cotatas.org.au/gd_activities/latrobe-village-market",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Every Sunday, 8 am–1 pm",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "sourceUrl": "https://cotatas.org.au/gd_activities/latrobe-village-market",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "startTime": "08:00",
+      "endTime": "13:00"
+    },
+    "officialSource": {
+      "name": "Latrobe Village Market",
+      "url": "https://cotatas.org.au/gd_activities/latrobe-village-market",
+      "type": "official-website"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Latrobe Village Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://cotatas.org.au/gd_activities/latrobe-village-market",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://cotatas.org.au/gd_activities/latrobe-village-market",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "openingHours": "Su 08:00-13:00",
+    "qualityScore": 61,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "opening-hours",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "bream-creek-farmers-market",
+    "name": "Bream Creek Farmers Market",
+    "town": "Copping",
+    "region": "Hobart & South",
+    "latitude": -42.812,
+    "longitude": 147.829,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets",
+      "Local Produce",
+      "Food & Drink"
+    ],
+    "summary": "Volunteer-run farmers market featuring seasonal produce from south-eastern Tasmania.",
+    "address": "Bream Creek Showgrounds, 138 Marion Bay Road, Copping",
+    "website": "https://breamcreekfarmersmarket.com.au/",
+    "sourceUrl": "https://breamcreekfarmersmarket.com.au/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "First Sunday each month, 9 am–1 pm",
+      "frequency": "monthly",
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "sourceUrl": "https://breamcreekfarmersmarket.com.au/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "weeksOfMonth": [
+        1
+      ],
+      "startTime": "09:00",
+      "endTime": "13:00"
+    },
+    "officialSource": {
+      "name": "Bream Creek Farmers Market",
+      "url": "https://breamcreekfarmersmarket.com.au/",
+      "type": "official-website"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Bream Creek Farmers Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://breamcreekfarmersmarket.com.au/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://breamcreekfarmersmarket.com.au/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "qualityScore": 59,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "ross-village-market",
+    "name": "Ross Village Market",
+    "town": "Ross",
+    "region": "Central Tasmania",
+    "latitude": -42.028,
+    "longitude": 147.492,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets",
+      "Rainy Day"
+    ],
+    "summary": "Indoor country market in Ross Town Hall with locally made goods and produce.",
+    "address": "Ross Town Hall, corner Church and Bridge Streets, Ross",
+    "website": "https://www.visitross.com.au/events/ross-village-market/",
+    "sourceUrl": "https://www.visitross.com.au/events/ross-village-market/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Third Sunday each month, from 9 am",
+      "frequency": "monthly",
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "sourceUrl": "https://www.visitross.com.au/events/ross-village-market/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "weeksOfMonth": [
+        3
+      ],
+      "startTime": "09:00"
+    },
+    "officialSource": {
+      "name": "Ross Village Market",
+      "url": "https://www.visitross.com.au/events/ross-village-market/",
+      "type": "official-website"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Ross Village Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://www.visitross.com.au/events/ross-village-market/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://www.visitross.com.au/events/ross-village-market/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "qualityScore": 57,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "cygnet-market",
+    "name": "Cygnet Market",
+    "town": "Cygnet",
+    "region": "Hobart & South",
+    "latitude": -43.161,
+    "longitude": 147.073,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets"
+    ],
+    "summary": "Country market with local produce, handmade goods and secondhand finds in the Huon Valley.",
+    "address": "Cygnet Town Hall, 14 Mary Street, Cygnet",
+    "website": "https://cygnetmarket.com.au/",
+    "sourceUrl": "https://cygnetmarket.com.au/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "First and third Sunday each month, 10 am–2 pm",
+      "frequency": "monthly",
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "sourceUrl": "https://cygnetmarket.com.au/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "weeksOfMonth": [
+        1,
+        3
+      ],
+      "startTime": "10:00",
+      "endTime": "14:00"
+    },
+    "officialSource": {
+      "name": "Cygnet Market",
+      "url": "https://cygnetmarket.com.au/",
+      "type": "official-website"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Cygnet Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://cygnetmarket.com.au/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://cygnetmarket.com.au/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "qualityScore": 55,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "deloraine-showgrounds-market",
+    "name": "Deloraine Showgrounds Market",
+    "town": "Deloraine",
+    "region": "Launceston & North",
+    "latitude": -41.535,
+    "longitude": 146.659,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets"
+    ],
+    "summary": "Mixed country market with produce, plants and handmade goods at the showgrounds.",
+    "address": "Deloraine Showgrounds, Highland Lakes Road, Deloraine",
+    "website": "https://www.delorainemarket.com.au/?page_id=2",
+    "sourceUrl": "https://www.delorainemarket.com.au/?page_id=2",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "First Saturday each month, 9 am–1 pm; closed January and November; extra third-Saturday Christmas market in December",
+      "frequency": "monthly",
+      "daysOfWeek": [
+        "Saturday"
+      ],
+      "sourceUrl": "https://www.delorainemarket.com.au/?page_id=2",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "weeksOfMonth": [
+        1
+      ],
+      "startTime": "09:00",
+      "endTime": "13:00",
+      "excludedMonths": [
+        1,
+        11
+      ],
+      "dates": [
+        "2026-12-19"
+      ]
+    },
+    "officialSource": {
+      "name": "Deloraine Showgrounds Market",
+      "url": "https://www.delorainemarket.com.au/?page_id=2",
+      "type": "official-website"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Deloraine Showgrounds Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://www.delorainemarket.com.au/?page_id=2",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://www.delorainemarket.com.au/?page_id=2",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "qualityScore": 55,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "lilydale-village-market",
+    "name": "Lilydale Village Market",
+    "town": "Lilydale",
+    "region": "Launceston & North",
+    "latitude": -41.251,
+    "longitude": 147.216,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets"
+    ],
+    "summary": "Village market at the Memorial Hall, using a calendar of themed dates for 2026.",
+    "address": "Lilydale Memorial Hall, Lilydale",
+    "website": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/",
+    "sourceUrl": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Selected Sundays in 2026, 10 am–2 pm; next published market: 6 December 2026",
+      "frequency": "irregular",
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "sourceUrl": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "startTime": "10:00",
+      "endTime": "14:00",
+      "dates": [
+        "2026-02-22",
+        "2026-03-29",
+        "2026-05-03",
+        "2026-06-14",
+        "2026-09-13",
+        "2026-12-06"
+      ]
+    },
+    "officialSource": {
+      "name": "Lilydale Village Market",
+      "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/",
+      "type": "official-website"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Lilydale Village Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "qualityScore": 55,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "tasmanian-produce-market",
+    "name": "Tasmanian Produce Market",
+    "town": "Rosny Park",
+    "region": "Hobart & South",
+    "latitude": -42.872,
+    "longitude": 147.363,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets",
+      "Local Produce",
+      "Food & Drink"
+    ],
+    "summary": "Saturday produce market beside Kangaroo Bay on the eastern shore.",
+    "address": "Kangaroo Bay, Rosny Park",
+    "website": null,
+    "sourceUrl": "https://tasproduceguide.au/markets/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Every Saturday, 9 am–1 pm",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Saturday"
+      ],
+      "sourceUrl": "https://tasproduceguide.au/markets/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "startTime": "09:00",
+      "endTime": "13:00"
+    },
+    "officialSource": {
+      "name": "Fruit Growers Tasmania seasonal produce guide",
+      "url": "https://tasproduceguide.au/markets/",
+      "type": "industry-guide"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Tasmanian Produce Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "openingHours": "Sa 09:00-13:00",
+    "qualityScore": 55,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "opening-hours",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "penguin-undercover-market",
+    "name": "Penguin Undercover Market",
+    "town": "Penguin",
+    "region": "North West",
+    "latitude": -41.116,
+    "longitude": 146.071,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets",
+      "Rainy Day"
+    ],
+    "summary": "Undercover Sunday market on the north-west coast.",
+    "address": "11 Arnold Street, Penguin",
+    "website": null,
+    "sourceUrl": "https://tasproduceguide.au/markets/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Every Sunday, 9 am–3 pm",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "sourceUrl": "https://tasproduceguide.au/markets/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "startTime": "09:00",
+      "endTime": "15:00"
+    },
+    "officialSource": {
+      "name": "Fruit Growers Tasmania seasonal produce guide",
+      "url": "https://tasproduceguide.au/markets/",
+      "type": "industry-guide"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Penguin Undercover Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "openingHours": "Su 09:00-15:00",
+    "qualityScore": 53,
+    "qualityTier": "strong",
+    "qualitySignals": [
+      "proper-name",
+      "opening-hours",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "don-market",
+    "name": "Don Market",
+    "town": "Don",
+    "region": "North West",
+    "latitude": -41.186,
+    "longitude": 146.323,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets"
+    ],
+    "summary": "Community Sunday market near Devonport.",
+    "address": "17 Forth Road, Don",
+    "website": null,
+    "sourceUrl": "https://tasproduceguide.au/markets/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Every Sunday, 9 am–2 pm",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "sourceUrl": "https://tasproduceguide.au/markets/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "startTime": "09:00",
+      "endTime": "14:00"
+    },
+    "officialSource": {
+      "name": "Fruit Growers Tasmania seasonal produce guide",
+      "url": "https://tasproduceguide.au/markets/",
+      "type": "industry-guide"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Don Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "openingHours": "Su 09:00-14:00",
+    "qualityScore": 51,
+    "qualityTier": "strong",
+    "qualitySignals": [
+      "proper-name",
+      "opening-hours",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "new-norfolk-market",
+    "name": "New Norfolk Market",
+    "town": "New Norfolk",
+    "region": "Hobart & South",
+    "latitude": -42.782,
+    "longitude": 147.062,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets"
+    ],
+    "summary": "Weekly town-centre market in the Derwent Valley.",
+    "address": "High Street, New Norfolk",
+    "website": null,
+    "sourceUrl": "https://tasproduceguide.au/markets/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Every Saturday, 8 am–2 pm",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Saturday"
+      ],
+      "sourceUrl": "https://tasproduceguide.au/markets/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "startTime": "08:00",
+      "endTime": "14:00"
+    },
+    "officialSource": {
+      "name": "Fruit Growers Tasmania seasonal produce guide",
+      "url": "https://tasproduceguide.au/markets/",
+      "type": "industry-guide"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "New Norfolk Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "openingHours": "Sa 08:00-14:00",
+    "qualityScore": 51,
+    "qualityTier": "strong",
+    "qualitySignals": [
+      "proper-name",
+      "opening-hours",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "richmond-village-market",
+    "name": "Richmond Village Market",
+    "town": "Richmond",
+    "region": "Hobart & South",
+    "latitude": -42.736,
+    "longitude": 147.437,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets"
+    ],
+    "summary": "Weekly village-hall market in historic Richmond.",
+    "address": "Richmond Village Hall, Bridge Street, Richmond",
+    "website": null,
+    "sourceUrl": "https://tasproduceguide.au/markets/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Every Sunday, 10 am–3 pm",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "sourceUrl": "https://tasproduceguide.au/markets/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "startTime": "10:00",
+      "endTime": "15:00"
+    },
+    "officialSource": {
+      "name": "Fruit Growers Tasmania seasonal produce guide",
+      "url": "https://tasproduceguide.au/markets/",
+      "type": "industry-guide"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Richmond Village Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "openingHours": "Su 10:00-15:00",
+    "qualityScore": 51,
+    "qualityTier": "strong",
+    "qualitySignals": [
+      "proper-name",
+      "opening-hours",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "st-helens-market",
+    "name": "St Helens Market",
+    "town": "St Helens",
+    "region": "East Coast",
+    "latitude": -41.322,
+    "longitude": 148.249,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets"
+    ],
+    "summary": "Weekly community market at Portland Hall on the east coast.",
+    "address": "Portland Hall, 39 Cecilia Street, St Helens",
+    "website": null,
+    "sourceUrl": "https://tasproduceguide.au/markets/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Every Saturday, 9 am–1 pm",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Saturday"
+      ],
+      "sourceUrl": "https://tasproduceguide.au/markets/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "startTime": "09:00",
+      "endTime": "13:00"
+    },
+    "officialSource": {
+      "name": "Fruit Growers Tasmania seasonal produce guide",
+      "url": "https://tasproduceguide.au/markets/",
+      "type": "industry-guide"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "St Helens Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "openingHours": "Sa 09:00-13:00",
+    "qualityScore": 51,
+    "qualityTier": "strong",
+    "qualitySignals": [
+      "proper-name",
+      "opening-hours",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
+  },
+  {
+    "slug": "devonport-farmers-market",
+    "name": "Devonport Farmers Market",
+    "town": "Devonport",
+    "region": "North West",
+    "latitude": -41.186,
+    "longitude": 146.342,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets",
+      "Local Produce",
+      "Food & Drink"
+    ],
+    "summary": "Regular farmers market at the Devonport Showgrounds.",
+    "address": "Devonport Showgrounds, 86A Gunn Street, Devonport",
+    "website": null,
+    "sourceUrl": "https://tasproduceguide.au/markets/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-07",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Second and fourth Saturday each month, 8:30 am–12:30 pm",
+      "frequency": "monthly",
+      "daysOfWeek": [
+        "Saturday"
+      ],
+      "sourceUrl": "https://tasproduceguide.au/markets/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "weeksOfMonth": [
+        2,
+        4
+      ],
+      "startTime": "08:30",
+      "endTime": "12:30"
+    },
+    "officialSource": {
+      "name": "Fruit Growers Tasmania seasonal produce guide",
+      "url": "https://tasproduceguide.au/markets/",
+      "type": "industry-guide"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Devonport Farmers Market market category illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "qualityScore": 49,
+    "qualityTier": "strong",
+    "qualitySignals": [
+      "proper-name",
+      "address",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-07"
   }
 ]
