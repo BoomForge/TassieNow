@@ -183,3 +183,17 @@ Run `npm run validate:data` to catch missing fields, duplicate slugs, invalid UR
 - Preserve existing healthy records when an external discovery source has a partial outage.
 - Fail soft when optional enrichment sources are unavailable.
 - Keep basic business inclusion free; future monetisation should sit around discovery rather than gatekeeping it.
+
+### Council and tourism market discovery
+
+`npm run discover:markets` scans the directories in `scripts/discover/sources.json`. It runs before enrichment in the existing daily catalogue-quality pass (18:47 UTC, 05:47 Hobart during daylight saving) and weekly catalogue discovery pass. No API key or new service is needed. GitHub scheduled runs can be delayed; the report records actual execution time.
+
+The crawler reads market sections, linked detail pages and JSON-LD, respects robots.txt, stays within each registered source host, and rotates up to six detail pages per source each day (42 overall). Requests are bounded by time and page size and spaced per host. New directory links are discovered on every run, rather than relying on a fixed list of individual markets.
+
+Automatic publication requires a council, regional-tourism or organiser source with structured market identity, exact address and town, Tasmanian venue coordinates, a recognised recurring schedule and a known region. It deduplicates against the current catalogue before adding a listing. Monthly ordinals remain monthly; uncertain seasonal exceptions and one-off dates require review. Images use existing TassieNow artwork until the licensed-image pipeline finds a suitable image.
+
+Incomplete discoveries are retained in `src/data/discovery-candidates.json` with the missing evidence listed in `reasons`. The owner dashboard’s Discovery tab shows this queue and source health. Review these against the linked organiser/council source, then add or correct the listing through the existing owner catalogue editor. Subsequent runs match that listing automatically. Different source records preserve their own evidence; they are not multiple public listings. This first source registry targets markets; other categories still use the existing OSM, Wikidata, Parks and event importers.
+
+`src/data/discovery-report.json`, the Actions step summary and the retained `market-discovery-report` artifact expose actual source failures, pages fetched, additions and review counts. A failed fetch never deletes an existing listing or advances a candidate's `lastSeen` date. Existing curated/manual records and schedules are not overwritten by discovery.
+
+Run `npm run test:discovery` for extraction, publication gates, deduplication, recurrence, robots and outage-preservation regression tests. Add new trusted directory URLs to `scripts/discover/sources.json` to expand coverage. This does not claim exhaustive coverage; social-only and unstructured listings need verification.

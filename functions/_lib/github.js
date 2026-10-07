@@ -36,7 +36,18 @@ async function github(context, path, init = {}) {
 
 export async function readCatalogue(context) {
   const data = await github(context, `/contents/${CATALOGUE_PATH}?ref=main`);
-  return { sha: data.sha, places: JSON.parse(base64ToText(data.content)) };
+  const blob = data.content ? data : await github(context, `/git/blobs/${data.sha}`);
+  return { sha: data.sha, places: JSON.parse(base64ToText(blob.content)) };
+}
+
+export async function readDiscovery(context) {
+  const paths = ['discovery-candidates.json', 'discovery-report.json'];
+  const [candidates, report] = await Promise.all(paths.map(async name => {
+    const data = await github(context, `/contents/src/data/${name}?ref=main`);
+    const blob = data.content ? data : await github(context, `/git/blobs/${data.sha}`);
+    return JSON.parse(base64ToText(blob.content));
+  }));
+  return { candidates, report };
 }
 
 export async function writeCatalogue(context, places, sha, message) {

@@ -73,6 +73,17 @@ jobs:
         run: node scripts/audit-links.mjs
       - name: Sanitize generated records
         run: node scripts/sanitize-generated.mjs
+      - name: Discover and verify markets from council and tourism directories
+        run: node scripts/discover/official-markets.mjs
+      - name: Preserve market discovery report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: market-discovery-report
+          path: |
+            src/data/discovery-report.json
+            src/data/discovery-candidates.json
+          retention-days: 30
       - name: Enrich OSM and structured listing details
         run: node scripts/enrich-details.mjs
       - name: Crawl official visit, hours, contact and date pages
@@ -95,13 +106,13 @@ jobs:
         run: npm run build
       - name: Commit refreshed data
         run: |
-          if git diff --quiet -- src/data/places.json src/data/events.json src/data/parks-walks.json src/data/catalogue-audit.json; then
+          if git diff --quiet -- src/data/places.json src/data/events.json src/data/parks-walks.json src/data/catalogue-audit.json src/data/discovery-candidates.json src/data/discovery-report.json; then
             echo "No catalogue changes."
             exit 0
           fi
           git config user.name "TassieNow Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add src/data/places.json src/data/events.json src/data/parks-walks.json src/data/catalogue-audit.json
+          git add src/data/places.json src/data/events.json src/data/parks-walks.json src/data/catalogue-audit.json src/data/discovery-candidates.json src/data/discovery-report.json
           git commit -m "data: refresh multi-source Tasmanian discovery catalogue"
           git pull --rebase origin main
           git push origin HEAD:main

@@ -14,7 +14,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
     <div id="admin-panel" hidden>
       <div class="admin-heading"><div><p class="eyebrow">Owner dashboard</p><h1>Manage TassieNow</h1></div><button id="logout" class="secondary-button" type="button">Log out</button></div>
       <p class="admin-status" id="global-status" aria-live="polite"></p>
-      <nav class="admin-tabs" aria-label="Admin sections"><button class="tab active" data-tab="catalogue" type="button">Catalogue</button><button class="tab" data-tab="ads" type="button">Advertisements</button><button class="tab" data-tab="inquiries" type="button">Ad enquiries</button></nav>
+      <nav class="admin-tabs" aria-label="Admin sections"><button class="tab active" data-tab="catalogue" type="button">Catalogue</button><button class="tab" data-tab="discovery" type="button">Discovery</button><button class="tab" data-tab="ads" type="button">Advertisements</button><button class="tab" data-tab="inquiries" type="button">Ad enquiries</button></nav>
 
       <section class="admin-section" data-panel="catalogue">
         <div class="section-bar"><div><h2>Catalogue</h2><p>Manual edits are committed to GitHub and protected from the automatic importer.</p></div><button id="new-listing" class="primary-button" type="button">New listing</button></div>
@@ -34,6 +34,13 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
             <p class="microcopy" id="listing-source"></p><div class="form-actions"><button class="primary-button" type="submit">Save listing</button><button id="cancel-listing" class="secondary-button" type="button">Clear</button><span id="listing-status" class="admin-status"></span></div>
           </form>
         </div>
+      </section>
+
+      <section class="admin-section" data-panel="discovery" hidden>
+        <div class="section-bar"><div><h2>Discovery</h2><p>Daily scans find markets from council and tourism sources. Open the source to verify missing details before adding a listing.</p></div></div>
+        <p id="discovery-summary" class="admin-status"></p>
+        <div id="discovery-sources" class="admin-card"></div>
+        <h3>Needs review</h3><div id="discovery-list" class="stack-list"></div>
       </section>
 
       <section class="admin-section" data-panel="ads" hidden>
@@ -65,7 +72,9 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
     document.querySelector('#login-form').addEventListener('submit',async e=>{e.preventDefault();const s=document.querySelector('#login-status');s.textContent='Logging in…';try{await api('/api/admin/login',{method:'POST',body:JSON.stringify(Object.fromEntries(new FormData(e.currentTarget).entries()))});s.textContent='';showAdmin()}catch(err){window.turnstile?.reset();s.textContent=err.message}});
     document.querySelector('#logout').addEventListener('click',async()=>{try{await api('/api/admin/logout',{method:'POST',body:'{}'})}finally{showLogin()}});
     document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===btn));document.querySelectorAll('[data-panel]').forEach(p=>p.hidden=p.dataset.panel!==btn.dataset.tab)}));
-    async function loadAll(){globalStatus.textContent='Loading…';const results=await Promise.allSettled([loadCatalogue(),loadAds(),loadInquiries()]);const failures=results.filter(x=>x.status==='rejected');globalStatus.textContent=failures.length?failures.map(x=>x.reason.message).join(' · '):''}
+    async function loadAll(){globalStatus.textContent='Loading…';const results=await Promise.allSettled([loadCatalogue(),loadAds(),loadInquiries(),loadDiscovery()]);const failures=results.filter(x=>x.status==='rejected');globalStatus.textContent=failures.length?failures.map(x=>x.reason.message).join(' · '):''}
+
+    async function loadDiscovery(){const {candidates=[],report={}}=await api('/api/admin/discovery');const totals=report.totals||{};document.querySelector('#discovery-summary').textContent=report.checkedAt?`Last scan: ${new Date(report.checkedAt).toLocaleString('en-AU',{timeZone:'Australia/Hobart'})} Hobart · ${totals.added||0} added · ${totals.review||0} need review`:'Discovery has not run yet.';document.querySelector('#discovery-sources').innerHTML=(report.sources||[]).map(s=>`<p><strong>${esc(s.name)}</strong> · ${s.pagesFetched} pages · ${s.errors.length?'Needs attention: '+esc(s.errors.map(e=>e.message).join(', ')):'OK'}</p>`).join('');document.querySelector('#discovery-list').innerHTML=candidates.filter(c=>c.status==='review').map(c=>`<div class="stack-item"><div><strong>${esc(c.name)}</strong><small>${esc(c.town||'Town not verified')} · ${esc(c.sourceName)} · Last seen ${esc(c.lastSeen)}</small><p>${esc(c.reasons.join(' · '))}</p><a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer">Check source</a></div></div>`).join('')||'<p>No discoveries awaiting review.</p>';}
 
     async function loadCatalogue(){const data=await api('/api/admin/catalogue');catalogue=data.places||[];renderCatalogue()}
     function renderCatalogue(){const q=document.querySelector('#catalogue-search').value.trim().toLowerCase();const rows=catalogue.filter(p=>!q||`${p.name} ${p.town} ${p.region}`.toLowerCase().includes(q)).slice(0,120);document.querySelector('#catalogue-list').innerHTML=rows.map(p=>`<button class="catalogue-row" type="button" data-slug="${esc(p.slug)}"><span><strong>${esc(p.name)}</strong><small>${esc(p.town)} · ${esc(p.region)}</small></span><em>${p.visibility==='suppressed'?'Hidden':p.featured?'Featured':esc(p.sourceType||'')}</em></button>`).join('')||'<p>No matching listings.</p>';document.querySelectorAll('.catalogue-row').forEach(b=>b.addEventListener('click',()=>editListing(b.dataset.slug)))}

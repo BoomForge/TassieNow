@@ -312,6 +312,7 @@ function exceptionNote(text = '') {
 function source(type, url) { return { type, url, checkedAt: TODAY }; }
 function applyField(place, key, value, srcUrl) {
   if (value == null || value === '') return false;
+  if (key === 'openingHours' && place.discovery?.method === 'structured-source') return false;
   if (place.managedManually && place[key]) return false;
   const existingType = place.detailSources?.[key]?.type;
   if (existingType === 'manual') return false;
@@ -323,6 +324,7 @@ function applyField(place, key, value, srcUrl) {
 }
 function applySchedule(place, schedule) {
   if (!schedule?.summary) return false;
+  if (place.detailSources?.schedule?.type === 'official-discovery') return false;
   if (place.managedManually && place.schedule) return false;
   if (place.detailSources?.schedule?.type === 'manual') return false;
   const same = JSON.stringify(place.schedule || null) === JSON.stringify(schedule);
