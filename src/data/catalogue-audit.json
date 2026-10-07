@@ -10,19 +10,19 @@
         "percent": 22.3
       },
       "twoPlusImages": {
-        "count": 134,
-        "percent": 12.3
+        "count": 123,
+        "percent": 11.3
       },
       "fourPlusImages": {
-        "count": 77,
-        "percent": 7.1
+        "count": 70,
+        "percent": 6.4
       },
       "sixPlusImages": {
-        "count": 59,
-        "percent": 5.4
+        "count": 54,
+        "percent": 4.9
       },
-      "totalLicensedImages": 733,
-      "averageImagesPerPublicListing": 0.67
+      "totalLicensedImages": 690,
+      "averageImagesPerPublicListing": 0.63
     },
     "sources": {
       "websiteCoverage": {
@@ -30,16 +30,16 @@
         "percent": 11.6
       },
       "officialSourceCoverage": {
-        "count": 93,
-        "percent": 8.5
+        "count": 81,
+        "percent": 7.4
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 76,
-        "percent": 7
+        "count": 64,
+        "percent": 5.9
       },
       "wikidataLinkage": {
-        "count": 609,
-        "percent": 55.8
+        "count": 604,
+        "percent": 55.3
       }
     },
     "details": {
@@ -48,24 +48,24 @@
         "percent": 9.4
       },
       "recurringSchedule": {
-        "count": 68,
-        "percent": 6.2
+        "count": 67,
+        "percent": 6.1
       },
       "phone": {
-        "count": 103,
-        "percent": 9.4
+        "count": 111,
+        "percent": 10.2
       },
       "email": {
-        "count": 89,
-        "percent": 8.2
+        "count": 97,
+        "percent": 8.9
       },
       "address": {
         "count": 93,
         "percent": 8.5
       },
       "bookingUrl": {
-        "count": 90,
-        "percent": 8.2
+        "count": 100,
+        "percent": 9.2
       },
       "fee": {
         "count": 26,
@@ -80,8 +80,8 @@
         "percent": 1.5
       },
       "reviewLinks": {
-        "count": 1073,
-        "percent": 98.3
+        "count": 1092,
+        "percent": 100
       }
     },
     "sourceTypes": {
@@ -91,16 +91,16 @@
     },
     "qualityTiers": {
       "standard": 425,
-      "strong": 400,
-      "featured": 250,
+      "strong": 399,
+      "featured": 251,
       "low": 17
     },
     "regions": {
-      "Hobart & South": 366,
+      "Hobart & South": 364,
       "East Coast": 203,
-      "Launceston & North": 193,
-      "North West": 171,
-      "West Coast": 75,
+      "Launceston & North": 194,
+      "North West": 173,
+      "West Coast": 74,
       "Flinders Island": 53,
       "King Island": 30,
       "Central Tasmania": 1
@@ -117,23 +117,23 @@
     }
   },
   "events": {
-    "active": 123,
+    "active": 124,
     "ticketCoverage": {
-      "count": 44,
-      "percent": 35.8
+      "count": 45,
+      "percent": 36.3
     },
     "priceCoverage": {
-      "count": 47,
-      "percent": 38.2
+      "count": 46,
+      "percent": 37.1
     },
     "providers": {
       "Ticketek": 22,
       "Humanitix": 20,
-      "Eventbrite": 1,
+      "Eventbrite": 2,
       "Ticketmaster": 1
     },
     "sources": {
-      "Burnie City Council": 24,
+      "Burnie City Council": 25,
       "MyState Bank Arena": 24,
       "Theatre North Launceston": 17,
       "Devonport City Council": 14,
@@ -147,7 +147,7 @@
     },
     "regions": {
       "Hobart & South": 59,
-      "North West": 38,
+      "North West": 39,
       "Launceston & North": 26
     }
   }
