@@ -12,7 +12,7 @@ const SOURCES = [
   { name: 'Moshtix Tasmania', url: 'https://www.moshtix.com.au/v2/tas', town: 'Tasmania', region: 'Central Tasmania', ticketProvider: 'Moshtix', statewide: true },
   { name: 'Ticketek Hobart', url: 'https://premier.ticketek.com.au/search/SearchResults.aspx?k=Hobart', town: 'Hobart', region: 'Hobart & South', ticketProvider: 'Ticketek', requireTasContext: true },
   { name: 'Theatre Royal Hobart', url: 'https://www.theatreroyal.com.au/what-s-on', town: 'Hobart', region: 'Hobart & South', officialHostOnly: true },
-  { name: 'MyState Bank Arena', url: 'https://www.mystatebankarena.com.au/events', town: 'Glenorchy', region: 'Hobart & South', officialHostOnly: true },
+  { name: 'MyState Bank Arena', url: 'https://www.mystatebankarena.com.au/events', town: 'Glenorchy', region: 'Hobart & South', officialHostOnly: true, structuredOnly: true },
   { name: 'Theatre North Launceston', url: 'https://theatrenorth.com.au/whats-on', town: 'Launceston', region: 'Launceston & North', officialHostOnly: true }
 ];
 const MONTHS = { jan:1,january:1,feb:2,february:2,mar:3,march:3,apr:4,april:4,may:5,jun:6,june:6,jul:7,july:7,aug:8,august:8,sep:9,september:9,sept:9,oct:10,october:10,nov:11,november:11,dec:12,december:12 };
@@ -76,7 +76,7 @@ function dedupe(items){const out=[];for(const event of items){const name=norm(ev
 
 const previous=JSON.parse(await fs.readFile(FILE,'utf8')).filter((event)=>event.status==='active'&&event.endDate>=TODAY);
 const found=[];
-for(const source of SOURCES){try{const{html}=await fetchHtml(source.url);const structured=structuredEvents(html,source);const anchors=anchorEvents(html,source);const events=dedupe([...structured,...anchors]);found.push(...events);console.log(`${source.name}: ${events.length} high-confidence event(s) (${structured.length} structured, ${anchors.length} linked).`);}catch(error){console.warn(`${source.name}: skipped (${error.message}).`);}}
+for(const source of SOURCES){try{const{html}=await fetchHtml(source.url);const structured=structuredEvents(html,source);const anchors=source.structuredOnly?[]:anchorEvents(html,source);const events=dedupe([...structured,...anchors]);found.push(...events);console.log(`${source.name}: ${events.length} high-confidence event(s) (${structured.length} structured, ${anchors.length} linked).`);}catch(error){console.warn(`${source.name}: skipped (${error.message}).`);}}
 const merged=dedupe([...previous,...found]).sort((a,b)=>a.startDate.localeCompare(b.startDate)||a.name.localeCompare(b.name));
 await fs.writeFile(FILE,`${JSON.stringify(merged,null,2)}\n`);
 console.log(`Public event sources: ${found.length} discoveries merged; ${merged.length} active events total.`);
