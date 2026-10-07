@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 import events from '../../data/events.json';
+import townGuides from '../../data/town-guides.json';
 
 const slugify = (value = '') => String(value)
   .toLowerCase()
@@ -51,6 +52,8 @@ export function getStaticPaths() {
 }
 
 const { town, townPlaces, townRegion } = Astro.props;
+const localGuide = townGuides[slugify(town)];
+const guidePlaces = (localGuide?.slugs || []).map(slug => places.find(p => p.slug === slug && p.status === 'active' && p.visibility !== 'suppressed')).filter(Boolean);
 const region = townPlaces[0]?.region || townRegion || 'Tasmania';
 const today = hobartDate();
 const regionPlaces = places
@@ -185,7 +188,7 @@ const formatEventDate = (startDate, endDate) => {
         <p class="eyebrow">Local guide</p>
         <h1>{town}</h1>
         <p>
-          Find useful places and local ideas around {town}, with more nearby options across {region}.
+          {localGuide?.intro || `Find useful places and local ideas around ${town}, with more nearby options across ${region}.`}
         </p>
         <div class="town-stats">
           <span><strong>{townPlaces.length}</strong> places</span>
@@ -199,6 +202,13 @@ const formatEventDate = (startDate, endDate) => {
       </div>
     </section>
 
+    {localGuide && <section class="town-section" aria-labelledby="local-planning-heading">
+      <h2 id="local-planning-heading">Plan a day in {town}</h2>
+      {localGuide.tips.map(tip => <p>{tip}</p>)}
+      <p>{guidePlaces.map(place => <a class="tag-link" href={`/place/${place.slug}/`}>{place.name}</a>)}</p>
+      <p>Planning sources: {localGuide.sources.map((url,index) => <a class="tag-link" href={url} target="_blank" rel="noopener noreferrer">Source {index+1} ↗</a>)} · Reviewed 7 October 2026</p>
+      <a href="/guides/">More day-out guides →</a>
+    </section>}
     {localModes.length > 0 && (
       <section class="town-section" aria-labelledby="town-needs-heading">
         <div class="town-heading">

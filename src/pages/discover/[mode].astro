@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 import events from '../../data/events.json';
+import { marketOccurrences, weekendDates } from '../../lib/market-occurrences.js';
 
 export function getStaticPaths() {
   const routes = [
@@ -51,14 +52,14 @@ export function getStaticPaths() {
     ['today', {
       label: 'Today',
       title: 'What’s on in Tasmania today',
-      intro: 'Current events happening around Tasmania today, refreshed automatically from official and public sources.',
+      intro: 'Events and scheduled market days happening around Tasmania today, using official and public sources.',
       eventMode: 'today',
       fallback: '/images/categories/events.svg'
     }],
     ['this-weekend', {
       label: 'This weekend',
       title: 'What’s on in Tasmania this weekend',
-      intro: 'Find current events around Tasmania this weekend without digging through separate calendars.',
+      intro: 'Find events and scheduled market days around Tasmania this weekend without digging through separate calendars.',
       eventMode: 'weekend',
       fallback: '/images/categories/events.svg'
     }]
@@ -121,14 +122,7 @@ function formatEventDate(startDate, endDate) {
 }
 
 const today = hobartDate();
-const calendar = new Date(`${today}T00:00:00Z`);
-const day = calendar.getUTCDay();
-const saturday = new Date(calendar);
-saturday.setUTCDate(calendar.getUTCDate() + ((6 - day + 7) % 7));
-const sunday = new Date(saturday);
-sunday.setUTCDate(saturday.getUTCDate() + 1);
-const saturdayDate = saturday.toISOString().slice(0, 10);
-const sundayDate = sunday.toISOString().slice(0, 10);
+const [saturdayDate, sundayDate] = weekendDates(today);
 
 const activePlaces = places
   .filter((place) => place.status === 'active' && place.visibility !== 'suppressed')
@@ -153,9 +147,10 @@ const matchedEvents = config.eventMode === 'today'
     : [];
 
 const isEventMode = Boolean(config.eventMode);
-const isEventItem = (item) => isEventMode || Boolean(item.startDate);
+const isEventItem = (item) => Boolean(item.startDate) && !item.occurrenceDate;
+const scheduledMarkets = isEventMode ? marketOccurrences(activePlaces, activeEvents, config.eventMode === 'today' ? today : saturdayDate, config.eventMode === 'today' ? today : sundayDate) : [];
 const marketSessions = mode === 'markets' ? activeEvents.filter(event => event.categories?.includes('Markets')) : [];
-const resultItems = isEventMode ? matchedEvents : [...matchedPlaces, ...marketSessions];
+const resultItems = isEventMode ? [...matchedEvents, ...scheduledMarkets].sort((a,b) => (a.occurrenceDate || a.startDate).localeCompare(b.occurrenceDate || b.startDate) || a.name.localeCompare(b.name)) : [...matchedPlaces, ...marketSessions];
 const regions = [...new Set(resultItems.map((item) => item.region).filter(Boolean))].sort();
 
 const visualItems = [
@@ -229,7 +224,7 @@ const siblingModes = [
         <div class="discover-stats">
           <span><strong>{resultItems.length}</strong> current match{resultItems.length === 1 ? '' : 'es'}</span>
           <span><strong>{regions.length}</strong> region{regions.length === 1 ? '' : 's'}</span>
-          {isEventMode && <span>Refreshed from current event feeds</span>}
+          {isEventMode && <span>Events and published market schedules</span>}
           {mode === 'markets' && <span>Market places and confirmed sessions</span>}
         </div>
         <div class="discover-actions">
@@ -315,11 +310,12 @@ const siblingModes = [
             </a>
             <div class="card-body">
               <p class="location">
-                {isEventItem(item) ? formatEventDate(item.startDate, item.endDate) : item.town}
+                {item.occurrenceDate ? `${formatEventDate(item.occurrenceDate, item.occurrenceDate)} · ${item.town}` : isEventItem(item) ? formatEventDate(item.startDate, item.endDate) : item.town}
                 {item.region && <> · <a href={`/region/${slugify(item.region)}/`}>{item.region}</a></>}
               </p>
               <h3><a href={`${isEventItem(item) ? '/event/' : '/place/'}${item.slug}/`}>{item.name}</a></h3>
               <p class="summary">{item.summary}</p>
+              {item.occurrenceDate && <p>Scheduled market day{item.schedule?.startTime && item.schedule?.endTime ? ` · ${item.schedule.startTime}–${item.schedule.endTime}` : ''}. <a href={item.schedule.sourceUrl} target="_blank" rel="noopener noreferrer">Check organiser updates ↗</a></p>}
               {isEventItem(item) && item.ticketUrl && <p class="ticket-summary"><strong>{ticketLabel(item)}</strong></p>}
               {!isEventItem(item) && <div class="tags">{(item.categories || []).slice(0, 3).map((category) => <span class="tag">{category}</span>)}</div>}
               <div class="card-footer">

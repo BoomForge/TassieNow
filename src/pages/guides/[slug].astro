@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
+import guides from '../../data/guides.json';
+import places from '../../data/places.json';
+import events from '../../data/events.json';
+import { hobartDate, weekendDates, marketOccurrences } from '../../lib/market-occurrences.js';
+export function getStaticPaths(){return guides.map(guide=>({params:{slug:guide.slug},props:{guide}}));}
+const {guide}=Astro.props;
+const activePlaces=places.filter(p=>p.status==='active'&&p.visibility!=='suppressed');
+const [start,end]=weekendDates(hobartDate());
+const marketEvents=events.filter(e=>e.status==='active'&&e.visibility!=='suppressed'&&e.categories?.includes('Markets')&&e.startDate<=end&&e.endDate>=start);
+const markets=guide.markets?[...marketOccurrences(activePlaces,marketEvents,start,end),...marketEvents].sort((a,b)=>(a.occurrenceDate||a.startDate).localeCompare(b.occurrenceDate||b.startDate)||a.name.localeCompare(b.name)):[];
+const schema={'@context':'https://schema.org','@type':'Article',headline:guide.title,description:guide.intro,dateModified:guide.updatedAt,author:{'@type':'Organization',name:'TassieNow'},mainEntityOfPage:new URL(`/guides/${guide.slug}/`,Astro.site).href};
+---
+<BaseLayout title={`${guide.title} | TassieNow`} description={guide.intro}>
+<script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+<BreadcrumbSchema items={[{name:'TassieNow',path:'/'},{name:'Guides',path:'/guides/'},{name:guide.title}]} />
+<div class="day-guide"><nav aria-label="Breadcrumb"><a href="/">TassieNow</a> › <a href="/guides/">Guides</a></nav><p class="eyebrow">Plan a Tasmanian day out</p><h1>{guide.title}</h1><p class="intro">{guide.intro}</p>
+{guide.sections.map(section=><section><h2>{section.title}</h2><p>{section.text}</p><ul>{(section.slugs||[]).map(slug=>activePlaces.find(p=>p.slug===slug)).filter(Boolean).map(place=><li><a href={`/place/${place.slug}/`}>{place.name} →</a></li>)}</ul>{section.source&&<a href={section.source} target="_blank" rel="noopener noreferrer">Official planning information ↗</a>}</section>)}
+{guide.markets&&<section><h2>Scheduled for {start}–{end}</h2><p>Calendar updated at the latest site build. Open each listing for the location and source.</p><div class="market-list">{markets.map(item=><article><h3><a href={`/${item.occurrenceDate?'place':'event'}/${item.slug}/`}>{item.name}</a></h3><p>{item.occurrenceDate||item.startDate} · {item.town}{item.schedule?.startTime&&item.schedule?.endTime?` · ${item.schedule.startTime}–${item.schedule.endTime}`:''}</p><p>{item.summary}</p>{item.schedule?.sourceUrl&&<a href={item.schedule.sourceUrl} target="_blank" rel="noopener noreferrer">Check organiser updates ↗</a>}</article>)}</div>{markets.length===0&&<p>No sourced market dates currently match this weekend. Browse all markets for organiser information.</p>}</section>}
+<aside><h2>Before you go</h2><p>{guide.tip}</p></aside>
+<section><h2>Keep exploring</h2><p><a href="/discover/this-weekend/">This weekend</a> · <a href="/discover/markets/">All markets</a> · <a href="/discover/free/">Free ideas</a> · <a href="/discover/kids/">Family ideas</a> · <a href="/discover/rainy-day/">Rainy-day collection</a></p><p>Guide reviewed 7 October 2026.</p>{guides.filter(g=>g.slug!==guide.slug).map(g=><p><a href={`/guides/${g.slug}/`}>{g.title} →</a></p>)}</section></div>
+</BaseLayout>
+<style>.day-guide{max-width:900px;margin:auto;padding:2rem 1.25rem 4rem}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.12}.intro{font-size:1.2rem}.day-guide section{margin:2.5rem 0}.day-guide p{line-height:1.75}aside,.market-list article{padding:1.25rem;border:1px solid #dbe4df;border-radius:1rem;background:#fff}.market-list{display:grid;gap:1rem}h3{margin-top:0}a{overflow-wrap:anywhere}</style>

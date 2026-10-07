@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import guides from '../../data/guides.json';
+---
+<BaseLayout title="Tasmanian day-out guides | TassieNow" description="Practical guides to free family days out, rainy-day activities and markets this weekend in Tasmania.">
+<div class="guide-index"><p class="eyebrow">Explore Tasmania</p><h1>Plan your next day out</h1><p>Useful starting points, sourced venue details and links to the local listings.</p><div class="place-grid">{guides.map(guide => <article class="place-card"><div class="card-body"><h2><a href={`/guides/${guide.slug}/`}>{guide.title}</a></h2><p>{guide.intro}</p><a class="card-link" href={`/guides/${guide.slug}/`}>Read guide →</a></div></article>)}</div><p><a href="/discover/this-weekend/">What’s on this weekend →</a></p></div>
+</BaseLayout>
+<style>.guide-index{max-width:1200px;margin:auto;padding:2rem 1rem 4rem}h1{font-size:clamp(2rem,5vw,3.5rem)}.place-grid{margin:2rem 0}</style>
