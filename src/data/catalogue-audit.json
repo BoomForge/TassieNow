@@ -116,24 +116,22 @@
     }
   },
   "events": {
-    "active": 136,
+    "active": 113,
     "ticketCoverage": {
-      "count": 56,
-      "percent": 41.2
+      "count": 19,
+      "percent": 16.8
     },
     "priceCoverage": {
-      "count": 33,
-      "percent": 24.3
+      "count": 16,
+      "percent": 14.2
     },
     "providers": {
-      "Ticketek": 36,
       "Humanitix": 18,
-      "Eventbrite": 1,
-      "Ticketmaster": 1
+      "Eventbrite": 1
     },
     "sources": {
-      "MyState Bank Arena": 47,
       "Burnie City Council": 24,
+      "MyState Bank Arena": 24,
       "Theatre North Launceston": 17,
       "Devonport City Council": 14,
       "City of Clarence": 9,
@@ -144,7 +142,7 @@
       "Glenorchy City Council": 3
     },
     "regions": {
-      "Hobart & South": 73,
+      "Hobart & South": 50,
       "North West": 38,
       "Launceston & North": 25
     }
