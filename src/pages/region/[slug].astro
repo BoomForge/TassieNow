@@ -151,6 +151,9 @@ const formatEventDate = (startDate, endDate) => {
         <img
           src={heroPlace?.image?.url || '/images/categories/discover.svg'}
           alt={heroPlace?.image?.alt || `${region}, Tasmania`}
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
         />
         <span class="destination-hero-shade"></span>
         <span class="destination-hero-label">Explore Tasmania</span>
