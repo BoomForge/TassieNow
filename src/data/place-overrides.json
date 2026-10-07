@@ -889,5 +889,179 @@
         "checkedAt": "2026-10-07"
       }
     }
+  },
+  "liffey-valley-market-liffey": {
+    "address": "Liffey Hall (Old Liffey School), 1443 Liffey Road, Liffey",
+    "openingHours": "",
+    "schedule": {
+      "frequency": "monthly",
+      "weeksOfMonth": [
+        2
+      ],
+      "daysOfWeek": [
+        "Saturday"
+      ],
+      "excludedMonths": [
+        1,
+        5,
+        6,
+        7,
+        8
+      ],
+      "startTime": "09:00",
+      "endTime": "13:00",
+      "summary": "Second Saturday, September to April excluding January, 9 am to 1 pm.",
+      "sourceUrl": "https://northernmidlands.tas.gov.au/events/liffey-valley-market",
+      "notes": "Confirm cancellations with the organiser before travelling."
+    },
+    "officialSource": {
+      "name": "Northern Midlands Council",
+      "url": "https://northernmidlands.tas.gov.au/events/liffey-valley-market",
+      "type": "government"
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://northernmidlands.tas.gov.au/events/liffey-valley-market",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://northernmidlands.tas.gov.au/events/liffey-valley-market",
+        "checkedAt": "2026-10-07"
+      },
+      "coordinates": {
+        "type": "government-address-point",
+        "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7",
+        "checkedAt": "2026-10-07"
+      }
+    }
+  },
+  "kingston-beach-handmade-market-kingston-beach": {
+    "address": "Kingston Beach Hall, 20 Beach Road, Kingston Beach",
+    "openingHours": "",
+    "schedule": {
+      "frequency": "monthly",
+      "weeksOfMonth": [
+        2
+      ],
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "startTime": "10:00",
+      "endTime": "15:00",
+      "summary": "Second Sunday of each month, 10 am to 3 pm.",
+      "sourceUrl": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
+      "notes": "Confirm cancellations with the organiser before travelling."
+    },
+    "officialSource": {
+      "name": "Hobart & Beyond / Destination Southern Tasmania",
+      "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
+      "type": "tourism"
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://www.kingborough.tas.gov.au/kingborough/arts/kingston-beach-arts-hub/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
+        "checkedAt": "2026-10-07"
+      },
+      "coordinates": {
+        "type": "government-address-point",
+        "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7",
+        "checkedAt": "2026-10-07"
+      }
+    }
+  },
+  "woodbridge-market-woodbridge": {
+    "address": "Woodbridge Hall, 3445 Channel Highway, Woodbridge",
+    "openingHours": "",
+    "schedule": {
+      "frequency": "irregular",
+      "dates": [
+        "2026-10-18",
+        "2026-11-15",
+        "2026-12-20",
+        "2027-01-17",
+        "2027-02-21",
+        "2027-03-21",
+        "2027-04-18",
+        "2027-05-16",
+        "2027-06-20",
+        "2027-07-18",
+        "2027-08-15",
+        "2027-09-19"
+      ],
+      "startTime": "10:00",
+      "endTime": "14:00",
+      "summary": "Organiser’s published market dates through September 2027, 10 am to 2 pm.",
+      "notes": "Dates follow the organiser’s 2026–27 calendar, including 17 January. Hours are listed by Hobart & Beyond; confirm any changes before travelling.",
+      "sourceUrl": "https://woodbridgehall.wordpress.com/woodbridge-market/"
+    },
+    "officialSource": {
+      "name": "Woodbridge Hall / Woodbridge Market organisers",
+      "url": "https://woodbridgehall.wordpress.com/woodbridge-market/",
+      "type": "official-website"
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://woodbridgehall.wordpress.com/woodbridge-market/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://woodbridgehall.wordpress.com/woodbridge-market/",
+        "checkedAt": "2026-10-07",
+        "calendarUrl": "https://woodbridgehall.wordpress.com/wp-content/uploads/2026/08/market-calendar.jpg"
+      },
+      "coordinates": {
+        "type": "government-address-point",
+        "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7",
+        "checkedAt": "2026-10-07"
+      }
+    }
+  },
+  "oatlands-community-market-oatlands": {
+    "address": "Midlands Memorial Community Centre, 68 High Street, Oatlands",
+    "openingHours": "",
+    "schedule": {
+      "frequency": "monthly",
+      "weeksOfMonth": [
+        1
+      ],
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "summary": "First Sunday of each month. Confirm opening hours with the organiser.",
+      "notes": "Directory sources disagree on opening hours. Confirm current hours with the organiser before travelling.",
+      "sourceUrl": "https://cotatas.org.au/gd_activities/oatlands-community-market"
+    },
+    "officialSource": {
+      "name": "COTA Tasmania community activities directory",
+      "url": "https://cotatas.org.au/gd_activities/oatlands-community-market",
+      "type": "community-directory"
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://www.oatlandscommunity.com.au/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://cotatas.org.au/gd_activities/oatlands-community-market",
+        "checkedAt": "2026-10-07"
+      },
+      "coordinates": {
+        "type": "government-address-point",
+        "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7",
+        "checkedAt": "2026-10-07"
+      }
+    }
   }
 }

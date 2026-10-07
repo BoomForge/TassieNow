@@ -14,15 +14,51 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: tassienow-data-writes
-  queue: max
-  cancel-in-progress: false
-
 jobs:
+  verify-discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout current catalogue
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check live market discovery independently of catalogue writers
+        run: node scripts/discover/official-markets.mjs
+      - name: Preserve independent discovery check
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: market-discovery-check
+          path: |
+            src/data/discovery-report.json
+            src/data/discovery-candidates.json
+          retention-days: 30
+      - name: Check source coverage
+        run: |
+          node --input-type=module -e '
+            import fs from "node:fs";
+            const r = JSON.parse(fs.readFileSync("src/data/discovery-report.json"));
+            if (r.run.id !== process.env.GITHUB_RUN_ID || !r.sources.length || r.sources.some(s => !s.pagesFetched || s.errors.length)) {
+              throw new Error("Market discovery sources need attention; inspect market-discovery-check.");
+            }
+            console.log(`Verified ${r.sources.length} live discovery sources; ${r.totals.review} records remain for review.`);
+          '
   enrich-catalogue:
+    needs: verify-discovery
+    if: ${{ always() && !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    concurrency:
+      group: tassienow-data-writes
+      queue: max
+      cancel-in-progress: false
     steps:
       - name: Checkout
         uses: actions/checkout@v4

@@ -74019,5 +74019,343 @@
       "license": "Site artwork",
       "isFallback": true
     }
+  },
+  {
+    "name": "Liffey Valley Market",
+    "slug": "liffey-valley-market-liffey",
+    "town": "Liffey",
+    "region": "Launceston & North",
+    "latitude": -41.672685311348374,
+    "longitude": 146.88271294974334,
+    "address": "Liffey Hall (Old Liffey School), 1443 Liffey Road, Liffey",
+    "categories": [
+      "Markets",
+      "Local Produce",
+      "Arts & Culture",
+      "Family"
+    ],
+    "summary": "Liffey Valley Market at Liffey Hall (Old Liffey School), 1443 Liffey Road, Liffey. Second Saturday, September to April excluding January, 9 am to 1 pm.",
+    "website": "https://northernmidlands.tas.gov.au/events/liffey-valley-market",
+    "sourceUrl": "https://northernmidlands.tas.gov.au/events/liffey-valley-market",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "openingHours": "",
+    "officialSource": {
+      "name": "Northern Midlands Council",
+      "url": "https://northernmidlands.tas.gov.au/events/liffey-valley-market",
+      "type": "government"
+    },
+    "schedule": {
+      "frequency": "monthly",
+      "weeksOfMonth": [
+        2
+      ],
+      "daysOfWeek": [
+        "Saturday"
+      ],
+      "excludedMonths": [
+        1,
+        5,
+        6,
+        7,
+        8
+      ],
+      "startTime": "09:00",
+      "endTime": "13:00",
+      "summary": "Second Saturday, September to April excluding January, 9 am to 1 pm.",
+      "sourceUrl": "https://northernmidlands.tas.gov.au/events/liffey-valley-market",
+      "notes": "Confirm cancellations with the organiser before travelling."
+    },
+    "locationSource": {
+      "name": "Address Geocodes from theLIST © State of Tasmania",
+      "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7",
+      "type": "government",
+      "license": "CC BY 3.0 AU",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/au/",
+      "address": "1443 LIFFEY ROAD LIFFEY",
+      "objectId": 9008,
+      "checkedAt": "2026-10-07",
+      "accuracy": "address-point"
+    },
+    "discovery": {
+      "sourceId": "manual-review",
+      "method": "source-review",
+      "verifiedAt": "2026-10-07"
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://northernmidlands.tas.gov.au/events/liffey-valley-market",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://northernmidlands.tas.gov.au/events/liffey-valley-market",
+        "checkedAt": "2026-10-07"
+      },
+      "coordinates": {
+        "type": "government-address-point",
+        "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Liffey Valley Market market illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    }
+  },
+  {
+    "name": "Kingston Beach Handmade Market",
+    "slug": "kingston-beach-handmade-market-kingston-beach",
+    "town": "Kingston Beach",
+    "region": "Hobart & South",
+    "latitude": -42.98168277969192,
+    "longitude": 147.32128109672368,
+    "address": "Kingston Beach Hall, 20 Beach Road, Kingston Beach",
+    "categories": [
+      "Markets",
+      "Local Produce",
+      "Arts & Culture",
+      "Family"
+    ],
+    "summary": "Kingston Beach Handmade Market at Kingston Beach Hall, 20 Beach Road, Kingston Beach. Second Sunday of each month, 10 am to 3 pm.",
+    "website": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
+    "sourceUrl": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "openingHours": "",
+    "officialSource": {
+      "name": "Hobart & Beyond / Destination Southern Tasmania",
+      "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
+      "type": "tourism"
+    },
+    "schedule": {
+      "frequency": "monthly",
+      "weeksOfMonth": [
+        2
+      ],
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "startTime": "10:00",
+      "endTime": "15:00",
+      "summary": "Second Sunday of each month, 10 am to 3 pm.",
+      "sourceUrl": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
+      "notes": "Confirm cancellations with the organiser before travelling."
+    },
+    "locationSource": {
+      "name": "Address Geocodes from theLIST © State of Tasmania",
+      "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7",
+      "type": "government",
+      "license": "CC BY 3.0 AU",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/au/",
+      "address": "20 BEACH ROAD KINGSTON BEACH",
+      "objectId": 258272,
+      "checkedAt": "2026-10-07",
+      "accuracy": "address-point"
+    },
+    "discovery": {
+      "sourceId": "manual-review",
+      "method": "source-review",
+      "verifiedAt": "2026-10-07"
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://www.kingborough.tas.gov.au/kingborough/arts/kingston-beach-arts-hub/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
+        "checkedAt": "2026-10-07"
+      },
+      "coordinates": {
+        "type": "government-address-point",
+        "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Kingston Beach Handmade Market market illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    }
+  },
+  {
+    "name": "Woodbridge Market",
+    "slug": "woodbridge-market-woodbridge",
+    "town": "Woodbridge",
+    "region": "Hobart & South",
+    "latitude": -43.159996439546624,
+    "longitude": 147.23915935384775,
+    "address": "Woodbridge Hall, 3445 Channel Highway, Woodbridge",
+    "categories": [
+      "Markets",
+      "Local Produce",
+      "Arts & Culture",
+      "Family"
+    ],
+    "summary": "Woodbridge Market at Woodbridge Hall, 3445 Channel Highway, Woodbridge. Organiser’s published market dates through September 2027, 10 am to 2 pm.",
+    "website": "https://woodbridgehall.wordpress.com/woodbridge-market/",
+    "sourceUrl": "https://woodbridgehall.wordpress.com/woodbridge-market/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "openingHours": "",
+    "officialSource": {
+      "name": "Woodbridge Hall / Woodbridge Market organisers",
+      "url": "https://woodbridgehall.wordpress.com/woodbridge-market/",
+      "type": "official-website"
+    },
+    "schedule": {
+      "frequency": "irregular",
+      "dates": [
+        "2026-10-18",
+        "2026-11-15",
+        "2026-12-20",
+        "2027-01-17",
+        "2027-02-21",
+        "2027-03-21",
+        "2027-04-18",
+        "2027-05-16",
+        "2027-06-20",
+        "2027-07-18",
+        "2027-08-15",
+        "2027-09-19"
+      ],
+      "startTime": "10:00",
+      "endTime": "14:00",
+      "summary": "Organiser’s published market dates through September 2027, 10 am to 2 pm.",
+      "notes": "Dates follow the organiser’s 2026–27 calendar, including 17 January. Hours are listed by Hobart & Beyond; confirm any changes before travelling.",
+      "sourceUrl": "https://woodbridgehall.wordpress.com/woodbridge-market/"
+    },
+    "locationSource": {
+      "name": "Address Geocodes from theLIST © State of Tasmania",
+      "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7",
+      "type": "government",
+      "license": "CC BY 3.0 AU",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/au/",
+      "address": "3445 CHANNEL HIGHWAY WOODBRIDGE",
+      "objectId": 187248,
+      "checkedAt": "2026-10-07",
+      "accuracy": "address-point"
+    },
+    "discovery": {
+      "sourceId": "manual-review",
+      "method": "source-review",
+      "verifiedAt": "2026-10-07"
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://woodbridgehall.wordpress.com/woodbridge-market/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://woodbridgehall.wordpress.com/woodbridge-market/",
+        "checkedAt": "2026-10-07",
+        "calendarUrl": "https://woodbridgehall.wordpress.com/wp-content/uploads/2026/08/market-calendar.jpg"
+      },
+      "coordinates": {
+        "type": "government-address-point",
+        "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Woodbridge Market market illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    }
+  },
+  {
+    "name": "Oatlands Community Market",
+    "slug": "oatlands-community-market-oatlands",
+    "town": "Oatlands",
+    "region": "Hobart & South",
+    "latitude": -42.2994934022135,
+    "longitude": 147.37125191818865,
+    "address": "Midlands Memorial Community Centre, 68 High Street, Oatlands",
+    "categories": [
+      "Markets",
+      "Local Produce",
+      "Arts & Culture",
+      "Family"
+    ],
+    "summary": "Oatlands Community Market at Midlands Memorial Community Centre, 68 High Street, Oatlands. First Sunday of each month. Confirm opening hours with the organiser.",
+    "website": "https://cotatas.org.au/gd_activities/oatlands-community-market",
+    "sourceUrl": "https://cotatas.org.au/gd_activities/oatlands-community-market",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "openingHours": "",
+    "officialSource": {
+      "name": "COTA Tasmania community activities directory",
+      "url": "https://cotatas.org.au/gd_activities/oatlands-community-market",
+      "type": "community-directory"
+    },
+    "schedule": {
+      "frequency": "monthly",
+      "weeksOfMonth": [
+        1
+      ],
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "summary": "First Sunday of each month. Confirm opening hours with the organiser.",
+      "notes": "Directory sources disagree on opening hours. Confirm current hours with the organiser before travelling.",
+      "sourceUrl": "https://cotatas.org.au/gd_activities/oatlands-community-market"
+    },
+    "locationSource": {
+      "name": "Address Geocodes from theLIST © State of Tasmania",
+      "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7",
+      "type": "government",
+      "license": "CC BY 3.0 AU",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/au/",
+      "address": "68 HIGH STREET OATLANDS",
+      "objectId": 250876,
+      "checkedAt": "2026-10-07",
+      "accuracy": "address-point"
+    },
+    "discovery": {
+      "sourceId": "manual-review",
+      "method": "source-review",
+      "verifiedAt": "2026-10-07"
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://www.oatlandscommunity.com.au/",
+        "checkedAt": "2026-10-07"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://cotatas.org.au/gd_activities/oatlands-community-market",
+        "checkedAt": "2026-10-07"
+      },
+      "coordinates": {
+        "type": "government-address-point",
+        "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Oatlands Community Market market illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    }
   }
 ]
