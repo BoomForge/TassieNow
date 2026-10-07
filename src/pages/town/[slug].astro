@@ -36,15 +36,22 @@ export function getStaticPaths() {
       a.name.localeCompare(b.name)
     );
 
-  return [...new Set(active.map((place) => place.town))]
+  const activeEvents = events.filter((event) => event.status === 'active' && event.town);
+  const eventRegionByTown = new Map(activeEvents.map((event) => [event.town, event.region]));
+
+  return [...new Set([...active.map((place) => place.town), ...activeEvents.map((event) => event.town)])]
     .map((town) => ({
       params: { slug: localSlugify(town) },
-      props: { town, townPlaces: active.filter((place) => place.town === town) }
+      props: {
+        town,
+        townPlaces: active.filter((place) => place.town === town),
+        townRegion: eventRegionByTown.get(town) || null
+      }
     }));
 }
 
-const { town, townPlaces } = Astro.props;
-const region = townPlaces[0]?.region || 'Tasmania';
+const { town, townPlaces, townRegion } = Astro.props;
+const region = townPlaces[0]?.region || townRegion || 'Tasmania';
 const today = hobartDate();
 const regionPlaces = places
   .filter((place) => place.status === 'active' && place.visibility !== 'suppressed' && place.region === region)
@@ -98,11 +105,19 @@ const collectionSchema = {
   url: new URL(`/town/${slugify(town)}/`, Astro.site ?? Astro.url.origin).href,
   mainEntity: {
     '@type': 'ItemList',
-    itemListElement: townPlaces.slice(0, 30).map((place, index) => ({
+    itemListElement: [
+      ...townPlaces.map((place) => ({
+        name: place.name,
+        url: new URL(`/place/${place.slug}/`, Astro.site ?? Astro.url.origin).href
+      })),
+      ...exactTownEvents.map((event) => ({
+        name: event.name,
+        url: new URL(`/event/${event.slug}/`, Astro.site ?? Astro.url.origin).href
+      }))
+    ].slice(0, 30).map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
-      name: place.name,
-      url: new URL(`/place/${place.slug}/`, Astro.site ?? Astro.url.origin).href
+      ...item
     }))
   }
 };
