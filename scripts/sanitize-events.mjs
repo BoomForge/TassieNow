@@ -3,6 +3,7 @@ import fs from 'node:fs/promises';
 const FILE = new URL('../src/data/events.json', import.meta.url);
 const JUNK_NAME = /\b(?:for visit the event on rosny farm|living well devonport program|program dates?|time location|upcoming events?|community noticeboard|fogo collection|waste collection)\b/i;
 const HTML_LEAK = /<\/?[a-z!]|\b(?:src|srcset|class|media|href)\s*=|&(?:lt|gt);/i;
+const DATE_ONLY_NAME = /^(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\s+\d{1,2}(?:st|nd|rd|th)?(?:,?\s+20\d{2})?$/i;
 
 function decode(value=''){
   return String(value)
@@ -21,6 +22,14 @@ function cleanText(value=''){
     .replace(/<[^>]*$/g,' ')
     .replace(/\s+/g,' ')
     .trim();
+}
+function slugify(value=''){return String(value).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,90);}
+function titleFromEventUrl(value=''){
+  try{
+    let leaf=decodeURIComponent(new URL(value).pathname.split('/').filter(Boolean).at(-1)||'').replace(/-(?:2|3)$/,'');
+    const special={nz:'NZ',se:'SE',abba:'ABBA',afl:'AFL',nbl:'NBL',wnbl:'WNBL',jackjumpers:'JackJumpers'};
+    return leaf.split('-').filter(Boolean).map((token)=>token==='v'?'v':special[token.toLowerCase()]||(/^\d/.test(token)?token:token.charAt(0).toUpperCase()+token.slice(1))).join(' ').replace(/\s+/g,' ').trim();
+  }catch{return'';}
 }
 function genericSummary(event){
   return `${event.name} in ${event.town}. Check the official event listing for current times, venue, accessibility and booking details.`;
@@ -67,6 +76,14 @@ let removed=0,repaired=0;
 for(const original of events){
   const event={...original};
   event.name=cleanText(event.name);
+  if(DATE_ONLY_NAME.test(event.name)){
+    const recovered=titleFromEventUrl(event.eventUrl);
+    if(!recovered || DATE_ONLY_NAME.test(recovered)){ removed++; continue; }
+    event.name=recovered;
+    event.slug=slugify(`${event.name}-${event.startDate}-${event.town}`);
+    if(event.image?.isFallback) event.image={...event.image,alt:`${event.name} event category image`};
+    repaired++;
+  }
   if(!event.name || event.name.length<3 || JUNK_NAME.test(event.name)) { removed++; continue; }
   const rawSummary=String(event.summary||'');
   const summary=cleanText(rawSummary);
