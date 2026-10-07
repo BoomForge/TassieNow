@@ -58,6 +58,25 @@ GitHub Actions maintains the data and site:
 - `indexnow.yml` submits updated URLs for supported search engines.
 - `quality.yml` syntax-checks automation, validates data and builds the site on pushes and pull requests.
 - `automation-health.yml` records a persistent heartbeat when GitHub's scheduler actually executes, so unattended automation can be audited rather than assumed.
+- `promote.yml` selects one useful TassieNow discovery, place or event each day and can publish it to Bluesky when the repository secrets are configured.
+
+The site exposes two Atom feeds:
+
+- `/feed.xml` — the broader recently-updated places/events feed.
+- `/promotion-feed.xml` — one deterministic, social-friendly promotion item per day for RSS/Atom syndication tools such as IFTTT.
+
+### Promotion automation
+
+The daily promotion workflow runs at `21:30 UTC`, which lands in the Tasmanian morning year-round (about 07:30 AEST / 08:30 AEDT).
+
+Bluesky publishing is optional and uses the official AT Protocol password-session flow intended for bots/scripts. Configure these repository secrets:
+
+- `BLUESKY_HANDLE` — the Bluesky handle that should publish TassieNow posts.
+- `BLUESKY_APP_PASSWORD` — an app password generated for that account. Do not use the account's main password.
+
+When either secret is missing the workflow exits successfully without posting. The publisher checks the account's recent records and skips a promotion if the same campaign URL has already been posted, so rerunning the workflow is safe.
+
+The promotion selector intentionally rotates between fresh events, high-quality places and useful discovery pages instead of posting every catalogue change. Links carry UTM campaign parameters so future analytics can separate automated promotion from organic traffic.
 
 All data-writing workflows use the shared `tassienow-data-writes` concurrency group to avoid overlapping commits.
 
