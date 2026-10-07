@@ -146,7 +146,7 @@ const formatEventDate = (startDate, endDate) => {
     { name: region, path: `/region/${slugify(region)}/` },
     { name: town }
   ]} />
-  <main class="town-page">
+  <div class="town-page">
     <nav class="town-breadcrumbs" aria-label="Breadcrumb">
       <a href="/">TassieNow</a><span>›</span>
       <a href={`/region/${slugify(region)}/`}>{region}</a><span>›</span>
@@ -337,7 +337,7 @@ const formatEventDate = (startDate, endDate) => {
         </div>
       </section>
     )}
-  </main>
+  </div>
 
   <script>
     const townSearch = document.querySelector('#town-search');
