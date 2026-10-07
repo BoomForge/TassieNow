@@ -52,6 +52,14 @@ for (const [index, place] of places.entries()) {
     if (place.schedule?.startTime && !/^\d{2}:\d{2}$/.test(place.schedule.startTime)) problems.push(`${label}: invalid schedule startTime`);
     if (place.schedule?.endTime && !/^\d{2}:\d{2}$/.test(place.schedule.endTime)) problems.push(`${label}: invalid schedule endTime`);
     if (place.schedule?.sourceUrl && !validHttpUrl(place.schedule.sourceUrl)) problems.push(`${label}: invalid schedule sourceUrl`);
+    for (const [field, min, max] of [['weeksOfMonth', 1, 5], ['excludedMonths', 1, 12]]) {
+      const values = place.schedule?.[field];
+      if (values !== undefined && (!Array.isArray(values) || values.some((value) => !Number.isInteger(value) || value < min || value > max))) problems.push(`${label}: invalid schedule ${field}`);
+    }
+    for (const field of ['dates', 'excludedDates']) {
+      const values = place.schedule?.[field];
+      if (values !== undefined && (!Array.isArray(values) || values.some((value) => !/^\d{4}-\d{2}-\d{2}$/.test(value) || new Date(`${value}T12:00:00Z`).toISOString().slice(0, 10) !== value))) problems.push(`${label}: invalid schedule ${field}`);
+    }
   }
   validateImage(place, label);
   if (place.gallery !== undefined) {

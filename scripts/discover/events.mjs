@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { isMarketEvent } from '../../src/lib/market-category.js';
 
 const FILE=new URL('../../src/data/events.json',import.meta.url);
 const UA='TassieNow/1.0 (+https://tassienow.pages.dev)';
@@ -42,7 +43,7 @@ function dateRange(text=''){
   return null;
 }
 function validRange(r){return r?.startDate&&r?.endDate&&r.endDate>=TODAY&&r.startDate<=HORIZON}
-function categories(text=''){const c=['Events'];if(/\bfree\b/i.test(text))c.push('Free');if(/family|kids|children|child|school holiday/i.test(text))c.push('Family');if(/market/i.test(text))c.push('Markets');return[...new Set(c)]}
+function categories(text='', name=''){const c=['Events'];if(/\bfree\b/i.test(text))c.push('Free');if(/family|kids|children|child|school holiday/i.test(text))c.push('Family');if(isMarketEvent(name))c.push('Markets');return[...new Set(c)]}
 function stripTemporal(value=''){
   let n=clean(value);
   const patterns=[
@@ -84,7 +85,7 @@ function lines(html){return dec(String(html).replace(/<script[\s\S]*?<\/script>/
 function makeEvent({name,s,startDate,endDate,town=s.town,venue=null,eventUrl=s.url,description=''}){
   const cleanName=finalName(name);if(!plausibleName(cleanName))return null;
   const context=`${cleanName} ${description}`;
-  return{slug:slug(`${cleanName}-${startDate}-${town}`),name:cleanName,town,region:s.region,startDate,endDate,categories:categories(context),summary:description?clean(description).slice(0,280):`${cleanName} in ${town}. Check the official ${s.name} listing for current time, venue and booking details.`,venue:venue||undefined,eventUrl,sourceUrl:s.url,sourceName:s.name,image:fallback(cleanName),status:'active',lastChecked:TODAY};
+  return{slug:slug(`${cleanName}-${startDate}-${town}`),name:cleanName,town,region:s.region,startDate,endDate,categories:categories(context, cleanName),summary:description?clean(description).slice(0,280):`${cleanName} in ${town}. Check the official ${s.name} listing for current time, venue and booking details.`,venue:venue||undefined,eventUrl,sourceUrl:s.url,sourceName:s.name,image:fallback(cleanName),status:'active',lastChecked:TODAY};
 }
 function anchorEvents(html,s){const out=[],anchors=[...html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)];for(const a of anchors){let href;try{href=new URL(dec(a[1]),s.url).href}catch{continue}if(new URL(href).hostname!==new URL(s.url).hostname)continue;if(!s.detail.test(new URL(href).pathname))continue;const raw=clean(a[2]);const name=anchorTitle(a[2]);if(!plausibleName(name))continue;const before=html.slice(Math.max(0,a.index-500),a.index),after=html.slice(a.index+a[0].length,a.index+a[0].length+700);const r=dateRange(`${clean(before).slice(-300)} ${raw} ${clean(after).slice(0,420)}`);if(!validRange(r))continue;const e=makeEvent({name,s,startDate:r.startDate,endDate:r.endDate,eventUrl:href,description:clean(after).slice(0,220)});if(e)out.push(e)}return out}
 function textEvents(html,s){const l=lines(html),out=[];for(let i=0;i<l.length;i++){const r=dateRange(l[i]);if(!validRange(r))continue;let name=finalName(l[i].replace(r.raw,''));if(!plausibleName(name)){const options=[l[i-1],l[i+1],l[i-2],l[i+2],l[i-3],l[i+3]].map(finalName).filter(plausibleName);name=options[0]||''}if(!plausibleName(name))continue;const e=makeEvent({name,s,startDate:r.startDate,endDate:r.endDate,description:clean(l[i+1]||'').slice(0,180)});if(e)out.push(e)}return out}

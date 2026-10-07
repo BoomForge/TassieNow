@@ -51,6 +51,8 @@ jobs:
           node --check scripts/indexnow.mjs
           node --check scripts/post-bluesky.mjs
           find functions -name '*.js' -print0 | xargs -0 -n1 node --check
+      - name: Test market classification and recurring dates
+        run: node --test scripts/tests/markets.test.mjs
       - name: Test daily promotion selection
         env:
           DRY_RUN: '1'

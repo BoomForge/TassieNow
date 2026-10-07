@@ -1,71 +1,71 @@
 {
   "generatedAt": "2026-10-07",
   "places": {
-    "total": 1084,
-    "public": 1073,
+    "total": 1103,
+    "public": 1092,
     "suppressed": 11,
     "media": {
       "realHeroCoverage": {
         "count": 243,
-        "percent": 22.6
+        "percent": 22.3
       },
       "twoPlusImages": {
         "count": 134,
-        "percent": 12.5
+        "percent": 12.3
       },
       "fourPlusImages": {
         "count": 77,
-        "percent": 7.2
+        "percent": 7.1
       },
       "sixPlusImages": {
         "count": 59,
-        "percent": 5.5
+        "percent": 5.4
       },
       "totalLicensedImages": 733,
-      "averageImagesPerPublicListing": 0.68
+      "averageImagesPerPublicListing": 0.67
     },
     "sources": {
       "websiteCoverage": {
-        "count": 115,
-        "percent": 10.7
+        "count": 127,
+        "percent": 11.6
       },
       "officialSourceCoverage": {
-        "count": 74,
-        "percent": 6.9
+        "count": 93,
+        "percent": 8.5
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 74,
-        "percent": 6.9
+        "count": 76,
+        "percent": 7
       },
       "wikidataLinkage": {
         "count": 609,
-        "percent": 56.8
+        "percent": 55.8
       }
     },
     "details": {
       "openingHours": {
-        "count": 92,
-        "percent": 8.6
+        "count": 103,
+        "percent": 9.4
       },
       "recurringSchedule": {
-        "count": 49,
-        "percent": 4.6
+        "count": 68,
+        "percent": 6.2
       },
       "phone": {
         "count": 103,
-        "percent": 9.6
+        "percent": 9.4
       },
       "email": {
         "count": 89,
-        "percent": 8.3
+        "percent": 8.2
       },
       "address": {
-        "count": 74,
-        "percent": 6.9
+        "count": 93,
+        "percent": 8.5
       },
       "bookingUrl": {
         "count": 90,
-        "percent": 8.4
+        "percent": 8.2
       },
       "fee": {
         "count": 26,
@@ -73,7 +73,7 @@
       },
       "wheelchair": {
         "count": 20,
-        "percent": 1.9
+        "percent": 1.8
       },
       "operator": {
         "count": 16,
@@ -81,38 +81,39 @@
       },
       "reviewLinks": {
         "count": 1073,
-        "percent": 100
+        "percent": 98.3
       }
     },
     "sourceTypes": {
       "wikidata": 574,
       "openstreetmap": 487,
-      "curated": 12
+      "curated": 31
     },
     "qualityTiers": {
       "standard": 425,
-      "strong": 394,
-      "featured": 237,
+      "strong": 400,
+      "featured": 250,
       "low": 17
     },
     "regions": {
-      "Hobart & South": 358,
-      "East Coast": 202,
-      "Launceston & North": 189,
-      "North West": 166,
+      "Hobart & South": 366,
+      "East Coast": 203,
+      "Launceston & North": 193,
+      "North West": 171,
       "West Coast": 75,
       "Flinders Island": 53,
-      "King Island": 30
+      "King Island": 30,
+      "Central Tasmania": 1
     },
-    "towns": 141,
+    "towns": 144,
     "categories": {
       "Nature & Walks": 770,
       "Things to Do": 199,
       "Museums": 73,
+      "Markets": 20,
       "Art & Culture": 16,
       "Wildlife": 13,
-      "History": 1,
-      "Markets": 1
+      "History": 1
     }
   },
   "events": {

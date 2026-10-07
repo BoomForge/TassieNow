@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
+import { upcomingScheduleDates } from '../../lib/schedules.js';
 
 export function getStaticPaths() {
   return places
@@ -42,39 +43,12 @@ const prettyHours = (value = '') => String(value)
   .replace(/\bTh\b/g, 'Thu').replace(/\bFr\b/g, 'Fri').replace(/\bSa\b/g, 'Sat').replace(/\bSu\b/g, 'Sun')
   .replace(/;/g, '; ');
 
-const dayNumber = { Sunday: 0, Monday: 1, Tuesday: 2, Wednesday: 3, Thursday: 4, Friday: 5, Saturday: 6 };
-
-function hobartTodayUtc() {
-  const parts = new Intl.DateTimeFormat('en-CA', {
-    timeZone: 'Australia/Hobart',
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit'
-  }).formatToParts(new Date());
-  const get = (type) => Number(parts.find((part) => part.type === type)?.value || 0);
-  return new Date(Date.UTC(get('year'), get('month') - 1, get('day'), 12));
-}
-
-function upcomingScheduleDates(schedule, limit = 8) {
-  if (!schedule?.frequency) return [];
-  const start = hobartTodayUtc();
-  const dates = [];
-  const wantedDays = new Set(
-    (schedule.daysOfWeek || [])
-      .map((day) => dayNumber[day])
-      .filter((day) => Number.isInteger(day))
-  );
-  for (let offset = 0; offset < 120 && dates.length < limit; offset++) {
-    const date = new Date(start);
-    date.setUTCDate(start.getUTCDate() + offset);
-    if (schedule.frequency === 'daily' || (schedule.frequency === 'weekly' && wantedDays.has(date.getUTCDay()))) {
-      dates.push(date);
-    }
-  }
-  return dates;
-}
-
-const upcomingDates = upcomingScheduleDates(place.schedule);
+const todayParts = new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'Australia/Hobart', year: 'numeric', month: '2-digit', day: '2-digit'
+}).formatToParts(new Date());
+const todayPart = (type) => todayParts.find((part) => part.type === type)?.value;
+const today = `${todayPart('year')}-${todayPart('month')}-${todayPart('day')}`;
+const upcomingDates = upcomingScheduleDates(place.schedule, today);
 const formatDate = (date) => new Intl.DateTimeFormat('en-AU', {
   timeZone: 'Australia/Hobart',
   weekday: 'short',
