@@ -81,3 +81,19 @@ test('owner review can load a catalogue above the GitHub Contents API inline siz
     assert.ok(urls[1].endsWith('/git/blobs/large-catalogue-sha'));
   } finally { globalThis.fetch = original; }
 });
+const burnie = {...source,id:'burnie',url:'https://council.tas.gov.au/marketplace',parser:'opencities',headings:false,region:'North West'};
+const calendar = (date='2026-12-12') => `<main><h1 class="oc-page-title">Tassie Pop Culture Market</h1><li class="multi-date-item" data-start-year='${date.slice(0,4)}' data-start-month='${date.slice(5,7)}' data-start-day='${date.slice(8)}' data-end-year='${date.slice(0,4)}' data-end-month='${date.slice(5,7)}' data-end-day='${date.slice(8)}' data-start-hour='10' data-start-mins='00' data-end-hour='15' data-end-mins='00'></li><h2>Location</h2><p>242 Mount St, Upper Burnie, 7320<a href="https://maps.google.com/">View Map</a></p><div></div></main><script>{"centerPoint":"-41.0708093,145.9004274"}</script>`;
+test('Burnie card titles ignore descriptions and do not mistake cruise listings for markets',()=>{
+  const found=extractCandidates(`<main><a href="/pop"><h2>Tassie Pop Culture Market</h2>${'Description '.repeat(40)}</a><a href="/ships"><h2>Dates for Cruise Ships in Burnie Port</h2><p>Visit our makers market</p></a></main>`,burnie);
+  assert.deepEqual(found.map(c=>c.name),['Tassie Pop Culture Market']);
+});
+test('council sessions publish exact dates once without inventing permanent or expired markets',async()=>{
+  const run=async(events=[],date='2026-12-12')=>discover({sources:[burnie],places:[],events,fetchPage:async()=>calendar(date),now:new Date('2026-10-07')});
+  const first=await run();assert.equal(first.places.length,0);assert.equal(first.events.length,1);assert.equal(first.events[0].startTime,'10:00');assert.equal(first.events[0].town,'Upper Burnie');
+  const repeat=await run(first.events);assert.equal(repeat.events.length,1);assert.equal(repeat.report.totals.addedEvents,0);
+  assert.equal((await run([],'2026-09-19')).events.length,0);assert.equal((await run([],'2026-11-31')).events.length,0);
+});
+test('review decisions survive another scan and explain conflicting evidence',async()=>{
+  const id='council:small-village-market';const r=await discover({sources:[source],places:[],reviews:{[id]:{reason:'Organiser dates conflict with guide'}},fetchPage:async()=>html(market)});
+  assert.equal(r.places.length,0);assert.ok(r.candidates[0].reasons.includes('Organiser dates conflict with guide'));
+});

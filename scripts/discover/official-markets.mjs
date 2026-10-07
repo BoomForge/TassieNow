@@ -66,9 +66,12 @@ async function readJson(file, fallback) {
 async function main() {
   const sources = await readJson(new URL('./sources.json', import.meta.url));
   const places = await readJson(new URL('places.json', DATA));
+  const events = await readJson(new URL('events.json', DATA), []);
   const previous = await readJson(new URL('discovery-candidates.json', DATA), []);
-  const result = await discover({ sources, places, previous, fetchPage: createFetcher() });
-  for (const [name,value] of [['places.json',result.places],['discovery-candidates.json',result.candidates],['discovery-report.json',result.report]]) {
+  const reviews = await readJson(new URL('discovery-reviews.json', DATA), {});
+  const result = await discover({ sources, places, events, previous, reviews, fetchPage: createFetcher() });
+  result.report.run = { id:process.env.GITHUB_RUN_ID || null, event:process.env.GITHUB_EVENT_NAME || 'local', sourceCommit:process.env.GITHUB_SHA || null };
+  for (const [name,value] of [['places.json',result.places],['events.json',result.events],['discovery-candidates.json',result.candidates],['discovery-report.json',result.report]]) {
     await fs.writeFile(new URL(name, DATA), JSON.stringify(value,null,2)+'\n');
   }
   console.log(JSON.stringify(result.report.totals));
@@ -78,7 +81,7 @@ async function main() {
   }
   if (process.env.GITHUB_STEP_SUMMARY) {
     const rows = result.report.sources.map(s => `| ${s.name} | ${s.pagesFetched} | ${s.candidatesFound} | ${s.errors.length ? 'Needs attention' : 'OK'} |`).join('\n');
-    await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, `## Market discovery\n\nPublished ${result.report.totals.added} new listings; ${result.report.totals.review} candidates need review. Existing listings are preserved when sources fail.\n\n| Source | Pages | Candidates | Status |\n|---|---:|---:|---|\n${rows}\n\nReview: src/data/discovery-candidates.json\n`);
+    await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, `## Market discovery\n\nPublished ${result.report.totals.added} new listings and ${result.report.totals.addedEvents} dated sessions; ${result.report.totals.review} candidates need review. Existing listings are preserved when sources fail.\n\n| Source | Pages | Candidates | Status |\n|---|---:|---:|---|\n${rows}\n\nReview: src/data/discovery-candidates.json\n`);
   }
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) await main();

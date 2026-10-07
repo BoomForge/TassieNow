@@ -1,0 +1,32 @@
+name: Verify market discovery publication
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/data/discovery-report.json'
+      - 'scripts/verify-discovery-deployment.mjs'
+      - '.github/workflows/discovery-verification.yml'
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['TassieNow catalogue quality pass', 'Refresh TassieNow catalogue']
+    types: [completed]
+    branches: [main]
+permissions:
+  contents: read
+  checks: read
+jobs:
+  verify-publication:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify saved report and Cloudflare deployment
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          EXPECTED_DISCOVERY_RUN: ${{ github.event.workflow_run.id || '' }}
+        run: DISCOVERY_COMMIT="$(git rev-parse HEAD)" node scripts/verify-discovery-deployment.mjs

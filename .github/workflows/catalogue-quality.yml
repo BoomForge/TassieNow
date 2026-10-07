@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: '47 18 * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/discover/**'
+      - '.github/workflows/catalogue-quality.yml'
+      - 'src/data/discovery-reviews.json'
 
 permissions:
   contents: write
@@ -41,6 +47,18 @@ jobs:
             src/data/discovery-report.json
             src/data/discovery-candidates.json
           retention-days: 30
+      - name: Validate discovery data
+        run: npm run validate:data
+      - name: Publish discovery results before long enrichment
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/places.json src/data/events.json src/data/discovery-candidates.json src/data/discovery-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(data): publish verified market discovery"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
       - name: Enrich OSM and structured listing details
         run: node scripts/enrich-details.mjs
       - name: Link unresolved listings to Wikidata
@@ -82,4 +100,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/data/places.json src/data/events.json src/data/catalogue-audit.json src/data/discovery-candidates.json src/data/discovery-report.json
           git commit -m "chore(data): discover markets and enrich catalogue"
+          git pull --rebase origin main
           git push origin HEAD:main
