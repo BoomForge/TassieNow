@@ -6,6 +6,7 @@ on:
     paths:
       - 'scripts/discover/**'
       - 'scripts/merge-previous-catalogue.mjs'
+      - 'scripts/reclassify-regions.mjs'
       - 'scripts/enrich-details.mjs'
       - 'scripts/link-wikidata.mjs'
       - 'scripts/enrich-official-pages.mjs'
@@ -56,6 +57,8 @@ jobs:
         run: node scripts/merge-previous-catalogue.mjs /tmp/tassienow-places-before-discovery.json
       - name: Discover independent Wikidata places
         run: node scripts/discover/wikidata-import.mjs
+      - name: Reclassify generated listings into discovery regions
+        run: node scripts/reclassify-regions.mjs
       - name: Enrich official Parks Tasmania walks
         run: node scripts/discover/parks-tasmania.mjs
       - name: Discover official council events

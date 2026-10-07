@@ -29,6 +29,8 @@ jobs:
       - name: Syntax-check automation and Pages Functions
         run: |
           node --check scripts/discover/official-markets.mjs
+          node --check scripts/discover/lib/regions.mjs
+          node --check scripts/reclassify-regions.mjs
           node --check scripts/discover/lib/official-discovery.mjs
           node --check scripts/discover/events.mjs
           node --check scripts/discover/public-events.mjs

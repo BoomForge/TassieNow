@@ -91,7 +91,7 @@ export function extractCandidates(html, source, pageUrl = source.url) {
       evidenceType: 'structured', event: types.some(t => /Event$/.test(t)), startDate: item.startDate || null, endDate: item.endDate || item.startDate || null });
   }
   if (source.headings && canonical(pageUrl) === canonical(source.url)) {
-    const headings = [...body.matchAll(/<h([2-4])\b[^>]*>([\s\S]*?)<\/h\1>/gi)];
+    const headings = [...body.matchAll(/<h([1-4])\b[^>]*>([\s\S]*?)<\/h\1>/gi)];
     for (let i = 0; i < headings.length; i++) {
       const h = headings[i], name = clean(h[2]);
       if (!isMarketEvent(name) || name.length > 110 || /\b(?:guide|around|within|finder|many|best|find|across|glance|please|organisers|notice|markets in|markets and)\b/i.test(name)) continue;
