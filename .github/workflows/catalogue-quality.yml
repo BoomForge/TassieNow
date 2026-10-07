@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/discover/**'
+      - 'scripts/reclassify-regions.mjs'
       - '.github/workflows/catalogue-quality.yml'
       - 'src/data/discovery-reviews.json'
 
@@ -75,6 +76,8 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Discover and verify markets from council and tourism directories
         run: node scripts/discover/official-markets.mjs
+      - name: Reclassify generated listings into discovery regions
+        run: node scripts/reclassify-regions.mjs
       - name: Preserve market discovery report
         if: always()
         uses: actions/upload-artifact@v4
