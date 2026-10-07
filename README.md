@@ -14,7 +14,7 @@ TassieNow uses multiple independent sources rather than treating any single dire
 
 ### Places
 
-- OpenStreetMap / Overpass for broad geographic discovery.
+- OpenStreetMap / Overpass for broad geographic discovery, including named heritage sites and arts centres.
 - Wikidata for independent attraction, museum, gallery, wildlife, beach and nature-reserve discovery.
 - Parks Tasmania for official parks and walking information.
 - Official venue/business pages during enrichment for websites, contact details, hours and schedule information.
@@ -22,7 +22,7 @@ TassieNow uses multiple independent sources rather than treating any single dire
 
 ### Events and tickets
 
-- Tasmanian council event calendars.
+- Tasmanian council event calendars, including Hobart, Clarence, Glenorchy, Huon Valley, Launceston, Latrobe, Devonport, Burnie, Waratah-Wynyard and Southern Midlands sources.
 - Discover Tasmania / Tourism Tasmania public event pages.
 - Humanitix public event discovery.
 - Ticketmaster public event discovery.
@@ -183,6 +183,10 @@ Run `npm run validate:data` to catch missing fields, duplicate slugs, invalid UR
 - Preserve existing healthy records when an external discovery source has a partial outage.
 - Fail soft when optional enrichment sources are unavailable.
 - Keep basic business inclusion free; future monetisation should sit around discovery rather than gatekeeping it.
+
+### Regional coverage safeguards
+
+Generated OpenStreetMap and Wikidata listings share one tested region classifier. Central Highlands and Midlands towns such as Bothwell, Oatlands, Ross, Campbell Town and Miena are explicitly protected from the broad north/south fallbacks, and generated records are reclassified during catalogue refreshes so old misclassification does not persist.
 
 ### Council and tourism market discovery
 
