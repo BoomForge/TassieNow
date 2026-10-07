@@ -16,7 +16,7 @@ concurrency:
 jobs:
   enrich:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 16
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -27,6 +27,8 @@ jobs:
       - name: Upgrade exact Wikidata listing images
         run: node scripts/enrich-wikidata-images.mjs
       - name: Upgrade fallback images
+        env:
+          MAX_IMAGE_ENRICH: '120'
         run: node scripts/enrich-images.mjs
       - name: Re-rank catalogue
         run: node scripts/rank-catalogue.mjs
