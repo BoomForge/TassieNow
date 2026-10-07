@@ -153,7 +153,9 @@ const matchedEvents = config.eventMode === 'today'
     : [];
 
 const isEventMode = Boolean(config.eventMode);
-const resultItems = isEventMode ? matchedEvents : matchedPlaces;
+const isEventItem = (item) => isEventMode || Boolean(item.startDate);
+const marketSessions = mode === 'markets' ? activeEvents.filter(event => event.categories?.includes('Markets')) : [];
+const resultItems = isEventMode ? matchedEvents : [...matchedPlaces, ...marketSessions];
 const regions = [...new Set(resultItems.map((item) => item.region).filter(Boolean))].sort();
 
 const visualItems = [
@@ -178,7 +180,7 @@ const collectionSchema = {
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      url: new URL(`${isEventMode ? '/event/' : '/place/'}${item.slug}/`, Astro.site ?? Astro.url.origin).href
+      url: new URL(`${isEventItem(item) ? '/event/' : '/place/'}${item.slug}/`, Astro.site ?? Astro.url.origin).href
     }))
   }
 };
@@ -228,6 +230,7 @@ const siblingModes = [
           <span><strong>{resultItems.length}</strong> current match{resultItems.length === 1 ? '' : 'es'}</span>
           <span><strong>{regions.length}</strong> region{regions.length === 1 ? '' : 's'}</span>
           {isEventMode && <span>Refreshed from current event feeds</span>}
+          {mode === 'markets' && <span>Market places and confirmed sessions</span>}
         </div>
         <div class="discover-actions">
           <a class="primary-button link-button" href="#discover-results">Browse results</a>
@@ -262,14 +265,14 @@ const siblingModes = [
         <div class="discover-feature-grid">
           {featuredItems.map((item, index) => (
             <article class:list={['discover-feature-card', index === 0 && 'large']}>
-              <a href={`${isEventMode ? '/event/' : '/place/'}${item.slug}/`}>
+              <a href={`${isEventItem(item) ? '/event/' : '/place/'}${item.slug}/`}>
                 <img src={item.image?.url || config.fallback} alt={item.image?.alt || item.name} loading={index < 2 ? 'eager' : 'lazy'} />
                 <span class="discover-shade"></span>
-                <span class="discover-card-badge">{isEventMode ? 'Event' : item.categories?.[0] || 'Discover'}</span>
+                <span class="discover-card-badge">{isEventItem(item) ? 'Event' : item.categories?.[0] || 'Discover'}</span>
                 <span class="discover-feature-copy">
-                  <small>{isEventMode ? `${formatEventDate(item.startDate, item.endDate)} · ${item.town}` : `${item.town} · ${item.region}`}</small>
+                  <small>{isEventItem(item) ? `${formatEventDate(item.startDate, item.endDate)} · ${item.town}` : `${item.town} · ${item.region}`}</small>
                   <strong>{item.name}</strong>
-                  <em>{isEventMode ? 'Event details →' : 'Explore →'}</em>
+                  <em>{isEventItem(item) ? 'Event details →' : 'Explore →'}</em>
                 </span>
               </a>
             </article>
@@ -306,24 +309,24 @@ const siblingModes = [
             data-region={String(item.region || '').toLowerCase()}
             data-categories={(item.categories || []).join('|').toLowerCase()}
           >
-            <a class="card-image-link" href={`${isEventMode ? '/event/' : '/place/'}${item.slug}/`}>
+            <a class="card-image-link" href={`${isEventItem(item) ? '/event/' : '/place/'}${item.slug}/`}>
               <img class="card-image" src={item.image?.url || config.fallback} alt={item.image?.alt || item.name} loading="lazy" />
-              <span class="image-badge">{isEventMode ? 'Event' : item.categories?.[0] || 'Discover'}</span>
+              <span class="image-badge">{isEventItem(item) ? 'Event' : item.categories?.[0] || 'Discover'}</span>
             </a>
             <div class="card-body">
               <p class="location">
-                {isEventMode ? formatEventDate(item.startDate, item.endDate) : item.town}
+                {isEventItem(item) ? formatEventDate(item.startDate, item.endDate) : item.town}
                 {item.region && <> · <a href={`/region/${slugify(item.region)}/`}>{item.region}</a></>}
               </p>
-              <h3><a href={`${isEventMode ? '/event/' : '/place/'}${item.slug}/`}>{item.name}</a></h3>
+              <h3><a href={`${isEventItem(item) ? '/event/' : '/place/'}${item.slug}/`}>{item.name}</a></h3>
               <p class="summary">{item.summary}</p>
-              {isEventMode && item.ticketUrl && <p class="ticket-summary"><strong>{ticketLabel(item)}</strong></p>}
-              {!isEventMode && <div class="tags">{(item.categories || []).slice(0, 3).map((category) => <span class="tag">{category}</span>)}</div>}
+              {isEventItem(item) && item.ticketUrl && <p class="ticket-summary"><strong>{ticketLabel(item)}</strong></p>}
+              {!isEventItem(item) && <div class="tags">{(item.categories || []).slice(0, 3).map((category) => <span class="tag">{category}</span>)}</div>}
               <div class="card-footer">
-                <a class="card-link" href={`${isEventMode ? '/event/' : '/place/'}${item.slug}/`}>
-                  {isEventMode ? 'Event details →' : 'View place →'}
+                <a class="card-link" href={`${isEventItem(item) ? '/event/' : '/place/'}${item.slug}/`}>
+                  {isEventItem(item) ? 'Event details →' : 'View place →'}
                 </a>
-                {isEventMode && item.ticketUrl && <a class="card-link" href={item.ticketUrl} target="_blank" rel="noopener noreferrer">Tickets ↗</a>}
+                {isEventItem(item) && item.ticketUrl && <a class="card-link" href={item.ticketUrl} target="_blank" rel="noopener noreferrer">Tickets ↗</a>}
               </div>
             </div>
           </article>

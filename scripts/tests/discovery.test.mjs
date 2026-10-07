@@ -97,3 +97,10 @@ test('review decisions survive another scan and explain conflicting evidence',as
   const id='council:small-village-market';const r=await discover({sources:[source],places:[],reviews:{[id]:{reason:'Organiser dates conflict with guide'}},fetchPage:async()=>html(market)});
   assert.equal(r.places.length,0);assert.ok(r.candidates[0].reasons.includes('Organiser dates conflict with guide'));
 });
+test('exact council calendar supersedes a wrong general-feed date and preserves manual dates',async()=>{
+  const old={slug:'old-date',name:'Tassie Pop Culture Market',town:'Upper Burnie',startDate:'2026-12-10',endDate:'2026-12-10',eventUrl:burnie.url,status:'active'};
+  const r=await discover({sources:[burnie],places:[],events:[old],fetchPage:async()=>calendar(),now:new Date('2026-10-07')});
+  assert.equal(r.events.find(e=>e.slug==='old-date').status,'superseded');assert.deepEqual(r.report.correctedEvents,['old-date']);assert.equal(r.events.filter(e=>e.status==='active').length,1);
+  const manual=await discover({sources:[burnie],places:[],events:[{...old,status:'active',managedManually:true}],fetchPage:async()=>calendar(),now:new Date('2026-10-07')});
+  assert.equal(manual.events.find(e=>e.slug==='old-date').status,'active');
+});

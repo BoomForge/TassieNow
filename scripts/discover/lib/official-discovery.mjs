@@ -173,7 +173,7 @@ export function makePlace(c, source, today, region) {
 export async function discover({ sources, places, events = [], previous = [], reviews = {}, fetchPage, now = new Date(), maxDetails = 42, maxRuntimeMs = 300000 }) {
   const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Hobart' }).format(now);
   const candidates = new Map(previous.map(c => [c.id, c]));
-  const report = { checkedAt: now.toISOString(), added: [], addedEvents: [], updated: [], sources: [], totals: {} };
+  const report = { checkedAt: now.toISOString(), added: [], addedEvents: [], correctedEvents: [], updated: [], sources: [], totals: {} };
   let details = 0;
   const started = Date.now();
   for (const source of sources) {
@@ -217,6 +217,16 @@ export async function discover({ sources, places, events = [], previous = [], re
           Number.isFinite(Date.parse(d.endDate)) && new Date(d.endDate).toISOString().slice(0,10) === d.endDate &&
           d.endDate >= today && d.endDate === d.startDate && Date.parse(d.startDate)-now.getTime() < 366*86400000);
         const eventSlugs = [];
+        // Exact council sessions outrank dates guessed by the general index feed.
+        // Keep the old record for provenance; a failed fetch never reaches this branch.
+        if (valid.length) for (const e of events) {
+          if (e.status === 'active' && !e.managedManually && e.endDate >= today && keyName(e.name) === keyName(c.name) &&
+              canonical(e.eventUrl || e.sourceUrl) === canonical(c.url) && !valid.some(d=>d.startDate===e.startDate)) {
+            e.status='superseded'; e.lastChecked=today;
+            e.correction={sourceUrl:c.url,reason:'Date absent from the verified council session calendar',checkedAt:today};
+            report.correctedEvents.push(e.slug);
+          }
+        }
         for (const d of valid) {
           const existing = events.find(e => keyName(e.name) === keyName(c.name) && e.startDate === d.startDate && keyName(e.town) === keyName(c.town));
           if (existing) { eventSlugs.push(existing.slug); continue; }
