@@ -255,19 +255,15 @@
     "sourceUrl": "https://northernmidlands.tas.gov.au/community/news-events/tourism/markets-within-the-northern-midlands",
     "firstSeen": "2026-10-07",
     "lastSeen": "2026-10-07",
-    "status": "review",
-    "placeSlug": null,
-    "reasons": [
-      "Schedule and venue identified; exact mapped venue coordinates still need verification.",
-      "Needs structured venue/location verification",
-      "Needs verified Tasmanian venue coordinates",
-      "Needs an unambiguous recurring schedule; dated markets stay in event discovery"
-    ],
+    "status": "existing",
+    "placeSlug": "liffey-valley-market-liffey",
+    "reasons": [],
     "review": {
       "checkedAt": "2026-10-07",
-      "reason": "Schedule and venue identified; exact mapped venue coordinates still need verification.",
+      "placeSlug": "liffey-valley-market-liffey",
       "sourceUrls": [
-        "https://northernmidlands.tas.gov.au/community/news-events/tourism/markets-within-the-northern-midlands"
+        "https://northernmidlands.tas.gov.au/events/liffey-valley-market",
+        "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7"
       ]
     }
   },
@@ -1093,19 +1089,16 @@
     "sourceUrl": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
     "firstSeen": "2026-10-07",
     "lastSeen": "2026-10-07",
-    "status": "review",
-    "placeSlug": null,
-    "reasons": [
-      "Schedule and venue identified; exact mapped venue coordinates still need verification.",
-      "Needs structured venue/location verification",
-      "Needs an exact town and venue address",
-      "Needs verified Tasmanian venue coordinates"
-    ],
+    "status": "existing",
+    "placeSlug": "kingston-beach-handmade-market-kingston-beach",
+    "reasons": [],
     "review": {
       "checkedAt": "2026-10-07",
-      "reason": "Schedule and venue identified; exact mapped venue coordinates still need verification.",
+      "placeSlug": "kingston-beach-handmade-market-kingston-beach",
       "sourceUrls": [
-        "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets"
+        "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
+        "https://www.kingborough.tas.gov.au/kingborough/arts/kingston-beach-arts-hub/",
+        "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7"
       ]
     }
   },
@@ -1122,21 +1115,16 @@
     "sourceUrl": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
     "firstSeen": "2026-10-07",
     "lastSeen": "2026-10-07",
-    "status": "review",
-    "placeSlug": null,
-    "reasons": [
-      "Schedule and venue identified; exact mapped venue coordinates still need verification.",
-      "Needs structured venue/location verification",
-      "Needs an exact town and venue address",
-      "Needs verified Tasmanian venue coordinates",
-      "Needs an unambiguous recurring schedule; dated markets stay in event discovery",
-      "Needs a verified source detail URL"
-    ],
+    "status": "existing",
+    "placeSlug": "kingston-beach-handmade-market-kingston-beach",
+    "reasons": [],
     "review": {
       "checkedAt": "2026-10-07",
-      "reason": "Schedule and venue identified; exact mapped venue coordinates still need verification.",
+      "placeSlug": "kingston-beach-handmade-market-kingston-beach",
       "sourceUrls": [
-        "https://www.facebook.com/KingstonBeachHandmadeMarket"
+        "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
+        "https://www.kingborough.tas.gov.au/kingborough/arts/kingston-beach-arts-hub/",
+        "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7"
       ]
     }
   },
@@ -1240,19 +1228,16 @@
     "sourceUrl": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
     "firstSeen": "2026-10-07",
     "lastSeen": "2026-10-07",
-    "status": "review",
-    "placeSlug": null,
-    "reasons": [
-      "Sources disagree on venue and opening hours; organiser confirmation is needed.",
-      "Needs structured venue/location verification",
-      "Needs an exact town and venue address",
-      "Needs verified Tasmanian venue coordinates"
-    ],
+    "status": "existing",
+    "placeSlug": "oatlands-community-market-oatlands",
+    "reasons": [],
     "review": {
       "checkedAt": "2026-10-07",
-      "reason": "Sources disagree on venue and opening hours; organiser confirmation is needed.",
+      "placeSlug": "oatlands-community-market-oatlands",
       "sourceUrls": [
-        "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets"
+        "https://cotatas.org.au/gd_activities/oatlands-community-market",
+        "https://www.oatlandscommunity.com.au/",
+        "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7"
       ]
     }
   },
@@ -1342,16 +1327,16 @@
     "status": "review",
     "placeSlug": null,
     "reasons": [
-      "Tourism guide says second Saturday; participant lists 17 October 2026 (third Saturday). Current organiser calendar is needed.",
+      "Current listings disagree: 7HOFM says 10 October 2026 (second Saturday), while stallholder Wildcare says 17 October (third Saturday). Venue is Snug Community Hall, 62 Beach Road; organiser date confirmation is still needed.",
       "Needs structured venue/location verification",
       "Needs an exact town and venue address",
       "Needs verified Tasmanian venue coordinates"
     ],
     "review": {
       "checkedAt": "2026-10-07",
-      "reason": "Tourism guide says second Saturday; participant lists 17 October 2026 (third Saturday). Current organiser calendar is needed.",
+      "reason": "Current listings disagree: 7HOFM says 10 October 2026 (second Saturday), while stallholder Wildcare says 17 October (third Saturday). Venue is Snug Community Hall, 62 Beach Road; organiser date confirmation is still needed.",
       "sourceUrls": [
-        "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets",
+        "https://www.7hofm.com.au/events/snug-beach-community-market/",
         "https://www.wildcaretas.org.au/events/stall-at-snug-market-17-10-1026"
       ]
     }
@@ -1372,7 +1357,7 @@
     "status": "review",
     "placeSlug": null,
     "reasons": [
-      "Tourism guide says second Saturday; participant lists 17 October 2026 (third Saturday). Current organiser calendar is needed.",
+      "Current listings disagree: 7HOFM says 10 October 2026 (second Saturday), while stallholder Wildcare says 17 October (third Saturday). Venue is Snug Community Hall, 62 Beach Road; organiser date confirmation is still needed.",
       "Needs structured venue/location verification",
       "Needs an exact town and venue address",
       "Needs verified Tasmanian venue coordinates",
@@ -1381,9 +1366,9 @@
     ],
     "review": {
       "checkedAt": "2026-10-07",
-      "reason": "Tourism guide says second Saturday; participant lists 17 October 2026 (third Saturday). Current organiser calendar is needed.",
+      "reason": "Current listings disagree: 7HOFM says 10 October 2026 (second Saturday), while stallholder Wildcare says 17 October (third Saturday). Venue is Snug Community Hall, 62 Beach Road; organiser date confirmation is still needed.",
       "sourceUrls": [
-        "https://www.facebook.com/events/737223798162985",
+        "https://www.7hofm.com.au/events/snug-beach-community-market/",
         "https://www.wildcaretas.org.au/events/stall-at-snug-market-17-10-1026"
       ]
     }
@@ -1446,16 +1431,17 @@
     "status": "review",
     "placeSlug": null,
     "reasons": [
-      "Recent editions use a different venue and seasonal dates. Do not publish the old monthly Kingston recurrence without organiser confirmation.",
+      "A 21 June 2026 edition used Tarremah Steiner School, 27 Nautilus Grove, Huntingfield. No current upcoming organiser calendar is verified; do not publish the old monthly Kingston recurrence.",
       "Needs structured venue/location verification",
       "Needs an exact town and venue address",
       "Needs verified Tasmanian venue coordinates"
     ],
     "review": {
       "checkedAt": "2026-10-07",
-      "reason": "Recent editions use a different venue and seasonal dates. Do not publish the old monthly Kingston recurrence without organiser confirmation.",
+      "reason": "A 21 June 2026 edition used Tarremah Steiner School, 27 Nautilus Grove, Huntingfield. No current upcoming organiser calendar is verified; do not publish the old monthly Kingston recurrence.",
       "sourceUrls": [
-        "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets"
+        "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets",
+        "https://mokja.com.au/calendar"
       ]
     }
   },
@@ -1531,19 +1517,15 @@
     "sourceUrl": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
     "firstSeen": "2026-10-07",
     "lastSeen": "2026-10-07",
-    "status": "review",
-    "placeSlug": null,
-    "reasons": [
-      "Schedule and venue identified; exact mapped venue coordinates still need verification.",
-      "Needs structured venue/location verification",
-      "Needs an exact town and venue address",
-      "Needs verified Tasmanian venue coordinates"
-    ],
+    "status": "existing",
+    "placeSlug": "woodbridge-market-woodbridge",
+    "reasons": [],
     "review": {
       "checkedAt": "2026-10-07",
-      "reason": "Schedule and venue identified; exact mapped venue coordinates still need verification.",
+      "placeSlug": "woodbridge-market-woodbridge",
       "sourceUrls": [
-        "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets"
+        "https://woodbridgehall.wordpress.com/woodbridge-market/",
+        "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer/7"
       ]
     }
   },

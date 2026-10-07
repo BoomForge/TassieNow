@@ -214,6 +214,14 @@ const schema = {
                 : <>Listing checked <strong>{place.lastChecked}</strong></>}
             </small>
           </p>
+          {place.locationSource?.licenseUrl && (
+            <p class="source-note">
+              <a href={place.locationSource.url} target="_blank" rel="noopener noreferrer">{place.locationSource.name} ↗</a>
+              <a href={place.locationSource.licenseUrl} target="_blank" rel="noopener noreferrer">
+                <img src="/images/licenses/cc-by-3.0-au.png" width="88" height="31" alt={place.locationSource.license} loading="lazy" />
+              </a>
+            </p>
+          )}
         </div>
       </div>
 
