@@ -1,7 +1,7 @@
 [
   {"id":"northern-midlands-markets","name":"Northern Midlands Council","url":"https://northernmidlands.tas.gov.au/community/news-events/tourism/markets-within-the-northern-midlands","trust":"government","headings":true,"region":"Launceston & North"},
   {"id":"seasonal-produce-markets","name":"Tasmanian Seasonal Produce Guide","url":"https://tasproduceguide.au/markets/","trust":"industry-guide","headings":true},
-  {"id":"burnie-marketplace","name":"Burnie City Council","url":"https://www.burnie.tas.gov.au/Community/Whats-On-Events/Marketplace","trust":"government","region":"North West"},
+  {"id":"burnie-marketplace","name":"Burnie City Council","url":"https://www.burnie.tas.gov.au/Community/Whats-On-Events/Marketplace","trust":"government","parser":"opencities","region":"North West"},
   {"id":"southern-markets","name":"Hobart and Beyond","url":"https://hobartandbeyond.com.au/events/?_product_type=markets","trust":"tourism","region":"Hobart & South"},
   {"id":"southern-market-guide","name":"Hobart and Beyond","url":"https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/","trust":"tourism","headings":true,"region":"Hobart & South"},
   {"id":"hobart-market-finder","name":"Tasmanian Travel and Information Centre","url":"https://www.hobarttravelcentre.com.au/plan-trip/things-to-do/markets-events-festivals/market-finder","trust":"tourism","region":"Hobart & South"},

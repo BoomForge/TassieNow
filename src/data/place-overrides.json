@@ -688,5 +688,206 @@
       }
     },
     "openingHours": ""
+  },
+  "franklin-market-franklin": {
+    "schedule": {
+      "frequency": "monthly",
+      "weeksOfMonth": [
+        4
+      ],
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "excludedMonths": [
+        6,
+        7,
+        8
+      ],
+      "startTime": "10:00",
+      "endTime": "14:00",
+      "summary": "Fourth Sunday of each month, September to May, 10 am to 2 pm.",
+      "sourceUrl": "https://www.huonvalley.tas.gov.au/event/the-franklin-market/",
+      "notes": "Confirm cancellations with the organiser before travelling."
+    },
+    "openingHours": "",
+    "officialSource": {
+      "name": "Huon Valley Council",
+      "url": "https://www.huonvalley.tas.gov.au/event/the-franklin-market/",
+      "type": "government"
+    },
+    "detailSources": {
+      "schedule": {
+        "type": "official-discovery",
+        "url": "https://www.huonvalley.tas.gov.au/event/the-franklin-market/",
+        "checkedAt": "2026-10-07"
+      }
+    }
+  },
+  "judbury-market-judbury": {
+    "schedule": {
+      "frequency": "monthly",
+      "weeksOfMonth": [
+        2
+      ],
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "excludedMonths": [
+        6,
+        7,
+        8
+      ],
+      "startTime": "10:00",
+      "endTime": "14:00",
+      "summary": "Second Sunday of each month, September to May, 10 am to 2 pm.",
+      "sourceUrl": "https://www.huonvalley.tas.gov.au/service/judbury-market/",
+      "notes": "Confirm cancellations with the organiser before travelling."
+    },
+    "openingHours": "",
+    "officialSource": {
+      "name": "Huon Valley Council",
+      "url": "https://www.huonvalley.tas.gov.au/service/judbury-market/",
+      "type": "government"
+    },
+    "detailSources": {
+      "schedule": {
+        "type": "official-discovery",
+        "url": "https://www.huonvalley.tas.gov.au/service/judbury-market/",
+        "checkedAt": "2026-10-07"
+      }
+    }
+  },
+  "lunawanna-makers-and-produce-market-lunawanna": {
+    "schedule": {
+      "frequency": "irregular",
+      "dates": [
+        "2026-10-11"
+      ],
+      "summary": "Confirmed next session: 11 October 2026, 9 am to 2 pm. Recurrence and seasonal dates await confirmation.",
+      "startTime": "09:00",
+      "endTime": "14:00",
+      "sourceUrl": "https://hobartandbeyond.com.au/event/lunawanna-makers-and-produce-market/",
+      "notes": "Only confirmed dates are shown; further dates require organiser confirmation."
+    },
+    "openingHours": "",
+    "officialSource": {
+      "name": "Hobart and Beyond",
+      "url": "https://hobartandbeyond.com.au/event/lunawanna-makers-and-produce-market/",
+      "type": "tourism"
+    },
+    "detailSources": {
+      "schedule": {
+        "type": "official-discovery",
+        "url": "https://hobartandbeyond.com.au/event/lunawanna-makers-and-produce-market/",
+        "checkedAt": "2026-10-07"
+      }
+    }
+  },
+  "crabtree-crop-and-crafts-market-crabtree": {
+    "schedule": {
+      "frequency": "irregular",
+      "dates": [
+        "2026-11-15"
+      ],
+      "summary": "Confirmed next session: 15 November 2026, 10 am to 2 pm. This is a seasonal market; later dates await confirmation.",
+      "startTime": "10:00",
+      "endTime": "14:00",
+      "sourceUrl": "https://hobartandbeyond.com.au/event/crabtree-crop-crafts-market/",
+      "notes": "Only confirmed dates are shown; further dates require organiser confirmation."
+    },
+    "openingHours": "",
+    "officialSource": {
+      "name": "Hobart and Beyond",
+      "url": "https://hobartandbeyond.com.au/event/crabtree-crop-crafts-market/",
+      "type": "tourism"
+    },
+    "detailSources": {
+      "schedule": {
+        "type": "official-discovery",
+        "url": "https://hobartandbeyond.com.au/event/crabtree-crop-crafts-market/",
+        "checkedAt": "2026-10-07"
+      }
+    }
+  },
+  "hobart-twilight-market-brooke-street-pier-hobart": {
+    "schedule": {
+      "frequency": "irregular",
+      "dates": [
+        "2026-09-25",
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30",
+        "2026-11-20",
+        "2026-11-27",
+        "2026-12-11",
+        "2026-12-18",
+        "2027-01-22",
+        "2027-01-29",
+        "2027-02-19",
+        "2027-02-26",
+        "2027-03-19",
+        "2027-03-26",
+        "2027-04-23",
+        "2027-04-30",
+        "2027-05-21",
+        "2027-05-28",
+        "2027-06-04",
+        "2027-06-25"
+      ],
+      "summary": "Selected Fridays on the organiser’s 2026–27 calendar, 4:30 pm to 9 pm.",
+      "startTime": "16:30",
+      "endTime": "21:00",
+      "sourceUrl": "https://hobarttwilightmarket.com.au/",
+      "notes": "Only confirmed dates are shown; further dates require organiser confirmation."
+    },
+    "openingHours": "",
+    "officialSource": {
+      "name": "Hobart Twilight Market organiser",
+      "url": "https://hobarttwilightmarket.com.au/",
+      "type": "official-website"
+    },
+    "detailSources": {
+      "schedule": {
+        "type": "official-discovery",
+        "url": "https://hobarttwilightmarket.com.au/",
+        "checkedAt": "2026-10-07"
+      }
+    }
+  },
+  "hobart-twilight-market-long-beach-sandy-bay-sandy-bay": {
+    "schedule": {
+      "frequency": "irregular",
+      "dates": [
+        "2026-10-02",
+        "2026-10-09",
+        "2026-11-06",
+        "2026-11-13",
+        "2026-12-04",
+        "2027-01-08",
+        "2027-01-15",
+        "2027-02-05",
+        "2027-02-12",
+        "2027-03-05",
+        "2027-03-12"
+      ],
+      "summary": "Selected Fridays on the organiser’s 2026–27 calendar, 4:30 pm to 9 pm.",
+      "startTime": "16:30",
+      "endTime": "21:00",
+      "sourceUrl": "https://hobarttwilightmarket.com.au/",
+      "notes": "Only confirmed dates are shown; further dates require organiser confirmation."
+    },
+    "openingHours": "",
+    "officialSource": {
+      "name": "Hobart Twilight Market organiser",
+      "url": "https://hobarttwilightmarket.com.au/",
+      "type": "official-website"
+    },
+    "detailSources": {
+      "schedule": {
+        "type": "official-discovery",
+        "url": "https://hobarttwilightmarket.com.au/",
+        "checkedAt": "2026-10-07"
+      }
+    }
   }
 }

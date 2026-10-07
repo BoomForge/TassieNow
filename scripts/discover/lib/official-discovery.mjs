@@ -106,9 +106,28 @@ export function extractCandidates(html, source, pageUrl = source.url) {
     }
   }
   for (const match of body.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
-    const url = canonical(match[1], pageUrl), name = clean(match[2]);
+    const url = canonical(match[1], pageUrl), name = clean(match[2].match(/<h[2-4]\b[^>]*>([\s\S]*?)<\/h[2-4]>/i)?.[1] || match[2]);
     if (!url || !isMarketEvent(name) || name.length < 5 || name.length > 140 || /^(?:markets?|market finder|read more|view all)/i.test(name) || /^(?:country|local|community|farmers|weekly) markets?$/i.test(name)) continue;
     out.push({ name, url, evidenceType: 'link', event: false, latitude: null, longitude: null });
+  }
+  if (source.parser === 'opencities') {
+    const name = clean(body.match(/<h1\b[^>]*class=["'][^"']*oc-page-title[^"']*["'][^>]*>([\s\S]*?)<\/h1>/i)?.[1]);
+    const occurrences = [];
+    for (const tag of body.matchAll(/<li\b[^>]*class=["'][^"']*multi-date-item[^"']*["'][^>]*>/gi)) {
+      const attr = field => tag[0].match(new RegExp(`data-${field}=["']([^"']+)["']`, 'i'))?.[1];
+      const date = side => [attr(`${side}-year`),attr(`${side}-month`),attr(`${side}-day`)].join('-');
+      const time = side => [attr(`${side}-hour`),attr(`${side}-mins`)].join(':');
+      occurrences.push({ startDate:date('start'), endDate:date('end'), startTime:time('start'), endTime:time('end') });
+    }
+    const location = body.match(/<h2\b[^>]*>\s*Location\s*<\/h2>([\s\S]*?)(?:<div|<h2)/i)?.[1] || '';
+    const paragraphs = [...location.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)];
+    const address = clean(paragraphs.find(p => /maps\.google\.com|View Map/i.test(p[1]))?.[1].replace(/<a\b[\s\S]*?<\/a>/gi,'') || '');
+    const parts = address.split(',').map(clean).filter(Boolean), town = parts.at(-1)?.match(/^\d{4}$/) ? parts.at(-2) : parts.at(-1);
+    const point = html.match(/"centerPoint"\s*:\s*"(-\d+\.\d+),(\d+\.\d+)"/);
+    if (name && isMarketEvent(name) && occurrences.length && address && town && point) {
+      out.unshift({ name, url:canonical(pageUrl), town, address, latitude:Number(point[1]), longitude:Number(point[2]),
+        state:'Tasmania', country:'AU', event:true, occurrences, evidenceType:'council-calendar', schedule:null });
+    }
   }
   return out;
 }
@@ -151,10 +170,10 @@ export function makePlace(c, source, today, region) {
     detailSources: { schedule: { type: 'official-discovery', url: c.url, checkedAt: today } },
     image: { url: '/images/categories/markets.svg', alt: `${c.name} market illustration`, attribution: 'TassieNow', license: 'TassieNow original artwork', isFallback: true } };
 }
-export async function discover({ sources, places, previous = [], fetchPage, now = new Date(), maxDetails = 42, maxRuntimeMs = 300000 }) {
+export async function discover({ sources, places, events = [], previous = [], reviews = {}, fetchPage, now = new Date(), maxDetails = 42, maxRuntimeMs = 300000 }) {
   const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Hobart' }).format(now);
   const candidates = new Map(previous.map(c => [c.id, c]));
-  const report = { checkedAt: now.toISOString(), added: [], updated: [], sources: [], totals: {} };
+  const report = { checkedAt: now.toISOString(), added: [], addedEvents: [], updated: [], sources: [], totals: {} };
   let details = 0;
   const started = Date.now();
   for (const source of sources) {
@@ -179,15 +198,40 @@ export async function discover({ sources, places, previous = [], fetchPage, now 
     }
     health.candidatesFound = found.length;
     // Structured evidence replaces the less complete link/heading evidence on this run.
-    found.sort((a,b) => (a.evidenceType === 'structured' ? -1 : 0) - (b.evidenceType === 'structured' ? -1 : 0));
+    const strength = c => ({'council-calendar':0,structured:1,'directory-section':2,link:3}[c.evidenceType] ?? 4);
+    found.sort((a,b) => strength(a)-strength(b));
     const seen = new Set();
     for (const c of found) {
       const id = `${source.id}:${slugify(c.name)}`;
       if (seen.has(id)) continue; seen.add(id);
-      const old = candidates.get(id), match = matchPlace(c, places);
+      const review = reviews[id];
+      const old = candidates.get(id), match = (review?.placeSlug && places.find(p=>p.slug===review.placeSlug)) || matchPlace(c, places);
       const reasons = publicationProblems(c, source);
+      if (review?.reason) reasons.unshift(review.reason);
       let status = match ? 'existing' : 'review', placeSlug = match?.slug;
       const region = source.region || places.find(p => keyName(p.town) === keyName(c.town))?.region;
+      if (c.evidenceType === 'council-calendar' && source.trust === 'government' && region &&
+          c.latitude >= -44 && c.latitude <= -39 && c.longitude >= 143 && c.longitude <= 149) {
+        const valid = c.occurrences.filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d.startDate) && /^\d{4}-\d{2}-\d{2}$/.test(d.endDate) &&
+          Number.isFinite(Date.parse(d.startDate)) && new Date(d.startDate).toISOString().slice(0,10) === d.startDate &&
+          Number.isFinite(Date.parse(d.endDate)) && new Date(d.endDate).toISOString().slice(0,10) === d.endDate &&
+          d.endDate >= today && d.endDate === d.startDate && Date.parse(d.startDate)-now.getTime() < 366*86400000);
+        const eventSlugs = [];
+        for (const d of valid) {
+          const existing = events.find(e => keyName(e.name) === keyName(c.name) && e.startDate === d.startDate && keyName(e.town) === keyName(c.town));
+          if (existing) { eventSlugs.push(existing.slug); continue; }
+          const event = { slug:slugify(`${c.name}-${d.startDate}-${c.town}`),name:c.name,town:c.town,region,
+            startDate:d.startDate,endDate:d.endDate,categories:['Events','Markets'],venue:c.address,
+            summary:`${c.name} in ${c.town}. The council lists this session for ${d.startDate}; check the source for changes.`,
+            eventUrl:c.url,sourceUrl:c.url,sourceName:source.name,status:'active',lastChecked:today,
+            discovery:{sourceId:source.id,method:'council-calendar',verifiedAt:today},
+            image:{url:'/images/categories/markets.svg',alt:`${c.name} market illustration`,attribution:'TassieNow',license:'Site artwork',isFallback:true} };
+          if (/^(?:[01]\d|2[0-3]):[0-5]\d$/.test(d.startTime)) event.startTime=d.startTime;
+          if (/^(?:[01]\d|2[0-3]):[0-5]\d$/.test(d.endTime)) event.endTime=d.endTime;
+          if (!events.some(e=>e.slug===event.slug)) { events.push(event); eventSlugs.push(event.slug); report.addedEvents.push(event.slug); }
+        }
+        if (eventSlugs.length) { status='event'; c.eventSlugs=eventSlugs; }
+      }
       if (match?.discovery?.sourceId === source.id && !match.managedManually && reasons.length === 0 && region) {
         const fresh = makePlace(c, source, today, region);
         // Refresh only source-owned details; preserve ranking, licensed images and manual edits.
@@ -205,11 +249,13 @@ export async function discover({ sources, places, previous = [], fetchPage, now 
       candidates.set(id, { ...c, id, sourceId: source.id, sourceName: source.name, sourceUrl: source.url,
         firstSeen: old?.firstSeen || today, lastSeen: today, status, placeSlug: placeSlug || null,
         reasons: status === 'review' ? reasons : [] });
+      if (review) candidates.get(id).review = review;
     }
   }
   const queue = [...candidates.values()].sort((a,b) => a.id.localeCompare(b.id));
   report.totals = { discovered: queue.length, review: queue.filter(c => c.status === 'review').length,
     existing: queue.filter(c => c.status === 'existing').length, added: report.added.length,
+    events:queue.filter(c=>c.status==='event').length, addedEvents:report.addedEvents.length,
     updated: report.updated.length, failedSources: report.sources.filter(s => s.errors.length).length };
-  return { places, candidates: queue, report };
+  return { places, events, candidates: queue, report };
 }
