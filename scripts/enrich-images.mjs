@@ -165,7 +165,9 @@ for (const place of generated) {
 }
 const incomplete = places
   .filter((place) => place.status === 'active' && place.visibility !== 'suppressed' && (place.image?.isFallback || (place.gallery?.length || 0) < GALLERY_SIZE))
-  .sort((a, b) => (b.qualityScore || 0) - (a.qualityScore || 0) || a.name.localeCompare(b.name));
+  .sort((a, b) => Number(Boolean(b.image?.isFallback)) - Number(Boolean(a.image?.isFallback))
+    || (b.qualityScore || 0) - (a.qualityScore || 0)
+    || a.name.localeCompare(b.name));
 const day = Math.floor(Date.now() / 86400000);
 const offset = incomplete.length ? (day * MAX_PER_RUN) % incomplete.length : 0;
 const rotated = incomplete.length ? [...incomplete.slice(offset), ...incomplete.slice(0, offset)] : [];
