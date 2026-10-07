@@ -135,7 +135,7 @@ const schema = {
 
     <section class="place-hero">
       <figure class:list={['hero-media', place.image?.isFallback && 'fallback-media']}>
-        <img src={place.image.url} alt={place.image.alt || `${place.name}, Tasmania`} />
+        <img src={place.image.url} alt={place.image.alt || `${place.name}, Tasmania`} loading="eager" decoding="async" fetchpriority="high" />
         <div class="hero-media-gradient"></div>
         <div class="hero-badge-row">
           {place.categories?.slice(0, 2).map((category) => <span>{category}</span>)}
@@ -164,7 +164,7 @@ const schema = {
     </section>
 
     <div class={hasVisitDetails ? 'place-shell' : 'place-shell single-column'}>
-      <main class="place-main">
+      <div class="place-main">
         {gallery.length > 0 && (
           <section class="section-card gallery-section" aria-labelledby="gallery-heading">
             <div class="section-heading-row">
@@ -241,7 +241,7 @@ const schema = {
             </small>
           </p>
         </div>
-      </main>
+      </div>
 
       {hasVisitDetails && (
         <aside class="visit-card" aria-labelledby="visit-heading">

@@ -7,6 +7,7 @@ const events = fs.existsSync(eventsFile) ? JSON.parse(fs.readFileSync(eventsFile
 const problems = [];
 const placeSlugs = new Set();
 const eventSlugs = new Set();
+const DATE_ONLY_EVENT_NAME = /^(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\s+\d{1,2}(?:st|nd|rd|th)?(?:,?\s+20\d{2})?$/i;
 
 function validHttpUrl(value) {
   if (!value) return false;
@@ -73,6 +74,7 @@ for (const [index, event] of events.entries()) {
   for (const field of ['slug', 'name', 'town', 'region', 'startDate', 'endDate', 'categories', 'summary', 'sourceUrl', 'status', 'lastChecked']) {
     if (event[field] === undefined || event[field] === null || event[field] === '') problems.push(`${label}: missing ${field}`);
   }
+  if (DATE_ONLY_EVENT_NAME.test(String(event.name || '').trim())) problems.push(`${label}: date-only event name is not publishable`);
   if (eventSlugs.has(event.slug)) problems.push(`${label}: duplicate slug ${event.slug}`);
   eventSlugs.add(event.slug);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(event.startDate || '') || !/^\d{4}-\d{2}-\d{2}$/.test(event.endDate || '')) problems.push(`${label}: invalid event date`);

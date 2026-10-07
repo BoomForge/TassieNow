@@ -146,6 +146,20 @@ The public layout supports two optional Cloudflare Pages environment variables:
 
 Cloudflare Pages can also enable Web Analytics through the project's **Metrics → Web Analytics** control, which injects the beacon automatically on deployment.
 
+### Website lockdown security
+
+The production static response headers in `public/_headers` enable conservative HSTS (six months, no preload/includeSubDomains), deny framing, keep MIME sniffing disabled and restrict high-risk browser capabilities. A standard `/.well-known/security.txt` is published for vulnerability reports.
+
+TassieNow's public advertising enquiry and owner login support Cloudflare Turnstile. Configure the pair together:
+
+- `PUBLIC_TURNSTILE_SITE_KEY` — the public widget site key used during the Astro build.
+- `TURNSTILE_SECRET_KEY` — the matching secret available to Pages Functions at runtime.
+- `TURNSTILE_EXPECTED_HOSTNAME` — optional explicit hostname lock; use `tassienow.com` in production.
+
+If `TURNSTILE_SECRET_KEY` is configured, server-side validation is mandatory and a missing/invalid token is rejected. Until the secret is configured, the existing validation/honeypot path remains available so deployment is not accidentally locked out. Set the public and secret keys together when enabling Turnstile.
+
+Social publishing remains manual-only until the website-first lockdown/fine-tuning phase is explicitly lifted.
+
 ## Data model
 
 Canonical data lives in:

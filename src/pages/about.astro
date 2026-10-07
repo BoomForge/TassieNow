@@ -1,12 +1,19 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import audit from '../data/catalogue-audit.json';
+
+const publicPlaces = audit?.places?.public || 0;
+const townCount = audit?.places?.towns || 0;
+const activeEvents = audit?.events?.active || 0;
 ---
-<BaseLayout title="About TassieNow" description="About the TassieNow Tasmanian discovery directory.">
+<BaseLayout title="About TassieNow" description="How TassieNow builds and maintains a free Tasmanian discovery directory for locals and visitors.">
   <section class="content-page">
     <p class="eyebrow">About the project</p>
     <h1>Built to answer “what can we do?”</h1>
-    <p>TassieNow is an independent discovery directory being built for both Tasmanians and visitors. The goal is a fast, practical way to find worthwhile places and activities by location, interest and situation — without requiring an account.</p>
-    <p>The directory is designed around factual, source-backed information. Where possible, listings link directly to the official operator or authoritative source so visitors can confirm current opening, booking, pricing and access information.</p>
-    <p>The first public build is deliberately small. Automated discovery and validation will expand coverage while keeping the underlying data portable and reviewable.</p>
+    <p>TassieNow is an independent discovery directory for Tasmanians and visitors. The goal is a fast, practical way to find worthwhile places, activities and current events by location, interest and situation — without requiring an account or app.</p>
+    <p>TassieNow currently brings together <strong>{publicPlaces.toLocaleString('en-AU')}</strong> public places across <strong>{townCount}</strong> towns and localities, plus <strong>{activeEvents}</strong> active events. Coverage is refreshed automatically and ranked for usefulness rather than presented as a raw scrape.</p>
+    <p>The directory is designed around factual, source-backed information. Where possible, listings link directly to the official operator or authoritative source so visitors can confirm current opening, booking, pricing and access information before travelling.</p>
+    <p>Automated discovery, validation, deduplication, expiry checks and quality passes keep the catalogue moving, while questionable or incomplete records can be suppressed rather than pushed live simply to increase the listing count.</p>
+    <p>TassieNow is free to browse. Basic inclusion in the public catalogue is not sold or paywalled.</p>
   </section>
 </BaseLayout>
