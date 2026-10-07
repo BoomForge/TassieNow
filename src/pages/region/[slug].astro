@@ -36,7 +36,11 @@ export function getStaticPaths() {
       a.name.localeCompare(b.name)
     );
 
-  return [...new Set(active.map((place) => place.region))]
+  const activeEventRegions = events
+    .filter((event) => event.status === 'active' && event.region)
+    .map((event) => event.region);
+
+  return [...new Set([...active.map((place) => place.region), ...activeEventRegions])]
     .map((region) => ({
       params: { slug: localSlugify(region) },
       props: { region, regionPlaces: active.filter((place) => place.region === region) }
@@ -83,11 +87,19 @@ const collectionSchema = {
   url: new URL(`/region/${slugify(region)}/`, Astro.site ?? Astro.url.origin).href,
   mainEntity: {
     '@type': 'ItemList',
-    itemListElement: regionPlaces.slice(0, 30).map((place, index) => ({
+    itemListElement: [
+      ...regionPlaces.map((place) => ({
+        name: place.name,
+        url: new URL(`/place/${place.slug}/`, Astro.site ?? Astro.url.origin).href
+      })),
+      ...regionEvents.map((event) => ({
+        name: event.name,
+        url: new URL(`/event/${event.slug}/`, Astro.site ?? Astro.url.origin).href
+      }))
+    ].slice(0, 30).map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
-      name: place.name,
-      url: new URL(`/place/${place.slug}/`, Astro.site ?? Astro.url.origin).href
+      ...item
     }))
   }
 };
