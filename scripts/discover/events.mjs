@@ -9,7 +9,11 @@ const SOURCES=[
   {name:'Burnie City Council',url:'https://www.burnie.tas.gov.au/Community/Whats-On-Events',town:'Burnie',region:'North West',detail:/\/Whats-On|\/Events\//i,textMode:'fallback'},
   {name:'Glenorchy City Council',url:'https://www.gcc.tas.gov.au/our-city/events/',town:'Glenorchy',region:'Hobart & South',detail:/\/events\//i,textMode:'always'},
   {name:'Devonport City Council',url:'https://www.devonport.tas.gov.au/whats-on-devonport/',town:'Devonport',region:'North West',detail:/\/events\//i,textMode:'fallback'},
-  {name:'City of Clarence',url:'https://www.ccc.tas.gov.au/explore/events/',town:'Rosny Park',region:'Hobart & South',detail:/\/event\//i,textMode:'always'}
+  {name:'City of Clarence',url:'https://www.ccc.tas.gov.au/explore/events/',town:'Rosny Park',region:'Hobart & South',detail:/\/event\//i,textMode:'always'},
+  {name:'Huon Valley Council',url:'https://www.huonvalley.tas.gov.au/events/',town:'Huonville',region:'Hobart & South',detail:/\/event\//i,textMode:'always'},
+  {name:'Latrobe Council',url:'https://www.latrobe.tas.gov.au/community/event-calendar',town:'Latrobe',region:'North West',detail:/\/community\/event-calendar/i,textMode:'always'},
+  {name:'Waratah-Wynyard Council',url:'https://www.warwyn.tas.gov.au/community-events/calendar/',town:'Wynyard',region:'North West',detail:/\/(?:events|community-events)\//i,textMode:'fallback'},
+  {name:'Southern Midlands Council',url:'https://www.southernmidlands.tas.gov.au/festivals-events/',town:'Oatlands',region:'Central Tasmania',detail:/\/(?:calendar|festivals-events)\//i,textMode:'always'}
 ];
 const M={jan:1,january:1,feb:2,february:2,mar:3,march:3,apr:4,april:4,may:5,jun:6,june:6,jul:7,july:7,aug:8,august:8,september:9,sep:9,sept:9,oct:10,october:10,nov:11,november:11,dec:12,december:12};
 const MONTH='Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?';
@@ -98,6 +102,6 @@ const found=[],freshSources=new Set();
 for(const s of SOURCES){try{const html=await fetchHtml(s.url);const structured=structuredEvents(html,s),anchors=anchorEvents(html,s);const text=(s.textMode==='always'||(structured.length===0&&anchors.length===0))?textEvents(html,s):[];const events=dedupe([...structured,...anchors,...text]);if(events.length){freshSources.add(s.name);found.push(...events)}console.log(`${s.name}: ${events.length} event(s) (${structured.length} structured, ${anchors.length} linked, ${text.length} text used).`)}catch(e){console.warn(`${s.name}: ${e.message}`)}}
 for(const old of previous)if(!freshSources.has(old.sourceName))found.push(old);
 const unique=dedupe(found).sort((a,b)=>a.startDate.localeCompare(b.startDate)||a.name.localeCompare(b.name));
-if(unique.length<10&&previous.length>=10)throw new Error(`Event discovery produced only ${unique.length} future events from six official sources; refusing to replace ${previous.length} healthy records.`);
+if(unique.length<10&&previous.length>=10)throw new Error(`Event discovery produced only ${unique.length} future events from ${SOURCES.length} official sources; refusing to replace ${previous.length} healthy records.`);
 await fs.writeFile(FILE,`${JSON.stringify(unique,null,2)}\n`);
 console.log(`Events: ${unique.length} active across ${new Set(unique.map(e=>e.sourceName)).size} source(s).`);
