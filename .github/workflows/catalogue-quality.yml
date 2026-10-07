@@ -15,11 +15,12 @@ concurrency:
 jobs:
   enrich-catalogue:
     runs-on: ubuntu-latest
-    timeout-minutes: 18
+    timeout-minutes: 25
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -29,6 +30,17 @@ jobs:
           cache-dependency-path: package.json
       - name: Install dependencies
         run: npm install --no-audit --no-fund
+      - name: Discover and verify markets from council and tourism directories
+        run: node scripts/discover/official-markets.mjs
+      - name: Preserve market discovery report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: market-discovery-report
+          path: |
+            src/data/discovery-report.json
+            src/data/discovery-candidates.json
+          retention-days: 30
       - name: Enrich OSM and structured listing details
         run: node scripts/enrich-details.mjs
       - name: Link unresolved listings to Wikidata
@@ -62,12 +74,12 @@ jobs:
         run: npm run build
       - name: Commit catalogue improvements
         run: |
-          if git diff --quiet -- src/data/places.json src/data/events.json src/data/catalogue-audit.json; then
+          if git diff --quiet -- src/data/places.json src/data/events.json src/data/catalogue-audit.json src/data/discovery-candidates.json src/data/discovery-report.json; then
             echo "No catalogue quality changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/places.json src/data/events.json src/data/catalogue-audit.json
-          git commit -m "chore(data): rich catalogue quality enrichment [skip ci]"
+          git add src/data/places.json src/data/events.json src/data/catalogue-audit.json src/data/discovery-candidates.json src/data/discovery-report.json
+          git commit -m "chore(data): discover markets and enrich catalogue"
           git push origin HEAD:main
