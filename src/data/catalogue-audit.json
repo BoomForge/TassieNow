@@ -1,45 +1,45 @@
 {
   "generatedAt": "2026-10-07",
   "places": {
-    "total": 1103,
-    "public": 1092,
+    "total": 1109,
+    "public": 1098,
     "suppressed": 11,
     "media": {
       "realHeroCoverage": {
         "count": 244,
-        "percent": 22.3
+        "percent": 22.2
       },
       "twoPlusImages": {
-        "count": 159,
-        "percent": 14.6
-      },
-      "fourPlusImages": {
-        "count": 86,
-        "percent": 7.9
-      },
-      "sixPlusImages": {
-        "count": 64,
-        "percent": 5.9
-      },
-      "totalLicensedImages": 882,
-      "averageImagesPerPublicListing": 0.81
-    },
-    "sources": {
-      "websiteCoverage": {
         "count": 128,
         "percent": 11.7
       },
+      "fourPlusImages": {
+        "count": 72,
+        "percent": 6.6
+      },
+      "sixPlusImages": {
+        "count": 55,
+        "percent": 5
+      },
+      "totalLicensedImages": 707,
+      "averageImagesPerPublicListing": 0.64
+    },
+    "sources": {
+      "websiteCoverage": {
+        "count": 134,
+        "percent": 12.2
+      },
       "officialSourceCoverage": {
-        "count": 111,
-        "percent": 10.2
+        "count": 87,
+        "percent": 7.9
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 99,
-        "percent": 9.1
+        "count": 71,
+        "percent": 6.5
       },
       "wikidataLinkage": {
-        "count": 611,
-        "percent": 56
+        "count": 604,
+        "percent": 55
       }
     },
     "details": {
@@ -48,24 +48,24 @@
         "percent": 9.4
       },
       "recurringSchedule": {
-        "count": 69,
-        "percent": 6.3
+        "count": 72,
+        "percent": 6.6
       },
       "phone": {
-        "count": 111,
-        "percent": 10.2
+        "count": 115,
+        "percent": 10.5
       },
       "email": {
-        "count": 98,
-        "percent": 9
+        "count": 102,
+        "percent": 9.3
       },
       "address": {
-        "count": 93,
-        "percent": 8.5
+        "count": 99,
+        "percent": 9
       },
       "bookingUrl": {
-        "count": 100,
-        "percent": 9.2
+        "count": 104,
+        "percent": 9.5
       },
       "fee": {
         "count": 26,
@@ -80,23 +80,23 @@
         "percent": 1.5
       },
       "reviewLinks": {
-        "count": 1092,
+        "count": 1098,
         "percent": 100
       }
     },
     "sourceTypes": {
       "wikidata": 574,
       "openstreetmap": 487,
-      "curated": 31
+      "curated": 37
     },
     "qualityTiers": {
       "standard": 425,
       "strong": 399,
-      "featured": 251,
+      "featured": 257,
       "low": 17
     },
     "regions": {
-      "Hobart & South": 364,
+      "Hobart & South": 370,
       "East Coast": 203,
       "Launceston & North": 194,
       "North West": 173,
@@ -105,50 +105,50 @@
       "King Island": 30,
       "Central Tasmania": 1
     },
-    "towns": 144,
+    "towns": 148,
     "categories": {
       "Nature & Walks": 770,
       "Things to Do": 199,
       "Museums": 73,
-      "Markets": 20,
+      "Markets": 26,
       "Art & Culture": 16,
       "Wildlife": 13,
       "History": 1
     }
   },
   "events": {
-    "active": 124,
+    "active": 131,
     "ticketCoverage": {
-      "count": 45,
-      "percent": 36.3
+      "count": 47,
+      "percent": 35.9
     },
     "priceCoverage": {
-      "count": 46,
-      "percent": 37.1
+      "count": 43,
+      "percent": 32.8
     },
     "providers": {
+      "Humanitix": 22,
       "Ticketek": 22,
-      "Humanitix": 20,
       "Eventbrite": 2,
       "Ticketmaster": 1
     },
     "sources": {
-      "Burnie City Council": 25,
+      "Burnie City Council": 28,
       "MyState Bank Arena": 24,
       "Theatre North Launceston": 17,
       "Devonport City Council": 14,
       "City of Clarence": 9,
+      "Theatre Royal Hobart": 9,
       "Humanitix Hobart": 8,
-      "Theatre Royal Hobart": 8,
+      "Humanitix Launceston": 8,
       "City of Hobart": 7,
-      "Humanitix Launceston": 6,
-      "City of Launceston": 3,
-      "Glenorchy City Council": 3
+      "Glenorchy City Council": 4,
+      "City of Launceston": 3
     },
     "regions": {
-      "Hobart & South": 59,
-      "North West": 39,
-      "Launceston & North": 26
+      "Hobart & South": 61,
+      "North West": 42,
+      "Launceston & North": 28
     }
   }
 }
