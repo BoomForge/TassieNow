@@ -21,8 +21,8 @@
         "count": 68,
         "percent": 6.2
       },
-      "totalLicensedImages": 916,
-      "averageImagesPerPublicListing": 0.83
+      "totalLicensedImages": 822,
+      "averageImagesPerPublicListing": 0.75
     },
     "sources": {
       "websiteCoverage": {
@@ -30,16 +30,16 @@
         "percent": 12.5
       },
       "officialSourceCoverage": {
-        "count": 128,
-        "percent": 11.6
+        "count": 129,
+        "percent": 11.7
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 116,
-        "percent": 10.5
+        "count": 118,
+        "percent": 10.7
       },
       "wikidataLinkage": {
-        "count": 634,
-        "percent": 57.5
+        "count": 639,
+        "percent": 58
       }
     },
     "details": {
@@ -117,14 +117,14 @@
     }
   },
   "events": {
-    "active": 143,
+    "active": 146,
     "ticketCoverage": {
       "count": 53,
-      "percent": 37.1
+      "percent": 36.3
     },
     "priceCoverage": {
       "count": 34,
-      "percent": 23.8
+      "percent": 23.3
     },
     "providers": {
       "Humanitix": 26,
@@ -134,7 +134,7 @@
       "TryBooking": 1
     },
     "sources": {
-      "Burnie City Council": 25,
+      "Burnie City Council": 28,
       "MyState Bank Arena": 24,
       "Huon Valley Council": 17,
       "Theatre North Launceston": 17,
@@ -149,7 +149,7 @@
     },
     "regions": {
       "Hobart & South": 77,
-      "North West": 39,
+      "North West": 42,
       "Launceston & North": 27
     }
   }
