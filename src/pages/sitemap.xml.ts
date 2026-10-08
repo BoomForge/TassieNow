@@ -10,7 +10,7 @@ export async function GET({ site }: { site: URL }) {
   const catalogueDate=maxDate([...publicPlaces.map((p:any)=>p.lastChecked),...activeEvents.map((e:any)=>e.lastChecked)]);
   const urls=new Map<string,string>();
   const add=(path:string,lastmod=catalogueDate)=>urls.set(new URL(path,base).href,lastmod);
-  add('/');add('/about/');add('/guides/','2026-10-07');
+  add('/');add('/about/');add('/food/');add('/privacy/');add('/terms/');add('/guides/','2026-10-07');
   for(const guide of guides)add(`/guides/${guide.slug}/`,guide.updatedAt);
   for(const mode of ['kids','free','rainy-day','today','this-weekend','markets','nature','food'])add(`/discover/${mode}/`);
   for(const p of publicPlaces){add(`/place/${p.slug}/`,p.lastChecked);const townSlug=slugify(p.town),regionSlug=slugify(p.region);const townKey=new URL(`/town/${townSlug}/`,base).href,regionKey=new URL(`/region/${regionSlug}/`,base).href;urls.set(townKey,maxDate([urls.get(townKey)||'',p.lastChecked]));urls.set(regionKey,maxDate([urls.get(regionKey)||'',p.lastChecked]));}
