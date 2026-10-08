@@ -25,6 +25,8 @@ const canonical = new URL(Astro.url.pathname, origin);
 const socialImage = image.startsWith('http') ? image : new URL(image, origin);
 const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN || '';
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION || '';
+const adsenseInlineLive = import.meta.env.PUBLIC_ADSENSE_INLINE_LIVE === 'true';
+const commercialFooterAllowed = !noindex && !/^\/(?:admin|privacy|terms|advertise|suggest-update|status)(?:\/|$)/.test(Astro.url.pathname);
 
 const websiteSchema = {
   '@context': 'https://schema.org',
@@ -67,6 +69,8 @@ const discoveryLinks = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#027B87" />
+    <meta name="google-adsense-account" content="ca-pub-6507270199743672" />
+    {adsenseInlineLive && <script is:inline async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6507270199743672"></script>}
     <meta name="robots" content={noindex ? 'noindex,nofollow' : 'index,follow,max-image-preview:large'} />
     {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
     <link rel="canonical" href={canonical} />
@@ -151,7 +155,7 @@ const discoveryLinks = [
     <main id="main-content" tabindex="-1"><slot /></main>
 
     <footer class="site-footer">
-      <AdSlot placement="site-footer" className="site-footer-ad" />
+      {commercialFooterAllowed && <AdSlot placement="site-footer" className="site-footer-ad" />}
       <div class="footer-brand">
         <img class="footer-emblem" src="/brand/tassienow-emblem.svg" alt="" aria-hidden="true" />
         <p><strong>TassieNow</strong> — an independent Tasmanian discovery project.</p>
