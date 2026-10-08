@@ -4,6 +4,9 @@ import { isMarketEvent } from '../../src/lib/market-category.js';
 const FILE = new URL('../../src/data/events.json', import.meta.url);
 const USER_AGENT = 'TassieNow/1.2 (+https://tassienow.pages.dev)';
 const SOURCES = [
+  { name: 'East Coast Tasmania', url: 'https://eastcoasttasmania.com/events/', town: 'St Helens', region: 'East Coast', structuredOnly: true },
+  { name: 'King Island Tourism', url: 'https://kingisland.org.au/events/', town: 'Currie', region: 'King Island', structuredOnly: true },
+  { name: 'West Coast Tasmania', url: 'https://westcoasttas.com.au/listings/major-events', town: 'Queenstown', region: 'West Coast', structuredOnly: true },
   { name: 'Discover Tasmania', url: 'https://www.discovertasmania.com.au/whats-on/', town: 'Tasmania', region: 'Central Tasmania', statewide: true },
   { name: 'Humanitix Hobart', url: 'https://humanitix.com/events/au--hobart--7000', town: 'Hobart', region: 'Hobart & South', ticketProvider: 'Humanitix' },
   { name: 'Humanitix Launceston', url: 'https://humanitix.com/au/events/au--tas--launceston', town: 'Launceston', region: 'Launceston & North', ticketProvider: 'Humanitix' },
