@@ -40,9 +40,22 @@ jobs:
           cache: npm
           cache-dependency-path: package.json
       - name: Refresh official council events
-        run: node scripts/discover/events.mjs
+        run: |
+          mkdir -p reports
+          set -o pipefail
+          node scripts/discover/events.mjs 2>&1 | tee reports/council-events-fetch.log
       - name: Refresh tourism and ticket-marketplace events
-        run: node scripts/discover/public-events.mjs
+        run: |
+          mkdir -p reports
+          set -o pipefail
+          node scripts/discover/public-events.mjs 2>&1 | tee reports/public-events-fetch.log
+      - name: Retain actual source fetch and parser results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: regional-event-source-evidence
+          path: reports/*-events-fetch.log
+          retention-days: 30
       - name: Sanitize discovered events
         run: node scripts/sanitize-events.mjs
       - name: Enrich event-specific tickets prices and availability
@@ -69,4 +82,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add src/data/events.json src/data/catalogue-audit.json
           git commit -m "data: refresh Tasmanian events and verified booking links"
+          git pull --rebase origin main
           git push origin HEAD:main
