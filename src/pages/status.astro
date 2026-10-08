@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import heartbeat from '../data/automation-health.json';
 import audit from '../data/catalogue-audit.json';
+import operations from '../data/operations-report.json';
 const latestHeartbeat=heartbeat.lastScheduledRun || null;
 const lastAudit=audit.generatedAt || null;
 const gapDays=(value)=>value?Math.floor((Date.now()-Date.parse(value+'T00:00:00Z'))/86400000):null;
@@ -21,6 +22,11 @@ const auditDays=gapDays(lastAudit);
   <dt>Licensed real-photo hero coverage</dt><dd>{audit.places?.media?.realHeroCoverage?.percent ?? 'Not reported'}%</dd>
  </dl>
  {(heartbeatDays === null || heartbeatDays > 1 || auditDays === null || auditDays > 2) && <p class="notice" role="status">One or more published reports are missing or old. Verify the current GitHub Actions runs before treating automated data as freshly checked.</p>}
+ <h2>Latest actual operations check</h2>
+ {operations.generatedAt ? (
+   <><p>Checked: <strong>{operations.generatedAt}</strong>. Site request: <strong>{operations.site?.status || 'unknown'}</strong>. Reported issues: <strong>{operations.failures?.length ?? 0}</strong>.</p>
+   {(operations.failures?.length || 0) > 0 && <ul>{operations.failures.map(issue => <li><strong>{issue.component}</strong>: {issue.status}. {issue.action}</li>)}</ul>}</>
+ ) : <p role="status">No completed operations-monitor report has been published. Workflow, build and uptime health have not yet been verified here.</p>}
  <h2>How to interpret this</h2>
  <p>A reported date is evidence of a committed file, not a guarantee that the site or every source is healthy. Check official operator links before travelling, especially for dates, prices and mobile food vendors.</p>
  <p><a href="/">Return to discovery</a></p>
