@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {balancedByRegion,selectOsmCandidates} from '../discover/lib/osm-selection.mjs';
+import {balancedByRegion,selectOsmCandidates,commonsFileFromOsmImage} from '../discover/lib/osm-selection.mjs';
 
 const place=(name,sourceId,latitude,longitude,category='Food & Drink',region='Hobart & South')=>({name,slug:name.toLowerCase().replaceAll(' ','-'),sourceId,latitude,longitude,town:'Hobart',region,categories:[category],_score:10});
 const opts={retainVerifiedMedia:(next,old)=>{if(old.image)next.image=old.image;},verifiedMedia:image=>Boolean(image&&!image.isFallback)};
@@ -53,4 +53,11 @@ test('new same-name chain branches never steal an existing published venue slug'
   const result=selectOsmCandidates([newLocation,old].map(p=>({...p})),[],new Map([[old.sourceId,old]]),opts);
   assert.equal(result.selected.find(p=>p.sourceId===old.sourceId).slug,'harbour-cafe');
   assert.notEqual(result.selected.find(p=>p.sourceId===newLocation.sourceId).slug,'harbour-cafe');
+});
+
+test('only Commons-tagged photos enter licensed image lookup',()=>{
+  assert.equal(commonsFileFromOsmImage('File:Launceston Cafe.jpg'),'Launceston Cafe.jpg');
+  assert.equal(commonsFileFromOsmImage('https://commons.wikimedia.org/wiki/File:Cafe_Dining.jpg'),'Cafe Dining.jpg');
+  assert.equal(commonsFileFromOsmImage('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Cafe_photo.jpg/800px-Cafe_photo.jpg'),'Cafe photo.jpg');
+  assert.equal(commonsFileFromOsmImage('https://restaurant.example.com/hero.jpg'),null);
 });
