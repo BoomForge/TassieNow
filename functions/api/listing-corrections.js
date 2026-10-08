@@ -13,8 +13,8 @@ export async function onRequestPost(context) {
   try{
     const body=await request.json();
     if(body.company_url) return Response.json({ok:true});
-    const verification=await verifyTurnstile(context,body['cf-turnstile-response']||body.turnstileToken);
-    if(!verification.ok) return Response.json({error:verification.error},{status:400});
+    const verification=await verifyTurnstile(context,body['cf-turnstile-response']||body.turnstileToken,{required:true});
+    if(!verification.ok) return Response.json({error:verification.error},{status:verification.configured?400:503});
     const slug=cleanText(body.place_slug,100);
     const placeName=cleanText(body.place_name,180);
     const name=cleanText(body.requester_name,100);
