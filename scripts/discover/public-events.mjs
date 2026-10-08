@@ -125,7 +125,7 @@ for(const source of SOURCES){try{const{html}=await fetchHtml(source.url);const s
   if(source.name==='Flinders Island Show Society'&&!events.length&&TODAY<='2026-10-16'){
     const evidence=clean(html);
     if(/Flinders Island Show/i.test(evidence)&&/Whitemark/i.test(evidence)&&
-      /(?:2026-10-16|16(?:th)?\\s+(?:Oct|October)\\s+2026|16\\s+Oct\\s*,?\\s*2026)/i.test(evidence)){
+      /(?:2026-10-16|16(?:th)?\s+(?:Oct|October)\s+2026|16\s+Oct\s*,?\s*2026)/i.test(evidence)){
       const show=makeEvent({name:'91st Flinders Island Show',source,startDate:'2026-10-16',
         endDate:'2026-10-16',town:'Whitemark',region:'Flinders Island',
         venue:'Flinders Island Showground, 290 Palana Rd, Whitemark',
