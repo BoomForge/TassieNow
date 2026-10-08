@@ -25,6 +25,8 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
+      - name: Save verified-media baseline
+        run: cp src/data/places.json /tmp/tassienow-before-deep-quality.json
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
@@ -60,6 +62,12 @@ jobs:
         run: node scripts/enrich-images.mjs
       - name: Re-rank after maximum enrichment
         run: node scripts/rank-catalogue.mjs
+      - name: Recover known-good licensed images before publication
+        run: |
+          git show da31ddb4d:src/data/places.json > /tmp/tassienow-known-good-media.json
+          node scripts/restore-licensed-images.mjs /tmp/tassienow-known-good-media.json
+      - name: Guard against large real-photo hero loss
+        run: node scripts/check-media-regression.mjs /tmp/tassienow-before-deep-quality.json
       - name: Prune expired events
         run: node scripts/prune-expired-events.mjs
       - name: Generate full enrichment audit
