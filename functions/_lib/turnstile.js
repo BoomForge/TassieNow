@@ -1,6 +1,8 @@
-export async function verifyTurnstile(context, token) {
+export async function verifyTurnstile(context, token, { required = false } = {}) {
   const secret = context.env.TURNSTILE_SECRET_KEY;
-  if (!secret) return { ok: true, configured: false };
+  if (!secret) return required
+    ? { ok: false, configured: false, error: 'Human verification is temporarily unavailable.' }
+    : { ok: true, configured: false };
 
   const responseToken = String(token || '').trim();
   if (!responseToken) return { ok: false, configured: true, error: 'Human verification is required.' };
