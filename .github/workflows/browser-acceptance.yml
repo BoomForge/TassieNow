@@ -1,0 +1,36 @@
+name: Mobile and accessibility visitor sweep
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/browser-acceptance.mjs'
+      - '.github/workflows/browser-acceptance.yml'
+  schedule:
+    - cron: '27 14 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install temporary Chromium and accessibility test packages
+        run: |
+          npm install --no-save --no-package-lock --ignore-scripts playwright @axe-core/playwright
+          npx playwright install --with-deps chromium
+      - name: Run actual multi-viewport live browser checks
+        run: node scripts/browser-acceptance.mjs
+      - name: Keep WCAG and responsive evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tassienow-browser-acceptance
+          path: |
+            reports/browser-acceptance.json
+            reports/browser-screenshots/
+          retention-days: 30
