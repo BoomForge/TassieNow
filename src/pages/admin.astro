@@ -14,7 +14,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
     <div id="admin-panel" hidden>
       <div class="admin-heading"><div><p class="eyebrow">Owner dashboard</p><h1>Manage TassieNow</h1></div><button id="logout" class="secondary-button" type="button">Log out</button></div>
       <p class="admin-status" id="global-status" aria-live="polite"></p>
-      <nav class="admin-tabs" aria-label="Admin sections"><button class="tab active" data-tab="catalogue" type="button">Catalogue</button><button class="tab" data-tab="discovery" type="button">Discovery</button><button class="tab" data-tab="ads" type="button">Advertisements</button><button class="tab" data-tab="inquiries" type="button">Ad enquiries</button></nav>
+      <nav class="admin-tabs" aria-label="Admin sections"><button class="tab active" data-tab="catalogue" type="button">Catalogue</button><button class="tab" data-tab="discovery" type="button">Discovery</button><button class="tab" data-tab="ads" type="button">Advertisements</button><button class="tab" data-tab="inquiries" type="button">Ad enquiries</button><button class="tab" data-tab="corrections" type="button">Free listing corrections</button></nav>
 
       <section class="admin-section" data-panel="catalogue">
         <div class="section-bar"><div><h2>Catalogue</h2><p>Manual edits are committed to GitHub and protected from the automatic importer.</p></div><button id="new-listing" class="primary-button" type="button">New listing</button></div>
@@ -59,6 +59,12 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
       </section>
 
       <section class="admin-section" data-panel="inquiries" hidden><div class="section-bar"><div><h2>Advertising enquiries</h2><p>Messages sent from the public advertising page.</p></div></div><div id="inquiry-list" class="stack-list"></div></section>
+      <section class="admin-section" data-panel="corrections" hidden>
+        <div class="section-bar"><div><h2>Free listing corrections</h2><p>Review community suggestions. Accepting a suggestion does not publish it; use the Catalogue editor to make and save verified changes.</p></div></div>
+        <label>Review status <select id="correction-filter"><option value="pending">Pending review</option><option value="approved">Accepted for editing</option><option value="rejected">Rejected</option></select></label>
+        <p id="correction-admin-status" role="status" aria-live="polite"></p>
+        <div id="correction-review-list" class="stack-list"></div>
+      </section>
     </div>
   </section>
 
@@ -72,7 +78,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
     document.querySelector('#login-form').addEventListener('submit',async e=>{e.preventDefault();const s=document.querySelector('#login-status');s.textContent='Logging in…';try{await api('/api/admin/login',{method:'POST',body:JSON.stringify(Object.fromEntries(new FormData(e.currentTarget).entries()))});s.textContent='';showAdmin()}catch(err){window.turnstile?.reset();s.textContent=err.message}});
     document.querySelector('#logout').addEventListener('click',async()=>{try{await api('/api/admin/logout',{method:'POST',body:'{}'})}finally{showLogin()}});
     document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===btn));document.querySelectorAll('[data-panel]').forEach(p=>p.hidden=p.dataset.panel!==btn.dataset.tab)}));
-    async function loadAll(){globalStatus.textContent='Loading…';const results=await Promise.allSettled([loadCatalogue(),loadAds(),loadInquiries(),loadDiscovery()]);const failures=results.filter(x=>x.status==='rejected');globalStatus.textContent=failures.length?failures.map(x=>x.reason.message).join(' · '):''}
+    async function loadAll(){globalStatus.textContent='Loading…';const results=await Promise.allSettled([loadCatalogue(),loadAds(),loadInquiries(),loadDiscovery(),loadCorrections()]);const failures=results.filter(x=>x.status==='rejected');globalStatus.textContent=failures.length?failures.map(x=>x.reason.message).join(' · '):''}
 
     async function loadDiscovery(){const {candidates=[],report={}}=await api('/api/admin/discovery');const totals=report.totals||{};document.querySelector('#discovery-summary').textContent=report.checkedAt?`Last scan: ${new Date(report.checkedAt).toLocaleString('en-AU',{timeZone:'Australia/Hobart'})} Hobart · ${totals.added||0} added · ${totals.review||0} need review`:'Discovery has not run yet.';document.querySelector('#discovery-sources').innerHTML=(report.sources||[]).map(s=>`<p><strong>${esc(s.name)}</strong> · ${s.pagesFetched} pages · ${s.errors.length?'Needs attention: '+esc(s.errors.map(e=>e.message).join(', ')):'OK'}</p>`).join('');document.querySelector('#discovery-list').innerHTML=candidates.filter(c=>c.status==='review').map(c=>`<div class="stack-item"><div><strong>${esc(c.name)}</strong><small>${esc(c.town||'Town not verified')} · ${esc(c.sourceName)} · Last seen ${esc(c.lastSeen)}</small><p>${esc(c.reasons.join(' · '))}</p><a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer">Check source</a></div></div>`).join('')||'<p>No discoveries awaiting review.</p>';}
 
@@ -97,6 +103,33 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
     document.querySelector('#ad-form').addEventListener('submit',async e=>{e.preventDefault();const f=e.currentTarget,s=document.querySelector('#ad-status'),raw=Object.fromEntries(new FormData(f).entries());const id=raw.id;raw.start_at=new Date(raw.start_at).toISOString();raw.end_at=raw.end_at?new Date(raw.end_at).toISOString():null;s.textContent='Saving…';try{await api(id?`/api/admin/ads/${id}`:'/api/admin/ads',{method:id?'PUT':'POST',body:JSON.stringify(raw)});s.textContent='Saved.';clearAd();await loadAds()}catch(err){s.textContent=err.message}});
 
     async function loadInquiries(){const data=await api('/api/admin/inquiries');const rows=data.inquiries||[];document.querySelector('#inquiry-list').innerHTML=rows.map(i=>`<article class="admin-card inquiry"><div class="inquiry-head"><div><strong>${esc(i.business)}</strong><small>${esc(i.name)} · <a href="mailto:${esc(i.email)}">${esc(i.email)}</a>${i.phone?` · ${esc(i.phone)}`:''}</small></div><span class="status-pill">${esc(i.status)}</span></div><p>${esc(i.message)}</p><small>${esc(i.placement||'Placement not specified')} · ${esc(i.desired_start||'No start date')}${i.desired_end?` → ${esc(i.desired_end)}`:''} · received ${esc(new Date(i.created_at+'Z').toLocaleString())}</small><div class="row-actions"><button type="button" data-inquiry="${i.id}" data-status="contacted">Mark contacted</button><button type="button" data-inquiry="${i.id}" data-status="closed">Close</button></div></article>`).join('')||'<div class="admin-card"><p>No advertising enquiries yet.</p></div>';document.querySelectorAll('[data-inquiry]').forEach(b=>b.addEventListener('click',async()=>{await api('/api/admin/inquiries',{method:'PATCH',body:JSON.stringify({id:Number(b.dataset.inquiry),status:b.dataset.status})});await loadInquiries()}))}
+
+    async function loadCorrections(){
+      const status=document.querySelector('#correction-admin-status');
+      const filter=document.querySelector('#correction-filter').value;
+      const list=document.querySelector('#correction-review-list');
+      const data=await api('/api/admin/listing-corrections?status='+encodeURIComponent(filter));
+      const rows=data.corrections||[];
+      status.textContent=rows.length+' '+filter+' correction(s). Approval is review only; publication requires a manual catalogue edit.';
+      list.innerHTML=rows.map(item=>`<article class="admin-card inquiry">
+        <div class="inquiry-head"><div><strong>${esc(item.place_name)}</strong> <small>· ${esc(item.place_slug)}</small>
+        <small>${esc(item.field)} · ${esc(item.relationship)} · ${esc(item.submitted_at)}</small></div><span class="status-pill">${esc(item.status)}</span></div>
+        <p><strong>Suggested change</strong></p><p>${esc(item.suggested_value)}</p>
+        ${item.reason?`<p>Reason: ${esc(item.reason)}</p>`:''}
+        ${item.source_url?`<p><a href="${esc(item.source_url)}" target="_blank" rel="noopener noreferrer">Supporting source</a></p>`:''}
+        <p><small>Submitted by ${esc(item.requester_name)} (${esc(item.requester_email)})</small></p>
+        <div class="row-actions"><a href="/place/${encodeURIComponent(item.place_slug)}/" target="_blank" rel="noopener noreferrer">View place</a>
+        ${filter==='pending'?`<button type="button" data-correction-id="${item.id}" data-review="approved">Accept for editing</button><button type="button" data-correction-id="${item.id}" data-review="rejected">Reject</button>`:''}
+        </div></article>`).join('')||'<p class="admin-card">No corrections in this queue.</p>';
+      list.querySelectorAll('[data-correction-id]').forEach(button=>button.addEventListener('click',async()=>{
+        button.disabled=true;status.textContent='Saving review…';
+        try{
+          await api('/api/admin/listing-corrections',{method:'PATCH',body:JSON.stringify({id:Number(button.dataset.correctionId),status:button.dataset.review})});
+          await loadCorrections();
+        }catch(error){status.textContent=error.message;button.disabled=false;}
+      }));
+    }
+    document.querySelector('#correction-filter').addEventListener('change',()=>loadCorrections().catch(error=>{document.querySelector('#correction-admin-status').textContent=error.message}));
     api('/api/admin/session').then(x=>x.authenticated?showAdmin():showLogin()).catch(showLogin);
   </script>
   <style>

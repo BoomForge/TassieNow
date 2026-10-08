@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { retainVerifiedMedia } from './discover/lib/preserve-media.mjs';
 
 const CURRENT_FILE = new URL('../src/data/places.json', import.meta.url);
 const previousPath = process.argv[2];
@@ -19,13 +20,14 @@ const TODAY = new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Hobart' })
 
 const carryFields = [
   'openingHours', 'phone', 'email', 'address', 'bookingUrl', 'fee', 'wheelchair', 'operator',
-  'detailSources', 'reviewLinks', 'lastDetailsChecked'
+  'detailSources', 'reviewLinks', 'lastDetailsChecked', 'officialSource', 'gallery'
 ];
 
 let carried = 0;
 for (const place of currentOsm) {
   const old = previousById.get(place.sourceId);
   if (!old) continue;
+  retainVerifiedMedia(place, old);
   for (const field of carryFields) {
     const fresh = place[field];
     if ((fresh == null || fresh === '' || (Array.isArray(fresh) && fresh.length === 0)) && old[field] != null) {

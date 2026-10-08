@@ -6,6 +6,8 @@ on:
     paths:
       - 'scripts/discover/**'
       - 'scripts/merge-previous-catalogue.mjs'
+      - 'scripts/discover/lib/preserve-media.mjs'
+      - 'scripts/check-media-regression.mjs'
       - 'scripts/reclassify-regions.mjs'
       - 'scripts/enrich-details.mjs'
       - 'scripts/link-wikidata.mjs'
@@ -102,6 +104,8 @@ jobs:
         run: node scripts/rank-catalogue.mjs
       - name: Generate catalogue coverage audit
         run: node scripts/catalogue-audit.mjs
+      - name: Guard against large real-photo regressions
+        run: node scripts/check-media-regression.mjs /tmp/tassienow-places-before-discovery.json
       - name: Validate catalogue
         run: node scripts/validate-data.mjs
       - name: Install site dependencies

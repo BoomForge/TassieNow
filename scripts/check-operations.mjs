@@ -4,42 +4,77 @@ const out = new URL('../src/data/operations-report.json', import.meta.url);
 const repository = process.env.GITHUB_REPOSITORY || 'BoomForge/TassieNow';
 const token = process.env.GITHUB_TOKEN;
 const now = new Date();
+// Frequencies are intentionally generous to account for GitHub schedule delays.
 const watched = [
-  ['discover.yml', 200], ['events.yml', 18], ['catalogue-quality.yml', 42],
-  ['images.yml', 42], ['quality.yml', 42], ['automation-health.yml', 18], ['indexnow.yml', 200]
+  ['discover.yml', 200], ['events.yml', 42], ['catalogue-quality.yml', 42],
+  ['images.yml', 42], ['quality.yml', 42], ['automation-health.yml', 42],
+  ['indexnow.yml', 200]
 ];
-const report = { generatedAt:now.toISOString(), workflows:[], site:{status:'unknown'}, failures:[] };
-for (const [name, thresholdHours] of watched) {
-  let entry={name,status:'unknown',lastScheduled:null,lastResult:null,url:null};
-  try {
-    if (!token) throw Error('GitHub token unavailable');
-    const url='https://api.github.com/repos/'+repository+'/actions/workflows/'+name+'/runs?per_page=12';
-    const response=await fetch(url,{headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json'},signal:AbortSignal.timeout(15000)});
-    if (!response.ok) throw Error('GitHub HTTP '+response.status);
-    const runs=(await response.json()).workflow_runs || [];
-    const last=runs[0],scheduled=runs.find(x=>x.event==='schedule');
+const report = {generatedAt:now.toISOString(),source:'Observed GitHub Actions and HTTP requests',workflows:[],site:{status:'unknown',checks:[]},failures:[]};
+const ageHours = (value) => value ? (now - Date.parse(value)) / 3600000 : Infinity;
+
+async function api(path) {
+  if (!token) throw Error('GitHub Actions token unavailable');
+  const response=await fetch('https://api.github.com/repos/'+repository+path,{
+    headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'},
+    signal:AbortSignal.timeout(15000)
+  });
+  if (!response.ok) throw Error('GitHub HTTP '+response.status);
+  return response.json();
+}
+
+await Promise.all(watched.map(async ([name,thresholdHours])=>{
+  const entry={name,status:'unknown',lastScheduled:null,lastResult:null,lastRunAt:null,url:null};
+  try{
+    // Find scheduled runs explicitly. Busy push-triggered workflows can have more
+    // than 12 runs since the last scheduled execution.
+    const [scheduledResult,recentResult]=await Promise.all([
+      api('/actions/workflows/'+name+'/runs?event=schedule&per_page=2'),
+      api('/actions/workflows/'+name+'/runs?per_page=3')
+    ]);
+    const scheduled=scheduledResult.workflow_runs?.[0];
+    const latest=recentResult.workflow_runs?.[0];
     entry.lastScheduled=scheduled?.created_at||null;
-    entry.lastResult=last?.conclusion||last?.status||null;
-    entry.url=last?.html_url||null;
-    if(!scheduled) entry.status='missing-scheduled-run';
-    else if((now-Date.parse(scheduled.created_at))/3600000>thresholdHours) entry.status='stale';
-    else if(scheduled.status!=='completed'&&(now-Date.parse(scheduled.created_at))/3600000>6) entry.status='stalled';
-    else if(scheduled.conclusion==='failure') entry.status='failed';
+    entry.lastRunAt=latest?.created_at||null;
+    entry.lastResult=latest?.conclusion||latest?.status||null;
+    entry.url=latest?.html_url||scheduled?.html_url||null;
+    if (!scheduled) entry.status='no-scheduled-run-observed';
+    else if (scheduled.status!=='completed' && ageHours(scheduled.created_at)>6) entry.status='scheduled-run-stalled';
+    else if (scheduled.conclusion==='failure') entry.status='scheduled-run-failed';
+    else if (ageHours(scheduled.created_at)>thresholdHours) entry.status='scheduled-run-stale';
+    else if (latest?.conclusion==='failure') entry.status='latest-run-failed';
+    else if (latest?.conclusion==='cancelled') entry.status='latest-run-cancelled';
     else entry.status='ok';
-  }catch(error){entry.status='unknown';entry.error=String(error.message);}
-  if(entry.status!=='ok')report.failures.push({component:name,status:entry.status,action:'Inspect workflow schedule, permission and job logs'});
+  }catch(error){entry.error=String(error.message);}
+  if(entry.status!=='ok')report.failures.push({component:name,status:entry.status,action:entry.url||'Inspect GitHub Actions schedule and job logs'});
   report.workflows.push(entry);
-}
-try {
-  const r=await fetch('https://tassienow.com/',{redirect:'follow',signal:AbortSignal.timeout(12000)});
-  const html=await r.text();
-  report.site={status:r.ok&&html.includes('TassieNow')?'ok':'failed',httpCode:r.status};
-}catch(error){report.site={status:'failed',error:String(error.message)};}
-if(report.site.status!=='ok')report.failures.push({component:'Public homepage',status:report.site.status,action:'Check DNS, TLS, Cloudflare Pages and deployment logs'});
+}));
+
+const checks=[
+  ['Homepage','/','TassieNow'],['Food discovery','/food/','Places to Eat'],
+  ['Service status','/status/','Service & data status'],['Robots','/robots.txt','User-agent'],
+  ['Sitemap','/sitemap.xml','<urlset']
+];
+await Promise.all(checks.map(async ([name,path,marker])=>{
+  const check={name,path,status:'unknown',httpCode:null};
+  try{
+    const response=await fetch('https://tassienow.com'+path,{redirect:'follow',signal:AbortSignal.timeout(12000)});
+    check.httpCode=response.status;
+    const body=await response.text();
+    check.status=response.ok&&body.includes(marker)?'ok':'failed';
+  }catch(error){check.status='failed';check.error=String(error.message);}
+  if(check.status!=='ok')report.failures.push({component:'Public '+name,status:check.status,action:'Inspect Cloudflare deployment, TLS and route: '+path});
+  report.site.checks.push(check);
+}));
+report.site.status=report.site.checks.every(c=>c.status==='ok')?'ok':'failed';
+report.site.checks.sort((a,b)=>checks.findIndex(c=>c[0]===a.name)-checks.findIndex(c=>c[0]===b.name));
+report.workflows.sort((a,b)=>watched.findIndex(c=>c[0]===a.name)-watched.findIndex(c=>c[0]===b.name));
 await fs.writeFile(out,JSON.stringify(report,null,2)+'\n');
-if(process.env.GITHUB_STEP_SUMMARY){
- const lines=['## TassieNow operations report','Observed: '+report.generatedAt,'Site: '+report.site.status,'Issues: '+report.failures.length];
- for(const failure of report.failures)lines.push('- '+failure.component+': '+failure.status+' — '+failure.action);
- await fs.appendFile(process.env.GITHUB_STEP_SUMMARY,lines.join('\n')+'\n');
+if(process.env.GITHUB_STEP_SUMMARY) {
+  const lines=['## TassieNow operations report','Observed: '+report.generatedAt,
+    'Public routes: '+report.site.checks.filter(x=>x.status==='ok').length+'/'+report.site.checks.length,
+    'Actionable findings: '+report.failures.length];
+  for(const issue of report.failures)lines.push('- '+issue.component+': '+issue.status+' — '+issue.action);
+  await fs.appendFile(process.env.GITHUB_STEP_SUMMARY,lines.join('\n')+'\n');
 }
-console.log('Recorded actual monitoring results; issues: '+report.failures.length);
+console.log('Recorded observable operations health; findings: '+report.failures.length);
