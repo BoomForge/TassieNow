@@ -53,3 +53,18 @@ test('Regional parser excludes external links and undated events', () => {
   const actual = parse(html,{name:'East Coast Tasmania',url:'https://eastcoasttasmania.com/events/',town:'St Helens',region:'East Coast'});
   assert.equal(actual.length,0);
 });
+
+const offerStart = importer.indexOf('function offersFrom');
+const offerEnd = importer.indexOf('function makeEvent', offerStart);
+assert.ok(offerStart >= 0 && offerEnd > offerStart, 'structured offer extractor exists');
+const offerContext = vm.createContext({});
+vm.runInContext(importer.slice(offerStart,offerEnd) + '\nthis.offersFrom = offersFrom;',offerContext);
+test('Missing structured prices are not labelled free', () => {
+  const result = offerContext.offersFrom({offers:{url:'https://events.humanitix.com/test'}});
+  assert.equal(result.priceFrom,undefined);
+  assert.equal(result.priceTo,undefined);
+});
+test('Explicit zero-price structured offers remain free', () => {
+  const result = offerContext.offersFrom({offers:{url:'https://events.humanitix.com/free',price:0,priceCurrency:'AUD'}});
+  assert.equal(result.priceFrom,0);
+});
