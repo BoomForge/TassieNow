@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import AdSlot from '../../components/AdSlot.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 import events from '../../data/events.json';
@@ -276,6 +277,7 @@ const siblingModes = [
       </section>
     )}
 
+    <AdSlot placement="content-inline" />
     <section class="discover-section results-section" id="discover-results" aria-labelledby="discover-results-heading">
       <div class="discover-heading">
         <div>
