@@ -168,10 +168,25 @@ const incomplete = places
   .sort((a, b) => Number(Boolean(b.image?.isFallback)) - Number(Boolean(a.image?.isFallback))
     || (b.qualityScore || 0) - (a.qualityScore || 0)
     || a.name.localeCompare(b.name));
+// A bounded daily food quota stops restaurants and cafés being crowded out by
+// nature and attraction gallery searches. Rotate both groups independently.
 const day = Math.floor(Date.now() / 86400000);
-const offset = incomplete.length ? (day * MAX_PER_RUN) % incomplete.length : 0;
-const rotated = incomplete.length ? [...incomplete.slice(offset), ...incomplete.slice(0, offset)] : [];
-const targets = rotated.slice(0, MAX_PER_RUN);
+const foodIncomplete=incomplete.filter(place=>(place.categories||[]).includes('Food & Drink'));
+const otherIncomplete=incomplete.filter(place=>!(place.categories||[]).includes('Food & Drink'));
+const rotate=(items,n)=>items.length ? [...items.slice((day*n)%items.length),...items.slice(0,(day*n)%items.length)] : [];
+const foodQuota=Math.min(foodIncomplete.length,Math.ceil(MAX_PER_RUN*0.6));
+const targets=[
+  ...rotate(foodIncomplete,Math.max(1,foodQuota)).slice(0,foodQuota),
+  ...rotate(otherIncomplete,Math.max(1,MAX_PER_RUN-foodQuota)).slice(0,MAX_PER_RUN-foodQuota)
+];
+if(targets.length<MAX_PER_RUN){
+  const used=new Set(targets.map(place=>place.sourceType+':'+place.sourceId+':'+place.slug));
+  for(const place of rotate(foodIncomplete,MAX_PER_RUN+foodQuota)){
+    if(targets.length>=MAX_PER_RUN)break;
+    const id=place.sourceType+':'+place.sourceId+':'+place.slug;
+    if(!used.has(id)){targets.push(place);used.add(id);}
+  }
+}
 let heroUpgraded = 0;
 let galleryAdded = 0;
 
@@ -205,5 +220,5 @@ await fs.writeFile(FILE, `${JSON.stringify(places, null, 2)}\n`);
 const publicPlaces = places.filter((place) => place.status === 'active' && place.visibility !== 'suppressed');
 const realHeroes = publicPlaces.filter((place) => place.image && !place.image.isFallback).length;
 const galleries = publicPlaces.filter((place) => place.gallery?.length).length;
-console.log(`Image enrichment: revalidated heuristic media and rejected ${rejectedExisting} weak match(es); checked ${targets.length} incomplete listings from rotating offset ${offset}; upgraded ${heroUpgraded} hero image(s); added ${galleryAdded} gallery image(s).`);
+console.log(`Image enrichment: revalidated heuristic media and rejected ${rejectedExisting} weak match(es); checked ${targets.length} incomplete listings (${foodQuota} food-priority slot(s)); upgraded ${heroUpgraded} hero image(s); added ${galleryAdded} gallery image(s).`);
 console.log(`Image coverage: real hero images ${realHeroes}/${publicPlaces.length}; multi-image galleries ${galleries}/${publicPlaces.length}. ${Math.max(0, incomplete.length - targets.length)} incomplete listing(s) remain for future passes.`);
