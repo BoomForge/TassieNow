@@ -1,6 +1,6 @@
 import { db } from '../_lib/db.js';
 
-const ALLOWED = new Set(['homepage-top', 'homepage-inline', 'site-footer']);
+const ALLOWED = new Set(['homepage-top', 'homepage-inline', 'content-inline', 'site-footer']);
 
 export async function onRequestGet(context) {
   const placement = new URL(context.request.url).searchParams.get('placement') || '';

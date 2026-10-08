@@ -1,39 +1,110 @@
 ---
-interface Props { placement: 'homepage-top' | 'homepage-inline' | 'site-footer'; className?: string; }
+interface Props { placement: 'homepage-top' | 'homepage-inline' | 'content-inline' | 'site-footer'; className?: string; }
 const { placement, className = '' } = Astro.props;
+// The temporary fallback mirrors Pixelwolf's publicly configured affiliate partners.
+const partners = {
+  playasia: { name: 'PlayAsia', url: 'https://www.play-asia.com/?affiliate_id=6876635', description: 'Games, anime collectibles and Japanese imports.' },
+  elevenlabs: { name: 'ElevenLabs', url: 'https://try.elevenlabs.io/yi9gqjx30yd5', description: 'AI voice and audio tools for creators.' },
+  meshy: { name: 'Meshy', url: 'https://www.meshy.ai?via=Pixelwolf', description: 'AI-assisted 3D creation tools and creative workflows.' }
+};
+const partner = ({ 'homepage-top':partners.playasia, 'homepage-inline':partners.elevenlabs, 'content-inline':partners.meshy, 'site-footer':partners.playasia })[placement];
+// Once AdSense approves TassieNow, switch this PUBLIC_ build flag to true.
+// Google fills only inline units; scheduled direct sponsors keep precedence.
+const googleEnabled = import.meta.env.PUBLIC_ADSENSE_INLINE_LIVE === 'true';
+const googleUnit = ({ 'homepage-inline':'4956162754', 'content-inline':'8711574934' })[placement] || '';
 ---
-<div class={`ad-slot ${className}`} data-ad-placement={placement} hidden>
+<aside class={'ad-slot ' + className} aria-label="Advertisement" data-ad-placement={placement} data-google-enabled={googleEnabled && Boolean(googleUnit) ? 'true' : 'false'}>
   <div class="ad-label">Advertisement</div>
-  <a class="ad-link" rel="sponsored noopener" target="_blank">
+  <a class="ad-link" rel="sponsored noopener noreferrer" target="_blank" hidden>
     <img class="ad-image" loading="lazy" decoding="async" alt="" />
     <span class="ad-sponsor"></span>
   </a>
-</div>
+  {googleEnabled && googleUnit && (
+    <div class="google-frame" hidden>
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6507270199743672" data-ad-slot={googleUnit} data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  )}
+  <a class="affiliate-link" href={partner.url} target="_blank" rel="sponsored noopener noreferrer">
+    <div class="affiliate-text">
+      <span class="affiliate-eyebrow">Affiliate partner</span>
+      <strong>{partner.name}</strong>
+      <span>{partner.description}</span>
+      <small>We may earn a commission at no extra cost to you.</small>
+    </div>
+    <span class="affiliate-action" aria-hidden="true">Explore partner ↗</span>
+  </a>
+</aside>
 <script>
   async function loadAds() {
     const slots = [...document.querySelectorAll('[data-ad-placement]')];
     await Promise.all(slots.map(async (slot) => {
       if (slot.dataset.loaded) return;
       slot.dataset.loaded = '1';
+      const affiliate = slot.querySelector('.affiliate-link');
+      const paidLink = slot.querySelector('.ad-link');
+      const paidImage = slot.querySelector('.ad-image');
+      const paidSponsor = slot.querySelector('.ad-sponsor');
+      const google = slot.querySelector('.google-frame');
+      const googleIns = google?.querySelector('.adsbygoogle');
+      const showAffiliate = () => { affiliate.hidden = false; if (google) google.hidden = true; };
       try {
-        const response = await fetch(`/api/ads?placement=${encodeURIComponent(slot.dataset.adPlacement)}`, { headers: { accept: 'application/json' }, cache: 'no-store' });
-        if (!response.ok) return;
-        const { ad } = await response.json();
-        if (!ad) return;
-        const link = slot.querySelector('.ad-link'), image = slot.querySelector('.ad-image'), sponsor = slot.querySelector('.ad-sponsor');
-        link.href = ad.click_url; image.src = ad.image_url; image.alt = ad.alt_text; sponsor.textContent = `Sponsored by ${ad.sponsor_name}`;
-        image.addEventListener('load', () => { slot.hidden = false; }, { once: true });
-        image.addEventListener('error', () => { slot.hidden = true; }, { once: true });
-      } catch { /* ad slots fail closed */ }
+        const response = await fetch('/api/ads?placement=' + encodeURIComponent(slot.dataset.adPlacement), { headers: {accept:'application/json'}, cache:'no-store' });
+        if (response.ok) {
+          const data = await response.json();
+          if (data.ad) {
+            paidLink.href = data.ad.click_url;
+            paidSponsor.textContent = 'Sponsored by ' + data.ad.sponsor_name;
+            paidImage.alt = data.ad.alt_text;
+            paidImage.addEventListener('load', () => { if (paidImage.naturalWidth > 0) { affiliate.hidden = true; paidLink.hidden = false; } }, {once:true});
+            paidImage.addEventListener('error', showAffiliate, {once:true});
+            paidImage.src = data.ad.image_url;
+            if (paidImage.complete && paidImage.naturalWidth > 0) { affiliate.hidden = true; paidLink.hidden = false; }
+            return;
+          }
+        }
+      } catch { /* first-party ad API unavailable: keep affiliate */ }
+      if (!google || !googleIns || slot.dataset.googleEnabled !== 'true') return;
+      const requestGoogle = () => {
+        const watch = new MutationObserver(() => {
+          if (googleIns.dataset.adStatus === 'filled') { google.hidden = false; affiliate.hidden = true; }
+          if (googleIns.dataset.adStatus === 'unfilled') { showAffiliate(); watch.disconnect(); }
+        });
+        watch.observe(googleIns, {attributes:true,attributeFilter:['data-ad-status']});
+        google.hidden = false;
+        affiliate.hidden = true;
+        try {
+          window.adsbygoogle = window.adsbygoogle || [];
+          window.adsbygoogle.push({});
+        } catch { watch.disconnect(); showAffiliate(); return; }
+        window.setTimeout(() => { if (googleIns.dataset.adStatus !== 'filled') showAffiliate(); }, 7000);
+      };
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          if (entries.some(entry=>entry.isIntersecting)) { observer.disconnect(); requestGoogle(); }
+        }, { rootMargin:'350px' });
+        observer.observe(slot);
+      } else requestGoogle();
     }));
   }
   loadAds();
 </script>
 <style>
-  .ad-slot{max-width:1120px;margin:1.25rem auto;padding:.7rem;border:1px solid #dce5e7;border-radius:18px;background:#fff;box-shadow:0 10px 30px rgba(6,45,50,.06)}
-  .ad-label{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#65777a;margin:0 0 .45rem .2rem}
+  .ad-slot{box-sizing:border-box;width:calc(100% - 2rem);max-width:1120px;margin:1.6rem auto;padding:1rem 1.2rem;border:1px solid #dce5e7;border-radius:16px;background:#fff;box-shadow:0 8px 24px rgba(6,45,50,.04);clear:both}
+  .ad-slot [hidden]{display:none!important}
+  .ad-label{font-size:.67rem;letter-spacing:.12em;text-transform:uppercase;color:#65777a;margin:0 0 .6rem}
   .ad-link{display:block;color:inherit;text-decoration:none}
-  .ad-image{display:block;width:100%;max-height:180px;object-fit:cover;border-radius:12px;background:#eef5f5}
-  .ad-sponsor{display:block;padding:.45rem .2rem 0;font-size:.78rem;color:#526467}
+  .ad-image{display:block;width:100%;max-height:180px;object-fit:contain;border-radius:10px;background:#f3f7f7}
+  .ad-sponsor{display:block;padding:.45rem 0 0;font-size:.78rem;color:#526467}
+  .affiliate-link{display:flex;align-items:center;justify-content:space-between;gap:1.2rem;color:#16454b;text-decoration:none}
+  .affiliate-text{display:flex;flex-direction:column;gap:.3rem;min-width:0}
+  .affiliate-eyebrow{font-size:.67rem;font-weight:750;letter-spacing:.1em;text-transform:uppercase;color:#496c70}
+  .affiliate-text strong{font-size:1.12rem}
+  .affiliate-text>span:not(.affiliate-eyebrow){font-size:.9rem}
+  .affiliate-text small{color:#526467;line-height:1.4}
+  .affiliate-action{white-space:nowrap;font-weight:750;border:1px solid #afc9c9;border-radius:99px;padding:.58rem .85rem}
+  .affiliate-link:hover .affiliate-action{background:#eaf5f5}
+  .affiliate-link:focus-visible,.ad-link:focus-visible{outline:3px solid #026b7a;outline-offset:5px}
+  .google-frame{width:100%;min-height:90px}
   .site-footer-ad{margin-top:2rem;margin-bottom:1rem}
+  @media(max-width:600px){.ad-slot{padding:.85rem;width:calc(100% - 1.2rem)}.affiliate-link{align-items:flex-start;flex-direction:column;gap:.7rem}.affiliate-action{white-space:normal}}
 </style>

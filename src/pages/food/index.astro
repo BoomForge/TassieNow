@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import AdSlot from '../../components/AdSlot.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 
@@ -58,6 +59,7 @@ const schema = {
       <button id="eat-clear" type="button">Clear filters</button>
     </section>
     <p id="eat-count" role="status" aria-live="polite">{results.length} places</p>
+    <AdSlot placement="content-inline" />
     <div class="eat-grid">
       {results.map((place,index) => <article class="eat-card" hidden={index>=24} data-type={place.foodTypes.join('|')} data-region={place.region} data-search={`${place.name} ${place.town} ${(place.categories||[]).join(' ')}`.toLowerCase()}>
         <a href={`/place/${place.slug}/`}><img src={place.image?.url || '/images/categories/food.svg'} alt={place.image?.alt || place.name} loading="lazy" decoding="async" /><div class="eat-card-body"><small>{place.town} · {place.region}</small><h2>{place.name}</h2><p>{(place.categories || []).join(' · ')}</p>{place.foodTypes.includes('food-van') && <small>Mobile vendor — confirm current location</small>}</div></a>

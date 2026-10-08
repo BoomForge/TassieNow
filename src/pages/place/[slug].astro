@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import AdSlot from '../../components/AdSlot.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 import { upcomingScheduleDates } from '../../lib/schedules.js';
@@ -300,6 +301,7 @@ const schema = {
       )}
     </div>
 
+    <AdSlot placement="content-inline" />
     <section class="nearby-cta">
       <div>
         <p class="section-kicker">Keep exploring</p>

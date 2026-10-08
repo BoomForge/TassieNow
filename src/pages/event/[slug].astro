@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import AdSlot from '../../components/AdSlot.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import events from '../../data/events.json';
 
@@ -151,6 +152,7 @@ const townSlug = String(event.town || '')
       </a>
     </div>
 
+    <AdSlot placement="content-inline" />
     <p class="notice">
       Event times, ticket availability, prices and venues can change. Confirm details with the organiser or ticket provider before travelling or purchasing.
     </p>
