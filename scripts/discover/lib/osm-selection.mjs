@@ -13,6 +13,25 @@ function kilometres(a,b) {
   const val=Math.sin(dy/2)**2+Math.cos(rad(a.latitude))*Math.cos(rad(b.latitude))*Math.sin(dx/2)**2;
   return 6371*2*Math.atan2(Math.sqrt(val),Math.sqrt(1-val));
 }
+// Only turn OSM image tags into photographs after fetching exact Commons
+// metadata. Arbitrary restaurant website URLs are not reuse permission.
+export function commonsFileFromOsmImage(value) {
+  const raw=String(value||'').trim();
+  if(!raw||/[;|]/.test(raw))return null;
+  if(/^File:/i.test(raw))return raw.replace(/^File:/i,'').trim()||null;
+  try {
+    const url=new URL(raw);
+    if(url.hostname==='commons.wikimedia.org'){
+      const path=decodeURIComponent(url.pathname);
+      if(/^\/wiki\/File:/i.test(path))return path.replace(/^\/wiki\/File:/i,'').replaceAll('_',' ');
+    }
+    if(url.hostname==='upload.wikimedia.org'&&url.pathname.startsWith('/wikipedia/commons/')){
+      const parts=decodeURIComponent(url.pathname).split('/');
+      return (parts.includes('thumb')?parts.at(-2):parts.at(-1))?.replaceAll('_',' ')||null;
+    }
+  }catch{/* invalid or non-Commons image tag */}
+  return null;
+}
 export function balancedByRegion(records, limit) {
   const buckets=new Map();
   for(const record of [...records].sort((a,b)=>(b._score||0)-(a._score||0)||a.name.localeCompare(b.name))) {
