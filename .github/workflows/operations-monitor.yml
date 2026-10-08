@@ -1,0 +1,44 @@
+name: TassieNow operations monitor
+on:
+  schedule:
+    - cron: '42 1,7,13,19 * * *'
+  workflow_dispatch:
+permissions:
+  actions: read
+  contents: write
+concurrency:
+  group: tassienow-data-writes
+  cancel-in-progress: false
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Inspect GitHub Actions and production site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/check-operations.mjs
+      - name: Retain observed report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: operations-report
+          path: src/data/operations-report.json
+          retention-days: 30
+      - name: Publish run report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/operations-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: record actual operations checks [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

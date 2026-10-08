@@ -52,9 +52,13 @@ jobs:
           node --check scripts/rank-catalogue.mjs
           node --check scripts/catalogue-audit.mjs
           node --check scripts/automation-heartbeat.mjs
+          node --check scripts/check-operations.mjs
+          node --check scripts/test-catalogue-recovery.mjs
           node --check scripts/indexnow.mjs
           node --check scripts/post-bluesky.mjs
           find functions -name '*.js' -print0 | xargs -0 -n1 node --check
+      - name: Prove non-destructive catalogue Git restore
+        run: node scripts/test-catalogue-recovery.mjs
       - name: Test discovery, market classification and recurring dates
         run: npm run test:discovery
       - name: Test daily promotion selection
