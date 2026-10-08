@@ -1,3 +1,5 @@
+# Recovery can also be dispatched from the Actions tab if a previous attempt
+# was cancelled during simultaneous catalogue refreshes.
 name: Restore verified catalogue media
 on:
   push:
