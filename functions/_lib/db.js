@@ -55,6 +55,16 @@ CREATE TABLE IF NOT EXISTS listing_corrections (
 );
 CREATE INDEX IF NOT EXISTS idx_listing_corrections_queue ON listing_corrections (status, submitted_at);
 CREATE INDEX IF NOT EXISTS idx_listing_corrections_slug ON listing_corrections (place_slug, submitted_at);
+CREATE TABLE IF NOT EXISTS discovery_metrics (
+ day TEXT NOT NULL,
+ event_type TEXT NOT NULL,
+ page_path TEXT NOT NULL,
+ detail TEXT NOT NULL DEFAULT '',
+ hits INTEGER NOT NULL DEFAULT 0,
+ PRIMARY KEY(day,event_type,page_path,detail)
+);
+CREATE INDEX IF NOT EXISTS idx_discovery_metrics_day ON discovery_metrics (day,event_type);
+
 
 `;
 
