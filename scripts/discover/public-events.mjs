@@ -4,6 +4,9 @@ import { isMarketEvent } from '../../src/lib/market-category.js';
 const FILE = new URL('../../src/data/events.json', import.meta.url);
 const USER_AGENT = 'TassieNow/1.2 (+https://tassienow.pages.dev)';
 const SOURCES = [
+  { name: 'East Coast Tasmania', url: 'https://eastcoasttasmania.com/events/', town: 'St Helens', region: 'East Coast', regionalCards: true, structuredOnly: true },
+  { name: 'King Island Tourism', url: 'https://kingisland.org.au/events/', town: 'Currie', region: 'King Island', regionalCards: true, structuredOnly: true },
+  { name: 'West Coast Tasmania', url: 'https://westcoasttas.com.au/listings/major-events', town: 'Queenstown', region: 'West Coast', regionalCards: true, structuredOnly: true },
   { name: 'Discover Tasmania', url: 'https://www.discovertasmania.com.au/whats-on/', town: 'Tasmania', region: 'Central Tasmania', statewide: true },
   { name: 'Humanitix Hobart', url: 'https://humanitix.com/events/au--hobart--7000', town: 'Hobart', region: 'Hobart & South', ticketProvider: 'Humanitix' },
   { name: 'Humanitix Launceston', url: 'https://humanitix.com/au/events/au--tas--launceston', town: 'Launceston', region: 'Launceston & North', ticketProvider: 'Humanitix' },
@@ -19,8 +22,10 @@ const SOURCES = [
 const MONTHS = { jan:1,january:1,feb:2,february:2,mar:3,march:3,apr:4,april:4,may:5,jun:6,june:6,jul:7,july:7,aug:8,august:8,sep:9,september:9,sept:9,oct:10,october:10,nov:11,november:11,dec:12,december:12 };
 const MONTH = 'Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?';
 const DATE_ONLY_NAME = /^(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\s+\d{1,2}(?:st|nd|rd|th)?(?:,?\s+20\d{2})?$/i;
-const TAS_CONTEXT = /\b(?:TAS|Tasmania|Hobart|Bellerive|Glenorchy|Moonah|Sandy Bay|Rosny|Kingston|Launceston|Prospect|Invermay|Burnie|Devonport|Ulverstone|Wynyard|Smithton|Stanley|St Helens|Bicheno|Swansea|Coles Bay|Queenstown|Strahan|Campbell Town|Oatlands|Ross|Bothwell|Hamilton|Ouse|Miena|Tarraleah|Waddamana|Evandale|Richmond|Sorell|Huonville|Cygnet|New Norfolk|Port Arthur)\b/i;
+const TAS_CONTEXT = /\b(?:TAS|Tasmania|Hobart|Bellerive|Glenorchy|Moonah|Sandy Bay|Rosny|Kingston|Launceston|Prospect|Invermay|Burnie|Devonport|Ulverstone|Wynyard|Smithton|Stanley|St Helens|Bicheno|Swansea|Coles Bay|Queenstown|Strahan|Campbell Town|Oatlands|Ross|Bothwell|Hamilton|Ouse|Miena|Tarraleah|Waddamana|Evandale|Richmond|Sorell|Huonville|Cygnet|New Norfolk|Port Arthur|Whitemark|Lady Barron|Flinders Island|Cape Barren Island|Currie|Grassy|Naracoopa|King Island|Zeehan|Rosebery|Tullah|Triabunna|Orford|Scamander|Binalong Bay|Derwent Bridge)\b/i;
 const LOCATION_RULES = [
+  { town:'Whitemark', region:'Flinders Island', re:/\b(?:Whitemark|Lady Barron|Flinders Island|Cape Barren Island)\b/i },
+  { town:'Currie', region:'King Island', re:/\b(?:Currie|Grassy|Naracoopa|King Island)\b/i },
   { town:'Hobart', region:'Hobart & South', re:/\b(?:Hobart|Bellerive|Glenorchy|Moonah|Sandy Bay|Rosny|Kingston|Battery Point|North Hobart|New Town|Claremont|Derwent Park)\b/i },
   { town:'Launceston', region:'Launceston & North', re:/\b(?:Launceston|Prospect|Invermay|Mowbray|Kings Meadows|Evandale|Longford|George Town|Scottsdale|Derby|Bridport|Beaconsfield|Deloraine|Westbury|Mole Creek)\b/i },
   { town:'Devonport', region:'North West', re:/\b(?:Devonport|Burnie|Ulverstone|Penguin|Wynyard|Smithton|Stanley|Latrobe|Sheffield)\b/i },
@@ -67,17 +72,52 @@ function titleFromEventUrl(value=''){
 function dateValue(value){if(!value)return null;const d=new Date(value);return Number.isNaN(d.valueOf())?null:d.toISOString().slice(0,10);}
 function flatten(value,out=[]){if(!value)return out;if(Array.isArray(value)){value.forEach((x)=>flatten(x,out));return out;}if(typeof value!=='object')return out;const types=Array.isArray(value['@type'])?value['@type']:[value['@type']];if(types.includes('Event'))out.push(value);for(const child of Object.values(value))if(child&&typeof child==='object')flatten(child,out);return out;}
 function jsonld(html){const out=[];for(const match of html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)){try{flatten(JSON.parse(match[1].trim()),out);}catch{}}return out;}
-function offersFrom(event){const offers=Array.isArray(event?.offers)?event.offers:event?.offers?[event.offers]:[];const offer=offers.find((item)=>item&&typeof item==='object')||null;if(!offer)return{};const ticketUrl=offer.url||null;const rawPrice=offer.lowPrice??offer.price??null;const high=offer.highPrice??null;return{ticketUrl,priceFrom:Number.isFinite(Number(rawPrice))?Number(rawPrice):undefined,priceTo:Number.isFinite(Number(high))?Number(high):undefined,priceCurrency:offer.priceCurrency?String(offer.priceCurrency).toUpperCase():undefined,availability:typeof offer.availability==='string'?offer.availability.split('/').pop():undefined};}
+function offersFrom(event){const offers=Array.isArray(event?.offers)?event.offers:event?.offers?[event.offers]:[];const offer=offers.find((item)=>item&&typeof item==='object')||null;if(!offer)return{};const ticketUrl=offer.url||null;const rawPrice=offer.lowPrice??offer.price??null;const high=offer.highPrice??null;return{ticketUrl,priceFrom:rawPrice!==null&&rawPrice!==''&&Number.isFinite(Number(rawPrice))?Number(rawPrice):undefined,priceTo:high!==null&&high!==''&&Number.isFinite(Number(high))?Number(high):undefined,priceCurrency:offer.priceCurrency?String(offer.priceCurrency).toUpperCase():undefined,availability:typeof offer.availability==='string'?offer.availability.split('/').pop():undefined};}
 function makeEvent({name,source,startDate,endDate,town,region,venue,eventUrl,description='',offer={}}){const cleanName=finalName(name);if(!plausibleName(cleanName)||!validRange({startDate,endDate}))return null;const provider=source.ticketProvider||providerFromUrl(offer.ticketUrl)||providerFromUrl(eventUrl);const ticketUrl=offer.ticketUrl||(provider?eventUrl:null);const result={slug:slugify(`${cleanName}-${startDate}-${town||source.town}`),name:cleanName,town:town||source.town,region:region||source.region,startDate,endDate,categories:categories(`${cleanName} ${description}`, cleanName),summary:description?clean(description).slice(0,300):`${cleanName} in ${town||source.town}. Check the source for current times, venue details and availability.`,venue:venue||undefined,eventUrl:eventUrl||source.url,sourceUrl:source.url,sourceName:source.name,image:fallback(cleanName),status:'active',lastChecked:TODAY};if(ticketUrl)result.ticketUrl=ticketUrl;if(provider)result.ticketProvider=provider;for(const key of ['priceFrom','priceTo','priceCurrency','availability'])if(offer[key]!==undefined)result[key]=offer[key];if(result.priceFrom===0)result.categories=[...new Set([...result.categories,'Free'])];return result;}
 async function fetchHtml(url){const response=await fetch(url,{headers:{'user-agent':USER_AGENT,accept:'text/html,*/*;q=.8'},redirect:'follow',signal:AbortSignal.timeout(35000)});if(!response.ok)throw new Error(`${response.status} ${response.statusText}`);return{html:await response.text(),finalUrl:response.url};}
 function structuredEvents(html,source){const out=[];for(const item of jsonld(html)){const startDate=dateValue(item.startDate),endDate=dateValue(item.endDate||item.startDate);if(!validRange({startDate,endDate}))continue;const address=item.location?.address||{};const description=clean(item.description||'').slice(0,300);const inferred=inferLocation(`${clean(address.addressLocality||'')} ${clean(item.location?.name||'')} ${description}`,source);const town=clean(address.addressLocality||inferred.town)||inferred.town;const venue=clean(item.location?.name||'');const offer=offersFrom(item);const event=makeEvent({name:item.name,source,startDate,endDate,town,region:inferred.region,venue,eventUrl:item.url||offer.ticketUrl||source.url,description,offer});if(event)out.push(event);}return out;}
+function regionalListingEvents(html,source){
+  const out=[];
+  const anchors=[...html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)];
+  for(const anchor of anchors){
+    let href;
+    try{href=new URL(decode(anchor[1]),source.url).href;}catch{continue;}
+    const url=new URL(href),host=new URL(source.url).hostname;
+    if(url.hostname.replace(/^www\./,'')!==host.replace(/^www\./,''))continue;
+    if(source.name==='East Coast Tasmania'&&!/^\/atdw_events\/[^/]+\/?$/.test(url.pathname))continue;
+    if(source.name==='King Island Tourism'&&!/^\/events\/[^/]+\/?$/.test(url.pathname))continue;
+    if(source.name==='West Coast Tasmania'&&!/^\/listings\/[^/]+\/?$/.test(url.pathname))continue;
+    const inner=clean(anchor[2]);
+    const name=source.name==='King Island Tourism'?titleFromEventUrl(href):finalName(inner);
+    if(!plausibleName(name))continue;
+    // Never borrow a date from the next event card when this one is undated.
+    const nextCard=anchors.find(candidate=>{
+      if(candidate.index<=anchor.index)return false;
+      try{
+        const nextUrl=new URL(decode(candidate[1]),source.url);
+        return nextUrl.hostname.replace(/^www\./,'')===host.replace(/^www\./,'')
+          && (/^\/atdw_events\/[^/]+\/?$/.test(nextUrl.pathname)||/^\/events\/[^/]+\/?$/.test(nextUrl.pathname))
+          && nextUrl.href!==href;
+      }catch{return false;}
+    });
+    const sliceEnd=Math.min(html.length,anchor.index+anchor[0].length+500,nextCard?.index??Infinity);
+    const nearby=clean(html.slice(anchor.index,sliceEnd)).replace(/\b(\d{1,2})(?:st|nd|rd|th)\b/gi,'$1');
+    let date=dateRange(nearby);
+    const explicitRange=nearby.match(/\b(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})\s*(?:to|[-–—])\s*(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})\b/i);
+    if(explicitRange)date={startDate:iso(explicitRange[1],explicitRange[2],explicitRange[3]),endDate:iso(explicitRange[4],explicitRange[5],explicitRange[6])};
+    if(!validRange(date))continue;
+    const event=makeEvent({name,source,startDate:date.startDate,endDate:date.endDate,town:source.town,region:source.region,eventUrl:href,description:''});
+    if(event)out.push(event);
+  }
+  return out;
+}
 function anchorEvents(html,source){const out=[];for(const anchor of html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)){let href;try{href=new URL(decode(anchor[1]),source.url).href;}catch{continue;}const provider=providerFromUrl(href);if(source.ticketProvider&&!provider)continue;if(source.name==='Discover Tasmania'&&!new URL(href).hostname.endsWith('discovertasmania.com.au'))continue;let name=finalName(anchor[2]);if(!plausibleName(name)&&source.officialHostOnly)name=titleFromEventUrl(href);if(!plausibleName(name))continue;const around=html.slice(Math.max(0,anchor.index-700),anchor.index+anchor[0].length+850);const context=clean(around);if(source.requireTasContext&&!TAS_CONTEXT.test(context))continue;const range=dateRange(context);if(!validRange(range))continue;const inferred=inferLocation(context,source);const description=context.slice(0,300);const event=makeEvent({name,source,startDate:range.startDate,endDate:range.endDate,town:inferred.town,region:inferred.region,eventUrl:href,description,offer:{ticketUrl:source.ticketProvider?href:null}});if(event)out.push(event);}return out;}
 function preference(event){let score=0;if(event.ticketUrl)score+=6;if(event.venue)score+=2;if(event.summary&&!/Check the source/i.test(event.summary))score+=1;if(event.eventUrl!==event.sourceUrl)score+=2;if(event.town&&event.town!=='Tasmania')score+=1;return score;}
 function dedupe(items){const out=[];for(const event of items){const name=norm(event.name);let index=-1;for(let i=0;i<out.length;i++){const other=out[i];if(other.startDate!==event.startDate)continue;const on=norm(other.name);if(name===on||(name.length>=9&&on.length>=9&&(name.includes(on)||on.includes(name)))){index=i;break;}}if(index<0)out.push(event);else if(preference(event)>preference(out[index]))out[index]={...out[index],...event};}return out;}
 
 const previous=JSON.parse(await fs.readFile(FILE,'utf8')).filter((event)=>event.status==='active'&&event.endDate>=TODAY);
 const found=[];
-for(const source of SOURCES){try{const{html}=await fetchHtml(source.url);const structured=structuredEvents(html,source);const anchors=source.structuredOnly?[]:anchorEvents(html,source);const events=dedupe([...structured,...anchors]);found.push(...events);console.log(`${source.name}: ${events.length} high-confidence event(s) (${structured.length} structured, ${anchors.length} linked).`);}catch(error){console.warn(`${source.name}: skipped (${error.message}).`);}}
+for(const source of SOURCES){try{const{html}=await fetchHtml(source.url);const structured=structuredEvents(html,source);const anchors=source.regionalCards?regionalListingEvents(html,source):(source.structuredOnly?[]:anchorEvents(html,source));const events=dedupe([...structured,...anchors]);found.push(...events);console.log(`${source.name}: ${events.length} high-confidence event(s) (${structured.length} structured, ${anchors.length} linked).`);}catch(error){console.warn(`${source.name}: skipped (${error.message}).`);}}
 const merged=dedupe([...previous,...found]).sort((a,b)=>a.startDate.localeCompare(b.startDate)||a.name.localeCompare(b.name));
 await fs.writeFile(FILE,`${JSON.stringify(merged,null,2)}\n`);
 console.log(`Public event sources: ${found.length} discoveries merged; ${merged.length} active events total.`);
