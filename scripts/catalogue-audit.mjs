@@ -18,6 +18,8 @@ const today=tasDate();
 const places=JSON.parse(await fs.readFile(PLACES,'utf8'));
 const events=JSON.parse(await fs.readFile(EVENTS,'utf8'));
 const publicPlaces=places.filter((p)=>p.status==='active'&&p.visibility!=='suppressed');
+const foodPlaces=publicPlaces.filter(p=>(p.categories||[]).includes('Food & Drink'));
+const foodKinds=['Restaurant','Café','Takeaway','Bakery','Pub Food','Food Van','Desserts','Mobile Vendor','Local Produce'];
 const activeEvents=events.filter((e)=>e.status==='active'&&e.endDate>=today);
 const imageCounts=publicPlaces.map(mediaCount);
 const totalLicensedImages=imageCounts.reduce((sum,count)=>sum+count,0);
@@ -66,7 +68,23 @@ const audit={
     regions:countBy(publicPlaces,(p)=>p.region),
     towns:Object.keys(countBy(publicPlaces,(p)=>p.town)).length,
     categories:countBy(publicPlaces,(p)=>(p.categories||[])[0]),
-    categoryMembership
+    categoryMembership,
+    foodDiscovery:{
+      listings:foodPlaces.length,
+      types:Object.fromEntries(foodKinds.map(kind=>[kind,foodPlaces.filter(p=>(p.categories||[]).includes(kind)).length])),
+      regions:Object.fromEntries(allRegions.map(region=>[region,foodPlaces.filter(p=>p.region===region).length])),
+      missingRealPhoto:foodPlaces.filter(p=>!p.image||p.image.isFallback).length,
+      media:{
+        realHeroCoverage:coverage(foodPlaces,p=>p.image&&!p.image.isFallback),
+        twoPlusImages:coverage(foodPlaces,p=>mediaCount(p)>=2)
+      },
+      details:{
+        website:coverage(foodPlaces,p=>Boolean(p.website)),
+        openingHours:coverage(foodPlaces,p=>Boolean(p.openingHours)),
+        address:coverage(foodPlaces,p=>Boolean(p.address))
+      },
+      sourceTypes:countBy(foodPlaces,p=>p.sourceType)
+    }
   },
   events:{
     active:activeEvents.length,
@@ -88,3 +106,5 @@ console.log(`Place source mix: ${JSON.stringify(audit.places.sourceTypes)}.`);
 
 console.log(`Event regional gaps: ${audit.events.regionsWithNoEvents.join(', ')||'none'}; ticket links with stale/absent check dates: ${ticketStale.length}.`);
 console.log(`History category membership (any position): ${categoryMembership.History||0}; first-category count: ${audit.places.categories.History||0}.`);
+
+console.log(`Food discovery audit: ${audit.places.foodDiscovery.listings} listings; ${audit.places.foodDiscovery.media.realHeroCoverage.percent}% photographed; ${audit.places.foodDiscovery.missingRealPhoto} still using category artwork; ${JSON.stringify(audit.places.foodDiscovery.types)}.`);
