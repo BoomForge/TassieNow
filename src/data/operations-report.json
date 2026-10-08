@@ -1,9 +1,98 @@
 {
-  "generatedAt": null,
-  "source": "Not yet checked by an actual GitHub Actions operations-monitor run",
+  "generatedAt": "2026-10-08T11:05:47.317Z",
+  "source": "Observed GitHub Actions and HTTP requests",
+  "workflows": [
+    {
+      "name": "discover.yml",
+      "status": "ok",
+      "lastScheduled": "2026-10-05T23:10:20Z",
+      "lastResult": "pending",
+      "lastRunAt": "2026-10-08T11:05:25Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37767766528"
+    },
+    {
+      "name": "events.yml",
+      "status": "ok",
+      "lastScheduled": "2026-10-08T05:54:54Z",
+      "lastResult": "success",
+      "lastRunAt": "2026-10-08T10:11:26Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37761826151"
+    },
+    {
+      "name": "catalogue-quality.yml",
+      "status": "ok",
+      "lastScheduled": "2026-10-07T23:20:18Z",
+      "lastResult": "in_progress",
+      "lastRunAt": "2026-10-08T11:05:25Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37767766476"
+    },
+    {
+      "name": "images.yml",
+      "status": "ok",
+      "lastScheduled": "2026-10-08T00:15:56Z",
+      "lastResult": "success",
+      "lastRunAt": "2026-10-08T00:15:56Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37706842367"
+    },
+    {
+      "name": "quality.yml",
+      "status": "ok",
+      "lastScheduled": "2026-10-07T23:37:08Z",
+      "lastResult": "in_progress",
+      "lastRunAt": "2026-10-08T11:05:25Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37767766398"
+    },
+    {
+      "name": "automation-health.yml",
+      "status": "ok",
+      "lastScheduled": "2026-10-08T07:10:57Z",
+      "lastResult": "success",
+      "lastRunAt": "2026-10-08T07:10:57Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37741872331"
+    },
+    {
+      "name": "indexnow.yml",
+      "status": "ok",
+      "lastScheduled": "2026-10-08T00:23:43Z",
+      "lastResult": "in_progress",
+      "lastRunAt": "2026-10-08T11:05:25Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37767766366"
+    }
+  ],
   "site": {
-    "status": "unknown"
+    "status": "ok",
+    "checks": [
+      {
+        "name": "Homepage",
+        "path": "/",
+        "status": "ok",
+        "httpCode": 200
+      },
+      {
+        "name": "Food discovery",
+        "path": "/food/",
+        "status": "ok",
+        "httpCode": 200
+      },
+      {
+        "name": "Service status",
+        "path": "/status/",
+        "status": "ok",
+        "httpCode": 200
+      },
+      {
+        "name": "Robots",
+        "path": "/robots.txt",
+        "status": "ok",
+        "httpCode": 200
+      },
+      {
+        "name": "Sitemap",
+        "path": "/sitemap.xml",
+        "status": "ok",
+        "httpCode": 200
+      }
+    ]
   },
-  "workflows": [],
   "failures": []
 }
