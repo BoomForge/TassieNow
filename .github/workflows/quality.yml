@@ -39,6 +39,9 @@ jobs:
           node --check scripts/discover/wikidata-import.mjs
           node --check scripts/discover/parks-tasmania.mjs
           node --check scripts/merge-previous-catalogue.mjs
+          node --check scripts/discover/lib/preserve-media.mjs
+          node --check scripts/restore-licensed-images.mjs
+          node --check scripts/check-media-regression.mjs
           node --check scripts/enrich-details.mjs
           node --check scripts/link-wikidata.mjs
           node --check scripts/enrich-wikidata-metadata.mjs
