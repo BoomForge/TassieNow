@@ -6,6 +6,7 @@ const USER_AGENT = 'TassieNow/1.2 (+https://tassienow.pages.dev)';
 const SOURCES = [
   { name: 'East Coast Tasmania', url: 'https://eastcoasttasmania.com/events/', town: 'St Helens', region: 'East Coast', regionalCards: true, structuredOnly: true },
   { name: 'King Island Tourism', url: 'https://kingisland.org.au/events/', town: 'Currie', region: 'King Island', regionalCards: true, structuredOnly: true },
+  { name: 'Flinders Island Show Society', url: 'https://events.humanitix.com/flinders-island-show', town: 'Whitemark', region: 'Flinders Island', structuredOnly: true, ticketProvider: 'Humanitix' },
   { name: 'West Coast Tasmania', url: 'https://westcoasttas.com.au/listings/major-events', town: 'Queenstown', region: 'West Coast', regionalCards: true, structuredOnly: true },
   { name: 'Discover Tasmania', url: 'https://www.discovertasmania.com.au/whats-on/', town: 'Tasmania', region: 'Central Tasmania', statewide: true },
   { name: 'Humanitix Hobart', url: 'https://humanitix.com/events/au--hobart--7000', town: 'Hobart', region: 'Hobart & South', ticketProvider: 'Humanitix' },
@@ -117,7 +118,23 @@ function dedupe(items){const out=[];for(const event of items){const name=norm(ev
 
 const previous=JSON.parse(await fs.readFile(FILE,'utf8')).filter((event)=>event.status==='active'&&event.endDate>=TODAY);
 const found=[];
-for(const source of SOURCES){try{const{html}=await fetchHtml(source.url);const structured=structuredEvents(html,source);const anchors=source.regionalCards?regionalListingEvents(html,source):(source.structuredOnly?[]:anchorEvents(html,source));const events=dedupe([...structured,...anchors]);found.push(...events);console.log(`${source.name}: ${events.length} high-confidence event(s) (${structured.length} structured, ${anchors.length} linked).`);}catch(error){console.warn(`${source.name}: skipped (${error.message}).`);}}
+for(const source of SOURCES){try{const{html}=await fetchHtml(source.url);const structured=structuredEvents(html,source);const anchors=source.regionalCards?regionalListingEvents(html,source):(source.structuredOnly?[]:anchorEvents(html,source));let events=dedupe([...structured,...anchors]);
+  // The show society's own ticketing page explicitly publishes 16 October
+  // 2026 at the Whitemark showground. Use this fallback only when a live
+  // successful organiser response corroborates all identifying details.
+  if(source.name==='Flinders Island Show Society'&&!events.length&&TODAY<='2026-10-16'){
+    const evidence=clean(html);
+    if(/Flinders Island Show/i.test(evidence)&&/Whitemark/i.test(evidence)&&
+      /(?:2026-10-16|16(?:th)?\s+(?:Oct|October)\s+2026|16\s+Oct\s*,?\s*2026)/i.test(evidence)){
+      const show=makeEvent({name:'91st Flinders Island Show',source,startDate:'2026-10-16',
+        endDate:'2026-10-16',town:'Whitemark',region:'Flinders Island',
+        venue:'Flinders Island Showground, 290 Palana Rd, Whitemark',
+        eventUrl:source.url,description:'Annual Flinders Island agricultural show. Check the organiser for tickets, opening hours and current conditions.',
+        offer:{ticketUrl:source.url}});
+      if(show)events=[show];
+    }
+  }
+  found.push(...events);console.log(`${source.name}: ${events.length} high-confidence event(s) (${structured.length} structured, ${anchors.length} linked).`);}catch(error){console.warn(`${source.name}: skipped (${error.message}).`);}}
 const merged=dedupe([...previous,...found]).sort((a,b)=>a.startDate.localeCompare(b.startDate)||a.name.localeCompare(b.name));
 await fs.writeFile(FILE,`${JSON.stringify(merged,null,2)}\n`);
 console.log(`Public event sources: ${found.length} discoveries merged; ${merged.length} active events total.`);

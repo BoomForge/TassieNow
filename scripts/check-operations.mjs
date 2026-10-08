@@ -10,6 +10,7 @@ const watched = [
   ['images.yml', 42], ['quality.yml', 42], ['automation-health.yml', 42],
   ['indexnow.yml', 200]
 ];
+const onceOnly = ['recover-images.yml', 'production-smoke.yml'];
 const report = {generatedAt:now.toISOString(),source:'Observed GitHub Actions and HTTP requests',workflows:[],site:{status:'unknown',checks:[]},failures:[]};
 const ageHours = (value) => value ? (now - Date.parse(value)) / 3600000 : Infinity;
 
@@ -23,6 +24,20 @@ async function api(path) {
   return response.json();
 }
 
+for(const name of onceOnly){
+  const entry={name,status:'unknown',lastScheduled:null,lastResult:null,lastRunAt:null,url:null};
+  try {
+    const data=await api('/actions/workflows/'+name+'/runs?per_page=2');
+    const latest=data.workflow_runs?.[0];
+    entry.lastRunAt=latest?.created_at||null;
+    entry.lastResult=latest?.conclusion||latest?.status||null;
+    entry.url=latest?.html_url||null;
+    entry.status=!latest?'not-run':latest.status!=='completed'?'pending':
+      latest.conclusion==='success'?'ok':latest.conclusion==='cancelled'?'cancelled':'failed';
+  }catch(error){entry.error=String(error.message);}
+  if(entry.status!=='ok') report.failures.push({component:name,status:entry.status,action:entry.url||'Inspect image recovery workflow'});
+  report.workflows.push(entry);
+}
 await Promise.all(watched.map(async ([name,thresholdHours])=>{
   const entry={name,status:'unknown',lastScheduled:null,lastResult:null,lastRunAt:null,url:null};
   try{
@@ -68,7 +83,10 @@ await Promise.all(checks.map(async ([name,path,marker])=>{
 }));
 report.site.status=report.site.checks.every(c=>c.status==='ok')?'ok':'failed';
 report.site.checks.sort((a,b)=>checks.findIndex(c=>c[0]===a.name)-checks.findIndex(c=>c[0]===b.name));
-report.workflows.sort((a,b)=>watched.findIndex(c=>c[0]===a.name)-watched.findIndex(c=>c[0]===b.name));
+report.workflows.sort((a,b)=>{
+  const order=watched.map(x=>x[0]).concat(onceOnly);
+  return order.indexOf(a.name)-order.indexOf(b.name);
+});
 await fs.writeFile(out,JSON.stringify(report,null,2)+'\n');
 if(process.env.GITHUB_STEP_SUMMARY) {
   const lines=['## TassieNow operations report','Observed: '+report.generatedAt,
