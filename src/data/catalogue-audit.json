@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08",
+  "generatedAt": "2026-10-09",
   "places": {
     "total": 1141,
     "public": 1128,
@@ -138,17 +138,17 @@
     }
   },
   "events": {
-    "active": 164,
+    "active": 155,
     "ticketCoverage": {
-      "count": 64,
-      "percent": 39
+      "count": 56,
+      "percent": 36.1
     },
     "priceCoverage": {
-      "count": 28,
-      "percent": 17.1
+      "count": 33,
+      "percent": 21.3
     },
     "providers": {
-      "Humanitix": 37,
+      "Humanitix": 29,
       "Ticketek": 22,
       "Eventbrite": 3,
       "Ticketmaster": 1,
@@ -159,9 +159,9 @@
       "Burnie City Council": 23,
       "Huon Valley Council": 17,
       "Theatre North Launceston": 17,
-      "Devonport City Council": 14,
-      "Humanitix Hobart": 14,
-      "Humanitix Launceston": 13,
+      "Devonport City Council": 12,
+      "Humanitix Hobart": 10,
+      "Humanitix Launceston": 10,
       "East Coast Tasmania": 9,
       "Theatre Royal Hobart": 9,
       "City of Clarence": 8,
@@ -172,9 +172,9 @@
       "Flinders Island Show Society": 1
     },
     "regions": {
-      "Hobart & South": 83,
-      "Launceston & North": 32,
-      "North West": 37,
+      "Hobart & South": 79,
+      "Launceston & North": 29,
+      "North West": 35,
       "East Coast": 9,
       "West Coast": 0,
       "Central Tasmania": 0,
@@ -186,16 +186,16 @@
       "Central Tasmania"
     ],
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 19
+      "missingOrOlderThan30Days": 15
     },
     "sourceRegionalMix": {
       "Hobart & South / MyState Bank Arena": 24,
       "North West / Burnie City Council": 23,
       "Hobart & South / Huon Valley Council": 17,
       "Launceston & North / Theatre North Launceston": 17,
-      "Hobart & South / Humanitix Hobart": 14,
-      "North West / Devonport City Council": 14,
-      "Launceston & North / Humanitix Launceston": 13,
+      "North West / Devonport City Council": 12,
+      "Hobart & South / Humanitix Hobart": 10,
+      "Launceston & North / Humanitix Launceston": 10,
       "East Coast / East Coast Tasmania": 9,
       "Hobart & South / Theatre Royal Hobart": 9,
       "Hobart & South / City of Clarence": 8,
