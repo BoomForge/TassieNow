@@ -10,7 +10,7 @@ const watched = [
   ['images.yml', 42], ['quality.yml', 42], ['automation-health.yml', 42],
   ['indexnow.yml', 200]
 ];
-const onceOnly = ['recover-images.yml'];
+const onceOnly = ['recover-images.yml', 'production-smoke.yml'];
 const report = {generatedAt:now.toISOString(),source:'Observed GitHub Actions and HTTP requests',workflows:[],site:{status:'unknown',checks:[]},failures:[]};
 const ageHours = (value) => value ? (now - Date.parse(value)) / 3600000 : Infinity;
 
