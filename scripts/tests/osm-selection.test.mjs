@@ -44,3 +44,13 @@ test('region balancing does not starve small regions',()=>{
     place('West Coffee','node/w1',-42.0,145.1,'Food & Drink','West Coast')];
   assert.ok(balancedByRegion(a,3).some(p=>p.region==='West Coast'));
 });
+
+test('new same-name chain branches never steal an existing published venue slug',()=>{
+  const old=place('Harbour Cafe','node/100',-42.9,147.3);
+  old.image={url:'https://upload.wikimedia.org/test.jpg',isFallback:false};
+  const newLocation=place('Harbour Cafe','node/200',-41.44,147.14,'Food & Drink','Launceston & North');
+  newLocation._score=100;
+  const result=selectOsmCandidates([newLocation,old].map(p=>({...p})),[],new Map([[old.sourceId,old]]),opts);
+  assert.equal(result.selected.find(p=>p.sourceId===old.sourceId).slug,'harbour-cafe');
+  assert.notEqual(result.selected.find(p=>p.sourceId===newLocation.sourceId).slug,'harbour-cafe');
+});
