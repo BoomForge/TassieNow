@@ -13,6 +13,25 @@ function kilometres(a,b) {
   const val=Math.sin(dy/2)**2+Math.cos(rad(a.latitude))*Math.cos(rad(b.latitude))*Math.sin(dx/2)**2;
   return 6371*2*Math.atan2(Math.sqrt(val),Math.sqrt(1-val));
 }
+// Only turn OSM image tags into photographs after fetching exact Commons
+// metadata. Arbitrary restaurant website URLs are not reuse permission.
+export function commonsFileFromOsmImage(value) {
+  const raw=String(value||'').trim();
+  if(!raw||/[;|]/.test(raw))return null;
+  if(/^File:/i.test(raw))return raw.replace(/^File:/i,'').trim()||null;
+  try {
+    const url=new URL(raw);
+    if(url.hostname==='commons.wikimedia.org'){
+      const path=decodeURIComponent(url.pathname);
+      if(/^\/wiki\/File:/i.test(path))return path.replace(/^\/wiki\/File:/i,'').replaceAll('_',' ');
+    }
+    if(url.hostname==='upload.wikimedia.org'&&url.pathname.startsWith('/wikipedia/commons/')){
+      const parts=decodeURIComponent(url.pathname).split('/');
+      return (parts.includes('thumb')?parts.at(-2):parts.at(-1))?.replaceAll('_',' ')||null;
+    }
+  }catch{/* invalid or non-Commons image tag */}
+  return null;
+}
 export function balancedByRegion(records, limit) {
   const buckets=new Map();
   for(const record of [...records].sort((a,b)=>(b._score||0)-(a._score||0)||a.name.localeCompare(b.name))) {
@@ -30,6 +49,9 @@ export function balancedByRegion(records, limit) {
 }
 export function selectOsmCandidates(candidates,curated,previousOsm,{retainVerifiedMedia,verifiedMedia},{coreLimit=520,foodLimit=1250}={}) {
   const byName=new Map(),usedSlugs=new Set(curated.map(place=>place.slug).filter(Boolean));
+  // Existing published URLs are owned by their exact OSM source identity.
+  // A newly discovered same-name chain outlet cannot claim a prior outlet's slug.
+  const oldSlugOwner=new Map([...previousOsm].filter(([,place])=>place.slug).map(([id,place])=>[place.slug,id]));
   for(const place of curated) {
     const key=normalized(place.name);
     if(!key)continue;
@@ -53,8 +75,8 @@ export function selectOsmCandidates(candidates,curated,previousOsm,{retainVerifi
       if(verifiedMedia(place.image)){place._score=(place._score||0)+24;preservedImages++;}
     }
     let slug=old?.slug||place.slug||slugify(place.name);
-    if(usedSlugs.has(slug)) slug=slugify(`${place.name}-${place.town}`);
-    if(usedSlugs.has(slug)) slug=`${slugify(place.name).slice(0,50)}-osm-${String(place.sourceId).replace(/[^a-z0-9]+/gi,'-').toLowerCase()}`;
+    if(usedSlugs.has(slug) || (oldSlugOwner.has(slug)&&oldSlugOwner.get(slug)!==place.sourceId)) slug=slugify(`${place.name}-${place.town}`);
+    if(usedSlugs.has(slug) || (oldSlugOwner.has(slug)&&oldSlugOwner.get(slug)!==place.sourceId)) slug=`${slugify(place.name).slice(0,50)}-osm-${String(place.sourceId).replace(/[^a-z0-9]+/gi,'-').toLowerCase()}`;
     place.slug=slug;
     usedSlugs.add(slug);
     if(!byName.has(key))byName.set(key,[]);

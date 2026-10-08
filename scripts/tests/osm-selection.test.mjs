@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {balancedByRegion,selectOsmCandidates} from '../discover/lib/osm-selection.mjs';
+import {balancedByRegion,selectOsmCandidates,commonsFileFromOsmImage} from '../discover/lib/osm-selection.mjs';
 
 const place=(name,sourceId,latitude,longitude,category='Food & Drink',region='Hobart & South')=>({name,slug:name.toLowerCase().replaceAll(' ','-'),sourceId,latitude,longitude,town:'Hobart',region,categories:[category],_score:10});
 const opts={retainVerifiedMedia:(next,old)=>{if(old.image)next.image=old.image;},verifiedMedia:image=>Boolean(image&&!image.isFallback)};
@@ -43,4 +43,21 @@ test('region balancing does not starve small regions',()=>{
   const a=[...Array.from({length:10},(_,i)=>place('South '+i,'node/s'+i,-42.5,147.2,'Food & Drink')),
     place('West Coffee','node/w1',-42.0,145.1,'Food & Drink','West Coast')];
   assert.ok(balancedByRegion(a,3).some(p=>p.region==='West Coast'));
+});
+
+test('new same-name chain branches never steal an existing published venue slug',()=>{
+  const old=place('Harbour Cafe','node/100',-42.9,147.3);
+  old.image={url:'https://upload.wikimedia.org/test.jpg',isFallback:false};
+  const newLocation=place('Harbour Cafe','node/200',-41.44,147.14,'Food & Drink','Launceston & North');
+  newLocation._score=100;
+  const result=selectOsmCandidates([newLocation,old].map(p=>({...p})),[],new Map([[old.sourceId,old]]),opts);
+  assert.equal(result.selected.find(p=>p.sourceId===old.sourceId).slug,'harbour-cafe');
+  assert.notEqual(result.selected.find(p=>p.sourceId===newLocation.sourceId).slug,'harbour-cafe');
+});
+
+test('only Commons-tagged photos enter licensed image lookup',()=>{
+  assert.equal(commonsFileFromOsmImage('File:Launceston Cafe.jpg'),'Launceston Cafe.jpg');
+  assert.equal(commonsFileFromOsmImage('https://commons.wikimedia.org/wiki/File:Cafe_Dining.jpg'),'Cafe Dining.jpg');
+  assert.equal(commonsFileFromOsmImage('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Cafe_photo.jpg/800px-Cafe_photo.jpg'),'Cafe photo.jpg');
+  assert.equal(commonsFileFromOsmImage('https://restaurant.example.com/hero.jpg'),null);
 });
