@@ -193,5 +193,22 @@ const discoveryLinks = [
         primaryNav?.querySelectorAll('details[open]').forEach((detail) => detail.removeAttribute('open'));
       });
     </script>
+    <script>
+      const noTracking = navigator.doNotTrack === '1' || navigator.globalPrivacyControl === true;
+      const metricPath = window.location.pathname.replace(/\/+$/, '') + (window.location.pathname === '/' ? '/' : '/');
+      function recordMetric(type, detail = '') {
+        if (noTracking || !navigator.sendBeacon) return;
+        navigator.sendBeacon('/api/metrics', JSON.stringify({ type, path: metricPath, detail }));
+      }
+      recordMetric('view');
+      document.addEventListener('click', event => {
+        const link = event.target instanceof Element ? event.target.closest('a[data-track-outbound]') : null;
+        if (link) recordMetric('outbound', link.dataset.trackOutbound || 'official');
+      });
+      document.addEventListener('change', event => {
+        const field = event.target instanceof Element ? event.target.closest('[data-track-filter]') : null;
+        if (field) recordMetric(field instanceof HTMLInputElement && field.type === 'search' ? 'search' : 'filter', field.dataset.trackFilter || 'category');
+      });
+    </script>
   </body>
 </html>
