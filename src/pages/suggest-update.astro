@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const turnstileKey=import.meta.env.PUBLIC_TURNSTILE_SITE_KEY||'';
+---
+<BaseLayout title="Suggest a listing update | TassieNow" description="Help keep a free TassieNow listing accurate. Suggestions are reviewed before publication.">
+ {turnstileKey && <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>}
+ <section class="content-page correction-page">
+  <p class="eyebrow">Keep Tasmania useful</p>
+  <h1>Suggest a listing update</h1>
+  <p>Spotted an incorrect website, opening time, location or photo? Tell us what needs changing. Corrections are free and are reviewed before publication. You do not need to buy a listing.</p>
+  <p id="correction-intro" aria-live="polite">For the most accurate routing, start from the place's detail page.</p>
+  <form id="correction-form">
+   <input name="place_slug" type="hidden" required />
+   <label>Place or business name <input name="place_name" required maxlength="180" autocomplete="organization" /></label>
+   <label>Your name <input name="requester_name" required maxlength="100" autocomplete="name" /></label>
+   <label>Your email <input name="requester_email" type="email" required maxlength="180" autocomplete="email" /></label>
+   <label>Your relationship to this listing <select name="relationship" required><option value="visitor">Visitor / community member</option><option value="owner">Business owner</option><option value="employee">Staff member</option><option value="organiser">Event / venue organiser</option></select></label>
+   <label>What needs changing? <select name="field" required><option value="opening-hours">Opening hours</option><option value="website">Website</option><option value="phone">Phone</option><option value="email">Contact email</option><option value="address">Address</option><option value="location">Map location</option><option value="description">Listing details</option><option value="image">Images or attribution</option><option value="closure">Closure or moved location</option><option value="other">Other correction</option></select></label>
+   <label>Correct information <textarea name="suggested_value" required rows="5" minlength="3" maxlength="1500" placeholder="Provide the correction, including days/hours or new details if applicable."></textarea></label>
+   <label>Reason or context (optional) <textarea name="reason" rows="3" maxlength="1000"></textarea></label>
+   <label>Official evidence URL (optional) <input name="source_url" type="url" placeholder="https://" /></label>
+   <label class="hp" aria-hidden="true">Company URL<input name="company_url" autocomplete="off" tabindex="-1" /></label>
+   {turnstileKey && <div class="cf-turnstile" data-sitekey={turnstileKey} data-theme="auto"></div>}
+   <button class="primary-button" type="submit">Submit correction for review</button>
+   <p id="correction-status" role="status" aria-live="polite"></p>
+  </form>
+  <p><a href="/privacy/">How TassieNow handles submitted information</a></p>
+ </section>
+ <script>
+  const form=document.querySelector('#correction-form');
+  const status=document.querySelector('#correction-status');
+  const params=new URLSearchParams(window.location.search);
+  const slug=params.get('place')||'';
+  const name=params.get('name')||'';
+  form.elements.namedItem('place_slug').value=slug;
+  form.elements.namedItem('place_name').value=name;
+  if(slug)document.querySelector('#correction-intro').textContent='You are suggesting an update to '+(name||slug)+'. Your change will not appear publicly until reviewed.';
+  form.addEventListener('submit',async e=>{
+    e.preventDefault();
+    if(!slug){status.textContent='Please open the place listing and use its Suggest an update link.';return;}
+    const button=form.querySelector('button[type=submit]');
+    button.disabled=true;status.textContent='Submitting correction…';
+    try{
+      const response=await fetch('/api/listing-corrections',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(form).entries()))});
+      const result=await response.json();
+      if(!response.ok)throw new Error(result.error||'Submission unavailable');
+      status.textContent=result.message||'Submitted for review.';
+      form.reset();window.turnstile?.reset();
+      form.elements.namedItem('place_slug').value=slug;
+      form.elements.namedItem('place_name').value=name;
+    }catch(error){status.textContent=error.message||'Could not send correction. Please try again.';window.turnstile?.reset();}
+    finally{button.disabled=false;}
+  });
+ </script>
+ <style>
+  .correction-page{max-width:780px}.correction-page h1{font-size:clamp(2.3rem,6vw,4rem);line-height:1.1}.correction-page form{display:grid;gap:1rem;margin:2rem 0}.correction-page label{display:grid;gap:.4rem;font-weight:700}.correction-page :is(input,select,textarea){max-width:100%;width:100%;padding:.8rem;border:1px solid #b5c7c3;border-radius:.6rem;background:white;color:var(--ink);font:inherit}.correction-page textarea{resize:vertical}.correction-page .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}.correction-page button{justify-self:start}.correction-page p{overflow-wrap:anywhere}
+ </style>
+</BaseLayout>
