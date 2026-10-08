@@ -1,0 +1,30 @@
+name: Verify live visitor routes
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/production-smoke.mjs'
+      - '.github/workflows/production-smoke.yml'
+  schedule:
+    - cron: '34 3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Probe public route coverage, error paths, security headers and private correction queue
+        run: node scripts/production-smoke.mjs
+      - name: Retain measured HTTP results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-http-smoke
+          path: reports/production-smoke.json
+          retention-days: 30
