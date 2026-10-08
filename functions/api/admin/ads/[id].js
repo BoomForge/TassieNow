@@ -1,7 +1,7 @@
 import { requireAdmin, sameOrigin } from '../../../_lib/auth.js';
 import { db, cleanText, httpsUrl, jsonError } from '../../../_lib/db.js';
 
-const PLACEMENTS = new Set(['homepage-top', 'homepage-inline', 'site-footer']);
+const PLACEMENTS = new Set(['homepage-top', 'homepage-inline', 'content-inline', 'site-footer']);
 const STATUSES = new Set(['draft', 'scheduled', 'paused']);
 
 function idOf(context) {
