@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T11:19:09.870Z",
+  "generatedAt": "2026-10-08T19:25:24.373Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
@@ -12,11 +12,11 @@
     },
     {
       "name": "events.yml",
-      "status": "latest-run-cancelled",
-      "lastScheduled": "2026-10-08T05:54:54Z",
-      "lastResult": "cancelled",
-      "lastRunAt": "2026-10-08T11:12:51Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37768579384"
+      "status": "ok",
+      "lastScheduled": "2026-10-08T13:20:33Z",
+      "lastResult": "success",
+      "lastRunAt": "2026-10-08T13:20:33Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37783590671"
     },
     {
       "name": "catalogue-quality.yml",
@@ -38,33 +38,33 @@
       "name": "quality.yml",
       "status": "ok",
       "lastScheduled": "2026-10-07T23:37:08Z",
-      "lastResult": "in_progress",
-      "lastRunAt": "2026-10-08T11:18:40Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37769199429"
+      "lastResult": "success",
+      "lastRunAt": "2026-10-08T11:24:25Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37769825717"
     },
     {
       "name": "automation-health.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-08T07:10:57Z",
+      "lastScheduled": "2026-10-08T19:12:36Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-08T07:10:57Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37741872331"
+      "lastRunAt": "2026-10-08T19:12:36Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37830218720"
     },
     {
       "name": "indexnow.yml",
       "status": "ok",
       "lastScheduled": "2026-10-08T00:23:43Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-08T11:05:25Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37767766366"
+      "lastRunAt": "2026-10-08T11:20:16Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37769369814"
     },
     {
       "name": "recover-images.yml",
-      "status": "cancelled",
+      "status": "ok",
       "lastScheduled": null,
-      "lastResult": "cancelled",
-      "lastRunAt": "2026-10-08T11:05:25Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37767766396"
+      "lastResult": "success",
+      "lastRunAt": "2026-10-08T11:24:25Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37769825775"
     },
     {
       "name": "production-smoke.yml",
@@ -112,11 +112,6 @@
   },
   "failures": [
     {
-      "component": "recover-images.yml",
-      "status": "cancelled",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/37767766396"
-    },
-    {
       "component": "production-smoke.yml",
       "status": "failed",
       "action": "https://github.com/BoomForge/TassieNow/actions/runs/37768579661"
@@ -125,11 +120,6 @@
       "component": "discover.yml",
       "status": "latest-run-cancelled",
       "action": "https://github.com/BoomForge/TassieNow/actions/runs/37768579272"
-    },
-    {
-      "component": "events.yml",
-      "status": "latest-run-cancelled",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/37768579384"
     }
   ]
 }
