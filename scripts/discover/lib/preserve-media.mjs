@@ -14,7 +14,8 @@ const imageKey = (image) => image?.sourceUrl || image?.url || '';
 export function retainVerifiedMedia(place, previous) {
   if (!previous || previous.sourceType !== place.sourceType ||
       !place.sourceId || previous.sourceId !== place.sourceId) return place;
-  const freshHero = verifiedMedia(place.image);
+  // Never override existing real/manual imagery, even if older metadata is incomplete.
+  const freshHero = Boolean(place.image && !place.image.isFallback);
   if (!freshHero && verifiedMedia(previous.image)) {
     place.image = structuredClone(previous.image);
   }
