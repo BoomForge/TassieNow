@@ -24,6 +24,8 @@ jobs:
           node-version: '22'
           cache: npm
           cache-dependency-path: package.json
+      - name: Save pre-enrichment photo baseline
+        run: cp src/data/places.json /tmp/tassienow-places-before-images.json
       - name: Upgrade exact Wikidata listing images
         run: node scripts/enrich-wikidata-images.mjs
       - name: Upgrade fallback images
@@ -36,6 +38,8 @@ jobs:
         run: node scripts/prune-expired-events.mjs
       - name: Generate catalogue coverage audit
         run: node scripts/catalogue-audit.mjs
+      - name: Guard against large real-photo regressions
+        run: node scripts/check-media-regression.mjs /tmp/tassienow-places-before-images.json
       - name: Validate catalogue
         run: node scripts/validate-data.mjs
       - name: Install site dependencies
