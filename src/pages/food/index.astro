@@ -15,7 +15,7 @@ function classify(place) {
   if (/\bcaf[eé]\b|coffee shop|coffee house/.test(text)) matches.push('cafe');
   if (/restaurant|bistro|dining|eatery/.test(text)) matches.push('restaurant');
   if (/takeaway|take-away|fish and chips|pizza shop/.test(text)) matches.push('takeaway');
-  if (/food truck|food van|mobile food|street food|food trailer/.test(text)) matches.push('food-van');
+  if (/food truck|food van|mobile food|mobile vendor|street food|food trailer/.test(text)) matches.push('food-van');
   if (/bakery|bakeries|patisserie|bakehouse/.test(text)) matches.push('bakery');
   if (/pub food|pub meals|gastropub|tavern|hotel restaurant/.test(text)) matches.push('pub-food');
   if (/local produce|farm.?gate|farm shop|produce|farmers.? market|food market/.test(text)) matches.push('produce');
