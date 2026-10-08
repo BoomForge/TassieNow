@@ -140,29 +140,29 @@
   "events": {
     "active": 162,
     "ticketCoverage": {
-      "count": 59,
-      "percent": 36.4
+      "count": 62,
+      "percent": 38.3
     },
     "priceCoverage": {
-      "count": 32,
-      "percent": 19.8
+      "count": 22,
+      "percent": 13.6
     },
     "providers": {
-      "Humanitix": 32,
+      "Humanitix": 35,
       "Ticketek": 22,
       "Eventbrite": 3,
       "Ticketmaster": 1,
       "TryBooking": 1
     },
     "sources": {
-      "Burnie City Council": 26,
       "MyState Bank Arena": 24,
+      "Burnie City Council": 23,
       "Huon Valley Council": 17,
       "Theatre North Launceston": 17,
       "Devonport City Council": 14,
       "Humanitix Hobart": 14,
+      "Humanitix Launceston": 12,
       "East Coast Tasmania": 9,
-      "Humanitix Launceston": 9,
       "Theatre Royal Hobart": 9,
       "City of Clarence": 8,
       "City of Hobart": 7,
@@ -172,8 +172,8 @@
     },
     "regions": {
       "Hobart & South": 83,
-      "Launceston & North": 28,
-      "North West": 40,
+      "Launceston & North": 31,
+      "North West": 37,
       "East Coast": 9,
       "West Coast": 0,
       "Central Tasmania": 0,
@@ -186,18 +186,18 @@
       "Flinders Island"
     ],
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 16
+      "missingOrOlderThan30Days": 18
     },
     "sourceRegionalMix": {
-      "North West / Burnie City Council": 26,
       "Hobart & South / MyState Bank Arena": 24,
+      "North West / Burnie City Council": 23,
       "Hobart & South / Huon Valley Council": 17,
       "Launceston & North / Theatre North Launceston": 17,
       "Hobart & South / Humanitix Hobart": 14,
       "North West / Devonport City Council": 14,
+      "Launceston & North / Humanitix Launceston": 12,
       "East Coast / East Coast Tasmania": 9,
       "Hobart & South / Theatre Royal Hobart": 9,
-      "Launceston & North / Humanitix Launceston": 9,
       "Hobart & South / City of Clarence": 8,
       "Hobart & South / City of Hobart": 7,
       "Hobart & South / Glenorchy City Council": 4,
