@@ -251,28 +251,6 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Phascolarctos_cinereus_Bonorong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Bonorong Wildlife Sanctuary, Tasmania",
-        "attribution": "JJ Harrison ( https://www.jjharrison.com.au/ )",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phascolarctos_cinereus_Bonorong.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Tasmanian_devil_yawning_in_a_pool.jpg/1920px-Tasmanian_devil_yawning_in_a_pool.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bonorong Wildlife Sanctuary, Tasmania",
-        "attribution": "Canley",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasmanian_devil_yawning_in_a_pool.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ],
     "officialSource": {
@@ -609,28 +587,6 @@
         "license": "CC BY 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Friendly_Beaches,_Tasmania_(33929703765).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/The_Friendly_Beaches%2C_Tasmania_%2833908345991%29.jpg/1920px-The_Friendly_Beaches%2C_Tasmania_%2833908345991%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Friendly Beaches, Tasmania",
-        "attribution": "Steven Penton from Bakers Beach, Tasmania Australia",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Friendly_Beaches,_Tasmania_(33908345991).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/The_Friendly_Beaches%2C_Tasmania._%2833236205943%29.jpg/1920px-The_Friendly_Beaches%2C_Tasmania._%2833236205943%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Friendly Beaches, Tasmania",
-        "attribution": "Steven Penton from Bakers Beach, Tasmania Australia",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Friendly_Beaches,_Tasmania._(33236205943).jpg",
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
@@ -1192,28 +1148,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/SalamancaMarkets.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Salamanca Market, Tasmania",
-        "attribution": "Frances76 at en.wikipedia",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SalamancaMarkets.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Salamanca_Market_May.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Salamanca Market, Tasmania",
-        "attribution": "Nick carson at English Wikipedia",
-        "license": "CC BY 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salamanca_Market_May.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ],
     "officialSourceCheck": {
@@ -1420,12 +1354,12 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://www.qvmag.tas.gov.au/Visit/Getting-around",
+        "url": "https://www.qvmag.tas.gov.au/Planetarium/Session-times",
         "checkedAt": "2026-10-08"
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://www.qvmag.tas.gov.au/Visit/Venue-hire",
+        "url": "https://www.qvmag.tas.gov.au/Visit/Accessibility",
         "checkedAt": "2026-10-08"
       },
       "bookingUrl": {
@@ -1437,7 +1371,7 @@
     "phone": "0363233777",
     "schedule": {
       "summary": "Free entry, open 10am to 4pm daily",
-      "sourceUrl": "https://www.qvmag.tas.gov.au/Visit/Getting-around",
+      "sourceUrl": "https://www.qvmag.tas.gov.au/Planetarium/Session-times",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -1450,7 +1384,7 @@
       ],
       "startTime": "10:00",
       "endTime": "16:00",
-      "notes": "* Closed Good Friday and Christmas Day."
+      "notes": "The Planetarium is closed on public holidays."
     },
     "openingHours": "Mo-Su 10:00-16:00",
     "gallery": [
@@ -1516,17 +1450,6 @@
         "license": "CC BY-SA 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corkscrew_in_the_Park_(25832027210).jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Launceston_Art_Gallery_%2826038509611%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Queen Victoria Museum and Art Gallery, Tasmania",
-        "attribution": "Michael Coghlan from Adelaide, Australia",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Launceston_Art_Gallery_(26038509611).jpg",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -1629,7 +1552,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/richardsons-beach-honeymoon-bay-and-ranger-creek-camping",
+        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/freycinet-peninsula-circuit/freycinet-overnight-walker-camping",
         "checkedAt": "2026-10-08"
       },
       "openingHours": {
@@ -1646,7 +1569,7 @@
     "phone": "03 6256 7000",
     "schedule": {
       "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/richardsons-beach-honeymoon-bay-and-ranger-creek-camping",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/freycinet-peninsula-circuit/freycinet-overnight-walker-camping",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -1659,7 +1582,7 @@
       ],
       "startTime": "09:00",
       "endTime": "16:00",
-      "notes": "Gas and fuel stoves can be used except on days of Total Fire Ban."
+      "notes": "Gas and fuel stoves may be used except on days of Total Fire Ban, when no naked flames of any sort, including gas and fuel stoves, are allowed in the open."
     },
     "openingHours": "Mo-Su 09:00-16:00",
     "gallery": [
@@ -1727,28 +1650,6 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Freycinet_National_Park_-_Incipience_-_2805542616.jpg",
         "isFallback": false,
         "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Freycinet_Wineglass_Bay_And_Promise_Bay.jpg/1920px-Freycinet_Wineglass_Bay_And_Promise_Bay.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Freycinet National Park, Tasmania",
-        "attribution": "Bjørn Christian Tørrissen",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Freycinet_Wineglass_Bay_And_Promise_Bay.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikidata-p18",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Bennetts_Wallaby.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Freycinet National Park, Tasmania",
-        "attribution": "Wikimedia Commons contributor",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bennetts_Wallaby.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
         "confidence": "high"
       }
     ],
@@ -2045,28 +1946,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Dogwood_Mt_Field_NP.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Mount Field National Park, Tasmania",
-        "attribution": "Poyt448 Peter Woodard",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dogwood_Mt_Field_NP.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Dead_stags_of_Athrotaxis_cupressoides_killed_by_wildfire_on_the_Tarn_Shelf%2C_Mt_Field_NP.jpg/1920px-Dead_stags_of_Athrotaxis_cupressoides_killed_by_wildfire_on_the_Tarn_Shelf%2C_Mt_Field_NP.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Mount Field National Park, Tasmania",
-        "attribution": "Alisterhaz",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dead_stags_of_Athrotaxis_cupressoides_killed_by_wildfire_on_the_Tarn_Shelf,_Mt_Field_NP.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ],
     "officialSource": {
@@ -2167,24 +2046,24 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://portarthur.org.au/whats-on/little-depraved-felons/",
+        "url": "https://portarthur.org.au/all-tours/",
         "checkedAt": "2026-10-08"
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://portarthur.org.au/whats-on/little-depraved-felons/",
+        "url": "https://portarthur.org.au/all-tours/",
         "checkedAt": "2026-10-08"
       },
       "bookingUrl": {
         "type": "official-website",
-        "url": "https://portarthur.org.au/about-us/",
+        "url": "https://portarthur.org.au/all-tours/",
         "checkedAt": "2026-10-08"
       }
     },
     "phone": "1800659101",
     "schedule": {
-      "summary": "Open from 9:00am to 5:00pm daily.",
-      "sourceUrl": "https://portarthur.org.au/whats-on/little-depraved-felons/",
+      "summary": "Open daily, 9am-5pm",
+      "sourceUrl": "https://portarthur.org.au/all-tours/",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -2196,9 +2075,10 @@
         "Sunday"
       ],
       "startTime": "09:00",
-      "endTime": "17:00"
+      "endTime": "17:00",
+      "notes": "The Port Arthur Historic Site is open daily from 9:00 am to 5:00 pm and is closed only on Christmas Day."
     },
-    "openingHours": "Mo-Su 09:00-17:00",
+    "openingHours": "Mo-Su 09:00-17:00; Mo-Su 09:00-05:00; Mo-Su 09:30-10:30; Mo-Su 12:00-13:30; Mo-Su 11:00-15:00; Mo-Su 12:30-13:15; We,Th,Fr,Sa,Su 18:00-20:00",
     "gallery": [
       {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/THE_HOSPITAL_PORT_ARTHUR_HISTORIC_SITE.jpg/1920px-THE_HOSPITAL_PORT_ARTHUR_HISTORIC_SITE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2265,28 +2145,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Port_Arthur_historic_site%2C_May_2018_4.jpg/1920px-Port_Arthur_historic_site%2C_May_2018_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Port Arthur Historic Site, Tasmania",
-        "attribution": "Jami430",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Port_Arthur_historic_site,_May_2018_4.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/View_of_Port_Arthur_Historic_Site_from_Guard_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Port Arthur Historic Site, Tasmania",
-        "attribution": "Jane6592",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Port_Arthur_Historic_Site_from_Guard_Tower.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
       }
     ],
     "officialSource": {
@@ -2300,7 +2158,7 @@
       "checkedAt": "2026-10-08",
       "url": "https://portarthur.org.au/"
     },
-    "bookingUrl": "https://portarthur.org.au/about-us/",
+    "bookingUrl": "https://portarthur.org.au/all-tours/",
     "lastWikidataLinkChecked": "2026-10-07",
     "wikidata": "Q38167031",
     "wikidataMatch": {
@@ -2486,7 +2344,7 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://mona.net.au/tickets",
+        "url": "https://mona.net.au/contact",
         "checkedAt": "2026-10-08"
       },
       "bookingUrl": {
@@ -2512,7 +2370,7 @@
       "startTime": "09:00",
       "endTime": "17:00"
     },
-    "openingHours": "Th,Fr,Sa,Su,Mo 10:00-17:00; Th,Fr,Sa,Su,Mo 15:00-17:00; Th,Fr,Sa,Su,Mo 11:00-17:00; Th,Fr,Sa,Su 11:00-17:00",
+    "openingHours": "Mo-Su 09:00-17:00",
     "gallery": [
       {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Museum_of_Old_and_New_Art_%28MONA%29_-_Hobart_-_49142246651.jpg/1920px-Museum_of_Old_and_New_Art_%28MONA%29_-_Hobart_-_49142246651.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3005,12 +2863,12 @@
       },
       "bookingUrl": {
         "type": "official-website",
-        "url": "https://libraries.tas.gov.au/locations/bridport-library/",
+        "url": "https://libraries.tas.gov.au/locations/bicheno-library/",
         "checkedAt": "2026-10-08"
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://libraries.tas.gov.au/locations/bruny-online/",
+        "url": "https://libraries.tas.gov.au/locations/bicheno-library/",
         "checkedAt": "2026-10-08"
       }
     },
@@ -3046,8 +2904,8 @@
       "checkedAt": "2026-10-08",
       "url": "https://libraries.tas.gov.au/locations/allport-library-and-museum-of-fine-arts/"
     },
-    "bookingUrl": "https://libraries.tas.gov.au/locations/bridport-library/",
-    "openingHours": "Mo 09:00-12:00; Tu 09:00-12:00; We 09:00-12:00"
+    "bookingUrl": "https://libraries.tas.gov.au/locations/bicheno-library/",
+    "openingHours": "Tu 10:00-02:00; We 10:00-04:00; Th 10:00-02:00; Sa 09:30-12:30"
   },
   {
     "slug": "beaconsfield-mine-and-heritage-centre-2",
@@ -3370,7 +3228,7 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://mona.net.au/tickets",
+        "url": "https://mona.net.au/contact",
         "checkedAt": "2026-10-08"
       },
       "address": {
@@ -3401,7 +3259,7 @@
       "startTime": "09:00",
       "endTime": "17:00"
     },
-    "openingHours": "Th,Fr,Sa,Su,Mo 10:00-17:00; Th,Fr,Sa,Su,Mo 15:00-17:00; Th,Fr,Sa,Su,Mo 11:00-17:00; Th,Fr,Sa,Su 11:00-17:00",
+    "openingHours": "Mo-Su 09:00-17:00",
     "qualityScore": 88,
     "qualityTier": "featured",
     "visibility": "public",
@@ -3500,28 +3358,6 @@
         "license": "CC BY 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ink_(29936402470).jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/MONA_Forecourt_-_panoramio.jpg/1920px-MONA_Forecourt_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Museum of Old and New Art, Tasmania",
-        "attribution": "Ché Lydia Xyang",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MONA_Forecourt_-_panoramio.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/MONA_-_panoramio.jpg/1920px-MONA_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Museum of Old and New Art, Tasmania",
-        "attribution": "Ché Lydia Xyang",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MONA_-_panoramio.jpg",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -4187,7 +4023,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://www.maritimetas.org/about-us/what-we-do",
+        "url": "https://www.maritimetas.org/visit/plan-your-visit",
         "checkedAt": "2026-10-08"
       }
     },
@@ -4217,8 +4053,8 @@
       "checkedAt": "2026-10-08T10:21:17.344Z"
     },
     "schedule": {
-      "summary": "The museum is open every day (except Christmas Day)",
-      "sourceUrl": "https://www.maritimetas.org/about-us/what-we-do",
+      "summary": "Located on Hobart's waterfront, opposite Constitution Dock, Maritime Museum Tasmania is open every day of the year (except Christmas Day).",
+      "sourceUrl": "https://www.maritimetas.org/visit/plan-your-visit",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -4306,7 +4142,7 @@
     "wikidata": "Q62868012",
     "wikipediaUrl": null,
     "commonsCategory": "Narryna",
-    "openingHours": "Tu,We,Th,Fr,Sa 10:00-16:30",
+    "openingHours": ", Tu 10:00-16:00, We 10:00-16:00, Th 10:00-16:00, Fr 10:00-16:00, Sa 10:00-16:00,",
     "phone": "0362342791",
     "email": "narryna@tmag.tas.gov.au",
     "address": "103 Hampden Road Battery Point, TAS, 7004 Australia",
@@ -4317,7 +4153,7 @@
     "detailSources": {
       "openingHours": {
         "type": "official-website",
-        "url": "https://www.narryna.com.au/about",
+        "url": "https://www.narryna.com.au/calendar",
         "checkedAt": "2026-10-08"
       },
       "address": {
@@ -4337,7 +4173,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://www.narryna.com.au/about",
+        "url": "https://www.narryna.com.au/shop",
         "checkedAt": "2026-10-08"
       }
     },
@@ -4368,17 +4204,14 @@
     },
     "lastOfficialDetailsChecked": "2026-10-08",
     "schedule": {
-      "summary": "Narryna is open from Tuesday to Saturday from 10:00am–4:30pm for self-guided tours.",
-      "sourceUrl": "https://www.narryna.com.au/about",
+      "summary": "Each Tuesday and Friday at 10.30am (unless stated otherwise)",
+      "sourceUrl": "https://www.narryna.com.au/shop",
+      "frequency": "weekly",
       "daysOfWeek": [
         "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
+        "Friday"
       ],
-      "startTime": "10:00",
-      "endTime": "16:30"
+      "startTime": "10:30"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -4686,28 +4519,6 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/CeleryTopIslands_SW_Tas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Southwest National Park, Tasmania",
-        "attribution": "Wikimedia Commons contributor",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CeleryTopIslands_SW_Tas.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/DenyKingsReflections_SW_Tas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Southwest National Park, Tasmania",
-        "attribution": "Wikimedia Commons contributor",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:DenyKingsReflections_SW_Tas.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ],
     "officialSource": {
@@ -4894,28 +4705,6 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/CeleryTopIslands_SW_Tas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Southwest National Park, Tasmania",
-        "attribution": "Wikimedia Commons contributor",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CeleryTopIslands_SW_Tas.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/DenyKingsReflections_SW_Tas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Southwest National Park, Tasmania",
-        "attribution": "Wikimedia Commons contributor",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:DenyKingsReflections_SW_Tas.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ],
     "officialSource": {
@@ -5074,28 +4863,6 @@
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:CC_Computer_Cat_Hunter.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Henry_Hunter_Gallery_TMAG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Tasmanian Museum and Art Gallery, Tasmania",
-        "attribution": "JTdale",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Henry_Hunter_Gallery_TMAG.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Constitution-Dock-facing-hbt-cbd.jpg/1920px-Constitution-Dock-facing-hbt-cbd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Tasmanian Museum and Art Gallery, Tasmania",
-        "attribution": "Wiki ian",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Constitution-Dock-facing-hbt-cbd.jpg",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -5564,7 +5331,7 @@
       },
       "bookingUrl": {
         "type": "official-website",
-        "url": "https://www.warwyn.tas.gov.au/council-facilities/book-a-facility/",
+        "url": "https://www.warwyn.tas.gov.au/visitors/",
         "checkedAt": "2026-10-08"
       },
       "phone": {
@@ -5574,7 +5341,7 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://www.warwyn.tas.gov.au/council-facilities/book-a-facility/",
+        "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
         "checkedAt": "2026-10-08"
       },
       "email": {
@@ -5609,7 +5376,7 @@
         "url": "https://www.google.com/maps/search/?api=1&query=Wynyard%20Foreshore%20Market%20Wynyard%20Tasmania"
       }
     ],
-    "bookingUrl": "https://www.warwyn.tas.gov.au/council-facilities/book-a-facility/",
+    "bookingUrl": "https://www.warwyn.tas.gov.au/visitors/",
     "phone": "0431084677",
     "openingHours": "",
     "lastWikidataLinkChecked": "2026-10-08",
@@ -5862,7 +5629,7 @@
     "phone": "+61 3 6267 2333",
     "email": "secretary@channelmuseum.org.au",
     "address": "1755 Channel Highway, Margate, TAS, 7054",
-    "bookingUrl": "https://channelmuseum.org/research/",
+    "bookingUrl": "https://channelmuseum.org/membership/",
     "fee": "yes",
     "wheelchair": "yes",
     "operator": null,
@@ -5899,7 +5666,7 @@
       },
       "bookingUrl": {
         "type": "official-website",
-        "url": "https://channelmuseum.org/research/",
+        "url": "https://channelmuseum.org/membership/",
         "checkedAt": "2026-10-08"
       }
     },
@@ -7270,28 +7037,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Au_tas_cradle_mountain_1.jpg/1920px-Au_tas_cradle_mountain_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Cradle Mountain-Lake St Clair National Park, Tasmania",
-        "attribution": "Wj32 ( talk · contribs )",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Au_tas_cradle_mountain_1.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Au_tas_cradle_mountain_2.jpg/1920px-Au_tas_cradle_mountain_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Cradle Mountain-Lake St Clair National Park, Tasmania",
-        "attribution": "Wj32 ( talk · contribs )",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Au_tas_cradle_mountain_2.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ],
     "lastWikidataLinkChecked": "2026-10-07",
@@ -8310,7 +8055,7 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://www.hzaa.com.au/plan-your-visit/kayak-travel/",
+        "url": "https://www.hzaa.com.au/plan-your-visit/faqs/general-faqs/",
         "checkedAt": "2026-10-08"
       },
       "bookingUrl": {
@@ -8335,7 +8080,7 @@
       "startTime": "09:00",
       "endTime": "17:00"
     },
-    "openingHours": "Mo-Su 09:00-17:00",
+    "openingHours": "Mo-Su 09:00-17:00; Mo-Su 09:00-05:00",
     "qualityScore": 68,
     "qualityTier": "featured",
     "visibility": "public",
@@ -9310,7 +9055,7 @@
     "wikidata": "Q134590326",
     "wikipediaUrl": null,
     "commonsCategory": null,
-    "openingHours": "Mo-Su 09:00-17:00",
+    "openingHours": "Mo-Su 09:00-17:00; Mo-Su 09:00-05:00",
     "phone": "+61 3 6260 2444",
     "email": null,
     "address": "620 Middle Tea Tree Rd, Tea Tree, Australia, TAS 7017",
@@ -9321,7 +9066,7 @@
     "detailSources": {
       "openingHours": {
         "type": "official-website",
-        "url": "https://www.hzaa.com.au/plan-your-visit/kayak-travel/",
+        "url": "https://www.hzaa.com.au/plan-your-visit/faqs/general-faqs/",
         "checkedAt": "2026-10-08"
       },
       "phone": {
@@ -9914,28 +9659,6 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/M5_undergoing_overhaul_and_restoration%2C_Dec._2021.jpg/1920px-M5_undergoing_overhaul_and_restoration%2C_Dec._2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Tasmanian Transport Museum, Tasmania",
-        "attribution": "LJDJ2003",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:M5_undergoing_overhaul_and_restoration,_Dec._2021.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Q5_at_rest_in_the_roundhouse..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Tasmanian Transport Museum, Tasmania",
-        "attribution": "LJDJ2003",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Q5_at_rest_in_the_roundhouse..jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ]
   },
@@ -9993,7 +9716,7 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://www.hzaa.com.au/plan-your-visit/kayak-travel/",
+        "url": "https://www.hzaa.com.au/plan-your-visit/faqs/general-faqs/",
         "checkedAt": "2026-10-08"
       },
       "bookingUrl": {
@@ -10018,7 +9741,7 @@
       "startTime": "09:00",
       "endTime": "17:00"
     },
-    "openingHours": "Mo-Su 09:00-17:00",
+    "openingHours": "Mo-Su 09:00-17:00; Mo-Su 09:00-05:00",
     "qualityScore": 63,
     "qualityTier": "featured",
     "visibility": "public",
@@ -10372,28 +10095,6 @@
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beaumaris_polarbear.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Thylacine_footage_compilation.ogv/500px--Thylacine_footage_compilation.ogv.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
-        "alt": "Hobart Zoo, Tasmania",
-        "attribution": "1911 footage by \"Mr. Williamson\", 1933 footage by David Fleay. Authors of the 1928 footage are unknown.",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacine_footage_compilation.ogv",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/GIF_of_%22Thylacine_footage_compilation%22.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Hobart Zoo, Tasmania",
-        "attribution": "1911 footage by \"Mr. Williamson\", 1933 footage by David Fleay. Authors of the 1928 footage are unknown.",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:GIF_of_%22Thylacine_footage_compilation%22.gif",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -11093,28 +10794,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Bakers_Beach%2C_Tasmania_%2830534479420%29.jpg/1920px-Bakers_Beach%2C_Tasmania_%2830534479420%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bakers Beach, Tasmania",
-        "attribution": "Steven Penton from Bakers Beach, Tasmania Australia",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bakers_Beach,_Tasmania_(30534479420).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Bakers_Beach_Tasmania_%2851060444738%29.jpg/1920px-Bakers_Beach_Tasmania_%2851060444738%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bakers Beach, Tasmania",
-        "attribution": "Steven Penton from Bakers Beach, Tasmania Australia",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bakers_Beach_Tasmania_(51060444738).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
       }
     ]
   },
@@ -11304,28 +10983,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Fossil-Bluff-20070423-030.jpg/1920px-Fossil-Bluff-20070423-030.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bluff Beach, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fossil-Bluff-20070423-030.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Fossil-Bluff-20070423-032.jpg/1920px-Fossil-Bluff-20070423-032.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bluff Beach, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fossil-Bluff-20070423-032.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
       }
     ]
   },
@@ -11446,28 +11103,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Fossil-Bluff-20070423-030.jpg/1920px-Fossil-Bluff-20070423-030.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bluff Beach, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fossil-Bluff-20070423-030.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Fossil-Bluff-20070423-032.jpg/1920px-Fossil-Bluff-20070423-032.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Bluff Beach, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fossil-Bluff-20070423-032.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
       }
     ]
   },
@@ -11585,28 +11220,6 @@
         "license": "CC0",
         "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boat-Habour-beach-20150411-007.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Boat-Habour-beach-20150411-008.jpg/1920px-Boat-Habour-beach-20150411-008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Boat Harbour Beach, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boat-Habour-beach-20150411-008.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Hillarys_Boat_Harbour_Beach.jpg/1920px-Hillarys_Boat_Harbour_Beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Boat Harbour Beach, Tasmania",
-        "attribution": "EurovisionNim",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hillarys_Boat_Harbour_Beach.jpg",
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
@@ -12228,28 +11841,6 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Coningham_Beach_07.jpg/1920px-Coningham_Beach_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_07.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Coningham_Beach_08.jpg/1920px-Coningham_Beach_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_08.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ],
     "commonsCategory": "Coningham Beach",
@@ -12379,28 +11970,6 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Coningham_Beach_07.jpg/1920px-Coningham_Beach_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_07.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Coningham_Beach_08.jpg/1920px-Coningham_Beach_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_08.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ]
   },
@@ -12517,28 +12086,6 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_04.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Coningham_Beach_07.jpg/1920px-Coningham_Beach_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_07.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Coningham_Beach_08.jpg/1920px-Coningham_Beach_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_08.jpg",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -13131,28 +12678,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "medium"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Large_skeletal_material%2C_Eastern_Shore_of_Virginia_NWR.jpg/1920px-Large_skeletal_material%2C_Eastern_Shore_of_Virginia_NWR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Eastern Shore, Tasmania",
-        "attribution": "self",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Large_skeletal_material,_Eastern_Shore_of_Virginia_NWR.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Chalk_drawing_area%2C_kids_area%2C_Eastern_Shore_of_Virginia_NWR.jpg/1920px-Chalk_drawing_area%2C_kids_area%2C_Eastern_Shore_of_Virginia_NWR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Eastern Shore, Tasmania",
-        "attribution": "self",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chalk_drawing_area,_kids_area,_Eastern_Shore_of_Virginia_NWR.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
       }
     ],
     "lastWikidataChecked": "2026-10-06"
@@ -13444,28 +12969,6 @@
         "license": "CC0",
         "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Freers-Beach-20070405-008.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Freers-Beach-20070405-009.jpg/1920px-Freers-Beach-20070405-009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Freers Beach, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Freers-Beach-20070405-009.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Freers-Beach-20070405-007.jpg/1920px-Freers-Beach-20070405-007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Freers Beach, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Freers-Beach-20070405-007.jpg",
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
@@ -13848,28 +13351,6 @@
         "license": "CC0",
         "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greens-Beach-path-20070419-024.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Greens-Beach-rocks-20070419-025.jpg/1920px-Greens-Beach-rocks-20070419-025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Greens Beach, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greens-Beach-rocks-20070419-025.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Greens-Beach-rocks-20070419-026.jpg/1920px-Greens-Beach-rocks-20070419-026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Greens Beach, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greens-Beach-rocks-20070419-026.jpg",
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
@@ -15106,17 +14587,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Sandy_Bay_Road_near_Lords_Beach%2C_Tasmania_02.jpg/1920px-Sandy_Bay_Road_near_Lords_Beach%2C_Tasmania_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Lords Beach, Tasmania",
-        "attribution": "Chuq",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sandy_Bay_Road_near_Lords_Beach,_Tasmania_02.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
       }
     ],
     "wikidataImages": [
@@ -15580,28 +15050,6 @@
         "isFallback": false,
         "sourceMethod": "wikidata-p18",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Fifth_Ramp%2C_Tidal_River_VIC_3960%2C_Australia_-_panoramio.jpg/1920px-Fifth_Ramp%2C_Tidal_River_VIC_3960%2C_Australia_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Norman Beach, Tasmania",
-        "attribution": "Emin Başar ÖZDEMİR",
-        "license": "CC BY 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fifth_Ramp,_Tidal_River_VIC_3960,_Australia_-_panoramio.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikidata-p18",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Wilsons_Promontory_southwest_5_Stevage.jpg/1920px-Wilsons_Promontory_southwest_5_Stevage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Norman Beach, Tasmania",
-        "attribution": "Steve Bennett",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wilsons_Promontory_southwest_5_Stevage.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ]
   },
@@ -16035,28 +15483,6 @@
         "license": "CC0",
         "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Big-Penguin-20070420-035.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Bench_by_the_Sea_in_Penguin_%2826207991646%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Penguin Beach, Tasmania",
-        "attribution": "Michael Coghlan from Adelaide, Australia",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bench_by_the_Sea_in_Penguin_(26207991646).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Little_Penguin_chick_Burnie_20190112-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Penguin Beach, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Little_Penguin_chick_Burnie_20190112-001.jpg",
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
@@ -16595,28 +16021,6 @@
         "license": "CC BY-SA 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jetty_storm_damage_at_Lords_Beach,_Sandy_Bay,_Tasmania.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Mount_Wellington_from_Sandy_Bay%2C_Hobart_Tasmania.jpg/1920px-Mount_Wellington_from_Sandy_Bay%2C_Hobart_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Sandy Beach, Tasmania",
-        "attribution": "Thennicke",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Wellington_from_Sandy_Bay,_Hobart_Tasmania.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Sandy_Bay%2C_Hobart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Sandy Beach, Tasmania",
-        "attribution": "Philip Northeast",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sandy_Bay,_Hobart.jpg",
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
@@ -17857,28 +17261,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/West_Point%2C_Tasmania._%2832211561613%29.jpg/1920px-West_Point%2C_Tasmania._%2832211561613%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "West Beach, Tasmania",
-        "attribution": "Steven Penton from Bakers Beach, Tasmania Australia",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:West_Point,_Tasmania._(32211561613).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/West_Point%2C_Tasmania_%2832236222853%29.jpg/1920px-West_Point%2C_Tasmania_%2832236222853%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "West Beach, Tasmania",
-        "attribution": "Steven Penton from Bakers Beach, Tasmania Australia",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:West_Point,_Tasmania_(32236222853).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
       }
     ]
   },
@@ -18275,28 +17657,6 @@
         "license": "CC BY-SA 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Four_restored_locomotives_at_the_Don_River_Railway.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/EL048_054_%2811579127823%29.jpg/1920px-EL048_054_%2811579127823%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Don River Railway, Tasmania",
-        "attribution": "Trainiac from Australia",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:EL048_054_(11579127823).jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Don_River_Railway_Devonport_Tasmania.jpg/1920px-Don_River_Railway_Devonport_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Don River Railway, Tasmania",
-        "attribution": "Steven Penton",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Don_River_Railway_Devonport_Tasmania.jpg",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -19218,28 +18578,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/BB_Cherry_Tree_Hill_1010_%288%29_%2817025258270%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Cherry Tree Hill Nature Reserve, Tasmania",
-        "attribution": "Diego Tirira from Quito, Ecuador",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:BB_Cherry_Tree_Hill_1010_(8)_(17025258270).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/BB_Cherry_Tree_Hill_1010_%2810%29_%2817025034718%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Cherry Tree Hill Nature Reserve, Tasmania",
-        "attribution": "Diego Tirira from Quito, Ecuador",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:BB_Cherry_Tree_Hill_1010_(10)_(17025034718).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
       }
     ]
   },
@@ -19445,28 +18783,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "medium"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Devils_Tower_entrance_01.jpg/1920px-Devils_Tower_entrance_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Devils Tower Nature Reserve, Tasmania",
-        "attribution": "Chris Light",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Devils_Tower_entrance_01.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Bear_Lodge_Butte_%28Devil%E2%80%99s_Tower%29%2C_Devils_Tower_National_Monument%2C_Devils_Tower%2C_WY_-_53766436282.jpg/1920px-Bear_Lodge_Butte_%28Devil%E2%80%99s_Tower%29%2C_Devils_Tower_National_Monument%2C_Devils_Tower%2C_WY_-_53766436282.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Devils Tower Nature Reserve, Tasmania",
-        "attribution": "w_lemay",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bear_Lodge_Butte_(Devil%E2%80%99s_Tower),_Devils_Tower_National_Monument,_Devils_Tower,_WY_-_53766436282.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
       }
     ]
   },
@@ -19648,28 +18964,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "medium"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Great_Dismal_Swamp_%2833846623161%29.jpg/1920px-Great_Dismal_Swamp_%2833846623161%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Dismal Swamp Nature Reserve, Tasmania",
-        "attribution": "NPS Natural Resources",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Dismal_Swamp_(33846623161).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Great_Dismal_Swamp_%2833976525855%29.jpg/1920px-Great_Dismal_Swamp_%2833976525855%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Dismal Swamp Nature Reserve, Tasmania",
-        "attribution": "NPS Natural Resources",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Dismal_Swamp_(33976525855).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
       }
     ]
   },
@@ -20178,28 +19472,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Hippolyte_Rocks_%2835114187072%29.jpg/1920px-Hippolyte_Rocks_%2835114187072%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Hippolyte Rocks Marine Conservation Area, Tasmania",
-        "attribution": "Ed Dunens",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hippolyte_Rocks_(35114187072).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Hippolyte_Rocks_%2835114427242%29.jpg/1920px-Hippolyte_Rocks_%2835114427242%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Hippolyte Rocks Marine Conservation Area, Tasmania",
-        "attribution": "Ed Dunens",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hippolyte_Rocks_(35114427242).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
       }
     ]
   },
@@ -20502,28 +19774,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "medium"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Longfield_Iris_Farm_-_%28catalog%29_%28IA_longfieldirisfar00long_5%29.pdf/page1-500px-Longfield_Iris_Farm_-_%28catalog%29_%28IA_longfieldirisfar00long_5%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Iris Farm Private Nature Reserve, Tasmania",
-        "attribution": "Longfield Iris Farm (Bluffton, Ind.) Henry G. Gilbert Nursery and Seed Trade Catalog Collection",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Longfield_Iris_Farm_-_(catalog)_(IA_longfieldirisfar00long_5).pdf",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Longfield_Iris_Farm_-_%28catalog%29_%28IA_longfieldirisfar00long_6%29.pdf/page1-500px-Longfield_Iris_Farm_-_%28catalog%29_%28IA_longfieldirisfar00long_6%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Iris Farm Private Nature Reserve, Tasmania",
-        "attribution": "Longfield Iris Farm (Bluffton, Ind.) Henry G. Gilbert Nursery and Seed Trade Catalog Collection",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Longfield_Iris_Farm_-_(catalog)_(IA_longfieldirisfar00long_6).pdf",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
       }
     ]
   },
@@ -21242,17 +20492,6 @@
         "license": "CC0",
         "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cygnet_founding_plaques_20201114-014.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Cygnet_banner.jpg/1920px-Cygnet_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Port Cygnet Marine Conservation Area, Tasmania",
-        "attribution": "Peter Shanks",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cygnet_banner.jpg",
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
@@ -22010,28 +21249,6 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Norman_Beach%2C_Tidal_River%2C_and_squeaky_beach_from_Mt_Oberon_summit.jpg/1920px-Norman_Beach%2C_Tidal_River%2C_and_squeaky_beach_from_Mt_Oberon_summit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Squeaky Beach, Tasmania",
-        "attribution": "Emanuele.ancona",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norman_Beach,_Tidal_River,_and_squeaky_beach_from_Mt_Oberon_summit.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Norman_Beach_and_squeaky_beach_from_Mt_Oberon_summit_02.jpg/1920px-Norman_Beach_and_squeaky_beach_from_Mt_Oberon_summit_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Squeaky Beach, Tasmania",
-        "attribution": "Emanuele.ancona",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norman_Beach_and_squeaky_beach_from_Mt_Oberon_summit_02.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ]
   },
@@ -22421,28 +21638,6 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/3_Bain_Tce_Trevallyn_Launceston.JPG/1920px-3_Bain_Tce_Trevallyn_Launceston.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Trevallyn, Tasmania",
-        "attribution": "Ruwoltj",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:3_Bain_Tce_Trevallyn_Launceston.JPG",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/2_North_Bank_Trevallyn_Launceston_TAS.JPG/1920px-2_North_Bank_Trevallyn_Launceston_TAS.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Trevallyn, Tasmania",
-        "attribution": "Ruwoltj",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2_North_Bank_Trevallyn_Launceston_TAS.JPG",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
       }
     ]
   },
@@ -22557,28 +21752,6 @@
         "license": "CC0",
         "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turners-Beach-beach-20070420-018.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Turners-Beach-beach-20070420-019.jpg/1920px-Turners-Beach-beach-20070420-019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Turners Beach, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turners-Beach-beach-20070420-019.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Turners_Beach.jpg/1920px-Turners_Beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Turners Beach, Tasmania",
-        "attribution": "Psypherium",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turners_Beach.jpg",
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
@@ -23002,28 +22175,6 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Bruny_Island%2C_Tasmania_%2830770795865%29.jpg/1920px-Bruny_Island%2C_Tasmania_%2830770795865%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Cape Bruny Light Station, Tasmania",
-        "attribution": "Steven Penton from Bakers Beach, Tasmania Australia",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bruny_Island,_Tasmania_(30770795865).jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/1836_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Cape Bruny Light Station, Tasmania",
-        "attribution": "Stephen Edmonds",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1836_-_panoramio.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ]
   },
@@ -23192,28 +22343,6 @@
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beaumaris_polarbear.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Thylacine_footage_compilation.ogv/500px--Thylacine_footage_compilation.ogv.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
-        "alt": "Hobart Zoo, Tasmania",
-        "attribution": "1911 footage by \"Mr. Williamson\", 1933 footage by David Fleay. Authors of the 1928 footage are unknown.",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacine_footage_compilation.ogv",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/GIF_of_%22Thylacine_footage_compilation%22.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Hobart Zoo, Tasmania",
-        "attribution": "1911 footage by \"Mr. Williamson\", 1933 footage by David Fleay. Authors of the 1928 footage are unknown.",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:GIF_of_%22Thylacine_footage_compilation%22.gif",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -23506,17 +22635,6 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Lake_Lea_edge_of_wetlands.jpg/1920px-Lake_Lea_edge_of_wetlands.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Vale of Belvoir Reserve, Tasmania",
-        "attribution": "AnnaHackett",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Lea_edge_of_wetlands.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ]
   },
@@ -23748,7 +22866,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-08"
+    "rankedAt": "2026-10-08",
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "hastings-caves-state-reserve",
@@ -24263,7 +23382,7 @@
     "phone": "+61362931217",
     "email": "Inala@inalanaturetours.com.au",
     "address": "320 Cloudy Bay Road, South Bruny, TAS, 7150",
-    "bookingUrl": "https://inalanature.com.au/about-us-inala-nature/",
+    "bookingUrl": "https://inalanature.com.au/booking-process-and-information/",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -24275,7 +23394,7 @@
       },
       "bookingUrl": {
         "type": "official-website",
-        "url": "https://inalanature.com.au/about-us-inala-nature/",
+        "url": "https://inalanature.com.au/booking-process-and-information/",
         "checkedAt": "2026-10-08"
       },
       "openingHours": {
@@ -24565,28 +23684,6 @@
         "license": "CC BY-SA 2.5",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richmond_Bridge_Tasmania_Picture_1.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Richmond_Bridge_Tasmania_date_stone.JPG/1920px-Richmond_Bridge_Tasmania_date_stone.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Richmond Bridge, Tasmania",
-        "attribution": "Luckydog429",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richmond_Bridge_Tasmania_date_stone.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Richmond_Bridge_Year_Stone.JPG/1920px-Richmond_Bridge_Year_Stone.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Richmond Bridge, Tasmania",
-        "attribution": "Luckydog429",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richmond_Bridge_Year_Stone.JPG",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -26997,7 +26094,8 @@
       "checkedAt": "2026-10-08",
       "url": "https://www.subway.com.au/",
       "error": "fetch failed"
-    }
+    },
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "the-artisan-s-hand",
@@ -27453,28 +26551,6 @@
         "license": "CC BY 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cradle_Mountain_-_6.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Cradle_Mountain_-_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Cradle Mountain, Tasmania",
-        "attribution": "Stefan Karpiniec",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cradle_Mountain_-_8.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Cradle_Mountain_-_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Cradle Mountain, Tasmania",
-        "attribution": "Stefan Karpiniec",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cradle_Mountain_-_7.jpg",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -28025,28 +27101,6 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Ross_Bridge_20201113-006.jpg/1920px-Ross_Bridge_20201113-006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Ross Bridge, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_Bridge_20201113-006.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Ross_Bridge_20201113-007.jpg/1920px-Ross_Bridge_20201113-007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Ross Bridge, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_Bridge_20201113-007.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ]
   },
@@ -28122,7 +27176,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-08"
+    "rankedAt": "2026-10-08",
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "world-heritage-cruises",
@@ -28762,28 +27817,6 @@
         "license": "Public domain",
         "licenseUrl": null,
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Callington_Mill_1880.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Callington_Mill_circa_1900.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Callington Mill, Tasmania",
-        "attribution": "Unknown author Unknown author",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Callington_Mill_circa_1900.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Callington_Mill_notice_1840.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Callington Mill, Tasmania",
-        "attribution": "Unknown author Unknown author",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Callington_Mill_notice_1840.jpg",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -31085,28 +30118,6 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Sarah_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Sarah Island, Tasmania",
-        "attribution": "PelionClimber",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sarah_Island.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Strahan_banner_Sarah_Island.JPG/1920px-Strahan_banner_Sarah_Island.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Sarah Island, Tasmania",
-        "attribution": "AlasdairW",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strahan_banner_Sarah_Island.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
       }
     ]
   },
@@ -31938,7 +30949,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://bridestowelavender.com.au/about/",
+        "url": "https://bridestowelavender.com.au/visit/woodcroft-cafe/",
         "checkedAt": "2026-10-08"
       }
     },
@@ -31970,7 +30981,7 @@
     ],
     "schedule": {
       "summary": "Opening hours: Open daily 10am - 4pm (Closed Christmas Day)",
-      "sourceUrl": "https://bridestowelavender.com.au/about/",
+      "sourceUrl": "https://bridestowelavender.com.au/visit/woodcroft-cafe/",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -33160,7 +32171,8 @@
         "sourceMethod": "commons-search",
         "confidence": "high"
       }
-    ]
+    ],
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "mallee-grill",
@@ -33228,7 +32240,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-08"
+    "rankedAt": "2026-10-08",
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "the-nut-cafe",
@@ -33309,7 +32322,8 @@
         "sourceMethod": "commons-search",
         "confidence": "high"
       }
-    ]
+    ],
+    "lastWikidataLinkChecked": "2026-10-08"
   },
   {
     "slug": "the-octopus",
@@ -54205,7 +53219,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-08",
       "url": "https://www.mountgnomonfarm.com.au/restaurant--tours.html",
-      "error": "fetch failed"
+      "error": "404 Not Found"
     }
   },
   {
