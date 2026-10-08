@@ -30,6 +30,9 @@ export function balancedByRegion(records, limit) {
 }
 export function selectOsmCandidates(candidates,curated,previousOsm,{retainVerifiedMedia,verifiedMedia},{coreLimit=520,foodLimit=1250}={}) {
   const byName=new Map(),usedSlugs=new Set(curated.map(place=>place.slug).filter(Boolean));
+  // Existing published URLs are owned by their exact OSM source identity.
+  // A newly discovered same-name chain outlet cannot claim a prior outlet's slug.
+  const oldSlugOwner=new Map([...previousOsm].filter(([,place])=>place.slug).map(([id,place])=>[place.slug,id]));
   for(const place of curated) {
     const key=normalized(place.name);
     if(!key)continue;
@@ -53,8 +56,8 @@ export function selectOsmCandidates(candidates,curated,previousOsm,{retainVerifi
       if(verifiedMedia(place.image)){place._score=(place._score||0)+24;preservedImages++;}
     }
     let slug=old?.slug||place.slug||slugify(place.name);
-    if(usedSlugs.has(slug)) slug=slugify(`${place.name}-${place.town}`);
-    if(usedSlugs.has(slug)) slug=`${slugify(place.name).slice(0,50)}-osm-${String(place.sourceId).replace(/[^a-z0-9]+/gi,'-').toLowerCase()}`;
+    if(usedSlugs.has(slug) || (oldSlugOwner.has(slug)&&oldSlugOwner.get(slug)!==place.sourceId)) slug=slugify(`${place.name}-${place.town}`);
+    if(usedSlugs.has(slug) || (oldSlugOwner.has(slug)&&oldSlugOwner.get(slug)!==place.sourceId)) slug=`${slugify(place.name).slice(0,50)}-osm-${String(place.sourceId).replace(/[^a-z0-9]+/gi,'-').toLowerCase()}`;
     place.slug=slug;
     usedSlugs.add(slug);
     if(!byName.has(key))byName.set(key,[]);
