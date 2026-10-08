@@ -90,7 +90,17 @@ function regionalListingEvents(html,source){
     const inner=clean(anchor[2]);
     const name=source.name==='King Island Tourism'?titleFromEventUrl(href):finalName(inner);
     if(!plausibleName(name))continue;
-    const sliceEnd=Math.min(html.length,anchor.index+anchor[0].length+500);
+    // Never borrow a date from the next event card when this one is undated.
+    const nextCard=anchors.find(candidate=>{
+      if(candidate.index<=anchor.index)return false;
+      try{
+        const nextUrl=new URL(decode(candidate[1]),source.url);
+        return nextUrl.hostname.replace(/^www\./,'')===host.replace(/^www\./,'')
+          && (/^\/atdw_events\/[^/]+\/?$/.test(nextUrl.pathname)||/^\/events\/[^/]+\/?$/.test(nextUrl.pathname))
+          && nextUrl.href!==href;
+      }catch{return false;}
+    });
+    const sliceEnd=Math.min(html.length,anchor.index+anchor[0].length+500,nextCard?.index??Infinity);
     const nearby=clean(html.slice(anchor.index,sliceEnd)).replace(/\b(\d{1,2})(?:st|nd|rd|th)\b/gi,'$1');
     let date=dateRange(nearby);
     const explicitRange=nearby.match(/\b(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})\s*(?:to|[-–—])\s*(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})\b/i);
