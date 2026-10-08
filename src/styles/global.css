@@ -3,3 +3,15 @@
 
 /* Launch-lockdown accessibility safeguards */
 .skip-link{position:fixed;top:.5rem;left:.5rem;z-index:9999;padding:.7rem 1rem;border-radius:.7rem;background:#173132;color:#fff;font-weight:800;text-decoration:none;transform:translateY(-180%);transition:transform .15s ease}.skip-link:focus{transform:translateY(0)}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #FD5B01;outline-offset:3px}#main-content:focus{outline:none}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Launch mobile resilience: no horizontal overflow from long names or nested grids. */
+html,body{max-width:100%}
+img,video,svg{max-width:100%}
+:is(.place-card,.event-card,.eat-card,.featured-card,.region-card,.discover-result-card){min-width:0}
+:is(.place-card,.event-card,.eat-card,.featured-card,.region-card,.discover-result-card) :is(h2,h3,p,a,strong,small){overflow-wrap:anywhere}
+:is(.nav-popover,.primary-nav,.site-footer,.content-page,.listing-page,.place-page){min-width:0}
+:where(a,button,summary,select,input,textarea):focus-visible{outline:3px solid #b74100;outline-offset:3px}
+@media(max-width:900px){.nav-region-grid{min-width:0}}
+@media(max-width:760px){.nav-popover{max-width:100%}.nav-popover a{min-height:44px}.nav-direct-link,.nav-group summary{min-height:44px}}
+@media(max-width:600px){.place-grid,.event-grid,.featured-grid,.region-grid,.intent-grid{grid-template-columns:minmax(0,1fr)}.site-header,.content-shell,.content-page{min-width:0}}
+@media(prefers-reduced-motion:reduce){.card-image-link:hover .card-image,.discover-feature-card a:hover img{transform:none}}

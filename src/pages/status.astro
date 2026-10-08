@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import heartbeat from '../data/automation-health.json';
+import audit from '../data/catalogue-audit.json';
+const latestHeartbeat=heartbeat.lastScheduledRun || null;
+const lastAudit=audit.generatedAt || null;
+const gapDays=(value)=>value?Math.floor((Date.now()-Date.parse(value+'T00:00:00Z'))/86400000):null;
+const heartbeatDays=gapDays(latestHeartbeat);
+const auditDays=gapDays(lastAudit);
+---
+<BaseLayout title="Service & data status | TassieNow" description="Latest published catalogue and scheduler evidence, with transparency about when data was last checked.">
+<section class="content-page">
+ <h1>Service & data status</h1>
+ <p>This page shows the latest information committed into the public site. It is not a live uptime monitor; a successful scheduler heartbeat alone does not prove that every data refresh completed.</p>
+ <h2>Latest published evidence</h2>
+ <dl class="status-facts">
+  <dt>Automation schedule heartbeat</dt><dd>{latestHeartbeat || 'Not recorded'} {heartbeatDays !== null && `(${heartbeatDays} day(s) ago)`}</dd>
+  <dt>Catalogue audit date</dt><dd>{lastAudit || 'Not recorded'} {auditDays !== null && `(${auditDays} day(s) ago)`}</dd>
+  <dt>Public places</dt><dd>{audit.places?.public ?? 'Not reported'}</dd>
+  <dt>Active events at audit time</dt><dd>{audit.events?.active ?? 'Not reported'}</dd>
+  <dt>Licensed real-photo hero coverage</dt><dd>{audit.places?.media?.realHeroCoverage?.percent ?? 'Not reported'}%</dd>
+ </dl>
+ {(heartbeatDays === null || heartbeatDays > 1 || auditDays === null || auditDays > 2) && <p class="notice" role="status">One or more published reports are missing or old. Verify the current GitHub Actions runs before treating automated data as freshly checked.</p>}
+ <h2>How to interpret this</h2>
+ <p>A reported date is evidence of a committed file, not a guarantee that the site or every source is healthy. Check official operator links before travelling, especially for dates, prices and mobile food vendors.</p>
+ <p><a href="/">Return to discovery</a></p>
+</section>
+<style>.status-facts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.7rem 1rem}.status-facts dt{font-weight:800}.status-facts dd{margin:0;overflow-wrap:anywhere}@media(max-width:600px){.status-facts{grid-template-columns:1fr}.status-facts dd{margin-bottom:.7rem}}</style>
+</BaseLayout>
