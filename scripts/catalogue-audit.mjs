@@ -24,6 +24,11 @@ const totalLicensedImages=imageCounts.reduce((sum,count)=>sum+count,0);
 const officialVerified=(p)=>p.officialSourceCheck?.status==='ok'||p.officialSource?.source==='wikidata:P856'||p.officialSource?.type==='government'||p.sourceType==='parks-tasmania';
 const ticketReady=activeEvents.filter((e)=>e.ticketUrl);
 const priced=activeEvents.filter((e)=>e.priceFrom!==undefined||e.priceTo!==undefined);
+const allRegions=['Hobart & South','Launceston & North','North West','East Coast','West Coast','Central Tasmania','Flinders Island','King Island'];
+const eventsByRegion=countBy(activeEvents,(e)=>e.region);
+const fullRegionCoverage=Object.fromEntries(allRegions.map(region=>[region,eventsByRegion[region]||0]));
+const categoryMembership=countBy(publicPlaces.flatMap(p=>[...new Set(p.categories||[])].map(category=>({category}))),(p)=>p.category);
+const ticketStale=activeEvents.filter(e=>e.ticketUrl&&(!e.ticketLastChecked || e.ticketLastChecked < new Date(Date.parse(today+'T00:00:00Z')-30*86400000).toISOString().slice(0,10)));
 const audit={
   generatedAt:today,
   places:{
@@ -60,7 +65,8 @@ const audit={
     qualityTiers:countBy(publicPlaces,(p)=>p.qualityTier),
     regions:countBy(publicPlaces,(p)=>p.region),
     towns:Object.keys(countBy(publicPlaces,(p)=>p.town)).length,
-    categories:countBy(publicPlaces,(p)=>(p.categories||[])[0])
+    categories:countBy(publicPlaces,(p)=>(p.categories||[])[0]),
+    categoryMembership
   },
   events:{
     active:activeEvents.length,
@@ -68,7 +74,10 @@ const audit={
     priceCoverage:{count:priced.length,percent:pct(priced.length,activeEvents.length)},
     providers:countBy(ticketReady,(e)=>e.ticketProvider),
     sources:countBy(activeEvents,(e)=>e.sourceName),
-    regions:countBy(activeEvents,(e)=>e.region)
+    regions:fullRegionCoverage,
+    regionsWithNoEvents:allRegions.filter(region=>!fullRegionCoverage[region]),
+    ticketLinkChecks:{missingOrOlderThan30Days:ticketStale.length},
+    sourceRegionalMix:countBy(activeEvents,(e)=>`${e.region} / ${e.sourceName||'unknown'}`)
   }
 };
 await fs.writeFile(OUT,`${JSON.stringify(audit,null,2)}\n`);
@@ -76,3 +85,6 @@ console.log(`Catalogue audit: ${audit.places.public} public places across ${audi
 console.log(`Detail coverage: hours ${audit.places.details.openingHours.percent}%, phone ${audit.places.details.phone.percent}%, email ${audit.places.details.email.percent}%, address ${audit.places.details.address.percent}%, booking ${audit.places.details.bookingUrl.percent}%, accessibility ${audit.places.details.wheelchair.percent}%.`);
 console.log(`Events audit: ${audit.events.active} active; ${audit.events.ticketCoverage.percent}% with direct ticket/booking links; ${audit.events.priceCoverage.percent}% with price data.`);
 console.log(`Place source mix: ${JSON.stringify(audit.places.sourceTypes)}.`);
+
+console.log(`Event regional gaps: ${audit.events.regionsWithNoEvents.join(', ')||'none'}; ticket links with stale/absent check dates: ${ticketStale.length}.`);
+console.log(`History category membership (any position): ${categoryMembership.History||0}; first-category count: ${audit.places.categories.History||0}.`);
