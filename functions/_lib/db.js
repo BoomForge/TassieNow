@@ -38,6 +38,24 @@ CREATE TABLE IF NOT EXISTS ad_inquiries (
   updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 CREATE INDEX IF NOT EXISTS idx_inquiries_status ON ad_inquiries (status, created_at);
+CREATE TABLE IF NOT EXISTS listing_corrections (
+ id INTEGER PRIMARY KEY AUTOINCREMENT,
+ place_slug TEXT NOT NULL,
+ place_name TEXT NOT NULL,
+ requester_name TEXT NOT NULL,
+ requester_email TEXT NOT NULL,
+ relationship TEXT NOT NULL DEFAULT 'visitor',
+ field TEXT NOT NULL,
+ suggested_value TEXT NOT NULL,
+ reason TEXT,
+ source_url TEXT,
+ status TEXT NOT NULL DEFAULT 'pending',
+ submitted_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ reviewed_at TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_listing_corrections_queue ON listing_corrections (status, submitted_at);
+CREATE INDEX IF NOT EXISTS idx_listing_corrections_slug ON listing_corrections (place_slug, submitted_at);
+
 `;
 
 const INQUIRY_COLUMNS = [
