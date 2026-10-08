@@ -78,21 +78,20 @@ async function fetchHtml(url){const response=await fetch(url,{headers:{'user-age
 function structuredEvents(html,source){const out=[];for(const item of jsonld(html)){const startDate=dateValue(item.startDate),endDate=dateValue(item.endDate||item.startDate);if(!validRange({startDate,endDate}))continue;const address=item.location?.address||{};const description=clean(item.description||'').slice(0,300);const inferred=inferLocation(`${clean(address.addressLocality||'')} ${clean(item.location?.name||'')} ${description}`,source);const town=clean(address.addressLocality||inferred.town)||inferred.town;const venue=clean(item.location?.name||'');const offer=offersFrom(item);const event=makeEvent({name:item.name,source,startDate,endDate,town,region:inferred.region,venue,eventUrl:item.url||offer.ticketUrl||source.url,description,offer});if(event)out.push(event);}return out;}
 function regionalListingEvents(html,source){
   const out=[];
-  const anchors=[...html.matchAll(/<a\\b[^>]*href=["']([^"']+)["'][^>]*>([\\s\\S]*?)<\\/a>/gi)];
-  for(let i=0;i<anchors.length;i++){
-    const anchor=anchors[i];let href;
+  const anchors=[...html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)];
+  for(const anchor of anchors){
+    let href;
     try{href=new URL(decode(anchor[1]),source.url).href;}catch{continue;}
     const url=new URL(href),host=new URL(source.url).hostname;
     if(url.hostname.replace(/^www\./,'')!==host.replace(/^www\./,''))continue;
-    if(source.name==='East Coast Tasmania'&&!/^\\/atdw_events\\/[^/]+\\/?$/.test(url.pathname))continue;
-    if(source.name==='King Island Tourism'&&!/^\\/events\\/[^/]+\\/?$/.test(url.pathname))continue;
-    if(source.name==='West Coast Tasmania'&&!/^\\/listings\\/[^/]+\\/?$/.test(url.pathname))continue;
+    if(source.name==='East Coast Tasmania'&&!/^\/atdw_events\/[^/]+\/?$/.test(url.pathname))continue;
+    if(source.name==='King Island Tourism'&&!/^\/events\/[^/]+\/?$/.test(url.pathname))continue;
+    if(source.name==='West Coast Tasmania'&&!/^\/listings\/[^/]+\/?$/.test(url.pathname))continue;
     const inner=clean(anchor[2]);
     const name=source.name==='King Island Tourism'?titleFromEventUrl(href):finalName(inner);
     if(!plausibleName(name))continue;
     const sliceEnd=Math.min(html.length,anchor.index+anchor[0].length+500);
     const nearby=clean(html.slice(anchor.index,sliceEnd)).replace(/\b(\d{1,2})(?:st|nd|rd|th)\b/gi,'$1');
-    // Require an explicit year and nearby date. Recurring/monthly text is not a dated event.
     let date=dateRange(nearby);
     const explicitRange=nearby.match(/\b(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})\s*(?:to|[-–—])\s*(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})\b/i);
     if(explicitRange)date={startDate:iso(explicitRange[1],explicitRange[2],explicitRange[3]),endDate:iso(explicitRange[4],explicitRange[5],explicitRange[6])};
