@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import AdSlot from '../../components/AdSlot.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 import events from '../../data/events.json';
@@ -294,6 +295,7 @@ const formatEventDate = (startDate, endDate) => {
       </section>
     )}
 
+    <AdSlot placement="content-inline" />
     <section class="town-section browse-town-section" id="browse-town" aria-labelledby="browse-town-heading">
       <div class="town-heading">
         <div>
