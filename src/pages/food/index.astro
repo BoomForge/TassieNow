@@ -26,8 +26,23 @@ const results = places.filter(place => place.status === 'active' && place.visibi
   .filter(place => (place.categories || []).some(c => ['Food & Drink','Local Produce'].includes(c)) || place.foodTypes.length)
   .sort((a,b) => (b.qualityScore || 0)-(a.qualityScore || 0) || a.name.localeCompare(b.name));
 const regions = [...new Set(results.map(p => p.region).filter(Boolean))].sort();
+const schema = {
+  '@context':'https://schema.org',
+  '@type':'CollectionPage',
+  name:'Places to Eat in Tasmania',
+  description:'Explore Tasmanian cafés, restaurants, takeaway, bakeries, food vans, pub meals and local produce.',
+  url:new URL('/food/', Astro.site ?? Astro.url.origin).href,
+  mainEntity:{
+    '@type':'ItemList',
+    itemListElement:results.slice(0,40).map((place,index)=>({
+      '@type':'ListItem',position:index+1,name:place.name,
+      url:new URL('/place/'+place.slug+'/', Astro.site ?? Astro.url.origin).href
+    }))
+  }
+};
 ---
 <BaseLayout title="Places to Eat in Tasmania | TassieNow" description="Find Tasmanian cafés, restaurants, bakeries, takeaway, food vans, pub meals and local-produce stops.">
+  <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
   <BreadcrumbSchema items={[{name:'TassieNow',path:'/'},{name:'Food & produce',path:'/discover/food/'},{name:'Places to Eat'}]}/>
   <div class="eat-page">
     <nav aria-label="Breadcrumb" class="crumb"><a href="/">TassieNow</a> / <a href="/discover/food/">Food & produce</a> / Places to Eat</nav>
