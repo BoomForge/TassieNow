@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T11:13:49.714Z",
+  "generatedAt": "2026-10-08T11:19:09.870Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
@@ -22,7 +22,7 @@
       "name": "catalogue-quality.yml",
       "status": "ok",
       "lastScheduled": "2026-10-07T23:20:18Z",
-      "lastResult": "pending",
+      "lastResult": "success",
       "lastRunAt": "2026-10-08T11:12:51Z",
       "url": "https://github.com/BoomForge/TassieNow/actions/runs/37768579281"
     },
@@ -38,9 +38,9 @@
       "name": "quality.yml",
       "status": "ok",
       "lastScheduled": "2026-10-07T23:37:08Z",
-      "lastResult": "success",
-      "lastRunAt": "2026-10-08T11:12:51Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37768579468"
+      "lastResult": "in_progress",
+      "lastRunAt": "2026-10-08T11:18:40Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37769199429"
     },
     {
       "name": "automation-health.yml",
