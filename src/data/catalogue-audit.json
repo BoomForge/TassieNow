@@ -135,17 +135,70 @@
       "Wildlife": 10,
       "Bakery": 8,
       "Arts & Culture": 4
+    },
+    "foodDiscovery": {
+      "listings": 361,
+      "types": {
+        "Restaurant": 151,
+        "Café": 143,
+        "Takeaway": 45,
+        "Bakery": 8,
+        "Pub Food": 0,
+        "Food Van": 0,
+        "Desserts": 0,
+        "Mobile Vendor": 0,
+        "Local Produce": 12
+      },
+      "regions": {
+        "Hobart & South": 56,
+        "Launceston & North": 85,
+        "North West": 70,
+        "East Coast": 56,
+        "West Coast": 14,
+        "Central Tasmania": 66,
+        "Flinders Island": 5,
+        "King Island": 9
+      },
+      "missingRealPhoto": 342,
+      "media": {
+        "realHeroCoverage": {
+          "count": 19,
+          "percent": 5.3
+        },
+        "twoPlusImages": {
+          "count": 6,
+          "percent": 1.7
+        }
+      },
+      "details": {
+        "website": {
+          "count": 133,
+          "percent": 36.8
+        },
+        "openingHours": {
+          "count": 172,
+          "percent": 47.6
+        },
+        "address": {
+          "count": 151,
+          "percent": 41.8
+        }
+      },
+      "sourceTypes": {
+        "openstreetmap": 347,
+        "curated": 14
+      }
     }
   },
   "events": {
-    "active": 155,
+    "active": 157,
     "ticketCoverage": {
       "count": 56,
-      "percent": 36.1
+      "percent": 35.7
     },
     "priceCoverage": {
-      "count": 33,
-      "percent": 21.3
+      "count": 32,
+      "percent": 20.4
     },
     "providers": {
       "Humanitix": 29,
@@ -159,7 +212,7 @@
       "Burnie City Council": 23,
       "Huon Valley Council": 17,
       "Theatre North Launceston": 17,
-      "Devonport City Council": 12,
+      "Devonport City Council": 14,
       "Humanitix Hobart": 10,
       "Humanitix Launceston": 10,
       "East Coast Tasmania": 9,
@@ -174,7 +227,7 @@
     "regions": {
       "Hobart & South": 79,
       "Launceston & North": 29,
-      "North West": 35,
+      "North West": 37,
       "East Coast": 9,
       "West Coast": 0,
       "Central Tasmania": 0,
@@ -193,7 +246,7 @@
       "North West / Burnie City Council": 23,
       "Hobart & South / Huon Valley Council": 17,
       "Launceston & North / Theatre North Launceston": 17,
-      "North West / Devonport City Council": 12,
+      "North West / Devonport City Council": 14,
       "Hobart & South / Humanitix Hobart": 10,
       "Launceston & North / Humanitix Launceston": 10,
       "East Coast / East Coast Tasmania": 9,
