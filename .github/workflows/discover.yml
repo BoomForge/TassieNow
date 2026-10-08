@@ -102,6 +102,10 @@ jobs:
         run: node scripts/enrich-images.mjs
       - name: Re-rank after image enrichment
         run: node scripts/rank-catalogue.mjs
+      - name: Recover known-good licensed photographs by exact source identity
+        run: |
+          git show da31ddb4d:src/data/places.json > /tmp/tassienow-known-good-licensed-media.json
+          node scripts/restore-licensed-images.mjs /tmp/tassienow-known-good-licensed-media.json
       - name: Generate catalogue coverage audit
         run: node scripts/catalogue-audit.mjs
       - name: Guard against large real-photo regressions
