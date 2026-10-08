@@ -117,40 +117,40 @@
     }
   },
   "events": {
-    "active": 146,
+    "active": 148,
     "ticketCoverage": {
-      "count": 53,
-      "percent": 36.3
+      "count": 56,
+      "percent": 37.8
     },
     "priceCoverage": {
       "count": 34,
-      "percent": 23.3
+      "percent": 23
     },
     "providers": {
-      "Humanitix": 26,
+      "Humanitix": 29,
       "Ticketek": 22,
       "Eventbrite": 3,
       "Ticketmaster": 1,
       "TryBooking": 1
     },
     "sources": {
-      "Burnie City Council": 28,
+      "Burnie City Council": 26,
       "MyState Bank Arena": 24,
       "Huon Valley Council": 17,
       "Theatre North Launceston": 17,
       "Devonport City Council": 14,
-      "Humanitix Hobart": 9,
+      "Humanitix Hobart": 11,
+      "Humanitix Launceston": 9,
+      "Theatre Royal Hobart": 9,
       "City of Clarence": 8,
-      "Theatre Royal Hobart": 8,
       "City of Hobart": 7,
-      "Humanitix Launceston": 7,
       "Glenorchy City Council": 4,
-      "City of Launceston": 3
+      "City of Launceston": 2
     },
     "regions": {
-      "Hobart & South": 77,
-      "North West": 42,
-      "Launceston & North": 27
+      "Hobart & South": 80,
+      "North West": 40,
+      "Launceston & North": 28
     }
   }
 }
