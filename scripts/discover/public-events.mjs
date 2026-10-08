@@ -83,7 +83,7 @@ function regionalListingEvents(html,source){
     const anchor=anchors[i];let href;
     try{href=new URL(decode(anchor[1]),source.url).href;}catch{continue;}
     const url=new URL(href),host=new URL(source.url).hostname;
-    if(url.hostname!==host)continue;
+    if(url.hostname.replace(/^www\./,'')!==host.replace(/^www\./,''))continue;
     if(source.name==='East Coast Tasmania'&&!/^\\/atdw_events\\/[^/]+\\/?$/.test(url.pathname))continue;
     if(source.name==='King Island Tourism'&&!/^\\/events\\/[^/]+\\/?$/.test(url.pathname))continue;
     if(source.name==='West Coast Tasmania'&&!/^\\/listings\\/[^/]+\\/?$/.test(url.pathname))continue;
@@ -94,7 +94,7 @@ function regionalListingEvents(html,source){
     const nearby=clean(html.slice(anchor.index,sliceEnd)).replace(/\b(\d{1,2})(?:st|nd|rd|th)\b/gi,'$1');
     // Require an explicit year and nearby date. Recurring/monthly text is not a dated event.
     let date=dateRange(nearby);
-    const explicitRange=nearby.match(new RegExp(`\\\\b(\\\\d{1,2})\\\\s+(${MONTH})\\\\s+(20\\\\d{2})\\\\s*(?:to|[-–—])\\\\s*(\\\\d{1,2})\\\\s+(${MONTH})\\\\s+(20\\\\d{2})\\\\b`,'i'));
+    const explicitRange=nearby.match(/\b(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})\s*(?:to|[-–—])\s*(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})\b/i);
     if(explicitRange)date={startDate:iso(explicitRange[1],explicitRange[2],explicitRange[3]),endDate:iso(explicitRange[4],explicitRange[5],explicitRange[6])};
     if(!validRange(date))continue;
     const event=makeEvent({name,source,startDate:date.startDate,endDate:date.endDate,town:source.town,region:source.region,eventUrl:href,description:''});
