@@ -129,10 +129,10 @@ const schema = {
         </div>
 
         <div class="hero-actions">
-          {operatorUrl && <a class="action-link" href={operatorUrl} target="_blank" rel="noopener noreferrer">Official website ↗</a>}
-          {bookingUrl && <a class="action-link booking" href={bookingUrl} target="_blank" rel="noopener noreferrer">Book / tickets ↗</a>}
-          <a class="action-link secondary" href={directionsUrl} target="_blank" rel="noopener noreferrer">Directions ↗</a>
-          <a class="action-link secondary" href={reviewUrl} target="_blank" rel="noopener noreferrer">Google reviews ↗</a>
+          {operatorUrl && <a class="action-link" data-track-outbound="official" href={operatorUrl} target="_blank" rel="noopener noreferrer">Official website ↗</a>}
+          {bookingUrl && <a class="action-link booking" data-track-outbound="booking" href={bookingUrl} target="_blank" rel="noopener noreferrer">Book / tickets ↗</a>}
+          <a class="action-link secondary" data-track-outbound="directions" href={directionsUrl} target="_blank" rel="noopener noreferrer">Directions ↗</a>
+          <a class="action-link secondary" data-track-outbound="reviews" href={reviewUrl} target="_blank" rel="noopener noreferrer">Google reviews ↗</a>
         </div>
       </div>
     </section>
