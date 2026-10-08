@@ -29,6 +29,12 @@ async function check(name,path,{marker='TassieNow',expected=200,html=false}={}){
     entry.httpCode=response.status;
     entry.status=response.status===expected&&(!marker||body.includes(marker))&&(!html||(/<h1\b/i.test(body)&&/<main\b/i.test(body)))?'pass':'fail';
     if(entry.status==='fail')entry.problem='Unexpected status, missing content, heading, or main landmark';
+    if(path==='/suggest-update/'){
+      const hasWidget=body.includes('cf-turnstile')&&body.includes('data-sitekey');
+      const widgetCheck={name:'Public corrections form has human verification widget',path,expected:'Turnstile site key and widget markup',status:hasWidget?'pass':'fail'};
+      report.checks.push(widgetCheck);
+      if(!hasWidget)report.failures.push({...widgetCheck,problem:'Check PUBLIC_TURNSTILE_SITE_KEY in Cloudflare build environment'});
+    }
     if(path==='/'){
       for(const [header,expectedValue] of [
         ['strict-transport-security','max-age'],
