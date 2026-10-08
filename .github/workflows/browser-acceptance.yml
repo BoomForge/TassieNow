@@ -5,6 +5,8 @@ on:
     paths:
       - 'scripts/browser-acceptance.mjs'
       - '.github/workflows/browser-acceptance.yml'
+      - 'src/styles/global.css'
+      - 'src/layouts/BaseLayout.astro'
   schedule:
     - cron: '27 14 * * *'
   workflow_dispatch:
