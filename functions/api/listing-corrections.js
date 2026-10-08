@@ -3,7 +3,7 @@ import { verifyTurnstile } from '../_lib/turnstile.js';
 
 const FIELDS=new Set(['opening-hours','website','phone','email','address','location','description','image','closure','other']);
 const RELATIONSHIPS=new Set(['owner','employee','visitor','organiser']);
-const emailValid=value=>/^[^\s@]+@[^\s@]+\\.[^\s@]+$/.test(value);
+const emailValid=value=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 
 export async function onRequestPost(context) {
   const request=context.request;
