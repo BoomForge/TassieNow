@@ -91,9 +91,11 @@ function regionalListingEvents(html,source){
     const name=source.name==='King Island Tourism'?titleFromEventUrl(href):finalName(inner);
     if(!plausibleName(name))continue;
     const sliceEnd=Math.min(html.length,anchor.index+anchor[0].length+500);
-    const nearby=clean(html.slice(anchor.index,sliceEnd));
+    const nearby=clean(html.slice(anchor.index,sliceEnd)).replace(/\b(\d{1,2})(?:st|nd|rd|th)\b/gi,'$1');
     // Require an explicit year and nearby date. Recurring/monthly text is not a dated event.
-    const date=dateRange(nearby);
+    let date=dateRange(nearby);
+    const explicitRange=nearby.match(new RegExp(`\\\\b(\\\\d{1,2})\\\\s+(${MONTH})\\\\s+(20\\\\d{2})\\\\s*(?:to|[-–—])\\\\s*(\\\\d{1,2})\\\\s+(${MONTH})\\\\s+(20\\\\d{2})\\\\b`,'i'));
+    if(explicitRange)date={startDate:iso(explicitRange[1],explicitRange[2],explicitRange[3]),endDate:iso(explicitRange[4],explicitRange[5],explicitRange[6])};
     if(!validRange(date))continue;
     const event=makeEvent({name,source,startDate:date.startDate,endDate:date.endDate,town:source.town,region:source.region,eventUrl:href,description:''});
     if(event)out.push(event);
