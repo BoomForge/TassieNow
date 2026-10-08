@@ -26,6 +26,8 @@ jobs:
           cache-dependency-path: package.json
       - name: Install dependencies
         run: npm install --no-audit --no-fund
+      - name: Audit installed production dependencies
+        run: npm audit --omit=dev --audit-level=high
       - name: Syntax-check automation and Pages Functions
         run: |
           node --check scripts/discover/official-markets.mjs
@@ -54,6 +56,7 @@ jobs:
           node --check scripts/automation-heartbeat.mjs
           node --check scripts/check-operations.mjs
           node --check scripts/test-catalogue-recovery.mjs
+          node --check scripts/audit-built-site.mjs
           node --check scripts/indexnow.mjs
           node --check scripts/post-bluesky.mjs
           find functions -name '*.js' -print0 | xargs -0 -n1 node --check
@@ -77,3 +80,12 @@ jobs:
         run: node scripts/catalogue-audit.mjs
       - name: Validate and build ranked site
         run: npm run build
+      - name: Audit rendered SEO and large assets
+        run: node scripts/audit-built-site.mjs
+      - name: Preserve build audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: launch-build-audit
+          path: reports/launch-build-audit.json
+          retention-days: 30
