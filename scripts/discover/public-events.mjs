@@ -19,8 +19,10 @@ const SOURCES = [
 const MONTHS = { jan:1,january:1,feb:2,february:2,mar:3,march:3,apr:4,april:4,may:5,jun:6,june:6,jul:7,july:7,aug:8,august:8,sep:9,september:9,sept:9,oct:10,october:10,nov:11,november:11,dec:12,december:12 };
 const MONTH = 'Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?';
 const DATE_ONLY_NAME = /^(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\s+\d{1,2}(?:st|nd|rd|th)?(?:,?\s+20\d{2})?$/i;
-const TAS_CONTEXT = /\b(?:TAS|Tasmania|Hobart|Bellerive|Glenorchy|Moonah|Sandy Bay|Rosny|Kingston|Launceston|Prospect|Invermay|Burnie|Devonport|Ulverstone|Wynyard|Smithton|Stanley|St Helens|Bicheno|Swansea|Coles Bay|Queenstown|Strahan|Campbell Town|Oatlands|Ross|Bothwell|Hamilton|Ouse|Miena|Tarraleah|Waddamana|Evandale|Richmond|Sorell|Huonville|Cygnet|New Norfolk|Port Arthur)\b/i;
+const TAS_CONTEXT = /\b(?:TAS|Tasmania|Hobart|Bellerive|Glenorchy|Moonah|Sandy Bay|Rosny|Kingston|Launceston|Prospect|Invermay|Burnie|Devonport|Ulverstone|Wynyard|Smithton|Stanley|St Helens|Bicheno|Swansea|Coles Bay|Queenstown|Strahan|Campbell Town|Oatlands|Ross|Bothwell|Hamilton|Ouse|Miena|Tarraleah|Waddamana|Evandale|Richmond|Sorell|Huonville|Cygnet|New Norfolk|Port Arthur|Whitemark|Lady Barron|Flinders Island|Cape Barren Island|Currie|Grassy|Naracoopa|King Island|Zeehan|Rosebery|Tullah|Triabunna|Orford|Scamander|Binalong Bay|Derwent Bridge)\b/i;
 const LOCATION_RULES = [
+  { town:'Whitemark', region:'Flinders Island', re:/\b(?:Whitemark|Lady Barron|Flinders Island|Cape Barren Island)\b/i },
+  { town:'Currie', region:'King Island', re:/\b(?:Currie|Grassy|Naracoopa|King Island)\b/i },
   { town:'Hobart', region:'Hobart & South', re:/\b(?:Hobart|Bellerive|Glenorchy|Moonah|Sandy Bay|Rosny|Kingston|Battery Point|North Hobart|New Town|Claremont|Derwent Park)\b/i },
   { town:'Launceston', region:'Launceston & North', re:/\b(?:Launceston|Prospect|Invermay|Mowbray|Kings Meadows|Evandale|Longford|George Town|Scottsdale|Derby|Bridport|Beaconsfield|Deloraine|Westbury|Mole Creek)\b/i },
   { town:'Devonport', region:'North West', re:/\b(?:Devonport|Burnie|Ulverstone|Penguin|Wynyard|Smithton|Stanley|Latrobe|Sheffield)\b/i },
