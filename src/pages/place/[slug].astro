@@ -200,6 +200,7 @@ const schema = {
 
         <div class="source-stack">
           <p class="notice">Opening hours, dates, prices, bookings, conditions and access can change. Confirm time-sensitive details with the operator before travelling.</p>
+          <p class="source-note"><a href={`/suggest-update/?place=${encodeURIComponent(place.slug)}&name=${encodeURIComponent(place.name)}`}>Is this your business? Suggest an update →</a> Basic corrections are free and reviewed before publication.</p>
           <p class="source-note">
             <span>Sources</span>
             <a href={place.sourceUrl} target="_blank" rel="noopener noreferrer">Source record ↗</a>
