@@ -137,7 +137,7 @@ const townSlug = String(event.town || '')
         {event.ticketProvider && <p>Ticket provider: {event.ticketProvider}</p>}
         <div class="action-row">
           {event.ticketUrl && (
-            <a class="primary-button link-button" href={event.ticketUrl} target="_blank" rel="noopener noreferrer">
+            <a class="primary-button link-button" data-track-outbound="booking" href={event.ticketUrl} target="_blank" rel="noopener noreferrer">
               Get tickets / Book ↗
             </a>
           )}
@@ -146,7 +146,7 @@ const townSlug = String(event.town || '')
     )}
 
     <div class="action-row">
-      <a class="action-link" href={event.eventUrl || event.sourceUrl} target="_blank" rel="noopener noreferrer">
+      <a class="action-link" data-track-outbound="official" href={event.eventUrl || event.sourceUrl} target="_blank" rel="noopener noreferrer">
         Official event details ↗
       </a>
     </div>

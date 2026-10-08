@@ -51,9 +51,9 @@ const schema = {
     <p class="intro">From cafés and bakeries to food vans, pub meals, takeaway and farm-gate produce. Explore free, organically ranked listings across the state.</p>
     <p class="note">Food vans and market stalls can move or trade only on certain days. Check the provider’s official website or social updates before travelling; a listing is not a live location or trading-hours guarantee.</p>
     <section aria-label="Filter places to eat" class="filters">
-      <label>Food type<select id="eat-type">{types.map(([value,label]) => <option value={value}>{label}</option>)}</select></label>
-      <label>Region<select id="eat-region"><option value="">All regions</option>{regions.map(region => <option value={region}>{region}</option>)}</select></label>
-      <label>Search<input id="eat-search" type="search" placeholder="Name or town…" /></label>
+      <label>Food type<select id="eat-type" data-track-filter="food-type">{types.map(([value,label]) => <option value={value}>{label}</option>)}</select></label>
+      <label>Region<select id="eat-region" data-track-filter="region"><option value="">All regions</option>{regions.map(region => <option value={region}>{region}</option>)}</select></label>
+      <label>Search<input id="eat-search" data-track-filter="text" type="search" placeholder="Name or town…" /></label>
       <button id="eat-clear" type="button">Clear filters</button>
     </section>
     <p id="eat-count" role="status" aria-live="polite">{results.length} places</p>

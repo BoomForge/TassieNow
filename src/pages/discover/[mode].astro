@@ -286,8 +286,8 @@ const siblingModes = [
       </div>
 
       <div class="discover-filter-panel">
-        <input id="discover-search" type="search" placeholder="Search names, towns or interests…" aria-label="Search discovery results" />
-        <select id="discover-region" aria-label="Filter by region">
+        <input id="discover-search" data-track-filter="text" type="search" placeholder="Search names, towns or interests…" aria-label="Search discovery results" />
+        <select id="discover-region" data-track-filter="region" aria-label="Filter by region">
           <option value="">All regions</option>
           {regions.map((region) => <option value={region.toLowerCase()}>{region}</option>)}
         </select>

@@ -254,12 +254,12 @@ const formatEventDate = (startDate, endDate) => {
       </div>
 
       <div class="control-panel" aria-label="Directory filters">
-        <input id="search" type="search" placeholder="Search places, towns or interests…" aria-label="Search places" />
-        <select id="region" aria-label="Filter by region">
+        <input id="search" data-track-filter="text" type="search" placeholder="Search places, towns or interests…" aria-label="Search places" />
+        <select id="region" data-track-filter="region" aria-label="Filter by region">
           <option value="">All regions</option>
           {regions.map((region) => <option value={region.toLowerCase()}>{region}</option>)}
         </select>
-        <select id="category" aria-label="Filter by category">
+        <select id="category" data-track-filter="category" aria-label="Filter by category">
           <option value="">Everything</option>
           {categories.map((category) => <option value={category.toLowerCase()}>{category}</option>)}
         </select>
