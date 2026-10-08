@@ -6,7 +6,7 @@ import places from '../../data/places.json';
 const types = [
   ['all','All food stops'],
   ['cafe','Cafés'], ['restaurant','Restaurants'], ['takeaway','Takeaway'],
-  ['food-van','Food vans & trucks'], ['bakery','Bakeries'],
+  ['food-van','Food vans & trucks'], ['bakery','Bakeries'], ['dessert','Desserts & ice cream'],
   ['pub-food','Pub food'], ['produce','Local produce & farm gates']
 ];
 function classify(place) {
@@ -17,6 +17,7 @@ function classify(place) {
   if (/takeaway|take-away|fish and chips|pizza shop/.test(text)) matches.push('takeaway');
   if (/food truck|food van|mobile food|mobile vendor|street food|food trailer/.test(text)) matches.push('food-van');
   if (/bakery|bakeries|patisserie|bakehouse/.test(text)) matches.push('bakery');
+  if (/dessert|ice cream|ice-cream|gelato|patisserie/.test(text)) matches.push('dessert');
   if (/pub food|pub meals|gastropub|tavern|hotel restaurant/.test(text)) matches.push('pub-food');
   if (/local produce|farm.?gate|farm shop|produce|farmers.? market|food market/.test(text)) matches.push('produce');
   return matches;

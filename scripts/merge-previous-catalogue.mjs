@@ -41,9 +41,16 @@ for (const place of currentOsm) {
 
 const ratio = previousOsm.length ? currentOsm.length / previousOsm.length : 1;
 const sourceLooksPartial = previousOsm.length >= 100 && ratio < 0.90;
+// More non-food candidates can mask a completely failed food-source query.
+// Protect the restaurant/café feed independently from the overall OSM count.
+const isFood = p => (p.categories || []).includes('Food & Drink');
+const previousFood = previousOsm.filter(isFood).length;
+const currentFood = currentOsm.filter(isFood).length;
+const foodSourceLooksPartial = previousFood >= 35 && currentFood < previousFood * 0.85;
 let restored = 0;
-if (sourceLooksPartial) {
+if (sourceLooksPartial || foodSourceLooksPartial) {
   for (const old of previousOsm) {
+    if (!sourceLooksPartial && !isFood(old)) continue;
     if (currentIds.has(old.sourceId)) continue;
     const key = nameKey(old);
     if (key && currentNames.has(key)) continue;
@@ -64,4 +71,4 @@ current.sort((a, b) =>
 );
 
 await fs.writeFile(CURRENT_FILE, `${JSON.stringify(current, null, 2)}\n`);
-console.log(`Previous-catalogue merge: ${currentOsm.length}/${previousOsm.length || currentOsm.length} OSM records rediscovered (${(ratio * 100).toFixed(1)}% of prior snapshot); carried ${carried} enriched field(s); restored ${restored} prior record(s)${sourceLooksPartial ? ' because source coverage was incomplete' : ''}.`);
+console.log(`Previous-catalogue merge: ${currentOsm.length}/${previousOsm.length || currentOsm.length} OSM records rediscovered (${(ratio * 100).toFixed(1)}% of prior snapshot); carried ${carried} enriched field(s); restored ${restored} prior record(s)${sourceLooksPartial || foodSourceLooksPartial ? ' because source coverage was incomplete' : ''}; food ${currentFood}/${previousFood} (partial: ${foodSourceLooksPartial}).`);
