@@ -416,33 +416,6 @@
     "ticketLastChecked": "2026-10-08"
   },
   {
-    "slug": "burnie-rostrum-club-2026-10-08-burnie",
-    "name": "Burnie Rostrum Club",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-10-08",
-    "endDate": "2026-10-08",
-    "categories": [
-      "Events"
-    ],
-    "summary": "Burnie Rostrum Club in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Rostrum-Club",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
-    "sourceName": "Burnie City Council",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Burnie Rostrum Club event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-10-08",
-    "ticketLastChecked": "2026-10-08"
-  },
-  {
     "slug": "hobart-showcase-2026-2026-10-08-hobart",
     "name": "Hobart Showcase 2026",
     "town": "Hobart",
@@ -593,6 +566,38 @@
     "status": "active",
     "lastChecked": "2026-10-08",
     "ticketUrl": "https://events.humanitix.com/the-2026-tassie-mental-health-comedy-roadshow-cygnet",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-08"
+  },
+  {
+    "slug": "no-lights-no-lycra-hobart-2026-2026-10-08-hobart",
+    "name": "No Lights No Lycra Hobart 2026",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-10-08",
+    "endDate": "2026-10-08",
+    "categories": [
+      "Events"
+    ],
+    "summary": "No Lights No Lycra Hobart 2026 in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Venue",
+    "eventUrl": "https://events.humanitix.com/no-lights-no-lycra-hobart-2026",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "No Lights No Lycra Hobart 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-08",
+    "ticketUrl": "https://events.humanitix.com/no-lights-no-lycra-hobart-2026",
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
@@ -2585,6 +2590,33 @@
     "ticketLastChecked": "2026-10-08"
   },
   {
+    "slug": "the-butcher-and-8217-s-feast-craigie-knowe-vineyard-and-flora-and-8217-s-restaurant-great-",
+    "name": "The Butcher&#8217;s Feast | Craigie Knowe Vineyard and Flora&#8217;s Restaurant | Great Eastern Wine Week 2026",
+    "town": "St Helens",
+    "region": "East Coast",
+    "startDate": "2026-10-24",
+    "endDate": "2026-10-24",
+    "categories": [
+      "Events"
+    ],
+    "summary": "The Butcher&#8217;s Feast | Craigie Knowe Vineyard and Flora&#8217;s Restaurant | Great Eastern Wine Week 2026 in St Helens. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://eastcoasttasmania.com/atdw_events/the-butchers-feast-craigie-knowe-vineyard-and-floras-restaurant-great-eastern-wine-week-2026/",
+    "sourceUrl": "https://eastcoasttasmania.com/events/",
+    "sourceName": "East Coast Tasmania",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "The Butcher&#8217;s Feast | Craigie Knowe Vineyard and Flora&#8217;s Restaurant | Great Eastern Wine Week 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-08",
+    "ticketLastChecked": "2026-10-08"
+  },
+  {
     "slug": "acotar-6-midnight-release-event-2026-10-25-burnie",
     "name": "ACOTAR 6 Midnight Release Event",
     "town": "Burnie",
@@ -2772,8 +2804,45 @@
       "sourceUrl": null,
       "isFallback": true
     },
+    "status": "superseded",
+    "lastChecked": "2026-10-08",
+    "ticketLastChecked": "2026-10-08",
+    "correction": {
+      "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
+      "reason": "Date absent from the verified council session calendar",
+      "checkedAt": "2026-10-08"
+    }
+  },
+  {
+    "slug": "halloween-fest-hobart-2026-10-30-hobart",
+    "name": "Halloween Fest Hobart",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-10-30",
+    "endDate": "2026-10-31",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Halloween Fest Hobart in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Hobart City Hall",
+    "eventUrl": "https://events.humanitix.com/halloween-fest-hobart",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Halloween Fest Hobart event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
     "status": "active",
     "lastChecked": "2026-10-08",
+    "ticketUrl": "https://events.humanitix.com/halloween-fest-hobart",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
     "ticketLastChecked": "2026-10-08"
   },
   {
@@ -2840,22 +2909,22 @@
     "ticketLastChecked": "2026-10-08"
   },
   {
-    "slug": "halloween-2026-10-31-burnie",
-    "name": "Halloween 🎃 👻",
-    "town": "Burnie",
-    "region": "North West",
+    "slug": "sat-oct-31-10am-halloween-fest-hobart-hobart-2026-10-31-hobart",
+    "name": "SAT, OCT 31, 10AM Halloween Fest Hobart Hobart",
+    "town": "Hobart",
+    "region": "Hobart & South",
     "startDate": "2026-10-31",
     "endDate": "2026-10-31",
     "categories": [
       "Events"
     ],
-    "summary": "Halloween 🎃 👻 in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Halloween",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
-    "sourceName": "Burnie City Council",
+    "summary": "SAT, OCT 31, 10AM Halloween Fest Hobart Hobart in Hobart. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://events.humanitix.com/halloween-fest-hobart?hxref=srf%3Aside%7Cmodel%3Ablend%7Ccpos%3A4%7Cgeo%3Aau--hobart--7000&hxchl=mkt-loc",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
     "image": {
       "url": "/images/categories/events.svg",
-      "alt": "Halloween 🎃 👻 event category image",
+      "alt": "SAT, OCT 31, 10AM Halloween Fest Hobart Hobart event category image",
       "attribution": "TassieNow",
       "license": "Site artwork",
       "licenseUrl": null,
@@ -2864,34 +2933,43 @@
     },
     "status": "active",
     "lastChecked": "2026-10-08",
+    "ticketUrl": "https://events.humanitix.com/halloween-fest-hobart?hxref=srf%3Aside%7Cmodel%3Ablend%7Ccpos%3A4%7Cgeo%3Aau--hobart--7000&hxchl=mkt-loc",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
     "ticketLastChecked": "2026-10-08"
   },
   {
-    "slug": "city-office-public-holiday-closures-2026-11-01-burnie",
-    "name": "City Office Public Holiday Closures",
+    "slug": "second-glance-market-2026-10-31-burnie",
+    "name": "Second Glance Market",
     "town": "Burnie",
     "region": "North West",
-    "startDate": "2026-11-01",
-    "endDate": "2026-11-01",
+    "startDate": "2026-10-31",
+    "endDate": "2026-10-31",
     "categories": [
-      "Events"
+      "Events",
+      "Markets"
     ],
-    "summary": "City Office Public Holiday Closures in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/Services/City-Office-Closed-2026",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+    "venue": "Civic Centre - Burnie Arts, 77-79 Wilmot St, Burnie,",
+    "summary": "Second Glance Market in Burnie. The council lists this session for 2026-10-31; check the source for changes.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
     "sourceName": "Burnie City Council",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "City Office Public Holiday Closures event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
     "status": "active",
     "lastChecked": "2026-10-08",
-    "ticketLastChecked": "2026-10-08"
+    "discovery": {
+      "sourceId": "burnie-marketplace",
+      "method": "council-calendar",
+      "verifiedAt": "2026-10-08"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Second Glance Market market illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "startTime": "12:00",
+    "endTime": "15:00"
   },
   {
     "slug": "dia-de-muertos-kids-2026-11-01-hobart",
@@ -3048,6 +3126,39 @@
     "bookingRequired": true,
     "availability": "InStock",
     "ticketLastChecked": "2026-10-08"
+  },
+  {
+    "slug": "book-market-burnie-emu-bay-lions-club-2026-11-07-wivenhoe",
+    "name": "Book Market : Burnie Emu Bay Lions Club",
+    "town": "Wivenhoe",
+    "region": "North West",
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-07",
+    "categories": [
+      "Events",
+      "Markets"
+    ],
+    "venue": "Wivenhoe Shed, Smith and Angelsea Street, Wivenhoe, 7320,",
+    "summary": "Book Market : Burnie Emu Bay Lions Club in Wivenhoe. The council lists this session for 2026-11-07; check the source for changes.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
+    "sourceName": "Burnie City Council",
+    "status": "active",
+    "lastChecked": "2026-10-08",
+    "discovery": {
+      "sourceId": "burnie-marketplace",
+      "method": "council-calendar",
+      "verifiedAt": "2026-10-08"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Book Market : Burnie Emu Bay Lions Club market illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "startTime": "10:00",
+    "endTime": "12:00"
   },
   {
     "slug": "infinite-spirit-southern-spectacular-2026-2026-11-07-glenorchy",
@@ -3231,6 +3342,34 @@
     "priceFrom": 17,
     "priceTo": 25,
     "priceCurrency": "AUD",
+    "ticketLastChecked": "2026-10-08"
+  },
+  {
+    "slug": "bicheno-food-and-wine-festival-2026-2026-11-21-st-helens",
+    "name": "Bicheno Food and Wine Festival 2026",
+    "town": "St Helens",
+    "region": "East Coast",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-21",
+    "categories": [
+      "Events",
+      "Music"
+    ],
+    "summary": "Bicheno Food and Wine Festival 2026 in St Helens. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://eastcoasttasmania.com/atdw_events/bicheno-food-and-wine-festival-2026/",
+    "sourceUrl": "https://eastcoasttasmania.com/events/",
+    "sourceName": "East Coast Tasmania",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Bicheno Food and Wine Festival 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-08",
     "ticketLastChecked": "2026-10-08"
   },
   {
@@ -3521,12 +3660,7 @@
     "lastChecked": "2026-10-06",
     "ticketUrl": "https://events.humanitix.com/launceston-showcase-2026",
     "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "priceFrom": 10,
-    "priceTo": 25,
-    "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-08"
+    "bookingRequired": true
   },
   {
     "slug": "magic-of-the-faraway-tree-krsd-performing-arts-albert-hall-launceston-01-dec-02-dec-2026-1",
@@ -3552,11 +3686,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-06",
-    "priceFrom": 34.95,
-    "priceTo": 49.95,
-    "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-08"
+    "lastChecked": "2026-10-06"
   },
   {
     "slug": "come-and-try-disability-golf-2026-12-03-rosny-park",
@@ -3609,6 +3739,65 @@
     },
     "status": "active",
     "lastChecked": "2026-10-06"
+  },
+  {
+    "slug": "19-twenty-live-at-craigie-knowe-vineyard-2026-12-05-st-helens",
+    "name": "19-Twenty live at Craigie Knowe Vineyard",
+    "town": "St Helens",
+    "region": "East Coast",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-05",
+    "categories": [
+      "Events"
+    ],
+    "summary": "19-Twenty live at Craigie Knowe Vineyard in St Helens. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://eastcoasttasmania.com/atdw_events/19-twenty-live-at-craigie-knowe-vineyard/",
+    "sourceUrl": "https://eastcoasttasmania.com/events/",
+    "sourceName": "East Coast Tasmania",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "19-Twenty live at Craigie Knowe Vineyard event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-08"
+  },
+  {
+    "slug": "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe",
+    "name": "Book Market : Burnie Emu Bay Lions Club",
+    "town": "Wivenhoe",
+    "region": "North West",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-05",
+    "categories": [
+      "Events",
+      "Markets"
+    ],
+    "venue": "Wivenhoe Shed, Smith and Angelsea Street, Wivenhoe, 7320,",
+    "summary": "Book Market : Burnie Emu Bay Lions Club in Wivenhoe. The council lists this session for 2026-12-05; check the source for changes.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
+    "sourceName": "Burnie City Council",
+    "status": "active",
+    "lastChecked": "2026-10-08",
+    "discovery": {
+      "sourceId": "burnie-marketplace",
+      "method": "council-calendar",
+      "verifiedAt": "2026-10-08"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Book Market : Burnie Emu Bay Lions Club market illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "startTime": "10:00",
+    "endTime": "12:00"
   },
   {
     "slug": "the-wiggles-sparkle-big-show-2026-2026-12-05-glenorchy",
@@ -3781,6 +3970,39 @@
     "bookingRequired": true
   },
   {
+    "slug": "tassie-pop-culture-market-2026-12-12-upper-burnie",
+    "name": "Tassie Pop Culture Market",
+    "town": "Upper Burnie",
+    "region": "North West",
+    "startDate": "2026-12-12",
+    "endDate": "2026-12-12",
+    "categories": [
+      "Events",
+      "Markets"
+    ],
+    "venue": "Upper Burnie Hall, 242 Mount st, Upper Burnie, 7320,",
+    "summary": "Tassie Pop Culture Market in Upper Burnie. The council lists this session for 2026-12-12; check the source for changes.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market",
+    "sourceName": "Burnie City Council",
+    "status": "active",
+    "lastChecked": "2026-10-08",
+    "discovery": {
+      "sourceId": "burnie-marketplace",
+      "method": "council-calendar",
+      "verifiedAt": "2026-10-08"
+    },
+    "image": {
+      "url": "/images/categories/markets.svg",
+      "alt": "Tassie Pop Culture Market market illustration",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "startTime": "10:00",
+    "endTime": "14:00"
+  },
+  {
     "slug": "carols-by-candlelight-2026-12-19-glenorchy",
     "name": "Carols by Candlelight",
     "town": "Glenorchy",
@@ -3897,6 +4119,32 @@
     "bookingRequired": true
   },
   {
+    "slug": "the-beatles-show-red-and-038-blue-boxing-day-craigie-knowe-vineyard-2026-12-26-st-helens",
+    "name": "The Beatles Show: Red &#038; Blue | Boxing Day | Craigie Knowe Vineyard",
+    "town": "St Helens",
+    "region": "East Coast",
+    "startDate": "2026-12-26",
+    "endDate": "2026-12-26",
+    "categories": [
+      "Events"
+    ],
+    "summary": "The Beatles Show: Red &#038; Blue | Boxing Day | Craigie Knowe Vineyard in St Helens. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://eastcoasttasmania.com/atdw_events/the-beatles-show-red-blue-boxing-day-craigie-knowe-vineyard/",
+    "sourceUrl": "https://eastcoasttasmania.com/events/",
+    "sourceName": "East Coast Tasmania",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "The Beatles Show: Red &#038; Blue | Boxing Day | Craigie Knowe Vineyard event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-08"
+  },
+  {
     "slug": "tasmania-jewels-v-bendigo-spirit-2026-12-27-glenorchy",
     "name": "Tasmania Jewels V Bendigo Spirit",
     "town": "Glenorchy",
@@ -3926,6 +4174,32 @@
     "ticketUrl": "https://premier.ticketek.com.au/shows/show.aspx?sh=JEWELS27",
     "ticketProvider": "Ticketek",
     "bookingRequired": true
+  },
+  {
+    "slug": "mental-as-anything-new-year-and-8217-s-day-at-craigie-knowe-vineyard-2027-01-01-st-helens",
+    "name": "Mental As Anything: New Year&#8217;s Day at Craigie Knowe Vineyard",
+    "town": "St Helens",
+    "region": "East Coast",
+    "startDate": "2027-01-01",
+    "endDate": "2027-01-01",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Mental As Anything: New Year&#8217;s Day at Craigie Knowe Vineyard in St Helens. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://eastcoasttasmania.com/atdw_events/mental-as-anything-new-years-day-at-craigie-knowe-vineyard/",
+    "sourceUrl": "https://eastcoasttasmania.com/events/",
+    "sourceName": "East Coast Tasmania",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Mental As Anything: New Year&#8217;s Day at Craigie Knowe Vineyard event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-08"
   },
   {
     "slug": "tasmania-jackjumpers-v-perth-wildcats-2027-01-01-glenorchy",
@@ -3988,6 +4262,32 @@
     "ticketUrl": "https://premier.ticketek.com.au/shows/show.aspx?sh=JEWELS27",
     "ticketProvider": "Ticketek",
     "bookingRequired": true
+  },
+  {
+    "slug": "2027-king-island-pro-am-2027-01-15-currie",
+    "name": "2027 King Island Pro Am",
+    "town": "Currie",
+    "region": "King Island",
+    "startDate": "2027-01-15",
+    "endDate": "2027-01-17",
+    "categories": [
+      "Events"
+    ],
+    "summary": "2027 King Island Pro Am in Currie. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://kingisland.org.au/events/2027-king-island-pro-am/",
+    "sourceUrl": "https://kingisland.org.au/events/",
+    "sourceName": "King Island Tourism",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "2027 King Island Pro Am event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-08"
   },
   {
     "slug": "tasmania-jewels-v-townsville-fire-2027-01-21-glenorchy",
@@ -4233,6 +4533,33 @@
     "lastChecked": "2026-10-06"
   },
   {
+    "slug": "festival-of-king-island-2027-2027-02-12-currie",
+    "name": "Festival Of King Island 2027",
+    "town": "Currie",
+    "region": "King Island",
+    "startDate": "2027-02-12",
+    "endDate": "2027-02-13",
+    "categories": [
+      "Events",
+      "Music"
+    ],
+    "summary": "Festival Of King Island 2027 in Currie. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://kingisland.org.au/events/festival-of-king-island-2027/",
+    "sourceUrl": "https://kingisland.org.au/events/",
+    "sourceName": "King Island Tourism",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Festival Of King Island 2027 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-08"
+  },
+  {
     "slug": "seventh-wonder-performs-fleetwood-mac-orchestrated-behind-touring-albert-hall-launceston-1",
     "name": "Seventh Wonder performs Fleetwood Mac Orchestrated Behind Touring Albert Hall, Launceston 19 Feb",
     "town": "Launceston",
@@ -4283,6 +4610,60 @@
     },
     "status": "active",
     "lastChecked": "2026-10-06"
+  },
+  {
+    "slug": "spoke-motorcycle-festival-2027-02-26-st-helens",
+    "name": "Spoke Motorcycle Festival",
+    "town": "St Helens",
+    "region": "East Coast",
+    "startDate": "2027-02-26",
+    "endDate": "2027-02-28",
+    "categories": [
+      "Events",
+      "Music"
+    ],
+    "summary": "Spoke Motorcycle Festival in St Helens. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://eastcoasttasmania.com/atdw_events/spoke-motorcycle-festival/",
+    "sourceUrl": "https://eastcoasttasmania.com/events/",
+    "sourceName": "East Coast Tasmania",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Spoke Motorcycle Festival event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-08"
+  },
+  {
+    "slug": "echo-festival-2027-03-12-st-helens",
+    "name": "ECHO Festival",
+    "town": "St Helens",
+    "region": "East Coast",
+    "startDate": "2027-03-12",
+    "endDate": "2027-03-14",
+    "categories": [
+      "Events",
+      "Music"
+    ],
+    "summary": "ECHO Festival in St Helens. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://eastcoasttasmania.com/atdw_events/echo-festival/",
+    "sourceUrl": "https://eastcoasttasmania.com/events/",
+    "sourceName": "East Coast Tasmania",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "ECHO Festival event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-08"
   },
   {
     "slug": "dolly-and-kenny-forever-mc-entertainment-albert-hall-launceston-10-apr-2027-04-10-launcest",
@@ -4339,6 +4720,32 @@
     "lastChecked": "2026-10-07"
   },
   {
+    "slug": "bicheno-beams-2027-06-26-st-helens",
+    "name": "Bicheno Beams",
+    "town": "St Helens",
+    "region": "East Coast",
+    "startDate": "2027-06-26",
+    "endDate": "2027-07-17",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Bicheno Beams in St Helens. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://eastcoasttasmania.com/atdw_events/bicheno-beams/",
+    "sourceUrl": "https://eastcoasttasmania.com/events/",
+    "sourceName": "East Coast Tasmania",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Bicheno Beams event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-08"
+  },
+  {
     "slug": "tasmanian-fibre-festival-the-handweavers-spinners-and-dyers-guild-of-tasmania-albert-hall-",
     "name": "Tasmanian Fibre Festival The Handweavers, Spinners and Dyers Guild of Tasmania Albert Hall, Launceston 09 Jul - 11 Jul",
     "town": "Launceston",
@@ -4364,5 +4771,31 @@
     },
     "status": "active",
     "lastChecked": "2026-10-06"
+  },
+  {
+    "slug": "winter-challenge-tasmania-2027-08-15-st-helens",
+    "name": "Winter Challenge Tasmania",
+    "town": "St Helens",
+    "region": "East Coast",
+    "startDate": "2027-08-15",
+    "endDate": "2027-08-15",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Winter Challenge Tasmania in St Helens. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://eastcoasttasmania.com/atdw_events/winter-challenge-tasmania/",
+    "sourceUrl": "https://eastcoasttasmania.com/events/",
+    "sourceName": "East Coast Tasmania",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Winter Challenge Tasmania event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-08"
   }
 ]
