@@ -21,7 +21,7 @@ function makeContext(body, count = 0) {
   const request=new Request('https://tassienow.com/api/listing-corrections',{method:'POST',headers:{'content-type':'application/json',origin:'https://tassienow.com'},body:JSON.stringify(body)});
   return {context:{request,env:{DB:database,TURNSTILE_SECRET_KEY:'test-key'}},sql};
 }
-const valid={place_slug:'sample-cafe',place_name:'Sample Cafe',requester_name:'Visitor',requester_email:'visitor@example.com',relationship:'visitor',field:'opening-hours',suggested_value:'Open Tuesdays 10am to 3pm'};
+const valid={place_slug:'sample-cafe',place_name:'Sample Cafe',requester_name:'Visitor',requester_email:'visitor@example.com',relationship:'visitor',field:'opening-hours',suggested_value:'Open Tuesdays 10am to 3pm','cf-turnstile-response':'test-token'};
 
 test('free correction is queued for moderation and never published directly',async()=>{
  const {context,sql}=makeContext(valid);
