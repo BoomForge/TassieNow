@@ -13,12 +13,13 @@ const SOURCES=[
   {name:'Huon Valley Council',url:'https://www.huonvalley.tas.gov.au/events/',town:'Huonville',region:'Hobart & South',detail:/\/event\//i,textMode:'always'},
   {name:'Latrobe Council',url:'https://www.latrobe.tas.gov.au/community/event-calendar',town:'Latrobe',region:'North West',detail:/\/community\/event-calendar/i,textMode:'always'},
   {name:'Waratah-Wynyard Council',url:'https://www.warwyn.tas.gov.au/community-events/calendar/',town:'Wynyard',region:'North West',detail:/\/(?:events|community-events)\//i,textMode:'fallback'},
-  {name:'Southern Midlands Council',url:'https://www.southernmidlands.tas.gov.au/festivals-events/',town:'Oatlands',region:'Central Tasmania',detail:/\/(?:calendar|festivals-events)\//i,textMode:'always'}
+  {name:'Southern Midlands Council',url:'https://www.southernmidlands.tas.gov.au/festivals-events/',town:'Oatlands',region:'Central Tasmania',detail:/\/(?:calendar|festivals-events)\//i,textMode:'always'},
+  {name:'Southern Midlands Calendar',url:'https://www.southernmidlands.tas.gov.au/calendar/',town:'Oatlands',region:'Central Tasmania',detail:/\/calendar\//i,textMode:'fallback'}
 ];
 const M={jan:1,january:1,feb:2,february:2,mar:3,march:3,apr:4,april:4,may:5,jun:6,june:6,jul:7,july:7,aug:8,august:8,september:9,sep:9,sept:9,oct:10,october:10,nov:11,november:11,dec:12,december:12};
 const MONTH='Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?';
 const DAY='Mon(?:day)?|Tue(?:sday)?|Wed(?:nesday)?|Thu(?:rsday)?|Fri(?:day)?|Sat(?:urday)?|Sun(?:day)?';
-const ADMIN_NOISE=/\b(?:community noticeboard|fogo collection|recycling and landfill|waste collection|green[- ]lidded bin|veolia collects waste|please have bins|collection week)\b/i;
+const ADMIN_NOISE=/\b(?:council meeting|regional holiday|public holiday|annual general meeting|kerbside|community noticeboard|fogo collection|recycling and landfill|waste collection|green[- ]lidded bin|veolia collects waste|please have bins|collection week)\b/i;
 const PAGE_FRAGMENT=/\b(?:living well devonport program|program dates?|time location|join the man walk|for visit the event on rosny farm|upcoming events?)\b/i;
 const VENUE_ONLY=/^(?:civic square(?: launceston)?|clarence sports centre(?: .*?)?|rosny farm|meercroft park|town hall)$/i;
 function tasDate(date=new Date()){const p=new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date);const g=t=>p.find(x=>x.type===t)?.value;return`${g('year')}-${g('month')}-${g('day')}`}
