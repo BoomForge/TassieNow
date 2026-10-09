@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/sanitize-events.mjs && node scripts/sanitize-ticket-data.mjs && node scripts/prune-expired-events.mjs && npm run validate:data && astro build",
+    "build": "node scripts/sanitize-events.mjs && node scripts/sanitize-ticket-data.mjs && node scripts/prune-expired-events.mjs && npm run validate:data && node scripts/build-home-search.mjs && astro build",
     "preview": "astro preview",
     "validate:data": "node scripts/validate-data.mjs",
     "audit:data": "node scripts/sanitize-events.mjs && node scripts/sanitize-ticket-data.mjs && node scripts/prune-expired-events.mjs && node scripts/catalogue-audit.mjs",
