@@ -19,6 +19,9 @@ jobs:
     timeout-minutes: 16
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -46,14 +49,32 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Build site
         run: npm run build
-      - name: Commit improved images
+      - name: Commit improved images without losing concurrent catalogue changes
+        shell: bash
         run: |
-          if git diff --quiet -- src/data/places.json src/data/events.json src/data/catalogue-audit.json; then
-            echo "No image changes."
-            exit 0
-          fi
+          set -euo pipefail
+          # Keep the exact enrichment diff. Another event/discovery job may
+          # advance main while Commons image lookups are running.
+          cp src/data/places.json /tmp/tassienow-places-after-images.json
           git config user.name "TassieNow Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add src/data/places.json src/data/events.json src/data/catalogue-audit.json
-          git commit -m "data: improve licensed listing images"
-          git push
+          for attempt in 1 2 3 4; do
+            echo "Publishing verified image improvements, attempt $attempt/4"
+            git fetch origin main
+            git reset --hard origin/main
+            node scripts/reapply-image-upgrades.mjs /tmp/tassienow-places-before-images.json /tmp/tassienow-places-after-images.json
+            node scripts/prune-expired-events.mjs
+            node scripts/rank-catalogue.mjs
+            node scripts/catalogue-audit.mjs
+            node scripts/validate-data.mjs
+            if git diff --quiet -- src/data/places.json src/data/events.json src/data/catalogue-audit.json; then
+              echo "No additional verified image improvements remain to publish."
+              exit 0
+            fi
+            git add src/data/places.json src/data/events.json src/data/catalogue-audit.json
+            git commit -m "data: improve licensed listing images"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep "$((attempt * 2))"
+          done
+          echo "::error::Image publishing still conflicted after four safe retries."
+          exit 1

@@ -274,7 +274,7 @@ const formatEventDate = (startDate, endDate) => {
       </div>
 
       <div class="place-grid" id="place-grid">
-        {activePlaces.map((place, index) => (
+        {activePlaces.slice(0, 18).map((place, index) => (
           <article
             class="place-card"
             hidden={index >= 18}
@@ -326,145 +326,127 @@ const formatEventDate = (startDate, endDate) => {
   </div>
 
   <script>
-    const search = document.querySelector('#search');
-    const heroSearch = document.querySelector('#hero-search');
-    const heroSearchButton = document.querySelector('#hero-search-button');
-    const region = document.querySelector('#region');
-    const category = document.querySelector('#category');
-    const cards = [...document.querySelectorAll('.place-card')];
-    const count = document.querySelector('#result-count');
-    const emptyState = document.querySelector('#empty-state');
-    const nearMe = document.querySelector('#near-me');
-    const heroNearMe = document.querySelector('#hero-near-me');
-    const surprise = document.querySelector('#surprise-me');
-    const locationStatus = document.querySelector('#location-status');
-    const heroLocationStatus = document.querySelector('#hero-location-status');
-    const loadMore = document.querySelector('#load-more');
+    // The public HTML contains 18 useful cards. The full statewide catalogue is
+    // a separately cached compact JSON resource, fetched only for interactions.
+    const search=document.querySelector('#search');
+    const heroSearch=document.querySelector('#hero-search');
+    const heroSearchButton=document.querySelector('#hero-search-button');
+    const region=document.querySelector('#region');
+    const category=document.querySelector('#category');
+    const grid=document.querySelector('#place-grid');
+    const count=document.querySelector('#result-count');
+    const emptyState=document.querySelector('#empty-state');
+    const nearMe=document.querySelector('#near-me');
+    const heroNearMe=document.querySelector('#hero-near-me');
+    const surprise=document.querySelector('#surprise-me');
+    const locationStatus=document.querySelector('#location-status');
+    const heroLocationStatus=document.querySelector('#hero-location-status');
+    const loadMore=document.querySelector('#load-more');
 
-    let visibleLimit = 18;
-    let distanceSorted = false;
+    let catalogue=null;
+    let cataloguePromise=null;
+    let visibleLimit=18;
+    let coords=null;
+    let distanceSorted=false;
 
-    function hasActiveFilters() {
-      return Boolean(search.value.trim() || region.value || category.value || distanceSorted);
+    async function getCatalogue() {
+      if(catalogue)return catalogue;
+      if(!cataloguePromise)cataloguePromise=fetch('/data/home-search.json',{headers:{accept:'application/json'}})
+        .then(async response=>{
+          if(!response.ok)throw Error('Directory index unavailable');
+          const data=await response.json();
+          if(data.version!==1||!Array.isArray(data.places)||data.count!==data.places.length)throw Error('Invalid directory index');
+          return data.places;
+        }).then(places=>{catalogue=places;return places;})
+        .catch(error=>{cataloguePromise=null;throw error;});
+      return cataloguePromise;
     }
-
-    function cardMatches(card) {
-      const query = search.value.trim().toLowerCase();
-      const regionValue = region.value;
-      const categoryValue = category.value;
-      const haystack = `${card.dataset.name} ${card.dataset.town} ${card.dataset.region} ${card.dataset.categories}`;
-      return (!query || haystack.includes(query))
-        && (!regionValue || card.dataset.region === regionValue)
-        && (!categoryValue || card.dataset.categories.split('|').includes(categoryValue));
+    function escapeHtml(value) {
+      return String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
     }
-
-    function applyFilters() {
-      const matching = cards.filter(cardMatches);
-      const filtered = hasActiveFilters();
-      matching.forEach((card, index) => {
-        card.hidden = !filtered && index >= visibleLimit;
-      });
-
-      cards.filter((card) => !matching.includes(card)).forEach((card) => {
-        card.hidden = true;
-      });
-
-      count.textContent = String(matching.length);
-      emptyState.style.display = matching.length === 0 ? 'block' : 'none';
-      loadMore.hidden = filtered || visibleLimit >= matching.length;
+    function townSlug(text) {
+      return String(text||'').toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
     }
-
-    function syncHeroSearch() {
-      search.value = heroSearch.value;
-      document.querySelector('#directory')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      window.setTimeout(() => {
-        search.focus();
-        applyFilters();
-      }, 350);
+    function cardHtml(place,distance) {
+      const slug=encodeURIComponent(place.slug);
+      const name=escapeHtml(place.name),town=escapeHtml(place.town),region=escapeHtml(place.region);
+      const cats=Array.isArray(place.categories)?place.categories:[];
+      const tags=cats.slice(0,3).map(cat=>'<span class="tag">'+escapeHtml(cat)+'</span>').join('');
+      const dist=Number.isFinite(distance)?'<span class="distance" aria-live="polite">'+distance.toFixed(distance<10?1:0)+' km away</span>':'<span class="distance" aria-live="polite"></span>';
+      return '<article class="place-card"><a class="card-image-link" href="/place/'+slug+'/" aria-label="View '+name+'">'
+        +'<img class="card-image" src="'+escapeHtml(place.image||'/images/categories/discover.svg')+'" alt="'+escapeHtml(place.alt||place.name)+'" loading="lazy" decoding="async">'
+        +'<span class="image-badge">'+escapeHtml(cats[0]||'Discover')+'</span></a>'
+        +'<div class="card-body"><p class="location"><a href="/town/'+townSlug(place.town)+'/">'+town+'</a> <span>·</span> <a href="/region/'+townSlug(place.region)+'/">'+region+'</a></p>'
+        +'<h3><a href="/place/'+slug+'/">'+name+'</a></h3><p class="summary">'+escapeHtml(place.summary)+'</p><div class="tags">'+tags+'</div><div class="card-footer">'
+        +'<a class="card-link" href="/place/'+slug+'/">View place →</a>'+dist+'</div></div></article>';
     }
-
-    search.addEventListener('input', () => {
-      distanceSorted = false;
-      applyFilters();
-    });
-    region.addEventListener('change', applyFilters);
-    category.addEventListener('change', applyFilters);
-
-    heroSearchButton.addEventListener('click', syncHeroSearch);
-    heroSearch.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter') syncHeroSearch();
-    });
-
-    loadMore.addEventListener('click', () => {
-      visibleLimit += 18;
-      applyFilters();
-    });
-
-    function distanceKm(lat1, lon1, lat2, lon2) {
-      const rad = (value) => value * Math.PI / 180;
-      const r = 6371;
-      const dLat = rad(lat2 - lat1);
-      const dLon = rad(lon2 - lon1);
-      const a = Math.sin(dLat / 2) ** 2
-        + Math.cos(rad(lat1)) * Math.cos(rad(lat2)) * Math.sin(dLon / 2) ** 2;
-      return r * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    const rad=value=>value*Math.PI/180;
+    function distanceKm(a,b,c,d) {
+      const z=Math.sin(rad(c-a)/2)**2+Math.cos(rad(a))*Math.cos(rad(c))*Math.sin(rad(d-b)/2)**2;
+      return 6371*2*Math.atan2(Math.sqrt(z),Math.sqrt(1-z));
     }
-
-    function sortNearMe(statusTarget = locationStatus) {
-      if (!navigator.geolocation) {
-        statusTarget.textContent = 'Location is not supported by this browser.';
-        return;
+    function matches(place) {
+      const q=search.value.trim().toLowerCase();
+      const categories=place.categories||[];
+      const haystack=(place.name+' '+place.town+' '+place.region+' '+categories.join(' ')).toLowerCase();
+      return (!q||haystack.includes(q))
+        &&(!region.value||String(place.region).toLowerCase()===region.value)
+        &&(!category.value||categories.some(cat=>cat.toLowerCase()===category.value));
+    }
+    function render() {
+      if(!catalogue)return;
+      const matchesAll=catalogue.filter(matches);
+      if(distanceSorted&&coords)matchesAll.sort((a,b)=>distanceKm(coords.latitude,coords.longitude,a.latitude,a.longitude)-distanceKm(coords.latitude,coords.longitude,b.latitude,b.longitude));
+      grid.innerHTML=matchesAll.slice(0,visibleLimit).map(place=>cardHtml(place,distanceSorted&&coords?distanceKm(coords.latitude,coords.longitude,place.latitude,place.longitude):null)).join('');
+      count.textContent=String(matchesAll.length);
+      emptyState.style.display=matchesAll.length?'none':'block';
+      loadMore.hidden=visibleLimit>=matchesAll.length;
+    }
+    async function action() {
+      try {
+        await getCatalogue();
+        render();
+      } catch {
+        locationStatus.textContent='Full directory search is temporarily unavailable. Try the category and town pages.';
       }
-
-      statusTarget.textContent = 'Finding your location…';
-
-      navigator.geolocation.getCurrentPosition(({ coords }) => {
-        cards.forEach((card) => {
-          const distance = distanceKm(
-            coords.latitude,
-            coords.longitude,
-            Number(card.dataset.lat),
-            Number(card.dataset.lon)
-          );
-          card.dataset.distance = String(distance);
-          card.querySelector('.distance').textContent = `${distance.toFixed(distance < 10 ? 1 : 0)} km away`;
-        });
-
-        const grid = document.querySelector('#place-grid');
-        cards
-          .sort((a, b) => Number(a.dataset.distance) - Number(b.dataset.distance))
-          .forEach((card) => grid.appendChild(card));
-
-        distanceSorted = true;
-        visibleLimit = 18;
-        locationStatus.textContent = 'Sorted by straight-line distance from your current location.';
-        heroLocationStatus.textContent = 'Nearby places are now at the top of the full catalogue.';
-        applyFilters();
-        document.querySelector('#directory')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, () => {
-        statusTarget.textContent = 'Location access was unavailable. Search by town or region instead.';
-      }, { timeout: 8000, maximumAge: 300000 });
     }
-
-    nearMe.addEventListener('click', () => sortNearMe(locationStatus));
-    heroNearMe.addEventListener('click', () => sortNearMe(heroLocationStatus));
-
-    surprise.addEventListener('click', () => {
-      const pool = cards.filter(cardMatches);
-      const picks = pool.length ? pool : cards;
-      const pick = picks[Math.floor(Math.random() * picks.length)];
-      pick?.querySelector('.card-link')?.click();
+    search.addEventListener('input',()=>{distanceSorted=false;visibleLimit=18;void action();});
+    region.addEventListener('change',()=>{visibleLimit=18;void action();});
+    category.addEventListener('change',()=>{visibleLimit=18;void action();});
+    function syncHeroSearch() {
+      search.value=heroSearch.value;
+      distanceSorted=false;
+      visibleLimit=18;
+      document.querySelector('#directory')?.scrollIntoView({behavior:'smooth',block:'start'});
+      search.focus();
+      void action();
+    }
+    heroSearchButton.addEventListener('click',syncHeroSearch);
+    heroSearch.addEventListener('keydown',event=>{if(event.key==='Enter')syncHeroSearch();});
+    loadMore.addEventListener('click',()=>{visibleLimit+=18;void action();});
+    function sortNearMe(statusTarget) {
+      if(!navigator.geolocation){statusTarget.textContent='Location is not supported by this browser.';return;}
+      statusTarget.textContent='Finding your location…';
+      navigator.geolocation.getCurrentPosition(async result=>{
+        coords=result.coords;distanceSorted=true;visibleLimit=18;
+        try {await getCatalogue();render();statusTarget.textContent='Sorted by straight-line distance from your current location.';
+          heroLocationStatus.textContent='Nearby places are now at the top of the full catalogue.';
+          document.querySelector('#directory')?.scrollIntoView({behavior:'smooth',block:'start'});
+        } catch {statusTarget.textContent='The directory index is temporarily unavailable. Search by town instead.';}
+      },()=>{statusTarget.textContent='Location access was unavailable. Search by town or region instead.';},{timeout:8000,maximumAge:300000});
+    }
+    nearMe.addEventListener('click',()=>sortNearMe(locationStatus));
+    heroNearMe.addEventListener('click',()=>sortNearMe(heroLocationStatus));
+    surprise.addEventListener('click',async()=>{
+      try { const all=(await getCatalogue()).filter(matches);const choices=all.length?all:catalogue;
+        if(choices.length)window.location.href='/place/'+encodeURIComponent(choices[Math.floor(Math.random()*choices.length)].slug)+'/';
+      }catch{const link=grid.querySelector('.card-link');link?.click();}
     });
-
-    document.querySelectorAll('img').forEach((img) => {
-      img.addEventListener('error', () => {
-        if (!img.src.endsWith('/images/categories/discover.svg') && !img.src.endsWith('/images/categories/events.svg')) {
-          img.src = '/images/categories/discover.svg';
-        }
-      }, { once: true });
-    });
-
-    applyFilters();
+    grid.addEventListener('error',event=>{const img=event.target;
+      if(img instanceof HTMLImageElement&&!img.src.endsWith('/images/categories/discover.svg'))img.src='/images/categories/discover.svg';
+    },true);
+    // Even without JavaScript or if the compact feed is unavailable, the first
+    // 18 SSR cards and all independent place/town/region pages remain usable.
   </script>
 
   <style>
