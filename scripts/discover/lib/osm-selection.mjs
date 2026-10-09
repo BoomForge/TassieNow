@@ -47,7 +47,7 @@ export function balancedByRegion(records, limit) {
   }
   return output;
 }
-export function selectOsmCandidates(candidates,curated,previousOsm,{retainVerifiedMedia,verifiedMedia},{coreLimit=520,foodLimit=1250}={}) {
+export function selectOsmCandidates(candidates,curated,previousOsm,{retainVerifiedMedia,verifiedMedia},{coreLimit=520,foodLimit=1250,vendorLimit=180}={}) {
   const byName=new Map(),usedSlugs=new Set(curated.map(place=>place.slug).filter(Boolean));
   // Existing published URLs are owned by their exact OSM source identity.
   // A newly discovered same-name chain outlet cannot claim a prior outlet's slug.
@@ -83,8 +83,11 @@ export function selectOsmCandidates(candidates,curated,previousOsm,{retainVerifi
     byName.get(key).push(place);
     accepted.push(place);
   }
-  const availableFood=accepted.filter(isFood);
+  const isMobile=place=>(place.categories||[]).includes('Food Van')||(place.categories||[]).includes('Mobile Vendor');
+  const availableVendors=accepted.filter(place=>isFood(place)&&isMobile(place));
+  const availableFood=accepted.filter(place=>isFood(place)&&!isMobile(place));
   const availableOther=accepted.filter(place=>!isFood(place));
-  const selected=[...balancedByRegion(availableOther,coreLimit),...balancedByRegion(availableFood,foodLimit)];
-  return {selected,stats:{candidates:candidates.length,deduplicated:rejectedDuplicates,availableFood:availableFood.length,availableOther:availableOther.length,selectedFood:selected.filter(isFood).length,selectedOther:selected.filter(place=>!isFood(place)).length,preservedImages}};
+  // Mobile vendors have their own budget and cannot be displaced by cafés.
+  const selected=[...balancedByRegion(availableOther,coreLimit),...balancedByRegion(availableFood,foodLimit),...balancedByRegion(availableVendors,vendorLimit)];
+  return {selected,stats:{candidates:candidates.length,deduplicated:rejectedDuplicates,availableFood:availableFood.length,availableOther:availableOther.length,selectedFood:selected.filter(isFood).length,availableVendors:availableVendors.length,selectedVendors:selected.filter(isMobile).length,selectedOther:selected.filter(place=>!isFood(place)).length,preservedImages}};
 }
