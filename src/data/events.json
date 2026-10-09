@@ -561,6 +561,41 @@
     "ticketLastChecked": "2026-10-09"
   },
   {
+    "slug": "hobart-showcase-2026-2026-10-09-hobart",
+    "name": "Hobart Showcase 2026",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-09",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Hobart Showcase 2026 in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Venue",
+    "eventUrl": "https://events.humanitix.com/hobart-showcase-2026",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Hobart Showcase 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "ticketUrl": "https://events.humanitix.com/hobart-showcase-2026",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "priceFrom": 10,
+    "priceTo": 25,
+    "priceCurrency": "AUD",
+    "ticketLastChecked": "2026-10-09"
+  },
+  {
     "slug": "jack-jumper-and-jewels-school-holiday-clinics-2026-10-09-rosny-park",
     "name": "Jack Jumper and Jewels school holiday clinics",
     "town": "Rosny Park",
@@ -586,6 +621,41 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
+    "ticketLastChecked": "2026-10-09"
+  },
+  {
+    "slug": "launceston-showcase-2026-2026-10-09-launceston",
+    "name": "Launceston Showcase 2026",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-09",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Launceston Showcase 2026 in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "Venue",
+    "eventUrl": "https://events.humanitix.com/launceston-showcase-2026",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Launceston Showcase 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "ticketUrl": "https://events.humanitix.com/launceston-showcase-2026",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "priceFrom": 10,
+    "priceTo": 25,
+    "priceCurrency": "AUD",
     "ticketLastChecked": "2026-10-09"
   },
   {
@@ -714,7 +784,7 @@
     "categories": [
       "Events"
     ],
-    "summary": "Voices Through Art: Arch Lived Experience Art Campaign in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "summary": "Voices Through Art: Arch Lived Experience Art Campaign in Burnie. Check the official Burnie City Council listing for current time, venue and booking details.",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Voices-Through-Art",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -1091,6 +1161,37 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
+    "ticketLastChecked": "2026-10-09"
+  },
+  {
+    "slug": "toolskool-2026-10-12-launceston",
+    "name": "Toolskool",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-10-12",
+    "endDate": "2026-10-12",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Toolskool in Launceston. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.launceston.tas.gov.au/Upcoming-Events/Toolskool",
+    "sourceUrl": "https://www.launceston.tas.gov.au/Upcoming-Events",
+    "sourceName": "City of Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Toolskool event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "ticketUrl": "https://www.eventbrite.com.au/e/toolskool-tickets-2001273758685",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "availability": "InStock",
     "ticketLastChecked": "2026-10-09"
   },
   {
@@ -2700,14 +2801,9 @@
       "sourceUrl": null,
       "isFallback": true
     },
-    "status": "superseded",
+    "status": "active",
     "lastChecked": "2026-10-09",
-    "ticketLastChecked": "2026-10-09",
-    "correction": {
-      "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
-      "reason": "Date absent from the verified council session calendar",
-      "checkedAt": "2026-10-09"
-    }
+    "ticketLastChecked": "2026-10-09"
   },
   {
     "slug": "halloween-fest-hobart-2026-10-30-hobart",
@@ -2833,39 +2929,6 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "ticketLastChecked": "2026-10-09"
-  },
-  {
-    "slug": "second-glance-market-2026-10-31-burnie",
-    "name": "Second Glance Market",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-10-31",
-    "endDate": "2026-10-31",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Civic Centre - Burnie Arts, 77-79 Wilmot St, Burnie,",
-    "summary": "Second Glance Market in Burnie. The council lists this session for 2026-10-31; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-09"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Second Glance Market market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "12:00",
-    "endTime": "15:00"
   },
   {
     "slug": "dia-de-muertos-kids-2026-11-01-hobart",
@@ -3084,39 +3147,6 @@
     "bookingRequired": true,
     "availability": "InStock",
     "ticketLastChecked": "2026-10-09"
-  },
-  {
-    "slug": "book-market-burnie-emu-bay-lions-club-2026-11-07-wivenhoe",
-    "name": "Book Market : Burnie Emu Bay Lions Club",
-    "town": "Wivenhoe",
-    "region": "North West",
-    "startDate": "2026-11-07",
-    "endDate": "2026-11-07",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Wivenhoe Shed, Smith and Angelsea Street, Wivenhoe, 7320,",
-    "summary": "Book Market : Burnie Emu Bay Lions Club in Wivenhoe. The council lists this session for 2026-11-07; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-09"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Book Market : Burnie Emu Bay Lions Club market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "10:00",
-    "endTime": "12:00"
   },
   {
     "slug": "infinite-spirit-southern-spectacular-2026-2026-11-07-glenorchy",
@@ -3549,11 +3579,7 @@
     "lastChecked": "2026-10-07",
     "ticketUrl": "https://premier.ticketek.com.au/shows/show.aspx?sh=JEWELS27",
     "ticketProvider": "Ticketek",
-    "bookingRequired": true,
-    "priceFrom": 15,
-    "priceTo": 470,
-    "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-09"
+    "bookingRequired": true
   },
   {
     "slug": "hobart-showcase-2026-2026-11-30-hobart",
@@ -3583,12 +3609,7 @@
     "lastChecked": "2026-10-06",
     "ticketUrl": "https://events.humanitix.com/hobart-showcase-2026",
     "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "priceFrom": 10,
-    "priceTo": 25,
-    "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-09"
+    "bookingRequired": true
   },
   {
     "slug": "launceston-showcase-2026-2026-12-01-launceston",
@@ -3618,12 +3639,7 @@
     "lastChecked": "2026-10-06",
     "ticketUrl": "https://events.humanitix.com/launceston-showcase-2026",
     "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "priceFrom": 10,
-    "priceTo": 25,
-    "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-09"
+    "bookingRequired": true
   },
   {
     "slug": "magic-of-the-faraway-tree-krsd-performing-arts-albert-hall-launceston-01-dec-02-dec-2026-1",
@@ -3728,39 +3744,6 @@
     },
     "status": "active",
     "lastChecked": "2026-10-08"
-  },
-  {
-    "slug": "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe",
-    "name": "Book Market : Burnie Emu Bay Lions Club",
-    "town": "Wivenhoe",
-    "region": "North West",
-    "startDate": "2026-12-05",
-    "endDate": "2026-12-05",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Wivenhoe Shed, Smith and Angelsea Street, Wivenhoe, 7320,",
-    "summary": "Book Market : Burnie Emu Bay Lions Club in Wivenhoe. The council lists this session for 2026-12-05; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-09"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Book Market : Burnie Emu Bay Lions Club market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "10:00",
-    "endTime": "12:00"
   },
   {
     "slug": "the-wiggles-sparkle-big-show-2026-2026-12-05-glenorchy",
@@ -3931,39 +3914,6 @@
     "ticketUrl": "https://www.ticketmaster.com.au/event/130064E7C55D3F2B",
     "ticketProvider": "Ticketmaster",
     "bookingRequired": true
-  },
-  {
-    "slug": "tassie-pop-culture-market-2026-12-12-upper-burnie",
-    "name": "Tassie Pop Culture Market",
-    "town": "Upper Burnie",
-    "region": "North West",
-    "startDate": "2026-12-12",
-    "endDate": "2026-12-12",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Upper Burnie Hall, 242 Mount st, Upper Burnie, 7320,",
-    "summary": "Tassie Pop Culture Market in Upper Burnie. The council lists this session for 2026-12-12; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-09"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Tassie Pop Culture Market market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "10:00",
-    "endTime": "14:00"
   },
   {
     "slug": "carols-by-candlelight-2026-12-19-glenorchy",
