@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T18:59:26.315Z",
+  "generatedAt": "2026-10-09T23:28:44.754Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
@@ -13,18 +13,18 @@
     {
       "name": "events.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-09T13:09:03Z",
+      "lastScheduled": "2026-10-09T22:34:26Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-09T13:09:03Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37934804494"
+      "lastRunAt": "2026-10-09T22:34:26Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37999943250"
     },
     {
       "name": "catalogue-quality.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-08T23:34:30Z",
+      "lastScheduled": "2026-10-09T22:55:42Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-09T09:21:17Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37910724580"
+      "lastRunAt": "2026-10-09T22:55:42Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38001813358"
     },
     {
       "name": "images.yml",
@@ -37,18 +37,18 @@
     {
       "name": "quality.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-08T23:46:50Z",
+      "lastScheduled": "2026-10-09T23:19:05Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-09T09:35:47Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37912285836"
+      "lastRunAt": "2026-10-09T23:19:05Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38003806454"
     },
     {
       "name": "automation-health.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-09T18:43:07Z",
+      "lastScheduled": "2026-10-09T23:07:00Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-09T18:43:07Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/37975217882"
+      "lastRunAt": "2026-10-09T23:07:00Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38002779392"
     },
     {
       "name": "indexnow.yml",
