@@ -2,8 +2,8 @@ import fs from 'node:fs/promises';
 
 const FILE = new URL('../src/data/events.json', import.meta.url);
 const USER_AGENT = 'TassieNow/1.3 (+https://tassienow.pages.dev)';
-const MAX_FETCH = 120;
-const MAX_TICKET_FETCH = 90;
+const MAX_FETCH = 44; // Four six-hour cycles can refresh the active catalogue without timing out.
+const MAX_TICKET_FETCH = 20;
 const PROVIDERS = [
   ['Humanitix', /(^|\.)humanitix\.com$/i],
   ['Eventbrite', /(^|\.)eventbrite\.(?:com|com\.au)$/i],
@@ -146,7 +146,7 @@ function ticketLinks(html,base){
   return candidates.sort((a,b)=>b.score-a.score);
 }
 async function fetchPage(url){
-  const response=await fetch(url,{headers:{'user-agent':USER_AGENT,accept:'text/html,*/*;q=.8'},redirect:'follow',signal:AbortSignal.timeout(18000)});
+  const response=await fetch(url,{headers:{'user-agent':USER_AGENT,accept:'text/html,*/*;q=.8'},redirect:'follow',signal:AbortSignal.timeout(9000)});
   if(!response.ok) throw new Error(`${response.status} ${response.statusText}`);
   return {html:await response.text(),finalUrl:response.url};
 }
@@ -161,8 +161,15 @@ function mergeOffer(event,offer){
 function clearTicketData(event){for(const key of TICKET_FIELDS) delete event[key];}
 
 const events=JSON.parse(await fs.readFile(FILE,'utf8'));
+const active=events.filter(event=>event.status==='active'&&event.endDate>=TODAY);
+const window=Math.floor(Date.now()/(6*60*60*1000));
+const offset=active.length?(window*MAX_FETCH)%active.length:0;
+const rotated=[...active.slice(offset),...active.slice(0,offset)];
+const refresh=new Set(rotated.slice(0,MAX_FETCH));
+console.log('Ticket detail refresh: '+refresh.size+' of '+active.length+' active records, six-hour window '+window+'. Untouched records keep their last known verified information.');
 let fetched=0,ticketFetched=0,changed=0,preservedDirect=0,rejectedStale=0;
 for(const event of events){
+  if(!refresh.has(event))continue;
   if(event.status!=='active'||event.endDate<TODAY) continue;
   const before=JSON.stringify(Object.fromEntries(TICKET_FIELDS.map((key)=>[key,event[key]])));
   const priorTicket=validUrl(event.ticketUrl);
@@ -175,11 +182,6 @@ for(const event of events){
     event.ticketProvider=providerFromUrl(trustedDirect);
     event.bookingRequired=true;
     preservedDirect++;
-  }
-  if(fetched>=MAX_FETCH){
-    const after=JSON.stringify(Object.fromEntries(TICKET_FIELDS.map((key)=>[key,event[key]])));
-    if(before!==after) changed++;
-    continue;
   }
   const pageUrl=validUrl(event.eventUrl||event.sourceUrl); if(!pageUrl) continue;
   fetched++;
