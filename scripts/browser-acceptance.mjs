@@ -4,7 +4,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 const BASE='https://tassienow.com';
 const widths=[320,375,390,430,768,820,1024,1440];
-const paths=['/','/food/','/discover/markets/','/discover/this-weekend/','/region/hobart-and-south/','/suggest-update/'];
+const paths=['/','/food/','/discover/markets/','/discover/this-weekend/','/region/hobart-and-south/','/suggest-update/','/advertise/'];
 const report={at:new Date().toISOString(),scope:'Live Chromium: viewport overflow, navigation, keyboard, denied geolocation, food filters and WCAG 2.1 AA axe-core checks',checks:[],failures:[]};
 await fs.mkdir('reports/browser-screenshots',{recursive:true});
 const browser=await chromium.launch({headless:true});
@@ -51,6 +51,24 @@ try{
       const focused=await page.evaluate(()=>document.activeElement?.tagName||'');
       add('Keyboard Tab moves focus',!['','BODY','HTML'].includes(focused),{width,path,tag:focused});
     }
+    if(path==='/advertise/'){
+      const layout=await page.evaluate(()=>{
+        const bound=selector=>document.querySelector(selector)?.getBoundingClientRect();
+        const shell=bound('.advertise-page');
+        const sections=['.advertise-grid','.rate-note','.guidelines-panel','.payment-note','.form-panel'].map(bound);
+        const form=bound('#advertise-form');
+        const inputs=[...document.querySelectorAll('#advertise-form input:not(.honeypot input),#advertise-form select,#advertise-form textarea')].map(el=>el.getBoundingClientRect());
+        const prices=[...document.querySelectorAll('.info-card h2')].map(el=>el.getBoundingClientRect().top);
+        const aligned=Boolean(shell&&sections.every(rect=>rect&&Math.abs(rect.left-(shell.left+parseFloat(getComputedStyle(document.querySelector('.advertise-page')).paddingLeft)))<=3));
+        const bounded=Boolean(shell&&shell.width<=1182&&shell.left>=-1&&shell.right<=innerWidth+1);
+        const formFits=Boolean(form&&inputs.every(rect=>rect.left>=-1&&rect.right<=innerWidth+1));
+        const priceAligned=innerWidth<1000||prices.length<3||Math.max(...prices)-Math.min(...prices)<=3;
+        return {aligned,bounded,formFits,priceAligned,shellX:shell?.left,sectionX:sections.map(rect=>rect?.left),inputRightMax:Math.max(0,...inputs.map(rect=>rect.right)),viewport:innerWidth};
+      });
+      add('Advertising page column alignment',layout.aligned&&layout.bounded&&layout.priceAligned,{width,path,...layout});
+      add('Advertising form inputs fit viewport',layout.formFits,{width,path,...layout});
+      if(!layout.aligned||!layout.bounded||!layout.formFits||!layout.priceAligned)await page.screenshot({path:'reports/browser-screenshots/advertise-'+width+'.png',fullPage:true});
+    }
     if(path==='/food/'&&(width===375||width===1440)){
       await page.locator('#eat-search').fill('zzzz-no-such-tasmanian-venue-999');
       const empty=await page.locator('#eat-empty').isVisible();
@@ -59,7 +77,7 @@ try{
       const cleared=(await page.locator('#eat-search').inputValue())===''&&!(await page.locator('#eat-empty').isVisible());
       add('Food clear filters restores results',cleared,{width,path});
     }
-    if((width===375||width===1440)&&['/','/food/','/discover/markets/','/suggest-update/'].includes(path)){
+    if((width===375||width===1440)&&['/','/food/','/discover/markets/','/suggest-update/','/advertise/'].includes(path)){
       const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa']).analyze();
       const problems=axe.violations.map(v=>({id:v.id,impact:v.impact,description:v.description,affected:v.nodes.length,examples:v.nodes.slice(0,3).map(n=>n.target.join(' '))}));
       add('Automated WCAG 2.1 AA',!problems.length,{width,path,violations:problems});
