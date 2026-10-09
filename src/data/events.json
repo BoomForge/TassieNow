@@ -443,6 +443,38 @@
     "ticketLastChecked": "2026-10-09"
   },
   {
+    "slug": "agricultured-2026-2026-10-09-launceston",
+    "name": "agriCULTURED 2026",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-09",
+    "categories": [
+      "Events"
+    ],
+    "summary": "agriCULTURED 2026 in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "Venue",
+    "eventUrl": "https://events.humanitix.com/agricultured-2026",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "agriCULTURED 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "ticketUrl": "https://events.humanitix.com/agricultured-2026",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-09"
+  },
+  {
     "slug": "burnie-orchid-society-show-2026-10-09-burnie",
     "name": "Burnie Orchid Society Show",
     "town": "Burnie",
@@ -554,6 +586,38 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
+    "ticketLastChecked": "2026-10-09"
+  },
+  {
+    "slug": "no-lights-no-lycra-hobart-2026-2026-10-09-hobart",
+    "name": "No Lights No Lycra Hobart 2026",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-09",
+    "categories": [
+      "Events"
+    ],
+    "summary": "No Lights No Lycra Hobart 2026 in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Venue",
+    "eventUrl": "https://events.humanitix.com/no-lights-no-lycra-hobart-2026",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "No Lights No Lycra Hobart 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "ticketUrl": "https://events.humanitix.com/no-lights-no-lycra-hobart-2026",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
     "ticketLastChecked": "2026-10-09"
   },
   {
@@ -2636,14 +2700,9 @@
       "sourceUrl": null,
       "isFallback": true
     },
-    "status": "superseded",
+    "status": "active",
     "lastChecked": "2026-10-09",
-    "ticketLastChecked": "2026-10-09",
-    "correction": {
-      "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
-      "reason": "Date absent from the verified council session calendar",
-      "checkedAt": "2026-10-09"
-    }
+    "ticketLastChecked": "2026-10-09"
   },
   {
     "slug": "halloween-fest-hobart-2026-10-30-hobart",
@@ -2769,39 +2828,6 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "ticketLastChecked": "2026-10-09"
-  },
-  {
-    "slug": "second-glance-market-2026-10-31-burnie",
-    "name": "Second Glance Market",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-10-31",
-    "endDate": "2026-10-31",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Civic Centre - Burnie Arts, 77-79 Wilmot St, Burnie,",
-    "summary": "Second Glance Market in Burnie. The council lists this session for 2026-10-31; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-09"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Second Glance Market market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "12:00",
-    "endTime": "15:00"
   },
   {
     "slug": "dia-de-muertos-kids-2026-11-01-hobart",
@@ -3020,39 +3046,6 @@
     "bookingRequired": true,
     "availability": "InStock",
     "ticketLastChecked": "2026-10-09"
-  },
-  {
-    "slug": "book-market-burnie-emu-bay-lions-club-2026-11-07-wivenhoe",
-    "name": "Book Market : Burnie Emu Bay Lions Club",
-    "town": "Wivenhoe",
-    "region": "North West",
-    "startDate": "2026-11-07",
-    "endDate": "2026-11-07",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Wivenhoe Shed, Smith and Angelsea Street, Wivenhoe, 7320,",
-    "summary": "Book Market : Burnie Emu Bay Lions Club in Wivenhoe. The council lists this session for 2026-11-07; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-09"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Book Market : Burnie Emu Bay Lions Club market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "10:00",
-    "endTime": "12:00"
   },
   {
     "slug": "infinite-spirit-southern-spectacular-2026-2026-11-07-glenorchy",
@@ -3585,11 +3578,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-06",
-    "priceFrom": 34.95,
-    "priceTo": 49.95,
-    "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-09"
+    "lastChecked": "2026-10-06"
   },
   {
     "slug": "come-and-try-disability-golf-2026-12-03-rosny-park",
@@ -3615,12 +3604,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-09",
-    "ticketUrl": "https://events.humanitix.com/come-and-try-golf-for-the-disabled-golf-park-hobart-tas",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-10-09"
+    "lastChecked": "2026-10-09"
   },
   {
     "slug": "the-magic-of-audrey-the-ballet-school-launceston-albert-hall-launceston-04-dec-2026-12-04-",
@@ -3673,39 +3657,6 @@
     },
     "status": "active",
     "lastChecked": "2026-10-08"
-  },
-  {
-    "slug": "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe",
-    "name": "Book Market : Burnie Emu Bay Lions Club",
-    "town": "Wivenhoe",
-    "region": "North West",
-    "startDate": "2026-12-05",
-    "endDate": "2026-12-05",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Wivenhoe Shed, Smith and Angelsea Street, Wivenhoe, 7320,",
-    "summary": "Book Market : Burnie Emu Bay Lions Club in Wivenhoe. The council lists this session for 2026-12-05; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-09"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Book Market : Burnie Emu Bay Lions Club market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "10:00",
-    "endTime": "12:00"
   },
   {
     "slug": "the-wiggles-sparkle-big-show-2026-2026-12-05-glenorchy",
@@ -3876,39 +3827,6 @@
     "ticketUrl": "https://www.ticketmaster.com.au/event/130064E7C55D3F2B",
     "ticketProvider": "Ticketmaster",
     "bookingRequired": true
-  },
-  {
-    "slug": "tassie-pop-culture-market-2026-12-12-upper-burnie",
-    "name": "Tassie Pop Culture Market",
-    "town": "Upper Burnie",
-    "region": "North West",
-    "startDate": "2026-12-12",
-    "endDate": "2026-12-12",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Upper Burnie Hall, 242 Mount st, Upper Burnie, 7320,",
-    "summary": "Tassie Pop Culture Market in Upper Burnie. The council lists this session for 2026-12-12; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-09"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Tassie Pop Culture Market market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "10:00",
-    "endTime": "14:00"
   },
   {
     "slug": "carols-by-candlelight-2026-12-19-glenorchy",
