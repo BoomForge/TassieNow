@@ -1,8 +1,8 @@
 {
   "generatedAt": "2026-10-09",
   "places": {
-    "total": 2217,
-    "public": 2151,
+    "total": 2216,
+    "public": 2150,
     "suppressed": 66,
     "media": {
       "realHeroCoverage": {
@@ -31,11 +31,11 @@
       },
       "officialSourceCoverage": {
         "count": 285,
-        "percent": 13.2
+        "percent": 13.3
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 274,
-        "percent": 12.7
+        "count": 259,
+        "percent": 12
       },
       "wikidataLinkage": {
         "count": 622,
@@ -48,7 +48,7 @@
         "percent": 19.8
       },
       "recurringSchedule": {
-        "count": 130,
+        "count": 128,
         "percent": 6
       },
       "phone": {
@@ -80,35 +80,35 @@
         "percent": 1.2
       },
       "reviewLinks": {
-        "count": 2151,
+        "count": 2150,
         "percent": 100
       }
     },
     "sourceTypes": {
-      "openstreetmap": 1524,
+      "openstreetmap": 1523,
       "wikidata": 586,
       "curated": 41
     },
     "qualityTiers": {
-      "standard": 791,
+      "standard": 790,
       "strong": 607,
       "low": 478,
       "featured": 275
     },
     "regions": {
       "Hobart & South": 788,
-      "Launceston & North": 471,
+      "Launceston & North": 474,
       "North West": 342,
       "East Coast": 250,
       "Central Tasmania": 117,
-      "West Coast": 87,
+      "West Coast": 84,
       "Flinders Island": 57,
-      "King Island": 39
+      "King Island": 38
     },
     "towns": 209,
     "categories": {
       "Food & Drink": 1041,
-      "Nature & Walks": 768,
+      "Nature & Walks": 767,
       "Things to Do": 201,
       "Museums": 78,
       "Markets": 30,
@@ -118,8 +118,8 @@
     },
     "categoryMembership": {
       "Food & Drink": 1055,
-      "Outdoor": 780,
-      "Nature & Walks": 778,
+      "Outdoor": 779,
+      "Nature & Walks": 777,
       "Free": 448,
       "Café": 424,
       "Restaurant": 405,
@@ -193,14 +193,14 @@
     }
   },
   "events": {
-    "active": 166,
+    "active": 169,
     "ticketCoverage": {
       "count": 52,
-      "percent": 31.3
+      "percent": 30.8
     },
     "priceCoverage": {
       "count": 26,
-      "percent": 15.7
+      "percent": 15.4
     },
     "providers": {
       "Humanitix": 28,
@@ -209,8 +209,8 @@
       "Ticketmaster": 1
     },
     "sources": {
+      "Burnie City Council": 26,
       "MyState Bank Arena": 24,
-      "Burnie City Council": 23,
       "Huon Valley Council": 17,
       "Theatre North Launceston": 17,
       "Devonport City Council": 14,
@@ -231,7 +231,7 @@
     "regions": {
       "Hobart & South": 81,
       "Launceston & North": 33,
-      "North West": 37,
+      "North West": 40,
       "East Coast": 9,
       "West Coast": 2,
       "Central Tasmania": 1,
@@ -243,8 +243,8 @@
       "missingOrOlderThan30Days": 19
     },
     "sourceRegionalMix": {
+      "North West / Burnie City Council": 26,
       "Hobart & South / MyState Bank Arena": 24,
-      "North West / Burnie City Council": 23,
       "Hobart & South / Huon Valley Council": 17,
       "Launceston & North / Theatre North Launceston": 17,
       "North West / Devonport City Council": 14,
