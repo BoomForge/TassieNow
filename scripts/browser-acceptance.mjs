@@ -32,6 +32,30 @@ try{
     add('Viewport overflow',noOverflow,{width,path,...geometry});
     if(!noOverflow) await page.screenshot({path:'reports/browser-screenshots/overflow-'+width+'-'+path.replace(/[^a-z0-9]+/gi,'-')+'.png',fullPage:false});
     add('Heading and main landmark',geometry.h1===1&&geometry.main,{width,path,h1:geometry.h1,main:geometry.main});
+    if(path==='/'&&(width===375||width===1440)){
+      try{
+        const response=await page.request.get(BASE+'/data/home-search.json');
+        const index=response.ok()?await response.json():null;
+        const complete=Boolean(index?.version===1&&Array.isArray(index.places)&&index.count===index.places.length&&index.count>=500);
+        add('Home search index is complete',complete,{width,path,count:index?.count??null,httpCode:response.status()});
+        if(complete){
+          const cardCount=await page.locator('#place-grid .place-card').count();
+          add('Home initial directory is paginated',cardCount<=18&&cardCount>0,{width,path,initialCards:cardCount});
+          const last=index.places.at(-1);
+          await page.locator('#search').fill(last.name);
+          await page.waitForFunction(name=>[...document.querySelectorAll('#place-grid .place-card h3')].some(el=>el.textContent.includes(name)),last.name,{timeout:10000});
+          const hasLast=await page.locator('#place-grid .place-card h3').allTextContents();
+          add('Home searches the entire statewide catalogue',hasLast.some(name=>name.includes(last.name)),{width,path,searched:last.name});
+          await page.locator('#search').fill('');
+          await page.waitForTimeout(250);
+          const visible=await page.locator('#place-grid .place-card').count();
+          add('Home clearing filters restores a page',visible>0&&visible<=18,{width,path,visible});
+          await page.locator('#load-more').click();
+          await page.waitForTimeout(250);
+          add('Home load more shows next page',await page.locator('#place-grid .place-card').count()>18,{width,path});
+        }
+      }catch(error){add('Home client catalogue inspection',false,{width,path,error:String(error.message).slice(0,220)});}
+    }
     if(path==='/'&&width<=430){
       const toggle=page.locator('#nav-toggle');
       const visible=await toggle.isVisible();
