@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
+import mobileVendors from '../../data/mobile-vendors.json';
 
 const types = [
   ['all','All food stops'],
@@ -27,7 +28,7 @@ const results = places.filter(place => place.status === 'active' && place.visibi
   .map(place => ({...place, foodTypes: classify(place)}))
   .filter(place => (place.categories || []).some(c => ['Food & Drink','Local Produce'].includes(c)) || place.foodTypes.length)
   .sort((a,b) => (b.qualityScore || 0)-(a.qualityScore || 0) || a.name.localeCompare(b.name));
-const regions = [...new Set(results.map(p => p.region).filter(Boolean))].sort();
+const regions = [...new Set([...results.map(p => p.region),...mobileVendors.map(v => v.region)].filter(Boolean))].sort();
 const schema = {
   '@context':'https://schema.org',
   '@type':'CollectionPage',
@@ -58,9 +59,23 @@ const schema = {
       <label>Search<input id="eat-search" data-track-filter="text" type="search" placeholder="Name or town…" /></label>
       <button id="eat-clear" type="button">Clear filters</button>
     </section>
-    <p id="eat-count" role="status" aria-live="polite">{results.length} places</p>
+    <p id="eat-count" role="status" aria-live="polite">{results.length + mobileVendors.length} places and mobile operators</p>
     <AdSlot placement="content-inline" />
     <div class="eat-grid">
+      {mobileVendors.map(vendor => (
+        <article class="eat-card mobile-operator" data-type="food-van" data-region={vendor.region} data-search={`${vendor.name} ${vendor.town} ${vendor.region} food van food truck mobile vendor`.toLowerCase()}>
+          <a href={vendor.sourceUrl} target="_blank" rel="noopener noreferrer" aria-label={`Visit the official ${vendor.name} website`}>
+            <img src="/images/categories/food.svg" alt="" loading="lazy" decoding="async" />
+            <div class="eat-card-body">
+              <small>Mobile operator · {vendor.region}</small>
+              <h2>{vendor.name} ↗</h2>
+              <p>{vendor.summary}</p>
+              {vendor.state === 'paused' ? <small class="operator-warning">Temporarily off road — verify restart before travelling</small> : <small class="operator-note">No fixed trading address · Check with the operator</small>}
+              <p class="operator-verified">Source: official business website</p>
+            </div>
+          </a>
+        </article>
+      ))}
       {results.map((place,index) => <article class="eat-card" hidden={index>=24} data-type={place.foodTypes.join('|')} data-region={place.region} data-search={`${place.name} ${place.town} ${(place.categories||[]).join(' ')}`.toLowerCase()}>
         <a href={`/place/${place.slug}/`}><img src={place.image?.url || '/images/categories/food.svg'} alt={place.image?.alt || place.name} loading="lazy" decoding="async" /><div class="eat-card-body"><small>{place.town} · {place.region}</small><h2>{place.name}</h2><p>{(place.categories || []).join(' · ')}</p>{place.foodTypes.includes('food-van') && <small>Mobile vendor — confirm current location</small>}</div></a>
       </article>)}
@@ -93,6 +108,6 @@ const schema = {
     update();
   </script>
   <style>
-    .eat-page{max-width:1160px;margin:auto;padding:2rem 1.2rem 5rem}.crumb{font-size:.85rem;margin-bottom:2rem}.eat-page h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.1;max-width:780px}.intro{max-width:760px;font-size:1.12rem;line-height:1.6}.note{max-width:820px;background:#edf3ef;padding:1rem;border-radius:.7rem;line-height:1.6}.filters{margin:2rem 0 1rem;display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;align-items:end;gap:.75rem}.filters label{display:grid;gap:.4rem;font-weight:700}.filters input,.filters select,.filters button,#eat-more{font:inherit;min-height:44px;border:1px solid #a7bab4;border-radius:.55rem;padding:.6rem;background:#fff;color:#19352f}.filters button,#eat-more{cursor:pointer;font-weight:750}.eat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1rem 0 2rem}.eat-card{border:1px solid #dde5df;border-radius:1rem;overflow:hidden;background:white}.eat-card[hidden],#eat-empty[hidden],#eat-more[hidden]{display:none}.eat-card a{color:inherit;text-decoration:none}.eat-card a:hover h2{text-decoration:underline}.eat-card img{width:100%;height:190px;object-fit:cover;display:block;background:#edf3ef}.eat-card-body{padding:1rem}.eat-card h2{font-size:1.2rem;margin:.4rem 0}.eat-card p{color:#52635d;font-size:.86rem}.eat-card small{color:#52635d}.eat-page :focus-visible{outline:3px solid #026b7a;outline-offset:3px}@media(max-width:850px){.filters{grid-template-columns:1fr 1fr}.eat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.filters,.eat-grid{grid-template-columns:1fr}}
+    .mobile-operator{border-color:#bbd0d0}.operator-warning{color:#8a4312!important;font-weight:750}.operator-note{color:#415f62!important;font-weight:650}.operator-verified{font-size:.75rem!important}.eat-page{max-width:1160px;margin:auto;padding:2rem 1.2rem 5rem}.crumb{font-size:.85rem;margin-bottom:2rem}.eat-page h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.1;max-width:780px}.intro{max-width:760px;font-size:1.12rem;line-height:1.6}.note{max-width:820px;background:#edf3ef;padding:1rem;border-radius:.7rem;line-height:1.6}.filters{margin:2rem 0 1rem;display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;align-items:end;gap:.75rem}.filters label{display:grid;gap:.4rem;font-weight:700}.filters input,.filters select,.filters button,#eat-more{font:inherit;min-height:44px;border:1px solid #a7bab4;border-radius:.55rem;padding:.6rem;background:#fff;color:#19352f}.filters button,#eat-more{cursor:pointer;font-weight:750}.eat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1rem 0 2rem}.eat-card{border:1px solid #dde5df;border-radius:1rem;overflow:hidden;background:white}.eat-card[hidden],#eat-empty[hidden],#eat-more[hidden]{display:none}.eat-card a{color:inherit;text-decoration:none}.eat-card a:hover h2{text-decoration:underline}.eat-card img{width:100%;height:190px;object-fit:cover;display:block;background:#edf3ef}.eat-card-body{padding:1rem}.eat-card h2{font-size:1.2rem;margin:.4rem 0}.eat-card p{color:#52635d;font-size:.86rem}.eat-card small{color:#52635d}.eat-page :focus-visible{outline:3px solid #026b7a;outline-offset:3px}@media(max-width:850px){.filters{grid-template-columns:1fr 1fr}.eat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.filters,.eat-grid{grid-template-columns:1fr}}
   </style>
 </BaseLayout>
