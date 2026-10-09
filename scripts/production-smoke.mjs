@@ -8,9 +8,9 @@ const paths=[
  '/discover/rainy-day/', '/discover/nature/', '/town/hobart/',
  '/region/hobart-and-south/', '/region/west-coast/',
  '/region/central-tasmania/', '/region/flinders-island/',
- '/suggest-update/', '/privacy/', '/terms/', '/about/', '/status/'
+ '/suggest-update/', '/advertise/', '/privacy/', '/terms/', '/about/', '/status/'
 ];
-const report={checkedAt:new Date().toISOString(),description:'Read-only HTTP production smoke checks; NOT a substitute for mobile/browser/accessibility/paid-flow testing',base:BASE,checks:[],failures:[]};
+const report={checkedAt:new Date().toISOString(),description:'Non-mutating public route and invalid Turnstile checks; NOT a substitute for mobile/browser/accessibility/paid-flow testing',base:BASE,checks:[],failures:[]};
 const wait=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
 async function get(path,attempts=3){
   let last;
@@ -29,9 +29,9 @@ async function check(name,path,{marker='TassieNow',expected=200,html=false}={}){
     entry.httpCode=response.status;
     entry.status=response.status===expected&&(!marker||body.includes(marker))&&(!html||(/<h1\b/i.test(body)&&/<main\b/i.test(body)))?'pass':'fail';
     if(entry.status==='fail')entry.problem='Unexpected status, missing content, heading, or main landmark';
-    if(path==='/suggest-update/'){
+    if(path==='/suggest-update/'||path==='/advertise/'){
       const hasWidget=body.includes('cf-turnstile')&&body.includes('data-sitekey');
-      const widgetCheck={name:'Public corrections form has human verification widget',path,expected:'Turnstile site key and widget markup',status:hasWidget?'pass':'fail'};
+      const widgetCheck={name:'Public '+(path==='/advertise/'?'advertising':'corrections')+' form has human verification widget',path,expected:'Turnstile site key and widget markup',status:hasWidget?'pass':'fail'};
       report.checks.push(widgetCheck);
       if(!hasWidget)report.failures.push({...widgetCheck,problem:'Check PUBLIC_TURNSTILE_SITE_KEY in Cloudflare build environment'});
     }
@@ -77,13 +77,42 @@ try{
 }catch(error){protectedRoute.status='fail';protectedRoute.problem=String(error.message);}
 report.checks.push(protectedRoute);
 if(protectedRoute.status!=='pass')report.failures.push(protectedRoute);
+// These production POSTs are non-mutating by design: missing/invalid tokens,
+// no legitimate form fields and no honey-pot fields. They cannot create a
+// legitimate enquiry or correction, but do verify runtime secret enforcement.
+async function mustRejectUnverified(name,path,body,expectedError) {
+ const check={name,path,status:'unknown'};
+ try{
+   const response=await fetch(BASE+path,{method:'POST',headers:{'content-type':'application/json',origin:BASE,'user-agent':'TassieNow-Production-Security-Check/1.0'},
+     body:JSON.stringify(body),signal:AbortSignal.timeout(TIMEOUT)});
+   const data=await response.json();
+   check.httpCode=response.status;
+   check.serverResponse=String(data.error||'').slice(0,120);
+   check.status=response.status===400&&expectedError.test(check.serverResponse)?'pass':'fail';
+   if(check.status==='fail')check.problem='Turnstile did not explicitly reject missing/invalid token';
+ }catch(error){check.status='fail';check.problem=String(error.message).slice(0,180);}
+ report.checks.push(check);
+ if(check.status==='fail')report.failures.push(check);
+}
+for(const path of ['/api/listing-corrections','/api/advertise']){
+ await mustRejectUnverified('Turnstile refuses missing token at '+path,path,{},/Human verification is required/i);
+ await mustRejectUnverified('Turnstile refuses fake token at '+path,path,
+   {'cf-turnstile-response':'tassienow-negative-test-not-a-valid-token'},/Human verification failed/i);
+}
+for(const path of ['/api/admin/listing-corrections','/api/admin/inquiries']){
+ const entry={name:'Anonymous admin route denied '+path,path,status:'unknown'};
+ try{const response=await fetch(BASE+path,{signal:AbortSignal.timeout(TIMEOUT)});
+   entry.httpCode=response.status;entry.status=response.status===401?'pass':'fail';
+ }catch(error){entry.status='fail';entry.problem=String(error.message);}
+ report.checks.push(entry);if(entry.status==='fail')report.failures.push(entry);
+}
 report.checks.sort((a,b)=>a.name.localeCompare(b.name));
 const summary={passed:report.checks.filter(x=>x.status==='pass').length,checks:report.checks.length,failed:report.failures.length};
 report.summary=summary;
 await fs.mkdir(new URL('../reports/',import.meta.url),{recursive:true});
 await fs.writeFile(new URL('../reports/production-smoke.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
 if(process.env.GITHUB_STEP_SUMMARY){
- const lines=['## Read-only public production smoke checks',summary.passed+'/'+summary.checks+' passed, '+summary.failed+' failed', 'This is not automated mobile or accessibility acceptance.'];
+ const lines=['## Production HTTP and negative Turnstile smoke checks',summary.passed+'/'+summary.checks+' passed, '+summary.failed+' failed', 'This is not automated mobile or accessibility acceptance.'];
  for(const failure of report.failures)lines.push('- '+failure.name+': '+(failure.problem||failure.httpCode||'failed'));
  await fs.appendFile(process.env.GITHUB_STEP_SUMMARY,lines.join('\n')+'\n');
 }
