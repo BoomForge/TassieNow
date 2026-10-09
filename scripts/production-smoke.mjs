@@ -54,6 +54,28 @@ async function check(name,path,{marker='TassieNow',expected=200,html=false}={}){
   report.checks.push(entry);
   if(entry.status==='fail')report.failures.push(entry);
 }
+// Prove the homepage split was deployed, not merely that Astro builds.
+// Public HTML should have a small first page; the full searchable catalogue
+// must remain available via a versioned compact JSON file.
+try{
+  const page=await get('/');
+  const bytes=Buffer.byteLength(page.html);
+  const cards=(page.html.match(/class="place-card"/g)||[]).length;
+  const lean=bytes<3000000&&cards<=25&&cards>=1;
+  const check={name:'Production homepage HTML is bounded',path:'/',bytes,initialCards:cards,status:lean?'pass':'fail'};
+  if(!lean){check.problem='Home HTML still oversized or full catalogue embedded (check production deployment)';report.failures.push(check);}
+  report.checks.push(check);
+  const index=await get('/data/home-search.json');
+  let payload={};
+  try{payload=JSON.parse(index.html);}catch{}
+  const valid=index.response.status===200&&payload.version===1&&Array.isArray(payload.places)&&payload.count===payload.places.length&&payload.count>=500;
+  const searchCheck={name:'Production complete catalogue index available',path:'/data/home-search.json',httpCode:index.response.status,placeCount:payload.count??null,bytes:Buffer.byteLength(index.html),status:valid?'pass':'fail'};
+  if(!valid){searchCheck.problem='Home search JSON missing, incomplete or undeployed';report.failures.push(searchCheck);}
+  report.checks.push(searchCheck);
+}catch(error){
+  const check={name:'Production homepage and search index probe',status:'fail',problem:String(error.message).slice(0,180)};
+  report.failures.push(check);report.checks.push(check);
+}
 const sitemap=await get('/sitemap.xml');
 if(sitemap.response.status!==200||!sitemap.html.includes('<urlset')){
  report.failures.push({name:'Sitemap retrieval',status:'fail',httpCode:sitemap.response.status});
