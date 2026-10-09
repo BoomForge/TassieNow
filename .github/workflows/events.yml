@@ -6,6 +6,7 @@ on:
     paths:
       - 'scripts/discover/events.mjs'
       - 'scripts/discover/public-events.mjs'
+      - 'scripts/discover/verified-regional-events.mjs'
       - 'scripts/sanitize-events.mjs'
       - 'scripts/enrich-event-tickets.mjs'
       - 'scripts/sanitize-ticket-data.mjs'
@@ -49,12 +50,16 @@ jobs:
           mkdir -p reports
           set -o pipefail
           node scripts/discover/public-events.mjs 2>&1 | tee reports/public-events-fetch.log
+      - name: Verify dated organiser events in underserved regions
+        run: node scripts/discover/verified-regional-events.mjs
       - name: Retain actual source fetch and parser results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: regional-event-source-evidence
-          path: reports/*-events-fetch.log
+          path: |
+            reports/*-events-fetch.log
+            reports/regional-events-evidence.json
           retention-days: 30
       - name: Sanitize discovered events
         run: node scripts/sanitize-events.mjs
