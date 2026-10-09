@@ -374,7 +374,7 @@ const formatEventDate = (startDate, endDate) => {
       const tags=cats.slice(0,3).map(cat=>'<span class="tag">'+escapeHtml(cat)+'</span>').join('');
       const dist=Number.isFinite(distance)?'<span class="distance" aria-live="polite">'+distance.toFixed(distance<10?1:0)+' km away</span>':'<span class="distance" aria-live="polite"></span>';
       return '<article class="place-card"><a class="card-image-link" href="/place/'+slug+'/" aria-label="View '+name+'">'
-        +'<img class="card-image" src="'+escapeHtml(place.image||'/images/categories/discover.svg')+'" alt="'+escapeHtml(place.alt||place.name)+'" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=\'/images/categories/discover.svg\'">'
+        +'<img class="card-image" src="'+escapeHtml(place.image||'/images/categories/discover.svg')+'" alt="'+escapeHtml(place.alt||place.name)+'" loading="lazy" decoding="async">'
         +'<span class="image-badge">'+escapeHtml(cats[0]||'Discover')+'</span></a>'
         +'<div class="card-body"><p class="location"><a href="/town/'+townSlug(place.town)+'/">'+town+'</a> <span>·</span> <a href="/region/'+townSlug(place.region)+'/">'+region+'</a></p>'
         +'<h3><a href="/place/'+slug+'/">'+name+'</a></h3><p class="summary">'+escapeHtml(place.summary)+'</p><div class="tags">'+tags+'</div><div class="card-footer">'
@@ -442,6 +442,9 @@ const formatEventDate = (startDate, endDate) => {
         if(choices.length)window.location.href='/place/'+encodeURIComponent(choices[Math.floor(Math.random()*choices.length)].slug)+'/';
       }catch{const link=grid.querySelector('.card-link');link?.click();}
     });
+    grid.addEventListener('error',event=>{const img=event.target;
+      if(img instanceof HTMLImageElement&&!img.src.endsWith('/images/categories/discover.svg'))img.src='/images/categories/discover.svg';
+    },true);
     // Even without JavaScript or if the compact feed is unavailable, the first
     // 18 SSR cards and all independent place/town/region pages remain usable.
   </script>>
