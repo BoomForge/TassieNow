@@ -51,8 +51,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -140,8 +141,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Bishop-and-Clerk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/bishop-and-clerk",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "4-5 hour walk, 3-5 hour ride , 11km return, Grade 4",
@@ -341,6 +343,28 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Phascolarctos_cinereus_Bonorong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Bonorong Wildlife Sanctuary, Tasmania",
+        "attribution": "JJ Harrison ( https://www.jjharrison.com.au/ )",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phascolarctos_cinereus_Bonorong.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Tasmanian_devil_yawning_in_a_pool.jpg/1920px-Tasmanian_devil_yawning_in_a_pool.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Bonorong Wildlife Sanctuary, Tasmania",
+        "attribution": "Canley",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasmanian_devil_yawning_in_a_pool.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ],
     "officialSource": {
@@ -528,8 +552,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "5 minutes to 5 hours , 100m to 5km, Grade 2",
@@ -679,6 +704,28 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/The_Friendly_Beaches%2C_Tasmania_%2833908345991%29.jpg/1920px-The_Friendly_Beaches%2C_Tasmania_%2833908345991%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Friendly Beaches, Tasmania",
+        "attribution": "Steven Penton from Bakers Beach, Tasmania Australia",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Friendly_Beaches,_Tasmania_(33908345991).jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/The_Friendly_Beaches%2C_Tasmania_%2833183351184%29.jpg/1920px-The_Friendly_Beaches%2C_Tasmania_%2833183351184%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Friendly Beaches, Tasmania",
+        "attribution": "Steven Penton from Bakers Beach, Tasmania Australia",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Friendly_Beaches,_Tasmania_(33183351184).jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
       }
     ],
     "lastWikidataChecked": "2026-10-06",
@@ -722,8 +769,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Wineglass-Bay-and-Hazards-Beach.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "4-5 hours circuit , 11km circuit, Grade 4",
@@ -916,8 +964,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -944,7 +993,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls"
+    }
   },
   {
     "slug": "interpretation-centre-duck-reach-power-station",
@@ -999,8 +1053,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Duck-Reach.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/duck-reach",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -1029,7 +1084,12 @@
     "rankedAt": "2026-10-09",
     "wikidataImages": [
       "Duck Reach Power Station Picture 1.jpg"
-    ]
+    ],
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/duck-reach"
+    }
   },
   {
     "slug": "liffey-falls",
@@ -1081,8 +1141,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Liffey-Falls-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/liffey-falls-state-reserve/liffey-falls-walk",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "45 minute return , 2km, from the top car park, Grade 2",
@@ -1113,7 +1174,12 @@
     "rankedAt": "2026-10-09",
     "wikidataImages": [
       "Liffey Falls, Liffey, Tasmania.jpg"
-    ]
+    ],
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/liffey-falls-state-reserve/liffey-falls-walk"
+    }
   },
   {
     "slug": "maingon-blowhole",
@@ -1168,8 +1234,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Maingon-Blowhole.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/maingon-blowhole",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -1257,8 +1324,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Montezuma-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -1392,8 +1460,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Remarkable-Cave.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/remarkable-cave",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "15 minutes return , TBC, Grade 3",
@@ -1614,6 +1683,28 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/SalamancaMarkets.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Salamanca Market, Tasmania",
+        "attribution": "Frances76 at en.wikipedia",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SalamancaMarkets.JPG",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Salamanca_Market_May.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Salamanca Market, Tasmania",
+        "attribution": "Nick carson at English Wikipedia",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salamanca_Market_May.JPG",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ],
     "officialSourceCheck": {
@@ -1689,8 +1780,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/St-Columba-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -1717,7 +1809,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls"
+    }
   },
   {
     "slug": "st-columba-falls-state-reserve",
@@ -1751,8 +1848,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/St-Columba-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -1902,12 +2000,12 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://www.qvmag.tas.gov.au/Planetarium/Session-times",
+        "url": "https://www.qvmag.tas.gov.au/Visit/Getting-around",
         "checkedAt": "2026-10-09"
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://www.qvmag.tas.gov.au/Visit/Accessibility",
+        "url": "https://www.qvmag.tas.gov.au/Visit/Venue-hire",
         "checkedAt": "2026-10-09"
       },
       "bookingUrl": {
@@ -1919,7 +2017,7 @@
     "phone": "0363233777",
     "schedule": {
       "summary": "Free entry, open 10am to 4pm daily",
-      "sourceUrl": "https://www.qvmag.tas.gov.au/Planetarium/Session-times",
+      "sourceUrl": "https://www.qvmag.tas.gov.au/Visit/Getting-around",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -1932,7 +2030,7 @@
       ],
       "startTime": "10:00",
       "endTime": "16:00",
-      "notes": "The Planetarium is closed on public holidays."
+      "notes": "* Closed Good Friday and Christmas Day."
     },
     "openingHours": "Mo-Su 10:00-16:00",
     "gallery": [
@@ -1998,6 +2096,17 @@
         "license": "CC BY-SA 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corkscrew_in_the_Park_(25832027210).jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Launceston_Art_Gallery_%2826038509611%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Queen Victoria Museum and Art Gallery, Tasmania",
+        "attribution": "Michael Coghlan from Adelaide, Australia",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Launceston_Art_Gallery_(26038509611).jpg",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -2100,7 +2209,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/freycinet-peninsula-circuit/freycinet-overnight-walker-camping",
+        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/richardsons-beach-honeymoon-bay-and-ranger-creek-camping",
         "checkedAt": "2026-10-09"
       },
       "openingHours": {
@@ -2117,7 +2226,7 @@
     "phone": "03 6256 7000",
     "schedule": {
       "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/freycinet-peninsula-circuit/freycinet-overnight-walker-camping",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/richardsons-beach-honeymoon-bay-and-ranger-creek-camping",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -2130,7 +2239,7 @@
       ],
       "startTime": "09:00",
       "endTime": "16:00",
-      "notes": "Gas and fuel stoves may be used except on days of Total Fire Ban, when no naked flames of any sort, including gas and fuel stoves, are allowed in the open."
+      "notes": "Gas and fuel stoves can be used except on days of Total Fire Ban."
     },
     "openingHours": "Mo-Su 09:00-16:00",
     "gallery": [
@@ -2199,6 +2308,28 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Freycinet_Wineglass_Bay_And_Promise_Bay.jpg/1920px-Freycinet_Wineglass_Bay_And_Promise_Bay.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Freycinet National Park, Tasmania",
+        "attribution": "Bjørn Christian Tørrissen",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Freycinet_Wineglass_Bay_And_Promise_Bay.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikidata-p18",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Bennetts_Wallaby.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Freycinet National Park, Tasmania",
+        "attribution": "Wikimedia Commons contributor",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bennetts_Wallaby.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ],
     "officialSource": {
@@ -2255,7 +2386,13 @@
     "fee": null,
     "wheelchair": null,
     "operator": null,
-    "detailSources": {},
+    "detailSources": {
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
+        "checkedAt": "2026-10-09"
+      }
+    },
     "status": "active",
     "lastChecked": "2026-10-09",
     "lastDetailsChecked": "2026-10-09",
@@ -2278,8 +2415,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Archers-Knob.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -2307,7 +2445,28 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob"
+    },
+    "schedule": {
+      "summary": "Open 7 days -&#160;(closed between 12.30pm and 1pm daily)&#160;​",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "12:30",
+      "endTime": "13:00"
+    }
   },
   {
     "slug": "friendly-beaches-reserve",
@@ -2339,8 +2498,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "5 minutes to 5 hours , 100m to 5km, Grade 2",
@@ -2574,6 +2734,28 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Dogwood_Mt_Field_NP.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Mount Field National Park, Tasmania",
+        "attribution": "Poyt448 Peter Woodard",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dogwood_Mt_Field_NP.JPG",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Dead_stags_of_Athrotaxis_cupressoides_killed_by_wildfire_on_the_Tarn_Shelf%2C_Mt_Field_NP.jpg/1920px-Dead_stags_of_Athrotaxis_cupressoides_killed_by_wildfire_on_the_Tarn_Shelf%2C_Mt_Field_NP.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Mount Field National Park, Tasmania",
+        "attribution": "Alisterhaz",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dead_stags_of_Athrotaxis_cupressoides_killed_by_wildfire_on_the_Tarn_Shelf,_Mt_Field_NP.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ],
     "officialSource": {
@@ -2658,8 +2840,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Point-Vision-Track.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "7 hours return , 15 km return, Grade 4",
@@ -2703,7 +2886,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track"
+    }
   },
   {
     "slug": "port-arthur-historic-site",
@@ -2777,24 +2965,24 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://portarthur.org.au/all-tours/",
+        "url": "https://portarthur.org.au/whats-on/little-depraved-felons/",
         "checkedAt": "2026-10-09"
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://portarthur.org.au/all-tours/",
+        "url": "https://portarthur.org.au/whats-on/little-depraved-felons/",
         "checkedAt": "2026-10-09"
       },
       "bookingUrl": {
         "type": "official-website",
-        "url": "https://portarthur.org.au/all-tours/",
+        "url": "https://portarthur.org.au/about-us/",
         "checkedAt": "2026-10-09"
       }
     },
     "phone": "1800659101",
     "schedule": {
-      "summary": "Open daily, 9am-5pm",
-      "sourceUrl": "https://portarthur.org.au/all-tours/",
+      "summary": "Open from 9:00am to 5:00pm daily.",
+      "sourceUrl": "https://portarthur.org.au/whats-on/little-depraved-felons/",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -2806,10 +2994,9 @@
         "Sunday"
       ],
       "startTime": "09:00",
-      "endTime": "17:00",
-      "notes": "The Port Arthur Historic Site is open daily from 9:00 am to 5:00 pm and is closed only on Christmas Day."
+      "endTime": "17:00"
     },
-    "openingHours": "Mo-Su 09:00-17:00; Mo-Su 09:00-05:00; Mo-Su 09:30-10:30; Mo-Su 12:00-13:30; Mo-Su 11:00-15:00; Mo-Su 12:30-13:15; We,Th,Fr,Sa,Su 18:00-20:00",
+    "openingHours": "Mo-Su 09:00-17:00",
     "gallery": [
       {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/THE_HOSPITAL_PORT_ARTHUR_HISTORIC_SITE.jpg/1920px-THE_HOSPITAL_PORT_ARTHUR_HISTORIC_SITE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2876,6 +3063,28 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Port_Arthur_historic_site%2C_May_2018_4.jpg/1920px-Port_Arthur_historic_site%2C_May_2018_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Port Arthur Historic Site, Tasmania",
+        "attribution": "Jami430",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Port_Arthur_historic_site,_May_2018_4.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/View_of_Port_Arthur_Historic_Site_from_Guard_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Port Arthur Historic Site, Tasmania",
+        "attribution": "Jane6592",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Port_Arthur_Historic_Site_from_Guard_Tower.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
       }
     ],
     "officialSource": {
@@ -2889,7 +3098,7 @@
       "checkedAt": "2026-10-09",
       "url": "https://portarthur.org.au/"
     },
-    "bookingUrl": "https://portarthur.org.au/all-tours/",
+    "bookingUrl": "https://portarthur.org.au/about-us/",
     "lastWikidataLinkChecked": "2026-10-07",
     "wikidata": "Q38167031",
     "wikidataMatch": {
@@ -2970,8 +3179,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "10 minute circuit , 431m, Grade 1",
@@ -3014,7 +3224,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
+    }
   },
   {
     "slug": "frankland-beaches",
@@ -3047,8 +3262,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Frankland-Beaches-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "2 hours , 6 km return, Grade 2",
@@ -3187,7 +3403,7 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://mona.net.au/contact",
+        "url": "https://mona.net.au/tickets",
         "checkedAt": "2026-10-09"
       },
       "bookingUrl": {
@@ -3213,7 +3429,7 @@
       "startTime": "09:00",
       "endTime": "17:00"
     },
-    "openingHours": "Mo-Su 09:00-17:00",
+    "openingHours": "Th,Fr,Sa,Su,Mo 10:00-17:00; Th,Fr,Sa,Su,Mo 15:00-17:00; Th,Fr,Sa,Su,Mo 11:00-17:00; Th,Fr,Sa,Su 11:00-17:00",
     "gallery": [
       {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Museum_of_Old_and_New_Art_%28MONA%29_-_Hobart_-_49142246651.jpg/1920px-Museum_of_Old_and_New_Art_%28MONA%29_-_Hobart_-_49142246651.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3283,8 +3499,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Trousers-Point.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/strzelecki-national-park/trousers-point",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "1.5 hours circuit , 2km circuit, Grade 2",
@@ -3418,8 +3635,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -3522,8 +3740,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -3609,8 +3828,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Fossil-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/fossil-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -3819,8 +4039,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Meander-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/meander-falls",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "4.5-6 hours return , 10km return, Grade 4",
@@ -3846,7 +4067,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/meander-falls"
+    }
   },
   {
     "slug": "mount-duncan",
@@ -3898,8 +4124,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Mount-Duncan-Summit-Track.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-duncan-track",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "4 hours return , 8km return, Grade 3",
@@ -3926,7 +4153,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-duncan-track"
+    }
   },
   {
     "slug": "mount-gnomon",
@@ -3978,8 +4210,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Mount%20Gnomon-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-gnomon-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "1 hour return , 2km return, Grade 3",
@@ -4006,7 +4239,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-gnomon-lookout"
+    }
   },
   {
     "slug": "painted-cliffs",
@@ -4059,8 +4297,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Painted-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/painted-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -4158,12 +4397,12 @@
       },
       "bookingUrl": {
         "type": "official-website",
-        "url": "https://libraries.tas.gov.au/locations/bicheno-library/",
+        "url": "https://libraries.tas.gov.au/locations/bridport-library/",
         "checkedAt": "2026-10-09"
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://libraries.tas.gov.au/locations/bicheno-library/",
+        "url": "https://libraries.tas.gov.au/locations/bruny-online/",
         "checkedAt": "2026-10-09"
       }
     },
@@ -4199,8 +4438,8 @@
       "checkedAt": "2026-10-09",
       "url": "https://libraries.tas.gov.au/locations/allport-library-and-museum-of-fine-arts/"
     },
-    "bookingUrl": "https://libraries.tas.gov.au/locations/bicheno-library/",
-    "openingHours": "Tu 10:00-02:00; We 10:00-04:00; Th 10:00-02:00; Sa 09:30-12:30"
+    "bookingUrl": "https://libraries.tas.gov.au/locations/bridport-library/",
+    "openingHours": "Mo 09:00-12:00; Tu 09:00-12:00; We 09:00-12:00"
   },
   {
     "slug": "arve-falls-lookout",
@@ -4263,8 +4502,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "20 minutes return , 1 km, Grade 2",
@@ -4511,8 +4751,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "30 minutes return , 2 km, Grade 1",
@@ -4555,7 +4796,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk"
+    }
   },
   {
     "slug": "cape-tourville-lookout",
@@ -4618,8 +4864,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Cape-Tourville.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "20 minute circuit , 600m circuit, Grade 1",
@@ -4734,7 +4981,7 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://mona.net.au/contact",
+        "url": "https://mona.net.au/tickets",
         "checkedAt": "2026-10-09"
       },
       "address": {
@@ -4765,7 +5012,7 @@
       "startTime": "09:00",
       "endTime": "17:00"
     },
-    "openingHours": "Mo-Su 09:00-17:00",
+    "openingHours": "Th,Fr,Sa,Su,Mo 10:00-17:00; Th,Fr,Sa,Su,Mo 15:00-17:00; Th,Fr,Sa,Su,Mo 11:00-17:00; Th,Fr,Sa,Su 11:00-17:00",
     "qualityScore": 88,
     "qualityTier": "featured",
     "visibility": "public",
@@ -4867,6 +5114,28 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/MONA_Forecourt_-_panoramio.jpg/1920px-MONA_Forecourt_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Museum of Old and New Art, Tasmania",
+        "attribution": "Ché Lydia Xyang",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MONA_Forecourt_-_panoramio.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/MONA_-_panoramio.jpg/1920px-MONA_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Museum of Old and New Art, Tasmania",
+        "attribution": "Ché Lydia Xyang",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MONA_-_panoramio.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ],
     "bookingUrl": "https://mona.net.au/tickets"
@@ -4932,8 +5201,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Sleepy-Bay.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/sleepy-bay",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "20 minutes return , 500m return, Grade 3",
@@ -5012,7 +5282,13 @@
     "fee": null,
     "wheelchair": null,
     "operator": null,
-    "detailSources": {},
+    "detailSources": {
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+        "checkedAt": "2026-10-09"
+      }
+    },
     "status": "active",
     "lastChecked": "2026-10-09",
     "lastDetailsChecked": "2026-10-09",
@@ -5035,8 +5311,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "30 minutes return , 2 km, Grade 1",
@@ -5063,7 +5340,28 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk"
+    },
+    "schedule": {
+      "summary": "Open 7 days -&#160;(closed between 12.30pm and 1pm daily)&#160;​",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "12:30",
+      "endTime": "13:00"
+    }
   },
   {
     "slug": "waratah-lookout",
@@ -5126,8 +5424,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "5 minutes return , 300 metres, Grade 2",
@@ -5234,8 +5533,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Wineglass-Bay-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -5667,8 +5967,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Hollybank.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hollybank",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "15-40 minute circuit , 2km circuit, Grade 1",
@@ -5692,7 +5993,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hollybank"
+    }
   },
   {
     "slug": "alum-cliffs-lookout",
@@ -5744,8 +6050,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -5771,7 +6078,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs"
+    }
   },
   {
     "slug": "calcified-forest",
@@ -5823,8 +6135,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Calcified-Forest-(King-Island).aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -5909,8 +6222,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "5 hours return , 14km, Grade 4",
@@ -5995,8 +6309,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Huon-Pine-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "20 minutes return , 600m return, Grade 1",
@@ -6077,7 +6392,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://www.maritimetas.org/visit/plan-your-visit",
+        "url": "https://www.maritimetas.org/about-us/what-we-do",
         "checkedAt": "2026-10-09"
       }
     },
@@ -6137,8 +6452,8 @@
       "checkedAt": "2026-10-09T10:08:34.179Z"
     },
     "schedule": {
-      "summary": "Located on Hobart's waterfront, opposite Constitution Dock, Maritime Museum Tasmania is open every day of the year (except Christmas Day).",
-      "sourceUrl": "https://www.maritimetas.org/visit/plan-your-visit",
+      "summary": "The museum is open every day (except Christmas Day)",
+      "sourceUrl": "https://www.maritimetas.org/about-us/what-we-do",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -6198,7 +6513,7 @@
     "wikidata": "Q62868012",
     "wikipediaUrl": null,
     "commonsCategory": "Narryna",
-    "openingHours": ", Tu 10:00-16:00, We 10:00-16:00, Th 10:00-16:00, Fr 10:00-16:00, Sa 10:00-16:00,",
+    "openingHours": "Tu,We,Th,Fr,Sa 10:00-16:30",
     "phone": "0362342791",
     "email": "narryna@tmag.tas.gov.au",
     "address": "103 Hampden Road Battery Point, TAS, 7004 Australia",
@@ -6209,7 +6524,7 @@
     "detailSources": {
       "openingHours": {
         "type": "official-website",
-        "url": "https://www.narryna.com.au/calendar",
+        "url": "https://www.narryna.com.au/about",
         "checkedAt": "2026-10-09"
       },
       "address": {
@@ -6229,7 +6544,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://www.narryna.com.au/shop",
+        "url": "https://www.narryna.com.au/about",
         "checkedAt": "2026-10-09"
       }
     },
@@ -6290,14 +6605,17 @@
     },
     "lastOfficialDetailsChecked": "2026-10-09",
     "schedule": {
-      "summary": "Each Tuesday and Friday at 10.30am (unless stated otherwise)",
-      "sourceUrl": "https://www.narryna.com.au/shop",
-      "frequency": "weekly",
+      "summary": "Narryna is open from Tuesday to Saturday from 10:00am–4:30pm for self-guided tours.",
+      "sourceUrl": "https://www.narryna.com.au/about",
       "daysOfWeek": [
         "Tuesday",
-        "Friday"
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
       ],
-      "startTime": "10:30"
+      "startTime": "10:00",
+      "endTime": "16:30"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -6377,8 +6695,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Ralphs-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/ralphs-falls",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -6404,7 +6723,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/ralphs-falls"
+    }
   },
   {
     "slug": "reservoir",
@@ -6456,8 +6780,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/The-Reservoir-Circuit.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/the-reservoir-circuit",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "0.5-1 hour ride , 4km return, Grade 3",
@@ -6657,6 +6982,28 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/CeleryTopIslands_SW_Tas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Southwest National Park, Tasmania",
+        "attribution": "Wikimedia Commons contributor",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CeleryTopIslands_SW_Tas.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/DenyKingsReflections_SW_Tas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Southwest National Park, Tasmania",
+        "attribution": "Wikimedia Commons contributor",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:DenyKingsReflections_SW_Tas.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ],
     "officialSource": {
@@ -6843,6 +7190,28 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/CeleryTopIslands_SW_Tas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Southwest National Park, Tasmania",
+        "attribution": "Wikimedia Commons contributor",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CeleryTopIslands_SW_Tas.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/DenyKingsReflections_SW_Tas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Southwest National Park, Tasmania",
+        "attribution": "Wikimedia Commons contributor",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:DenyKingsReflections_SW_Tas.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ],
     "officialSource": {
@@ -6914,8 +7283,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Tall-Trees.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park/tall-trees",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "30 minutes circuit , 1km circuit, Grade 2",
@@ -7090,6 +7460,28 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Henry_Hunter_Gallery_TMAG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Tasmanian Museum and Art Gallery, Tasmania",
+        "attribution": "JTdale",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Henry_Hunter_Gallery_TMAG.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Constitution-Dock-facing-hbt-cbd.jpg/1920px-Constitution-Dock-facing-hbt-cbd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Tasmanian Museum and Art Gallery, Tasmania",
+        "attribution": "Wiki ian",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Constitution-Dock-facing-hbt-cbd.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ]
   },
@@ -7143,8 +7535,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Waterfall-Bay.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/waterfall-bay",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -7216,12 +7609,12 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://www.qvmag.tas.gov.au/Visit/Accessibility",
+        "url": "https://www.qvmag.tas.gov.au/Visit/Venue-hire",
         "checkedAt": "2026-10-09"
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://www.qvmag.tas.gov.au/Planetarium/Session-times",
+        "url": "https://www.qvmag.tas.gov.au/Visit/Getting-around",
         "checkedAt": "2026-10-09"
       }
     },
@@ -7293,6 +7686,28 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Dalek%2C_Queen_Victoria_Museum_and_Art_Gallery_20190425-006.jpg/1920px-Dalek%2C_Queen_Victoria_Museum_and_Art_Gallery_20190425-006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Queen Victoria Museum & Art Gallery, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dalek,_Queen_Victoria_Museum_and_Art_Gallery_20190425-006.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Gould%27s_Book_of_Longing%2C_92x87cm%2C_Oil_%26_Acrylic_on_Linen%2C_2013-_Collection%2C_Queen_Victoria_Museum_%26_Art_Gallery%2C_Launceston%2C_TAS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Queen Victoria Museum & Art Gallery, Tasmania",
+        "attribution": "Joshmaninc",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gould%27s_Book_of_Longing,_92x87cm,_Oil_%26_Acrylic_on_Linen,_2013-_Collection,_Queen_Victoria_Museum_%26_Art_Gallery,_Launceston,_TAS.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
       }
     ],
     "reviewLinks": [
@@ -7315,7 +7730,7 @@
     },
     "schedule": {
       "summary": "Free entry, open 10am to 4pm daily",
-      "sourceUrl": "https://www.qvmag.tas.gov.au/Planetarium/Session-times",
+      "sourceUrl": "https://www.qvmag.tas.gov.au/Visit/Getting-around",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -7328,7 +7743,7 @@
       ],
       "startTime": "10:00",
       "endTime": "16:00",
-      "notes": "The Planetarium is closed on public holidays."
+      "notes": "* Closed Good Friday and Christmas Day."
     },
     "qualityScore": 81,
     "qualityTier": "featured",
@@ -7348,7 +7763,12 @@
     "rankedAt": "2026-10-09",
     "wikidataImages": [
       "Queen Victoria Museum and Art Gallery.jpg"
-    ]
+    ],
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.qvmag.tas.gov.au/Home"
+    }
   },
   {
     "slug": "tasmania-zoo",
@@ -7711,7 +8131,7 @@
       },
       "bookingUrl": {
         "type": "official-website",
-        "url": "https://www.warwyn.tas.gov.au/visitors/",
+        "url": "https://www.warwyn.tas.gov.au/council-facilities/book-a-facility/",
         "checkedAt": "2026-10-09"
       },
       "phone": {
@@ -7721,7 +8141,7 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
+        "url": "https://www.warwyn.tas.gov.au/council-facilities/book-a-facility/",
         "checkedAt": "2026-10-09"
       },
       "email": {
@@ -7756,7 +8176,7 @@
         "url": "https://www.google.com/maps/search/?api=1&query=Wynyard%20Foreshore%20Market%20Wynyard%20Tasmania"
       }
     ],
-    "bookingUrl": "https://www.warwyn.tas.gov.au/visitors/",
+    "bookingUrl": "https://www.warwyn.tas.gov.au/council-facilities/book-a-facility/",
     "phone": "0431084677",
     "openingHours": "",
     "lastWikidataLinkChecked": "2026-10-08",
@@ -7891,7 +8311,12 @@
     "rankedAt": "2026-10-09",
     "wikidataImages": [
       "Beaconsfield mine.JPG"
-    ]
+    ],
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.beaconsfieldheritage.com.au/"
+    }
   },
   {
     "slug": "ida-bay-railway",
@@ -8123,6 +8548,61 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/West_Coast_Wilderness_Railway_%284754055363%29.jpg/1920px-West_Coast_Wilderness_Railway_%284754055363%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "West Coast Wilderness Railway, Tasmania",
+        "attribution": "Christopher Neugebauer from Hobart, Australia",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:West_Coast_Wilderness_Railway_(4754055363).jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Yellow_tailings_water_mixing_with_black_tannin_water_beside_ABT_railway_%283939446200%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "West Coast Wilderness Railway, Tasmania",
+        "attribution": "Tom Worthington from Canberra, Australia",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_tailings_water_mixing_with_black_tannin_water_beside_ABT_railway_(3939446200).jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Strahan_Railway_Station_%283939186114%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "West Coast Wilderness Railway, Tasmania",
+        "attribution": "Tom Worthington from Canberra, Australia",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strahan_Railway_Station_(3939186114).jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Regatta_Point_railway_station_Tasmania.jpg/1920px-Regatta_Point_railway_station_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "West Coast Wilderness Railway, Tasmania",
+        "attribution": "JarrahTree",
+        "license": "CC BY 2.5 au",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5/au/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Regatta_Point_railway_station_Tasmania.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Photograph_-_Postcard_-_King_River_Bridge%2C_Mt_Lyell_Railway%2C_Teepookana%2C_Tasmania._%2827420130510%29.jpg/1920px-Photograph_-_Postcard_-_King_River_Bridge%2C_Mt_Lyell_Railway%2C_Teepookana%2C_Tasmania._%2827420130510%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "West Coast Wilderness Railway, Tasmania",
+        "attribution": "Tasmanian Archive and Heritage Office Commons",
+        "license": "No restrictions",
+        "licenseUrl": "https://www.flickr.com/commons/usage/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Photograph_-_Postcard_-_King_River_Bridge,_Mt_Lyell_Railway,_Teepookana,_Tasmania._(27420130510).jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
       }
     ]
   },
@@ -8176,8 +8656,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Overland-Track.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "6 days one way , 65km one way, Grade 4",
@@ -8201,7 +8682,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track"
+    }
   },
   {
     "slug": "hastings-caves-and-thermal-springs",
@@ -8437,7 +8923,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://bassstrait.museum/"
+    }
   },
   {
     "slug": "channel-museum",
@@ -8463,7 +8954,7 @@
     "phone": "+61 3 6267 2333",
     "email": "secretary@channelmuseum.org.au",
     "address": "1755 Channel Highway, Margate, TAS, 7054",
-    "bookingUrl": "https://channelmuseum.org/membership/",
+    "bookingUrl": "https://channelmuseum.org/research/",
     "fee": "yes",
     "wheelchair": "yes",
     "operator": null,
@@ -8500,7 +8991,7 @@
       },
       "bookingUrl": {
         "type": "official-website",
-        "url": "https://channelmuseum.org/membership/",
+        "url": "https://channelmuseum.org/research/",
         "checkedAt": "2026-10-09"
       }
     },
@@ -9874,6 +10365,28 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Au_tas_cradle_mountain_1.jpg/1920px-Au_tas_cradle_mountain_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Cradle Mountain-Lake St Clair National Park, Tasmania",
+        "attribution": "Wj32 ( talk · contribs )",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Au_tas_cradle_mountain_1.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Au_tas_cradle_mountain_2.jpg/1920px-Au_tas_cradle_mountain_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Cradle Mountain-Lake St Clair National Park, Tasmania",
+        "attribution": "Wj32 ( talk · contribs )",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Au_tas_cradle_mountain_2.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ],
     "lastWikidataLinkChecked": "2026-10-07",
@@ -9908,7 +10421,7 @@
     "wikidata": null,
     "wikipediaUrl": null,
     "commonsCategory": null,
-    "openingHours": "Mo,Tu,We,Th 11:00-16:30; Fr,Sa,Su 10:00-17:00",
+    "openingHours": "Fr,Sa,Su 11:00-17:00",
     "phone": "+61 3 6248 5555",
     "email": "info@riversdaleestate.com.au",
     "address": "222 Denholms Road, Cambridge, TAS, 7170",
@@ -9919,7 +10432,7 @@
     "detailSources": {
       "openingHours": {
         "type": "official-website",
-        "url": "https://www.riversdaleestate.com.au/cellar-door",
+        "url": "https://www.riversdaleestate.com.au/french-bistro",
         "checkedAt": "2026-10-09"
       },
       "phone": {
@@ -10851,7 +11364,7 @@
       "checkedAt": "2026-10-09",
       "url": "https://www.visitross.com.au/events/ross-village-market/"
     },
-    "lastWikidataLinkChecked": "2026-10-08"
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "zoodoo-wildlife-park",
@@ -10908,7 +11421,7 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://www.hzaa.com.au/plan-your-visit/faqs/general-faqs/",
+        "url": "https://www.hzaa.com.au/plan-your-visit/kayak-travel/",
         "checkedAt": "2026-10-09"
       },
       "bookingUrl": {
@@ -10933,7 +11446,7 @@
       "startTime": "09:00",
       "endTime": "17:00"
     },
-    "openingHours": "Mo-Su 09:00-17:00; Mo-Su 09:00-05:00",
+    "openingHours": "Mo-Su 09:00-17:00",
     "qualityScore": 68,
     "qualityTier": "featured",
     "visibility": "public",
@@ -11087,7 +11600,8 @@
       "url": "https://bangorshed.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "ross-female-factory",
@@ -11215,6 +11729,201 @@
     ],
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
+  },
+  {
+    "slug": "tasmanian-transport-museum-glenorchy",
+    "name": "Tasmanian Transport Museum",
+    "town": "Glenorchy",
+    "region": "Hobart & South",
+    "latitude": -42.8311615,
+    "longitude": 147.2746039,
+    "categories": [
+      "Museums",
+      "Art & Culture",
+      "Rainy Day"
+    ],
+    "summary": "Museum in or near Glenorchy. Operated by Tasmanian Transport Museum Society.",
+    "website": "https://tasmaniantransportmuseum.com.au/",
+    "sourceUrl": "https://www.openstreetmap.org/way/35394567",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/35394567",
+    "wikidata": "Q7687490",
+    "wikipediaUrl": null,
+    "commonsCategory": "Tasmanian Transport Museum",
+    "openingHours": null,
+    "phone": "+61 3 6272 7721;+61 428 386 843",
+    "email": "ttms.information@internode.on.net",
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": "Tasmanian Transport Museum Society",
+    "detailSources": {
+      "phone": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/35394567",
+        "checkedAt": "2026-10-09"
+      },
+      "email": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/35394567",
+        "checkedAt": "2026-10-09"
+      },
+      "operator": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/35394567",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Tasmanian_Transport_Museum.jpg/1920px-Tasmanian_Transport_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Tasmanian Transport Museum, Tasmania",
+      "attribution": "Hothguard11",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasmanian_Transport_Museum.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Tasmanian%20Transport%20Museum%20Glenorchy%20Tasmania"
+      }
+    ],
+    "websiteCheck": {
+      "status": "inconclusive",
+      "code": 403,
+      "checkedAt": "2026-10-09T10:08:25.294Z"
+    },
+    "qualityScore": 67,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "wikidata",
+      "real-image",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://tasmaniantransportmuseum.com.au/",
+      "error": "403 Forbidden"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Tasmanian Transport Museum",
+      "distanceKm": 0.03,
+      "confidence": "high",
+      "checkedAt": "2026-10-09"
+    },
+    "wikidataImages": [
+      "Tasmanian Transport Museum.jpg"
+    ],
+    "gallery": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/TasGovtRlysDPclass.jpg/1920px-TasGovtRlysDPclass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Tasmanian Transport Museum, Tasmania",
+        "attribution": "Hothguard11",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:TasGovtRlysDPclass.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/TGR_M_Class.jpg/1920px-TGR_M_Class.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Tasmanian Transport Museum, Tasmania",
+        "attribution": "Hothguard11",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:TGR_M_Class.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/TGR_X1_locomotive.jpg/1920px-TGR_X1_locomotive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Tasmanian Transport Museum, Tasmania",
+        "attribution": "Hothguard11",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:TGR_X1_locomotive.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/X1_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Tasmanian Transport Museum, Tasmania",
+        "attribution": "Wikimedia Commons contributor",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:X1_3.JPG",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/C22_undergoing_preparation_for_operation%2C_Dec_2021..jpg/1920px-C22_undergoing_preparation_for_operation%2C_Dec_2021..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Tasmanian Transport Museum, Tasmania",
+        "attribution": "LJDJ2003",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:C22_undergoing_preparation_for_operation,_Dec_2021..jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Climax_No._1653_on_display.jpg/1920px-Climax_No._1653_on_display.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Tasmanian Transport Museum, Tasmania",
+        "attribution": "LJDJ2003",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Climax_No._1653_on_display.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/M5_undergoing_overhaul_and_restoration%2C_Dec._2021.jpg/1920px-M5_undergoing_overhaul_and_restoration%2C_Dec._2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Tasmanian Transport Museum, Tasmania",
+        "attribution": "LJDJ2003",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:M5_undergoing_overhaul_and_restoration,_Dec._2021.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Q5_at_rest_in_the_roundhouse..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Tasmanian Transport Museum, Tasmania",
+        "attribution": "LJDJ2003",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Q5_at_rest_in_the_roundhouse..jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      }
+    ]
   },
   {
     "slug": "west-coast-heritage-centre",
@@ -11440,7 +12149,7 @@
       "checkedAt": "2026-10-09",
       "url": "https://www.delorainemarket.com.au/?page_id=2"
     },
-    "lastWikidataLinkChecked": "2026-10-08"
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "name": "Hobart Twilight Market Brooke Street Pier",
@@ -11551,7 +12260,7 @@
       "url": "https://hobarttwilightmarket.com.au/",
       "error": "403 Forbidden"
     },
-    "lastWikidataLinkChecked": "2026-10-08"
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "name": "Hobart Twilight Market Long Beach Sandy Bay",
@@ -11652,7 +12361,7 @@
       "url": "https://hobarttwilightmarket.com.au/",
       "error": "403 Forbidden"
     },
-    "lastWikidataLinkChecked": "2026-10-08"
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "lilydale-village-market",
@@ -11773,7 +12482,7 @@
       "checkedAt": "2026-10-09",
       "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/"
     },
-    "lastWikidataLinkChecked": "2026-10-08"
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "australasian-golf-museum-2",
@@ -11993,6 +12702,135 @@
       "status": "ok",
       "checkedAt": "2026-10-09",
       "url": "http://www.ausgolfmuseum.com/"
+    }
+  },
+  {
+    "slug": "hobart-zoo-and-aquarium",
+    "name": "Hobart Zoo and Aquarium",
+    "town": "Tea Tree",
+    "region": "Hobart & South",
+    "latitude": -42.7037548,
+    "longitude": 147.379457,
+    "categories": [
+      "Wildlife",
+      "Family"
+    ],
+    "summary": "Wildlife attraction in or near Tea Tree.",
+    "website": "https://www.hzaa.com.au/",
+    "sourceUrl": "https://www.openstreetmap.org/way/1456619412",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/1456619412",
+    "wikidata": "Q134590326",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Mo-Su 09:00-17:00",
+    "phone": "+61 3 6260 2444",
+    "email": null,
+    "address": "620 Middle Tea Tree Rd, Tea Tree, Australia, TAS 7017",
+    "bookingUrl": "https://ecom.roller.app/zoodoozoo/httpsecomrollerappzoodoozoomyvenuecheckout/en/product/526793",
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://www.hzaa.com.au/plan-your-visit/kayak-travel/",
+        "checkedAt": "2026-10-09"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://www.hzaa.com.au/",
+        "checkedAt": "2026-10-09"
+      },
+      "address": {
+        "type": "official-website",
+        "url": "https://www.hzaa.com.au/",
+        "checkedAt": "2026-10-09"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://www.hzaa.com.au/plan-your-visit/faqs/general-faqs/",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "/images/categories/wildlife.svg",
+      "alt": "Hobart Zoo and Aquarium category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Hobart%20Zoo%20and%20Aquarium%20Tea%20Tree%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.hzaa.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-09T10:09:03.235Z"
+    },
+    "lastOfficialDetailsChecked": "2026-10-09",
+    "schedule": {
+      "summary": "We’re open 7 days a week from 9:00 AM to 5:00 PM , including public holidays (except Christmas Day).",
+      "sourceUrl": "https://www.hzaa.com.au/plan-your-visit/faqs/general-faqs/",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "09:00",
+      "endTime": "17:00"
+    },
+    "qualityScore": 65,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "wikidata",
+      "opening-hours",
+      "address",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.hzaa.com.au/"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Hobart Zoo and Aquarium",
+      "distanceKm": 0.34,
+      "confidence": "medium",
+      "checkedAt": "2026-10-09"
     }
   },
   {
@@ -12249,7 +13087,8 @@
       }
     ],
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "cygnet-market",
@@ -12348,7 +13187,7 @@
       "checkedAt": "2026-10-09",
       "url": "https://cygnetmarket.com.au/"
     },
-    "lastWikidataLinkChecked": "2026-10-08"
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "zoodoo-wildlife-park-2",
@@ -12404,7 +13243,7 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://www.hzaa.com.au/plan-your-visit/faqs/general-faqs/",
+        "url": "https://www.hzaa.com.au/plan-your-visit/kayak-travel/",
         "checkedAt": "2026-10-09"
       },
       "bookingUrl": {
@@ -12429,7 +13268,7 @@
       "startTime": "09:00",
       "endTime": "17:00"
     },
-    "openingHours": "Mo-Su 09:00-17:00; Mo-Su 09:00-05:00",
+    "openingHours": "Mo-Su 09:00-17:00",
     "qualityScore": 63,
     "qualityTier": "featured",
     "visibility": "public",
@@ -12458,6 +13297,108 @@
       "url": "https://www.hzaa.com.au/"
     },
     "bookingUrl": "https://ecom.roller.app/zoodoozoo/httpsecomrollerappzoodoozoomyvenuecheckout/en/product/526793"
+  },
+  {
+    "slug": "east-coast-heritage-museum",
+    "name": "East Coast Heritage Museum",
+    "town": "Swansea",
+    "region": "East Coast",
+    "latitude": -42.1238777,
+    "longitude": 148.0755125,
+    "categories": [
+      "Museums",
+      "Art & Culture",
+      "Rainy Day",
+      "Free"
+    ],
+    "summary": "Museum in or near Swansea.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/1555630922",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/1555630922",
+    "wikidata": "Q106727541",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Tu,Fr 10:00-16:00",
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": "no",
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "openingHours": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/1555630922",
+        "checkedAt": "2026-10-09"
+      },
+      "fee": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/1555630922",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/East_Coast_Heritage_Museum%2C_Swansea_20190725-034.jpg/1920px-East_Coast_Heritage_Museum%2C_Swansea_20190725-034.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "East Coast Heritage Museum, Tasmania",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:East_Coast_Heritage_Museum,_Swansea_20190725-034.jpg",
+      "isFallback": false,
+      "sourceMethod": "wikidata-p18",
+      "confidence": "high"
+    },
+    "gallery": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/East_Coast_Heritage_Museum%2C_Swansea_20190725-032.jpg/1920px-East_Coast_Heritage_Museum%2C_Swansea_20190725-032.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "East Coast Heritage Museum, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:East_Coast_Heritage_Museum,_Swansea_20190725-032.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      }
+    ],
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=East%20Coast%20Heritage%20Museum%20Swansea%20Tasmania"
+      }
+    ],
+    "qualityScore": 62,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "real-image",
+      "opening-hours",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-09",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "East Coast Heritage Museum, Swansea Tasmania",
+      "distanceKm": 0.04,
+      "confidence": "medium",
+      "checkedAt": "2026-10-09"
+    },
+    "wikidataImages": [
+      "East Coast Heritage Museum, Swansea 20190725-034.jpg"
+    ]
   },
   {
     "slug": "lookout",
@@ -12509,8 +13450,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Leven-Canyon-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -12543,7 +13485,8 @@
       "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "hobart-zoo-2",
@@ -12660,6 +13603,28 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Thylacine_footage_compilation.ogv/500px--Thylacine_footage_compilation.ogv.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
+        "alt": "Hobart Zoo, Tasmania",
+        "attribution": "1911 footage by \"Mr. Williamson\", 1933 footage by David Fleay. Authors of the 1928 footage are unknown.",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacine_footage_compilation.ogv",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/GIF_of_%22Thylacine_footage_compilation%22.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Hobart Zoo, Tasmania",
+        "attribution": "1911 footage by \"Mr. Williamson\", 1933 footage by David Fleay. Authors of the 1928 footage are unknown.",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:GIF_of_%22Thylacine_footage_compilation%22.gif",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ],
     "commonsCategory": "Beaumaris Zoo",
@@ -12736,7 +13701,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.ltms.org.au/"
+    }
   },
   {
     "slug": "raptor-refuge",
@@ -12831,7 +13802,8 @@
       "error": "403 Forbidden"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "amaze-richmond",
@@ -12936,7 +13908,8 @@
       "url": "https://adikataxi.com/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "army-museum-of-tasmania",
@@ -13041,6 +14014,137 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
+    "slug": "bridestowe-lavender-estate",
+    "name": "Bridestowe Lavender Estate",
+    "town": "Nabowla",
+    "region": "Launceston & North",
+    "latitude": -41.1337173,
+    "longitude": 147.3434357,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Nabowla.",
+    "website": "https://bridestowelavender.com.au/",
+    "sourceUrl": "https://www.openstreetmap.org/way/186576520",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/186576520",
+    "wikidata": "Q123661787",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Mo-Su 10:00-16:00",
+    "phone": "+61363528182",
+    "email": null,
+    "address": "296 Gillespies Road, Nabowla, TAS, 7260",
+    "bookingUrl": "https://bridestowelavender.com.au/visit/tours/",
+    "fee": "yes",
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://bridestowelavender.com.au/",
+        "checkedAt": "2026-10-09"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://bridestowelavender.com.au/",
+        "checkedAt": "2026-10-09"
+      },
+      "address": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/186576520",
+        "checkedAt": "2026-10-09"
+      },
+      "fee": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/186576520",
+        "checkedAt": "2026-10-09"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://bridestowelavender.com.au/about/",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "/images/categories/discover.svg",
+      "alt": "Bridestowe Lavender Estate category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Bridestowe%20Lavender%20Estate%20Nabowla%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://bridestowelavender.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-09T10:09:13.694Z"
+    },
+    "lastOfficialDetailsChecked": "2026-10-09",
+    "schedule": {
+      "summary": "Opening hours: Open daily 10am - 4pm (Closed Christmas Day)",
+      "sourceUrl": "https://bridestowelavender.com.au/about/",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "10:00",
+      "endTime": "16:00"
+    },
+    "qualityScore": 60,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "wikidata",
+      "opening-hours",
+      "address",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "BRIDESTOWE LAVENDER ESTATE",
+      "distanceKm": 0.46,
+      "confidence": "high",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://bridestowelavender.com.au/"
+    }
+  },
+  {
     "slug": "glenorchy-art-and-sculpture-park",
     "name": "Glenorchy Art and Sculpture Park",
     "town": "Tasmania",
@@ -13139,99 +14243,6 @@
         "confidence": "high"
       }
     ]
-  },
-  {
-    "slug": "tasmanian-transport-museum-glenorchy",
-    "name": "Tasmanian Transport Museum",
-    "town": "Glenorchy",
-    "region": "Hobart & South",
-    "latitude": -42.8311615,
-    "longitude": 147.2746039,
-    "categories": [
-      "Museums",
-      "Art & Culture",
-      "Rainy Day"
-    ],
-    "summary": "Museum in or near Glenorchy. Operated by Tasmanian Transport Museum Society.",
-    "website": "https://tasmaniantransportmuseum.com.au/",
-    "sourceUrl": "https://www.openstreetmap.org/way/35394567",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/35394567",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "+61 3 6272 7721;+61 428 386 843",
-    "email": "ttms.information@internode.on.net",
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": "Tasmanian Transport Museum Society",
-    "detailSources": {
-      "phone": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/35394567",
-        "checkedAt": "2026-10-09"
-      },
-      "email": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/35394567",
-        "checkedAt": "2026-10-09"
-      },
-      "operator": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/35394567",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Tasmanian_Transport_Museum.jpg/1920px-Tasmanian_Transport_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Tasmanian Transport Museum, Tasmania",
-      "attribution": "Hothguard11",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasmanian_Transport_Museum.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Tasmanian%20Transport%20Museum%20Glenorchy%20Tasmania"
-      }
-    ],
-    "websiteCheck": {
-      "status": "inconclusive",
-      "code": 403,
-      "checkedAt": "2026-10-09T10:08:25.294Z"
-    },
-    "qualityScore": 60,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "real-image",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-09",
-    "officialSourceCheck": {
-      "status": "unreachable",
-      "checkedAt": "2026-10-09",
-      "url": "https://tasmaniantransportmuseum.com.au/",
-      "error": "403 Forbidden"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
   },
   {
     "slug": "adventure-bay-beach",
@@ -14569,6 +15580,28 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Coningham_Beach_07.jpg/1920px-Coningham_Beach_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Coningham Beach, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_07.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Coningham_Beach_08.jpg/1920px-Coningham_Beach_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Coningham Beach, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_08.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ],
     "commonsCategory": "Coningham Beach",
@@ -14698,6 +15731,28 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Coningham_Beach_07.jpg/1920px-Coningham_Beach_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Coningham Beach, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_07.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Coningham_Beach_08.jpg/1920px-Coningham_Beach_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Coningham Beach, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_08.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ]
   },
@@ -14814,6 +15869,28 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_04.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Coningham_Beach_07.jpg/1920px-Coningham_Beach_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Coningham Beach, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_07.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Coningham_Beach_08.jpg/1920px-Coningham_Beach_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Coningham Beach, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_08.jpg",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -16045,7 +17122,8 @@
       "url": "https://mienavillage.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "greens-beach",
@@ -16753,7 +17831,8 @@
       }
     ],
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "inlet-beach",
@@ -18042,6 +19121,28 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norman_Bay.jpg",
         "isFallback": false,
         "sourceMethod": "wikidata-p18",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Fifth_Ramp%2C_Tidal_River_VIC_3960%2C_Australia_-_panoramio.jpg/1920px-Fifth_Ramp%2C_Tidal_River_VIC_3960%2C_Australia_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Norman Beach, Tasmania",
+        "attribution": "Emin Başar ÖZDEMİR",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fifth_Ramp,_Tidal_River_VIC_3960,_Australia_-_panoramio.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikidata-p18",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Wilsons_Promontory_southwest_5_Stevage.jpg/1920px-Wilsons_Promontory_southwest_5_Stevage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Norman Beach, Tasmania",
+        "attribution": "Steve Bennett",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wilsons_Promontory_southwest_5_Stevage.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
         "confidence": "high"
       }
     ]
@@ -20536,7 +21637,8 @@
       "url": "https://devilsatcradle.com/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "don-river-railway",
@@ -20656,6 +21758,28 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/EL048_054_%2811579127823%29.jpg/1920px-EL048_054_%2811579127823%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Don River Railway, Tasmania",
+        "attribution": "Trainiac from Australia",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:EL048_054_(11579127823).jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Don_River_Railway_Devonport_Tasmania.jpg/1920px-Don_River_Railway_Devonport_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Don River Railway, Tasmania",
+        "attribution": "Steven Penton",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Don_River_Railway_Devonport_Tasmania.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ]
   },
@@ -20766,7 +21890,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.natureworld.com.au/"
+    }
   },
   {
     "slug": "galley-museum",
@@ -20886,128 +22016,30 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Galley_Museum_Queenstown_4.jpg/1920px-Galley_Museum_Queenstown_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Galley Museum, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_4.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Galley_Museum_Queenstown_5.jpg/1920px-Galley_Museum_Queenstown_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Galley Museum, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_5.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ]
-  },
-  {
-    "slug": "hobart-zoo-and-aquarium",
-    "name": "Hobart Zoo and Aquarium",
-    "town": "Tea Tree",
-    "region": "Hobart & South",
-    "latitude": -42.7037548,
-    "longitude": 147.379457,
-    "categories": [
-      "Wildlife",
-      "Family"
-    ],
-    "summary": "Wildlife attraction in or near Tea Tree.",
-    "website": "https://www.hzaa.com.au/",
-    "sourceUrl": "https://www.openstreetmap.org/way/1456619412",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/1456619412",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Mo-Su 09:00-17:00; Mo-Su 09:00-05:00",
-    "phone": "+61 3 6260 2444",
-    "email": null,
-    "address": "620 Middle Tea Tree Rd, Tea Tree, Australia, TAS 7017",
-    "bookingUrl": "https://ecom.roller.app/zoodoozoo/httpsecomrollerappzoodoozoomyvenuecheckout/en/product/526793",
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "openingHours": {
-        "type": "official-website",
-        "url": "https://www.hzaa.com.au/plan-your-visit/faqs/general-faqs/",
-        "checkedAt": "2026-10-09"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "https://www.hzaa.com.au/",
-        "checkedAt": "2026-10-09"
-      },
-      "address": {
-        "type": "official-website",
-        "url": "https://www.hzaa.com.au/",
-        "checkedAt": "2026-10-09"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://www.hzaa.com.au/plan-your-visit/faqs/general-faqs/",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "/images/categories/wildlife.svg",
-      "alt": "Hobart Zoo and Aquarium category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Hobart%20Zoo%20and%20Aquarium%20Tea%20Tree%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://www.hzaa.com.au/",
-      "source": "openstreetmap-website",
-      "checkedAt": "2026-10-09"
-    },
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-09T10:09:03.235Z"
-    },
-    "lastOfficialDetailsChecked": "2026-10-09",
-    "schedule": {
-      "summary": "We’re open 7 days a week from 9:00 AM to 5:00 PM , including public holidays (except Christmas Day).",
-      "sourceUrl": "https://www.hzaa.com.au/plan-your-visit/faqs/general-faqs/",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "09:00",
-      "endTime": "17:00"
-    },
-    "qualityScore": 58,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "opening-hours",
-      "address",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-09",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-09",
-      "url": "https://www.hzaa.com.au/"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
   },
   {
     "slug": "wee-georgie-wood-railway",
@@ -24564,7 +25596,8 @@
       "url": "https://springbaymaritimemuseum.org.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "squeaky-beach",
@@ -24684,6 +25717,28 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Norman_Beach%2C_Tidal_River%2C_and_squeaky_beach_from_Mt_Oberon_summit.jpg/1920px-Norman_Beach%2C_Tidal_River%2C_and_squeaky_beach_from_Mt_Oberon_summit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Squeaky Beach, Tasmania",
+        "attribution": "Emanuele.ancona",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norman_Beach,_Tidal_River,_and_squeaky_beach_from_Mt_Oberon_summit.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Norman_Beach_and_squeaky_beach_from_Mt_Oberon_summit_02.jpg/1920px-Norman_Beach_and_squeaky_beach_from_Mt_Oberon_summit_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Squeaky Beach, Tasmania",
+        "attribution": "Emanuele.ancona",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norman_Beach_and_squeaky_beach_from_Mt_Oberon_summit_02.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ]
   },
@@ -24790,7 +25845,8 @@
       "url": "https://www.woodenboatcentre.com/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "tinderbox-marine-nature-reserve",
@@ -25462,7 +26518,7 @@
       "checkedAt": "2026-10-09",
       "url": "https://www.williesmiths.com.au/apple-shed"
     },
-    "lastWikidataLinkChecked": "2026-10-08"
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "cape-bruny-light-station",
@@ -25578,6 +26634,28 @@
         "license": "CC BY-SA 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Bruny_Lighthouse_(24093835535).jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Bruny_Island%2C_Tasmania_%2830770795865%29.jpg/1920px-Bruny_Island%2C_Tasmania_%2830770795865%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Cape Bruny Light Station, Tasmania",
+        "attribution": "Steven Penton from Bakers Beach, Tasmania Australia",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bruny_Island,_Tasmania_(30770795865).jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/1836_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Cape Bruny Light Station, Tasmania",
+        "attribution": "Stephen Edmonds",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1836_-_panoramio.jpg",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -25783,6 +26861,28 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Thylacine_footage_compilation.ogv/500px--Thylacine_footage_compilation.ogv.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
+        "alt": "Hobart Zoo, Tasmania",
+        "attribution": "1911 footage by \"Mr. Williamson\", 1933 footage by David Fleay. Authors of the 1928 footage are unknown.",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacine_footage_compilation.ogv",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/GIF_of_%22Thylacine_footage_compilation%22.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Hobart Zoo, Tasmania",
+        "attribution": "1911 footage by \"Mr. Williamson\", 1933 footage by David Fleay. Authors of the 1928 footage are unknown.",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:GIF_of_%22Thylacine_footage_compilation%22.gif",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ],
     "commonsCategory": "Beaumaris Zoo",
@@ -25879,97 +26979,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
-  },
-  {
-    "slug": "east-coast-heritage-museum",
-    "name": "East Coast Heritage Museum",
-    "town": "Swansea",
-    "region": "East Coast",
-    "latitude": -42.1238777,
-    "longitude": 148.0755125,
-    "categories": [
-      "Museums",
-      "Art & Culture",
-      "Rainy Day",
-      "Free"
-    ],
-    "summary": "Museum in or near Swansea.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/1555630922",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/1555630922",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Tu,Fr 10:00-16:00",
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": "no",
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "openingHours": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/1555630922",
-        "checkedAt": "2026-10-09"
-      },
-      "fee": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/1555630922",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/East_Coast_Heritage_Museum%2C_Swansea_20190725-034.jpg/1920px-East_Coast_Heritage_Museum%2C_Swansea_20190725-034.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "East Coast Heritage Museum, Tasmania",
-      "attribution": "Gary Houston",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:East_Coast_Heritage_Museum,_Swansea_20190725-034.jpg",
-      "isFallback": false,
-      "sourceMethod": "wikidata-p18",
-      "confidence": "high"
-    },
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/East_Coast_Heritage_Museum%2C_Swansea_20190725-032.jpg/1920px-East_Coast_Heritage_Museum%2C_Swansea_20190725-032.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "East Coast Heritage Museum, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:East_Coast_Heritage_Museum,_Swansea_20190725-032.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      }
-    ],
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=East%20Coast%20Heritage%20Museum%20Swansea%20Tasmania"
-      }
-    ],
-    "qualityScore": 55,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "real-image",
-      "opening-hours",
-      "review-link",
-      "details-checked"
-    ],
     "rankedAt": "2026-10-09",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "lastWikidataLinkChecked": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.wingswildlifepark.com.au/"
+    }
   },
   {
     "slug": "penguin-undercover-market",
@@ -26052,7 +27068,7 @@
       "checkedAt": "2026-10-09",
       "url": "https://tasproduceguide.au/markets/"
     },
-    "lastWikidataLinkChecked": "2026-10-08"
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "the-doughboys-nature-reserve",
@@ -26251,6 +27267,17 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Lake_Lea_edge_of_wetlands.jpg/1920px-Lake_Lea_edge_of_wetlands.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Vale of Belvoir Reserve, Tasmania",
+        "attribution": "AnnaHackett",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Lea_edge_of_wetlands.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ]
   },
@@ -26393,7 +27420,8 @@
       "url": "https://www.wondersofwynyard.com/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "city-park-radio-museum",
@@ -26497,7 +27525,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://cityparkradio.com/radio-museum/"
+    }
   },
   {
     "slug": "deloraine-deli",
@@ -26589,7 +27623,8 @@
     ],
     "rankedAt": "2026-10-09",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "hastings-caves-state-reserve",
@@ -26725,14 +27760,14 @@
     "phone": "03 6425 2839",
     "email": null,
     "address": null,
-    "bookingUrl": "https://www.hivetasmania.com.au/tickets/",
+    "bookingUrl": "https://www.hivetasmania.com.au/about-us/",
     "fee": null,
     "wheelchair": null,
     "operator": null,
     "detailSources": {
       "bookingUrl": {
         "type": "official-website",
-        "url": "https://www.hivetasmania.com.au/tickets/",
+        "url": "https://www.hivetasmania.com.au/about-us/",
         "checkedAt": "2026-10-09"
       },
       "openingHours": {
@@ -26742,7 +27777,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://www.hivetasmania.com.au/tickets/",
+        "url": "https://www.hivetasmania.com.au/about-us/",
         "checkedAt": "2026-10-09"
       }
     },
@@ -26779,7 +27814,7 @@
     },
     "schedule": {
       "summary": "10am – 4pm daily",
-      "sourceUrl": "https://www.hivetasmania.com.au/tickets/",
+      "sourceUrl": "https://www.hivetasmania.com.au/about-us/",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -26807,7 +27842,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.hivetasmania.com.au/museum/"
+    }
   },
   {
     "slug": "the-port-hole-cafe",
@@ -26889,7 +27930,8 @@
     ],
     "rankedAt": "2026-10-09",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "trowunna-wildlife-park-2",
@@ -27040,123 +28082,6 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
-    "slug": "bridestowe-lavender-estate",
-    "name": "Bridestowe Lavender Estate",
-    "town": "Nabowla",
-    "region": "Launceston & North",
-    "latitude": -41.1337173,
-    "longitude": 147.3434357,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Nabowla.",
-    "website": "https://bridestowelavender.com.au/",
-    "sourceUrl": "https://www.openstreetmap.org/way/186576520",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/186576520",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Mo-Su 10:00-16:00",
-    "phone": "+61363528182",
-    "email": null,
-    "address": "296 Gillespies Road, Nabowla, TAS, 7260",
-    "bookingUrl": "https://bridestowelavender.com.au/visit/tours/",
-    "fee": "yes",
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "openingHours": {
-        "type": "official-website",
-        "url": "https://bridestowelavender.com.au/",
-        "checkedAt": "2026-10-09"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "https://bridestowelavender.com.au/",
-        "checkedAt": "2026-10-09"
-      },
-      "address": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/186576520",
-        "checkedAt": "2026-10-09"
-      },
-      "fee": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/186576520",
-        "checkedAt": "2026-10-09"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://bridestowelavender.com.au/visit/woodcroft-cafe/",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "Bridestowe Lavender Estate category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Bridestowe%20Lavender%20Estate%20Nabowla%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://bridestowelavender.com.au/",
-      "source": "openstreetmap-website",
-      "checkedAt": "2026-10-09"
-    },
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-09T10:09:13.694Z"
-    },
-    "lastOfficialDetailsChecked": "2026-10-09",
-    "schedule": {
-      "summary": "Opening hours: Open daily 10am - 4pm (Closed Christmas Day)",
-      "sourceUrl": "https://bridestowelavender.com.au/visit/woodcroft-cafe/",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "10:00",
-      "endTime": "16:00"
-    },
-    "qualityScore": 53,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "opening-hours",
-      "address",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-09"
-  },
-  {
     "slug": "creative-paper-tasmania",
     "name": "Creative Paper Tasmania",
     "town": "Wynyard",
@@ -27252,7 +28177,8 @@
       "url": "https://www.creativepaper.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "devil-s-corner-cellar-door",
@@ -27293,7 +28219,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://www.devilscorner.com.au/contact",
+        "url": "https://www.devilscorner.com.au/about",
         "checkedAt": "2026-10-09"
       }
     },
@@ -27330,7 +28256,7 @@
     },
     "schedule": {
       "summary": "Devil&#x27;s Corner Cellar Door open from 10am-5pm 7 days.",
-      "sourceUrl": "https://www.devilscorner.com.au/contact",
+      "sourceUrl": "https://www.devilscorner.com.au/about",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -27359,7 +28285,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.devilscorner.com.au/"
+    }
   },
   {
     "slug": "don-market",
@@ -27441,7 +28373,7 @@
       "checkedAt": "2026-10-09",
       "url": "https://tasproduceguide.au/markets/"
     },
-    "lastWikidataLinkChecked": "2026-10-08"
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "frogmore-creek-wines",
@@ -27548,7 +28480,8 @@
       "url": "https://www.frogmorecreek.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "inala-nature-tours",
@@ -27572,7 +28505,7 @@
     "phone": "+61362931217",
     "email": "Inala@inalanaturetours.com.au",
     "address": "320 Cloudy Bay Road, South Bruny, TAS, 7150",
-    "bookingUrl": "https://inalanature.com.au/booking-process-and-information/",
+    "bookingUrl": "https://inalanature.com.au/about-us-inala-nature/",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -27584,7 +28517,7 @@
       },
       "bookingUrl": {
         "type": "official-website",
-        "url": "https://inalanature.com.au/booking-process-and-information/",
+        "url": "https://inalanature.com.au/about-us-inala-nature/",
         "checkedAt": "2026-10-09"
       },
       "openingHours": {
@@ -27666,7 +28599,8 @@
       "url": "https://inalanature.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "margate-train",
@@ -27787,6 +28721,28 @@
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Margate%2C_TAS_banner.jpg/1920px-Margate%2C_TAS_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Margate Train, Tasmania",
+        "attribution": "Reinhard Dietrich",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Margate,_TAS_banner.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Margate_Train_Pancake_Train_2.jpg/1920px-Margate_Train_Pancake_Train_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Margate Train, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Margate_Train_Pancake_Train_2.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ],
     "reviewLinks": [
@@ -27902,7 +28858,7 @@
       "checkedAt": "2026-10-09",
       "url": "https://tasproduceguide.au/markets/"
     },
-    "lastWikidataLinkChecked": "2026-10-08"
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "pearns-steam-world",
@@ -28025,7 +28981,14 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.pearnssteamworld.org.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "pooley-wines",
@@ -28143,7 +29106,8 @@
       "url": "https://www.pooleywines.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "richmond-bridge",
@@ -28248,6 +29212,28 @@
         "license": "CC BY-SA 2.5",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richmond_Bridge_Tasmania_Picture_1.JPG",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Richmond_Bridge_Tasmania_date_stone.JPG/1920px-Richmond_Bridge_Tasmania_date_stone.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Richmond Bridge, Tasmania",
+        "attribution": "Luckydog429",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richmond_Bridge_Tasmania_date_stone.JPG",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Richmond_Bridge_Year_Stone.JPG/1920px-Richmond_Bridge_Year_Stone.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Richmond Bridge, Tasmania",
+        "attribution": "Luckydog429",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richmond_Bridge_Year_Stone.JPG",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -28358,7 +29344,7 @@
       "checkedAt": "2026-10-09",
       "url": "https://tasproduceguide.au/markets/"
     },
-    "lastWikidataLinkChecked": "2026-10-08"
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "shot-tower",
@@ -28547,7 +29533,7 @@
       "checkedAt": "2026-10-09",
       "url": "https://tasproduceguide.au/markets/"
     },
-    "lastWikidataLinkChecked": "2026-10-08"
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "annapurna-bellerive",
@@ -28650,7 +29636,8 @@
       "url": "https://annapurnaindiancuisine.com/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "ashmore",
@@ -28725,7 +29712,8 @@
       "error": "403 Forbidden"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "bangkok-city",
@@ -28855,7 +29843,8 @@
       "url": "https://bangkokcity.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "bark-mill-tavern-and-bakery",
@@ -28979,7 +29968,8 @@
       "url": "https://barkmilltavern.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "bento-legana",
@@ -29083,7 +30073,8 @@
       "url": "https://bentolegana.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "burger-junkie",
@@ -29182,7 +30173,8 @@
       "url": "https://www.burgerjunkie.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "coal-river-farm",
@@ -29316,7 +30308,8 @@
       "url": "https://www.coalriverfarm.com.au/pages/our-restaurant"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "cygnet-old-bank-conservatory-cafe",
@@ -29439,7 +30432,8 @@
       "url": "https://cygnetoldbank.com.au/cafe-shop/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "dier-makr",
@@ -29547,7 +30541,8 @@
       "url": "https://www.diermakr.com/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "everydays-smokin-bbq-and-bar",
@@ -29651,7 +30646,8 @@
       "url": "https://everydayssmokinbbqbar.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "freycinet-marine-farm",
@@ -29782,7 +30778,8 @@
       "url": "https://www.freycinetmarinefarm.com/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "grandvewe-certified-organic-sheep-dairy-and-sheep-whey-liqueur",
@@ -29890,7 +30887,8 @@
       "url": "https://grandvewe.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "hamlet-cafe-hobart",
@@ -30021,7 +31019,8 @@
       "url": "https://hamlet.org.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "hog-s-breath-cafe-hobart",
@@ -30125,7 +31124,8 @@
       "url": "https://www.hogsbreath.com.au/location/hobart/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "home-hill-restaurant",
@@ -30249,7 +31249,8 @@
       "url": "https://www.homehillwines.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "la-mensa",
@@ -30296,7 +31297,7 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://lamensahobart.com/blog/what-makes-authentic-italian-pasta-so-special",
+        "url": "https://lamensahobart.com/blog/why-italian-food-is-perfect-for-family-gatherings-in-hobart",
         "checkedAt": "2026-10-09"
       },
       "bookingUrl": {
@@ -30379,7 +31380,8 @@
       "url": "https://lamensahobart.com/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "little-riva",
@@ -30483,7 +31485,8 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastOfficialDetailsChecked": "2026-10-09"
+    "lastOfficialDetailsChecked": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "lost-captain",
@@ -30591,7 +31594,8 @@
       "url": "https://www.lostcaptain.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "maldini-cafe-restaurant",
@@ -30724,7 +31728,8 @@
       "url": "https://maldinirestaurant.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "mr-burger",
@@ -30838,7 +31843,8 @@
       "url": "https://www.mrburger.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "mures-upper-deck",
@@ -30968,7 +31974,8 @@
       "url": "https://www.mures.com.au/upper-deck"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "nara-thai",
@@ -31072,7 +32079,8 @@
       "url": "https://narathaitas.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "noodles-n-rolls-tastic",
@@ -31176,7 +32184,8 @@
       "url": "https://www.nnrtastic.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "pancho-villa",
@@ -31284,7 +32293,8 @@
       "url": "https://panchovilla.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "parthenon-souvlaki-bar",
@@ -31388,7 +32398,8 @@
       "url": "https://parthenonsouvlakionline.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "peking-restaurant",
@@ -31510,7 +32521,8 @@
       "url": "https://www.pekingrestauranttasmania.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "roaring-grill",
@@ -31619,7 +32631,8 @@
       "url": "https://roaringgrill.com/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "sapa-rose",
@@ -31728,7 +32741,8 @@
       "url": "https://saparose.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "spice-on-wheels",
@@ -31832,7 +32846,8 @@
       "url": "https://spiceonwheels.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "spotty-dog-brewery-and-taphouse",
@@ -31936,7 +32951,8 @@
       "url": "https://spottydogbrewers.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "st-albi-bar-and-eatery",
@@ -32050,7 +33066,8 @@
       "url": "http://www.st-albi.com/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "tasman-restaurant",
@@ -32163,7 +33180,8 @@
       "checkedAt": "2026-10-09"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "the-artisan-s-hand",
@@ -32277,7 +33295,8 @@
       "url": "https://www.huonvalley.tas.gov.au/service/the-artisans-hand/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "the-boathouse-restaurant",
@@ -32402,12 +33421,14 @@
       "checkedAt": "2026-10-09"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-09",
-      "url": "https://theboathouse.com.au/"
+      "url": "https://theboathouse.com.au/",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "the-hangout-cafe-and-restaurant",
@@ -32511,7 +33532,8 @@
       "url": "https://thehangoutrestaurant.com.au/about"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "the-little-poet",
@@ -32619,7 +33641,8 @@
       "url": "https://www.thelittlepoet.com/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "urban-greek",
@@ -32666,7 +33689,7 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://urbangreek.com.au/corporate-and-party-bookings/",
+        "url": "https://urbangreek.com.au/about-us/",
         "checkedAt": "2026-10-09"
       },
       "email": {
@@ -32751,7 +33774,8 @@
       "url": "https://urbangreek.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "waterfront-cafe",
@@ -32860,7 +33884,8 @@
       "url": "https://waterfrontcomplex.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "willie-smith-s-apple-shed",
@@ -32969,7 +33994,8 @@
       "url": "https://www.williesmiths.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "cradle-mountain",
@@ -33075,6 +34101,28 @@
         "license": "CC BY 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cradle_Mountain_-_6.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Cradle_Mountain_-_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Cradle Mountain, Tasmania",
+        "attribution": "Stefan Karpiniec",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cradle_Mountain_-_8.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Cradle_Mountain_-_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Cradle Mountain, Tasmania",
+        "attribution": "Stefan Karpiniec",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cradle_Mountain_-_7.jpg",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
@@ -33189,7 +34237,7 @@
       "checkedAt": "2026-10-09",
       "url": "https://tasproduceguide.au/markets/"
     },
-    "lastWikidataLinkChecked": "2026-10-08"
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "latrobe-courthouse-museum",
@@ -33287,7 +34335,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.nationaltrust.org.au/places/latrobe-courthouse-museum/"
+    }
   },
   {
     "slug": "puddleduck-vineyard",
@@ -33405,7 +34459,8 @@
       "url": "https://www.puddleduck.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "the-signal-station",
@@ -33532,7 +34587,8 @@
       }
     ],
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "world-heritage-cruises",
@@ -33638,7 +34694,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.worldheritagecruises.com.au/"
+    }
   },
   {
     "slug": "apricus-restraunt",
@@ -33736,7 +34798,8 @@
       "url": "https://www.apricuslaunceston.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "ashgrove-cheese-factory",
@@ -33841,7 +34904,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.ashgrovecheese.com.au/"
+    }
   },
   {
     "slug": "bakers-delight",
@@ -34046,7 +35115,8 @@
       "url": "https://banhmibites.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "bar-wa-izakaya",
@@ -34149,7 +35219,8 @@
       "url": "https://www.barwaizakaya.com/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "bread-butter",
@@ -34457,6 +35528,28 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Callington_Mill_circa_1900.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Callington Mill, Tasmania",
+        "attribution": "Unknown author Unknown author",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Callington_Mill_circa_1900.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Callington_Mill_notice_1840.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Callington Mill, Tasmania",
+        "attribution": "Unknown author Unknown author",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Callington_Mill_notice_1840.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ],
     "reviewLinks": [
@@ -34674,7 +35767,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://creationdiscoverycentre.com/"
+    }
   },
   {
     "slug": "cugini",
@@ -35460,7 +36558,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://donriverrailway.com.au/"
+    }
   },
   {
     "slug": "franklin-house",
@@ -36105,7 +37208,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://anvers-chocolate.com.au/"
+    }
   },
   {
     "slug": "iroyuki-ramen-bar",
@@ -38625,6 +39733,28 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Sarah_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Sarah Island, Tasmania",
+        "attribution": "PelionClimber",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sarah_Island.jpg",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Strahan_banner_Sarah_Island.JPG/1920px-Strahan_banner_Sarah_Island.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Sarah Island, Tasmania",
+        "attribution": "AlasdairW",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strahan_banner_Sarah_Island.JPG",
+        "isFallback": false,
+        "sourceMethod": "wikimedia-category",
+        "confidence": "high"
       }
     ],
     "reviewLinks": [
@@ -39899,7 +41029,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://bridestowelavender.com.au/visit/woodcroft-cafe/",
+        "url": "https://bridestowelavender.com.au/about/",
         "checkedAt": "2026-10-09"
       }
     },
@@ -39937,7 +41067,7 @@
     "lastOfficialDetailsChecked": "2026-10-09",
     "schedule": {
       "summary": "Opening hours: Open daily 10am - 4pm (Closed Christmas Day)",
-      "sourceUrl": "https://bridestowelavender.com.au/visit/woodcroft-cafe/",
+      "sourceUrl": "https://bridestowelavender.com.au/about/",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -41355,7 +42485,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.sheffieldsteam.com.au/"
+    }
   },
   {
     "slug": "the-nut-cafe",
@@ -45570,7 +46705,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.gordonrivercruises.com.au/",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "look-and-book",
@@ -51421,6 +52562,82 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
+    "slug": "van-diemens-creamery",
+    "name": "Van Diemens Creamery",
+    "town": "Elizabeth Town",
+    "region": "North West",
+    "latitude": -41.4834824,
+    "longitude": 146.5980835,
+    "categories": [
+      "Food & Drink",
+      "Desserts"
+    ],
+    "summary": "Ice cream or dessert shop in or near Elizabeth Town.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/8141534917",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/8141534917",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Van_Diemens_Land_Creamery%2C_Elizabeth_Town%2C_Tasmania_02.jpg/1920px-Van_Diemens_Land_Creamery%2C_Elizabeth_Town%2C_Tasmania_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Van Diemens Creamery, Tasmania",
+      "attribution": "Chuq",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Van_Diemens_Land_Creamery,_Elizabeth_Town,_Tasmania_02.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Van%20Diemens%20Creamery%20Elizabeth%20Town%20Tasmania"
+      }
+    ],
+    "qualityScore": 42,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-09",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "gallery": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Van_Diemens_Land_Creamery%2C_Elizabeth_Town%2C_Tasmania_01.jpg/1920px-Van_Diemens_Land_Creamery%2C_Elizabeth_Town%2C_Tasmania_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Van Diemens Creamery, Tasmania",
+        "attribution": "Chuq",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Van_Diemens_Land_Creamery,_Elizabeth_Town,_Tasmania_01.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
     "slug": "adams-beach",
     "name": "Adams Beach",
     "town": "Tasmania",
@@ -57099,6 +58316,76 @@
     ],
     "rankedAt": "2026-10-09",
     "lastWikidataChecked": "2026-10-06"
+  },
+  {
+    "slug": "europa",
+    "name": "Europa",
+    "town": "Burnie",
+    "region": "North West",
+    "latitude": -41.0525149,
+    "longitude": 145.9062584,
+    "categories": [
+      "Food & Drink",
+      "Café"
+    ],
+    "summary": "Café in or near Burnie.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/1784560992",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/1784560992",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Mo-Fr 08:00-14:00; Sa 09:30-14:00",
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "openingHours": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/1784560992",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Cafe-Europa-Burnie-20131114-004.jpg/1920px-Cafe-Europa-Burnie-20131114-004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Europa, Tasmania",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cafe-Europa-Burnie-20131114-004.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Europa%20Burnie%20Tasmania"
+      }
+    ],
+    "qualityScore": 41,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "opening-hours",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-09",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09"
   },
   {
     "slug": "fairlands-beach",
@@ -67832,7 +69119,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.topqual.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "towterer-beach",
@@ -69185,7 +70478,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-09",
       "url": "http://www.flavourofindia.com.au/",
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
@@ -72916,7 +74209,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/mole-creek-karst-national-park/"
+    }
   },
   {
     "slug": "monk-bay-marine-conservation-area",
@@ -80212,7 +81510,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.hillwoodberryfarm.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "king-island-museum",
@@ -80343,7 +81647,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://rupertswoodfarm.com/",
+      "error": "500 Internal Server Error"
+    }
   },
   {
     "slug": "sherwood-hall",
@@ -145139,66 +146449,6 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
-    "slug": "van-diemens-creamery",
-    "name": "Van Diemens Creamery",
-    "town": "Elizabeth Town",
-    "region": "North West",
-    "latitude": -41.4834824,
-    "longitude": 146.5980835,
-    "categories": [
-      "Food & Drink",
-      "Desserts"
-    ],
-    "summary": "Ice cream or dessert shop in or near Elizabeth Town.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/8141534917",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/8141534917",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Van Diemens Creamery category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Van%20Diemens%20Creamery%20Elizabeth%20Town%20Tasmania"
-      }
-    ],
-    "qualityScore": 24,
-    "qualityTier": "low",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-09",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
-  },
-  {
     "slug": "victoria-s-cafe",
     "name": "Victoria's Cafe",
     "town": "Launceston",
@@ -146955,73 +148205,6 @@
         "provider": "google-maps",
         "label": "Reviews & visitor photos on Google Maps",
         "url": "https://www.google.com/maps/search/?api=1&query=Elements%20Tullah%20Tasmania"
-      }
-    ],
-    "qualityScore": 23,
-    "qualityTier": "low",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "opening-hours",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-09",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
-  },
-  {
-    "slug": "europa",
-    "name": "Europa",
-    "town": "Burnie",
-    "region": "North West",
-    "latitude": -41.0525149,
-    "longitude": 145.9062584,
-    "categories": [
-      "Food & Drink",
-      "Café"
-    ],
-    "summary": "Café in or near Burnie.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/1784560992",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/1784560992",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Mo-Fr 08:00-14:00; Sa 09:30-14:00",
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "openingHours": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/1784560992",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Europa category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Europa%20Burnie%20Tasmania"
       }
     ],
     "qualityScore": 23,
