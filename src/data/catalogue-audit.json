@@ -10,7 +10,7 @@
         "percent": 13.3
       },
       "twoPlusImages": {
-        "count": 176,
+        "count": 177,
         "percent": 8.2
       },
       "fourPlusImages": {
@@ -21,8 +21,8 @@
         "count": 75,
         "percent": 3.5
       },
-      "totalLicensedImages": 996,
-      "averageImagesPerPublicListing": 0.46
+      "totalLicensedImages": 922,
+      "averageImagesPerPublicListing": 0.43
     },
     "sources": {
       "websiteCoverage": {
@@ -34,12 +34,12 @@
         "percent": 13.3
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 272,
+        "count": 274,
         "percent": 12.7
       },
       "wikidataLinkage": {
-        "count": 626,
-        "percent": 29.1
+        "count": 632,
+        "percent": 29.4
       }
     },
     "details": {
@@ -64,7 +64,7 @@
         "percent": 23.5
       },
       "bookingUrl": {
-        "count": 180,
+        "count": 181,
         "percent": 8.4
       },
       "fee": {
@@ -193,14 +193,14 @@
     }
   },
   "events": {
-    "active": 161,
+    "active": 164,
     "ticketCoverage": {
       "count": 45,
-      "percent": 28
+      "percent": 27.4
     },
     "priceCoverage": {
       "count": 46,
-      "percent": 28.6
+      "percent": 28
     },
     "providers": {
       "Humanitix": 22,
@@ -208,8 +208,8 @@
       "Ticketmaster": 1
     },
     "sources": {
+      "Burnie City Council": 26,
       "MyState Bank Arena": 24,
-      "Burnie City Council": 23,
       "Huon Valley Council": 17,
       "Theatre North Launceston": 17,
       "Devonport City Council": 14,
@@ -230,7 +230,7 @@
     "regions": {
       "Hobart & South": 79,
       "Launceston & North": 30,
-      "North West": 37,
+      "North West": 40,
       "East Coast": 9,
       "West Coast": 2,
       "Central Tasmania": 1,
@@ -242,8 +242,8 @@
       "missingOrOlderThan30Days": 1
     },
     "sourceRegionalMix": {
+      "North West / Burnie City Council": 26,
       "Hobart & South / MyState Bank Arena": 24,
-      "North West / Burnie City Council": 23,
       "Hobart & South / Huon Valley Council": 17,
       "Launceston & North / Theatre North Launceston": 17,
       "North West / Devonport City Council": 14,
