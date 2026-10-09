@@ -1808,6 +1808,28 @@
     "reasons": []
   },
   {
+    "name": "TasPop Hobart Geek Market",
+    "url": "https://hobartandbeyond.com.au/event/taspop-hobart-geek-market",
+    "evidenceType": "link",
+    "event": false,
+    "latitude": null,
+    "longitude": null,
+    "id": "southern-markets:taspop-hobart-geek-market",
+    "sourceId": "southern-markets",
+    "sourceName": "Hobart and Beyond",
+    "sourceUrl": "https://hobartandbeyond.com.au/events/?_product_type=markets",
+    "firstSeen": "2026-10-09",
+    "lastSeen": "2026-10-09",
+    "status": "review",
+    "placeSlug": null,
+    "reasons": [
+      "Needs structured venue/location verification",
+      "Needs an exact town and venue address",
+      "Needs verified Tasmanian venue coordinates",
+      "Needs an unambiguous recurring schedule; dated markets stay in event discovery"
+    ]
+  },
+  {
     "name": "Willie Smith's Artisan Market",
     "url": "https://hobartandbeyond.com.au/event/willie-smiths-artisan-market",
     "evidenceType": "link",

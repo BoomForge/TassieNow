@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-09T00:19:36.683Z",
+  "checkedAt": "2026-10-09T09:38:20.671Z",
   "added": [],
   "addedEvents": [
     "book-market-burnie-emu-bay-lions-club-2026-11-07-wivenhoe",
@@ -86,8 +86,8 @@
     }
   ],
   "totals": {
-    "discovered": 67,
-    "review": 9,
+    "discovered": 68,
+    "review": 10,
     "existing": 55,
     "added": 0,
     "events": 3,
@@ -96,8 +96,8 @@
     "failedSources": 0
   },
   "run": {
-    "id": "37860188760",
-    "event": "schedule",
-    "sourceCommit": "dbf2c1e303c696cfbc6c9f70cbade60dc9a90d9a"
+    "id": "37910724625",
+    "event": "push",
+    "sourceCommit": "729e49c18e08904fa389505094e7508c3fa4d0dc"
   }
 }
