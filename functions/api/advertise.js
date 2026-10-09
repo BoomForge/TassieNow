@@ -24,8 +24,13 @@ export async function onRequestPost(context) {
   try {
     const body = await context.request.json();
     if (body.company_url) return Response.json({ ok: true });
-    const verification = await verifyTurnstile(context, body['cf-turnstile-response'] || body.turnstileToken);
-    if (!verification.ok) return Response.json({ error: verification.error }, { status: 400 });
+    // Ad enquiries must fail closed just like public listing corrections.
+    // A missing runtime secret is an outage, not permission to bypass Turnstile.
+    const origin=context.request.headers.get('origin');
+    if(origin&&origin!==new URL(context.request.url).origin)
+      return Response.json({error:'Invalid request origin'},{status:403});
+    const verification = await verifyTurnstile(context, body['cf-turnstile-response'] || body.turnstileToken,{required:true});
+    if (!verification.ok) return Response.json({ error: verification.error }, { status: verification.configured?400:503 });
 
     const name = cleanText(body.name, 120);
     const business = cleanText(body.business, 160);
