@@ -97,4 +97,5 @@ if(process.env.GITHUB_STEP_SUMMARY){
  await fs.appendFile(process.env.GITHUB_STEP_SUMMARY,lines.join('\n')+'\n');
 }
 console.log('Chromium browser sweep: '+JSON.stringify(report.summary));
+for(const failure of report.failures)console.error('Chromium failed check: '+JSON.stringify(failure).slice(0,1400));
 if(report.summary.failed)process.exitCode=1;
