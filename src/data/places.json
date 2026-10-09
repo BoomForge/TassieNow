@@ -79,7 +79,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
+      "error": "The operation was aborted due to timeout"
+    }
   },
   {
     "slug": "bishop-and-clerk",
@@ -161,7 +167,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/Pages/Bishop-and-Clerk.aspx",
+      "error": "The operation was aborted due to timeout"
+    }
   },
   {
     "slug": "bonorong-wildlife-sanctuary",
@@ -514,8 +526,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "5 minutes to 5 hours , 100m to 5km, Grade 2",
@@ -669,10 +682,9 @@
     ],
     "lastWikidataChecked": "2026-10-06",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-09",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches"
     },
     "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
   },
@@ -845,9 +857,10 @@
     ],
     "lastWikidataChecked": "2026-10-06",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-09",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach"
+      "url": "https://parks.tas.gov.au/Pages/Wineglass-Bay-and-Hazards-Beach.aspx",
+      "error": "The operation was aborted due to timeout"
     },
     "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
   },
@@ -934,7 +947,13 @@
     "rankedAt": "2026-10-09",
     "wikidataImages": [
       "Duck Reach Power Station Picture 1.jpg"
-    ]
+    ],
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/Pages/Duck-Reach.aspx",
+      "error": "The operation was aborted due to timeout"
+    }
   },
   {
     "slug": "liffey-falls",
@@ -1018,7 +1037,13 @@
     "rankedAt": "2026-10-09",
     "wikidataImages": [
       "Liffey Falls, Liffey, Tasmania.jpg"
-    ]
+    ],
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/Pages/Liffey-Falls-Walk.aspx",
+      "error": "The operation was aborted due to timeout"
+    }
   },
   {
     "slug": "maingon-blowhole",
@@ -1101,7 +1126,117 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/Pages/Maingon-Blowhole.aspx",
+      "error": "The operation was aborted due to timeout"
+    }
+  },
+  {
+    "slug": "montezuma-falls",
+    "name": "Montezuma Falls",
+    "town": "Rosebery",
+    "region": "West Coast",
+    "latitude": -41.8383247,
+    "longitude": 145.4764859,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Montezuma Falls is an official Parks Tasmania walk. Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/Montezuma-Falls.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/2938324595",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2938324595",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6409 1020",
+    "email": "PWS.WestCoast@parks.tas.gov.au",
+    "address": null,
+    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "email": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls",
+        "checkedAt": "2026-10-09"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls",
+        "checkedAt": "2026-10-09"
+      },
+      "bookingUrl": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Montezuma_Falls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "alt": "Montezuma Falls, Tasmania",
+      "attribution": "avidd",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montezuma_Falls.jpg",
+      "isFallback": false,
+      "sourceMethod": "wikidata-p18",
+      "confidence": "high"
+    },
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls",
+      "type": "government",
+      "checkedAt": "2026-10-09"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-08T23:55:46.806Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Montezuma%20Falls%20Rosebery%20Tasmania"
+      }
+    ],
+    "qualityScore": 100,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "real-image",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls"
+    }
   },
   {
     "slug": "remarkable-cave",
@@ -1201,8 +1336,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Remarkable-Cave.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/remarkable-cave",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "15 minutes return , TBC, Grade 3",
@@ -1229,7 +1365,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/remarkable-cave"
+    }
   },
   {
     "slug": "salamanca-market",
@@ -1491,8 +1632,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/St-Columba-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -1519,7 +1661,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls"
+    }
   },
   {
     "slug": "st-columba-falls-state-reserve",
@@ -1553,8 +1700,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/St-Columba-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -2131,7 +2279,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/Pages/Archers-Knob.aspx",
+      "error": "The operation was aborted due to timeout"
+    }
   },
   {
     "slug": "friendly-beaches-reserve",
@@ -2163,8 +2317,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "5 minutes to 5 hours , 100m to 5km, Grade 2",
@@ -2482,8 +2637,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Point-Vision-Track.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "7 hours return , 15 km return, Grade 4",
@@ -2527,7 +2683,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track"
+    }
   },
   {
     "slug": "port-arthur-historic-site",
@@ -2794,8 +2955,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "10 minute circuit , 431m, Grade 1",
@@ -2838,7 +3000,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
+    }
   },
   {
     "slug": "tahune-airwalk-cafe",
@@ -2911,8 +3078,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -2956,7 +3124,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk"
+    }
   },
   {
     "slug": "frankland-beaches",
@@ -2989,8 +3162,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Frankland-Beaches-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "2 hours , 6 km return, Grade 2",
@@ -3225,8 +3399,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Trousers-Point.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/strzelecki-national-park/trousers-point",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "1.5 hours circuit , 2km circuit, Grade 2",
@@ -3340,8 +3515,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -3367,7 +3543,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs"
+    }
   },
   {
     "slug": "fossil-cliffs",
@@ -3420,8 +3601,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Fossil-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/fossil-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -3447,7 +3629,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/fossil-cliffs"
+    }
   },
   {
     "name": "Judbury Market",
@@ -3639,8 +3826,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Meander-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/meander-falls",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "4.5-6 hours return , 10km return, Grade 4",
@@ -3666,7 +3854,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/meander-falls"
+    }
   },
   {
     "slug": "mount-duncan",
@@ -3718,8 +3911,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Mount-Duncan-Summit-Track.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-duncan-track",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "4 hours return , 8km return, Grade 3",
@@ -3746,7 +3940,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-duncan-track"
+    }
   },
   {
     "slug": "mount-gnomon",
@@ -3798,8 +3997,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Mount%20Gnomon-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-gnomon-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "1 hour return , 2km return, Grade 3",
@@ -3826,7 +4026,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-gnomon-lookout"
+    }
   },
   {
     "slug": "painted-cliffs",
@@ -3879,8 +4084,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Painted-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/painted-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -3906,7 +4112,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/painted-cliffs"
+    }
   },
   {
     "slug": "allport-library-and-museum-of-fine-arts",
@@ -4076,8 +4287,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "20 minutes return , 1 km, Grade 2",
@@ -4114,7 +4326,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls"
+    }
   },
   {
     "slug": "beaconsfield-mine-and-heritage-centre-2",
@@ -4317,8 +4534,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "30 minutes return , 2 km, Grade 1",
@@ -4361,7 +4579,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk"
+    }
   },
   {
     "slug": "cape-tourville-lookout",
@@ -4424,8 +4647,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Cape-Tourville.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "20 minute circuit , 600m circuit, Grade 1",
@@ -4468,7 +4692,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville"
+    }
   },
   {
     "slug": "museum-of-old-and-new-art",
@@ -4775,7 +5004,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/Pages/Sleepy-Bay.aspx",
+      "error": "The operation was aborted due to timeout"
+    }
   },
   {
     "slug": "springlawn-bird-hide-lookout",
@@ -4833,8 +5068,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "30 minutes return , 2 km, Grade 1",
@@ -4877,7 +5113,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk"
+    }
   },
   {
     "slug": "waratah-lookout",
@@ -4940,8 +5181,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "5 minutes return , 300 metres, Grade 2",
@@ -4978,7 +5220,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout"
+    }
   },
   {
     "slug": "wineglass-bay-lookout",
@@ -5041,8 +5288,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Wineglass-Bay-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -5085,7 +5333,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout"
+    }
   },
   {
     "name": "Liffey Valley Market",
@@ -5467,8 +5720,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Hollybank.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hollybank",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "15-40 minute circuit , 2km circuit, Grade 1",
@@ -5492,7 +5746,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hollybank"
+    }
   },
   {
     "slug": "alum-cliffs-lookout",
@@ -5544,8 +5803,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -5571,7 +5831,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs"
+    }
   },
   {
     "slug": "calcified-forest",
@@ -5632,8 +5897,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Calcified-Forest-(King-Island).aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -5666,7 +5932,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)"
+    }
   },
   {
     "slug": "cape-raoul-lookout",
@@ -5718,8 +5989,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "5 hours return , 14km, Grade 4",
@@ -5745,7 +6017,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul"
+    }
   },
   {
     "slug": "huon-pine-walk-lookout",
@@ -5806,8 +6083,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Huon-Pine-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "20 minutes return , 600m return, Grade 1",
@@ -5840,7 +6118,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk"
+    }
   },
   {
     "slug": "maritime-museum-of-tasmania",
@@ -5980,104 +6263,12 @@
     "rankedAt": "2026-10-09",
     "wikidataImages": [
       "Maritime Museum of Tasmania.jpg"
-    ]
-  },
-  {
-    "slug": "montezuma-falls",
-    "name": "Montezuma Falls",
-    "town": "Rosebery",
-    "region": "West Coast",
-    "latitude": -41.8383247,
-    "longitude": 145.4764859,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
     ],
-    "summary": "Montezuma Falls is an official Parks Tasmania walk. Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/Montezuma-Falls.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/2938324595",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2938324595",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6409 1020",
-    "email": "PWS.WestCoast@parks.tas.gov.au",
-    "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "email": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls",
-        "checkedAt": "2026-10-09"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls",
-        "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Montezuma_Falls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "alt": "Montezuma Falls, Tasmania",
-      "attribution": "avidd",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montezuma_Falls.jpg",
-      "isFallback": false,
-      "sourceMethod": "wikidata-p18",
-      "confidence": "high"
-    },
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Montezuma-Falls.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
+    "officialSourceCheck": {
       "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-08T23:55:46.806Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Montezuma%20Falls%20Rosebery%20Tasmania"
-      }
-    ],
-    "qualityScore": 82,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-09"
+      "checkedAt": "2026-10-09",
+      "url": "https://www.maritimetas.org/"
+    }
   },
   {
     "slug": "narryna-heritage-museum",
@@ -6219,7 +6410,12 @@
     "rankedAt": "2026-10-09",
     "wikidataImages": [
       "Narryna Heritage Museum in Hobart, Australia.jpg"
-    ]
+    ],
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.narryna.com.au/"
+    }
   },
   {
     "slug": "ralphs-falls-lookout",
@@ -6271,8 +6467,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Ralphs-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/ralphs-falls",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -6298,7 +6495,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/ralphs-falls"
+    }
   },
   {
     "slug": "reservoir",
@@ -6350,8 +6552,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/The-Reservoir-Circuit.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/the-reservoir-circuit",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "0.5-1 hour ride , 4km return, Grade 3",
@@ -6377,7 +6580,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/the-reservoir-circuit"
+    }
   },
   {
     "slug": "southwest-national-park",
@@ -6801,8 +7009,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Tall-Trees.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park/tall-trees",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "30 minutes circuit , 1km circuit, Grade 2",
@@ -6828,7 +7037,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park/tall-trees"
+    }
   },
   {
     "slug": "tasmanian-museum-and-art-gallery",
@@ -7023,8 +7237,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Waterfall-Bay.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/waterfall-bay",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -7050,7 +7265,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/waterfall-bay"
+    }
   },
   {
     "slug": "queen-victoria-museum-and-art-gallery-launceston",
@@ -7221,7 +7441,12 @@
     "rankedAt": "2026-10-09",
     "wikidataImages": [
       "Queen Victoria Museum and Art Gallery.jpg"
-    ]
+    ],
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.qvmag.tas.gov.au/Home"
+    }
   },
   {
     "slug": "tasmania-zoo",
@@ -7764,7 +7989,12 @@
     "rankedAt": "2026-10-09",
     "wikidataImages": [
       "Beaconsfield mine.JPG"
-    ]
+    ],
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.beaconsfieldheritage.com.au/"
+    }
   },
   {
     "slug": "ida-bay-railway",
@@ -8049,8 +8279,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Overland-Track.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": "6 days one way , 65km one way, Grade 4",
@@ -8074,7 +8305,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track"
+    }
   },
   {
     "slug": "hastings-caves-and-thermal-springs",
@@ -8310,7 +8546,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://bassstrait.museum/"
+    }
   },
   {
     "slug": "channel-museum",
@@ -8425,7 +8666,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://channelmuseum.org/"
+    }
   },
   {
     "name": "Crabtree Crop and Crafts Market",
@@ -8851,7 +9097,7 @@
     "bookingUrl": "https://farmgatemarket.com.au/?s={search_term_string}",
     "lastWikidataLinkChecked": "2026-10-08",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-09",
       "url": "https://farmgatemarket.com.au/"
     }
@@ -9440,7 +9686,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.mawsons-huts.org.au/replica-museum/"
+    }
   },
   {
     "slug": "stanley-the-nut",
@@ -9840,7 +10091,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.riversdaleestate.com.au/"
+    }
   },
   {
     "name": "Woodbridge Market",
@@ -10091,7 +10347,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.risbycove.com.au/"
+    }
   },
   {
     "slug": "old-hobart-town",
@@ -10232,7 +10493,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.oldhobarttown.com/"
+    }
   },
   {
     "slug": "bream-creek-farmers-market",
@@ -10441,7 +10707,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://raspberryfarmcafe.com/"
+    }
   },
   {
     "name": "Kingston Beach Handmade Market",
@@ -11456,7 +11727,7 @@
     "openingHours": "",
     "phone": "0418684108President",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-09",
       "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/"
     },
@@ -12058,8 +12329,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Leven-Canyon-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-09"
     },
     "walk": {
       "duration": null,
@@ -12085,7 +12357,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout"
+    }
   },
   {
     "slug": "hobart-zoo-2",
@@ -12278,7 +12555,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.ltms.org.au/"
+    }
   },
   {
     "slug": "raptor-refuge",
@@ -12365,7 +12647,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://raptorrefuge.com.au/",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "amaze-richmond",
@@ -12463,7 +12751,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://adikataxi.com/"
+    }
   },
   {
     "slug": "army-museum-of-tasmania",
@@ -19698,7 +19991,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://devilsatcradle.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://devilsatcradle.com/"
+    }
   },
   {
     "slug": "don-river-railway",
@@ -19928,7 +20232,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.natureworld.com.au/"
+    }
   },
   {
     "slug": "galley-museum",
@@ -20162,7 +20471,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.hzaa.com.au/"
+    }
   },
   {
     "slug": "wee-georgie-wood-railway",
@@ -23712,7 +24026,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://springbaymaritimemuseum.org.au/"
+    }
   },
   {
     "slug": "squeaky-beach",
@@ -23931,7 +24250,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.woodenboatcentre.com/"
+    }
   },
   {
     "slug": "tinderbox-marine-nature-reserve",
@@ -24869,7 +25193,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.wingswildlifepark.com.au/"
+    }
   },
   {
     "slug": "east-coast-heritage-museum",
@@ -25378,7 +25707,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.wondersofwynyard.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.wondersofwynyard.com/"
+    }
   },
   {
     "slug": "city-park-radio-museum",
@@ -25482,7 +25822,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://cityparkradio.com/radio-museum/"
+    }
   },
   {
     "slug": "deloraine-deli",
@@ -25790,7 +26135,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.hivetasmania.com.au/museum/"
+    }
   },
   {
     "slug": "trowunna-wildlife-park-2",
@@ -25955,7 +26305,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://bridestowelavender.com.au/"
+    }
   },
   {
     "slug": "creative-paper-tasmania",
@@ -26050,7 +26405,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.creativepaper.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.creativepaper.com.au/"
+    }
   },
   {
     "slug": "devil-s-corner-cellar-door",
@@ -26157,7 +26523,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.devilscorner.com.au/"
+    }
   },
   {
     "slug": "don-market",
@@ -26339,7 +26710,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.frogmorecreek.com.au/"
+    }
   },
   {
     "slug": "inala-nature-tours",
@@ -26450,7 +26826,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://inalanature.com.au/"
+    }
   },
   {
     "slug": "new-norfolk-market",
@@ -26655,7 +27036,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.pearnssteamworld.org.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "pooley-wines",
@@ -26766,7 +27153,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.pooleywines.com.au/"
+    }
   },
   {
     "slug": "richmond-bridge",
@@ -27256,7 +27648,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://annapurnaindiancuisine.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://annapurnaindiancuisine.com/"
+    }
   },
   {
     "slug": "bangkok-city",
@@ -27373,7 +27776,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://bangkokcity.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://bangkokcity.com.au/"
+    }
   },
   {
     "slug": "bark-mill-tavern-and-bakery",
@@ -27484,7 +27898,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://barkmilltavern.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://barkmilltavern.com.au/"
+    }
   },
   {
     "slug": "bento-legana",
@@ -27581,7 +28006,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://bentolegana.com.au/"
+    }
   },
   {
     "slug": "burger-junkie",
@@ -27673,7 +28103,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.burgerjunkie.com.au/"
+    }
   },
   {
     "slug": "coal-river-farm",
@@ -27794,7 +28229,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.coalriverfarm.com.au/pages/our-restaurant",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.coalriverfarm.com.au/pages/our-restaurant"
+    }
   },
   {
     "slug": "cygnet-old-bank-conservatory-cafe",
@@ -27904,7 +28350,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://cygnetoldbank.com.au/cafe-shop/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://cygnetoldbank.com.au/cafe-shop/"
+    }
   },
   {
     "slug": "dier-makr",
@@ -27999,7 +28456,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.diermakr.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.diermakr.com/"
+    }
   },
   {
     "slug": "everydays-smokin-bbq-and-bar",
@@ -28090,7 +28558,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://everydayssmokinbbqbar.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://everydayssmokinbbqbar.com.au/"
+    }
   },
   {
     "slug": "freycinet-marine-farm",
@@ -28208,7 +28687,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.freycinetmarinefarm.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.freycinetmarinefarm.com/"
+    }
   },
   {
     "slug": "grandvewe-certified-organic-sheep-dairy-and-sheep-whey-liqueur",
@@ -28303,7 +28793,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://grandvewe.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://grandvewe.com.au/"
+    }
   },
   {
     "slug": "hamlet-cafe-hobart",
@@ -28421,7 +28922,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://hamlet.org.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://hamlet.org.au/"
+    }
   },
   {
     "slug": "home-hill-restaurant",
@@ -28532,7 +29044,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.homehillwines.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.homehillwines.com.au/"
+    }
   },
   {
     "slug": "la-mensa",
@@ -28649,7 +29172,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://lamensahobart.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://lamensahobart.com/"
+    }
   },
   {
     "slug": "little-riva",
@@ -28735,7 +29269,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://little-riva.resos.com/booking"
+    }
   },
   {
     "slug": "lost-captain",
@@ -28830,7 +29369,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.lostcaptain.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.lostcaptain.com.au/"
+    }
   },
   {
     "slug": "maldini-cafe-restaurant",
@@ -28950,7 +29500,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://maldinirestaurant.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://maldinirestaurant.com.au/"
+    }
   },
   {
     "slug": "mr-burger",
@@ -29051,7 +29612,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.mrburger.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.mrburger.com.au/"
+    }
   },
   {
     "slug": "mures-upper-deck",
@@ -29168,7 +29740,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.mures.com.au/upper-deck",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.mures.com.au/upper-deck"
+    }
   },
   {
     "slug": "nara-thai",
@@ -29259,7 +29842,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://narathaitas.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://narathaitas.com.au/"
+    }
   },
   {
     "slug": "noodles-n-rolls-tastic",
@@ -29356,7 +29950,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.nnrtastic.com.au/"
+    }
   },
   {
     "slug": "pancho-villa",
@@ -29451,7 +30050,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://panchovilla.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://panchovilla.com.au/"
+    }
   },
   {
     "slug": "parthenon-souvlaki-bar",
@@ -29542,7 +30152,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://parthenonsouvlakionline.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://parthenonsouvlakionline.com.au/"
+    }
   },
   {
     "slug": "peking-restaurant",
@@ -29651,7 +30272,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.pekingrestauranttasmania.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.pekingrestauranttasmania.com.au/"
+    }
   },
   {
     "slug": "roaring-grill",
@@ -29747,7 +30379,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://roaringgrill.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://roaringgrill.com/"
+    }
   },
   {
     "slug": "sapa-rose",
@@ -29843,7 +30486,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://saparose.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://saparose.com.au/"
+    }
   },
   {
     "slug": "spice-on-wheels",
@@ -29934,7 +30588,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://spiceonwheels.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://spiceonwheels.com.au/"
+    }
   },
   {
     "slug": "spotty-dog-brewery-and-taphouse",
@@ -30025,7 +30690,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://spottydogbrewers.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://spottydogbrewers.com.au/"
+    }
   },
   {
     "slug": "st-albi-bar-and-eatery",
@@ -30126,7 +30802,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "http://www.st-albi.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.st-albi.com/"
+    }
   },
   {
     "slug": "tasman-restaurant",
@@ -30226,7 +30913,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.restauranttasman.com.au/"
+    }
   },
   {
     "slug": "the-artisan-s-hand",
@@ -30333,7 +31025,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.huonvalley.tas.gov.au/service/the-artisans-hand/"
+    }
   },
   {
     "slug": "the-boathouse-restaurant",
@@ -30450,7 +31147,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://theboathouse.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://theboathouse.com.au/"
+    }
   },
   {
     "slug": "the-hangout-cafe-and-restaurant",
@@ -30541,7 +31249,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://thehangoutrestaurant.com.au/about",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://thehangoutrestaurant.com.au/about"
+    }
   },
   {
     "slug": "the-little-poet",
@@ -30636,7 +31355,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.thelittlepoet.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.thelittlepoet.com/"
+    }
   },
   {
     "slug": "urban-greek",
@@ -30755,7 +31485,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://urbangreek.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://urbangreek.com.au/"
+    }
   },
   {
     "slug": "waterfront-cafe",
@@ -30857,7 +31598,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://waterfrontcomplex.com.au/"
+    }
   },
   {
     "slug": "willie-smith-s-apple-shed",
@@ -30953,7 +31699,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.williesmiths.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.williesmiths.com.au/"
+    }
   },
   {
     "slug": "cradle-mountain",
@@ -31269,7 +32026,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.nationaltrust.org.au/places/latrobe-courthouse-museum/"
+    }
   },
   {
     "slug": "puddleduck-vineyard",
@@ -31380,7 +32142,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.puddleduck.com.au/",
+      "error": "The operation was aborted due to timeout"
+    }
   },
   {
     "slug": "apricus-restraunt",
@@ -31471,7 +32239,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.apricuslaunceston.com.au/"
+    }
   },
   {
     "slug": "ashgrove-cheese-factory",
@@ -31576,7 +32349,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.ashgrovecheese.com.au/"
+    }
   },
   {
     "slug": "bakers-delight",
@@ -31671,7 +32449,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.bakersdelight.com.au/pages/bakeries/claremont-plaza-bakery",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.bakersdelight.com.au/pages/bakeries/claremont-plaza-bakery"
+    }
   },
   {
     "slug": "banhmi-bites",
@@ -31755,7 +32544,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://banhmibites.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://banhmibites.com.au/"
+    }
   },
   {
     "slug": "bar-wa-izakaya",
@@ -31845,7 +32645,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.barwaizakaya.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.barwaizakaya.com/"
+    }
   },
   {
     "slug": "bread-butter",
@@ -31935,7 +32746,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.breadandbuttertasmania.com.au/"
+    }
   },
   {
     "slug": "brown-burgers",
@@ -32024,7 +32840,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.brownburgers.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.brownburgers.com.au/"
+    }
   },
   {
     "slug": "callington-mill",
@@ -32241,7 +33068,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.charliesdesserthouse.com/"
+    }
   },
   {
     "slug": "creation-discovery-centre",
@@ -32341,7 +33173,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://creationdiscoverycentre.com/"
+    }
   },
   {
     "slug": "cugini",
@@ -32430,7 +33267,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.restaurantcugini.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.restaurantcugini.com/"
+    }
   },
   {
     "slug": "cygnet-living-history-museum",
@@ -32588,7 +33436,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://daangelo.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://daangelo.com/"
+    }
   },
   {
     "slug": "daci-and-daci",
@@ -32677,7 +33536,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://dacidaci.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://dacidaci.com.au/"
+    }
   },
   {
     "slug": "dave-s-noodle",
@@ -32788,7 +33658,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://davesnoodles.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://davesnoodles.com.au/"
+    }
   },
   {
     "slug": "devil-s-kitchen",
@@ -32878,7 +33759,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.devilskitchencafe.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.devilskitchencafe.com/"
+    }
   },
   {
     "slug": "don-camillo",
@@ -32968,7 +33860,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.doncamillorestaurant.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.doncamillorestaurant.com/"
+    }
   },
   {
     "slug": "don-river-railway-preservation-society",
@@ -33047,7 +33950,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://donriverrailway.com.au/"
+    }
   },
   {
     "slug": "franklin-house",
@@ -33262,7 +34170,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.ganges.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.ganges.com.au/"
+    }
   },
   {
     "slug": "herbs-pizza-and-takeaway",
@@ -33352,7 +34271,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.herbspizza.com.au/"
+    }
   },
   {
     "slug": "hog-s-breath-cafe-hobart",
@@ -33437,7 +34361,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.hogsbreath.com.au/location/hobart/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.hogsbreath.com.au/location/hobart/"
+    }
   },
   {
     "slug": "honey-badger-dessert-cafe",
@@ -33532,7 +34467,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://honeybadgerdessertcafe.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://honeybadgerdessertcafe.au/"
+    }
   },
   {
     "slug": "house-of-anvers-chocolate-factory-latrobe",
@@ -33560,7 +34506,18 @@
     "fee": null,
     "wheelchair": null,
     "operator": null,
-    "detailSources": {},
+    "detailSources": {
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://anvers-chocolate.com.au/contact/",
+        "checkedAt": "2026-10-09"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://anvers-chocolate.com.au/home/about-us/",
+        "checkedAt": "2026-10-09"
+      }
+    },
     "status": "active",
     "lastChecked": "2026-10-09",
     "lastDetailsChecked": "2026-10-09",
@@ -33599,7 +34556,34 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://anvers-chocolate.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://anvers-chocolate.com.au/"
+    },
+    "schedule": {
+      "summary": "Open daily, 7am to 5pm, 7 days a week",
+      "sourceUrl": "https://anvers-chocolate.com.au/home/about-us/",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "07:00",
+      "endTime": "17:00"
+    }
   },
   {
     "slug": "iroyuki-ramen-bar",
@@ -33767,7 +34751,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.medicipizzeria.com.au/"
+    }
   },
   {
     "slug": "lanigan-s",
@@ -33858,7 +34847,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://lanigansvineyard.com.au/"
+    }
   },
   {
     "slug": "le-coq",
@@ -33967,7 +34961,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.lecoqbicheno.com/"
+    }
   },
   {
     "slug": "leg-s-n-breasts-bellerive",
@@ -34146,7 +35145,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.marlasinger.net/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.marlasinger.net/"
+    }
   },
   {
     "slug": "mayfield-estate-winery",
@@ -34243,7 +35253,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.mayfieldestatetas.com.au/"
+    }
   },
   {
     "slug": "minfu-restaurant",
@@ -34332,7 +35347,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://minfurestaurant.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://minfurestaurant.com.au/"
+    }
   },
   {
     "slug": "monsoon-shabu-shabu",
@@ -34422,7 +35448,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://monsoonshabu.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://monsoonshabu.com/"
+    }
   },
   {
     "slug": "mud-bar-restaurant",
@@ -34512,7 +35549,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://mudbar.com.au/"
+    }
   },
   {
     "slug": "mures-lower-deck",
@@ -34622,7 +35664,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.mures.com.au/lower-deck",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.mures.com.au/lower-deck"
+    }
   },
   {
     "slug": "ogee",
@@ -34711,7 +35764,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.ogeehobart.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.ogeehobart.com.au/"
+    }
   },
   {
     "slug": "old-pelion-hut",
@@ -34857,7 +35921,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://orientalrestaurant.wixsite.com/sandybay",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://orientalrestaurant.wixsite.com/sandybay"
+    }
   },
   {
     "slug": "pachinko",
@@ -34952,7 +36027,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://pachinko.net.au/"
+    }
   },
   {
     "slug": "pep-pizza",
@@ -35041,7 +36121,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.peppizza.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.peppizza.com.au/"
+    }
   },
   {
     "slug": "pot-sticker",
@@ -35125,7 +36216,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://potsticker.square.site/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://potsticker.square.site/"
+    }
   },
   {
     "slug": "reliquaire",
@@ -35237,7 +36339,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.reliquaire.com/"
+    }
   },
   {
     "slug": "richmond-bakery",
@@ -35321,7 +36428,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.richmondvillage.com.au/"
+    }
   },
   {
     "slug": "saba-s-falafel",
@@ -35426,7 +36538,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.sabasfalafel.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.sabasfalafel.com.au/"
+    }
   },
   {
     "slug": "saint-hugo-s",
@@ -35515,7 +36638,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.sainthugos.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.sainthugos.com.au/"
+    }
   },
   {
     "slug": "salmon-ponds",
@@ -35632,7 +36766,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://salmonponds.com.au/"
+    }
   },
   {
     "slug": "stockmans-restaurant",
@@ -35742,7 +36881,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.oldwoolstore.com.au/stockmans-restaurant",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.oldwoolstore.com.au/stockmans-restaurant"
+    }
   },
   {
     "slug": "tasman-sea-salt",
@@ -35844,7 +36994,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://tasmanseasalt.com.au/"
+    }
   },
   {
     "slug": "the-fishers",
@@ -35935,7 +37090,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.devilscorner.fishersoffreycinet.com.au/"
+    }
   },
   {
     "slug": "the-ice-creamery",
@@ -36040,7 +37200,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://icecreameryandco.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://icecreameryandco.com.au/"
+    }
   },
   {
     "slug": "the-lobster-shack",
@@ -36152,7 +37323,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.lobstershacktasmania.com.au/"
+    }
   },
   {
     "slug": "the-pier-hotel-restaurant",
@@ -36263,7 +37439,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://pierhotel.com.au/"
+    }
   },
   {
     "slug": "the-vault",
@@ -36372,7 +37553,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://vaultcafebar.com.au/"
+    }
   },
   {
     "slug": "toong-thong-thai",
@@ -36461,7 +37647,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.toongthongthai.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.toongthongthai.com.au/"
+    }
   },
   {
     "slug": "trophy-room",
@@ -36545,7 +37742,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://trophyroomhobart.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://trophyroomhobart.com/"
+    }
   },
   {
     "slug": "whisk-and-co",
@@ -36629,7 +37837,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.whiskandco.com.au/"
+    }
   },
   {
     "slug": "atmosfire",
@@ -36718,7 +37931,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://atmosfire.com.au/home-2/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://atmosfire.com.au/home-2/"
+    }
   },
   {
     "slug": "bangor-vineyard-shed",
@@ -36828,7 +38052,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://bangorshed.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://bangorshed.com.au/"
+    }
   },
   {
     "slug": "bridestowe-cafe",
@@ -36935,7 +38170,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://bridestowelavender.com.au/"
+    }
   },
   {
     "slug": "bruny-island-cheese-company",
@@ -37040,7 +38280,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://brunyislandcheese.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://brunyislandcheese.com.au/"
+    }
   },
   {
     "slug": "bruny-island-cruises-restaurant",
@@ -37145,7 +38396,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.brunycruises.com.au/seafood-restaurant/",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "cape-bruny-light-station",
@@ -37387,7 +38644,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://hokkaidosushi.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://hokkaidosushi.com.au/"
+    }
   },
   {
     "slug": "jailhouse-grill",
@@ -37472,7 +38740,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://jailhousegrill.com.au/"
+    }
   },
   {
     "slug": "komatsuja-japanese",
@@ -37557,7 +38830,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://komatsujapanese.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://komatsujapanese.com.au/"
+    }
   },
   {
     "slug": "levee-food-co",
@@ -37658,7 +38942,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://leveefoodco.com.au/"
+    }
   },
   {
     "slug": "mr-korea",
@@ -37764,7 +39053,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.mrkorea.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.mrkorea.com.au/"
+    }
   },
   {
     "slug": "rivulet-cafe",
@@ -37853,7 +39153,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.rivuletcafe.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.rivuletcafe.com.au/"
+    }
   },
   {
     "slug": "sawak-cafe",
@@ -37942,7 +39253,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://sawakcafe.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://sawakcafe.com/"
+    }
   },
   {
     "slug": "solo-pasta-and-pizza",
@@ -38036,7 +39358,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://solopastaandpizza.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://solopastaandpizza.com.au/"
+    }
   },
   {
     "slug": "the-asylum",
@@ -38434,7 +39767,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.sheffieldsteam.com.au/"
+    }
   },
   {
     "slug": "the-nut-cafe",
@@ -38615,7 +39953,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.cubecoffee.com.au/seaport"
+    }
   },
   {
     "slug": "cyclo-vietnamese-street-food",
@@ -38694,7 +40037,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://northhobart.cyclo.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://northhobart.cyclo.com.au/"
+    }
   },
   {
     "slug": "dino-pizza-claremont",
@@ -38797,7 +40151,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://dinopizza.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://dinopizza.com.au/"
+    }
   },
   {
     "slug": "driftwood-restaurant",
@@ -38875,7 +40240,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://driftwoodrestaurant.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://driftwoodrestaurant.com.au/"
+    }
   },
   {
     "slug": "fatboys",
@@ -38959,7 +40335,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.fatboys.com.au/"
+    }
   },
   {
     "slug": "ja-and-jon-banh-mi-howrah",
@@ -39037,7 +40418,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://jajonbanhmi.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://jajonbanhmi.com.au/"
+    }
   },
   {
     "slug": "la-venezia-pizza",
@@ -39115,7 +40507,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://laveneziapizza.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://laveneziapizza.com.au/"
+    }
   },
   {
     "slug": "mole-creek-memorial-hall",
@@ -39260,7 +40663,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.mskorea.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.mskorea.com.au/"
+    }
   },
   {
     "slug": "red-velvet-lounge",
@@ -39338,7 +40752,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://redvelvetlounge.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://redvelvetlounge.com.au/"
+    }
   },
   {
     "slug": "smashboy-burgers",
@@ -39416,7 +40841,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.smashboy.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.smashboy.au/"
+    }
   },
   {
     "slug": "tatler-lane",
@@ -39494,7 +40930,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.sweetbrewcoffeeroasters.com.au/"
+    }
   },
   {
     "slug": "the-kudelka-shop",
@@ -39589,7 +41030,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.kudelkashop.com/"
+    }
   },
   {
     "slug": "the-lifebuoy-cafe",
@@ -39667,7 +41113,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.thelifebuoycafe.com/"
+    }
   },
   {
     "slug": "the-pizza-pub",
@@ -39746,7 +41197,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.pizzapub.com.au/"
+    }
   },
   {
     "slug": "the-wall-in-the-wilderness",
@@ -39830,7 +41286,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://thewalltasmania.com.au/"
+    }
   },
   {
     "slug": "the-winston",
@@ -39908,7 +41369,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://thewinstonbar.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://thewinstonbar.com/"
+    }
   },
   {
     "slug": "tidal-coffee",
@@ -40069,7 +41541,104 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.vdlcreamery.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.vdlcreamery.com.au/"
+    }
+  },
+  {
+    "slug": "waratah-museum",
+    "name": "Waratah Museum",
+    "town": "Waratah",
+    "region": "West Coast",
+    "latitude": -41.4440726,
+    "longitude": 145.5310006,
+    "categories": [
+      "Museums",
+      "Art & Culture",
+      "Rainy Day"
+    ],
+    "summary": "Museum in or near Waratah.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/5679352551",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/5679352551",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Waratah_Museum_20171121-072.jpg/1920px-Waratah_Museum_20171121-072.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Waratah Museum, Tasmania",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waratah_Museum_20171121-072.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Waratah%20Museum%20Waratah%20Tasmania"
+      }
+    ],
+    "qualityScore": 47,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-09",
+    "gallery": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/James_Smith_hut_Waratah_20171121-073.jpg/1920px-James_Smith_hut_Waratah_20171121-073.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Waratah Museum, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:James_Smith_hut_Waratah_20171121-073.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Cassiterite_-_Mt_Bischoff_mine%2C_Waratah%2C_Tasmania%2C_Australia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "Waratah Museum, Tasmania",
+        "attribution": "Ralph Bottrill",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cassiterite_-_Mt_Bischoff_mine,_Waratah,_Tasmania,_Australia.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      }
+    ]
   },
   {
     "slug": "ajikoma",
@@ -40162,7 +41731,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://ajikoma.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "bayside-hotel",
@@ -40247,7 +41822,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://baysidehotel.com.au/"
+    }
   },
   {
     "slug": "chefs-catch",
@@ -40335,7 +41915,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.chefscatch.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "coffee-on-wyndham",
@@ -40428,7 +42014,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.coffeeonwyndham.com/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "derwent-valley-railway",
@@ -40598,7 +42190,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://dongsheng.com.au/"
+    }
   },
   {
     "slug": "fish-frenzy-hobart",
@@ -40686,7 +42283,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.fishfrenzy.com.au/",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "frankies-coffee-house",
@@ -40769,7 +42372,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://frankiescoffeehouse.com.au/home",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "gallery-art-spaces",
@@ -40857,7 +42466,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://galleryartspaces.com/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "himalayan-tandoor-and-curry-house",
@@ -40946,7 +42561,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.himalayantandoorandcurryhouse.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.himalayantandoorandcurryhouse.com.au/"
+    }
   },
   {
     "slug": "kathmandu-cuisine",
@@ -41035,7 +42661,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "http://www.kathmanducuisine.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.kathmanducuisine.com.au/"
+    }
   },
   {
     "slug": "lufra-bistro",
@@ -41129,7 +42766,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.lufrahotel.com/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.lufrahotel.com/"
+    }
   },
   {
     "slug": "magic-curries",
@@ -41218,7 +42866,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://magiccurries.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://magiccurries.com.au/"
+    }
   },
   {
     "slug": "margate-train",
@@ -41430,7 +43089,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.medici.house/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "on-the-bay",
@@ -41513,7 +43178,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.stewartsbaylodge.com/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "orient-bar-and-restaurant",
@@ -41618,7 +43289,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.hadleyshotel.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.hadleyshotel.com.au/"
+    }
   },
   {
     "slug": "taco-villa",
@@ -41701,7 +43383,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.tacovilla.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "taste-of-malaysia",
@@ -41790,7 +43478,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.tasteofmalaysiahobart.com.au/"
+    }
   },
   {
     "slug": "the-richmond-arms-hotel",
@@ -41899,7 +43592,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://richmondarms.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://richmondarms.com.au/"
+    }
   },
   {
     "slug": "yuzuka-japanese-restaurant",
@@ -41983,7 +43687,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://yuzuka.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://yuzuka.com.au/"
+    }
   },
   {
     "slug": "look-and-book",
@@ -42054,7 +43769,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://looknbook.com.au/"
+    }
   },
   {
     "slug": "above-and-beyond-tasmanian-seaplanes",
@@ -42132,7 +43852,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://aboveandbeyond.flights/"
+    }
   },
   {
     "slug": "abundance-on-the-quay",
@@ -42216,7 +43941,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.abundanceonthequay.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.abundanceonthequay.com.au/"
+    }
   },
   {
     "slug": "astor-grill",
@@ -42300,7 +44036,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://astorgrill.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://astorgrill.com.au/"
+    }
   },
   {
     "slug": "batman-bridge",
@@ -42512,7 +44259,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.cocomoandco.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.cocomoandco.com.au/"
+    }
   },
   {
     "slug": "coles-bay-lookout",
@@ -42669,6 +44427,78 @@
       "review-link",
       "details-checked"
     ],
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.ficofico.net/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.ficofico.net/"
+    }
+  },
+  {
+    "slug": "fossil-bluff-lookout",
+    "name": "Fossil Bluff Lookout",
+    "town": "Wynyard",
+    "region": "North West",
+    "latitude": -40.9812298,
+    "longitude": 145.732502,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Wynyard.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/2705190522",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2705190522",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Fossil-Bluff-20070423-027.jpg/1920px-Fossil-Bluff-20070423-027.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fossil Bluff Lookout, Tasmania",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fossil-Bluff-20070423-027.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Fossil%20Bluff%20Lookout%20Wynyard%20Tasmania"
+      }
+    ],
+    "qualityScore": 44,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
     "rankedAt": "2026-10-09"
   },
   {
@@ -42741,7 +44571,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.happylarrydeli.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.happylarrydeli.au/"
+    }
   },
   {
     "slug": "harbour-lights",
@@ -42824,7 +44665,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.harbourlightscafe.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.harbourlightscafe.com.au/"
+    }
   },
   {
     "slug": "harvest-and-light",
@@ -42909,7 +44761,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://harvestandlight.com.au/"
+    }
   },
   {
     "slug": "hobart-town-tea-rooms",
@@ -42992,7 +44849,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://httco.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://httco.com.au/"
+    }
   },
   {
     "slug": "hursey-seafoods",
@@ -43076,7 +44944,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.hurseyseafoods.com.au/"
+    }
   },
   {
     "slug": "iron-creek-bay",
@@ -43159,7 +45032,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.ironcreekbay.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.ironcreekbay.com.au/"
+    }
   },
   {
     "slug": "lady-barron-falls",
@@ -43572,7 +45456,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://pizzarazzi.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://pizzarazzi.com.au/"
+    }
   },
   {
     "slug": "prossers-on-the-beach",
@@ -43650,7 +45545,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.prossersonthebeach.com/"
+    }
   },
   {
     "slug": "pulpit-rock-lookout",
@@ -44172,7 +46072,103 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://syrarestaurant.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://syrarestaurant.com.au/"
+    }
+  },
+  {
+    "slug": "table-cape-lookout",
+    "name": "Table Cape Lookout",
+    "town": "Wynyard",
+    "region": "North West",
+    "latitude": -40.9530694,
+    "longitude": 145.731307,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Wynyard.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/3927091845",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/3927091845",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/View-from-Table-Cape-20070423-024.jpg/1920px-View-from-Table-Cape-20070423-024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Table Cape Lookout, Tasmania",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View-from-Table-Cape-20070423-024.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Table%20Cape%20Lookout%20Wynyard%20Tasmania"
+      }
+    ],
+    "qualityScore": 44,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-09",
+    "gallery": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/View-from-Table-Cape-20070423-025.jpg/1920px-View-from-Table-Cape-20070423-025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Table Cape Lookout, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View-from-Table-Cape-20070423-025.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/View-from-Table-Cape-20070423-026.jpg/1920px-View-from-Table-Cape-20070423-026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Table Cape Lookout, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View-from-Table-Cape-20070423-026.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      }
+    ]
   },
   {
     "slug": "the-york-hotel-12-mile-steakhouse",
@@ -44327,7 +46323,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.unphogettable.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.unphogettable.com.au/"
+    }
   },
   {
     "slug": "viet-eat",
@@ -44590,7 +46597,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://msha.ke/zivahstanley/"
+    }
   },
   {
     "slug": "all-thai",
@@ -44668,7 +46680,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://allthai.com.au/"
+    }
   },
   {
     "slug": "bank-of-australasia-building",
@@ -44982,7 +46999,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.ellendalestore.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "five-bob-cafe",
@@ -45059,7 +47082,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://fivebobcafe.com/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "forest-ecocentre",
@@ -45201,7 +47230,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://heartfood.page/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "japanese-garden",
@@ -45351,7 +47386,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.kingscuisine.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "legerwood-memorial-trees",
@@ -45962,6 +48003,77 @@
       "review-link",
       "details-checked"
     ],
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.sanchurro.com/store/san-churro-salamanca/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.sanchurro.com/store/san-churro-salamanca/"
+    }
+  },
+  {
+    "slug": "spray-tunnel",
+    "name": "Spray Tunnel",
+    "town": "Zeehan",
+    "region": "West Coast",
+    "latitude": -41.8953017,
+    "longitude": 145.3168207,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Zeehan.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/8183600859",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/8183600859",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Spray_Tunnel_%2829602663214%29.jpg/1920px-Spray_Tunnel_%2829602663214%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Spray Tunnel, Tasmania",
+      "attribution": "Phil Whitehouse from London, United Kingdom",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spray_Tunnel_(29602663214).jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Spray%20Tunnel%20Zeehan%20Tasmania"
+      }
+    ],
+    "qualityScore": 43,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
     "rankedAt": "2026-10-09"
   },
   {
@@ -46273,7 +48385,7 @@
     "commonsCategory": null,
     "openingHours": "We-Su 11:00-17:00",
     "phone": "+61 3 6111 0881",
-    "email": null,
+    "email": "cellarclub@derwentestate.com.au",
     "address": null,
     "bookingUrl": null,
     "fee": null,
@@ -46288,6 +48400,11 @@
       "phone": {
         "type": "openstreetmap",
         "url": "https://www.openstreetmap.org/node/11504978953",
+        "checkedAt": "2026-10-09"
+      },
+      "email": {
+        "type": "official-website",
+        "url": "https://www.derwentestate.com.au/the-shed-restaurant/",
         "checkedAt": "2026-10-09"
       }
     },
@@ -46327,7 +48444,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.derwentestate.com.au/the-shed-restaurant/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.derwentestate.com.au/the-shed-restaurant/"
+    }
   },
   {
     "slug": "toll-house",
@@ -46482,7 +48610,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://curringafarm.com.au/"
+    }
   },
   {
     "slug": "grote-reber-museum",
@@ -46559,7 +48692,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.utas.edu.au/groterebermuseum",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "prem-s-seafood-bar-and-grill",
@@ -46647,7 +48786,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.premsrestaurant.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "tasmanian-transport-museum-glenorchy",
@@ -46729,7 +48874,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://tasmaniantransportmuseum.com.au/",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "adams-beach",
@@ -47018,7 +49169,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.atriumcafetasmania.com/"
+    }
   },
   {
     "slug": "aulichs-beach",
@@ -47598,7 +49754,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.basalttasmania.com/"
+    }
   },
   {
     "slug": "batchlers-shore",
@@ -47915,7 +50076,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://benlomondalpineresort.com.au/ben-lomond-base/"
+    }
   },
   {
     "slug": "berry-farm",
@@ -47987,7 +50153,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://brunyislandberryfarm.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://brunyislandberryfarm.com.au/"
+    }
   },
   {
     "slug": "big-beach",
@@ -49001,7 +51178,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://bossimis.com.au/"
+    }
   },
   {
     "slug": "bottlerock-beach",
@@ -49480,7 +51662,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.discovertasmania.com.au/experiences/stories/bruny-island-like-a-local/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.discovertasmania.com.au/experiences/stories/bruny-island-like-a-local/"
+    }
   },
   {
     "slug": "bruny-island-cruises",
@@ -49561,7 +51754,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.brunycruises.com.au/",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "bryans-beach",
@@ -49829,7 +52028,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://rhubru.com.au/"
+    }
   },
   {
     "slug": "canal-shore",
@@ -51690,7 +53894,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://drunkenadmiral.net/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://drunkenadmiral.net/"
+    }
   },
   {
     "slug": "eagle-point-beach",
@@ -53575,7 +55790,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://mienavillage.com.au/"
+    }
   },
   {
     "slug": "green-island-main",
@@ -54372,7 +56592,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://inthehanginggarden.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://inthehanginggarden.com.au/"
+    }
   },
   {
     "slug": "iron-rocks-shore",
@@ -55968,7 +58199,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.liveat.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.liveat.com.au/"
+    }
   },
   {
     "slug": "long-point-beach",
@@ -56138,7 +58380,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.luma.kitchen/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.luma.kitchen/"
+    }
   },
   {
     "slug": "mackenzies-beach",
@@ -59087,7 +61340,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://pizzarazzi.com.au/"
+    }
   },
   {
     "slug": "plain-place-beach",
@@ -60138,7 +62396,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.rendezvousloungecafe.com.au/"
+    }
   },
   {
     "slug": "reynards-beach",
@@ -60308,7 +62571,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://rhinopizza.com.au/"
+    }
   },
   {
     "slug": "rice-beach",
@@ -60968,7 +63236,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://royalthai.com.au/"
+    }
   },
   {
     "slug": "saltworks-beach",
@@ -62912,7 +65185,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://oatlandspancakesandcrepes.com.au/"
+    }
   },
   {
     "slug": "tiger-head-beach",
@@ -63135,7 +65413,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.topqual.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "towterer-beach",
@@ -63852,7 +66136,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://white-box-noodles.square.site/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://white-box-noodles.square.site/"
+    }
   },
   {
     "slug": "white-rocks-shore",
@@ -64120,7 +66415,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://wiseguise.pizza/"
+    }
   },
   {
     "slug": "yellow-beaches",
@@ -64289,7 +66589,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.dominos.com.au/",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "fish-bar",
@@ -64366,7 +66672,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://fishbarbellerive.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "flavour-of-india",
@@ -64443,7 +66755,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.flavourofindia.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "gloria-jean-s",
@@ -64515,7 +66833,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.gloriajeans.com.au/"
+    }
   },
   {
     "slug": "indian-tandoor-house",
@@ -64598,7 +66921,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://expireddomains.com/domain/indiantandoorhouse.com?utm_source=redi"
+    }
   },
   {
     "slug": "orangepete-s",
@@ -64669,7 +66997,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://orangepetes.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "osterley-war-memorial-hall",
@@ -64818,7 +67152,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://parthenonsouvlakibar.com.au/",
+      "error": "503 Service Unavailable"
+    }
   },
   {
     "slug": "rosny-barn",
@@ -64973,7 +67313,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.rydges.com/accommodation/hobart-tas/hobart/",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "suzie-luck-s",
@@ -65055,7 +67401,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.smolt.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "twister-sister",
@@ -65132,7 +67484,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://twistersister.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "wagyu-pie-company-and-bakehouse",
@@ -65209,7 +67567,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.wagyupiecompany.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "africa-gully-nature-reserve",
@@ -68103,7 +70467,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://parks.tas.gov.au/explore-our-parks/mole-creek-karst-national-park/"
+    }
   },
   {
     "slug": "monk-bay-marine-conservation-area",
@@ -70117,7 +72486,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://banjos.com.au/"
+    }
   },
   {
     "slug": "bligh-museum-of-pacific-exploration",
@@ -70254,7 +72628,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://thebridportbunkerclub.com.au/menus/"
+    }
   },
   {
     "slug": "burnie-regional-museum",
@@ -70406,7 +72785,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.donatispizza.com.au/"
+    }
   },
   {
     "slug": "ellys-east-coast-kitchen",
@@ -70536,7 +72920,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://hahis-diary.square.site/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://hahis-diary.square.site/"
+    }
   },
   {
     "slug": "ja-and-jon-banh-mi",
@@ -70601,7 +72996,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://jajonbanhmi.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://jajonbanhmi.com.au/"
+    }
   },
   {
     "slug": "kurukuru",
@@ -70666,7 +73072,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://kurukurusandybay.square.site/"
+    }
   },
   {
     "slug": "libby-s-cafe",
@@ -70825,7 +73236,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.noodlebox.com.au/"
+    }
   },
   {
     "slug": "the-black-stone",
@@ -70890,7 +73306,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-09",
+      "url": "https://theblackstone.com.au/"
+    }
   },
   {
     "slug": "a-spring-food-bar",
@@ -70961,7 +73382,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://aspringfoodbar.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "casablanca",
@@ -71037,7 +73464,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.casablancapenguin.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "elizabeth-town-bakery-cafe",
@@ -71108,7 +73541,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.etcbakery.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "hudsons-coffee-hobart",
@@ -71179,7 +73618,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.hudsonscoffee.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "inspired-by-vanidols",
@@ -71250,7 +73695,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.vanidolsouth.com/",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "lake-johnston-nature-reserve",
@@ -71371,7 +73822,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://mypot.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "phat-fish",
@@ -71447,7 +73904,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://phatfish.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "sith-cala-nature-reserve",
@@ -71563,7 +74026,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.sixrussell.com.au/bistro/",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "the-golden-brumby",
@@ -71634,7 +74103,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.susieshoongfatt.yolasite.com/",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "three-sisters-goat-island-nature-reserve",
@@ -71750,7 +74225,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://vanidols.com/",
+      "error": "The operation was aborted due to timeout"
+    }
   },
   {
     "slug": "villarett",
@@ -71821,7 +74302,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.villarett.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "vina-yummy-kitchen",
@@ -71892,7 +74379,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://vinayummykitchen.com/",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "ball-and-chain-grill",
@@ -75232,7 +77725,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.hillwoodberryfarm.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "king-island-museum",
@@ -75361,7 +77860,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://rupertswoodfarm.com/",
+      "error": "500 Internal Server Error"
+    }
   },
   {
     "slug": "sherwood-hall",
@@ -75491,7 +77996,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.agfg.com.au/restaurant/ashmore-on-bridge-street-43747",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "baudins",
@@ -75555,7 +78066,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.baudinskingisland.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "best-western-tram-bar",
@@ -75619,7 +78136,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://bestwesternhotellaunceston.com.au/dine/",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "bicheno-s-glass-bottom-boat",
@@ -75963,7 +78486,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.cityparkgrand.com.au/index.php/Restaurant/larcenys_restaurant_launceston",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "marakoopa-cafe",
@@ -76027,7 +78556,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "http://www.marakoopacoffee.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "pressing-matters",
@@ -76161,7 +78696,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://subway.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "the-cheesecake-shop",
@@ -76225,7 +78766,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.cheesecake.com.au/",
+      "error": "fetch failed"
+    }
   },
   {
     "slug": "wendy-s-milk-bar",
@@ -76289,7 +78836,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://wendysmilkbar.com/",
+      "error": "403 Forbidden"
+    }
   },
   {
     "slug": "wendys",
@@ -76353,7 +78906,13 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-09",
+      "url": "https://www.wendys.com.au/",
+      "error": "The operation was aborted due to timeout"
+    }
   },
   {
     "slug": "agent-cooper",
@@ -88224,7 +90783,18 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://portarthur.org.au/eat-drink/1830-restaurant-and-bar/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-09"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-09",
+      "url": "https://portarthur.org.au/eat-drink/1830-restaurant-and-bar/"
+    }
   },
   {
     "slug": "apple-museum",
@@ -89506,91 +92076,6 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-09"
-  },
-  {
-    "slug": "waratah-museum",
-    "name": "Waratah Museum",
-    "town": "Waratah",
-    "region": "West Coast",
-    "latitude": -41.4440726,
-    "longitude": 145.5310006,
-    "categories": [
-      "Museums",
-      "Art & Culture",
-      "Rainy Day"
-    ],
-    "summary": "Museum in or near Waratah.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/5679352551",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/5679352551",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Waratah_Museum_20171121-072.jpg/1920px-Waratah_Museum_20171121-072.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Waratah Museum, Tasmania",
-      "attribution": "Gary Houston",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waratah_Museum_20171121-072.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Waratah%20Museum%20Waratah%20Tasmania"
-      }
-    ],
-    "qualityScore": 29,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-09",
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/James_Smith_hut_Waratah_20171121-073.jpg/1920px-James_Smith_hut_Waratah_20171121-073.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Waratah Museum, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:James_Smith_hut_Waratah_20171121-073.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Cassiterite_-_Mt_Bischoff_mine%2C_Waratah%2C_Tasmania%2C_Australia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Waratah Museum, Tasmania",
-        "attribution": "Ralph Bottrill",
-        "license": "CC BY 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cassiterite_-_Mt_Bischoff_mine,_Waratah,_Tasmania,_Australia.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      }
-    ]
   },
   {
     "slug": "weindorfer-s-chalet",
@@ -91575,7 +94060,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "brewtique-on-blair",
@@ -91640,7 +94126,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "bridport-fish-and-chips",
@@ -91705,7 +94192,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "bruny-island-gateway",
@@ -91770,7 +94258,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "bumi-coffee",
@@ -91835,7 +94324,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "burger-got-soul",
@@ -91900,7 +94390,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "burt-munro-s-motorcycle-cafe",
@@ -91965,7 +94456,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "bury-me-standing",
@@ -92030,7 +94522,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "bush-bakery",
@@ -92095,7 +94588,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "cafe-fresh",
@@ -92160,7 +94654,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "cafe-umami",
@@ -92225,7 +94720,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "callington-mill-distillery",
@@ -92290,7 +94786,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "cambridge-kitchen-and-newsagency",
@@ -92355,7 +94852,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "canal-cafe-and-piiza",
@@ -92420,7 +94918,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "casa-pinocchio",
@@ -92485,7 +94984,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "cataract-on-paterson",
@@ -92550,7 +95050,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "chilla-s-takeaway",
@@ -92615,7 +95116,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "china-garden",
@@ -92680,7 +95182,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "china-town-restaurant",
@@ -92745,7 +95248,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "cibo-e-vino",
@@ -92815,7 +95319,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "corner-bite-takeaway",
@@ -92880,7 +95385,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "cripps-bakery",
@@ -92945,7 +95451,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "cubed-espresso-van",
@@ -93010,7 +95517,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "curry-house-mowbray",
@@ -93075,7 +95583,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "dalila-s-patisserie",
@@ -93140,7 +95649,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "dl-vietnamese",
@@ -93205,7 +95715,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "dodges-ferry-hotel",
@@ -93270,7 +95781,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "dr-coffee",
@@ -93335,7 +95847,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "drift-cafe-restraunt",
@@ -93400,7 +95913,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "dunalley-bakery",
@@ -93465,7 +95979,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "eastford-creek-vineyard",
@@ -93530,7 +96045,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "eastside-milk-bar",
@@ -93595,7 +96111,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "eastside-milk-bar-and-takeaways",
@@ -93660,7 +96177,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "ellie-mays-on-york",
@@ -93725,7 +96243,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "everest-eatery",
@@ -93795,7 +96314,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "everyday-sundaes",
@@ -93860,7 +96380,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "fifteen-tables",
@@ -93925,7 +96446,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "food-and-brew",
@@ -93995,7 +96517,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "french-sticks-bakery",
@@ -94060,7 +96583,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "fundamental-espresso",
@@ -94125,7 +96649,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "get-roasted-cafe",
@@ -94190,7 +96715,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "halfway-cafe-and-diner",
@@ -94255,7 +96781,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "harlequin-hobart",
@@ -94320,7 +96847,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "hazelbrae-hazelnuts-nut-farm-cafe-and-tasting-centre",
@@ -94385,7 +96913,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "hebe-reef-coffee-shop",
@@ -94450,7 +96979,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "hennessey-s-bakehouse",
@@ -94515,7 +97045,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "high-tide",
@@ -94580,7 +97111,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "hill-street-cafe",
@@ -94645,7 +97177,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "hot-pot",
@@ -94710,7 +97243,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "hungry-birds",
@@ -94775,7 +97309,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "in-good-company",
@@ -94840,7 +97375,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "indian-chilli-club",
@@ -94905,7 +97441,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "indian-curry",
@@ -94970,7 +97507,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "infuse-coffee-roasters",
@@ -95035,7 +97573,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "jackson-s-emporium",
@@ -95100,7 +97639,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "josephine-brown",
@@ -95165,7 +97705,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "kichi-sushi",
@@ -95230,7 +97771,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "kings-bridge-bar-and-restaurant",
@@ -95295,7 +97837,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "kymmies-takeaway",
@@ -95360,7 +97903,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "larder-cafe",
@@ -95425,7 +97969,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "leaping-goat-coffee",
@@ -95490,7 +98035,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "lemon-tree-providore",
@@ -95555,7 +98101,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "loud-iron",
@@ -95620,7 +98167,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "lui-s-bbq",
@@ -95685,7 +98233,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "marion-storm-maritime-cafe",
@@ -95750,7 +98299,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "mel-s-kitchen",
@@ -95815,7 +98365,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "milano-s-pizza",
@@ -95880,7 +98431,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "moon-lily-kitchen-and-cakes",
@@ -95945,7 +98497,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "moto-vecchia",
@@ -96010,7 +98563,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "mountain-mumma",
@@ -96075,7 +98629,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "mrs-jones-restraunt-bar-lounge",
@@ -96140,7 +98695,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "noah-s-coffee-lounge-and-takeaway",
@@ -96205,7 +98761,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "nomad-global-kitchen",
@@ -96270,7 +98827,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "north-eats",
@@ -96335,7 +98893,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "nourish-me-cafe",
@@ -96400,7 +98959,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "one-flower-cafe",
@@ -96465,7 +99025,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "oriental-chef",
@@ -96530,7 +99091,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "oyster-cove-inn",
@@ -96595,7 +99157,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "paesano-pizza-and-pasta",
@@ -96660,7 +99223,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "penguin-and-pardalote-cafe",
@@ -96725,7 +99289,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "peppermint-bay-hotel",
@@ -96795,7 +99360,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "pigeon-whole-bakery",
@@ -96865,7 +99431,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "pizzirani-s-cucina",
@@ -96930,7 +99497,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "post-office",
@@ -96995,7 +99563,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "purple-sage",
@@ -97060,7 +99629,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "runway-cafe",
@@ -97125,7 +99695,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "saltshaker-restaurant",
@@ -97190,7 +99761,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "scottsdale-art-gallery-cafe",
@@ -97255,7 +99827,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "seawall-cafe",
@@ -97320,7 +99893,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "shot-tower-tea-room",
@@ -97390,7 +99964,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-09"
+    "rankedAt": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-09"
   },
   {
     "slug": "sk-s-indian-restaurant",
@@ -101861,66 +104436,6 @@
         "provider": "google-maps",
         "label": "Reviews & visitor photos on Google Maps",
         "url": "https://www.google.com/maps/search/?api=1&query=Fossil%20Bay%20Lookout%20Port%20Arthur%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-09"
-  },
-  {
-    "slug": "fossil-bluff-lookout",
-    "name": "Fossil Bluff Lookout",
-    "town": "Wynyard",
-    "region": "North West",
-    "latitude": -40.9812298,
-    "longitude": 145.732502,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Wynyard.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/2705190522",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2705190522",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Fossil-Bluff-20070423-027.jpg/1920px-Fossil-Bluff-20070423-027.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Fossil Bluff Lookout, Tasmania",
-      "attribution": "Gary Houston",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fossil-Bluff-20070423-027.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Fossil%20Bluff%20Lookout%20Wynyard%20Tasmania"
       }
     ],
     "qualityScore": 26,
@@ -106930,90 +109445,6 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-09"
-  },
-  {
-    "slug": "table-cape-lookout",
-    "name": "Table Cape Lookout",
-    "town": "Wynyard",
-    "region": "North West",
-    "latitude": -40.9530694,
-    "longitude": 145.731307,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Wynyard.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/3927091845",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/3927091845",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/View-from-Table-Cape-20070423-024.jpg/1920px-View-from-Table-Cape-20070423-024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Table Cape Lookout, Tasmania",
-      "attribution": "Gary Houston",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View-from-Table-Cape-20070423-024.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Table%20Cape%20Lookout%20Wynyard%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-09",
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/View-from-Table-Cape-20070423-025.jpg/1920px-View-from-Table-Cape-20070423-025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Table Cape Lookout, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View-from-Table-Cape-20070423-025.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/View-from-Table-Cape-20070423-026.jpg/1920px-View-from-Table-Cape-20070423-026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Table Cape Lookout, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View-from-Table-Cape-20070423-026.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      }
-    ]
   },
   {
     "slug": "tamahorn-lookout",
@@ -113193,65 +115624,6 @@
         "provider": "google-maps",
         "label": "Reviews & visitor photos on Google Maps",
         "url": "https://www.google.com/maps/search/?api=1&query=Spiky%20Bridge%20Swansea%20Tasmania"
-      }
-    ],
-    "qualityScore": 25,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-09"
-  },
-  {
-    "slug": "spray-tunnel",
-    "name": "Spray Tunnel",
-    "town": "Zeehan",
-    "region": "West Coast",
-    "latitude": -41.8953017,
-    "longitude": 145.3168207,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Zeehan.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/8183600859",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/8183600859",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Spray_Tunnel_%2829602663214%29.jpg/1920px-Spray_Tunnel_%2829602663214%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Spray Tunnel, Tasmania",
-      "attribution": "Phil Whitehouse from London, United Kingdom",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spray_Tunnel_(29602663214).jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Spray%20Tunnel%20Zeehan%20Tasmania"
       }
     ],
     "qualityScore": 25,
