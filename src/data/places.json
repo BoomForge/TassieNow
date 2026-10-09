@@ -865,6 +865,104 @@
     "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
   },
   {
+    "slug": "hogarth-falls",
+    "name": "Hogarth Falls",
+    "town": "Strahan",
+    "region": "West Coast",
+    "latitude": -42.15328,
+    "longitude": 145.348696,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Hogarth Falls is an official Parks Tasmania walk. Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/10609565388",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/10609565388",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6409 1020",
+    "email": "PWS.WestCoast@parks.tas.gov.au",
+    "address": null,
+    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "email": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls",
+        "checkedAt": "2026-10-09"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls",
+        "checkedAt": "2026-10-09"
+      },
+      "bookingUrl": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Hogarth_Falls%2C_Tasmania.jpg/1280px-Hogarth_Falls%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Hogarth Falls, Tasmania",
+      "attribution": "BriYYZ from Toronto, Canada",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hogarth_Falls,_Tasmania.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
+      "type": "government"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-09T09:38:09.107Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Hogarth%20Falls%20Strahan%20Tasmania"
+      }
+    ],
+    "qualityScore": 100,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "real-image",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-09"
+  },
+  {
     "slug": "interpretation-centre-duck-reach-power-station",
     "name": "Interpretation Centre (Duck Reach Power Station)",
     "town": "Launceston",
@@ -5913,103 +6011,6 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
-  },
-  {
-    "slug": "hogarth-falls",
-    "name": "Hogarth Falls",
-    "town": "Strahan",
-    "region": "West Coast",
-    "latitude": -42.15328,
-    "longitude": 145.348696,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Hogarth Falls is an official Parks Tasmania walk. Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/10609565388",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/10609565388",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6409 1020",
-    "email": "PWS.WestCoast@parks.tas.gov.au",
-    "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "email": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls",
-        "checkedAt": "2026-10-09"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls",
-        "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Hogarth_Falls%2C_Tasmania.jpg/1280px-Hogarth_Falls%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Hogarth Falls, Tasmania",
-      "attribution": "BriYYZ from Toronto, Canada",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hogarth_Falls,_Tasmania.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-09T09:38:09.107Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Hogarth%20Falls%20Strahan%20Tasmania"
-      }
-    ],
-    "qualityScore": 82,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-09"
   },
   {
     "slug": "huon-pine-walk-lookout",
@@ -37419,6 +37420,170 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
+    "slug": "queenstown-galley-museum",
+    "name": "Queenstown Galley Museum",
+    "town": "Queenstown",
+    "region": "West Coast",
+    "latitude": -42.0783749,
+    "longitude": 145.5566431,
+    "categories": [
+      "Museums",
+      "Art & Culture",
+      "Rainy Day"
+    ],
+    "summary": "Museum in or near Queenstown.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/way/299393727",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/299393727",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": "1-7 Driffield Street, Queenstown, TAS, 7467",
+    "bookingUrl": null,
+    "fee": "yes",
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "address": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/299393727",
+        "checkedAt": "2026-10-09"
+      },
+      "fee": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/299393727",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Queenstown_Galley_Museum_and_town.jpg/1920px-Queenstown_Galley_Museum_and_town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Queenstown Galley Museum, Tasmania",
+      "attribution": "JarrahTree",
+      "license": "CC BY 2.5 au",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5/au/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Queenstown_Galley_Museum_and_town.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Queenstown%20Galley%20Museum%20Queenstown%20Tasmania"
+      }
+    ],
+    "qualityScore": 50,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "address",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-09",
+    "gallery": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Galley_Museum_Queenstown_1.jpg/1920px-Galley_Museum_Queenstown_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Queenstown Galley Museum, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_1.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Galley_Museum_Queenstown_2.jpg/1920px-Galley_Museum_Queenstown_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Queenstown Galley Museum, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_2.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Galley_Museum_Queenstown_3.jpg/1920px-Galley_Museum_Queenstown_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Queenstown Galley Museum, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_3.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Galley_Museum_Queenstown_4.jpg/1920px-Galley_Museum_Queenstown_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Queenstown Galley Museum, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_4.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Galley_Museum_Queenstown_5.jpg/1920px-Galley_Museum_Queenstown_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Queenstown Galley Museum, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_5.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Galley_Museum_Queenstown_6.jpg/1920px-Galley_Museum_Queenstown_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Queenstown Galley Museum, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_6.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Galley_Museum_Queenstown_8.jpg/1920px-Galley_Museum_Queenstown_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Queenstown Galley Museum, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_8.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Galley_Museum_Queenstown_9.jpg/1920px-Galley_Museum_Queenstown_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Queenstown Galley Museum, Tasmania",
+        "attribution": "Jimmyjrg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_9.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
     "slug": "reliquaire",
     "name": "Reliquaire",
     "town": "Latrobe",
@@ -45333,6 +45498,97 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
+    "slug": "west-coast-wilderness-railway-strahan",
+    "name": "West Coast Wilderness Railway",
+    "town": "Strahan",
+    "region": "West Coast",
+    "latitude": -42.1601438,
+    "longitude": 145.3277466,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Strahan.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/8434078424",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/8434078424",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": "https://required",
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "bookingUrl": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/8434078424",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/ABT_loco_on_turntable_on_the_WCW_railway.jpg/1920px-ABT_loco_on_turntable_on_the_WCW_railway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "West Coast Wilderness Railway, Tasmania",
+      "attribution": "Nelson Minar",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ABT_loco_on_turntable_on_the_WCW_railway.jpg",
+      "isFallback": false,
+      "sourceMethod": "wikidata-p18",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=West%20Coast%20Wilderness%20Railway%20Strahan%20Tasmania"
+      }
+    ],
+    "qualityScore": 45,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-09",
+    "gallery": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Strahan_Railway_Station_%283939186114%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "West Coast Wilderness Railway, Tasmania",
+        "attribution": "Tom Worthington from Canberra, Australia",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strahan_Railway_Station_(3939186114).jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/130131_7069_West_Coast_Wilderness_Railway_Strahan_Tas_Australia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "West Coast Wilderness Railway, Tasmania",
+        "attribution": "夏目・龍之介",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:130131_7069_West_Coast_Wilderness_Railway_Strahan_Tas_Australia.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
     "slug": "above-and-beyond-tasmanian-seaplanes",
     "name": "Above and Beyond - Tasmanian Seaplanes",
     "town": "Hobart",
@@ -48799,6 +49055,79 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
+  },
+  {
+    "slug": "iron-blow",
+    "name": "Iron Blow",
+    "town": "Queenstown",
+    "region": "West Coast",
+    "latitude": -42.0682013,
+    "longitude": 145.5905411,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Queenstown.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/6520692685",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/6520692685",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Iron-blow-pan1.jpg/1920px-Iron-blow-pan1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Iron Blow, Tasmania",
+      "attribution": "Wiki ian",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iron-blow-pan1.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Iron%20Blow%20Queenstown%20Tasmania"
+      }
+    ],
+    "qualityScore": 43,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-09",
+    "gallery": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Iron_Blow_Lookout_near_Queenstown%2C_March_2019_%2847581542612%29.jpg/1920px-Iron_Blow_Lookout_near_Queenstown%2C_March_2019_%2847581542612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Iron Blow, Tasmania",
+        "attribution": "Thomas & Olivia Williams from Australia",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iron_Blow_Lookout_near_Queenstown,_March_2019_(47581542612).jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      }
+    ]
   },
   {
     "slug": "japanese-garden",
@@ -85166,169 +85495,6 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
-    "slug": "queenstown-galley-museum",
-    "name": "Queenstown Galley Museum",
-    "town": "Queenstown",
-    "region": "West Coast",
-    "latitude": -42.0783749,
-    "longitude": 145.5566431,
-    "categories": [
-      "Museums",
-      "Art & Culture",
-      "Rainy Day"
-    ],
-    "summary": "Museum in or near Queenstown.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/way/299393727",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/299393727",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": "1-7 Driffield Street, Queenstown, TAS, 7467",
-    "bookingUrl": null,
-    "fee": "yes",
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "address": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/299393727",
-        "checkedAt": "2026-10-09"
-      },
-      "fee": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/299393727",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Queenstown_Galley_Museum_and_town.jpg/1920px-Queenstown_Galley_Museum_and_town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Queenstown Galley Museum, Tasmania",
-      "attribution": "JarrahTree",
-      "license": "CC BY 2.5 au",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.5/au/deed.en",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Queenstown_Galley_Museum_and_town.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Queenstown%20Galley%20Museum%20Queenstown%20Tasmania"
-      }
-    ],
-    "qualityScore": 32,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "address",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-09",
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Galley_Museum_Queenstown_1.jpg/1920px-Galley_Museum_Queenstown_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Queenstown Galley Museum, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_1.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Galley_Museum_Queenstown_2.jpg/1920px-Galley_Museum_Queenstown_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Queenstown Galley Museum, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_2.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Galley_Museum_Queenstown_3.jpg/1920px-Galley_Museum_Queenstown_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Queenstown Galley Museum, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_3.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Galley_Museum_Queenstown_4.jpg/1920px-Galley_Museum_Queenstown_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Queenstown Galley Museum, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_4.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Galley_Museum_Queenstown_5.jpg/1920px-Galley_Museum_Queenstown_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Queenstown Galley Museum, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_5.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Galley_Museum_Queenstown_6.jpg/1920px-Galley_Museum_Queenstown_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Queenstown Galley Museum, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_6.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Galley_Museum_Queenstown_8.jpg/1920px-Galley_Museum_Queenstown_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Queenstown Galley Museum, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_8.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Galley_Museum_Queenstown_9.jpg/1920px-Galley_Museum_Queenstown_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Queenstown Galley Museum, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galley_Museum_Queenstown_9.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      }
-    ]
-  },
-  {
     "slug": "scottsdale-military-museum",
     "name": "Scottsdale Military Museum",
     "town": "Scottsdale",
@@ -104542,96 +104708,6 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
-    "slug": "west-coast-wilderness-railway-strahan",
-    "name": "West Coast Wilderness Railway",
-    "town": "Strahan",
-    "region": "West Coast",
-    "latitude": -42.1601438,
-    "longitude": 145.3277466,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Strahan.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/8434078424",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/8434078424",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": "https://required",
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "bookingUrl": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/8434078424",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/ABT_loco_on_turntable_on_the_WCW_railway.jpg/1920px-ABT_loco_on_turntable_on_the_WCW_railway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "West Coast Wilderness Railway, Tasmania",
-      "attribution": "Nelson Minar",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ABT_loco_on_turntable_on_the_WCW_railway.jpg",
-      "isFallback": false,
-      "sourceMethod": "wikidata-p18",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=West%20Coast%20Wilderness%20Railway%20Strahan%20Tasmania"
-      }
-    ],
-    "qualityScore": 27,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-09",
-    "gallery": [
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Strahan_Railway_Station_%283939186114%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "West Coast Wilderness Railway, Tasmania",
-        "attribution": "Tom Worthington from Canberra, Australia",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strahan_Railway_Station_(3939186114).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/130131_7069_West_Coast_Wilderness_Railway_Strahan_Tas_Australia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "West Coast Wilderness Railway, Tasmania",
-        "attribution": "夏目・龍之介",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:130131_7069_West_Coast_Wilderness_Railway_Strahan_Tas_Australia.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      }
-    ]
-  },
-  {
     "slug": "west-s-bakery",
     "name": "West's Bakery",
     "town": "Ravenswood",
@@ -116238,78 +116314,6 @@
     "rankedAt": "2026-10-09",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
-  },
-  {
-    "slug": "iron-blow",
-    "name": "Iron Blow",
-    "town": "Queenstown",
-    "region": "West Coast",
-    "latitude": -42.0682013,
-    "longitude": 145.5905411,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Queenstown.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/6520692685",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/6520692685",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Iron-blow-pan1.jpg/1920px-Iron-blow-pan1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Iron Blow, Tasmania",
-      "attribution": "Wiki ian",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iron-blow-pan1.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Iron%20Blow%20Queenstown%20Tasmania"
-      }
-    ],
-    "qualityScore": 25,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-09",
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Iron_Blow_Lookout_near_Queenstown%2C_March_2019_%2847581542612%29.jpg/1920px-Iron_Blow_Lookout_near_Queenstown%2C_March_2019_%2847581542612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Iron Blow, Tasmania",
-        "attribution": "Thomas & Olivia Williams from Australia",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iron_Blow_Lookout_near_Queenstown,_March_2019_(47581542612).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      }
-    ]
   },
   {
     "slug": "iron-horse-trough-and-lamp",
