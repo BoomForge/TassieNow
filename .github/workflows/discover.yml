@@ -69,6 +69,8 @@ jobs:
         run: node scripts/discover/public-events.mjs
       - name: Verify dated regional organiser events
         run: node scripts/discover/verified-regional-events.mjs
+      - name: Discover independent community and exhibition tickets
+        run: node scripts/discover/independent-ticketebo.mjs
       - name: Sanitize discovered events
         run: node scripts/sanitize-events.mjs
       - name: Enrich event-specific tickets prices and availability
