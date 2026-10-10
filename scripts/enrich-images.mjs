@@ -3,10 +3,12 @@ import {permittedLicence} from './discover/lib/event-media.mjs';
 
 const FILE = new URL('../src/data/places.json', import.meta.url);
 const UA = 'TassieNow/1.2 (+https://tassienow.com)';
-const MAX_PER_RUN = Math.max(1, Math.min(2000, Number.parseInt(process.env.MAX_IMAGE_ENRICH || '90', 10) || 90));
+const MAX_PER_RUN = Math.max(1, Math.min(80, Number.parseInt(process.env.MAX_IMAGE_ENRICH || '90', 10) || 90));
 const GALLERY_SIZE = Math.max(1, Math.min(12, Number.parseInt(process.env.GALLERY_SIZE || '3', 10) || 3));
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-const stats={requests:0,failures:0,searchResults:0,identityRejected:0,licenceRejected:0,eligible:0,matchingPlaces:0,errorSamples:[]};
+const stats={requests:0,failures:0,rateLimited:0,retries:0,searchResults:0,identityRejected:0,licenceRejected:0,eligible:0,matchingPlaces:0,errorSamples:[]};
+const MIN_REQUEST_INTERVAL_MS=1200;
+let lastRequestAt=0;
 const clean = (value = '') => String(value).replace(/<[^>]*>/g, ' ').replace(/&amp;/gi, '&').replace(/&quot;/gi, '"').replace(/&#39;|&apos;/gi, "'").replace(/\s+/g, ' ').trim();
 const GENERIC_IMAGE_TOKENS = new Set(['tasmania','tasmanian','the','park','walk','lookout','museum','gallery','falls','fall','beach','bay','mount','mountain','river','lake','cliffs','cliff','point','rock','reserve','trail','track','island','wildlife','nature']);
 const tokens = (value = '') => clean(value).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().split(/[^a-z0-9]+/).filter((token) => token.length >= 4 && !GENERIC_IMAGE_TOKENS.has(token));
@@ -22,6 +24,16 @@ function candidateScore(place, page, info) {
   const blobHits = placeTokens.filter((token) => blob.includes(token)).length;
   const natureLike = place.categories?.some((category) => /nature|walk|outdoor/i.test(category));
   let score = 0;
+  const normalizedName = clean(place.name).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+  const normalizedTitle = title.replace(/[^a-z0-9]+/g,' ');
+  const exactName = normalizedName.length>=8 && normalizedTitle.includes(normalizedName);
+  const placeContext = `${title} ${blob}`;
+  const correctTown = place.town && placeContext.includes(String(place.town).toLowerCase());
+  const tasmaniaContext = /tasmania|tasmanian/.test(placeContext);
+  if((place.categories||[]).includes('Food & Drink') && !correctTown) return 0;
+  // A complete named-place match is much stronger than an isolated keyword.
+  // Food/business names still need their town to avoid same-name collisions.
+  if(exactName && ((place.categories||[]).includes('Food & Drink') ? correctTown : (correctTown || tasmaniaContext)))score += 48;
   score += titleHits * 24;
   if (blob.includes('tasmania')) score += 14;
   if (place.town && (`${title} ${blob}`).includes(String(place.town).toLowerCase())) score += 10;
@@ -52,6 +64,26 @@ function imageFromCandidate(place, page, info, score) {
   };
 }
 
+async function fetchCommonsWithBackoff(url){
+  for(let attempt=0;attempt<3;attempt++){
+    const wait=Math.max(0,lastRequestAt+MIN_REQUEST_INTERVAL_MS-Date.now());
+    if(wait)await sleep(wait);
+    lastRequestAt=Date.now();
+    stats.requests++;
+    const response=await fetch(url,{headers:{'user-agent':UA,accept:'application/json'},signal:AbortSignal.timeout(12000)});
+    if(response.status===429 || response.status===503){
+      stats.rateLimited++;
+      if(attempt===2)throw Error('Wikimedia search HTTP '+response.status+' after retries');
+      stats.retries++;
+      const retryAfter=Number(response.headers.get('retry-after'));
+      await sleep(Math.min(20000,Math.max(2500,Number.isFinite(retryAfter)&&retryAfter>0?retryAfter*1000:3500*(attempt+1))));
+      continue;
+    }
+    if(!response.ok)throw Error('Wikimedia search HTTP '+response.status);
+    return response.json();
+  }
+  throw Error('Wikimedia image search exhausted retry budget');
+}
 async function queryCommons(place, searchText) {
   const url = new URL('https://commons.wikimedia.org/w/api.php');
   url.searchParams.set('action', 'query');
@@ -63,11 +95,8 @@ async function queryCommons(place, searchText) {
   url.searchParams.set('prop', 'imageinfo');
   url.searchParams.set('iiprop', 'url|extmetadata');
   url.searchParams.set('iiurlwidth', '1400');
-  stats.requests++;
   try {
-    const response = await fetch(url, { headers: { 'user-agent': UA, accept: 'application/json' }, signal: AbortSignal.timeout(12000) });
-    if (!response.ok) throw new Error('Wikimedia search HTTP '+response.status);
-    const data = await response.json();
+    const data = await fetchCommonsWithBackoff(url);
     const candidates = [];
     const pages=Object.values(data.query?.pages || {});
     stats.searchResults+=pages.length;
@@ -129,16 +158,10 @@ async function existingCommonsMetadata(filenames) {
 }
 
 async function searchImages(place) {
-  const exact = await queryCommons(place, `"${place.name}" "${place.town || 'Tasmania'}" Tasmania`);
-  await sleep(60);
-  const broad = await queryCommons(place, `${place.name} ${place.town || ''} Tasmania`);
-  const deduped = new Map();
-  for (const candidate of [...exact, ...broad]) {
-    const key = candidate.image.sourceUrl || candidate.image.url;
-    const previous = deduped.get(key);
-    if (!previous || candidate.score > previous.score) deduped.set(key, candidate);
-  }
-  return [...deduped.values()].sort((a, b) => b.score - a.score).map((entry) => entry.image);
+  // A single broad query avoids spending the Wikimedia rate limit on
+  // duplicate quoted and unquoted requests for the same place.
+  const found=await queryCommons(place,`${place.name} ${place.town||''} Tasmania`);
+  return found.map(entry=>entry.image);
 }
 
 function imageKey(image) { return image?.sourceUrl || image?.url || ''; }
@@ -181,7 +204,7 @@ const day = Math.floor(Date.now() / 86400000);
 const foodIncomplete=incomplete.filter(place=>(place.categories||[]).includes('Food & Drink'));
 const otherIncomplete=incomplete.filter(place=>!(place.categories||[]).includes('Food & Drink'));
 const rotate=(items,n)=>items.length ? [...items.slice((day*n)%items.length),...items.slice(0,(day*n)%items.length)] : [];
-const foodQuota=Math.min(foodIncomplete.length,Math.ceil(MAX_PER_RUN*0.6));
+const foodQuota=Math.min(foodIncomplete.length,Math.ceil(MAX_PER_RUN*0.35));
 const targets=[
   ...rotate(foodIncomplete,Math.max(1,foodQuota)).slice(0,foodQuota),
   ...rotate(otherIncomplete,Math.max(1,MAX_PER_RUN-foodQuota)).slice(0,MAX_PER_RUN-foodQuota)
