@@ -193,24 +193,25 @@
     }
   },
   "events": {
-    "active": 173,
+    "active": 170,
     "ticketCoverage": {
-      "count": 51,
-      "percent": 29.5
+      "count": 59,
+      "percent": 34.7
     },
     "priceCoverage": {
-      "count": 56,
+      "count": 55,
       "percent": 32.4
     },
     "providers": {
-      "Humanitix": 26,
+      "Humanitix": 32,
       "Ticketek": 23,
-      "Eventbrite": 1,
-      "Ticketmaster": 1
+      "Eventbrite": 2,
+      "Ticketmaster": 1,
+      "TryBooking": 1
     },
     "sources": {
-      "Burnie City Council": 26,
       "MyState Bank Arena": 24,
+      "Burnie City Council": 23,
       "Huon Valley Council": 17,
       "Theatre North Launceston": 17,
       "Devonport City Council": 14,
@@ -233,7 +234,7 @@
     "regions": {
       "Hobart & South": 84,
       "Launceston & North": 33,
-      "North West": 41,
+      "North West": 38,
       "East Coast": 9,
       "West Coast": 2,
       "Central Tasmania": 1,
@@ -276,11 +277,11 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 1
+      "missingOrOlderThan30Days": 0
     },
     "sourceRegionalMix": {
-      "North West / Burnie City Council": 26,
       "Hobart & South / MyState Bank Arena": 24,
+      "North West / Burnie City Council": 23,
       "Hobart & South / Huon Valley Council": 17,
       "Launceston & North / Theatre North Launceston": 17,
       "North West / Devonport City Council": 14,
