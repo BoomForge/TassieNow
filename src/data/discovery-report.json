@@ -1,15 +1,8 @@
 {
-  "checkedAt": "2026-10-10T22:15:34.646Z",
+  "checkedAt": "2026-10-10T22:45:23.838Z",
   "added": [],
-  "addedEvents": [
-    "book-market-burnie-emu-bay-lions-club-2026-11-07-wivenhoe",
-    "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe",
-    "second-glance-market-2026-10-31-burnie",
-    "tassie-pop-culture-market-2026-12-12-upper-burnie"
-  ],
-  "correctedEvents": [
-    "second-glance-market-2026-10-28-burnie"
-  ],
+  "addedEvents": [],
+  "correctedEvents": [],
   "updated": [],
   "sources": [
     {
@@ -17,8 +10,13 @@
       "name": "Northern Midlands Council",
       "url": "https://northernmidlands.tas.gov.au/community/news-events/tourism/markets-within-the-northern-midlands",
       "pagesFetched": 1,
-      "candidatesFound": 3,
-      "errors": []
+      "candidatesFound": 0,
+      "errors": [
+        {
+          "url": "https://northernmidlands.tas.gov.au/community/news-events/tourism/markets-within-the-northern-midlands",
+          "message": "No market candidates parsed; source may need a parser update or browser rendering"
+        }
+      ]
     },
     {
       "id": "seasonal-produce-markets",
@@ -40,17 +38,27 @@
       "id": "southern-markets",
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
-      "pagesFetched": 7,
-      "candidatesFound": 13,
-      "errors": []
+      "pagesFetched": 1,
+      "candidatesFound": 0,
+      "errors": [
+        {
+          "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
+          "message": "No market candidates parsed; source may need a parser update or browser rendering"
+        }
+      ]
     },
     {
       "id": "southern-market-guide",
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
-      "pagesFetched": 7,
-      "candidatesFound": 41,
-      "errors": []
+      "pagesFetched": 1,
+      "candidatesFound": 0,
+      "errors": [
+        {
+          "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
+          "message": "No market candidates parsed; source may need a parser update or browser rendering"
+        }
+      ]
     },
     {
       "id": "hobart-market-finder",
@@ -81,8 +89,13 @@
       "name": "Waratah-Wynyard Council",
       "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
       "pagesFetched": 1,
-      "candidatesFound": 4,
-      "errors": []
+      "candidatesFound": 0,
+      "errors": [
+        {
+          "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
+          "message": "No market candidates parsed; source may need a parser update or browser rendering"
+        }
+      ]
     }
   ],
   "totals": {
@@ -91,13 +104,13 @@
     "existing": 55,
     "added": 0,
     "events": 3,
-    "addedEvents": 4,
+    "addedEvents": 0,
     "updated": 0,
-    "failedSources": 0
+    "failedSources": 4
   },
   "run": {
-    "id": "38088926209",
+    "id": "38089204230",
     "event": "push",
-    "sourceCommit": "79473b1ff5548977d229edf34637f139a3f83c28"
+    "sourceCommit": "dc5960ca79a7bc4f2a8edc813910c677c19e3c10"
   }
 }
