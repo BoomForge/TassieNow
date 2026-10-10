@@ -4,6 +4,18 @@ import fs from 'node:fs/promises';
 // calendar. Every proposed record is published only if the LIVE organiser
 // page still names the event and explicitly states its 2026 dates.
 export const SOURCES=[
+  // A recurring independent organiser whose public exhibitions can be missed by
+  // council listings and ticket aggregators. Verify its own LIVE page each run.
+  {name:'Tasmanian Brick Enthusiasts',url:'https://www.brixhibition.com/',
+    event:'Brixhibition Hobart 2026',
+    title:/Brixhibition\s+Hobart\s+2026/i,
+    date:/Saturday\s+10(?:th)?\s*(?:&|and)\s*Sunday\s+11(?:th)?\s+October\s+2026/i,
+    startDate:'2026-10-10',endDate:'2026-10-11',town:'Sorell',region:'Hobart & South',
+    venue:'South East Basketball Stadium, 13 Montagu Street, Sorell',
+    description:'Tasmanian Brick Enthusiasts LEGO exhibition with displays, model building and timed entry sessions. Saturday and Sunday 10–11 October; Sunday has a sensory-sensitive session. Tickets are $10 adults and $5 children plus booking fees. Select a timed session before visiting.',
+    bookingUrl:'https://www.brixhibition.com/brixhibitiontickets.html',
+    categories:['Events','Family','Art & Culture']},
+
   {name:'West Coast Heritage Centre',url:'https://wchczeehan.com.au/events/',
     event:'Zeehan Heritage and Mineral Fair 2026',
     title:/Heritage and Mineral Fair/i,
@@ -32,8 +44,8 @@ export function verifiedRegionalEvent(source,html,today){
     slug:slug(source.event+'-'+source.startDate+'-'+source.town),
     name:source.event,town:source.town,region:source.region,
     startDate:source.startDate,endDate:source.endDate,
-    categories:['Events',...(source.event.includes('Fair')?['Markets']:[])],
-    summary:source.description,venue:source.venue,eventUrl:source.url,sourceUrl:source.url,
+    categories:source.categories||['Events',...(source.event.includes('Fair')?['Markets']:[])],
+    summary:source.description,venue:source.venue,eventUrl:source.bookingUrl||source.url,sourceUrl:source.url,
     sourceName:source.name,
     image:{url:'/images/categories/events.svg',alt:source.event+' category artwork',attribution:'TassieNow',license:'Site artwork',licenseUrl:null,sourceUrl:null,isFallback:true},
     status:'active',lastChecked:today
