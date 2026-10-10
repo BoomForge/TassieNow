@@ -1,15 +1,8 @@
 {
-  "checkedAt": "2026-10-10T05:36:13.878Z",
+  "checkedAt": "2026-10-10T05:44:08.152Z",
   "added": [],
-  "addedEvents": [
-    "book-market-burnie-emu-bay-lions-club-2026-11-07-wivenhoe",
-    "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe",
-    "second-glance-market-2026-10-31-burnie",
-    "tassie-pop-culture-market-2026-12-12-upper-burnie"
-  ],
-  "correctedEvents": [
-    "second-glance-market-2026-10-27-burnie"
-  ],
+  "addedEvents": [],
+  "correctedEvents": [],
   "updated": [],
   "sources": [
     {
@@ -91,12 +84,12 @@
     "existing": 55,
     "added": 0,
     "events": 3,
-    "addedEvents": 4,
+    "addedEvents": 0,
     "updated": 0,
     "failedSources": 0
   },
   "run": {
-    "id": "38026189096",
+    "id": "38026189108",
     "event": "push",
     "sourceCommit": "4d9dabdb9ab8fa18fea8b1f400b9667ee53e101f"
   }
