@@ -69,6 +69,10 @@ export function imageIsPublishable(image){
      image.matchEvidence?.verifiedType!=='contextual'||!image.matchEvidence?.venue||
      !image.matchEvidence?.town||!image.matchEvidence?.sourceFilePage?.startsWith('https://commons.wikimedia.org/wiki/File:')))
     return false;
+  if(image.sourceMethod==='verified-event-history' &&
+    (image.mediaType!=='historical-event'||!image.caption||!Number.isInteger(image.historicalYear)||
+     !image.matchEvidence?.verified||image.matchEvidence?.verifiedType!=='historical-event'||
+     !image.matchEvidence?.sourceFilePage?.startsWith('https://commons.wikimedia.org/wiki/File:')))return false;
   if(image.sourceMethod==='verified-event-performer' &&
     (image.mediaType!=='performer-context'||!image.caption||
      image.matchEvidence?.verified!==true||image.matchEvidence?.verifiedType!=='performer-context'||
