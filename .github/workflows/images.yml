@@ -6,6 +6,8 @@ on:
     paths:
       - '.github/workflows/images.yml'
       - 'scripts/reapply-image-upgrades.mjs'
+      - 'scripts/enrich-event-images.mjs'
+      - 'scripts/reapply-event-image-upgrades.mjs'
   schedule:
     - cron: '23 20 * * *'
   workflow_dispatch:
@@ -33,13 +35,26 @@ jobs:
           cache: npm
           cache-dependency-path: package.json
       - name: Save pre-enrichment photo baseline
-        run: cp src/data/places.json /tmp/tassienow-places-before-images.json
+        run: |
+          cp src/data/places.json /tmp/tassienow-places-before-images.json
+          cp src/data/events.json /tmp/tassienow-events-before-images.json
       - name: Upgrade exact Wikidata listing images
         run: node scripts/enrich-wikidata-images.mjs
       - name: Upgrade fallback images
         env:
           MAX_IMAGE_ENRICH: '240'
         run: node scripts/enrich-images.mjs
+      - name: Enrich missing event images and inspect organiser photos
+        env:
+          MAX_EVENT_IMAGE_ENRICH: '40'
+        run: node scripts/enrich-event-images.mjs
+      - name: Retain event source image and rights review report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: event-image-review
+          path: reports/event-image-discovery.json
+          retention-days: 30
       - name: Re-rank catalogue
         run: node scripts/rank-catalogue.mjs
       - name: Prune expired events
@@ -61,6 +76,7 @@ jobs:
           # Keep the exact enrichment diff. Another event/discovery job may
           # advance main while Commons image lookups are running.
           cp src/data/places.json /tmp/tassienow-places-after-images.json
+          cp src/data/events.json /tmp/tassienow-events-after-images.json
           git config user.name "TassieNow Bot"
           git config user.email "actions@users.noreply.github.com"
           for attempt in 1 2 3 4; do
@@ -68,6 +84,7 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
             node scripts/reapply-image-upgrades.mjs /tmp/tassienow-places-before-images.json /tmp/tassienow-places-after-images.json
+            node scripts/reapply-event-image-upgrades.mjs /tmp/tassienow-events-before-images.json /tmp/tassienow-events-after-images.json
             node scripts/prune-expired-events.mjs
             node scripts/rank-catalogue.mjs
             node scripts/catalogue-audit.mjs
