@@ -143,18 +143,28 @@ report.missingAfter=events.filter(e=>e.status==='active'&&e.endDate>=today&&!ima
 // Keep discovered organiser photo candidates for the owner's rights review.
 // Do not rewrite the queue every six hours when no candidate changes.
 const oldQueue=JSON.parse(await fs.readFile(REVIEW,'utf8').catch(()=>'{}'));
-const queue={...oldQueue};
+const queue=structuredClone(oldQueue);
 for(const item of report.needsPermission){
  const candidates=item.candidates.map(c=>({
   url:c.url,sourcePage:c.sourcePage,
   rights:'permission-needed',
   ...(c.historical?{historical:true,caption:c.caption}:{})
- }));
+ })).filter(c=>c.url);
  if(!candidates.length)continue;
- queue[item.slug]={
-  name:item.name,organiser:item.organiser,source:item.source,
-  candidates,needs:'Organiser approval or an explicit reusable licence before embedding the photos'
- };
+ const existing=queue[item.slug];
+ if(!existing){
+  queue[item.slug]={
+   name:item.name,organiser:item.organiser,source:item.source,
+   candidates,needs:'Organiser approval or an explicit reusable licence before embedding the photos'
+  };
+  continue;
+ }
+ // Research must never reset manual rights decisions or lose previously sourced images.
+ const previous=new Set((existing.candidates||[]).map(c=>c.url));
+ if(!Array.isArray(existing.candidates))existing.candidates=[];
+ for(const candidate of candidates){
+  if(!previous.has(candidate.url)){existing.candidates.push(candidate);previous.add(candidate.url);}
+ }
 }
 const nextQueue=JSON.stringify(queue,null,2)+'\n';
 if(nextQueue!==JSON.stringify(oldQueue,null,2)+'\n'){

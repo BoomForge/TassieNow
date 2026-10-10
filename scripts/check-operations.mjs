@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import {imageIsPublishable} from './discover/lib/event-media.mjs';
 
 const out = new URL('../src/data/operations-report.json', import.meta.url);
 const repository = process.env.GITHUB_REPOSITORY || 'BoomForge/TassieNow';
@@ -7,10 +8,11 @@ const now = new Date();
 // Frequencies are intentionally generous to account for GitHub schedule delays.
 const watched = [
   ['discover.yml', 200], ['events.yml', 42], ['catalogue-quality.yml', 42],
-  ['images.yml', 42], ['quality.yml', 42], ['automation-health.yml', 42],
+  ['images.yml', 42], ['event-photo-research.yml', 42], ['quality.yml', 42], ['automation-health.yml', 42],
   ['indexnow.yml', 200]
 ];
 const onceOnly = ['recover-images.yml', 'production-smoke.yml'];
+
 const report = {generatedAt:now.toISOString(),source:'Observed GitHub Actions and HTTP requests',workflows:[],site:{status:'unknown',checks:[]},failures:[]};
 const ageHours = (value) => value ? (now - Date.parse(value)) / 3600000 : Infinity;
 
@@ -64,6 +66,30 @@ await Promise.all(watched.map(async ([name,thresholdHours])=>{
   if(entry.status!=='ok')report.failures.push({component:name,status:entry.status,action:entry.url||'Inspect GitHub Actions schedule and job logs'});
   report.workflows.push(entry);
 }));
+
+
+// Compare published image statistics against the current source catalogue.
+// Unlike scheduled workflow checks, this catches stale audits even when CI passes.
+try {
+  const [events, audit] = await Promise.all([
+    fs.readFile(new URL('../src/data/events.json', import.meta.url),'utf8').then(JSON.parse),
+    fs.readFile(new URL('../src/data/catalogue-audit.json', import.meta.url),'utf8').then(JSON.parse)
+  ]);
+  const p = new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now);
+  const get = key => p.find(part=>part.type===key)?.value;
+  const today = `${get('year')}-${get('month')}-${get('day')}`;
+  const active=events.filter(event=>event.status==='active' && event.endDate>=today);
+  const photographed=active.filter(event=>imageIsPublishable(event.image)).length;
+  if(audit.generatedAt!==today || audit.events.active!==active.length ||
+     audit.events.media.licensedHeroCoverage.count!==photographed){
+    report.failures.push({component:'Published photo coverage audit',status:'stale-or-inaccurate',
+      action:'Regenerate catalogue-audit.json from current events.json before publication'});
+  }
+  report.imageCoverage={activeEvents:active.length,publishedEventPhotos:photographed,
+    auditedPublishedPhotos:audit.events.media.licensedHeroCoverage.count};
+} catch(error){
+  report.failures.push({component:'Published photo coverage audit',status:'error',action:String(error.message)});
+}
 
 const checks=[
   ['Homepage','/','TassieNow'],['Food discovery','/food/','Places to Eat'],
