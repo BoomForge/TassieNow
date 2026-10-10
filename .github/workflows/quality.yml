@@ -56,6 +56,8 @@ jobs:
           node --check scripts/reapply-event-image-upgrades.mjs
           node --check scripts/discover/lib/event-media.mjs
           node --check scripts/enrich-images.mjs
+          node --check scripts/apply-verified-photo-picks.mjs
+          node --check scripts/discover/lib/verified-photo-picks.mjs
           node --check scripts/enrich-wikidata-images.mjs
           node --check scripts/catalogue-audit.mjs
           node --check scripts/prune-expired-events.mjs
