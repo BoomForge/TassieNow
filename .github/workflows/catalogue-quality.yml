@@ -122,6 +122,17 @@ jobs:
           MAX_IMAGE_ENRICH: '1400'
           GALLERY_SIZE: '8'
         run: node scripts/enrich-images.mjs
+      - name: Recheck missing event images and organiser galleries
+        env:
+          MAX_EVENT_IMAGE_ENRICH: '16'
+        run: node scripts/enrich-event-images.mjs
+      - name: Preserve event photo review evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalogue-event-photo-audit
+          path: reports/event-image-discovery.json
+          retention-days: 30
       - name: Prune expired events
         run: node scripts/prune-expired-events.mjs
       - name: Re-rank catalogue using completeness
