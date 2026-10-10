@@ -64,6 +64,10 @@ export function imageIsPublishable(image){
     if(!matched)return false;
     if(['historical-event','contextual'].includes(image.mediaType)&&!image.caption)return false;
   }
+  if(image.sourceMethod==='verified-event-venue' &&
+    (image.mediaType!=='contextual'||!image.caption||!image.matchEvidence?.verified||
+     !image.matchEvidence?.venue||!image.matchEvidence?.town||
+     !image.matchEvidence?.sourceFilePage?.startsWith('https://')))return false;
   if(image.sourceMethod==='organiser-approved') {
     const p=image.permissionEvidence;
     if(image.usagePermission!=='granted' || !image.matchEvidence?.verified ||
@@ -74,6 +78,12 @@ export function imageIsPublishable(image){
   return permittedLicence(image.license,image.licenseUrl)||
     (image.sourceMethod==='organiser-approved'&&image.usagePermission==='granted');
 }
+export function eventImagePriority(image){
+ if(!imageIsPublishable(image))return 0;
+ if(image.sourceMethod==='organiser-approved')return 10;
+ return ({'event-photo':9,'official-artwork':8,'event-artwork':7,
+  'historical-event':6,'contextual':3})[image.mediaType]||8;
+}
 const norm=s=>String(s||'').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]/g,'');
 export function sameEvent(a,b){
   return a.slug===b.slug||
@@ -83,9 +93,8 @@ export function sameEvent(a,b){
 export function preserveEventImages(current,previous){
   let kept=0;
   for(const event of current){
-    if(imageIsPublishable(event.image))continue;
     const old=previous.find(p=>sameEvent(p,event)&&imageIsPublishable(p.image));
-    if(old){
+    if(old && eventImagePriority(old.image)>eventImagePriority(event.image)) {
       event.image=structuredClone(old.image);
       if(Array.isArray(old.gallery)&&!event.gallery?.length)event.gallery=structuredClone(old.gallery);
       kept++;
