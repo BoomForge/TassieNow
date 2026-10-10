@@ -8,6 +8,9 @@ on:
       - 'scripts/discover/public-events.mjs'
       - 'scripts/discover/verified-regional-events.mjs'
       - 'scripts/discover/independent-ticketebo.mjs'
+      - 'scripts/enrich-event-images.mjs'
+      - 'scripts/preserve-event-images.mjs'
+      - 'scripts/discover/lib/event-media.mjs'
       - 'scripts/sanitize-events.mjs'
       - 'scripts/enrich-event-tickets.mjs'
       - 'scripts/sanitize-ticket-data.mjs'
@@ -41,6 +44,8 @@ jobs:
           node-version: '22'
           cache: npm
           cache-dependency-path: package.json
+      - name: Snapshot verified event imagery
+        run: cp src/data/events.json /tmp/tassienow-events-before-refresh.json
       - name: Refresh official council events
         run: |
           mkdir -p reports
@@ -64,7 +69,14 @@ jobs:
             reports/*-events-fetch.log
             reports/regional-events-evidence.json
             reports/ticketebo-discovery.json
+            reports/event-image-discovery.json
           retention-days: 30
+      - name: Preserve verified media across all discovery sources
+        run: node scripts/preserve-event-images.mjs /tmp/tassienow-events-before-refresh.json
+      - name: Search licensed event photographs and organiser artwork
+        env:
+          MAX_EVENT_IMAGE_ENRICH: '32'
+        run: node scripts/enrich-event-images.mjs
       - name: Sanitize discovered events
         run: node scripts/sanitize-events.mjs
       - name: Enrich event-specific tickets prices and availability
