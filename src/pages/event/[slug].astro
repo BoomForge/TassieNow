@@ -117,7 +117,18 @@ const townSlug = String(event.town || '')
 
     <figure class="detail-image-wrap">
       <img class="detail-image" src={event.image.url} alt={event.image.alt} loading="eager" decoding="async" fetchpriority="high" />
-      {!event.image.isFallback && <figcaption>{event.image.caption && <span>{event.image.caption} </span>}Image: {event.image.attribution} · {event.image.license}</figcaption>}
+      {!event.image.isFallback && (
+        <figcaption>
+          {event.image.caption && <span>{event.image.caption} </span>}
+          Image: {event.image.sourceUrl
+            ? <a href={event.image.sourceUrl} target="_blank" rel="noopener noreferrer">{event.image.attribution}</a>
+            : event.image.attribution}
+          {' · '}
+          {event.image.licenseUrl
+            ? <a href={event.image.licenseUrl} target="_blank" rel="noopener noreferrer">{event.image.license}</a>
+            : event.image.license}
+        </figcaption>
+      )}
     </figure>
 
     <p class="event-date">
