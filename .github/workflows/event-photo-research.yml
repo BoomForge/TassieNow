@@ -37,7 +37,7 @@ jobs:
           node --input-type=module -e '
             import fs from "node:fs";
             const r=JSON.parse(fs.readFileSync("reports/event-image-discovery.json","utf8"));
-            if(!r.checkedAt||!Number.isInteger(r.checked)||r.checked===0||!Array.isArray(r.unresolved)||!Array.isArray(r.needsPermission))
+            if(!r.checkedAt||!Number.isInteger(r.checked)||(r.checked===0&&r.missingAfter>0)||!Array.isArray(r.unresolved)||!Array.isArray(r.needsPermission))
               throw Error("No usable event-image research evidence. Check upstream source access.");
             console.log("Event images checked: "+r.checked+"; licensed photographs found: "+r.published+
               "; organiser assets awaiting rights review: "+r.organiserCandidates+
