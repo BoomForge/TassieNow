@@ -21,6 +21,15 @@ const publicPlaces=places.filter((p)=>p.status==='active'&&p.visibility!=='suppr
 const foodPlaces=publicPlaces.filter(p=>(p.categories||[]).includes('Food & Drink'));
 const foodKinds=['Restaurant','Café','Takeaway','Bakery','Pub Food','Food Van','Desserts','Mobile Vendor','Local Produce'];
 const activeEvents=events.filter((e)=>e.status==='active'&&e.endDate>=today);
+function addCalendarDays(date,days){
+  const next=new Date(date+'T00:00:00Z');next.setUTCDate(next.getUTCDate()+days);return next.toISOString().slice(0,10);
+}
+const weekday=new Date(today+'T12:00:00Z').getUTCDay();
+const weekendStart=addCalendarDays(today,(6-weekday+7)%7);
+const weekendEnd=addCalendarDays(weekendStart,1);
+const nextDay=addCalendarDays(today,1);
+const thisWeekendEvents=activeEvents.filter(e=>e.startDate<=weekendEnd&&e.endDate>=weekendStart);
+const next48HourEvents=activeEvents.filter(e=>e.startDate<=nextDay&&e.endDate>=today);
 const imageCounts=publicPlaces.map(mediaCount);
 const totalLicensedImages=imageCounts.reduce((sum,count)=>sum+count,0);
 const officialVerified=(p)=>p.officialSourceCheck?.status==='ok'||p.officialSource?.source==='wikidata:P856'||p.officialSource?.type==='government'||p.sourceType==='parks-tasmania';
@@ -94,6 +103,14 @@ const audit={
     sources:countBy(activeEvents,(e)=>e.sourceName),
     regions:fullRegionCoverage,
     regionsWithNoEvents:allRegions.filter(region=>!fullRegionCoverage[region]),
+    nearTerm:{
+      today,tomorrow:nextDay,nextWeekendStart:weekendStart,nextWeekendEnd:weekendEnd,
+      todayOrTomorrow:next48HourEvents.length,
+      thisWeekend:thisWeekendEvents.length,
+      townsTodayOrTomorrow:countBy(next48HourEvents,e=>e.town),
+      regionsThisWeekend:Object.fromEntries(allRegions.map(region=>[region,thisWeekendEvents.filter(e=>e.region===region).length])),
+      regionsWithNoWeekendEvents:allRegions.filter(region=>!thisWeekendEvents.some(e=>e.region===region))
+    },
     ticketLinkChecks:{missingOrOlderThan30Days:ticketStale.length},
     sourceRegionalMix:countBy(activeEvents,(e)=>`${e.region} / ${e.sourceName||'unknown'}`)
   }
@@ -108,3 +125,5 @@ console.log(`Event regional gaps: ${audit.events.regionsWithNoEvents.join(', ')|
 console.log(`History category membership (any position): ${categoryMembership.History||0}; first-category count: ${audit.places.categories.History||0}.`);
 
 console.log(`Food discovery audit: ${audit.places.foodDiscovery.listings} listings; ${audit.places.foodDiscovery.media.realHeroCoverage.percent}% photographed; ${audit.places.foodDiscovery.missingRealPhoto} still using category artwork; ${JSON.stringify(audit.places.foodDiscovery.types)}.`);
+
+console.log('Near-term events (today/tomorrow and next weekend): '+JSON.stringify(audit.events.nearTerm));
