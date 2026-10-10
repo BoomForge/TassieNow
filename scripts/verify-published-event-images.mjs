@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import {imageIsPublishable} from './discover/lib/event-media.mjs';
+import {heroImageMatches} from './discover/lib/verify-event-image-html.mjs';
 
 // An image is not "published" merely because a GitHub Actions run succeeded.
 // Check the exact event page's image src, credit and disclosure in HTML.
@@ -13,18 +14,6 @@ const attempts=18;
 const sampleLimit=100; // Covers all current images while bounding repeated HTTP checks.
 const results=await Promise.all(photographed.slice(0,sampleLimit).map(async event=>{
   const page='https://tassienow.com/event/'+encodeURIComponent(event.slug)+'/';
-  const expectedImage=new URL(event.image.url);
-  function imageSrcMatches(html){
-    const tag=html.match(/<img\b[^>]*class=["'][^"']*\bdetail-image\b[^"']*["'][^>]*>/i)?.[0];
-    if(!tag)return {figure:false,photograph:false};
-    const source=tag.match(/\bsrc=["']([^"']+)["']/i)?.[1]?.replaceAll('&amp;','&');
-    if(!source)return {figure:true,photograph:false};
-    try{
-      const actual=new URL(source,page);
-      return {figure:true,photograph:actual.origin===expectedImage.origin &&
-        decodeURIComponent(actual.pathname)===decodeURIComponent(expectedImage.pathname)};
-    }catch{return {figure:true,photograph:false};}
-  }
   let last={status:'not-verified'};
   for(let i=0;i<attempts;i++){
     try{
@@ -32,7 +21,7 @@ const results=await Promise.all(photographed.slice(0,sampleLimit).map(async even
       const res=await fetch(url,{headers:{'user-agent':'TassieNow-Media-Publication-Check/1.0','cache-control':'no-cache'},
         signal:AbortSignal.timeout(12000)});
       const html=await res.text();
-      const {photograph,figure}=imageSrcMatches(html);
+      const {photograph,figure}=heroImageMatches(html,event.image.url,page);
       const credit=html.includes(event.image.attribution);
       const disclosure=!event.image.caption||html.includes(event.image.caption);
       last={status:res.ok&&photograph&&credit&&disclosure&&figure?'verified':'not-visible',
