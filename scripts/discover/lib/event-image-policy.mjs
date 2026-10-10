@@ -114,3 +114,42 @@ export function eligibleCommonsImage(event,page,info){
       checkedAt:new Date().toISOString().slice(0,10)}
   };
 }
+
+
+const genericVenue=/^(?:hobart|launceston|devonport|tasmania|bothwell|whitemark|theatre|cinema|town hall|community centre|public hall|various locations|devonport and surrounds|launceston and surrounds)$/i;
+const tokenise=value=>normalize(value).split(' ').filter(Boolean);
+export function eligibleCommonsVenueImage(event,page,info) {
+  // Intentionally strict about *where* the photo was taken, flexible about
+  // when it was taken. A venue photo never purports to show the event itself.
+  const rawVenue=String(event.venue||'').split(',')[0].trim();
+  const venue=normalize(rawVenue);
+  const town=normalize(event.town);
+  if(venue.length<9||!town||genericVenue.test(rawVenue)||/\b(?:street|road|avenue|st|tas|australia)\b/i.test(rawVenue))return null;
+  const file=tidy(page?.title||'');
+  const fileName=normalize(file.replace(/^File:/i,''));
+  if(/\b(?:logo|poster|advert|icon|sculpture|statue|sign|map|diagram|plan)\b/i.test(file))return null;
+  if(!fileName.includes(venue))return null;
+  const meta=info?.extmetadata||{};
+  const desc=normalize([meta.ImageDescription?.value,meta.ObjectName?.value,meta.Categories?.value].join(' '));
+  const location=fileName+' '+desc;
+  if(!location.includes(town)&&!location.includes('tasmania')&&!location.includes('tasmanian'))return null;
+  // Do not accept generic "town hall" photos or a similarly named interstate venue.
+  if(tokenise(venue).filter(w=>w.length>3).length<2)return null;
+  const yearMatches=file.match(/\b20\d{2}\b/g)||[];
+  const license=tidy(meta.LicenseShortName?.value||meta.UsageTerms?.value);
+  if(!permittedLicence(license,meta.LicenseUrl?.value))return null;
+  const url=info?.thumburl||info?.url;
+  if(!url?.startsWith('https://')||!info?.descriptionurl?.startsWith('https://'))return null;
+  return {
+    url,sourceUrl:info.descriptionurl,license,licenseUrl:meta.LicenseUrl?.value||null,
+    attribution:tidy(meta.Artist?.value||meta.Credit?.value)||'Wikimedia Commons contributor',
+    alt:`${rawVenue}, ${event.town} — venue photograph, not the advertised event`,
+    mediaType:'contextual',
+    caption:`Venue photograph: ${rawVenue}, ${event.town}. This does not depict the advertised event.`,
+    sourceMethod:'commons-venue',isFallback:false,
+    matchEvidence:{verified:true,verifiedType:'contextual',venue:rawVenue,town:event.town,
+      sourceFileTitle:file,sourceFilePage:info.descriptionurl,checkedAt:new Date().toISOString().slice(0,10),
+      evidence:'Full venue name in Commons file title and Tasmania/town in source description',
+      ...(yearMatches.length?{photoYear:Number(yearMatches[0])}:{})}
+  };
+}
