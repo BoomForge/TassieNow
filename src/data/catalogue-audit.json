@@ -194,6 +194,50 @@
   },
   "events": {
     "active": 163,
+    "media": {
+      "licensedHeroCoverage": {
+        "count": 6,
+        "percent": 3.7
+      },
+      "stillUsingCategoryArtwork": 157,
+      "bySource": {
+        "commons-event": 6
+      },
+      "byRegion": {
+        "Hobart & South": {
+          "count": 2,
+          "percent": 2.5
+        },
+        "Launceston & North": {
+          "count": 3,
+          "percent": 10
+        },
+        "North West": {
+          "count": 0,
+          "percent": 0
+        },
+        "East Coast": {
+          "count": 0,
+          "percent": 0
+        },
+        "West Coast": {
+          "count": 0,
+          "percent": 0
+        },
+        "Central Tasmania": {
+          "count": 0,
+          "percent": 0
+        },
+        "Flinders Island": {
+          "count": 1,
+          "percent": 100
+        },
+        "King Island": {
+          "count": 0,
+          "percent": 0
+        }
+      }
+    },
     "ticketCoverage": {
       "count": 45,
       "percent": 27.6
