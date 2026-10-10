@@ -26,3 +26,17 @@ test('independent food van capacity survives 1:1,000 café competition',()=>{
  assert.equal(stats.selectedFood,14);
  assert.equal(stats.selectedVendors,4);
 });
+
+test('Brixhibition Sorell 10–11 October is kept despite Hobart branding',()=>{
+  const source=SOURCES.find(item=>item.event==='Brixhibition Hobart 2026');
+  assert.ok(source);
+  assert.equal(source.town,'Sorell');
+  assert.equal(source.region,'Hobart & South');
+  const organiserHtml='<h1>Brixhibition Hobart 2026</h1><p>South East Basketball Stadium, 13 Montagu Street, Sorell, Tasmania</p><p>Saturday 10th &amp; Sunday 11th October 2026</p>';
+  const event=verifiedRegionalEvent(source,organiserHtml,'2026-10-10');
+  assert.equal(event?.startDate,'2026-10-10');
+  assert.equal(event?.endDate,'2026-10-11');
+  assert.equal(event?.eventUrl,'https://www.brixhibition.com/brixhibitiontickets.html');
+  assert.equal(verifiedRegionalEvent(source,organiserHtml.replace('2026','2025'),'2026-10-10'),null);
+  assert.equal(verifiedRegionalEvent(source,organiserHtml,'2026-10-12'),null);
+});
