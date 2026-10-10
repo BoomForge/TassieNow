@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: tassienow-data-writes
+  group: tassienow-image-publishing
   queue: max
   cancel-in-progress: false
 
