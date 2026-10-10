@@ -7,7 +7,8 @@ test('known licence and photographer are preserved for both verified venues',()=
  assert.equal(verifiedEventVenues.length,6);
  for(const venue of verifiedEventVenues){
   assert.ok(venue.sourceUrl.startsWith('https://commons.wikimedia.org/wiki/File:'));
-  assert.ok(venue.licenseUrl.includes('creativecommons.org/licenses/by'));
+  assert.ok(venue.licenseUrl.includes('creativecommons.org/licenses/by') ||
+    venue.licenseUrl.includes('creativecommons.org/publicdomain/zero'));
   assert.ok(venue.attribution);
  }
 });
