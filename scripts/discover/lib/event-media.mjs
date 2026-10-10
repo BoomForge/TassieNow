@@ -56,7 +56,7 @@ export function metaImageCandidates(html,base){
       if(url.hostname!==root.hostname && !url.hostname.endsWith('.'+root.hostname))return [];
       if(seen.has(url.href))return [];
       seen.add(url.href);
-      return [{url:url.href,...candidate,sourcePage:base,rights:'permission-needed'}];
+      return [{...candidate,url:url.href,sourcePage:base,rights:'permission-needed'}];
     }catch{return [];}
   }).slice(0,12);
 }
