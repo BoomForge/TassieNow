@@ -4,6 +4,10 @@ on:
     branches: [main]
     paths:
       - 'src/data/events.json'
+      - '.github/workflows/images.yml'
+      - '.github/workflows/events.yml'
+      - '.github/workflows/discover.yml'
+      - '.github/workflows/catalogue-quality.yml'
       - 'scripts/verify-published-event-images.mjs'
       - '.github/workflows/verify-published-event-images.yml'
   schedule:

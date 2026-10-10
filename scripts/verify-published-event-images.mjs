@@ -7,8 +7,8 @@ const events=JSON.parse(await fs.readFile(new URL('../src/data/events.json',impo
 const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Hobart'}).format(new Date());
 const photographed=events.filter(e=>e.status==='active'&&e.endDate>=today&&imageIsPublishable(e.image));
 const sleep=ms=>new Promise(done=>setTimeout(done,ms));
-const attempts=10;
-const sampleLimit=60; // Covers all current 41 images and allows reasonable growth.
+const attempts=18;
+const sampleLimit=100; // Covers all current images while bounding repeated HTTP checks.
 const results=await Promise.all(photographed.slice(0,sampleLimit).map(async event=>{
   const page='https://tassienow.com/event/'+encodeURIComponent(event.slug)+'/';
   const path=new URL(event.image.url).pathname;
@@ -28,7 +28,7 @@ const results=await Promise.all(photographed.slice(0,sampleLimit).map(async even
         http:res.status,photograph,credit,disclosure,figure,attempt:i+1};
       if(last.status==='verified')break;
     }catch(error){last={status:'network-error',error:String(error.message).slice(0,120)};}
-    if(i<attempts-1)await sleep(12000);
+    if(i<attempts-1)await sleep(10000);
   }
   return {slug:event.slug,mediaType:event.image.mediaType||'event-photo',...last};
 }));
@@ -43,4 +43,4 @@ if(process.env.GITHUB_STEP_SUMMARY){
    '## Event photo live publication\n'+report.verified+'/'+report.checked+' verified public event pages\n');
 }
 console.log('Event media production proof '+JSON.stringify(report));
-if(report.verified!==report.checked)process.exitCode=1;
+if(report.verified!==report.checked || report.verificationCoverage!=='complete')process.exitCode=1;
