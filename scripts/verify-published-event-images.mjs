@@ -1,8 +1,11 @@
 import fs from 'node:fs/promises';
 import {imageIsPublishable} from './discover/lib/event-media.mjs';
+import {heroImageMatches} from './discover/lib/verify-event-image-html.mjs';
 
 // An image is not "published" merely because a GitHub Actions run succeeded.
-// Check the exact event page, media filename, credit and disclosure in HTML.
+// Check the exact event page's image src, credit and disclosure in HTML.
+// Compare parsed URLs, not decoded Unicode filename text: Wikimedia URLs often
+// use percent-encoded non-ASCII names such as Zürich.
 const events=JSON.parse(await fs.readFile(new URL('../src/data/events.json',import.meta.url),'utf8'));
 const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Hobart'}).format(new Date());
 const photographed=events.filter(e=>e.status==='active'&&e.endDate>=today&&imageIsPublishable(e.image));
@@ -11,8 +14,6 @@ const attempts=18;
 const sampleLimit=100; // Covers all current images while bounding repeated HTTP checks.
 const results=await Promise.all(photographed.slice(0,sampleLimit).map(async event=>{
   const page='https://tassienow.com/event/'+encodeURIComponent(event.slug)+'/';
-  const path=new URL(event.image.url).pathname;
-  const basename=decodeURIComponent(path.split('/').pop());
   let last={status:'not-verified'};
   for(let i=0;i<attempts;i++){
     try{
@@ -20,10 +21,9 @@ const results=await Promise.all(photographed.slice(0,sampleLimit).map(async even
       const res=await fetch(url,{headers:{'user-agent':'TassieNow-Media-Publication-Check/1.0','cache-control':'no-cache'},
         signal:AbortSignal.timeout(12000)});
       const html=await res.text();
-      const photograph=html.includes(basename);
+      const {photograph,figure}=heroImageMatches(html,event.image.url,page);
       const credit=html.includes(event.image.attribution);
       const disclosure=!event.image.caption||html.includes(event.image.caption);
-      const figure=html.includes('class="detail-image"');
       last={status:res.ok&&photograph&&credit&&disclosure&&figure?'verified':'not-visible',
         http:res.status,photograph,credit,disclosure,figure,attempt:i+1};
       if(last.status==='verified')break;
