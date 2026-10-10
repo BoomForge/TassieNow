@@ -27,13 +27,13 @@ function candidateScore(event,page,info){
   const exact=clean(event.name).toLowerCase();
   const namedAsEvent=fields.includes(exact);
   const local=String(event.town||'').toLowerCase();
-  const located=(local.length>=4&&fields.includes(local))||/\\btasmania(?:n)?\\b/i.test(fields);
+  const located=(local.length>=4&&fields.includes(local))||/\btasmania(?:n)?\b/i.test(fields);
   if(!located)return 0;
   // An event image must depict THIS event, not some generic art or activity.
   // Exact multiword identity in metadata or multiple distinctive title words.
   if(tokens.length>=2&&!namedAsEvent&&titleHits<2)return 0;
   if(tokens.length===1&&!fileTitle.includes(tokens[0])&&!namedAsEvent)return 0;
-  if(/\\b(?:logo|brochure|advertisement|poster|screenshot|map|icon)\\b/i.test(fields))return 0;
+  if(/\b(?:logo|brochure|advertisement|poster|screenshot|map|icon)\b/i.test(fields))return 0;
   return (namedAsEvent?90:0)+titleHits*35+(fields.includes(local)?8:0)+(/tasmania|tasmanian/i.test(fields)?8:0);
 }
 async function searchCommons(event){
