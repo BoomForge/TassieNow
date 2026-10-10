@@ -11,7 +11,7 @@ const norm=s=>String(s||'').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]/g
 export function sameEvent(a,b){
   return a.slug===b.slug||
     (norm(a.name)===norm(b.name)&&a.startDate===b.startDate&&
-     (a.town===b.town||a.region===b.region));
+     a.town===b.town);
 }
 export function preserveEventImages(current,previous){
   let kept=0;
