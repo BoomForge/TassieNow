@@ -8,7 +8,7 @@ const UA='TassieNow/1.5 (+https://tassienow.com; event-media-discovery)';
 const MAX=Math.min(100,Math.max(1,Number(process.env.MAX_EVENT_IMAGE_ENRICH)||32));
 const now=()=>{const p=new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const v=k=>p.find(t=>t.type===k)?.value;return v('year')+'-'+v('month')+'-'+v('day');};
 const clean=s=>String(s||'').replace(/<[^>]*>/g,' ').replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replace(/\s+/g,' ').trim();
-const common=new Set(['tasmania','tasmanian','the','and','for','with','festival','event','show','market','annual','hobart','launceston','devonport','burnie','2026','2027','2028','2029','music','arts','exhibition','centre','city','weekend']);
+const common=new Set(['tasmania','tasmanian','the','and','for','with','festival','event','show','market','annual','hobart','launceston','devonport','burnie','2026','2027','2028','2029','music','arts','exhibition','centre','city','weekend','concert','concerts','venue','hall','theatre','carols','performance','school','holiday','lessons','community','activities','workshop','seniors','support','social','learn','class','classes','children','summer','family']);
 const words=s=>clean(s).normalize('NFKD').toLowerCase().split(/[^a-z0-9]+/).filter(t=>t.length>=5&&!common.has(t));
 const mediaKey=image=>image?.sourceUrl||image?.url||'';
 async function fetchText(url,timeout=9000){
@@ -28,6 +28,9 @@ function candidateScore(event,page,info){
   if(picturedYears.length&&event.startDate&&!picturedYears.includes(event.startDate.slice(0,4)))return 0;
   const exact=clean(event.name).toLowerCase();
   const namedAsEvent=fields.includes(exact);
+  // Generic event words can match venues or unrelated performances.
+  // Never publish an image when only one distinctive keyword happens to match.
+  if(tokens.length<2&&!namedAsEvent)return 0;
   const local=String(event.town||'').toLowerCase();
   const located=(local.length>=4&&fields.includes(local))||/\btasmania(?:n)?\b/i.test(fields);
   if(!located)return 0;
