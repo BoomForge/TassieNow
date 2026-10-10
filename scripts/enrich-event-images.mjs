@@ -86,7 +86,7 @@ async function searchCommonsVenue(event){
 }
 
 async function officialCandidates(event){
-  const urls=[event.sourceUrl,event.eventUrl].filter(Boolean).filter((u,i,a)=>a.indexOf(u)===i).slice(0,2);
+  const urls=[event.eventUrl,event.sourceUrl].filter(Boolean).filter((u,i,a)=>a.indexOf(u)===i).slice(0,2);
   if(/brixhibition/i.test(event.name)&&!urls.some(u=>/brixhibition\.com\/?$/i.test(u)))
     urls.unshift('https://www.brixhibition.com/');
   const candidates=[];
@@ -109,7 +109,7 @@ async function officialCandidates(event){
           candidates.push({...candidate,historical:true,caption:'Brixhibition Hobart 2024 archive, NOT 2026'});
     }catch{/* do not make archival material an image without permission */}
   }
-  return candidates.slice(0,12);
+  return candidates.sort((a,b)=>Number(b.sourcePage===event.eventUrl)-Number(a.sourcePage===event.eventUrl)).slice(0,12);
 }
 async function inBatches(items,limit,fn){
   for(let i=0;i<items.length;i+=limit)await Promise.all(items.slice(i,i+limit).map(fn));
@@ -119,12 +119,12 @@ const oldQueue=JSON.parse(await fs.readFile(REVIEW,'utf8').catch(()=>'{}'));
 const today=now();
 let approved=0;
 for(const event of events){
-  if(event.status!=='active'||event.endDate<today||imageIsPublishable(event.image))continue;
+  if(event.status!=='active'||event.endDate<today||eventImagePriority(event.image)>=10)continue;
   const review=oldQueue[event.slug];
   const chosen=(review?.candidates||[])
     .map(candidate=>approvedCandidateImage(event,candidate))
     .find(image=>image&&imageIsPublishable(image));
-  if(chosen){event.image=chosen;approved++;}
+  if(chosen&&eventImagePriority(chosen)>eventImagePriority(event.image)){event.image=chosen;approved++;}
 }
 if(approved)console.log('Applied approved, rights-verified organiser images: '+approved);
 const venueContextAdded=applyVerifiedEventVenueImages(events);
