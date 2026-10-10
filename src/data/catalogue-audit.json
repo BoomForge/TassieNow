@@ -196,36 +196,40 @@
     "active": 163,
     "media": {
       "licensedHeroCoverage": {
-        "count": 41,
-        "percent": 25.2
+        "count": 46,
+        "percent": 28.2
       },
-      "stillUsingCategoryArtwork": 122,
+      "stillUsingCategoryArtwork": 117,
       "bySource": {
-        "verified-event-venue": 41
+        "verified-event-venue": 41,
+        "verified-event-performer": 4,
+        "verified-event-history": 1
       },
       "byMediaType": {
-        "contextual": 41
+        "contextual": 41,
+        "performer-context": 4,
+        "historical-event": 1
       },
       "byRegion": {
         "Hobart & South": {
-          "count": 24,
-          "percent": 30.4
+          "count": 27,
+          "percent": 34.2
         },
         "Launceston & North": {
           "count": 17,
           "percent": 56.7
         },
         "North West": {
-          "count": 0,
-          "percent": 0
+          "count": 1,
+          "percent": 2.6
         },
         "East Coast": {
           "count": 0,
           "percent": 0
         },
         "West Coast": {
-          "count": 0,
-          "percent": 0
+          "count": 1,
+          "percent": 50
         },
         "Central Tasmania": {
           "count": 0,
