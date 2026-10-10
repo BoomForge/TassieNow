@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   verify-discovery:
@@ -90,6 +91,8 @@ jobs:
       - name: Validate discovery data
         run: npm run validate:data
       - name: Publish discovery results before long enrichment
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -98,6 +101,7 @@ jobs:
             git commit -m "chore(data): publish verified market discovery"
             git pull --rebase origin main
             git push origin HEAD:main
+          gh workflow run verify-published-event-images.yml --ref main
           fi
       - name: Enrich OSM and structured listing details
         run: node scripts/enrich-details.mjs
@@ -142,6 +146,8 @@ jobs:
       - name: Validate enriched site
         run: npm run build
       - name: Commit catalogue improvements
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           if git diff --quiet -- src/data/places.json src/data/events.json src/data/event-media-review.json src/data/catalogue-audit.json src/data/discovery-candidates.json src/data/discovery-report.json; then
             echo "No catalogue quality changes to commit."
@@ -153,3 +159,4 @@ jobs:
           git commit -m "chore(data): discover markets and enrich catalogue"
           git pull --rebase origin main
           git push origin HEAD:main
+          gh workflow run verify-published-event-images.yml --ref main
