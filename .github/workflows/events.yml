@@ -25,6 +25,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: tassienow-data-writes
@@ -95,6 +96,8 @@ jobs:
       - name: Build refreshed site
         run: npm run build
       - name: Commit event changes
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           if git diff --quiet -- src/data/events.json src/data/event-media-review.json src/data/catalogue-audit.json; then
             echo "No event changes."
@@ -106,3 +109,4 @@ jobs:
           git commit -m "data: refresh Tasmanian events and verified booking links"
           git pull --rebase origin main
           git push origin HEAD:main
+          gh workflow run verify-published-event-images.yml --ref main
