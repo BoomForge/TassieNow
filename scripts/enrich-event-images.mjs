@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
-import {imageIsPublishable,metaImageCandidates} from './discover/lib/event-media.mjs';
+import {imageIsPublishable,eventImagePriority,metaImageCandidates} from './discover/lib/event-media.mjs';
+import {applyVerifiedEventVenueImages} from './discover/lib/verified-event-venues.mjs';
 import {eligibleCommonsImage,approvedCandidateImage} from './discover/lib/event-image-policy.mjs';
 
 const FILE=new URL('../src/data/events.json',import.meta.url);
@@ -82,6 +83,8 @@ for(const event of events){
   if(chosen){event.image=chosen;approved++;}
 }
 if(approved)console.log('Applied approved, rights-verified organiser images: '+approved);
+const venueContextAdded=applyVerifiedEventVenueImages(events);
+if(venueContextAdded)console.log('Applied licensed, accurately labelled venue context: '+venueContextAdded);
 let revoked=0;
 for(const event of events){
   if(event.image?.sourceMethod==='commons-event'&&!imageIsPublishable(event.image)){
@@ -90,7 +93,7 @@ for(const event of events){
   }
 }
 if(revoked)console.warn('Rejected '+revoked+' previously misidentified Commons event images without verified match evidence.');
-const incomplete=events.filter(e=>e.status==='active'&&e.endDate>=today&&!imageIsPublishable(e.image));
+const incomplete=events.filter(e=>e.status==='active'&&e.endDate>=today&&eventImagePriority(e.image)<6);
 const day=Math.floor(Date.now()/(6*3600000));
 const near=incomplete.filter(e=>e.startDate<=new Date(Date.now()+14*86400000).toISOString().slice(0,10)).sort((a,b)=>a.startDate.localeCompare(b.startDate));
 const later=incomplete.filter(e=>!near.includes(e)).sort((a,b)=>a.startDate.localeCompare(b.startDate));
@@ -99,11 +102,11 @@ const urgentQuota=Math.ceil(MAX*.6);
 const priority=near.filter(e=>/brixhibition/i.test(e.name));
 const targets=[...priority,...rotate(near.filter(e=>!priority.includes(e))).slice(0,Math.max(0,urgentQuota-priority.length)),...rotate(later).slice(0,MAX-urgentQuota)];
 if(targets.length<MAX)for(const e of [...rotate(near),...rotate(later)])if(targets.length<MAX&&!targets.includes(e))targets.push(e);
-const report={checkedAt:new Date().toISOString(),approvedOrganiserImages:approved,active:events.filter(e=>e.status==='active'&&e.endDate>=today).length,missingBefore:incomplete.length,checked:targets.length,published:0,publishedImages:[],organiserCandidates:0,needsPermission:[],unresolved:[],errors:[]};
+const report={checkedAt:new Date().toISOString(),approvedOrganiserImages:approved,venueContextAdded,active:events.filter(e=>e.status==='active'&&e.endDate>=today).length,missingBefore:incomplete.length,checked:targets.length,published:0,publishedImages:[],organiserCandidates:0,needsPermission:[],unresolved:[],errors:[]};
 await inBatches(targets,4,async event=>{
   try{
     const [commons,official]=await Promise.allSettled([searchCommons(event),officialCandidates(event)]);
-    if(commons.status==='fulfilled'&&commons.value.length&&!imageIsPublishable(event.image)){
+    if(commons.status==='fulfilled'&&commons.value.length&&eventImagePriority(commons.value[0].image)>eventImagePriority(event.image)){
       event.image=commons.value[0].image;
       report.published++;
       report.publishedImages.push({slug:event.slug,name:event.name,url:event.image.url,licence:event.image.license,source:event.image.sourceUrl,mediaType:event.image.mediaType,score:commons.value[0].score});
@@ -153,5 +156,5 @@ if(nextQueue!==JSON.stringify(oldQueue,null,2)+'\n'){
 await fs.writeFile(FILE,JSON.stringify(events,null,2)+'\n');
 await fs.mkdir(new URL('../reports/',import.meta.url),{recursive:true});
 await fs.writeFile(OUT,JSON.stringify(report,null,2)+'\n');
-console.log('Event media audit '+JSON.stringify({active:report.active,approved:report.approvedOrganiserImages,checked:report.checked,published:report.published,organiserCandidates:report.organiserCandidates,permissionReview:report.needsPermission.length,unresolved:report.unresolved.length,missingAfter:report.missingAfter,errors:report.errors.length}));
+console.log('Event media audit '+JSON.stringify({active:report.active,approved:report.approvedOrganiserImages,venueContextAdded:report.venueContextAdded,checked:report.checked,published:report.published,organiserCandidates:report.organiserCandidates,permissionReview:report.needsPermission.length,unresolved:report.unresolved.length,missingAfter:report.missingAfter,errors:report.errors.length}));
 if(report.checked===0&&report.missingAfter)console.warn('Event image coverage incomplete: no event records checked');
