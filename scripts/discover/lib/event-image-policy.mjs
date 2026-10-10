@@ -21,11 +21,20 @@ export function classifyCommonsEventImage(event,page,info){
   // Complete event-series identity, not a single coincidental keyword.
   const series=eventSeriesMatchesFile(event.name,file);
   const targetYear=Number(String(event.startDate||'').slice(0,4));
-  const pictured=yearIn(file);
+  const pictured=yearIn(file).length?yearIn(file):yearIn(description);
+  const local=normalize(event.town);
+  const venueRegion=normalize(context);
+  const nameLoc=normalize(event.name).split(' ').filter(w=>['hobart','launceston','devonport','burnie','sorell','tasmania'].includes(w));
+  const located=Boolean((local&&venueRegion.includes(local))||/\btasmania(?:n)?\b/i.test(context)||
+    nameLoc.some(w=>venueRegion.split(' ').includes(w)));
   if(series){
+    if(!located)return null;
     if(pictured.some(year=>!Number.isFinite(targetYear)||year>targetYear))return null;
     const prior=pictured.filter(year=>year<targetYear).sort((a,b)=>b-a)[0];
     if(prior){
+      if(artworkWords.test(file))return {mediaType:'event-artwork',historicalYear:prior,
+        caption:`Archived promotional artwork from ${prior}; not artwork for the ${targetYear} edition.`,
+        alt:`${event.name} — archived promotional artwork from ${prior}`};
       return {mediaType:'historical-event',historicalYear:prior,
         caption:`Photo from the ${prior} edition of ${event.name}; not a photo of the ${targetYear} event.`,
         alt:`${event.name} — photograph from ${prior}`};
@@ -43,7 +52,6 @@ export function classifyCommonsEventImage(event,page,info){
   if(!venue || venue.length<9 || venueBlacklist.test(venue))return null;
   const venueName=normalize(venue);
   const title=normalize(file);
-  const local=normalize(event.town);
   if(!venueName || !title.includes(venueName) || artworkWords.test(file))return null;
   if(!local || !(normalize(context).includes(local)||/\btasmania(?:n)?\b/i.test(context)))return null;
   return {mediaType:'contextual',
