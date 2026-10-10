@@ -33,6 +33,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: tassienow-data-writes
@@ -138,6 +139,8 @@ jobs:
       - name: Build refreshed site
         run: npm run build
       - name: Commit refreshed data
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           if git diff --quiet -- src/data/places.json src/data/events.json src/data/event-media-review.json src/data/parks-walks.json src/data/catalogue-audit.json src/data/discovery-candidates.json src/data/discovery-report.json; then
             echo "No catalogue changes."
@@ -149,3 +152,4 @@ jobs:
           git commit -m "data: refresh multi-source Tasmanian discovery catalogue"
           git pull --rebase origin main
           git push origin HEAD:main
+          gh workflow run verify-published-event-images.yml --ref main
