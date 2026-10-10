@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import {imageIsPublishable,eventImagePriority,metaImageCandidates} from './discover/lib/event-media.mjs';
 import {applyVerifiedEventVenueImages} from './discover/lib/verified-event-venues.mjs';
+import {applyVerifiedPerformerImages} from './discover/lib/verified-event-performers.mjs';
 import {eligibleCommonsImage,eligibleCommonsVenueImage,approvedCandidateImage} from './discover/lib/event-image-policy.mjs';
 
 const FILE=new URL('../src/data/events.json',import.meta.url);
@@ -128,6 +129,7 @@ for(const event of events){
 }
 if(approved)console.log('Applied approved, rights-verified organiser images: '+approved);
 const venueContextAdded=applyVerifiedEventVenueImages(events);
+const performerContextAdded=applyVerifiedPerformerImages(events);
 if(venueContextAdded)console.log('Applied licensed, accurately labelled venue context: '+venueContextAdded);
 let revoked=0;
 for(const event of events){
@@ -146,7 +148,7 @@ const urgentQuota=Math.ceil(MAX*.6);
 const priority=near.filter(e=>/brixhibition/i.test(e.name));
 const targets=[...priority,...rotate(near.filter(e=>!priority.includes(e))).slice(0,Math.max(0,urgentQuota-priority.length)),...rotate(later).slice(0,MAX-urgentQuota)];
 if(targets.length<MAX)for(const e of [...rotate(near),...rotate(later)])if(targets.length<MAX&&!targets.includes(e))targets.push(e);
-const report={checkedAt:new Date().toISOString(),approvedOrganiserImages:approved,venueContextAdded,active:events.filter(e=>e.status==='active'&&e.endDate>=today).length,missingBefore:incomplete.length,checked:targets.length,published:0,publishedImages:[],organiserCandidates:0,needsPermission:[],unresolved:[],errors:[]};
+const report={checkedAt:new Date().toISOString(),approvedOrganiserImages:approved,venueContextAdded,performerContextAdded,active:events.filter(e=>e.status==='active'&&e.endDate>=today).length,missingBefore:incomplete.length,checked:targets.length,published:0,publishedImages:[],organiserCandidates:0,needsPermission:[],unresolved:[],errors:[]};
 await inBatches(targets,4,async event=>{
   try{
     const [commons,official]=await Promise.allSettled([searchCommons(event),officialCandidates(event)]);
@@ -208,5 +210,5 @@ if(nextQueue!==JSON.stringify(oldQueue,null,2)+'\n'){
 await fs.writeFile(FILE,JSON.stringify(events,null,2)+'\n');
 await fs.mkdir(new URL('../reports/',import.meta.url),{recursive:true});
 await fs.writeFile(OUT,JSON.stringify(report,null,2)+'\n');
-console.log('Event media audit '+JSON.stringify({active:report.active,approved:report.approvedOrganiserImages,venueContextAdded:report.venueContextAdded,checked:report.checked,published:report.published,organiserCandidates:report.organiserCandidates,permissionReview:report.needsPermission.length,unresolved:report.unresolved.length,missingAfter:report.missingAfter,errors:report.errors.length}));
+console.log('Event media audit '+JSON.stringify({active:report.active,approved:report.approvedOrganiserImages,venueContextAdded:report.venueContextAdded,performerContextAdded:report.performerContextAdded,checked:report.checked,published:report.published,organiserCandidates:report.organiserCandidates,permissionReview:report.needsPermission.length,unresolved:report.unresolved.length,missingAfter:report.missingAfter,errors:report.errors.length}));
 if(report.checked===0&&report.missingAfter)console.warn('Event image coverage incomplete: no event records checked');
