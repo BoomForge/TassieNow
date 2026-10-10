@@ -15,6 +15,7 @@ on:
       - 'scripts/discover/lib/event-image-policy.mjs'
       - 'scripts/discover/lib/verified-event-venues.mjs'
       - 'scripts/discover/lib/verified-event-performers.mjs'
+      - 'scripts/discover/lib/verified-event-history.mjs'
       - 'scripts/reapply-event-image-upgrades.mjs'
       - 'scripts/reapply-event-review.mjs'
   schedule:
