@@ -8,7 +8,8 @@ const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Hobart'}).forma
 const photographed=events.filter(e=>e.status==='active'&&e.endDate>=today&&imageIsPublishable(e.image));
 const sleep=ms=>new Promise(done=>setTimeout(done,ms));
 const attempts=10;
-const results=await Promise.all(photographed.slice(0,15).map(async event=>{
+const sampleLimit=60; // Covers all current 41 images and allows reasonable growth.
+const results=await Promise.all(photographed.slice(0,sampleLimit).map(async event=>{
   const page='https://tassienow.com/event/'+encodeURIComponent(event.slug)+'/';
   const path=new URL(event.image.url).pathname;
   const basename=decodeURIComponent(path.split('/').pop());
@@ -32,7 +33,8 @@ const results=await Promise.all(photographed.slice(0,15).map(async event=>{
   return {slug:event.slug,mediaType:event.image.mediaType||'event-photo',...last};
 }));
 const report={checkedAt:new Date().toISOString(),activeWithPhotos:photographed.length,
-  checked:results.length,verified:results.filter(e=>e.status==='verified').length,results};
+  checked:results.length,verified:results.filter(e=>e.status==='verified').length,
+  verificationCoverage:photographed.length<=sampleLimit?'complete':'partial',results};
 await fs.mkdir(new URL('../reports/',import.meta.url),{recursive:true});
 await fs.writeFile(new URL('../reports/production-event-images.json',import.meta.url),
   JSON.stringify(report,null,2)+'\n');
