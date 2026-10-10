@@ -10,7 +10,7 @@ const original={
   url:'https://upload.wikimedia.org/wikipedia/commons/thumb/test.jpg',
   attribution:'Original photographer',license:'CC BY 4.0',
   licenseUrl:'https://creativecommons.org/licenses/by/4.0/',
-  sourceMethod:'commons-event',isFallback:false
+  sourceMethod:'commons-event',matchEvidence:{verified:true,eventName:'Brixhibition Hobart 2026',sourceFileTitle:'Brixhibition Hobart 2026'},isFallback:false
  }
 };
 const category=()=>({url:'/images/categories/events.svg',isFallback:true});
