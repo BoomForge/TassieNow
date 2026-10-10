@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import {imageIsPublishable} from './discover/lib/event-media.mjs';
 
 const out = new URL('../src/data/operations-report.json', import.meta.url);
 const repository = process.env.GITHUB_REPOSITORY || 'BoomForge/TassieNow';
@@ -78,7 +79,7 @@ try {
   const get = key => p.find(part=>part.type===key)?.value;
   const today = `${get('year')}-${get('month')}-${get('day')}`;
   const active=events.filter(event=>event.status==='active' && event.endDate>=today);
-  const photographed=active.filter(event=>event.image && !event.image.isFallback).length;
+  const photographed=active.filter(event=>imageIsPublishable(event.image)).length;
   if(audit.generatedAt!==today || audit.events.active!==active.length ||
      audit.events.media.licensedHeroCoverage.count!==photographed){
     report.failures.push({component:'Published photo coverage audit',status:'stale-or-inaccurate',
