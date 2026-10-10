@@ -3,6 +3,7 @@ import {fallback,imageIsPublishable,permittedLicence,metaImageCandidates} from '
 
 const FILE=new URL('../src/data/events.json',import.meta.url);
 const OUT=new URL('../reports/event-image-discovery.json',import.meta.url);
+const REVIEW=new URL('../src/data/event-media-review.json',import.meta.url);
 const UA='TassieNow/1.5 (+https://tassienow.com; event-media-discovery)';
 const MAX=Math.min(100,Math.max(1,Number(process.env.MAX_EVENT_IMAGE_ENRICH)||32));
 const now=()=>{const p=new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const v=k=>p.find(t=>t.type===k)?.value;return v('year')+'-'+v('month')+'-'+v('day');};
@@ -121,6 +122,27 @@ await inBatches(targets,4,async event=>{
   }catch(error){report.errors.push({slug:event.slug,error:String(error.message).slice(0,100)});}
 });
 report.missingAfter=events.filter(e=>e.status==='active'&&e.endDate>=today&&!imageIsPublishable(e.image)).length;
+// Keep discovered organiser photo candidates for the owner's rights review.
+// Do not rewrite the queue every six hours when no candidate changes.
+const oldQueue=JSON.parse(await fs.readFile(REVIEW,'utf8').catch(()=>'{}'));
+const queue={...oldQueue};
+for(const item of report.needsPermission){
+ const candidates=item.candidates.map(c=>({
+  url:c.url,sourcePage:c.sourcePage,
+  rights:'permission-needed',
+  ...(c.historical?{historical:true,caption:c.caption}:{})
+ }));
+ if(!candidates.length)continue;
+ queue[item.slug]={
+  name:item.name,organiser:item.organiser,source:item.source,
+  candidates,needs:'Organiser approval or an explicit reusable licence before embedding the photos'
+ };
+}
+const nextQueue=JSON.stringify(queue,null,2)+'\n';
+if(nextQueue!==JSON.stringify(oldQueue,null,2)+'\n'){
+ await fs.writeFile(REVIEW,nextQueue);
+ console.log('Updated durable organiser image review queue for '+Object.keys(queue).length+' events');
+}
 await fs.writeFile(FILE,JSON.stringify(events,null,2)+'\n');
 await fs.mkdir(new URL('../reports/',import.meta.url),{recursive:true});
 await fs.writeFile(OUT,JSON.stringify(report,null,2)+'\n');
