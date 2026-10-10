@@ -86,6 +86,8 @@ jobs:
         run: node scripts/rank-catalogue.mjs
       - name: Generate catalogue coverage audit
         run: node scripts/catalogue-audit.mjs
+      - name: Reject stale image coverage reports
+        run: node scripts/check-image-coverage.mjs
       - name: Validate and build ranked site
         run: npm run build
       - name: Audit rendered SEO and large assets
