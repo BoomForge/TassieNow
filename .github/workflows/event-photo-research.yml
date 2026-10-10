@@ -6,6 +6,7 @@ on:
     paths:
       - 'scripts/enrich-event-images.mjs'
       - 'scripts/discover/lib/event-media.mjs'
+      - 'scripts/discover/lib/event-image-policy.mjs'
       - '.github/workflows/event-photo-research.yml'
   schedule:
     - cron: '17 20 * * *'
