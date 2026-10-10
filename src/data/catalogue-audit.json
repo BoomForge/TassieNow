@@ -193,24 +193,24 @@
     }
   },
   "events": {
-    "active": 163,
+    "active": 166,
     "media": {
       "licensedHeroCoverage": {
-        "count": 6,
-        "percent": 3.7
+        "count": 1,
+        "percent": 0.6
       },
-      "stillUsingCategoryArtwork": 157,
+      "stillUsingCategoryArtwork": 165,
       "bySource": {
-        "commons-event": 6
+        "commons-event": 1
       },
       "byRegion": {
         "Hobart & South": {
-          "count": 2,
-          "percent": 2.5
+          "count": 1,
+          "percent": 1.3
         },
         "Launceston & North": {
-          "count": 3,
-          "percent": 10
+          "count": 0,
+          "percent": 0
         },
         "North West": {
           "count": 0,
@@ -229,8 +229,8 @@
           "percent": 0
         },
         "Flinders Island": {
-          "count": 1,
-          "percent": 100
+          "count": 0,
+          "percent": 0
         },
         "King Island": {
           "count": 0,
@@ -240,11 +240,11 @@
     },
     "ticketCoverage": {
       "count": 45,
-      "percent": 27.6
+      "percent": 27.1
     },
     "priceCoverage": {
       "count": 55,
-      "percent": 33.7
+      "percent": 33.1
     },
     "providers": {
       "Ticketek": 23,
@@ -253,7 +253,7 @@
       "Ticketmaster": 1
     },
     "sources": {
-      "Burnie City Council": 24,
+      "Burnie City Council": 27,
       "MyState Bank Arena": 24,
       "Theatre North Launceston": 17,
       "Huon Valley Council": 16,
@@ -277,7 +277,7 @@
     "regions": {
       "Hobart & South": 79,
       "Launceston & North": 30,
-      "North West": 39,
+      "North West": 42,
       "East Coast": 9,
       "West Coast": 2,
       "Central Tasmania": 1,
@@ -322,8 +322,8 @@
       "missingOrOlderThan30Days": 0
     },
     "sourceRegionalMix": {
+      "North West / Burnie City Council": 27,
       "Hobart & South / MyState Bank Arena": 24,
-      "North West / Burnie City Council": 24,
       "Launceston & North / Theatre North Launceston": 17,
       "Hobart & South / Huon Valley Council": 16,
       "North West / Devonport City Council": 14,
