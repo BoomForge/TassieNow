@@ -69,6 +69,12 @@ export function imageIsPublishable(image){
      image.matchEvidence?.verifiedType!=='contextual'||!image.matchEvidence?.venue||
      !image.matchEvidence?.town||!image.matchEvidence?.sourceFilePage?.startsWith('https://commons.wikimedia.org/wiki/File:')))
     return false;
+  if(image.sourceMethod==='verified-event-performer' &&
+    (image.mediaType!=='performer-context'||!image.caption||
+     image.matchEvidence?.verified!==true||image.matchEvidence?.verifiedType!=='performer-context'||
+     !image.matchEvidence?.performer||!image.matchEvidence?.photoYear||
+     !image.matchEvidence?.sourceFilePage?.startsWith('https://commons.wikimedia.org/wiki/File:')||
+     !image.matchEvidence?.eventName))return false;
   if(image.sourceMethod==='verified-event-venue' &&
     (image.mediaType!=='contextual'||!image.caption||!image.matchEvidence?.verified||
      !image.matchEvidence?.venue||!image.matchEvidence?.town||
@@ -87,7 +93,7 @@ export function eventImagePriority(image){
  if(!imageIsPublishable(image))return 0;
  if(image.sourceMethod==='organiser-approved')return 10;
  return ({'event-photo':9,'official-artwork':8,'event-artwork':7,
-  'historical-event':6,'contextual':3})[image.mediaType]||8;
+  'historical-event':6,'performer-context':5,'contextual':3})[image.mediaType]||8;
 }
 const norm=s=>String(s||'').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]/g,'');
 export function sameEvent(a,b){
