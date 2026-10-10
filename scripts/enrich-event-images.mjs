@@ -66,7 +66,7 @@ async function searchCommons(event){
         attribution:clean(metadata.Artist?.value||metadata.Credit?.value)||'Wikimedia Commons contributor',
         license,licenseUrl,sourceUrl:info.descriptionurl,
         isFallback:false,sourceMethod:'commons-event',
-        mediaCheckedAt:now()
+        mediaCheckedAt:now(),matchEvidence:{verified:true,eventName:event.name,sourceFileTitle:String(page.title||''),checkedAt:now(),score}
       }
     }];
   }).sort((a,b)=>b.score-a.score);
@@ -102,6 +102,14 @@ async function inBatches(items,limit,fn){
 }
 const events=JSON.parse(await fs.readFile(FILE,'utf8'));
 const today=now();
+let revoked=0;
+for(const event of events){
+  if(event.image?.sourceMethod==='commons-event'&&!imageIsPublishable(event.image)){
+    event.image={url:'/images/categories/events.svg',alt:event.name+' event category artwork',attribution:'TassieNow',license:'Site artwork',licenseUrl:null,sourceUrl:null,isFallback:true};
+    revoked++;
+  }
+}
+if(revoked)console.warn('Rejected '+revoked+' previously misidentified Commons event images without verified match evidence.');
 const incomplete=events.filter(e=>e.status==='active'&&e.endDate>=today&&!imageIsPublishable(e.image));
 const day=Math.floor(Date.now()/(6*3600000));
 const near=incomplete.filter(e=>e.startDate<=new Date(Date.now()+14*86400000).toISOString().slice(0,10)).sort((a,b)=>a.startDate.localeCompare(b.startDate));
