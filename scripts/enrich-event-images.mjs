@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import {fallback,imageIsPublishable,permittedLicence,metaImageCandidates} from './discover/lib/event-media.mjs';
+import {fallback,imageIsPublishable,permittedLicence,metaImageCandidates,eventTitleMatchesFile} from './discover/lib/event-media.mjs';
 
 const FILE=new URL('../src/data/events.json',import.meta.url);
 const OUT=new URL('../reports/event-image-discovery.json',import.meta.url);
@@ -20,7 +20,7 @@ async function fetchText(url,timeout=9000){
 }
 function candidateScore(event,page,info){
   const tokens=words(event.name);
-  if(!tokens.length)return 0;
+  if(!tokens.length || !eventTitleMatchesFile(event.name,page.title))return 0;
   const fields=clean([page.title,info.extmetadata?.ObjectName?.value,info.extmetadata?.ImageDescription?.value].filter(Boolean).join(' ')).toLowerCase();
   const fileTitle=clean(page.title).toLowerCase();
   const titleHits=tokens.filter(t=>fileTitle.includes(t)).length;

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {permittedLicence,imageIsPublishable,preserveEventImages,metaImageCandidates} from '../discover/lib/event-media.mjs';
+import {permittedLicence,imageIsPublishable,preserveEventImages,metaImageCandidates,eventTitleMatchesFile} from '../discover/lib/event-media.mjs';
 
 const original={
  slug:'brixhibition-hobart-2026-2026-10-10-sorell',
@@ -42,4 +42,17 @@ test('extract official page image links without granting rights',()=>{
  assert.equal(candidates[0].url,'https://www.brixhibition.com/images/brix-2026.jpg');
  assert.equal(candidates[1].url,'https://www.brixhibition.com/data55/images/Image18.jpg');
  assert.ok(candidates.every(c=>c.rights==='permission-needed'));
+});
+
+test('reject Adelaide sculpture as photograph of JackJumpers basketball match',()=>{
+ const file='File:36ERS letter sculpture at Adelaide Entertainment Centre, 9 January 2026.jpg';
+ assert.equal(eventTitleMatchesFile('Tasmania JackJumpers v Adelaide 36ers',file),false);
+ assert.equal(imageIsPublishable({...original.image,matchEvidence:{verified:true,eventName:'Tasmania JackJumpers v Adelaide 36ers',sourceFileTitle:file}}),false);
+});
+test('accept a filename that names the specific event and matching year',()=>{
+ assert.equal(eventTitleMatchesFile('Brixhibition Hobart 2026','File:Brixhibition Hobart 2026 display.jpg'),true);
+ assert.equal(eventTitleMatchesFile('Brixhibition Hobart 2026','File:Brixhibition Hobart 2024 display.jpg'),false);
+});
+test('reject generic concert or venue photograph as event identity evidence',()=>{
+ assert.equal(eventTitleMatchesFile('Tasmania JackJumpers v Adelaide 36ers','File:Adelaide 36ers venue.jpg'),false);
 });
