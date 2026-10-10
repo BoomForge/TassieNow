@@ -30,6 +30,7 @@ function candidateScore(place, page, info) {
   const placeContext = `${title} ${blob}`;
   const correctTown = place.town && placeContext.includes(String(place.town).toLowerCase());
   const tasmaniaContext = /tasmania|tasmanian/.test(placeContext);
+  if((place.categories||[]).includes('Food & Drink') && !correctTown) return 0;
   // A complete named-place match is much stronger than an isolated keyword.
   // Food/business names still need their town to avoid same-name collisions.
   if(exactName && ((place.categories||[]).includes('Food & Drink') ? correctTown : (correctTown || tasmaniaContext)))score += 48;
