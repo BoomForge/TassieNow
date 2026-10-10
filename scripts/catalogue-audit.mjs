@@ -97,6 +97,12 @@ const audit={
   },
   events:{
     active:activeEvents.length,
+    media:{
+      licensedHeroCoverage:coverage(activeEvents,e=>Boolean(e.image&&!e.image.isFallback&&e.image.license&&e.image.attribution)),
+      stillUsingCategoryArtwork:activeEvents.filter(e=>!e.image||e.image.isFallback).length,
+      bySource:countBy(activeEvents.filter(e=>e.image&&!e.image.isFallback),e=>e.image.sourceMethod||'manually-sourced'),
+      byRegion:Object.fromEntries(allRegions.map(region=>[region,coverage(activeEvents.filter(e=>e.region===region),e=>Boolean(e.image&&!e.image.isFallback))]))
+    },
     ticketCoverage:{count:ticketReady.length,percent:pct(ticketReady.length,activeEvents.length)},
     priceCoverage:{count:priced.length,percent:pct(priced.length,activeEvents.length)},
     providers:countBy(ticketReady,(e)=>e.ticketProvider),
