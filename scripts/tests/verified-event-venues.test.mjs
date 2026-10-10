@@ -4,7 +4,7 @@ import {applyVerifiedEventVenueImages,verifiedEventVenues} from '../discover/lib
 import {imageIsPublishable,eventImagePriority,preserveEventImages} from '../discover/lib/event-media.mjs';
 const fallback=()=>({url:'/images/categories/events.svg',isFallback:true});
 test('known licence and photographer are preserved for both verified venues',()=>{
- assert.equal(verifiedEventVenues.length,2);
+ assert.equal(verifiedEventVenues.length,6);
  for(const venue of verifiedEventVenues){
   assert.ok(venue.sourceUrl.startsWith('https://commons.wikimedia.org/wiki/File:'));
   assert.ok(venue.licenseUrl.includes('creativecommons.org/licenses/by'));
@@ -42,4 +42,21 @@ test('venue context cannot replace an approved or more specific event photo',()=
  const newer={...x,image:fallback()},older={...x,image:historical};
  assert.equal(preserveEventImages([newer],[older]),1);
  assert.equal(newer.image.mediaType,'historical-event');
+});
+
+test('new named venue images only match the correct town and building',()=>{
+ const entries=[
+  {name:'Halloween Fest Hobart',town:'Hobart',venue:'Hobart City Hall',status:'active',image:fallback()},
+  {name:'Dia de Muertos Kids',town:'Hobart',venue:'Hobart Town Hall',status:'active',image:fallback()},
+  {name:'Tasmanian Fashion Festival',town:'Hobart',venue:'Princes Wharf No. 1',status:'active',image:fallback()},
+  {name:'Zeehan Heritage and Mineral Fair',town:'Zeehan',venue:'West Coast Heritage Centre, Zeehan',status:'active',image:fallback()},
+  {name:'Same-name elsewhere',town:'Sheffield',venue:'Hobart Town Hall',status:'active',image:fallback()}
+ ];
+ assert.equal(applyVerifiedEventVenueImages(entries),4);
+ assert.equal(entries[4].image.isFallback,true);
+ assert.match(entries[3].image.caption,/Former School of Mines/);
+ for(const entry of entries.slice(0,4)) {
+  assert.equal(imageIsPublishable(entry.image),true);
+  assert.match(entry.image.caption,/does not depict the advertised event/);
+ }
 });
