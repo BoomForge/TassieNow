@@ -1,0 +1,31 @@
+name: Verify actual published photographs
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/data/places.json'
+      - 'scripts/verify-published-photo.mjs'
+      - '.github/workflows/verify-published-photos.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify Cloudflare serves licensed photographs and credits
+        run: node scripts/verify-published-photo.mjs
+      - name: Preserve production evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-photo-verification
+          path: reports/production-photo-verification.json
+          retention-days: 30
