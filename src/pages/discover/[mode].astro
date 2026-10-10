@@ -5,6 +5,7 @@ import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 import events from '../../data/events.json';
 import { marketOccurrences, weekendDates } from '../../lib/market-occurrences.js';
+import { rankEventDiscovery } from '../../lib/event-ranking.js';
 
 export function getStaticPaths() {
   const routes = [
@@ -151,7 +152,7 @@ const isEventMode = Boolean(config.eventMode);
 const isEventItem = (item) => Boolean(item.startDate) && !item.occurrenceDate;
 const scheduledMarkets = isEventMode ? marketOccurrences(activePlaces, activeEvents, config.eventMode === 'today' ? today : saturdayDate, config.eventMode === 'today' ? today : sundayDate) : [];
 const marketSessions = mode === 'markets' ? activeEvents.filter(event => event.categories?.includes('Markets')) : [];
-const resultItems = isEventMode ? [...matchedEvents, ...scheduledMarkets].sort((a,b) => (a.occurrenceDate || a.startDate).localeCompare(b.occurrenceDate || b.startDate) || a.name.localeCompare(b.name)) : [...matchedPlaces, ...marketSessions];
+const resultItems = isEventMode ? rankEventDiscovery([...matchedEvents, ...scheduledMarkets], config.eventMode === 'today' ? today : saturdayDate, config.eventMode === 'today' ? today : sundayDate) : [...matchedPlaces, ...marketSessions];
 const regions = [...new Set(resultItems.map((item) => item.region).filter(Boolean))].sort();
 
 const visualItems = [
@@ -159,7 +160,7 @@ const visualItems = [
   ...resultItems.filter((item) => item.image?.isFallback)
 ].filter((item, index, array) => array.findIndex((candidate) => candidate.slug === item.slug) === index);
 
-const featuredItems = visualItems.slice(0, 6);
+const featuredItems = isEventMode ? resultItems.slice(0, 6) : visualItems.slice(0, 6);
 const heroItem = featuredItems[0] || resultItems[0] || null;
 const heroImage = heroItem?.image?.url || config.fallback;
 const heroAlt = heroItem?.image?.alt || `${config.title} — TassieNow`;
