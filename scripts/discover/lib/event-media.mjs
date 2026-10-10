@@ -64,6 +64,11 @@ export function imageIsPublishable(image){
     if(!matched)return false;
     if(['historical-event','contextual'].includes(image.mediaType)&&!image.caption)return false;
   }
+  if(image.sourceMethod==='commons-venue' &&
+    (image.mediaType!=='contextual'||!image.caption||!image.matchEvidence?.verified||
+     image.matchEvidence?.verifiedType!=='contextual'||!image.matchEvidence?.venue||
+     !image.matchEvidence?.town||!image.matchEvidence?.sourceFilePage?.startsWith('https://commons.wikimedia.org/wiki/File:')))
+    return false;
   if(image.sourceMethod==='verified-event-venue' &&
     (image.mediaType!=='contextual'||!image.caption||!image.matchEvidence?.verified||
      !image.matchEvidence?.venue||!image.matchEvidence?.town||
