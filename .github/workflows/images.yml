@@ -8,6 +8,7 @@ on:
       - 'scripts/reapply-image-upgrades.mjs'
       - 'scripts/enrich-event-images.mjs'
       - 'scripts/reapply-event-image-upgrades.mjs'
+      - 'scripts/reapply-event-review.mjs'
   schedule:
     - cron: '23 20 * * *'
   workflow_dispatch:
@@ -77,6 +78,7 @@ jobs:
           # advance main while Commons image lookups are running.
           cp src/data/places.json /tmp/tassienow-places-after-images.json
           cp src/data/events.json /tmp/tassienow-events-after-images.json
+          cp src/data/event-media-review.json /tmp/tassienow-event-photo-review-after-images.json
           git config user.name "TassieNow Bot"
           git config user.email "actions@users.noreply.github.com"
           for attempt in 1 2 3 4; do
@@ -85,15 +87,16 @@ jobs:
             git reset --hard origin/main
             node scripts/reapply-image-upgrades.mjs /tmp/tassienow-places-before-images.json /tmp/tassienow-places-after-images.json
             node scripts/reapply-event-image-upgrades.mjs /tmp/tassienow-events-before-images.json /tmp/tassienow-events-after-images.json
+            node scripts/reapply-event-review.mjs /tmp/tassienow-event-photo-review-after-images.json
             node scripts/prune-expired-events.mjs
             node scripts/rank-catalogue.mjs
             node scripts/catalogue-audit.mjs
             node scripts/validate-data.mjs
-            if git diff --quiet -- src/data/places.json src/data/events.json src/data/catalogue-audit.json; then
+            if git diff --quiet -- src/data/places.json src/data/events.json src/data/event-media-review.json src/data/catalogue-audit.json; then
               echo "No additional verified image improvements remain to publish."
               exit 0
             fi
-            git add src/data/places.json src/data/events.json src/data/catalogue-audit.json
+            git add src/data/places.json src/data/events.json src/data/event-media-review.json src/data/catalogue-audit.json
             git commit -m "data: improve licensed listing images"
             if git push origin HEAD:main; then exit 0; fi
             sleep "$((attempt * 2))"
