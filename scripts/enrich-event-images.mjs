@@ -22,15 +22,19 @@ function candidateScore(event,page,info){
   const tokens=words(event.name);
   if(!tokens.length)return 0;
   const fields=clean([page.title,info.extmetadata?.ObjectName?.value,info.extmetadata?.ImageDescription?.value].filter(Boolean).join(' ')).toLowerCase();
-  const hits=tokens.filter(t=>fields.includes(t)).length;
-  if(!hits)return 0;
+  const fileTitle=clean(page.title).toLowerCase();
+  const titleHits=tokens.filter(t=>fileTitle.includes(t)).length;
   const exact=clean(event.name).toLowerCase();
-  let score=hits*35+(fields.includes(exact)?45:0);
-  if(fields.includes(String(event.town||'').toLowerCase()))score+=8;
-  if(/tasmania|tasmanian/.test(fields))score+=8;
-  if(/\b(?:logo|brochure|advertisement|poster|screenshot|map|icon)\b/i.test(fields))return 0;
-  // Avoid unrelated pictures that merely say "market" or "festival".
-  return score>=43?score:0;
+  const namedAsEvent=fields.includes(exact);
+  const local=String(event.town||'').toLowerCase();
+  const located=(local.length>=4&&fields.includes(local))||/\\btasmania(?:n)?\\b/i.test(fields);
+  if(!located)return 0;
+  // An event image must depict THIS event, not some generic art or activity.
+  // Exact multiword identity in metadata or multiple distinctive title words.
+  if(tokens.length>=2&&!namedAsEvent&&titleHits<2)return 0;
+  if(tokens.length===1&&!fileTitle.includes(tokens[0])&&!namedAsEvent)return 0;
+  if(/\\b(?:logo|brochure|advertisement|poster|screenshot|map|icon)\\b/i.test(fields))return 0;
+  return (namedAsEvent?90:0)+titleHits*35+(fields.includes(local)?8:0)+(/tasmania|tasmanian/i.test(fields)?8:0);
 }
 async function searchCommons(event){
   const url=new URL('https://commons.wikimedia.org/w/api.php');
@@ -102,13 +106,14 @@ const urgentQuota=Math.ceil(MAX*.6);
 const priority=near.filter(e=>/brixhibition/i.test(e.name));
 const targets=[...priority,...rotate(near.filter(e=>!priority.includes(e))).slice(0,Math.max(0,urgentQuota-priority.length)),...rotate(later).slice(0,MAX-urgentQuota)];
 if(targets.length<MAX)for(const e of [...rotate(near),...rotate(later)])if(targets.length<MAX&&!targets.includes(e))targets.push(e);
-const report={checkedAt:new Date().toISOString(),active:events.filter(e=>e.status==='active'&&e.endDate>=today).length,missingBefore:incomplete.length,checked:targets.length,published:0,organiserCandidates:0,needsPermission:[],unresolved:[],errors:[]};
+const report={checkedAt:new Date().toISOString(),active:events.filter(e=>e.status==='active'&&e.endDate>=today).length,missingBefore:incomplete.length,checked:targets.length,published:0,publishedImages:[],organiserCandidates:0,needsPermission:[],unresolved:[],errors:[]};
 await inBatches(targets,4,async event=>{
   try{
     const [commons,official]=await Promise.allSettled([searchCommons(event),officialCandidates(event)]);
     if(commons.status==='fulfilled'&&commons.value.length){
       event.image=commons.value[0].image;
       report.published++;
+      report.publishedImages.push({slug:event.slug,name:event.name,url:event.image.url,licence:event.image.license,source:event.image.sourceUrl,score:commons.value[0].score});
     }else if(commons.status==='rejected')report.errors.push({slug:event.slug,source:'Wikimedia',error:String(commons.reason.message).slice(0,100)});
     if(official.status==='fulfilled'&&official.value.length){
       report.organiserCandidates+=official.value.length;
