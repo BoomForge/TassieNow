@@ -7,6 +7,7 @@ on:
       - 'scripts/discover/events.mjs'
       - 'scripts/discover/public-events.mjs'
       - 'scripts/discover/verified-regional-events.mjs'
+      - 'scripts/discover/independent-ticketebo.mjs'
       - 'scripts/sanitize-events.mjs'
       - 'scripts/enrich-event-tickets.mjs'
       - 'scripts/sanitize-ticket-data.mjs'
@@ -52,6 +53,8 @@ jobs:
           node scripts/discover/public-events.mjs 2>&1 | tee reports/public-events-fetch.log
       - name: Verify dated organiser events in underserved regions
         run: node scripts/discover/verified-regional-events.mjs
+      - name: Discover independent community and exhibition tickets
+        run: node scripts/discover/independent-ticketebo.mjs
       - name: Retain actual source fetch and parser results
         if: always()
         uses: actions/upload-artifact@v4
@@ -60,6 +63,7 @@ jobs:
           path: |
             reports/*-events-fetch.log
             reports/regional-events-evidence.json
+            reports/ticketebo-discovery.json
           retention-days: 30
       - name: Sanitize discovered events
         run: node scripts/sanitize-events.mjs
