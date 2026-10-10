@@ -89,13 +89,13 @@ jobs:
         run: npm run build
       - name: Commit deep quality improvements
         run: |
-          if git diff --quiet -- src/data/places.json src/data/events.json src/data/event-media-review.json src/data/event-media-review.json src/data/catalogue-audit.json; then
+          if git diff --quiet -- src/data/places.json src/data/events.json src/data/event-media-review.json src/data/catalogue-audit.json; then
             echo "No deep quality changes to commit."
             exit 0
           fi
           git config user.name "TassieNow Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add src/data/places.json src/data/events.json src/data/event-media-review.json src/data/event-media-review.json src/data/catalogue-audit.json
+          git add src/data/places.json src/data/events.json src/data/event-media-review.json src/data/catalogue-audit.json
           git commit -m "data: deep-enrich full TassieNow catalogue"
           git pull --rebase origin main
           git push origin HEAD:main
