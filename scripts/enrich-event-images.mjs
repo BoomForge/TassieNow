@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import {imageIsPublishable,eventImagePriority,metaImageCandidates} from './discover/lib/event-media.mjs';
 import {applyVerifiedEventVenueImages} from './discover/lib/verified-event-venues.mjs';
-import {eligibleCommonsImage,approvedCandidateImage} from './discover/lib/event-image-policy.mjs';
+import {eligibleCommonsImage,eligibleCommonsVenueImage,approvedCandidateImage} from './discover/lib/event-image-policy.mjs';
 
 const FILE=new URL('../src/data/events.json',import.meta.url);
 const OUT=new URL('../reports/event-image-discovery.json',import.meta.url);
@@ -41,6 +41,50 @@ async function searchCommons(event){
     return [{score,image}];
   }).sort((a,b)=>b.score-a.score);
 }
+// Commons is aggressively rate limited when many queries run at once.
+const venueSearchCache=new Map();
+let lastCommonsVenueQueryAt=0;
+const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+async function fetchVenueSearch(url) {
+  for(let attempt=0;attempt<3;attempt++){
+    const pause=Math.max(0,lastCommonsVenueQueryAt+1200-Date.now());
+    if(pause)await sleep(pause);
+    lastCommonsVenueQueryAt=Date.now();
+    const response=await fetch(url,{headers:{'user-agent':UA,accept:'application/json'},
+      signal:AbortSignal.timeout(12000)});
+    if(response.status===429 || response.status===503){
+      if(attempt===2)throw Error('Commons venue search rate-limited: '+response.status);
+      const secs=Number(response.headers.get('retry-after'));
+      await sleep(Math.min(12000,Number.isFinite(secs)&&secs>0?secs*1000:2500*(attempt+1)));
+      continue;
+    }
+    if(!response.ok)throw Error('Commons venue search HTTP '+response.status);
+    return response.json();
+  }
+}
+async function searchCommonsVenue(event){
+  const venue=String(event.venue||'').split(',')[0].trim();
+  if(venue.length<9 || !event.town || /^(?:hobart|launceston|devonport|tasmania|bothwell|theatre|cinema|town hall|community centre|various locations)$/i.test(venue))return[];
+  const key=venue.toLowerCase()+'|'+event.town.toLowerCase();
+  if(!venueSearchCache.has(key)){
+    venueSearchCache.set(key,(async()=>{
+      const url=new URL('https://commons.wikimedia.org/w/api.php');
+      for(const [k,v] of Object.entries({
+        action:'query',format:'json',generator:'search',gsrnamespace:'6',gsrlimit:'12',
+        gsrsearch:venue+' '+event.town,prop:'imageinfo',
+        iiprop:'url|extmetadata',iiurlwidth:'1280'
+      }))url.searchParams.set(k,v);
+      const pages=Object.values((await fetchVenueSearch(url)).query?.pages||{});
+      return pages;
+    })());
+  }
+  const pages=await venueSearchCache.get(key);
+  return pages.flatMap(page=>{
+    const image=eligibleCommonsVenueImage(event,page,page.imageinfo?.[0]);
+    return image?[{score:55,image}]:[];
+  });
+}
+
 async function officialCandidates(event){
   const urls=[event.sourceUrl,event.eventUrl].filter(Boolean).filter((u,i,a)=>a.indexOf(u)===i).slice(0,2);
   if(/brixhibition/i.test(event.name)&&!urls.some(u=>/brixhibition\.com\/?$/i.test(u)))
@@ -106,10 +150,18 @@ const report={checkedAt:new Date().toISOString(),approvedOrganiserImages:approve
 await inBatches(targets,4,async event=>{
   try{
     const [commons,official]=await Promise.allSettled([searchCommons(event),officialCandidates(event)]);
-    if(commons.status==='fulfilled'&&commons.value.length&&eventImagePriority(commons.value[0].image)>eventImagePriority(event.image)){
-      event.image=commons.value[0].image;
+    let choices=commons.status==='fulfilled'?commons.value:[];
+    if(!choices.length && eventImagePriority(event.image)<3){
+      try {
+        choices=await searchCommonsVenue(event);
+      } catch(error) {
+        report.errors.push({slug:event.slug,source:'Wikimedia venue',error:String(error.message).slice(0,100)});
+      }
+    }
+    if(choices.length&&eventImagePriority(choices[0].image)>eventImagePriority(event.image)){
+      event.image=choices[0].image;
       report.published++;
-      report.publishedImages.push({slug:event.slug,name:event.name,url:event.image.url,licence:event.image.license,source:event.image.sourceUrl,mediaType:event.image.mediaType,score:commons.value[0].score});
+      report.publishedImages.push({slug:event.slug,name:event.name,url:event.image.url,licence:event.image.license,source:event.image.sourceUrl,mediaType:event.image.mediaType,score:choices[0].score});
     }else if(commons.status==='rejected')report.errors.push({slug:event.slug,source:'Wikimedia',error:String(commons.reason.message).slice(0,100)});
     if(official.status==='fulfilled'&&official.value.length){
       report.organiserCandidates+=official.value.length;
