@@ -5,6 +5,7 @@ export const fallback = image=>!image?.url||image.isFallback===true;
 export function imageIsPublishable(image){
   if(fallback(image))return false;
   if(!image?.attribution||!image?.license||!/^https:\/\//i.test(image.url))return false;
+  if(image.sourceMethod==='commons-event'&&!image.matchEvidence?.verified)return false;
   return permittedLicence(image.license,image.licenseUrl)||image.usagePermission==='granted';
 }
 const norm=s=>String(s||'').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]/g,'');
