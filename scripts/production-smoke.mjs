@@ -128,6 +128,37 @@ for(const path of ['/api/admin/listing-corrections','/api/admin/inquiries']){
  }catch(error){entry.status='fail';entry.problem=String(error.message);}
  report.checks.push(entry);if(entry.status==='fail')report.failures.push(entry);
 }
+// A verified current event must be in the actual public static build, not
+// merely committed to JSON. This sentinel expires automatically after the
+// event: the check will not demand a stale page forever.
+const nowParts=new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+const part=t=>nowParts.find(item=>item.type===t)?.value;
+const hobartToday=part('year')+'-'+part('month')+'-'+part('day');
+if(hobartToday>='2026-10-10'&&hobartToday<='2026-10-11'){
+  const path='/event/brixhibition-hobart-2026-2026-10-10-sorell/';
+  for(const [name,target] of [
+    ['Urgent Sorell event page deployed',path],
+    ['Brixhibition present in live Today discovery','/discover/today/'],
+    ['Brixhibition present in live Weekend discovery','/discover/this-weekend/']
+  ]){
+    const result={name,path:target,status:'fail'};
+    for(let attempt=1;attempt<=6;attempt++){
+      try{
+        const {response,html}=await get(target,1);
+        result.httpCode=response.status;
+        if(response.status===200&&html.includes('Brixhibition Hobart 2026')&&html.includes('Sorell')){
+          result.status='pass';break;
+        }
+      }catch(error){result.problem=String(error.message);}
+      if(attempt<6)await wait(7500);
+    }
+    if(result.status!=='pass'){
+      result.problem=result.problem||'GitHub record exists but the public Cloudflare site has not served this new event yet. Redeploy the latest main and check static build freshness.';
+      report.failures.push(result);
+    }
+    report.checks.push(result);
+  }
+}
 report.checks.sort((a,b)=>a.name.localeCompare(b.name));
 const summary={passed:report.checks.filter(x=>x.status==='pass').length,checks:report.checks.length,failed:report.failures.length};
 report.summary=summary;
