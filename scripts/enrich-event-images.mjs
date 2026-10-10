@@ -98,7 +98,8 @@ const near=incomplete.filter(e=>e.startDate<=new Date(Date.now()+14*86400000).to
 const later=incomplete.filter(e=>!near.includes(e)).sort((a,b)=>a.startDate.localeCompare(b.startDate));
 const rotate=items=>items.length?[...items.slice((day*MAX)%items.length),...items.slice(0,(day*MAX)%items.length)]:[];
 const urgentQuota=Math.ceil(MAX*.6);
-const targets=[...rotate(near).slice(0,urgentQuota),...rotate(later).slice(0,MAX-urgentQuota)];
+const priority=near.filter(e=>/brixhibition/i.test(e.name));
+const targets=[...priority,...rotate(near.filter(e=>!priority.includes(e))).slice(0,Math.max(0,urgentQuota-priority.length)),...rotate(later).slice(0,MAX-urgentQuota)];
 if(targets.length<MAX)for(const e of [...rotate(near),...rotate(later)])if(targets.length<MAX&&!targets.includes(e))targets.push(e);
 const report={checkedAt:new Date().toISOString(),active:events.filter(e=>e.status==='active'&&e.endDate>=today).length,missingBefore:incomplete.length,checked:targets.length,published:0,organiserCandidates:0,needsPermission:[],unresolved:[],errors:[]};
 await inBatches(targets,4,async event=>{
