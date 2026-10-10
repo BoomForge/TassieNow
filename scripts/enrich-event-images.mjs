@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
-import {fallback,imageIsPublishable,permittedLicence,metaImageCandidates,eventTitleMatchesFile} from './discover/lib/event-media.mjs';
+import {imageIsPublishable,metaImageCandidates} from './discover/lib/event-media.mjs';
+import {eligibleCommonsImage,approvedCandidateImage} from './discover/lib/event-image-policy.mjs';
 
 const FILE=new URL('../src/data/events.json',import.meta.url);
 const OUT=new URL('../reports/event-image-discovery.json',import.meta.url);
@@ -18,29 +19,6 @@ async function fetchText(url,timeout=9000){
   if(!/html|json|text/i.test(type))throw new Error('Unexpected media '+type);
   return response.text();
 }
-function candidateScore(event,page,info){
-  const tokens=words(event.name);
-  if(!tokens.length || !eventTitleMatchesFile(event.name,page.title))return 0;
-  const fields=clean([page.title,info.extmetadata?.ObjectName?.value,info.extmetadata?.ImageDescription?.value].filter(Boolean).join(' ')).toLowerCase();
-  const fileTitle=clean(page.title).toLowerCase();
-  const titleHits=tokens.filter(t=>fileTitle.includes(t)).length;
-  const picturedYears=fileTitle.match(/\b20\d{2}\b/g)||[];
-  if(picturedYears.length&&event.startDate&&!picturedYears.includes(event.startDate.slice(0,4)))return 0;
-  const exact=clean(event.name).toLowerCase();
-  const namedAsEvent=fields.includes(exact);
-  // Generic event words can match venues or unrelated performances.
-  // Never publish an image when only one distinctive keyword happens to match.
-  if(tokens.length<2&&!namedAsEvent)return 0;
-  const local=String(event.town||'').toLowerCase();
-  const located=(local.length>=4&&fields.includes(local))||/\btasmania(?:n)?\b/i.test(fields);
-  if(!located)return 0;
-  // An event image must depict THIS event, not some generic art or activity.
-  // Exact multiword identity in metadata or multiple distinctive title words.
-  if(tokens.length>=2&&!namedAsEvent&&titleHits<2)return 0;
-  if(tokens.length===1&&!fileTitle.includes(tokens[0])&&!namedAsEvent)return 0;
-  if(/\b(?:logo|brochure|advertisement|poster|screenshot|map|icon)\b/i.test(fields))return 0;
-  return (namedAsEvent?90:0)+titleHits*35+(fields.includes(local)?8:0)+(/tasmania|tasmanian/i.test(fields)?8:0);
-}
 async function searchCommons(event){
   const url=new URL('https://commons.wikimedia.org/w/api.php');
   for(const [k,v] of Object.entries({
@@ -52,23 +30,14 @@ async function searchCommons(event){
   if(!response.ok)throw new Error('Commons HTTP '+response.status);
   const pages=Object.values((await response.json()).query?.pages||{});
   return pages.flatMap(page=>{
-    const info=page.imageinfo?.[0],metadata=info?.extmetadata||{};
-    if(!info)return[];
-    const score=candidateScore(event,page,info);
-    if(!score)return[];
-    const license=clean(metadata.LicenseShortName?.value||metadata.UsageTerms?.value||'');
-    const licenseUrl=metadata.LicenseUrl?.value||'';
-    if(!permittedLicence(license,licenseUrl))return[];
-    if(!/^https:\/\//.test(info.thumburl||info.url||''))return[];
-    return [{
-      score,image:{
-        url:info.thumburl||info.url,alt:event.name+' — event photograph',
-        attribution:clean(metadata.Artist?.value||metadata.Credit?.value)||'Wikimedia Commons contributor',
-        license,licenseUrl,sourceUrl:info.descriptionurl,
-        isFallback:false,sourceMethod:'commons-event',
-        mediaCheckedAt:now(),matchEvidence:{verified:true,eventName:event.name,sourceFileTitle:String(page.title||''),checkedAt:now(),score}
-      }
-    }];
+    const image=eligibleCommonsImage(event,page,page.imageinfo?.[0]);
+    if(!image)return [];
+    const score={eventPhoto:130,artwork:120,historical:105,context:65}[
+      image.mediaType==='event-photo'?'eventPhoto':
+      image.mediaType==='event-artwork'?'artwork':
+      image.mediaType==='historical-event'?'historical':'context'
+    ];
+    return [{score,image}];
   }).sort((a,b)=>b.score-a.score);
 }
 async function officialCandidates(event){
@@ -101,7 +70,18 @@ async function inBatches(items,limit,fn){
   for(let i=0;i<items.length;i+=limit)await Promise.all(items.slice(i,i+limit).map(fn));
 }
 const events=JSON.parse(await fs.readFile(FILE,'utf8'));
+const oldQueue=JSON.parse(await fs.readFile(REVIEW,'utf8').catch(()=>'{}'));
 const today=now();
+let approved=0;
+for(const event of events){
+  if(event.status!=='active'||event.endDate<today||imageIsPublishable(event.image))continue;
+  const review=oldQueue[event.slug];
+  const chosen=(review?.candidates||[])
+    .map(candidate=>approvedCandidateImage(event,candidate))
+    .find(image=>image&&imageIsPublishable(image));
+  if(chosen){event.image=chosen;approved++;}
+}
+if(approved)console.log('Applied approved, rights-verified organiser images: '+approved);
 let revoked=0;
 for(const event of events){
   if(event.image?.sourceMethod==='commons-event'&&!imageIsPublishable(event.image)){
@@ -119,14 +99,14 @@ const urgentQuota=Math.ceil(MAX*.6);
 const priority=near.filter(e=>/brixhibition/i.test(e.name));
 const targets=[...priority,...rotate(near.filter(e=>!priority.includes(e))).slice(0,Math.max(0,urgentQuota-priority.length)),...rotate(later).slice(0,MAX-urgentQuota)];
 if(targets.length<MAX)for(const e of [...rotate(near),...rotate(later)])if(targets.length<MAX&&!targets.includes(e))targets.push(e);
-const report={checkedAt:new Date().toISOString(),active:events.filter(e=>e.status==='active'&&e.endDate>=today).length,missingBefore:incomplete.length,checked:targets.length,published:0,publishedImages:[],organiserCandidates:0,needsPermission:[],unresolved:[],errors:[]};
+const report={checkedAt:new Date().toISOString(),approvedOrganiserImages:approved,active:events.filter(e=>e.status==='active'&&e.endDate>=today).length,missingBefore:incomplete.length,checked:targets.length,published:0,publishedImages:[],organiserCandidates:0,needsPermission:[],unresolved:[],errors:[]};
 await inBatches(targets,4,async event=>{
   try{
     const [commons,official]=await Promise.allSettled([searchCommons(event),officialCandidates(event)]);
-    if(commons.status==='fulfilled'&&commons.value.length){
+    if(commons.status==='fulfilled'&&commons.value.length&&!imageIsPublishable(event.image)){
       event.image=commons.value[0].image;
       report.published++;
-      report.publishedImages.push({slug:event.slug,name:event.name,url:event.image.url,licence:event.image.license,source:event.image.sourceUrl,score:commons.value[0].score});
+      report.publishedImages.push({slug:event.slug,name:event.name,url:event.image.url,licence:event.image.license,source:event.image.sourceUrl,mediaType:event.image.mediaType,score:commons.value[0].score});
     }else if(commons.status==='rejected')report.errors.push({slug:event.slug,source:'Wikimedia',error:String(commons.reason.message).slice(0,100)});
     if(official.status==='fulfilled'&&official.value.length){
       report.organiserCandidates+=official.value.length;
@@ -142,7 +122,6 @@ await inBatches(targets,4,async event=>{
 report.missingAfter=events.filter(e=>e.status==='active'&&e.endDate>=today&&!imageIsPublishable(e.image)).length;
 // Keep discovered organiser photo candidates for the owner's rights review.
 // Do not rewrite the queue every six hours when no candidate changes.
-const oldQueue=JSON.parse(await fs.readFile(REVIEW,'utf8').catch(()=>'{}'));
 const queue=structuredClone(oldQueue);
 for(const item of report.needsPermission){
  const candidates=item.candidates.map(c=>({
@@ -174,5 +153,5 @@ if(nextQueue!==JSON.stringify(oldQueue,null,2)+'\n'){
 await fs.writeFile(FILE,JSON.stringify(events,null,2)+'\n');
 await fs.mkdir(new URL('../reports/',import.meta.url),{recursive:true});
 await fs.writeFile(OUT,JSON.stringify(report,null,2)+'\n');
-console.log('Event media audit '+JSON.stringify({active:report.active,checked:report.checked,published:report.published,organiserCandidates:report.organiserCandidates,permissionReview:report.needsPermission.length,unresolved:report.unresolved.length,missingAfter:report.missingAfter,errors:report.errors.length}));
+console.log('Event media audit '+JSON.stringify({active:report.active,approved:report.approvedOrganiserImages,checked:report.checked,published:report.published,organiserCandidates:report.organiserCandidates,permissionReview:report.needsPermission.length,unresolved:report.unresolved.length,missingAfter:report.missingAfter,errors:report.errors.length}));
 if(report.checked===0&&report.missingAfter)console.warn('Event image coverage incomplete: no event records checked');

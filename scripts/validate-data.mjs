@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {imageIsPublishable} from './discover/lib/event-media.mjs';
 
 const placesFile = new URL('../src/data/places.json', import.meta.url);
 const eventsFile = new URL('../src/data/events.json', import.meta.url);
@@ -100,6 +101,10 @@ for (const [index, event] of events.entries()) {
   if(event.image?.sourceMethod==='commons-event'&&!event.image?.matchEvidence?.verified)
     problems.push(label+': Commons event photo missing verified event-specific match evidence');
   validateImage(event, label);
+  if(event.image && !event.image.isFallback && !imageIsPublishable(event.image))
+    problems.push(label+': event photo lacks publishable evidence or compatible licence');
+  if(['historical-event','contextual'].includes(event.image?.mediaType)&&!event.image.caption)
+    problems.push(label+': historical/contextual image requires public disclosure caption');
 }
 
 if (problems.length) {

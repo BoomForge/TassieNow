@@ -12,6 +12,7 @@ on:
       - 'scripts/discover/lib/verified-photo-picks.mjs'
       - 'scripts/enrich-wikidata-images.mjs'
       - 'scripts/discover/lib/event-media.mjs'
+      - 'scripts/discover/lib/event-image-policy.mjs'
       - 'scripts/reapply-event-image-upgrades.mjs'
       - 'scripts/reapply-event-review.mjs'
   schedule:

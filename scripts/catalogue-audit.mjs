@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import {imageIsPublishable} from './discover/lib/event-media.mjs';
 
 const PLACES = new URL('../src/data/places.json', import.meta.url);
 const EVENTS = new URL('../src/data/events.json', import.meta.url);
@@ -98,9 +99,10 @@ const audit={
   events:{
     active:activeEvents.length,
     media:{
-      licensedHeroCoverage:coverage(activeEvents,e=>Boolean(e.image&&!e.image.isFallback&&e.image.license&&e.image.attribution)),
+      licensedHeroCoverage:coverage(activeEvents,e=>imageIsPublishable(e.image)),
       stillUsingCategoryArtwork:activeEvents.filter(e=>!e.image||e.image.isFallback).length,
-      bySource:countBy(activeEvents.filter(e=>e.image&&!e.image.isFallback),e=>e.image.sourceMethod||'manually-sourced'),
+      bySource:countBy(activeEvents.filter(e=>imageIsPublishable(e.image)),e=>e.image.sourceMethod||'manually-sourced'),
+      byMediaType:countBy(activeEvents.filter(e=>imageIsPublishable(e.image)),e=>e.image.mediaType||'event-photo'),
       byRegion:Object.fromEntries(allRegions.map(region=>[region,coverage(activeEvents.filter(e=>e.region===region),e=>Boolean(e.image&&!e.image.isFallback))]))
     },
     ticketCoverage:{count:ticketReady.length,percent:pct(ticketReady.length,activeEvents.length)},

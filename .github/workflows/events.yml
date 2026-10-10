@@ -11,6 +11,7 @@ on:
       - 'scripts/enrich-event-images.mjs'
       - 'scripts/preserve-event-images.mjs'
       - 'scripts/discover/lib/event-media.mjs'
+      - 'scripts/discover/lib/event-image-policy.mjs'
       - 'scripts/sanitize-events.mjs'
       - 'scripts/enrich-event-tickets.mjs'
       - 'scripts/sanitize-ticket-data.mjs'

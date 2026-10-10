@@ -28,6 +28,23 @@ export function eventTitleMatchesFile(eventName,fileTitle){
  return true;
 }
 
+// Earlier editions may be used when the source explicitly names the same
+// event series. Year is handled separately and always disclosed.
+const seriesStop=new Set(['the','and','of','at','in','for','with','v','vs','festival',
+ 'show','event','annual','concert','exhibition','market','2026','2027','2028']);
+export function eventSeriesMatchesFile(eventName,fileTitle){
+ const identity=[...new Set(normalizedWords(eventName)
+   .filter(w=>w.length>=3&&!/^20\d{2}$/.test(w)&&!seriesStop.has(w)))];
+ const words=new Set(normalizedWords(fileTitle.replace(/^File:/i,'')));
+ const distinctive=identity.filter(w=>!['tasmania','tasmanian','hobart','launceston','sorell','devonport','burnie'].includes(w));
+ if(!distinctive.length||!distinctive.every(word=>words.has(word)))return false;
+ // A single distinctive word needs extra brand/location context, except when
+ // it is an unusually specific identity such as Brixhibition.
+ if(distinctive.length===1&&distinctive[0].length<9)
+   return identity.some(w=>w!==distinctive[0]&&words.has(w));
+ return true;
+}
+
 // Event image provenance and source-preservation utilities.
 // Metadata is not permission: retain organizer image previews for review
 // unless an explicit, verifiable re-use grant exists.
@@ -35,9 +52,27 @@ export const fallback = image=>!image?.url||image.isFallback===true;
 export function imageIsPublishable(image){
   if(fallback(image))return false;
   if(!image?.attribution||!image?.license||!/^https:\/\//i.test(image.url))return false;
-  if(image.sourceMethod==='commons-event' && (!image.matchEvidence?.verified ||
-    !eventTitleMatchesFile(image.matchEvidence.eventName,image.matchEvidence.sourceFileTitle)))return false;
-  return permittedLicence(image.license,image.licenseUrl)||image.usagePermission==='granted';
+  if(image.sourceMethod==='commons-event') {
+    if(!image.matchEvidence?.verified || !image.matchEvidence.eventName ||
+       !image.matchEvidence.sourceFileTitle)return false;
+    const matched=image.mediaType
+      ? (image.mediaType==='contextual'
+          ? Boolean(image.caption && image.matchEvidence.verifiedType==='contextual' &&
+              image.matchEvidence.sourceFilePage?.startsWith('https://'))
+          : eventSeriesMatchesFile(image.matchEvidence.eventName,image.matchEvidence.sourceFileTitle))
+      : eventTitleMatchesFile(image.matchEvidence.eventName,image.matchEvidence.sourceFileTitle);
+    if(!matched)return false;
+    if(['historical-event','contextual'].includes(image.mediaType)&&!image.caption)return false;
+  }
+  if(image.sourceMethod==='organiser-approved') {
+    const p=image.permissionEvidence;
+    if(image.usagePermission!=='granted' || !image.matchEvidence?.verified ||
+       !p?.grantedBy || !p?.verifiedAt || !p?.evidenceUrl?.startsWith('https://') ||
+       !p?.scope?.includes('TassieNow'))return false;
+    if(['historical-event','contextual'].includes(image.mediaType)&&!image.caption)return false;
+  }
+  return permittedLicence(image.license,image.licenseUrl)||
+    (image.sourceMethod==='organiser-approved'&&image.usagePermission==='granted');
 }
 const norm=s=>String(s||'').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]/g,'');
 export function sameEvent(a,b){
@@ -62,6 +97,7 @@ export function permittedLicence(name,link){
   // CC attribution licences and public domain only. Copyright status alone
   // is not a reusable licence, nor is simply having an OG image.
   const n=String(name||'').toLowerCase();
+  if(/(?:non.?commercial|no.?derivatives|cc.?by.?nc|cc.?by.?nd|all rights reserved)/.test(n))return false;
   const u=String(link||'').toLowerCase();
   if(/^(?:cc0|public domain|cc by(?:-sa)?(?: \d(?:\.\d)?)?)$/.test(n))return true;
   return /creativecommons\.org\/(?:licenses\/by(?:-sa)?\/|publicdomain\/zero\/)/.test(u);

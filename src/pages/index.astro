@@ -198,6 +198,9 @@ const formatEventDate = (startDate, endDate) => {
                   loading="lazy"
                   decoding="async"
                 />
+                {event.image?.mediaType === 'historical-event' && <span class="event-photo-label">Previous edition</span>}
+                {event.image?.mediaType === 'contextual' && <span class="event-photo-label">Venue image</span>}
+                {['event-artwork','official-artwork'].includes(event.image?.mediaType) && <span class="event-photo-label">Event artwork</span>}
               </a>
               <div class="event-card-body">
                 <div class="event-meta">
@@ -501,7 +504,8 @@ const formatEventDate = (startDate, endDate) => {
     .featured-copy span{display:inline-block;margin-top:.45rem;font-size:.78rem;font-weight:850}
     .event-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem}
     .event-card{display:grid;grid-template-columns:180px minmax(0,1fr);min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:1.15rem;background:var(--surface);box-shadow:0 8px 25px rgba(24,53,52,.04)}
-    .event-card-image{display:block;min-height:190px;background:#dce7df}
+    .event-card-image{display:block;position:relative;min-height:190px;background:#dce7df}
+    .event-photo-label{position:absolute;bottom:.5rem;left:.5rem;max-width:calc(100% - 1rem);padding:.25rem .5rem;border-radius:.4rem;background:rgba(11,36,37,.88);color:#fff;font-size:.72rem;font-weight:750}
     .event-card-image img{width:100%;height:100%;object-fit:cover;display:block}
     .event-card-body{padding:1rem}
     .event-meta{display:flex;flex-wrap:wrap;gap:.35rem .7rem;color:var(--brand-2);font-size:.72rem;font-weight:850;text-transform:uppercase;letter-spacing:.04em}

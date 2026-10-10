@@ -55,6 +55,7 @@ jobs:
           node --check scripts/preserve-event-images.mjs
           node --check scripts/reapply-event-image-upgrades.mjs
           node --check scripts/discover/lib/event-media.mjs
+          node --check scripts/discover/lib/event-image-policy.mjs
           node --check scripts/enrich-images.mjs
           node --check scripts/apply-verified-photo-picks.mjs
           node --check scripts/discover/lib/verified-photo-picks.mjs
