@@ -7,24 +7,24 @@ const GENERIC_EVENT_WORDS=new Set([
  'at','in','on','to','of','vs','v'
 ]);
 const normalizedWords=value=>String(value||'').normalize('NFKD').toLowerCase()
- .replace(/[\\u0300-\\u036f]/g,'').split(/[^a-z0-9]+/).filter(Boolean);
+ .replace(/[\u0300-\u036f]/g,'').split(/[^a-z0-9]+/).filter(Boolean);
 export function eventTitleMatchesFile(eventName,fileTitle){
- const fileWords=normalizedWords(fileTitle.replace(/^File:/i,'').replace(/\\.[^.]+$/,''));
+ const fileWords=normalizedWords(fileTitle.replace(/^File:/i,'').replace(/\.[^.]+$/,''));
  const file=new Set(fileWords);
  const name=normalizedWords(eventName);
- const distinctive=[...new Set(name.filter(word=>word.length>=3 && !GENERIC_EVENT_WORDS.has(word) && !/^20\\d{2}$/.test(word)))];
+ const distinctive=[...new Set(name.filter(word=>word.length>=3 && !GENERIC_EVENT_WORDS.has(word) && !/^20\d{2}$/.test(word)))];
  if(!distinctive.length)return false;
  // Single-keyword names (e.g. Brixhibition) require the entire named event
  // phrase, not one broad keyword in a photograph of something else.
  if(distinctive.length===1){
-  const full=name.filter(word=>!/^20\\d{2}$/.test(word));
+  const full=name.filter(word=>!/^20\d{2}$/.test(word));
   if(!full.every(word=>file.has(word)))return false;
  }else if(!distinctive.every(word=>file.has(word)))return false;
  // A year appearing in a filename must agree with an explicit event year.
- const eventYear=name.find(word=>/^20\\d{2}$/.test(word));
- const picturedYears=fileWords.filter(word=>/^20\\d{2}$/.test(word));
+ const eventYear=name.find(word=>/^20\d{2}$/.test(word));
+ const picturedYears=fileWords.filter(word=>/^20\d{2}$/.test(word));
  if(eventYear && picturedYears.length && !picturedYears.includes(eventYear))return false;
- if(/\\b(?:logo|poster|advertisement|screenshot|sculpture|statue|venue|signage|banner|map)\\b/i.test(fileTitle))return false;
+ if(/\b(?:logo|poster|advertisement|screenshot|sculpture|statue|venue|signage|banner|map)\b/i.test(fileTitle))return false;
  return true;
 }
 
