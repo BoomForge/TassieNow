@@ -132,7 +132,10 @@ export function eligibleCommonsVenueImage(event,page,info) {
   const meta=info?.extmetadata||{};
   const desc=normalize([meta.ImageDescription?.value,meta.ObjectName?.value,meta.Categories?.value].join(' '));
   const location=fileName+' '+desc;
-  if(!location.includes(town)&&!location.includes('tasmania')&&!location.includes('tasmanian'))return null;
+  // Town names such as Hobart, Devonport and Sheffield also exist outside
+  // Tasmania; the image itself must explicitly establish the Tasmanian state.
+  if(!location.includes(town) || !(location.includes('tasmania')||location.includes('tasmanian') ||
+    /\\btas\\b/i.test(tidy(meta.ImageDescription?.value||''))))return null;
   // Do not accept generic "town hall" photos or a similarly named interstate venue.
   if(tokenise(venue).filter(w=>w.length>3).length<2)return null;
   const yearMatches=file.match(/\b20\d{2}\b/g)||[];
