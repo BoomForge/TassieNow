@@ -24,6 +24,8 @@ function candidateScore(event,page,info){
   const fields=clean([page.title,info.extmetadata?.ObjectName?.value,info.extmetadata?.ImageDescription?.value].filter(Boolean).join(' ')).toLowerCase();
   const fileTitle=clean(page.title).toLowerCase();
   const titleHits=tokens.filter(t=>fileTitle.includes(t)).length;
+  const picturedYears=fileTitle.match(/\b20\d{2}\b/g)||[];
+  if(picturedYears.length&&event.startDate&&!picturedYears.includes(event.startDate.slice(0,4)))return 0;
   const exact=clean(event.name).toLowerCase();
   const namedAsEvent=fields.includes(exact);
   const local=String(event.town||'').toLowerCase();
