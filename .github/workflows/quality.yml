@@ -51,6 +51,10 @@ jobs:
           node --check scripts/sanitize-events.mjs
           node --check scripts/enrich-event-tickets.mjs
           node --check scripts/sanitize-ticket-data.mjs
+          node --check scripts/enrich-event-images.mjs
+          node --check scripts/preserve-event-images.mjs
+          node --check scripts/reapply-event-image-upgrades.mjs
+          node --check scripts/discover/lib/event-media.mjs
           node --check scripts/enrich-images.mjs
           node --check scripts/enrich-wikidata-images.mjs
           node --check scripts/catalogue-audit.mjs
