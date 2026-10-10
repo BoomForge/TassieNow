@@ -97,6 +97,8 @@ for (const [index, event] of events.entries()) {
   if (event.priceTo !== undefined && (!Number.isFinite(event.priceTo) || event.priceTo < 0)) problems.push(`${label}: priceTo must be a non-negative number`);
   if (event.priceFrom !== undefined && event.priceTo !== undefined && event.priceTo < event.priceFrom) problems.push(`${label}: priceTo is below priceFrom`);
   if (event.priceCurrency !== undefined && !/^[A-Z]{3}$/.test(event.priceCurrency)) problems.push(`${label}: priceCurrency must be a three-letter currency code`);
+  if(event.image?.sourceMethod==='commons-event'&&!event.image?.matchEvidence?.verified)
+    problems.push(label+': Commons event photo missing verified event-specific match evidence');
   validateImage(event, label);
 }
 
