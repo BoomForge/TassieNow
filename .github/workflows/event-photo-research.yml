@@ -1,0 +1,54 @@
+name: Check independent event photo discovery
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/enrich-event-images.mjs'
+      - 'scripts/discover/lib/event-media.mjs'
+      - '.github/workflows/event-photo-research.yml'
+  schedule:
+    - cron: '17 20 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect-event-photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Independently examine near-term event photos and organiser sources
+        env:
+          MAX_EVENT_IMAGE_ENRICH: '24'
+        run: node scripts/enrich-event-images.mjs
+      - name: Validate event-image discovery evidence contract
+        shell: bash
+        run: |
+          node --input-type=module -e '
+            import fs from "node:fs";
+            const r=JSON.parse(fs.readFileSync("reports/event-image-discovery.json","utf8"));
+            if(!r.checkedAt||!Number.isInteger(r.checked)||r.checked===0||!Array.isArray(r.unresolved)||!Array.isArray(r.needsPermission))
+              throw Error("No usable event-image research evidence. Check upstream source access.");
+            console.log("Event images checked: "+r.checked+"; licensed photographs found: "+r.published+
+              "; organiser assets awaiting rights review: "+r.organiserCandidates+
+              "; unresolved matches: "+r.unresolved.length+".");
+          '
+      - name: Preserve independently observed event media evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: independent-event-media-research
+          path: |
+            reports/event-image-discovery.json
+            src/data/event-media-review.json
+          retention-days: 30
