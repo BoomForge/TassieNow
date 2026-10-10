@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {classifyCommonsEventImage,approvedCandidateImage,eligibleCommonsImage} from '../discover/lib/event-image-policy.mjs';
+import {classifyCommonsEventImage,approvedCandidateImage,eligibleCommonsImage,eligibleCommonsVenueImage} from '../discover/lib/event-image-policy.mjs';
 import {imageIsPublishable,permittedLicence,preserveEventImages} from '../discover/lib/event-media.mjs';
 const event={slug:'brixhibition-hobart-2026-2026-10-10-sorell',name:'Brixhibition Hobart 2026',
   town:'Sorell',startDate:'2026-10-10',status:'active'};
@@ -81,4 +81,21 @@ test('historical organiser images require caption and year, no unlicensed image 
  assert.equal(approvedCandidateImage(event,{...c,caption:'2024 archive',historicalYear:2024})?.mediaType,'historical-event');
  assert.equal(permittedLicence('CC BY-NC 4.0','https://creativecommons.org/licenses/by/4.0/'),false);
  assert.equal(permittedLicence('All rights reserved','https://creativecommons.org/licenses/by/4.0/'),false);
+});
+
+test('Commons venue photograph needs exact venue, town, Tasmania and reuse rights',()=>{
+ const event={name:'Halloween Fest Hobart',town:'Hobart',venue:'Hobart City Hall',startDate:'2026-10-31'};
+ const page={title:'File:CG-Hobart-City-Hall from above Feb2015.jpg'};
+ const meta={...info,descriptionurl:'https://commons.wikimedia.org/wiki/File:CG-Hobart-City-Hall_from_above_Feb2015.jpg',
+   extmetadata:{...info.extmetadata,ImageDescription:{value:'Hobart City Hall, Macquarie St, Hobart Tasmania'}}};
+ const image=eligibleCommonsVenueImage(event,page,meta);
+ assert.equal(image?.mediaType,'contextual');
+ assert.equal(imageIsPublishable(image),true);
+ assert.match(image.caption,/does not depict the advertised event/);
+ assert.equal(eligibleCommonsVenueImage(event,page,{...meta,
+   extmetadata:{...meta.extmetadata,ImageDescription:{value:'Hobart City Hall, Kiowa County, Oklahoma'}}}),null);
+ assert.equal(eligibleCommonsVenueImage({...event,town:'Launceston'},page,meta),null);
+ assert.equal(eligibleCommonsVenueImage(event,{title:'File:Hobart City Hall logo.jpg'},meta),null);
+ assert.equal(eligibleCommonsVenueImage(event,page,{...meta,extmetadata:{...meta.extmetadata,
+   LicenseShortName:{value:'CC BY-NC 4.0'},LicenseUrl:{value:'https://creativecommons.org/licenses/by-nc/4.0/'}}}),null);
 });
