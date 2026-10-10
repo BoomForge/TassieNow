@@ -39,12 +39,6 @@ jobs:
         run: |
           cp src/data/places.json /tmp/tassienow-places-before-images.json
           cp src/data/events.json /tmp/tassienow-events-before-images.json
-      - name: Upgrade exact Wikidata listing images
-        run: node scripts/enrich-wikidata-images.mjs
-      - name: Upgrade fallback images
-        env:
-          MAX_IMAGE_ENRICH: '240'
-        run: node scripts/enrich-images.mjs
       - name: Enrich missing event images and inspect organiser photos
         env:
           MAX_EVENT_IMAGE_ENRICH: '40'
@@ -56,6 +50,12 @@ jobs:
           name: event-image-review
           path: reports/event-image-discovery.json
           retention-days: 30
+      - name: Upgrade exact Wikidata listing images
+        run: node scripts/enrich-wikidata-images.mjs
+      - name: Upgrade fallback images
+        env:
+          MAX_IMAGE_ENRICH: '65'
+        run: node scripts/enrich-images.mjs
       - name: Re-rank catalogue
         run: node scripts/rank-catalogue.mjs
       - name: Prune expired events
