@@ -60,6 +60,17 @@ jobs:
           MAX_IMAGE_ENRICH: '1400'
           GALLERY_SIZE: '8'
         run: node scripts/enrich-images.mjs
+      - name: Enrich and review event images in deep quality
+        env:
+          MAX_EVENT_IMAGE_ENRICH: '90'
+        run: node scripts/enrich-event-images.mjs
+      - name: Preserve event source review report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deep-event-photo-audit
+          path: reports/event-image-discovery.json
+          retention-days: 30
       - name: Re-rank after maximum enrichment
         run: node scripts/rank-catalogue.mjs
       - name: Recover known-good licensed images before publication
