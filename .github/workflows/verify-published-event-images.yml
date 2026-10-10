@@ -1,0 +1,33 @@
+name: Verify published event images
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/data/events.json'
+      - 'scripts/verify-published-event-images.mjs'
+      - '.github/workflows/verify-published-event-images.yml'
+  schedule:
+    - cron: '51 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Confirm actual licensed images and attribution in production
+        run: node scripts/verify-published-event-images.mjs
+      - name: Retain event media live evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: published-event-image-evidence
+          path: reports/production-event-images.json
+          retention-days: 30
