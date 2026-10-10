@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   inspect-event-photos:
@@ -23,6 +23,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
@@ -52,3 +53,25 @@ jobs:
             reports/event-image-discovery.json
             src/data/event-media-review.json
           retention-days: 30
+      - name: Commit durable organiser-photo review candidates
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp src/data/event-media-review.json /tmp/tassienow-event-media-candidates.json
+          git config user.name "TassieNow Bot"
+          git config user.email "actions@users.noreply.github.com"
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            git reset --hard origin/main
+            node scripts/reapply-event-review.mjs /tmp/tassienow-event-media-candidates.json
+            if git diff --quiet -- src/data/event-media-review.json; then
+              echo "Review queue already includes all discovered candidates."
+              exit 0
+            fi
+            git add src/data/event-media-review.json
+            git commit -m "data: retain event photo permission research [skip ci]"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep "$((attempt * 2))"
+          done
+          echo "::error::Could not preserve organiser-photo candidates after four safe retries."
+          exit 1
