@@ -1,10 +1,12 @@
 import fs from 'node:fs/promises';
+import {permittedLicence} from './discover/lib/event-media.mjs';
 
 const FILE = new URL('../src/data/places.json', import.meta.url);
 const UA = 'TassieNow/1.2 (+https://tassienow.com)';
 const MAX_PER_RUN = Math.max(1, Math.min(2000, Number.parseInt(process.env.MAX_IMAGE_ENRICH || '90', 10) || 90));
 const GALLERY_SIZE = Math.max(1, Math.min(12, Number.parseInt(process.env.GALLERY_SIZE || '3', 10) || 3));
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+const stats={requests:0,failures:0,searchResults:0,identityRejected:0,licenceRejected:0,eligible:0,matchingPlaces:0,errorSamples:[]};
 const clean = (value = '') => String(value).replace(/<[^>]*>/g, ' ').replace(/&amp;/gi, '&').replace(/&quot;/gi, '"').replace(/&#39;|&apos;/gi, "'").replace(/\s+/g, ' ').trim();
 const GENERIC_IMAGE_TOKENS = new Set(['tasmania','tasmanian','the','park','walk','lookout','museum','gallery','falls','fall','beach','bay','mount','mountain','river','lake','cliffs','cliff','point','rock','reserve','trail','track','island','wildlife','nature']);
 const tokens = (value = '') => clean(value).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().split(/[^a-z0-9]+/).filter((token) => token.length >= 4 && !GENERIC_IMAGE_TOKENS.has(token));
@@ -36,7 +38,7 @@ function candidateScore(place, page, info) {
 function imageFromCandidate(place, page, info, score) {
   const meta = info.extmetadata || {};
   const license = clean(meta.LicenseShortName?.value || meta.UsageTerms?.value || '');
-  if (!license) return null;
+  if (!permittedLicence(license,meta.LicenseUrl?.value)) { stats.licenceRejected++; return null; }
   return {
     url: info.thumburl || info.url,
     alt: `${place.name}, Tasmania`,
@@ -61,21 +63,26 @@ async function queryCommons(place, searchText) {
   url.searchParams.set('prop', 'imageinfo');
   url.searchParams.set('iiprop', 'url|extmetadata');
   url.searchParams.set('iiurlwidth', '1400');
+  stats.requests++;
   try {
     const response = await fetch(url, { headers: { 'user-agent': UA, accept: 'application/json' }, signal: AbortSignal.timeout(12000) });
-    if (!response.ok) return [];
+    if (!response.ok) throw new Error('Wikimedia search HTTP '+response.status);
     const data = await response.json();
     const candidates = [];
-    for (const page of Object.values(data.query?.pages || {})) {
+    const pages=Object.values(data.query?.pages || {});
+    stats.searchResults+=pages.length;
+    for (const page of pages) {
       const info = page.imageinfo?.[0];
       if (!info) continue;
       const score = candidateScore(place, page, info);
-      if (score < 55) continue;
+      if (score < 55) { stats.identityRejected++; continue; }
       const image = imageFromCandidate(place, page, info, score);
-      if (image) candidates.push({ image, score });
+      if (image) { candidates.push({ image, score }); stats.eligible++; }
     }
     return candidates.sort((a, b) => b.score - a.score);
-  } catch {
+  } catch (error) {
+    stats.failures++;
+    if(stats.errorSamples.length<5)stats.errorSamples.push(String(error.message));
     return [];
   }
 }
@@ -192,6 +199,7 @@ let galleryAdded = 0;
 
 for (const place of targets) {
   const found = await searchImages(place);
+  if(found.length)stats.matchingPlaces++;
   const used = new Set();
   if (place.image && !place.image.isFallback) used.add(imageKey(place.image));
   for (const image of place.gallery || []) used.add(imageKey(image));
@@ -222,3 +230,9 @@ const realHeroes = publicPlaces.filter((place) => place.image && !place.image.is
 const galleries = publicPlaces.filter((place) => place.gallery?.length).length;
 console.log(`Image enrichment: revalidated heuristic media and rejected ${rejectedExisting} weak match(es); checked ${targets.length} incomplete listings (${foodQuota} food-priority slot(s)); upgraded ${heroUpgraded} hero image(s); added ${galleryAdded} gallery image(s).`);
 console.log(`Image coverage: real hero images ${realHeroes}/${publicPlaces.length}; multi-image galleries ${galleries}/${publicPlaces.length}. ${Math.max(0, incomplete.length - targets.length)} incomplete listing(s) remain for future passes.`);
+
+await fs.mkdir(new URL('../reports/',import.meta.url),{recursive:true});
+await fs.writeFile(new URL('../reports/place-image-discovery.json',import.meta.url),JSON.stringify({checkedAt:new Date().toISOString(),checked:targets.length,foodPriority:foodQuota,heroUpgraded,galleryAdded,...stats},null,2)+'\n');
+console.log('Place photo source diagnostics: '+JSON.stringify(stats));
+if(stats.requests>=10&&stats.failures>=Math.ceil(stats.requests*.75))throw Error('Wikimedia image source unhealthy: '+stats.failures+'/'+stats.requests+' queries failed; see place-image-discovery.json');
+if(!heroUpgraded&&!galleryAdded)console.warn('No eligible new place photographs in this pass; see research diagnostics, not an image publication success.');
