@@ -50964,6 +50964,73 @@
     "rankedAt": "2026-10-11"
   },
   {
+    "slug": "tessallated-pavement",
+    "name": "Tessallated Pavement",
+    "town": "Port Arthur",
+    "region": "Hobart & South",
+    "latitude": -43.0089189,
+    "longitude": 147.9325535,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Port Arthur.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/364253720",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/364253720",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-10",
+    "lastDetailsChecked": "2026-10-10",
+    "lastOsmDetailsChecked": "2026-10-10",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Tessellated-Pavement_Tasmania.jpg/1280px-Tessellated-Pavement_Tasmania.jpg",
+      "alt": "Tessellated Pavement rock formation on the Tasman Peninsula, Tasmania",
+      "attribution": "Felix Andrews (Floybix)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tessellated-Pavement_Tasmania.jpg",
+      "sourceMethod": "verified-curated",
+      "isFallback": false,
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Tessellated Pavement, Tasman Peninsula",
+        "listingSpelling": "Tessallated Pavement",
+        "evidence": "Source description explicitly identifies the same rock formation; author and CC BY-SA 3.0 verified on Commons",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Tessallated%20Pavement%20Port%20Arthur%20Tasmania"
+      }
+    ],
+    "qualityScore": 43,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-10"
+  },
+  {
     "slug": "the-courtyard",
     "name": "The Courtyard",
     "town": "Hobart",
@@ -120877,64 +120944,6 @@
     "rankedAt": "2026-10-11",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-10",
-    "lastWikidataLinkChecked": "2026-10-10"
-  },
-  {
-    "slug": "tessallated-pavement",
-    "name": "Tessallated Pavement",
-    "town": "Port Arthur",
-    "region": "Hobart & South",
-    "latitude": -43.0089189,
-    "longitude": 147.9325535,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Port Arthur.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/364253720",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/364253720",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-10",
-    "lastDetailsChecked": "2026-10-10",
-    "lastOsmDetailsChecked": "2026-10-10",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "Tessallated Pavement category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Tessallated%20Pavement%20Port%20Arthur%20Tasmania"
-      }
-    ],
-    "qualityScore": 25,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-11",
     "lastWikidataLinkChecked": "2026-10-10"
   },
   {
