@@ -18,6 +18,8 @@ on:
       - 'scripts/prune-expired-events.mjs'
       - 'scripts/rank-catalogue.mjs'
       - 'scripts/enrich-images.mjs'
+      - 'scripts/enrich-event-images.mjs'
+      - 'scripts/preserve-event-images.mjs'
       - 'scripts/enrich-wikidata-images.mjs'
       - 'scripts/sanitize-generated.mjs'
       - 'scripts/audit-links.mjs'
@@ -63,6 +65,8 @@ jobs:
         run: node scripts/reclassify-regions.mjs
       - name: Enrich official Parks Tasmania walks
         run: node scripts/discover/parks-tasmania.mjs
+      - name: Snapshot event image provenance before source refresh
+        run: cp src/data/events.json /tmp/tassienow-events-before-discovery.json
       - name: Discover official council events
         run: node scripts/discover/events.mjs
       - name: Discover tourism and ticket-marketplace events
@@ -71,6 +75,19 @@ jobs:
         run: node scripts/discover/verified-regional-events.mjs
       - name: Discover independent community and exhibition tickets
         run: node scripts/discover/independent-ticketebo.mjs
+      - name: Preserve previously licensed event imagery
+        run: node scripts/preserve-event-images.mjs /tmp/tassienow-events-before-discovery.json
+      - name: Enrich real event imagery and research organisers
+        env:
+          MAX_EVENT_IMAGE_ENRICH: '36'
+        run: node scripts/enrich-event-images.mjs
+      - name: Upload event photo review evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: event-photo-discovery
+          path: reports/event-image-discovery.json
+          retention-days: 30
       - name: Sanitize discovered events
         run: node scripts/sanitize-events.mjs
       - name: Enrich event-specific tickets prices and availability
