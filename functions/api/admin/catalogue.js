@@ -1,19 +1,11 @@
 import { requireAdmin, sameOrigin } from '../../_lib/auth.js';
 import { readCatalogue, writeCatalogue, slugify, hobartDate } from '../../_lib/github.js';
 import { cleanText, httpsUrl, jsonError } from '../../_lib/db.js';
+import { acceptAdminPhoto } from '../../_lib/photo-rights.js';
 
 function imageFrom(body, current) {
   if (!body.image_url) return current || { url: '/images/categories/discover.svg', alt: 'TassieNow category image', attribution: 'TassieNow', license: 'Site artwork', licenseUrl: null, sourceUrl: null, isFallback: true };
-  return {
-    url: httpsUrl(body.image_url),
-    alt: cleanText(body.image_alt || body.name, 180),
-    attribution: cleanText(body.image_attribution, 180) || 'Provided by site owner',
-    license: cleanText(body.image_license, 120) || 'Owner supplied',
-    licenseUrl: body.image_license_url ? httpsUrl(body.image_license_url, { optional: true }) : null,
-    sourceUrl: body.image_source_url ? httpsUrl(body.image_source_url, { optional: true }) : null,
-    isFallback: false,
-    sourceMethod: 'manual'
-  };
+  return acceptAdminPhoto(body, current, hobartDate());
 }
 
 function numeric(value, name) {
@@ -30,6 +22,7 @@ function categories(value) {
 
 function applyChanges(place, body) {
   const original = place.sourceType;
+  const before = structuredClone(place);
   if (body.name !== undefined) place.name = cleanText(body.name, 160);
   if (body.town !== undefined) place.town = cleanText(body.town, 120);
   if (body.region !== undefined) place.region = cleanText(body.region, 120);
@@ -41,9 +34,18 @@ function applyChanges(place, body) {
   if (body.visibility !== undefined) place.visibility = body.visibility === 'suppressed' ? 'suppressed' : 'public';
   if (body.featured !== undefined) place.featured = Boolean(body.featured);
   if (body.image_url) place.image = imageFrom(body, place.image);
-  place.originalSourceType = place.originalSourceType || original || 'unknown';
-  place.sourceType = 'manual';
-  place.managedManually = true;
+  // Image-only edits must not freeze imported contact/details data indefinitely.
+  // Existing automatic media retention preserves verified images by sourceType/sourceId.
+  const editable = ['name', 'town', 'region', 'latitude', 'longitude', 'categories',
+    'summary', 'website', 'visibility', 'featured'];
+  const listingChanged = editable.some((key) => JSON.stringify(place[key] ?? null) !== JSON.stringify(before[key] ?? null));
+  if (listingChanged || original === 'manual') {
+    place.originalSourceType = place.originalSourceType || original || 'unknown';
+    place.sourceType = 'manual';
+    place.managedManually = true;
+  } else if (place.image !== before.image && place.image?.sourceMethod === 'manual-reviewed') {
+    place.imageManagedManually = true;
+  }
   place.status = place.status || 'active';
   place.lastChecked = hobartDate();
   return place;
