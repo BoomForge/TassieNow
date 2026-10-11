@@ -105,6 +105,16 @@ export function eventImagePriority(image){
  return ({'event-photo':9,'official-artwork':8,'event-artwork':7,
   'historical-event':6,'performer-context':5,'contextual':3,'activity-illustrative':2})[image.mediaType]||8;
 }
+// A corrected file URL from the same authorised Commons source is an upgrade
+// even when its editorial media category has the same quality score.
+export function shouldUpgradeEventImage(existing,incoming){
+ if(!imageIsPublishable(incoming))return false;
+ const oldScore=eventImagePriority(existing),newScore=eventImagePriority(incoming);
+ if(newScore>oldScore)return true;
+ return newScore===oldScore && imageIsPublishable(existing) &&
+  existing.sourceMethod===incoming.sourceMethod &&
+  existing.sourceUrl===incoming.sourceUrl && existing.url!==incoming.url;
+}
 const norm=s=>String(s||'').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]/g,'');
 export function sameEvent(a,b){
   return a.slug===b.slug||
