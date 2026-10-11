@@ -1,0 +1,90 @@
+---
+import {googleMarketSearchUrl} from '../lib/google-market-photos.mjs';
+const {name,town,reviewUrl,placeId,latitude,longitude,apiKey} = Astro.props;
+const googleUrl=reviewUrl?.startsWith('https://')?reviewUrl:googleMarketSearchUrl(name,town);
+---
+<section class="market-visitor-photos section-card" data-market-visitor-photos
+  data-market-name={name} data-market-town={town}
+  data-market-place-id={placeId || ''} data-market-lat={latitude || ''}
+  data-market-lng={longitude || ''} aria-labelledby="market-visitor-photos-heading">
+  <div class="market-photo-heading">
+    <div>
+      <p class="section-kicker">Photographed by visitors</p>
+      <h2 id="market-visitor-photos-heading">Market photos & Google reviews</h2>
+    </div>
+    <a href={googleUrl} target="_blank" rel="noopener noreferrer">Browse photos on Google Maps ↗</a>
+  </div>
+  <p>See photos shared by visitors and read their reviews. These are Google Maps photos, separate from TassieNow's licensed gallery.</p>
+  {apiKey && (
+    <div class="market-photo-controls">
+      <button type="button" class="market-photo-button" data-show-market-photos>
+        Show live Google visitor photos
+      </button>
+      <p class="market-photo-status" data-market-photo-status role="status" aria-live="polite"></p>
+      <div class="market-photo-widget" data-market-photo-widget hidden></div>
+    </div>
+  )}
+  {!apiKey && <p class="market-photo-note">Visitor photos are available through the Google Maps link above.</p>}
+</section>
+<style>
+  .market-visitor-photos{display:grid;gap:.8rem}
+  .market-photo-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+  .market-photo-heading h2{font-size:clamp(1.4rem,3vw,2rem);line-height:1.15;margin:.25rem 0}
+  .market-photo-heading>a{font-size:.84rem;color:var(--brand);font-weight:800}
+  .market-visitor-photos>p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.5}
+  .market-photo-button{border:none;background:var(--brand);color:#fff;border-radius:.85rem;padding:.8rem 1.1rem;font-weight:800;cursor:pointer;min-height:44px}
+  .market-photo-button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+  .market-photo-button:disabled{opacity:.7;cursor:wait}
+  .market-photo-status{min-height:1.3rem;color:var(--muted);font-size:.83rem}
+  .market-photo-widget{max-width:100%;overflow:hidden}
+  .market-photo-widget gmp-place-details{display:block;width:100%;height:660px;max-width:560px;color-scheme:light}
+</style>
+<script>
+  import {chooseExactGoogleMarket} from '../lib/google-market-photos.mjs';
+  document.querySelectorAll('[data-market-visitor-photos]').forEach(section=>{
+    const button=section.querySelector('[data-show-market-photos]');
+    if(!button)return;
+    const status=section.querySelector('[data-market-photo-status]');
+    const output=section.querySelector('[data-market-photo-widget]');
+    button.addEventListener('click',async()=>{
+      button.disabled=true;
+      status.textContent='Checking the matching Google Maps market listing…';
+      try{
+        if(!window.google?.maps?.importLibrary)throw Error('Google Maps is not configured.');
+        const {Place}=await window.google.maps.importLibrary('places');
+        let id=section.dataset.marketPlaceId;
+        if(!id){
+          const listing={
+            name:section.dataset.marketName,town:section.dataset.marketTown,
+            latitude:Number(section.dataset.marketLat),
+            longitude:Number(section.dataset.marketLng)
+          };
+          const {places}=await Place.searchByText({
+            textQuery:listing.name+' '+listing.town+' Tasmania Australia',
+            fields:['id','displayName','formattedAddress','location'],
+            maxResultCount:5,region:'au'
+          });
+          id=chooseExactGoogleMarket(places,listing)?.id;
+        }
+        if(!id)throw Error('An exact Google Maps match could not be verified.');
+        const details=document.createElement('gmp-place-details');
+        const request=document.createElement('gmp-place-details-place-request');
+        request.setAttribute('place',id);
+        const config=document.createElement('gmp-place-content-config');
+        for(const name of ['gmp-place-media','gmp-place-reviews','gmp-place-attribution']){
+          const element=document.createElement(name);
+          if(name==='gmp-place-media')element.setAttribute('lightbox-preferred','');
+          config.appendChild(element);
+        }
+        details.append(request,config);
+        output.replaceChildren(details);
+        output.hidden=false;
+        status.textContent='Google visitor photos and reviews for this market.';
+        button.hidden=true;
+      }catch(error){
+        status.textContent='We could not confidently load this market’s Google photos. Use the Google Maps link above instead.';
+        button.disabled=false;
+      }
+    });
+  });
+</script>
