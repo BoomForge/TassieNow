@@ -3206,7 +3206,7 @@
     "bookingUrl": "https://farmgatemarket.com.au/?s={search_term_string}",
     "lastWikidataLinkChecked": "2026-10-10",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://farmgatemarket.com.au/"
     }
@@ -4391,8 +4391,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Painted-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/painted-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-11"
     },
     "walk": {
       "duration": null,
@@ -4420,10 +4421,9 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-11",
-      "url": "https://parks.tas.gov.au/Pages/Painted-Cliffs.aspx",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/painted-cliffs"
     }
   },
   {
@@ -5508,8 +5508,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-11"
     },
     "walk": {
       "duration": "5 minutes return , 300 metres, Grade 2",
@@ -5548,10 +5549,9 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-11",
-      "url": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout"
     }
   },
   {
@@ -11740,7 +11740,7 @@
       "checkedAt": "2026-10-11"
     },
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://wchczeehan.com.au/"
     }
@@ -12195,7 +12195,7 @@
     "openingHours": "",
     "phone": "0418684108President",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/"
     },
@@ -31853,7 +31853,7 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://www.richmondvillage.com.au/"
     },
@@ -32521,7 +32521,7 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://www.restauranttasman.com.au/"
     },
@@ -35572,7 +35572,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://davesnoodles.com.au/locations",
+        "url": "https://davesnoodles.com.au/about",
         "checkedAt": "2026-10-11"
       }
     },
@@ -35604,7 +35604,7 @@
     ],
     "schedule": {
       "summary": "03 6227 2888 Dave's Noodles, Channel Highway, Kingston TAS, Australia 11 am to 8:30 pm (7 days)",
-      "sourceUrl": "https://davesnoodles.com.au/locations",
+      "sourceUrl": "https://davesnoodles.com.au/about",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -36508,7 +36508,7 @@
     "detailSources": {
       "openingHours": {
         "type": "official-website",
-        "url": "https://anvers-chocolate.com.au/anvers-cafe/",
+        "url": "https://anvers-chocolate.com.au/contact/",
         "checkedAt": "2026-10-11"
       },
       "schedule": {
@@ -36579,10 +36579,9 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-11",
-      "url": "https://anvers-chocolate.com.au/",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://anvers-chocolate.com.au/"
     }
   },
   {
@@ -36853,7 +36852,7 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://lanigansvineyard.com.au/"
     },
@@ -40119,7 +40118,7 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://whiskandco.com.au/"
     },
@@ -45993,7 +45992,7 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://www.tasteofmalaysiahobart.com.au/"
     },
@@ -46305,9 +46304,10 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-11",
-      "url": "https://www.gordonrivercruises.com.au/"
+      "url": "https://www.gordonrivercruises.com.au/",
+      "error": "403 Forbidden"
     }
   },
   {
@@ -49325,7 +49325,7 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://allthai.com.au/"
     },
@@ -65458,7 +65458,7 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://www.rendezvousloungecafe.com.au/"
     },
@@ -86536,6 +86536,73 @@
       "method": "name-coordinate",
       "label": "Water Tower Hill",
       "distanceKm": 1.67,
+      "confidence": "medium",
+      "checkedAt": "2026-10-11"
+    }
+  },
+  {
+    "slug": "whaleback-lookout",
+    "name": "Whaleback Lookout",
+    "town": "Zeehan",
+    "region": "West Coast",
+    "latitude": -41.7214853,
+    "longitude": 145.2289397,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Zeehan.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/8515660128",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/8515660128",
+    "wikidata": "Q21965940",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-11",
+    "lastDetailsChecked": "2026-10-11",
+    "lastOsmDetailsChecked": "2026-10-11",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Whaleback Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Whaleback%20Lookout%20Zeehan%20Tasmania"
+      }
+    ],
+    "qualityScore": 33,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Whaleback Lookout",
+      "distanceKm": 0.76,
       "confidence": "medium",
       "checkedAt": "2026-10-11"
     }
@@ -110016,7 +110083,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-11"
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "lindsay-s-lookout",
@@ -110074,7 +110142,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-11"
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "lions-lookout",
@@ -110132,7 +110201,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-11"
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "little-penguin-viewing-area",
@@ -110190,7 +110260,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-11"
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "little-plains-lookout",
@@ -110248,7 +110319,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-11"
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "lost-falls-lookout",
@@ -110306,7 +110378,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-11"
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "mabel-bay-lookout",
@@ -110364,7 +110437,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-11"
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "maingon-bay-lookout",
@@ -110422,7 +110496,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-11"
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "manubread",
@@ -110495,7 +110570,8 @@
     ],
     "rankedAt": "2026-10-11",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "maraea-s-lookout",
@@ -110553,7 +110629,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-11"
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "marion-s-lookout",
@@ -110611,7 +110688,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-11"
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "mayfield-bay-lookout",
@@ -114837,64 +114915,6 @@
     "lastWikidataLinkChecked": "2026-10-11"
   },
   {
-    "slug": "whaleback-lookout",
-    "name": "Whaleback Lookout",
-    "town": "Zeehan",
-    "region": "West Coast",
-    "latitude": -41.7214853,
-    "longitude": 145.2289397,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Zeehan.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/8515660128",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/8515660128",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-11",
-    "lastDetailsChecked": "2026-10-11",
-    "lastOsmDetailsChecked": "2026-10-11",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Whaleback Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Whaleback%20Lookout%20Zeehan%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-11"
-  },
-  {
     "slug": "white-spur-lookout",
     "name": "White Spur Lookout",
     "town": "Strathgordon",
@@ -114950,7 +114970,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-11"
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "whyte-hills-lookout",
@@ -115008,7 +115029,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-11"
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "wilf-campbell-memorial-lookout",
@@ -115072,7 +115094,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-11"
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "windermere-lake-viewpoint",
@@ -115130,7 +115153,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-11"
+    "rankedAt": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-11"
   },
   {
     "slug": "wombat-pool-lookout",
