@@ -1,1 +1,99 @@
-{}
+{
+  "ross-village-market": {
+    "name": "Ross Village Market",
+    "town": "Ross",
+    "candidates": [
+      {
+        "id": "openverse:7f43972d-ca53-473f-ac7a-a6b0278db3cb",
+        "url": "https://live.staticflickr.com/7012/6769255185_602ab48697_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/37804160@N00/6769255185",
+        "discoveryPage": "https://api.openverse.org/v1/images/7f43972d-ca53-473f-ac7a-a6b0278db3cb/",
+        "title": "Ross Village Market",
+        "credit": "SqueakyMarmot",
+        "licence": "BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 768,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Exact listing and town in source title",
+        "observedAt": "2026-10-11T04:02:30.077Z"
+      }
+    ]
+  },
+  "drunken-admiral": {
+    "name": "Drunken Admiral",
+    "town": "Hobart",
+    "candidates": [
+      {
+        "id": "openverse:8dd77566-e637-43ae-af0d-dd8be7a061bd",
+        "url": "https://live.staticflickr.com/755/23406784771_40e323743c_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/7281432@N05/23406784771",
+        "discoveryPage": "https://api.openverse.org/v1/images/8dd77566-e637-43ae-af0d-dd8be7a061bd/",
+        "title": "The Drunken Admiral Seafarers Restaurant",
+        "credit": "VirtualWolf",
+        "licence": "BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 674,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Place and town in indexed metadata",
+        "observedAt": "2026-10-11T04:02:30.077Z"
+      },
+      {
+        "id": "openverse:0f9676a8-1624-41ce-9914-63280fc15800",
+        "url": "https://live.staticflickr.com/711/22862122953_a407fde80b_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/7281432@N05/22862122953",
+        "discoveryPage": "https://api.openverse.org/v1/images/0f9676a8-1624-41ce-9914-63280fc15800/",
+        "title": "Drunken Admiral entrance",
+        "credit": "VirtualWolf",
+        "licence": "BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 683,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Place and town in indexed metadata",
+        "observedAt": "2026-10-11T04:02:30.077Z"
+      },
+      {
+        "id": "openverse:8fcbec99-88c0-430b-a25c-1c85c8375d9e",
+        "url": "https://live.staticflickr.com/7166/6526371841_34562005c4_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/96763131@N00/6526371841",
+        "discoveryPage": "https://api.openverse.org/v1/images/8fcbec99-88c0-430b-a25c-1c85c8375d9e/",
+        "title": "Dinner with Rick and Mom at The Drunken Admiral",
+        "credit": "wharman",
+        "licence": "BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 768,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Place and town in indexed metadata",
+        "observedAt": "2026-10-11T04:02:30.077Z"
+      },
+      {
+        "id": "openverse:7599063b-9393-4343-b009-ea66cdb8f7c6",
+        "url": "https://live.staticflickr.com/7034/6526370307_79c5b9c80c_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/96763131@N00/6526370307",
+        "discoveryPage": "https://api.openverse.org/v1/images/7599063b-9393-4343-b009-ea66cdb8f7c6/",
+        "title": "The Drunken Admiral",
+        "credit": "wharman",
+        "licence": "BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 768,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Place and town in indexed metadata",
+        "observedAt": "2026-10-11T04:02:30.077Z"
+      }
+    ]
+  }
+}
