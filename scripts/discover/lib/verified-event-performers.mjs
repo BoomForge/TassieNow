@@ -5,6 +5,13 @@ const normalized=s=>String(s||'').normalize('NFKD').toLowerCase()
  .replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
 export const verifiedPerformers=[
  {
+  name:'Geraldine Hickey',year:2024,location:'the 2024 Edinburgh Festival Fringe',
+  url:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Geraldine_Hickey_at_the_2024_Edinburgh_Festival_Fringe.jpg',
+  sourceUrl:'https://commons.wikimedia.org/wiki/File:Geraldine_Hickey_at_the_2024_Edinburgh_Festival_Fringe.jpg',
+  credit:'Kevin Payravi, Wikimedia Commons',license:'CC BY-SA 4.0',
+  licenseUrl:'https://creativecommons.org/licenses/by-sa/4.0/'
+ },
+ {
   name:'The Wiggles',year:2023,location:'a 2023 concert',
   url:'https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/The_Wiggles_performing_live_in_concert_2023.jpg/1280px-The_Wiggles_performing_live_in_concert_2023.jpg',
   sourceUrl:'https://commons.wikimedia.org/wiki/File:The_Wiggles_performing_live_in_concert_2023.jpg',
