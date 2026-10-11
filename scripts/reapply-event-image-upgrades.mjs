@@ -9,7 +9,10 @@ for(const e of current){
  const old=before.find(p=>sameEvent(p,e)),newer=after.find(p=>sameEvent(p,e));
  if(!newer||!imageIsPublishable(newer.image))continue;
  if(old&&imageIsPublishable(old.image)&&old.image.url===newer.image.url)continue;
- if(eventImagePriority(e.image)>=eventImagePriority(newer.image)){skipped++;continue;}
+ const correctedSameSource=eventImagePriority(e.image)===eventImagePriority(newer.image) &&
+  imageIsPublishable(e.image) && e.image.sourceMethod===newer.image.sourceMethod &&
+  e.image.sourceUrl===newer.image.sourceUrl && e.image.url!==newer.image.url;
+ if(!correctedSameSource && eventImagePriority(e.image)>=eventImagePriority(newer.image)){skipped++;continue;}
  e.image=structuredClone(newer.image);added++;
 }
 if(added)await fs.writeFile(file,JSON.stringify(current,null,2)+'\n');
