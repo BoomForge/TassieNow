@@ -2,6 +2,7 @@ import { requireAdmin, sameOrigin } from '../../_lib/auth.js';
 import { readCatalogue, writeCatalogue, slugify, hobartDate } from '../../_lib/github.js';
 import { cleanText, httpsUrl, jsonError } from '../../_lib/db.js';
 import { acceptAdminPhoto } from '../../_lib/photo-rights.js';
+import { photoSourceLink } from '../../_lib/photo-sources.js';
 
 function imageFrom(body, current) {
   if (!body.image_url) return current || { url: '/images/categories/discover.svg', alt: 'TassieNow category image', attribution: 'TassieNow', license: 'Site artwork', licenseUrl: null, sourceUrl: null, isFallback: true };
@@ -56,7 +57,7 @@ export async function onRequestGet(context) {
   const auth = await requireAdmin(context); if (auth) return auth;
   try {
     const { places } = await readCatalogue(context);
-    return Response.json({ places: places.map((p) => ({ slug: p.slug, name: p.name, town: p.town, region: p.region, latitude: p.latitude, longitude: p.longitude, categories: p.categories, summary: p.summary, website: p.website, visibility: p.visibility || 'public', featured: Boolean(p.featured), qualityScore: p.qualityScore || 0, sourceType: p.sourceType, image: p.image })) }, { headers: { 'Cache-Control': 'no-store' } });
+    return Response.json({ places: places.map((p) => ({ slug: p.slug, name: p.name, town: p.town, region: p.region, latitude: p.latitude, longitude: p.longitude, categories: p.categories, summary: p.summary, website: p.website, visibility: p.visibility || 'public', featured: Boolean(p.featured), qualityScore: p.qualityScore || 0, sourceType: p.sourceType, image: p.image, photoLinks: p.photoLinks || [] })) }, { headers: { 'Cache-Control': 'no-store' } });
   } catch (error) { return jsonError(error, 503); }
 }
 
@@ -66,6 +67,25 @@ export async function onRequestPost(context) {
   try {
     const body = await context.request.json();
     const { sha, places } = await readCatalogue(context);
+    if (body.action === 'link-photo-source' || body.action === 'remove-photo-source') {
+      const place = places.find((p) => p.slug === body.slug);
+      if (!place) return Response.json({ error: 'Listing not found' }, { status: 404 });
+      const existing = Array.isArray(place.photoLinks) ? place.photoLinks : [];
+      if (body.action === 'link-photo-source') {
+        const link = photoSourceLink(body, new Date().toISOString());
+        if (existing.some((item) => item.sourceUrl === link.sourceUrl))
+          return Response.json({ error: 'This original photo source is already linked.' }, { status: 409 });
+        if (existing.length >= 12) return Response.json({ error: 'Maximum 12 curated source links per listing.' }, { status: 400 });
+        place.photoLinks = [...existing, link];
+      } else {
+        const sourceUrl = String(body.photo_link_url || '');
+        if (!existing.some((item) => item.sourceUrl === sourceUrl))
+          return Response.json({ error: 'Photo source link not found.' }, { status: 404 });
+        place.photoLinks = existing.filter((item) => item.sourceUrl !== sourceUrl);
+      }
+      await writeCatalogue(context, places, sha, `admin: ${body.action} for ${place.name}`);
+      return Response.json({ ok: true, slug: place.slug, sourceLinked: true, heroPhotoChanged: false });
+    }
     if (body.action === 'update') {
       const place = places.find((p) => p.slug === body.slug);
       if (!place) return Response.json({ error: 'Listing not found' }, { status: 404 });
