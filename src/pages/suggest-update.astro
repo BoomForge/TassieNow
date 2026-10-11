@@ -15,7 +15,22 @@ const turnstileKey=import.meta.env.PUBLIC_TURNSTILE_SITE_KEY||'';
    <label>Your name <input name="requester_name" required maxlength="100" autocomplete="name" /></label>
    <label>Your email <input name="requester_email" type="email" required maxlength="180" autocomplete="email" /></label>
    <label>Your relationship to this listing <select name="relationship" required><option value="visitor">Visitor / community member</option><option value="owner">Business owner</option><option value="employee">Staff member</option><option value="organiser">Event / venue organiser</option></select></label>
-   <label>What needs changing? <select name="field" required><option value="opening-hours">Opening hours</option><option value="website">Website</option><option value="phone">Phone</option><option value="email">Contact email</option><option value="address">Address</option><option value="location">Map location</option><option value="description">Listing details</option><option value="image">Images or attribution</option><option value="closure">Closure or moved location</option><option value="other">Other correction</option></select></label>
+   <label>What needs changing? <select name="field" required><option value="opening-hours">Opening hours</option><option value="website">Website</option><option value="phone">Phone</option><option value="email">Contact email</option><option value="address">Address</option><option value="location">Map location</option><option value="description">Listing details</option><option value="image">Images or attribution</option><option value="photo-submission">Submit a photo or photo source</option><option value="closure">Closure or moved location</option><option value="other">Other correction</option></select></label>
+   <fieldset id="photo-details" hidden>
+    <legend>Photograph source and usage rights</legend>
+    <p>Provide a link to the original photo. We only display images after verifying the exact location, creator, and permission. Google reviews and social media photos cannot be copied just because they are publicly visible.</p>
+    <label>Photographer or image owner <input name="photo_creator" maxlength="180" placeholder="Photographer’s credited name, if known" /></label>
+    <label>What rights does this photo have?
+      <select name="photo_rights">
+       <option value="needs-review">Not sure — research lead only</option>
+       <option value="owner-authorised">I own the image and permit TassieNow to display it</option>
+       <option value="open-license">It has an open licence (CC BY, CC BY-SA or CC0)</option>
+       <option value="written-permission">I have the photographer's written permission</option>
+      </select>
+    </label>
+    <label id="photo-permission-label" hidden><input type="checkbox" name="photo_permission" value="yes" /> I confirm I am the copyright holder and grant TassieNow a non-exclusive, royalty-free right to display this photograph on its website, with my requested credit.</label>
+    <p>Source, identity and rights are still checked before any image is published.</p>
+   </fieldset>
    <label>Correct information <textarea name="suggested_value" required rows="5" minlength="3" maxlength="1500" placeholder="Provide the correction, including days/hours or new details if applicable."></textarea></label>
    <label>Reason or context (optional) <textarea name="reason" rows="3" maxlength="1000"></textarea></label>
    <label>Official evidence URL (optional) <input name="source_url" type="url" placeholder="https://" /></label>
@@ -35,11 +50,35 @@ const turnstileKey=import.meta.env.PUBLIC_TURNSTILE_SITE_KEY||'';
   const field=params.get('field')||'';
   form.elements.namedItem('place_slug').value=slug;
   form.elements.namedItem('place_name').value=name;
-  if(field==='image'){
-    form.elements.namedItem('field').value='image';
-    document.querySelector('#correction-intro').textContent='For '+(name||'this market')+': provide a photo source URL, photographer credit, and explicit permission for TassieNow to publish the image on its website. A reviewer will check the rights before publication.';
+  if(['image','photo-submission'].includes(field))
+    form.elements.namedItem('field').value=field;
+  const details=document.querySelector('#photo-details');
+  const rights=form.elements.namedItem('photo_rights');
+  const permission=form.elements.namedItem('photo_permission');
+  const creator=form.elements.namedItem('photo_creator');
+  const source=form.elements.namedItem('source_url');
+  const fieldSelect=form.elements.namedItem('field');
+  const intro=document.querySelector('#correction-intro');
+  const sourceLabel=source.closest('label');
+  const ordinarySourceLabel=sourceLabel.firstChild.textContent;
+  function updatePhotoMode(){
+    const photo=fieldSelect.value==='photo-submission';
+    details.hidden=!photo;
+    details.querySelectorAll('input,select').forEach(control=>control.disabled=!photo);
+    source.required=photo;
+    creator.required=photo&&rights.value!=='needs-review';
+    const owner=photo&&rights.value==='owner-authorised';
+    document.querySelector('#photo-permission-label').hidden=!owner;
+    permission.required=owner;
+    if(!owner)permission.checked=false;
+    sourceLabel.firstChild.textContent=photo?'Original photo page URL (required) ':'Official evidence URL (optional) ';
+    intro.textContent=photo?'Help replace the generic artwork for '+(name||'this listing')+'. Link the original photograph and tell us who owns it. Suggestions are reviewed before publishing.':
+      slug?'You are suggesting an update to '+(name||slug)+'. Your change will not appear publicly until reviewed.':
+      'For the most accurate routing, start from the place’s detail page.';
   }
-  if(slug)document.querySelector('#correction-intro').textContent='You are suggesting an update to '+(name||slug)+'. Your change will not appear publicly until reviewed.';
+  fieldSelect.addEventListener('change',updatePhotoMode);
+  rights.addEventListener('change',updatePhotoMode);
+  updatePhotoMode();
   form.addEventListener('submit',async e=>{
     e.preventDefault();
     if(!slug){status.textContent='Please open the place listing and use its Suggest an update link.';return;}
@@ -53,11 +92,12 @@ const turnstileKey=import.meta.env.PUBLIC_TURNSTILE_SITE_KEY||'';
       form.reset();window.turnstile?.reset();
       form.elements.namedItem('place_slug').value=slug;
       form.elements.namedItem('place_name').value=name;
+      updatePhotoMode();
     }catch(error){status.textContent=error.message||'Could not send correction. Please try again.';window.turnstile?.reset();}
     finally{button.disabled=false;}
   });
  </script>
  <style>
-  .correction-page{max-width:780px}.correction-page h1{font-size:clamp(2.3rem,6vw,4rem);line-height:1.1}.correction-page form{display:grid;gap:1rem;margin:2rem 0}.correction-page label{display:grid;gap:.4rem;font-weight:700}.correction-page :is(input,select,textarea){max-width:100%;width:100%;padding:.8rem;border:1px solid #b5c7c3;border-radius:.6rem;background:white;color:var(--ink);font:inherit}.correction-page textarea{resize:vertical}.correction-page .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}.correction-page button{justify-self:start}.correction-page p{overflow-wrap:anywhere}
+  .correction-page{max-width:780px}.correction-page h1{font-size:clamp(2.3rem,6vw,4rem);line-height:1.1}.correction-page form{display:grid;gap:1rem;margin:2rem 0}.correction-page fieldset{border:1px solid #b5c7c3;border-radius:.7rem;padding:1rem;display:grid;gap:.8rem}.correction-page fieldset[hidden]{display:none}.correction-page fieldset p{font-weight:400;margin:.3rem 0}.correction-page fieldset legend{font-weight:800}.correction-page label:has(input[type=checkbox]){display:flex;gap:.7rem;align-items:start}.correction-page input[type=checkbox]{width:auto;flex-shrink:0;margin-top:.35rem}.correction-page label{display:grid;gap:.4rem;font-weight:700}.correction-page :is(input,select,textarea){max-width:100%;width:100%;padding:.8rem;border:1px solid #b5c7c3;border-radius:.6rem;background:white;color:var(--ink);font:inherit}.correction-page textarea{resize:vertical}.correction-page .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}.correction-page button{justify-self:start}.correction-page p{overflow-wrap:anywhere}
  </style>
 </BaseLayout>
