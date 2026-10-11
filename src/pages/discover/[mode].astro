@@ -1,4 +1,5 @@
 ---
+import {eventDisplayImage,eventDisplayAlt} from '../../lib/event-posters.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
@@ -263,7 +264,7 @@ const siblingModes = [
           {featuredItems.map((item, index) => (
             <article class:list={['discover-feature-card', index === 0 && 'large']}>
               <a href={`${isEventItem(item) ? '/event/' : '/place/'}${item.slug}/`}>
-                <img src={item.image?.url || config.fallback} alt={item.image?.alt || item.name} loading={index < 2 ? 'eager' : 'lazy'} />
+                <img src={isEventItem(item) ? eventDisplayImage(item) : (item.image?.url || config.fallback)} alt={isEventItem(item) ? eventDisplayAlt(item) : (item.image?.alt || item.name)} loading={index < 2 ? 'eager' : 'lazy'} />
                 <span class="discover-shade"></span>
                 <span class="discover-card-badge">{isEventItem(item) ? ({'historical-event':'Previous edition','contextual':'Venue image','performer-context':'Performer photo','activity-illustrative':'Illustrative photo','event-artwork':'Event artwork','official-artwork':'Event artwork'}[item.image?.mediaType] || 'Event') : item.categories?.[0] || 'Discover'}</span>
                 <span class="discover-feature-copy">
@@ -308,7 +309,7 @@ const siblingModes = [
             data-categories={(item.categories || []).join('|').toLowerCase()}
           >
             <a class="card-image-link" href={`${isEventItem(item) ? '/event/' : '/place/'}${item.slug}/`}>
-              <img class="card-image" src={item.image?.url || config.fallback} alt={item.image?.alt || item.name} loading="lazy" />
+              <img class="card-image" src={isEventItem(item) ? eventDisplayImage(item) : (item.image?.url || config.fallback)} alt={isEventItem(item) ? eventDisplayAlt(item) : (item.image?.alt || item.name)} loading="lazy" />
               <span class="image-badge">{isEventItem(item) ? ({'historical-event':'Previous edition','contextual':'Venue image','performer-context':'Performer photo','activity-illustrative':'Illustrative photo','event-artwork':'Event artwork','official-artwork':'Event artwork'}[item.image?.mediaType] || 'Event') : item.categories?.[0] || 'Discover'}</span>
             </a>
             <div class="card-body">

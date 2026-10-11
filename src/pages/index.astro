@@ -1,4 +1,5 @@
 ---
+import {eventDisplayImage,eventDisplayAlt} from '../lib/event-posters.mjs';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AdSlot from '../components/AdSlot.astro';
 import places from '../data/places.json';
@@ -193,11 +194,12 @@ const formatEventDate = (startDate, endDate) => {
             <article class="event-card">
               <a class="event-card-image" href={`/event/${event.slug}/`}>
                 <img
-                  src={event.image?.url || '/images/categories/events.svg'}
-                  alt={event.image?.alt || `${event.name}, Tasmania`}
+                  src={eventDisplayImage(event)}
+                  alt={eventDisplayAlt(event)}
                   loading="lazy"
                   decoding="async"
                 />
+                {event.image?.isFallback && <span class="event-photo-label">Original event artwork</span>}
                 {event.image?.mediaType === 'historical-event' && <span class="event-photo-label">Previous edition</span>}
                 {event.image?.mediaType === 'contextual' && <span class="event-photo-label">Venue image</span>}
                 {event.image?.mediaType === 'performer-context' && <span class="event-photo-label">Performer photo</span>}
