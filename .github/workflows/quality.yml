@@ -61,6 +61,9 @@ jobs:
           node --check scripts/discover/lib/verified-event-history.mjs
           node --check scripts/discover/lib/verified-event-activities.mjs
           node --check scripts/enrich-images.mjs
+          node --check scripts/report-photo-recovery-goal.mjs
+          node --check scripts/enrich-geo-photos.mjs
+          node --check scripts/discover/lib/geotagged-photo-matches.mjs
           node --check scripts/research-openverse-photos.mjs
           node --check scripts/reapply-place-photo-review.mjs
           node --check scripts/discover/lib/openverse-photo-candidates.mjs
