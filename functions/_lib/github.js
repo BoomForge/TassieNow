@@ -50,6 +50,24 @@ export async function readDiscovery(context) {
   return { candidates, report };
 }
 
+// Current GitHub research queue is fetched only for authenticated admin requests.
+// A candidate is a lead, not a licensed or published image.
+export async function readPhotoResearch(context) {
+  const path = 'src/data/place-media-review.json';
+  const data = await github(context, `/contents/${path}?ref=main`);
+  const blob = data.content ? data : await github(context, `/git/blobs/${data.sha}`);
+  return { sha: data.sha, queue: JSON.parse(base64ToText(blob.content)) };
+}
+
+export async function writePhotoResearch(context, queue, sha) {
+  const path = 'src/data/place-media-review.json';
+  const content = bytesToBase64(new TextEncoder().encode(JSON.stringify(queue, null, 2) + '\n'));
+  return github(context, `/contents/${path}`, {
+    method: 'PUT',
+    body: JSON.stringify({ message: 'admin: review photo research leads', content, sha, branch: 'main' })
+  });
+}
+
 export async function writeCatalogue(context, places, sha, message) {
   const content = bytesToBase64(new TextEncoder().encode(`${JSON.stringify(places, null, 2)}\n`));
   return github(context, `/contents/${CATALOGUE_PATH}`, {

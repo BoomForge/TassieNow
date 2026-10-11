@@ -1,6 +1,46 @@
 // Manually source-verified Commons images for listings missed by text discovery.
 // Keep this intentionally small and evidence-led, not a generic imagery fallback.
 export const verifiedPhotoPicks=[{
+  slug:'evandale-sunday-market',
+  name:'Evandale Sunday Market',
+  image:{
+    url:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Rickshaws_-_evandale_-_tasmania-.JPG/1280px-Rickshaws_-_evandale_-_tasmania-.JPG',
+    alt:'Colourful rickshaw rides photographed at Evandale Markets in January 2009; historical market activity',
+    attribution:'Peripitus',
+    license:'CC BY-SA 3.0',
+    licenseUrl:'https://creativecommons.org/licenses/by-sa/3.0/',
+    sourceUrl:'https://commons.wikimedia.org/wiki/File:Rickshaws_-_evandale_-_tasmania-.JPG',
+    sourceMethod:'verified-curated',
+    isFallback:false,
+    matchEvidence:{
+      verified:true,
+      subject:'Evandale Markets, Evandale, Tasmania (historic rickshaw rides)',
+      evidence:'Original Commons page expressly identifies rickshaws at the Evandale Markets, South of Launceston. Original photographer Peripitus released image under CC BY-SA 3.0; historical January 2009 activity, not a current full market panorama.',
+      checkedAt:'2026-10-11',
+      photographedYear:2009
+    }
+  }
+},{
+  slug:'drunken-admiral',
+  name:'Drunken Admiral',
+  image:{
+    url:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/17-19_Hunter_Street_Hobart_20171120-110.jpg/1280px-17-19_Hunter_Street_Hobart_20171120-110.jpg',
+    alt:'Exterior of the Drunken Admiral restaurant at 17–19 Hunter Street, Hobart, photographed in November 2017',
+    attribution:'Gary Houston',
+    license:'CC0 1.0',
+    licenseUrl:'https://creativecommons.org/publicdomain/zero/1.0/',
+    sourceUrl:'https://commons.wikimedia.org/wiki/File:17-19_Hunter_Street_Hobart_20171120-110.jpg',
+    sourceMethod:'verified-curated',
+    isFallback:false,
+    matchEvidence:{
+      verified:true,
+      subject:'Drunken Admiral restaurant, 17–19 Hunter Street, Hobart',
+      evidence:'Original Commons image visibly shows Drunken Admiral restaurant signage; photographer Gary Houston personally dedicated this 20 November 2017 photograph as CC0 1.0. Venue coordinates match the catalogue.',
+      checkedAt:'2026-10-11',
+      photographedYear:2017
+    }
+  }
+},{
   slug:'tessallated-pavement',
   name:'Tessallated Pavement',
   image:{

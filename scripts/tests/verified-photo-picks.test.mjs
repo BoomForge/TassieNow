@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {applyVerifiedPhotoPicks,verifiedPhotoPicks} from '../discover/lib/verified-photo-picks.mjs';
 import {permittedLicence} from '../discover/lib/event-media.mjs';
 test('curated photo has source, attributable commercial-use licence, and identity evidence',()=>{
- const image=verifiedPhotoPicks[0].image;
+ const image=verifiedPhotoPicks.find(item=>item.slug==='tessallated-pavement').image;
  assert.ok(image.matchEvidence.verified);
  assert.ok(image.sourceUrl.includes('Tessellated-Pavement_Tasmania'));
  assert.equal(permittedLicence(image.license,image.licenseUrl),true);
@@ -22,4 +22,29 @@ test('never overwrite a verified or manually approved photo',()=>{
  const place={slug:'tessallated-pavement',name:'Tessallated Pavement',status:'active',image:photo};
  assert.equal(applyVerifiedPhotoPicks([place]),0);
  assert.equal(place.image,photo);
+});
+
+test('verified CC0 photograph shows the exact Drunken Admiral restaurant',()=>{
+ const pick=verifiedPhotoPicks.find(item=>item.slug==='drunken-admiral');
+ assert.ok(pick);
+ assert.equal(pick.name,'Drunken Admiral');
+ assert.equal(pick.image.attribution,'Gary Houston');
+ assert.equal(pick.image.license,'CC0 1.0');
+ assert.equal(pick.image.matchEvidence.verified,true);
+ assert.equal(permittedLicence(pick.image.license,pick.image.licenseUrl),true);
+ const missing={slug:'drunken-admiral',name:'Drunken Admiral',status:'active',image:{isFallback:true}};
+ assert.equal(applyVerifiedPhotoPicks([missing]),1);
+ assert.equal(missing.image.sourceUrl,pick.image.sourceUrl);
+});
+
+test('historic Evandale Markets rickshaw photo is explicitly licensed and carefully described',()=>{
+ const pick=verifiedPhotoPicks.find(item=>item.slug==='evandale-sunday-market');
+ assert.equal(pick.name,'Evandale Sunday Market');
+ assert.equal(pick.image.attribution,'Peripitus');
+ assert.equal(pick.image.license,'CC BY-SA 3.0');
+ assert.match(pick.image.alt,/2009/);
+ assert.match(pick.image.matchEvidence.evidence,/Evandale Markets/);
+ assert.equal(permittedLicence(pick.image.license,pick.image.licenseUrl),true);
+ const place={slug:pick.slug,name:pick.name,status:'active',image:{isFallback:true}};
+ assert.equal(applyVerifiedPhotoPicks([place]),1);
 });
