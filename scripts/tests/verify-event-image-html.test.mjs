@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {heroImageMatches} from '../discover/lib/verify-event-image-html.mjs';
+import {heroImageMatches,visibleCaptionMatches} from '../discover/lib/verify-event-image-html.mjs';
 const photo='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Weltklasse_Z%C3%BCrich.jpg/1280px-Weltklasse_Z%C3%BCrich.jpg';
 const page='https://tassienow.com/event/delta-goodrem/';
 test('percent-encoded Unicode source URL is verified as published',()=>{
@@ -18,4 +18,15 @@ test('credit in HTML is not evidence that the real hero image was published',()=
 });
 test('a missing image element is not counted as published',()=>{
   assert.deepEqual(heroImageMatches('<span>Peter Arnold</span>',photo,page),{figure:false,photograph:false});
+});
+
+test('Astro-escaped apostrophe passes the required caption disclosure',()=>{
+ const caption="Illustrative photo: birdwatchers in New York's Central Park. This does not depict the advertised event in Tasmania.";
+ const html='<figcaption><span>Illustrative photo: birdwatchers in New York&#39;s Central Park. This does not depict the advertised event in Tasmania.</span> Image: Photographer</figcaption>';
+ assert.equal(visibleCaptionMatches(html,caption),true);
+});
+test('missing or unrelated caption must still fail publication verification',()=>{
+ const caption='Venue photo, not this event';
+ assert.equal(visibleCaptionMatches('<figcaption>Wrong photo</figcaption>',caption),false);
+ assert.equal(visibleCaptionMatches('<p>Venue photo, not this event</p>',caption),false);
 });
