@@ -31,7 +31,7 @@ export async function onRequestPost(context) {
       const consent=body.photo_permission==='yes';
       if(!source||!PHOTO_RIGHTS.has(rights)||
          (rights!=='needs-review'&&!creator)||
-         (rights==='owner-authorised'&&(!consent||!['owner','employee','organiser'].includes(relationship)))){
+         (rights==='owner-authorised'&&!consent)){
         return Response.json({error:'Photo submissions require an original HTTPS source, creator information where known, and explicit copyright-holder consent for owner-authorised use.'},{status:400});
       }
       const rightsEvidence='Photo source rights (self-declared, independently unverified): '+rights+
