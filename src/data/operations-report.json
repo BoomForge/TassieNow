@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T04:02:31.257Z",
+  "generatedAt": "2026-10-11T05:31:15.277Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
@@ -7,8 +7,8 @@
       "status": "ok",
       "lastScheduled": "2026-10-05T23:10:20Z",
       "lastResult": "pending",
-      "lastRunAt": "2026-10-11T04:02:22Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38110307780"
+      "lastRunAt": "2026-10-11T05:28:28Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38114891094"
     },
     {
       "name": "events.yml",
@@ -22,57 +22,65 @@
       "name": "catalogue-quality.yml",
       "status": "scheduled-run-failed",
       "lastScheduled": "2026-10-10T22:01:10Z",
-      "lastResult": "in_progress",
-      "lastRunAt": "2026-10-11T04:02:22Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38110307721"
+      "lastResult": "pending",
+      "lastRunAt": "2026-10-11T05:28:28Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38114891109"
     },
     {
       "name": "images.yml",
       "status": "ok",
       "lastScheduled": "2026-10-10T23:40:08Z",
-      "lastResult": "in_progress",
-      "lastRunAt": "2026-10-11T04:02:22Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38110307758"
+      "lastResult": "success",
+      "lastRunAt": "2026-10-11T05:06:11Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38113704740"
+    },
+    {
+      "name": "auto-photo-sources.yml",
+      "status": "awaiting-first-scheduled-run",
+      "lastScheduled": null,
+      "lastResult": "success",
+      "lastRunAt": "2026-10-11T05:28:28Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38114891088"
     },
     {
       "name": "place-photo-research.yml",
       "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
-      "lastResult": "in_progress",
-      "lastRunAt": "2026-10-11T04:02:22Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38110307719"
+      "lastResult": "success",
+      "lastRunAt": "2026-10-11T04:28:17Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38111680273"
     },
     {
       "name": "verify-published-photos.yml",
       "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T03:50:02Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38109644635"
+      "lastRunAt": "2026-10-11T05:13:40Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38114105608"
     },
     {
       "name": "verify-published-event-images.yml",
       "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T03:50:02Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38109644619"
+      "lastRunAt": "2026-10-11T05:28:16Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38114881550"
     },
     {
       "name": "verify-event-artwork.yml",
       "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T03:47:55Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38109536750"
+      "lastRunAt": "2026-10-11T05:13:43Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38114108313"
     },
     {
       "name": "verify-event-image-files.yml",
       "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T03:47:56Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38109538141"
+      "lastRunAt": "2026-10-11T05:13:44Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38114109562"
     },
     {
       "name": "verify-market-photo-access.yml",
@@ -95,8 +103,8 @@
       "status": "ok",
       "lastScheduled": "2026-10-10T22:39:29Z",
       "lastResult": "in_progress",
-      "lastRunAt": "2026-10-11T04:02:22Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38110307783"
+      "lastRunAt": "2026-10-11T05:31:09Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38115042915"
     },
     {
       "name": "automation-health.yml",
@@ -111,8 +119,8 @@
       "status": "ok",
       "lastScheduled": "2026-10-10T23:48:54Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T01:28:00Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38101925543"
+      "lastRunAt": "2026-10-11T05:28:28Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38114891099"
     },
     {
       "name": "recover-images.yml",
@@ -170,12 +178,19 @@
     {
       "component": "catalogue-quality.yml",
       "status": "scheduled-run-failed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38110307721"
+      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38114891109"
     }
   ],
   "imageCoverage": {
-    "activeEvents": 169,
+    "activeEvents": 170,
     "publishedEventPhotos": 87,
     "auditedPublishedPhotos": 87
+  },
+  "photoSourceDiscovery": {
+    "linkedPlacePages": 25,
+    "linkedEventPages": 13,
+    "scannedRecords": 110,
+    "lastSourceScan": "2026-10-11T05:28:32.870Z",
+    "realHeroPhotosAddedByLinks": 0
   }
 }
