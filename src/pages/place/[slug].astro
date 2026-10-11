@@ -117,7 +117,12 @@ const schema = {
           {place.categories?.slice(0, 2).map((category) => <span>{category}</span>)}
         </div>
         {!place.image.isFallback && (
-          <figcaption>{place.image.attribution} · {place.image.license}</figcaption>
+          <figcaption>
+            {place.image.attribution}
+            {place.image.sourceUrl && <> · <a href={place.image.sourceUrl} target="_blank" rel="noopener noreferrer">Original photo ↗</a></>}
+            {' · '}
+            {place.image.licenseUrl ? <a href={place.image.licenseUrl} target="_blank" rel="noopener noreferrer">{place.image.license}</a> : place.image.license}
+          </figcaption>
         )}
       </figure>
 
@@ -160,7 +165,12 @@ const schema = {
                   <a href={image.url} target="_blank" rel="noopener noreferrer" aria-label={`Open photo of ${place.name}`}>
                     <img src={image.url} alt={image.alt || `${place.name}, Tasmania`} loading="lazy" decoding="async" />
                   </a>
-                  <figcaption>{image.attribution} · {image.license}</figcaption>
+                  <figcaption>
+                    {image.attribution}
+                    {image.sourceUrl && <> · <a href={image.sourceUrl} target="_blank" rel="noopener noreferrer">Original ↗</a></>}
+                    {' · '}
+                    {image.licenseUrl ? <a href={image.licenseUrl} target="_blank" rel="noopener noreferrer">{image.license}</a> : image.license}
+                  </figcaption>
                 </figure>
               ))}
             </div>
