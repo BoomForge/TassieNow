@@ -31,3 +31,12 @@ Official documentation:
 - https://developers.google.com/custom-search/v1/overview
 - https://www.ag.gov.au/rights-and-protections/copyright/copyright-users
 - https://au.creativecommons.net/attributing-cc-materials/
+
+## Rights-safe candidate moderation (11 October 2026)
+- Owner dashboard → Catalogue → **Saved photo research leads** reads the current research JSON on main via an authenticated endpoint. Each lead starts as needing verification; finding an image does not make it reusable.
+- **Review original** opens the source. The reviewer documents actual photo subject/town, named creator, original-page licence version and reuse terms. Mark **source verified** only with both identity/rights checks and an evidence note. Reject incorrect candidates; neither action publishes an image.
+- For verified candidates, **Use verified details** copies metadata into the listing editor. Review the alt text and licence details and explicitly check the rights confirmation checkbox. The server refuses new or modified photo heroes without source URL, creator, allowed licence, and owner attestation.
+- CC BY/CC BY-SA are normalized to version-specific licence URLs. CC0 and documented public domain are accepted. **Rights-holder permission** requires a dated, scoped non-private evidence note. Do not store email addresses, contact details or private agreements in the public GitHub catalogue. Keep sensitive permission proof in the owner's own secure records.
+- An image-only edit keeps the original discovery source identity, allowing routine business updates to continue. Existing licensed images remain unchanged on unrelated listing edits.
+- Google Images has a CC-filtered discovery link using a Google query parameter, but filter behavior may change. Confirm visually in Google's **Tools → Usage rights** and then check the original image.
+- Manual moderation is **not** production verification: after image publication, check the real listing page, the loaded hero and its creator/rights attribution. Count only proven new photos in the recovery report. The 975 net recovery target remains unmet unless the live catalogue audit shows actual gain.
