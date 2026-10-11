@@ -24,7 +24,8 @@ test('credits, Google searches and unknown rights never silently become real pho
   {image_attribution:'Owner supplied'},
   {image_license:'Copyright, credit provided'},
   {image_source_url:'https://www.google.com/search?tbm=isch&q=market'},
-  {image_url:'https://example.org/images/categories/markets.svg'}
+  {image_url:'https://example.org/images/categories/markets.svg'},
+  {image_url:'https://lh3.googleusercontent.com/a/review-photo.jpg'}
  ])assert.throws(()=>acceptAdminPhoto({...proposed,...change},null,'2026-10-11'));
 });
 test('direct permission needs a dated scoped documented grant',()=>{
@@ -55,4 +56,10 @@ test('admin UI offers CC-filtered Google discovery and source-based rights attes
  assert.match(source,/photo-candidate-review/);
  assert.match(source,/image_rights_confirmed/);
  assert.match(source,/\/api\/admin\/photo-research/);
+});
+
+test('photo page links the original source and licence for accountable attribution',()=>{
+ const source=readFileSync('src/pages/place/[slug].astro','utf8');
+ assert.match(source,/href=\{place\.image\.sourceUrl\}/);
+ assert.match(source,/href=\{place\.image\.licenseUrl\}/);
 });
