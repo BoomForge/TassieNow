@@ -71,6 +71,8 @@ jobs:
           node --check scripts/automation-heartbeat.mjs
           node --check scripts/check-operations.mjs
           node --check scripts/verify-published-event-images.mjs
+          node --check src/lib/event-posters.mjs
+          node --check scripts/check-rendered-event-posters.mjs
           node --check scripts/test-catalogue-recovery.mjs
           node --check scripts/audit-built-site.mjs
           node --check scripts/indexnow.mjs
@@ -98,6 +100,8 @@ jobs:
         run: node scripts/check-image-coverage.mjs
       - name: Validate and build ranked site
         run: npm run build
+      - name: Verify every missing-photo event has personalised editorial art
+        run: node scripts/check-rendered-event-posters.mjs
       - name: Audit rendered SEO and large assets
         run: node scripts/audit-built-site.mjs
       - name: Preserve build audit report
