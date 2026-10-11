@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import {verifiedPhotoPicks} from './discover/lib/verified-photo-picks.mjs';
+import {htmlContainsPhotoImage} from './discover/lib/live-photo-html.mjs';
 
 // Verify actual Cloudflare visitor HTML, not a GitHub build or deploy check.
 // A verified image counts as published only when its specific detail page
@@ -27,7 +28,6 @@ const base=process.env.PHOTO_VERIFY_BASE||'https://tassienow.com';
 const rounds=Math.max(1,Math.min(15,Number(process.env.PHOTO_VERIFY_ATTEMPTS||12)));
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const results=await Promise.all(verified.slice(0,15).map(async place=>{
- const file=decodeURIComponent(new URL(place.image.url).pathname.split('/').pop());
  const url=new URL('/place/'+encodeURIComponent(place.slug)+'/',base);
  let last={status:'unverified',reason:'no response'};
  for(let attempt=1;attempt<=rounds;attempt++){
@@ -35,7 +35,7 @@ const results=await Promise.all(verified.slice(0,15).map(async place=>{
   try{
    const response=await fetch(url,{headers:{'user-agent':'TassieNow-Photo-Publication-Check/1.0','cache-control':'no-cache'},signal:AbortSignal.timeout(12000)});
    const html=await response.text();
-   const photo=html.includes(file);
+   const photo=htmlContainsPhotoImage(html,place.image.url);
    const credit=html.includes(place.image.attribution);
    const placeholder=html.includes(place.name+' category artwork');
    last={status:response.ok&&photo&&credit&&!placeholder?'verified':'not-visible',http:response.status,photo,credit,placeholder,attempt};
