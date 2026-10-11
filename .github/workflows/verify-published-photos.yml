@@ -6,6 +6,8 @@ on:
       - 'src/data/places.json'
       - 'scripts/verify-published-photo.mjs'
       - '.github/workflows/verify-published-photos.yml'
+  schedule:
+    - cron: '37 5 * * *'
   workflow_dispatch:
 permissions:
   contents: read

@@ -10,7 +10,19 @@ for(const pick of verifiedPhotoPicks){
  if(place?.status==='active' && place.image?.isFallback)
   throw Error('Previously approved place photo regressed to fallback: '+pick.slug);
 }
-const verified=places.filter(p=>p.status==='active'&&p.visibility!=='suppressed'&&p.image?.sourceMethod==='verified-curated'&&!p.image.isFallback);
+// Always verify curated photos, then rotate through the wider licensed
+// catalogue. Previously this check only covered the tiny curated subset,
+// so broken ordinary Commons photos could remain undetected indefinitely.
+const publicPhotos=places.filter(p=>p.status==='active'&&p.visibility!=='suppressed'&&
+  p.image && !p.image.isFallback && /^https:\/\//.test(p.image.url||'') &&
+  p.image.attribution && p.image.sourceUrl && p.image.license);
+const curated=publicPhotos.filter(p=>p.image.sourceMethod==='verified-curated');
+const other=publicPhotos.filter(p=>p.image.sourceMethod!=='verified-curated')
+  .sort((a,b)=>a.slug.localeCompare(b.slug));
+const max=Math.max(0,15-curated.length);
+const start=other.length?(Math.floor(Date.now()/86400000)*Math.max(1,max))%other.length:0;
+const rotating=[...other.slice(start),...other.slice(0,start)].slice(0,max);
+const verified=[...curated,...rotating].slice(0,15);
 const base=process.env.PHOTO_VERIFY_BASE||'https://tassienow.com';
 const rounds=Math.max(1,Math.min(15,Number(process.env.PHOTO_VERIFY_ATTEMPTS||12)));
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -33,14 +45,16 @@ const results=await Promise.all(verified.slice(0,15).map(async place=>{
  }
  return {slug:place.slug,name:place.name,sourceUrl:place.image.sourceUrl,...last};
 }));
-const report={checkedAt:new Date().toISOString(),base,checked:results.length,verified:results.filter(x=>x.status==='verified').length,results};
+const report={checkedAt:new Date().toISOString(),base,eligiblePlacePhotos:publicPhotos.length,
+  curatedChecked:Math.min(curated.length,15),checked:results.length,
+  verified:results.filter(x=>x.status==='verified').length,results};
 await fs.mkdir(new URL('../reports/',import.meta.url),{recursive:true});
 await fs.writeFile(new URL('../reports/production-photo-verification.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
 if(process.env.GITHUB_STEP_SUMMARY){
- const lines=['## Public photograph acceptance',report.verified+'/'+report.checked+' curated photographs visible on live site'];
+ const lines=['## Public photograph acceptance',report.verified+'/'+report.checked+' sampled licensed place photographs visible on live site'];
  for(const result of results)lines.push('- '+result.name+': '+result.status+' ('+String(result.http||result.reason||'')+')');
  await fs.appendFile(process.env.GITHUB_STEP_SUMMARY,lines.join('\n')+'\n');
 }
 console.log('Live image publishing: '+JSON.stringify(report));
-if(!verified.length)console.log('No curated photographs in catalogue; only transport was tested.');
+if(!verified.length)console.log('No licensed place photographs in catalogue; no photo visibility checks were possible.');
 if(report.verified!==report.checked)process.exitCode=1;

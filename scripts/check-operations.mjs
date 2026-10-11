@@ -55,7 +55,16 @@ await Promise.all(watched.map(async ([name,thresholdHours])=>{
     entry.lastRunAt=latest?.created_at||null;
     entry.lastResult=latest?.conclusion||latest?.status||null;
     entry.url=latest?.html_url||scheduled?.html_url||null;
-    if (!scheduled) entry.status='no-scheduled-run-observed';
+    // A newly added scheduled workflow has not reached its first cron slot.
+    // Do not confuse that rollout period with a broken schedule. A long
+    // pending run, however, is an incident even if triggered by a push.
+    if (latest && latest.status!=='completed' && ageHours(latest.created_at)>6)
+      entry.status='latest-run-stalled';
+    else if (!scheduled) {
+      const workflow=await api('/actions/workflows/'+name);
+      entry.status=ageHours(workflow.created_at)>thresholdHours
+        ? 'no-scheduled-run-observed' : 'awaiting-first-scheduled-run';
+    }
     else if (scheduled.status!=='completed' && ageHours(scheduled.created_at)>6) entry.status='scheduled-run-stalled';
     else if (scheduled.conclusion==='failure') entry.status='scheduled-run-failed';
     else if (ageHours(scheduled.created_at)>thresholdHours) entry.status='scheduled-run-stale';
@@ -63,7 +72,7 @@ await Promise.all(watched.map(async ([name,thresholdHours])=>{
     else if (latest?.conclusion==='cancelled') entry.status='latest-run-cancelled';
     else entry.status='ok';
   }catch(error){entry.error=String(error.message);}
-  if(entry.status!=='ok')report.failures.push({component:name,status:entry.status,action:entry.url||'Inspect GitHub Actions schedule and job logs'});
+  if(!['ok','awaiting-first-scheduled-run'].includes(entry.status))report.failures.push({component:name,status:entry.status,action:entry.url||'Inspect GitHub Actions schedule and job logs'});
   report.workflows.push(entry);
 }));
 
