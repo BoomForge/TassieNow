@@ -201,6 +201,7 @@ const formatEventDate = (startDate, endDate) => {
                 {event.image?.mediaType === 'historical-event' && <span class="event-photo-label">Previous edition</span>}
                 {event.image?.mediaType === 'contextual' && <span class="event-photo-label">Venue image</span>}
                 {event.image?.mediaType === 'performer-context' && <span class="event-photo-label">Performer photo</span>}
+                {event.image?.mediaType === 'activity-illustrative' && <span class="event-photo-label">Illustrative photo</span>}
                 {['event-artwork','official-artwork'].includes(event.image?.mediaType) && <span class="event-photo-label">Event artwork</span>}
               </a>
               <div class="event-card-body">

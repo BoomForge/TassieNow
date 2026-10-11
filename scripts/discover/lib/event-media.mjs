@@ -69,6 +69,12 @@ export function imageIsPublishable(image){
      image.matchEvidence?.verifiedType!=='contextual'||!image.matchEvidence?.venue||
      !image.matchEvidence?.town||!image.matchEvidence?.sourceFilePage?.startsWith('https://commons.wikimedia.org/wiki/File:')))
     return false;
+  if(image.sourceMethod==='verified-event-activity' &&
+    (image.mediaType!=='activity-illustrative'||!image.caption||
+     !image.matchEvidence?.verified||image.matchEvidence?.verifiedType!=='activity-illustrative'||
+     !image.matchEvidence?.topic||!image.matchEvidence?.eventName||
+     !image.matchEvidence?.sourceFilePage?.startsWith('https://commons.wikimedia.org/wiki/File:')))
+    return false;
   if(image.sourceMethod==='verified-event-history' &&
     (image.mediaType!=='historical-event'||!image.caption||!Number.isInteger(image.historicalYear)||
      !image.matchEvidence?.verified||image.matchEvidence?.verifiedType!=='historical-event'||
@@ -97,7 +103,7 @@ export function eventImagePriority(image){
  if(!imageIsPublishable(image))return 0;
  if(image.sourceMethod==='organiser-approved')return 10;
  return ({'event-photo':9,'official-artwork':8,'event-artwork':7,
-  'historical-event':6,'performer-context':5,'contextual':3})[image.mediaType]||8;
+  'historical-event':6,'performer-context':5,'contextual':3,'activity-illustrative':2})[image.mediaType]||8;
 }
 const norm=s=>String(s||'').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]/g,'');
 export function sameEvent(a,b){

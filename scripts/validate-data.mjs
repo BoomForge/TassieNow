@@ -103,7 +103,7 @@ for (const [index, event] of events.entries()) {
   validateImage(event, label);
   if(event.image && !event.image.isFallback && !imageIsPublishable(event.image))
     problems.push(label+': event photo lacks publishable evidence or compatible licence');
-  if(['historical-event','contextual','performer-context'].includes(event.image?.mediaType)&&!event.image.caption)
+  if(['historical-event','contextual','performer-context','activity-illustrative'].includes(event.image?.mediaType)&&!event.image.caption)
     problems.push(label+': historical/contextual image requires public disclosure caption');
 }
 
