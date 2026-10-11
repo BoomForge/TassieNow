@@ -1,4 +1,5 @@
 ---
+import {eventDisplayImage,eventDisplayAlt} from '../../lib/event-posters.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
@@ -13,7 +14,9 @@ export function getStaticPaths() {
 const { event } = Astro.props;
 const origin = Astro.site ?? Astro.url.origin;
 const pageUrl = new URL(`/event/${event.slug}/`, origin).href;
-const absoluteImage = event.image.url.startsWith('http') ? event.image.url : new URL(event.image.url, origin).href;
+const displayImage=eventDisplayImage(event);
+const displayAlt=eventDisplayAlt(event);
+const absoluteImage = displayImage.startsWith('http') ? displayImage : new URL(displayImage, origin).href;
 
 const offer = event.ticketUrl ? {
   '@type': 'Offer',
@@ -94,8 +97,8 @@ const townSlug = String(event.town || '')
 <BaseLayout
   title={`${event.name} | TassieNow`}
   description={event.summary}
-  image={event.image.url}
-  imageAlt={event.image.alt || `${event.name}, Tasmania`}
+  image={displayImage}
+  imageAlt={displayAlt}
 >
   <script type="application/ld+json" set:html={JSON.stringify(eventSchema)}></script>
   <BreadcrumbSchema items={[
@@ -116,7 +119,8 @@ const townSlug = String(event.town || '')
     <h1>{event.name}</h1>
 
     <figure class="detail-image-wrap">
-      <img class="detail-image" src={event.image.url} alt={event.image.alt} loading="eager" decoding="async" fetchpriority="high" />
+      <img class="detail-image" src={displayImage} alt={displayAlt} loading="eager" decoding="async" fetchpriority="high" />
+      {event.image.isFallback && <figcaption>Original TassieNow artwork for this event. Not an organiser poster or event photograph.</figcaption>}
       {!event.image.isFallback && (
         <figcaption>
           {event.image.caption && <span>{event.image.caption} </span>}
