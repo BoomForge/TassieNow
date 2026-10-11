@@ -26,7 +26,16 @@ export function photoSearchQueries(place) {
   const name=String(place.name || '').replace(/"/g, '').trim();
   const town=String(place.town || '').replace(/"/g, '').trim();
   if(name.length<5 || !town) return [];
-  return ['"' + name + '" ' + town + ' Tasmania', '"' + name + '" Tasmania'];
+  // Do not over-constrain the search index with three AND-ed terms:
+  // many valid CC photos have the locality only in tags or description.
+  // This broadens discovery, NOT publication; original source and exact
+  // place-town identity are still checked by openverseCandidate().
+  const queries=[
+    '"' + name + '" ' + town,
+    name + ' ' + town + ' Tasmania',
+    '"' + name + '" Tasmania'
+  ];
+  return [...new Set(queries)];
 }
 
 export function openverseCandidate(place, work, checkedAt = new Date().toISOString()) {
