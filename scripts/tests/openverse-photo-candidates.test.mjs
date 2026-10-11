@@ -45,6 +45,8 @@ test('rejects restrictive, unverifiable and paid-risk image source metadata',()=
     assert.equal(openverseCandidate(place,{...work,license}),null);
   }
   assert.equal(openverseCandidate(place,{...work,license_url:'https://unknown-license.test/by/2.0/'}),null);
+  assert.equal(openverseCandidate(place,{...work,license_url:'https://example.com/?q=creativecommons.org/licenses/by/2.0/'}),null);
+  assert.equal(openverseCandidate(place,{...work,license:'by',license_url:'https://creativecommons.org/licenses/by-nc/2.0/'}),null);
   assert.equal(openverseCandidate(place,{...work,foreign_landing_url:'http://flickr.com/photo/123'}),null);
   assert.equal(openverseCandidate(place,{...work,creator:''}),null);
   assert.equal(openverseCandidate(place,{...work,width:250}),null);
@@ -74,4 +76,14 @@ test('respects bounded candidate capacity',()=>{
   const batch={ [place.slug]:{name:place.name,town:place.town,
     candidates:Array.from({length:20},(_,i)=>({id:'openverse:'+i,url:'https://example.org/'+i}))}};
   assert.equal(mergePlacePhotoReview(base,batch,{maxCandidates:4}).queue[place.slug].candidates.length,4);
+});
+
+test('merges results into an incomplete older review without overwriting its metadata',()=>{
+ const existing={[place.slug]:{name:place.name,town:place.town,needs:'keep owner note'}};
+ const {queue,added}=mergePlacePhotoReview(existing,{[place.slug]:{
+   name:place.name,town:place.town,candidates:[openverseCandidate(place,work,checkedAt)]
+ }});
+ assert.equal(added,1);
+ assert.equal(queue[place.slug].needs,'keep owner note');
+ assert.equal(queue[place.slug].candidates.length,1);
 });
