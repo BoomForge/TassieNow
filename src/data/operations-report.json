@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-11T13:10:17.785Z",
+  "generatedAt": "2026-10-11T18:27:04.473Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
       "name": "discover.yml",
-      "status": "latest-run-stalled",
+      "status": "ok",
       "lastScheduled": "2026-10-05T23:10:20Z",
-      "lastResult": "pending",
+      "lastResult": "success",
       "lastRunAt": "2026-10-11T05:28:28Z",
       "url": "https://github.com/BoomForge/TassieNow/actions/runs/38114891094"
     },
@@ -14,15 +14,15 @@
       "name": "events.yml",
       "status": "ok",
       "lastScheduled": "2026-10-11T12:41:35Z",
-      "lastResult": "pending",
+      "lastResult": "success",
       "lastRunAt": "2026-10-11T12:41:35Z",
       "url": "https://github.com/BoomForge/TassieNow/actions/runs/38140229716"
     },
     {
       "name": "catalogue-quality.yml",
-      "status": "latest-run-stalled",
+      "status": "scheduled-run-failed",
       "lastScheduled": "2026-10-10T22:01:10Z",
-      "lastResult": "pending",
+      "lastResult": "success",
       "lastRunAt": "2026-10-11T05:28:28Z",
       "url": "https://github.com/BoomForge/TassieNow/actions/runs/38114891109"
     },
@@ -36,11 +36,11 @@
     },
     {
       "name": "auto-photo-sources.yml",
-      "status": "awaiting-first-scheduled-run",
-      "lastScheduled": null,
+      "status": "ok",
+      "lastScheduled": "2026-10-11T15:58:36Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T05:32:50Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38115132547"
+      "lastRunAt": "2026-10-11T15:58:36Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38153515763"
     },
     {
       "name": "place-photo-research.yml",
@@ -63,16 +63,16 @@
       "status": "ok",
       "lastScheduled": "2026-10-11T11:37:23Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T11:37:23Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38136238637"
+      "lastRunAt": "2026-10-11T16:39:44Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38156387511"
     },
     {
       "name": "verify-event-artwork.yml",
       "status": "ok",
       "lastScheduled": "2026-10-11T11:38:26Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T11:38:26Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38136299449"
+      "lastRunAt": "2026-10-11T16:39:46Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38156389009"
     },
     {
       "name": "verify-event-image-files.yml",
@@ -108,11 +108,11 @@
     },
     {
       "name": "automation-health.yml",
-      "status": "latest-run-stalled",
-      "lastScheduled": "2026-10-11T06:56:50Z",
-      "lastResult": "pending",
-      "lastRunAt": "2026-10-11T06:56:50Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38119713626"
+      "status": "scheduled-run-failed",
+      "lastScheduled": "2026-10-11T13:52:56Z",
+      "lastResult": "failure",
+      "lastRunAt": "2026-10-11T13:52:56Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38144940180"
     },
     {
       "name": "indexnow.yml",
@@ -177,30 +177,25 @@
   "failures": [
     {
       "component": "catalogue-quality.yml",
-      "status": "latest-run-stalled",
+      "status": "scheduled-run-failed",
       "action": "https://github.com/BoomForge/TassieNow/actions/runs/38114891109"
     },
     {
-      "component": "discover.yml",
-      "status": "latest-run-stalled",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38114891094"
-    },
-    {
       "component": "automation-health.yml",
-      "status": "latest-run-stalled",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38119713626"
+      "status": "scheduled-run-failed",
+      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38144940180"
     }
   ],
   "imageCoverage": {
-    "activeEvents": 166,
-    "publishedEventPhotos": 84,
-    "auditedPublishedPhotos": 84
+    "activeEvents": 165,
+    "publishedEventPhotos": 85,
+    "auditedPublishedPhotos": 85
   },
   "photoSourceDiscovery": {
-    "linkedPlacePages": 40,
-    "linkedEventPages": 32,
-    "scannedRecords": 220,
-    "lastSourceScan": "2026-10-11T05:32:56.051Z",
+    "linkedPlacePages": 61,
+    "linkedEventPages": 54,
+    "scannedRecords": 330,
+    "lastSourceScan": "2026-10-11T15:58:45.032Z",
     "realHeroPhotosAddedByLinks": 0
   }
 }
