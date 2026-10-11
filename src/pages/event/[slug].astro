@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import events from '../../data/events.json';
+import autoPhotoSources from '../../data/auto-photo-source-links.json';
 
 export function getStaticPaths() {
   return events
@@ -16,6 +17,7 @@ const origin = Astro.site ?? Astro.url.origin;
 const pageUrl = new URL(`/event/${event.slug}/`, origin).href;
 const displayImage=eventDisplayImage(event);
 const displayAlt=eventDisplayAlt(event);
+const originalPhotoSource=autoPhotoSources.events?.[event.slug]||null;
 const googleImagesUrl='https://www.google.com/search?'+new URLSearchParams({q:[event.name,event.town,'Tasmania'].filter(Boolean).join(' '),udm:'2'}).toString();
 const absoluteImage = displayImage.startsWith('http') ? displayImage : new URL(displayImage, origin).href;
 
@@ -136,6 +138,11 @@ const townSlug = String(event.town || '')
       )}
     </figure>
 
+    {originalPhotoSource && <section class="source-note" aria-label="Original event photo source">
+      <strong>Photographs at original source:</strong>
+      {' '}<a href={originalPhotoSource.sourceUrl} target="_blank" rel="noopener noreferrer">{originalPhotoSource.title} ↗</a>
+      <p>External original-source page only. No photograph is copied or embedded by TassieNow.</p>
+    </section>}
     {event.image.isFallback && <p class="source-note">Looking for real event photographs? <a href={googleImagesUrl} target="_blank" rel="noopener noreferrer">Search Google Images for {event.name} ↗</a>. Photographs open on external websites; TassieNow does not embed or copy them.</p>}
 
     <p class="event-date">
