@@ -20,7 +20,7 @@ const checkedAt='2026-10-11T00:00:00.000Z';
 
 test('queries exact place with town and Tasmania, without Google billing',()=>{
   assert.deepEqual(photoSearchQueries(place),[
-    '"Farm Gate Market" Hobart Tasmania','"Farm Gate Market" Tasmania'
+    '"Farm Gate Market" Hobart','Farm Gate Market Hobart Tasmania','"Farm Gate Market" Tasmania'
   ]);
 });
 test('retains strong photographic leads without claiming publication approval',()=>{
