@@ -11,6 +11,11 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+# Serialize production verification when image jobs publish close together.
+concurrency:
+  group: tassienow-place-photo-acceptance
+  queue: max
+  cancel-in-progress: false
 jobs:
   verify:
     runs-on: ubuntu-latest
