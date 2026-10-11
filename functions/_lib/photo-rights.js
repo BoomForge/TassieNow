@@ -24,6 +24,9 @@ export function photoLicence(name) {
 export function acceptAdminPhoto(body, current, verifiedAt) {
   if(!body.image_url)return current || null;
   const url=validHttps(body.image_url,'Photo');
+  if (/(^|\.)(googleusercontent\.com|gstatic\.com)$/.test(new URL(url).hostname) ||
+      /(^|\.)google\.[a-z.]+$/.test(new URL(url).hostname))
+    throw new Error('Use the independently authorised original image file, not Google cached/review/map imagery.');
   // If the stored image and its provenance have not changed, preserve its complete
   // original metadata and do not force fresh attestations on unrelated edits.
   const unchanged=current&&current.url===url&&
@@ -50,8 +53,11 @@ export function acceptAdminPhoto(body, current, verifiedAt) {
       /^(www\.)?(bing|pinterest)\./.test(origin.hostname))
     throw new Error('Provide the original photographer or licensor page, not a search-result or Google-hosted image.');
   const providedLicenceUrl=text(body.image_license_url);
-  if(licence.url && providedLicenceUrl && validHttps(providedLicenceUrl,'Licence')!==licence.url)
-    throw new Error('Licence URL must match the exact Creative Commons version selected.');
+  if(licence.url && providedLicenceUrl) {
+    const actual=validHttps(providedLicenceUrl,'Licence').replace(/\/$/,'');
+    if(actual!==licence.url.replace(/\/$/,''))
+      throw new Error('Licence URL must match the exact Creative Commons version selected.');
+  }
   const permissionNotes=text(body.image_permission_notes,500);
   if(licence.permission && (!/\b20\d\d-\d\d-\d\d\b/.test(permissionNotes) || permissionNotes.length<35))
     throw new Error('Rights-holder permission needs a dated, non-private note describing who granted which website reuse rights.');
