@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import {verifiedMedia} from './discover/lib/preserve-media.mjs';
+import {applyVerifiedPhotoPicks} from './discover/lib/verified-photo-picks.mjs';
 
 const beforePath=process.argv[2], afterPath=process.argv[3];
 if(!beforePath||!afterPath)throw new Error('Usage: node scripts/reapply-image-upgrades.mjs BEFORE.json AFTER.json');
@@ -26,5 +27,9 @@ for(const p of current){
  for(const img of added){if(output.length>=12)break;output.push(structuredClone(img));nowKeys.add(key(img));gallery++;}
  if(output.length)p.gallery=output;
 }
+// Curated/manual listings often have no sourceId. The OSM rebase above cannot
+// identify them, so reapply only precisely source-verified picks by slug/name.
+// This preserves concurrent real photos and requires no paid image service.
+const verifiedCurated=applyVerifiedPhotoPicks(current);
 await fs.writeFile(file,JSON.stringify(current,null,2)+'\n');
-console.log('Rebased image upgrades onto fresh catalogue: '+JSON.stringify({heroes:hero,gallery,missingSourceIds:missing,concurrentRealImagesProtected:skipped,publicPlaces:current.filter(p=>p.status==='active'&&p.visibility!=='suppressed').length}));
+console.log('Rebased image upgrades onto fresh catalogue: '+JSON.stringify({heroes:hero,gallery,missingSourceIds:missing,concurrentRealImagesProtected:skipped,verifiedCuratedRestored:verifiedCurated,publicPlaces:current.filter(p=>p.status==='active'&&p.visibility!=='suppressed').length}));
