@@ -1,6 +1,26 @@
 // Manually source-verified Commons images for listings missed by text discovery.
 // Keep this intentionally small and evidence-led, not a generic imagery fallback.
 export const verifiedPhotoPicks=[{
+  slug:'drunken-admiral',
+  name:'Drunken Admiral',
+  image:{
+    url:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/17-19_Hunter_Street_Hobart_20171120-110.jpg/1280px-17-19_Hunter_Street_Hobart_20171120-110.jpg',
+    alt:'Exterior of the Drunken Admiral restaurant at 17–19 Hunter Street, Hobart, photographed in November 2017',
+    attribution:'Gary Houston',
+    license:'CC0 1.0',
+    licenseUrl:'https://creativecommons.org/publicdomain/zero/1.0/',
+    sourceUrl:'https://commons.wikimedia.org/wiki/File:17-19_Hunter_Street_Hobart_20171120-110.jpg',
+    sourceMethod:'verified-curated',
+    isFallback:false,
+    matchEvidence:{
+      verified:true,
+      subject:'Drunken Admiral restaurant, 17–19 Hunter Street, Hobart',
+      evidence:'Original Commons image visibly shows Drunken Admiral restaurant signage; photographer Gary Houston personally dedicated this 20 November 2017 photograph as CC0 1.0. Venue coordinates match the catalogue.',
+      checkedAt:'2026-10-11',
+      photographedYear:2017
+    }
+  }
+},{
   slug:'tessallated-pavement',
   name:'Tessallated Pavement',
   image:{
