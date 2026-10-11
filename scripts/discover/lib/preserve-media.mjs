@@ -4,8 +4,13 @@ const validWebUrl = (value) => {
   try { return ['https:', 'http:'].includes(new URL(value).protocol); }
   catch { return false; }
 };
+// Uploaded owner-approved local photos also survive OSM rediscovery. An arbitrary
+// relative SVG or a stale link-only record must never be treated as verified media.
+const approvedLocalUpload=(image)=>/^\/uploads\/admin\/[a-z0-9/_-]+\.(?:jpe?g|png|webp)$/i.test(image?.url||'') &&
+  image?.useMode==='hosted' && image?.sourceMethod==='manual-reviewed' &&
+  image?.rightsEvidence?.status==='owner-attested';
 export const verifiedMedia = (image) =>
-  Boolean(image && !image.isFallback && validWebUrl(image.url) &&
+  Boolean(image && !image.isFallback && (validWebUrl(image.url) || approvedLocalUpload(image)) &&
     validWebUrl(image.sourceUrl) && String(image.license || '').trim() &&
     String(image.attribution || '').trim());
 
