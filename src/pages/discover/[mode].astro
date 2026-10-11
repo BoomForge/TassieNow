@@ -1,5 +1,6 @@
 ---
 import {eventDisplayImage,eventDisplayAlt} from '../../lib/event-posters.mjs';
+import {googleMarketSearchUrl} from '../../lib/google-market-photos.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
@@ -327,6 +328,7 @@ const siblingModes = [
                   {isEventItem(item) ? 'Event details →' : 'View place →'}
                 </a>
                 {isEventItem(item) && item.ticketUrl && <a class="card-link" href={item.ticketUrl} target="_blank" rel="noopener noreferrer">Tickets ↗</a>}
+                {mode === 'markets' && <a class="card-link" href={googleMarketSearchUrl(item.name,item.town)} target="_blank" rel="noopener noreferrer">Google visitor photos ↗</a>}
               </div>
             </div>
           </article>
