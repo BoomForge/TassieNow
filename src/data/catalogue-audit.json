@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11",
+  "generatedAt": "2026-10-12",
   "places": {
     "total": 2216,
     "public": 2150,
@@ -34,8 +34,8 @@
         "percent": 13.3
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 275,
-        "percent": 12.8
+        "count": 273,
+        "percent": 12.7
       },
       "wikidataLinkage": {
         "count": 621,
@@ -215,37 +215,37 @@
     }
   },
   "events": {
-    "active": 178,
+    "active": 166,
     "media": {
       "licensedHeroCoverage": {
-        "count": 88,
-        "percent": 49.4
+        "count": 84,
+        "percent": 50.6
       },
-      "stillUsingCategoryArtwork": 90,
+      "stillUsingCategoryArtwork": 82,
       "bySource": {
-        "verified-event-activity": 41,
-        "verified-event-venue": 41,
+        "verified-event-venue": 40,
+        "verified-event-activity": 38,
         "verified-event-performer": 5,
         "verified-event-history": 1
       },
       "byMediaType": {
-        "activity-illustrative": 41,
-        "contextual": 41,
+        "contextual": 40,
+        "activity-illustrative": 38,
         "performer-context": 5,
         "historical-event": 1
       },
       "byRegion": {
         "Hobart & South": {
-          "count": 46,
-          "percent": 53.5
+          "count": 44,
+          "percent": 55.7
         },
         "Launceston & North": {
-          "count": 21,
-          "percent": 58.3
+          "count": 20,
+          "percent": 62.5
         },
         "North West": {
-          "count": 17,
-          "percent": 41.5
+          "count": 16,
+          "percent": 40
         },
         "East Coast": {
           "count": 2,
@@ -270,28 +270,28 @@
       }
     },
     "ticketCoverage": {
-      "count": 55,
-      "percent": 30.9
+      "count": 45,
+      "percent": 27.1
     },
     "priceCoverage": {
-      "count": 59,
-      "percent": 33.1
+      "count": 58,
+      "percent": 34.9
     },
     "providers": {
-      "Humanitix": 31,
       "Ticketek": 23,
+      "Humanitix": 21,
       "Ticketmaster": 1
     },
     "sources": {
-      "Burnie City Council": 26,
+      "Burnie City Council": 25,
       "MyState Bank Arena": 24,
       "Theatre North Launceston": 17,
       "Huon Valley Council": 16,
-      "Humanitix Hobart": 15,
       "Devonport City Council": 14,
-      "Humanitix Launceston": 14,
       "Theatre Royal Hobart": 11,
+      "Humanitix Launceston": 10,
       "East Coast Tasmania": 9,
+      "Humanitix Hobart": 9,
       "City of Clarence": 8,
       "City of Hobart": 7,
       "City of Launceston": 5,
@@ -299,15 +299,14 @@
       "King Island Tourism": 2,
       "Flinders Island Show Society": 1,
       "Highlands BushFest organising team": 1,
-      "Tasmanian Brick Enthusiasts": 1,
       "Ticketebo": 1,
       "West Coast Heritage Centre": 1,
       "Zeehan Neighbourhood Centre": 1
     },
     "regions": {
-      "Hobart & South": 86,
-      "Launceston & North": 36,
-      "North West": 41,
+      "Hobart & South": 79,
+      "Launceston & North": 32,
+      "North West": 40,
       "East Coast": 9,
       "West Coast": 2,
       "Central Tasmania": 1,
@@ -316,19 +315,19 @@
     },
     "regionsWithNoEvents": [],
     "nearTerm": {
-      "today": "2026-10-11",
-      "tomorrow": "2026-10-12",
+      "today": "2026-10-12",
+      "tomorrow": "2026-10-13",
       "nextWeekendStart": "2026-10-17",
       "nextWeekendEnd": "2026-10-18",
-      "todayOrTomorrow": 35,
+      "todayOrTomorrow": 29,
       "thisWeekend": 31,
       "townsTodayOrTomorrow": {
         "Huonville": 12,
-        "Hobart": 7,
-        "Burnie": 5,
-        "Devonport": 5,
-        "Launceston": 5,
-        "Sorell": 1
+        "Burnie": 6,
+        "Devonport": 6,
+        "Launceston": 3,
+        "Hobart": 1,
+        "Rosny Park": 1
       },
       "regionsThisWeekend": {
         "Hobart & South": 22,
@@ -349,18 +348,18 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 5
+      "missingOrOlderThan30Days": 2
     },
     "sourceRegionalMix": {
-      "North West / Burnie City Council": 26,
+      "North West / Burnie City Council": 25,
       "Hobart & South / MyState Bank Arena": 24,
       "Launceston & North / Theatre North Launceston": 17,
       "Hobart & South / Huon Valley Council": 16,
-      "Hobart & South / Humanitix Hobart": 15,
-      "Launceston & North / Humanitix Launceston": 14,
       "North West / Devonport City Council": 14,
       "Hobart & South / Theatre Royal Hobart": 11,
+      "Launceston & North / Humanitix Launceston": 10,
       "East Coast / East Coast Tasmania": 9,
+      "Hobart & South / Humanitix Hobart": 9,
       "Hobart & South / City of Clarence": 8,
       "Hobart & South / City of Hobart": 7,
       "Launceston & North / City of Launceston": 5,
@@ -368,7 +367,6 @@
       "King Island / King Island Tourism": 2,
       "Central Tasmania / Highlands BushFest organising team": 1,
       "Flinders Island / Flinders Island Show Society": 1,
-      "Hobart & South / Tasmanian Brick Enthusiasts": 1,
       "North West / Ticketebo": 1,
       "West Coast / West Coast Heritage Centre": 1,
       "West Coast / Zeehan Neighbourhood Centre": 1
