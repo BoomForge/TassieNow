@@ -20,6 +20,7 @@ const places=JSON.parse(await fs.readFile(PLACES,'utf8'));
 const events=JSON.parse(await fs.readFile(EVENTS,'utf8'));
 const publicPlaces=places.filter((p)=>p.status==='active'&&p.visibility!=='suppressed');
 const foodPlaces=publicPlaces.filter(p=>(p.categories||[]).includes('Food & Drink'));
+const marketPlaces=publicPlaces.filter(p=>(p.categories||[]).includes('Markets'));
 const foodKinds=['Restaurant','Café','Takeaway','Bakery','Pub Food','Food Van','Desserts','Mobile Vendor','Local Produce'];
 const activeEvents=events.filter((e)=>e.status==='active'&&e.endDate>=today);
 function addCalendarDays(date,days){
@@ -79,6 +80,16 @@ const audit={
     towns:Object.keys(countBy(publicPlaces,(p)=>p.town)).length,
     categories:countBy(publicPlaces,(p)=>(p.categories||[])[0]),
     categoryMembership,
+    marketPhotoCoverage:{
+      listings:marketPlaces.length,
+      realHeroCoverage:coverage(marketPlaces,p=>p.image&&!p.image.isFallback),
+      twoPlusImages:coverage(marketPlaces,p=>mediaCount(p)>=2),
+      fourPlusImages:coverage(marketPlaces,p=>mediaCount(p)>=4),
+      sixPlusImages:coverage(marketPlaces,p=>mediaCount(p)>=6),
+      googlePlaceIdCount:marketPlaces.filter(p=>Boolean(p.googlePlaceId)).length,
+      googleMapsLinks:marketPlaces.filter(p=>p.reviewLinks?.some(x=>x.provider==='google-maps')).length,
+      note:'Google Maps photos are accessed live only by users; not copied into licensed catalogue galleries'
+    },
     foodDiscovery:{
       listings:foodPlaces.length,
       types:Object.fromEntries(foodKinds.map(kind=>[kind,foodPlaces.filter(p=>(p.categories||[]).includes(kind)).length])),
