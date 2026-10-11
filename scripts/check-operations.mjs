@@ -8,7 +8,7 @@ const now = new Date();
 // Frequencies are intentionally generous to account for GitHub schedule delays.
 const watched = [
   ['discover.yml', 200], ['events.yml', 42], ['catalogue-quality.yml', 42],
-  ['images.yml', 42], ['place-photo-research.yml', 42], ['verify-published-photos.yml', 42], ['verify-published-event-images.yml', 42], ['verify-event-artwork.yml', 42], ['verify-event-image-files.yml', 42], ['verify-market-photo-access.yml', 42], ['event-photo-research.yml', 42], ['quality.yml', 42], ['automation-health.yml', 42],
+  ['images.yml', 42], ['auto-photo-sources.yml', 42], ['place-photo-research.yml', 42], ['verify-published-photos.yml', 42], ['verify-published-event-images.yml', 42], ['verify-event-artwork.yml', 42], ['verify-event-image-files.yml', 42], ['verify-market-photo-access.yml', 42], ['event-photo-research.yml', 42], ['quality.yml', 42], ['automation-health.yml', 42],
   ['indexnow.yml', 200]
 ];
 const onceOnly = ['recover-images.yml', 'production-smoke.yml'];
@@ -98,6 +98,27 @@ try {
     auditedPublishedPhotos:audit.events.media.licensedHeroCoverage.count};
 } catch(error){
   report.failures.push({component:'Published photo coverage audit',status:'error',action:String(error.message)});
+}
+
+// Observable automatic photo-source scan health; these are clickable links,
+// not copyright-cleared hero images and must not inflate media coverage.
+try {
+  const state=JSON.parse(await fs.readFile(new URL('../src/data/auto-photo-source-links.json',import.meta.url),'utf8'));
+  const attempts=Object.values(state.scans||{});
+  const recent=attempts.map(x=>x.checkedAt).filter(Boolean).sort().at(-1)||null;
+  report.photoSourceDiscovery={
+    linkedPlacePages:Object.keys(state.places||{}).length,
+    linkedEventPages:Object.keys(state.events||{}).length,
+    scannedRecords:attempts.length,
+    lastSourceScan:recent,
+    realHeroPhotosAddedByLinks:0
+  };
+  if(recent && ageHours(recent)>72)
+    report.failures.push({component:'Automated original photo source links',status:'scan-stale',
+      action:'Inspect auto-photo-sources.yml and its preserved research reports'});
+} catch(error) {
+  report.failures.push({component:'Automated original photo source links',status:'state-unavailable',
+    action:String(error.message).slice(0,180)});
 }
 
 const checks=[
