@@ -4,7 +4,7 @@ import { acceptAdminPhoto, photoLicence } from '../../functions/_lib/photo-right
 import { readFileSync } from 'node:fs';
 
 const proposed={
- name:'Ross Village Market',image_url:'https://example.org/market-photo.jpg',
+ name:'Ross Village Market',image_url:'https://example.org/market-photo.jpg', image_display_mode:'external-embed',
  image_alt:'Stalls at Ross Village Market, Ross',
  image_attribution:'Example Photographer',image_license:'CC BY-SA 2.0',
  image_source_url:'https://www.flickr.com/photos/example/12345',
@@ -62,4 +62,38 @@ test('photo page links the original source and licence for accountable attributi
  const source=readFileSync('src/pages/place/[slug].astro','utf8');
  assert.match(source,/href=\{place\.image\.sourceUrl\}/);
  assert.match(source,/href=\{place\.image\.licenseUrl\}/);
+});
+
+import { photoSourceLink } from '../../functions/_lib/photo-sources.js';
+
+test('source-only links require original source and place identity, never a reuse licence',()=>{
+ const link=photoSourceLink({photo_link_url:'https://example.org/gallery/market',
+  photo_link_title:'Ross market photos',photo_link_credit:'Local organiser',
+  photo_source_confirmed:true},'2026-10-11');
+ assert.equal(link.kind,'external-source-link');
+ assert.equal(link.sourceUrl,'https://example.org/gallery/market');
+ assert.ok(!('license' in link));
+ assert.ok(!('url' in link));
+ assert.throws(()=>photoSourceLink({photo_link_url:'https://google.com/search?q=market',
+  photo_source_confirmed:true,photo_link_title:'Market'},'2026-10-11'));
+ assert.throws(()=>photoSourceLink({photo_link_url:'https://example.org/market',photo_link_title:'Market'},'2026-10-11'));
+});
+test('external display requires a licence while a link only does not',()=>{
+ assert.throws(()=>acceptAdminPhoto({...proposed,image_rights_confirmed:false},null,'2026-10-11'));
+ assert.equal(acceptAdminPhoto(proposed,null,'2026-10-11').useMode,'external-embed');
+ assert.throws(()=>acceptAdminPhoto({...proposed,image_display_mode:'hosted'},null,'2026-10-11'));
+ const hosted=acceptAdminPhoto({...proposed,image_url:'/uploads/admin/2026-10/market-photo.webp',
+  image_display_mode:'hosted'},null,'2026-10-11');
+ assert.equal(hosted.useMode,'hosted');
+});
+test('external photo source links never become hero photos in API or page markup',()=>{
+ const source=readFileSync('src/pages/place/[slug].astro','utf8');
+ assert.match(source,/Original photo sources/);
+ assert.match(source,/href=\{link.sourceUrl\}/);
+ assert.match(source,/place\.image\?\.isFallback/);
+ const api=readFileSync('functions/api/admin/catalogue.js','utf8');
+ assert.match(api,/heroPhotoChanged: false/);
+ assert.match(api,/photoSourceLink\(body/);
+ const preservation=readFileSync('scripts/merge-previous-catalogue.mjs','utf8');
+ assert.match(preservation,/'photoLinks'/);
 });
