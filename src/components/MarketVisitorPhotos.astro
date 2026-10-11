@@ -70,13 +70,11 @@ const googleUrl=reviewUrl?.startsWith('https://')?reviewUrl:googleMarketSearchUr
         const details=document.createElement('gmp-place-details');
         const request=document.createElement('gmp-place-details-place-request');
         request.setAttribute('place',id);
-        const config=document.createElement('gmp-place-content-config');
-        for(const name of ['gmp-place-media','gmp-place-reviews','gmp-place-attribution']){
-          const element=document.createElement(name);
-          if(name==='gmp-place-media')element.setAttribute('lightbox-preferred','');
-          config.appendChild(element);
-        }
-        details.append(request,config);
+        // The supported PlaceAllContentElement includes Google photos,
+        // reviews, attribution and source access. PlaceContentConfigElement
+        // does not support reviews as a nested child.
+        const content=document.createElement('gmp-place-all-content');
+        details.append(request,content);
         output.replaceChildren(details);
         output.hidden=false;
         status.textContent='Google visitor photos and reviews for this market.';
