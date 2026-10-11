@@ -1,6 +1,7 @@
 ---
 import {googleMarketSearchUrl} from '../lib/google-market-photos.mjs';
-const {name,town,reviewUrl} = Astro.props;
+const {name,town,slug,reviewUrl} = Astro.props;
+const photoSubmissionUrl='/suggest-update/?'+new URLSearchParams({place:slug||'',name:name||'',field:'image'}).toString();
 const search=googleMarketSearchUrl(name,town);
 const link=(typeof reviewUrl==='string' && /^https:\/\/(?:www\.)?(?:google\.[^/]+|maps\.app\.goo\.gl)\//i.test(reviewUrl))
   ? reviewUrl : search;
@@ -16,7 +17,8 @@ const link=(typeof reviewUrl==='string' && /^https:\/\/(?:www\.)?(?:google\.[^/]
   <a class="market-photo-link" href={link} target="_blank" rel="noopener noreferrer" data-track-outbound="market-google-photos">
     View visitor photos on Google Maps ↗
   </a>
-  <p class="market-photo-note">Visitor photos belong to their photographers and remain on Google Maps. TassieNow displays independently licensed images in the gallery below.</p>
+  <p class="market-photo-note">Visitor photos belong to their photographers and remain on Google Maps. TassieNow displays independently licensed images in its own gallery.</p>
+  {slug && <p class="market-photo-contribute">Run this market or own photos of it? <a href={photoSubmissionUrl}>Submit an official photo or permission evidence for review →</a> You can share a photo URL, the photographer’s name and evidence of permission. No paid service is required.</p>}
 </section>
 <style>
   .market-visitor-photos{display:grid;gap:.8rem}
@@ -27,4 +29,6 @@ const link=(typeof reviewUrl==='string' && /^https:\/\/(?:www\.)?(?:google\.[^/]
   .market-photo-link:hover{text-decoration:underline}
   .market-photo-link:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
   .market-photo-note{font-size:.81rem!important}
+  .market-photo-contribute{font-size:.88rem!important;border-top:1px solid var(--line);padding-top:.75rem}
+  .market-photo-contribute a{color:var(--brand);font-weight:800}
 </style>
