@@ -6329,10 +6329,9 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-11",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-11"
@@ -36591,7 +36590,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://davesnoodles.com.au/locations",
+        "url": "https://davesnoodles.com.au/about",
         "checkedAt": "2026-10-11"
       }
     },
@@ -36623,7 +36622,7 @@
     ],
     "schedule": {
       "summary": "03 6227 2888 Dave's Noodles, Channel Highway, Kingston TAS, Australia 11 am to 8:30 pm (7 days)",
-      "sourceUrl": "https://davesnoodles.com.au/locations",
+      "sourceUrl": "https://davesnoodles.com.au/about",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -43552,9 +43551,10 @@
       "checkedAt": "2026-10-11"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-11",
-      "url": "https://dinopizza.com.au/"
+      "url": "https://dinopizza.com.au/",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -48198,9 +48198,10 @@
       "checkedAt": "2026-10-11"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-11",
-      "url": "https://www.harbourlightscafe.com.au/"
+      "url": "https://www.harbourlightscafe.com.au/",
+      "error": "fetch failed"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
@@ -60032,10 +60033,9 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-11",
-      "url": "https://www.gordonrivercruises.com.au/",
-      "error": "403 Forbidden"
+      "url": "https://www.gordonrivercruises.com.au/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-11",
@@ -71005,7 +71005,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-11",
       "url": "http://www.flavourofindia.com.au/",
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
