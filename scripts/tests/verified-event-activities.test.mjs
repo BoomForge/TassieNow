@@ -11,7 +11,7 @@ test('curated illustrative sources carry independent copyright and credit',()=>{
   assert.ok(entry.sourceUrl.startsWith('https://commons.wikimedia.org/wiki/File:'));
   assert.ok(entry.url.startsWith('https://upload.wikimedia.org/wikipedia/commons/'));
   assert.ok(entry.credit);
-  assert.ok(entry.licenseUrl.startsWith('https://creativecommons.org/licenses/by-sa/'));
+  assert.ok(entry.licenseUrl.startsWith('https://creativecommons.org/licenses/by-sa/') || entry.licenseUrl.startsWith('https://creativecommons.org/licenses/by/'));
   assert.ok(entry.scene);
  }
 });
