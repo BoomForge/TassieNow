@@ -422,8 +422,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-11"
     },
     "walk": {
       "duration": "5 minutes to 5 hours , 100m to 5km, Grade 2",
@@ -599,10 +600,9 @@
     ],
     "lastWikidataChecked": "2026-10-06",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-11",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches"
     },
     "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
   },
@@ -3362,7 +3362,7 @@
     "bookingUrl": "https://farmgatemarket.com.au/?s={search_term_string}",
     "lastWikidataLinkChecked": "2026-10-10",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://farmgatemarket.com.au/"
     }
@@ -6329,9 +6329,10 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-11",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-11"
@@ -12078,7 +12079,7 @@
       "checkedAt": "2026-10-11"
     },
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://wchczeehan.com.au/"
     }
@@ -12533,7 +12534,7 @@
     "openingHours": "",
     "phone": "0418684108President",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/"
     },
@@ -19098,6 +19099,17 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nine_Mile_Beach,_Tuncurry,_New_South_Wales,_2023,_07.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Nine_Mile_Beach%2C_Tuncurry%2C_New_South_Wales%2C_2023%2C_06.jpg/1920px-Nine_Mile_Beach%2C_Tuncurry%2C_New_South_Wales%2C_2023%2C_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Nine Mile Beach, Tasmania",
+        "attribution": "Kgbo",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nine_Mile_Beach,_Tuncurry,_New_South_Wales,_2023,_06.jpg",
         "isFallback": false,
         "sourceMethod": "commons-search",
         "confidence": "high"
@@ -32887,7 +32899,7 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://www.richmondvillage.com.au/"
     },
@@ -33555,7 +33567,7 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://www.restauranttasman.com.au/"
     },
@@ -36579,7 +36591,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://davesnoodles.com.au/about",
+        "url": "https://davesnoodles.com.au/locations",
         "checkedAt": "2026-10-11"
       }
     },
@@ -36611,7 +36623,7 @@
     ],
     "schedule": {
       "summary": "03 6227 2888 Dave's Noodles, Channel Highway, Kingston TAS, Australia 11 am to 8:30 pm (7 days)",
-      "sourceUrl": "https://davesnoodles.com.au/about",
+      "sourceUrl": "https://davesnoodles.com.au/locations",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -37887,7 +37899,7 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://lanigansvineyard.com.au/"
     },
@@ -41181,7 +41193,7 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://whiskandco.com.au/"
     },
@@ -46978,7 +46990,7 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://www.tasteofmalaysiahobart.com.au/"
     },
@@ -50295,7 +50307,7 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://allthai.com.au/"
     },
@@ -66601,7 +66613,7 @@
     ],
     "rankedAt": "2026-10-11",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-11",
       "url": "https://www.rendezvousloungecafe.com.au/"
     },
@@ -70993,7 +71005,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-11",
       "url": "http://www.flavourofindia.com.au/",
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
