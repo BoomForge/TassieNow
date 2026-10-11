@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 const base=process.env.MARKET_PHOTO_SITE||'https://tassienow.com';
 const pages=[
  {path:'/discover/markets/',checks:['Google visitor photos','Markets in Tasmania']},
- {path:'/place/salamanca-market/',checks:['Market photos & Google reviews','Browse photos on Google Maps']}
+ {path:'/place/salamanca-market/',checks:['Visitor photos & Google reviews','View visitor photos on Google Maps','Submit an official photo or permission evidence']}
 ];
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 let results=[];
@@ -16,6 +16,8 @@ for(let attempt=1;attempt<=12;attempt++){
    });
    const html=await res.text();
    const missing=page.checks.filter(token=>!html.includes(token));
+   if(html.includes('maps.googleapis.com/maps/api/js')||html.includes('<gmp-place-details'))
+     missing.push('unexpected billable Google Maps widget');
    return {path:page.path,http:res.status,verified:res.ok&&missing.length===0,
      missing,attempt};
   }catch(e){return {path:page.path,verified:false,error:String(e.message),attempt};}
