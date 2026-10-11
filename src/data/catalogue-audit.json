@@ -1,8 +1,8 @@
 {
   "generatedAt": "2026-10-11",
   "places": {
-    "total": 2215,
-    "public": 2149,
+    "total": 2216,
+    "public": 2150,
     "suppressed": 66,
     "media": {
       "realHeroCoverage": {
@@ -26,16 +26,16 @@
     },
     "sources": {
       "websiteCoverage": {
-        "count": 365,
-        "percent": 17
+        "count": 364,
+        "percent": 16.9
       },
       "officialSourceCoverage": {
         "count": 287,
-        "percent": 13.4
+        "percent": 13.3
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 268,
-        "percent": 12.5
+        "count": 265,
+        "percent": 12.3
       },
       "wikidataLinkage": {
         "count": 628,
@@ -80,20 +80,20 @@
         "percent": 1.3
       },
       "reviewLinks": {
-        "count": 2149,
+        "count": 2150,
         "percent": 100
       }
     },
     "sourceTypes": {
-      "openstreetmap": 1522,
+      "openstreetmap": 1523,
       "wikidata": 586,
       "curated": 41
     },
     "qualityTiers": {
-      "standard": 789,
-      "strong": 607,
+      "standard": 790,
+      "strong": 608,
       "low": 477,
-      "featured": 276
+      "featured": 275
     },
     "regions": {
       "Hobart & South": 790,
@@ -103,12 +103,12 @@
       "Central Tasmania": 117,
       "West Coast": 88,
       "Flinders Island": 57,
-      "King Island": 38
+      "King Island": 39
     },
     "towns": 209,
     "categories": {
       "Food & Drink": 1041,
-      "Nature & Walks": 767,
+      "Nature & Walks": 768,
       "Things to Do": 200,
       "Museums": 78,
       "Markets": 30,
@@ -118,8 +118,8 @@
     },
     "categoryMembership": {
       "Food & Drink": 1055,
-      "Outdoor": 779,
-      "Nature & Walks": 777,
+      "Outdoor": 780,
+      "Nature & Walks": 778,
       "Free": 447,
       "Café": 424,
       "Restaurant": 405,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 173,
+    "active": 174,
     "media": {
       "licensedHeroCoverage": {
         "count": 87,
-        "percent": 50.3
+        "percent": 50
       },
-      "stillUsingCategoryArtwork": 86,
+      "stillUsingCategoryArtwork": 87,
       "bySource": {
         "verified-event-venue": 41,
         "verified-event-activity": 40,
@@ -241,7 +241,7 @@
         },
         "Launceston & North": {
           "count": 20,
-          "percent": 60.6
+          "percent": 58.8
         },
         "North West": {
           "count": 17,
@@ -270,17 +270,17 @@
       }
     },
     "ticketCoverage": {
-      "count": 58,
-      "percent": 33.5
+      "count": 52,
+      "percent": 29.9
     },
     "priceCoverage": {
       "count": 58,
-      "percent": 33.5
+      "percent": 33.3
     },
     "providers": {
-      "Humanitix": 31,
+      "Humanitix": 27,
       "Ticketek": 23,
-      "Eventbrite": 3,
+      "Eventbrite": 1,
       "Ticketmaster": 1
     },
     "sources": {
@@ -290,7 +290,7 @@
       "Huon Valley Council": 16,
       "Devonport City Council": 14,
       "Humanitix Hobart": 13,
-      "Humanitix Launceston": 11,
+      "Humanitix Launceston": 12,
       "Theatre Royal Hobart": 11,
       "East Coast Tasmania": 9,
       "City of Clarence": 8,
@@ -307,7 +307,7 @@
     },
     "regions": {
       "Hobart & South": 84,
-      "Launceston & North": 33,
+      "Launceston & North": 34,
       "North West": 41,
       "East Coast": 9,
       "West Coast": 2,
@@ -321,14 +321,14 @@
       "tomorrow": "2026-10-12",
       "nextWeekendStart": "2026-10-17",
       "nextWeekendEnd": "2026-10-18",
-      "todayOrTomorrow": 32,
+      "todayOrTomorrow": 33,
       "thisWeekend": 31,
       "townsTodayOrTomorrow": {
         "Huonville": 12,
         "Hobart": 6,
         "Burnie": 5,
         "Devonport": 5,
-        "Launceston": 3,
+        "Launceston": 4,
         "Sorell": 1
       },
       "regionsThisWeekend": {
@@ -350,7 +350,7 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 0
+      "missingOrOlderThan30Days": 1
     },
     "sourceRegionalMix": {
       "North West / Burnie City Council": 26,
@@ -359,8 +359,8 @@
       "Hobart & South / Huon Valley Council": 16,
       "North West / Devonport City Council": 14,
       "Hobart & South / Humanitix Hobart": 13,
+      "Launceston & North / Humanitix Launceston": 12,
       "Hobart & South / Theatre Royal Hobart": 11,
-      "Launceston & North / Humanitix Launceston": 11,
       "East Coast / East Coast Tasmania": 9,
       "Hobart & South / City of Clarence": 8,
       "Hobart & South / City of Hobart": 7,
