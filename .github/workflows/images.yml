@@ -96,6 +96,15 @@ jobs:
         run: node scripts/prune-expired-events.mjs
       - name: Generate catalogue coverage audit
         run: node scripts/catalogue-audit.mjs
+      - name: Measure real photographs against the 50-percent recovery target
+        run: node scripts/report-photo-recovery-goal.mjs
+      - name: Retain photo recovery progress
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: real-photo-recovery-progress
+          path: reports/photo-recovery-progress.json
+          retention-days: 30
       - name: Guard against large real-photo regressions
         run: node scripts/check-media-regression.mjs /tmp/tassienow-places-before-images.json
       - name: Validate catalogue
