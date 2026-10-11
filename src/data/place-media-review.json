@@ -169,5 +169,28 @@
         "observedAt": "2026-10-11T04:18:12.094Z"
       }
     ]
+  },
+  "franklin-market-franklin": {
+    "name": "Franklin Market",
+    "town": "Franklin",
+    "candidates": [
+      {
+        "id": "openverse:9c27c2b7-91c6-48f2-8039-29f231d4e7f4",
+        "url": "https://live.staticflickr.com/65535/52735705697_1484b1e184_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/91873384@N04/52735705697",
+        "discoveryPage": "https://api.openverse.org/v1/images/9c27c2b7-91c6-48f2-8039-29f231d4e7f4/",
+        "title": "Franklin Market & Liquor",
+        "credit": "dalecruse",
+        "licence": "BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 576,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Exact listing and town in source title",
+        "observedAt": "2026-10-11T04:28:23.679Z"
+      }
+    ]
   }
 }
