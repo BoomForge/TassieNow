@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T02:55:08.576Z",
+  "generatedAt": "2026-10-11T03:38:31.047Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
@@ -36,15 +36,15 @@
     },
     {
       "name": "verify-published-photos.yml",
-      "status": "no-scheduled-run-observed",
+      "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
-      "lastResult": "success",
-      "lastRunAt": "2026-10-10T22:58:26Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38093374006"
+      "lastResult": "failure",
+      "lastRunAt": "2026-10-11T03:36:04Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38108912200"
     },
     {
       "name": "verify-published-event-images.yml",
-      "status": "no-scheduled-run-observed",
+      "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
       "lastResult": "success",
       "lastRunAt": "2026-10-11T01:30:52Z",
@@ -52,7 +52,7 @@
     },
     {
       "name": "verify-event-artwork.yml",
-      "status": "no-scheduled-run-observed",
+      "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
       "lastResult": "success",
       "lastRunAt": "2026-10-11T01:30:54Z",
@@ -60,7 +60,7 @@
     },
     {
       "name": "verify-event-image-files.yml",
-      "status": "no-scheduled-run-observed",
+      "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
       "lastResult": "success",
       "lastRunAt": "2026-10-11T01:30:56Z",
@@ -68,7 +68,7 @@
     },
     {
       "name": "verify-market-photo-access.yml",
-      "status": "no-scheduled-run-observed",
+      "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
       "lastResult": "success",
       "lastRunAt": "2026-10-11T01:30:11Z",
@@ -76,7 +76,7 @@
     },
     {
       "name": "event-photo-research.yml",
-      "status": "no-scheduled-run-observed",
+      "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
       "lastResult": "success",
       "lastRunAt": "2026-10-11T00:37:41Z",
@@ -86,9 +86,9 @@
       "name": "quality.yml",
       "status": "ok",
       "lastScheduled": "2026-10-10T22:39:29Z",
-      "lastResult": "success",
-      "lastRunAt": "2026-10-11T01:30:11Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38102043460"
+      "lastResult": "in_progress",
+      "lastRunAt": "2026-10-11T03:38:24Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38109033968"
     },
     {
       "name": "automation-health.yml",
@@ -160,43 +160,13 @@
   },
   "failures": [
     {
-      "component": "verify-published-photos.yml",
-      "status": "no-scheduled-run-observed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38093374006"
-    },
-    {
       "component": "catalogue-quality.yml",
       "status": "scheduled-run-failed",
       "action": "https://github.com/BoomForge/TassieNow/actions/runs/38099534516"
-    },
-    {
-      "component": "verify-market-photo-access.yml",
-      "status": "no-scheduled-run-observed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38102043464"
-    },
-    {
-      "component": "verify-event-artwork.yml",
-      "status": "no-scheduled-run-observed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38102090236"
-    },
-    {
-      "component": "event-photo-research.yml",
-      "status": "no-scheduled-run-observed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38099070327"
-    },
-    {
-      "component": "verify-event-image-files.yml",
-      "status": "no-scheduled-run-observed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38102091532"
-    },
-    {
-      "component": "verify-published-event-images.yml",
-      "status": "no-scheduled-run-observed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38102088594"
     }
   ],
   "imageCoverage": {
-    "activeEvents": 172,
+    "activeEvents": 169,
     "publishedEventPhotos": 87,
     "auditedPublishedPhotos": 87
   }
