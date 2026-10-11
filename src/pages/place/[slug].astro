@@ -27,7 +27,6 @@ const wheelchairText = place.wheelchair === 'yes'
     : place.wheelchair === 'no'
       ? 'Not marked wheelchair accessible'
       : null;
-const googleMapsApiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY || '';
 const townSlug = place.town.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const regionSlug = place.region.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const hasVisitDetails = Boolean(
@@ -180,30 +179,6 @@ const schema = {
           </section>
         )}
 
-        {googleMapsApiKey && !isMarketListing && (
-          <section class="section-card google-card" aria-labelledby="google-heading">
-            <div class="section-heading-row google-heading-row">
-              <div>
-                <p class="section-kicker">Live Google information</p>
-                <h2 id="google-heading">Ratings, reviews & visitor photos</h2>
-              </div>
-              <a href={reviewUrl} target="_blank" rel="noopener noreferrer">View on Google Maps ↗</a>
-            </div>
-            <gmp-place-details>
-              {place.googlePlaceId
-                ? <gmp-place-details-place-request place={place.googlePlaceId}></gmp-place-details-place-request>
-                : <gmp-place-details-location-request location={`${place.latitude},${place.longitude}`}></gmp-place-details-location-request>}
-              <gmp-place-content-config>
-                <gmp-place-media lightbox-preferred></gmp-place-media>
-                <gmp-place-rating></gmp-place-rating>
-                <gmp-place-open-now-status></gmp-place-open-now-status>
-                <gmp-place-opening-hours></gmp-place-opening-hours>
-                <gmp-place-reviews></gmp-place-reviews>
-                <gmp-place-attribution light-scheme-color="gray" dark-scheme-color="white"></gmp-place-attribution>
-              </gmp-place-content-config>
-            </gmp-place-details>
-          </section>
-        )}
 
         <div class="source-stack">
           <p class="notice">Opening hours, dates, prices, bookings, conditions and access can change. Confirm time-sensitive details with the operator before travelling.</p>
@@ -318,12 +293,6 @@ const schema = {
     </section>
   </article>
 
-  {googleMapsApiKey && !isMarketListing && (
-    <script is:inline define:vars={{ googleMapsApiKey }}>
-      (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await(a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({key:googleMapsApiKey,v:"weekly"});
-      google.maps.importLibrary('places');
-    </script>
-  )}
 
   <style>
     .place-page{max-width:1180px;margin:0 auto;padding:2.2rem 1.25rem 6rem}
