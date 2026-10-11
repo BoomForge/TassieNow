@@ -36,8 +36,12 @@ export function openverseCandidate(place, work, checkedAt = new Date().toISOStri
   if(!safeUrl(work.url) || !safeUrl(work.foreign_landing_url) || !safeUrl(work.license_url)) return null;
   // A search index's licence claim is a LEAD only. The exact original must
   // independently establish rights before publication.
-  if(!String(work.license_url).includes('creativecommons.org/') &&
-     !String(work.license_url).includes('creativecommons.org/publicdomain/')) return null;
+  const licenseUrl=new URL(work.license_url);
+  if(!['creativecommons.org','www.creativecommons.org'].includes(licenseUrl.hostname))return null;
+  const licencePath=licenseUrl.pathname.toLowerCase();
+  const expected=license==='by'?'licenses/by/':license==='by-sa'?'licenses/by-sa/':
+    license==='cc0'?'publicdomain/zero/':'publicdomain/mark/';
+  if(!licencePath.startsWith('/'+expected))return null;
   if(!work.creator || !String(work.creator).trim()) return null;
   if((work.width && Number(work.width)<640) || (work.height && Number(work.height)<400)) return null;
   if(work.category && !PHOTO_TAGS.has(String(work.category).toLowerCase())) return null;
@@ -80,6 +84,7 @@ export function mergePlacePhotoReview(current, incoming, {maxCandidates=8}={}) {
     if(old && old.name!==entry.name)continue;
     if(!old){ output[slug]={name:entry.name,town:entry.town,candidates:[]};placesAdded++; }
     const target=output[slug];
+    if(!Array.isArray(target.candidates))target.candidates=[];
     const seen=new Set(target.candidates.map(c=>c.id||c.sourcePage||c.url));
     for(const candidate of entry.candidates) {
       if(!candidate?.id || !candidate?.url || seen.has(candidate.id))continue;
