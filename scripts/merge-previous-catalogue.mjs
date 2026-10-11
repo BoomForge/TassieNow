@@ -20,7 +20,7 @@ const TODAY = new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Hobart' })
 
 const carryFields = [
   'openingHours', 'phone', 'email', 'address', 'bookingUrl', 'fee', 'wheelchair', 'operator',
-  'detailSources', 'reviewLinks', 'lastDetailsChecked', 'officialSource', 'gallery'
+  'detailSources', 'reviewLinks', 'lastDetailsChecked', 'officialSource', 'gallery', 'photoLinks'
 ];
 
 let carried = 0;

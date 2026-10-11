@@ -32,3 +32,14 @@ test('rejects missing photo attribution or licence and mismatched identities',()
  retainVerifiedMedia(next,{...place(photo('different')),sourceId:'node/900'});
  assert.equal(next.image,null);
 });
+
+test('retains licensed and attested locally hosted uploads but not arbitrary local files',()=>{
+ const hosted={url:'/uploads/admin/2026-10/market.webp',sourceUrl:'https://example.org/photo/1',
+  license:'Rights-holder permission',attribution:'Market owner',isFallback:false,
+  useMode:'hosted',sourceMethod:'manual-reviewed',rightsEvidence:{status:'owner-attested'}};
+ assert.equal(verifiedMedia(hosted),true);
+ const next=retainVerifiedMedia(place(null),place(hosted));
+ assert.equal(next.image.url,hosted.url);
+ assert.equal(verifiedMedia({...hosted,rightsEvidence:undefined}),false);
+ assert.equal(verifiedMedia({...hosted,url:'/images/categories/market.svg'}),false);
+});

@@ -16,6 +16,7 @@ const origin = Astro.site ?? Astro.url.origin;
 const pageUrl = new URL(`/event/${event.slug}/`, origin).href;
 const displayImage=eventDisplayImage(event);
 const displayAlt=eventDisplayAlt(event);
+const googleImagesUrl='https://www.google.com/search?'+new URLSearchParams({q:[event.name,event.town,'Tasmania'].filter(Boolean).join(' '),udm:'2'}).toString();
 const absoluteImage = displayImage.startsWith('http') ? displayImage : new URL(displayImage, origin).href;
 
 const offer = event.ticketUrl ? {
@@ -134,6 +135,8 @@ const townSlug = String(event.town || '')
         </figcaption>
       )}
     </figure>
+
+    {event.image.isFallback && <p class="source-note">Looking for real event photographs? <a href={googleImagesUrl} target="_blank" rel="noopener noreferrer">Search Google Images for {event.name} ↗</a>. Photographs open on external websites; TassieNow does not embed or copy them.</p>}
 
     <p class="event-date">
       <strong>{formatEventDate(event.startDate)}</strong>

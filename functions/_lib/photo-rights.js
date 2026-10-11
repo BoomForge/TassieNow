@@ -23,10 +23,10 @@ export function photoLicence(name) {
 
 export function acceptAdminPhoto(body, current, verifiedAt) {
   if(!body.image_url)return current || null;
-  const url=validHttps(body.image_url,'Photo');
-  if (/(^|\.)(googleusercontent\.com|gstatic\.com)$/.test(new URL(url).hostname) ||
-      /(^|\.)google\.[a-z.]+$/.test(new URL(url).hostname))
-    throw new Error('Use the independently authorised original image file, not Google cached/review/map imagery.');
+  const url=text(body.image_url,1200);
+  const mode=String(body.image_display_mode || '');
+  const currentMode=current?.useMode ||
+    (/^\/uploads\/admin\//.test(current?.url||'') ? 'hosted' : 'external-embed');
   // If the stored image and its provenance have not changed, preserve its complete
   // original metadata and do not force fresh attestations on unrelated edits.
   const unchanged=current&&current.url===url&&
@@ -36,7 +36,20 @@ export function acceptAdminPhoto(body, current, verifiedAt) {
         image_source_url:'sourceUrl',image_license_url:'licenseUrl'}[key];
       return text(body[key])===text(current[field]);
     });
-  if(unchanged)return current;
+  if(unchanged && (!mode || mode===currentMode))return current;
+  if(!['hosted','external-embed'].includes(mode))
+    throw new Error('Select hosted photo or permitted external embed; source links use the separate link-only form.');
+  if(mode==='hosted') {
+    if(!/^\/uploads\/admin\/[a-z0-9/_-]+\.(?:jpe?g|png|webp)$/i.test(url) &&
+       !/^https:\/\/(?:www\.)?tassienow\.com\/uploads\/admin\/[a-z0-9/_-]+\.(?:jpe?g|png|webp)$/i.test(url))
+      throw new Error('Hosted mode requires a file uploaded to TassieNow, not a third-party URL.');
+  } else {
+    validHttps(url,'External photo');
+    const hostname=new URL(url).hostname;
+    if (/(^|\.)(googleusercontent\.com|gstatic\.com)$/.test(hostname) ||
+        /(^|\.)google\.[a-z.]+$/.test(hostname) || /(^|\.)tassienow\.com$/.test(hostname))
+      throw new Error('Embed mode needs an authorised original external image URL (not Google caches or TassieNow hosted files).');
+  }
   if(/\/images\/categories\/|\.(?:svg)(?:\?|$)/i.test(url))
     throw new Error('Category illustrations cannot be approved as real photographs.');
   if(body.image_rights_confirmed!==true)
@@ -66,7 +79,7 @@ export function acceptAdminPhoto(body, current, verifiedAt) {
   return {
     url,alt,attribution,license:licence.name,
     licenseUrl:licence.url || (providedLicenceUrl?validHttps(providedLicenceUrl,'Licence'):null),
-    sourceUrl,isFallback:false,sourceMethod:'manual-reviewed',
+    sourceUrl,isFallback:false,sourceMethod:'manual-reviewed',useMode:mode,
     rightsEvidence:{
       status:'owner-attested',checkedAt:verifiedAt,
       note:permissionNotes || 'Owner confirmed original source, subject identity and licence before publication.'

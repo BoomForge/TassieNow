@@ -40,3 +40,11 @@ Official documentation:
 - An image-only edit keeps the original discovery source identity, allowing routine business updates to continue. Existing licensed images remain unchanged on unrelated listing edits.
 - Google Images has a CC-filtered discovery link using a Google query parameter, but filter behavior may change. Confirm visually in Google's **Tools → Usage rights** and then check the original image.
 - Manual moderation is **not** production verification: after image publication, check the real listing page, the loaded hero and its creator/rights attribution. Count only proven new photos in the recovery report. The 975 net recovery target remains unmet unless the live catalogue audit shows actual gain.
+
+## Link-only original photo sources (no copying)
+- For **any** missing place or event photo, the public listing includes a Google Images search link. This opens Google's own website; search thumbnails are never used as TassieNow images.
+- Admin → Catalogue → **Link to an original photograph or gallery** can publish a relevant third-party photo/gallery URL directly on its listing, without an image-reuse licence. Verify place identity, give a meaningful title and optional creator credit. The source stays a clickable **anchor**, never an inline image, thumbnail, OG/SEO image, gallery entry, or recovered hero photo.
+- Admin research leads can be prepared as a source-only link without approval for image reproduction. Source links are saved separately in `place.photoLinks`, capped at 12 per listing, removable, and preserved through OSM refreshes.
+- For **permitted external embedding**, set Photo handling to `external-embed`. The visitor's browser loads the remote image via `<img>`, but the original site's terms and the author's rights for public display must still be checked.
+- For a **hosted copy**, upload a photo in the admin editor, which fills a local `/uploads/admin/...` URL and sets `hosted`. An open licence or rights-holder permission must cover hosting and any resizing.
+- Link-only sources are not real photo coverage. Recovery audits continue to count only verified non-fallback images. Keep original author, licence and source in the published captions for approved inline photos.

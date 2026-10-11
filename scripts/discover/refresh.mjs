@@ -189,6 +189,12 @@ async function discoverPlaces() {
     p.image = commons ? { ...commons, alt: `${p.name}, Tasmania` } : { ...fallbackImage(p.categories), alt: `${p.name} category image` };
     delete p.commonsTitle; delete p.discoveryScore;
   }
+  // Keep owner-reviewed source links when OSM records are regenerated.
+  const previousBySource=new Map(current.filter(p=>p.sourceId&&p.sourceType==='openstreetmap').map(p=>[p.sourceId,p]));
+  for(const place of selected){
+    const old=previousBySource.get(place.sourceId);
+    if(old?.photoLinks?.length)place.photoLinks=structuredClone(old.photoLinks);
+  }
   const merged = [...curated, ...selected].sort((a, b) => a.region.localeCompare(b.region) || a.town.localeCompare(b.town) || a.name.localeCompare(b.name));
   await fs.writeFile(PLACES_FILE, `${JSON.stringify(merged, null, 2)}\n`); console.log(`Places: ${curated.length} curated + ${selected.length} discovered = ${merged.length}.`);
 }
