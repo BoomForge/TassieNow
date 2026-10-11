@@ -56,6 +56,17 @@ jobs:
           MAX_WIKIDATA_MEDIA: '1400'
           WIKIDATA_GALLERY_SIZE: '8'
         run: node scripts/enrich-wikidata-images.mjs
+      - name: Deep geotagged Commons search for missing place heroes
+        env:
+          MAX_GEO_PLACES: '250'
+        run: node scripts/enrich-geo-photos.mjs
+      - name: Preserve geo-image diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deep-geo-photo-discovery
+          path: reports/geo-photo-enrichment.json
+          retention-days: 30
       - name: Exhaustive licensed Commons sweep for remaining media gaps
         env:
           MAX_IMAGE_ENRICH: '1400'
