@@ -265,7 +265,7 @@ const siblingModes = [
               <a href={`${isEventItem(item) ? '/event/' : '/place/'}${item.slug}/`}>
                 <img src={item.image?.url || config.fallback} alt={item.image?.alt || item.name} loading={index < 2 ? 'eager' : 'lazy'} />
                 <span class="discover-shade"></span>
-                <span class="discover-card-badge">{isEventItem(item) ? ({'historical-event':'Previous edition','contextual':'Venue image','performer-context':'Performer photo','event-artwork':'Event artwork','official-artwork':'Event artwork'}[item.image?.mediaType] || 'Event') : item.categories?.[0] || 'Discover'}</span>
+                <span class="discover-card-badge">{isEventItem(item) ? ({'historical-event':'Previous edition','contextual':'Venue image','performer-context':'Performer photo','activity-illustrative':'Illustrative photo','event-artwork':'Event artwork','official-artwork':'Event artwork'}[item.image?.mediaType] || 'Event') : item.categories?.[0] || 'Discover'}</span>
                 <span class="discover-feature-copy">
                   <small>{isEventItem(item) ? `${formatEventDate(item.startDate, item.endDate)} · ${item.town}` : `${item.town} · ${item.region}`}</small>
                   <strong>{item.name}</strong>
@@ -309,7 +309,7 @@ const siblingModes = [
           >
             <a class="card-image-link" href={`${isEventItem(item) ? '/event/' : '/place/'}${item.slug}/`}>
               <img class="card-image" src={item.image?.url || config.fallback} alt={item.image?.alt || item.name} loading="lazy" />
-              <span class="image-badge">{isEventItem(item) ? ({'historical-event':'Previous edition','contextual':'Venue image','performer-context':'Performer photo','event-artwork':'Event artwork','official-artwork':'Event artwork'}[item.image?.mediaType] || 'Event') : item.categories?.[0] || 'Discover'}</span>
+              <span class="image-badge">{isEventItem(item) ? ({'historical-event':'Previous edition','contextual':'Venue image','performer-context':'Performer photo','activity-illustrative':'Illustrative photo','event-artwork':'Event artwork','official-artwork':'Event artwork'}[item.image?.mediaType] || 'Event') : item.categories?.[0] || 'Discover'}</span>
             </a>
             <div class="card-body">
               <p class="location">
