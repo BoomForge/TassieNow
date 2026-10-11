@@ -23,6 +23,7 @@ function categories(value) {
 function applyChanges(place, body) {
   const original = place.sourceType;
   const before = structuredClone(place);
+  const previousImage = place.image;
   if (body.name !== undefined) place.name = cleanText(body.name, 160);
   if (body.town !== undefined) place.town = cleanText(body.town, 120);
   if (body.region !== undefined) place.region = cleanText(body.region, 120);
@@ -43,7 +44,7 @@ function applyChanges(place, body) {
     place.originalSourceType = place.originalSourceType || original || 'unknown';
     place.sourceType = 'manual';
     place.managedManually = true;
-  } else if (place.image !== before.image && place.image?.sourceMethod === 'manual-reviewed') {
+  } else if (place.image !== previousImage && place.image?.sourceMethod === 'manual-reviewed') {
     place.imageManagedManually = true;
   }
   place.status = place.status || 'active';
