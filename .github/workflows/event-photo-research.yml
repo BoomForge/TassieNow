@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   inspect-event-photos:
@@ -29,6 +30,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Save event photo baseline before independent research
+        run: cp src/data/events.json /tmp/tassienow-events-independent-before.json
       - name: Independently examine near-term event photos and organiser sources
         env:
           MAX_EVENT_IMAGE_ENRICH: '24'
@@ -54,24 +57,43 @@ jobs:
             reports/event-image-discovery.json
             src/data/event-media-review.json
           retention-days: 30
-      - name: Commit durable organiser-photo review candidates
+      - name: Commit durable licensed photos and organiser-photo review candidates
+        env:
+          GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
           cp src/data/event-media-review.json /tmp/tassienow-event-media-candidates.json
+          cp src/data/events.json /tmp/tassienow-events-independent-after.json
           git config user.name "TassieNow Bot"
           git config user.email "actions@users.noreply.github.com"
           for attempt in 1 2 3 4; do
             git fetch origin main
             git reset --hard origin/main
             node scripts/reapply-event-review.mjs /tmp/tassienow-event-media-candidates.json
-            if git diff --quiet -- src/data/event-media-review.json; then
-              echo "Review queue already includes all discovered candidates."
+            node scripts/reapply-event-image-upgrades.mjs /tmp/tassienow-events-independent-before.json /tmp/tassienow-events-independent-after.json
+            node scripts/catalogue-audit.mjs
+            node scripts/validate-data.mjs
+            if git diff --quiet -- src/data/events.json src/data/event-media-review.json src/data/catalogue-audit.json; then
+              echo "All verified photos and rights-review candidates already persisted."
               exit 0
             fi
-            git add src/data/event-media-review.json
-            git commit -m "data: retain event photo permission research [skip ci]"
-            if git push origin HEAD:main; then exit 0; fi
+            photo_update=0
+            if ! git diff --quiet -- src/data/events.json; then photo_update=1; fi
+            git add src/data/events.json src/data/event-media-review.json src/data/catalogue-audit.json
+            if [ "$photo_update" -eq 1 ]; then
+              git commit -m "data: publish licensed independent event media"
+            else
+              git commit -m "data: retain organiser-photo rights research [skip ci]"
+            fi
+            if git push origin HEAD:main; then
+              if [ "$photo_update" -eq 1 ]; then
+                gh workflow run verify-published-event-images.yml --ref main
+                gh workflow run verify-event-artwork.yml --ref main
+                gh workflow run verify-event-image-files.yml --ref main
+              fi
+              exit 0
+            fi
             sleep "$((attempt * 2))"
           done
           echo "::error::Could not preserve organiser-photo candidates after four safe retries."

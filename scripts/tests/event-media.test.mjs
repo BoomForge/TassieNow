@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {permittedLicence,imageIsPublishable,preserveEventImages,metaImageCandidates,eventTitleMatchesFile} from '../discover/lib/event-media.mjs';
+import {permittedLicence,imageIsPublishable,preserveEventImages,metaImageCandidates,eventTitleMatchesFile,shouldUpgradeEventImage} from '../discover/lib/event-media.mjs';
 
 const original={
  slug:'brixhibition-hobart-2026-2026-10-10-sorell',
@@ -55,4 +55,30 @@ test('accept a filename that names the specific event and matching year',()=>{
 });
 test('reject generic concert or venue photograph as event identity evidence',()=>{
  assert.equal(eventTitleMatchesFile('Tasmania JackJumpers v Adelaide 36ers','File:Adelaide 36ers venue.jpg'),false);
+});
+
+test('preserve rights while repairing a Commons CDN URL under the same verified source',()=>{
+ const base={url:'https://upload.wikimedia.org/wikipedia/commons/0/00/Golf_green.jpg',
+  sourceUrl:'https://commons.wikimedia.org/wiki/File:Golf_green.jpg',
+  sourceMethod:'verified-event-activity',mediaType:'activity-illustrative',isFallback:false,
+  attribution:'Dan Perry',license:'CC BY 2.0',licenseUrl:'https://creativecommons.org/licenses/by/2.0/',
+  caption:'Illustrative photo: a golf green, not the advertised event',
+  matchEvidence:{verified:true,verifiedType:'activity-illustrative',topic:'golf',
+    eventName:'Disability golf',sourceFilePage:'https://commons.wikimedia.org/wiki/File:Golf_green.jpg'}};
+ const fixed={...base,url:'https://upload.wikimedia.org/wikipedia/commons/6/62/Golf_green.jpg'};
+ assert.equal(shouldUpgradeEventImage(base,fixed),true);
+ assert.equal(shouldUpgradeEventImage(fixed,fixed),false);
+ const different={...fixed,sourceUrl:'https://commons.wikimedia.org/wiki/File:Different.jpg'};
+ assert.equal(shouldUpgradeEventImage(base,different),false);
+ const unlicensed={...fixed,license:'All rights reserved',licenseUrl:null};
+ assert.equal(shouldUpgradeEventImage(base,unlicensed),false);
+});
+test('event-specific photographs supersede contextual images but not in reverse',()=>{
+ const context={url:'https://upload.wikimedia.org/wikipedia/commons/a/aa/hall.jpg',
+  attribution:'Creator',license:'CC BY 4.0',licenseUrl:'https://creativecommons.org/licenses/by/4.0/',
+  sourceMethod:'verified-event-venue',mediaType:'contextual',isFallback:false,
+  caption:'Venue photo, not this event',matchEvidence:{verified:true,venue:'Hall',town:'Hobart',
+    sourceFilePage:'https://commons.wikimedia.org/wiki/File:Hall.jpg'}};
+ assert.equal(shouldUpgradeEventImage(context,original.image),true);
+ assert.equal(shouldUpgradeEventImage(original.image,context),false);
 });
