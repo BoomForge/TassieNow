@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T05:55:49.402Z",
+  "generatedAt": "2026-10-11T07:46:48.440Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
@@ -62,17 +62,17 @@
       "name": "verify-published-event-images.yml",
       "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
-      "lastResult": "in_progress",
-      "lastRunAt": "2026-10-11T05:55:40Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38116376668"
+      "lastResult": "success",
+      "lastRunAt": "2026-10-11T07:46:35Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38122511227"
     },
     {
       "name": "verify-event-artwork.yml",
       "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
-      "lastResult": "success",
-      "lastRunAt": "2026-10-11T05:13:43Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38114108313"
+      "lastResult": "in_progress",
+      "lastRunAt": "2026-10-11T07:46:37Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38122512580"
     },
     {
       "name": "verify-event-image-files.yml",
@@ -109,10 +109,10 @@
     {
       "name": "automation-health.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-10T22:21:49Z",
-      "lastResult": "success",
-      "lastRunAt": "2026-10-10T22:21:49Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38091139657"
+      "lastScheduled": "2026-10-11T06:56:50Z",
+      "lastResult": "pending",
+      "lastRunAt": "2026-10-11T06:56:50Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38119713626"
     },
     {
       "name": "indexnow.yml",
@@ -182,7 +182,7 @@
     }
   ],
   "imageCoverage": {
-    "activeEvents": 173,
+    "activeEvents": 175,
     "publishedEventPhotos": 87,
     "auditedPublishedPhotos": 87
   },
