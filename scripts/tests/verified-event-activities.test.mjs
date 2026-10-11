@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {applyVerifiedActivityPhotos,verifiedActivitySources} from '../discover/lib/verified-event-activities.mjs';
+import {applyVerifiedActivityPhotos,verifiedActivitySources,canonicalCommonsImageUrl} from '../discover/lib/verified-event-activities.mjs';
 import {imageIsPublishable,eventImagePriority} from '../discover/lib/event-media.mjs';
 
 const fallback=()=>({url:'/images/categories/events.svg',isFallback:true});
@@ -11,7 +11,7 @@ test('curated illustrative sources carry independent copyright and credit',()=>{
   assert.ok(entry.sourceUrl.startsWith('https://commons.wikimedia.org/wiki/File:'));
   assert.ok(entry.url.startsWith('https://upload.wikimedia.org/wikipedia/commons/'));
   assert.ok(entry.credit);
-  assert.ok(entry.licenseUrl.startsWith('https://creativecommons.org/licenses/by-sa/'));
+  assert.ok(entry.licenseUrl.startsWith('https://creativecommons.org/licenses/by-sa/') || entry.licenseUrl.startsWith('https://creativecommons.org/licenses/by/'));
   assert.ok(entry.scene);
  }
 });
@@ -54,4 +54,50 @@ test('a verified named-venue image or approved poster stays preferred',()=>{
  };
  assert.equal(eventImagePriority(e.image),3);
  assert.equal(applyVerifiedActivityPhotos([e]),0);
+});
+
+test('second pass finds accurate, labelled photographs for overlooked event activities',()=>{
+ const events=[
+  'Emu Valley Rhododendron Garden Party',
+  'AI Unpacked (Part 1 of 2): An Introduction to Generative AI for Small Business',
+  'Intro to Computing at Burnie Library',
+  'Rock and Rhyme at Huonville Library',
+  'Starting your Family History Search + morning tea',
+  'Mandarin Lessons',
+  'ACOTAR 6 Midnight Release Event',
+  'Community Bake Days',
+  'Franklin Movie Nights',
+  'North West Film Society – I Swear',
+  'Come and try – disability golf',
+  '2027 King Island Pro Am',
+  'Fundamental Pilates'
+ ].map(item);
+ assert.equal(applyVerifiedActivityPhotos(events),events.length);
+ for(const event of events){
+  assert.equal(imageIsPublishable(event.image),true,event.name);
+  assert.equal(event.image.mediaType,'activity-illustrative');
+  assert.match(event.image.caption,/does not depict the advertised event in Tasmania/);
+ }
+});
+test('image URLs are derived from canonical Wikimedia Commons filenames, never guessed CDN hashes',()=>{
+ const source='https://commons.wikimedia.org/wiki/File:Pickleball_Players.jpg';
+ assert.equal(canonicalCommonsImageUrl(source),
+  'https://upload.wikimedia.org/wikipedia/commons/1/1f/Pickleball_Players.jpg');
+ const books=verifiedActivitySources.find(s=>s.topic==='books and reading');
+ assert.ok(canonicalCommonsImageUrl(books.sourceUrl).includes('/2/2a/Books_on_shelves_IMG_8422.jpg'));
+});
+test('a broken historical activity CDN path repairs without replacing licensed event-specific photos',()=>{
+ const broken=item('Fundamental Pilates');
+ const source=verifiedActivitySources.find(s=>s.topic==='pilates');
+ broken.image={
+  url:'https://upload.wikimedia.org/wikipedia/commons/0/00/Pilates_Training.jpg',
+  sourceUrl:source.sourceUrl,sourceMethod:'verified-event-activity',
+  attribution:source.credit,license:source.license,licenseUrl:source.licenseUrl,
+  caption:'Illustration',mediaType:'activity-illustrative',isFallback:false,
+  matchEvidence:{verified:true,verifiedType:'activity-illustrative',topic:'pilates',
+   eventName:broken.name,sourceFilePage:source.sourceUrl}
+ };
+ assert.equal(applyVerifiedActivityPhotos([broken]),1);
+ assert.equal(broken.image.url,canonicalCommonsImageUrl(source.sourceUrl));
+ assert.equal(applyVerifiedActivityPhotos([broken]),0);
 });

@@ -2,8 +2,22 @@
 // No organiser copyright is assumed, and each is explicitly labelled as an
 // illustration photographed elsewhere, never as a photo of the listed event.
 import {eventImagePriority,imageIsPublishable} from './event-media.mjs';
+import {createHash} from 'node:crypto';
+
+export function canonicalCommonsImageUrl(sourcePage){
+ const file=decodeURIComponent(new URL(sourcePage).pathname.split('/').pop()).replace(/^File:/i,'').normalize('NFC');
+ const hash=createHash('md5').update(file).digest('hex');
+ return `https://upload.wikimedia.org/wikipedia/commons/${hash[0]}/${hash.slice(0,2)}/${encodeURIComponent(file)}`;
+}
 
 export const verifiedActivitySources=[
+  {topic:"rhododendrons",pattern:new RegExp("\\brhododendron\\b",'i'),url:"https://upload.wikimedia.org/wikipedia/commons/f/f4/Rhododendron_Flower.jpg",sourceUrl:"https://commons.wikimedia.org/wiki/File:Rhododendron_Flower.jpg",credit:"atlas lin",license:"CC BY-SA 2.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/2.0/",scene:"rhododendron flowers photographed in Fuzhou, China"},
+  {topic:"digital skills",pattern:new RegExp("\\b(?:ai unpacked|intro to computing|computer classes?|digital skills?)\\b",'i'),url:"https://upload.wikimedia.org/wikipedia/commons/9/92/Computer_class_for_studying.jpg",sourceUrl:"https://commons.wikimedia.org/wiki/File:Computer_class_for_studying.jpg",credit:"Juuuuuvi",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",scene:"a computer classroom at Irkutsk National Research Technical University"},
+  {topic:"books and reading",pattern:new RegExp("\\b(?:rock and rhyme|family history search|english conversation group|acotar|mandarin lessons|in conversation with monica mcinerney)\\b",'i'),url:"https://upload.wikimedia.org/wikipedia/commons/b/bc/Books_on_shelves_IMG_8422.jpg",sourceUrl:"https://commons.wikimedia.org/wiki/File:Books_on_shelves_IMG_8422.jpg",credit:"Glossyqueen",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",scene:"library bookshelves photographed in Kwara State, Nigeria"},
+  {topic:"community baking",pattern:new RegExp("\\b(?:community bake days|baking workshop|bread baking)\\b",'i'),url:"https://upload.wikimedia.org/wikipedia/commons/c/c1/A_man_baking_bread_01.jpg",sourceUrl:"https://commons.wikimedia.org/wiki/File:A_man_baking_bread_01.jpg",credit:"Creative Gurus",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",scene:"someone baking bread in Ghana"},
+  {topic:"film screenings",pattern:new RegExp("\\b(?:movie nights|film society|film screenings?)\\b",'i'),url:"https://upload.wikimedia.org/wikipedia/commons/c/c1/Manual_film_projector.jpg",sourceUrl:"https://commons.wikimedia.org/wiki/File:Manual_film_projector.jpg",credit:"Mattia Luigi Nappi",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",scene:"a vintage manual film projector"},
+  {topic:"golf",pattern:new RegExp("\\b(?:golf|pro am)\\b",'i'),url:"https://upload.wikimedia.org/wikipedia/commons/6/62/Golf_green.jpg",sourceUrl:"https://commons.wikimedia.org/wiki/File:Golf_green.jpg",credit:"Dan Perry",license:"CC BY 2.0",licenseUrl:"https://creativecommons.org/licenses/by/2.0/",scene:"a golf putting green at Pinehurst, USA"},
+  {topic:"pilates",pattern:new RegExp("\\bpilates\\b",'i'),url:"https://upload.wikimedia.org/wikipedia/commons/1/10/Pilates_Training.jpg",sourceUrl:"https://commons.wikimedia.org/wiki/File:Pilates_Training.jpg",credit:"Ikorepilates",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",scene:"a Pilates training session"},
 {topic:"pickleball",pattern:new RegExp("\\bpickleball\\b",'i'),url:"https://upload.wikimedia.org/wikipedia/commons/1/1f/Pickleball_Players.jpg",sourceUrl:"https://commons.wikimedia.org/wiki/File:Pickleball_Players.jpg",credit:"TheVillagesFL",license:'CC BY-SA 4.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/4.0/',scene:"people playing pickleball in Florida"},
 {topic:"roller skating",pattern:new RegExp("\\broller[ -]?skat(?:ing|ers?)\\b",'i'),url:"https://upload.wikimedia.org/wikipedia/commons/c/cd/Roller_Skaters.jpg",sourceUrl:"https://commons.wikimedia.org/wiki/File:Roller_Skaters.jpg",credit:"dutchtownstl",license:'CC BY-SA 2.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/2.0/',scene:"roller skaters in St. Louis, USA"},
 {topic:"composting",pattern:new RegExp("\\bcompost(?:ing)?\\b",'i'),url:"https://upload.wikimedia.org/wikipedia/commons/b/be/Compost_bins_in_a_community_garden.jpg",sourceUrl:"https://commons.wikimedia.org/wiki/File:Compost_bins_in_a_community_garden.jpg",credit:"Troy Sankey",license:'CC BY-SA 4.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/4.0/',scene:"compost bins in an American community garden"},
@@ -26,11 +40,16 @@ export const verifiedActivitySources=[
 export function applyVerifiedActivityPhotos(events){
  let added=0;
  for(const event of events){
-  if(event.status!=='active'||eventImagePriority(event.image)>=2)continue;
+  if(event.status!=='active')continue;
+  // Repair incorrectly constructed Wikimedia upload paths from an older run.
+  // This never overrides a stronger event, venue, performer or organiser image.
+  const priority=eventImagePriority(event.image);
+  if(priority>2)continue;
+  if(priority===2 && event.image?.sourceMethod!=='verified-event-activity')continue;
   const source=verifiedActivitySources.find(entry=>entry.pattern.test(String(event.name||'')));
   if(!source)continue;
   const image={
-   url:source.url,sourceUrl:source.sourceUrl,attribution:source.credit,
+   url:canonicalCommonsImageUrl(source.sourceUrl),sourceUrl:source.sourceUrl,attribution:source.credit,
    license:source.license,licenseUrl:source.licenseUrl,isFallback:false,
    sourceMethod:'verified-event-activity',mediaType:'activity-illustrative',
    alt:`Illustrative photograph of ${source.scene}; not the advertised ${event.name} event`,
@@ -39,6 +58,7 @@ export function applyVerifiedActivityPhotos(events){
      eventName:event.name,sourceFilePage:source.sourceUrl,checkedAt:'2026-10-11'}
   };
   if(!imageIsPublishable(image))continue;
+  if(event.image?.url===image.url && event.image.sourceUrl===image.sourceUrl)continue;
   event.image=image;
   added++;
  }

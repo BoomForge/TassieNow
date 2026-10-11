@@ -71,6 +71,8 @@ jobs:
           node --check scripts/automation-heartbeat.mjs
           node --check scripts/check-operations.mjs
           node --check scripts/verify-published-event-images.mjs
+          node --check scripts/verify-event-image-files.mjs
+          node --check scripts/discover/lib/check-event-image-http.mjs
           node --check scripts/verify-published-event-artwork.mjs
           node --check src/lib/event-posters.mjs
           node --check scripts/check-rendered-event-posters.mjs

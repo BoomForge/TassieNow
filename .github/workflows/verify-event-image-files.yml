@@ -1,0 +1,34 @@
+name: Verify actual event image files
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/verify-event-image-files.mjs'
+      - 'scripts/discover/lib/check-event-image-http.mjs'
+      - 'scripts/discover/lib/verified-event-activities.mjs'
+      - '.github/workflows/verify-event-image-files.yml'
+  schedule:
+    - cron: '36 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check images load from their actual origin, not just markup
+        run: node scripts/verify-event-image-files.mjs
+      - name: Preserve failed image URLs and diagnostic proof
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: event-image-file-health
+          path: reports/event-image-file-health.json
+          retention-days: 30

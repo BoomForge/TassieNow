@@ -8,7 +8,7 @@ const now = new Date();
 // Frequencies are intentionally generous to account for GitHub schedule delays.
 const watched = [
   ['discover.yml', 200], ['events.yml', 42], ['catalogue-quality.yml', 42],
-  ['images.yml', 42], ['verify-published-photos.yml', 42], ['verify-published-event-images.yml', 42], ['verify-event-artwork.yml', 42], ['event-photo-research.yml', 42], ['quality.yml', 42], ['automation-health.yml', 42],
+  ['images.yml', 42], ['verify-published-photos.yml', 42], ['verify-published-event-images.yml', 42], ['verify-event-artwork.yml', 42], ['verify-event-image-files.yml', 42], ['event-photo-research.yml', 42], ['quality.yml', 42], ['automation-health.yml', 42],
   ['indexnow.yml', 200]
 ];
 const onceOnly = ['recover-images.yml', 'production-smoke.yml'];
