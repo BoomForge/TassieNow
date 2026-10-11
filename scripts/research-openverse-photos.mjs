@@ -6,7 +6,7 @@ const PLACES=new URL('../src/data/places.json',import.meta.url);
 const QUEUE=new URL('../src/data/place-media-review.json',import.meta.url);
 const REPORT=new URL('../reports/openverse-photo-research.json',import.meta.url);
 const USER_AGENT='TassieNow/1.0 (+https://tassienow.com; licensed-media-research)';
-const MAX=Math.min(30,Math.max(1,Number(process.env.MAX_OPENVERSE_PLACES)||14));
+const MAX=Math.min(120,Math.max(1,Number(process.env.MAX_OPENVERSE_PLACES)||14));
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const stats={requests:0,rateLimited:0,failures:0,results:0,eligible:0,errors:[]};
 let lastRequestAt=0;
