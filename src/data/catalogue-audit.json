@@ -1,17 +1,17 @@
 {
   "generatedAt": "2026-10-11",
   "places": {
-    "total": 2218,
-    "public": 2152,
+    "total": 2217,
+    "public": 2151,
     "suppressed": 66,
     "media": {
       "realHeroCoverage": {
-        "count": 285,
+        "count": 284,
         "percent": 13.2
       },
       "twoPlusImages": {
-        "count": 178,
-        "percent": 8.3
+        "count": 177,
+        "percent": 8.2
       },
       "fourPlusImages": {
         "count": 100,
@@ -21,12 +21,12 @@
         "count": 76,
         "percent": 3.5
       },
-      "totalLicensedImages": 927,
+      "totalLicensedImages": 924,
       "averageImagesPerPublicListing": 0.43
     },
     "sources": {
       "websiteCoverage": {
-        "count": 366,
+        "count": 365,
         "percent": 17
       },
       "officialSourceCoverage": {
@@ -35,7 +35,7 @@
       },
       "verifiedOfficialSourceCoverage": {
         "count": 199,
-        "percent": 9.2
+        "percent": 9.3
       },
       "wikidataLinkage": {
         "count": 620,
@@ -45,18 +45,18 @@
     "details": {
       "openingHours": {
         "count": 427,
-        "percent": 19.8
+        "percent": 19.9
       },
       "recurringSchedule": {
-        "count": 129,
-        "percent": 6
+        "count": 131,
+        "percent": 6.1
       },
       "phone": {
         "count": 397,
-        "percent": 18.4
+        "percent": 18.5
       },
       "email": {
-        "count": 206,
+        "count": 207,
         "percent": 9.6
       },
       "address": {
@@ -80,28 +80,28 @@
         "percent": 1.3
       },
       "reviewLinks": {
-        "count": 2152,
+        "count": 2151,
         "percent": 100
       }
     },
     "sourceTypes": {
-      "openstreetmap": 1525,
+      "openstreetmap": 1524,
       "wikidata": 586,
       "curated": 41
     },
     "qualityTiers": {
       "standard": 791,
-      "strong": 610,
+      "strong": 608,
       "low": 477,
-      "featured": 274
+      "featured": 275
     },
     "regions": {
-      "Hobart & South": 790,
-      "Launceston & North": 470,
+      "Hobart & South": 789,
+      "Launceston & North": 471,
       "North West": 342,
       "East Coast": 250,
       "Central Tasmania": 117,
-      "West Coast": 87,
+      "West Coast": 86,
       "Flinders Island": 57,
       "King Island": 39
     },
@@ -109,7 +109,7 @@
     "categories": {
       "Food & Drink": 1041,
       "Nature & Walks": 768,
-      "Things to Do": 201,
+      "Things to Do": 200,
       "Museums": 78,
       "Markets": 30,
       "Art & Culture": 16,
@@ -123,7 +123,7 @@
       "Free": 448,
       "Café": 424,
       "Restaurant": 405,
-      "Things to Do": 203,
+      "Things to Do": 202,
       "Takeaway": 162,
       "Rainy Day": 97,
       "Art & Culture": 94,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 171,
+    "active": 172,
     "media": {
       "licensedHeroCoverage": {
         "count": 87,
-        "percent": 50.9
+        "percent": 50.6
       },
-      "stillUsingCategoryArtwork": 84,
+      "stillUsingCategoryArtwork": 85,
       "bySource": {
         "verified-event-venue": 41,
         "verified-event-activity": 40,
@@ -237,7 +237,7 @@
       "byRegion": {
         "Hobart & South": {
           "count": 45,
-          "percent": 55.6
+          "percent": 54.9
         },
         "Launceston & North": {
           "count": 20,
@@ -270,18 +270,19 @@
       }
     },
     "ticketCoverage": {
-      "count": 48,
-      "percent": 28.1
+      "count": 52,
+      "percent": 30.2
     },
     "priceCoverage": {
-      "count": 57,
-      "percent": 33.3
+      "count": 58,
+      "percent": 33.7
     },
     "providers": {
-      "Humanitix": 23,
+      "Humanitix": 26,
       "Ticketek": 23,
       "Eventbrite": 1,
-      "Ticketmaster": 1
+      "Ticketmaster": 1,
+      "TryBooking": 1
     },
     "sources": {
       "Burnie City Council": 27,
@@ -289,7 +290,7 @@
       "Theatre North Launceston": 17,
       "Huon Valley Council": 16,
       "Devonport City Council": 14,
-      "Humanitix Hobart": 11,
+      "Humanitix Hobart": 12,
       "Humanitix Launceston": 11,
       "Theatre Royal Hobart": 10,
       "East Coast Tasmania": 9,
@@ -306,7 +307,7 @@
       "Zeehan Neighbourhood Centre": 1
     },
     "regions": {
-      "Hobart & South": 81,
+      "Hobart & South": 82,
       "Launceston & North": 33,
       "North West": 42,
       "East Coast": 9,
@@ -321,13 +322,13 @@
       "tomorrow": "2026-10-12",
       "nextWeekendStart": "2026-10-17",
       "nextWeekendEnd": "2026-10-18",
-      "todayOrTomorrow": 32,
+      "todayOrTomorrow": 33,
       "thisWeekend": 31,
       "townsTodayOrTomorrow": {
         "Huonville": 12,
         "Burnie": 6,
+        "Hobart": 6,
         "Devonport": 5,
-        "Hobart": 5,
         "Launceston": 3,
         "Sorell": 1
       },
@@ -350,7 +351,7 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 4
+      "missingOrOlderThan30Days": 0
     },
     "sourceRegionalMix": {
       "North West / Burnie City Council": 27,
@@ -358,7 +359,7 @@
       "Launceston & North / Theatre North Launceston": 17,
       "Hobart & South / Huon Valley Council": 16,
       "North West / Devonport City Council": 14,
-      "Hobart & South / Humanitix Hobart": 11,
+      "Hobart & South / Humanitix Hobart": 12,
       "Launceston & North / Humanitix Launceston": 11,
       "Hobart & South / Theatre Royal Hobart": 10,
       "East Coast / East Coast Tasmania": 9,
