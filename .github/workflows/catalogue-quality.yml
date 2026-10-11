@@ -102,6 +102,7 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           gh workflow run verify-published-event-images.yml --ref main
+          gh workflow run verify-event-artwork.yml --ref main
           fi
       - name: Enrich OSM and structured listing details
         run: node scripts/enrich-details.mjs
@@ -160,3 +161,4 @@ jobs:
           git pull --rebase origin main
           git push origin HEAD:main
           gh workflow run verify-published-event-images.yml --ref main
+          gh workflow run verify-event-artwork.yml --ref main

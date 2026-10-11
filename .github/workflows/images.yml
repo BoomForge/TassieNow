@@ -122,6 +122,7 @@ jobs:
             git commit -m "data: improve licensed listing images"
             if git push origin HEAD:main; then
               gh workflow run verify-published-event-images.yml --ref main
+              gh workflow run verify-event-artwork.yml --ref main
               exit 0
             fi
             sleep "$((attempt * 2))"

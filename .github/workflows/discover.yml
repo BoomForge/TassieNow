@@ -153,3 +153,4 @@ jobs:
           git pull --rebase origin main
           git push origin HEAD:main
           gh workflow run verify-published-event-images.yml --ref main
+          gh workflow run verify-event-artwork.yml --ref main
