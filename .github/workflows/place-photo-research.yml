@@ -34,7 +34,7 @@ jobs:
           node-version: '22'
       - name: Research additional open-licensed image sources (review only)
         env:
-          MAX_OPENVERSE_PLACES: '14'
+          MAX_OPENVERSE_PLACES: '75'
         run: node scripts/research-openverse-photos.mjs
       - name: Retain independent image-source evidence
         if: always()
