@@ -36,3 +36,15 @@ test('verified CC0 photograph shows the exact Drunken Admiral restaurant',()=>{
  assert.equal(applyVerifiedPhotoPicks([missing]),1);
  assert.equal(missing.image.sourceUrl,pick.image.sourceUrl);
 });
+
+test('historic Evandale Markets rickshaw photo is explicitly licensed and carefully described',()=>{
+ const pick=verifiedPhotoPicks.find(item=>item.slug==='evandale-sunday-market');
+ assert.equal(pick.name,'Evandale Sunday Market');
+ assert.equal(pick.image.attribution,'Peripitus');
+ assert.equal(pick.image.license,'CC BY-SA 3.0');
+ assert.match(pick.image.alt,/2009/);
+ assert.match(pick.image.matchEvidence.evidence,/Evandale Markets/);
+ assert.equal(permittedLicence(pick.image.license,pick.image.licenseUrl),true);
+ const place={slug:pick.slug,name:pick.name,status:'active',image:{isFallback:true}};
+ assert.equal(applyVerifiedPhotoPicks([place]),1);
+});
