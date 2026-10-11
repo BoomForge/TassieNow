@@ -1,0 +1,69 @@
+name: Automatically link original listing photographs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/auto-link-photo-sources.mjs'
+      - 'scripts/reapply-auto-photo-sources.mjs'
+      - 'scripts/discover/lib/automatic-photo-sources.mjs'
+      - '.github/workflows/auto-photo-sources.yml'
+  schedule:
+    - cron: '47 21,9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tassienow-autolink-photo-sources
+  cancel-in-progress: false
+
+jobs:
+  original-sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Discover original photos at official sources without copying imagery
+        env:
+          MAX_AUTOLINK_RECORDS: '110'
+          AUTOLINK_CONCURRENCY: '4'
+        run: node scripts/auto-link-photo-sources.mjs
+      - name: Archive actual discovery outcomes (not claimed hero photos)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: original-photo-source-link-research
+          path: |
+            reports/auto-photo-source-discovery.json
+            src/data/auto-photo-source-links.json
+          retention-days: 30
+      - name: Merge source links safely on latest main
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp src/data/auto-photo-source-links.json /tmp/tassienow-auto-photo-links.json
+          git config user.name "TassieNow Bot"
+          git config user.email "actions@users.noreply.github.com"
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            git reset --hard origin/main
+            node scripts/reapply-auto-photo-sources.mjs /tmp/tassienow-auto-photo-links.json
+            if git diff --quiet -- src/data/auto-photo-source-links.json; then
+              echo "No new independent sources or scans to commit."
+              exit 0
+            fi
+            git add src/data/auto-photo-source-links.json
+            git commit -m "data: discover original photo source links"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep "$((attempt * 2))"
+          done
+          echo "::error::Source link state conflicted on main after four retries."
+          exit 1
