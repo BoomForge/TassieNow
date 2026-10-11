@@ -93,3 +93,8 @@ test('public pages use only source-page hrefs; no auto-source image embedding',(
  assert.match(flow,/47 21,9 \* \* \*/);
  assert.match(runner,/heroPhotosAdded:0/);
 });
+
+test('an exhausted scan does not create a perpetual state commit',()=>{
+ const runner=readFileSync('scripts/auto-link-photo-sources.mjs','utf8');
+ assert.match(runner,/targets\.length \? mergePhotoLinkResearch\(previous,incoming\) : previous/);
+});
