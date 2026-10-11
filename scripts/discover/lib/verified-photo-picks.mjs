@@ -1,6 +1,26 @@
 // Manually source-verified Commons images for listings missed by text discovery.
 // Keep this intentionally small and evidence-led, not a generic imagery fallback.
 export const verifiedPhotoPicks=[{
+  slug:'evandale-sunday-market',
+  name:'Evandale Sunday Market',
+  image:{
+    url:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Rickshaws_-_evandale_-_tasmania-.JPG/1280px-Rickshaws_-_evandale_-_tasmania-.JPG',
+    alt:'Colourful rickshaw rides photographed at Evandale Markets in January 2009; historical market activity',
+    attribution:'Peripitus',
+    license:'CC BY-SA 3.0',
+    licenseUrl:'https://creativecommons.org/licenses/by-sa/3.0/',
+    sourceUrl:'https://commons.wikimedia.org/wiki/File:Rickshaws_-_evandale_-_tasmania-.JPG',
+    sourceMethod:'verified-curated',
+    isFallback:false,
+    matchEvidence:{
+      verified:true,
+      subject:'Evandale Markets, Evandale, Tasmania (historic rickshaw rides)',
+      evidence:'Original Commons page expressly identifies rickshaws at the Evandale Markets, South of Launceston. Original photographer Peripitus released image under CC BY-SA 3.0; historical January 2009 activity, not a current full market panorama.',
+      checkedAt:'2026-10-11',
+      photographedYear:2009
+    }
+  }
+},{
   slug:'drunken-admiral',
   name:'Drunken Admiral',
   image:{
