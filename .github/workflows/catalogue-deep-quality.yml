@@ -95,6 +95,8 @@ jobs:
         run: node scripts/prune-expired-events.mjs
       - name: Generate full enrichment audit
         run: node scripts/catalogue-audit.mjs
+      - name: Report licensed photo recovery against 11 October baseline
+        run: node scripts/report-photo-recovery-goal.mjs
       - name: Validate catalogue
         run: node scripts/validate-data.mjs
       - name: Build production site
