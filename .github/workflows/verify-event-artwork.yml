@@ -1,0 +1,35 @@
+name: Verify original event artwork
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/lib/event-posters.mjs'
+      - 'src/pages/images/event-posters/**'
+      - 'src/pages/event/[slug].astro'
+      - 'scripts/verify-published-event-artwork.mjs'
+      - '.github/workflows/verify-event-artwork.yml'
+  schedule:
+    - cron: '52 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify every fallback event now has a visible original graphic
+        run: node scripts/verify-published-event-artwork.mjs
+      - name: Preserve public artwork acceptance proof
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: original-event-artwork-evidence
+          path: reports/production-event-artwork.json
+          retention-days: 30
