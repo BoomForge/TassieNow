@@ -1,7 +1,8 @@
 import { db, cleanText, httpsUrl } from '../_lib/db.js';
 import { verifyTurnstile } from '../_lib/turnstile.js';
 
-const FIELDS=new Set(['opening-hours','website','phone','email','address','location','description','image','closure','other']);
+const FIELDS=new Set(['opening-hours','website','phone','email','address','location','description','image','photo-submission','closure','other']);
+const PHOTO_RIGHTS=new Set(['needs-review','owner-authorised','open-license','written-permission']);
 const RELATIONSHIPS=new Set(['owner','employee','visitor','organiser']);
 const emailValid=value=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 
@@ -22,8 +23,21 @@ export async function onRequestPost(context) {
     const relationship=cleanText(body.relationship,20)||'visitor';
     const field=cleanText(body.field,30);
     const value=cleanText(body.suggested_value,1500);
-    const reason=cleanText(body.reason,1000)||null;
+    let reason=cleanText(body.reason,1000)||null;
     const source=body.source_url?httpsUrl(body.source_url,{optional:true}):null;
+    if(field==='photo-submission'){
+      const rights=cleanText(body.photo_rights,30);
+      const creator=cleanText(body.photo_creator,180);
+      const consent=body.photo_permission==='yes';
+      if(!source||!PHOTO_RIGHTS.has(rights)||
+         (rights!=='needs-review'&&!creator)||
+         (rights==='owner-authorised'&&(!consent||!['owner','employee','organiser'].includes(relationship)))){
+        return Response.json({error:'Photo submissions require an original HTTPS source, creator information where known, and explicit copyright-holder consent for owner-authorised use.'},{status:400});
+      }
+      const rightsEvidence='Photo source rights (self-declared, independently unverified): '+rights+
+        '; creator: '+(creator||'unknown')+'; copyright holder consent: '+(consent?'yes':'not provided')+'.';
+      reason=cleanText(rightsEvidence+(reason?' '+reason:''),1000);
+    }
     if(!/^[a-z0-9-]{2,100}$/.test(slug)||!placeName||!name||!emailValid(email)||!RELATIONSHIPS.has(relationship)||!FIELDS.has(field)||value.length<3){
       return Response.json({error:'Please check the required listing, contact and correction fields.'},{status:400});
     }
