@@ -1,20 +1,30 @@
-# TassieNow market photos: Google Maps and licensed media
+# Market photographs — zero Google API billing
 
-Market imagery uses two separate sources with different rules.
+TassieNow does **not** need Google Cloud, Google Places API, Maps JavaScript API or a Google billing account for its market-photo experience.
 
-1. **TassieNow licensed images.** The discovery pipeline looks for exact-market imagery on Wikimedia Commons, checks identity and commercial-use licensing, and records photographer and licence. Market listings receive a dedicated share of each photo pass and allow up to six licensed images.
-2. **Google visitor photos and reviews.** Market result cards link to Google Maps. Market detail pages offer a prominent "Browse photos on Google Maps" link. If the site's existing \`PUBLIC_GOOGLE_MAPS_API_KEY\` is configured and the relevant Google APIs are enabled, the visitor can explicitly click "Show live Google visitor photos". Only then does the browser request live Google Places data and display the official Google Place Details component with media, reviews and Google's attribution. Search results must exactly match the market name and Tasmanian town or very close known coordinates. Uncertain matches only present the Google Maps link.
+## Two no-fee routes
 
-Google Places photos are **not** included in \`src/data/places.json\`, scraped from Google reviews, downloaded, cached, or redistributed from TassieNow storage. Places photo references and image URLs expire; Google requires fresh retrieval, photo author credits and Google Maps source links. The official Places UI Kit supplies Google Maps presentation and credits.
+1. **See visitor photos on Google Maps:** Market cards and detail pages link directly to the market's public Google Maps listing. Visitors browse photos and reviews on Google's own site, with the original authors' attributions. TassieNow does not use Google's developer APIs, proxy, cache, scrape or republish those photos. Opening an ordinary Google Maps link does not generate a Google Maps Platform API charge for TassieNow.
+2. **Display licensed photos within TassieNow:** The existing scheduled Commons image discovery searches specifically for the market's name, its Tasmanian town and commercially reusable licensing. Market discovery receives reserved search capacity and can save galleries of up to six rights-cleared photographs. All approved images retain original credits, licences and source links.
 
-## Google configuration
+**Market organisers and photographers can contribute:** Each market page links to the existing free [Suggest an update](/suggest-update/) form, preselecting its own listing and the image category. Submit a direct photo URL, the original photographer's name, and evidence that its copyright owner permits publication on TassieNow (including commercial site use). Images are reviewed; submitting a link does not authorise automatic publication.
 
-An in-page Google photo viewer depends on the Google Maps JavaScript API, Places API (New), and Places UI Kit being enabled for the project's API key, with Google Cloud billing configured and domain/referrer restrictions. Because every Places search and UI component can generate Google billing charges, the viewer is opt-in, never eagerly loaded as a grid of 30 market photo widgets.
+## What this deliberately does not do
 
-The link to Google Maps is available even without an API key or if the matching place cannot be verified. We do not add API credentials or enable billing automatically.
+- **No Google Cloud project, API key, Maps Platform service, or billing account.**
+- No hidden calls to billable Google Places or Maps JavaScript services from TassieNow place detail pages.
+- No importing photos from Google Maps reviews into TassieNow's own image cards. Google's content terms restrict scraping, rehosting and republishing without separate rights.
+- No pretending an unrelated stock photo depicts a specific market.
+- No paid photography provider, subscription or compulsory third-party developer registration.
 
-## Quality
+## Monitoring
 
-The \`marketPhotoCoverage\` section in \`src/data/catalogue-audit.json\` reports real licensed market hero images, listing count, multi-photo galleries, and known Google Place IDs. Independent CI recomputes totals and fails if the saved audit is inaccurate. Google visitor images do not inflate those copyright-verified media counts.
+Quality CI checks that market HTML contains the free visitor-photo link and image-permission submission path, never paid Maps/Places JavaScript. The existing market-photo audit still tracks the **separate** count of licensed photographs actually in the catalogue; ordinary Google Maps links do not inflate those numbers.
 
-**Do not** treat finding a photo inside a Google review as permission to copy it to the TassieNow static image catalogue. If organisers provide independently licensed publicity photographs, those can enter the normal review and publishing pipeline.
+## Useful no-cost discovery sources
+
+- Wikimedia Commons: https://commons.wikimedia.org/
+- Openverse: https://openverse.org/ — additional search for CC-licensed media, with **independent licence and source verification required** before use
+- Official market organisers willing to grant reuse rights for original promotional photography
+
+If the user later wants a visitor-photo gallery displayed *inside* TassieNow instead of a link to Google, it must come from separately permissioned photographers or an independently licensed source, not free scraping of Google reviews.
