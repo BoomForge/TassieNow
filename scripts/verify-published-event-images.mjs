@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import {imageIsPublishable} from './discover/lib/event-media.mjs';
-import {heroImageMatches} from './discover/lib/verify-event-image-html.mjs';
+import {heroImageMatches,visibleCaptionMatches} from './discover/lib/verify-event-image-html.mjs';
 
 // An image is not "published" merely because a GitHub Actions run succeeded.
 // Check the exact event page's image src, credit and disclosure in HTML.
@@ -23,7 +23,7 @@ const results=await Promise.all(photographed.slice(0,sampleLimit).map(async even
       const html=await res.text();
       const {photograph,figure}=heroImageMatches(html,event.image.url,page);
       const credit=html.includes(event.image.attribution);
-      const disclosure=!event.image.caption||html.includes(event.image.caption);
+      const disclosure=visibleCaptionMatches(html,event.image.caption);
       last={status:res.ok&&photograph&&credit&&disclosure&&figure?'verified':'not-visible',
         http:res.status,photograph,credit,disclosure,figure,attempt:i+1};
       if(last.status==='verified')break;
