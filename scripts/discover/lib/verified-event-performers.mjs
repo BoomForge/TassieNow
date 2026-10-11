@@ -6,7 +6,7 @@ const normalized=s=>String(s||'').normalize('NFKD').toLowerCase()
 export const verifiedPerformers=[
  {
   name:'Geraldine Hickey',year:2024,location:'the 2024 Edinburgh Festival Fringe',
-  url:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Geraldine_Hickey_at_the_2024_Edinburgh_Festival_Fringe.jpg',
+  url:'https://upload.wikimedia.org/wikipedia/commons/f/f6/Geraldine_Hickey_at_the_2024_Edinburgh_Festival_Fringe.jpg',
   sourceUrl:'https://commons.wikimedia.org/wiki/File:Geraldine_Hickey_at_the_2024_Edinburgh_Festival_Fringe.jpg',
   credit:'Kevin Payravi, Wikimedia Commons',license:'CC BY-SA 4.0',
   licenseUrl:'https://creativecommons.org/licenses/by-sa/4.0/'
