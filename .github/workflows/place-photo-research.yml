@@ -1,0 +1,69 @@
+name: Research free Openverse listing photos
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/research-openverse-photos.mjs'
+      - 'scripts/reapply-place-photo-review.mjs'
+      - 'scripts/discover/lib/openverse-photo-candidates.mjs'
+      - '.github/workflows/place-photo-research.yml'
+  schedule:
+    - cron: '31 21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tassienow-openverse-research
+  queue: max
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Research additional open-licensed image sources (review only)
+        env:
+          MAX_OPENVERSE_PLACES: '14'
+        run: node scripts/research-openverse-photos.mjs
+      - name: Retain independent image-source evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: openverse-place-photo-research
+          path: |
+            reports/openverse-photo-research.json
+            src/data/place-media-review.json
+          retention-days: 30
+      - name: Safely retain candidate review data on latest main
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp src/data/place-media-review.json /tmp/tassienow-place-review-found.json
+          git config user.name "TassieNow Bot"
+          git config user.email "actions@users.noreply.github.com"
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            git reset --hard origin/main
+            node scripts/reapply-place-photo-review.mjs /tmp/tassienow-place-review-found.json
+            if git diff --quiet -- src/data/place-media-review.json; then
+              echo "No additional place-photo candidates to preserve."
+              exit 0
+            fi
+            git add src/data/place-media-review.json
+            git commit -m "data: preserve free photo source leads [skip ci]"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep "$((attempt * 2))"
+          done
+          echo "::error::Failed to preserve source leads after four attempts."
+          exit 1
