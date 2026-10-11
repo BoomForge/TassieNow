@@ -61,6 +61,7 @@ jobs:
           node --check scripts/discover/lib/verified-event-history.mjs
           node --check scripts/discover/lib/verified-event-activities.mjs
           node --check scripts/enrich-images.mjs
+          node --check scripts/check-free-market-photos.mjs
           node --check scripts/discover/lib/image-enrichment-targets.mjs
           node --check src/lib/google-market-photos.mjs
           node --check scripts/apply-verified-photo-picks.mjs
@@ -106,6 +107,8 @@ jobs:
         run: node scripts/check-image-coverage.mjs
       - name: Validate and build ranked site
         run: npm run build
+      - name: Prove all market pages work without Google billing
+        run: node scripts/check-free-market-photos.mjs
       - name: Verify every missing-photo event has personalised editorial art
         run: node scripts/check-rendered-event-posters.mjs
       - name: Audit rendered SEO and large assets
