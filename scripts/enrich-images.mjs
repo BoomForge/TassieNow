@@ -32,6 +32,16 @@ function candidateScore(place, page, info) {
   const correctTown = place.town && placeContext.includes(String(place.town).toLowerCase());
   const tasmaniaContext = /tasmania|tasmanian/.test(placeContext);
   if((place.categories||[]).includes('Food & Drink') && !correctTown) return 0;
+  if(isMarketPlace(place)){
+    // A town-wide farmers-market photo cannot represent a *different* market.
+    // Require the whole market name and evidence the file refers to Tasmania.
+    const subject=(title+' '+blob).replace(/[^a-z0-9]+/g,' ');
+    const actualName=normalizedName.replace(/\bthe\b/g,'').replace(/\s+/g,' ').trim();
+    const fullIdentity=actualName.length>=9&&subject.includes(actualName);
+    const tasmanian=/\btasmania(?:n)?\b|\btas\b/i.test(title+' '+blob);
+    const locality=Boolean(correctTown);
+    if(!fullIdentity || !tasmanian || !locality)return 0;
+  }
   // A complete named-place match is much stronger than an isolated keyword.
   // Food/business names still need their town to avoid same-name collisions.
   if(exactName && ((place.categories||[]).includes('Food & Drink') ? correctTown : (correctTown || tasmaniaContext)))score += 48;
@@ -159,10 +169,17 @@ async function existingCommonsMetadata(filenames) {
 }
 
 async function searchImages(place) {
-  // A single broad query avoids spending the Wikimedia rate limit on
-  // duplicate quoted and unquoted requests for the same place.
-  const found=await queryCommons(place,`${place.name} ${place.town||''} Tasmania`);
-  return found.map(entry=>entry.image);
+  // Markets deserve an exact-identity search as well as a broad locality
+  // search. Wikimedia Commons search can omit exact titles when all of
+  // 'name town Tasmania' are required, especially for famous named markets.
+  const queries=isMarketPlace(place)
+    ? [`"${place.name}" Tasmania`,`${place.name} ${place.town||''} Tasmania`]
+    : [`${place.name} ${place.town||''} Tasmania`];
+  for(const query of [...new Set(queries)]){
+    const found=await queryCommons(place,query);
+    if(found.length)return found.map(entry=>entry.image);
+  }
+  return [];
 }
 
 function imageKey(image) { return image?.sourceUrl || image?.url || ''; }
