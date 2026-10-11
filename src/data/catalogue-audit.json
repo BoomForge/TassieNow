@@ -1,17 +1,17 @@
 {
   "generatedAt": "2026-10-11",
   "places": {
-    "total": 2217,
-    "public": 2151,
+    "total": 2218,
+    "public": 2152,
     "suppressed": 66,
     "media": {
       "realHeroCoverage": {
-        "count": 285,
-        "percent": 13.2
+        "count": 286,
+        "percent": 13.3
       },
       "twoPlusImages": {
-        "count": 177,
-        "percent": 8.2
+        "count": 178,
+        "percent": 8.3
       },
       "fourPlusImages": {
         "count": 100,
@@ -21,7 +21,7 @@
         "count": 76,
         "percent": 3.5
       },
-      "totalLicensedImages": 925,
+      "totalLicensedImages": 928,
       "averageImagesPerPublicListing": 0.43
     },
     "sources": {
@@ -30,22 +30,22 @@
         "percent": 17
       },
       "officialSourceCoverage": {
-        "count": 287,
+        "count": 286,
         "percent": 13.3
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 269,
-        "percent": 12.5
+        "count": 228,
+        "percent": 10.6
       },
       "wikidataLinkage": {
-        "count": 622,
-        "percent": 28.9
+        "count": 620,
+        "percent": 28.8
       }
     },
     "details": {
       "openingHours": {
         "count": 427,
-        "percent": 19.9
+        "percent": 19.8
       },
       "recurringSchedule": {
         "count": 131,
@@ -53,7 +53,7 @@
       },
       "phone": {
         "count": 397,
-        "percent": 18.5
+        "percent": 18.4
       },
       "email": {
         "count": 207,
@@ -64,7 +64,7 @@
         "percent": 23.5
       },
       "bookingUrl": {
-        "count": 182,
+        "count": 183,
         "percent": 8.5
       },
       "fee": {
@@ -76,32 +76,32 @@
         "percent": 5.6
       },
       "operator": {
-        "count": 26,
-        "percent": 1.2
+        "count": 27,
+        "percent": 1.3
       },
       "reviewLinks": {
-        "count": 2151,
+        "count": 2152,
         "percent": 100
       }
     },
     "sourceTypes": {
-      "openstreetmap": 1524,
+      "openstreetmap": 1525,
       "wikidata": 586,
       "curated": 41
     },
     "qualityTiers": {
-      "standard": 792,
+      "standard": 793,
       "strong": 607,
       "low": 477,
       "featured": 275
     },
     "regions": {
-      "Hobart & South": 789,
-      "Launceston & North": 471,
+      "Hobart & South": 790,
+      "Launceston & North": 470,
       "North West": 342,
       "East Coast": 250,
       "Central Tasmania": 117,
-      "West Coast": 86,
+      "West Coast": 87,
       "Flinders Island": 57,
       "King Island": 39
     },
@@ -114,7 +114,7 @@
       "Markets": 30,
       "Art & Culture": 16,
       "Wildlife": 15,
-      "History": 2
+      "History": 3
     },
     "categoryMembership": {
       "Food & Drink": 1055,
@@ -123,7 +123,7 @@
       "Free": 447,
       "Café": 424,
       "Restaurant": 405,
-      "Things to Do": 202,
+      "Things to Do": 203,
       "Takeaway": 162,
       "Rainy Day": 97,
       "Art & Culture": 94,
@@ -131,7 +131,7 @@
       "Bakery": 43,
       "Family": 32,
       "Markets": 30,
-      "History": 19,
+      "History": 20,
       "Local Produce": 16,
       "Wildlife": 15,
       "Desserts": 6,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 171,
+    "active": 172,
     "media": {
       "licensedHeroCoverage": {
         "count": 87,
-        "percent": 50.9
+        "percent": 50.6
       },
-      "stillUsingCategoryArtwork": 84,
+      "stillUsingCategoryArtwork": 85,
       "bySource": {
         "verified-event-venue": 41,
         "verified-event-activity": 40,
@@ -237,7 +237,7 @@
       "byRegion": {
         "Hobart & South": {
           "count": 46,
-          "percent": 56.1
+          "percent": 55.4
         },
         "Launceston & North": {
           "count": 20,
@@ -270,18 +270,19 @@
       }
     },
     "ticketCoverage": {
-      "count": 49,
-      "percent": 28.7
+      "count": 54,
+      "percent": 31.4
     },
     "priceCoverage": {
-      "count": 57,
-      "percent": 33.3
+      "count": 59,
+      "percent": 34.3
     },
     "providers": {
-      "Humanitix": 24,
+      "Humanitix": 27,
       "Ticketek": 23,
-      "Eventbrite": 1,
-      "Ticketmaster": 1
+      "Eventbrite": 2,
+      "Ticketmaster": 1,
+      "TryBooking": 1
     },
     "sources": {
       "Burnie City Council": 26,
@@ -289,7 +290,7 @@
       "Theatre North Launceston": 17,
       "Huon Valley Council": 16,
       "Devonport City Council": 14,
-      "Humanitix Hobart": 12,
+      "Humanitix Hobart": 13,
       "Humanitix Launceston": 11,
       "Theatre Royal Hobart": 10,
       "East Coast Tasmania": 9,
@@ -306,7 +307,7 @@
       "Zeehan Neighbourhood Centre": 1
     },
     "regions": {
-      "Hobart & South": 82,
+      "Hobart & South": 83,
       "Launceston & North": 33,
       "North West": 41,
       "East Coast": 9,
@@ -321,13 +322,13 @@
       "tomorrow": "2026-10-12",
       "nextWeekendStart": "2026-10-17",
       "nextWeekendEnd": "2026-10-18",
-      "todayOrTomorrow": 31,
+      "todayOrTomorrow": 32,
       "thisWeekend": 31,
       "townsTodayOrTomorrow": {
         "Huonville": 12,
+        "Hobart": 6,
         "Burnie": 5,
         "Devonport": 5,
-        "Hobart": 5,
         "Launceston": 3,
         "Sorell": 1
       },
@@ -358,7 +359,7 @@
       "Launceston & North / Theatre North Launceston": 17,
       "Hobart & South / Huon Valley Council": 16,
       "North West / Devonport City Council": 14,
-      "Hobart & South / Humanitix Hobart": 12,
+      "Hobart & South / Humanitix Hobart": 13,
       "Launceston & North / Humanitix Launceston": 11,
       "Hobart & South / Theatre Royal Hobart": 10,
       "East Coast / East Coast Tasmania": 9,

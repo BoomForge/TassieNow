@@ -1,8 +1,15 @@
 {
-  "checkedAt": "2026-10-11T04:17:34.361Z",
+  "checkedAt": "2026-10-11T04:37:30.765Z",
   "added": [],
-  "addedEvents": [],
-  "correctedEvents": [],
+  "addedEvents": [
+    "book-market-burnie-emu-bay-lions-club-2026-11-07-wivenhoe",
+    "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe",
+    "second-glance-market-2026-10-31-burnie",
+    "tassie-pop-culture-market-2026-12-12-upper-burnie"
+  ],
+  "correctedEvents": [
+    "second-glance-market-2026-10-28-burnie"
+  ],
   "updated": [],
   "sources": [
     {
@@ -34,7 +41,7 @@
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
       "pagesFetched": 7,
-      "candidatesFound": 13,
+      "candidatesFound": 14,
       "errors": []
     },
     {
@@ -42,7 +49,7 @@
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
       "pagesFetched": 7,
-      "candidatesFound": 40,
+      "candidatesFound": 42,
       "errors": []
     },
     {
@@ -84,13 +91,13 @@
     "existing": 55,
     "added": 0,
     "events": 3,
-    "addedEvents": 0,
+    "addedEvents": 4,
     "updated": 0,
     "failedSources": 0
   },
   "run": {
-    "id": "38096047989",
+    "id": "38096394542",
     "event": "push",
-    "sourceCommit": "b3ba50bd24c8e22e99e5c579414d38ceef4a1562"
+    "sourceCommit": "b7d6c20794bee621406c5ac6e100b2d36df56402"
   }
 }
