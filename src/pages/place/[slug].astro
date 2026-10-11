@@ -142,7 +142,7 @@ const schema = {
     <div class={hasVisitDetails ? 'place-shell' : 'place-shell single-column'}>
       <div class="place-main">
         {isMarketListing && (
-          <MarketVisitorPhotos name={place.name} town={place.town}
+          <MarketVisitorPhotos name={place.name} town={place.town} slug={place.slug}
             reviewUrl={reviewUrl} />
         )}
         {gallery.length > 0 && (
