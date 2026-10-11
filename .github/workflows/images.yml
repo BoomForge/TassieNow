@@ -8,6 +8,8 @@ on:
       - 'scripts/reapply-image-upgrades.mjs'
       - 'scripts/enrich-event-images.mjs'
       - 'scripts/enrich-images.mjs'
+      - 'scripts/enrich-geo-photos.mjs'
+      - 'scripts/discover/lib/geotagged-photo-matches.mjs'
       - 'scripts/discover/lib/image-enrichment-targets.mjs'
       - 'scripts/apply-verified-photo-picks.mjs'
       - 'scripts/discover/lib/verified-photo-picks.mjs'
@@ -64,6 +66,17 @@ jobs:
           retention-days: 30
       - name: Upgrade exact Wikidata listing images
         run: node scripts/enrich-wikidata-images.mjs
+      - name: Find exact-match nearby geotagged Commons photographs
+        env:
+          MAX_GEO_PLACES: '200'
+        run: node scripts/enrich-geo-photos.mjs
+      - name: Retain geotagged source and matching diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-photo-discovery
+          path: reports/geo-photo-enrichment.json
+          retention-days: 30
       - name: Upgrade fallback images
         env:
           MAX_IMAGE_ENRICH: '65'
