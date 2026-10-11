@@ -61,6 +61,8 @@ jobs:
           node --check scripts/discover/lib/verified-event-history.mjs
           node --check scripts/discover/lib/verified-event-activities.mjs
           node --check scripts/enrich-images.mjs
+          node --check scripts/discover/lib/image-enrichment-targets.mjs
+          node --check src/lib/google-market-photos.mjs
           node --check scripts/apply-verified-photo-picks.mjs
           node --check scripts/discover/lib/verified-photo-picks.mjs
           node --check scripts/enrich-wikidata-images.mjs

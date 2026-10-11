@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
+import MarketVisitorPhotos from '../../components/MarketVisitorPhotos.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 import { upcomingScheduleDates } from '../../lib/schedules.js';
@@ -12,6 +13,7 @@ export function getStaticPaths() {
 }
 
 const { place } = Astro.props;
+const isMarketListing=(place.categories||[]).includes('Markets');
 const operatorUrl = place.officialSource?.url || place.website || null;
 const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name} ${place.town || ''} Tasmania`)}`;
 const reviewUrl = place.reviewLinks?.find((item) => item.provider === 'google-maps')?.url || directionsUrl;
@@ -133,13 +135,19 @@ const schema = {
           {operatorUrl && <a class="action-link" data-track-outbound="official" href={operatorUrl} target="_blank" rel="noopener noreferrer">Official website ↗</a>}
           {bookingUrl && <a class="action-link booking" data-track-outbound="booking" href={bookingUrl} target="_blank" rel="noopener noreferrer">Book / tickets ↗</a>}
           <a class="action-link secondary" data-track-outbound="directions" href={directionsUrl} target="_blank" rel="noopener noreferrer">Directions ↗</a>
-          <a class="action-link secondary" data-track-outbound="reviews" href={reviewUrl} target="_blank" rel="noopener noreferrer">Google reviews ↗</a>
+          <a class="action-link secondary" data-track-outbound="reviews" href={reviewUrl} target="_blank" rel="noopener noreferrer">{isMarketListing?'Google market photos ↗':'Google reviews ↗'}</a>
         </div>
       </div>
     </section>
 
     <div class={hasVisitDetails ? 'place-shell' : 'place-shell single-column'}>
       <div class="place-main">
+        {isMarketListing && (
+          <MarketVisitorPhotos name={place.name} town={place.town}
+            reviewUrl={reviewUrl} placeId={place.googlePlaceId}
+            latitude={place.latitude} longitude={place.longitude}
+            apiKey={googleMapsApiKey} />
+        )}
         {gallery.length > 0 && (
           <section class="section-card gallery-section" aria-labelledby="gallery-heading">
             <div class="section-heading-row">
@@ -174,7 +182,7 @@ const schema = {
           </section>
         )}
 
-        {googleMapsApiKey && (
+        {googleMapsApiKey && !isMarketListing && (
           <section class="section-card google-card" aria-labelledby="google-heading">
             <div class="section-heading-row google-heading-row">
               <div>
@@ -313,9 +321,9 @@ const schema = {
   </article>
 
   {googleMapsApiKey && (
-    <script is:inline define:vars={{ googleMapsApiKey }}>
+    <script is:inline define:vars={{ googleMapsApiKey, isMarketListing }}>
       (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await(a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({key:googleMapsApiKey,v:"weekly"});
-      google.maps.importLibrary('places');
+      if(!isMarketListing) google.maps.importLibrary('places');
     </script>
   )}
 

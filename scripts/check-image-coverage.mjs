@@ -13,6 +13,8 @@ const today = `${date('year')}-${date('month')}-${date('day')}`;
 const active = events.filter(event => event.status === 'active' && event.endDate >= today);
 const publicPlaces = places.filter(place => place.status === 'active' && place.visibility !== 'suppressed');
 const food = publicPlaces.filter(place => (place.categories || []).includes('Food & Drink'));
+const markets = publicPlaces.filter(place => (place.categories || []).includes('Markets'));
+const mediaCount = place => new Set([place.image,...(place.gallery||[])].filter(i=>i&&!i.isFallback).map(i=>i.sourceUrl||i.url)).size;
 const photographed = items => items.filter(item => item.image && !item.image.isFallback).length;
 const licensed = active.filter(event => imageIsPublishable(event.image)).length;
 const comparisons = {
@@ -23,7 +25,11 @@ const comparisons = {
   'public places': [audit.places.public, publicPlaces.length],
   'place hero photographs': [audit.places.media.realHeroCoverage.count, photographed(publicPlaces)],
   'food listings': [audit.places.foodDiscovery.listings, food.length],
-  'food hero photographs': [audit.places.foodDiscovery.media.realHeroCoverage.count, photographed(food)]
+  'food hero photographs': [audit.places.foodDiscovery.media.realHeroCoverage.count, photographed(food)],
+  'market listings': [audit.places.marketPhotoCoverage.listings, markets.length],
+  'market hero photographs': [audit.places.marketPhotoCoverage.realHeroCoverage.count, photographed(markets)],
+  'market listings with 2+ licensed photographs': [audit.places.marketPhotoCoverage.twoPlusImages.count, markets.filter(m=>mediaCount(m)>=2).length],
+  'market listings with 4+ licensed photographs': [audit.places.marketPhotoCoverage.fourPlusImages.count, markets.filter(m=>mediaCount(m)>=4).length]
 };
 let failures = 0;
 for (const [label, [reported, actual]] of Object.entries(comparisons)) {

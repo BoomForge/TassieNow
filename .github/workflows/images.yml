@@ -8,6 +8,7 @@ on:
       - 'scripts/reapply-image-upgrades.mjs'
       - 'scripts/enrich-event-images.mjs'
       - 'scripts/enrich-images.mjs'
+      - 'scripts/discover/lib/image-enrichment-targets.mjs'
       - 'scripts/apply-verified-photo-picks.mjs'
       - 'scripts/discover/lib/verified-photo-picks.mjs'
       - 'scripts/enrich-wikidata-images.mjs'

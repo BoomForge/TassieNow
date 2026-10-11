@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import {permittedLicence} from './discover/lib/event-media.mjs';
+import {isMarketPlace,selectPhotoEnrichmentTargets} from './discover/lib/image-enrichment-targets.mjs';
 
 const FILE = new URL('../src/data/places.json', import.meta.url);
 const UA = 'TassieNow/1.2 (+https://tassienow.com)';
@@ -194,29 +195,14 @@ for (const place of generated) {
   }
 }
 const incomplete = places
-  .filter((place) => place.status === 'active' && place.visibility !== 'suppressed' && (place.image?.isFallback || (place.gallery?.length || 0) < GALLERY_SIZE))
-  .sort((a, b) => Number(Boolean(b.image?.isFallback)) - Number(Boolean(a.image?.isFallback))
-    || (b.qualityScore || 0) - (a.qualityScore || 0)
-    || a.name.localeCompare(b.name));
-// A bounded daily food quota stops restaurants and cafés being crowded out by
-// nature and attraction gallery searches. Rotate both groups independently.
-const day = Math.floor(Date.now() / 86400000);
-const foodIncomplete=incomplete.filter(place=>(place.categories||[]).includes('Food & Drink'));
-const otherIncomplete=incomplete.filter(place=>!(place.categories||[]).includes('Food & Drink'));
-const rotate=(items,n)=>items.length ? [...items.slice((day*n)%items.length),...items.slice(0,(day*n)%items.length)] : [];
-const foodQuota=Math.min(foodIncomplete.length,Math.ceil(MAX_PER_RUN*0.35));
-const targets=[
-  ...rotate(foodIncomplete,Math.max(1,foodQuota)).slice(0,foodQuota),
-  ...rotate(otherIncomplete,Math.max(1,MAX_PER_RUN-foodQuota)).slice(0,MAX_PER_RUN-foodQuota)
-];
-if(targets.length<MAX_PER_RUN){
-  const used=new Set(targets.map(place=>place.sourceType+':'+place.sourceId+':'+place.slug));
-  for(const place of rotate(foodIncomplete,MAX_PER_RUN+foodQuota)){
-    if(targets.length>=MAX_PER_RUN)break;
-    const id=place.sourceType+':'+place.sourceId+':'+place.slug;
-    if(!used.has(id)){targets.push(place);used.add(id);}
-  }
-}
+  .filter(place=>place.status==='active' && place.visibility!=='suppressed' &&
+    (place.image?.isFallback || (place.gallery?.length||0) <
+       (isMarketPlace(place)?6:GALLERY_SIZE)))
+  .sort((a,b)=>Number(Boolean(b.image?.isFallback))-Number(Boolean(a.image?.isFallback))||
+    (b.qualityScore||0)-(a.qualityScore||0)||a.name.localeCompare(b.name));
+const day=Math.floor(Date.now()/86400000);
+const {targets,marketQuota,foodQuota,marketTargetCount}=
+  selectPhotoEnrichmentTargets(incomplete,MAX_PER_RUN,day);
 let heroUpgraded = 0;
 let galleryAdded = 0;
 
@@ -236,14 +222,14 @@ for (const place of targets) {
 
   const gallery = Array.isArray(place.gallery) ? place.gallery.filter((image) => image && !image.isFallback) : [];
   for (const image of candidates) {
-    if (gallery.length >= GALLERY_SIZE) break;
+    if (gallery.length >= (isMarketPlace(place)?6:GALLERY_SIZE)) break;
     const key = imageKey(image);
     if (!key || used.has(key)) continue;
     gallery.push(image);
     used.add(key);
     galleryAdded++;
   }
-  if (gallery.length) place.gallery = gallery.slice(0, GALLERY_SIZE);
+  if (gallery.length) place.gallery = gallery.slice(0, isMarketPlace(place)?6:GALLERY_SIZE);
   await sleep(80);
 }
 
@@ -251,11 +237,11 @@ await fs.writeFile(FILE, `${JSON.stringify(places, null, 2)}\n`);
 const publicPlaces = places.filter((place) => place.status === 'active' && place.visibility !== 'suppressed');
 const realHeroes = publicPlaces.filter((place) => place.image && !place.image.isFallback).length;
 const galleries = publicPlaces.filter((place) => place.gallery?.length).length;
-console.log(`Image enrichment: revalidated heuristic media and rejected ${rejectedExisting} weak match(es); checked ${targets.length} incomplete listings (${foodQuota} food-priority slot(s)); upgraded ${heroUpgraded} hero image(s); added ${galleryAdded} gallery image(s).`);
+console.log(`Image enrichment: revalidated heuristic media and rejected ${rejectedExisting} weak match(es); checked ${targets.length} incomplete listings (${marketTargetCount} market, ${foodQuota} food-priority slot(s)); upgraded ${heroUpgraded} hero image(s); added ${galleryAdded} gallery image(s).`);
 console.log(`Image coverage: real hero images ${realHeroes}/${publicPlaces.length}; multi-image galleries ${galleries}/${publicPlaces.length}. ${Math.max(0, incomplete.length - targets.length)} incomplete listing(s) remain for future passes.`);
 
 await fs.mkdir(new URL('../reports/',import.meta.url),{recursive:true});
-await fs.writeFile(new URL('../reports/place-image-discovery.json',import.meta.url),JSON.stringify({checkedAt:new Date().toISOString(),checked:targets.length,foodPriority:foodQuota,heroUpgraded,galleryAdded,...stats},null,2)+'\n');
+await fs.writeFile(new URL('../reports/place-image-discovery.json',import.meta.url),JSON.stringify({checkedAt:new Date().toISOString(),checked:targets.length,foodPriority:foodQuota,marketPriority:marketQuota,marketTargets:marketTargetCount,heroUpgraded,galleryAdded,...stats},null,2)+'\n');
 console.log('Place photo source diagnostics: '+JSON.stringify(stats));
 if(stats.requests>=10&&stats.failures>=Math.ceil(stats.requests*.75))throw Error('Wikimedia image source unhealthy: '+stats.failures+'/'+stats.requests+' queries failed; see place-image-discovery.json');
 if(!heroUpgraded&&!galleryAdded)console.warn('No eligible new place photographs in this pass; see research diagnostics, not an image publication success.');
