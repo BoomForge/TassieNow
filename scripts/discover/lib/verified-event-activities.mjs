@@ -58,6 +58,7 @@ export function applyVerifiedActivityPhotos(events){
      eventName:event.name,sourceFilePage:source.sourceUrl,checkedAt:'2026-10-11'}
   };
   if(!imageIsPublishable(image))continue;
+  if(event.image?.url===image.url && event.image.sourceUrl===image.sourceUrl)continue;
   event.image=image;
   added++;
  }
