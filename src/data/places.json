@@ -3545,6 +3545,124 @@
     "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
   },
   {
+    "slug": "evandale-sunday-market",
+    "name": "Evandale Sunday Market",
+    "town": "Evandale",
+    "region": "Launceston & North",
+    "latitude": -41.572,
+    "longitude": 147.207,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets"
+    ],
+    "summary": "Country market with produce, collectibles and food stalls at Falls Park.",
+    "address": "Falls Park, 8 Logan Road, Evandale",
+    "website": "https://www.evandalemarket.com.au/visitor-info",
+    "sourceUrl": "https://www.evandalemarket.com.au/visitor-info",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-11",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Every Sunday, 8 am–1:30 pm",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "sourceUrl": "https://www.evandalemarket.com.au/visitor-info",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "startTime": "08:00",
+      "endTime": "13:30"
+    },
+    "officialSource": {
+      "name": "Evandale Sunday Market",
+      "url": "https://www.evandalemarket.com.au/visitor-info",
+      "type": "official-website"
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Rickshaws_-_evandale_-_tasmania-.JPG/1280px-Rickshaws_-_evandale_-_tasmania-.JPG",
+      "alt": "Colourful rickshaw rides photographed at Evandale Markets in January 2009; historical market activity",
+      "attribution": "Peripitus",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rickshaws_-_evandale_-_tasmania-.JPG",
+      "sourceMethod": "verified-curated",
+      "isFallback": false,
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Evandale Markets, Evandale, Tasmania (historic rickshaw rides)",
+        "evidence": "Original Commons page expressly identifies rickshaws at the Evandale Markets, South of Launceston. Original photographer Peripitus released image under CC BY-SA 3.0; historical January 2009 activity, not a current full market panorama.",
+        "checkedAt": "2026-10-11",
+        "photographedYear": 2009
+      }
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://www.evandalemarket.com.au/visitor-info",
+        "checkedAt": "2026-10-11"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://www.evandalemarket.com.au/visitor-info",
+        "checkedAt": "2026-10-11"
+      },
+      "email": {
+        "type": "official-website",
+        "url": "https://www.evandalemarket.com.au/visitor-info",
+        "checkedAt": "2026-10-07"
+      },
+      "bookingUrl": {
+        "type": "official-website",
+        "url": "https://www.evandalemarket.com.au/visitor-info",
+        "checkedAt": "2026-10-07"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://www.evandalemarket.com.au/contact",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "openingHours": "Su 08:00-13:30",
+    "qualityScore": 90,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "real-image",
+      "opening-hours",
+      "address",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-11",
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-11T04:37:01.269Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Evandale%20Sunday%20Market%20Evandale%20Tasmania"
+      }
+    ],
+    "email": "info@evandalemarket.com.au",
+    "bookingUrl": "https://www.evandalemarket.com.au/booking",
+    "phone": "0363919191",
+    "lastWikidataLinkChecked": "2026-10-10",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-11",
+      "url": "https://www.evandalemarket.com.au/visitor-info"
+    }
+  },
+  {
     "slug": "cliffs",
     "name": "Cliffs",
     "town": "Southport",
@@ -9670,115 +9788,6 @@
     "lastWikidataLinkChecked": "2026-10-10"
   },
   {
-    "slug": "evandale-sunday-market",
-    "name": "Evandale Sunday Market",
-    "town": "Evandale",
-    "region": "Launceston & North",
-    "latitude": -41.572,
-    "longitude": 147.207,
-    "coordinateAccuracy": "approximate-venue",
-    "categories": [
-      "Markets"
-    ],
-    "summary": "Country market with produce, collectibles and food stalls at Falls Park.",
-    "address": "Falls Park, 8 Logan Road, Evandale",
-    "website": "https://www.evandalemarket.com.au/visitor-info",
-    "sourceUrl": "https://www.evandalemarket.com.au/visitor-info",
-    "sourceType": "curated",
-    "status": "active",
-    "lastChecked": "2026-10-07",
-    "lastDetailsChecked": "2026-10-11",
-    "visibility": "public",
-    "schedule": {
-      "summary": "Every Sunday, 8 am–1:30 pm",
-      "frequency": "weekly",
-      "daysOfWeek": [
-        "Sunday"
-      ],
-      "sourceUrl": "https://www.evandalemarket.com.au/visitor-info",
-      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
-      "startTime": "08:00",
-      "endTime": "13:30"
-    },
-    "officialSource": {
-      "name": "Evandale Sunday Market",
-      "url": "https://www.evandalemarket.com.au/visitor-info",
-      "type": "official-website"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Evandale Sunday Market category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "detailSources": {
-      "address": {
-        "type": "verified-source",
-        "url": "https://www.evandalemarket.com.au/visitor-info",
-        "checkedAt": "2026-10-11"
-      },
-      "schedule": {
-        "type": "verified-source",
-        "url": "https://www.evandalemarket.com.au/visitor-info",
-        "checkedAt": "2026-10-11"
-      },
-      "email": {
-        "type": "official-website",
-        "url": "https://www.evandalemarket.com.au/visitor-info",
-        "checkedAt": "2026-10-07"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://www.evandalemarket.com.au/visitor-info",
-        "checkedAt": "2026-10-07"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "https://www.evandalemarket.com.au/contact",
-        "checkedAt": "2026-10-07"
-      }
-    },
-    "openingHours": "Su 08:00-13:30",
-    "qualityScore": 72,
-    "qualityTier": "featured",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "opening-hours",
-      "address",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-11",
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-11T04:37:01.269Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Evandale%20Sunday%20Market%20Evandale%20Tasmania"
-      }
-    ],
-    "email": "info@evandalemarket.com.au",
-    "bookingUrl": "https://www.evandalemarket.com.au/booking",
-    "phone": "0363919191",
-    "lastWikidataLinkChecked": "2026-10-10",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-11",
-      "url": "https://www.evandalemarket.com.au/visitor-info"
-    }
-  },
-  {
     "slug": "latrobe-village-market",
     "name": "Latrobe Village Market",
     "town": "Latrobe",
@@ -15668,6 +15677,125 @@
     ],
     "rankedAt": "2026-10-11",
     "lastWikidataChecked": "2026-10-06"
+  },
+  {
+    "slug": "drunken-admiral",
+    "name": "Drunken Admiral",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "latitude": -42.8811591,
+    "longitude": 147.3349313,
+    "categories": [
+      "Food & Drink",
+      "Restaurant"
+    ],
+    "summary": "Restaurant in or near Hobart.",
+    "website": "https://drunkenadmiral.net/",
+    "sourceUrl": "https://www.openstreetmap.org/node/2527899709",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2527899709",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "+61 3 6234 1903",
+    "email": "info@drunkenadmiral.com.au",
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "phone": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/2527899709",
+        "checkedAt": "2026-10-09"
+      },
+      "email": {
+        "type": "official-website",
+        "url": "https://drunkenadmiral.net/",
+        "checkedAt": "2026-10-09"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://drunkenadmiral.net/",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-11",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/17-19_Hunter_Street_Hobart_20171120-110.jpg/1280px-17-19_Hunter_Street_Hobart_20171120-110.jpg",
+      "alt": "Exterior of the Drunken Admiral restaurant at 17–19 Hunter Street, Hobart, photographed in November 2017",
+      "attribution": "Gary Houston",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:17-19_Hunter_Street_Hobart_20171120-110.jpg",
+      "sourceMethod": "verified-curated",
+      "isFallback": false,
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Drunken Admiral restaurant, 17–19 Hunter Street, Hobart",
+        "evidence": "Original Commons image visibly shows Drunken Admiral restaurant signage; photographer Gary Houston personally dedicated this 20 November 2017 photograph as CC0 1.0. Venue coordinates match the catalogue.",
+        "checkedAt": "2026-10-11",
+        "photographedYear": 2017
+      }
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-11T04:36:16.967Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Drunken%20Admiral%20Hobart%20Tasmania"
+      }
+    ],
+    "schedule": {
+      "summary": "Open from 5pm, 7 days a week",
+      "sourceUrl": "https://drunkenadmiral.net/",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "17:00"
+    },
+    "qualityScore": 59,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "real-image",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-11",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://drunkenadmiral.net/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-11"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-11",
+      "url": "https://drunkenadmiral.net/"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09"
   },
   {
     "slug": "dunalley-beach",
@@ -56925,116 +57053,6 @@
     ],
     "rankedAt": "2026-10-11",
     "lastWikidataChecked": "2026-10-06"
-  },
-  {
-    "slug": "drunken-admiral",
-    "name": "Drunken Admiral",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "latitude": -42.8811591,
-    "longitude": 147.3349313,
-    "categories": [
-      "Food & Drink",
-      "Restaurant"
-    ],
-    "summary": "Restaurant in or near Hobart.",
-    "website": "https://drunkenadmiral.net/",
-    "sourceUrl": "https://www.openstreetmap.org/node/2527899709",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2527899709",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "+61 3 6234 1903",
-    "email": "info@drunkenadmiral.com.au",
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "phone": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/2527899709",
-        "checkedAt": "2026-10-09"
-      },
-      "email": {
-        "type": "official-website",
-        "url": "https://drunkenadmiral.net/",
-        "checkedAt": "2026-10-09"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://drunkenadmiral.net/",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-11",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Drunken Admiral category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-11T04:36:16.967Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Drunken%20Admiral%20Hobart%20Tasmania"
-      }
-    ],
-    "schedule": {
-      "summary": "Open from 5pm, 7 days a week",
-      "sourceUrl": "https://drunkenadmiral.net/",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "17:00"
-    },
-    "qualityScore": 41,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-11",
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://drunkenadmiral.net/",
-      "source": "openstreetmap-website",
-      "checkedAt": "2026-10-11"
-    },
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-11",
-      "url": "https://drunkenadmiral.net/"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
   },
   {
     "slug": "eagle-point-beach",
