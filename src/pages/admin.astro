@@ -27,7 +27,18 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
             <h3 id="listing-form-title">Add a manual listing</h3>
             <div class="form-grid">
               <label>Name<input name="name" required /></label><label>Town<input name="town" required /></label><label>Region<select name="region" required><option>Hobart & South</option><option>Launceston & North</option><option>East Coast</option><option>North West</option><option>West Coast</option><option>Central Tasmania</option><option>King Island</option><option>Flinders Island</option></select></label><label>Categories<input name="categories" placeholder="Things to Do, Family" /></label><label>Latitude<input name="latitude" type="number" step="any" required /></label><label>Longitude<input name="longitude" type="number" step="any" required /></label><label class="span-2">Website<input name="website" type="url" placeholder="https://" /></label><label class="span-2">Summary<textarea name="summary" rows="4"></textarea></label>
-              <label class="span-2">Replacement image URL<input name="image_url" type="url" placeholder="https://" /></label>
+              <div class="span-2 photo-research">
+                <strong>1. Link to an original photograph or gallery (no licence required)</strong>
+                <p class="microcopy">Show a clickable source link on the public listing. No photo is copied, embedded or counted as a recovered photo. Google can help find the original source.</p>
+                <label>Original photo / gallery page<input name="photo_link_url" type="url" placeholder="https://original-site.example/gallery/photo" /></label>
+                <label>Link label<input name="photo_link_title" placeholder="Photos of the market on the organiser's website" /></label>
+                <label>Photographer / source credit (if known)<input name="photo_link_credit" /></label>
+                <label class="check-row"><input name="photo_source_confirmed" type="checkbox" /> I checked that this is the correct place or event</label>
+                <div class="form-actions"><button id="save-photo-source" type="button" class="secondary-button">Publish source link only</button><span id="photo-source-status" class="microcopy" aria-live="polite"></span></div>
+                <div id="saved-photo-sources" class="stack-list"></div>
+              </div>
+              <label class="span-2">2. Photo file URL (for approved display only)<input name="image_url" type="text" placeholder="https://... or /uploads/admin/... after upload" /></label>
+              <label>Photo handling<select name="image_display_mode"><option value="external-embed">Permitted external embed (loads from original server)</option><option value="hosted">Hosted copy (uploaded to TassieNow)</option></select></label>
               <label class="span-2 upload-field">Upload replacement image<input id="listing-image-file" type="file" accept="image/jpeg,image/png,image/webp" /><small>JPG, PNG or WebP · maximum 5 MB. Uploading fills the URL above automatically.</small></label>
               <div class="span-2 upload-row"><button id="upload-listing-image" class="secondary-button" type="button">Upload image</button><span id="listing-upload-status" class="admin-status"></span></div>
               <img id="listing-image-preview" class="image-preview span-2" alt="Selected listing image preview" hidden />
@@ -40,7 +51,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
                   <a id="photo-google-flickr" target="_blank" rel="noopener noreferrer">Find Flickr originals through Google ↗</a>
                   <a id="photo-source-website" target="_blank" rel="noopener noreferrer" hidden>Visit official business website ↗</a>
                 </div>
-                <small>In Google Images select <strong>Tools → Usage rights → Creative Commons licences</strong>. Verify each image at its original source. Credit alone is not permission: use CC BY, CC BY-SA, CC0/public domain or explicit permission, with photographer, original source and licence. Do not copy Google Maps visitor photos without permission. Search results never publish automatically.</small>
+                <small>Use all Google Images results to discover source links; a source link needs no image-reuse licence. For <strong>inline display or hosting</strong>, independently verify permission or an applicable open licence. Google Maps reviews, thumbnails and social posts are not automatically reusable.</small>
               </div>
               <div id="photo-candidate-review" class="span-2 photo-research" hidden>
                 <strong id="photo-candidate-heading">Review source candidate</strong>
@@ -49,7 +60,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
                 <label>Verification notes (exclude private contact information)<textarea id="photo-candidate-note" rows="3" placeholder="How did you verify the actual place, photographer, licence/version and reuse conditions?"></textarea></label>
                 <label class="check-row"><input id="photo-candidate-identity" type="checkbox" /> Exact photographed place and town verified</label>
                 <label class="check-row"><input id="photo-candidate-rights" type="checkbox" /> Rights verified at original source</label>
-                <div class="form-actions"><button id="photo-verify-candidate" type="button" class="secondary-button">Mark source verified</button><button id="photo-reject-candidate" type="button" class="secondary-button">Reject lead</button><button id="photo-use-candidate" type="button" class="secondary-button">Use verified details</button></div>
+                <div class="form-actions"><button id="photo-link-candidate" type="button" class="secondary-button">Prepare source link (no licence)</button><button id="photo-verify-candidate" type="button" class="secondary-button">Mark source verified</button><button id="photo-reject-candidate" type="button" class="secondary-button">Reject lead</button><button id="photo-use-candidate" type="button" class="secondary-button">Use verified details</button></div>
                 <p id="photo-candidate-status" class="microcopy" aria-live="polite"></p>
               </div>
               <label>Photo description (alt text)<input name="image_alt" /></label><label>Photographer / rights-holder credit<input name="image_attribution" /></label>
@@ -57,7 +68,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
               <label>Licence details URL<input name="image_license_url" type="url" placeholder="https://creativecommons.org/licenses/by/4.0/" /></label>
               <label class="span-2">Original photographer / image source page<input name="image_source_url" type="url" placeholder="https://commons.wikimedia.org/wiki/File:..." /></label>
               <label class="span-2">Rights evidence (public, no private email/contact details)<textarea name="image_permission_notes" rows="3" placeholder="For direct permission: rights-holder, grant date YYYY-MM-DD and permitted website usage. For public domain: specific documentary basis."></textarea></label>
-              <label class="span-2 check-row"><input name="image_rights_confirmed" type="checkbox" /> I checked the actual photograph, original source, subject identity and commercial reuse rights. Required for new or changed images.</label><label>Visibility<select name="visibility"><option value="public">Public</option><option value="suppressed">Hidden</option></select></label><label class="check-row"><input name="featured" type="checkbox" /> Featured</label>
+              <label class="span-2 check-row"><input name="image_rights_confirmed" type="checkbox" /> I checked the actual photograph, original source, subject identity and website embedding or hosting rights. Required only for displayed images, not source links.</label><label>Visibility<select name="visibility"><option value="public">Public</option><option value="suppressed">Hidden</option></select></label><label class="check-row"><input name="featured" type="checkbox" /> Featured</label>
             </div>
             <p class="microcopy" id="listing-source"></p><div class="form-actions"><button class="primary-button" type="submit">Save listing</button><button id="cancel-listing" class="secondary-button" type="button">Clear</button><span id="listing-status" class="admin-status"></span></div>
           </form>
@@ -160,6 +171,16 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
         message.textContent='Saved. No photo was published.';
       } catch(error){message.textContent=error.message;}
     }
+    document.querySelector('#photo-link-candidate').addEventListener('click',()=>{
+      const candidate=currentCandidate();if(!candidate)return;
+      const f=document.querySelector('#listing-form');
+      f.photo_link_url.value=candidate.sourcePage;
+      f.photo_link_title.value=candidate.title||'Original photo source';
+      f.photo_link_credit.value=candidate.credit||'';
+      f.photo_source_confirmed.checked=false;
+      document.querySelector('#photo-source-status').textContent='Original source prepared. Check identity, tick confirmation and publish the link separately.';
+      f.photo_link_url.scrollIntoView({behavior:'smooth',block:'center'});
+    });
     document.querySelector('#photo-verify-candidate').addEventListener('click',()=>updatePhotoCandidate('source-verified'));
     document.querySelector('#photo-reject-candidate').addEventListener('click',()=>updatePhotoCandidate('rejected'));
     document.querySelector('#photo-use-candidate').addEventListener('click',()=>{
@@ -167,6 +188,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
       if(!candidate||candidate.review?.status!=='source-verified')return;
       const form=document.querySelector('#listing-form');
       form.image_url.value=candidate.url;
+      form.image_display_mode.value='external-embed';
       form.image_alt.value=candidate.title;
       form.image_attribution.value=candidate.credit;
       form.image_license.value='CC '+candidate.licence.replace(/^CC /i,'');
@@ -183,7 +205,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
     document.querySelector('#catalogue-search').addEventListener('input',renderCatalogue);
     document.querySelector('#catalogue-missing-photos').addEventListener('change',renderCatalogue);
     function setPreview(id,url){const img=document.querySelector(id);if(url){img.src=url;img.hidden=false}else{img.removeAttribute('src');img.hidden=true}}
-    function clearListing(){const f=document.querySelector('#listing-form');f.reset();activeCandidate=null;document.querySelector('#photo-candidate-review').hidden=true;document.querySelector('#photo-research-tools').hidden=true;f.slug.value='';setPreview('#listing-image-preview','');document.querySelector('#listing-form-title').textContent='Add a manual listing';document.querySelector('#listing-source').textContent='';document.querySelector('#listing-status').textContent='';document.querySelector('#listing-upload-status').textContent=''}
+    function clearListing(){const f=document.querySelector('#listing-form');f.reset();document.querySelector('#saved-photo-sources').replaceChildren();document.querySelector('#photo-source-status').textContent='';activeCandidate=null;document.querySelector('#photo-candidate-review').hidden=true;document.querySelector('#photo-research-tools').hidden=true;f.slug.value='';setPreview('#listing-image-preview','');document.querySelector('#listing-form-title').textContent='Add a manual listing';document.querySelector('#listing-source').textContent='';document.querySelector('#listing-status').textContent='';document.querySelector('#listing-upload-status').textContent=''}
     function googleSearchUrl(terms,{images=false}={}){
       const url=new URL('https://www.google.com/search');
       url.searchParams.set('q',terms);
@@ -204,9 +226,30 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
       if(!site.hidden)site.href=place.website;
       document.querySelector('#photo-research-tools').hidden=false;
     }
-    function editListing(slug){const p=catalogue.find(x=>x.slug===slug);if(!p)return;const f=document.querySelector('#listing-form');clearListing();f.slug.value=p.slug;f.name.value=p.name||'';f.town.value=p.town||'';f.region.value=p.region||'Hobart & South';f.categories.value=(p.categories||[]).join(', ');f.latitude.value=p.latitude??'';f.longitude.value=p.longitude??'';f.website.value=p.website||'';f.summary.value=p.summary||'';f.visibility.value=p.visibility||'public';f.featured.checked=Boolean(p.featured);f.image_url.value=p.image?.isFallback?'':p.image?.url||'';f.image_alt.value=p.image?.alt||'';f.image_attribution.value=p.image?.attribution||'';f.image_license.value=p.image?.license||'';f.image_license_url.value=p.image?.licenseUrl||'';f.image_source_url.value=p.image?.sourceUrl||'';f.image_permission_notes.value=p.image?.rightsEvidence?.note||'';setPreview('#listing-image-preview',f.image_url.value);setGooglePhotoResearch(p);document.querySelector('#listing-form-title').textContent=`Edit ${p.name}`;document.querySelector('#listing-source').textContent=`Source: ${p.sourceType||'unknown'} · Quality score: ${p.qualityScore||0}`;f.scrollIntoView({behavior:'smooth',block:'start'})}
+    function editListing(slug){const p=catalogue.find(x=>x.slug===slug);if(!p)return;const f=document.querySelector('#listing-form');clearListing();f.slug.value=p.slug;f.name.value=p.name||'';f.town.value=p.town||'';f.region.value=p.region||'Hobart & South';f.categories.value=(p.categories||[]).join(', ');f.latitude.value=p.latitude??'';f.longitude.value=p.longitude??'';f.website.value=p.website||'';f.summary.value=p.summary||'';f.visibility.value=p.visibility||'public';f.featured.checked=Boolean(p.featured);f.image_url.value=p.image?.isFallback?'':p.image?.url||'';f.image_display_mode.value=p.image?.useMode || (/^\/uploads\/admin\//.test(p.image?.url||'')?'hosted':'external-embed');renderSavedPhotoSources(p);f.image_alt.value=p.image?.alt||'';f.image_attribution.value=p.image?.attribution||'';f.image_license.value=p.image?.license||'';f.image_license_url.value=p.image?.licenseUrl||'';f.image_source_url.value=p.image?.sourceUrl||'';f.image_permission_notes.value=p.image?.rightsEvidence?.note||'';setPreview('#listing-image-preview',f.image_url.value);setGooglePhotoResearch(p);document.querySelector('#listing-form-title').textContent=`Edit ${p.name}`;document.querySelector('#listing-source').textContent=`Source: ${p.sourceType||'unknown'} · Quality score: ${p.qualityScore||0}`;f.scrollIntoView({behavior:'smooth',block:'start'})}
     document.querySelector('#new-listing').addEventListener('click',()=>{clearListing();document.querySelector('#listing-form').scrollIntoView({behavior:'smooth'})});document.querySelector('#cancel-listing').addEventListener('click',clearListing);
-    document.querySelector('#upload-listing-image').addEventListener('click',async()=>{const f=document.querySelector('#listing-form'),input=document.querySelector('#listing-image-file'),s=document.querySelector('#listing-upload-status'),file=input.files?.[0];if(!file){s.textContent='Choose an image first.';return}s.textContent='Uploading…';try{const data=await uploadImage(file,f.name.value||'listing');f.image_url.value=data.url;setPreview('#listing-image-preview',data.url);s.textContent='Uploaded. Save the listing when ready.'}catch(err){s.textContent=err.message}});
+        function renderSavedPhotoSources(place){
+      const list=document.querySelector('#saved-photo-sources');
+      list.innerHTML=(place.photoLinks||[]).map(link=>`<div class="stack-item"><div><a href="${esc(link.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(link.title)} ↗</a><small>${esc(link.credit||'Original third-party source')} · Link only — not a hosted or embedded photo</small></div><button class="secondary-button" type="button" data-remove-photo-url="${esc(link.sourceUrl)}">Remove</button></div>`).join('')||'<p class="microcopy">No source links saved for this listing yet.</p>';
+      list.querySelectorAll('[data-remove-photo-url]').forEach(btn=>btn.addEventListener('click',async()=>{
+        const s=document.querySelector('#photo-source-status');s.textContent='Removing source link…';
+        try{
+          await api('/api/admin/catalogue',{method:'POST',body:JSON.stringify({action:'remove-photo-source',slug:place.slug,photo_link_url:btn.dataset.removePhotoUrl})});
+          await loadCatalogue();editListing(place.slug);document.querySelector('#photo-source-status').textContent='Source link removed.';
+        }catch(error){s.textContent=error.message}
+      }));
+    }
+    document.querySelector('#save-photo-source').addEventListener('click',async()=>{
+      const f=document.querySelector('#listing-form'),s=document.querySelector('#photo-source-status');
+      if(!f.slug.value){s.textContent='Save the new listing first.';return}
+      s.textContent='Publishing source link…';
+      try {
+        await api('/api/admin/catalogue',{method:'POST',body:JSON.stringify({action:'link-photo-source',slug:f.slug.value,photo_link_url:f.photo_link_url.value,photo_link_title:f.photo_link_title.value,photo_link_credit:f.photo_link_credit.value,photo_source_confirmed:f.photo_source_confirmed.checked})});
+        const slug=f.slug.value;await loadCatalogue();editListing(slug);
+        document.querySelector('#photo-source-status').textContent='Source link saved separately. No image was copied or counted as a real hero.';
+      }catch(error){s.textContent=error.message}
+    });
+    document.querySelector('#upload-listing-image').addEventListener('click',async()=>{const f=document.querySelector('#listing-form'),input=document.querySelector('#listing-image-file'),s=document.querySelector('#listing-upload-status'),file=input.files?.[0];if(!file){s.textContent='Choose an image first.';return}s.textContent='Uploading…';try{const data=await uploadImage(file,f.name.value||'listing');f.image_url.value=data.url;f.image_display_mode.value='hosted';setPreview('#listing-image-preview',data.url);s.textContent='Uploaded. Save the listing when ready.'}catch(err){s.textContent=err.message}});
     document.querySelector('#listing-form').addEventListener('submit',async e=>{e.preventDefault();const f=e.currentTarget,s=document.querySelector('#listing-status'),raw=Object.fromEntries(new FormData(f).entries());const payload={...raw,action:raw.slug?'update':'add',featured:f.featured.checked,image_rights_confirmed:f.image_rights_confirmed.checked,categories:raw.categories.split(',').map(x=>x.trim()).filter(Boolean)};s.textContent='Saving to GitHub…';try{await api('/api/admin/catalogue',{method:'POST',body:JSON.stringify(payload)});s.textContent='Saved. Cloudflare will rebuild automatically.';await loadCatalogue()}catch(err){s.textContent=err.message}});
 
     function localValue(iso){if(!iso)return'';const d=new Date(iso);return new Date(d.getTime()-d.getTimezoneOffset()*60000).toISOString().slice(0,16)}
