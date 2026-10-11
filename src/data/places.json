@@ -185,9 +185,10 @@
     ],
     "rankedAt": "2026-10-12",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-12",
-      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/bishop-and-clerk"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/bishop-and-clerk",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12",
@@ -462,12 +463,12 @@
       "schedule": {
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
-        "checkedAt": "2026-10-06"
+        "checkedAt": "2026-10-12"
       },
       "openingHours": {
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
-        "checkedAt": "2026-10-06"
+        "checkedAt": "2026-10-12"
       },
       "bookingUrl": {
         "type": "official-website",
@@ -490,9 +491,10 @@
         "Sunday"
       ],
       "startTime": "09:00",
-      "endTime": "16:00"
+      "endTime": "16:00",
+      "notes": "see details Closed area: Freycinet National Park Visitors Centre Applies from 14/10/2026 The ​Freycinet National Park Visitors Centre is closed on Wednesday 14 October 2026 from 9am to&#160;11am."
     },
-    "openingHours": "Mo-Su 09:00-16:00",
+    "openingHours": "We 09:00-11:00; Mo-Su 09:00-16:00",
     "qualityScore": 100,
     "qualityTier": "featured",
     "visibility": "public",
@@ -657,12 +659,12 @@
       "schedule": {
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach",
-        "checkedAt": "2026-10-06"
+        "checkedAt": "2026-10-12"
       },
       "openingHours": {
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach",
-        "checkedAt": "2026-10-06"
+        "checkedAt": "2026-10-12"
       },
       "bookingUrl": {
         "type": "official-website",
@@ -685,9 +687,10 @@
         "Sunday"
       ],
       "startTime": "09:00",
-      "endTime": "16:00"
+      "endTime": "16:00",
+      "notes": "see details Closed area: Freycinet National Park Visitors Centre Applies from 14/10/2026 The ​Freycinet National Park Visitors Centre is closed on Wednesday 14 October 2026 from 9am to&#160;11am."
     },
-    "openingHours": "Mo-Su 09:00-16:00",
+    "openingHours": "We 09:00-11:00; Mo-Su 09:00-16:00",
     "qualityScore": 100,
     "qualityTier": "featured",
     "visibility": "public",
@@ -757,9 +760,10 @@
     ],
     "lastWikidataChecked": "2026-10-06",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-12",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach",
+      "error": "The operation was aborted due to timeout"
     },
     "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
   },
@@ -847,9 +851,10 @@
     "rankedAt": "2026-10-12",
     "lastWikidataLinkChecked": "2026-10-12",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-12",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12"
@@ -1889,7 +1894,7 @@
       "openingHours": {
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park",
-        "checkedAt": "2026-10-05"
+        "checkedAt": "2026-10-12"
       },
       "bookingUrl": {
         "type": "official-website",
@@ -1913,9 +1918,9 @@
       ],
       "startTime": "09:00",
       "endTime": "16:00",
-      "notes": "Gas and fuel stoves may be used except on days of Total Fire Ban, when no naked flames of any sort, including gas and fuel stoves, are allowed in the open."
+      "notes": "see details Closed area: Freycinet National Park Visitors Centre Applies from 14/10/2026 The ​Freycinet National Park Visitors Centre is closed on Wednesday 14 October 2026 from 9am to&#160;11am."
     },
-    "openingHours": "Mo-Su 09:00-16:00",
+    "openingHours": "We 09:00-11:00; Mo-Su 09:00-16:00",
     "gallery": [
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Freycinet_National_Park_-_Incipience.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -2866,7 +2871,7 @@
     "wikidata": "Q117481080",
     "wikipediaUrl": null,
     "commonsCategory": null,
-    "openingHours": "Mo-Su 09:00-16:00",
+    "openingHours": "We 09:00-11:00; Mo-Su 09:00-16:00",
     "phone": "03 6256 7000",
     "email": "Freycinet@parks.tas.gov.au",
     "address": null,
@@ -2936,7 +2941,8 @@
         "Sunday"
       ],
       "startTime": "09:00",
-      "endTime": "16:00"
+      "endTime": "16:00",
+      "notes": "see details Closed area: Freycinet National Park Visitors Centre Applies from 14/10/2026 The ​Freycinet National Park Visitors Centre is closed on Wednesday 14 October 2026 from 9am to&#160;11am."
     },
     "qualityScore": 95,
     "qualityTier": "featured",
@@ -3399,7 +3405,7 @@
     "bookingUrl": "https://farmgatemarket.com.au/?s={search_term_string}",
     "lastWikidataLinkChecked": "2026-10-12",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-12",
       "url": "https://farmgatemarket.com.au/"
     }
@@ -3494,9 +3500,10 @@
     "rankedAt": "2026-10-12",
     "lastWikidataChecked": "2026-10-06",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-12",
-      "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches"
+      "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
+      "error": "The operation was aborted due to timeout"
     },
     "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
   },
@@ -3936,9 +3943,10 @@
     ],
     "rankedAt": "2026-10-12",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-12",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12",
@@ -4844,9 +4852,10 @@
     ],
     "rankedAt": "2026-10-12",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-12",
-      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls"
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12",
@@ -5120,9 +5129,10 @@
     ],
     "rankedAt": "2026-10-12",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-12",
-      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12",
@@ -5147,7 +5157,7 @@
     "wikidata": null,
     "wikipediaUrl": null,
     "commonsCategory": null,
-    "openingHours": "Mo-Su 09:00-16:00",
+    "openingHours": "We 09:00-11:00; Mo-Su 09:00-16:00",
     "phone": "03 6256 7000",
     "email": "Freycinet@parks.tas.gov.au",
     "address": null,
@@ -5217,7 +5227,8 @@
         "Sunday"
       ],
       "startTime": "09:00",
-      "endTime": "16:00"
+      "endTime": "16:00",
+      "notes": "see details Closed area: Freycinet National Park Visitors Centre Applies from 14/10/2026 The ​Freycinet National Park Visitors Centre is closed on Wednesday 14 October 2026 from 9am to&#160;11am."
     },
     "qualityScore": 88,
     "qualityTier": "featured",
@@ -5463,7 +5474,7 @@
     "wikidata": null,
     "wikipediaUrl": null,
     "commonsCategory": null,
-    "openingHours": "Mo-Su 09:00-16:00",
+    "openingHours": "We 09:00-11:00; Mo-Su 09:00-16:00",
     "phone": "03 6256 7000",
     "email": "Freycinet@parks.tas.gov.au",
     "address": null,
@@ -5533,7 +5544,8 @@
         "Sunday"
       ],
       "startTime": "09:00",
-      "endTime": "16:00"
+      "endTime": "16:00",
+      "notes": "see details Closed area: Freycinet National Park Visitors Centre Applies from 14/10/2026 The ​Freycinet National Park Visitors Centre is closed on Wednesday 14 October 2026 from 9am to&#160;11am."
     },
     "qualityScore": 88,
     "qualityTier": "featured",
@@ -5663,9 +5675,10 @@
     ],
     "rankedAt": "2026-10-12",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-12",
-      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12",
@@ -6451,9 +6464,10 @@
     ],
     "rankedAt": "2026-10-12",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-12",
-      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12",
@@ -12358,7 +12372,7 @@
     "openingHours": "",
     "phone": "0418684108President",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-12",
       "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/"
     },
@@ -33219,7 +33233,7 @@
     ],
     "rankedAt": "2026-10-12",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-12",
       "url": "https://www.restauranttasman.com.au/"
     },
@@ -37495,7 +37509,7 @@
     ],
     "rankedAt": "2026-10-12",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-12",
       "url": "https://lanigansvineyard.com.au/"
     },
@@ -41009,7 +41023,7 @@
     ],
     "rankedAt": "2026-10-12",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-12",
       "url": "https://whiskandco.com.au/"
     },
@@ -43385,10 +43399,9 @@
       "checkedAt": "2026-10-12"
     },
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-12",
-      "url": "https://dinopizza.com.au/",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://dinopizza.com.au/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -46399,7 +46412,7 @@
       "checkedAt": "2026-10-12"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-12",
       "url": "https://www.hadleyshotel.com.au/"
     },
@@ -46588,7 +46601,7 @@
     ],
     "rankedAt": "2026-10-12",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-12",
       "url": "https://www.tasteofmalaysiahobart.com.au/"
     },
@@ -49835,7 +49848,7 @@
     ],
     "rankedAt": "2026-10-12",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-12",
       "url": "https://allthai.com.au/"
     },
@@ -65875,7 +65888,7 @@
     ],
     "rankedAt": "2026-10-12",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-12",
       "url": "https://www.rendezvousloungecafe.com.au/"
     },
@@ -70282,7 +70295,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-12",
       "url": "http://www.flavourofindia.com.au/",
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -84533,6 +84546,75 @@
     "discoveryStaleSince": "2026-10-12"
   },
   {
+    "slug": "mount-stuart-lookout",
+    "name": "Mount Stuart Lookout",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "latitude": -42.8742485,
+    "longitude": 147.2965515,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Hobart.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/5599747560",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/5599747560",
+    "wikidata": "Q21966221",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Mount Stuart Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Mount%20Stuart%20Lookout%20Hobart%20Tasmania"
+      }
+    ],
+    "qualityScore": 33,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-12",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Mount Stuart Lookout",
+      "distanceKm": 0.71,
+      "confidence": "medium",
+      "checkedAt": "2026-10-12"
+    }
+  },
+  {
     "slug": "mr-wok-n-roll",
     "name": "Mr Wok n Roll",
     "town": "Devonport",
@@ -85276,6 +85358,75 @@
     "lastWikidataLinkChecked": "2026-10-12"
   },
   {
+    "slug": "rocking-stone",
+    "name": "Rocking Stone",
+    "town": "Collinsvale",
+    "region": "Hobart & South",
+    "latitude": -42.9075559,
+    "longitude": 147.2338746,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Collinsvale.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/1074578164",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/1074578164",
+    "wikidata": "Q21967053",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Rocking Stone category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Rocking%20Stone%20Collinsvale%20Tasmania"
+      }
+    ],
+    "qualityScore": 33,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-12",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Rocking Stone",
+      "distanceKm": 0.9,
+      "confidence": "medium",
+      "checkedAt": "2026-10-12"
+    }
+  },
+  {
     "slug": "she-s-cooked-cafe",
     "name": "She's Cooked Cafe",
     "town": "Lauderdale",
@@ -85348,6 +85499,211 @@
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
     "lastWikidataLinkChecked": "2026-10-12"
+  },
+  {
+    "slug": "stan-wing-lookout",
+    "name": "Stan Wing lookout",
+    "town": "Sprent",
+    "region": "North West",
+    "latitude": -41.2542168,
+    "longitude": 146.1032425,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Sprent.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/11002971768",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/11002971768",
+    "wikidata": "Q21966039",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Stan Wing lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Stan%20Wing%20lookout%20Sprent%20Tasmania"
+      }
+    ],
+    "qualityScore": 33,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-12",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Stan Wing Lookout",
+      "distanceKm": 0.54,
+      "confidence": "medium",
+      "checkedAt": "2026-10-12"
+    }
+  },
+  {
+    "slug": "sumac-lookout",
+    "name": "Sumac Lookout",
+    "town": "Irishtown",
+    "region": "North West",
+    "latitude": -41.1211021,
+    "longitude": 144.9930687,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Irishtown.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/6196876585",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/6196876585",
+    "wikidata": "Q21966260",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Sumac Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Sumac%20Lookout%20Irishtown%20Tasmania"
+      }
+    ],
+    "qualityScore": 33,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Sumac Lookout",
+      "distanceKm": 0.27,
+      "confidence": "medium",
+      "checkedAt": "2026-10-12"
+    }
+  },
+  {
+    "slug": "surprise-valley",
+    "name": "Surprise Valley",
+    "town": "Miena",
+    "region": "Central Tasmania",
+    "latitude": -42.221115,
+    "longitude": 146.0907865,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Miena.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/313130069",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/313130069",
+    "wikidata": "Q123662474",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Surprise Valley category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Surprise%20Valley%20Queenstown%20Tasmania"
+      }
+    ],
+    "qualityScore": 33,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-12",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "SURPRISE VALLEY",
+      "distanceKm": 2.04,
+      "confidence": "medium",
+      "checkedAt": "2026-10-12"
+    }
   },
   {
     "slug": "sweet-ness-at-the-sea",
@@ -86522,6 +86878,211 @@
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
     "lastWikidataLinkChecked": "2026-10-12"
+  },
+  {
+    "slug": "walkers-lookout",
+    "name": "Walkers Lookout",
+    "town": "Whitemark",
+    "region": "Flinders Island",
+    "latitude": -40.0561187,
+    "longitude": 148.0808591,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Whitemark.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/566511197",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/566511197",
+    "wikidata": "Q21966197",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Walkers Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Walkers%20Lookout%20Whitemark%20Tasmania"
+      }
+    ],
+    "qualityScore": 33,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-12",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Walkers Lookout",
+      "distanceKm": 0.04,
+      "confidence": "high",
+      "checkedAt": "2026-10-12"
+    }
+  },
+  {
+    "slug": "water-tower-hill",
+    "name": "Water Tower Hill",
+    "town": "Strahan",
+    "region": "West Coast",
+    "latitude": -42.1485327,
+    "longitude": 145.334743,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Strahan.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/3126933316",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/3126933316",
+    "wikidata": "Q21966016",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Water Tower Hill category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Water%20Tower%20Hill%20Strahan%20Tasmania"
+      }
+    ],
+    "qualityScore": 33,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-12",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Water Tower Hill",
+      "distanceKm": 1.67,
+      "confidence": "medium",
+      "checkedAt": "2026-10-12"
+    }
+  },
+  {
+    "slug": "whaleback-lookout",
+    "name": "Whaleback Lookout",
+    "town": "Zeehan",
+    "region": "West Coast",
+    "latitude": -41.7214853,
+    "longitude": 145.2289397,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Zeehan.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/8515660128",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/8515660128",
+    "wikidata": "Q21965940",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Whaleback Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Whaleback%20Lookout%20Zeehan%20Tasmania"
+      }
+    ],
+    "qualityScore": 33,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Whaleback Lookout",
+      "distanceKm": 0.76,
+      "confidence": "medium",
+      "checkedAt": "2026-10-12"
+    }
   },
   {
     "slug": "wild-bird-tasmania",
@@ -111228,67 +111789,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
-  },
-  {
-    "slug": "mount-stuart-lookout",
-    "name": "Mount Stuart Lookout",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "latitude": -42.8742485,
-    "longitude": 147.2965515,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Hobart.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/5599747560",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/5599747560",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Mount Stuart Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Mount%20Stuart%20Lookout%20Hobart%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-12",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "mount-wellington-pinnacle-observation-shelter",
@@ -111348,7 +111850,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "mt-barrow-stone-hut",
@@ -111408,7 +111911,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "mt-george-signal-tower",
@@ -111468,7 +111972,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "old-pier-pilings",
@@ -111528,7 +112033,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "patriarchs-lookout",
@@ -111588,7 +112094,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "pelverata-falls-lookout",
@@ -111648,7 +112155,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "pencil-pine-lookout",
@@ -111712,7 +112220,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "peppermint-hill-lookout",
@@ -111772,7 +112281,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "pillars-of-the-south",
@@ -111832,7 +112342,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "pinmatik-rocky-cape-lookout",
@@ -111890,7 +112401,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "pipe-head-well-viewing-platform",
@@ -111950,7 +112462,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "pirates-bay-lookout",
@@ -112010,7 +112523,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "pizzakom",
@@ -112084,7 +112598,7 @@
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "platypus-platform",
@@ -112144,7 +112658,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "preminghana-viewing-platform",
@@ -112202,7 +112717,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "princes-peak",
@@ -112262,7 +112778,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "projection-bluff-lookout",
@@ -112322,7 +112839,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "pulpit-rock",
@@ -112380,7 +112898,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "red-knoll-lookout",
@@ -112440,7 +112959,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "red-rock-point",
@@ -112504,7 +113024,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "rialto",
@@ -112578,7 +113099,7 @@
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "rinadeen-lookout",
@@ -112638,7 +113159,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "rock-formations",
@@ -112696,67 +113218,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
-  },
-  {
-    "slug": "rocking-stone",
-    "name": "Rocking Stone",
-    "town": "Collinsvale",
-    "region": "Hobart & South",
-    "latitude": -42.9075559,
-    "longitude": 147.2338746,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Collinsvale.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/1074578164",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/1074578164",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Rocking Stone category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Rocking%20Stone%20Collinsvale%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
     "rankedAt": "2026-10-12",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "round-hill-lookout",
@@ -112814,7 +113277,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "savage-river-lookout",
@@ -112872,7 +113336,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "scorpion-rock-lookout",
@@ -112932,7 +113397,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "scotts-road-lookout",
@@ -112992,7 +113458,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "seal-lookout",
@@ -113058,7 +113525,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "seal-rocks-lookout",
@@ -113116,7 +113584,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "seal-spa",
@@ -113176,7 +113645,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "secret-falls",
@@ -113236,7 +113706,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "sentinel-lookout",
@@ -113296,7 +113767,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "shearwater-viewing-platform",
@@ -113356,7 +113828,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "shipstern-lookout",
@@ -113416,7 +113889,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "sisterhood",
@@ -113490,7 +113964,7 @@
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "south-west-viewing-platform",
@@ -113550,7 +114024,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "spencer-s",
@@ -113624,7 +114099,7 @@
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "sphinx-rock",
@@ -113684,7 +114159,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "spirit-of-the-sea-sculpture",
@@ -113744,7 +114220,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "split-rock",
@@ -113804,67 +114281,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
-  },
-  {
-    "slug": "stan-wing-lookout",
-    "name": "Stan Wing lookout",
-    "town": "Sprent",
-    "region": "North West",
-    "latitude": -41.2542168,
-    "longitude": 146.1032425,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Sprent.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/11002971768",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/11002971768",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Stan Wing lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Stan%20Wing%20lookout%20Sprent%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-12",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "stitt-falls-lookout",
@@ -113922,7 +114340,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "street-art",
@@ -113980,125 +114399,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
-  },
-  {
-    "slug": "sumac-lookout",
-    "name": "Sumac Lookout",
-    "town": "Irishtown",
-    "region": "North West",
-    "latitude": -41.1211021,
-    "longitude": 144.9930687,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Irishtown.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/6196876585",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/6196876585",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Sumac Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Sumac%20Lookout%20Irishtown%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-12"
-  },
-  {
-    "slug": "surprise-valley",
-    "name": "Surprise Valley",
-    "town": "Miena",
-    "region": "Central Tasmania",
-    "latitude": -42.221115,
-    "longitude": 146.0907865,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Miena.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/313130069",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/313130069",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Surprise Valley category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Surprise%20Valley%20Queenstown%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
     "rankedAt": "2026-10-12",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "suspension-alexandra-bridge-lookout",
@@ -114158,7 +114460,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "sweetbrew",
@@ -114232,7 +114535,7 @@
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "tamahorn-lookout",
@@ -114292,7 +114595,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "tatlows-beach-lookout",
@@ -114350,7 +114654,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "the-needle-viewpoint",
@@ -114410,7 +114715,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "the-springs-lookout",
@@ -114470,7 +114776,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "three-sisters-nature-reserve-lookout",
@@ -114530,7 +114837,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "three-thumbs-lookout",
@@ -114590,7 +114898,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "tier-hill",
@@ -114648,7 +114957,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "tim-shea-lookout",
@@ -114708,7 +115018,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "tobias-furneaux-lookout",
@@ -114768,7 +115079,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "top-of-moraine",
@@ -114826,7 +115138,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "trethewies-lookout",
@@ -114884,7 +115197,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "trevallyn-dam-lookout",
@@ -114944,7 +115258,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "truganini-lookout",
@@ -115004,7 +115319,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "two-tree-point-resolution-creek",
@@ -115064,67 +115380,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
-  },
-  {
-    "slug": "walkers-lookout",
-    "name": "Walkers Lookout",
-    "town": "Whitemark",
-    "region": "Flinders Island",
-    "latitude": -40.0561187,
-    "longitude": 148.0808591,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Whitemark.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/566511197",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/566511197",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Walkers Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Walkers%20Lookout%20Whitemark%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-12",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "watchtower-lookout",
@@ -115184,7 +115441,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "water-fall",
@@ -115244,67 +115502,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
-  },
-  {
-    "slug": "water-tower-hill",
-    "name": "Water Tower Hill",
-    "town": "Strahan",
-    "region": "West Coast",
-    "latitude": -42.1485327,
-    "longitude": 145.334743,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Strahan.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/3126933316",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/3126933316",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Water Tower Hill category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Water%20Tower%20Hill%20Strahan%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-12",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "waterfall-bluff",
@@ -115364,7 +115563,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "wellington-falls-lookout",
@@ -115424,7 +115624,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "west-head-lookout",
@@ -115484,7 +115685,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "western-tiers-lookout",
@@ -115544,65 +115746,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
-  },
-  {
-    "slug": "whaleback-lookout",
-    "name": "Whaleback Lookout",
-    "town": "Zeehan",
-    "region": "West Coast",
-    "latitude": -41.7214853,
-    "longitude": 145.2289397,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Zeehan.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/8515660128",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/8515660128",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Whaleback Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Whaleback%20Lookout%20Zeehan%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "white-spur-lookout",
@@ -115662,7 +115807,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "whyte-hills-lookout",
@@ -115720,7 +115866,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "wilf-campbell-memorial-lookout",
@@ -115784,7 +115931,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "windermere-lake-viewpoint",
@@ -115842,7 +115990,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "wombat-pool-lookout",
@@ -115900,7 +116049,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-12"
+    "rankedAt": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "zambrero-hobart",
@@ -115973,7 +116123,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "mt-fuji",
@@ -116032,7 +116183,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "felled-giant",
@@ -116091,7 +116243,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "a-towering-giant",
@@ -116150,7 +116303,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "abandoned-train-tunnel",
@@ -116209,7 +116363,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "academy-gallery",
@@ -116268,7 +116423,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "anchor-stampers-battery",
@@ -116334,7 +116490,8 @@
     ],
     "rankedAt": "2026-10-12",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "artisan-gallery",
