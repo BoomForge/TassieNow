@@ -4,7 +4,7 @@ import {isMarketPlace,selectPhotoEnrichmentTargets} from './discover/lib/image-e
 
 const FILE = new URL('../src/data/places.json', import.meta.url);
 const UA = 'TassieNow/1.2 (+https://tassienow.com)';
-const MAX_PER_RUN = Math.max(1, Math.min(80, Number.parseInt(process.env.MAX_IMAGE_ENRICH || '90', 10) || 90));
+const MAX_PER_RUN = Math.max(1, Math.min(1400, Number.parseInt(process.env.MAX_IMAGE_ENRICH || '90', 10) || 90));
 const GALLERY_SIZE = Math.max(1, Math.min(12, Number.parseInt(process.env.GALLERY_SIZE || '3', 10) || 3));
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const stats={requests:0,failures:0,rateLimited:0,retries:0,searchResults:0,identityRejected:0,licenceRejected:0,eligible:0,matchingPlaces:0,errorSamples:[]};
