@@ -23,3 +23,16 @@ test('never overwrite a verified or manually approved photo',()=>{
  assert.equal(applyVerifiedPhotoPicks([place]),0);
  assert.equal(place.image,photo);
 });
+
+test('verified CC0 photograph shows the exact Drunken Admiral restaurant',()=>{
+ const pick=verifiedPhotoPicks.find(item=>item.slug==='drunken-admiral');
+ assert.ok(pick);
+ assert.equal(pick.name,'Drunken Admiral');
+ assert.equal(pick.image.attribution,'Gary Houston');
+ assert.equal(pick.image.license,'CC0 1.0');
+ assert.equal(pick.image.matchEvidence.verified,true);
+ assert.equal(permittedLicence(pick.image.license,pick.image.licenseUrl),true);
+ const missing={slug:'drunken-admiral',name:'Drunken Admiral',status:'active',image:{isFallback:true}};
+ assert.equal(applyVerifiedPhotoPicks([missing]),1);
+ assert.equal(missing.image.sourceUrl,pick.image.sourceUrl);
+});
