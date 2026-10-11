@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T05:31:15.277Z",
+  "generatedAt": "2026-10-11T05:55:49.402Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
@@ -13,10 +13,10 @@
     {
       "name": "events.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-10T21:36:23Z",
+      "lastScheduled": "2026-10-11T05:38:51Z",
       "lastResult": "pending",
-      "lastRunAt": "2026-10-11T00:45:56Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38099534538"
+      "lastRunAt": "2026-10-11T05:38:51Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38115456945"
     },
     {
       "name": "catalogue-quality.yml",
@@ -39,8 +39,8 @@
       "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T05:28:28Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38114891088"
+      "lastRunAt": "2026-10-11T05:32:50Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38115132547"
     },
     {
       "name": "place-photo-research.yml",
@@ -62,9 +62,9 @@
       "name": "verify-published-event-images.yml",
       "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
-      "lastResult": "success",
-      "lastRunAt": "2026-10-11T05:28:16Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38114881550"
+      "lastResult": "in_progress",
+      "lastRunAt": "2026-10-11T05:55:40Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38116376668"
     },
     {
       "name": "verify-event-artwork.yml",
@@ -102,9 +102,9 @@
       "name": "quality.yml",
       "status": "ok",
       "lastScheduled": "2026-10-10T22:39:29Z",
-      "lastResult": "in_progress",
-      "lastRunAt": "2026-10-11T05:31:09Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38115042915"
+      "lastResult": "success",
+      "lastRunAt": "2026-10-11T05:32:50Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38115132596"
     },
     {
       "name": "automation-health.yml",
@@ -182,15 +182,15 @@
     }
   ],
   "imageCoverage": {
-    "activeEvents": 170,
+    "activeEvents": 173,
     "publishedEventPhotos": 87,
     "auditedPublishedPhotos": 87
   },
   "photoSourceDiscovery": {
-    "linkedPlacePages": 25,
-    "linkedEventPages": 13,
-    "scannedRecords": 110,
-    "lastSourceScan": "2026-10-11T05:28:32.870Z",
+    "linkedPlacePages": 40,
+    "linkedEventPages": 32,
+    "scannedRecords": 220,
+    "lastSourceScan": "2026-10-11T05:32:56.051Z",
     "realHeroPhotosAddedByLinks": 0
   }
 }
