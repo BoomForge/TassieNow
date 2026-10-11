@@ -3028,6 +3028,113 @@
     "lastWikidataLinkChecked": "2026-10-10"
   },
   {
+    "slug": "farm-gate-market",
+    "name": "Farm Gate Market",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "latitude": -42.88,
+    "longitude": 147.325,
+    "coordinateAccuracy": "approximate-venue",
+    "categories": [
+      "Markets",
+      "Local Produce",
+      "Food & Drink"
+    ],
+    "summary": "Tasmanian growers and food producers gather for a weekly street market in central Hobart.",
+    "address": "Bathurst Street, Hobart",
+    "website": "https://farmgatemarket.com.au/",
+    "sourceUrl": "https://farmgatemarket.com.au/",
+    "sourceType": "curated",
+    "status": "active",
+    "lastChecked": "2026-10-07",
+    "lastDetailsChecked": "2026-10-11",
+    "visibility": "public",
+    "schedule": {
+      "summary": "Every Sunday, 8:30 am–1 pm",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Sunday"
+      ],
+      "sourceUrl": "https://farmgatemarket.com.au/",
+      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
+      "startTime": "08:30",
+      "endTime": "13:00"
+    },
+    "officialSource": {
+      "name": "Farm Gate Market",
+      "url": "https://farmgatemarket.com.au/",
+      "type": "official-website"
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hobart_FarmerMarket_003_2020.jpg/1280px-Hobart_FarmerMarket_003_2020.jpg",
+      "alt": "Farm Gate Market on Bathurst Street, Hobart, photographed in January 2020",
+      "attribution": "Owen Allen",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hobart_FarmerMarket_003_2020.jpg",
+      "sourceMethod": "verified-curated",
+      "isFallback": false,
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Farm Gate Market, Bathurst Street, Hobart",
+        "evidence": "Commons caption explicitly names Farm Gate Market at Mathers Place, Hobart; photographed 26 January 2020; Owen Allen CC BY 2.0 reviewed by FlickrReviewR",
+        "checkedAt": "2026-10-11",
+        "photographedYear": 2020
+      }
+    },
+    "detailSources": {
+      "address": {
+        "type": "verified-source",
+        "url": "https://farmgatemarket.com.au/",
+        "checkedAt": "2026-10-11"
+      },
+      "schedule": {
+        "type": "verified-source",
+        "url": "https://farmgatemarket.com.au/",
+        "checkedAt": "2026-10-11"
+      },
+      "bookingUrl": {
+        "type": "official-website",
+        "url": "https://farmgatemarket.com.au/",
+        "checkedAt": "2026-10-07"
+      }
+    },
+    "openingHours": "Su 08:30-13:00",
+    "qualityScore": 91,
+    "qualityTier": "featured",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "real-image",
+      "opening-hours",
+      "address",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-11",
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-11T03:35:28.989Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Farm%20Gate%20Market%20Hobart%20Tasmania"
+      }
+    ],
+    "bookingUrl": "https://farmgatemarket.com.au/?s={search_term_string}",
+    "lastWikidataLinkChecked": "2026-10-10",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-11",
+      "url": "https://farmgatemarket.com.au/"
+    }
+  },
+  {
     "slug": "frankland-beaches",
     "name": "Frankland Beaches",
     "town": "Tasmania",
@@ -9041,104 +9148,6 @@
       "checkedAt": "2026-10-11T03:35:52.855Z"
     },
     "lastWikidataLinkChecked": "2026-10-10"
-  },
-  {
-    "slug": "farm-gate-market",
-    "name": "Farm Gate Market",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "latitude": -42.88,
-    "longitude": 147.325,
-    "coordinateAccuracy": "approximate-venue",
-    "categories": [
-      "Markets",
-      "Local Produce",
-      "Food & Drink"
-    ],
-    "summary": "Tasmanian growers and food producers gather for a weekly street market in central Hobart.",
-    "address": "Bathurst Street, Hobart",
-    "website": "https://farmgatemarket.com.au/",
-    "sourceUrl": "https://farmgatemarket.com.au/",
-    "sourceType": "curated",
-    "status": "active",
-    "lastChecked": "2026-10-07",
-    "lastDetailsChecked": "2026-10-11",
-    "visibility": "public",
-    "schedule": {
-      "summary": "Every Sunday, 8:30 am–1 pm",
-      "frequency": "weekly",
-      "daysOfWeek": [
-        "Sunday"
-      ],
-      "sourceUrl": "https://farmgatemarket.com.au/",
-      "notes": "Check the organiser for cancellations and special-date changes before travelling.",
-      "startTime": "08:30",
-      "endTime": "13:00"
-    },
-    "officialSource": {
-      "name": "Farm Gate Market",
-      "url": "https://farmgatemarket.com.au/",
-      "type": "official-website"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Farm Gate Market category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "detailSources": {
-      "address": {
-        "type": "verified-source",
-        "url": "https://farmgatemarket.com.au/",
-        "checkedAt": "2026-10-11"
-      },
-      "schedule": {
-        "type": "verified-source",
-        "url": "https://farmgatemarket.com.au/",
-        "checkedAt": "2026-10-11"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://farmgatemarket.com.au/",
-        "checkedAt": "2026-10-07"
-      }
-    },
-    "openingHours": "Su 08:30-13:00",
-    "qualityScore": 73,
-    "qualityTier": "featured",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "opening-hours",
-      "address",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-11",
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-11T03:35:28.989Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Farm%20Gate%20Market%20Hobart%20Tasmania"
-      }
-    ],
-    "bookingUrl": "https://farmgatemarket.com.au/?s={search_term_string}",
-    "lastWikidataLinkChecked": "2026-10-10",
-    "officialSourceCheck": {
-      "status": "identity-mismatch",
-      "checkedAt": "2026-10-11",
-      "url": "https://farmgatemarket.com.au/"
-    }
   },
   {
     "slug": "harvest-launceston-community-farmers-market",
@@ -45487,6 +45496,97 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-11"
+  },
+  {
+    "slug": "west-coast-wilderness-railway-strahan",
+    "name": "West Coast Wilderness Railway",
+    "town": "Strahan",
+    "region": "West Coast",
+    "latitude": -42.1601438,
+    "longitude": 145.3277466,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Strahan.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/8434078424",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/8434078424",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": "https://required",
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "bookingUrl": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/8434078424",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-11",
+    "lastDetailsChecked": "2026-10-11",
+    "lastOsmDetailsChecked": "2026-10-11",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/ABT_loco_on_turntable_on_the_WCW_railway.jpg/1920px-ABT_loco_on_turntable_on_the_WCW_railway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "West Coast Wilderness Railway, Tasmania",
+      "attribution": "Nelson Minar",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ABT_loco_on_turntable_on_the_WCW_railway.jpg",
+      "isFallback": false,
+      "sourceMethod": "wikidata-p18",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=West%20Coast%20Wilderness%20Railway%20Strahan%20Tasmania"
+      }
+    ],
+    "qualityScore": 45,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-11",
+    "gallery": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Strahan_Railway_Station_%283939186114%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "West Coast Wilderness Railway, Tasmania",
+        "attribution": "Tom Worthington from Canberra, Australia",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strahan_Railway_Station_(3939186114).jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/130131_7069_West_Coast_Wilderness_Railway_Strahan_Tas_Australia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "alt": "West Coast Wilderness Railway, Tasmania",
+        "attribution": "夏目・龍之介",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:130131_7069_West_Coast_Wilderness_Railway_Strahan_Tas_Australia.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      }
+    ]
   },
   {
     "slug": "above-and-beyond-tasmanian-seaplanes",
@@ -104781,96 +104881,6 @@
     "rankedAt": "2026-10-11",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
-  },
-  {
-    "slug": "west-coast-wilderness-railway-strahan",
-    "name": "West Coast Wilderness Railway",
-    "town": "Strahan",
-    "region": "West Coast",
-    "latitude": -42.1601438,
-    "longitude": 145.3277466,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Strahan.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/8434078424",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/8434078424",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": "https://required",
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "bookingUrl": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/8434078424",
-        "checkedAt": "2026-10-11"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-11",
-    "lastDetailsChecked": "2026-10-11",
-    "lastOsmDetailsChecked": "2026-10-11",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/ABT_loco_on_turntable_on_the_WCW_railway.jpg/1920px-ABT_loco_on_turntable_on_the_WCW_railway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "West Coast Wilderness Railway, Tasmania",
-      "attribution": "Nelson Minar",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ABT_loco_on_turntable_on_the_WCW_railway.jpg",
-      "isFallback": false,
-      "sourceMethod": "wikidata-p18",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=West%20Coast%20Wilderness%20Railway%20Strahan%20Tasmania"
-      }
-    ],
-    "qualityScore": 27,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-11",
-    "gallery": [
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Strahan_Railway_Station_%283939186114%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "West Coast Wilderness Railway, Tasmania",
-        "attribution": "Tom Worthington from Canberra, Australia",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strahan_Railway_Station_(3939186114).jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/130131_7069_West_Coast_Wilderness_Railway_Strahan_Tas_Australia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "West Coast Wilderness Railway, Tasmania",
-        "attribution": "夏目・龍之介",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:130131_7069_West_Coast_Wilderness_Railway_Strahan_Tas_Australia.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      }
-    ]
   },
   {
     "slug": "west-s-bakery",
