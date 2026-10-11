@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T07:48:02.085Z",
+  "generatedAt": "2026-10-11T08:58:05.697Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
@@ -63,16 +63,16 @@
       "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T07:46:35Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38122511227"
+      "lastRunAt": "2026-10-11T08:57:55Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38126665651"
     },
     {
       "name": "verify-event-artwork.yml",
       "status": "awaiting-first-scheduled-run",
       "lastScheduled": null,
-      "lastResult": "success",
-      "lastRunAt": "2026-10-11T07:46:37Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38122512580"
+      "lastResult": "in_progress",
+      "lastRunAt": "2026-10-11T08:57:57Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38126667158"
     },
     {
       "name": "verify-event-image-files.yml",
@@ -182,9 +182,9 @@
     }
   ],
   "imageCoverage": {
-    "activeEvents": 175,
-    "publishedEventPhotos": 87,
-    "auditedPublishedPhotos": 87
+    "activeEvents": 178,
+    "publishedEventPhotos": 88,
+    "auditedPublishedPhotos": 88
   },
   "photoSourceDiscovery": {
     "linkedPlacePages": 40,
