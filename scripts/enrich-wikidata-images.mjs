@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import {permittedLicence} from './discover/lib/event-media.mjs';
 
 const FILE = new URL('../src/data/places.json', import.meta.url);
 const USER_AGENT = 'TassieNow/1.5 (+https://tassienow.com)';
@@ -36,7 +37,11 @@ async function fetchClaims(ids){
 function imageFromInfo(page,info,sourceMethod){
   const meta=info.extmetadata||{};
   const license=clean(meta.LicenseShortName?.value||meta.UsageTerms?.value||'');
-  if(!license||blockedTitle(page.title||''))return null;
+  // Commons metadata is not automatically a licence. Exclude NC/ND,
+  // unverifiable rights and invalid source/image URLs before publication.
+  if(!permittedLicence(license,meta.LicenseUrl?.value)||blockedTitle(page.title||''))return null;
+  if(!info?.descriptionurl?.startsWith('https://') ||
+     !(info.thumburl||info.url)?.startsWith('https://'))return null;
   return{
     url:info.thumburl||info.url,
     alt:'',
