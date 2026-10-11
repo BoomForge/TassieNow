@@ -19,7 +19,9 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
       <section class="admin-section" data-panel="catalogue">
         <div class="section-bar"><div><h2>Catalogue</h2><p>Manual edits are committed to GitHub and protected from the automatic importer.</p></div><button id="new-listing" class="primary-button" type="button">New listing</button></div>
         <div class="admin-grid catalogue-grid">
-          <div class="admin-card"><label>Find a listing<input id="catalogue-search" type="search" placeholder="Search name, town or region…" /></label><label class="check-row"><input id="catalogue-missing-photos" type="checkbox" /> Only listings missing a real photograph</label><p class="microcopy">Select a listing to research exact photographs in Google Images and open-licensed collections.</p><div id="catalogue-list" class="catalogue-list"></div></div>
+          <div class="admin-card"><label>Find a listing<input id="catalogue-search" type="search" placeholder="Search name, town or region…" /></label><label class="check-row"><input id="catalogue-missing-photos" type="checkbox" /> Only listings missing a real photograph</label><p class="microcopy">Select a listing to research exact photographs in Google Images and open-licensed collections.</p><div id="catalogue-list" class="catalogue-list"></div>
+            <h3>Saved photo research leads</h3><p id="photo-queue-summary" class="microcopy">Loading saved leads…</p>
+            <div id="photo-candidate-list" class="stack-list"></div></div>
           <form id="listing-form" class="admin-card editor-card">
             <input type="hidden" name="slug" />
             <h3 id="listing-form-title">Add a manual listing</h3>
@@ -33,13 +35,29 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
                 <strong>Find real photos — free Google research</strong>
                 <div class="photo-research-links">
                   <a id="photo-google-images" target="_blank" rel="noopener noreferrer">Search Google Images ↗</a>
+                  <a id="photo-google-cc" target="_blank" rel="noopener noreferrer">Google Images · Creative Commons filter ↗</a>
                   <a id="photo-google-commons" target="_blank" rel="noopener noreferrer">Find Commons photos through Google ↗</a>
                   <a id="photo-google-flickr" target="_blank" rel="noopener noreferrer">Find Flickr originals through Google ↗</a>
                   <a id="photo-source-website" target="_blank" rel="noopener noreferrer" hidden>Visit official business website ↗</a>
                 </div>
                 <small>In Google Images select <strong>Tools → Usage rights → Creative Commons licences</strong>. Verify each image at its original source. Credit alone is not permission: use CC BY, CC BY-SA, CC0/public domain or explicit permission, with photographer, original source and licence. Do not copy Google Maps visitor photos without permission. Search results never publish automatically.</small>
               </div>
-              <label>Image alt text<input name="image_alt" /></label><label>Image attribution<input name="image_attribution" /></label><label>Image licence<input name="image_license" /></label><label>Image source URL<input name="image_source_url" type="url" /></label><label>Visibility<select name="visibility"><option value="public">Public</option><option value="suppressed">Hidden</option></select></label><label class="check-row"><input name="featured" type="checkbox" /> Featured</label>
+              <div id="photo-candidate-review" class="span-2 photo-research" hidden>
+                <strong id="photo-candidate-heading">Review source candidate</strong>
+                <p id="photo-candidate-description" class="microcopy"></p>
+                <a id="photo-candidate-original" target="_blank" rel="noopener noreferrer">Inspect original photo and licence ↗</a>
+                <label>Verification notes (exclude private contact information)<textarea id="photo-candidate-note" rows="3" placeholder="How did you verify the actual place, photographer, licence/version and reuse conditions?"></textarea></label>
+                <label class="check-row"><input id="photo-candidate-identity" type="checkbox" /> Exact photographed place and town verified</label>
+                <label class="check-row"><input id="photo-candidate-rights" type="checkbox" /> Rights verified at original source</label>
+                <div class="form-actions"><button id="photo-verify-candidate" type="button" class="secondary-button">Mark source verified</button><button id="photo-reject-candidate" type="button" class="secondary-button">Reject lead</button><button id="photo-use-candidate" type="button" class="secondary-button">Use verified details</button></div>
+                <p id="photo-candidate-status" class="microcopy" aria-live="polite"></p>
+              </div>
+              <label>Photo description (alt text)<input name="image_alt" /></label><label>Photographer / rights-holder credit<input name="image_attribution" /></label>
+              <label>Reuse licence<input name="image_license" placeholder="CC BY 4.0, CC BY-SA 2.0, CC0 1.0, Public domain, Rights-holder permission" /></label>
+              <label>Licence details URL<input name="image_license_url" type="url" placeholder="https://creativecommons.org/licenses/by/4.0/" /></label>
+              <label class="span-2">Original photographer / image source page<input name="image_source_url" type="url" placeholder="https://commons.wikimedia.org/wiki/File:..." /></label>
+              <label class="span-2">Rights evidence (public, no private email/contact details)<textarea name="image_permission_notes" rows="3" placeholder="For direct permission: rights-holder, grant date YYYY-MM-DD and permitted website usage. For public domain: specific documentary basis."></textarea></label>
+              <label class="span-2 check-row"><input name="image_rights_confirmed" type="checkbox" /> I checked the actual photograph, original source, subject identity and commercial reuse rights. Required for new or changed images.</label><label>Visibility<select name="visibility"><option value="public">Public</option><option value="suppressed">Hidden</option></select></label><label class="check-row"><input name="featured" type="checkbox" /> Featured</label>
             </div>
             <p class="microcopy" id="listing-source"></p><div class="form-actions"><button class="primary-button" type="submit">Save listing</button><button id="cancel-listing" class="secondary-button" type="button">Clear</button><span id="listing-status" class="admin-status"></span></div>
           </form>
@@ -80,7 +98,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
 
   <script>
     const loginPanel=document.querySelector('#login-panel'),adminPanel=document.querySelector('#admin-panel'),globalStatus=document.querySelector('#global-status');
-    let catalogue=[],ads=[];
+    let catalogue=[],ads=[],photoQueue={},activeCandidate=null;
     const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     async function api(url,options={}){const r=await fetch(url,{...options,headers:{accept:'application/json',...(options.body?{'content-type':'application/json'}:{}),...(options.headers||{})},cache:'no-store'});const data=await r.json().catch(()=>({}));if(r.status===401){showLogin();throw new Error('Your admin session has expired.');}if(!r.ok)throw new Error(data.error||`Request failed (${r.status})`);return data;}
     async function uploadImage(file,label){const form=new FormData();form.append('file',file);form.append('label',label||'image');const r=await fetch('/api/admin/upload',{method:'POST',body:form,headers:{accept:'application/json'},cache:'no-store'});const data=await r.json().catch(()=>({}));if(r.status===401){showLogin();throw new Error('Your admin session has expired.');}if(!r.ok)throw new Error(data.error||`Upload failed (${r.status})`);return data;}
@@ -88,16 +106,84 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
     document.querySelector('#login-form').addEventListener('submit',async e=>{e.preventDefault();const s=document.querySelector('#login-status');s.textContent='Logging in…';try{await api('/api/admin/login',{method:'POST',body:JSON.stringify(Object.fromEntries(new FormData(e.currentTarget).entries()))});s.textContent='';showAdmin()}catch(err){window.turnstile?.reset();s.textContent=err.message}});
     document.querySelector('#logout').addEventListener('click',async()=>{try{await api('/api/admin/logout',{method:'POST',body:'{}'})}finally{showLogin()}});
     document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===btn));document.querySelectorAll('[data-panel]').forEach(p=>p.hidden=p.dataset.panel!==btn.dataset.tab)}));
-    async function loadAll(){globalStatus.textContent='Loading…';const results=await Promise.allSettled([loadCatalogue(),loadAds(),loadInquiries(),loadDiscovery(),loadCorrections()]);const failures=results.filter(x=>x.status==='rejected');globalStatus.textContent=failures.length?failures.map(x=>x.reason.message).join(' · '):''}
+    async function loadAll(){globalStatus.textContent='Loading…';const results=await Promise.allSettled([loadCatalogue(),loadAds(),loadInquiries(),loadDiscovery(),loadCorrections(),loadPhotoResearch()]);const failures=results.filter(x=>x.status==='rejected');globalStatus.textContent=failures.length?failures.map(x=>x.reason.message).join(' · '):''}
 
     async function loadDiscovery(){const {candidates=[],report={}}=await api('/api/admin/discovery');const totals=report.totals||{};document.querySelector('#discovery-summary').textContent=report.checkedAt?`Last scan: ${new Date(report.checkedAt).toLocaleString('en-AU',{timeZone:'Australia/Hobart'})} Hobart · ${totals.added||0} added · ${totals.review||0} need review`:'Discovery has not run yet.';document.querySelector('#discovery-sources').innerHTML=(report.sources||[]).map(s=>`<p><strong>${esc(s.name)}</strong> · ${s.pagesFetched} pages · ${s.errors.length?'Needs attention: '+esc(s.errors.map(e=>e.message).join(', ')):'OK'}</p>`).join('');document.querySelector('#discovery-list').innerHTML=candidates.filter(c=>c.status==='review').map(c=>`<div class="stack-item"><div><strong>${esc(c.name)}</strong><small>${esc(c.town||'Town not verified')} · ${esc(c.sourceName)} · Last seen ${esc(c.lastSeen)}</small><p>${esc(c.reasons.join(' · '))}</p><a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer">Check source</a></div></div>`).join('')||'<p>No discoveries awaiting review.</p>';}
+
+    async function loadPhotoResearch(){
+      try {
+        const result=await api('/api/admin/photo-research');
+        photoQueue=result.queue||{};
+        renderPhotoResearch();
+      } catch(error) {
+        document.querySelector('#photo-queue-summary').textContent='Research queue unavailable: '+error.message;
+      }
+    }
+    function renderPhotoResearch(){
+      const leads=Object.entries(photoQueue).flatMap(([slug,entry])=>(entry.candidates||[]).map(candidate=>({slug,entry,candidate})));
+      const pending=leads.filter(item=>item.candidate.review?.status!=='rejected'&&item.candidate.review?.status!=='source-verified').length;
+      document.querySelector('#photo-queue-summary').textContent=`${leads.length} candidate(s) for ${Object.keys(photoQueue).length} listings · ${pending} awaiting original-source checks. None publish automatically.`;
+      leads.sort((a,b)=>Number(Boolean(catalogue.find(p=>p.slug===b.slug)?.categories?.includes('Markets')))-Number(Boolean(catalogue.find(p=>p.slug===a.slug)?.categories?.includes('Markets')))||a.entry.name.localeCompare(b.entry.name));
+      document.querySelector('#photo-candidate-list').innerHTML=leads.map(({slug,entry,candidate})=>
+        `<div class="stack-item"><div><strong>${esc(entry.name)} · ${esc(entry.town)}</strong><small>${esc(candidate.title)} · ${esc(candidate.licence)} · ${esc(candidate.review?.status||'needs-verification')}</small><button class="secondary-button" data-photo-slug="${esc(slug)}" data-photo-id="${esc(candidate.id)}" type="button">Review original</button></div></div>`
+      ).join('')||'<p class="microcopy">No indexed candidates yet. Use the free Google links for each listing.</p>';
+      document.querySelectorAll('[data-photo-id]').forEach(button=>button.addEventListener('click',()=>selectPhotoCandidate(button.dataset.photoSlug,button.dataset.photoId)));
+    }
+    function currentCandidate(){return activeCandidate&&photoQueue[activeCandidate.slug]?.candidates?.find(c=>c.id===activeCandidate.id)}
+    function selectPhotoCandidate(slug,id){
+      const entry=photoQueue[slug],candidate=entry?.candidates?.find(c=>c.id===id);
+      if(!candidate)return;
+      editListing(slug);
+      activeCandidate={slug,id};
+      document.querySelector('#photo-candidate-review').hidden=false;
+      document.querySelector('#photo-candidate-heading').textContent='Verify: '+entry.name;
+      document.querySelector('#photo-candidate-description').textContent=`${candidate.title} · photographer ${candidate.credit} · indexed licence ${candidate.licence}. Index claims require independent checks.`;
+      document.querySelector('#photo-candidate-original').href=candidate.sourcePage;
+      document.querySelector('#photo-candidate-note').value=candidate.review?.note||'';
+      document.querySelector('#photo-candidate-identity').checked=Boolean(candidate.review?.identityConfirmed);
+      document.querySelector('#photo-candidate-rights').checked=Boolean(candidate.review?.rightsConfirmed);
+      document.querySelector('#photo-candidate-status').textContent=candidate.review?.status||'Not verified. Inspect the original source.';
+      document.querySelector('#photo-use-candidate').disabled=candidate.review?.status!=='source-verified';
+    }
+    async function updatePhotoCandidate(status){
+      const candidate=currentCandidate(),selected=activeCandidate;
+      if(!candidate||!selected)return;
+      const note=document.querySelector('#photo-candidate-note').value;
+      const identityVerified=document.querySelector('#photo-candidate-identity').checked;
+      const rightsVerified=document.querySelector('#photo-candidate-rights').checked;
+      const message=document.querySelector('#photo-candidate-status');
+      message.textContent='Saving review…';
+      try {
+        await api('/api/admin/photo-research',{method:'PATCH',body:JSON.stringify({...selected,status,note,identityVerified,rightsVerified})});
+        await loadPhotoResearch();
+        selectPhotoCandidate(selected.slug,selected.id);
+        message.textContent='Saved. No photo was published.';
+      } catch(error){message.textContent=error.message;}
+    }
+    document.querySelector('#photo-verify-candidate').addEventListener('click',()=>updatePhotoCandidate('source-verified'));
+    document.querySelector('#photo-reject-candidate').addEventListener('click',()=>updatePhotoCandidate('rejected'));
+    document.querySelector('#photo-use-candidate').addEventListener('click',()=>{
+      const candidate=currentCandidate();
+      if(!candidate||candidate.review?.status!=='source-verified')return;
+      const form=document.querySelector('#listing-form');
+      form.image_url.value=candidate.url;
+      form.image_alt.value=candidate.title;
+      form.image_attribution.value=candidate.credit;
+      form.image_license.value='CC '+candidate.licence.replace(/^CC /i,'');
+      form.image_license_url.value=candidate.licenceUrl;
+      form.image_source_url.value=candidate.sourcePage;
+      form.image_permission_notes.value=candidate.review.note||'';
+      form.image_rights_confirmed.checked=false;
+      setPreview('#listing-image-preview',candidate.url);
+      document.querySelector('#photo-candidate-status').textContent='Fields copied. Confirm the image, adjust alt text, check rights confirmation, then save the listing separately.';
+    });
 
     async function loadCatalogue(){const data=await api('/api/admin/catalogue');catalogue=data.places||[];renderCatalogue()}
     function renderCatalogue(){const q=document.querySelector('#catalogue-search').value.trim().toLowerCase();const onlyMissing=document.querySelector('#catalogue-missing-photos').checked;const rows=catalogue.filter(p=>(!onlyMissing||(p.visibility!=='suppressed'&&p.image?.isFallback===true))&&(!q||`${p.name} ${p.town} ${p.region}`.toLowerCase().includes(q))).sort((a,b)=>onlyMissing?(Number(b.categories?.includes('Markets'))-Number(a.categories?.includes('Markets'))||Number(b.categories?.includes('Food & Drink'))-Number(a.categories?.includes('Food & Drink'))||a.name.localeCompare(b.name)):0).slice(0,120);document.querySelector('#catalogue-list').innerHTML=rows.map(p=>`<button class="catalogue-row" type="button" data-slug="${esc(p.slug)}"><span><strong>${esc(p.name)}</strong><small>${esc(p.town)} · ${esc(p.region)}</small></span><em>${p.visibility==='suppressed'?'Hidden':p.featured?'Featured':esc(p.sourceType||'')}</em></button>`).join('')||'<p>No matching listings.</p>';document.querySelectorAll('.catalogue-row').forEach(b=>b.addEventListener('click',()=>editListing(b.dataset.slug)))}
     document.querySelector('#catalogue-search').addEventListener('input',renderCatalogue);
     document.querySelector('#catalogue-missing-photos').addEventListener('change',renderCatalogue);
     function setPreview(id,url){const img=document.querySelector(id);if(url){img.src=url;img.hidden=false}else{img.removeAttribute('src');img.hidden=true}}
-    function clearListing(){const f=document.querySelector('#listing-form');f.reset();document.querySelector('#photo-research-tools').hidden=true;f.slug.value='';setPreview('#listing-image-preview','');document.querySelector('#listing-form-title').textContent='Add a manual listing';document.querySelector('#listing-source').textContent='';document.querySelector('#listing-status').textContent='';document.querySelector('#listing-upload-status').textContent=''}
+    function clearListing(){const f=document.querySelector('#listing-form');f.reset();activeCandidate=null;document.querySelector('#photo-candidate-review').hidden=true;document.querySelector('#photo-research-tools').hidden=true;f.slug.value='';setPreview('#listing-image-preview','');document.querySelector('#listing-form-title').textContent='Add a manual listing';document.querySelector('#listing-source').textContent='';document.querySelector('#listing-status').textContent='';document.querySelector('#listing-upload-status').textContent=''}
     function googleSearchUrl(terms,{images=false}={}){
       const url=new URL('https://www.google.com/search');
       url.searchParams.set('q',terms);
@@ -108,6 +194,9 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
       // Search links open Google's normal browser UI; no scraping, billing or automated image copying.
       const terms=[place.name,place.town,'Tasmania'].filter(Boolean).join(' ');
       document.querySelector('#photo-google-images').href=googleSearchUrl(terms,{images:true});
+      const cc=new URL(googleSearchUrl(terms,{images:true}));
+      cc.searchParams.set('tbs','il:cl'); // Google may change this; reviewer can also use Tools > Usage rights.
+      document.querySelector('#photo-google-cc').href=cc.href;
       document.querySelector('#photo-google-commons').href=googleSearchUrl(terms+' site:commons.wikimedia.org/wiki/File:');
       document.querySelector('#photo-google-flickr').href=googleSearchUrl(terms+' site:flickr.com/photos/');
       const site=document.querySelector('#photo-source-website');
@@ -115,10 +204,10 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
       if(!site.hidden)site.href=place.website;
       document.querySelector('#photo-research-tools').hidden=false;
     }
-    function editListing(slug){const p=catalogue.find(x=>x.slug===slug);if(!p)return;const f=document.querySelector('#listing-form');clearListing();f.slug.value=p.slug;f.name.value=p.name||'';f.town.value=p.town||'';f.region.value=p.region||'Hobart & South';f.categories.value=(p.categories||[]).join(', ');f.latitude.value=p.latitude??'';f.longitude.value=p.longitude??'';f.website.value=p.website||'';f.summary.value=p.summary||'';f.visibility.value=p.visibility||'public';f.featured.checked=Boolean(p.featured);f.image_url.value=p.image?.isFallback?'':p.image?.url||'';f.image_alt.value=p.image?.alt||'';f.image_attribution.value=p.image?.attribution||'';f.image_license.value=p.image?.license||'';f.image_source_url.value=p.image?.sourceUrl||'';setPreview('#listing-image-preview',f.image_url.value);setGooglePhotoResearch(p);document.querySelector('#listing-form-title').textContent=`Edit ${p.name}`;document.querySelector('#listing-source').textContent=`Source: ${p.sourceType||'unknown'} · Quality score: ${p.qualityScore||0}`;f.scrollIntoView({behavior:'smooth',block:'start'})}
+    function editListing(slug){const p=catalogue.find(x=>x.slug===slug);if(!p)return;const f=document.querySelector('#listing-form');clearListing();f.slug.value=p.slug;f.name.value=p.name||'';f.town.value=p.town||'';f.region.value=p.region||'Hobart & South';f.categories.value=(p.categories||[]).join(', ');f.latitude.value=p.latitude??'';f.longitude.value=p.longitude??'';f.website.value=p.website||'';f.summary.value=p.summary||'';f.visibility.value=p.visibility||'public';f.featured.checked=Boolean(p.featured);f.image_url.value=p.image?.isFallback?'':p.image?.url||'';f.image_alt.value=p.image?.alt||'';f.image_attribution.value=p.image?.attribution||'';f.image_license.value=p.image?.license||'';f.image_license_url.value=p.image?.licenseUrl||'';f.image_source_url.value=p.image?.sourceUrl||'';f.image_permission_notes.value=p.image?.rightsEvidence?.note||'';setPreview('#listing-image-preview',f.image_url.value);setGooglePhotoResearch(p);document.querySelector('#listing-form-title').textContent=`Edit ${p.name}`;document.querySelector('#listing-source').textContent=`Source: ${p.sourceType||'unknown'} · Quality score: ${p.qualityScore||0}`;f.scrollIntoView({behavior:'smooth',block:'start'})}
     document.querySelector('#new-listing').addEventListener('click',()=>{clearListing();document.querySelector('#listing-form').scrollIntoView({behavior:'smooth'})});document.querySelector('#cancel-listing').addEventListener('click',clearListing);
     document.querySelector('#upload-listing-image').addEventListener('click',async()=>{const f=document.querySelector('#listing-form'),input=document.querySelector('#listing-image-file'),s=document.querySelector('#listing-upload-status'),file=input.files?.[0];if(!file){s.textContent='Choose an image first.';return}s.textContent='Uploading…';try{const data=await uploadImage(file,f.name.value||'listing');f.image_url.value=data.url;setPreview('#listing-image-preview',data.url);s.textContent='Uploaded. Save the listing when ready.'}catch(err){s.textContent=err.message}});
-    document.querySelector('#listing-form').addEventListener('submit',async e=>{e.preventDefault();const f=e.currentTarget,s=document.querySelector('#listing-status'),raw=Object.fromEntries(new FormData(f).entries());const payload={...raw,action:raw.slug?'update':'add',featured:f.featured.checked,categories:raw.categories.split(',').map(x=>x.trim()).filter(Boolean)};s.textContent='Saving to GitHub…';try{await api('/api/admin/catalogue',{method:'POST',body:JSON.stringify(payload)});s.textContent='Saved. Cloudflare will rebuild automatically.';await loadCatalogue()}catch(err){s.textContent=err.message}});
+    document.querySelector('#listing-form').addEventListener('submit',async e=>{e.preventDefault();const f=e.currentTarget,s=document.querySelector('#listing-status'),raw=Object.fromEntries(new FormData(f).entries());const payload={...raw,action:raw.slug?'update':'add',featured:f.featured.checked,image_rights_confirmed:f.image_rights_confirmed.checked,categories:raw.categories.split(',').map(x=>x.trim()).filter(Boolean)};s.textContent='Saving to GitHub…';try{await api('/api/admin/catalogue',{method:'POST',body:JSON.stringify(payload)});s.textContent='Saved. Cloudflare will rebuild automatically.';await loadCatalogue()}catch(err){s.textContent=err.message}});
 
     function localValue(iso){if(!iso)return'';const d=new Date(iso);return new Date(d.getTime()-d.getTimezoneOffset()*60000).toISOString().slice(0,16)}
     function derivedAdStatus(a){if(a.status!=='scheduled')return a.status;const n=Date.now(),s=new Date(a.start_at).getTime(),e=a.end_at?new Date(a.end_at).getTime():Infinity;return n<s?'upcoming':n>=e?'expired':'live'}
@@ -163,7 +252,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
   <style>
     .admin-page{padding:2.5rem 1.25rem 5rem}.login-card{max-width:420px;margin:3rem auto}.admin-emblem{width:64px;height:64px}.admin-card{background:#fff;border:1px solid #dce5e7;border-radius:18px;padding:1.2rem;box-shadow:0 10px 30px rgba(6,45,50,.05)}.login-card form,.editor-card{display:grid;gap:1rem}.admin-page label{display:grid;gap:.35rem;font-weight:700;color:#173f43}.admin-page input,.admin-page select,.admin-page textarea{width:100%;box-sizing:border-box;border:1px solid #bccdce;border-radius:10px;padding:.75rem;font:inherit;background:#fff}.admin-heading,.section-bar,.inquiry-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}.admin-tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin:1.5rem 0}.tab,.row-actions button{border:1px solid #b7cbcd;background:#fff;border-radius:999px;padding:.55rem .85rem;cursor:pointer}.tab.active{background:#027B87;color:#fff;border-color:#027B87}.admin-grid{display:grid;grid-template-columns:minmax(280px,.85fr) minmax(420px,1.4fr);gap:1rem}.ads-grid{grid-template-columns:minmax(420px,1fr) minmax(320px,1fr)}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem}.span-2{grid-column:1/-1}.check-row{display:flex!important;align-items:center;gap:.5rem!important}.check-row input{width:auto}.form-actions,.row-actions,.upload-row{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap}.admin-status{color:#536568}.catalogue-list,.stack-list{display:grid;gap:.55rem;max-height:720px;overflow:auto}.catalogue-row,.stack-item{display:flex;width:100%;box-sizing:border-box;justify-content:space-between;gap:1rem;text-align:left;border:1px solid #e1e9ea;border-radius:12px;padding:.7rem;background:#fff}.catalogue-row{cursor:pointer}.catalogue-row span,.stack-item>div{display:grid;gap:.2rem}.catalogue-row small,.stack-item small,.microcopy,.upload-field small{color:#66787a;font-size:.78rem}.catalogue-row em{font-size:.72rem;color:#027B87;font-style:normal}.stack-item{align-items:center}.inquiry{margin-bottom:.8rem}.inquiry p{white-space:pre-wrap}.status-pill{background:#eef6f6;border-radius:999px;padding:.3rem .6rem;font-size:.75rem}.section-bar{margin:1rem 0}.section-bar h2{margin-bottom:.2rem}.image-preview{display:block;width:min(100%,520px);max-height:280px;object-fit:cover;border:1px solid #dce5e7;border-radius:14px;background:#f5f8f8}.image-preview[hidden]{display:none}.upload-field input[type=file]{padding:.55rem}.upload-row .secondary-button{white-space:nowrap}@media(max-width:850px){.admin-grid,.ads-grid,.form-grid{grid-template-columns:1fr}.span-2{grid-column:auto}.admin-heading,.section-bar{align-items:stretch;flex-direction:column}}
     .photo-research{border:1px solid var(--line,#b5c7c3);border-radius:12px;padding:.85rem;display:grid;gap:.55rem}
-    .photo-research[hidden]{display:none}
+    .photo-research[hidden]{display:none}\n    .stack-item button{width:max-content;cursor:pointer}\n    #photo-candidate-list{max-height:350px}
     .photo-research-links{display:flex;gap:.6rem 1rem;flex-wrap:wrap}
     .photo-research-links a{font-weight:650;text-decoration:underline}
     .photo-research small{line-height:1.6;color:var(--muted,#48575a)}
