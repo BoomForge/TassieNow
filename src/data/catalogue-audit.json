@@ -1,17 +1,17 @@
 {
   "generatedAt": "2026-10-11",
   "places": {
-    "total": 2218,
-    "public": 2152,
+    "total": 2217,
+    "public": 2151,
     "suppressed": 66,
     "media": {
       "realHeroCoverage": {
-        "count": 286,
-        "percent": 13.3
+        "count": 285,
+        "percent": 13.2
       },
       "twoPlusImages": {
-        "count": 178,
-        "percent": 8.3
+        "count": 177,
+        "percent": 8.2
       },
       "fourPlusImages": {
         "count": 100,
@@ -21,7 +21,7 @@
         "count": 76,
         "percent": 3.5
       },
-      "totalLicensedImages": 928,
+      "totalLicensedImages": 925,
       "averageImagesPerPublicListing": 0.43
     },
     "sources": {
@@ -45,7 +45,7 @@
     "details": {
       "openingHours": {
         "count": 427,
-        "percent": 19.8
+        "percent": 19.9
       },
       "recurringSchedule": {
         "count": 130,
@@ -53,7 +53,7 @@
       },
       "phone": {
         "count": 397,
-        "percent": 18.4
+        "percent": 18.5
       },
       "email": {
         "count": 207,
@@ -64,7 +64,7 @@
         "percent": 23.5
       },
       "bookingUrl": {
-        "count": 183,
+        "count": 182,
         "percent": 8.5
       },
       "fee": {
@@ -80,28 +80,28 @@
         "percent": 1.2
       },
       "reviewLinks": {
-        "count": 2152,
+        "count": 2151,
         "percent": 100
       }
     },
     "sourceTypes": {
-      "openstreetmap": 1525,
+      "openstreetmap": 1524,
       "wikidata": 586,
       "curated": 41
     },
     "qualityTiers": {
       "standard": 792,
-      "strong": 608,
+      "strong": 607,
       "low": 477,
       "featured": 275
     },
     "regions": {
-      "Hobart & South": 790,
-      "Launceston & North": 470,
+      "Hobart & South": 789,
+      "Launceston & North": 471,
       "North West": 342,
       "East Coast": 250,
       "Central Tasmania": 117,
-      "West Coast": 87,
+      "West Coast": 86,
       "Flinders Island": 57,
       "King Island": 39
     },
@@ -109,7 +109,7 @@
     "categories": {
       "Food & Drink": 1041,
       "Nature & Walks": 768,
-      "Things to Do": 202,
+      "Things to Do": 201,
       "Museums": 78,
       "Markets": 30,
       "Art & Culture": 16,
@@ -123,7 +123,7 @@
       "Free": 447,
       "Café": 424,
       "Restaurant": 405,
-      "Things to Do": 203,
+      "Things to Do": 202,
       "Takeaway": 162,
       "Rainy Day": 97,
       "Art & Culture": 94,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 169,
+    "active": 171,
     "media": {
       "licensedHeroCoverage": {
         "count": 87,
-        "percent": 51.5
+        "percent": 50.9
       },
-      "stillUsingCategoryArtwork": 82,
+      "stillUsingCategoryArtwork": 84,
       "bySource": {
         "verified-event-venue": 41,
         "verified-event-activity": 40,
@@ -236,16 +236,16 @@
       },
       "byRegion": {
         "Hobart & South": {
-          "count": 45,
-          "percent": 54.9
+          "count": 46,
+          "percent": 56.1
         },
         "Launceston & North": {
           "count": 20,
           "percent": 60.6
         },
         "North West": {
-          "count": 18,
-          "percent": 46.2
+          "count": 17,
+          "percent": 41.5
         },
         "East Coast": {
           "count": 2,
@@ -270,22 +270,21 @@
       }
     },
     "ticketCoverage": {
-      "count": 52,
-      "percent": 30.8
+      "count": 49,
+      "percent": 28.7
     },
     "priceCoverage": {
-      "count": 58,
-      "percent": 34.3
+      "count": 57,
+      "percent": 33.3
     },
     "providers": {
-      "Humanitix": 26,
+      "Humanitix": 24,
       "Ticketek": 23,
       "Eventbrite": 1,
-      "Ticketmaster": 1,
-      "TryBooking": 1
+      "Ticketmaster": 1
     },
     "sources": {
-      "Burnie City Council": 24,
+      "Burnie City Council": 26,
       "MyState Bank Arena": 24,
       "Theatre North Launceston": 17,
       "Huon Valley Council": 16,
@@ -309,7 +308,7 @@
     "regions": {
       "Hobart & South": 82,
       "Launceston & North": 33,
-      "North West": 39,
+      "North West": 41,
       "East Coast": 9,
       "West Coast": 2,
       "Central Tasmania": 1,
@@ -322,13 +321,13 @@
       "tomorrow": "2026-10-12",
       "nextWeekendStart": "2026-10-17",
       "nextWeekendEnd": "2026-10-18",
-      "todayOrTomorrow": 33,
+      "todayOrTomorrow": 31,
       "thisWeekend": 31,
       "townsTodayOrTomorrow": {
         "Huonville": 12,
-        "Burnie": 6,
-        "Hobart": 6,
+        "Burnie": 5,
         "Devonport": 5,
+        "Hobart": 5,
         "Launceston": 3,
         "Sorell": 1
       },
@@ -354,8 +353,8 @@
       "missingOrOlderThan30Days": 0
     },
     "sourceRegionalMix": {
+      "North West / Burnie City Council": 26,
       "Hobart & South / MyState Bank Arena": 24,
-      "North West / Burnie City Council": 24,
       "Launceston & North / Theatre North Launceston": 17,
       "Hobart & South / Huon Valley Council": 16,
       "North West / Devonport City Council": 14,
