@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {applyVerifiedPhotoPicks,verifiedPhotoPicks} from '../discover/lib/verified-photo-picks.mjs';
 import {permittedLicence} from '../discover/lib/event-media.mjs';
 test('curated photo has source, attributable commercial-use licence, and identity evidence',()=>{
- const image=verifiedPhotoPicks[0].image;
+ const image=verifiedPhotoPicks.find(item=>item.slug==='tessallated-pavement').image;
  assert.ok(image.matchEvidence.verified);
  assert.ok(image.sourceUrl.includes('Tessellated-Pavement_Tasmania'));
  assert.equal(permittedLicence(image.license,image.licenseUrl),true);
