@@ -25,7 +25,7 @@ async function check(item){
    let status=classifyImageResponse(response.status,response.headers.get('content-type'));
    // Some media CDNs do not handle HEAD. Only for those, fetch enough
    // headers from a GET request without downloading the photo's bytes.
-   if(status==='needs-get'){
+   if(status==='needs-get'||status==='blocked'){
     const get=await fetch(item.url,{
      headers:{'user-agent':'TassieNow-Event-Media-Health/1.0',range:'bytes=0-127'},
      redirect:'follow',signal:AbortSignal.timeout(14000)
