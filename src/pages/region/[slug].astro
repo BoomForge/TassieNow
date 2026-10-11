@@ -1,4 +1,5 @@
 ---
+import {eventDisplayImage,eventDisplayAlt} from '../../lib/event-posters.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
@@ -285,7 +286,7 @@ const formatEventDate = (startDate, endDate) => {
           {regionEvents.slice(0, 4).map((event) => (
             <article class="destination-event-card">
               <a href={`/event/${event.slug}/`} class="destination-event-image">
-                <img src={event.image?.url || '/images/categories/events.svg'} alt={event.image?.alt || event.name} loading="lazy" />
+                <img src={eventDisplayImage(event)} alt={eventDisplayAlt(event)} loading="lazy" />
               </a>
               <div>
                 <p>{formatEventDate(event.startDate, event.endDate)} · {event.town}</p>
