@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 const base=process.env.MARKET_PHOTO_SITE||'https://tassienow.com';
 const pages=[
  {path:'/discover/markets/',checks:['Google visitor photos','Markets in Tasmania']},
- {path:'/place/salamanca-market/',checks:['Visitor photos & Google reviews','View visitor photos on Google Maps','Submit an official photo or permission evidence']}
+ {path:'/place/salamanca-market/',checks:['Visitor photos & Google reviews','View visitor photos on Google Maps','Search Google Images','Submit an official photo or permission evidence']}
 ];
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 let results=[];
