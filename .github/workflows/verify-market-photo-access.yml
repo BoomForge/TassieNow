@@ -1,0 +1,36 @@
+name: Verify market photo access
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/pages/discover/[mode].astro'
+      - 'src/pages/place/[slug].astro'
+      - 'src/components/MarketVisitorPhotos.astro'
+      - 'src/lib/google-market-photos.mjs'
+      - 'scripts/verify-live-market-photo-access.mjs'
+      - '.github/workflows/verify-market-photo-access.yml'
+  schedule:
+    - cron: '41 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify live market visitor-photo access and public page links
+        run: node scripts/verify-live-market-photo-access.mjs
+      - name: Save live-site evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: market-photo-access-proof
+          path: reports/live-market-photo-access.json
+          retention-days: 30
