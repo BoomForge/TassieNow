@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {googleMarketSearchUrl} from '../../src/lib/google-market-photos.mjs';
+import {googleMarketSearchUrl,googleMarketImageSearchUrl} from '../../src/lib/google-market-photos.mjs';
 
 const page=readFileSync('src/pages/place/[slug].astro','utf8');
 const market=readFileSync('src/components/MarketVisitorPhotos.astro','utf8');
@@ -34,4 +34,12 @@ test('market discovery only adds images with exact identity and locality',()=>{
  assert.match(research,/tasmanian/);
  assert.match(research,/locality/);
  assert.match(research,/permittedLicence/);
+});
+
+test('free Google Images searches do not require a paid developer API',()=>{
+ const url=new URL(googleMarketImageSearchUrl('Farm Gate Market','Hobart'));
+ assert.equal(url.origin,'https://www.google.com');
+ assert.equal(url.pathname,'/search');
+ assert.equal(url.searchParams.get('tbm'),'isch');
+ assert.ok(url.searchParams.get('q').includes('Farm Gate Market Hobart Tasmania'));
 });

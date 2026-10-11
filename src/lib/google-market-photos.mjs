@@ -34,3 +34,11 @@ export function chooseExactGoogleMarket(results,listing){
  });
  return matches.length===1?matches[0]:null;
 }
+
+// Free public Google Images search, with no Places API or billing.
+// Image search results are discovery links only; copyright still applies.
+export function googleMarketImageSearchUrl(name,town){
+ const q=[String(name||'').trim(),String(town||'').trim(),'Tasmania market']
+  .filter(Boolean).join(' ');
+ return 'https://www.google.com/search?tbm=isch&q='+encodeURIComponent(q);
+}
