@@ -32,8 +32,13 @@ const turnstileKey=import.meta.env.PUBLIC_TURNSTILE_SITE_KEY||'';
   const params=new URLSearchParams(window.location.search);
   const slug=params.get('place')||'';
   const name=params.get('name')||'';
+  const field=params.get('field')||'';
   form.elements.namedItem('place_slug').value=slug;
   form.elements.namedItem('place_name').value=name;
+  if(field==='image'){
+    form.elements.namedItem('field').value='image';
+    document.querySelector('#correction-intro').textContent='For '+(name||'this market')+': provide a photo source URL, photographer credit, and explicit permission for TassieNow to publish the image on its website. A reviewer will check the rights before publication.';
+  }
   if(slug)document.querySelector('#correction-intro').textContent='You are suggesting an update to '+(name||slug)+'. Your change will not appear publicly until reviewed.';
   form.addEventListener('submit',async e=>{
     e.preventDefault();
