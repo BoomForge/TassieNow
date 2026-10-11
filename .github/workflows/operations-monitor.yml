@@ -11,8 +11,10 @@ on:
 permissions:
   actions: read
   contents: write
+# Monitoring must continue while the shared catalogue-writing queue is blocked.
+# It writes only its report and rebases before push, not catalogue records.
 concurrency:
-  group: tassienow-data-writes
+  group: tassienow-operations-reporting
   queue: max
   cancel-in-progress: false
 jobs:
