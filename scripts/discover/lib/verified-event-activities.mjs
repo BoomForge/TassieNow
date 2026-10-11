@@ -2,6 +2,13 @@
 // No organiser copyright is assumed, and each is explicitly labelled as an
 // illustration photographed elsewhere, never as a photo of the listed event.
 import {eventImagePriority,imageIsPublishable} from './event-media.mjs';
+import {createHash} from 'node:crypto';
+
+export function canonicalCommonsImageUrl(sourcePage){
+ const file=decodeURIComponent(new URL(sourcePage).pathname.split('/').pop()).replace(/^File:/i,'').normalize('NFC');
+ const hash=createHash('md5').update(file).digest('hex');
+ return `https://upload.wikimedia.org/wikipedia/commons/${hash[0]}/${hash.slice(0,2)}/${encodeURIComponent(file)}`;
+}
 
 export const verifiedActivitySources=[
   {topic:"rhododendrons",pattern:new RegExp("\\brhododendron\\b",'i'),url:"https://upload.wikimedia.org/wikipedia/commons/f/f4/Rhododendron_Flower.jpg",sourceUrl:"https://commons.wikimedia.org/wiki/File:Rhododendron_Flower.jpg",credit:"atlas lin",license:"CC BY-SA 2.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/2.0/",scene:"rhododendron flowers photographed in Fuzhou, China"},
@@ -33,11 +40,16 @@ export const verifiedActivitySources=[
 export function applyVerifiedActivityPhotos(events){
  let added=0;
  for(const event of events){
-  if(event.status!=='active'||eventImagePriority(event.image)>=2)continue;
+  if(event.status!=='active')continue;
+  // Repair incorrectly constructed Wikimedia upload paths from an older run.
+  // This never overrides a stronger event, venue, performer or organiser image.
+  const priority=eventImagePriority(event.image);
+  if(priority>2)continue;
+  if(priority===2 && event.image?.sourceMethod!=='verified-event-activity')continue;
   const source=verifiedActivitySources.find(entry=>entry.pattern.test(String(event.name||'')));
   if(!source)continue;
   const image={
-   url:source.url,sourceUrl:source.sourceUrl,attribution:source.credit,
+   url:canonicalCommonsImageUrl(source.sourceUrl),sourceUrl:source.sourceUrl,attribution:source.credit,
    license:source.license,licenseUrl:source.licenseUrl,isFallback:false,
    sourceMethod:'verified-event-activity',mediaType:'activity-illustrative',
    alt:`Illustrative photograph of ${source.scene}; not the advertised ${event.name} event`,
