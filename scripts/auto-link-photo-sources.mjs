@@ -83,7 +83,8 @@ let index=0;
 await Promise.all(Array.from({length:Math.min(CONCURRENCY,targets.length)},async()=>{
   while(index<targets.length)await check(targets[index++]);
 }));
-const combined=mergePhotoLinkResearch(previous,incoming);
+const combined=targets.length ? mergePhotoLinkResearch(previous,incoming) : previous;
+// A zero-target maintenance run must not bump generatedAt and trigger a no-op deployment.
 const report={checkedAt:CHECKED_AT,source:'Original public listing/event pages; no search scraping or paid APIs',
   targets:targets.length,stats,
   currentLinkedPlaces:Object.keys(combined.places).length,
