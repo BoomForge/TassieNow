@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T02:54:56.384Z",
+  "generatedAt": "2026-10-11T02:55:08.576Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
@@ -160,29 +160,14 @@
   },
   "failures": [
     {
+      "component": "verify-published-photos.yml",
+      "status": "no-scheduled-run-observed",
+      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38093374006"
+    },
+    {
       "component": "catalogue-quality.yml",
       "status": "scheduled-run-failed",
       "action": "https://github.com/BoomForge/TassieNow/actions/runs/38099534516"
-    },
-    {
-      "component": "verify-published-event-images.yml",
-      "status": "no-scheduled-run-observed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38102088594"
-    },
-    {
-      "component": "verify-event-image-files.yml",
-      "status": "no-scheduled-run-observed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38102091532"
-    },
-    {
-      "component": "event-photo-research.yml",
-      "status": "no-scheduled-run-observed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38099070327"
-    },
-    {
-      "component": "verify-event-artwork.yml",
-      "status": "no-scheduled-run-observed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38102090236"
     },
     {
       "component": "verify-market-photo-access.yml",
@@ -190,9 +175,24 @@
       "action": "https://github.com/BoomForge/TassieNow/actions/runs/38102043464"
     },
     {
-      "component": "verify-published-photos.yml",
+      "component": "verify-event-artwork.yml",
       "status": "no-scheduled-run-observed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38093374006"
+      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38102090236"
+    },
+    {
+      "component": "event-photo-research.yml",
+      "status": "no-scheduled-run-observed",
+      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38099070327"
+    },
+    {
+      "component": "verify-event-image-files.yml",
+      "status": "no-scheduled-run-observed",
+      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38102091532"
+    },
+    {
+      "component": "verify-published-event-images.yml",
+      "status": "no-scheduled-run-observed",
+      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38102088594"
     }
   ],
   "imageCoverage": {
