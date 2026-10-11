@@ -1,6 +1,982 @@
 {
   "version": 1,
-  "places": {},
-  "events": {},
-  "scans": {}
+  "places": {
+    "cygnet-market": {
+      "sourceUrl": "https://cygnetmarket.com.au/",
+      "title": "Original photos on cygnetmarket.com.au",
+      "credit": "cygnetmarket.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Cygnet Market",
+        "originalPage": "https://cygnetmarket.com.au/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "crabtree-crop-and-crafts-market-crabtree": {
+      "sourceUrl": "https://hobartandbeyond.com.au/event/crabtree-crop-crafts-market/",
+      "title": "Original photos on hobartandbeyond.com.au",
+      "credit": "hobartandbeyond.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Crabtree Crop and Crafts Market",
+        "originalPage": "https://hobartandbeyond.com.au/event/crabtree-crop-crafts-market/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "franklin-market-franklin": {
+      "sourceUrl": "https://www.huonvalley.tas.gov.au/event/the-franklin-market/",
+      "title": "Original photos on huonvalley.tas.gov.au",
+      "credit": "huonvalley.tas.gov.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Franklin Market",
+        "originalPage": "https://www.huonvalley.tas.gov.au/event/the-franklin-market/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "lunawanna-makers-and-produce-market-lunawanna": {
+      "sourceUrl": "https://hobartandbeyond.com.au/event/lunawanna-makers-and-produce-market/",
+      "title": "Original photos on hobartandbeyond.com.au",
+      "credit": "hobartandbeyond.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Lunawanna Makers and Produce Market",
+        "originalPage": "https://hobartandbeyond.com.au/event/lunawanna-makers-and-produce-market/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "woodbridge-market-woodbridge": {
+      "sourceUrl": "https://woodbridgehall.wordpress.com/woodbridge-market/",
+      "title": "Original photos on woodbridgehall.wordpress.com",
+      "credit": "woodbridgehall.wordpress.com",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Woodbridge Market",
+        "originalPage": "https://woodbridgehall.wordpress.com/woodbridge-market/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "wynyard-foreshore-market": {
+      "sourceUrl": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
+      "title": "Original photos on warwyn.tas.gov.au",
+      "credit": "warwyn.tas.gov.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Wynyard Foreshore Market",
+        "originalPage": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "abundance-on-the-quay": {
+      "sourceUrl": "https://www.abundanceonthequay.com.au/",
+      "title": "Original photos on abundanceonthequay.com.au",
+      "credit": "abundanceonthequay.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Abundance on the Quay",
+        "originalPage": "https://www.abundanceonthequay.com.au/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "astor-grill": {
+      "sourceUrl": "https://astorgrill.com.au/",
+      "title": "Original photos on astorgrill.com.au",
+      "credit": "astorgrill.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-labelled-image",
+      "evidence": {
+        "matchingListing": "Astor Grill",
+        "originalPage": "https://astorgrill.com.au/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "bakers-delight": {
+      "sourceUrl": "https://www.bakersdelight.com.au/pages/bakeries/claremont-plaza-bakery",
+      "title": "Original photos on bakersdelight.com.au",
+      "credit": "bakersdelight.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Bakers Delight",
+        "originalPage": "https://www.bakersdelight.com.au/pages/bakeries/claremont-plaza-bakery",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "bar-wa-izakaya": {
+      "sourceUrl": "https://www.barwaizakaya.com/",
+      "title": "Original photos on barwaizakaya.com",
+      "credit": "barwaizakaya.com",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Bar Wa Izakaya",
+        "originalPage": "https://www.barwaizakaya.com/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "bento-legana": {
+      "sourceUrl": "https://bentolegana.com.au/",
+      "title": "Original photos on bentolegana.com.au",
+      "credit": "bentolegana.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Bento Legana",
+        "originalPage": "https://bentolegana.com.au/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "ben-lomond-base": {
+      "sourceUrl": "https://benlomondalpineresort.com.au/ben-lomond-base/",
+      "title": "Original photos on benlomondalpineresort.com.au",
+      "credit": "benlomondalpineresort.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Ben Lomond BASE",
+        "originalPage": "https://benlomondalpineresort.com.au/ben-lomond-base/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "bread-butter": {
+      "sourceUrl": "https://www.breadandbuttertasmania.com.au/",
+      "title": "Original photos on breadandbuttertasmania.com.au",
+      "credit": "breadandbuttertasmania.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-labelled-image",
+      "evidence": {
+        "matchingListing": "Bread + Butter",
+        "originalPage": "https://www.breadandbuttertasmania.com.au/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "bossimis-bakehouse-and-cafe": {
+      "sourceUrl": "https://bossimis.com.au/",
+      "title": "Original photos on bossimis.com.au",
+      "credit": "bossimis.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-labelled-image",
+      "evidence": {
+        "matchingListing": "Bossimis Bakehouse & Café",
+        "originalPage": "https://bossimis.com.au/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "brown-burgers": {
+      "sourceUrl": "https://www.brownburgers.com.au/",
+      "title": "Original photos on brownburgers.com.au",
+      "credit": "brownburgers.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Brown Burgers",
+        "originalPage": "https://www.brownburgers.com.au/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "cocomo-and-co": {
+      "sourceUrl": "https://www.cocomoandco.com.au/",
+      "title": "Original photos on cocomoandco.com.au",
+      "credit": "cocomoandco.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Cocomo and Co",
+        "originalPage": "https://www.cocomoandco.com.au/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "cugini": {
+      "sourceUrl": "https://www.restaurantcugini.com/",
+      "title": "Original photos on restaurantcugini.com",
+      "credit": "restaurantcugini.com",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-labelled-image",
+      "evidence": {
+        "matchingListing": "Cugini",
+        "originalPage": "https://www.restaurantcugini.com/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "coal-river-farm": {
+      "sourceUrl": "https://www.coalriverfarm.com.au/pages/our-restaurant",
+      "title": "Original photos on coalriverfarm.com.au",
+      "credit": "coalriverfarm.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Coal River Farm",
+        "originalPage": "https://www.coalriverfarm.com.au/pages/our-restaurant",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "cyclo-vietnamese-street-food": {
+      "sourceUrl": "https://northhobart.cyclo.com.au/",
+      "title": "Original photos on northhobart.cyclo.com.au",
+      "credit": "northhobart.cyclo.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Cyclo Vietnamese Street Food",
+        "originalPage": "https://northhobart.cyclo.com.au/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "cube-seaport": {
+      "sourceUrl": "https://www.cubecoffee.com.au/seaport",
+      "title": "Original photos on cubecoffee.com.au",
+      "credit": "cubecoffee.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-labelled-image",
+      "evidence": {
+        "matchingListing": "Cube Seaport",
+        "originalPage": "https://www.cubecoffee.com.au/seaport",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "bridestowe-lavender-estate": {
+      "sourceUrl": "https://bridestowelavender.com.au/",
+      "title": "Original photos on bridestowelavender.com.au",
+      "credit": "bridestowelavender.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Bridestowe Lavender Estate",
+        "originalPage": "https://bridestowelavender.com.au/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "city-park-radio-museum": {
+      "sourceUrl": "https://cityparkradio.com/radio-museum/",
+      "title": "Original photos on cityparkradio.com",
+      "credit": "cityparkradio.com",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "City Park Radio Museum",
+        "originalPage": "https://cityparkradio.com/radio-museum/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "creation-discovery-centre": {
+      "sourceUrl": "https://creationdiscoverycentre.com/",
+      "title": "Original photos on creationdiscoverycentre.com",
+      "credit": "creationdiscoverycentre.com",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-labelled-image",
+      "evidence": {
+        "matchingListing": "Creation Discovery Centre",
+        "originalPage": "https://creationdiscoverycentre.com/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "creative-paper-tasmania": {
+      "sourceUrl": "https://www.creativepaper.com.au/",
+      "title": "Original photos on creativepaper.com.au",
+      "credit": "creativepaper.com.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Creative Paper Tasmania",
+        "originalPage": "https://www.creativepaper.com.au/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "devils-cradle": {
+      "sourceUrl": "https://devilsatcradle.com/",
+      "title": "Original photos on devilsatcradle.com",
+      "credit": "devilsatcradle.com",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "devils@cradle",
+        "originalPage": "https://devilsatcradle.com/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    }
+  },
+  "events": {
+    "19-twenty-live-at-craigie-knowe-vineyard-2026-12-05-st-helens": {
+      "sourceUrl": "https://eastcoasttasmania.com/atdw_events/19-twenty-live-at-craigie-knowe-vineyard/",
+      "title": "Original photos on eastcoasttasmania.com",
+      "credit": "eastcoasttasmania.com",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "19-Twenty live at Craigie Knowe Vineyard",
+        "originalPage": "https://eastcoasttasmania.com/atdw_events/19-twenty-live-at-craigie-knowe-vineyard/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "50-years-ratepayers-luncheon-2026-10-14-devonport": {
+      "sourceUrl": "https://www.devonport.tas.gov.au/events/50-years-ratepayers-luncheon/",
+      "title": "Original photos on devonport.tas.gov.au",
+      "credit": "devonport.tas.gov.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "50+ Years Ratepayers Luncheon",
+        "originalPage": "https://www.devonport.tas.gov.au/events/50-years-ratepayers-luncheon/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "agricultured-2026-2026-10-11-launceston": {
+      "sourceUrl": "https://events.humanitix.com/agricultured-2026",
+      "title": "Original photos on events.humanitix.com",
+      "credit": "events.humanitix.com",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "agriCULTURED 2026",
+        "originalPage": "https://events.humanitix.com/agricultured-2026",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "agricultured-2026-2026-11-04-launceston": {
+      "sourceUrl": "https://events.humanitix.com/agricultured-2026",
+      "title": "Original photos on events.humanitix.com",
+      "credit": "events.humanitix.com",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "agriCULTURED 2026",
+        "originalPage": "https://events.humanitix.com/agricultured-2026",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "adam-sharp-an-idiom-abroad-free-event-2026-10-18-launceston": {
+      "sourceUrl": "https://events.humanitix.com/adam-sharp-an-idiom-abroad",
+      "title": "Original photos on events.humanitix.com",
+      "credit": "events.humanitix.com",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Adam Sharp - An Idiom Abroad - FREE EVENT",
+        "originalPage": "https://events.humanitix.com/adam-sharp-an-idiom-abroad",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "bicheno-beams-2027-06-26-st-helens": {
+      "sourceUrl": "https://eastcoasttasmania.com/atdw_events/bicheno-beams/",
+      "title": "Original photos on eastcoasttasmania.com",
+      "credit": "eastcoasttasmania.com",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Bicheno Beams",
+        "originalPage": "https://eastcoasttasmania.com/atdw_events/bicheno-beams/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "91st-flinders-island-show-2026-10-15-whitemark": {
+      "sourceUrl": "https://events.humanitix.com/flinders-island-show",
+      "title": "Original photos on events.humanitix.com",
+      "credit": "events.humanitix.com",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "91st Flinders Island Show",
+        "originalPage": "https://events.humanitix.com/flinders-island-show",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "beauty-and-the-beast-jr-2026-10-12-huonville": {
+      "sourceUrl": "https://www.huonvalley.tas.gov.au/event/beauty-and-the-beast-jr/",
+      "title": "Original photos on huonvalley.tas.gov.au",
+      "credit": "huonvalley.tas.gov.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Beauty and the Beast JR",
+        "originalPage": "https://www.huonvalley.tas.gov.au/event/beauty-and-the-beast-jr/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "cores-self-care-and-mental-wellbeing-workshop-2026-10-12-burnie": {
+      "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/CORES-Self-Care-and-Mental-Wellbeing-Workshop",
+      "title": "Original photos on burnie.tas.gov.au",
+      "credit": "burnie.tas.gov.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "CORES Self-Care and Mental Wellbeing Workshop",
+        "originalPage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/CORES-Self-Care-and-Mental-Wellbeing-Workshop",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "building-stronger-families-2026-10-19-burnie": {
+      "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Building-Stronger-Families",
+      "title": "Original photos on burnie.tas.gov.au",
+      "credit": "burnie.tas.gov.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Building Stronger Families",
+        "originalPage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Building-Stronger-Families",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "cores-suicide-prevention-training-2026-10-12-burnie": {
+      "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/CORES-Suicide-Prevention-Training",
+      "title": "Original photos on burnie.tas.gov.au",
+      "credit": "burnie.tas.gov.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "CORES Suicide Prevention Training",
+        "originalPage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/CORES-Suicide-Prevention-Training",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "cygnet-men-and-8217-s-circle-2026-01-14-huonville": {
+      "sourceUrl": "https://www.huonvalley.tas.gov.au/event/cygnet-mens-circle/",
+      "title": "Original photos on huonvalley.tas.gov.au",
+      "credit": "huonvalley.tas.gov.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Cygnet Men&#8217;s Circle",
+        "originalPage": "https://www.huonvalley.tas.gov.au/event/cygnet-mens-circle/",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "cutting-with-courage-2026-10-16-burnie": {
+      "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Cutting-with-Courage",
+      "title": "Original photos on burnie.tas.gov.au",
+      "credit": "burnie.tas.gov.au",
+      "kind": "external-source-link",
+      "discoveryMethod": "original-page-open-graph",
+      "evidence": {
+        "matchingListing": "Cutting with Courage",
+        "originalPage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Cutting-with-Courage",
+        "checkedAt": "2026-10-11T05:28:32.870Z",
+        "imageFoundOnPage": true
+      },
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    }
+  },
+  "scans": {
+    "place:bream-creek-farmers-market": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:cygnet-market": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:devonport-farmers-market": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:crabtree-crop-and-crafts-market-crabtree": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:don-market": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:franklin-market-franklin": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:hobart-twilight-market-long-beach-sandy-bay-sandy-bay": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:hobart-twilight-market-brooke-street-pier-hobart": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:kingston-beach-handmade-market-kingston-beach": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:judbury-market-judbury": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:deloraine-showgrounds-market": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:harvest-launceston-community-farmers-market": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:lunawanna-makers-and-produce-market-lunawanna": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:liffey-valley-market-liffey": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:lilydale-village-market": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:latrobe-village-market": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:oatlands-community-market-oatlands": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:new-norfolk-market": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:penguin-undercover-market": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:ross-village-market": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:richmond-village-market": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:st-helens-market": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:tasmanian-produce-market": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:woodbridge-market-woodbridge": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:sorell-community-market": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:wynyard-foreshore-market": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:ajikoma": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:abundance-on-the-quay": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:willie-smith-s-artisan-and-produce-market": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:a-spring-food-bar": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:all-thai": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:astor-grill": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:annapurna-bellerive": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:apricus-restraunt": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:atrium-cafe": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bangkok-city": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bakers-delight": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:atmosfire": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:banhmi-bites": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bar-wa-izakaya": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:basalt-restaurant": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bark-mill-tavern-and-bakery": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:banjo-s-bakery-cafe": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bayside-hotel": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bento-legana": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:ben-lomond-base": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:best-western-tram-bar": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:berry-farm": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bridestowe-cafe": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bread-butter": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bossimis-bakehouse-and-cafe": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bridport-bunker-club": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:brown-burgers": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bruny-island-cruises-restaurant": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bruny-baker-bread-fridge": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:charlie-s-dessert-house": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:chefs-catch": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:burger-junkie": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:cafe-rhubaba": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bruny-island-cheese-company": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:coffee-on-wyndham": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:cocomo-and-co": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:cugini": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:coal-river-farm": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:cyclo-vietnamese-street-food": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:daci-and-daci": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:da-angelo": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:dave-s-noodle": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:cube-seaport": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:19-twenty-live-at-craigie-knowe-vineyard-2026-12-05-st-helens": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:cygnet-old-bank-conservatory-cafe": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:devil-s-kitchen": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:50-years-ratepayers-luncheon-2026-10-14-devonport": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:agricultured-2026-2026-10-11-launceston": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:agricultured-2026-2026-11-04-launceston": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:adam-sharp-an-idiom-abroad-free-event-2026-10-18-launceston": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:bicheno-beams-2027-06-26-st-helens": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:91st-flinders-island-show-2026-10-15-whitemark": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:bucaan-community-house-turns-40-2026-10-14-glenorchy": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:beauty-and-the-beast-jr-2026-10-12-huonville": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:cores-self-care-and-mental-wellbeing-workshop-2026-10-12-burnie": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:building-stronger-families-2026-10-19-burnie": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:cores-suicide-prevention-training-2026-10-12-burnie": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:community-conversations-sport-and-recreational-organisations-2026-10-14-launceston": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:cygnet-men-and-8217-s-circle-2026-01-14-huonville": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:cutting-with-courage-2026-10-16-burnie": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "event:crafternoon-2026-10-13-launceston": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:above-and-beyond-tasmanian-seaplanes": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:ashgrove-cheese-factory": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:archers-knob": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:alum-cliffs-lookout": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bridestowe-lavender-estate": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bruny-island-cruises": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:arve-falls-lookout": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:bird-hide-brighton": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:city-park-radio-museum": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:calcified-forest": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:cape-tourville-lookout": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:creation-discovery-centre": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:cape-raoul-lookout": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:cliffs": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:creative-paper-tasmania": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:devil-s-corner-cellar-door": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:curringa-farm": {
+      "status": "no-photo-source",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:devils-cradle": {
+      "status": "linked",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:east-coast-natureworld": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:dier-makr": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:fossil-cliffs": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:frankland-beaches": {
+      "status": "fetch-error",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    },
+    "place:don-river-railway-preservation-society": {
+      "status": "no-relevant-photo",
+      "checkedAt": "2026-10-11T05:28:32.870Z"
+    }
+  },
+  "generatedAt": "2026-10-11T05:28:32.870Z"
 }
