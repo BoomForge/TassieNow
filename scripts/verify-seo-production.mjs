@@ -64,10 +64,10 @@ async function inspect() {
     'Published '+(publishedDate || 'unknown')+'; expected '+referenceDay));
   // A new checkpoint does not prove Cloudflare served freshly rendered events.
   // Check the actual built discovery page as well as the build-date JSON.
-  const renderedDay=todayPage.content.match(/\\bdata-rendered-day=["'](\\d{4}-\\d{2}-\\d{2})["']/i)?.[1]||null;
+  const renderedDay=todayPage.content.match(/\bdata-rendered-day=["'](\d{4}-\d{2}-\d{2})["']/i)?.[1]||null;
   const freshDay=renderedDay===referenceDay || (hour<5 && renderedDay===previousDay);
   checks.push(verdict('Today freshness',targets[5][0],todayPage,
-    todayPage.status===200 && freshDay && /<meta\\b[^>]*name=["']robots["'][^>]*content=["']index,follow/i.test(todayPage.content),
+    todayPage.status===200 && freshDay && /<meta\b[^>]*name=["']robots["'][^>]*content=["']index,follow/i.test(todayPage.content),
     'Rendered '+(renderedDay||'unknown')+'; expected '+referenceDay));
   const validSitemap=sitemap.status===200 && /xml/i.test(sitemap.contentType)
     && sitemap.content.includes('<urlset')
