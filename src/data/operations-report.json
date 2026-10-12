@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T00:38:57.121Z",
+  "generatedAt": "2026-10-12T07:57:31.796Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
@@ -13,10 +13,10 @@
     {
       "name": "events.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-11T21:52:09Z",
+      "lastScheduled": "2026-10-12T05:48:38Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T21:52:09Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38178122285"
+      "lastRunAt": "2026-10-12T05:48:38Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38209573094"
     },
     {
       "name": "catalogue-quality.yml",
@@ -37,18 +37,18 @@
     {
       "name": "auto-photo-sources.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-11T15:58:36Z",
+      "lastScheduled": "2026-10-12T00:45:00Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T15:58:36Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38153515763"
+      "lastRunAt": "2026-10-12T00:45:00Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38189198762"
     },
     {
       "name": "place-photo-research.yml",
-      "status": "awaiting-first-scheduled-run",
-      "lastScheduled": null,
+      "status": "ok",
+      "lastScheduled": "2026-10-12T00:39:09Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T04:28:17Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38111680273"
+      "lastRunAt": "2026-10-12T00:39:09Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38188825999"
     },
     {
       "name": "verify-published-photos.yml",
@@ -63,16 +63,16 @@
       "status": "ok",
       "lastScheduled": "2026-10-11T11:37:23Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T22:39:50Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38181309664"
+      "lastRunAt": "2026-10-12T05:51:45Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38209810292"
     },
     {
       "name": "verify-event-artwork.yml",
       "status": "ok",
       "lastScheduled": "2026-10-11T11:38:26Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T22:39:51Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38181311437"
+      "lastRunAt": "2026-10-12T05:51:47Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38209812300"
     },
     {
       "name": "verify-event-image-files.yml",
@@ -102,25 +102,25 @@
       "name": "quality.yml",
       "status": "ok",
       "lastScheduled": "2026-10-11T22:58:08Z",
-      "lastResult": "in_progress",
-      "lastRunAt": "2026-10-12T00:38:52Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38188807111"
+      "lastResult": "success",
+      "lastRunAt": "2026-10-12T05:53:15Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38209921913"
     },
     {
       "name": "automation-health.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-11T22:44:50Z",
+      "lastScheduled": "2026-10-12T07:09:26Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-11T22:44:50Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38181639541"
+      "lastRunAt": "2026-10-12T07:09:26Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38216189617"
     },
     {
       "name": "indexnow.yml",
       "status": "ok",
       "lastScheduled": "2026-10-11T23:57:58Z",
-      "lastResult": "in_progress",
-      "lastRunAt": "2026-10-12T00:38:52Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38188807124"
+      "lastResult": "success",
+      "lastRunAt": "2026-10-12T05:53:15Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38209921785"
     },
     {
       "name": "recover-images.yml",
@@ -140,7 +140,7 @@
     }
   ],
   "site": {
-    "status": "failed",
+    "status": "ok",
     "checks": [
       {
         "name": "Homepage",
@@ -148,7 +148,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4920b76ff7d97e4-MEM"
+        "cloudflareRay": "a4948defcc7ff907-LAX"
       },
       {
         "name": "Food discovery",
@@ -156,7 +156,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4920b76fccb3bed-MEM"
+        "cloudflareRay": "a4948deccee35131-LAX"
       },
       {
         "name": "Service status",
@@ -164,7 +164,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4920b76ffea3beb-MEM"
+        "cloudflareRay": "a4948dec0d24265a-LAX"
       },
       {
         "name": "Robots",
@@ -172,7 +172,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/plain; charset=utf-8",
-        "cloudflareRay": "a4920b76ed38a67f-MCI"
+        "cloudflareRay": "a4948df07a402ec1-LAX"
       },
       {
         "name": "Sitemap",
@@ -180,50 +180,38 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "application/xml",
-        "cloudflareRay": "a4920b76ea52a6b4-MEM"
+        "cloudflareRay": "a4948dec0f68da41-LAX"
       },
       {
         "name": "Markets freshness",
         "path": "/discover/markets/",
-        "status": "failed",
+        "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4920b77092e276c-BNA",
-        "problem": "Expired upcoming-market claim still appears in production HTML"
+        "cloudflareRay": "a4948decce80ad95-LAX"
       },
       {
         "name": "Build date",
         "path": "/data/site-build-date.json",
-        "status": "failed",
-        "httpCode": 404,
-        "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4920b76fffb0deb-MEM",
-        "problem": "Static calendar checkpoint is stale or invalid: daily Pages deployment may be blocked"
+        "status": "ok",
+        "httpCode": 200,
+        "contentType": "application/json",
+        "cloudflareRay": "a4948decbcba4311-LAX",
+        "publishedDay": "2026-10-12"
       }
     ]
   },
-  "failures": [
-    {
-      "component": "Public Build date",
-      "status": "failed",
-      "action": "Inspect Cloudflare deployment, TLS and route: /data/site-build-date.json"
-    },
-    {
-      "component": "Public Markets freshness",
-      "status": "failed",
-      "action": "Inspect Cloudflare deployment, TLS and route: /discover/markets/"
-    }
-  ],
+  "failures": [],
   "imageCoverage": {
-    "activeEvents": 168,
+    "activeEvents": 169,
     "publishedEventPhotos": 85,
     "auditedPublishedPhotos": 85
   },
   "photoSourceDiscovery": {
-    "linkedPlacePages": 61,
-    "linkedEventPages": 54,
-    "scannedRecords": 330,
-    "lastSourceScan": "2026-10-11T15:58:45.032Z",
+    "linkedPlacePages": 68,
+    "linkedEventPages": 68,
+    "scannedRecords": 381,
+    "lastSourceScan": "2026-10-12T00:45:07.054Z",
     "realHeroPhotosAddedByLinks": 0
   }
 }
