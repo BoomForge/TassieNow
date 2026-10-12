@@ -6,6 +6,7 @@ import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 import events from '../../data/events.json';
 import townGuides from '../../data/town-guides.json';
+import { marketCopy } from '../../lib/market-seo.mjs';
 
 const slugify = (value = '') => String(value)
   .toLowerCase()
@@ -329,7 +330,7 @@ const formatEventDate = (startDate, endDate) => {
             </a>
             <div class="card-body">
               <h3><a href={`/place/${place.slug}/`}>{place.name}</a></h3>
-              <p class="summary">{place.summary}</p>
+              <p class="summary">{place.categories?.includes("Markets") ? marketCopy(place.summary, today) : place.summary}</p>
               <div class="tags">{(place.categories || []).slice(0, 3).map((category) => <span class="tag">{category}</span>)}</div>
               <a class="card-link" href={`/place/${place.slug}/`}>View place →</a>
             </div>
