@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 168,
+    "active": 169,
     "media": {
       "licensedHeroCoverage": {
         "count": 85,
-        "percent": 50.6
+        "percent": 50.3
       },
-      "stillUsingCategoryArtwork": 83,
+      "stillUsingCategoryArtwork": 84,
       "bySource": {
         "verified-event-venue": 40,
         "verified-event-activity": 39,
@@ -237,7 +237,7 @@
       "byRegion": {
         "Hobart & South": {
           "count": 44,
-          "percent": 55
+          "percent": 52.4
         },
         "Launceston & North": {
           "count": 20,
@@ -245,7 +245,7 @@
         },
         "North West": {
           "count": 17,
-          "percent": 41.5
+          "percent": 44.7
         },
         "East Coast": {
           "count": 2,
@@ -270,32 +270,34 @@
       }
     },
     "ticketCoverage": {
-      "count": 47,
-      "percent": 28
+      "count": 53,
+      "percent": 31.4
     },
     "priceCoverage": {
-      "count": 58,
-      "percent": 34.5
+      "count": 59,
+      "percent": 34.9
     },
     "providers": {
-      "Humanitix": 23,
+      "Humanitix": 25,
       "Ticketek": 23,
-      "Ticketmaster": 1
+      "Eventbrite": 3,
+      "Ticketmaster": 1,
+      "TryBooking": 1
     },
     "sources": {
-      "Burnie City Council": 26,
       "MyState Bank Arena": 24,
+      "Burnie City Council": 23,
       "Theatre North Launceston": 17,
       "Huon Valley Council": 16,
       "Devonport City Council": 14,
+      "City of Clarence": 11,
+      "Humanitix Launceston": 11,
       "Theatre Royal Hobart": 11,
-      "Humanitix Launceston": 10,
-      "City of Clarence": 9,
+      "Humanitix Hobart": 10,
       "East Coast Tasmania": 9,
-      "Humanitix Hobart": 9,
       "City of Hobart": 7,
-      "City of Launceston": 5,
-      "Glenorchy City Council": 4,
+      "Glenorchy City Council": 5,
+      "City of Launceston": 4,
       "King Island Tourism": 2,
       "Flinders Island Show Society": 1,
       "Highlands BushFest organising team": 1,
@@ -304,9 +306,9 @@
       "Zeehan Neighbourhood Centre": 1
     },
     "regions": {
-      "Hobart & South": 80,
+      "Hobart & South": 84,
       "Launceston & North": 32,
-      "North West": 41,
+      "North West": 38,
       "East Coast": 9,
       "West Coast": 2,
       "Central Tasmania": 1,
@@ -319,15 +321,15 @@
       "tomorrow": "2026-10-13",
       "nextWeekendStart": "2026-10-17",
       "nextWeekendEnd": "2026-10-18",
-      "todayOrTomorrow": 30,
+      "todayOrTomorrow": 31,
       "thisWeekend": 31,
       "townsTodayOrTomorrow": {
         "Huonville": 12,
-        "Burnie": 7,
+        "Burnie": 6,
         "Devonport": 6,
         "Launceston": 3,
-        "Hobart": 1,
-        "Rosny Park": 1
+        "Hobart": 2,
+        "Rosny Park": 2
       },
       "regionsThisWeekend": {
         "Hobart & South": 22,
@@ -351,19 +353,19 @@
       "missingOrOlderThan30Days": 1
     },
     "sourceRegionalMix": {
-      "North West / Burnie City Council": 26,
       "Hobart & South / MyState Bank Arena": 24,
+      "North West / Burnie City Council": 23,
       "Launceston & North / Theatre North Launceston": 17,
       "Hobart & South / Huon Valley Council": 16,
       "North West / Devonport City Council": 14,
+      "Hobart & South / City of Clarence": 11,
       "Hobart & South / Theatre Royal Hobart": 11,
-      "Launceston & North / Humanitix Launceston": 10,
+      "Launceston & North / Humanitix Launceston": 11,
+      "Hobart & South / Humanitix Hobart": 10,
       "East Coast / East Coast Tasmania": 9,
-      "Hobart & South / City of Clarence": 9,
-      "Hobart & South / Humanitix Hobart": 9,
       "Hobart & South / City of Hobart": 7,
-      "Launceston & North / City of Launceston": 5,
-      "Hobart & South / Glenorchy City Council": 4,
+      "Hobart & South / Glenorchy City Council": 5,
+      "Launceston & North / City of Launceston": 4,
       "King Island / King Island Tourism": 2,
       "Central Tasmania / Highlands BushFest organising team": 1,
       "Flinders Island / Flinders Island Show Society": 1,
