@@ -62,6 +62,47 @@ for(const file of files){
 for(const required of ['index.html','food/index.html','privacy/index.html','terms/index.html','sitemap.xml','robots.txt','data/site-build-date.json']){
  if(!files.some(file=>path.relative(root,file).replaceAll(path.sep,'/')===required))results.issues.push('Missing expected build output: '+required);
 }
+// Protect every submitted page against the exact GSC problems we can prevent:
+// accidental noindex, missing output, duplicate URLs and canonical mismatches.
+// Administrative/404 pages are intentionally excluded from the XML sitemap.
+const sitemapXml=await fs.readFile(path.join(root,'sitemap.xml'),'utf8');
+const sitemapLocs=[...sitemapXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([,loc])=>loc.replaceAll('&amp;','&'));
+const submitted=new Set();
+let verifiedSitemapPages=0;
+if(!sitemapLocs.length)results.issues.push('Sitemap has no submitted URLs');
+for(const urlText of sitemapLocs){
+  let url;
+  try{url=new URL(urlText);}catch{results.issues.push('Invalid sitemap URL: '+urlText);continue;}
+  if(url.origin!=='https://tassienow.com'){
+    results.issues.push('Out-of-domain sitemap URL: '+urlText);continue;
+  }
+  if(submitted.has(url.href))results.issues.push('Duplicate sitemap URL: '+urlText);
+  submitted.add(url.href);
+  if(url.search||url.hash||(!url.pathname.endsWith('/'))){
+    results.issues.push('Non-canonical URL form in sitemap: '+urlText);
+    continue;
+  }
+  const pageFile=path.join(root,decodeURIComponent(url.pathname).replace(/^\/+/,''),'index.html');
+  let html;
+  try{html=await fs.readFile(pageFile,'utf8');}
+  catch{results.issues.push('Sitemap URL has no built HTML page: '+urlText);continue;}
+  const robotsMeta=[...html.matchAll(/<meta\b[^>]*>/gi)]
+    .map(([tag])=>tag)
+    .filter(tag=>/\bname\s*=\s*["']robots["']/i.test(tag));
+  if(robotsMeta.some(tag=>/\bnoindex\b/i.test(tag))){
+    results.issues.push('Sitemap URL is noindex: '+urlText);
+  }
+  const canonicalTag=[...html.matchAll(/<link\b[^>]*>/gi)]
+    .map(([tag])=>tag)
+    .find(tag=>/\brel\s*=\s*["']canonical["']/i.test(tag));
+  const canonical=canonicalTag?.match(/\bhref\s*=\s*["']([^"']+)["']/i)?.[1];
+  if(canonical!==url.href){
+    results.issues.push('Sitemap canonical mismatch: '+urlText+' -> '+(canonical||'(missing)'));
+  }
+  verifiedSitemapPages++;
+}
+results.sitemap={submitted:sitemapLocs.length,verifiedHtmlPages:verifiedSitemapPages,uniqueUrls:submitted.size};
+
 results.largestAssets=sizes.sort((a,b)=>b.bytes-a.bytes).slice(0,15);
 await fs.mkdir('reports',{recursive:true});
 await fs.writeFile('reports/launch-build-audit.json',JSON.stringify(results,null,2)+'\n');
