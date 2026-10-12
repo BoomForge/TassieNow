@@ -10,7 +10,7 @@ const verified = {
 
 test('verified recurring market uses real opening hours for its title', () => {
   assert.equal(marketSeoTitle(verified), 'New Norfolk Market – Saturdays 8am–2pm | TassieNow');
-  assert.match(marketSeoDescription(verified, '2026-10-12'), /New Norfolk.*market dates.*New Norfolk, Tasmania/);
+  assert.match(marketSeoDescription(verified, '2026-10-12'), /Find market dates, opening hours, location and official updates in New Norfolk, Tasmania/);
 });
 test('never invent hours from an irregular market schedule', () => {
   assert.equal(marketSeoTitle({...verified, schedule:{frequency:'irregular',dates:['2026-10-11']}}),
