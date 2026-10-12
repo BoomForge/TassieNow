@@ -1,9 +1,13 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { marketCopy, tasmaniaDate } from '../src/lib/market-seo.mjs';
 
 const root=path.resolve('dist');
 const results={generatedAt:new Date().toISOString(),htmlCount:0,imageCount:0,scriptCount:0,totalBytes:0,issues:[],largestAssets:[],oversizeImages:[]};
 const files=[];
+const today=tasmaniaDate();
+const validDay=(value)=>/^\d{4}-\d{2}-\d{2}$/.test(value||'') && !Number.isNaN(Date.parse(value+'T12:00:00Z'));
+const absoluteUrl=(value)=>typeof value==='string' && /^https:\/\//.test(value);
 async function walk(dir){
  for(const item of await fs.readdir(dir,{withFileTypes:true})){
   const full=path.join(dir,item.name);
@@ -28,11 +32,34 @@ for(const file of files){
  if(!/<h1[\s>]/i.test(html)&&!is404)results.issues.push('Missing h1: '+relative);
  if(stat.size>3000000)results.issues.push('Oversized HTML: '+relative);
  if(/^(?:place|event|town|region)\//.test(relative)){
-   const schemas=[...html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
-   if(!schemas.length)results.issues.push('Missing structured data: '+relative);
+   const scripts=[...html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
+   if(!scripts.length)results.issues.push('Missing structured data: '+relative);
+   if(relative.startsWith('event/')){
+     let nodes=[];
+     for(const [,json] of scripts){
+       try{
+         const value=JSON.parse(json);
+         nodes.push(...(Array.isArray(value)?value:[value]));
+       }catch{results.issues.push('Invalid JSON-LD: '+relative);}
+     }
+     const event=nodes.find(node=>node['@type']==='Event');
+     if(!event)results.issues.push('Missing Event schema: '+relative);
+     else{
+       if(!event.name || !validDay(event.startDate) || !validDay(event.endDate) || event.endDate<event.startDate)
+         results.issues.push('Invalid Event name or dates: '+relative);
+       if(!event.location?.address?.addressLocality || event.location.address.addressCountry!=='AU')
+         results.issues.push('Invalid Event location: '+relative);
+       if(!absoluteUrl(event.url))results.issues.push('Missing absolute Event URL: '+relative);
+       if(event.image && (!Array.isArray(event.image)||!event.image.every(absoluteUrl)))
+         results.issues.push('Invalid Event image URLs: '+relative);
+       if(event.endDate<today)results.issues.push('Expired Event still built: '+relative);
+     }
+   }
  }
+ if(/^(?:place|discover|town|region)\//.test(relative) && marketCopy(html,today)!==html)
+   results.issues.push('Expired next-session claim in rendered HTML: '+relative);
 }
-for(const required of ['index.html','food/index.html','privacy/index.html','terms/index.html','sitemap.xml','robots.txt']){
+for(const required of ['index.html','food/index.html','privacy/index.html','terms/index.html','sitemap.xml','robots.txt','data/site-build-date.json']){
  if(!files.some(file=>path.relative(root,file).replaceAll(path.sep,'/')===required))results.issues.push('Missing expected build output: '+required);
 }
 results.largestAssets=sizes.sort((a,b)=>b.bytes-a.bytes).slice(0,15);

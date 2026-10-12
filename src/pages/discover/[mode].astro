@@ -7,6 +7,7 @@ import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 import events from '../../data/events.json';
 import { marketOccurrences, weekendDates } from '../../lib/market-occurrences.js';
+import { marketCopy } from '../../lib/market-seo.mjs';
 import { rankEventDiscovery } from '../../lib/event-ranking.js';
 
 export function getStaticPaths() {
@@ -319,7 +320,7 @@ const siblingModes = [
                 {item.region && <> · <a href={`/region/${slugify(item.region)}/`}>{item.region}</a></>}
               </p>
               <h3><a href={`${isEventItem(item) ? '/event/' : '/place/'}${item.slug}/`}>{item.name}</a></h3>
-              <p class="summary">{item.summary}</p>
+              <p class="summary">{!isEventItem(item) && item.categories?.includes("Markets") ? marketCopy(item.summary, today) : item.summary}</p>
               {item.occurrenceDate && <p>Scheduled market day{item.schedule?.startTime && item.schedule?.endTime ? ` · ${item.schedule.startTime}–${item.schedule.endTime}` : ''}. <a href={item.schedule.sourceUrl} target="_blank" rel="noopener noreferrer">Check organiser updates ↗</a></p>}
               {isEventItem(item) && item.ticketUrl && <p class="ticket-summary"><strong>{ticketLabel(item)}</strong></p>}
               {!isEventItem(item) && <div class="tags">{(item.categories || []).slice(0, 3).map((category) => <span class="tag">{category}</span>)}</div>}

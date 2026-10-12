@@ -45,7 +45,8 @@ const eventSchema = {
   endDate: event.endDate,
   description: event.summary,
   url: pageUrl,
-  image: [absoluteImage],
+  // Generic category artwork is not an event photograph; omit it from Event rich-result markup.
+  image: event.image?.isFallback ? undefined : [absoluteImage],
   eventStatus: 'https://schema.org/EventScheduled',
   eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
   location: {
