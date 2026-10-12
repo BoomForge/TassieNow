@@ -6,6 +6,7 @@ import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 import autoPhotoSources from '../../data/auto-photo-source-links.json';
 import { upcomingScheduleDates } from '../../lib/schedules.js';
+import { marketCopy, marketSeoTitle, marketSeoDescription } from '../../lib/market-seo.mjs';
 
 export function getStaticPaths() {
   return places
@@ -56,6 +57,10 @@ const todayParts = new Intl.DateTimeFormat('en-CA', {
 }).formatToParts(new Date());
 const todayPart = (type) => todayParts.find((part) => part.type === type)?.value;
 const today = `${todayPart('year')}-${todayPart('month')}-${todayPart('day')}`;
+const displaySummary = isMarketListing ? marketCopy(place.summary, today) : place.summary;
+const displayScheduleSummary = isMarketListing ? marketCopy(place.schedule?.summary, today) : place.schedule?.summary;
+const pageTitle = isMarketListing ? marketSeoTitle(place) : `${place.name} | TassieNow`;
+const pageDescription = isMarketListing ? marketSeoDescription(place, today) : place.summary;
 const upcomingDates = upcomingScheduleDates(place.schedule, today);
 const formatDate = (date) => new Intl.DateTimeFormat('en-AU', {
   timeZone: 'Australia/Hobart',
@@ -73,7 +78,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'TouristAttraction',
   name: place.name,
-  description: place.summary,
+  description: displaySummary,
   url: new URL(`/place/${place.slug}/`, Astro.site ?? Astro.url.origin).href,
   mainEntityOfPage: new URL(`/place/${place.slug}/`, Astro.site ?? Astro.url.origin).href,
   image: allSchemaImages,
@@ -97,7 +102,7 @@ const schema = {
 };
 ---
 
-<BaseLayout title={`${place.name} | TassieNow`} description={place.summary} image={place.image.url} imageAlt={place.image.alt || `${place.name}, Tasmania`}>
+<BaseLayout title={pageTitle} description={pageDescription} image={place.image.url} imageAlt={place.image.alt || `${place.name}, Tasmania`}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
   <BreadcrumbSchema items={[
     { name: 'TassieNow', path: '/' },
@@ -135,7 +140,7 @@ const schema = {
       <div class="hero-panel">
         <p class="eyebrow">{place.town} · {place.region}</p>
         <h1>{place.name}</h1>
-        <p class="hero-summary">{place.summary}</p>
+        <p class="hero-summary">{displaySummary}</p>
 
         <div class="hero-tags">
           {place.categories?.slice(0, 5).map((category) => <span class="tag">{category}</span>)}
@@ -254,10 +259,10 @@ const schema = {
                 <strong>{prettyHours(place.openingHours)}</strong>
               </div>
             )}
-            {place.schedule?.summary && (
+            {displayScheduleSummary && (
               <div class="visit-item">
                 <span>When it is on</span>
-                <strong>{place.schedule.summary}</strong>
+                <strong>{displayScheduleSummary}</strong>
                 {place.schedule.sourceUrl && <a href={place.schedule.sourceUrl} target="_blank" rel="noopener noreferrer">Official dates ↗</a>}
               </div>
             )}
