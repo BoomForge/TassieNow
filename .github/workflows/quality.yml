@@ -87,6 +87,7 @@ jobs:
           node --check src/lib/event-posters.mjs
           node --check scripts/check-rendered-event-posters.mjs
           node --check scripts/test-catalogue-recovery.mjs
+          node --check scripts/refresh-render-day.mjs
           node --check scripts/audit-built-site.mjs
           node --check scripts/indexnow.mjs
           node --check scripts/post-bluesky.mjs
