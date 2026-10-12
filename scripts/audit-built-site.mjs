@@ -59,7 +59,7 @@ for(const file of files){
  if(/^(?:place|discover|town|region)\//.test(relative) && marketCopy(html,today)!==html)
    results.issues.push('Expired next-session claim in rendered HTML: '+relative);
 }
-for(const required of ['index.html','food/index.html','privacy/index.html','terms/index.html','sitemap.xml','robots.txt']){
+for(const required of ['index.html','food/index.html','privacy/index.html','terms/index.html','sitemap.xml','robots.txt','data/site-build-date.json']){
  if(!files.some(file=>path.relative(root,file).replaceAll(path.sep,'/')===required))results.issues.push('Missing expected build output: '+required);
 }
 results.largestAssets=sizes.sort((a,b)=>b.bytes-a.bytes).slice(0,15);
