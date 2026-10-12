@@ -126,7 +126,8 @@ const checks=[
   ['Homepage','/','TassieNow'],['Food discovery','/food/','Places to Eat'],
   ['Service status','/status/','Service & data status'],['Robots','/robots.txt','User-agent'],
   ['Sitemap','/sitemap.xml','<urlset'],
-  ['Markets freshness','/discover/markets/','Markets in Tasmania']
+  ['Markets freshness','/discover/markets/','Markets in Tasmania'],
+  ['Build date','/data/site-build-date.json','"date"']
 ];
 await Promise.all(checks.map(async ([name,path,marker])=>{
   const check={name,path,status:'unknown',httpCode:null};
@@ -137,8 +138,19 @@ await Promise.all(checks.map(async ([name,path,marker])=>{
     check.cloudflareRay=response.headers.get('cf-ray') || null;
     const body=await response.text();
     const staleMarketCopy=name==='Markets freshness' && marketCopy(body,tasmaniaDate())!==body;
-    check.status=response.ok&&body.includes(marker)&&!staleMarketCopy?'ok':'failed';
+    let staleBuild=false;
+    if(name==='Build date'){
+      try{
+        const publishedDay=JSON.parse(body).date;
+        const localHour=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Australia/Hobart',hour:'2-digit',hourCycle:'h23'}).format(now));
+        const previousDay=new Date(Date.parse(tasmaniaDate()+'T12:00:00Z')-86400000).toISOString().slice(0,10);
+        staleBuild=publishedDay!==tasmaniaDate() && !(localHour<5 && publishedDay===previousDay);
+        check.publishedDay=publishedDay||null;
+      }catch{staleBuild=true;}
+    }
+    check.status=response.ok&&body.includes(marker)&&!staleMarketCopy&&!staleBuild?'ok':'failed';
     if(staleMarketCopy)check.problem='Expired upcoming-market claim still appears in production HTML';
+    if(staleBuild)check.problem='Static calendar checkpoint is stale or invalid: daily Pages deployment may be blocked';
     if(name==='Sitemap' && !body.trimStart().startsWith('<?xml'))check.problem='Sitemap is not an XML response; inspect Cloudflare/WAF challenge';
   }catch(error){check.status='failed';check.error=String(error.message);}
   if(check.status!=='ok')report.failures.push({component:'Public '+name,status:check.status,action:'Inspect Cloudflare deployment, TLS and route: '+path});
