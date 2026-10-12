@@ -1,0 +1,44 @@
+name: Verify live TassieNow SEO deployment
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/lib/market-seo.mjs'
+      - 'src/pages/place/**'
+      - 'src/pages/discover/**'
+      - 'src/pages/event/**'
+      - 'scripts/verify-seo-production.mjs'
+      - '.github/workflows/seo-production-check.yml'
+      - '.github/workflows/calendar-freshness.yml'
+      - 'public/data/site-build-date.json'
+  workflow_dispatch:
+  schedule:
+    - cron: '50 16 * * *'
+
+permissions:
+  contents: read
+
+# No write-queue lock: this check must still run during catalogue refreshes.
+concurrency:
+  group: tassienow-live-seo-acceptance
+  cancel-in-progress: false
+
+jobs:
+  acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify public SEO pages and XML
+        run: node scripts/verify-seo-production.mjs
+      - name: Publish live acceptance evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-production-acceptance
+          path: reports/seo-production-check.json
+          retention-days: 30

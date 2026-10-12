@@ -43,5 +43,17 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add public/data/site-build-date.json
           git commit -m "chore: advance Tasmanian calendar for static pages"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          # Scheduled report writers can update main between fetch and push.
+          # Rebase and retry rather than losing the calendar update to a ref race.
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo "Published Tasmanian calendar checkpoint."
+              exit 0
+            fi
+            echo "Concurrent main update; retrying ($attempt/5)."
+            sleep $((attempt * 2))
+          done
+          echo "::error::Calendar checkpoint could not be published after five rebases"
+          exit 1
