@@ -52,6 +52,15 @@ export const fallback = image=>!image?.url||image.isFallback===true;
 export function imageIsPublishable(image){
   if(fallback(image))return false;
   if(!image?.attribution||!image?.license||!/^https:\/\//i.test(image.url))return false;
+  if(image.sourceMethod==='ai-verified-remote' && (
+    image.useMode!=='external-embed'||image.usagePermission!=='open-licence'||
+    !image.sourceUrl?.startsWith('https://')||
+    image.matchEvidence?.verified!==true||
+    !image.matchEvidence?.sourceFilePage?.startsWith('https://')||
+    !image.matchEvidence?.rightsPage?.startsWith('https://')||
+    !image.matchEvidence?.subject||!image.matchEvidence?.details||
+    !image.matchEvidence?.listingSlug||!image.matchEvidence?.listingName||
+    !image.matchEvidence?.listingTown))return false;
   if(image.sourceMethod==='commons-event') {
     if(!image.matchEvidence?.verified || !image.matchEvidence.eventName ||
        !image.matchEvidence.sourceFileTitle)return false;

@@ -17,6 +17,9 @@ on:
       - 'scripts/enrich-wikidata-images.mjs'
       - 'scripts/discover/lib/event-media.mjs'
       - 'scripts/discover/lib/event-image-policy.mjs'
+      - 'src/data/approved-remote-images.json'
+      - 'scripts/apply-approved-remote-images.mjs'
+      - 'scripts/discover/lib/approved-remote-photos.mjs'
       - 'scripts/discover/lib/verified-event-venues.mjs'
       - 'scripts/discover/lib/verified-event-performers.mjs'
       - 'scripts/discover/lib/verified-event-history.mjs'
@@ -86,6 +89,15 @@ jobs:
         run: node scripts/enrich-images.mjs
       - name: Apply strictly verified missed place photographs
         run: node scripts/apply-verified-photo-picks.mjs
+      - name: Apply AI-reviewed reusable images directly from original remote hosts
+        run: node scripts/apply-approved-remote-images.mjs
+      - name: Preserve remote image publication evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: approved-remote-image-publication
+          path: reports/remote-image-publication.json
+          retention-days: 30
       - name: Preserve place-image source diagnostics
         if: always()
         uses: actions/upload-artifact@v4
@@ -137,6 +149,7 @@ jobs:
             node scripts/reapply-image-upgrades.mjs /tmp/tassienow-places-before-images.json /tmp/tassienow-places-after-images.json
             node scripts/reapply-event-image-upgrades.mjs /tmp/tassienow-events-before-images.json /tmp/tassienow-events-after-images.json
             node scripts/reapply-event-review.mjs /tmp/tassienow-event-photo-review-after-images.json
+            node scripts/apply-approved-remote-images.mjs
             node scripts/reapply-place-photo-review.mjs /tmp/tassienow-place-photo-review-after-images.json
             node scripts/prune-expired-events.mjs
             node scripts/rank-catalogue.mjs

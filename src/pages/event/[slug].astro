@@ -123,7 +123,7 @@ const townSlug = String(event.town || '')
     <h1>{event.name}</h1>
 
     <figure class="detail-image-wrap">
-      <img class="detail-image" src={displayImage} alt={displayAlt} loading="eager" decoding="async" fetchpriority="high" />
+      <img class="detail-image" src={displayImage} alt={displayAlt} loading="eager" decoding="async" fetchpriority="high" referrerpolicy="no-referrer" />
       {event.image.isFallback && <figcaption>Original TassieNow artwork for this event. Not an organiser poster or event photograph.</figcaption>}
       {!event.image.isFallback && (
         <figcaption>
