@@ -1,0 +1,79 @@
+name: Publish approved remote photographs promptly
+
+# Push-triggered only. The daily AI research task supplies verified source
+# records; ordinary recurring imagery enrichment keeps its original schedule.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/data/approved-remote-images.json'
+      - 'scripts/apply-approved-remote-images.mjs'
+      - 'scripts/discover/lib/approved-remote-photos.mjs'
+      - '.github/workflows/ai-photo-publish.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: tassienow-ai-photo-fast-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: package.json
+      - name: Check original-host images and prepare exact-listing upgrades
+        run: node scripts/apply-approved-remote-images.mjs
+      - name: Preserve independent image loading and rights report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-remote-image-publication
+          path: reports/remote-image-publication.json
+          retention-days: 30
+      - name: Validate and publish approved image changes safely
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "TassieNow Bot"
+          git config user.email "actions@users.noreply.github.com"
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            git reset --hard origin/main
+            node scripts/apply-approved-remote-images.mjs
+            node scripts/catalogue-audit.mjs
+            node scripts/validate-data.mjs
+            if git diff --quiet -- src/data/places.json src/data/events.json; then
+              echo "No further original-host photos passed publication validation."
+              exit 0
+            fi
+            npm install --no-audit --no-fund
+            npm run build
+            git add src/data/places.json src/data/events.json src/data/catalogue-audit.json
+            git commit -m "data: publish source-verified external listing photos"
+            if git push origin HEAD:main; then
+              gh workflow run verify-published-photos.yml --ref main
+              gh workflow run verify-published-event-images.yml --ref main
+              exit 0
+            fi
+            echo "Catalogue advanced during publication, reconciling on fresh main ($attempt/4)."
+            sleep "$((attempt * 2))"
+          done
+          echo "::error::Unable to persist approved remote media after four safe rebases."
+          exit 1
