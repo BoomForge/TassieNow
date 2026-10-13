@@ -26627,6 +26627,103 @@
     "lastWikidataLinkChecked": "2026-10-13"
   },
   {
+    "slug": "burnie-regional-museum",
+    "name": "Burnie Regional Museum",
+    "town": "Burnie",
+    "region": "North West",
+    "latitude": -41.0518044,
+    "longitude": 145.9025855,
+    "categories": [
+      "Museums",
+      "Art & Culture",
+      "Rainy Day"
+    ],
+    "summary": "Museum in or near Burnie. Operated by Burnie City Council.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/way/158861477",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/158861477",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Mo-Fr 10:00-16:30",
+    "phone": null,
+    "email": null,
+    "address": "Little Alexander Street, Burnie, TAS, 7320",
+    "bookingUrl": null,
+    "fee": "yes",
+    "wheelchair": "yes",
+    "operator": "Burnie City Council",
+    "detailSources": {
+      "openingHours": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/158861477",
+        "checkedAt": "2026-10-13"
+      },
+      "address": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/158861477",
+        "checkedAt": "2026-10-13"
+      },
+      "fee": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/158861477",
+        "checkedAt": "2026-10-13"
+      },
+      "wheelchair": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/158861477",
+        "checkedAt": "2026-10-13"
+      },
+      "operator": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/158861477",
+        "checkedAt": "2026-10-13"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-13",
+    "lastDetailsChecked": "2026-10-13",
+    "lastOsmDetailsChecked": "2026-10-13",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Burnie-Regional-Museum-20150218-003.jpg/1280px-Burnie-Regional-Museum-20150218-003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Burnie Regional Museum, Burnie, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Burnie-Regional-Museum-20150218-003.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Burnie-Regional-Museum-20150218-003.jpg",
+        "listingName": "Burnie Regional Museum",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-13T02:08:15.420Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Burnie%20Regional%20Museum%20Burnie%20Tasmania"
+      }
+    ],
+    "qualityScore": 56,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "opening-hours",
+      "address",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13"
+  },
+  {
     "slug": "gunns-plains-cave",
     "name": "Gunns Plains Cave",
     "town": "Central Coast Council",
@@ -27789,6 +27886,84 @@
     "commonsCategory": "Trowunna Wildlife Park"
   },
   {
+    "slug": "axeman-s-hall-of-fame",
+    "name": "Axeman's Hall of Fame",
+    "town": "Latrobe",
+    "region": "North West",
+    "latitude": -41.2309485,
+    "longitude": 146.402333,
+    "categories": [
+      "Museums",
+      "Art & Culture",
+      "Rainy Day"
+    ],
+    "summary": "Museum in or near Latrobe.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/3264390397",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/3264390397",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Tu-Sa 11:00-15:00, Su 09:00-15:00",
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "openingHours": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/3264390397",
+        "checkedAt": "2026-10-12"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Latrobe_BigPlatypus.jpg/1280px-Latrobe_BigPlatypus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Axeman's Hall of Fame, Latrobe, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "Stuart Edwards",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Latrobe_BigPlatypus.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Latrobe BigPlatypus.jpg",
+        "listingName": "Axeman's Hall of Fame",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-13T02:08:15.420Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Axeman's%20Hall%20of%20Fame%20Latrobe%20Tasmania"
+      }
+    ],
+    "qualityScore": 53,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "opening-hours",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12"
+  },
+  {
     "slug": "creative-paper-tasmania",
     "name": "Creative Paper Tasmania",
     "town": "Wynyard",
@@ -28848,6 +29023,84 @@
       "url": "https://tasproduceguide.au/markets/"
     },
     "lastWikidataLinkChecked": "2026-10-13"
+  },
+  {
+    "slug": "sherwood-hall",
+    "name": "Sherwood Hall",
+    "town": "Latrobe",
+    "region": "North West",
+    "latitude": -41.2300695,
+    "longitude": 146.4020165,
+    "categories": [
+      "Museums",
+      "Art & Culture",
+      "Rainy Day"
+    ],
+    "summary": "Museum in or near Latrobe.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/way/702427462",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/702427462",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Tu,Th 10:00-14:00, Sa-Su 13:00-16:00 || \"by appointment\"",
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "openingHours": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/702427462",
+        "checkedAt": "2026-10-12"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Settlers-Wharf-Latrobe-20070326-006.jpg/1280px-Settlers-Wharf-Latrobe-20070326-006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Sherwood Hall, Latrobe, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Settlers-Wharf-Latrobe-20070326-006.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Settlers-Wharf-Latrobe-20070326-006.jpg",
+        "listingName": "Sherwood Hall",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-13T02:08:15.420Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Sherwood%20Hall%20Latrobe%20Tasmania"
+      }
+    ],
+    "qualityScore": 53,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "opening-hours",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12"
   },
   {
     "slug": "shot-tower",
@@ -46217,6 +46470,82 @@
     "lastWikidataLinkChecked": "2026-10-12"
   },
   {
+    "slug": "post-office-clock-tower",
+    "name": "Post Office Clock Tower",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "latitude": -41.4355201,
+    "longitude": 147.1376151,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Launceston.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/way/333783600",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/333783600",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": "70 Cameron Street, Launceston, TAS, 7250",
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "address": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/333783600",
+        "checkedAt": "2026-10-12"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Launceston_Post_Office_clock_tower_20171117-001.jpg/1280px-Launceston_Post_Office_clock_tower_20171117-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Post Office Clock Tower, Launceston, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Launceston_Post_Office_clock_tower_20171117-001.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Launceston Post Office clock tower 20171117-001.jpg",
+        "listingName": "Post Office Clock Tower",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-13T02:08:15.420Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Post%20Office%20Clock%20Tower%20Launceston%20Tasmania"
+      }
+    ],
+    "qualityScore": 46,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "address",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12"
+  },
+  {
     "slug": "taco-villa",
     "name": "Taco Villa",
     "town": "Devonport",
@@ -47075,6 +47404,76 @@
         "provider": "google-maps",
         "label": "Reviews & visitor photos on Google Maps",
         "url": "https://www.google.com/maps/search/?api=1&query=Batman%20Bridge%20Beaconsfield%20Tasmania"
+      }
+    ],
+    "qualityScore": 44,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12"
+  },
+  {
+    "slug": "braddons-lookout",
+    "name": "Braddons Lookout",
+    "town": "Forth",
+    "region": "North West",
+    "latitude": -41.1733378,
+    "longitude": 146.258875,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Forth.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/1830664491",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/1830664491",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Forth-Valley-Tasmania-20070420-008.jpg/1280px-Forth-Valley-Tasmania-20070420-008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Braddons Lookout, Forth, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Forth-Valley-Tasmania-20070420-008.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Forth-Valley-Tasmania-20070420-008.jpg",
+        "listingName": "Braddons Lookout",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-13T02:08:15.420Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Braddons%20Lookout%20Forth%20Tasmania"
       }
     ],
     "qualityScore": 44,
@@ -76016,93 +76415,6 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
-    "slug": "burnie-regional-museum",
-    "name": "Burnie Regional Museum",
-    "town": "Burnie",
-    "region": "North West",
-    "latitude": -41.0518044,
-    "longitude": 145.9025855,
-    "categories": [
-      "Museums",
-      "Art & Culture",
-      "Rainy Day"
-    ],
-    "summary": "Museum in or near Burnie. Operated by Burnie City Council.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/way/158861477",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/158861477",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Mo-Fr 10:00-16:30",
-    "phone": null,
-    "email": null,
-    "address": "Little Alexander Street, Burnie, TAS, 7320",
-    "bookingUrl": null,
-    "fee": "yes",
-    "wheelchair": "yes",
-    "operator": "Burnie City Council",
-    "detailSources": {
-      "openingHours": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/158861477",
-        "checkedAt": "2026-10-13"
-      },
-      "address": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/158861477",
-        "checkedAt": "2026-10-13"
-      },
-      "fee": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/158861477",
-        "checkedAt": "2026-10-13"
-      },
-      "wheelchair": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/158861477",
-        "checkedAt": "2026-10-13"
-      },
-      "operator": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/158861477",
-        "checkedAt": "2026-10-13"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-13",
-    "lastDetailsChecked": "2026-10-13",
-    "lastOsmDetailsChecked": "2026-10-13",
-    "image": {
-      "url": "/images/categories/indoor.svg",
-      "alt": "Burnie Regional Museum category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Burnie%20Regional%20Museum%20Burnie%20Tasmania"
-      }
-    ],
-    "qualityScore": 38,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "opening-hours",
-      "address",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13"
-  },
-  {
     "slug": "donati-s-pizza-bar",
     "name": "Donati's Pizza Bar",
     "town": "Launceston",
@@ -80876,74 +81188,6 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
-    "slug": "axeman-s-hall-of-fame",
-    "name": "Axeman's Hall of Fame",
-    "town": "Latrobe",
-    "region": "North West",
-    "latitude": -41.2309485,
-    "longitude": 146.402333,
-    "categories": [
-      "Museums",
-      "Art & Culture",
-      "Rainy Day"
-    ],
-    "summary": "Museum in or near Latrobe.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/3264390397",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/3264390397",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Tu-Sa 11:00-15:00, Su 09:00-15:00",
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "openingHours": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/3264390397",
-        "checkedAt": "2026-10-12"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "/images/categories/indoor.svg",
-      "alt": "Axeman's Hall of Fame category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Axeman's%20Hall%20of%20Fame%20Latrobe%20Tasmania"
-      }
-    ],
-    "qualityScore": 35,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "opening-hours",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
-  },
-  {
     "slug": "claremont-war-memorial-hall",
     "name": "Claremont War Memorial Hall",
     "town": "Claremont",
@@ -81288,74 +81532,6 @@
       "url": "https://rupertswoodfarm.com/",
       "error": "500 Internal Server Error"
     },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
-  },
-  {
-    "slug": "sherwood-hall",
-    "name": "Sherwood Hall",
-    "town": "Latrobe",
-    "region": "North West",
-    "latitude": -41.2300695,
-    "longitude": 146.4020165,
-    "categories": [
-      "Museums",
-      "Art & Culture",
-      "Rainy Day"
-    ],
-    "summary": "Museum in or near Latrobe.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/way/702427462",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/702427462",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Tu,Th 10:00-14:00, Sa-Su 13:00-16:00 || \"by appointment\"",
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "openingHours": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/702427462",
-        "checkedAt": "2026-10-12"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "/images/categories/indoor.svg",
-      "alt": "Sherwood Hall category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Sherwood%20Hall%20Latrobe%20Tasmania"
-      }
-    ],
-    "qualityScore": 35,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "opening-hours",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12"
   },
@@ -96822,72 +96998,6 @@
     "discoveryStaleSince": "2026-10-12"
   },
   {
-    "slug": "post-office-clock-tower",
-    "name": "Post Office Clock Tower",
-    "town": "Launceston",
-    "region": "Launceston & North",
-    "latitude": -41.4355201,
-    "longitude": 147.1376151,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Launceston.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/way/333783600",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/333783600",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": "70 Cameron Street, Launceston, TAS, 7250",
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "address": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/333783600",
-        "checkedAt": "2026-10-12"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "Post Office Clock Tower category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Post%20Office%20Clock%20Tower%20Launceston%20Tasmania"
-      }
-    ],
-    "qualityScore": 28,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "address",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
-  },
-  {
     "slug": "sprokkelwood-art-garden",
     "name": "Sprokkelwood Art Garden",
     "town": "South Bruny",
@@ -107112,66 +107222,6 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-13"
-  },
-  {
-    "slug": "braddons-lookout",
-    "name": "Braddons Lookout",
-    "town": "Forth",
-    "region": "North West",
-    "latitude": -41.1733378,
-    "longitude": 146.258875,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Forth.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/1830664491",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/1830664491",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Braddons Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Braddons%20Lookout%20Forth%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
   },
   {
     "slug": "brady-s-lookout",
