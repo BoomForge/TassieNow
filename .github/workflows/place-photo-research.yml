@@ -23,7 +23,7 @@ concurrency:
 jobs:
   research:
     runs-on: ubuntu-latest
-    timeout-minutes: 14
+    timeout-minutes: 22
     steps:
       - uses: actions/checkout@v4
         with:
@@ -34,7 +34,7 @@ jobs:
           node-version: '22'
       - name: Research additional open-licensed image sources (review only)
         env:
-          MAX_OPENVERSE_PLACES: '75'
+          MAX_OPENVERSE_PLACES: '110'
         run: node scripts/research-openverse-photos.mjs
       - name: Retain independent image-source evidence
         if: always()

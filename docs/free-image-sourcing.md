@@ -1,28 +1,19 @@
-# TassieNow — free image-source aggregation
+# TassieNow image discovery, verification and publishing
 
-## Source order
-1. Preserve approved existing hero and gallery photographs across discovery.
-2. Use exact Wikidata P18 / Commons categories and properly licensed Commons search matches for automatic publishing.
-3. Use specific Commons photo picks checked for the correct place, photographer, original licence, source, and time of capture.
-4. Independently query the free Openverse API for missing market, food and place heroes. **Save leads for review; do not auto-publish Openverse search results.**
-5. Keep clearly designed category artwork when no independently verifiable photograph exists.
+## Hard boundary: discovery is not publication
+- Discovery queries can use a 350 m radius (up to 500 m when requested). Nearby images are **leads, never proof** that a pictured business is the listing.
+- File names are not mandatory: original Commons ObjectName, ImageDescription and Categories can establish exact place identity. Published market/food photos additionally need their exact town in original metadata.
+- Distinctive name words plus town can place Openverse or geotagged Commons results into the **review queue only**, never automatic publication.
+- Do not publish search-engine thumbnails, unlicensed organiser images, Google Maps photographs, other people's social posts, generic same-town buildings or AI-generated substitutes.
+- Publishing requires the original file's verified identity, licence allowing commercial reuse (CC BY, CC BY-SA, CC0 or public domain as appropriate), creator credit and licence/source links, or rights-holder permission. Keep original attribution visible on the live page.
+- Previously approved imagery takes priority and must survive catalogue refreshes. Do not downgrade an existing real photo.
 
-## Why Openverse is research-only
-Openverse indexes third-party metadata. A claimed open licence or title in a search result does **not** prove the original source licensed that particular photograph or that the photo shows the exact listed business. The bounded new research workflow records eligible leads in `src/data/place-media-review.json` with photographer, claimed licence, original source URL and match evidence. Every lead has `rights: independent-verification-needed` and `identity: candidate-not-verified`.
+## Automation
+- Daily image enrichment is .github/workflows/images.yml (also runs on image code changes). Commons metadata can publish high-confidence exact-identity matches; weaker geotagged candidates are persisted in src/data/place-media-review.json for separate approval.
+- Openverse research (.github/workflows/place-photo-research.yml) scans up to 110 priority listings per pass, saving up to eight candidates per listing. Its index may suggest a licence but is NOT original-source rights verification.
+- Official photo-source links identify pages to inspect but cannot be counted as published hero photographs.
+- On publication, live HTML/image/credit verification is required. Inspect .github/workflows/verify-published-photos.yml for failures.
+- Capture checked counts, rejected/eligible images, queued leads, approved heroes and current fallback coverage separately. A successful GitHub workflow with zero new hero photos is not an image coverage improvement.
 
-Before publication, review the **original** linked photo page, establish the photographer/licence and commercial re-use rights, verify that the place or event and locality are correct, and record a specific description. Only then can an owner-authorised verified image be added to `scripts/discover/lib/verified-photo-picks.mjs` or another documented source-verification route. If the photograph depicts a historic edition, say so in alt text or caption. Never change `rights` to `granted` merely because Openverse supplied a licence field.
-
-## Schedule and cost
-- `.github/workflows/place-photo-research.yml`: daily at 21:31 UTC, and when the research code changes; independent of the long-running catalogue writer queue.
-- **Free, anonymous API**, no Google billing, no new keys, no hosted database, no package dependency.
-- At most 14 listings per scheduled pass, with two bounded queries per listing, 1.5s request pacing, 429/503 handling, timeouts and retries.
-- Rotate research across missing markets, food businesses and other places, while keeping market and food quotas.
-- Store run reports in a GitHub Actions artifact, and preserve only source candidates in GitHub. Existing reviewer decisions must survive repeated discovery and concurrent pushes.
-- `check-operations.mjs` watches the new scheduled job for failure or staleness.
-- The user-facing coverage report counts **actual catalogue images**, never research leads.
-
-## If it fails
-Inspect the latest `openverse-place-photo-research` artifact and `reports/openverse-photo-research.json` inside the workflow. HTTP errors and rate limiting are reported; a majority of failed requests causes workflow failure. A missing service never downgrades an existing photograph. Do not interpret a successfully completed search as proof that more images have been published. After any independently approved image is published, verify its real website detail page with `verify-published-photos.yml`.
-
-## Next optional source adapters
-An independent, evidence-driven adapter could later index CC photographs in local-government or cultural-heritage open-data catalogues, where licence and subject identity can be checked from the issuing institution. Do not scrape Google Maps reviews or copy organiser-site photos without permission.
+## Approval
+Open the original image/source page, independently confirm exact venue or landmark and location, check creator and licence/permissions for this specific work, record a factual alt description (including historical date if applicable), then add approved picks through the documented verified-photo path. Never convert a queued candidate to approved merely because it is geotagged, has a title match or carries indexed licence metadata.
