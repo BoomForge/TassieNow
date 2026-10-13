@@ -2991,5 +2991,505 @@
         "observedAt": "2026-10-13T02:08:15.420Z"
       }
     ]
+  },
+  "fergusson-falls": {
+    "name": "Fergusson Falls",
+    "town": "Mole Creek",
+    "candidates": [
+      {
+        "id": "commons-geo:55616991",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Fergusson_Falls_-_Flickr_-_brewbooks.jpg/1280px-Fergusson_Falls_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Fergusson_Falls_-_Flickr_-_brewbooks.jpg",
+        "title": "Fergusson Falls - Flickr - brewbooks.jpg",
+        "credit": "brewbooks  from near Seattle, USA",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "fergusson",
+            "falls"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      },
+      {
+        "id": "commons-geo:55617021",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Pandani_near_Fergusson_Falls_-_Flickr_-_brewbooks.jpg/1280px-Pandani_near_Fergusson_Falls_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pandani_near_Fergusson_Falls_-_Flickr_-_brewbooks.jpg",
+        "title": "Pandani near Fergusson Falls - Flickr - brewbooks.jpg",
+        "credit": "brewbooks  from near Seattle, USA",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "fergusson",
+            "falls"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      },
+      {
+        "id": "commons-geo:58433951",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Near_Fergusson_Falls.jpg/1280px-Near_Fergusson_Falls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Near_Fergusson_Falls.jpg",
+        "title": "Near Fergusson Falls.jpg",
+        "credit": "Jeanetienne",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "fergusson",
+            "falls"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      }
+    ]
+  },
+  "fossil-bay-lookout": {
+    "name": "Fossil Bay Lookout",
+    "town": "Port Arthur",
+    "candidates": [
+      {
+        "id": "commons-geo:7283693",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Fossil_Bay_Seascape.jpg/1280px-Fossil_Bay_Seascape.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Fossil_Bay_Seascape.jpg",
+        "title": "Fossil Bay Seascape.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "fossil"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      },
+      {
+        "id": "commons-geo:7291255",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Fossil_Bay_Seascape_2.jpg/1280px-Fossil_Bay_Seascape_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Fossil_Bay_Seascape_2.jpg",
+        "title": "Fossil Bay Seascape 2.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "fossil"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      },
+      {
+        "id": "commons-geo:7291261",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Fossil_Bay_Seascape_3.jpg/1280px-Fossil_Bay_Seascape_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Fossil_Bay_Seascape_3.jpg",
+        "title": "Fossil Bay Seascape 3.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "fossil"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      }
+    ]
+  },
+  "gordon-dam-lookout": {
+    "name": "Gordon Dam Lookout",
+    "town": "Tasmania",
+    "candidates": [
+      {
+        "id": "commons-geo:4768532",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Gordon_Dam.jpg/1280px-Gordon_Dam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Gordon_Dam.jpg",
+        "title": "Gordon Dam.jpg",
+        "credit": "JJ Harrison",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "gordon"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      },
+      {
+        "id": "commons-geo:118977707",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Gordon_Dam%2C_Tasmania.jpg/1280px-Gordon_Dam%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Gordon_Dam,_Tasmania.jpg",
+        "title": "Gordon Dam, Tasmania.jpg",
+        "credit": "BennyG3255",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "gordon"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      }
+    ]
+  },
+  "gorge-lookout": {
+    "name": "Gorge Lookout",
+    "town": "Launceston",
+    "candidates": [
+      {
+        "id": "commons-geo:17607498",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Launceston_Cataract_Gorge_%26_First_Basin%2C_Tasmania.jpg/1280px-Launceston_Cataract_Gorge_%26_First_Basin%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Launceston_Cataract_Gorge_%26_First_Basin,_Tasmania.jpg",
+        "title": "Launceston Cataract Gorge & First Basin, Tasmania.jpg",
+        "credit": "Feral Arts",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "gorge"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      },
+      {
+        "id": "commons-geo:28464875",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Boat-Cataract-Gorge-20070421-026.jpg/1280px-Boat-Cataract-Gorge-20070421-026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Boat-Cataract-Gorge-20070421-026.jpg",
+        "title": "Boat-Cataract-Gorge-20070421-026.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "gorge"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      },
+      {
+        "id": "commons-geo:28464883",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/House-Cataract-Gorge-20070421-023.jpg/1280px-House-Cataract-Gorge-20070421-023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:House-Cataract-Gorge-20070421-023.jpg",
+        "title": "House-Cataract-Gorge-20070421-023.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "gorge"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      }
+    ]
+  },
+  "horsetail-falls-lookout": {
+    "name": "Horsetail Falls Lookout",
+    "town": "Queenstown",
+    "candidates": [
+      {
+        "id": "commons-geo:108395343",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Horsetail_Falls_-_August_2021.jpg/1280px-Horsetail_Falls_-_August_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Horsetail_Falls_-_August_2021.jpg",
+        "title": "Horsetail Falls - August 2021.jpg",
+        "credit": "Titandrake",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "horsetail",
+            "falls"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      }
+    ]
+  },
+  "knyvet-falls-lookout": {
+    "name": "Knyvet Falls Lookout",
+    "town": "Tullah",
+    "candidates": [
+      {
+        "id": "commons-geo:64467400",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Knyvet_Falls%2C_Tasmania_%2831341272985%29.jpg/1280px-Knyvet_Falls%2C_Tasmania_%2831341272985%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Knyvet_Falls,_Tasmania_(31341272985).jpg",
+        "title": "Knyvet Falls, Tasmania (31341272985).jpg",
+        "credit": "Steven Penton  from Bakers Beach, Tasmania Australia",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "knyvet",
+            "falls"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      }
+    ]
+  },
+  "marion-s-lookout": {
+    "name": "Marion's Lookout",
+    "town": "Tullah",
+    "candidates": [
+      {
+        "id": "commons-geo:52815405",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Cradle_Mountain_from_a_paraglider_above_Marion%27s_Lookout_-_panoramio.jpg/1280px-Cradle_Mountain_from_a_paraglider_above_Marion%27s_Lookout_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cradle_Mountain_from_a_paraglider_above_Marion%27s_Lookout_-_panoramio.jpg",
+        "title": "Cradle Mountain from a paraglider above Marion's Lookout - panoramio.jpg",
+        "credit": "KommandorKeen",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "marion"
+          ],
+          "localityInMetadata": false
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      },
+      {
+        "id": "commons-geo:55673707",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Crater_Lake%2C_below_Cradle_Mountain_-_Flickr_-_brewbooks.jpg/1280px-Crater_Lake%2C_below_Cradle_Mountain_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Crater_Lake,_below_Cradle_Mountain_-_Flickr_-_brewbooks.jpg",
+        "title": "Crater Lake, below Cradle Mountain - Flickr - brewbooks.jpg",
+        "credit": "brewbooks  from near Seattle, USA",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "marion"
+          ],
+          "localityInMetadata": false
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      },
+      {
+        "id": "commons-geo:58802853",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Dove_Lake_from_Marion%27s_Lookout_at_Cradle_Mountain-Lake_St._Clair_National_Park.jpg/1280px-Dove_Lake_from_Marion%27s_Lookout_at_Cradle_Mountain-Lake_St._Clair_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Dove_Lake_from_Marion%27s_Lookout_at_Cradle_Mountain-Lake_St._Clair_National_Park.jpg",
+        "title": "Dove Lake from Marion's Lookout at Cradle Mountain-Lake St. Clair National Park.jpg",
+        "credit": "Ricola15",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "marion"
+          ],
+          "localityInMetadata": false
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      }
+    ]
+  },
+  "pelverata-falls-lookout": {
+    "name": "Pelverata Falls Lookout",
+    "town": "Huonville",
+    "candidates": [
+      {
+        "id": "commons-geo:149783357",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Pelverata_Falls%2C_June_2021.jpg/1280px-Pelverata_Falls%2C_June_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pelverata_Falls,_June_2021.jpg",
+        "title": "Pelverata Falls, June 2021.jpg",
+        "credit": "Thomas & Olivia Williams",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "pelverata",
+            "falls"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      }
+    ]
+  },
+  "pirates-bay-lookout": {
+    "name": "Pirates Bay Lookout",
+    "town": "Dunalley",
+    "candidates": [
+      {
+        "id": "commons-geo:97514823",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Tasman_Bay_National_Park_Lookout_20201115-009.jpg/1280px-Tasman_Bay_National_Park_Lookout_20201115-009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Tasman_Bay_National_Park_Lookout_20201115-009.jpg",
+        "title": "Tasman Bay National Park Lookout 20201115-009.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "pirates"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      },
+      {
+        "id": "commons-geo:97514824",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Tasman_Bay_National_Park_Lookout_20201115-010.jpg/1280px-Tasman_Bay_National_Park_Lookout_20201115-010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Tasman_Bay_National_Park_Lookout_20201115-010.jpg",
+        "title": "Tasman Bay National Park Lookout 20201115-010.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "pirates"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      },
+      {
+        "id": "commons-geo:97541841",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Cubed_Espresso_Bar_20201115-011.jpg/1280px-Cubed_Espresso_Bar_20201115-011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cubed_Espresso_Bar_20201115-011.jpg",
+        "title": "Cubed Espresso Bar 20201115-011.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "pirates"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      }
+    ]
   }
 }

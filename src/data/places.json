@@ -47660,6 +47660,76 @@
     "rankedAt": "2026-10-13"
   },
   {
+    "slug": "fergusson-falls",
+    "name": "Fergusson Falls",
+    "town": "Mole Creek",
+    "region": "Launceston & North",
+    "latitude": -41.9084768,
+    "longitude": 146.1221974,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Mole Creek.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/2338841157",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2338841157",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Fergusson_Falls_-_Flickr_-_brewbooks.jpg/1280px-Fergusson_Falls_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Fergusson Falls, Mole Creek, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "brewbooks  from near Seattle, USA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fergusson_Falls_-_Flickr_-_brewbooks.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Fergusson Falls - Flickr - brewbooks.jpg",
+        "listingName": "Fergusson Falls",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Fergusson%20Falls%20Mole%20Creek%20Tasmania"
+      }
+    ],
+    "qualityScore": 44,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12"
+  },
+  {
     "slug": "fico",
     "name": "Fico",
     "town": "Hobart",
@@ -48427,6 +48497,74 @@
     "rankedAt": "2026-10-13",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12"
+  },
+  {
+    "slug": "marion-s-lookout",
+    "name": "Marion's Lookout",
+    "town": "Tullah",
+    "region": "West Coast",
+    "latitude": -41.660333,
+    "longitude": 145.952845,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Tullah.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/647629307",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/647629307",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-13",
+    "lastDetailsChecked": "2026-10-13",
+    "lastOsmDetailsChecked": "2026-10-13",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Cradle_Mountain_from_a_paraglider_above_Marion%27s_Lookout_-_panoramio.jpg/1280px-Cradle_Mountain_from_a_paraglider_above_Marion%27s_Lookout_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Marion's Lookout, Tullah, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "KommandorKeen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cradle_Mountain_from_a_paraglider_above_Marion%27s_Lookout_-_panoramio.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Cradle Mountain from a paraglider above Marion's Lookout - panoramio.jpg",
+        "listingName": "Marion's Lookout",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-13T02:15:52.407Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Marion's%20Lookout%20Tullah%20Tasmania"
+      }
+    ],
+    "qualityScore": 44,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13"
   },
   {
     "slug": "mount-nelson-signal-station",
@@ -108727,66 +108865,6 @@
     "discoveryStaleSince": "2026-10-12"
   },
   {
-    "slug": "fergusson-falls",
-    "name": "Fergusson Falls",
-    "town": "Mole Creek",
-    "region": "Launceston & North",
-    "latitude": -41.9084768,
-    "longitude": 146.1221974,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Mole Creek.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/2338841157",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2338841157",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Fergusson Falls category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Fergusson%20Falls%20Mole%20Creek%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
-  },
-  {
     "slug": "fisherman-s-wharf-lookout",
     "name": "Fisherman's Wharf Lookout",
     "town": "Stanley",
@@ -111063,64 +111141,6 @@
     "rankedAt": "2026-10-13",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12"
-  },
-  {
-    "slug": "marion-s-lookout",
-    "name": "Marion's Lookout",
-    "town": "Tullah",
-    "region": "West Coast",
-    "latitude": -41.660333,
-    "longitude": 145.952845,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Tullah.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/647629307",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/647629307",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-13",
-    "lastDetailsChecked": "2026-10-13",
-    "lastOsmDetailsChecked": "2026-10-13",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Marion's Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Marion's%20Lookout%20Tullah%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13"
   },
   {
     "slug": "mayfield-bay-lookout",
