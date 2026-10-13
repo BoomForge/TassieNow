@@ -4216,5 +4216,63 @@
         "observedAt": "2026-10-13T02:38:22.406Z"
       }
     ]
+  },
+  "east-devonport-beach": {
+    "name": "East Devonport Beach",
+    "town": "Tasmania",
+    "candidates": [
+      {
+        "id": "commons-geo:28321069",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/East-Devonport-coast-20070225-008.jpg/1280px-East-Devonport-coast-20070225-008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:East-Devonport-coast-20070225-008.jpg",
+        "title": "East-Devonport-coast-20070225-008.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "east",
+            "devonport"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:48:06.194Z"
+      }
+    ]
+  },
+  "home-hill": {
+    "name": "Home Hill",
+    "town": "Miandetta",
+    "candidates": [
+      {
+        "id": "commons-geo:74052082",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Home_Hill_%2845067495661%29.jpg/1280px-Home_Hill_%2845067495661%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Home_Hill_(45067495661).jpg",
+        "title": "Home Hill (45067495661).jpg",
+        "credit": "Steve Bittinger  from Canberra, Australia",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "home",
+            "hill"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T02:48:06.194Z"
+      }
+    ]
   }
 }
