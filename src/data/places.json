@@ -348,9 +348,10 @@
       "checkedAt": "2026-10-13"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://www.bonorong.com.au/"
+      "url": "https://www.bonorong.com.au/",
+      "error": "The operation was aborted due to timeout"
     },
     "bookingUrl": "https://www.bonorong.com.au/about-bonorong/",
     "lastWikidataLinkChecked": "2026-10-07",
@@ -3590,7 +3591,7 @@
     "bookingUrl": "https://farmgatemarket.com.au/?s={search_term_string}",
     "lastWikidataLinkChecked": "2026-10-12",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-13",
       "url": "https://farmgatemarket.com.au/"
     }
@@ -4322,9 +4323,10 @@
     ],
     "rankedAt": "2026-10-13",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/fossil-cliffs"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/fossil-cliffs",
+      "error": "The operation was aborted due to timeout"
     }
   },
   {
@@ -5279,9 +5281,10 @@
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Beaconsfield_Mine_%26_Heritage_Centre",
     "lastWikidataChecked": "2026-10-06",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://www.beaconsfieldheritage.com.au/"
+      "url": "https://www.beaconsfieldheritage.com.au/",
+      "error": "The operation was aborted due to timeout"
     },
     "bookingUrl": "https://www.beaconsfieldheritage.com.au/contact-us/"
   },
@@ -8731,9 +8734,10 @@
       "Beaconsfield mine.JPG"
     ],
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://www.beaconsfieldheritage.com.au/"
+      "url": "https://www.beaconsfieldheritage.com.au/",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12"
@@ -10048,7 +10052,7 @@
       },
       "bookingUrl": {
         "type": "official-website",
-        "url": "https://harvestmarket.org.au/meet-our-stallholders/",
+        "url": "https://harvestmarket.org.au/",
         "checkedAt": "2026-10-13"
       }
     },
@@ -10078,12 +10082,13 @@
         "url": "https://www.google.com/maps/search/?api=1&query=Harvest%20Launceston%20Community%20Farmers%20Market%20Launceston%20Tasmania"
       }
     ],
-    "bookingUrl": "https://harvestmarket.org.au/meet-our-stallholders/",
+    "bookingUrl": "https://harvestmarket.org.au/",
     "lastWikidataLinkChecked": "2026-10-13",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://harvestmarket.org.au/"
+      "url": "https://harvestmarket.org.au/",
+      "error": "The operation was aborted due to timeout"
     }
   },
   {
@@ -10466,10 +10471,9 @@
     "rankedAt": "2026-10-13",
     "lastWikidataLinkChecked": "2026-10-13",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-13",
-      "url": "https://www.mawsons-huts.org.au/replica-museum/",
-      "error": "429 Too Many Requests"
+      "url": "https://www.mawsons-huts.org.au/replica-museum/"
     }
   },
   {
@@ -11883,7 +11887,7 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://bangorshed.com.au/pages/find-us-maps",
+        "url": "https://bangorshed.com.au/pages/contact",
         "checkedAt": "2026-10-13"
       },
       "bookingUrl": {
@@ -12716,7 +12720,7 @@
     "openingHours": "",
     "phone": "0418684108President",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-13",
       "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/"
     },
@@ -14304,9 +14308,10 @@
     "rankedAt": "2026-10-13",
     "lastWikidataLinkChecked": "2026-10-13",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://adikataxi.com/"
+      "url": "https://www.amazerichmond.com/",
+      "error": "The operation was aborted due to timeout"
     }
   },
   {
@@ -27949,9 +27954,10 @@
     ],
     "rankedAt": "2026-10-13",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://www.hivetasmania.com.au/museum/"
+      "url": "https://www.hivetasmania.com.au/museum/",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12",
@@ -31442,7 +31448,7 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastOfficialDetailsChecked": "2026-10-12",
+    "lastOfficialDetailsChecked": "2026-10-13",
     "lastWikidataLinkChecked": "2026-10-13"
   },
   {
@@ -31546,9 +31552,10 @@
       "checkedAt": "2026-10-13"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://www.lostcaptain.com.au/"
+      "url": "https://www.lostcaptain.com.au/",
+      "error": "fetch failed"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -33249,7 +33256,7 @@
     ],
     "rankedAt": "2026-10-13",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-13",
       "url": "https://www.restauranttasman.com.au/"
     },
@@ -34389,9 +34396,10 @@
     ],
     "rankedAt": "2026-10-13",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://www.nationaltrust.org.au/places/latrobe-courthouse-museum/"
+      "url": "https://www.nationaltrust.org.au/places/latrobe-courthouse-museum/",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12"
@@ -34507,9 +34515,10 @@
     ],
     "rankedAt": "2026-10-13",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://www.puddleduck.com.au/"
+      "url": "https://www.puddleduck.com.au/",
+      "error": "The operation was aborted due to timeout"
     }
   },
   {
@@ -35466,9 +35475,10 @@
       "checkedAt": "2026-10-13"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://www.brownburgers.com.au/"
+      "url": "https://www.brownburgers.com.au/",
+      "error": "fetch failed"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
@@ -36229,7 +36239,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://davesnoodles.com.au/about",
+        "url": "https://davesnoodles.com.au/locations",
         "checkedAt": "2026-10-13"
       }
     },
@@ -36261,7 +36271,7 @@
     ],
     "schedule": {
       "summary": "03 6227 2888 Dave's Noodles, Channel Highway, Kingston TAS, Australia 11 am to 8:30 pm (7 days)",
-      "sourceUrl": "https://davesnoodles.com.au/about",
+      "sourceUrl": "https://davesnoodles.com.au/locations",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -37429,7 +37439,7 @@
     ],
     "rankedAt": "2026-10-13",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-13",
       "url": "https://lanigansvineyard.com.au/"
     },
@@ -40053,9 +40063,10 @@
       "checkedAt": "2026-10-13"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://icecreameryandco.com.au/"
+      "url": "https://icecreameryandco.com.au/",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -40702,7 +40713,7 @@
     ],
     "rankedAt": "2026-10-13",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-13",
       "url": "https://whiskandco.com.au/"
     },
@@ -42715,9 +42726,10 @@
     ],
     "rankedAt": "2026-10-13",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://www.sheffieldsteam.com.au/"
+      "url": "https://www.sheffieldsteam.com.au/",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12",
@@ -44496,9 +44508,10 @@
       "checkedAt": "2026-10-13"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://www.derwentestate.com.au/the-shed-restaurant/"
+      "url": "https://www.derwentestate.com.au/the-shed-restaurant/",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -45821,9 +45834,10 @@
       "checkedAt": "2026-10-13"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://www.himalayantandoorandcurryhouse.com.au/"
+      "url": "https://www.himalayantandoorandcurryhouse.com.au/",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -46843,7 +46857,7 @@
     ],
     "rankedAt": "2026-10-13",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-13",
       "url": "https://www.tasteofmalaysiahobart.com.au/"
     },
@@ -47043,9 +47057,10 @@
     ],
     "rankedAt": "2026-10-13",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://www.gordonrivercruises.com.au/"
+      "url": "https://www.gordonrivercruises.com.au/",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12",
@@ -50638,7 +50653,7 @@
     ],
     "rankedAt": "2026-10-13",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-13",
       "url": "https://allthai.com.au/"
     },
@@ -66679,7 +66694,7 @@
     ],
     "rankedAt": "2026-10-13",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-13",
       "url": "https://www.rendezvousloungecafe.com.au/"
     },
@@ -69489,9 +69504,10 @@
     ],
     "rankedAt": "2026-10-13",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "unreachable",
       "checkedAt": "2026-10-13",
-      "url": "https://oatlandspancakesandcrepes.com.au/"
+      "url": "https://oatlandspancakesandcrepes.com.au/",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -71083,7 +71099,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-13",
       "url": "http://www.flavourofindia.com.au/",
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -71492,7 +71508,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-13",
       "url": "https://parthenonsouvlakibar.com.au/",
-      "error": "503 Service Unavailable"
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -78695,7 +78711,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-13",
       "url": "https://vinayummykitchen.com/",
-      "error": "403 Forbidden"
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
@@ -89730,7 +89746,7 @@
     "rankedAt": "2026-10-13",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-13"
   },
   {
     "slug": "espresso-5-0",
@@ -89798,7 +89814,7 @@
     "rankedAt": "2026-10-13",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-13"
   },
   {
     "slug": "eucalypt-cafe",
@@ -89872,7 +89888,7 @@
     "rankedAt": "2026-10-13",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-13"
   },
   {
     "slug": "europa-greek-taverna",
@@ -89940,7 +89956,7 @@
     "rankedAt": "2026-10-13",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-13"
   },
   {
     "slug": "farmgate-cafe",
@@ -90013,7 +90029,7 @@
     "rankedAt": "2026-10-13",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-13"
   },
   {
     "slug": "flying-sparrow",
