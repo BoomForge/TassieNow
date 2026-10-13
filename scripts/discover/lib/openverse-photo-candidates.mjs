@@ -33,6 +33,7 @@ export function photoSearchQueries(place) {
   const queries=[
     '"' + name + '" ' + town,
     name + ' ' + town + ' Tasmania',
+    name + ' ' + town,
     '"' + name + '" Tasmania'
   ];
   return [...new Set(queries)];
@@ -58,9 +59,15 @@ export function openverseCandidate(place, work, checkedAt = new Date().toISOStri
   const tags=(Array.isArray(work.tags)?work.tags:[]).map(tag=>typeof tag==='string'?tag:tag?.name).filter(Boolean);
   const context=[title,...tags].join(' ');
   if(UNWANTED.test(context) || foreignPlaces.test(context)) return null;
-  if(!matchedPhrase(context,place.name)) return null;
+  // Research is intentionally broader than publication: two distinctive
+  // name words + the actual town are sufficient to queue a lead for review.
+  // Full name + town still gives the strongest evidence. Never auto-publish.
+  const exactName=matchedPhrase(context,place.name);
+  const words=[...new Set(normalize(place.name).split(' ').filter(token=>
+    token.length>=4&&!['the','and','market','restaurant','cafe','shop','beach','park','tasmania'].includes(token)))];
+  const hits=words.filter(word=>matchedPhrase(context,word));
   if(!matchedPhrase(context,place.town)) return null;
-  // Place name and town in title is stronger than automatically indexed tags.
+  if(!exactName&&(!words.length||hits.length<Math.min(2,words.length)))return null;
   const titleStrong=matchedPhrase(title,place.name)&&matchedPhrase(title,place.town);
   const id=String(work.id || '').trim();
   if(!id || id.length>128) return null;
@@ -78,7 +85,8 @@ export function openverseCandidate(place, work, checkedAt = new Date().toISOStri
     height:Number(work.height)||null,
     rights:'independent-verification-needed',
     identity:'candidate-not-verified',
-    reason:titleStrong?'Exact listing and town in source title':'Place and town in indexed metadata',
+    reason:titleStrong?'Exact listing and town in source title':exactName?
+      'Full name and town in indexed metadata; verify original':'Distinctive words and town only; identity unverified',
     observedAt:checkedAt
   };
 }

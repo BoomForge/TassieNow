@@ -1,15 +1,17 @@
 import fs from 'node:fs/promises';
-import {geosearchUrl,geotaggedImageForPlace} from './discover/lib/geotagged-photo-matches.mjs';
+import {geosearchUrl,geotaggedImageForPlace,geotaggedReviewCandidate} from './discover/lib/geotagged-photo-matches.mjs';
+import {mergePlacePhotoReview} from './discover/lib/openverse-photo-candidates.mjs';
 import {selectPhotoEnrichmentTargets} from './discover/lib/image-enrichment-targets.mjs';
 
 const DATA=new URL('../src/data/places.json',import.meta.url);
 const REPORT=new URL('../reports/geo-photo-enrichment.json',import.meta.url);
+const QUEUE=new URL('../src/data/place-media-review.json',import.meta.url);
 const MAX=Math.max(1,Math.min(250,Number.parseInt(process.env.MAX_GEO_PLACES||'200',10)||200));
 const USER_AGENT='TassieNow/1.2 (+https://tassienow.com; free-geotag-image-discovery)';
 const INTERVAL=1350;
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 let lastRequested=0;
-const stats={requests:0,rateLimited:0,retries:0,failures:0,results:0,eligible:0,upgraded:0,excludedNoCoordinates:0,errors:[],examples:[]};
+const stats={requests:0,rateLimited:0,retries:0,failures:0,results:0,eligible:0,upgraded:0,reviewCandidates:0,reviewPlaces:0,excludedNoCoordinates:0,errors:[],examples:[]};
 
 async function query(place){
   const url=geosearchUrl(place);
@@ -51,11 +53,16 @@ const missing=places.filter(p=>p.status==='active'&&p.visibility!=='suppressed'&
 const day=Math.floor(Date.now()/86400000);
 const {targets,marketTargetCount,foodQuota}=selectPhotoEnrichmentTargets(missing,MAX,day);
 const checkedAt=new Date().toISOString();
+const foundForReview={};
 
 for(const place of targets){
   if(!place.image?.isFallback)continue;
-  const candidates=(await query(place))
-    .map(page=>geotaggedImageForPlace(place,page,checkedAt)).filter(Boolean);
+  const pages=await query(place);
+  const candidates=pages.map(page=>geotaggedImageForPlace(place,page,checkedAt)).filter(Boolean);
+  // Save plausible but non-proven Commons photographs for independent review.
+  const review=pages.map(page=>geotaggedReviewCandidate(place,page,checkedAt))
+    .filter(Boolean).slice(0,3);
+  if(review.length)foundForReview[place.slug]={name:place.name,town:place.town,candidates:review};
   stats.eligible+=candidates.length;
   if(!candidates.length)continue;
   // A source with multiple equally matched images may vary. Preserve all
@@ -68,6 +75,11 @@ for(const place of targets){
   if(stats.examples.length<25)stats.examples.push({slug:place.slug,name:place.name,source:preferred.sourceUrl});
 }
 if(stats.upgraded)await fs.writeFile(DATA,JSON.stringify(places,null,2)+'\n');
+const prior=JSON.parse(await fs.readFile(QUEUE,'utf8').catch(()=>'{}'));
+const {queue,added,placesAdded}=mergePlacePhotoReview(prior,foundForReview);
+if(added)await fs.writeFile(QUEUE,JSON.stringify(queue,null,2)+'\n');
+stats.reviewCandidates=added;
+stats.reviewPlaces=placesAdded;
 const report={checkedAt,source:'Wikimedia Commons GeoData (free)',checked:targets.length,
   marketsChecked:marketTargetCount,foodPrioritySlots:foodQuota,
   missingBefore:missing.length,missingAfter:missing.length-stats.upgraded,stats};

@@ -20,7 +20,8 @@ const checkedAt='2026-10-11T00:00:00.000Z';
 
 test('queries exact place with town and Tasmania, without Google billing',()=>{
   assert.deepEqual(photoSearchQueries(place),[
-    '"Farm Gate Market" Hobart','Farm Gate Market Hobart Tasmania','"Farm Gate Market" Tasmania'
+    '"Farm Gate Market" Hobart','Farm Gate Market Hobart Tasmania',
+    'Farm Gate Market Hobart','"Farm Gate Market" Tasmania'
   ]);
 });
 test('retains strong photographic leads without claiming publication approval',()=>{
@@ -86,4 +87,12 @@ test('merges results into an incomplete older review without overwriting its met
  assert.equal(added,1);
  assert.equal(queue[place.slug].needs,'keep owner note');
  assert.equal(queue[place.slug].candidates.length,1);
+});
+
+test('broader partial-name evidence creates review leads but not publishing permission',()=>{
+ const candidate=openverseCandidate(place,{...work,title:'Farm Gate stalls in Hobart',tags:[]});
+ assert.ok(candidate);
+ assert.equal(candidate.rights,'independent-verification-needed');
+ assert.match(candidate.reason,/identity unverified/);
+ assert.equal(openverseCandidate(place,{...work,title:'Farm stalls in Hobart',tags:[]}),null);
 });

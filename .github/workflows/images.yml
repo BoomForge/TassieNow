@@ -10,6 +10,7 @@ on:
       - 'scripts/enrich-images.mjs'
       - 'scripts/enrich-geo-photos.mjs'
       - 'scripts/discover/lib/geotagged-photo-matches.mjs'
+      - 'scripts/discover/lib/openverse-photo-candidates.mjs'
       - 'scripts/discover/lib/image-enrichment-targets.mjs'
       - 'scripts/apply-verified-photo-picks.mjs'
       - 'scripts/discover/lib/verified-photo-picks.mjs'
@@ -75,7 +76,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: geo-photo-discovery
-          path: reports/geo-photo-enrichment.json
+          path: |
+            reports/geo-photo-enrichment.json
+            src/data/place-media-review.json
           retention-days: 30
       - name: Upgrade fallback images
         env:
@@ -124,6 +127,7 @@ jobs:
           cp src/data/places.json /tmp/tassienow-places-after-images.json
           cp src/data/events.json /tmp/tassienow-events-after-images.json
           cp src/data/event-media-review.json /tmp/tassienow-event-photo-review-after-images.json
+          cp src/data/place-media-review.json /tmp/tassienow-place-photo-review-after-images.json
           git config user.name "TassieNow Bot"
           git config user.email "actions@users.noreply.github.com"
           for attempt in 1 2 3 4; do
@@ -133,15 +137,16 @@ jobs:
             node scripts/reapply-image-upgrades.mjs /tmp/tassienow-places-before-images.json /tmp/tassienow-places-after-images.json
             node scripts/reapply-event-image-upgrades.mjs /tmp/tassienow-events-before-images.json /tmp/tassienow-events-after-images.json
             node scripts/reapply-event-review.mjs /tmp/tassienow-event-photo-review-after-images.json
+            node scripts/reapply-place-photo-review.mjs /tmp/tassienow-place-photo-review-after-images.json
             node scripts/prune-expired-events.mjs
             node scripts/rank-catalogue.mjs
             node scripts/catalogue-audit.mjs
             node scripts/validate-data.mjs
-            if git diff --quiet -- src/data/places.json src/data/events.json src/data/event-media-review.json src/data/catalogue-audit.json; then
+            if git diff --quiet -- src/data/places.json src/data/events.json src/data/event-media-review.json src/data/place-media-review.json src/data/catalogue-audit.json; then
               echo "No additional verified image improvements remain to publish."
               exit 0
             fi
-            git add src/data/places.json src/data/events.json src/data/event-media-review.json src/data/catalogue-audit.json
+            git add src/data/places.json src/data/events.json src/data/event-media-review.json src/data/place-media-review.json src/data/catalogue-audit.json
             git commit -m "data: improve licensed listing images"
             if git push origin HEAD:main; then
               # GITHUB_TOKEN pushes do not emit ordinary push-triggered
