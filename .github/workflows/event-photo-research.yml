@@ -9,6 +9,7 @@ on:
       - 'scripts/discover/lib/event-image-policy.mjs'
       - 'scripts/discover/lib/event-photo-recovery.mjs'
       - 'scripts/reapply-event-review.mjs'
+      - 'scripts/research-official-place-photos.mjs'
       - '.github/workflows/event-photo-research.yml'
   schedule:
     - cron: '17 20 * * *'
@@ -21,7 +22,7 @@ permissions:
 jobs:
   inspect-event-photos:
     runs-on: ubuntu-latest
-    timeout-minutes: 19
+    timeout-minutes: 22
     steps:
       - name: Checkout current main
         uses: actions/checkout@v4
@@ -36,8 +37,12 @@ jobs:
         run: cp src/data/events.json /tmp/tassienow-events-independent-before.json
       - name: Recover known official images first, then research missing near-term events
         env:
-          MAX_EVENT_IMAGE_ENRICH: '25'
+          MAX_EVENT_IMAGE_ENRICH: '15'
         run: node scripts/enrich-event-images.mjs
+      - name: Recover missing market and food photographs from original sources (review only)
+        env:
+          MAX_ORIGINAL_PLACE_PHOTOS: '10'
+        run: node scripts/research-official-place-photos.mjs
       - name: Validate event-image discovery evidence contract
         shell: bash
         run: |
@@ -60,6 +65,8 @@ jobs:
           path: |
             reports/event-image-discovery.json
             src/data/event-media-review.json
+            reports/original-place-photo-recovery.json
+            src/data/place-media-review.json
           retention-days: 30
       - name: Commit durable licensed photos and organiser-photo review candidates
         env:
@@ -68,6 +75,7 @@ jobs:
         run: |
           set -euo pipefail
           cp src/data/event-media-review.json /tmp/tassienow-event-media-candidates.json
+          cp src/data/place-media-review.json /tmp/tassienow-place-media-candidates.json
           cp src/data/events.json /tmp/tassienow-events-independent-after.json
           git config user.name "TassieNow Bot"
           git config user.email "actions@users.noreply.github.com"
@@ -75,20 +83,21 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
             node scripts/reapply-event-review.mjs /tmp/tassienow-event-media-candidates.json
+            node scripts/reapply-place-photo-review.mjs /tmp/tassienow-place-media-candidates.json
             node scripts/reapply-event-image-upgrades.mjs /tmp/tassienow-events-independent-before.json /tmp/tassienow-events-independent-after.json
             node scripts/catalogue-audit.mjs
             node scripts/validate-data.mjs
-            if git diff --quiet -- src/data/events.json src/data/event-media-review.json src/data/catalogue-audit.json; then
+            if git diff --quiet -- src/data/events.json src/data/event-media-review.json src/data/place-media-review.json src/data/catalogue-audit.json; then
               echo "All verified photos and rights-review candidates already persisted."
               exit 0
             fi
             photo_update=0
             if ! git diff --quiet -- src/data/events.json; then photo_update=1; fi
-            git add src/data/events.json src/data/event-media-review.json src/data/catalogue-audit.json
+            git add src/data/events.json src/data/event-media-review.json src/data/place-media-review.json src/data/catalogue-audit.json
             if [ "$photo_update" -eq 1 ]; then
               git commit -m "data: publish licensed independent event media"
             else
-              git commit -m "data: retain organiser-photo rights research [skip ci]"
+              git commit -m "data: retain original-image rights research [skip ci]"
             fi
             if git push origin HEAD:main; then
               if [ "$photo_update" -eq 1 ]; then

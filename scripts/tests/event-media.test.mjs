@@ -114,3 +114,12 @@ test('recovery prioritises confirmed source-image cases missing queue candidates
  assert.equal(whenReviewed.length,1);
  assert.equal(whenReviewed[0].slug,other.slug);
 });
+
+test('original business/market discovery uses image metadata only as unverified leads',async()=>{
+ const {researchOfficialEventImages}=await import('../discover/lib/event-photo-recovery.mjs');
+ const html='<meta property="og:image" content="https://cdn.example.org/photos/cygnet-market.jpg">';
+ const result=researchOfficialEventImages(html,'https://cygnetmarket.com.au/');
+ assert.equal(result.length,1);
+ assert.equal(result[0].rights,'permission-needed');
+ assert.equal(result[0].externalAssetHost,true);
+});
