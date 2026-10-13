@@ -8,6 +8,7 @@ const file = new URL('../src/data/event-media-review.json', import.meta.url);
 const [saved, current] = await Promise.all([savedPath, file].map(path => fs.readFile(path, 'utf8').then(JSON.parse)));
 let addedEvents = 0;
 let addedCandidates = 0;
+let sourceLeadsRecovered = 0;
 for (const [slug, entry] of Object.entries(saved)) {
   if (!entry?.name || !Array.isArray(entry.candidates)) continue;
   if (!current[slug]) {
@@ -17,6 +18,7 @@ for (const [slug, entry] of Object.entries(saved)) {
     continue;
   }
   const existing = current[slug];
+  if(entry.sourceEvidence && !existing.sourceEvidence){existing.sourceEvidence=entry.sourceEvidence;sourceLeadsRecovered++;}
   if (!Array.isArray(existing.candidates)) existing.candidates = [];
   const seen = new Set(existing.candidates.map(candidate => candidate.url));
   for (const candidate of entry.candidates) {
@@ -26,5 +28,5 @@ for (const [slug, entry] of Object.entries(saved)) {
     addedCandidates++;
   }
 }
-if (addedEvents || addedCandidates) await fs.writeFile(file, JSON.stringify(current, null, 2) + '\n');
-console.log(`Preserved ${addedEvents} new event reviews and ${addedCandidates} newly discovered image candidates.`);
+if (addedEvents || addedCandidates || sourceLeadsRecovered) await fs.writeFile(file, JSON.stringify(current, null, 2) + '\n');
+console.log(`Preserved ${addedEvents} new event reviews and ${addedCandidates} newly discovered image candidates; ${sourceLeadsRecovered} known-source leads restored.`);

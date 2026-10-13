@@ -45,3 +45,13 @@ The next normal events or image research run will apply these approved candidate
 ## Operational acceptance
 
 A research run can successfully discover 200+ previews and publish zero images. Treat these as different outcomes. Confirm `src/data/events.json`, the freshly regenerated `src/data/catalogue-audit.json`, and the actual public event-card/detail pages before reporting a coverage gain. Correctly labelled older-edition photos do not become 2026 photographs just because they illustrate a 2026 event.
+
+## Daily targeted recovery of missing event images
+
+The existing `.github/workflows/event-photo-research.yml` run at **20:17 UTC** is the owner-approved **25-listing recovery slot** (not a new schedule or task). It checks 15 near-term events (known original-image sources first) and 10 missing-photo places (markets and food businesses prioritised) per occurrence. The run writes `reports/event-image-discovery.json` with `checkedDetails`, licensed `publishedImages`, `needsPermission`, `sourceDetectedNoCandidate`, and fetch errors.
+
+The Huon Valley Council `Beauty and the Beast JR` official page is a regression case: `src/data/auto-photo-source-links.json` records an OG-image detection but `events.json` still has category artwork. The recovery slot must select this kind of listing; if the source image is discovered it must appear as a permission-needed candidate. If it cannot extract the URL, retain the official source link in the event review queue as `sourceEvidence` instead of silently abandoning the image.
+
+Images hosted on official domains and third-party media CDNs are **leads, not grants**. Source-photo discovery never implies that the publisher owns the image. The existing explicit permission record and site photo verification remain mandatory for publishing organiser-owned imagery. Do not falsely report candidates as published photographs.
+
+The same event photo recovery workflow also runs `scripts/research-official-place-photos.mjs` on 10 place records with already-confirmed source images. These candidates are added to `src/data/place-media-review.json` with `independent-verification-needed`, never automatically published. The original-page result, candidate count and extraction blockers are saved in `reports/original-place-photo-recovery.json`. It deliberately does not launch a duplicate ChatGPT automation or change existing Pixelwolf/Milo duties.

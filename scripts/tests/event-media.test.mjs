@@ -82,3 +82,44 @@ test('event-specific photographs supersede contextual images but not in reverse'
  assert.equal(shouldUpgradeEventImage(context,original.image),true);
  assert.equal(shouldUpgradeEventImage(original.image,context),false);
 });
+
+test('official event photo recovery keeps externally hosted and lazy source images review-only', async()=>{
+ const {researchOfficialEventImages}=await import('../discover/lib/event-photo-recovery.mjs');
+ const html='<meta property="og:image" content="https://images.example.net/theatre.webp">'+
+ '<img data-src="/wp-content/uploads/beauty-and-beast-jr.jpg" alt="Beauty and the Beast JR">'+
+ '<img srcset="/tiny.webp 200w, /large.webp 1200w" alt="Official event">'+
+ '<img src="/favicon.png" alt="logo">';
+ const found=researchOfficialEventImages(html,'https://www.huonvalley.tas.gov.au/event/beauty-and-the-beast-jr/');
+ assert.ok(found.some(c=>c.url==='https://images.example.net/theatre.webp'&&c.externalAssetHost===true));
+ assert.ok(found.some(c=>c.url.endsWith('/wp-content/uploads/beauty-and-beast-jr.jpg')));
+ assert.ok(found.some(c=>c.url.endsWith('/large.webp')));
+ assert.ok(found.every(c=>c.rights==='permission-needed'));
+ assert.ok(!found.some(c=>c.url.endsWith('/favicon.png')));
+});
+test('recovery prioritises confirmed source-image cases missing queue candidates',async()=>{
+ const {selectEventPhotoRecoveryTargets}=await import('../discover/lib/event-photo-recovery.mjs');
+ const beauty={slug:'beauty-and-the-beast-jr-2026-10-12-huonville',
+  status:'active',startDate:'2026-10-12',endDate:'2026-10-17'};
+ const other={slug:'older',status:'active',startDate:'2026-10-13',endDate:'2026-10-15'};
+ const future={slug:'future',status:'active',startDate:'2026-12-01',endDate:'2026-12-02'};
+ const sourceLinks={[beauty.slug]:{evidence:{imageFoundOnPage:true}}};
+ const selected=selectEventPhotoRecoveryTargets([other,beauty,future],{
+  today:'2026-10-13',limit:2,sourceLinks,review:{},slot:1});
+ assert.equal(selected[0].slug,beauty.slug);
+ assert.equal(selected.length,2);
+ const whenReviewed=selectEventPhotoRecoveryTargets([other,beauty],{
+  today:'2026-10-13',limit:1,sourceLinks,review:{
+    [beauty.slug]:{candidates:[{url:'https://example.org/photo.jpg'}]}
+  },slot:0});
+ assert.equal(whenReviewed.length,1);
+ assert.equal(whenReviewed[0].slug,other.slug);
+});
+
+test('original business/market discovery uses image metadata only as unverified leads',async()=>{
+ const {researchOfficialEventImages}=await import('../discover/lib/event-photo-recovery.mjs');
+ const html='<meta property="og:image" content="https://cdn.example.org/photos/cygnet-market.jpg">';
+ const result=researchOfficialEventImages(html,'https://cygnetmarket.com.au/');
+ assert.equal(result.length,1);
+ assert.equal(result[0].rights,'permission-needed');
+ assert.equal(result[0].externalAssetHost,true);
+});
