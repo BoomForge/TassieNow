@@ -17,7 +17,6 @@ on:
       - 'scripts/enrich-wikidata-images.mjs'
       - 'scripts/discover/lib/event-media.mjs'
       - 'scripts/discover/lib/event-image-policy.mjs'
-      - 'src/data/approved-remote-images.json'
       - 'scripts/apply-approved-remote-images.mjs'
       - 'scripts/discover/lib/approved-remote-photos.mjs'
       - 'scripts/discover/lib/verified-event-venues.mjs'
