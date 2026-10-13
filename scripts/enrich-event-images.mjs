@@ -150,7 +150,7 @@ const incomplete=events.filter(e=>e.status==='active'&&e.endDate>=today&&eventIm
 // Recovery prioritises known first-party image discoveries which previously
 // yielded no candidate, then rotates near-term and future events.
 const day=Math.floor(Date.now()/86400000);
-const targets=selectEventPhotoRecoveryTargets(incomplete.map(e=>({...e,needsRecovery:true})),{
+const targets=selectEventPhotoRecoveryTargets(incomplete,{
   today,limit:MAX,sourceLinks:originalSources,review:oldQueue,slot:day
 });
 const report={checkedAt:new Date().toISOString(),approvedOrganiserImages:approved,venueContextAdded,performerContextAdded,historicalEventsAdded,illustrativePhotosAdded,active:events.filter(e=>e.status==='active'&&e.endDate>=today).length,missingBefore:incomplete.length,checked:targets.length,published:0,publishedImages:[],organiserCandidates:0,needsPermission:[],sourceDetectedNoCandidate:[],sourceErrors:[],checkedDetails:[],unresolved:[],errors:[]};
