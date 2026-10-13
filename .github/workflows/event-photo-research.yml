@@ -1,4 +1,4 @@
-name: Check independent event photo discovery
+name: Recover missing event photographs
 
 on:
   push:
@@ -7,6 +7,8 @@ on:
       - 'scripts/enrich-event-images.mjs'
       - 'scripts/discover/lib/event-media.mjs'
       - 'scripts/discover/lib/event-image-policy.mjs'
+      - 'scripts/discover/lib/event-photo-recovery.mjs'
+      - 'scripts/reapply-event-review.mjs'
       - '.github/workflows/event-photo-research.yml'
   schedule:
     - cron: '17 20 * * *'
@@ -19,7 +21,7 @@ permissions:
 jobs:
   inspect-event-photos:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 19
     steps:
       - name: Checkout current main
         uses: actions/checkout@v4
@@ -32,9 +34,9 @@ jobs:
           node-version: '22'
       - name: Save event photo baseline before independent research
         run: cp src/data/events.json /tmp/tassienow-events-independent-before.json
-      - name: Independently examine near-term event photos and organiser sources
+      - name: Recover known official images first, then research missing near-term events
         env:
-          MAX_EVENT_IMAGE_ENRICH: '24'
+          MAX_EVENT_IMAGE_ENRICH: '25'
         run: node scripts/enrich-event-images.mjs
       - name: Validate event-image discovery evidence contract
         shell: bash
@@ -42,10 +44,12 @@ jobs:
           node --input-type=module -e '
             import fs from "node:fs";
             const r=JSON.parse(fs.readFileSync("reports/event-image-discovery.json","utf8"));
-            if(!r.checkedAt||!Number.isInteger(r.checked)||(r.checked===0&&r.missingAfter>0)||!Array.isArray(r.unresolved)||!Array.isArray(r.needsPermission))
+            if(!r.checkedAt||!Number.isInteger(r.checked)||(r.checked===0&&r.missingAfter>0)||!Array.isArray(r.unresolved)||!Array.isArray(r.needsPermission)||
+              !Array.isArray(r.checkedDetails)||r.checkedDetails.length!==r.checked)
               throw Error("No usable event-image research evidence. Check upstream source access.");
             console.log("Event images checked: "+r.checked+"; licensed photographs found: "+r.published+
               "; organiser assets awaiting rights review: "+r.organiserCandidates+
+              "; known-source images needing extraction: "+r.sourceDetectedNoCandidate.length+
               "; unresolved matches: "+r.unresolved.length+".");
           '
       - name: Preserve independently observed event media evidence
