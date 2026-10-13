@@ -19,6 +19,29 @@
         "identity": "candidate-not-verified",
         "reason": "Exact listing and town in source title",
         "observedAt": "2026-10-11T04:02:30.077Z"
+      },
+      {
+        "id": "commons-geo:97246674",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Ross_Bakery_20201113-045.jpg/1280px-Ross_Bakery_20201113-045.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ross_Bakery_20201113-045.jpg",
+        "title": "Ross Bakery 20201113-045.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "ross",
+            "village"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
       }
     ]
   },
@@ -190,6 +213,50 @@
         "identity": "candidate-not-verified",
         "reason": "Exact listing and town in source title",
         "observedAt": "2026-10-11T04:28:23.679Z"
+      },
+      {
+        "id": "commons-geo:27277655",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Franklin%2C_Tasmania.jpg/1280px-Franklin%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Franklin,_Tasmania.jpg",
+        "title": "Franklin, Tasmania.jpg",
+        "credit": "Canley",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "franklin"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:129226035",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Franklin%2C_Tasmania_banner.jpg/1280px-Franklin%2C_Tasmania_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Franklin,_Tasmania_banner.jpg",
+        "title": "Franklin, Tasmania banner.jpg",
+        "credit": "Canley",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "franklin"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
       }
     ]
   },
@@ -458,6 +525,884 @@
         "identity": "candidate-not-verified",
         "reason": "Place and town in indexed metadata",
         "observedAt": "2026-10-12T00:39:14.761Z"
+      }
+    ]
+  },
+  "hobart-twilight-market-brooke-street-pier-hobart": {
+    "name": "Hobart Twilight Market Brooke Street Pier",
+    "town": "Hobart",
+    "candidates": [
+      {
+        "id": "commons-geo:64379080",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Custom_House_Hotel_20171118-023.jpg/1280px-Custom_House_Hotel_20171118-023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Custom_House_Hotel_20171118-023.jpg",
+        "title": "Custom House Hotel 20171118-023.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "hobart",
+            "street"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:64379386",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Mission_to_Seafarers_Hobart_20171118-024.jpg/1280px-Mission_to_Seafarers_Hobart_20171118-024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mission_to_Seafarers_Hobart_20171118-024.jpg",
+        "title": "Mission to Seafarers Hobart 20171118-024.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "hobart",
+            "street"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:64545477",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Registry_of_Deeds_Hobart_20171120-007.jpg/1280px-Registry_of_Deeds_Hobart_20171120-007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Registry_of_Deeds_Hobart_20171120-007.jpg",
+        "title": "Registry of Deeds Hobart 20171120-007.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "hobart",
+            "street"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "cygnet-market": {
+    "name": "Cygnet Market",
+    "town": "Cygnet",
+    "candidates": [
+      {
+        "id": "commons-geo:97271027",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/House_in_Cygnet_20201114-006.jpg/1280px-House_in_Cygnet_20201114-006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:House_in_Cygnet_20201114-006.jpg",
+        "title": "House in Cygnet 20201114-006.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "cygnet"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:97271028",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/St_James_Church%2C_Cygnet_20201114-007.jpg/1280px-St_James_Church%2C_Cygnet_20201114-007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:St_James_Church,_Cygnet_20201114-007.jpg",
+        "title": "St James Church, Cygnet 20201114-007.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "cygnet"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:97298354",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Former_ANZ_Bank_Cygnet_20201114-008.jpg/1280px-Former_ANZ_Bank_Cygnet_20201114-008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Former_ANZ_Bank_Cygnet_20201114-008.jpg",
+        "title": "Former ANZ Bank Cygnet 20201114-008.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "cygnet"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "new-norfolk-market": {
+    "name": "New Norfolk Market",
+    "town": "New Norfolk",
+    "candidates": [
+      {
+        "id": "commons-geo:64742149",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/New_Norfolk_War_Memorial_20171121-001.jpg/1280px-New_Norfolk_War_Memorial_20171121-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:New_Norfolk_War_Memorial_20171121-001.jpg",
+        "title": "New Norfolk War Memorial 20171121-001.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "norfolk"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:64742337",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Derwent_Valley_Council_Chambers_20171121-002.jpg/1280px-Derwent_Valley_Council_Chambers_20171121-002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Derwent_Valley_Council_Chambers_20171121-002.jpg",
+        "title": "Derwent Valley Council Chambers 20171121-002.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "norfolk"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "richmond-village-market": {
+    "name": "Richmond Village Market",
+    "town": "Richmond",
+    "candidates": [
+      {
+        "id": "commons-geo:127987697",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/The_Village_Store.jpg/1280px-The_Village_Store.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Village_Store.jpg",
+        "title": "The Village Store.jpg",
+        "credit": "Bracteantha",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "richmond",
+            "village"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "st-helens-market": {
+    "name": "St Helens Market",
+    "town": "St Helens",
+    "candidates": [
+      {
+        "id": "commons-geo:80957998",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Steam_Engine_St_Helens_20190724-004.jpg/1280px-Steam_Engine_St_Helens_20190724-004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Steam_Engine_St_Helens_20190724-004.jpg",
+        "title": "Steam Engine St Helens 20190724-004.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "helens"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "george-town-takeaways": {
+    "name": "George Town Takeaways",
+    "town": "George Town",
+    "candidates": [
+      {
+        "id": "commons-geo:28457026",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Chickenfeed-George-Town-20070421-007.jpg/1280px-Chickenfeed-George-Town-20070421-007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Chickenfeed-George-Town-20070421-007.jpg",
+        "title": "Chickenfeed-George-Town-20070421-007.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "george",
+            "town"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:28457027",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Chinese-Restaurant-George-Town-20070421-010.jpg/1280px-Chinese-Restaurant-George-Town-20070421-010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Chinese-Restaurant-George-Town-20070421-010.jpg",
+        "title": "Chinese-Restaurant-George-Town-20070421-010.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "george",
+            "town"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:28457031",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Shops-George-Town-20070421-006.jpg/1280px-Shops-George-Town-20070421-006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Shops-George-Town-20070421-006.jpg",
+        "title": "Shops-George-Town-20070421-006.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "george",
+            "town"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "harris-cafe": {
+    "name": "Harris Cafe",
+    "town": "Burnie",
+    "candidates": [
+      {
+        "id": "commons-geo:38750958",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Zap-Fitness-Burnie-20150306-001.jpg/1280px-Zap-Fitness-Burnie-20150306-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Zap-Fitness-Burnie-20150306-001.jpg",
+        "title": "Zap-Fitness-Burnie-20150306-001.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "harris"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "kings-meadows-seafood": {
+    "name": "Kings Meadows Seafood",
+    "town": "Launceston",
+    "candidates": [
+      {
+        "id": "commons-geo:167945636",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Nissan_Leaf_at_a_Chargefox_charging_station_in_Kings_Meadows%2C_Tasmania.jpg/1280px-Nissan_Leaf_at_a_Chargefox_charging_station_in_Kings_Meadows%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Nissan_Leaf_at_a_Chargefox_charging_station_in_Kings_Meadows,_Tasmania.jpg",
+        "title": "Nissan Leaf at a Chargefox charging station in Kings Meadows, Tasmania.jpg",
+        "credit": "Chuq",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "kings",
+            "meadows"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "wineglass-bay-lookout": {
+    "name": "Wineglass Bay Lookout",
+    "town": "Coles Bay",
+    "candidates": [
+      {
+        "id": "commons-geo:8725603",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Wineglass_Bay_from_Lookout.jpg/1280px-Wineglass_Bay_from_Lookout.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Wineglass_Bay_from_Lookout.jpg",
+        "title": "Wineglass Bay from Lookout.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "wineglass"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:8791254",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Wineglass_Bay_from_Lookout_edit.jpg/1280px-Wineglass_Bay_from_Lookout_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Wineglass_Bay_from_Lookout_edit.jpg",
+        "title": "Wineglass Bay from Lookout edit.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "wineglass"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:8810733",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Wineglass_Bay_from_Lookout_crop.jpg/1280px-Wineglass_Bay_from_Lookout_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Wineglass_Bay_from_Lookout_crop.jpg",
+        "title": "Wineglass Bay from Lookout crop.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "wineglass"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "cape-raoul-lookout": {
+    "name": "Cape Raoul Lookout",
+    "town": "Port Arthur",
+    "candidates": [
+      {
+        "id": "commons-geo:7283679",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Cape_Raoul_from_Lookout.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
+        "title": "Cape Raoul from Lookout.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "cape",
+            "raoul"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:7283697",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Hakea_epiglottis.jpg/1280px-Hakea_epiglottis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hakea_epiglottis.jpg",
+        "title": "Hakea epiglottis.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "cape",
+            "raoul"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "huon-pine-walk-lookout": {
+    "name": "Huon Pine Walk Lookout",
+    "town": "Savage River",
+    "candidates": [
+      {
+        "id": "commons-geo:138416444",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Lagarostrobos_franklinii_248615719.jpg/1280px-Lagarostrobos_franklinii_248615719.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Lagarostrobos_franklinii_248615719.jpg",
+        "title": "Lagarostrobos franklinii 248615719.jpg",
+        "credit": "Matt Berger",
+        "licence": "CC BY 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "huon",
+            "pine"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "hastings-caves-and-thermal-springs": {
+    "name": "Hastings Caves and Thermal Springs",
+    "town": "Hastings",
+    "candidates": [
+      {
+        "id": "commons-geo:19937572",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Hastings_Thermal_Pool_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hastings_Thermal_Pool_Tasmania.jpg",
+        "title": "Hastings Thermal Pool Tasmania.jpg",
+        "credit": "Photnart",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "hastings",
+            "thermal"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "stanley-the-nut": {
+    "name": "The Nut State Reserve",
+    "town": "Stanley",
+    "candidates": [
+      {
+        "id": "commons-geo:79271302",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/The_Nut_Chairlift.jpg/1280px-The_Nut_Chairlift.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Nut_Chairlift.jpg",
+        "title": "The Nut Chairlift.jpg",
+        "credit": "JP1681",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "state"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "west-coast-heritage-centre": {
+    "name": "West Coast Heritage Centre",
+    "town": "Zeehan",
+    "candidates": [
+      {
+        "id": "commons-geo:10422585",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Locomotive_West_Coast_Pioneers_Museum_Zeehan.JPG/1280px-Locomotive_West_Coast_Pioneers_Museum_Zeehan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Locomotive_West_Coast_Pioneers_Museum_Zeehan.JPG",
+        "title": "Locomotive West Coast Pioneers Museum Zeehan.JPG",
+        "credit": "Bluedawe",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "west",
+            "coast"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:10422590",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Locomotives_West_Coast_Pioneers_Museum_Zeehan.JPG/1280px-Locomotives_West_Coast_Pioneers_Museum_Zeehan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Locomotives_West_Coast_Pioneers_Museum_Zeehan.JPG",
+        "title": "Locomotives West Coast Pioneers Museum Zeehan.JPG",
+        "credit": "Bluedawe",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "west",
+            "coast"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:56922542",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Zeehan_Banner.jpg/1280px-Zeehan_Banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Zeehan_Banner.jpg",
+        "title": "Zeehan Banner.jpg",
+        "credit": "Bluedawe",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "west",
+            "coast"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "wings-wildlife-park": {
+    "name": "Wings Wildlife Park",
+    "town": "Gunns Plains",
+    "candidates": [
+      {
+        "id": "commons-geo:64467623",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Not_a_bear_%2835557986011%29.jpg/1280px-Not_a_bear_%2835557986011%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Not_a_bear_(35557986011).jpg",
+        "title": "Not a bear (35557986011).jpg",
+        "credit": "Steven Penton  from Bakers Beach, Tasmania Australia",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "wings",
+            "wildlife"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "don-river-railway-preservation-society": {
+    "name": "Don River Railway Preservation Society",
+    "town": "Devonport",
+    "candidates": [
+      {
+        "id": "commons-geo:33070781",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Former_TGR_diesel_Locomotive_Y6_at_Don_River_Railway.JPG/1280px-Former_TGR_diesel_Locomotive_Y6_at_Don_River_Railway.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Former_TGR_diesel_Locomotive_Y6_at_Don_River_Railway.JPG",
+        "title": "Former TGR diesel Locomotive Y6 at Don River Railway.JPG",
+        "credit": "EurovisionNim",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "river",
+            "railway"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:59353420",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Four_restored_locomotives_at_the_Don_River_Railway.jpg/1280px-Four_restored_locomotives_at_the_Don_River_Railway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Four_restored_locomotives_at_the_Don_River_Railway.jpg",
+        "title": "Four restored locomotives at the Don River Railway.jpg",
+        "credit": "Michael Coghlan  from Adelaide, Australia",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "river",
+            "railway"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:59353441",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Railway_Museum_-_Don_%2825665542364%29.jpg/1280px-Railway_Museum_-_Don_%2825665542364%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Railway_Museum_-_Don_(25665542364).jpg",
+        "title": "Railway Museum - Don (25665542364).jpg",
+        "credit": "Michael Coghlan  from Adelaide, Australia",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "river",
+            "railway"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "blackmans-bay-beach": {
+    "name": "Blackmans Bay Beach",
+    "town": "Tasmania",
+    "candidates": [
+      {
+        "id": "commons-geo:148269046",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/2023_Triumph_Tiger_1200_Rally_Pro.jpg/1280px-2023_Triumph_Tiger_1200_Rally_Pro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:2023_Triumph_Tiger_1200_Rally_Pro.jpg",
+        "title": "2023 Triumph Tiger 1200 Rally Pro.jpg",
+        "credit": "Tasjamescullen",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "blackmans"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    ]
+  },
+  "bruny-island-cruises": {
+    "name": "Bruny Island Cruises",
+    "town": "Adventure Bay",
+    "candidates": [
+      {
+        "id": "commons-geo:10794516",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Melanodryas_vittata.jpg/1280px-Melanodryas_vittata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Melanodryas_vittata.jpg",
+        "title": "Melanodryas vittata.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "bruny",
+            "island"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:12200793",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Cacomantis_flabelliformis.jpg/1280px-Cacomantis_flabelliformis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cacomantis_flabelliformis.jpg",
+        "title": "Cacomantis flabelliformis.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "bruny",
+            "island"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      },
+      {
+        "id": "commons-geo:12200830",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Melanodryas_vittata_Bruny.jpg/1280px-Melanodryas_vittata_Bruny.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Melanodryas_vittata_Bruny.jpg",
+        "title": "Melanodryas vittata Bruny.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "bruny",
+            "island"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T01:38:52.467Z"
       }
     ]
   }

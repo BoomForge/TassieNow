@@ -1773,6 +1773,130 @@
     "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
   },
   {
+    "slug": "wineglass-bay-lookout",
+    "name": "Wineglass Bay Lookout",
+    "town": "Coles Bay",
+    "region": "East Coast",
+    "latitude": -42.1549395,
+    "longitude": 148.2935732,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Wineglass Bay Lookout is an official Parks Tasmania walk. Grade 3.",
+    "website": "https://parks.tas.gov.au/Pages/Wineglass-Bay-Lookout.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/321396911",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/321396911",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "We 09:00-11:00; Mo-Su 09:00-16:00",
+    "phone": "03 6256 7000",
+    "email": "Freycinet@parks.tas.gov.au",
+    "address": null,
+    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
+        "checkedAt": "2026-10-13"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
+        "checkedAt": "2026-10-13"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-13",
+    "lastDetailsChecked": "2026-10-13",
+    "lastOsmDetailsChecked": "2026-10-13",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Scenery_of_Wineglass_Bay_Lookout.jpg/1280px-Scenery_of_Wineglass_Bay_Lookout.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Wineglass Bay Lookout, Coles Bay, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "风刀逸青",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scenery_of_Wineglass_Bay_Lookout.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Scenery of Wineglass Bay Lookout.jpg",
+        "listingName": "Wineglass Bay Lookout",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Wineglass%20Bay%20Lookout%20Coles%20Bay%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-13"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 3
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-12T23:47:40.824Z"
+    },
+    "qualityScore": 100,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "real-image",
+      "opening-hours",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-13",
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout"
+    },
+    "schedule": {
+      "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "09:00",
+      "endTime": "16:00",
+      "notes": "see details Closed area: Freycinet National Park Visitors Centre Applies from 14/10/2026 The ​Freycinet National Park Visitors Centre is closed on Wednesday 14 October 2026 from 9am to&#160;11am."
+    }
+  },
+  {
     "slug": "queen-victoria-museum-and-art-gallery",
     "name": "Queen Victoria Museum and Art Gallery",
     "town": "Launceston",
@@ -5598,120 +5722,6 @@
     }
   },
   {
-    "slug": "wineglass-bay-lookout",
-    "name": "Wineglass Bay Lookout",
-    "town": "Coles Bay",
-    "region": "East Coast",
-    "latitude": -42.1549395,
-    "longitude": 148.2935732,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Wineglass Bay Lookout is an official Parks Tasmania walk. Grade 3.",
-    "website": "https://parks.tas.gov.au/Pages/Wineglass-Bay-Lookout.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/321396911",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/321396911",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "We 09:00-11:00; Mo-Su 09:00-16:00",
-    "phone": "03 6256 7000",
-    "email": "Freycinet@parks.tas.gov.au",
-    "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "openingHours": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
-        "checkedAt": "2026-10-13"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
-        "checkedAt": "2026-10-13"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-13",
-    "lastDetailsChecked": "2026-10-13",
-    "lastOsmDetailsChecked": "2026-10-13",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Wineglass Bay Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Wineglass%20Bay%20Lookout%20Coles%20Bay%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
-      "type": "government",
-      "checkedAt": "2026-10-13"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 3
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-12T23:47:40.824Z"
-    },
-    "qualityScore": 88,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "opening-hours",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-13",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout"
-    },
-    "schedule": {
-      "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "09:00",
-      "endTime": "16:00",
-      "notes": "see details Closed area: Freycinet National Park Visitors Centre Applies from 14/10/2026 The ​Freycinet National Park Visitors Centre is closed on Wednesday 14 October 2026 from 9am to&#160;11am."
-    }
-  },
-  {
     "name": "Liffey Valley Market",
     "slug": "liffey-valley-market-liffey",
     "town": "Liffey",
@@ -6039,6 +6049,119 @@
       "status": "ok",
       "checkedAt": "2026-10-13",
       "url": "https://tasmaniazoo.com.au/"
+    }
+  },
+  {
+    "slug": "west-coast-heritage-centre",
+    "name": "West Coast Heritage Centre",
+    "town": "Zeehan",
+    "region": "West Coast",
+    "latitude": -41.882722,
+    "longitude": 145.335686,
+    "categories": [
+      "Museums",
+      "Art & Culture",
+      "Rainy Day"
+    ],
+    "summary": "Museum in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
+    "website": "http://wchczeehan.com.au/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q24191242",
+    "sourceType": "wikidata",
+    "sourceId": "Q24191242",
+    "wikidata": "Q24191242",
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Oceana_headframe_Zeehan_20171121-064.jpg/1280px-Oceana_headframe_Zeehan_20171121-064.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "West Coast Heritage Centre, Zeehan, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oceana_headframe_Zeehan_20171121-064.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Oceana headframe Zeehan 20171121-064.jpg",
+        "listingName": "West Coast Heritage Centre",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-12T23:48:32.589Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=West%20Coast%20Heritage%20Centre%20Zeehan%20Tasmania"
+      }
+    ],
+    "bookingUrl": "https://wchczeehan.com.au/about-the-centre/",
+    "detailSources": {
+      "bookingUrl": {
+        "type": "official-website",
+        "url": "https://wchczeehan.com.au/about-the-centre/",
+        "checkedAt": "2026-10-13"
+      },
+      "email": {
+        "type": "official-website",
+        "url": "https://wchczeehan.com.au/",
+        "checkedAt": "2026-10-09"
+      },
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://wchczeehan.com.au/plan-your-visit/",
+        "checkedAt": "2026-10-13"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://wchczeehan.com.au/plan-your-visit/exploring-the-area/",
+        "checkedAt": "2026-10-13"
+      }
+    },
+    "email": "info@wchczeehan.com.au",
+    "openingHours": "Mo-Su 00:00-12:00",
+    "schedule": {
+      "summary": "Every Saturday at 9:00am.",
+      "sourceUrl": "https://wchczeehan.com.au/plan-your-visit/exploring-the-area/",
+      "frequency": "weekly",
+      "daysOfWeek": [
+        "Saturday"
+      ],
+      "startTime": "09:00"
+    },
+    "lastDetailsChecked": "2026-10-13",
+    "qualityScore": 85,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "wikidata",
+      "real-image",
+      "opening-hours",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://wchczeehan.com.au/",
+      "source": "verified-website",
+      "checkedAt": "2026-10-13"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-13",
+      "url": "https://wchczeehan.com.au/"
     }
   },
   {
@@ -9620,6 +9743,113 @@
     "lastWikidataLinkChecked": "2026-10-13"
   },
   {
+    "slug": "wings-wildlife-park",
+    "name": "Wings Wildlife Park",
+    "town": "Gunns Plains",
+    "region": "North West",
+    "latitude": -41.262737,
+    "longitude": 146.0442708,
+    "categories": [
+      "Wildlife",
+      "Family"
+    ],
+    "summary": "Wildlife attraction in or near Gunns Plains.",
+    "website": "https://www.wingswildlifepark.com.au/",
+    "sourceUrl": "https://www.openstreetmap.org/way/932277888",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/932277888",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Mo-Su 10:00-16:00",
+    "phone": "+61 3 6429 1151",
+    "email": null,
+    "address": "137 Winduss Road, Gunns Plains, TAS, 7315",
+    "bookingUrl": null,
+    "fee": "yes",
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "openingHours": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/932277888",
+        "checkedAt": "2026-10-12"
+      },
+      "phone": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/932277888",
+        "checkedAt": "2026-10-12"
+      },
+      "address": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/932277888",
+        "checkedAt": "2026-10-12"
+      },
+      "fee": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/932277888",
+        "checkedAt": "2026-10-12"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Not_a_bear_%2835557986011%29.jpg/1280px-Not_a_bear_%2835557986011%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Wings Wildlife Park, Gunns Plains, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "Steven Penton  from Bakers Beach, Tasmania Australia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Not_a_bear_(35557986011).jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Not a bear (35557986011).jpg",
+        "listingName": "Wings Wildlife Park",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-13T01:38:52.467Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Wings%20Wildlife%20Park%20Gunns%20Plains%20Tasmania"
+      }
+    ],
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-12T23:48:25.234Z"
+    },
+    "qualityScore": 74,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "real-image",
+      "opening-hours",
+      "address",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "officialSourceCheck": {
+      "status": "identity-mismatch",
+      "checkedAt": "2026-10-13",
+      "url": "https://www.wingswildlifepark.com.au/"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12",
+    "lastWikidataLinkChecked": "2026-10-13"
+  },
+  {
     "slug": "harvest-launceston-community-farmers-market",
     "name": "Harvest Launceston Community Farmers Market",
     "town": "Launceston",
@@ -11888,109 +12118,6 @@
     "wikidataImages": [
       "Tasmanian Transport Museum.jpg"
     ]
-  },
-  {
-    "slug": "west-coast-heritage-centre",
-    "name": "West Coast Heritage Centre",
-    "town": "Zeehan",
-    "region": "West Coast",
-    "latitude": -41.882722,
-    "longitude": 145.335686,
-    "categories": [
-      "Museums",
-      "Art & Culture",
-      "Rainy Day"
-    ],
-    "summary": "Museum in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": "http://wchczeehan.com.au/",
-    "sourceUrl": "https://www.wikidata.org/wiki/Q24191242",
-    "sourceType": "wikidata",
-    "sourceId": "Q24191242",
-    "wikidata": "Q24191242",
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "image": {
-      "url": "/images/categories/indoor.svg",
-      "alt": "West Coast Heritage Centre category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-12T23:48:32.589Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=West%20Coast%20Heritage%20Centre%20Zeehan%20Tasmania"
-      }
-    ],
-    "bookingUrl": "https://wchczeehan.com.au/about-the-centre/",
-    "detailSources": {
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://wchczeehan.com.au/about-the-centre/",
-        "checkedAt": "2026-10-13"
-      },
-      "email": {
-        "type": "official-website",
-        "url": "https://wchczeehan.com.au/",
-        "checkedAt": "2026-10-09"
-      },
-      "openingHours": {
-        "type": "official-website",
-        "url": "https://wchczeehan.com.au/plan-your-visit/",
-        "checkedAt": "2026-10-13"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://wchczeehan.com.au/plan-your-visit/exploring-the-area/",
-        "checkedAt": "2026-10-13"
-      }
-    },
-    "email": "info@wchczeehan.com.au",
-    "openingHours": "Mo-Su 00:00-12:00",
-    "schedule": {
-      "summary": "Every Saturday at 9:00am.",
-      "sourceUrl": "https://wchczeehan.com.au/plan-your-visit/exploring-the-area/",
-      "frequency": "weekly",
-      "daysOfWeek": [
-        "Saturday"
-      ],
-      "startTime": "09:00"
-    },
-    "lastDetailsChecked": "2026-10-13",
-    "qualityScore": 67,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "wikidata",
-      "opening-hours",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://wchczeehan.com.au/",
-      "source": "verified-website",
-      "checkedAt": "2026-10-13"
-    },
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-13",
-      "url": "https://wchczeehan.com.au/"
-    }
   },
   {
     "slug": "deloraine-showgrounds-market",
@@ -26672,103 +26799,6 @@
     ],
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Hobart_Zoo",
     "lastWikidataChecked": "2026-10-06"
-  },
-  {
-    "slug": "wings-wildlife-park",
-    "name": "Wings Wildlife Park",
-    "town": "Gunns Plains",
-    "region": "North West",
-    "latitude": -41.262737,
-    "longitude": 146.0442708,
-    "categories": [
-      "Wildlife",
-      "Family"
-    ],
-    "summary": "Wildlife attraction in or near Gunns Plains.",
-    "website": "https://www.wingswildlifepark.com.au/",
-    "sourceUrl": "https://www.openstreetmap.org/way/932277888",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/932277888",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Mo-Su 10:00-16:00",
-    "phone": "+61 3 6429 1151",
-    "email": null,
-    "address": "137 Winduss Road, Gunns Plains, TAS, 7315",
-    "bookingUrl": null,
-    "fee": "yes",
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "openingHours": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/932277888",
-        "checkedAt": "2026-10-12"
-      },
-      "phone": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/932277888",
-        "checkedAt": "2026-10-12"
-      },
-      "address": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/932277888",
-        "checkedAt": "2026-10-12"
-      },
-      "fee": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/932277888",
-        "checkedAt": "2026-10-12"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "/images/categories/wildlife.svg",
-      "alt": "Wings Wildlife Park category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Wings%20Wildlife%20Park%20Gunns%20Plains%20Tasmania"
-      }
-    ],
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-12T23:48:25.234Z"
-    },
-    "qualityScore": 56,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "opening-hours",
-      "address",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
-    "officialSourceCheck": {
-      "status": "identity-mismatch",
-      "checkedAt": "2026-10-13",
-      "url": "https://www.wingswildlifepark.com.au/"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12",
-    "lastWikidataLinkChecked": "2026-10-13"
   },
   {
     "slug": "penguin-undercover-market",
