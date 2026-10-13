@@ -18,12 +18,21 @@ const publicPhotos=places.filter(p=>p.status==='active'&&p.visibility!=='suppres
   p.image && !p.image.isFallback && /^https:\/\//.test(p.image.url||'') &&
   p.image.attribution && p.image.sourceUrl && p.image.license);
 const curated=publicPhotos.filter(p=>p.image.sourceMethod==='verified-curated');
-const other=publicPhotos.filter(p=>p.image.sourceMethod!=='verified-curated')
+// Newly AI-approved external images must receive actual live acceptance,
+// not disappear inside a rotating sample of hundreds of older Commons photos.
+const approvedRemote=publicPhotos.filter(p=>p.image.sourceMethod==='ai-verified-remote')
   .sort((a,b)=>a.slug.localeCompare(b.slug));
-const max=Math.max(0,15-curated.length);
+const aiCapacity=Math.max(0,15-curated.length);
+const aiStart=approvedRemote.length>aiCapacity && aiCapacity>0?
+  (Math.floor(Date.now()/86400000)*aiCapacity)%approvedRemote.length:0;
+const aiRotation=[...approvedRemote.slice(aiStart),...approvedRemote.slice(0,aiStart)].slice(0,aiCapacity);
+const included=new Set([...curated,...aiRotation].map(p=>p.slug));
+const other=publicPhotos.filter(p=>!included.has(p.slug))
+  .sort((a,b)=>a.slug.localeCompare(b.slug));
+const max=Math.max(0,15-curated.length-aiRotation.length);
 const start=other.length?(Math.floor(Date.now()/86400000)*Math.max(1,max))%other.length:0;
 const rotating=[...other.slice(start),...other.slice(0,start)].slice(0,max);
-const verified=[...curated,...rotating].slice(0,15);
+const verified=[...curated,...aiRotation,...rotating].slice(0,15);
 const base=process.env.PHOTO_VERIFY_BASE||'https://tassienow.com';
 const rounds=Math.max(1,Math.min(15,Number(process.env.PHOTO_VERIFY_ATTEMPTS||12)));
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -46,7 +55,7 @@ const results=await Promise.all(verified.slice(0,15).map(async place=>{
  return {slug:place.slug,name:place.name,sourceUrl:place.image.sourceUrl,...last};
 }));
 const report={checkedAt:new Date().toISOString(),base,eligiblePlacePhotos:publicPhotos.length,
-  curatedChecked:Math.min(curated.length,15),checked:results.length,
+  curatedChecked:Math.min(curated.length,15),aiRemoteChecked:aiRotation.length,checked:results.length,
   verified:results.filter(x=>x.status==='verified').length,results};
 await fs.mkdir(new URL('../reports/',import.meta.url),{recursive:true});
 await fs.writeFile(new URL('../reports/production-photo-verification.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
