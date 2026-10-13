@@ -11408,6 +11408,107 @@
     "lastWikidataLinkChecked": "2026-10-13"
   },
   {
+    "slug": "don-river-railway-preservation-society",
+    "name": "Don River Railway Preservation Society",
+    "town": "Devonport",
+    "region": "North West",
+    "latitude": -41.1805749,
+    "longitude": 146.3187597,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Devonport.",
+    "website": "https://www.donriverrailway.com.au/",
+    "sourceUrl": "https://www.openstreetmap.org/way/34237192",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/34237192",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Mo,Tu,We 09:00-12:00; Th,Fr,Sa,Su 09:00-03:00",
+    "phone": null,
+    "email": "enquiries@donriverrailway.com.au",
+    "address": null,
+    "bookingUrl": "https://donriverrailway.com.au/tickets/",
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://donriverrailway.com.au/tickets/",
+        "checkedAt": "2026-10-12"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-13",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Former_TGR_diesel_Locomotive_Y6_at_Don_River_Railway.JPG/1280px-Former_TGR_diesel_Locomotive_Y6_at_Don_River_Railway.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Former_TGR_diesel_Locomotive_Y6_at_Don_River_Railway.JPG",
+      "alt": "Restored former TGR locomotive Y6 at Don River Railway",
+      "attribution": "EurovisionNim",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "isFallback": false,
+      "useMode": "external-embed",
+      "sourceMethod": "ai-verified-remote",
+      "usagePermission": "open-licence",
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Restored former TGR locomotive Y6 at Don River Railway; exact named Tasmanian destination shown in the original Commons image description",
+        "checkedAt": "2026-10-13",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Former_TGR_diesel_Locomotive_Y6_at_Don_River_Railway.JPG",
+        "rightsPage": "https://commons.wikimedia.org/wiki/File:Former_TGR_diesel_Locomotive_Y6_at_Don_River_Railway.JPG",
+        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to EurovisionNim, identifies the Tasmanian subject, and specifies CC BY-SA 3.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
+        "listingSlug": "don-river-railway-preservation-society",
+        "listingName": "Don River Railway Preservation Society",
+        "listingTown": "Devonport"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Don%20River%20Railway%20Preservation%20Society%20Devonport%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://donriverrailway.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-13"
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-12T23:48:27.036Z"
+    },
+    "qualityScore": 68,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "real-image",
+      "opening-hours",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-13",
+      "url": "https://donriverrailway.com.au/"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12"
+  },
+  {
     "name": "Kingston Beach Handmade Market",
     "slug": "kingston-beach-handmade-market-kingston-beach",
     "town": "Kingston Beach",
@@ -18975,6 +19076,65 @@
         "confidence": "high"
       }
     ]
+  },
+  {
+    "slug": "murphys-beach",
+    "name": "Murphys Beach",
+    "town": "Tasmania",
+    "region": "Launceston & North",
+    "latitude": -40.99,
+    "longitude": 147.39,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor",
+      "Free"
+    ],
+    "summary": "Beach in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
+    "website": null,
+    "sourceUrl": "https://www.wikidata.org/wiki/Q21983631",
+    "sourceType": "wikidata",
+    "sourceId": "Q21983631",
+    "wikidata": "Q21983631",
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Remnants_of_the_Old_Pier%2C_Bridport.jpg/1280px-Remnants_of_the_Old_Pier%2C_Bridport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Murphys Beach, Tasmania, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "jacobharrisau",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Remnants_of_the_Old_Pier,_Bridport.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Remnants of the Old Pier, Bridport.jpg",
+        "listingName": "Murphys Beach",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-13T03:05:11.136Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Murphys%20Beach%20Tasmania%20Tasmania"
+      }
+    ],
+    "lastDetailsChecked": "2026-10-06",
+    "qualityScore": 59,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "lastWikidataChecked": "2026-10-06"
   },
   {
     "slug": "neck-beach",
@@ -36350,106 +36510,6 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
-    "slug": "don-river-railway-preservation-society",
-    "name": "Don River Railway Preservation Society",
-    "town": "Devonport",
-    "region": "North West",
-    "latitude": -41.1805749,
-    "longitude": 146.3187597,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Devonport.",
-    "website": "https://www.donriverrailway.com.au/",
-    "sourceUrl": "https://www.openstreetmap.org/way/34237192",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/34237192",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Mo,Tu,We 09:00-12:00; Th,Fr,Sa,Su 09:00-03:00",
-    "phone": null,
-    "email": "enquiries@donriverrailway.com.au",
-    "address": null,
-    "bookingUrl": "https://donriverrailway.com.au/tickets/",
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "openingHours": {
-        "type": "official-website",
-        "url": "https://donriverrailway.com.au/tickets/",
-        "checkedAt": "2026-10-12"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-13",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Former_TGR_diesel_Locomotive_Y6_at_Don_River_Railway.JPG/1280px-Former_TGR_diesel_Locomotive_Y6_at_Don_River_Railway.JPG",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Former_TGR_diesel_Locomotive_Y6_at_Don_River_Railway.JPG",
-      "alt": "Restored former TGR locomotive Y6 at Don River Railway",
-      "attribution": "EurovisionNim",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "isFallback": false,
-      "useMode": "external-embed",
-      "sourceMethod": "ai-verified-remote",
-      "usagePermission": "open-licence",
-      "matchEvidence": {
-        "verified": true,
-        "subject": "Restored former TGR locomotive Y6 at Don River Railway; exact named Tasmanian destination shown in the original Commons image description",
-        "checkedAt": "2026-10-13",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Former_TGR_diesel_Locomotive_Y6_at_Don_River_Railway.JPG",
-        "rightsPage": "https://commons.wikimedia.org/wiki/File:Former_TGR_diesel_Locomotive_Y6_at_Don_River_Railway.JPG",
-        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to EurovisionNim, identifies the Tasmanian subject, and specifies CC BY-SA 3.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
-        "listingSlug": "don-river-railway-preservation-society",
-        "listingName": "Don River Railway Preservation Society",
-        "listingTown": "Devonport"
-      }
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Don%20River%20Railway%20Preservation%20Society%20Devonport%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://donriverrailway.com.au/",
-      "source": "openstreetmap-website",
-      "checkedAt": "2026-10-13"
-    },
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-12T23:48:27.036Z"
-    },
-    "qualityScore": 50,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "opening-hours",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-13",
-      "url": "https://donriverrailway.com.au/"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
-  },
-  {
     "slug": "franklin-house",
     "name": "Franklin House",
     "town": "Launceston",
@@ -48016,6 +48076,81 @@
     "rankedAt": "2026-10-13"
   },
   {
+    "slug": "gordon-dam-lookout",
+    "name": "Gordon Dam Lookout",
+    "town": "Tasmania",
+    "region": "Hobart & South",
+    "latitude": -42.7316101,
+    "longitude": 145.9777021,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Tasmania.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/10609400916",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/10609400916",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Gordon_Dam.jpg/1280px-Gordon_Dam.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gordon_Dam.jpg",
+      "alt": "Gordon Dam, Southwest National Park, Tasmania",
+      "attribution": "JJ Harrison",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "isFallback": false,
+      "useMode": "external-embed",
+      "sourceMethod": "ai-verified-remote",
+      "usagePermission": "open-licence",
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Gordon Dam, Southwest National Park, Tasmania; exact named Tasmanian destination shown in the original Commons image description",
+        "checkedAt": "2026-10-13",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Gordon_Dam.jpg",
+        "rightsPage": "https://commons.wikimedia.org/wiki/File:Gordon_Dam.jpg",
+        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to JJ Harrison, identifies the Tasmanian subject, and specifies CC BY-SA 3.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
+        "listingSlug": "gordon-dam-lookout",
+        "listingName": "Gordon Dam Lookout",
+        "listingTown": "Tasmania"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Gordon%20Dam%20Lookout%20Tasmania%20Tasmania"
+      }
+    ],
+    "qualityScore": 44,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12"
+  },
+  {
     "slug": "happy-larry",
     "name": "Happy Larry",
     "town": "Kingston",
@@ -48293,6 +48428,81 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
+    "slug": "horsetail-falls-lookout",
+    "name": "Horsetail Falls Lookout",
+    "town": "Queenstown",
+    "region": "West Coast",
+    "latitude": -42.0794008,
+    "longitude": 145.5915399,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Queenstown.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/5457167203",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/5457167203",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-12",
+    "lastDetailsChecked": "2026-10-12",
+    "lastOsmDetailsChecked": "2026-10-12",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Horsetail_Falls_-_August_2021.jpg/1280px-Horsetail_Falls_-_August_2021.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Horsetail_Falls_-_August_2021.jpg",
+      "alt": "Horsetail Falls near Queenstown, Tasmania, photographed in winter 2021",
+      "attribution": "Titandrake",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "isFallback": false,
+      "useMode": "external-embed",
+      "sourceMethod": "ai-verified-remote",
+      "usagePermission": "open-licence",
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Horsetail Falls near Queenstown, Tasmania, photographed in winter 2021; exact named Tasmanian destination shown in the original Commons image description",
+        "checkedAt": "2026-10-13",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Horsetail_Falls_-_August_2021.jpg",
+        "rightsPage": "https://commons.wikimedia.org/wiki/File:Horsetail_Falls_-_August_2021.jpg",
+        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to Titandrake, identifies the Tasmanian subject, and specifies CC0 1.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
+        "listingSlug": "horsetail-falls-lookout",
+        "listingName": "Horsetail Falls Lookout",
+        "listingTown": "Queenstown"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Horsetail%20Falls%20Lookout%20Queenstown%20Tasmania"
+      }
+    ],
+    "qualityScore": 44,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-12"
+  },
+  {
     "slug": "hursey-seafoods",
     "name": "Hursey Seafoods",
     "town": "Stanley",
@@ -48478,6 +48688,85 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
+  },
+  {
+    "slug": "knyvet-falls-lookout",
+    "name": "Knyvet Falls Lookout",
+    "town": "Tullah",
+    "region": "West Coast",
+    "latitude": -41.5936958,
+    "longitude": 145.934705,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Tullah.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/4586483993",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/4586483993",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": "no",
+    "operator": null,
+    "detailSources": {
+      "wheelchair": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/4586483993",
+        "checkedAt": "2026-10-13"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-13",
+    "lastDetailsChecked": "2026-10-13",
+    "lastOsmDetailsChecked": "2026-10-13",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Knyvet_Falls%2C_Tasmania_%2831341272985%29.jpg/1280px-Knyvet_Falls%2C_Tasmania_%2831341272985%29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Knyvet_Falls%2C_Tasmania_%2831341272985%29.jpg",
+      "alt": "Knyvet Falls in Cradle Mountain-Lake St Clair National Park",
+      "attribution": "Steven Penton",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "isFallback": false,
+      "useMode": "external-embed",
+      "sourceMethod": "ai-verified-remote",
+      "usagePermission": "open-licence",
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Knyvet Falls in Cradle Mountain-Lake St Clair National Park; exact named Tasmanian destination shown in the original Commons image description",
+        "checkedAt": "2026-10-13",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Knyvet_Falls%2C_Tasmania_%2831341272985%29.jpg",
+        "rightsPage": "https://commons.wikimedia.org/wiki/File:Knyvet_Falls%2C_Tasmania_%2831341272985%29.jpg",
+        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to Steven Penton, identifies the Tasmanian subject, and specifies CC BY 2.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
+        "listingSlug": "knyvet-falls-lookout",
+        "listingName": "Knyvet Falls Lookout",
+        "listingTown": "Tullah"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Knyvet%20Falls%20Lookout%20Wilmot%20Tasmania"
+      }
+    ],
+    "qualityScore": 44,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13"
   },
   {
     "slug": "lady-barron-falls",
@@ -48891,6 +49180,80 @@
     "rankedAt": "2026-10-13",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12"
+  },
+  {
+    "slug": "pelverata-falls-lookout",
+    "name": "Pelverata Falls Lookout",
+    "town": "Huonville",
+    "region": "Hobart & South",
+    "latitude": -43.0641238,
+    "longitude": 147.1382112,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Huonville.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/1446236270",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/1446236270",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-13",
+    "lastDetailsChecked": "2026-10-13",
+    "lastOsmDetailsChecked": "2026-10-13",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Pelverata_Falls%2C_June_2021.jpg/1280px-Pelverata_Falls%2C_June_2021.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelverata_Falls%2C_June_2021.jpg",
+      "alt": "Pelverata Falls, southern Tasmania, photographed in June 2021",
+      "attribution": "Thomas & Olivia Williams",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "isFallback": false,
+      "useMode": "external-embed",
+      "sourceMethod": "ai-verified-remote",
+      "usagePermission": "open-licence",
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Pelverata Falls, southern Tasmania, photographed in June 2021; exact named Tasmanian destination shown in the original Commons image description",
+        "checkedAt": "2026-10-13",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Pelverata_Falls%2C_June_2021.jpg",
+        "rightsPage": "https://commons.wikimedia.org/wiki/File:Pelverata_Falls%2C_June_2021.jpg",
+        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to Thomas & Olivia Williams, identifies the Tasmanian subject, and specifies CC BY 2.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
+        "listingSlug": "pelverata-falls-lookout",
+        "listingName": "Pelverata Falls Lookout",
+        "listingTown": "Huonville"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Pelverata%20Falls%20Lookout%20Huonville%20Tasmania"
+      }
+    ],
+    "qualityScore": 44,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "lastWikidataLinkChecked": "2026-10-13"
   },
   {
     "slug": "pizzarazzi",
@@ -63515,55 +63878,6 @@
         "provider": "google-maps",
         "label": "Reviews & visitor photos on Google Maps",
         "url": "https://www.google.com/maps/search/?api=1&query=Murdochs%20Beach%20Tasmania%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-06",
-    "qualityScore": 41,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
-    "lastWikidataChecked": "2026-10-06"
-  },
-  {
-    "slug": "murphys-beach",
-    "name": "Murphys Beach",
-    "town": "Tasmania",
-    "region": "Launceston & North",
-    "latitude": -40.99,
-    "longitude": 147.39,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor",
-      "Free"
-    ],
-    "summary": "Beach in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q21983631",
-    "sourceType": "wikidata",
-    "sourceId": "Q21983631",
-    "wikidata": "Q21983631",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Murphys Beach category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Murphys%20Beach%20Tasmania%20Tasmania"
       }
     ],
     "lastDetailsChecked": "2026-10-06",
@@ -109491,80 +109805,6 @@
     "rankedAt": "2026-10-13"
   },
   {
-    "slug": "gordon-dam-lookout",
-    "name": "Gordon Dam Lookout",
-    "town": "Tasmania",
-    "region": "Hobart & South",
-    "latitude": -42.7316101,
-    "longitude": 145.9777021,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Tasmania.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/10609400916",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/10609400916",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Gordon_Dam.jpg/1280px-Gordon_Dam.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gordon_Dam.jpg",
-      "alt": "Gordon Dam, Southwest National Park, Tasmania",
-      "attribution": "JJ Harrison",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "isFallback": false,
-      "useMode": "external-embed",
-      "sourceMethod": "ai-verified-remote",
-      "usagePermission": "open-licence",
-      "matchEvidence": {
-        "verified": true,
-        "subject": "Gordon Dam, Southwest National Park, Tasmania; exact named Tasmanian destination shown in the original Commons image description",
-        "checkedAt": "2026-10-13",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Gordon_Dam.jpg",
-        "rightsPage": "https://commons.wikimedia.org/wiki/File:Gordon_Dam.jpg",
-        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to JJ Harrison, identifies the Tasmanian subject, and specifies CC BY-SA 3.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
-        "listingSlug": "gordon-dam-lookout",
-        "listingName": "Gordon Dam Lookout",
-        "listingTown": "Tasmania"
-      }
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Gordon%20Dam%20Lookout%20Tasmania%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
-  },
-  {
     "slug": "gorge-lookout",
     "name": "Gorge Lookout",
     "town": "Launceston",
@@ -109979,80 +110219,6 @@
     "rankedAt": "2026-10-13"
   },
   {
-    "slug": "horsetail-falls-lookout",
-    "name": "Horsetail Falls Lookout",
-    "town": "Queenstown",
-    "region": "West Coast",
-    "latitude": -42.0794008,
-    "longitude": 145.5915399,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Queenstown.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/5457167203",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/5457167203",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-12",
-    "lastOsmDetailsChecked": "2026-10-12",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Horsetail_Falls_-_August_2021.jpg/1280px-Horsetail_Falls_-_August_2021.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Horsetail_Falls_-_August_2021.jpg",
-      "alt": "Horsetail Falls near Queenstown, Tasmania, photographed in winter 2021",
-      "attribution": "Titandrake",
-      "license": "CC0 1.0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "isFallback": false,
-      "useMode": "external-embed",
-      "sourceMethod": "ai-verified-remote",
-      "usagePermission": "open-licence",
-      "matchEvidence": {
-        "verified": true,
-        "subject": "Horsetail Falls near Queenstown, Tasmania, photographed in winter 2021; exact named Tasmanian destination shown in the original Commons image description",
-        "checkedAt": "2026-10-13",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Horsetail_Falls_-_August_2021.jpg",
-        "rightsPage": "https://commons.wikimedia.org/wiki/File:Horsetail_Falls_-_August_2021.jpg",
-        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to Titandrake, identifies the Tasmanian subject, and specifies CC0 1.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
-        "listingSlug": "horsetail-falls-lookout",
-        "listingName": "Horsetail Falls Lookout",
-        "listingTown": "Queenstown"
-      }
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Horsetail%20Falls%20Lookout%20Queenstown%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-12"
-  },
-  {
     "slug": "kalbi",
     "name": "Kalbi",
     "town": "Hobart",
@@ -110305,84 +110471,6 @@
     "rankedAt": "2026-10-13",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12"
-  },
-  {
-    "slug": "knyvet-falls-lookout",
-    "name": "Knyvet Falls Lookout",
-    "town": "Tullah",
-    "region": "West Coast",
-    "latitude": -41.5936958,
-    "longitude": 145.934705,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Tullah.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/4586483993",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/4586483993",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": "no",
-    "operator": null,
-    "detailSources": {
-      "wheelchair": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/4586483993",
-        "checkedAt": "2026-10-13"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-13",
-    "lastDetailsChecked": "2026-10-13",
-    "lastOsmDetailsChecked": "2026-10-13",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Knyvet_Falls%2C_Tasmania_%2831341272985%29.jpg/1280px-Knyvet_Falls%2C_Tasmania_%2831341272985%29.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Knyvet_Falls%2C_Tasmania_%2831341272985%29.jpg",
-      "alt": "Knyvet Falls in Cradle Mountain-Lake St Clair National Park",
-      "attribution": "Steven Penton",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "isFallback": false,
-      "useMode": "external-embed",
-      "sourceMethod": "ai-verified-remote",
-      "usagePermission": "open-licence",
-      "matchEvidence": {
-        "verified": true,
-        "subject": "Knyvet Falls in Cradle Mountain-Lake St Clair National Park; exact named Tasmanian destination shown in the original Commons image description",
-        "checkedAt": "2026-10-13",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Knyvet_Falls%2C_Tasmania_%2831341272985%29.jpg",
-        "rightsPage": "https://commons.wikimedia.org/wiki/File:Knyvet_Falls%2C_Tasmania_%2831341272985%29.jpg",
-        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to Steven Penton, identifies the Tasmanian subject, and specifies CC BY 2.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
-        "listingSlug": "knyvet-falls-lookout",
-        "listingName": "Knyvet Falls Lookout",
-        "listingTown": "Tullah"
-      }
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Knyvet%20Falls%20Lookout%20Wilmot%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13"
   },
   {
     "slug": "labyrinth-lookout",
@@ -112061,79 +112149,6 @@
     "rankedAt": "2026-10-13",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12",
-    "lastWikidataLinkChecked": "2026-10-13"
-  },
-  {
-    "slug": "pelverata-falls-lookout",
-    "name": "Pelverata Falls Lookout",
-    "town": "Huonville",
-    "region": "Hobart & South",
-    "latitude": -43.0641238,
-    "longitude": 147.1382112,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Huonville.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/1446236270",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/1446236270",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-13",
-    "lastDetailsChecked": "2026-10-13",
-    "lastOsmDetailsChecked": "2026-10-13",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Pelverata_Falls%2C_June_2021.jpg/1280px-Pelverata_Falls%2C_June_2021.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelverata_Falls%2C_June_2021.jpg",
-      "alt": "Pelverata Falls, southern Tasmania, photographed in June 2021",
-      "attribution": "Thomas & Olivia Williams",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "isFallback": false,
-      "useMode": "external-embed",
-      "sourceMethod": "ai-verified-remote",
-      "usagePermission": "open-licence",
-      "matchEvidence": {
-        "verified": true,
-        "subject": "Pelverata Falls, southern Tasmania, photographed in June 2021; exact named Tasmanian destination shown in the original Commons image description",
-        "checkedAt": "2026-10-13",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Pelverata_Falls%2C_June_2021.jpg",
-        "rightsPage": "https://commons.wikimedia.org/wiki/File:Pelverata_Falls%2C_June_2021.jpg",
-        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to Thomas & Olivia Williams, identifies the Tasmanian subject, and specifies CC BY 2.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
-        "listingSlug": "pelverata-falls-lookout",
-        "listingName": "Pelverata Falls Lookout",
-        "listingTown": "Huonville"
-      }
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Pelverata%20Falls%20Lookout%20Huonville%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
     "lastWikidataLinkChecked": "2026-10-13"
   },
   {

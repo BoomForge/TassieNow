@@ -4274,5 +4274,55 @@
         "observedAt": "2026-10-13T02:48:06.194Z"
       }
     ]
+  },
+  "murphys-beach": {
+    "name": "Murphys Beach",
+    "town": "Tasmania",
+    "candidates": [
+      {
+        "id": "commons-geo:145063285",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Vista_of_Old_Pier_Beach%2C_Bridport.jpg/1280px-Vista_of_Old_Pier_Beach%2C_Bridport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Vista_of_Old_Pier_Beach,_Bridport.jpg",
+        "title": "Vista of Old Pier Beach, Bridport.jpg",
+        "credit": "jacobharrisau",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "murphys"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T03:05:11.136Z"
+      },
+      {
+        "id": "commons-geo:145063286",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Remnants_of_the_Old_Pier%2C_Bridport.jpg/1280px-Remnants_of_the_Old_Pier%2C_Bridport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Remnants_of_the_Old_Pier,_Bridport.jpg",
+        "title": "Remnants of the Old Pier, Bridport.jpg",
+        "credit": "jacobharrisau",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "murphys"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-13T03:05:11.136Z"
+      }
+    ]
   }
 }
