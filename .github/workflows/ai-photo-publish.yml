@@ -38,13 +38,8 @@ jobs:
           cache-dependency-path: package.json
       - name: Check original-host images and prepare exact-listing upgrades
         run: node scripts/apply-approved-remote-images.mjs
-      - name: Preserve independent image loading and rights report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ai-remote-image-publication
-          path: reports/remote-image-publication.json
-          retention-days: 30
+      - name: Keep fresh first-pass HTTP proof for rebase
+        run: cp reports/remote-image-publication.json /tmp/tassienow-verified-remote-photo-check.json
       - name: Validate and publish approved image changes safely
         env:
           GH_TOKEN: ${{ github.token }}
@@ -56,7 +51,7 @@ jobs:
           for attempt in 1 2 3 4; do
             git fetch origin main
             git reset --hard origin/main
-            node scripts/apply-approved-remote-images.mjs
+            REMOTE_IMAGE_PROOF=/tmp/tassienow-verified-remote-photo-check.json node scripts/apply-approved-remote-images.mjs
             node scripts/catalogue-audit.mjs
             node scripts/validate-data.mjs
             if git diff --quiet -- src/data/places.json src/data/events.json; then
@@ -77,3 +72,10 @@ jobs:
           done
           echo "::error::Unable to persist approved remote media after four safe rebases."
           exit 1
+      - name: Preserve FINAL independent image loading and publication report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-remote-image-publication-final
+          path: reports/remote-image-publication.json
+          retention-days: 30
