@@ -368,6 +368,106 @@
     ]
   },
   {
+    "slug": "cape-raoul-lookout",
+    "name": "Cape Raoul Lookout",
+    "town": "Port Arthur",
+    "region": "Hobart & South",
+    "latitude": -43.2083593,
+    "longitude": 147.7753293,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Cape Raoul is an official Parks Tasmania walk. 5 hours return , 14km, Grade 4 · Grade 4.",
+    "website": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/1080419326",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/1080419326",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6250 3980",
+    "email": "TasmanNP@parks.tas.gov.au",
+    "address": null,
+    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-13",
+    "lastDetailsChecked": "2026-10-13",
+    "lastOsmDetailsChecked": "2026-10-13",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Cape_Raoul_from_Lookout.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
+      "alt": "Cape Raoul photographed from the lookout on the Tasman Peninsula",
+      "attribution": "JJ Harrison",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "isFallback": false,
+      "useMode": "external-embed",
+      "sourceMethod": "ai-verified-remote",
+      "usagePermission": "open-licence",
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Cape Raoul photographed from the lookout on the Tasman Peninsula; exact named Tasmanian destination shown in the original Commons image description",
+        "checkedAt": "2026-10-13",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
+        "rightsPage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
+        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to JJ Harrison, identifies the Tasmanian subject, and specifies CC BY-SA 3.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
+        "listingSlug": "cape-raoul-lookout",
+        "listingName": "Cape Raoul Lookout",
+        "listingTown": "Port Arthur"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Cape%20Raoul%20Lookout%20Port%20Arthur%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul",
+      "type": "government",
+      "checkedAt": "2026-10-13"
+    },
+    "walk": {
+      "duration": "5 hours return , 14km, Grade 4",
+      "grade": 4
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-12T23:48:10.879Z"
+    },
+    "qualityScore": 100,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "real-image",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-13",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul"
+    }
+  },
+  {
     "slug": "friendly-beaches",
     "name": "Friendly Beaches",
     "town": "Tasmania",
@@ -3133,6 +3233,135 @@
     "lastWikidataLinkChecked": "2026-10-12"
   },
   {
+    "slug": "hastings-caves-and-thermal-springs",
+    "name": "Hastings Caves and Thermal Springs",
+    "town": "Hastings",
+    "region": "Hobart & South",
+    "latitude": -43.4156,
+    "longitude": 146.8734,
+    "categories": [
+      "Nature & Walks",
+      "Family",
+      "Rainy Day"
+    ],
+    "summary": "Cave and thermal-pool visitor destination in southern Tasmania.",
+    "website": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
+    "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
+    "status": "active",
+    "lastChecked": "2026-10-05",
+    "sourceType": "curated",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Hastings_Thermal_Pool_Tasmania.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hastings_Thermal_Pool_Tasmania.jpg",
+      "alt": "The thermal pool at Hastings Caves and Thermal Springs, Tasmania",
+      "attribution": "Photnart",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "isFallback": false,
+      "useMode": "external-embed",
+      "sourceMethod": "ai-verified-remote",
+      "usagePermission": "open-licence",
+      "matchEvidence": {
+        "verified": true,
+        "subject": "The thermal pool at Hastings Caves and Thermal Springs, Tasmania; exact named Tasmanian destination shown in the original Commons image description",
+        "checkedAt": "2026-10-13",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Hastings_Thermal_Pool_Tasmania.jpg",
+        "rightsPage": "https://commons.wikimedia.org/wiki/File:Hastings_Thermal_Pool_Tasmania.jpg",
+        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to Photnart, identifies the Tasmanian subject, and specifies CC BY-SA 3.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
+        "listingSlug": "hastings-caves-and-thermal-springs",
+        "listingName": "Hastings Caves and Thermal Springs",
+        "listingTown": "Hastings"
+      }
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-12T23:47:51.163Z"
+    },
+    "qualityScore": 94,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "real-image",
+      "opening-hours",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Hastings%20Caves%20and%20Thermal%20Springs%20Hastings%20Tasmania"
+      }
+    ],
+    "lastDetailsChecked": "2026-10-13",
+    "email": "HastingsCaves@parks.tas.gov.au",
+    "detailSources": {
+      "email": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
+        "checkedAt": "2026-10-05"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
+        "checkedAt": "2026-10-05"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
+        "checkedAt": "2026-10-06"
+      },
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
+        "checkedAt": "2026-10-05"
+      },
+      "bookingUrl": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "phone": "03 6298 3209",
+    "schedule": {
+      "summary": "10am – 4pm open 7 days​",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "10:00",
+      "endTime": "16:00"
+    },
+    "openingHours": "Mo-Su 10:00-16:00",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
+      "source": "verified-website",
+      "checkedAt": "2026-10-13"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-13",
+      "url": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve"
+    },
+    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
+    "lastWikidataLinkChecked": "2026-10-13"
+  },
+  {
     "slug": "tahune-airwalk-cafe",
     "name": "Tahune Airwalk Cafe",
     "town": "Geeveston",
@@ -3815,6 +4044,115 @@
       "status": "ok",
       "checkedAt": "2026-10-13",
       "url": "https://www.evandalemarket.com.au/visitor-info"
+    }
+  },
+  {
+    "slug": "stanley-the-nut",
+    "name": "The Nut State Reserve",
+    "town": "Stanley",
+    "region": "North West",
+    "latitude": -40.7592,
+    "longitude": 145.3006,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Distinctive volcanic landform and walking destination beside the town of Stanley.",
+    "website": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
+    "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
+    "status": "active",
+    "lastChecked": "2026-10-05",
+    "sourceType": "curated",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/The_Nut_Chairlift.jpg/1280px-The_Nut_Chairlift.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Nut_Chairlift.jpg",
+      "alt": "Chairlift at The Nut State Reserve overlooking Stanley, Tasmania",
+      "attribution": "JP1681",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "isFallback": false,
+      "useMode": "external-embed",
+      "sourceMethod": "ai-verified-remote",
+      "usagePermission": "open-licence",
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Chairlift at The Nut State Reserve overlooking Stanley, Tasmania; exact named Tasmanian destination shown in the original Commons image description",
+        "checkedAt": "2026-10-13",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:The_Nut_Chairlift.jpg",
+        "rightsPage": "https://commons.wikimedia.org/wiki/File:The_Nut_Chairlift.jpg",
+        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to JP1681, identifies the Tasmanian subject, and specifies CC BY-SA 4.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
+        "listingSlug": "stanley-the-nut",
+        "listingName": "The Nut State Reserve",
+        "listingTown": "Stanley"
+      }
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-12T23:48:28.993Z"
+    },
+    "qualityScore": 90,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "wikidata",
+      "real-image",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13",
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=The%20Nut%20State%20Reserve%20Stanley%20Tasmania"
+      }
+    ],
+    "lastDetailsChecked": "2026-10-13",
+    "email": "Stanley@parks.tas.gov.au",
+    "detailSources": {
+      "email": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
+        "checkedAt": "2026-10-05"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
+        "checkedAt": "2026-10-05"
+      },
+      "bookingUrl": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "phone": "03 6458 1480",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
+      "source": "verified-website",
+      "checkedAt": "2026-10-13"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-13",
+      "url": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve"
+    },
+    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
+    "lastWikidataLinkChecked": "2026-10-07",
+    "wikidata": "Q139743356",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "The Nut State Reserve",
+      "distanceKm": 0.44,
+      "confidence": "high",
+      "checkedAt": "2026-10-07"
     }
   },
   {
@@ -6425,91 +6763,6 @@
     }
   },
   {
-    "slug": "cape-raoul-lookout",
-    "name": "Cape Raoul Lookout",
-    "town": "Port Arthur",
-    "region": "Hobart & South",
-    "latitude": -43.2083593,
-    "longitude": 147.7753293,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Cape Raoul is an official Parks Tasmania walk. 5 hours return , 14km, Grade 4 · Grade 4.",
-    "website": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/1080419326",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/1080419326",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6250 3980",
-    "email": "TasmanNP@parks.tas.gov.au",
-    "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-13",
-    "lastDetailsChecked": "2026-10-13",
-    "lastOsmDetailsChecked": "2026-10-13",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Cape Raoul Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Cape%20Raoul%20Lookout%20Port%20Arthur%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul",
-      "type": "government",
-      "checkedAt": "2026-10-13"
-    },
-    "walk": {
-      "duration": "5 hours return , 14km, Grade 4",
-      "grade": 4
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-12T23:48:10.879Z"
-    },
-    "qualityScore": 82,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-13",
-      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul"
-    }
-  },
-  {
     "slug": "huon-pine-walk-lookout",
     "name": "Huon Pine Walk Lookout",
     "town": "Savage River",
@@ -9047,134 +9300,6 @@
     "lastWikidataLinkChecked": "2026-10-13"
   },
   {
-    "slug": "hastings-caves-and-thermal-springs",
-    "name": "Hastings Caves and Thermal Springs",
-    "town": "Hastings",
-    "region": "Hobart & South",
-    "latitude": -43.4156,
-    "longitude": 146.8734,
-    "categories": [
-      "Nature & Walks",
-      "Family",
-      "Rainy Day"
-    ],
-    "summary": "Cave and thermal-pool visitor destination in southern Tasmania.",
-    "website": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
-    "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
-    "status": "active",
-    "lastChecked": "2026-10-05",
-    "sourceType": "curated",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Hastings_Thermal_Pool_Tasmania.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hastings_Thermal_Pool_Tasmania.jpg",
-      "alt": "The thermal pool at Hastings Caves and Thermal Springs, Tasmania",
-      "attribution": "Photnart",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "isFallback": false,
-      "useMode": "external-embed",
-      "sourceMethod": "ai-verified-remote",
-      "usagePermission": "open-licence",
-      "matchEvidence": {
-        "verified": true,
-        "subject": "The thermal pool at Hastings Caves and Thermal Springs, Tasmania; exact named Tasmanian destination shown in the original Commons image description",
-        "checkedAt": "2026-10-13",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Hastings_Thermal_Pool_Tasmania.jpg",
-        "rightsPage": "https://commons.wikimedia.org/wiki/File:Hastings_Thermal_Pool_Tasmania.jpg",
-        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to Photnart, identifies the Tasmanian subject, and specifies CC BY-SA 3.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
-        "listingSlug": "hastings-caves-and-thermal-springs",
-        "listingName": "Hastings Caves and Thermal Springs",
-        "listingTown": "Hastings"
-      }
-    },
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-12T23:47:51.163Z"
-    },
-    "qualityScore": 76,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "opening-hours",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Hastings%20Caves%20and%20Thermal%20Springs%20Hastings%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-13",
-    "email": "HastingsCaves@parks.tas.gov.au",
-    "detailSources": {
-      "email": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
-        "checkedAt": "2026-10-05"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
-        "checkedAt": "2026-10-05"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
-        "checkedAt": "2026-10-06"
-      },
-      "openingHours": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
-        "checkedAt": "2026-10-05"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
-        "checkedAt": "2026-10-06"
-      }
-    },
-    "phone": "03 6298 3209",
-    "schedule": {
-      "summary": "10am – 4pm open 7 days​",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "10:00",
-      "endTime": "16:00"
-    },
-    "openingHours": "Mo-Su 10:00-16:00",
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve",
-      "source": "verified-website",
-      "checkedAt": "2026-10-13"
-    },
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-13",
-      "url": "https://parks.tas.gov.au/explore-our-parks/hastings-caves-state-reserve"
-    },
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
-    "lastWikidataLinkChecked": "2026-10-13"
-  },
-  {
     "slug": "bass-strait-maritime-centre",
     "name": "Bass Strait Maritime Centre",
     "town": "Devonport",
@@ -10345,100 +10470,6 @@
       "checkedAt": "2026-10-13",
       "url": "https://www.mawsons-huts.org.au/replica-museum/",
       "error": "429 Too Many Requests"
-    }
-  },
-  {
-    "slug": "stanley-the-nut",
-    "name": "The Nut State Reserve",
-    "town": "Stanley",
-    "region": "North West",
-    "latitude": -40.7592,
-    "longitude": 145.3006,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Distinctive volcanic landform and walking destination beside the town of Stanley.",
-    "website": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
-    "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
-    "status": "active",
-    "lastChecked": "2026-10-05",
-    "sourceType": "curated",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "The Nut State Reserve category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-12T23:48:28.993Z"
-    },
-    "qualityScore": 72,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "wikidata",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13",
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=The%20Nut%20State%20Reserve%20Stanley%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-13",
-    "email": "Stanley@parks.tas.gov.au",
-    "detailSources": {
-      "email": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
-        "checkedAt": "2026-10-05"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
-        "checkedAt": "2026-10-05"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
-        "checkedAt": "2026-10-06"
-      }
-    },
-    "phone": "03 6458 1480",
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
-      "source": "verified-website",
-      "checkedAt": "2026-10-13"
-    },
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-13",
-      "url": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve"
-    },
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
-    "lastWikidataLinkChecked": "2026-10-07",
-    "wikidata": "Q139743356",
-    "wikidataMatch": {
-      "method": "name-coordinate",
-      "label": "The Nut State Reserve",
-      "distanceKm": 0.44,
-      "confidence": "high",
-      "checkedAt": "2026-10-07"
     }
   },
   {
@@ -47835,6 +47866,79 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
+  },
+  {
+    "slug": "fossil-bay-lookout",
+    "name": "Fossil Bay Lookout",
+    "town": "Port Arthur",
+    "region": "Hobart & South",
+    "latitude": -43.0335891,
+    "longitude": 147.9491505,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Port Arthur.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/7614556105",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/7614556105",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-13",
+    "lastDetailsChecked": "2026-10-13",
+    "lastOsmDetailsChecked": "2026-10-13",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Fossil_Bay_Seascape.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fossil_Bay_Seascape.jpg",
+      "alt": "Fossil Bay seascape on Tasmania's Tasman Peninsula",
+      "attribution": "JJ Harrison",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "isFallback": false,
+      "useMode": "external-embed",
+      "sourceMethod": "ai-verified-remote",
+      "usagePermission": "open-licence",
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Fossil Bay seascape on Tasmania's Tasman Peninsula; exact named Tasmanian destination shown in the original Commons image description",
+        "checkedAt": "2026-10-13",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Fossil_Bay_Seascape.jpg",
+        "rightsPage": "https://commons.wikimedia.org/wiki/File:Fossil_Bay_Seascape.jpg",
+        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to JJ Harrison, identifies the Tasmanian subject, and specifies CC BY-SA 3.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
+        "listingSlug": "fossil-bay-lookout",
+        "listingName": "Fossil Bay Lookout",
+        "listingTown": "Port Arthur"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Fossil%20Bay%20Lookout%20Port%20Arthur%20Tasmania"
+      }
+    ],
+    "qualityScore": 44,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-13"
   },
   {
     "slug": "fossil-bluff-lookout",
@@ -109068,64 +109172,6 @@
         "provider": "google-maps",
         "label": "Reviews & visitor photos on Google Maps",
         "url": "https://www.google.com/maps/search/?api=1&query=Forth%20River%20Viewpoint%20Tullah%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-13"
-  },
-  {
-    "slug": "fossil-bay-lookout",
-    "name": "Fossil Bay Lookout",
-    "town": "Port Arthur",
-    "region": "Hobart & South",
-    "latitude": -43.0335891,
-    "longitude": 147.9491505,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Port Arthur.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/7614556105",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/7614556105",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-13",
-    "lastDetailsChecked": "2026-10-13",
-    "lastOsmDetailsChecked": "2026-10-13",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Fossil Bay Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Fossil%20Bay%20Lookout%20Port%20Arthur%20Tasmania"
       }
     ],
     "qualityScore": 26,
