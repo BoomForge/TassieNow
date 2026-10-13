@@ -60,7 +60,7 @@ export function selectEventPhotoRecoveryTargets(events,{today,limit=25,sourceLin
   const rotate=(xs)=>{if(!xs.length)return xs;const start=(slot*limit)%xs.length;return [...xs.slice(start),...xs.slice(0,start)];};
   const remaining=eligible.filter(e=>!result.includes(e));
   const add=items=>{for(const e of items)if(result.length<limit&&!result.includes(e))result.push(e);};
-  add(rotate(remaining.filter(e=>e.startDate<=nearEnd)).sort((a,b)=>a.startDate.localeCompare(b.startDate)));
+  add(rotate(remaining.filter(e=>e.startDate<=nearEnd)));
   add(rotate(remaining.filter(e=>e.startDate>nearEnd)));
   return result.slice(0,limit);
 }
