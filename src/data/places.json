@@ -53188,6 +53188,77 @@
     "lastWikidataLinkChecked": "2026-10-12"
   },
   {
+    "slug": "mamma-rosa-s",
+    "name": "Mamma Rosa's",
+    "town": "Burnie",
+    "region": "North West",
+    "latitude": -41.0541584,
+    "longitude": 145.9053133,
+    "categories": [
+      "Food & Drink",
+      "Takeaway"
+    ],
+    "summary": "Takeaway food venue in or near Burnie.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/2560777118",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2560777118",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Ladbrooke-St-Shops-Burnie-20151009-001.jpg/1280px-Ladbrooke-St-Shops-Burnie-20151009-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Mamma Rosa's, Burnie, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ladbrooke-St-Shops-Burnie-20151009-001.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Ladbrooke-St-Shops-Burnie-20151009-001.jpg",
+        "listingName": "Mamma Rosa's",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-14T23:19:46.791Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Mamma%20Rosa's%20Sulphur%20Creek%20Tasmania"
+      }
+    ],
+    "qualityScore": 42,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-15",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-11"
+  },
+  {
     "slug": "patchworks-cafe",
     "name": "Patchworks Cafe",
     "town": "New Norfolk",
@@ -135430,67 +135501,6 @@
         "provider": "google-maps",
         "label": "Reviews & visitor photos on Google Maps",
         "url": "https://www.google.com/maps/search/?api=1&query=Maharajas%20Curry%20House%20Launceston%20Tasmania"
-      }
-    ],
-    "qualityScore": 24,
-    "qualityTier": "low",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-15",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
-  },
-  {
-    "slug": "mamma-rosa-s",
-    "name": "Mamma Rosa's",
-    "town": "Burnie",
-    "region": "North West",
-    "latitude": -41.0541584,
-    "longitude": 145.9053133,
-    "categories": [
-      "Food & Drink",
-      "Takeaway"
-    ],
-    "summary": "Takeaway food venue in or near Burnie.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/2560777118",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2560777118",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Mamma Rosa's category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Mamma%20Rosa's%20Sulphur%20Creek%20Tasmania"
       }
     ],
     "qualityScore": 24,
