@@ -270,19 +270,18 @@
       }
     },
     "ticketCoverage": {
-      "count": 52,
-      "percent": 30.6
+      "count": 50,
+      "percent": 29.4
     },
     "priceCoverage": {
-      "count": 59,
-      "percent": 34.7
+      "count": 58,
+      "percent": 34.1
     },
     "providers": {
       "Humanitix": 25,
       "Ticketek": 23,
-      "Eventbrite": 2,
-      "Ticketmaster": 1,
-      "TryBooking": 1
+      "Eventbrite": 1,
+      "Ticketmaster": 1
     },
     "sources": {
       "MyState Bank Arena": 24,
@@ -290,11 +289,11 @@
       "Theatre North Launceston": 18,
       "Devonport City Council": 16,
       "Huon Valley Council": 16,
-      "City of Clarence": 11,
       "Humanitix Launceston": 11,
       "Theatre Royal Hobart": 11,
+      "City of Clarence": 10,
+      "Humanitix Hobart": 10,
       "East Coast Tasmania": 9,
-      "Humanitix Hobart": 9,
       "City of Hobart": 7,
       "Glenorchy City Council": 6,
       "City of Launceston": 3,
@@ -321,14 +320,14 @@
       "tomorrow": "2026-10-15",
       "nextWeekendStart": "2026-10-17",
       "nextWeekendEnd": "2026-10-18",
-      "todayOrTomorrow": 36,
+      "todayOrTomorrow": 34,
       "thisWeekend": 31,
       "townsTodayOrTomorrow": {
         "Huonville": 14,
         "Launceston": 5,
-        "Burnie": 4,
         "Devonport": 4,
-        "Rosny Park": 4,
+        "Burnie": 3,
+        "Rosny Park": 3,
         "Glenorchy": 2,
         "Hobart": 1,
         "Whitemark": 1,
@@ -353,7 +352,7 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 2
+      "missingOrOlderThan30Days": 3
     },
     "sourceRegionalMix": {
       "Hobart & South / MyState Bank Arena": 24,
@@ -361,11 +360,11 @@
       "Launceston & North / Theatre North Launceston": 18,
       "Hobart & South / Huon Valley Council": 16,
       "North West / Devonport City Council": 16,
-      "Hobart & South / City of Clarence": 11,
       "Hobart & South / Theatre Royal Hobart": 11,
       "Launceston & North / Humanitix Launceston": 11,
+      "Hobart & South / City of Clarence": 10,
+      "Hobart & South / Humanitix Hobart": 10,
       "East Coast / East Coast Tasmania": 9,
-      "Hobart & South / Humanitix Hobart": 9,
       "Hobart & South / City of Hobart": 7,
       "Hobart & South / Glenorchy City Council": 6,
       "Launceston & North / City of Launceston": 3,
