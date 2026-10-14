@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 172,
+    "active": 170,
     "media": {
       "licensedHeroCoverage": {
         "count": 83,
-        "percent": 48.3
+        "percent": 48.8
       },
-      "stillUsingCategoryArtwork": 89,
+      "stillUsingCategoryArtwork": 87,
       "bySource": {
         "verified-event-venue": 41,
         "verified-event-activity": 36,
@@ -241,11 +241,11 @@
         },
         "Launceston & North": {
           "count": 20,
-          "percent": 64.5
+          "percent": 62.5
         },
         "North West": {
           "count": 15,
-          "percent": 35.7
+          "percent": 38.5
         },
         "East Coast": {
           "count": 2,
@@ -270,22 +270,23 @@
       }
     },
     "ticketCoverage": {
-      "count": 47,
-      "percent": 27.3
+      "count": 52,
+      "percent": 30.6
     },
     "priceCoverage": {
       "count": 59,
-      "percent": 34.3
+      "percent": 34.7
     },
     "providers": {
+      "Humanitix": 25,
       "Ticketek": 23,
-      "Humanitix": 22,
-      "Eventbrite": 1,
-      "Ticketmaster": 1
+      "Eventbrite": 2,
+      "Ticketmaster": 1,
+      "TryBooking": 1
     },
     "sources": {
-      "Burnie City Council": 25,
       "MyState Bank Arena": 24,
+      "Burnie City Council": 22,
       "Theatre North Launceston": 18,
       "Devonport City Council": 16,
       "Huon Valley Council": 16,
@@ -296,7 +297,7 @@
       "Humanitix Hobart": 9,
       "City of Hobart": 7,
       "Glenorchy City Council": 6,
-      "City of Launceston": 2,
+      "City of Launceston": 3,
       "King Island Tourism": 2,
       "Flinders Island Show Society": 1,
       "Highlands BushFest organising team": 1,
@@ -306,8 +307,8 @@
     },
     "regions": {
       "Hobart & South": 84,
-      "Launceston & North": 31,
-      "North West": 42,
+      "Launceston & North": 32,
+      "North West": 39,
       "East Coast": 9,
       "West Coast": 2,
       "Central Tasmania": 1,
@@ -324,9 +325,9 @@
       "thisWeekend": 31,
       "townsTodayOrTomorrow": {
         "Huonville": 14,
-        "Burnie": 5,
+        "Launceston": 5,
+        "Burnie": 4,
         "Devonport": 4,
-        "Launceston": 4,
         "Rosny Park": 4,
         "Glenorchy": 2,
         "Hobart": 1,
@@ -355,8 +356,8 @@
       "missingOrOlderThan30Days": 2
     },
     "sourceRegionalMix": {
-      "North West / Burnie City Council": 25,
       "Hobart & South / MyState Bank Arena": 24,
+      "North West / Burnie City Council": 22,
       "Launceston & North / Theatre North Launceston": 18,
       "Hobart & South / Huon Valley Council": 16,
       "North West / Devonport City Council": 16,
@@ -367,8 +368,8 @@
       "Hobart & South / Humanitix Hobart": 9,
       "Hobart & South / City of Hobart": 7,
       "Hobart & South / Glenorchy City Council": 6,
+      "Launceston & North / City of Launceston": 3,
       "King Island / King Island Tourism": 2,
-      "Launceston & North / City of Launceston": 2,
       "Central Tasmania / Highlands BushFest organising team": 1,
       "Flinders Island / Flinders Island Show Society": 1,
       "North West / Ticketebo": 1,
