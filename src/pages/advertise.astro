@@ -51,6 +51,16 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
       </div>
     </section>
 
+    <aside class="business-reliability" aria-labelledby="business-reliability-heading">
+      <div>
+        <p class="eyebrow">A useful tool for business website owners</p>
+        <h2 id="business-reliability-heading">Would you know if your own website went offline?</h2>
+        <p>Before sending customers to a website, check that its important pages remain reachable. SiteGuard by ClientStream provides website availability monitoring, response-time and HTTPS certificate visibility, and incident/recovery email alerts for up to three owner-authorised websites.</p>
+        <p class="business-reliability-disclosure">SiteGuard is another independently operated project by the owner of TassieNow. This is a disclosed in-house promotion, not an independent recommendation or a paid TassieNow advertiser placement. A$9.99 every 30 days; single-location best-effort monitoring, not an uptime guarantee.</p>
+      </div>
+      <a href="https://siteguard.clientstream.io/" class="business-reliability-link" target="_blank" rel="noopener noreferrer" aria-label="Explore SiteGuard website monitoring, opens in a new tab">Explore SiteGuard ↗</a>
+    </aside>
+
     <div class="payment-note">
       <div><p class="eyebrow">Payment</p><h2>PayPal transfer</h2></div>
       <p>PayPal transfer is TassieNow’s primary payment option for now. No payment is taken when you submit an enquiry. Payment is requested only after the finished advertisement has been designed and approved by you, and the campaign is scheduled after payment is received.</p>
@@ -156,6 +166,16 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
     .guideline-steps article {min-width: 0; background: #f7fbfb; border: 1px solid #e1ebec; border-radius: 14px; padding: 1rem}
     .guideline-steps strong {display: block; color: #0b5056; line-height: 1.4}
     .guideline-steps p {margin: .5rem 0 0; color: #536568; font-size: .9rem; line-height: 1.55}
+    .business-reliability {display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:1.2rem;
+      padding:1.4rem;margin:0 0 1.5rem;background:#eaf9f7;border:1px solid #8acac5;border-radius:18px}
+    .business-reliability h2 {margin:.2rem 0 .6rem;line-height:1.2;color:#12454b;font-size:clamp(1.3rem,2.3vw,1.8rem)}
+    .business-reliability p {margin:.45rem 0;line-height:1.6;max-width:800px;color:#305459}
+    .business-reliability .business-reliability-disclosure {font-size:.8rem;color:#49686b}
+    .business-reliability-link {display:inline-block;border-radius:9px;padding:.85rem 1rem;background:#027b87;color:#fff;
+      text-decoration:none;font-weight:800;white-space:nowrap}
+    .business-reliability-link:hover {background:#015d69}
+    @media(max-width:690px) {.business-reliability{grid-template-columns:minmax(0,1fr);padding:1rem}
+      .business-reliability-link{justify-self:start}}
     .payment-note {display: grid; grid-template-columns: minmax(0,220px) minmax(0,1fr); align-items: start; gap: 1.4rem; margin: 0 0 1.5rem}
     .payment-note h2 {margin: .15rem 0; line-height: 1.25}
     .payment-note p {min-width: 0; margin: 0; line-height: 1.65}
