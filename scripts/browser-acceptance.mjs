@@ -4,7 +4,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 const BASE='https://tassienow.com';
 const widths=[320,375,390,430,768,820,1024,1440];
-const paths=['/','/food/','/discover/markets/','/discover/this-weekend/','/region/hobart-and-south/','/suggest-update/','/advertise/'];
+const paths=['/','/food/','/discover/markets/','/discover/this-weekend/','/region/hobart-and-south/','/suggest-update/','/advertise/','/account/'];
 const report={at:new Date().toISOString(),scope:'Live Chromium: viewport overflow, navigation, keyboard, denied geolocation, food filters and WCAG 2.1 AA axe-core checks',checks:[],failures:[]};
 await fs.mkdir('reports/browser-screenshots',{recursive:true});
 const browser=await chromium.launch({headless:true});
@@ -32,6 +32,14 @@ try{
     add('Viewport overflow',noOverflow,{width,path,...geometry});
     if(!noOverflow) await page.screenshot({path:'reports/browser-screenshots/overflow-'+width+'-'+path.replace(/[^a-z0-9]+/gi,'-')+'.png',fullPage:false});
     add('Heading and main landmark',geometry.h1===1&&geometry.main,{width,path,h1:geometry.h1,main:geometry.main});
+    if(path==='/account/'){
+      await page.getByText('Log in or create a free account to get started.',{exact:true}).waitFor({state:'visible',timeout:15000});
+      add('Member account initialises from live D1',await page.locator('#auth-area').isVisible(),{width,path});
+      await page.locator('[data-auth="signup"]').click();
+      add('Member signup form works',await page.locator('#member-auth-form [name="name"]').isVisible()&&await page.locator('#member-auth-form [name="terms"]').isVisible(),{width,path});
+      add('Member CAPTCHA has production key',Boolean(await page.locator('[data-turnstile-key]').getAttribute('data-turnstile-key')),{width,path});
+      if(width===390||width===1440)await page.screenshot({path:'reports/browser-screenshots/member-signup-'+width+'.png',fullPage:true});
+    }
     if(path==='/'&&(width===375||width===1440)){
       try{
         const response=await page.request.get(BASE+'/data/home-search.json');

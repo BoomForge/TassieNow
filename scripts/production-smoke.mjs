@@ -8,7 +8,7 @@ const paths=[
  '/discover/rainy-day/', '/discover/nature/', '/town/hobart/',
  '/region/hobart-and-south/', '/region/west-coast/',
  '/region/central-tasmania/', '/region/flinders-island/',
- '/suggest-update/', '/advertise/', '/privacy/', '/terms/', '/about/', '/status/'
+ '/suggest-update/', '/advertise/', '/privacy/', '/terms/', '/about/', '/status/', '/account/'
 ];
 const report={checkedAt:new Date().toISOString(),description:'Non-mutating public route and invalid Turnstile checks; NOT a substitute for mobile/browser/accessibility/paid-flow testing',base:BASE,checks:[],failures:[]};
 const wait=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -115,6 +115,27 @@ async function mustRejectUnverified(name,path,body,expectedError) {
  }catch(error){check.status='fail';check.problem=String(error.message).slice(0,180);}
  report.checks.push(check);
  if(check.status==='fail')report.failures.push(check);
+}
+// Member account checks do not create accounts or bypass CAPTCHA.
+for(const [name,path,expected,validate] of [
+ ['Member session database is available','/api/member/session',200,data=>data.user===null],
+ ['Private member profile requires login','/api/member/profile',401,data=>/log in/i.test(data.error||'')],
+ ['Member catalogue is available','/api/member/catalogue',200,data=>Array.isArray(data.places)&&data.places.length>=500],
+ ['Member moderation requires owner login','/api/member/moderation',401,data=>/Owner login/i.test(data.error||'')]
+]){
+ const entry={name,path,status:'fail'};
+ try{const {response,html}=await get(path);entry.httpCode=response.status;const data=JSON.parse(html);entry.status=response.status===expected&&validate(data)?'pass':'fail';if(entry.status==='fail')entry.problem=JSON.stringify(data).slice(0,160);}catch(error){entry.problem=String(error.message).slice(0,180);}
+ report.checks.push(entry);if(entry.status!=='pass')report.failures.push(entry);
+}
+try{
+ const {response,html}=await get('/account/');
+ const configured=response.status===200&&/data-turnstile-key="[^"\s]+"/.test(html)&&html.includes('/scripts/member-account.js');
+ const entry={name:'Member login has production CAPTCHA configuration',path:'/account/',status:configured?'pass':'fail'};
+ report.checks.push(entry);if(!configured)report.failures.push(entry);
+}catch(error){report.failures.push({name:'Member login CAPTCHA configuration',status:'fail',problem:String(error.message)});}
+for(const path of ['/api/member/signup','/api/member/login','/api/member/recover']){
+ await mustRejectUnverified('Member CAPTCHA refuses missing token at '+path,path,{},/Human verification is required/i);
+ await mustRejectUnverified('Member CAPTCHA refuses fake token at '+path,path,{turnstileToken:'tassienow-negative-test-not-a-valid-token'},/Human verification failed/i);
 }
 for(const path of ['/api/listing-corrections','/api/advertise']){
  await mustRejectUnverified('Turnstile refuses missing token at '+path,path,{},/Human verification is required/i);
