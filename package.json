@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/sanitize-events.mjs && node scripts/sanitize-ticket-data.mjs && node scripts/prune-expired-events.mjs && npm run validate:data && node scripts/build-home-search.mjs && astro build",
+    "build": "node scripts/sanitize-events.mjs && node scripts/sanitize-ticket-data.mjs && node scripts/prune-expired-events.mjs && npm run validate:data && node scripts/build-home-search.mjs && node scripts/build-member-places.mjs && astro build",
     "preview": "astro preview",
     "validate:data": "node scripts/validate-data.mjs",
     "audit:data": "node scripts/sanitize-events.mjs && node scripts/sanitize-ticket-data.mjs && node scripts/prune-expired-events.mjs && node scripts/catalogue-audit.mjs",
     "discover:markets": "node scripts/discover/official-markets.mjs",
     "test:discovery": "node --test scripts/tests/*.test.mjs",
     "refresh:events": "cp src/data/events.json /tmp/tassienow-events-before-manual-refresh.json && node scripts/discover/events.mjs && node scripts/discover/public-events.mjs && node scripts/discover/verified-regional-events.mjs && node scripts/discover/independent-ticketebo.mjs && node scripts/preserve-event-images.mjs /tmp/tassienow-events-before-manual-refresh.json && node scripts/enrich-event-images.mjs && node scripts/sanitize-events.mjs && node scripts/enrich-event-tickets.mjs && node scripts/sanitize-ticket-data.mjs && node scripts/prune-expired-events.mjs && node scripts/catalogue-audit.mjs",
-    "deep:quality": "node scripts/enrich-details.mjs && node scripts/enrich-wikidata-metadata.mjs && node scripts/verify-official-sources.mjs && node scripts/enrich-official-pages.mjs && MAX_WIKIDATA_MEDIA=1400 WIKIDATA_GALLERY_SIZE=8 node scripts/enrich-wikidata-images.mjs && MAX_IMAGE_ENRICH=1400 GALLERY_SIZE=8 node scripts/enrich-images.mjs && MAX_EVENT_IMAGE_ENRICH=90 node scripts/enrich-event-images.mjs && node scripts/rank-catalogue.mjs && node scripts/catalogue-audit.mjs && npm run build"
+    "deep:quality": "node scripts/enrich-details.mjs && node scripts/enrich-wikidata-metadata.mjs && node scripts/verify-official-sources.mjs && node scripts/enrich-official-pages.mjs && MAX_WIKIDATA_MEDIA=1400 WIKIDATA_GALLERY_SIZE=8 node scripts/enrich-wikidata-images.mjs && MAX_IMAGE_ENRICH=1400 GALLERY_SIZE=8 node scripts/enrich-images.mjs && MAX_EVENT_IMAGE_ENRICH=90 node scripts/enrich-event-images.mjs && node scripts/rank-catalogue.mjs && node scripts/catalogue-audit.mjs && npm run build",
+    "test:members": "node scripts/build-member-places.mjs && node --test tests/members.test.mjs"
   },
   "dependencies": {
     "astro": "^7.3.0"

@@ -97,6 +97,8 @@ jobs:
         run: node scripts/test-catalogue-recovery.mjs
       - name: Test discovery, market classification and recurring dates
         run: npm run test:discovery
+      - name: Test member accounts, authorisation and contributions
+        run: npm run test:members
       - name: Test daily promotion selection
         env:
           DRY_RUN: '1'

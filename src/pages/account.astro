@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
+---
+<BaseLayout title="My TassieNow | Saved places & plans" description="Save Tasmanian places, plan your next day out and share your experiences." noindex={true}>
+  <section class="member-page" data-turnstile-key={turnstileSiteKey}>
+    <p class="eyebrow">Your next Tasmanian adventure</p>
+    <h1>My TassieNow</h1>
+    <p>Keep your favourite places together. Make a plan. Share what you discover.</p>
+    <p id="account-status" role="status" aria-live="polite">Loading your account…</p>
+    <div id="auth-area" class="member-auth" hidden>
+      <div class="member-tabs" aria-label="Account access">
+        <button type="button" data-auth="login" aria-pressed="true">Log in</button>
+        <button type="button" data-auth="signup" aria-pressed="false">Create account</button>
+        <button type="button" data-auth="recover" aria-pressed="false">Recover account</button>
+      </div>
+      <form id="member-auth-form" class="member-card">
+        <h2 id="auth-heading">Welcome back</h2>
+        <label data-signup hidden>Display name <input name="name" autocomplete="nickname" minlength="2" maxlength="60" /><small>This name appears on your reviews and photos.</small></label>
+        <label>Email <input name="email" type="email" autocomplete="username" maxlength="254" required /></label>
+        <label data-recover hidden>Recovery code <input name="recoveryCode" autocomplete="off" spellcheck="false" maxlength="64" /><small>Use the private code you saved when you created your account.</small></label>
+        <label><span id="password-label">Password</span> <input name="password" type="password" autocomplete="current-password" maxlength="128" required /></label>
+        <p data-password-help hidden>Use at least 12 characters. A memorable passphrase works well.</p>
+        <label data-signup hidden class="member-check"><input name="terms" type="checkbox" /> <span>I agree to the <a href="/terms/">terms</a> and <a href="/privacy/">privacy notice</a>.</span></label>
+        <div class="member-captcha"></div>
+        <button type="submit" id="auth-submit">Log in</button>
+      </form>
+    </div>
+    <section id="recovery-notice" class="member-card member-recovery" hidden aria-labelledby="recovery-heading">
+      <h2 id="recovery-heading">Save your private recovery code</h2>
+      <p>This code lets you reset your password. Keep it somewhere safe: it is shown only once. Anyone with this code and your email can access your account. There is no email reset service.</p>
+      <label>Recovery code <input id="recovery-code" readonly spellcheck="false" /></label>
+      <div class="member-actions"><button id="copy-recovery" type="button">Copy code</button><button id="continue-account" type="button">I have saved my code — continue</button></div>
+    </section>
+    <div id="member-dashboard" hidden>
+      <div class="member-toolbar"><p id="member-greeting"></p><button id="member-logout" type="button" class="member-secondary">Log out</button></div>
+      <div class="member-tabs" aria-label="Your account">
+        <button type="button" data-panel="saved" aria-pressed="true">Saved places</button><button type="button" data-panel="plans" aria-pressed="false">My plans</button><button type="button" data-panel="contributions" aria-pressed="false">Reviews & photos</button><button type="button" data-panel="settings" aria-pressed="false">Settings</button>
+      </div>
+      <section data-section="saved"><h2>Saved places</h2><p>Use “Save place” on any place page to keep it here.</p><div id="member-saved" class="member-grid"></div></section>
+      <section data-section="plans" hidden>
+        <div class="member-toolbar"><h2>My plans</h2><button id="new-plan" type="button">Create a plan</button></div>
+        <p>Your plans are private. Add up to 50 stops, arrange them in order and keep notes for your trip.</p>
+        <div id="plan-list" class="member-grid"></div>
+        <form id="plan-form" class="member-card" hidden>
+          <h3 id="plan-heading">Create a plan</h3>
+          <label>Plan name <input name="title" maxlength="100" required /></label>
+          <label>Date (optional) <input name="day" type="date" /></label>
+          <label>Notes <textarea name="notes" maxlength="2000" rows="3"></textarea></label>
+          <label>Add a place <input id="plan-place-search" list="plan-places" placeholder="Search a place or town…" autocomplete="off" /></label>
+          <datalist id="plan-places"></datalist>
+          <div class="member-actions"><button id="add-stop" type="button" class="member-secondary">Add stop</button><button id="add-saved" type="button" class="member-secondary">Add all saved places</button></div>
+          <ol id="plan-stops" class="member-stops"></ol>
+          <div class="member-actions"><button type="submit">Save plan</button><button id="cancel-plan" type="button" class="member-secondary">Cancel</button></div>
+          <p id="plan-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <section data-section="contributions" hidden><h2>Your reviews & photos</h2><p>Submissions are checked before publication. You can remove your contributions at any time.</p><div id="member-contributions" class="member-grid"></div></section>
+      <section data-section="settings" hidden>
+        <form id="member-settings" class="member-card"><h2>Account settings</h2><p id="settings-email"></p><label>Display name <input name="name" minlength="2" maxlength="60" required /></label><label>Current password <input name="password" type="password" autocomplete="current-password" required /></label><label>New password (optional) <input name="newPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" /></label><button type="submit">Save changes</button><p class="member-form-status" role="status" aria-live="polite"></p></form>
+        <details class="member-card"><summary>Delete my account</summary><p>This permanently deletes your account, saved places, plans, reviews and uploaded photos.</p><form id="member-delete"><label>Confirm your password <input name="password" type="password" autocomplete="current-password" required /></label><label class="member-check"><input name="confirm" type="checkbox" required /><span>Delete my account and all its data permanently.</span></label><button type="submit" class="member-danger">Delete my account</button><p class="member-form-status" role="status" aria-live="polite"></p></form></details>
+      </section>
+    </div>
+  </section>
+  <script is:inline type="module" src="/scripts/member-account.js"></script>
+</BaseLayout>
