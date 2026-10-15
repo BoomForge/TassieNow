@@ -40,7 +40,7 @@ export function getStaticPaths() {
       a.name.localeCompare(b.name)
     );
 
-  const activeEvents = events.filter((event) => event.status === 'active' && event.town);
+  const activeEvents = events.filter((event) => event.status === 'active' && event.visibility !== 'suppressed' && event.town);
   const eventRegionByTown = new Map(activeEvents.map((event) => [event.town, event.region]));
 
   return [...new Set([...active.map((place) => place.town), ...activeEvents.map((event) => event.town)])]
@@ -68,11 +68,11 @@ const regionPlaces = places
   );
 
 const exactTownEvents = events
-  .filter((event) => event.status === 'active' && event.town === town && event.endDate >= today)
+  .filter((event) => event.status === 'active' && event.visibility !== 'suppressed' && event.town === town && event.endDate >= today)
   .sort((a, b) => a.startDate.localeCompare(b.startDate) || a.name.localeCompare(b.name));
 
 const nearbyRegionEvents = events
-  .filter((event) => event.status === 'active' && event.region === region && event.endDate >= today)
+  .filter((event) => event.status === 'active' && event.visibility !== 'suppressed' && event.region === region && event.endDate >= today)
   .sort((a, b) => a.startDate.localeCompare(b.startDate) || a.name.localeCompare(b.name));
 
 const eventPool = exactTownEvents.length ? exactTownEvents : nearbyRegionEvents;
