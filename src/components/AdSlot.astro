@@ -8,9 +8,9 @@ const partners = {
   meshy: { name: 'Meshy', url: 'https://www.meshy.ai?via=Pixelwolf', description: 'AI-assisted 3D creation tools and creative workflows.' }
 };
 const partner = ({ 'homepage-top':partners.playasia, 'homepage-inline':partners.elevenlabs, 'content-inline':partners.meshy, 'site-footer':partners.playasia })[placement];
-// Once AdSense approves TassieNow, switch this PUBLIC_ build flag to true.
-// Google fills only inline units; scheduled direct sponsors keep precedence.
-const googleEnabled = import.meta.env.PUBLIC_ADSENSE_INLINE_LIVE === 'true';
+// AdSense is approved for TassieNow. Google inline ads run in production,
+// unless PUBLIC_ADSENSE_DISABLED=true pauses them; paid sponsors retain precedence.
+const googleEnabled = import.meta.env.PROD && import.meta.env.PUBLIC_ADSENSE_DISABLED !== 'true';
 const googleUnit = ({ 'homepage-inline':'4956162754', 'content-inline':'8711574934' })[placement] || '';
 ---
 <aside class={'ad-slot ' + className} aria-label="Advertisement" data-ad-placement={placement} data-google-enabled={googleEnabled && Boolean(googleUnit) ? 'true' : 'false'}>
