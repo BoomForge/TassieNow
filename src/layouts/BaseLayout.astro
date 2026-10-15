@@ -25,7 +25,8 @@ const canonical = new URL(Astro.url.pathname, origin);
 const socialImage = image.startsWith('http') ? image : new URL(image, origin);
 const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN || '';
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION || '';
-const adsenseInlineLive = import.meta.env.PUBLIC_ADSENSE_INLINE_LIVE === 'true';
+// TassieNow is AdSense-approved: show ads on production builds unless explicitly paused.
+const adsenseInlineLive = import.meta.env.PROD && import.meta.env.PUBLIC_ADSENSE_DISABLED !== 'true';
 const commercialFooterAllowed = !noindex && !/^\/(?:admin|privacy|terms|advertise|suggest-update|status)(?:\/|$)/.test(Astro.url.pathname);
 
 const websiteSchema = {
