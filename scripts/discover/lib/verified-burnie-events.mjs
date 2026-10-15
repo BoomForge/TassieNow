@@ -10,6 +10,14 @@ const VERIFIED_BURNIE_EVENTS = new Map([
     venue: 'Wilson and Cattley Street intersection (north), Burnie',
     summary: 'Burnie Ten in Burnie on Sunday 25 October 2026, 10:00 am to 3:00 pm, starting at the Wilson and Cattley Street intersection (north). Check the official page for current race details.'
   }],
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club', {
+    town: 'Wivenhoe',
+    region: 'North West',
+    startDate: '2026-11-07',
+    endDate: '2026-11-07',
+    venue: 'Wivenhoe Shed, Smith and Angelsea Streets, Wivenhoe',
+    summary: 'Book Market by the Burnie Emu Bay Lions Club at Wivenhoe Shed, Smith and Angelsea Streets, Wivenhoe, on Saturday 7 November 2026 from 10:00 am to 12:00 pm. Entry is free.'
+  }],
   ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/ACOTAR-6-Midnight-Release-Event', {
     startDate: '2026-10-26',
     endDate: '2026-10-26',
