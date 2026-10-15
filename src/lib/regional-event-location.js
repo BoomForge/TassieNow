@@ -39,7 +39,7 @@ export function regionalCardLocation(text, {
     : undefined;
   const venue = /\bCraigie Knowe Vineyard\b/i.test(eventName)
     ? 'Craigie Knowe Vineyard'
-    : undefined;
+    : addressMatch?.[1]?.trim();
 
   return { town, region, venue, address };
 }
