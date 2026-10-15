@@ -1,4 +1,4 @@
-import { automationRequest, memberCSV, applyDecision } from '../../_lib/member-automation.js';
+import { automationRequest, automationPhoto, memberCSV, applyDecision } from '../../_lib/member-automation.js';
 import { isAdmin, validOwnerCredentials, createSession, sessionCookie as ownerCookie } from '../../_lib/auth.js';
 import { placeMap,placeRows } from '../../_lib/member-places.js';
 import { MemberError,fail,reply,memberDB,text,randomToken,digest,checkPassword,passwordHash,passwordMatches,recoveryHash,emailAddress,captcha,assertOrigin,boundedBody,jsonBody,limit,currentUser,requireUser,newSession,logout,sessionCookie,cleanJPEG } from '../../_lib/members.js';
@@ -29,6 +29,7 @@ async function handle(context){
   if(method!=='GET'&&path!=='automation')assertOrigin(request);
   if(path==='catalogue'&&method==='GET')return reply({places:placeRows},200,{'Cache-Control':'public, max-age=300'});
   const database=await memberDB(env);
+  if(path.startsWith('automation-photo/'))return automationPhoto(context,database);
   if(path==='automation')return automationRequest(context,database);
   if(path==='members.csv'&&method==='GET')return memberCSV(context,database);
   if(path==='session'&&method==='GET')return reply({user:await currentUser(request,database)});

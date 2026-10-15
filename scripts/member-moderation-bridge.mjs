@@ -32,7 +32,7 @@ if(action==='export'){
  for(const item of data.items){
   if(item.kind==='photos'){
    if(!/^[a-f0-9-]{36}$/.test(item.id))throw Error('Invalid photograph identity');
-   const name=`photos/${item.id}.jpg`;await fs.writeFile(path.join(out,name),Buffer.from(item.image_base64,'base64'));delete item.image_base64;item.image_path=name;
+   const imageResponse=await fetch(`https://tassienow.com${item.image_path}`,{headers:{Authorization:`Bearer ${oidc}`},signal:AbortSignal.timeout(20000)});if(!imageResponse.ok)throw Error(`Pending photograph read failed (${imageResponse.status})`);const bytes=new Uint8Array(await imageResponse.arrayBuffer());if(bytes.length>300000)throw Error('Oversized review photograph');const name=`photos/${item.id}.jpg`;await fs.writeFile(path.join(out,name),bytes);item.image_path=name;
   }
  }
  await fs.writeFile(path.join(out,'queue.json'),JSON.stringify(data,null,2)+'\n');

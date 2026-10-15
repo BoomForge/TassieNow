@@ -27,15 +27,14 @@ export async function workflowIdentity(request){
 }
 const tables={reviews:'member_reviews',photos:'member_photos'};
 export async function contributionVersion(kind,row){return digest(JSON.stringify([kind,row.id,row.created_at,kind==='reviews'?[row.rating,row.body]:[row.caption,row.bytes]]));}
-function photoBase64(image){const bytes=new Uint8Array(image);let binary='';for(let i=0;i<bytes.length;i+=16000)binary+=String.fromCharCode(...bytes.slice(i,i+16000));return btoa(binary);}
 export async function moderationQueue(database){
   const items=[];
   const reportRows=(await database.prepare('SELECT kind,target_id,reason FROM member_reports ORDER BY created_at DESC LIMIT 1000').all()).results||[];
   for(const [kind,table] of Object.entries(tables)){
-    const records=(await database.prepare(`SELECT * FROM ${table} c WHERE c.status='pending' OR (c.status='approved' AND EXISTS(SELECT 1 FROM member_reports r WHERE r.kind=? AND r.target_id=c.id)) ORDER BY c.created_at ASC LIMIT 20`).bind(kind).all()).results||[];
+    const records=(await database.prepare(`SELECT ${kind==='photos'?'id,user_id,slug,caption,bytes,status,created_at':'*'} FROM ${table} c WHERE c.status='pending' OR (c.status='approved' AND EXISTS(SELECT 1 FROM member_reports r WHERE r.kind=? AND r.target_id=c.id)) ORDER BY c.created_at ASC LIMIT 20`).bind(kind).all()).results||[];
     for(const row of records){
       const reports=reportRows.filter(r=>r.kind===kind&&r.target_id===row.id).slice(0,10);
-      items.push({kind,id:row.id,version:await contributionVersion(kind,row),expectedStatus:row.status,place:placeMap.get(row.slug)||{slug:row.slug,name:row.slug},createdAt:row.created_at,reports:reports.map(r=>r.reason),...(kind==='reviews'?{rating:row.rating,body:row.body}:{caption:row.caption,image_base64:photoBase64(row.image)})});
+      items.push({kind,id:row.id,version:await contributionVersion(kind,row),expectedStatus:row.status,place:placeMap.get(row.slug)||{slug:row.slug,name:row.slug},createdAt:row.created_at,reports:reports.map(r=>r.reason),...(kind==='reviews'?{rating:row.rating,body:row.body}:{caption:row.caption,image_path:`/api/member/automation-photo/${row.id}`})});
     }
   }
   const totals=await database.prepare("SELECT (SELECT COUNT(*) FROM member_reviews WHERE status='pending') AS reviews,(SELECT COUNT(*) FROM member_photos WHERE status='pending') AS photos,(SELECT COUNT(*) FROM member_reports) AS reports").first();
@@ -83,4 +82,13 @@ export async function memberCSV(context,database){
   const records=(await database.prepare('SELECT name,email,created_at FROM members ORDER BY created_at,email').all()).results||[];
   const csv='\uFEFFname,email,joined_at\r\n'+records.map(r=>[r.name,r.email,new Date(r.created_at).toISOString()].map(csvCell).join(',')).join('\r\n')+'\r\n';
   return new Response(csv,{headers:{'Content-Type':'text/csv; charset=utf-8','Content-Disposition':'attachment; filename="tassienow-members.csv"','Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff','X-Robots-Tag':'noindex, nofollow'}});
+}
+
+export async function automationPhoto(context,database){
+ if(context.request.method!=='GET')fail('Method not allowed.',405);
+ await workflowIdentity(context.request);
+ const id=new URL(context.request.url).pathname.split('/').filter(Boolean).at(-1);
+ const row=await database.prepare("SELECT image FROM member_photos p WHERE id=? AND (status='pending' OR (status='approved' AND EXISTS(SELECT 1 FROM member_reports r WHERE r.kind='photos' AND r.target_id=p.id)))").bind(id).first();
+ if(!row)fail('Photo is no longer awaiting review.',404);
+ return new Response(row.image,{headers:{'Content-Type':'image/jpeg','Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
 }
