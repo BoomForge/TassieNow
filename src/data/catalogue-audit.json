@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 166,
+    "active": 167,
     "media": {
       "licensedHeroCoverage": {
         "count": 77,
-        "percent": 46.4
+        "percent": 46.1
       },
-      "stillUsingCategoryArtwork": 89,
+      "stillUsingCategoryArtwork": 90,
       "bySource": {
         "verified-event-venue": 39,
         "verified-event-activity": 32,
@@ -241,7 +241,7 @@
         },
         "Launceston & North": {
           "count": 17,
-          "percent": 63
+          "percent": 60.7
         },
         "North West": {
           "count": 15,
@@ -270,19 +270,17 @@
       }
     },
     "ticketCoverage": {
-      "count": 49,
-      "percent": 29.5
+      "count": 46,
+      "percent": 27.5
     },
     "priceCoverage": {
-      "count": 62,
-      "percent": 37.3
+      "count": 61,
+      "percent": 36.5
     },
     "providers": {
-      "Humanitix": 24,
+      "Humanitix": 23,
       "Ticketek": 22,
-      "Eventbrite": 1,
-      "Ticketmaster": 1,
-      "TryBooking": 1
+      "Ticketmaster": 1
     },
     "sources": {
       "Burnie City Council": 23,
@@ -292,7 +290,7 @@
       "Devonport City Council": 16,
       "Theatre Royal Hobart": 12,
       "Humanitix Hobart": 11,
-      "Humanitix Launceston": 10,
+      "Humanitix Launceston": 11,
       "City of Clarence": 9,
       "East Coast Tasmania": 9,
       "City of Hobart": 6,
@@ -305,7 +303,7 @@
     },
     "regions": {
       "Hobart & South": 83,
-      "Launceston & North": 27,
+      "Launceston & North": 28,
       "North West": 40,
       "East Coast": 9,
       "West Coast": 1,
@@ -360,7 +358,7 @@
       "North West / Devonport City Council": 16,
       "Hobart & South / Theatre Royal Hobart": 12,
       "Hobart & South / Humanitix Hobart": 11,
-      "Launceston & North / Humanitix Launceston": 10,
+      "Launceston & North / Humanitix Launceston": 11,
       "East Coast / East Coast Tasmania": 9,
       "Hobart & South / City of Clarence": 9,
       "Hobart & South / City of Hobart": 6,
