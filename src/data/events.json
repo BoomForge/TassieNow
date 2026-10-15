@@ -741,6 +741,33 @@
     "bookingRequired": true
   },
   {
+    "slug": "school-holiday-activities-2026-10-15-burnie",
+    "name": "School Holiday Activities",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-10-15",
+    "endDate": "2026-10-15",
+    "categories": [
+      "Events",
+      "Family"
+    ],
+    "summary": "School Holiday Activities in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/School-Holiday-Activities",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "School Holiday Activities event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-15"
+  },
+  {
     "slug": "tasmania-jewels-v-geelong-venom-2026-10-15-glenorchy",
     "name": "Tasmania Jewels V Geelong Venom",
     "town": "Glenorchy",
@@ -966,33 +993,6 @@
     "priceTo": 64.9,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-10-15"
-  },
-  {
-    "slug": "school-holiday-activities-2026-10-16-burnie",
-    "name": "School Holiday Activities",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-10-16",
-    "endDate": "2026-10-16",
-    "categories": [
-      "Events",
-      "Family"
-    ],
-    "summary": "School Holiday Activities in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/School-Holiday-Activities",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
-    "sourceName": "Burnie City Council",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "School Holiday Activities event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-10-15"
   },
   {
     "slug": "tasmania-jackjumpers-v-adelaide-36ers-2026-10-16-glenorchy",
@@ -1701,7 +1701,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15",
+    "ticketLastChecked": "2026-10-15"
   },
   {
     "slug": "no-lights-no-lycra-hobart-2026-2026-10-19-hobart",
@@ -1818,7 +1819,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15",
+    "ticketLastChecked": "2026-10-15"
   },
   {
     "slug": "intro-to-computing-at-burnie-library-2026-10-20-burnie",
@@ -1855,7 +1857,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15",
+    "ticketLastChecked": "2026-10-15"
   },
   {
     "slug": "the-mum-connection-walking-group-burnie-2026-10-20-burnie",
@@ -1892,7 +1895,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15",
+    "ticketLastChecked": "2026-10-15"
   },
   {
     "slug": "want-to-learn-a-new-skill-master-basic-clothing-repairs-or-simply-meet-new-people-and-hell",
@@ -1918,7 +1922,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15",
+    "ticketLastChecked": "2026-10-15"
   },
   {
     "slug": "burnie-library-english-conversation-group-2026-10-21-burnie",
@@ -1955,7 +1960,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15",
+    "ticketLastChecked": "2026-10-15"
   },
   {
     "slug": "come-and-try-disability-golf-2026-10-21-rosny-park",
@@ -1992,7 +1998,12 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15",
+    "ticketUrl": "https://events.humanitix.com/come-and-try-golf-for-the-disabled-golf-park-hobart-tas",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-15"
   },
   {
     "slug": "devolving-minds-2026-10-21-hobart",
@@ -2712,14 +2723,9 @@
       "sourceUrl": null,
       "isFallback": true
     },
-    "status": "superseded",
+    "status": "active",
     "lastChecked": "2026-10-15",
-    "ticketLastChecked": "2026-10-15",
-    "correction": {
-      "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
-      "reason": "Date absent from the verified council session calendar",
-      "checkedAt": "2026-10-15"
-    }
+    "ticketLastChecked": "2026-10-15"
   },
   {
     "slug": "australian-government-mobile-service-centre-dover-2026-10-29-huonville",
@@ -3006,39 +3012,6 @@
     "ticketLastChecked": "2026-10-15"
   },
   {
-    "slug": "second-glance-market-2026-10-31-burnie",
-    "name": "Second Glance Market",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-10-31",
-    "endDate": "2026-10-31",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Civic Centre - Burnie Arts, 77-79 Wilmot St, Burnie,",
-    "summary": "Second Glance Market in Burnie. The council lists this session for 2026-10-31; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-15",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-15"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Second Glance Market market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "12:00",
-    "endTime": "15:00"
-  },
-  {
     "slug": "dia-de-muertos-kids-2026-11-01-hobart",
     "name": "Dia de Muertos ¡Kids!",
     "town": "Hobart",
@@ -3181,12 +3154,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-15",
-    "ticketUrl": "https://events.humanitix.com/beyond-sound-the-music-in-all-of-us",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15"
   },
   {
     "slug": "launnie-monthly-storytelling-2026-2026-11-04-launceston",
@@ -3244,8 +3212,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-15",
-    "ticketLastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15"
   },
   {
     "slug": "burnie-harness-racing-club-meet-2026-11-05-burnie",
@@ -3271,8 +3238,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-15",
-    "ticketLastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15"
   },
   {
     "slug": "east-devonport-jobs-forum-2026-2026-11-05-devonport",
@@ -3300,8 +3266,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-15",
-    "ticketLastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15"
   },
   {
     "slug": "thu-5-nov-9am-agricultured-2026-launceston-2026-11-05-launceston",
@@ -3390,41 +3355,33 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-15",
-    "ticketLastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15"
   },
   {
-    "slug": "book-market-burnie-emu-bay-lions-club-2026-11-07-wivenhoe",
-    "name": "Book Market : Burnie Emu Bay Lions Club",
-    "town": "Wivenhoe",
+    "slug": "burnie-in-bloom-2026-11-07-burnie",
+    "name": "Burnie in Bloom",
+    "town": "Burnie",
     "region": "North West",
     "startDate": "2026-11-07",
     "endDate": "2026-11-07",
     "categories": [
-      "Events",
-      "Markets"
+      "Events"
     ],
-    "venue": "Wivenhoe Shed, Smith and Angelsea Street, Wivenhoe, 7320,",
-    "summary": "Book Market : Burnie Emu Bay Lions Club in Wivenhoe. The council lists this session for 2026-11-07; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
+    "summary": "Burnie in Bloom in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-in-Bloom",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-15",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-15"
-    },
     "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Book Market : Burnie Emu Bay Lions Club market illustration",
+      "url": "/images/categories/events.svg",
+      "alt": "Burnie in Bloom event category image",
       "attribution": "TassieNow",
       "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
       "isFallback": true
     },
-    "startTime": "10:00",
-    "endTime": "12:00"
+    "status": "active",
+    "lastChecked": "2026-10-15"
   },
   {
     "slug": "infinite-spirit-southern-spectacular-2026-2026-11-07-glenorchy",
@@ -3852,9 +3809,9 @@
     "ticketLastChecked": "2026-10-15"
   },
   {
-    "slug": "bicheno-food-and-wine-festival-2026-2026-11-21-st-helens",
+    "slug": "bicheno-food-and-wine-festival-2026-2026-11-21-bicheno",
     "name": "Bicheno Food and Wine Festival 2026",
-    "town": "St Helens",
+    "town": "Bicheno",
     "region": "East Coast",
     "startDate": "2026-11-21",
     "endDate": "2026-11-21",
@@ -3862,7 +3819,7 @@
       "Events",
       "Music"
     ],
-    "summary": "Bicheno Food and Wine Festival 2026 in St Helens. Check the source for current times, venue details and availability.",
+    "summary": "Bicheno Food and Wine Festival 2026 in Bicheno. Check the source for current times, venue details and availability.",
     "eventUrl": "https://eastcoasttasmania.com/atdw_events/bicheno-food-and-wine-festival-2026/",
     "sourceUrl": "https://eastcoasttasmania.com/events/",
     "sourceName": "East Coast Tasmania",
@@ -3887,8 +3844,10 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-08",
-    "ticketLastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15",
+    "ticketLastChecked": "2026-10-15",
+    "venue": "78 Burgess Street",
+    "address": "78 Burgess Street, Bicheno TAS 7215"
   },
   {
     "slug": "highlands-bushfest-2026-2026-11-21-bothwell",
@@ -4499,39 +4458,6 @@
     "address": "80 Glen Gala Road, Cranbrook TAS 7190"
   },
   {
-    "slug": "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe",
-    "name": "Book Market : Burnie Emu Bay Lions Club",
-    "town": "Wivenhoe",
-    "region": "North West",
-    "startDate": "2026-12-05",
-    "endDate": "2026-12-05",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Wivenhoe Shed, Smith and Angelsea Street, Wivenhoe, 7320,",
-    "summary": "Book Market : Burnie Emu Bay Lions Club in Wivenhoe. The council lists this session for 2026-12-05; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-15",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-15"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Book Market : Burnie Emu Bay Lions Club market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "10:00",
-    "endTime": "12:00"
-  },
-  {
     "slug": "the-wiggles-sparkle-big-show-2026-2026-12-05-glenorchy",
     "name": "The Wiggles SPARKLE! BIG SHOW 2026",
     "town": "Glenorchy",
@@ -4749,39 +4675,6 @@
     "ticketProvider": "Ticketmaster",
     "bookingRequired": true,
     "ticketLastChecked": "2026-10-15"
-  },
-  {
-    "slug": "tassie-pop-culture-market-2026-12-12-upper-burnie",
-    "name": "Tassie Pop Culture Market",
-    "town": "Upper Burnie",
-    "region": "North West",
-    "startDate": "2026-12-12",
-    "endDate": "2026-12-12",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Upper Burnie Hall, 242 Mount st, Upper Burnie, 7320,",
-    "summary": "Tassie Pop Culture Market in Upper Burnie. The council lists this session for 2026-12-12; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-15",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-15"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Tassie Pop Culture Market market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "10:00",
-    "endTime": "14:00"
   },
   {
     "slug": "festive-friday-2026-2026-12-18-devonport",
@@ -6010,16 +5903,16 @@
     "ticketLastChecked": "2026-10-15"
   },
   {
-    "slug": "bicheno-beams-2027-06-26-st-helens",
+    "slug": "bicheno-beams-2027-06-26-bicheno",
     "name": "Bicheno Beams",
-    "town": "St Helens",
+    "town": "Bicheno",
     "region": "East Coast",
     "startDate": "2027-06-26",
     "endDate": "2027-07-17",
     "categories": [
       "Events"
     ],
-    "summary": "Bicheno Beams in St Helens. Check the source for current times, venue details and availability.",
+    "summary": "Bicheno Beams in Bicheno. Check the source for current times, venue details and availability.",
     "eventUrl": "https://eastcoasttasmania.com/atdw_events/bicheno-beams/",
     "sourceUrl": "https://eastcoasttasmania.com/events/",
     "sourceName": "East Coast Tasmania",
@@ -6033,8 +5926,10 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-08",
-    "ticketLastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15",
+    "ticketLastChecked": "2026-10-15",
+    "venue": "78 Burgess Street",
+    "address": "78 Burgess Street, Bicheno TAS 7215"
   },
   {
     "slug": "tasmanian-fibre-festival-the-handweavers-spinners-and-dyers-guild-of-tasmania-albert-hall-",
