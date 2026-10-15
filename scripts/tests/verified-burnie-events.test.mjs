@@ -6,7 +6,7 @@ const event = (name, eventUrl, startDate='2026-10-21') => ({
   name, eventUrl, startDate, endDate:startDate, town:'Burnie', slug:'old-slug'
 });
 
-test('corrects the three independently verified Burnie Council events', () => {
+test('corrects the independently verified Burnie Council events', () => {
   const pink = applyVerifiedBurnieEvent(event('PinkUp Burnie', 'https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Pink-Up-Your-Town'), '2026-10-16');
   assert.equal(pink.startDate, '2026-10-22');
   assert.equal(pink.slug, 'pinkup-burnie-2026-10-22-burnie');
