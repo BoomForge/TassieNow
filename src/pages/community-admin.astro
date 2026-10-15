@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Community moderation | TassieNow" noindex={true}>
+  <section class="member-page"><p class="eyebrow">Owner access</p><h1>Community moderation</h1><p>Review visitor contributions before publishing. <a href="/admin/">Owner dashboard / log in →</a></p><p id="moderation-status" role="status" aria-live="polite">Loading…</p><label>Show <select id="moderation-filter"><option value="pending">Awaiting review</option><option value="approved">Published</option><option value="rejected">Rejected</option></select></label><h2>Reviews</h2><div id="moderation-reviews" class="member-grid"></div><h2>Photos</h2><div id="moderation-photos" class="member-grid"></div><h2>Reported contributions</h2><div id="moderation-reports" class="member-grid"></div></section>
+  <script is:inline type="module" src="/scripts/member-moderation.js"></script>
+</BaseLayout>

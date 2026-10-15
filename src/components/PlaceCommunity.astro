@@ -1,0 +1,19 @@
+---
+const { slug, name } = Astro.props;
+const turnstileSiteKey=import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
+---
+<section id="community" class="member-community member-card" data-place-slug={slug} data-turnstile-key={turnstileSiteKey}>
+  <p class="eyebrow">Your TassieNow</p><h2>Save, plan & share</h2>
+  <p>Keep {name} for later, add it to a day out or share your visit.</p>
+  <p id="community-status" role="status" aria-live="polite">Loading community features…</p>
+  <div id="community-guest" hidden><a class="action-link" href={`/account/?next=${encodeURIComponent(`/place/${slug}/`)}`}>Log in / create an account</a><p>Free accounts include saved places, private plans, reviews and photos.</p></div>
+  <div id="community-member" hidden>
+    <div class="member-actions"><button id="save-place" type="button" aria-pressed="false">Save place</button><a href="/account/?tab=plans">My saved places & plans →</a></div>
+    <form id="quick-plan" class="member-inline-form"><label>Add to a plan <select name="plan" required><option value="">Choose a plan</option></select></label><button type="submit">Add place</button><a href="/account/?tab=plans">Create a plan</a></form>
+    <details id="review-details"><summary>Write or edit your review</summary><form id="member-review-form"><label>Your rating <select name="rating" required><option value="">Choose stars</option>{[5,4,3,2,1].map(r=><option value={r}>{r} / 5</option>)}</select></label><label>Your experience <textarea name="body" minlength="10" maxlength="2000" rows="4" required></textarea></label><p>Share an honest first-hand experience. Reviews are moderated before publication. Editing sends your review back for checking.</p><div class="member-captcha"></div><button type="submit">Submit review</button><p class="member-form-status" role="status" aria-live="polite"></p></form></details>
+    <details id="photo-details"><summary>Upload a photograph</summary><form id="member-photo-form"><label>Photograph <input name="file" type="file" accept="image/jpeg,image/png,image/webp" required /></label><p>Your photo is resized automatically for upload. JPG, PNG or WebP originals up to 15 MB. Location metadata is removed.</p><label>Describe your photo <input name="caption" minlength="3" maxlength="200" required /></label><label class="member-check"><input name="rights" type="checkbox" required /><span>I took this photo, have permission from any identifiable people, and allow TassieNow to display it with my display name. I can remove it through my account.</span></label><p>Photos are checked before publication. Up to 30 photos per account.</p><div class="member-captcha"></div><button type="submit">Upload photo</button><p class="member-form-status" role="status" aria-live="polite"></p></form></details>
+  </div>
+  <h3>Visitor reviews</h3><p id="community-rating"></p><div id="community-reviews" class="member-grid"></div>
+  <h3>Visitor photos</h3><div id="community-photos" class="member-grid"></div>
+</section>
+<script is:inline type="module" src="/scripts/member-place.js"></script>

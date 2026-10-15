@@ -1,4 +1,5 @@
 ---
+import PlaceCommunity from '../../components/PlaceCommunity.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import MarketVisitorPhotos from '../../components/MarketVisitorPhotos.astro';
@@ -319,6 +320,7 @@ const schema = {
       )}
     </div>
 
+    <PlaceCommunity slug={place.slug} name={place.name} />
     <AdSlot placement="content-inline" />
     <section class="nearby-cta">
       <div>

@@ -71,7 +71,7 @@ const discoveryLinks = [
     <meta name="description" content={description} />
     <meta name="theme-color" content="#027B87" />
     <meta name="google-adsense-account" content="ca-pub-6507270199743672" />
-    {adsenseInlineLive && <script is:inline async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6507270199743672"></script>}
+    {adsenseInlineLive && !noindex && <script is:inline async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6507270199743672"></script>}
     <meta name="robots" content={noindex ? 'noindex,nofollow' : 'index,follow,max-image-preview:large'} />
     {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
     <link rel="canonical" href={canonical} />
@@ -150,6 +150,7 @@ const discoveryLinks = [
         <a class="nav-direct-link" href="/#directory">Find places</a>
         <a class="nav-direct-link" href="/guides/">Guides</a>
         <a class="nav-direct-link" href="/about/">About</a>
+        <a class="nav-direct-link" href="/account/" data-member-link>Log in / sign up</a>
       </nav>
     </header>
 
@@ -215,5 +216,6 @@ const discoveryLinks = [
         if (field) recordMetric(field instanceof HTMLInputElement && field.type === 'search' ? 'search' : 'filter', field.dataset.trackFilter || 'category');
       });
     </script>
+  <script is:inline type="module" src="/scripts/member-nav.js"></script>
   </body>
 </html>

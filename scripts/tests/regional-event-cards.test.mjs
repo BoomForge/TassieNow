@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
+import { regionalCardLocation } from '../../src/lib/regional-event-location.js';
 
 const importer = fs.readFileSync(new URL('../discover/public-events.mjs', import.meta.url), 'utf8');
 const start = importer.indexOf('function regionalListingEvents');
@@ -17,6 +18,7 @@ function dateRange(s) {
   return m ? { startDate: iso(m[1],m[2],m[3]), endDate: iso(m[1],m[2],m[3]) } : null;
 }
 const context = {
+  regionalCardLocation,
   URL, decode: (s) => s, clean,
   plausibleName: (s) => s.length >= 4,
   titleFromEventUrl: (s) => new URL(s).pathname.split('/').filter(Boolean).at(-1).replaceAll('-', ' '),
