@@ -137,6 +137,14 @@ Use:
 
 Cloudflare Pages rebuilds the public site after changes land on `main`.
 
+### Google AdSense (approved 15 October 2026)
+
+The approved publisher `ca-pub-6507270199743672` and the exact authorised seller entry are installed in the base layout and `public/ads.txt`. Production builds now load AdSense by default; local development does not. Existing `homepage-inline` and `content-inline` units request Google ads only where no booked first-party sponsor is available, with clearly labelled affiliate fallbacks for unfilled or blocked ads. Homepage-top and site-footer remain sponsor/affiliate placements.
+
+For an emergency pause, set **`PUBLIC_ADSENSE_DISABLED=true`** in Cloudflare Pages production build environment, then redeploy. Remove/unset it (or set `false`) to resume. The previous opt-in flag `PUBLIC_ADSENSE_INLINE_LIVE` is no longer used, so it does not prevent approved ads from going live. Configure and save Auto ads settings separately in the AdSense dashboard only if additional Google-managed placements are wanted; the existing site integrations do not require Auto ads.
+
+Verify after Cloudflare has deployed the new main commit: `https://tassienow.com/ads.txt` must show the authorised seller line, and page source must include the AdSense script and configured inline units. Browser blockers, unfilled auctions and AdSense serving status can prevent a visible ad even with successful deployment.
+
 ### Launch measurement and search verification
 
 The public layout supports two optional Cloudflare Pages environment variables:
