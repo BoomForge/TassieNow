@@ -33,7 +33,7 @@ const activePlaces = places
   );
 
 const activeEvents = events
-  .filter((event) => event.status === 'active' && event.endDate >= today)
+  .filter((event) => event.status === 'active' && event.visibility !== 'suppressed' && event.endDate >= today)
   .sort((a, b) => a.startDate.localeCompare(b.startDate) || (a.name || '').localeCompare(b.name || ''));
 
 const regions = [...new Set(activePlaces.map((place) => place.region).filter(Boolean))].sort();
