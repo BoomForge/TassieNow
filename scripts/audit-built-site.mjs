@@ -7,6 +7,10 @@ const results={generatedAt:new Date().toISOString(),htmlCount:0,imageCount:0,scr
 const files=[];
 const today=tasmaniaDate();
 const validDay=(value)=>/^\d{4}-\d{2}-\d{2}$/.test(value||'') && !Number.isNaN(Date.parse(value+'T12:00:00Z'));
+// Google Event start/end dates may include verified local times as well as date-only values.
+const validEventDate=(value)=>typeof value==='string' && (
+ validDay(value) || (/^\d{4}-\d{2}-\d{2}T(?:[01]\d|2[0-3]):[0-5]\d(?::[0-5]\d)?(?:Z|[+-](?:0\d|1[0-4]):[0-5]\d)?$/.test(value) && validDay(value.slice(0,10)))
+);
 const absoluteUrl=(value)=>typeof value==='string' && /^https:\/\//.test(value);
 async function walk(dir){
  for(const item of await fs.readdir(dir,{withFileTypes:true})){
@@ -45,7 +49,7 @@ for(const file of files){
      const event=nodes.find(node=>node['@type']==='Event');
      if(!event)results.issues.push('Missing Event schema: '+relative);
      else{
-       if(!event.name || !validDay(event.startDate) || !validDay(event.endDate) || event.endDate<event.startDate)
+       if(!event.name || !validEventDate(event.startDate) || !validEventDate(event.endDate) || event.endDate<event.startDate)
          results.issues.push('Invalid Event name or dates: '+relative);
        if(!event.location?.address?.addressLocality || event.location.address.addressCountry!=='AU')
          results.issues.push('Invalid Event location: '+relative);
