@@ -2,6 +2,7 @@
 const { slug, name } = Astro.props;
 const turnstileSiteKey=import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
 ---
+{turnstileSiteKey && <script is:inline data-cfasync="false" data-member-turnstile src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>}
 <section id="community" class="member-community member-card" data-place-slug={slug} data-turnstile-key={turnstileSiteKey}>
   <p class="eyebrow">Your TassieNow</p><h2>Save, plan & share</h2>
   <p>Keep {name} for later, add it to a day out or share your visit.</p>
@@ -16,4 +17,4 @@ const turnstileSiteKey=import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
   <h3>Visitor reviews</h3><p id="community-rating"></p><div id="community-reviews" class="member-grid"></div>
   <h3>Visitor photos</h3><div id="community-photos" class="member-grid"></div>
 </section>
-<script is:inline type="module" src="/scripts/member-place.js"></script>
+<script is:inline data-cfasync="false" type="module" src="/scripts/member-place.js"></script>

@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
 ---
 <BaseLayout title="My TassieNow | Saved places & plans" description="Save Tasmanian places, plan your next day out and share your experiences." noindex={true}>
+  {turnstileSiteKey && <script is:inline data-cfasync="false" data-member-turnstile src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>}
   <section class="member-page" data-turnstile-key={turnstileSiteKey}>
     <p class="eyebrow">Your next Tasmanian adventure</p>
     <h1>My TassieNow</h1>
@@ -15,9 +16,9 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
         <button type="button" data-auth="recover" aria-pressed="false">Recover account</button>
       </div>
       <form id="member-auth-form" class="member-card">
-        <h2 id="auth-heading">Welcome back</h2>
+        <h2 id="auth-heading">Welcome back</h2><p>Site owner? <a href="/admin/">Use the owner dashboard login</a>.</p>
         <label data-signup hidden>Display name <input name="name" autocomplete="nickname" minlength="2" maxlength="60" /><small>This name appears on your reviews and photos.</small></label>
-        <label>Email <input name="email" type="email" autocomplete="username" maxlength="254" required /></label>
+        <label><span id="identifier-label">Email or owner username</span> <input name="email" type="text" inputmode="email" autocomplete="username" maxlength="254" required /></label>
         <label data-recover hidden>Recovery code <input name="recoveryCode" autocomplete="off" spellcheck="false" maxlength="64" /><small>Use the private code you saved when you created your account.</small></label>
         <label><span id="password-label">Password</span> <input name="password" type="password" autocomplete="current-password" maxlength="128" required /></label>
         <p data-password-help hidden>Use at least 12 characters. A memorable passphrase works well.</p>
@@ -35,7 +36,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
     <div id="member-dashboard" hidden>
       <div class="member-toolbar"><p id="member-greeting"></p><button id="member-logout" type="button" class="member-secondary">Log out</button></div>
       <div class="member-tabs" aria-label="Your account">
-        <button type="button" data-panel="saved" aria-pressed="true">Saved places</button><button type="button" data-panel="plans" aria-pressed="false">My plans</button><button type="button" data-panel="contributions" aria-pressed="false">Reviews & photos</button><button type="button" data-panel="settings" aria-pressed="false">Settings</button>
+        <button type="button" data-panel="saved" aria-pressed="true">Saved places</button><button type="button" data-panel="plans" aria-pressed="false">My plans</button><button type="button" data-panel="contributions" aria-pressed="false">Reviews & photos</button><button type="button" data-panel="messages" aria-pressed="false">Messages<span id="message-count"></span></button><button type="button" data-panel="settings" aria-pressed="false">Settings</button>
       </div>
       <section data-section="saved"><h2>Saved places</h2><p>Use “Save place” on any place page to keep it here.</p><div id="member-saved" class="member-grid"></div></section>
       <section data-section="plans" hidden>
@@ -56,11 +57,12 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
         </form>
       </section>
       <section data-section="contributions" hidden><h2>Your reviews & photos</h2><p>Submissions are checked before publication. You can remove your contributions at any time.</p><div id="member-contributions" class="member-grid"></div></section>
+      <section data-section="messages" hidden><h2>Account messages</h2><p>Approval updates and specific reasons when a contribution is rejected appear here.</p><div id="member-messages" class="member-grid"></div></section>
       <section data-section="settings" hidden>
         <form id="member-settings" class="member-card"><h2>Account settings</h2><p id="settings-email"></p><label>Display name <input name="name" minlength="2" maxlength="60" required /></label><label>Current password <input name="password" type="password" autocomplete="current-password" required /></label><label>New password (optional) <input name="newPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" /></label><button type="submit">Save changes</button><p class="member-form-status" role="status" aria-live="polite"></p></form>
         <details class="member-card"><summary>Delete my account</summary><p>This permanently deletes your account, saved places, plans, reviews and uploaded photos.</p><form id="member-delete"><label>Confirm your password <input name="password" type="password" autocomplete="current-password" required /></label><label class="member-check"><input name="confirm" type="checkbox" required /><span>Delete my account and all its data permanently.</span></label><button type="submit" class="member-danger">Delete my account</button><p class="member-form-status" role="status" aria-live="polite"></p></form></details>
       </section>
     </div>
   </section>
-  <script is:inline type="module" src="/scripts/member-account.js"></script>
+  <script is:inline data-cfasync="false" type="module" src="/scripts/member-account.js"></script>
 </BaseLayout>

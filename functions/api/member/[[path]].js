@@ -1,4 +1,5 @@
-import { isAdmin } from '../../_lib/auth.js';
+import { automationRequest, memberCSV, applyDecision } from '../../_lib/member-automation.js';
+import { isAdmin, validOwnerCredentials, createSession, sessionCookie as ownerCookie } from '../../_lib/auth.js';
 import { placeMap,placeRows } from '../../_lib/member-places.js';
 import { MemberError,fail,reply,memberDB,text,randomToken,digest,checkPassword,passwordHash,passwordMatches,recoveryHash,emailAddress,captcha,assertOrigin,boundedBody,jsonBody,limit,currentUser,requireUser,newSession,logout,sessionCookie,cleanJPEG } from '../../_lib/members.js';
 
@@ -25,14 +26,21 @@ async function handle(context){
   const {request,env}=context,url=new URL(request.url),method=request.method;
   const path=url.pathname.replace(/^\/api\/member\/?/,'').replace(/\/$/,'');
   if(!['GET','POST','PUT','DELETE'].includes(method))return reply({error:'Method not allowed'},405,{Allow:'GET, POST, PUT, DELETE'});
-  if(method!=='GET')assertOrigin(request);
+  if(method!=='GET'&&path!=='automation')assertOrigin(request);
   if(path==='catalogue'&&method==='GET')return reply({places:placeRows},200,{'Cache-Control':'public, max-age=300'});
   const database=await memberDB(env);
+  if(path==='automation')return automationRequest(context,database);
+  if(path==='members.csv'&&method==='GET')return memberCSV(context,database);
   if(path==='session'&&method==='GET')return reply({user:await currentUser(request,database)});
   if(['signup','login','recover'].includes(path)&&method==='POST'){
     await limit(context,database,'auth',30,900);
     const body=await jsonBody(request);if(!body||typeof body!=='object')fail('Invalid request.');
-    await captcha(context,body);const email=emailAddress(body.email);
+    await captcha(context,body);
+    if(path==='login'&&String(body.email||'').trim()===(env.ADMIN_USERNAME||'admin')){
+      if(!validOwnerCredentials(env,String(body.email).trim(),body.password))fail('Username or password is incorrect.',401);
+      return reply({ok:true,redirect:'/admin/'},200,{'Set-Cookie':ownerCookie(await createSession(env))});
+    }
+    const email=emailAddress(body.email);
     if(path==='signup'){
       await limit(context,database,'signup',5,3600);
       const name=text(body.name,60);if(name.length<2)fail('Use a display name of at least two characters.');
@@ -82,19 +90,20 @@ async function handle(context){
   if(method!=='GET')await limit(context,database,'member-write',120,3600,user.id);
   if(path==='logout'&&method==='POST')return logout(request,database);
   if(path==='profile'&&method==='GET'){
-    const [saved,plans,reviews,photos]=await Promise.all([
+    const [saved,plans,reviews,photos,messages]=await Promise.all([
       rows(database.prepare('SELECT slug FROM member_saved WHERE user_id=? ORDER BY created_at DESC').bind(user.id)),
       rows(database.prepare('SELECT * FROM member_plans WHERE user_id=? ORDER BY updated_at DESC').bind(user.id)),
       rows(database.prepare('SELECT id,slug,rating,body,status FROM member_reviews WHERE user_id=? ORDER BY created_at DESC').bind(user.id)),
-      rows(database.prepare('SELECT id,slug,caption,status FROM member_photos WHERE user_id=? ORDER BY created_at DESC').bind(user.id))
+      rows(database.prepare('SELECT id,slug,caption,status FROM member_photos WHERE user_id=? ORDER BY created_at DESC').bind(user.id)),
+      rows(database.prepare('SELECT id,kind,target_id,place_slug,title,body,created_at,read_at FROM member_messages WHERE user_id=? ORDER BY created_at DESC LIMIT 100').bind(user.id))
     ]);
-    return reply({user,saved:saved.map(p=>placeMap.get(p.slug)).filter(Boolean),plans:plans.map(planOutput),reviews,photos});
+    return reply({user,messages,saved:saved.map(p=>placeMap.get(p.slug)).filter(Boolean),plans:plans.map(planOutput),reviews,photos});
   }
   if(path==='profile'&&(method==='PUT'||method==='DELETE')){
     const body=await jsonBody(request),stored=await database.prepare('SELECT password FROM members WHERE id=?').bind(user.id).first();
     if(!await passwordMatches(env,body.password,stored?.password))fail('Your current password is incorrect.',401);
     if(method==='DELETE'){
-      await database.batch(['member_reports','member_photos','member_reviews','member_plans','member_saved','member_sessions'].map(table=>database.prepare(`DELETE FROM ${table} WHERE user_id=?`).bind(user.id)).concat(database.prepare('DELETE FROM members WHERE id=?').bind(user.id)));
+      await database.batch(['member_messages','member_moderation','member_reports','member_photos','member_reviews','member_plans','member_saved','member_sessions'].map(table=>database.prepare(`DELETE FROM ${table} WHERE user_id=?`).bind(user.id)).concat(database.prepare('DELETE FROM members WHERE id=?').bind(user.id)));
       return reply({ok:true},200,{'Set-Cookie':sessionCookie('',true)});
     }
     const name=text(body.name,60);if(name.length<2)fail('Use a display name of at least two characters.');
@@ -105,6 +114,7 @@ async function handle(context){
     }
     await database.prepare('UPDATE members SET name=? WHERE id=?').bind(name,user.id).run();return reply({ok:true});
   }
+  if(path==='messages/read'&&method==='POST'){await database.prepare('UPDATE member_messages SET read_at=? WHERE user_id=? AND read_at IS NULL').bind(Date.now(),user.id).run();return reply({ok:true});}
   if(path==='saved'&&(method==='POST'||method==='DELETE')){
     const body=await jsonBody(request),slug=place(body.slug);
     if(method==='DELETE')await database.prepare('DELETE FROM member_saved WHERE user_id=? AND slug=?').bind(user.id,slug).run();
@@ -170,8 +180,9 @@ async function moderate(context,database,method,url){
   if(method==='PUT'){
     const body=await jsonBody(context.request),table=body.kind==='reviews'?'member_reviews':body.kind==='photos'?'member_photos':null;
     if(!table||!['approved','rejected','pending'].includes(body.status))fail('Invalid moderation action.');
-    if(!changes(await database.prepare(`UPDATE ${table} SET status=? WHERE id=?`).bind(body.status,String(body.id)).run()))fail('Contribution not found.',404);
-    await database.prepare('DELETE FROM member_reports WHERE kind=? AND target_id=?').bind(body.kind,String(body.id)).run();return reply({ok:true});
+    const result=await applyDecision(database,body,'owner',{manual:true});
+    if(result.status==='missing')fail('Contribution not found.',404);
+    return reply({ok:true,result});
   }
   fail('Method not allowed.',405);
 }

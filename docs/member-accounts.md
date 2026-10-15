@@ -20,3 +20,7 @@ IP-based authentication limits use short-lived salted hashes, not raw IP storage
 - `npm run test:discovery`: existing catalogue regression coverage.
 - `npm run build`: generates member place catalogue and all static pages.
 - Browser acceptance exercised signup, save-place persistence, private plan creation/reload, review submission, actual canvas photo compression/upload, owner approval, guest rendering, 390px/1440px layouts, logout/login, and account deletion against an isolated local database with a mocked test-only CAPTCHA service. Production CAPTCHA remains independently enforced by Turnstile.
+
+## Automated moderation and signup records
+
+See `docs/member-moderation-runner.md` for the private twice-daily review bridge and task contract. Rejections require a specific explanation and create a private account message. Owner-only `/api/member/members.csv` generates the current deduplicated name/email/signup-date CSV on demand, with spreadsheet-formula neutralisation. It contains no credentials and is never public.

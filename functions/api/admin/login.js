@@ -5,7 +5,7 @@ export async function onRequestPost(context) {
   if (!sameOrigin(context.request)) return Response.json({ error: 'Invalid request origin' }, { status: 403 });
   let body;
   try { body = await context.request.json(); } catch { return Response.json({ error: 'Invalid request' }, { status: 400 }); }
-  const verification = await verifyTurnstile(context, body['cf-turnstile-response'] || body.turnstileToken);
+  const verification = await verifyTurnstile(context, body['cf-turnstile-response'] || body.turnstileToken, { required: true });
   if (!verification.ok) return Response.json({ error: verification.error }, { status: 400 });
   if (!validOwnerCredentials(context.env, body.username, body.password)) {
     await new Promise((resolve) => setTimeout(resolve, 350));

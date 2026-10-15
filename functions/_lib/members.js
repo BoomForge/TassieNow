@@ -20,6 +20,9 @@ const schema = [
   `CREATE INDEX IF NOT EXISTS member_photo_place ON member_photos(slug,status,created_at)`,
   `CREATE INDEX IF NOT EXISTS member_photo_user ON member_photos(user_id)`,
   `CREATE TABLE IF NOT EXISTS member_reports (kind TEXT NOT NULL, target_id TEXT NOT NULL, user_id TEXT NOT NULL REFERENCES members(id) ON DELETE CASCADE, reason TEXT NOT NULL, created_at INTEGER NOT NULL, PRIMARY KEY(kind,target_id,user_id))`,
+  `CREATE TABLE IF NOT EXISTS member_messages (id TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES members(id) ON DELETE CASCADE,kind TEXT NOT NULL,target_id TEXT NOT NULL,place_slug TEXT NOT NULL,title TEXT NOT NULL,body TEXT NOT NULL,created_at INTEGER NOT NULL,read_at INTEGER)`,
+  `CREATE INDEX IF NOT EXISTS member_message_user ON member_messages(user_id,created_at)`,
+  `CREATE TABLE IF NOT EXISTS member_moderation (id TEXT PRIMARY KEY,kind TEXT NOT NULL,target_id TEXT NOT NULL,user_id TEXT NOT NULL REFERENCES members(id) ON DELETE CASCADE,version TEXT NOT NULL,status TEXT NOT NULL,reason TEXT NOT NULL,reviewer TEXT NOT NULL,decided_at INTEGER NOT NULL)`,
   `CREATE TABLE IF NOT EXISTS member_limits (key TEXT PRIMARY KEY, hits INTEGER NOT NULL, expires_at INTEGER NOT NULL)`
 ];
 const initialized = new WeakMap();

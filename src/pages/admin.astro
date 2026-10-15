@@ -3,12 +3,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
 ---
 <BaseLayout title="TassieNow Admin" description="TassieNow owner administration." noindex={true}>
-  {turnstileSiteKey && <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>}
-  <section class="content-shell admin-page">
+  {turnstileSiteKey && <script is:inline data-cfasync="false" data-member-turnstile src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>}
+  <section class="content-shell admin-page" data-turnstile-key={turnstileSiteKey}>
     <div id="login-panel" class="admin-card login-card">
       <img src="/brand/tassienow-emblem.svg" alt="" class="admin-emblem" />
       <p class="eyebrow">Owner access</p><h1>TassieNow Admin</h1>
-      <form id="login-form"><label>Username<input name="username" autocomplete="username" value="admin" required /></label><label>Password<input name="password" type="password" autocomplete="current-password" required /></label>{turnstileSiteKey && <div class="cf-turnstile" data-sitekey={turnstileSiteKey} data-theme="auto"></div>}<button class="primary-button" type="submit">Log in</button><p id="login-status" class="admin-status" aria-live="polite"></p></form>
+      <form id="login-form"><label>Username<input name="username" autocomplete="username" value="admin" required /></label><label>Password<input name="password" type="password" autocomplete="current-password" required /></label><div class="member-captcha"></div><button class="primary-button" type="submit">Log in</button><p id="login-status" class="admin-status" aria-live="polite"></p></form>
     </div>
 
     <div id="admin-panel" hidden>
@@ -108,6 +108,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
     </div>
   </section>
 
+  <script is:inline data-cfasync="false" type="module" src="/scripts/member-admin-captcha.js"></script>
   <script>
     const loginPanel=document.querySelector('#login-panel'),adminPanel=document.querySelector('#admin-panel'),globalStatus=document.querySelector('#global-status');
     let catalogue=[],ads=[],photoQueue={},activeCandidate=null;
