@@ -5849,9 +5849,9 @@
     "ticketLastChecked": "2026-10-15"
   },
   {
-    "slug": "spoke-motorcycle-festival-2027-02-26-st-helens",
+    "slug": "spoke-motorcycle-festival-2027-02-26-little-swanport",
     "name": "Spoke Motorcycle Festival",
-    "town": "St Helens",
+    "town": "Little Swanport",
     "region": "East Coast",
     "startDate": "2027-02-26",
     "endDate": "2027-02-28",
@@ -5859,7 +5859,7 @@
       "Events",
       "Music"
     ],
-    "summary": "Spoke Motorcycle Festival in St Helens. Check the source for current times, venue details and availability.",
+    "summary": "Spoke Motorcycle Festival at 100 Mayfield Jetty Road in Little Swanport. Check the official event source for current times and availability.",
     "eventUrl": "https://eastcoasttasmania.com/atdw_events/spoke-motorcycle-festival/",
     "sourceUrl": "https://eastcoasttasmania.com/events/",
     "sourceName": "East Coast Tasmania",
@@ -5884,13 +5884,15 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-08",
-    "ticketLastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15",
+    "ticketLastChecked": "2026-10-15",
+    "venue": "100 Mayfield Jetty Road",
+    "address": "100 Mayfield Jetty Road, Little Swanport TAS 7190"
   },
   {
-    "slug": "echo-festival-2027-03-12-st-helens",
+    "slug": "echo-festival-2027-03-12-swansea",
     "name": "ECHO Festival",
-    "town": "St Helens",
+    "town": "Swansea",
     "region": "East Coast",
     "startDate": "2027-03-12",
     "endDate": "2027-03-14",
@@ -5898,7 +5900,7 @@
       "Events",
       "Music"
     ],
-    "summary": "ECHO Festival in St Helens. Check the source for current times, venue details and availability.",
+    "summary": "ECHO Festival at 13512 Tasman Hwy in Swansea. Check the official event source for current times and availability.",
     "eventUrl": "https://eastcoasttasmania.com/atdw_events/echo-festival/",
     "sourceUrl": "https://eastcoasttasmania.com/events/",
     "sourceName": "East Coast Tasmania",
@@ -5912,8 +5914,10 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-08",
-    "ticketLastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15",
+    "ticketLastChecked": "2026-10-15",
+    "venue": "13512 Tasman Hwy",
+    "address": "13512 Tasman Hwy, Swansea TAS 7190"
   },
   {
     "slug": "dolly-and-kenny-forever-mc-entertainment-albert-hall-launceston-10-apr-2027-04-10-launcest",
@@ -6077,16 +6081,16 @@
     "ticketLastChecked": "2026-10-15"
   },
   {
-    "slug": "winter-challenge-tasmania-2027-08-15-st-helens",
+    "slug": "winter-challenge-tasmania-2027-08-15-orford",
     "name": "Winter Challenge Tasmania",
-    "town": "St Helens",
+    "town": "Orford",
     "region": "East Coast",
     "startDate": "2027-08-15",
     "endDate": "2027-08-15",
     "categories": [
       "Events"
     ],
-    "summary": "Winter Challenge Tasmania in St Helens. Check the source for current times, venue details and availability.",
+    "summary": "Winter Challenge Tasmania at 31 Rheban Road in Orford. Check the official event source for current times and availability.",
     "eventUrl": "https://eastcoasttasmania.com/atdw_events/winter-challenge-tasmania/",
     "sourceUrl": "https://eastcoasttasmania.com/events/",
     "sourceName": "East Coast Tasmania",
@@ -6100,7 +6104,9 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-08",
-    "ticketLastChecked": "2026-10-15"
+    "lastChecked": "2026-10-15",
+    "ticketLastChecked": "2026-10-15",
+    "venue": "31 Rheban Road",
+    "address": "31 Rheban Road, Orford TAS 7190"
   }
 ]
