@@ -15,7 +15,7 @@ async function load(){
   try{profile=await api('profile');auth.hidden=true;recovery.hidden=true;dashboard.hidden=false;$('#member-greeting').textContent=`Hello, ${profile.user.name}`;$('#settings-email').textContent=profile.user.email;$('#member-settings').elements.name.value=profile.user.name;render();message(status,'');
     if(new URLSearchParams(location.search).get('tab')==='plans')showPanel('plans');
     const link=document.querySelector('[data-member-link]');if(link)link.textContent='My TassieNow';
-  }catch(e){if(e.status===401){showAuth();message(status,'Log in or create a free account to get started.');}else message(status,e.message,true);}
+  }catch(e){if(e.status===401){showAuth();message(status,'Log in or create a free account to get started.');}else{if(!profile)showAuth();message(status,e.message,true);}}
 }
 function placeLink(slug,label){return `<a href="/place/${encodeURIComponent(slug)}/">${esc(label||slug)}</a>`;}
 function render(){

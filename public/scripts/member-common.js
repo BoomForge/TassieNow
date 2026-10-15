@@ -1,8 +1,19 @@
 export const esc = (value='') => String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export async function api(path,options={}) {
-  const response=await fetch(`/api/member/${path}`,{credentials:'same-origin',cache:'no-store',...options,headers:{Accept:'application/json',...(options.body&&!(options.body instanceof FormData)?{'Content-Type':'application/json'}:{}),...options.headers}});
-  const data=await response.json().catch(()=>({}));
-  if(!response.ok){const error=new Error(data.error||'Unable to connect. Please try again.');error.status=response.status;throw error;}return data;
+  const attempts=(!options.method||options.method==='GET')?2:1;
+  for(let attempt=0;attempt<attempts;attempt++){
+    try{
+      const response=await fetch(`/api/member/${path}`,{credentials:'same-origin',cache:'no-store',signal:AbortSignal.timeout(10000),...options,headers:{Accept:'application/json',...(options.body&&!(options.body instanceof FormData)?{'Content-Type':'application/json'}:{}),...options.headers}});
+      const data=await response.json().catch(()=>({}));
+      if(!response.ok){const error=new Error(data.error||'Unable to connect. Please try again.');error.status=response.status;throw error;}return data;
+    }catch(error){
+      if(attempt+1>=attempts||(error.status&&error.status<500)){
+        if(error.name==='TimeoutError'||error.name==='AbortError')throw new Error('The connection timed out. Please try again.');
+        throw error;
+      }
+      await new Promise(resolve=>setTimeout(resolve,500));
+    }
+  }
 }
 export const send = (path,body={},method='POST') => api(path,{method,body:JSON.stringify(body)});
 export function message(node,value,error=false){node.textContent=value;node.classList.toggle('member-error',error);}

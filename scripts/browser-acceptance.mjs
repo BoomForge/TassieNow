@@ -33,7 +33,7 @@ try{
     if(!noOverflow) await page.screenshot({path:'reports/browser-screenshots/overflow-'+width+'-'+path.replace(/[^a-z0-9]+/gi,'-')+'.png',fullPage:false});
     add('Heading and main landmark',geometry.h1===1&&geometry.main,{width,path,h1:geometry.h1,main:geometry.main});
     if(path==='/account/'){
-      await page.getByText('Log in or create a free account to get started.',{exact:true}).waitFor({state:'visible',timeout:15000});
+      await page.getByText('Log in or create a free account to get started.',{exact:true}).waitFor({state:'visible',timeout:25000});
       add('Member account initialises from live D1',await page.locator('#auth-area').isVisible(),{width,path});
       await page.locator('[data-auth="signup"]').click();
       add('Member signup form works',await page.locator('#member-auth-form [name="name"]').isVisible()&&await page.locator('#member-auth-form [name="terms"]').isVisible(),{width,path});
@@ -115,7 +115,7 @@ try{
       add('Automated WCAG 2.1 AA',!problems.length,{width,path,violations:problems});
       if(problems.length)await page.screenshot({path:'reports/browser-screenshots/a11y-'+width+'-'+path.replace(/[^a-z0-9]+/gi,'-')+'.png',fullPage:false});
     }
-   }catch(error){add('Browser inspection',false,{width,path,error:String(error?.message||error).slice(0,500)});}
+   }catch(error){if(path==='/account/')await page.screenshot({path:'reports/browser-screenshots/member-load-error-'+width+'.png',fullPage:true}).catch(()=>{});add('Browser inspection',false,{width,path,error:String(error?.message||error).slice(0,500)});}
   }
   await context.close();
  }
@@ -128,6 +128,8 @@ if(process.env.GITHUB_STEP_SUMMARY){
  for(const failure of report.failures.slice(0,60))lines.push('- '+failure.name+' '+failure.width+'px '+failure.path+': '+JSON.stringify(failure.violations||failure.message||failure.error||failure.geometry||'check failed').slice(0,400));
  await fs.appendFile(process.env.GITHUB_STEP_SUMMARY,lines.join('\n')+'\n');
 }
+const memberChecks=report.checks.filter(check=>check.path==='/account/');
+console.log('Member live browser checks: '+JSON.stringify({passed:memberChecks.filter(c=>c.status==='pass').length,failed:memberChecks.filter(c=>c.status==='fail').length,total:memberChecks.length}));
 console.log('Chromium browser sweep: '+JSON.stringify(report.summary));
 for(const failure of report.failures)console.error('Chromium failed check: '+JSON.stringify(failure).slice(0,1400));
 if(report.summary.failed)process.exitCode=1;
