@@ -2124,16 +2124,16 @@
     "ticketLastChecked": "2026-10-15"
   },
   {
-    "slug": "pinkup-burnie-2026-10-21-burnie",
+    "slug": "pinkup-burnie-2026-10-22-burnie",
     "name": "PinkUp Burnie",
     "town": "Burnie",
     "region": "North West",
-    "startDate": "2026-10-21",
-    "endDate": "2026-10-21",
+    "startDate": "2026-10-22",
+    "endDate": "2026-10-22",
     "categories": [
       "Events"
     ],
-    "summary": "PinkUp Burnie in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "summary": "PinkUp Burnie in Burnie on Thursday 22 October 2026. The official listing gives 9:00 am to 9:01 am; check the organiser page for current participation details.",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Pink-Up-Your-Town",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2147,7 +2147,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-15",
+    "lastChecked": "2026-10-16",
     "ticketLastChecked": "2026-10-15"
   },
   {
@@ -2178,16 +2178,16 @@
     "ticketLastChecked": "2026-10-15"
   },
   {
-    "slug": "burnie-ten-2026-10-22-burnie",
+    "slug": "burnie-ten-2026-10-25-burnie",
     "name": "Burnie Ten",
     "town": "Burnie",
     "region": "North West",
-    "startDate": "2026-10-22",
-    "endDate": "2026-10-22",
+    "startDate": "2026-10-25",
+    "endDate": "2026-10-25",
     "categories": [
       "Events"
     ],
-    "summary": "Burnie Ten in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "summary": "Burnie Ten in Burnie on Sunday 25 October 2026, 10:00 am to 3:00 pm, starting at the Wilson and Cattley Street intersection (north). Check the official page for current race details.",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Ten",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2214,8 +2214,9 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-15",
-    "ticketLastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16",
+    "ticketLastChecked": "2026-10-15",
+    "venue": "Wilson and Cattley Street intersection (north), Burnie"
   },
   {
     "slug": "outspace-2026-10-22-devonport",
@@ -2497,7 +2498,7 @@
     "categories": [
       "Events"
     ],
-    "summary": "ACOTAR 6 Midnight Release Event in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "summary": "ACOTAR 6 Midnight Release Event at Not Just Books, 40 Wilson Street, Burnie, on Monday 26 October 2026 at 10:30 pm. Bookings are essential and the listed cost is $10.",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/ACOTAR-6-Midnight-Release-Event",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2522,8 +2523,13 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-15",
-    "ticketLastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16",
+    "ticketLastChecked": "2026-10-15",
+    "venue": "Not Just Books, 40 Wilson Street, Burnie",
+    "priceFrom": 10,
+    "priceTo": 10,
+    "priceCurrency": "AUD",
+    "bookingRequired": true
   },
   {
     "slug": "explore-discover-connect-with-26ten-2026-10-26-glenorchy",
