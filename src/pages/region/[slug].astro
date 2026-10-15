@@ -40,7 +40,7 @@ export function getStaticPaths() {
     );
 
   const activeEventRegions = events
-    .filter((event) => event.status === 'active' && event.region)
+    .filter((event) => event.status === 'active' && event.visibility !== 'suppressed' && event.region)
     .map((event) => event.region);
 
   return [...new Set([...active.map((place) => place.region), ...activeEventRegions])]
@@ -54,7 +54,7 @@ const { region, regionPlaces } = Astro.props;
 const today = hobartDate();
 
 const regionEvents = events
-  .filter((event) => event.status === 'active' && event.region === region && event.endDate >= today)
+  .filter((event) => event.status === 'active' && event.visibility !== 'suppressed' && event.region === region && event.endDate >= today)
   .sort((a, b) => a.startDate.localeCompare(b.startDate) || a.name.localeCompare(b.name));
 
 const categoryConfig = [
