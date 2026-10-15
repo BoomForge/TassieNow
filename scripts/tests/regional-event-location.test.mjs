@@ -17,13 +17,18 @@ test('uses the explicit Cranbrook address instead of the source default', () => 
   );
 });
 
-test('handles multi-word east-coast localities', () => {
-  assert.equal(
+test('handles multi-word localities and uses a street as the venue fallback', () => {
+  assert.deepEqual(
     regionalCardLocation(
       '100 Mayfield Jetty Road, Little Swanport, 7190',
       { defaultTown: 'St Helens', region: 'East Coast' }
-    ).town,
-    'Little Swanport'
+    ),
+    {
+      town: 'Little Swanport',
+      region: 'East Coast',
+      venue: '100 Mayfield Jetty Road',
+      address: '100 Mayfield Jetty Road, Little Swanport TAS 7190',
+    }
   );
 });
 
