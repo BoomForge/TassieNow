@@ -20,6 +20,11 @@ test('corrects the three independently verified Burnie Council events', () => {
   assert.equal(book.priceFrom, 10);
   assert.equal(book.bookingRequired, true);
   assert.match(book.summary, /10:30 pm/);
+
+  const market = applyVerifiedBurnieEvent(event('Book Market : Burnie Emu Bay Lions Club', 'https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club', '2026-11-07'), '2026-10-16');
+  assert.equal(market.town, 'Wivenhoe');
+  assert.equal(market.slug, 'book-market-burnie-emu-bay-lions-club-2026-11-07-wivenhoe');
+  assert.match(market.venue, /Wivenhoe Shed/);
 });
 
 test('leaves unrelated and differently sourced records unchanged', () => {
