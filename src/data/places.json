@@ -172,9 +172,10 @@
     ],
     "rankedAt": "2026-10-16",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-16",
-      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/bishop-and-clerk"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/bishop-and-clerk",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-16"
@@ -3572,7 +3573,7 @@
     "bookingUrl": "https://farmgatemarket.com.au/?s={search_term_string}",
     "lastWikidataLinkChecked": "2026-10-12",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-16",
       "url": "https://farmgatemarket.com.au/"
     }
@@ -12856,7 +12857,7 @@
     "openingHours": "",
     "phone": "0418684108President",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-16",
       "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/"
     },
@@ -33433,7 +33434,7 @@
     ],
     "rankedAt": "2026-10-16",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-16",
       "url": "https://www.restauranttasman.com.au/"
     },
@@ -36415,7 +36416,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://davesnoodles.com.au/locations",
+        "url": "https://davesnoodles.com.au/about",
         "checkedAt": "2026-10-16"
       }
     },
@@ -36447,7 +36448,7 @@
     ],
     "schedule": {
       "summary": "03 6227 2888 Dave's Noodles, Channel Highway, Kingston TAS, Australia 11 am to 8:30 pm (7 days)",
-      "sourceUrl": "https://davesnoodles.com.au/locations",
+      "sourceUrl": "https://davesnoodles.com.au/about",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -37613,7 +37614,7 @@
     ],
     "rankedAt": "2026-10-16",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-16",
       "url": "https://lanigansvineyard.com.au/"
     },
@@ -40889,7 +40890,7 @@
     ],
     "rankedAt": "2026-10-16",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-16",
       "url": "https://whiskandco.com.au/"
     },
@@ -46920,7 +46921,7 @@
     ],
     "rankedAt": "2026-10-16",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-16",
       "url": "https://www.tasteofmalaysiahobart.com.au/"
     },
@@ -48420,9 +48421,10 @@
       "checkedAt": "2026-10-16"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-16",
-      "url": "https://www.harbourlightscafe.com.au/"
+      "url": "https://www.harbourlightscafe.com.au/",
+      "error": "fetch failed"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
@@ -50738,7 +50740,7 @@
     ],
     "rankedAt": "2026-10-16",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-16",
       "url": "https://allthai.com.au/"
     },
@@ -66935,7 +66937,7 @@
     ],
     "rankedAt": "2026-10-16",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-16",
       "url": "https://www.rendezvousloungecafe.com.au/"
     },
@@ -71338,7 +71340,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-16",
       "url": "http://www.flavourofindia.com.au/",
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -139760,7 +139762,7 @@
     "rankedAt": "2026-10-16",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-16"
   },
   {
     "slug": "retro-cafe",
@@ -139821,7 +139823,7 @@
     "rankedAt": "2026-10-16",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-16"
   },
   {
     "slug": "rite-bite",
