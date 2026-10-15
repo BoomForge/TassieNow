@@ -8,7 +8,7 @@ import autoPhotoSources from '../../data/auto-photo-source-links.json';
 
 export function getStaticPaths() {
   return events
-    .filter((event) => event.status === 'active')
+    .filter((event) => event.status === 'active' && event.visibility !== 'suppressed')
     .map((event) => ({ params: { slug: event.slug }, props: { event } }));
 }
 
@@ -21,13 +21,15 @@ const originalPhotoSource=autoPhotoSources.events?.[event.slug]||null;
 const googleImagesUrl='https://www.google.com/search?'+new URLSearchParams({q:[event.name,event.town,'Tasmania'].filter(Boolean).join(' '),udm:'2'}).toString();
 const absoluteImage = displayImage.startsWith('http') ? displayImage : new URL(displayImage, origin).href;
 
-const offer = event.ticketUrl ? {
+// Publish an Offer only when a real ticket destination and a verified numeric price exist.
+// A ticket check timestamp is NOT the date tickets went on sale (offers.validFrom).
+const offer = event.ticketUrl && Number.isFinite(event.priceFrom) ? {
   '@type': 'Offer',
   url: event.ticketUrl,
   price: event.priceFrom,
   priceCurrency: event.priceCurrency || 'AUD',
-  availability: event.availability ? `https://schema.org/${event.availability}` : undefined,
-  validFrom: event.ticketLastChecked || undefined
+  availability: ['InStock', 'SoldOut', 'PreOrder'].includes(event.availability)
+    ? `https://schema.org/${event.availability}` : undefined
 } : undefined;
 
 const formatEventDate = (value) => new Intl.DateTimeFormat('en-AU', {
@@ -41,8 +43,8 @@ const eventSchema = {
   '@context': 'https://schema.org',
   '@type': 'Event',
   name: event.name,
-  startDate: event.startDate,
-  endDate: event.endDate,
+  startDate: event.startTime ? `${event.startDate}T${event.startTime}` : event.startDate,
+  endDate: event.endTime ? `${event.endDate}T${event.endTime}` : event.endDate,
   description: event.summary,
   url: pageUrl,
   // Generic category artwork is not an event photograph; omit it from Event rich-result markup.
@@ -66,6 +68,7 @@ const eventSchema = {
     url: event.sourceUrl
   } : undefined,
   offers: offer,
+  performer: event.performer ? { '@type': 'PerformingGroup', name: event.performer } : undefined,
   isAccessibleForFree: event.priceFrom === 0 || event.categories?.includes('Free') || undefined
 };
 
