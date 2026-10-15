@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import { isMarketEvent } from '../../src/lib/market-category.js';
+import { applyVerifiedBurnieEvent } from './lib/verified-burnie-events.mjs';
 
 const FILE=new URL('../../src/data/events.json',import.meta.url);
 const UA='TassieNow/1.0 (+https://tassienow.pages.dev)';
@@ -102,7 +103,7 @@ const previous=JSON.parse(await fs.readFile(FILE,'utf8')).filter(e=>e.status==='
 const found=[],freshSources=new Set();
 for(const s of SOURCES){try{const html=await fetchHtml(s.url);const structured=structuredEvents(html,s),anchors=anchorEvents(html,s);const text=(s.textMode==='always'||(structured.length===0&&anchors.length===0))?textEvents(html,s):[];const events=dedupe([...structured,...anchors,...text]);if(events.length){freshSources.add(s.name);found.push(...events)}console.log(`${s.name}: ${events.length} event(s) (${structured.length} structured, ${anchors.length} linked, ${text.length} text used).`)}catch(e){console.warn(`${s.name}: ${e.message}`)}}
 for(const old of previous)if(!freshSources.has(old.sourceName))found.push(old);
-const unique=dedupe(found).sort((a,b)=>a.startDate.localeCompare(b.startDate)||a.name.localeCompare(b.name));
+const unique=dedupe(found.map(event=>applyVerifiedBurnieEvent(event,TODAY))).sort((a,b)=>a.startDate.localeCompare(b.startDate)||a.name.localeCompare(b.name));
 if(unique.length<10&&previous.length>=10)throw new Error(`Event discovery produced only ${unique.length} future events from ${SOURCES.length} official sources; refusing to replace ${previous.length} healthy records.`);
 await fs.writeFile(FILE,`${JSON.stringify(unique,null,2)}\n`);
 console.log(`Events: ${unique.length} active across ${new Set(unique.map(e=>e.sourceName)).size} source(s).`);
