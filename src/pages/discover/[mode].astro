@@ -142,7 +142,7 @@ const matchedPlaces = config.categories
   : [];
 
 const activeEvents = events
-  .filter((event) => event.status === 'active' && event.endDate >= today)
+  .filter((event) => event.status === 'active' && event.visibility !== 'suppressed' && event.endDate >= today)
   .sort((a, b) => a.startDate.localeCompare(b.startDate) || a.name.localeCompare(b.name));
 
 const matchedEvents = config.eventMode === 'today'
