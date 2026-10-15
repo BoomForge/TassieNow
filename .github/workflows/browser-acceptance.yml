@@ -36,3 +36,29 @@ jobs:
             reports/browser-acceptance.json
             reports/browser-screenshots/
           retention-days: 30
+
+  member-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test packages
+        run: |
+          npm install --no-save --no-package-lock --ignore-scripts playwright @axe-core/playwright
+          npx playwright install --with-deps chromium
+      - name: Verify live member UI at eight viewport widths
+        env:
+          MEMBER_ACCEPTANCE_ONLY: '1'
+        run: node scripts/browser-acceptance.mjs
+      - name: Keep member browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: member-browser-acceptance
+          path: |
+            reports/browser-acceptance.json
+            reports/browser-screenshots/
+          retention-days: 30

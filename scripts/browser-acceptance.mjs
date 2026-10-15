@@ -4,7 +4,8 @@ import AxeBuilder from '@axe-core/playwright';
 
 const BASE='https://tassienow.com';
 const widths=[320,375,390,430,768,820,1024,1440];
-const paths=['/','/food/','/discover/markets/','/discover/this-weekend/','/region/hobart-and-south/','/suggest-update/','/advertise/','/account/'];
+const memberOnly=process.env.MEMBER_ACCEPTANCE_ONLY==='1';
+const paths=memberOnly?['/account/']:['/','/food/','/discover/markets/','/discover/this-weekend/','/region/hobart-and-south/','/suggest-update/','/advertise/','/account/'];
 const report={at:new Date().toISOString(),scope:'Live Chromium: viewport overflow, navigation, keyboard, denied geolocation, food filters and WCAG 2.1 AA axe-core checks',checks:[],failures:[]};
 await fs.mkdir('reports/browser-screenshots',{recursive:true});
 const browser=await chromium.launch({headless:true});
@@ -26,7 +27,7 @@ try{
    try{
     const response=await page.goto(BASE+path,{waitUntil:'domcontentloaded',timeout:30000});
     if(response?.status()!==200){add('Page load',false,{width,path,httpCode:response?.status()});continue;}
-    await page.waitForTimeout(140);
+    await page.waitForFunction(()=>getComputedStyle(document.body).margin==='0px',null,{timeout:10000});
     const geometry=await page.evaluate(()=>({scrollWidth:document.documentElement.scrollWidth,viewport:innerWidth,h1:document.querySelectorAll('h1').length,main:!!document.querySelector('main')}));
     const noOverflow=geometry.scrollWidth<=geometry.viewport+2;
     add('Viewport overflow',noOverflow,{width,path,...geometry});
