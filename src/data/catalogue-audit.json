@@ -270,17 +270,17 @@
       }
     },
     "ticketCoverage": {
-      "count": 51,
-      "percent": 30.2
+      "count": 50,
+      "percent": 29.6
     },
     "priceCoverage": {
-      "count": 60,
-      "percent": 35.5
+      "count": 62,
+      "percent": 36.7
     },
     "providers": {
-      "Humanitix": 26,
+      "Humanitix": 24,
       "Ticketek": 23,
-      "Eventbrite": 1,
+      "Eventbrite": 2,
       "Ticketmaster": 1
     },
     "sources": {
@@ -349,7 +349,7 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 2
+      "missingOrOlderThan30Days": 1
     },
     "sourceRegionalMix": {
       "Hobart & South / MyState Bank Arena": 24,
