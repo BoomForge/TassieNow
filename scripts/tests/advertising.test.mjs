@@ -7,13 +7,16 @@ const read = (path) => readFile(new URL('../../' + path, import.meta.url), 'utf8
 test('root ads.txt declares only the supplied AdSense seller', async () => {
   assert.equal((await read('public/ads.txt')).trim(), 'google.com, pub-6507270199743672, DIRECT, f08c47fec0942fa0');
 });
-test('ownership verification is present without making unapproved Google ad calls', async () => {
+test('approved AdSense is enabled only in production and can be explicitly paused', async () => {
   const layout = await read('src/layouts/BaseLayout.astro');
   const slots = await read('src/components/AdSlot.astro');
   assert.match(layout, /google-adsense-account/);
-  assert.match(layout, /PUBLIC_ADSENSE_INLINE_LIVE === 'true'/);
-  assert.match(slots, /PUBLIC_ADSENSE_INLINE_LIVE === 'true'/);
+  assert.match(layout, /import\.meta\.env\.PROD && import\.meta\.env\.PUBLIC_ADSENSE_DISABLED !== 'true'/);
+  assert.match(slots, /import\.meta\.env\.PROD && import\.meta\.env\.PUBLIC_ADSENSE_DISABLED !== 'true'/);
+  assert.match(layout, /pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js/);
   assert.match(slots, /data-ad-client="ca-pub-6507270199743672"/);
+  assert.match(slots, /homepage-inline.*4956162754/);
+  assert.match(slots, /content-inline.*8711574934/);
 });
 test('affiliate fallbacks match existing Pixelwolf programme URLs and remain disclosed', async () => {
   const component = await read('src/components/AdSlot.astro');
