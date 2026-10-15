@@ -462,9 +462,10 @@
     ],
     "rankedAt": "2026-10-15",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-15",
-      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul",
+      "error": "The operation was aborted due to timeout"
     }
   },
   {
@@ -832,9 +833,10 @@
     ],
     "lastWikidataChecked": "2026-10-06",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-15",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach",
+      "error": "The operation was aborted due to timeout"
     },
     "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
   },
@@ -1889,7 +1891,7 @@
     "wikidata": null,
     "wikipediaUrl": null,
     "commonsCategory": null,
-    "openingHours": "We 09:00-11:00; Mo-Su 09:00-16:00",
+    "openingHours": "Mo-Su 09:00-16:00",
     "phone": "03 6256 7000",
     "email": "Freycinet@parks.tas.gov.au",
     "address": null,
@@ -1901,17 +1903,17 @@
       "openingHours": {
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
-        "checkedAt": "2026-10-13"
+        "checkedAt": "2026-10-15"
       },
       "schedule": {
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
-        "checkedAt": "2026-10-13"
+        "checkedAt": "2026-10-15"
       }
     },
     "status": "active",
     "lastChecked": "2026-10-13",
-    "lastDetailsChecked": "2026-10-13",
+    "lastDetailsChecked": "2026-10-15",
     "lastOsmDetailsChecked": "2026-10-13",
     "image": {
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Scenery_of_Wineglass_Bay_Lookout.jpg/1280px-Scenery_of_Wineglass_Bay_Lookout.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1990,8 +1992,7 @@
         "Sunday"
       ],
       "startTime": "09:00",
-      "endTime": "16:00",
-      "notes": "see details Closed area: Freycinet National Park Visitors Centre Applies from 14/10/2026 The ​Freycinet National Park Visitors Centre is closed on Wednesday 14 October 2026 from 9am to&#160;11am."
+      "endTime": "16:00"
     }
   },
   {
@@ -2266,7 +2267,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/freycinet-peninsula-circuit/freycinet-overnight-walker-camping",
+        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park",
         "checkedAt": "2026-10-15"
       },
       "openingHours": {
@@ -2283,7 +2284,7 @@
     "phone": "03 6256 7000",
     "schedule": {
       "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/freycinet-peninsula-circuit/freycinet-overnight-walker-camping",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -2295,8 +2296,7 @@
         "Sunday"
       ],
       "startTime": "09:00",
-      "endTime": "16:00",
-      "notes": "Gas and fuel stoves may be used except on days of Total Fire Ban, when no naked flames of any sort, including gas and fuel stoves, are allowed in the open."
+      "endTime": "16:00"
     },
     "openingHours": "Mo-Su 09:00-16:00",
     "gallery": [
@@ -2623,9 +2623,10 @@
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Friendly_Beaches_Reserve",
     "lastWikidataChecked": "2026-10-06",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-15",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
+      "error": "The operation was aborted due to timeout"
     },
     "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
   },
@@ -3588,7 +3589,7 @@
     "bookingUrl": "https://farmgatemarket.com.au/?s={search_term_string}",
     "lastWikidataLinkChecked": "2026-10-12",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-15",
       "url": "https://farmgatemarket.com.au/"
     }
@@ -3645,7 +3646,7 @@
         "url": "https://www.google.com/maps/search/?api=1&query=Frankland%20Beaches%20Tasmania%20Tasmania"
       }
     ],
-    "lastDetailsChecked": "2026-10-14",
+    "lastDetailsChecked": "2026-10-15",
     "email": "LakeStClair@parks.tas.gov.au",
     "detailSources": {
       "email": {
@@ -6838,9 +6839,10 @@
     ],
     "rankedAt": "2026-10-15",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-15",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk",
+      "error": "The operation was aborted due to timeout"
     }
   },
   {
@@ -12712,7 +12714,7 @@
     "openingHours": "",
     "phone": "0418684108President",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-15",
       "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/"
     },
@@ -33245,7 +33247,7 @@
     ],
     "rankedAt": "2026-10-15",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-15",
       "url": "https://www.restauranttasman.com.au/"
     },
@@ -36225,7 +36227,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://davesnoodles.com.au/locations",
+        "url": "https://davesnoodles.com.au/about",
         "checkedAt": "2026-10-15"
       }
     },
@@ -36257,7 +36259,7 @@
     ],
     "schedule": {
       "summary": "03 6227 2888 Dave's Noodles, Channel Highway, Kingston TAS, Australia 11 am to 8:30 pm (7 days)",
-      "sourceUrl": "https://davesnoodles.com.au/locations",
+      "sourceUrl": "https://davesnoodles.com.au/about",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -37425,7 +37427,7 @@
     ],
     "rankedAt": "2026-10-15",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-15",
       "url": "https://lanigansvineyard.com.au/"
     },
@@ -38104,7 +38106,7 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-14",
+    "lastDetailsChecked": "2026-10-15",
     "lastOsmDetailsChecked": "2026-10-09",
     "image": {
       "url": "/images/categories/food.svg",
@@ -38127,7 +38129,7 @@
       "code": 200,
       "checkedAt": "2026-10-12T23:48:28.451Z"
     },
-    "lastOfficialDetailsChecked": "2026-10-14",
+    "lastOfficialDetailsChecked": "2026-10-15",
     "qualityScore": 50,
     "qualityTier": "strong",
     "visibility": "public",
@@ -39470,9 +39472,10 @@
     ],
     "rankedAt": "2026-10-15",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-15",
-      "url": "https://salmonponds.com.au/"
+      "url": "https://salmonponds.com.au/",
+      "error": "fetch failed"
     }
   },
   {
@@ -39724,7 +39727,7 @@
       "checkedAt": "2026-10-15"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-15",
       "url": "https://www.oldwoolstore.com.au/stockmans-restaurant"
     },
@@ -40698,7 +40701,7 @@
     ],
     "rankedAt": "2026-10-15",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-15",
       "url": "https://whiskandco.com.au/"
     },
@@ -46839,7 +46842,7 @@
     ],
     "rankedAt": "2026-10-15",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-15",
       "url": "https://www.tasteofmalaysiahobart.com.au/"
     },
@@ -46996,7 +46999,7 @@
     },
     "status": "active",
     "lastChecked": "2026-10-12",
-    "lastDetailsChecked": "2026-10-14",
+    "lastDetailsChecked": "2026-10-15",
     "lastOsmDetailsChecked": "2026-10-12",
     "image": {
       "url": "/images/categories/discover.svg",
@@ -47018,7 +47021,7 @@
       "type": "official-website",
       "url": "https://www.gordonrivercruises.com.au/",
       "source": "openstreetmap-website",
-      "checkedAt": "2026-10-13"
+      "checkedAt": "2026-10-15"
     },
     "websiteCheck": {
       "status": "ok",
@@ -47039,14 +47042,13 @@
     ],
     "rankedAt": "2026-10-15",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-15",
-      "url": "https://www.gordonrivercruises.com.au/",
-      "error": "403 Forbidden"
+      "url": "https://www.gordonrivercruises.com.au/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-12",
-    "lastOfficialDetailsChecked": "2026-10-12"
+    "lastOfficialDetailsChecked": "2026-10-15"
   },
   {
     "slug": "look-and-book",
@@ -49288,7 +49290,7 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-14",
+    "lastDetailsChecked": "2026-10-15",
     "lastOsmDetailsChecked": "2026-10-09",
     "image": {
       "url": "/images/categories/food.svg",
@@ -49327,13 +49329,12 @@
       "type": "official-website",
       "url": "https://pizzarazzi.com.au/",
       "source": "openstreetmap-website",
-      "checkedAt": "2026-10-14"
+      "checkedAt": "2026-10-15"
     },
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-15",
-      "url": "https://pizzarazzi.com.au/",
-      "error": "403 Forbidden"
+      "url": "https://pizzarazzi.com.au/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
@@ -50636,7 +50637,7 @@
     ],
     "rankedAt": "2026-10-15",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-15",
       "url": "https://allthai.com.au/"
     },
@@ -54742,7 +54743,7 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-14",
+    "lastDetailsChecked": "2026-10-15",
     "lastOsmDetailsChecked": "2026-10-09",
     "image": {
       "url": "/images/categories/food.svg",
@@ -54781,13 +54782,12 @@
       "type": "official-website",
       "url": "https://brunyislandberryfarm.com.au/",
       "source": "openstreetmap-website",
-      "checkedAt": "2026-10-14"
+      "checkedAt": "2026-10-15"
     },
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-15",
-      "url": "https://brunyislandberryfarm.com.au/",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://brunyislandberryfarm.com.au/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -65687,10 +65687,9 @@
     ],
     "rankedAt": "2026-10-15",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-15",
-      "url": "https://pizzarazzi.com.au/",
-      "error": "403 Forbidden"
+      "url": "https://pizzarazzi.com.au/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -66750,7 +66749,7 @@
     ],
     "rankedAt": "2026-10-15",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-15",
       "url": "https://www.rendezvousloungecafe.com.au/"
     },
@@ -71405,7 +71404,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-15",
       "url": "https://orangepetes.com.au/",
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -71563,7 +71562,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-15",
       "url": "https://parthenonsouvlakibar.com.au/",
-      "error": "503 Service Unavailable"
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -71727,7 +71726,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-15",
       "url": "https://www.rydges.com/accommodation/hobart-tas/hobart/",
-      "error": "403 Forbidden"
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -134173,7 +134172,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "kate-s-berry-farm",
@@ -134234,7 +134233,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "khaow-thai",
@@ -134295,7 +134294,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "king-of-kebabs",
@@ -134356,7 +134355,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "kings-meadows-seafood",
@@ -134417,7 +134416,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "la-bella-pizza",
@@ -134478,7 +134477,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "la-cantina",
@@ -134539,7 +134538,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "la-provencal",
@@ -134600,7 +134599,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "legana-pizza",
@@ -134661,7 +134660,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "legs-n-breasts",
@@ -134722,7 +134721,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "limestone-cafe-bakery",
@@ -134783,7 +134782,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "links-restaurant",
@@ -134844,7 +134843,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "little-cup-espresso",
@@ -134905,7 +134904,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "lobster-ponds",
@@ -134966,7 +134965,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "long-cheng-asian-food",
@@ -135027,7 +135026,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "longford-milk-bar-and-takeaways",
@@ -135088,7 +135087,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "lot-40",
@@ -135149,7 +135148,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "low-head-pilot-station-cafe",
@@ -135210,7 +135209,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "lucky-ducks",
@@ -135270,7 +135269,8 @@
     ],
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "mabel-and-george",
@@ -135331,7 +135331,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "macquarie-soul",
@@ -135392,7 +135392,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "maggies-cafe",
@@ -135453,7 +135453,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "maharajas-curry-house",
@@ -135514,7 +135514,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "mandarin-palace",
@@ -135575,7 +135575,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "mari-bruny",
@@ -135636,7 +135636,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "marina-cafe",
@@ -135697,7 +135697,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "market-square-restaurant-and-bar",
@@ -135758,7 +135758,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "martin-cash-pizza",
@@ -135819,7 +135819,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "martini-coffee-lounge",
@@ -135880,7 +135880,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "masaaki-s-sushi",
@@ -135941,7 +135941,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "me-wah",
@@ -136008,7 +136008,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "me-wah-restaurant",
@@ -136069,7 +136069,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "meadows-fish-and-chips",
@@ -136136,7 +136136,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "mekong-vietnamese-restaurant",
@@ -136197,7 +136197,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "michael-s-restaurant-on-the-bay",
@@ -136258,7 +136258,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "minh-buu-chinese-restaurant",
@@ -136319,7 +136319,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "moby-dicks-breakfast-bar-and-cafe",
@@ -136380,7 +136380,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "moo-choo",
@@ -136447,7 +136447,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "mood-food",
@@ -136508,7 +136508,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "moorilla-wine-bar",
@@ -136569,7 +136569,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "mowbray-fish-shop",
@@ -136630,7 +136630,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "mr-chippys",
@@ -136691,7 +136691,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "ms-hong-kong",
@@ -136752,7 +136752,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "new-norfolk-rsl-sub-branch",
@@ -136813,7 +136813,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "nirvana-on-collins",
@@ -136874,7 +136874,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "norwood-takeaway-and-mini-mart",
@@ -136935,7 +136935,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "novaro-s-italian-restaurant",
@@ -137002,7 +137002,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "nubeena-bakery",
@@ -137063,7 +137063,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "number-10",
@@ -137124,7 +137124,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "nunamara-general-store",
@@ -137185,7 +137185,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "oasis-george-town-rsl",
@@ -137246,7 +137246,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "old-jacks",
@@ -137307,7 +137307,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "olivers-bakery",
@@ -137368,7 +137368,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "oyster-bar",
@@ -137429,7 +137429,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "pane-cucina",
@@ -137490,7 +137490,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "paper-and-cup-cafe",
@@ -137551,7 +137551,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "parer-s-hotel",
@@ -137612,7 +137612,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "pasta-gourmet-and-coffee-house",
@@ -137673,7 +137673,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "pedro-s-the-fisherman",
@@ -137734,7 +137734,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "pedros-restaraunt",
@@ -137795,7 +137795,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "penny-s-bakery",
@@ -137856,7 +137856,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "perry-bros-bakery-and-cafe",
@@ -137917,7 +137917,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "petty-sessions-cafe",
@@ -137978,7 +137978,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "philippa-s",
@@ -138039,7 +138039,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "pickled-evenings",
@@ -138100,7 +138100,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "pie-face",
@@ -138161,7 +138161,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "piermont-retreat-and-restaurant",
@@ -138222,7 +138222,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "pigeon-whole-bakers",
@@ -138283,7 +138283,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "pink-pepper-cafe",
@@ -138344,7 +138344,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "pizza-the-top",
@@ -138405,7 +138405,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "pizza-hut-hobart",
@@ -138466,7 +138466,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "polytechnic-cafe",
@@ -138527,7 +138527,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "portabello-road",
@@ -138588,7 +138588,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "prospect-fish-shop",
@@ -138649,7 +138649,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "purple-shop",
@@ -138710,7 +138710,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "pyengana-cheese-factory",
@@ -138771,7 +138771,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "qc-brasserie",
@@ -138832,7 +138832,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "railton-burgers-and-bikes",
@@ -138893,7 +138893,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "ravenswood-takeaway",
@@ -138954,7 +138954,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "ready-lunch",
@@ -139015,7 +139015,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "rebel-roadhouse",
@@ -139076,7 +139076,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "red-bridge-cafe",
@@ -139137,7 +139137,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "red-cafe",
@@ -139198,7 +139198,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "red-square-cafe",
@@ -139259,7 +139259,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "red-square-glenorchy",
@@ -139320,7 +139320,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "regatta-point-tavern",
@@ -139381,7 +139381,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "relax-cafe-and-espresso-bar",
@@ -139442,7 +139442,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "restaurant-13",
@@ -139503,7 +139503,7 @@
     "rankedAt": "2026-10-15",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-15"
   },
   {
     "slug": "restaurant-esca",
