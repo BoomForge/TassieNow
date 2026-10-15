@@ -6,7 +6,7 @@ const maxDate=(values:string[])=>values.filter(Boolean).sort().at(-1)||new Date(
 export async function GET({ site }: { site: URL }) {
   const base=site?.href||'https://tassienow.com/';
   const publicPlaces=places.filter((p:any)=>p.status==='active'&&p.visibility!=='suppressed');
-  const activeEvents=events.filter((e:any)=>e.status==='active');
+  const activeEvents=events.filter((e:any)=>e.status==='active'&&e.visibility!=='suppressed');
   const catalogueDate=maxDate([...publicPlaces.map((p:any)=>p.lastChecked),...activeEvents.map((e:any)=>e.lastChecked)]);
   const urls=new Map<string,string>();
   const add=(path:string,lastmod=catalogueDate)=>urls.set(new URL(path,base).href,lastmod);
