@@ -31,13 +31,13 @@ export function regionalCardLocation(text, {
   const localityIndex = localityMatch?.index ?? -1;
   const beforeLocality = localityIndex >= 0 ? normalized.slice(0, localityIndex).trim() : '';
   const addressMatch = beforeLocality.match(
-    /(\d{1,5}\s+[^,]{2,80}?(?:Road|Rd|Street|St|Highway|Hwy|Drive|Dr|Lane|Ln))\s*,?\s*$/i
+    /(\d{1,5}\s+(?:[A-Za-z][A-Za-z'&.-]*\s+){1,8}(?:Road|Rd|Street|St|Highway|Hwy|Drive|Dr|Lane|Ln))\s*,?\s*$/i
   );
   const postcode = localityMatch?.[1];
   const address = addressMatch
     ? `${addressMatch[1].trim()}, ${town}${postcode ? ` TAS ${postcode}` : ''}`
     : undefined;
-  const venue = /\\bCraigie Knowe Vineyard\\b/i.test(eventName)
+  const venue = /\bCraigie Knowe Vineyard\b/i.test(eventName)
     ? 'Craigie Knowe Vineyard'
     : undefined;
 
