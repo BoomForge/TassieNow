@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T17:41:25.107Z",
+  "generatedAt": "2026-10-16T22:11:30.089Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
@@ -13,18 +13,18 @@
     {
       "name": "events.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-16T16:33:25Z",
+      "lastScheduled": "2026-10-16T21:01:01Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-16T16:33:25Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38932881062"
+      "lastRunAt": "2026-10-16T21:01:01Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38966381640"
     },
     {
       "name": "catalogue-quality.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-15T21:50:23Z",
+      "lastScheduled": "2026-10-16T21:45:48Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-15T21:50:23Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38812866607"
+      "lastRunAt": "2026-10-16T21:45:48Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38971536175"
     },
     {
       "name": "images.yml",
@@ -63,16 +63,16 @@
       "status": "ok",
       "lastScheduled": "2026-10-16T10:08:39Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-16T16:36:49Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38933324703"
+      "lastRunAt": "2026-10-16T21:59:12Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38972938027"
     },
     {
       "name": "verify-event-artwork.yml",
       "status": "ok",
       "lastScheduled": "2026-10-16T10:10:06Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-16T16:36:51Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38933327761"
+      "lastRunAt": "2026-10-16T21:59:13Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38972940849"
     },
     {
       "name": "verify-event-image-files.yml",
@@ -100,19 +100,19 @@
     },
     {
       "name": "quality.yml",
-      "status": "ok",
-      "lastScheduled": "2026-10-15T22:27:07Z",
-      "lastResult": "success",
-      "lastRunAt": "2026-10-16T05:57:24Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38858503871"
+      "status": "scheduled-run-failed",
+      "lastScheduled": "2026-10-16T22:07:50Z",
+      "lastResult": "failure",
+      "lastRunAt": "2026-10-16T22:07:50Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38973858396"
     },
     {
       "name": "automation-health.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-16T17:15:29Z",
+      "lastScheduled": "2026-10-16T21:58:05Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-16T17:15:29Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38938290534"
+      "lastRunAt": "2026-10-16T21:58:05Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38972826356"
     },
     {
       "name": "indexnow.yml",
@@ -148,7 +148,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4b8dab87addb33c-DTW"
+        "cloudflareRay": "a4ba6658bb776186-MEM"
       },
       {
         "name": "Food discovery",
@@ -156,7 +156,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4b8dab879da3be1-MEM"
+        "cloudflareRay": "a4ba6658ad4b136c-MEM"
       },
       {
         "name": "Service status",
@@ -164,7 +164,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4b8dab87b3aa93c-DTW"
+        "cloudflareRay": "a4ba6658aec82b43-MEM"
       },
       {
         "name": "Robots",
@@ -172,7 +172,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/plain; charset=utf-8",
-        "cloudflareRay": "a4b8dab85de88c26-DTW"
+        "cloudflareRay": "a4ba6658a88326b1-MEM"
       },
       {
         "name": "Sitemap",
@@ -180,7 +180,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "application/xml",
-        "cloudflareRay": "a4b8dab8589e4da9-DTW"
+        "cloudflareRay": "a4ba6658a8e3137a-MEM"
       },
       {
         "name": "Markets freshness",
@@ -188,7 +188,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4b8dab86c5c3d43-DTW"
+        "cloudflareRay": "a4ba6658ad45136c-MEM"
       },
       {
         "name": "Build date",
@@ -196,8 +196,8 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "application/json",
-        "cloudflareRay": "a4b8dab86e078c26-DTW",
-        "publishedDay": "2026-10-16"
+        "cloudflareRay": "a4ba6658a8db137a-MEM",
+        "publishedDay": "2026-10-17"
       }
     ]
   },
@@ -206,10 +206,15 @@
       "component": "verify-published-photos.yml",
       "status": "scheduled-run-failed",
       "action": "https://github.com/BoomForge/TassieNow/actions/runs/38884805068"
+    },
+    {
+      "component": "quality.yml",
+      "status": "scheduled-run-failed",
+      "action": "https://github.com/BoomForge/TassieNow/actions/runs/38973858396"
     }
   ],
   "imageCoverage": {
-    "activeEvents": 164,
+    "activeEvents": 168,
     "publishedEventPhotos": 73,
     "auditedPublishedPhotos": 73
   },
@@ -222,7 +227,7 @@
   },
   "aiopsClosures": {
     "schema": "tassienow-aiops-live-closure-v1",
-    "checkedAt": "2026-10-16T17:41:26.659Z",
+    "checkedAt": "2026-10-16T22:11:31.596Z",
     "base": "https://tassienow.com",
     "scope": "11 existing TassieNow source-repaired Pixelwolf AI Ops cards; observed live HTML + redirect",
     "cards": [
@@ -418,7 +423,7 @@
             "observed_venue": "Craigie Knowe Vineyard"
           }
         ],
-        "observed_at_utc": "2026-10-16T17:41:27.735Z",
+        "observed_at_utc": "2026-10-16T22:11:32.296Z",
         "expected": {
           "name_contains": "The Butcher",
           "startDate": "2026-10-24",
@@ -486,26 +491,7 @@
       {
         "card_id": "work-20261015-be6ddfbe1fccbbfe",
         "status": "unverified",
-        "checks": [
-          {
-            "name": "source_current",
-            "pass": true
-          },
-          {
-            "name": "live_event_jsonld",
-            "pass": true,
-            "http_code": 200,
-            "observed_date": "2026-11-07",
-            "observed_town": "Wivenhoe",
-            "observed_venue": "Wivenhoe Shed, Smith and Angelsea Streets, Wivenhoe"
-          },
-          {
-            "name": "old_event_redirect",
-            "pass": false,
-            "http_code": 404,
-            "location": null
-          }
-        ],
+        "checks": [],
         "observed_at_utc": null,
         "expected": {
           "name_contains": "Book Market : Burnie Emu Bay Lions Club",
@@ -513,10 +499,7 @@
           "town": "Wivenhoe",
           "venue": "Wivenhoe Shed"
         },
-        "url": "https://tassienow.com/event/book-market-burnie-emu-bay-lions-club-2026-11-07-wivenhoe/",
-        "source_slug": "book-market-burnie-emu-bay-lions-club-2026-11-07-wivenhoe",
-        "legacy_url": "https://tassienow.com/event/book-market-burnie-emu-bay-lions-club-2026-11-07-burnie/",
-        "reason": "legacy_redirect_unverified"
+        "reason": "source_cardinality_2"
       },
       {
         "card_id": "work-20261015-bed4145f1ed7b429",
