@@ -90,6 +90,125 @@
     "discoveryStaleSince": "2026-10-16"
   },
   {
+    "slug": "archers-knob",
+    "name": "Archers Knob",
+    "town": "Port Sorell",
+    "region": "Hobart & South",
+    "latitude": -41.1370449,
+    "longitude": 146.6273294,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Archers Knob is an official Parks Tasmania walk. Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/Archers-Knob.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/497736191",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/497736191",
+    "wikidata": "Q21967463",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Mo-Su 12:30-13:00",
+    "phone": "03 6428 6277",
+    "email": "Narawntapu.Parks@parks.tas.gov.au",
+    "address": null,
+    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
+        "checkedAt": "2026-10-16"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-16",
+    "lastDetailsChecked": "2026-10-17",
+    "lastOsmDetailsChecked": "2026-10-16",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Bakers_Beach%2C_Tasmania_%2824338164952%29.jpg/1280px-Bakers_Beach%2C_Tasmania_%2824338164952%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Archers Knob, Port Sorell, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "Steven Penton  from Bakers Beach, Tasmania Australia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bakers_Beach,_Tasmania_(24338164952).jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Bakers Beach, Tasmania (24338164952).jpg",
+        "listingName": "Archers Knob",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-16T22:54:42.094Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Archers%20Knob%20Port%20Sorell%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
+      "type": "government",
+      "checkedAt": "2026-10-17"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-15T15:29:44.100Z"
+    },
+    "schedule": {
+      "summary": "Open 7 days -&#160;(closed between 12.30pm and 1pm daily)&#160;​",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "12:30",
+      "endTime": "13:00"
+    },
+    "qualityScore": 100,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "wikidata",
+      "government-source",
+      "official-walk-data",
+      "real-image",
+      "opening-hours",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-17",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-17",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob"
+    }
+  },
+  {
     "slug": "bishop-and-clerk",
     "name": "Bishop and Clerk",
     "town": "Triabunna",
@@ -2184,115 +2303,6 @@
       "Wineglass Bay, Freycinet Peninsula, Tasmania, Australia (19333396893).jpg",
       "Freycinet Wineglass Bay And Promise Bay.jpg"
     ]
-  },
-  {
-    "slug": "archers-knob",
-    "name": "Archers Knob",
-    "town": "Port Sorell",
-    "region": "Hobart & South",
-    "latitude": -41.1370449,
-    "longitude": 146.6273294,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Archers Knob is an official Parks Tasmania walk. Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/Archers-Knob.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/497736191",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/497736191",
-    "wikidata": "Q21967463",
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Mo-Su 12:30-13:00",
-    "phone": "03 6428 6277",
-    "email": "Narawntapu.Parks@parks.tas.gov.au",
-    "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
-        "checkedAt": "2026-10-16"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-16",
-    "lastDetailsChecked": "2026-10-17",
-    "lastOsmDetailsChecked": "2026-10-16",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Archers Knob category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Archers%20Knob%20Port%20Sorell%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
-      "type": "government",
-      "checkedAt": "2026-10-17"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-15T15:29:44.100Z"
-    },
-    "schedule": {
-      "summary": "Open 7 days -&#160;(closed between 12.30pm and 1pm daily)&#160;​",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "12:30",
-      "endTime": "13:00"
-    },
-    "qualityScore": 95,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "wikidata",
-      "government-source",
-      "official-walk-data",
-      "opening-hours",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-17",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-17",
-      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob"
-    }
   },
   {
     "slug": "friendly-beaches-reserve",
@@ -42686,6 +42696,89 @@
     "lastWikidataLinkChecked": "2026-10-12"
   },
   {
+    "slug": "pollen-tea-room",
+    "name": "Pollen Tea Room",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "latitude": -42.8897617,
+    "longitude": 147.3340384,
+    "categories": [
+      "Food & Drink",
+      "Café"
+    ],
+    "summary": "Café in or near Hobart.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/4603128780",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/4603128780",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Mo-Fr 07:30-15:00; Sa-Su 08:00-15:00",
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": "limited",
+    "operator": null,
+    "detailSources": {
+      "openingHours": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/4603128780",
+        "checkedAt": "2026-10-09"
+      },
+      "wheelchair": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/4603128780",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-09",
+    "lastOsmDetailsChecked": "2026-10-09",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/56-58_Hampden_Road_20171118-005.jpg/1280px-56-58_Hampden_Road_20171118-005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Pollen Tea Room, Hobart, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "Gary Houston",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:56-58_Hampden_Road_20171118-005.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:56-58 Hampden Road 20171118-005.jpg",
+        "listingName": "Pollen Tea Room",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-16T22:54:42.094Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Pollen%20Tea%20Room%20Hobart%20Tasmania"
+      }
+    ],
+    "qualityScore": 48,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "opening-hours",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-17",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-14"
+  },
+  {
     "slug": "sheffield-steam-and-heritage-centre",
     "name": "Sheffield Steam and Heritage Centre",
     "town": "Sheffield",
@@ -51329,6 +51422,76 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
+    "slug": "heritage-landing",
+    "name": "Heritage Landing",
+    "town": "Strahan",
+    "region": "West Coast",
+    "latitude": -42.4415678,
+    "longitude": 145.6121071,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Strahan.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/5241931421",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/5241931421",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-16",
+    "lastDetailsChecked": "2026-10-16",
+    "lastOsmDetailsChecked": "2026-10-16",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Leptecophylla_juniperina_%286692287623%29.jpg/1280px-Leptecophylla_juniperina_%286692287623%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Heritage Landing, Strahan, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "John Tann  from Sydney, Australia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leptecophylla_juniperina_(6692287623).jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Leptecophylla juniperina (6692287623).jpg",
+        "listingName": "Heritage Landing",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-16T22:54:42.094Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Heritage%20Landing%20Strahan%20Tasmania"
+      }
+    ],
+    "qualityScore": 43,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-17",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-16"
+  },
+  {
     "slug": "iron-blow",
     "name": "Iron Blow",
     "town": "Queenstown",
@@ -51836,6 +51999,82 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-17"
+  },
+  {
+    "slug": "penguin-rookery",
+    "name": "Penguin Rookery",
+    "town": "Middleton",
+    "region": "Hobart & South",
+    "latitude": -43.2694833,
+    "longitude": 147.3499573,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Middleton.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/2283869547",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2283869547",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": "yes",
+    "operator": null,
+    "detailSources": {
+      "wheelchair": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/2283869547",
+        "checkedAt": "2026-10-13"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-13",
+    "lastDetailsChecked": "2026-10-13",
+    "lastOsmDetailsChecked": "2026-10-13",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Panorama_of_Long_Neck_Penguin_Rookery_%2833099292603%29.jpg/1280px-Panorama_of_Long_Neck_Penguin_Rookery_%2833099292603%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Penguin Rookery, Middleton, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "Takver  from Australia",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panorama_of_Long_Neck_Penguin_Rookery_(33099292603).jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Panorama of Long Neck Penguin Rookery (33099292603).jpg",
+        "listingName": "Penguin Rookery",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-16T22:54:42.094Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Penguin%20Rookery%20Middleton%20Tasmania"
+      }
+    ],
+    "qualityScore": 43,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-17",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-16"
   },
   {
     "slug": "penny-royal-windmill",
@@ -52616,6 +52855,73 @@
     "rankedAt": "2026-10-17",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-16"
+  },
+  {
+    "slug": "the-gardens",
+    "name": "The Gardens",
+    "town": "Binalong Bay",
+    "region": "East Coast",
+    "latitude": -41.1633907,
+    "longitude": 148.2827015,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Binalong Bay.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/4969515921",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/4969515921",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-16",
+    "lastDetailsChecked": "2026-10-16",
+    "lastOsmDetailsChecked": "2026-10-16",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Paguroidea_Tasmania_%280S0A1355a%29.jpg/1280px-Paguroidea_Tasmania_%280S0A1355a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "The Gardens, Binalong Bay, Tasmania (geotagged Wikimedia Commons photograph)",
+      "attribution": "Taskettle",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paguroidea_Tasmania_(0S0A1355a).jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-geosearch",
+      "confidence": "high",
+      "matchEvidence": {
+        "method": "exact-name-in-original-Commons-metadata-plus-nearby-geotag",
+        "originalTitle": "File:Paguroidea Tasmania (0S0A1355a).jpg",
+        "listingName": "The Gardens",
+        "searchRadiusMetres": 350,
+        "observedAt": "2026-10-16T22:54:42.094Z"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=The%20Gardens%20Binalong%20Bay%20Tasmania"
+      }
+    ],
+    "qualityScore": 43,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-17"
   },
   {
     "slug": "tidal-coffee",
@@ -93698,79 +94004,6 @@
     "lastWikidataLinkChecked": "2026-10-14"
   },
   {
-    "slug": "pollen-tea-room",
-    "name": "Pollen Tea Room",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "latitude": -42.8897617,
-    "longitude": 147.3340384,
-    "categories": [
-      "Food & Drink",
-      "Café"
-    ],
-    "summary": "Café in or near Hobart.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/4603128780",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/4603128780",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Mo-Fr 07:30-15:00; Sa-Su 08:00-15:00",
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": "limited",
-    "operator": null,
-    "detailSources": {
-      "openingHours": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/4603128780",
-        "checkedAt": "2026-10-09"
-      },
-      "wheelchair": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/4603128780",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Pollen Tea Room category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Pollen%20Tea%20Room%20Hobart%20Tasmania"
-      }
-    ],
-    "qualityScore": 30,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "opening-hours",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-17",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-14"
-  },
-  {
     "slug": "port-arthur-lavender",
     "name": "Port Arthur Lavender",
     "town": "Port Arthur",
@@ -118651,66 +118884,6 @@
     "discoveryStaleSince": "2026-10-16"
   },
   {
-    "slug": "heritage-landing",
-    "name": "Heritage Landing",
-    "town": "Strahan",
-    "region": "West Coast",
-    "latitude": -42.4415678,
-    "longitude": 145.6121071,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Strahan.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/5241931421",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/5241931421",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-16",
-    "lastDetailsChecked": "2026-10-16",
-    "lastOsmDetailsChecked": "2026-10-16",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "Heritage Landing category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Heritage%20Landing%20Strahan%20Tasmania"
-      }
-    ],
-    "qualityScore": 25,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-17",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16",
-    "lastWikidataLinkChecked": "2026-10-16"
-  },
-  {
     "slug": "ike-corner",
     "name": "Ike Corner",
     "town": "Bushy Park",
@@ -120163,72 +120336,6 @@
         "provider": "google-maps",
         "label": "Reviews & visitor photos on Google Maps",
         "url": "https://www.google.com/maps/search/?api=1&query=Oyster%20picking%20Gordon%20Tasmania"
-      }
-    ],
-    "qualityScore": 25,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-17",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16",
-    "lastWikidataLinkChecked": "2026-10-16"
-  },
-  {
-    "slug": "penguin-rookery",
-    "name": "Penguin Rookery",
-    "town": "Middleton",
-    "region": "Hobart & South",
-    "latitude": -43.2694833,
-    "longitude": 147.3499573,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Middleton.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/2283869547",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2283869547",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": "yes",
-    "operator": null,
-    "detailSources": {
-      "wheelchair": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/2283869547",
-        "checkedAt": "2026-10-13"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-13",
-    "lastDetailsChecked": "2026-10-13",
-    "lastOsmDetailsChecked": "2026-10-13",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "Penguin Rookery category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Penguin%20Rookery%20Middleton%20Tasmania"
       }
     ],
     "qualityScore": 25,
@@ -121918,63 +122025,6 @@
       "code": 404,
       "checkedAt": "2026-10-15T15:29:59.742Z"
     },
-    "qualityScore": 25,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-17"
-  },
-  {
-    "slug": "the-gardens",
-    "name": "The Gardens",
-    "town": "Binalong Bay",
-    "region": "East Coast",
-    "latitude": -41.1633907,
-    "longitude": 148.2827015,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Binalong Bay.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/4969515921",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/4969515921",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-16",
-    "lastDetailsChecked": "2026-10-16",
-    "lastOsmDetailsChecked": "2026-10-16",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "The Gardens category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=The%20Gardens%20Binalong%20Bay%20Tasmania"
-      }
-    ],
     "qualityScore": 25,
     "qualityTier": "standard",
     "visibility": "public",
