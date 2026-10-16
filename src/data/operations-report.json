@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T05:53:47.552Z",
+  "generatedAt": "2026-10-16T06:20:42.824Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
@@ -102,9 +102,9 @@
       "name": "quality.yml",
       "status": "ok",
       "lastScheduled": "2026-10-15T22:27:07Z",
-      "lastResult": "queued",
-      "lastRunAt": "2026-10-16T05:53:42Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38858173280"
+      "lastResult": "success",
+      "lastRunAt": "2026-10-16T05:57:24Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38858503871"
     },
     {
       "name": "automation-health.yml",
@@ -148,7 +148,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4b4ce28cda2b2b6-IAD"
+        "cloudflareRay": "a4b4f5972eecb553-IAD"
       },
       {
         "name": "Food discovery",
@@ -156,7 +156,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4b4ce28be7796d5-IAD"
+        "cloudflareRay": "a4b4f5972ee59393-IAD"
       },
       {
         "name": "Service status",
@@ -164,7 +164,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4b4ce28cdcc3cb4-IAD"
+        "cloudflareRay": "a4b4f5972ba1316d-IAD"
       },
       {
         "name": "Robots",
@@ -172,7 +172,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/plain; charset=utf-8",
-        "cloudflareRay": "a4b4ce28ca2c9172-IAD"
+        "cloudflareRay": "a4b4f5973c167fed-IAD"
       },
       {
         "name": "Sitemap",
@@ -180,7 +180,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "application/xml",
-        "cloudflareRay": "a4b4ce28b9a7eb4a-IAD"
+        "cloudflareRay": "a4b4f5972c07d649-IAD"
       },
       {
         "name": "Markets freshness",
@@ -188,7 +188,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4b4ce28c8f54967-IAD"
+        "cloudflareRay": "a4b4f5973e2d13b3-IAD"
       },
       {
         "name": "Build date",
@@ -196,7 +196,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "application/json",
-        "cloudflareRay": "a4b4ce28ce591039-IAD",
+        "cloudflareRay": "a4b4f5972ff12514-IAD",
         "publishedDay": "2026-10-16"
       }
     ]
@@ -222,7 +222,7 @@
   },
   "aiopsClosures": {
     "schema": "tassienow-aiops-live-closure-v1",
-    "checkedAt": "2026-10-16T05:53:49.152Z",
+    "checkedAt": "2026-10-16T06:20:44.219Z",
     "base": "https://tassienow.com",
     "scope": "11 existing TassieNow source-repaired Pixelwolf AI Ops cards; observed live HTML + redirect",
     "cards": [
@@ -418,7 +418,7 @@
             "observed_venue": "Craigie Knowe Vineyard"
           }
         ],
-        "observed_at_utc": "2026-10-16T05:53:49.822Z",
+        "observed_at_utc": "2026-10-16T06:20:45.058Z",
         "expected": {
           "name_contains": "The Butcher",
           "startDate": "2026-10-24",
@@ -465,7 +465,7 @@
       },
       {
         "card_id": "work-20261015-999e06a8d36be666",
-        "status": "unverified",
+        "status": "live_verified",
         "checks": [
           {
             "name": "source_current",
@@ -473,14 +473,14 @@
           },
           {
             "name": "live_event_jsonld",
-            "pass": false,
+            "pass": true,
             "http_code": 200,
             "observed_date": "2026-10-26",
             "observed_town": "Burnie",
             "observed_venue": "Not Just Books, 40 Wilson Street, Burnie"
           }
         ],
-        "observed_at_utc": null,
+        "observed_at_utc": "2026-10-16T06:20:45.389Z",
         "expected": {
           "name_contains": "ACOTAR 6 Midnight Release Event",
           "startDate": "2026-10-26",
@@ -488,8 +488,7 @@
           "venue": "Not Just Books"
         },
         "url": "https://tassienow.com/event/acotar-6-midnight-release-event-2026-10-26-burnie/",
-        "source_slug": "acotar-6-midnight-release-event-2026-10-26-burnie",
-        "reason": "live_event_unverified_or_incorrect"
+        "source_slug": "acotar-6-midnight-release-event-2026-10-26-burnie"
       },
       {
         "card_id": "work-20261015-be6ddfbe1fccbbfe",
@@ -597,7 +596,7 @@
         "reason": "legacy_redirect_unverified"
       }
     ],
-    "live_verified_count": 1,
-    "unverified_count": 10
+    "live_verified_count": 2,
+    "unverified_count": 9
   }
 }
