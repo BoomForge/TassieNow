@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import {imageIsPublishable} from './discover/lib/event-media.mjs';
 import { marketCopy, tasmaniaDate } from '../src/lib/market-seo.mjs';
+import {verifyAiOpsEventClosures} from './aiops-closure-check.mjs';
 
 const out = new URL('../src/data/operations-report.json', import.meta.url);
 const repository = process.env.GITHUB_REPOSITORY || 'BoomForge/TassieNow';
@@ -162,6 +163,18 @@ report.workflows.sort((a,b)=>{
   const order=watched.map(x=>x[0]).concat(onceOnly);
   return order.indexOf(a.name)-order.indexOf(b.name);
 });
+// Owner-approved automatic completion evidence on the EXISTING monitoring cycle.
+// These are observations only. A ChatGPT AI Ops review finalises individual
+// same-card receipts after reading this report, never by guessing from commits.
+try {
+  const records=JSON.parse(await fs.readFile(new URL('../src/data/events.json',import.meta.url),'utf8'));
+  report.aiopsClosures=await verifyAiOpsEventClosures(records);
+} catch(error){
+  report.aiopsClosures={schema:'tassienow-aiops-live-closure-v1',status:'unavailable',
+    observed_at_utc:now.toISOString(),error:String(error.message||error).slice(0,220),
+    live_verified_count:0};
+}
+
 await fs.writeFile(out,JSON.stringify(report,null,2)+'\n');
 if(process.env.GITHUB_STEP_SUMMARY) {
   const lines=['## TassieNow operations report','Observed: '+report.generatedAt,
