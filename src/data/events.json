@@ -256,32 +256,6 @@
     "lastChecked": "2026-10-16"
   },
   {
-    "slug": "disclaimer-events-listed-are-organised-by-local-groups-businesses-and-individuals-2026-09-",
-    "name": "Disclaimer : Events listed are organised by local groups, businesses, and individuals",
-    "town": "Huonville",
-    "region": "Hobart & South",
-    "startDate": "2026-09-23",
-    "endDate": "2026-10-21",
-    "categories": [
-      "Events"
-    ],
-    "summary": "Disclaimer : Events listed are organised by local groups, businesses, and individuals in Huonville. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.huonvalley.tas.gov.au/events/",
-    "sourceUrl": "https://www.huonvalley.tas.gov.au/events/",
-    "sourceName": "Huon Valley Council",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Disclaimer : Events listed are organised by local groups, businesses, and individuals event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-10-16"
-  },
-  {
     "slug": "seniors-creative-and-social-sessions-2026-09-23-huonville",
     "name": "Seniors Creative & Social Sessions",
     "town": "Huonville",
@@ -3510,13 +3484,13 @@
     "town": "Hobart",
     "region": "Hobart & South",
     "startDate": "2026-11-13",
-    "endDate": "2026-11-13",
+    "endDate": "2026-11-14",
     "categories": [
       "Events"
     ],
-    "summary": "City of Hobart Floral Shows in Hobart. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.hobartcity.com.au/Things-To-Do/Upcoming-events/City-of-Hobart-Floral-Shows",
-    "sourceUrl": "https://www.hobartcity.com.au/Things-To-Do/Upcoming-events",
+    "summary": "City of Hobart Floral Shows at Waterside Pavilion, Mawson Place: Friday 13 November 2026, 1–5 pm; Saturday 14 November 2026, 9 am–5 pm.",
+    "eventUrl": "https://www.hobartcity.com.au/Community/Events-and-activities/Upcoming-events/City-of-Hobart-Floral-Shows",
+    "sourceUrl": "https://www.hobartcity.com.au/Community/Events-and-activities/Upcoming-events/City-of-Hobart-Floral-Shows",
     "sourceName": "City of Hobart",
     "image": {
       "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Flower_show_at_Lalbagh_botanical_garden_2026_(63981).jpg",
@@ -3539,8 +3513,24 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-16",
-    "ticketLastChecked": "2026-10-16"
+    "lastChecked": "2026-10-17",
+    "ticketLastChecked": "2026-10-16",
+    "startTime": "13:00",
+    "endTime": "17:00",
+    "venue": "Waterside Pavilion",
+    "address": "Mawson Place, Hobart TAS 7000",
+    "sessions": [
+      {
+        "date": "2026-11-13",
+        "startTime": "13:00",
+        "endTime": "17:00"
+      },
+      {
+        "date": "2026-11-14",
+        "startTime": "09:00",
+        "endTime": "17:00"
+      }
+    ]
   },
   {
     "slug": "hobofopo2026-2026-11-13-hobart",

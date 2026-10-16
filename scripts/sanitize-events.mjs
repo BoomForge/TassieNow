@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 
 const FILE = new URL('../src/data/events.json', import.meta.url);
-const JUNK_NAME = /\b(?:for visit the event on rosny farm|living well devonport program|program dates?|time location|upcoming events?|community noticeboard|fogo collection|waste collection)\b/i;
+const JUNK_NAME = /\b(?:for visit the event on rosny farm|living well devonport program|program dates?|time location|upcoming events?|community noticeboard|events listed are organised by local groups|fogo collection|waste collection)\b/i;
 const HTML_LEAK = /<\/?[a-z!]|\b(?:src|srcset|class|media|href)\s*=|&(?:lt|gt);/i;
 const DATE_ONLY_NAME = /^(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\s+\d{1,2}(?:st|nd|rd|th)?(?:,?\s+20\d{2})?$/i;
 

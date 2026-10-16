@@ -1063,5 +1063,56 @@
         "checkedAt": "2026-10-07"
       }
     }
+  },
+  "ashgrove-cheese-factory": {
+    "openingHours": "Mo-Su 08:30-17:00",
+    "schedule": {
+      "summary": "Open daily 8:30 am–5 pm",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "08:30",
+      "endTime": "17:00",
+      "sourceUrl": "https://www.ashgrovecheese.com.au/visit-us/"
+    },
+    "officialSource": {
+      "name": "Ashgrove Dairy Door",
+      "url": "https://www.ashgrovecheese.com.au/visit-us/",
+      "type": "official-website"
+    },
+    "detailSources": {
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://www.ashgrovecheese.com.au/visit-us/"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://www.ashgrovecheese.com.au/visit-us/"
+      }
+    }
+  },
+  "the-four-mile": {
+    "image": {
+      "url": "/images/categories/discover.svg",
+      "alt": "The Four Mile category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "detailSources": {
+      "image": {
+        "type": "verified-correction",
+        "url": "https://www.wikidata.org/wiki/Q21955928"
+      }
+    }
   }
 }

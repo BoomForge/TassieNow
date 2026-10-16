@@ -21321,17 +21321,15 @@
     "sourceId": "Q21955928",
     "wikidata": "Q21955928",
     "status": "active",
-    "lastChecked": "2026-10-06",
+    "lastChecked": "2026-10-17",
     "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Four_Mile_Creek.jpg/1920px-Four_Mile_Creek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "The Four Mile, Tasmania",
-      "attribution": "Sammarkey",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Four_Mile_Creek.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "medium"
+      "url": "/images/categories/discover.svg",
+      "alt": "The Four Mile category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
     },
     "reviewLinks": [
       {
@@ -21347,7 +21345,6 @@
     "qualitySignals": [
       "proper-name",
       "wikidata",
-      "real-image",
       "review-link",
       "details-checked"
     ],
@@ -35057,7 +35054,7 @@
     "wikidata": null,
     "wikipediaUrl": null,
     "commonsCategory": null,
-    "openingHours": "Mo-Su 08:30-17:00; Mo,Tu,We,Th,Fr 08:00-12:00",
+    "openingHours": "Mo-Su 08:30-17:00",
     "phone": null,
     "email": "dairydoor@ashgrovecheese.com.au",
     "address": null,
@@ -35073,18 +35070,18 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://www.ashgrovecheese.com.au/pages/contact-us",
-        "checkedAt": "2026-10-16"
+        "url": "https://www.ashgrovecheese.com.au/visit-us/",
+        "checkedAt": "2026-10-17"
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://www.ashgrovecheese.com.au/pages/contact-us",
-        "checkedAt": "2026-10-16"
+        "url": "https://www.ashgrovecheese.com.au/visit-us/",
+        "checkedAt": "2026-10-17"
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-16",
-    "lastDetailsChecked": "2026-10-16",
+    "lastChecked": "2026-10-17",
+    "lastDetailsChecked": "2026-10-17",
     "lastOsmDetailsChecked": "2026-10-16",
     "image": {
       "url": "/images/categories/discover.svg",
@@ -35114,8 +35111,8 @@
       "checkedAt": "2026-10-15T15:29:57.767Z"
     },
     "schedule": {
-      "summary": "Open daily 8:30 am — 5 pm",
-      "sourceUrl": "https://www.ashgrovecheese.com.au/pages/contact-us",
+      "summary": "Open daily 8:30 am–5 pm",
+      "sourceUrl": "https://www.ashgrovecheese.com.au/visit-us/",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",

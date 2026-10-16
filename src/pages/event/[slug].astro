@@ -39,6 +39,13 @@ const formatEventDate = (value) => new Intl.DateTimeFormat('en-AU', {
   year: 'numeric'
 }).format(new Date(`${value}T12:00:00Z`));
 
+const formatEventTime = (value) => {
+  const match = /^(\\d{2}):(\\d{2})$/.exec(String(value || ''));
+  if (!match) return value;
+  const hour = Number(match[1]);
+  return `${hour % 12 || 12}:${match[2]} ${hour >= 12 ? 'pm' : 'am'}`;
+};
+
 const eventSchema = {
   '@context': 'https://schema.org',
   '@type': 'Event',
@@ -155,6 +162,16 @@ const townSlug = String(event.town || '')
     </p>
 
     <div class="detail-meta">{event.categories.map((category) => <span class="tag">{category}</span>)}</div>
+    {Array.isArray(event.sessions) && event.sessions.length > 0 && (
+      <section aria-label="Event session times">
+        <h2>Session times</h2>
+        <ul>
+          {event.sessions.map((session) => (
+            <li><strong>{formatEventDate(session.date)}</strong>: {formatEventTime(session.startTime)}–{formatEventTime(session.endTime)}</li>
+          ))}
+        </ul>
+      </section>
+    )}
     {event.venue && <p><strong>Venue:</strong> {event.venue}</p>}
     {event.address && <p><strong>Address:</strong> {event.address}</p>}
     <p>{event.summary}</p>

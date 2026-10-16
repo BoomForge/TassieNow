@@ -409,6 +409,10 @@ for (const place of places) {
     overridesApplied++;
   }
   if (override.schedule && !(manual && place.schedule)) { place.schedule = override.schedule; overridesApplied++; }
+  if (override.image && !(manual && place.image && !place.image.isFallback)) {
+    place.image = override.image;
+    overridesApplied++;
+  }
   if (override.officialSource && !manual) place.officialSource = override.officialSource;
   place.detailSources ||= {};
   for (const [key, detail] of Object.entries(override.detailSources || {})) {
