@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T12:43:23.247Z",
+  "generatedAt": "2026-10-16T17:41:25.107Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
@@ -13,10 +13,10 @@
     {
       "name": "events.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-16T11:15:24Z",
+      "lastScheduled": "2026-10-16T16:33:25Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-16T11:15:24Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38892567084"
+      "lastRunAt": "2026-10-16T16:33:25Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38932881062"
     },
     {
       "name": "catalogue-quality.yml",
@@ -37,10 +37,10 @@
     {
       "name": "auto-photo-sources.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-15T23:54:23Z",
+      "lastScheduled": "2026-10-16T14:20:24Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-15T23:54:23Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38826353269"
+      "lastRunAt": "2026-10-16T14:20:24Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38914954652"
     },
     {
       "name": "place-photo-research.yml",
@@ -63,16 +63,16 @@
       "status": "ok",
       "lastScheduled": "2026-10-16T10:08:39Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-16T11:20:15Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38893096552"
+      "lastRunAt": "2026-10-16T16:36:49Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38933324703"
     },
     {
       "name": "verify-event-artwork.yml",
       "status": "ok",
       "lastScheduled": "2026-10-16T10:10:06Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-16T11:20:16Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38893099306"
+      "lastRunAt": "2026-10-16T16:36:51Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38933327761"
     },
     {
       "name": "verify-event-image-files.yml",
@@ -109,10 +109,10 @@
     {
       "name": "automation-health.yml",
       "status": "ok",
-      "lastScheduled": "2026-10-16T12:12:37Z",
+      "lastScheduled": "2026-10-16T17:15:29Z",
       "lastResult": "success",
-      "lastRunAt": "2026-10-16T12:12:37Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38898929589"
+      "lastRunAt": "2026-10-16T17:15:29Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/38938290534"
     },
     {
       "name": "indexnow.yml",
@@ -148,7 +148,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4b726278eec69df-DFW"
+        "cloudflareRay": "a4b8dab87addb33c-DTW"
       },
       {
         "name": "Food discovery",
@@ -156,7 +156,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4b72627999a45e4-DFW"
+        "cloudflareRay": "a4b8dab879da3be1-MEM"
       },
       {
         "name": "Service status",
@@ -164,7 +164,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4b72627985bfa04-DFW"
+        "cloudflareRay": "a4b8dab87b3aa93c-DTW"
       },
       {
         "name": "Robots",
@@ -172,7 +172,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/plain; charset=utf-8",
-        "cloudflareRay": "a4b7262798316b44-DFW"
+        "cloudflareRay": "a4b8dab85de88c26-DTW"
       },
       {
         "name": "Sitemap",
@@ -180,7 +180,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "application/xml",
-        "cloudflareRay": "a4b726278edf45e0-DFW"
+        "cloudflareRay": "a4b8dab8589e4da9-DTW"
       },
       {
         "name": "Markets freshness",
@@ -188,7 +188,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a4b726279baecd65-DFW"
+        "cloudflareRay": "a4b8dab86c5c3d43-DTW"
       },
       {
         "name": "Build date",
@@ -196,7 +196,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "application/json",
-        "cloudflareRay": "a4b726278a1d9b4d-DFW",
+        "cloudflareRay": "a4b8dab86e078c26-DTW",
         "publishedDay": "2026-10-16"
       }
     ]
@@ -209,20 +209,20 @@
     }
   ],
   "imageCoverage": {
-    "activeEvents": 172,
-    "publishedEventPhotos": 77,
-    "auditedPublishedPhotos": 77
+    "activeEvents": 164,
+    "publishedEventPhotos": 73,
+    "auditedPublishedPhotos": 73
   },
   "photoSourceDiscovery": {
     "linkedPlacePages": 68,
-    "linkedEventPages": 112,
-    "scannedRecords": 438,
-    "lastSourceScan": "2026-10-15T23:54:29.558Z",
+    "linkedEventPages": 116,
+    "scannedRecords": 445,
+    "lastSourceScan": "2026-10-16T14:20:34.041Z",
     "realHeroPhotosAddedByLinks": 0
   },
   "aiopsClosures": {
     "schema": "tassienow-aiops-live-closure-v1",
-    "checkedAt": "2026-10-16T12:43:24.956Z",
+    "checkedAt": "2026-10-16T17:41:26.659Z",
     "base": "https://tassienow.com",
     "scope": "11 existing TassieNow source-repaired Pixelwolf AI Ops cards; observed live HTML + redirect",
     "cards": [
@@ -418,7 +418,7 @@
             "observed_venue": "Craigie Knowe Vineyard"
           }
         ],
-        "observed_at_utc": "2026-10-16T12:43:26.188Z",
+        "observed_at_utc": "2026-10-16T17:41:27.735Z",
         "expected": {
           "name_contains": "The Butcher",
           "startDate": "2026-10-24",
@@ -465,22 +465,14 @@
       },
       {
         "card_id": "work-20261015-999e06a8d36be666",
-        "status": "live_verified",
+        "status": "unverified",
         "checks": [
           {
             "name": "source_current",
-            "pass": true
-          },
-          {
-            "name": "live_event_jsonld",
-            "pass": true,
-            "http_code": 200,
-            "observed_date": "2026-10-26",
-            "observed_town": "Burnie",
-            "observed_venue": "Not Just Books, 40 Wilson Street, Burnie"
+            "pass": false
           }
         ],
-        "observed_at_utc": "2026-10-16T12:43:26.491Z",
+        "observed_at_utc": null,
         "expected": {
           "name_contains": "ACOTAR 6 Midnight Release Event",
           "startDate": "2026-10-26",
@@ -488,7 +480,8 @@
           "venue": "Not Just Books"
         },
         "url": "https://tassienow.com/event/acotar-6-midnight-release-event-2026-10-26-burnie/",
-        "source_slug": "acotar-6-midnight-release-event-2026-10-26-burnie"
+        "source_slug": "acotar-6-midnight-release-event-2026-10-26-burnie",
+        "reason": "canonical_source_does_not_match_expected"
       },
       {
         "card_id": "work-20261015-be6ddfbe1fccbbfe",
@@ -596,7 +589,7 @@
         "reason": "legacy_redirect_unverified"
       }
     ],
-    "live_verified_count": 2,
-    "unverified_count": 9
+    "live_verified_count": 1,
+    "unverified_count": 10
   }
 }
