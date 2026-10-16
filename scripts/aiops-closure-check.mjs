@@ -68,7 +68,12 @@ export async function verifyAiOpsEventClosures(events,opts={}){
         String(actual.startDate||'').startsWith(spec.day)&&
         actual.location?.address?.addressLocality===spec.town&&
         (!spec.venue||String(actual.location?.name||'').includes(spec.venue))&&
-        (spec.priceFrom===undefined||Number(actual.offers?.price)===spec.priceFrom);
+        (spec.priceFrom===undefined||
+          Number(actual.offers?.price)===spec.priceFrom||
+          // The Astro event template correctly omits JSON-LD Offer without a
+          // real ticket URL, but still renders a verified public price label.
+          (source.priceFrom===spec.priceFrom &&
+            new RegExp('From\\\\s*(?:A\\\\$|\\\\$)'+spec.priceFrom+'(?:\\\\.00)?\\\\b','i').test(html)));
       entry.checks.push({name:'live_event_jsonld',pass:livePass,http_code:response.status,
         observed_date:actual?.startDate||null,observed_town:actual?.location?.address?.addressLocality||null,
         observed_venue:actual?.location?.name||null});
