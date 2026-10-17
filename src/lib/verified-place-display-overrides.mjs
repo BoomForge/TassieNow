@@ -12,5 +12,10 @@ export function applyVerifiedPlaceDisplayOverrides(place, overrides) {
     DISPLAY_FIELDS.filter((field) => typeof override[field] === 'string' && override[field].trim())
       .map((field) => [field, override[field]])
   );
+  if (override.removePhone === true) {
+    const copy = { ...place, ...verified };
+    delete copy.phone;
+    return copy;
+  }
   return Object.keys(verified).length ? { ...place, ...verified } : place;
 }

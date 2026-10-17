@@ -5,7 +5,7 @@ import { safePlaceBookingUrl } from '../src/lib/place-booking-guard.mjs';
 
 const file = new URL('../src/data/places.json', import.meta.url);
 const places = JSON.parse(await fs.readFile(file, 'utf8'));
-const sourceBacked = new Set(['ashgrove-cheese-factory','willie-smith-s-apple-shed']);
+const sourceBacked = new Set(['ashgrove-cheese-factory','willie-smith-s-apple-shed','1830','calcified-forest']);
 let fieldsCorrected=0, bookingLinksRemoved=0;
 for (const place of places) {
   if (sourceBacked.has(place.slug) && overrides[place.slug]) {
@@ -22,6 +22,10 @@ for (const place of places) {
     place.image = structuredClone(overrides[place.slug].image);
     place.detailSources ||= {};
     if (overrides[place.slug].detailSources?.image) place.detailSources.image = structuredClone(overrides[place.slug].detailSources.image);
+    fieldsCorrected++;
+  }
+  if (sourceBacked.has(place.slug) && overrides[place.slug]?.removePhone === true) {
+    delete place.phone;
     fieldsCorrected++;
   }
   const original = place.bookingUrl;

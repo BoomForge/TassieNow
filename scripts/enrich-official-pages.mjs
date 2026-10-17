@@ -417,6 +417,7 @@ for (const place of places) {
     if (manual && place[key]) continue;
     place.detailSources[key] = { ...detail, checkedAt: TODAY };
   }
+  if (override.removePhone === true && override.liveDisplayOverride === true) delete place.phone;
   place.lastDetailsChecked = TODAY;
 }
 for (const place of places) sanitiseListingFields(place);
