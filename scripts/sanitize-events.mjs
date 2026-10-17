@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 
 const FILE = new URL('../src/data/events.json', import.meta.url);
+const CURATED_OVERRIDES = new URL('../src/data/event-overrides.json', import.meta.url);
 const JUNK_NAME = /\b(?:for visit the event on rosny farm|living well devonport program|program dates?|time location|upcoming events?|community noticeboard|events listed are organised by local groups|fogo collection|waste collection)\b/i;
 const HTML_LEAK = /<\/?[a-z!]|\b(?:src|srcset|class|media|href)\s*=|&(?:lt|gt);/i;
 const DATE_ONLY_NAME = /^(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\s+\d{1,2}(?:st|nd|rd|th)?(?:,?\s+20\d{2})?$/i;
@@ -71,10 +72,13 @@ function dedupe(items){
 }
 
 const events = JSON.parse(await fs.readFile(FILE,'utf8'));
+const overrides = JSON.parse(await fs.readFile(CURATED_OVERRIDES,'utf8'));
+// Verified owner-reviewed corrections take precedence over lossy upstream card extracts.
+// Applied on every refresh so official venue/dates/sessions cannot silently regress.
 const cleaned=[];
 let removed=0,repaired=0;
 for(const original of events){
-  const event={...original};
+  const event={...original, ...(overrides[original.slug]?.fields || {})};
   event.name=cleanText(event.name);
   if(DATE_ONLY_NAME.test(event.name)){
     const recovered=titleFromEventUrl(event.eventUrl);

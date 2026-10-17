@@ -3184,7 +3184,7 @@
     "town": "Hobart",
     "region": "Hobart & South",
     "startDate": "2026-11-13",
-    "endDate": "2026-11-13",
+    "endDate": "2026-11-14",
     "categories": [
       "Events"
     ],
@@ -3213,7 +3213,23 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "venue": "Waterside Pavilion",
+    "address": "Mawson Place, Hobart TAS 7000",
+    "startTime": "13:00",
+    "endTime": "17:00",
+    "sessions": [
+      {
+        "date": "2026-11-13",
+        "startTime": "13:00",
+        "endTime": "17:00"
+      },
+      {
+        "date": "2026-11-14",
+        "startTime": "09:00",
+        "endTime": "17:00"
+      }
+    ]
   },
   {
     "slug": "comedy-night-tabish-2026-11-13-hobart",
