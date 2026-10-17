@@ -64,7 +64,22 @@ async function one(spec){
  if(spec.scope==='parks')paths=places.filter(x=>x.status==='active'&&/Parks Tasmania|Parks & Wildlife/i.test(x.summary||x.officialSource?.name||'')&&!/hastings-caves/.test(x.slug||'')).slice(0,65).map(x=>'/place/'+x.slug+'/');
  if(spec.scope==='burnie')paths=events.filter(x=>x.status==='active'&&x.sourceName==='Burnie City Council').slice(0,25).map(x=>'/event/'+x.slug+'/');
  if(!paths.length)return {id:spec.id,status:'needs_scope',detail:'No applicable source pages or original expected facts',pages:[]};
- const output=await Promise.all(paths.map(path=>check(base+path,{...spec,kind:path.startsWith('/event/')?'event':'place'})));
+ const output=await Promise.all(paths.map(path=>{
+  const per=spec.perPath?.[path]||{};
+  const source=spec.scope==='burnie'?events.find(x=>'/event/'+x.slug+'/'===path):null;
+  const expectations={...spec,...per,kind:path.startsWith('/event/')?'event':'place'};
+  if(source){expectations.start=source.startDate;expectations.end=source.endDate;}
+  return check(base+path,expectations);
+ }));
+ if(spec.legacyPaths?.length){
+  const expected=paths[0].replace(/^\/event\//,'');
+  for(const oldPath of spec.legacyPaths){
+   const p=await get(base+oldPath);
+   const location=String(p.location||'');
+   const pass=[301,302,307,308].includes(p.status) && location.includes(expected);
+   output.push({status:pass?'pass':'fail',url:base+oldPath,proof:pass?'old canonical URL redirects to '+location:'expected HTTP redirect to '+expected+', observed '+p.status+' '+location});
+  }
+ }
  const bad=output.filter(x=>x.status==='fail'),unknown=output.filter(x=>x.status==='inaccessible');
  const status=bad.length?'fail':unknown.length?'inaccessible':'pass';
  return {id:spec.id,status,pages:output,detail:paths.length+' checked; '+bad.length+' failed; '+unknown.length+' inaccessible'};
