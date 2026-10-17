@@ -40,3 +40,11 @@ test('unverified council or other sources are never rewritten',()=>{
  const normal={eventUrl:'https://example.org/anything',name:'Another event',startDate:'2026-11-01'};
  assert.equal(applyVerifiedBurnieEvent(normal,'2026-10-18'),normal);
 });
+
+test('Peter FitzSimons retains verified 12 November event date after discovery',()=>{
+ const url='https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/In-Conversation-with-Peter-FitzSimons';
+ const p=applyVerifiedBurnieEvent({eventUrl:url,name:'In Conversation with Peter FitzSimons',startDate:'2026-11-10',town:'Burnie'},'2026-10-18');
+ assert.equal(p.startDate,'2026-11-12');
+ assert.equal(p.startTime,'18:00');
+ assert.equal(p.slug,'in-conversation-with-peter-fitzsimons-2026-11-12-burnie');
+});

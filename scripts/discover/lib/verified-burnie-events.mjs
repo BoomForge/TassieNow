@@ -36,7 +36,8 @@ const VERIFIED_BURNIE_EVENTS = new Map([
   ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Harness-Racing-Club-Season', {"startDate":"2026-11-06","endDate":"2026-11-06","startTime":"18:00","endTime":"23:59","venue":"Burnie Harness Racing Club, 1 Pearl Street, Wivenhoe","address":"1 Pearl Street, Wivenhoe TAS 7320","town":"Wivenhoe"}],
   ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Surf-Club-Nipper-Open-Day', {"startDate":"2026-11-08","endDate":"2026-11-08","startTime":"09:45","endTime":"12:00","venue":"West Beach, Burnie","address":"West Beach, Burnie TAS 7320"}],
   ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/National-Recycling-Week', {"startDate":"2026-11-09","endDate":"2026-11-15","startTime":"10:00","endTime":"16:00","venue":"Burnie Council City Offices, 80 Wilson Street, Burnie","address":"80 Wilson Street, Burnie TAS 7320"}],
-  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/In-Conversation-with-Alan-Carter', {"startDate":"2026-11-10","endDate":"2026-11-10","startTime":"14:30","endTime":"16:00","venue":"Europa Cafe, 1/23 Cattley Street, Burnie","address":"1/23 Cattley Street, Burnie TAS 7320","priceFrom":10,"priceTo":10,"priceCurrency":"AUD"}]
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/In-Conversation-with-Alan-Carter', {"startDate":"2026-11-10","endDate":"2026-11-10","startTime":"14:30","endTime":"16:00","venue":"Europa Cafe, 1/23 Cattley Street, Burnie","address":"1/23 Cattley Street, Burnie TAS 7320","priceFrom":10,"priceTo":10,"priceCurrency":"AUD"}],
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/In-Conversation-with-Peter-FitzSimons', {startDate:'2026-11-12',endDate:'2026-11-12',startTime:'18:00',endTime:'20:00',venue:'South Burnie Bowls Club, 2 Hale Street, Burnie',address:'2 Hale Street, Burnie TAS 7320',priceFrom:10,priceTo:10,priceCurrency:'AUD'}]
 ]);
 
 const slugify = value => String(value)
