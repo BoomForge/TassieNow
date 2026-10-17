@@ -5,7 +5,7 @@ import { safePlaceBookingUrl } from '../src/lib/place-booking-guard.mjs';
 
 const file = new URL('../src/data/places.json', import.meta.url);
 const places = JSON.parse(await fs.readFile(file, 'utf8'));
-const sourceBacked = new Set(['ashgrove-cheese-factory','willie-smith-s-apple-shed','1830','calcified-forest']);
+const sourceBacked = new Set(['ashgrove-cheese-factory','willie-smith-s-apple-shed','1830','calcified-forest','archers-knob','bird-hide','point-vision','springlawn-bird-hide-lookout','tasmanian-produce-market']);
 let fieldsCorrected=0, bookingLinksRemoved=0;
 for (const place of places) {
   if (sourceBacked.has(place.slug) && overrides[place.slug]) {
@@ -27,6 +27,15 @@ for (const place of places) {
   if (sourceBacked.has(place.slug) && overrides[place.slug]?.removePhone === true) {
     delete place.phone;
     fieldsCorrected++;
+  }
+  if (sourceBacked.has(place.slug) && overrides[place.slug]?.liveDisplayOverride === true && !place.managedManually) {
+    const review = overrides[place.slug];
+    if (review.removeOpeningHours === true) { delete place.openingHours; fieldsCorrected++; }
+    if (review.removeSchedule === true) { delete place.schedule; fieldsCorrected++; }
+    if (review.overrideOfficialSource === true && review.officialSource?.url?.startsWith('https://')) {
+      place.officialSource = structuredClone(review.officialSource);
+      fieldsCorrected++;
+    }
   }
   const original = place.bookingUrl;
   sanitiseListingFields(place);

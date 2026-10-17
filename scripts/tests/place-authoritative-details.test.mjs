@@ -18,3 +18,22 @@ test('phone parser preserves valid numbers but never extracts GIS-coordinate sub
  assert.equal(phoneFromText('03 6266 4345'),'03 6266 4345');
  assert.equal(phoneFromText('0419 403 467'),'0419 403 467');
 });
+
+test('four Narawntapu walks do not borrow visitor centre hours or schedule',()=>{
+ for(const slug of ['archers-knob','bird-hide','point-vision','springlawn-bird-hide-lookout']){
+   const place=applyVerifiedPlaceDisplayOverrides({slug,name:slug,openingHours:'Mo-Su 12:30-13:00',schedule:{summary:'Closed 12:30-13:00'}},overrides);
+   assert.equal(place.openingHours,undefined,slug);
+   assert.equal(place.schedule,undefined,slug);
+   assert.equal(place.name,slug);
+ }
+});
+test('Tasmanian Produce Market displays the real operator, phone and venue',()=>{
+ const p=applyVerifiedPlaceDisplayOverrides({slug:'tasmanian-produce-market',address:'Kangaroo Bay, Rosny Park',phone:'+61361692059',officialSource:{url:'https://tasproduceguide.au/markets/'}},overrides);
+ assert.equal(p.address,'20 Kangaroo Bay Drive, Rosny Park TAS 7018');
+ assert.equal(p.phone,'0448 997 748');
+ assert.equal(p.officialSource.url,'https://hobarttwilightmarket.com.au/tasmanian-produce-market/');
+});
+test('owner-managed venue details are preserved',()=>{
+ const p={slug:'tasmanian-produce-market',managedManually:true,phone:'0400 000 000',address:'Owner-corrected address'};
+ assert.equal(applyVerifiedPlaceDisplayOverrides(p,over),p);
+});

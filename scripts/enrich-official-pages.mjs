@@ -418,6 +418,10 @@ for (const place of places) {
     place.detailSources[key] = { ...detail, checkedAt: TODAY };
   }
   if (override.removePhone === true && override.liveDisplayOverride === true) delete place.phone;
+  if (override.liveDisplayOverride === true && !manual) {
+    if (override.removeOpeningHours === true) delete place.openingHours;
+    if (override.removeSchedule === true) delete place.schedule;
+  }
   place.lastDetailsChecked = TODAY;
 }
 for (const place of places) sanitiseListingFields(place);

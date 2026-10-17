@@ -12,10 +12,15 @@ export function applyVerifiedPlaceDisplayOverrides(place, overrides) {
     DISPLAY_FIELDS.filter((field) => typeof override[field] === 'string' && override[field].trim())
       .map((field) => [field, override[field]])
   );
-  if (override.removePhone === true) {
-    const copy = { ...place, ...verified };
-    delete copy.phone;
-    return copy;
+  const update = Object.keys(verified).length > 0 || override.removePhone === true ||
+    override.removeOpeningHours === true || override.removeSchedule === true || override.overrideOfficialSource === true;
+  if (!update) return place;
+  const copy = { ...place, ...verified };
+  if (override.removePhone === true) delete copy.phone;
+  if (override.removeOpeningHours === true) delete copy.openingHours;
+  if (override.removeSchedule === true) delete copy.schedule;
+  if (override.overrideOfficialSource === true && override.officialSource?.url?.startsWith('https://')) {
+    copy.officialSource = structuredClone(override.officialSource);
   }
-  return Object.keys(verified).length ? { ...place, ...verified } : place;
+  return copy;
 }

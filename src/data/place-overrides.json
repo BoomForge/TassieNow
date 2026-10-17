@@ -259,7 +259,7 @@
     "openingHours": "Su 10:00-15:00"
   },
   "tasmanian-produce-market": {
-    "address": "Kangaroo Bay, Rosny Park",
+    "address": "20 Kangaroo Bay Drive, Rosny Park TAS 7018",
     "schedule": {
       "summary": "Every Saturday, 9 am–1 pm",
       "frequency": "weekly",
@@ -272,23 +272,36 @@
       "endTime": "13:00"
     },
     "officialSource": {
-      "name": "Fruit Growers Tasmania seasonal produce guide",
-      "url": "https://tasproduceguide.au/markets/",
-      "type": "industry-guide"
+      "name": "Tasmanian Produce Market — Hobart Twilight Market",
+      "url": "https://hobarttwilightmarket.com.au/tasmanian-produce-market/",
+      "type": "official-operator"
     },
     "detailSources": {
       "address": {
         "type": "verified-source",
-        "url": "https://tasproduceguide.au/markets/",
-        "checkedAt": "2026-10-07"
+        "url": "https://hobarttwilightmarket.com.au/tasmanian-produce-market/",
+        "checkedAt": "2026-10-18"
       },
       "schedule": {
         "type": "verified-source",
         "url": "https://tasproduceguide.au/markets/",
         "checkedAt": "2026-10-07"
+      },
+      "phone": {
+        "type": "verified-source",
+        "url": "https://hobarttwilightmarket.com.au/tasmanian-produce-market/",
+        "checkedAt": "2026-10-18"
+      },
+      "officialSource": {
+        "type": "verified-source",
+        "url": "https://hobarttwilightmarket.com.au/tasmanian-produce-market/",
+        "checkedAt": "2026-10-18"
       }
     },
-    "openingHours": "Sa 09:00-13:00"
+    "openingHours": "Sa 09:00-13:00",
+    "liveDisplayOverride": true,
+    "phone": "0448 997 748",
+    "overrideOfficialSource": true
   },
   "harvest-launceston-community-farmers-market": {
     "address": "71 Cimitiere Street, Launceston",
@@ -1228,6 +1241,74 @@
       "phone": {
         "type": "verified-absence",
         "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)",
+        "checkedAt": "2026-10-18"
+      }
+    }
+  },
+  "archers-knob": {
+    "liveDisplayOverride": true,
+    "removeOpeningHours": true,
+    "removeSchedule": true,
+    "detailSources": {
+      "openingHours": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
+        "checkedAt": "2026-10-18"
+      },
+      "schedule": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
+        "checkedAt": "2026-10-18"
+      }
+    }
+  },
+  "bird-hide": {
+    "liveDisplayOverride": true,
+    "removeOpeningHours": true,
+    "removeSchedule": true,
+    "detailSources": {
+      "openingHours": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+        "checkedAt": "2026-10-18"
+      },
+      "schedule": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+        "checkedAt": "2026-10-18"
+      }
+    }
+  },
+  "point-vision": {
+    "liveDisplayOverride": true,
+    "removeOpeningHours": true,
+    "removeSchedule": true,
+    "detailSources": {
+      "openingHours": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track",
+        "checkedAt": "2026-10-18"
+      },
+      "schedule": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track",
+        "checkedAt": "2026-10-18"
+      }
+    }
+  },
+  "springlawn-bird-hide-lookout": {
+    "liveDisplayOverride": true,
+    "removeOpeningHours": true,
+    "removeSchedule": true,
+    "detailSources": {
+      "openingHours": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/springlawn-nature-walk",
+        "checkedAt": "2026-10-18"
+      },
+      "schedule": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/springlawn-nature-walk",
         "checkedAt": "2026-10-18"
       }
     }
