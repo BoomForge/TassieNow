@@ -77,11 +77,13 @@ const overrides = JSON.parse(await fs.readFile(CURATED_OVERRIDES,'utf8'));
 // Verified owner-reviewed corrections take precedence over lossy upstream card extracts.
 // Applied on every refresh so official venue/dates/sessions cannot silently regress.
 const TODAY=new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+const sourceOverrides=new Map(Object.values(overrides).filter(x=>typeof x.eventUrl==='string').map(x=>[x.eventUrl,x]));
 const cleaned=[];
 let removed=0,repaired=0;
 for(const original of events){
   const canonical=applyVerifiedBurnieEvent(original,TODAY);
-  const event={...canonical, ...(overrides[original.slug]?.fields || {})};
+  const reviewed=overrides[original.slug] || sourceOverrides.get(original.eventUrl);
+  const event={...canonical, ...(reviewed?.fields || {})};
   event.name=cleanText(event.name);
   if(DATE_ONLY_NAME.test(event.name)){
     const recovered=titleFromEventUrl(event.eventUrl);
