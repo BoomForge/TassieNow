@@ -35,5 +35,5 @@ test('Tasmanian Produce Market displays the real operator, phone and venue',()=>
 });
 test('owner-managed venue details are preserved',()=>{
  const p={slug:'tasmanian-produce-market',managedManually:true,phone:'0400 000 000',address:'Owner-corrected address'};
- assert.equal(applyVerifiedPlaceDisplayOverrides(p,over),p);
+ assert.equal(applyVerifiedPlaceDisplayOverrides(p,overrides),p);
 });
