@@ -4094,6 +4094,23 @@
         "identity": "candidate-not-verified",
         "reason": "Official page image; source owner reuse rights and exact photo identity unverified",
         "observedAt": "2026-10-13T02:47:35.437Z"
+      },
+      {
+        "id": "openverse:cebbe482-2724-4f6d-a463-0d4a57734460",
+        "url": "https://live.staticflickr.com/8380/8563313531_daa8b860e5_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/27313890@N00/8563313531",
+        "discoveryPage": "https://api.openverse.org/v1/images/cebbe482-2724-4f6d-a463-0d4a57734460/",
+        "title": "Nice place to spend an afternoon!",
+        "credit": "varrqnuht",
+        "licence": "BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 570,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive words and town only; identity unverified",
+        "observedAt": "2026-10-17T23:14:12.194Z"
       }
     ]
   },
@@ -8672,6 +8689,46 @@
           "localityInMetadata": true
         },
         "observedAt": "2026-10-17T22:28:17.655Z"
+      }
+    ]
+  },
+  "the-wooden-boat-centre": {
+    "name": "The Wooden Boat Centre",
+    "town": "Franklin",
+    "candidates": [
+      {
+        "id": "openverse:13496dce-53a2-48b8-ae71-7e94c876b669",
+        "url": "https://live.staticflickr.com/3607/3366934562_4bc1307d39_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/22748176@N00/3366934562",
+        "discoveryPage": "https://api.openverse.org/v1/images/13496dce-53a2-48b8-ae71-7e94c876b669/",
+        "title": "Wooden Boat Centre, Franklin. Tasmania",
+        "credit": "gillitas",
+        "licence": "BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 768,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive words and town only; identity unverified",
+        "observedAt": "2026-10-17T23:14:12.194Z"
+      },
+      {
+        "id": "openverse:0086c7b5-faf3-4844-83eb-ae448322146a",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Boat_moored_at_Wooden_Boat_Centre%2C_Franklin%2C_Huon_Valley.jpg",
+        "sourcePage": "https://commons.wikimedia.org/w/index.php?curid=154070405",
+        "discoveryPage": "https://api.openverse.org/v1/images/0086c7b5-faf3-4844-83eb-ae448322146a/",
+        "title": "Boat moored at Wooden Boat Centre, Franklin, Huon Valley",
+        "credit": "JustinH",
+        "licence": "CC0 1.0",
+        "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+        "provider": "wikimedia",
+        "width": 4032,
+        "height": 3024,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive words and town only; identity unverified",
+        "observedAt": "2026-10-17T23:14:12.194Z"
       }
     ]
   }
