@@ -39,6 +39,10 @@ async function check(url,rule){
  if(rule.image&&!p.html.includes(rule.image))failures.push('image '+rule.image+' missing');
  if(rule.imageAbsent&&p.html.includes(rule.imageAbsent))failures.push('image '+rule.imageAbsent+' still shown');
  if(rule.href&&!p.links.some(x=>x.href.includes(rule.href)))failures.push('href '+rule.href+' missing');
+ if(Array.isArray(rule.phones)){
+  const dialled=p.links.filter(x=>x.href.startsWith('tel:')).map(x=>x.href.replace(/\D/g,''));
+  for(const expected of rule.phones)if(!dialled.includes(expected))failures.push('phone '+expected+' absent; found '+dialled.join(','));
+ }
  if(rule.phone){
   const phones=p.links.filter(x=>x.href.startsWith('tel:')).map(x=>x.href.replace(/\D/g,''));
   if(!phones.includes(rule.phone)&&!phones.includes('0'+rule.phone.slice(2)))failures.push('phone tel: link mismatch found '+phones.join(','));
