@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import { applyVerifiedBurnieEvent } from './discover/lib/verified-burnie-events.mjs';
+import { applyReviewedEventCorrection,normaliseEventSourceUrl } from './discover/lib/reviewed-event-corrections.mjs';
 
 const FILE = new URL('../src/data/events.json', import.meta.url);
 const CURATED_OVERRIDES = new URL('../src/data/event-overrides.json', import.meta.url);
@@ -53,6 +54,7 @@ function preference(event){
   if(event.venue) score+=2;
   if(event.summary && !/^.+ in .+\. Check the official event listing/.test(event.summary)) score+=1;
   if(event.ticketUrl) score+=2;
+  if(event.image?.sourceMethod==='verified-event-venue') score+=6;
   return score;
 }
 function normalize(value=''){return cleanText(value).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();}
@@ -62,9 +64,10 @@ function dedupe(items){
     const name=normalize(event.name); let match=-1;
     for(let i=0;i<out.length;i++){
       const other=out[i];
-      if(other.startDate!==event.startDate || normalize(other.town)!==normalize(event.town)) continue;
+      const sharedUrl=event.eventUrl && other.eventUrl && normaliseEventSourceUrl(other.eventUrl)===normaliseEventSourceUrl(event.eventUrl);
+      if(!sharedUrl && (other.startDate!==event.startDate || normalize(other.town)!==normalize(event.town)))continue;
       const otherName=normalize(other.name);
-      if(name===otherName || (name.length>=8&&otherName.length>=8&&(name.includes(otherName)||otherName.includes(name)))) { match=i; break; }
+      if(sharedUrl || name===otherName || (name.length>=8&&otherName.length>=8&&(name.includes(otherName)||otherName.includes(name)))) { match=i; break; }
     }
     if(match<0) out.push(event);
     else if(preference(event)>preference(out[match])) out[match]=event;
@@ -77,13 +80,12 @@ const overrides = JSON.parse(await fs.readFile(CURATED_OVERRIDES,'utf8'));
 // Verified owner-reviewed corrections take precedence over lossy upstream card extracts.
 // Applied on every refresh so official venue/dates/sessions cannot silently regress.
 const TODAY=new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-const sourceOverrides=new Map(Object.values(overrides).filter(x=>typeof x.eventUrl==='string').map(x=>[x.eventUrl,x]));
+
 const cleaned=[];
 let removed=0,repaired=0;
 for(const original of events){
   const canonical=applyVerifiedBurnieEvent(original,TODAY);
-  const reviewed=overrides[original.slug] || sourceOverrides.get(original.eventUrl);
-  const event={...canonical, ...(reviewed?.fields || {})};
+  const event=applyReviewedEventCorrection(canonical,overrides);
   event.name=cleanText(event.name);
   if(DATE_ONLY_NAME.test(event.name)){
     const recovered=titleFromEventUrl(event.eventUrl);
