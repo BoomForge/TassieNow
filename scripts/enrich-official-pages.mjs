@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { phoneFromText } from '../src/lib/phone-candidate.mjs';
 import { normaliseStructuredAddress, normaliseTelephone, safeBookingUrl, sanitiseListingFields, structuredBookingUrl } from '../src/lib/listing-field-sanitizers.mjs';
 
 const FILE = new URL('../src/data/places.json', import.meta.url);
@@ -248,8 +249,7 @@ function extractEmail(html = '', text = '') {
 function extractPhone(html = '', text = '') {
   const tel = html.match(/href=["']tel:([^"']+)["']/i)?.[1];
   if (tel) return normaliseTelephone(tel);
-  const candidates = text.match(/(?:\+61\s?[2-478]|0[2-478])(?:[\s.-]?\d){8}|1[38]00(?:[\s.-]?\d){6}|04(?:[\s.-]?\d){8}/g) || [];
-  return candidates.length ? clean(candidates[0]) : null;
+  return phoneFromText(text);
 }
 function normalizeTime(raw) {
   const match = String(raw || '').trim().toLowerCase().replace('.', ':').match(/^(\d{1,2})(?::(\d{2}))?\s*(am|pm)?$/);
