@@ -2784,13 +2784,26 @@
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
     "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Burnie Surf Club - Nipper Open Day event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/West-Beach-Burnie-20150307-001.jpg/1280px-West-Beach-Burnie-20150307-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:West-Beach-Burnie-20150307-001.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attribution": "Gary Houston",
+      "alt": "West Beach, Burnie — venue photograph, not the advertised event",
+      "mediaType": "contextual",
+      "caption": "Venue photograph: West Beach, Burnie. This does not depict the advertised event.",
+      "sourceMethod": "commons-venue",
+      "isFallback": false,
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "contextual",
+        "venue": "West Beach",
+        "town": "Burnie",
+        "sourceFileTitle": "File:West-Beach-Burnie-20150307-001.jpg",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:West-Beach-Burnie-20150307-001.jpg",
+        "checkedAt": "2026-10-17",
+        "evidence": "Full venue name in Commons file title and Tasmania/town in source description"
+      }
     },
     "status": "active",
     "lastChecked": "2026-10-18",

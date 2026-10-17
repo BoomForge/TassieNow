@@ -21432,6 +21432,65 @@
     ]
   },
   {
+    "slug": "the-four-mile",
+    "name": "The Four Mile",
+    "town": "Tasmania",
+    "region": "East Coast",
+    "latitude": -42.17,
+    "longitude": 148.07,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor",
+      "Free"
+    ],
+    "summary": "Beach in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
+    "website": null,
+    "sourceUrl": "https://www.wikidata.org/wiki/Q21955928",
+    "sourceType": "wikidata",
+    "sourceId": "Q21955928",
+    "wikidata": "Q21955928",
+    "status": "active",
+    "lastChecked": "2026-10-17",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Four_Mile_Creek.jpg/1920px-Four_Mile_Creek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "The Four Mile, Tasmania",
+      "attribution": "Sammarkey",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Four_Mile_Creek.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "medium"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=The%20Four%20Mile%20Tasmania%20Tasmania"
+      }
+    ],
+    "lastDetailsChecked": "2026-10-18",
+    "qualityScore": 59,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "lastWikidataChecked": "2026-10-06",
+    "detailSources": {
+      "image": {
+        "type": "verified-correction",
+        "url": "https://www.wikidata.org/wiki/Q21955928",
+        "checkedAt": "2026-10-18"
+      }
+    }
+  },
+  {
     "slug": "the-sand",
     "name": "The Sand",
     "town": "Tasmania",
@@ -70000,64 +70059,6 @@
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
     "lastWikidataLinkChecked": "2026-10-12"
-  },
-  {
-    "slug": "the-four-mile",
-    "name": "The Four Mile",
-    "town": "Tasmania",
-    "region": "East Coast",
-    "latitude": -42.17,
-    "longitude": 148.07,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor",
-      "Free"
-    ],
-    "summary": "Beach in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q21955928",
-    "sourceType": "wikidata",
-    "sourceId": "Q21955928",
-    "wikidata": "Q21955928",
-    "status": "active",
-    "lastChecked": "2026-10-17",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Four_Mile_Creek.jpg/1920px-Four_Mile_Creek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "The Four Mile, Tasmania",
-      "attribution": "Sammarkey",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Four_Mile_Creek.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "medium"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=The%20Four%20Mile%20Tasmania%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-18",
-    "qualityScore": 41,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "lastWikidataChecked": "2026-10-06",
-    "detailSources": {
-      "image": {
-        "type": "verified-correction",
-        "url": "https://www.wikidata.org/wiki/Q21955928",
-        "checkedAt": "2026-10-18"
-      }
-    }
   },
   {
     "slug": "the-pancake-and-crepe-shop",

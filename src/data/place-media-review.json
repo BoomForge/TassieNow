@@ -8517,5 +8517,162 @@
         "observedAt": "2026-10-17T22:15:46.338Z"
       }
     ]
+  },
+  "regatta-point-tavern": {
+    "name": "Regatta Point Tavern",
+    "town": "Zeehan",
+    "candidates": [
+      {
+        "id": "commons-geo:126801996",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Strahan_Station_Tasmania.jpg/1280px-Strahan_Station_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Strahan_Station_Tasmania.jpg",
+        "title": "Strahan Station Tasmania.jpg",
+        "credit": "Jimmyjrg",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "regatta",
+            "point"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-17T22:28:17.655Z"
+      },
+      {
+        "id": "commons-geo:126801997",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Strahan_Station_Tasmania_platform.jpg/1280px-Strahan_Station_Tasmania_platform.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Strahan_Station_Tasmania_platform.jpg",
+        "title": "Strahan Station Tasmania platform.jpg",
+        "credit": "Jimmyjrg",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "regatta",
+            "point"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-17T22:28:17.655Z"
+      },
+      {
+        "id": "commons-geo:126801998",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Strahan_Station_Tasmania_turntable.jpg/1280px-Strahan_Station_Tasmania_turntable.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Strahan_Station_Tasmania_turntable.jpg",
+        "title": "Strahan Station Tasmania turntable.jpg",
+        "credit": "Jimmyjrg",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "regatta",
+            "point"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-17T22:28:17.655Z"
+      }
+    ]
+  },
+  "waddamana-power-station-museum": {
+    "name": "Waddamana Power Station Museum",
+    "town": "Waddamana",
+    "candidates": [
+      {
+        "id": "commons-geo:56676297",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Grand_entrance_-_panoramio_%281%29.jpg/1280px-Grand_entrance_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Grand_entrance_-_panoramio_(1).jpg",
+        "title": "Grand entrance - panoramio (1).jpg",
+        "credit": "Stephen Edmonds",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "waddamana",
+            "power"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-17T22:28:17.655Z"
+      },
+      {
+        "id": "commons-geo:155601198",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Waddamana_A_Turbine_Room.jpg/1280px-Waddamana_A_Turbine_Room.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Waddamana_A_Turbine_Room.jpg",
+        "title": "Waddamana A Turbine Room.jpg",
+        "credit": "Petersod",
+        "licence": "CC BY 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "waddamana",
+            "power",
+            "station"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-17T22:28:17.655Z"
+      }
+    ]
+  },
+  "big-green-island-nature-reserve": {
+    "name": "Big Green Island Nature Reserve",
+    "town": "Tasmania",
+    "candidates": [
+      {
+        "id": "commons-geo:180642964",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/DSC08685_-_DSC08798.jpg/1280px-DSC08685_-_DSC08798.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:DSC08685_-_DSC08798.jpg",
+        "title": "DSC08685 - DSC08798.jpg",
+        "credit": "Ollie-odonnell",
+        "licence": "CC BY 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "green",
+            "island"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-17T22:28:17.655Z"
+      }
+    ]
   }
 }
