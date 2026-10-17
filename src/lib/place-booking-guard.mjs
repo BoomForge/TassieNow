@@ -6,6 +6,8 @@ const HASTINGS_CAVE_PATH = /(?:^|\/)hastings[-_ ]caves?(?:[-_ ]state[-_ ]reserve
 
 export function safePlaceBookingUrl(place) {
   if (!place || suspectBookingSlugs.has(place.slug)) return null;
+  // The Parks scraper sometimes combines its base URL with an HTML-entity encoded external URL.
+  if (/^https?:\/\/parks\.tas\.gov\.au\/.*\/https(?:&#(?:58|x3a);|%3a|:)\/\//i.test(String(place.bookingUrl || ''))) return null;
   const result = safeBookingUrl(place.bookingUrl);
   if (!result) return null;
   const parsed = new URL(result);

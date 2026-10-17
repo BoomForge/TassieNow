@@ -17,3 +17,11 @@ test('rejects all eighteen vetted false ticket destinations but preserves unrela
   }
   assert.equal(safePlaceBookingUrl({slug:'verified-ticketed-event',bookingUrl:'https://tickets.example.org/event/123'}),'https://tickets.example.org/event/123');
 });
+
+test('rejects HTML-entity nested URL on Southwest National Park while keeping genuine bookings', () => {
+  const wrong='https://parks.tas.gov.au/explore-our-parks/https&#58;//www.eventbrite.com.au/e/mt-anne-shelf-camp-lonely-tarns-circuit-walker-registration-tickets-189386097917?aff=ebdsoporgprofile';
+  for (const slug of ['southwest-national-park','southwest-national-park-2']) {
+    assert.equal(safePlaceBookingUrl({slug,bookingUrl:wrong}),null);
+  }
+  assert.equal(safePlaceBookingUrl({slug:'southwest-national-park',bookingUrl:'https://passes.parks.tas.gov.au/'}),'https://passes.parks.tas.gov.au/');
+});
