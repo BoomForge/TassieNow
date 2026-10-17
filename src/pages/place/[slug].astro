@@ -10,7 +10,7 @@ import { applyVerifiedPlaceDisplayOverrides } from '../../lib/verified-place-dis
 import autoPhotoSources from '../../data/auto-photo-source-links.json';
 import { upcomingScheduleDates } from '../../lib/schedules.js';
 import { marketCopy, marketSeoTitle, marketSeoDescription } from '../../lib/market-seo.mjs';
-import { normaliseTelephone, australianTelHref } from '../../lib/listing-field-sanitizers.mjs';
+import { normaliseTelephone, australianTelephoneEntries } from '../../lib/listing-field-sanitizers.mjs';
 import { safePlaceBookingUrl } from '../../lib/place-booking-guard.mjs';
 
 export function getStaticPaths() {
@@ -31,7 +31,7 @@ const photoLinks=[...(Array.isArray(place.photoLinks)?place.photoLinks:[]),
 }).filter((link,index,links)=>links.findIndex(other=>other.sourceUrl===link.sourceUrl)===index);
 const googleImagesUrl='https://www.google.com/search?'+new URLSearchParams({q:[place.name,place.town,'Tasmania'].filter(Boolean).join(' '),udm:'2'}).toString();
 const displayPhone = normaliseTelephone(place.phone);
-const phoneHref = australianTelHref(place.phone);
+const phoneEntries = australianTelephoneEntries(place.phone);
 const feeText = place.fee === 'no' ? 'Free entry' : place.fee === 'yes' ? 'Entry fee may apply' : place.fee || null;
 const wheelchairText = place.wheelchair === 'yes'
   ? 'Wheelchair accessible'
@@ -290,10 +290,16 @@ const schema = {
                 <strong>{wheelchairText}</strong>
               </div>
             )}
-            {displayPhone && (
+            {phoneEntries.map((entry, index) => (
+              <div class="visit-item">
+                <span>{index === 0 ? 'Phone' : 'Alternative phone'}</span>
+                <strong><a href={entry.href}>{entry.display}</a></strong>
+              </div>
+            ))}
+            {displayPhone && phoneEntries.length === 0 && (
               <div class="visit-item">
                 <span>Phone</span>
-                <strong><a href={phoneHref}>{displayPhone}</a></strong>
+                <strong>{displayPhone}</strong>
               </div>
             )}
             {place.email && (

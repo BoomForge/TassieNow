@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normaliseTelephone, australianTelHref } from '../../src/lib/listing-field-sanitizers.mjs';
+import { normaliseTelephone, australianTelHref, australianTelephoneEntries } from '../../src/lib/listing-field-sanitizers.mjs';
 
 test('URL-decoded phone displays and valid mobile tap-to-call',()=>{
  assert.equal(normaliseTelephone('tel:0418%20934%20476'),'0418 934 476');
@@ -23,4 +23,13 @@ test('local area codes and Australian service numbers are valid',()=>{
 test('bad/unrelated input cannot become tap-to-call',()=>{
  assert.equal(australianTelHref('yes'),null);
  assert.equal(australianTelHref('146.602315913791728'),null);
+});
+
+test('joined museum phone field becomes two independently tappable contacts',()=>{
+ const entries=australianTelephoneEntries('+61362727721+61428386843');
+ assert.deepEqual(entries.map(x=>x.href),['tel:+61362727721','tel:+61428386843']);
+ assert.notEqual(entries[0].display, entries[1].display);
+});
+test('invalid source text remains non-clickable rather than inventing numbers',()=>{
+ assert.deepEqual(australianTelephoneEntries('yes'),[]);
 });

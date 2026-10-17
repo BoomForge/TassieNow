@@ -26,6 +26,19 @@ export function australianTelHref(value) {
   return service ? 'tel:' + service[0].replace(/\D/g, '') : null;
 }
 
+
+/** Split multiple Australian phone contacts into independently diallable links. */
+export function australianTelephoneEntries(value) {
+  const raw = normaliseTelephone(value);
+  if (!raw) return [];
+  const contacts = [...raw.matchAll(/(?<!\d)(?:\+?61[\s().-]*0?[\s().-]*[23478]|0[23478])(?:[\s().-]*\d){8}/g)].map(m=>m[0]);
+  if (!contacts.length) {
+    const service = raw.match(/(?<!\d)(?:1[38]00(?:[\s().-]*\d){6}|13(?:[\s().-]*\d){4})(?!\d)/);
+    if (service) contacts.push(service[0]);
+  }
+  return contacts.map(number=>({display:number.trim(),href:australianTelHref(number)})).filter(x=>x.href);
+}
+
 export function safeBookingUrl(value) {
   if (!value) return null;
   const raw = String(value).trim();
