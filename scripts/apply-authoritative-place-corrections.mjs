@@ -17,6 +17,13 @@ for (const place of places) {
       }
     }
   }
+  // Verified false-match correction: never show an unrelated photo as The Four Mile.
+  if (place.slug === 'the-four-mile' && overrides[place.slug]?.image?.isFallback === true) {
+    place.image = structuredClone(overrides[place.slug].image);
+    place.detailSources ||= {};
+    if (overrides[place.slug].detailSources?.image) place.detailSources.image = structuredClone(overrides[place.slug].detailSources.image);
+    fieldsCorrected++;
+  }
   const original = place.bookingUrl;
   sanitiseListingFields(place);
   if (place.bookingUrl && !safePlaceBookingUrl(place)) {
