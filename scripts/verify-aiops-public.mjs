@@ -48,7 +48,15 @@ async function check(url,rule){
  if(rule.kind==='event'&&(rule.start||rule.end)){
   const match=[...p.html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
   let data=null;for(const m of match)try{const d=JSON.parse(m[1]);for(const item of Array.isArray(d)?d:[d])if(item['@type']==='Event')data=item}catch{}
-  if(!data)failures.push('Event JSON-LD missing');
+  if(!data){
+   // A source event without a named venue intentionally omits Event JSON-LD.
+   // Its own rendered calendar date must still agree with the independently reviewed source.
+   const match=/^(20\d{2})-(\d{2})-(\d{2})$/.exec(String(rule.start||''));
+   if(match){
+    const displayed=new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Hobart',day:'numeric',month:'short',year:'numeric'}).format(new Date(rule.start+'T12:00:00Z'));
+    if(!body.includes(normalize(displayed)))failures.push('no Event JSON-LD and displayed start date '+displayed+' is missing');
+   } else failures.push('Event JSON-LD missing and no date assertion possible');
+  }
   else{
    if(rule.start&&!String(data.startDate||'').startsWith(rule.start))failures.push('startDate '+data.startDate+' expected '+rule.start);
    if(rule.end&&!String(data.endDate||'').startsWith(rule.end))failures.push('endDate '+data.endDate+' expected '+rule.end);

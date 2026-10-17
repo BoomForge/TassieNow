@@ -65,3 +65,11 @@ test('previously manual-sourced address overrides now reach live cards without c
  const mr=applyVerifiedPlaceDisplayOverrides({slug:'mr-burger',town:'Hobart'},overrides);
  assert.equal(mr.town,'Rosny Park');
 });
+
+test('Bento Legana and Little Riva source-reviewed contact fields override malformed past imports',()=>{
+ for(const [slug,phone] of [['bento-legana','(03) 6330 1259'],['little-riva','(03) 6477 5938']]){
+  const p=applyVerifiedPlaceDisplayOverrides({slug,phone:'613003001259',address:'Old address'},overrides);
+  assert.equal(p.phone,phone,slug);
+  assert.ok(p.address.length>20,slug);
+ }
+});

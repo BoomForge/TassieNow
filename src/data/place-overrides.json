@@ -1181,12 +1181,18 @@
     "address": "Shop 5/8 Legana Grove, Legana, TAS 7277",
     "detailSources": {
       "address": {
-        "type": "manual",
+        "type": "verified-source",
         "url": "https://bentolegana.com.au/",
-        "checkedAt": "2026-10-17"
+        "checkedAt": "2026-10-18"
+      },
+      "phone": {
+        "type": "verified-source",
+        "url": "https://bentolegana.com.au/",
+        "checkedAt": "2026-10-18"
       }
     },
-    "liveDisplayOverride": true
+    "liveDisplayOverride": true,
+    "phone": "(03) 6330 1259"
   },
   "spice-on-wheels": {
     "address": "43 Forster St, New Town, TAS 7008",
@@ -1345,5 +1351,22 @@
       }
     },
     "photoEditorialNote": "Exact natural thermal pool subject, legacy 720x538 image; preserve visible Commons author and share-alike licence"
+  },
+  "little-riva": {
+    "liveDisplayOverride": true,
+    "phone": "(03) 6477 5938",
+    "address": "82 Esplanade, Turners Beach TAS 7315",
+    "detailSources": {
+      "phone": {
+        "type": "verified-source",
+        "url": "https://littleriva.cafe/",
+        "checkedAt": "2026-10-18"
+      },
+      "address": {
+        "type": "verified-source",
+        "url": "https://littleriva.cafe/",
+        "checkedAt": "2026-10-18"
+      }
+    }
   }
 }
