@@ -1,0 +1,28 @@
+name: AI Ops public verification
+on:
+  push:
+    paths:
+      - 'src/data/aiops-verification-manifest.json'
+      - 'scripts/verify-aiops-public.mjs'
+      - '.github/workflows/aiops-public-verification.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Inspect public pages against reviewed original card requirements
+        run: node scripts/verify-aiops-public.mjs
+      - name: Preserve independently observed per-card evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: aiops-public-verification
+          path: artifacts/ai-ops-public-verification.json
+          if-no-files-found: warn
