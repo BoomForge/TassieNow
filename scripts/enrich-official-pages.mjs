@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { normaliseStructuredAddress, normaliseTelephone, safeBookingUrl, sanitiseListingFields, structuredBookingUrl } from '../src/lib/listing-field-sanitizers.mjs';
 
 const FILE = new URL('../src/data/places.json', import.meta.url);
 const OVERRIDES_FILE = new URL('../src/data/place-overrides.json', import.meta.url);
@@ -149,10 +150,7 @@ function bestLdNode(nodes, place) {
   return best.node;
 }
 function addressFromLd(value) {
-  if (!value) return null;
-  if (typeof value === 'string') return clean(value) || null;
-  const parts = [value.streetAddress, value.addressLocality, value.addressRegion, value.postalCode].map(clean).filter(Boolean);
-  return parts.length ? parts.join(', ') : null;
+  return normaliseStructuredAddress(value);
 }
 function hoursFromSpecification(spec) {
   const rows = Array.isArray(spec) ? spec : spec ? [spec] : [];
@@ -177,11 +175,11 @@ function firstHttpFrom(value) {
 }
 function structuredFields(node = {}) {
   const openingRaw = Array.isArray(node.openingHours) ? node.openingHours.map(clean).filter(Boolean).join('; ') : clean(node.openingHours);
-  const bookingUrl = firstHttpFrom(node.reservationUrl || node.bookingUrl || node.potentialAction || node.offers);
+  const bookingUrl = structuredBookingUrl(node);
   const operator = clean(node.provider?.name || node.organizer?.name || node.brand?.name || (typeof node.provider === 'string' ? node.provider : ''));
   return {
     openingHours: openingRaw || hoursFromSpecification(node.openingHoursSpecification),
-    phone: clean(node.telephone) || null,
+    phone: normaliseTelephone(node.telephone),
     email: clean(node.email) || null,
     address: addressFromLd(node.address),
     bookingUrl,
@@ -207,7 +205,7 @@ function bookingLink(html = '', baseUrl = '') {
       found.push({ url: u.href, score });
     } catch { /* malformed booking link */ }
   }
-  return found.sort((a, b) => b.score - a.score)[0]?.url || null;
+  return safeBookingUrl(found.sort((a, b) => b.score - a.score)[0]?.url);
 }
 function dayKeysFromLine(lower = '') {
   const keys = Object.keys(DAY_MAP);
@@ -249,7 +247,7 @@ function extractEmail(html = '', text = '') {
 }
 function extractPhone(html = '', text = '') {
   const tel = html.match(/href=["']tel:([^"']+)["']/i)?.[1];
-  if (tel) return clean(tel.replace(/^tel:/i, ''));
+  if (tel) return normaliseTelephone(tel);
   const candidates = text.match(/(?:\+61\s?[2-478]|0[2-478])(?:[\s.-]?\d){8}|1[38]00(?:[\s.-]?\d){6}|04(?:[\s.-]?\d){8}/g) || [];
   return candidates.length ? clean(candidates[0]) : null;
 }
@@ -403,7 +401,7 @@ for (const place of places) {
   const override = overrides[place.slug];
   if (!override) continue;
   const manual = Boolean(place.managedManually);
-  for (const key of ['openingHours', 'phone', 'email', 'address', 'operator', 'bookingUrl', 'fee', 'wheelchair']) {
+  for (const key of ['openingHours', 'phone', 'email', 'address', 'town', 'operator', 'bookingUrl', 'fee', 'wheelchair']) {
     if (override[key] == null || (manual && place[key])) continue;
     place[key] = override[key];
     overridesApplied++;
@@ -421,6 +419,7 @@ for (const place of places) {
   }
   place.lastDetailsChecked = TODAY;
 }
+for (const place of places) sanitiseListingFields(place);
 
 await fs.writeFile(FILE, `${JSON.stringify(places, null, 2)}\n`);
 const publicPlaces = places.filter((place) => place.status === 'active' && place.visibility !== 'suppressed');

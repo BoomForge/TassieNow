@@ -3545,11 +3545,6 @@
         "type": "verified-source",
         "url": "https://farmgatemarket.com.au/",
         "checkedAt": "2026-10-17"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://farmgatemarket.com.au/",
-        "checkedAt": "2026-10-07"
       }
     },
     "openingHours": "Su 08:30-13:00",
@@ -3579,7 +3574,6 @@
         "url": "https://www.google.com/maps/search/?api=1&query=Farm%20Gate%20Market%20Hobart%20Tasmania"
       }
     ],
-    "bookingUrl": "https://farmgatemarket.com.au/?s={search_term_string}",
     "lastWikidataLinkChecked": "2026-10-12",
     "officialSourceCheck": {
       "status": "ok",
@@ -9284,7 +9278,6 @@
     "phone": "+61 3 6424 7100",
     "email": "bookings@bassstrait.museum",
     "address": "6 Gloucester Avenue, Devonport, TAS, 7310",
-    "bookingUrl": "https://bassstrait.museum/?s={search_term_string}",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -9297,11 +9290,6 @@
       "address": {
         "type": "openstreetmap",
         "url": "https://www.openstreetmap.org/node/2560991110",
-        "checkedAt": "2026-10-16"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://bassstrait.museum/",
         "checkedAt": "2026-10-16"
       },
       "openingHours": {
@@ -9570,9 +9558,9 @@
         "checkedAt": "2026-10-07"
       },
       "phone": {
-        "type": "official-website",
+        "type": "manual",
         "url": "https://hobartandbeyond.com.au/event/crabtree-crop-crafts-market/",
-        "checkedAt": "2026-10-07"
+        "checkedAt": "2026-10-17"
       }
     },
     "image": {
@@ -9598,7 +9586,7 @@
     ],
     "bookingUrl": "https://hobartandbeyond.com.au/event/crabtree-crop-crafts-market/",
     "email": "jenny.camberssmith@gmail.com",
-    "phone": "0419%20403%20467",
+    "phone": "0419 403 467",
     "lastDetailsChecked": "2026-10-17",
     "qualityScore": 75,
     "qualityTier": "featured",
@@ -12815,11 +12803,6 @@
         "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/",
         "checkedAt": "2026-10-17"
       },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/",
-        "checkedAt": "2026-10-07"
-      },
       "email": {
         "type": "official-website",
         "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/",
@@ -12861,7 +12844,6 @@
         "url": "https://www.google.com/maps/search/?api=1&query=Lilydale%20Village%20Market%20Lilydale%20Tasmania"
       }
     ],
-    "bookingUrl": "https://lilydaletasmania.com.au/?s={search_term}",
     "email": "market@lilydaletasmania.com.au",
     "openingHours": "",
     "phone": "0418684108President",
@@ -13637,11 +13619,6 @@
         "type": "verified-source",
         "url": "https://cygnetmarket.com.au/",
         "checkedAt": "2026-10-17"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://cygnetmarket.com.au/",
-        "checkedAt": "2026-10-07"
       }
     },
     "qualityScore": 63,
@@ -13668,7 +13645,6 @@
         "url": "https://www.google.com/maps/search/?api=1&query=Cygnet%20Market%20Cygnet%20Tasmania"
       }
     ],
-    "bookingUrl": "https://cygnetmarket.com.au/?s={search_term_string}",
     "openingHours": "",
     "officialSourceCheck": {
       "status": "ok",
@@ -28644,7 +28620,6 @@
     "phone": "+61 3 6274 5844",
     "email": "Admin@frogmorecreek.com.au",
     "address": "699 Richmond Road, Cambridge, TAS, 7170",
-    "bookingUrl": "https://www.frogmorecreek.com.au/search?q={search_term_string}",
     "fee": null,
     "wheelchair": "yes",
     "operator": null,
@@ -28667,11 +28642,6 @@
       "wheelchair": {
         "type": "openstreetmap",
         "url": "https://www.openstreetmap.org/node/4192557994",
-        "checkedAt": "2026-10-13"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://www.frogmorecreek.com.au/",
         "checkedAt": "2026-10-13"
       }
     },
@@ -29995,7 +29965,6 @@
     "phone": "03 6257 8094",
     "email": null,
     "address": "96 Tasman Highway, Swansea, TAS, 7190",
-    "bookingUrl": "https://barkmilltavern.com.au/search/%7Bsearch_term_string%7D/",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -30003,11 +29972,6 @@
       "address": {
         "type": "openstreetmap",
         "url": "https://www.openstreetmap.org/way/233078670",
-        "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://barkmilltavern.com.au/",
         "checkedAt": "2026-10-09"
       },
       "phone": {
@@ -30119,7 +30083,7 @@
     "openingHours": "Mo 11:30-19:15; Tu 11:30-19:15; We 11:30-19:15; Th 11:30-19:15; Fr 11:30-19:15; Sa 11:30-19:15; Su 11:30-19:15",
     "phone": "61363301259",
     "email": null,
-    "address": "Shop 5/8 Legana Grove, legana, Tas, Tas, 7277",
+    "address": "Shop 5/8 Legana Grove, Legana, TAS 7277",
     "bookingUrl": "https://bentolegana.com.au/?utm_source=google&utm_medium=organic&utm_campaign=orderaction",
     "fee": null,
     "wheelchair": null,
@@ -30136,9 +30100,9 @@
         "checkedAt": "2026-10-09"
       },
       "address": {
-        "type": "official-website",
+        "type": "manual",
         "url": "https://bentolegana.com.au/",
-        "checkedAt": "2026-10-09"
+        "checkedAt": "2026-10-17"
       },
       "bookingUrl": {
         "type": "official-website",
@@ -30460,7 +30424,6 @@
     "phone": "03 6295 1097",
     "email": "hello@cygnetoldbank.com.au",
     "address": "20 Mary Street, Cygnet, TAS, 7112",
-    "bookingUrl": "https://cygnetoldbank.com.au/?s={search_term_string}",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -30474,11 +30437,6 @@
         "type": "openstreetmap",
         "url": "https://www.openstreetmap.org/node/13778136401",
         "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://cygnetoldbank.com.au/about/",
-        "checkedAt": "2026-10-17"
       },
       "email": {
         "type": "official-website",
@@ -30692,7 +30650,7 @@
     "openingHours": "Tu 17:00-20:15; We 17:00-20:15; Th 17:00-20:15; Fr 11:00-20:20; Sa 11:00-20:20; Su 11:00-20:15",
     "phone": "0362311159",
     "email": null,
-    "address": "178 Main Rd, moonah, Tas, Tas, TAS 7009",
+    "address": "178 Main Rd, Moonah, TAS 7009",
     "bookingUrl": "https://everydayssmokinbbqbar.com.au/?utm_source=google&utm_medium=organic&utm_campaign=orderaction",
     "fee": null,
     "wheelchair": null,
@@ -30709,9 +30667,9 @@
         "checkedAt": "2026-10-09"
       },
       "address": {
-        "type": "official-website",
+        "type": "manual",
         "url": "https://everydayssmokinbbqbar.com.au/",
-        "checkedAt": "2026-10-09"
+        "checkedAt": "2026-10-17"
       },
       "bookingUrl": {
         "type": "official-website",
@@ -31860,7 +31818,7 @@
   {
     "slug": "mr-burger",
     "name": "Mr. Burger",
-    "town": "Hobart",
+    "town": "Rosny Park",
     "region": "Hobart & South",
     "latitude": -42.8824272,
     "longitude": 147.3261137,
@@ -31879,7 +31837,7 @@
     "openingHours": "Mo-Su 11:00-22:00+",
     "phone": "(03) 6135 4411",
     "email": "rosny@mrburger.com.au",
-    "address": "1 Bayfield Street, Rosny Park, CA, 7018",
+    "address": "1 Bayfield St, Rosny Park, TAS 7018",
     "bookingUrl": "https://www.mrburger.com.au/functions",
     "fee": null,
     "wheelchair": "yes",
@@ -31896,9 +31854,9 @@
         "checkedAt": "2026-10-09"
       },
       "address": {
-        "type": "official-website",
-        "url": "https://www.mrburger.com.au/",
-        "checkedAt": "2026-10-09"
+        "type": "manual",
+        "url": "https://www.mrburger.com.au/store-locations",
+        "checkedAt": "2026-10-17"
       },
       "wheelchair": {
         "type": "openstreetmap",
@@ -32126,7 +32084,6 @@
     "phone": "+61 424 014 116",
     "email": null,
     "address": "76 Main Road, Moonah, TAS, 7009",
-    "bookingUrl": "https://yes",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -32142,11 +32099,6 @@
         "checkedAt": "2026-10-09"
       },
       "address": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/14040993549",
-        "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
         "type": "openstreetmap",
         "url": "https://www.openstreetmap.org/node/14040993549",
         "checkedAt": "2026-10-09"
@@ -32444,7 +32396,7 @@
     "openingHours": "Mo 11:00-19:45; Tu 11:00-19:45; We 11:00-20:15; Th 11:00-20:15; Fr 11:00-20:15; Sa 11:00-20:15; Su 11:00-19:45",
     "phone": "0361712424",
     "email": null,
-    "address": "9 Springfield Ave, springfield ave, Moonah, Moonah, TAS 7009",
+    "address": "9 Springfield Ave, Moonah, TAS 7009",
     "bookingUrl": "https://parthenonsouvlakionline.com.au/?utm_source=google&utm_medium=organic&utm_campaign=orderaction",
     "fee": null,
     "wheelchair": null,
@@ -32461,9 +32413,9 @@
         "checkedAt": "2026-10-09"
       },
       "address": {
-        "type": "official-website",
+        "type": "manual",
         "url": "https://parthenonsouvlakionline.com.au/",
-        "checkedAt": "2026-10-09"
+        "checkedAt": "2026-10-17"
       },
       "bookingUrl": {
         "type": "official-website",
@@ -32673,7 +32625,6 @@
     "phone": "+61 3 6260 2628",
     "email": "jopack@esia.com.au",
     "address": "Edward Street, Richmond, TAS, 7025",
-    "bookingUrl": "https://www.richmondvillage.com.au/?s={search_term_string}",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -32692,11 +32643,6 @@
         "type": "openstreetmap",
         "url": "https://www.openstreetmap.org/node/5040184621",
         "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://www.richmondvillage.com.au/",
-        "checkedAt": "2026-10-11"
       },
       "schedule": {
         "type": "official-website",
@@ -33015,7 +32961,7 @@
     "openingHours": "Mo 12:00-22:00; Tu 12:00-22:00; We 12:00-22:00; Th 12:00-22:00; Fr 12:00-22:00; Sa 12:00-22:00; Su 12:00-22:00",
     "phone": "+61469330177",
     "email": null,
-    "address": "43 Forster St, new town, Tas, Tas, 7008",
+    "address": "43 Forster St, New Town, TAS 7008",
     "bookingUrl": "https://spiceonwheels.com.au/?utm_source=google&utm_medium=organic&utm_campaign=orderaction",
     "fee": null,
     "wheelchair": null,
@@ -33032,9 +32978,9 @@
         "checkedAt": "2026-10-09"
       },
       "address": {
-        "type": "official-website",
+        "type": "manual",
         "url": "https://spiceonwheels.com.au/",
-        "checkedAt": "2026-10-09"
+        "checkedAt": "2026-10-17"
       },
       "bookingUrl": {
         "type": "official-website",
@@ -33700,7 +33646,7 @@
     "openingHours": "Mo 07:00-20:00; Tu 07:00-20:00; We 07:00-20:00; Th 07:00-20:00; Fr 07:00-20:00; Sa 08:00-20:00; Su 08:00-20:00",
     "phone": "0404342808",
     "email": null,
-    "address": "100A Main Road, moonah, Tas, Tas, 7009",
+    "address": "100A Main Road, Moonah, TAS 7009",
     "bookingUrl": "https://thehangoutrestaurant.com.au/?utm_source=google&utm_medium=organic&utm_campaign=orderaction",
     "fee": null,
     "wheelchair": null,
@@ -33717,9 +33663,9 @@
         "checkedAt": "2026-10-09"
       },
       "address": {
-        "type": "official-website",
+        "type": "manual",
         "url": "https://thehangoutrestaurant.com.au/about",
-        "checkedAt": "2026-10-09"
+        "checkedAt": "2026-10-17"
       },
       "bookingUrl": {
         "type": "official-website",
@@ -34048,7 +33994,6 @@
     "phone": "0498 966 464",
     "email": "bookings@waterfrontcomplex.com.au",
     "address": "17A Devonport Road, Miandetta, TAS, 7310",
-    "bookingUrl": "https://waterfrontcomplex.com.au/search/%7Bsearch_term_string%7D",
     "fee": null,
     "wheelchair": "yes",
     "operator": null,
@@ -34069,11 +34014,6 @@
         "checkedAt": "2026-10-09"
       },
       "phone": {
-        "type": "official-website",
-        "url": "https://waterfrontcomplex.com.au/",
-        "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
         "type": "official-website",
         "url": "https://waterfrontcomplex.com.au/",
         "checkedAt": "2026-10-09"
@@ -34158,7 +34098,6 @@
     "phone": "(03)%206266%204345",
     "email": "appleshed@williesmiths.com.au",
     "address": "Grove, Tasmania, 7109",
-    "bookingUrl": "https://www.williesmiths.com.au/?s={search_term_string}",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -34169,11 +34108,6 @@
         "checkedAt": "2026-10-09"
       },
       "address": {
-        "type": "official-website",
-        "url": "https://www.williesmiths.com.au/",
-        "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
         "type": "official-website",
         "url": "https://www.williesmiths.com.au/",
         "checkedAt": "2026-10-09"
@@ -35049,16 +34983,10 @@
     "phone": null,
     "email": "dairydoor@ashgrovecheese.com.au",
     "address": null,
-    "bookingUrl": "https://www.ashgrovecheese.com.au/search?q={search_term_string}",
     "fee": null,
     "wheelchair": null,
     "operator": null,
     "detailSources": {
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://www.ashgrovecheese.com.au/",
-        "checkedAt": "2026-10-16"
-      },
       "schedule": {
         "type": "official-website",
         "url": "https://www.ashgrovecheese.com.au/visit-us/",
@@ -39940,16 +39868,10 @@
     "phone": null,
     "email": "info@tasmanseasalt.com.au",
     "address": null,
-    "bookingUrl": "https://tasmanseasalt.com.au/search?q={search_term_string}",
     "fee": null,
     "wheelchair": null,
     "operator": null,
     "detailSources": {
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://tasmanseasalt.com.au/",
-        "checkedAt": "2026-10-13"
-      },
       "openingHours": {
         "type": "official-website",
         "url": "https://tasmanseasalt.com.au/pages/visit-us",
@@ -41399,16 +41321,10 @@
     "phone": "0362727101",
     "email": null,
     "address": null,
-    "bookingUrl": "https://hokkaido-main.myshopify.com/search?q={search_term_string}",
     "fee": null,
     "wheelchair": null,
     "operator": null,
     "detailSources": {
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://hokkaidosushi.com.au/",
-        "checkedAt": "2026-10-09"
-      },
       "phone": {
         "type": "official-website",
         "url": "https://hokkaidosushi.com.au/",
@@ -42295,7 +42211,6 @@
     "phone": "+61 3 6234 9898",
     "email": "solopastaandpizza@gmail.com",
     "address": null,
-    "bookingUrl": "https://solopastaandpizza.com.au/?s={search_term_string}",
     "fee": null,
     "wheelchair": "yes",
     "operator": null,
@@ -42314,11 +42229,6 @@
         "type": "openstreetmap",
         "url": "https://www.openstreetmap.org/node/4987275624",
         "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://solopastaandpizza.com.au/about/",
-        "checkedAt": "2026-10-17"
       },
       "email": {
         "type": "official-website",
@@ -46220,7 +46130,6 @@
     "phone": "+61 3 6223 4500",
     "email": "anilinhobart@gmail.com",
     "address": "41 Hampden Road, Battery Point, TAS, 7004",
-    "bookingUrl": "https://magiccurries.com.au/?s={search_term_string}",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -46233,11 +46142,6 @@
       "address": {
         "type": "openstreetmap",
         "url": "https://www.openstreetmap.org/node/2530650310",
-        "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://magiccurries.com.au/",
         "checkedAt": "2026-10-09"
       },
       "email": {
@@ -53734,7 +53638,6 @@
     "phone": "+61 3 6424 3313",
     "email": null,
     "address": "161 Rooke Street, Devonport, TAS, 7310",
-    "bookingUrl": "https://yes",
     "fee": null,
     "wheelchair": "yes",
     "operator": null,
@@ -53749,11 +53652,6 @@
         "url": "https://www.openstreetmap.org/node/9988342620",
         "checkedAt": "2026-10-09"
       },
-      "bookingUrl": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/9988342620",
-        "checkedAt": "2026-10-09"
-      },
       "wheelchair": {
         "type": "openstreetmap",
         "url": "https://www.openstreetmap.org/node/9988342620",
@@ -53762,7 +53660,7 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-17",
     "lastOsmDetailsChecked": "2026-10-09",
     "image": {
       "url": "/images/categories/food.svg",
@@ -77991,7 +77889,6 @@
     "phone": "+61 3 6424 7182",
     "email": null,
     "address": "The Hub Arcade, Devonport, TAS, 7310",
-    "bookingUrl": "https://no",
     "fee": null,
     "wheelchair": "yes",
     "operator": null,
@@ -78011,11 +77908,6 @@
         "url": "https://www.openstreetmap.org/node/12348261310",
         "checkedAt": "2026-10-09"
       },
-      "bookingUrl": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/12348261310",
-        "checkedAt": "2026-10-09"
-      },
       "wheelchair": {
         "type": "openstreetmap",
         "url": "https://www.openstreetmap.org/node/12348261310",
@@ -78024,7 +77916,7 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-17",
     "lastOsmDetailsChecked": "2026-10-09",
     "image": {
       "url": "/images/categories/food.svg",

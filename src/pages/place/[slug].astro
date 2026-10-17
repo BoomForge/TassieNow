@@ -8,6 +8,7 @@ import places from '../../data/places.json';
 import autoPhotoSources from '../../data/auto-photo-source-links.json';
 import { upcomingScheduleDates } from '../../lib/schedules.js';
 import { marketCopy, marketSeoTitle, marketSeoDescription } from '../../lib/market-seo.mjs';
+import { normaliseTelephone, safeBookingUrl } from '../../lib/listing-field-sanitizers.mjs';
 
 export function getStaticPaths() {
   return places
@@ -20,13 +21,14 @@ const isMarketListing=(place.categories||[]).includes('Markets');
 const operatorUrl = place.officialSource?.url || place.website || null;
 const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name} ${place.town || ''} Tasmania`)}`;
 const reviewUrl = place.reviewLinks?.find((item) => item.provider === 'google-maps')?.url || directionsUrl;
-const bookingUrl = place.bookingUrl || null;
+const bookingUrl = safeBookingUrl(place.bookingUrl);
 const photoLinks=[...(Array.isArray(place.photoLinks)?place.photoLinks:[]),
   autoPhotoSources.places?.[place.slug]].filter(link=>{
   try {return new URL(link.sourceUrl).protocol==='https:';} catch {return false;}
 }).filter((link,index,links)=>links.findIndex(other=>other.sourceUrl===link.sourceUrl)===index);
 const googleImagesUrl='https://www.google.com/search?'+new URLSearchParams({q:[place.name,place.town,'Tasmania'].filter(Boolean).join(' '),udm:'2'}).toString();
-const phoneHref = place.phone ? `tel:${String(place.phone).replace(/[^+\d]/g, '')}` : null;
+const displayPhone = normaliseTelephone(place.phone);
+const phoneHref = displayPhone ? `tel:${displayPhone.replace(/[^+\d]/g, '')}` : null;
 const feeText = place.fee === 'no' ? 'Free entry' : place.fee === 'yes' ? 'Entry fee may apply' : place.fee || null;
 const wheelchairText = place.wheelchair === 'yes'
   ? 'Wheelchair accessible'
@@ -40,7 +42,7 @@ const regionSlug = place.region.toLowerCase().replace(/&/g, 'and').replace(/[^a-
 const hasVisitDetails = Boolean(
   place.openingHours ||
   place.schedule?.summary ||
-  place.phone ||
+  displayPhone ||
   place.email ||
   place.address ||
   feeText ||
@@ -97,7 +99,7 @@ const schema = {
     addressCountry: 'AU'
   },
   openingHours: place.openingHours || undefined,
-  telephone: place.phone || undefined,
+  telephone: displayPhone || undefined,
   email: place.email || undefined,
   sameAs: operatorUrl ? [operatorUrl] : undefined
 };
@@ -285,10 +287,10 @@ const schema = {
                 <strong>{wheelchairText}</strong>
               </div>
             )}
-            {place.phone && (
+            {displayPhone && (
               <div class="visit-item">
                 <span>Phone</span>
-                <strong><a href={phoneHref}>{place.phone}</a></strong>
+                <strong><a href={phoneHref}>{displayPhone}</a></strong>
               </div>
             )}
             {place.email && (

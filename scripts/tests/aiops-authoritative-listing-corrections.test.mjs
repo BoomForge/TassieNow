@@ -24,3 +24,15 @@ test('accepted AI Ops listing corrections are source-staged',()=>{
   assert.equal(events.some((item)=>item.slug.startsWith('disclaimer-events-listed-are-organised-by-local-groups')),false);
   assert.match(sanitiser,/events listed are organised by local groups/);
 });
+
+
+test('AI Ops listing sanitation batch is present in source data',()=>{
+  const crab=places.find((p)=>p.slug==='crabtree-crop-and-crafts-market-crabtree');
+  assert.equal(crab.phone,'0419 403 467');
+  assert.equal(places.find((p)=>p.slug==='the-hangout-cafe-and-restaurant').address,'100A Main Road, Moonah, TAS 7009');
+  const mr=places.find((p)=>p.slug==='mr-burger');
+  assert.equal(mr.address,'1 Bayfield St, Rosny Park, TAS 7018');
+  assert.equal(mr.town,'Rosny Park');
+  const invalid=["farm-gate-market","bass-strait-maritime-centre","lilydale-village-market","cygnet-market","frogmore-creek-wines","bark-mill-tavern-and-bakery","cygnet-old-bank-conservatory-cafe","nara-thai","richmond-bakery","waterfront-cafe","willie-smith-s-apple-shed","ashgrove-cheese-factory","tasman-sea-salt","hokkaido-sushi-cambridge","solo-pasta-and-pizza","magic-curries","prem-s-seafood-bar-and-grill","libby-s-cafe"];
+  assert.deepEqual(invalid.filter((slug)=>places.find((p)=>p.slug===slug)?.bookingUrl),[]);
+});

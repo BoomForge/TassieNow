@@ -806,8 +806,14 @@
         "type": "official-discovery",
         "url": "https://hobartandbeyond.com.au/event/crabtree-crop-crafts-market/",
         "checkedAt": "2026-10-07"
+      },
+      "phone": {
+        "type": "manual",
+        "url": "https://hobartandbeyond.com.au/event/crabtree-crop-crafts-market/",
+        "checkedAt": "2026-10-17"
       }
-    }
+    },
+    "phone": "0419 403 467"
   },
   "hobart-twilight-market-brooke-street-pier-hobart": {
     "schedule": {
@@ -1112,6 +1118,67 @@
       "image": {
         "type": "verified-correction",
         "url": "https://www.wikidata.org/wiki/Q21955928"
+      }
+    }
+  },
+  "the-hangout-cafe-and-restaurant": {
+    "address": "100A Main Road, Moonah, TAS 7009",
+    "detailSources": {
+      "address": {
+        "type": "manual",
+        "url": "https://thehangoutrestaurant.com.au/about",
+        "checkedAt": "2026-10-17"
+      }
+    }
+  },
+  "everydays-smokin-bbq-and-bar": {
+    "address": "178 Main Rd, Moonah, TAS 7009",
+    "detailSources": {
+      "address": {
+        "type": "manual",
+        "url": "https://everydayssmokinbbqbar.com.au/",
+        "checkedAt": "2026-10-17"
+      }
+    }
+  },
+  "parthenon-souvlaki-bar": {
+    "address": "9 Springfield Ave, Moonah, TAS 7009",
+    "detailSources": {
+      "address": {
+        "type": "manual",
+        "url": "https://parthenonsouvlakionline.com.au/",
+        "checkedAt": "2026-10-17"
+      }
+    }
+  },
+  "bento-legana": {
+    "address": "Shop 5/8 Legana Grove, Legana, TAS 7277",
+    "detailSources": {
+      "address": {
+        "type": "manual",
+        "url": "https://bentolegana.com.au/",
+        "checkedAt": "2026-10-17"
+      }
+    }
+  },
+  "spice-on-wheels": {
+    "address": "43 Forster St, New Town, TAS 7008",
+    "detailSources": {
+      "address": {
+        "type": "manual",
+        "url": "https://spiceonwheels.com.au/",
+        "checkedAt": "2026-10-17"
+      }
+    }
+  },
+  "mr-burger": {
+    "address": "1 Bayfield St, Rosny Park, TAS 7018",
+    "town": "Rosny Park",
+    "detailSources": {
+      "address": {
+        "type": "manual",
+        "url": "https://www.mrburger.com.au/store-locations",
+        "checkedAt": "2026-10-17"
       }
     }
   }

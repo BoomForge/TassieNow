@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { normaliseStructuredAddress, normaliseTelephone, safeBookingUrl, sanitiseListingFields, structuredBookingUrl } from '../src/lib/listing-field-sanitizers.mjs';
 
 const FILE = new URL('../src/data/places.json', import.meta.url);
 const USER_AGENT = 'TassieNow/1.1 (+https://tassienow.com)';
@@ -24,7 +25,7 @@ function httpUrl(value) {
   try { const u = new URL(candidate); return ['http:', 'https:'].includes(u.protocol) ? u.href : null; } catch { return null; }
 }
 function mail(value) { const v = clean(value); return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? v : null; }
-function phone(value) { return clean(value).replace(/^tel:/i, '') || null; }
+function phone(value) { return normaliseTelephone(value); }
 function addressFromTags(tags = {}) {
   const street = [tags['addr:housenumber'], tags['addr:street']].filter(Boolean).map(clean).join(' ');
   const locality = clean(tags['addr:suburb'] || tags['addr:city'] || tags['addr:town'] || tags['addr:place']);
@@ -76,7 +77,7 @@ function osmFields(tags = {}) {
     phone: phone(tags['contact:phone'] || tags.phone),
     email: mail(tags['contact:email'] || tags.email),
     address: addressFromTags(tags),
-    bookingUrl: httpUrl(tags.booking || tags.reservation || tags['contact:booking']),
+    bookingUrl: safeBookingUrl(tags.booking || tags.reservation || tags['contact:booking']),
     website: httpUrl(tags.website || tags['contact:website']),
     fee: clean(tags.fee) || null,
     wheelchair: clean(tags.wheelchair) || null,
@@ -131,14 +132,7 @@ function hoursFromSpecification(spec) {
   }).filter(Boolean).join('; ') || null;
 }
 function addressFromLd(value) {
-  if (!value) return null;
-  if (typeof value === 'string') return clean(value) || null;
-  const street = clean(value.streetAddress);
-  const locality = clean(value.addressLocality);
-  const region = clean(value.addressRegion);
-  const postcode = clean(value.postalCode);
-  const parts = [street, locality, region, postcode].filter(Boolean);
-  return parts.length ? parts.join(', ') : null;
+  return normaliseStructuredAddress(value);
 }
 function officialFields(node = {}) {
   const openingRaw = Array.isArray(node.openingHours) ? node.openingHours.map(clean).filter(Boolean).join('; ') : clean(node.openingHours);
@@ -147,7 +141,7 @@ function officialFields(node = {}) {
     phone: phone(node.telephone),
     email: mail(node.email),
     address: addressFromLd(node.address),
-    bookingUrl: httpUrl(node.reservationUrl || node.bookingUrl)
+    bookingUrl: structuredBookingUrl(node)
   };
 }
 function canFetchWebsite(value) {
@@ -224,6 +218,7 @@ await mapLimit(websiteTargets, SITE_CONCURRENCY, async (place) => {
 
 for (const place of places) {
   if (place.status !== 'active') continue;
+  sanitiseListingFields(place);
   place.reviewLinks = mergeReviewLinks(place);
 }
 
