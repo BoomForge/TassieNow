@@ -3,7 +3,7 @@
  * catalogue enrichment job next runs. All other overrides stay pipeline-only.
  * This is deliberately limited to display fields, not status, rights or URLs.
  */
-const DISPLAY_FIELDS = ['openingHours', 'phone', 'address'];
+const DISPLAY_FIELDS = ['openingHours', 'phone', 'address', 'town'];
 
 export function applyVerifiedPlaceDisplayOverrides(place, overrides) {
   const override = overrides?.[place.slug];

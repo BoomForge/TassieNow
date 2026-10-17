@@ -49,3 +49,19 @@ test('Hastings licensed override never replaces an owner-quality real photograph
  const original={slug:'hastings-thermal-springs',image:{url:'https://site.example/organiser-owned.jpg',isFallback:false}};
  assert.equal(applyVerifiedPlaceDisplayOverrides(original,overrides),original);
 });
+
+test('Crabtree phone override fixes encoded display and phone input',()=>{
+ const p=applyVerifiedPlaceDisplayOverrides({slug:'crabtree-crop-and-crafts-market-crabtree',phone:'0419%20403%20467'},overrides);
+ assert.equal(p.phone,'0419 403 467');
+});
+test('previously manual-sourced address overrides now reach live cards without changing unrelated listings',()=>{
+ for(const [slug,address] of [
+ ['the-hangout-cafe-and-restaurant','100A Main Road, Moonah, TAS 7009'],
+ ['bento-legana','Shop 5/8 Legana Grove, Legana, TAS 7277'],
+ ['mr-burger','1 Bayfield St, Rosny Park, TAS 7018']]){
+   const p=applyVerifiedPlaceDisplayOverrides({slug,address:'Malformed old address'},overrides);
+   assert.equal(p.address,address,slug);
+ }
+ const mr=applyVerifiedPlaceDisplayOverrides({slug:'mr-burger',town:'Hobart'},overrides);
+ assert.equal(mr.town,'Rosny Park');
+});
