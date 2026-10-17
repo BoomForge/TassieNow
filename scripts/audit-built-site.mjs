@@ -3,6 +3,8 @@ import path from 'node:path';
 import { marketCopy, tasmaniaDate } from '../src/lib/market-seo.mjs';
 
 const root=path.resolve('dist');
+const sourceEvents=JSON.parse(await fs.readFile('src/data/events.json','utf8'));
+const eventsBySlug=new Map(sourceEvents.map(event=>[event.slug,event]));
 const results={generatedAt:new Date().toISOString(),htmlCount:0,imageCount:0,scriptCount:0,totalBytes:0,issues:[],largestAssets:[],oversizeImages:[]};
 const files=[];
 const today=tasmaniaDate();
@@ -47,15 +49,19 @@ for(const file of files){
        }catch{results.issues.push('Invalid JSON-LD: '+relative);}
      }
      const event=nodes.find(node=>node['@type']==='Event');
-     if(!event)results.issues.push('Missing Event schema: '+relative);
-     else{
+     const slug=decodeURIComponent(relative.slice('event/'.length).replace(/\/index\.html$/, '').replace(/\/$/, ''));
+     const sourceEvent=eventsBySlug.get(slug);
+     const hasNamedVenue=typeof sourceEvent?.venue==='string' && sourceEvent.venue.trim().length>0;
+     if(!event && hasNamedVenue)results.issues.push('Missing Event schema for named venue: '+relative);
+     if(event && !hasNamedVenue)results.issues.push('Event schema without verified venue: '+relative);
+     if(event){
        if(!event.name || !validEventDate(event.startDate) || !validEventDate(event.endDate) || event.endDate<event.startDate)
          results.issues.push('Invalid Event name or dates: '+relative);
-       if(!event.location?.address?.addressLocality || event.location.address.addressCountry!=='AU')
+       if(!event.location?.name || !event.location?.address?.addressLocality || event.location.address.addressCountry!=='AU')
          results.issues.push('Invalid Event location: '+relative);
        if(!absoluteUrl(event.url))results.issues.push('Missing absolute Event URL: '+relative);
-       if(event.image && (!Array.isArray(event.image)||!event.image.every(absoluteUrl)))
-         results.issues.push('Invalid Event image URLs: '+relative);
+       if(!Array.isArray(event.image) || !event.image.length || !event.image.every(absoluteUrl))
+         results.issues.push('Missing or invalid Event image URLs: '+relative);
        if(event.endDate<today)results.issues.push('Expired Event still built: '+relative);
      }
    }

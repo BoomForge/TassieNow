@@ -46,7 +46,10 @@ const formatEventTime = (value) => {
   return `${hour % 12 || 12}:${match[2]} ${hour >= 12 ? 'pm' : 'am'}`;
 };
 
-const eventSchema = {
+const hasNamedVenue = typeof event.venue === 'string' && event.venue.trim().length > 0;
+// Only publish Google Event markup when the source identifies an actual venue.
+// Other event pages stay public and indexable, but we do not invent location names.
+const eventSchema = hasNamedVenue ? {
   '@context': 'https://schema.org',
   '@type': 'Event',
   name: event.name,
@@ -54,13 +57,14 @@ const eventSchema = {
   endDate: event.endTime ? `${event.endDate}T${event.endTime}` : event.endDate,
   description: event.summary,
   url: pageUrl,
-  // Generic category artwork is not an event photograph; omit it from Event rich-result markup.
-  image: event.image?.isFallback ? undefined : [absoluteImage],
+  // An event-specific editorial poster is a valid representation, even without a photo.
+  // The poster prominently identifies the event, place and date; it is not a generic category icon.
+  image: [absoluteImage],
   eventStatus: 'https://schema.org/EventScheduled',
   eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
   location: {
     '@type': 'Place',
-    name: event.venue || undefined,
+    name: event.venue.trim(),
     address: {
       '@type': 'PostalAddress',
       streetAddress: event.address || undefined,
@@ -77,7 +81,7 @@ const eventSchema = {
   offers: offer,
   performer: event.performer ? { '@type': 'PerformingGroup', name: event.performer } : undefined,
   isAccessibleForFree: event.priceFrom === 0 || event.categories?.includes('Free') || undefined
-};
+} : null;
 
 function money(value) {
   if (value === undefined || value === null || Number.isNaN(Number(value))) return null;
@@ -114,7 +118,7 @@ const townSlug = String(event.town || '')
   image={displayImage}
   imageAlt={displayAlt}
 >
-  <script type="application/ld+json" set:html={JSON.stringify(eventSchema)}></script>
+  {eventSchema && <script type="application/ld+json" set:html={JSON.stringify(eventSchema)}></script>}
   <BreadcrumbSchema items={[
     { name: 'TassieNow', path: '/' },
     { name: event.region, path: `/region/${regionSlug}/` },
