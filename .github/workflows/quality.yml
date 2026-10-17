@@ -95,6 +95,8 @@ jobs:
           find functions -name '*.js' -print0 | xargs -0 -n1 node --check
       - name: Prove non-destructive catalogue Git restore
         run: node scripts/test-catalogue-recovery.mjs
+      - name: Apply verified place and booking-link corrections before QA
+        run: node scripts/apply-authoritative-place-corrections.mjs
       - name: Test discovery, market classification and recurring dates
         run: npm run test:discovery
       - name: Test member accounts, authorisation and contributions

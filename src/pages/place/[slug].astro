@@ -10,7 +10,8 @@ import { applyVerifiedPlaceDisplayOverrides } from '../../lib/verified-place-dis
 import autoPhotoSources from '../../data/auto-photo-source-links.json';
 import { upcomingScheduleDates } from '../../lib/schedules.js';
 import { marketCopy, marketSeoTitle, marketSeoDescription } from '../../lib/market-seo.mjs';
-import { normaliseTelephone, safeBookingUrl } from '../../lib/listing-field-sanitizers.mjs';
+import { normaliseTelephone } from '../../lib/listing-field-sanitizers.mjs';
+import { safePlaceBookingUrl } from '../../lib/place-booking-guard.mjs';
 
 export function getStaticPaths() {
   return places
@@ -23,7 +24,7 @@ const isMarketListing=(place.categories||[]).includes('Markets');
 const operatorUrl = place.officialSource?.url || place.website || null;
 const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name} ${place.town || ''} Tasmania`)}`;
 const reviewUrl = place.reviewLinks?.find((item) => item.provider === 'google-maps')?.url || directionsUrl;
-const bookingUrl = safeBookingUrl(place.bookingUrl);
+const bookingUrl = safePlaceBookingUrl(place);
 const photoLinks=[...(Array.isArray(place.photoLinks)?place.photoLinks:[]),
   autoPhotoSources.places?.[place.slug]].filter(link=>{
   try {return new URL(link.sourceUrl).protocol==='https:';} catch {return false;}
