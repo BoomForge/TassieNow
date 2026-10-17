@@ -87,6 +87,19 @@ for(const original of events){
   const canonical=applyVerifiedBurnieEvent(original,TODAY);
   const event=applyReviewedEventCorrection(canonical,overrides);
   event.name=cleanText(event.name);
+  // Rosny Farm Poochibald "Call for Entries" is a submission opportunity, not
+  // a public Event. Old importer guessed a single-day event from a card date.
+  if (/poochibald.*art prize call for entries/i.test(event.name)) {
+    event.status='inactive';
+    event.visibility='suppressed';
+    event.startDate='2026-08-12';
+    event.endDate='2026-10-18';
+    event.eventUrl='https://rosnyfarm.com.au/event/2026-poochibald-art-prize-call-for-entries/';
+    event.venue='Rosny Farm';
+    event.address='22 Rosny Hill Road, Rosny Park TAS 7018';
+    event.summary='2026 Poochibald Art Prize call for entries — submission opportunity, not a public event. Entries close 5 pm 18 October 2026.';
+  }
+
   if(DATE_ONLY_NAME.test(event.name)){
     const recovered=titleFromEventUrl(event.eventUrl);
     if(!recovered || DATE_ONLY_NAME.test(recovered)){ removed++; continue; }

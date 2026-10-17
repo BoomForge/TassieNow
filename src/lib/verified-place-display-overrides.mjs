@@ -12,10 +12,15 @@ export function applyVerifiedPlaceDisplayOverrides(place, overrides) {
     DISPLAY_FIELDS.filter((field) => typeof override[field] === 'string' && override[field].trim())
       .map((field) => [field, override[field]])
   );
+  const licensedImage = override.image && override.image.isFallback === false &&
+    override.image.sourceUrl?.startsWith('https://commons.wikimedia.org/wiki/File:') &&
+    override.image.licenseUrl?.startsWith('https://creativecommons.org/licenses/by-sa/');
   const update = Object.keys(verified).length > 0 || override.removePhone === true ||
-    override.removeOpeningHours === true || override.removeSchedule === true || override.overrideOfficialSource === true;
+    override.removeOpeningHours === true || override.removeSchedule === true || override.overrideOfficialSource === true ||
+    (licensedImage && place.image?.isFallback === true);
   if (!update) return place;
   const copy = { ...place, ...verified };
+  if (licensedImage && place.image?.isFallback === true) copy.image = structuredClone(override.image);
   if (override.removePhone === true) delete copy.phone;
   if (override.removeOpeningHours === true) delete copy.openingHours;
   if (override.removeSchedule === true) delete copy.schedule;

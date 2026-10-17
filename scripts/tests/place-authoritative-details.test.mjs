@@ -37,3 +37,15 @@ test('owner-managed venue details are preserved',()=>{
  const p={slug:'tasmanian-produce-market',managedManually:true,phone:'0400 000 000',address:'Owner-corrected address'};
  assert.equal(applyVerifiedPlaceDisplayOverrides(p,overrides),p);
 });
+
+test('Hastings Thermal Pool licensed exact-subject photo replaces placeholder with attribution',()=>{
+ const p=applyVerifiedPlaceDisplayOverrides({slug:'hastings-thermal-springs',image:{url:'/images/categories/discover.svg',isFallback:true}},overrides);
+ assert.equal(p.image.isFallback,false);
+ assert.equal(p.image.attribution,'Photnart');
+ assert.equal(p.image.license,'CC BY-SA 3.0');
+ assert.match(p.image.sourceUrl,/commons.wikimedia.org\/wiki\/File:Hastings_Thermal_Pool/);
+});
+test('Hastings licensed override never replaces an owner-quality real photograph',()=>{
+ const original={slug:'hastings-thermal-springs',image:{url:'https://site.example/organiser-owned.jpg',isFallback:false}};
+ assert.equal(applyVerifiedPlaceDisplayOverrides(original,overrides),original);
+});

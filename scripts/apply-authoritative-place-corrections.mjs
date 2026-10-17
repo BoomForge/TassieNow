@@ -5,7 +5,7 @@ import { safePlaceBookingUrl } from '../src/lib/place-booking-guard.mjs';
 
 const file = new URL('../src/data/places.json', import.meta.url);
 const places = JSON.parse(await fs.readFile(file, 'utf8'));
-const sourceBacked = new Set(['ashgrove-cheese-factory','willie-smith-s-apple-shed','1830','calcified-forest','archers-knob','bird-hide','point-vision','springlawn-bird-hide-lookout','tasmanian-produce-market']);
+const sourceBacked = new Set(['ashgrove-cheese-factory','willie-smith-s-apple-shed','1830','calcified-forest','archers-knob','bird-hide','point-vision','springlawn-bird-hide-lookout','tasmanian-produce-market','hastings-thermal-springs']);
 let fieldsCorrected=0, bookingLinksRemoved=0;
 for (const place of places) {
   if (sourceBacked.has(place.slug) && overrides[place.slug]) {
@@ -36,6 +36,13 @@ for (const place of places) {
       place.officialSource = structuredClone(review.officialSource);
       fieldsCorrected++;
     }
+  }
+  if (place.slug === 'hastings-thermal-springs' && !place.managedManually &&
+      place.image?.isFallback === true && overrides[place.slug]?.image?.sourceUrl?.startsWith('https://commons.wikimedia.org/wiki/File:')) {
+    place.image = structuredClone(overrides[place.slug].image);
+    place.detailSources ||= {};
+    place.detailSources.image = structuredClone(overrides[place.slug].detailSources.image);
+    fieldsCorrected++;
   }
   const original = place.bookingUrl;
   sanitiseListingFields(place);
