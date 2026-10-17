@@ -26,8 +26,8 @@
     },
     "sources": {
       "websiteCoverage": {
-        "count": 368,
-        "percent": 17.1
+        "count": 370,
+        "percent": 17.2
       },
       "officialSourceCoverage": {
         "count": 289,
@@ -44,15 +44,15 @@
     },
     "details": {
       "openingHours": {
-        "count": 427,
-        "percent": 19.9
+        "count": 423,
+        "percent": 19.7
       },
       "recurringSchedule": {
-        "count": 131,
-        "percent": 6.1
+        "count": 127,
+        "percent": 5.9
       },
       "phone": {
-        "count": 398,
+        "count": 397,
         "percent": 18.5
       },
       "email": {
@@ -90,10 +90,10 @@
       "curated": 41
     },
     "qualityTiers": {
-      "standard": 771,
-      "strong": 622,
+      "standard": 769,
+      "strong": 625,
       "low": 475,
-      "featured": 283
+      "featured": 282
     },
     "regions": {
       "Hobart & South": 789,
@@ -196,8 +196,8 @@
       },
       "details": {
         "website": {
-          "count": 235,
-          "percent": 22.3
+          "count": 237,
+          "percent": 22.5
         },
         "openingHours": {
           "count": 327,
@@ -215,30 +215,30 @@
     }
   },
   "events": {
-    "active": 166,
+    "active": 163,
     "media": {
       "licensedHeroCoverage": {
-        "count": 70,
-        "percent": 42.2
+        "count": 69,
+        "percent": 42.3
       },
-      "stillUsingCategoryArtwork": 96,
+      "stillUsingCategoryArtwork": 94,
       "bySource": {
         "verified-event-venue": 38,
-        "verified-event-activity": 27,
+        "verified-event-activity": 26,
         "verified-event-performer": 3,
         "commons-venue": 1,
         "verified-event-history": 1
       },
       "byMediaType": {
         "contextual": 39,
-        "activity-illustrative": 27,
+        "activity-illustrative": 26,
         "performer-context": 3,
         "historical-event": 1
       },
       "byRegion": {
         "Hobart & South": {
-          "count": 36,
-          "percent": 43.9
+          "count": 35,
+          "percent": 43.8
         },
         "Launceston & North": {
           "count": 17,
@@ -266,21 +266,21 @@
         },
         "King Island": {
           "count": 1,
-          "percent": 25
+          "percent": 33.3
         }
       }
     },
     "ticketCoverage": {
-      "count": 43,
-      "percent": 25.9
+      "count": 42,
+      "percent": 25.8
     },
     "priceCoverage": {
-      "count": 59,
-      "percent": 35.5
+      "count": 60,
+      "percent": 36.8
     },
     "providers": {
-      "Humanitix": 21,
       "Ticketek": 21,
+      "Humanitix": 20,
       "Ticketmaster": 1
     },
     "sources": {
@@ -290,26 +290,26 @@
       "Theatre North Launceston": 16,
       "Devonport City Council": 15,
       "Theatre Royal Hobart": 12,
-      "Humanitix Hobart": 10,
       "Humanitix Launceston": 10,
-      "City of Clarence": 9,
       "East Coast Tasmania": 9,
+      "Humanitix Hobart": 9,
+      "City of Clarence": 8,
       "Glenorchy City Council": 7,
       "City of Hobart": 6,
-      "King Island Tourism": 4,
+      "King Island Tourism": 3,
       "Highlands BushFest organising team": 1,
       "Ticketebo": 1,
       "West Coast Heritage Centre": 1
     },
     "regions": {
-      "Hobart & South": 82,
+      "Hobart & South": 80,
       "Launceston & North": 26,
       "North West": 43,
       "East Coast": 9,
       "West Coast": 1,
       "Central Tasmania": 1,
       "Flinders Island": 0,
-      "King Island": 4
+      "King Island": 3
     },
     "regionsWithNoEvents": [
       "Flinders Island"
@@ -319,26 +319,25 @@
       "tomorrow": "2026-10-19",
       "nextWeekendStart": "2026-10-24",
       "nextWeekendEnd": "2026-10-25",
-      "todayOrTomorrow": 27,
-      "thisWeekend": 23,
+      "todayOrTomorrow": 26,
+      "thisWeekend": 21,
       "townsTodayOrTomorrow": {
         "Huonville": 10,
         "Burnie": 4,
         "Devonport": 4,
         "Hobart": 4,
         "Glenorchy": 2,
-        "Launceston": 2,
-        "Currie": 1
+        "Launceston": 2
       },
       "regionsThisWeekend": {
-        "Hobart & South": 12,
+        "Hobart & South": 11,
         "Launceston & North": 0,
         "North West": 8,
         "East Coast": 1,
         "West Coast": 0,
         "Central Tasmania": 0,
         "Flinders Island": 0,
-        "King Island": 2
+        "King Island": 1
       },
       "regionsWithNoWeekendEvents": [
         "Launceston & North",
@@ -357,13 +356,13 @@
       "Launceston & North / Theatre North Launceston": 16,
       "North West / Devonport City Council": 15,
       "Hobart & South / Theatre Royal Hobart": 12,
-      "Hobart & South / Humanitix Hobart": 10,
       "Launceston & North / Humanitix Launceston": 10,
       "East Coast / East Coast Tasmania": 9,
-      "Hobart & South / City of Clarence": 9,
+      "Hobart & South / Humanitix Hobart": 9,
+      "Hobart & South / City of Clarence": 8,
       "Hobart & South / Glenorchy City Council": 7,
       "Hobart & South / City of Hobart": 6,
-      "King Island / King Island Tourism": 4,
+      "King Island / King Island Tourism": 3,
       "Central Tasmania / Highlands BushFest organising team": 1,
       "North West / Ticketebo": 1,
       "West Coast / West Coast Heritage Centre": 1

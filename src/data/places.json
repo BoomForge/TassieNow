@@ -22,7 +22,6 @@
     "phone": "03 6701 2104",
     "email": "GreatWesternTiers@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -51,8 +50,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -107,19 +107,22 @@
     "wikidata": "Q21967463",
     "wikipediaUrl": null,
     "commonsCategory": null,
-    "openingHours": "Mo-Su 12:30-13:00",
     "phone": "03 6428 6277",
     "email": "Narawntapu.Parks@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
     "detailSources": {
       "schedule": {
-        "type": "official-website",
+        "type": "verified-absence",
         "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
-        "checkedAt": "2026-10-16"
+        "checkedAt": "2026-10-18"
+      },
+      "openingHours": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
+        "checkedAt": "2026-10-18"
       }
     },
     "status": "active",
@@ -153,8 +156,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Archers-Knob.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -165,22 +169,6 @@
       "status": "ok",
       "code": 200,
       "checkedAt": "2026-10-17T21:27:53.633Z"
-    },
-    "schedule": {
-      "summary": "Open 7 days -&#160;(closed between 12.30pm and 1pm daily)&#160;​",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "12:30",
-      "endTime": "13:00"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -193,7 +181,6 @@
       "government-source",
       "official-walk-data",
       "real-image",
-      "opening-hours",
       "contact-details",
       "booking-link",
       "review-link",
@@ -231,7 +218,6 @@
     "phone": "03 6123 4040",
     "email": "MariaIslandEnquiries@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -292,7 +278,7 @@
     "officialSourceCheck": {
       "status": "unreachable",
       "checkedAt": "2026-10-18",
-      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/bishop-and-clerk",
+      "url": "https://parks.tas.gov.au/Pages/Bishop-and-Clerk.aspx",
       "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
@@ -513,7 +499,6 @@
     "phone": "03 6250 3980",
     "email": "TasmanNP@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -554,8 +539,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "5 hours return , 14km, Grade 4",
@@ -624,8 +610,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "5 minutes to 5 hours , 100m to 5km, Grade 2",
@@ -666,11 +653,6 @@
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
         "checkedAt": "2026-10-15"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
-        "checkedAt": "2026-10-06"
       }
     },
     "phone": "03 6256 7000",
@@ -782,8 +764,7 @@
       "status": "ok",
       "checkedAt": "2026-10-18",
       "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches"
-    },
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
+    }
   },
   {
     "slug": "hazards-beach",
@@ -818,8 +799,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Wineglass-Bay-and-Hazards-Beach.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "4-5 hours circuit , 11km circuit, Grade 4",
@@ -860,11 +842,6 @@
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach",
         "checkedAt": "2026-10-15"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach",
-        "checkedAt": "2026-10-06"
       }
     },
     "phone": "03 6256 7000",
@@ -957,8 +934,7 @@
       "status": "ok",
       "checkedAt": "2026-10-18",
       "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach"
-    },
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
+    }
   },
   {
     "slug": "hogarth-falls",
@@ -983,7 +959,6 @@
     "phone": "03 6409 1020",
     "email": "PWS.WestCoast@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -1012,8 +987,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -1102,8 +1078,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Duck-Reach.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/duck-reach",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -1164,7 +1141,6 @@
     "phone": "03 6701 2104",
     "email": "GreatWesternTiers@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -1191,8 +1167,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Liffey-Falls-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/liffey-falls-state-reserve/liffey-falls-walk",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "45 minute return , 2km, from the top car park, Grade 2",
@@ -1256,7 +1233,6 @@
     "phone": "0231591379",
     "email": "parkfees@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -1285,8 +1261,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Maingon-Blowhole.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/maingon-blowhole",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -1345,7 +1322,6 @@
     "phone": "03 6409 1020",
     "email": "PWS.WestCoast@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -1374,8 +1350,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Montezuma-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -1434,7 +1411,6 @@
     "phone": "03 6250 3980",
     "email": "TasmanNP@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -1509,8 +1485,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Remarkable-Cave.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/remarkable-cave",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "15 minutes return , TBC, Grade 3",
@@ -1777,7 +1754,6 @@
     "phone": "03 6387 5510",
     "email": "StHelensParks@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -1830,8 +1806,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/St-Columba-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -1899,8 +1876,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/St-Columba-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -1961,11 +1939,6 @@
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
         "checkedAt": "2026-10-06"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
-        "checkedAt": "2026-10-06"
       }
     },
     "phone": "03 6387 5510",
@@ -1974,8 +1947,7 @@
       "status": "ok",
       "checkedAt": "2026-10-18",
       "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls"
-    },
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
+    }
   },
   {
     "slug": "wineglass-bay-lookout",
@@ -2000,7 +1972,6 @@
     "phone": "03 6256 7000",
     "email": "Freycinet@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -2047,8 +2018,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Wineglass-Bay-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -2179,11 +2151,6 @@
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park",
         "checkedAt": "2026-10-15"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park",
-        "checkedAt": "2026-10-06"
       }
     },
     "phone": "03 6256 7000",
@@ -2284,7 +2251,6 @@
       "checkedAt": "2026-10-18",
       "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park"
     },
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "lastWikidataLinkChecked": "2026-10-07",
     "wikidata": "Q930677",
     "wikidataMatch": {
@@ -2330,8 +2296,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "5 minutes to 5 hours , 100m to 5km, Grade 2",
@@ -2372,11 +2339,6 @@
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
         "checkedAt": "2026-10-15"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
-        "checkedAt": "2026-10-06"
       }
     },
     "phone": "03 6256 7000",
@@ -2420,8 +2382,7 @@
       "status": "ok",
       "checkedAt": "2026-10-18",
       "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches"
-    },
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
+    }
   },
   {
     "slug": "mount-field-national-park",
@@ -2491,11 +2452,6 @@
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park",
         "checkedAt": "2026-10-05"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park",
-        "checkedAt": "2026-10-06"
       }
     },
     "phone": "03 6288 1149",
@@ -2578,7 +2534,6 @@
       "checkedAt": "2026-10-18",
       "url": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park"
     },
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "lastWikidataLinkChecked": "2026-10-07",
     "wikidata": "Q1905973",
     "wikidataMatch": {
@@ -2592,116 +2547,6 @@
     "wikidataImages": [
       "James Tarn Mt Field National Park.jpg"
     ]
-  },
-  {
-    "slug": "point-vision",
-    "name": "Point Vision",
-    "town": "Greens Beach",
-    "region": "Launceston & North",
-    "latitude": -41.13778,
-    "longitude": 146.6744983,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Point Vision Track is an official Parks Tasmania walk. 7 hours return , 15 km return, Grade 4 · Grade 4.",
-    "website": "https://parks.tas.gov.au/Pages/Point-Vision-Track.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/2670910824",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2670910824",
-    "wikidata": "Q21966303",
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Mo-Su 12:30-13:00",
-    "phone": "03 6428 6277",
-    "email": "Narawntapu.Parks@parks.tas.gov.au",
-    "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track",
-        "checkedAt": "2026-10-16"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-18",
-    "lastDetailsChecked": "2026-10-18",
-    "lastOsmDetailsChecked": "2026-10-16",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Point Vision category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Point%20Vision%20Greens%20Beach%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Point-Vision-Track.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": "7 hours return , 15 km return, Grade 4",
-      "grade": 4
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-17T21:27:59.393Z"
-    },
-    "schedule": {
-      "summary": "Open 7 days -&#160;(closed between 12.30pm and 1pm daily)&#160;​",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "12:30",
-      "endTime": "13:00"
-    },
-    "qualityScore": 95,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "wikidata",
-      "government-source",
-      "official-walk-data",
-      "opening-hours",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-18",
-      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
   },
   {
     "slug": "port-arthur-historic-site",
@@ -2925,7 +2770,6 @@
     "phone": "03 6492 1110",
     "email": "Cradle@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": "Parks and Wildlife Service Tasmania",
@@ -2968,8 +2812,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "10 minute circuit , 431m, Grade 1",
@@ -3175,7 +3020,6 @@
     "phone": "03 6121 7026",
     "email": "Huonville@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -3191,11 +3035,6 @@
         "checkedAt": "2026-10-09"
       },
       "openingHours": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-        "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
         "type": "official-website",
         "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
         "checkedAt": "2026-10-09"
@@ -3221,8 +3060,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -3507,8 +3347,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Frankland-Beaches-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "2 hours , 6 km return, Grade 2",
@@ -3539,11 +3380,6 @@
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
         "checkedAt": "2026-10-06"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
-        "checkedAt": "2026-10-06"
       }
     },
     "phone": "03 6289 1115",
@@ -3568,8 +3404,7 @@
       "status": "ok",
       "checkedAt": "2026-10-18",
       "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches"
-    },
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
+    }
   },
   {
     "slug": "mona",
@@ -3743,8 +3578,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Trousers-Point.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/strzelecki-national-park/trousers-point",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "1.5 hours circuit , 2km circuit, Grade 2",
@@ -3775,11 +3611,6 @@
         "type": "official-website",
         "url": "https://parks.tas.gov.au/about-us/contact-us",
         "checkedAt": "2026-10-06"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/strzelecki-national-park/trousers-point",
-        "checkedAt": "2026-10-06"
       }
     },
     "email": "parkfees@parks.tas.gov.au",
@@ -3804,8 +3635,7 @@
       "status": "ok",
       "checkedAt": "2026-10-18",
       "url": "https://parks.tas.gov.au/explore-our-parks/strzelecki-national-park/trousers-point"
-    },
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx"
+    }
   },
   {
     "slug": "evandale-sunday-market",
@@ -4004,11 +3834,6 @@
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
         "checkedAt": "2026-10-05"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve",
-        "checkedAt": "2026-10-06"
       }
     },
     "phone": "03 6458 1480",
@@ -4023,7 +3848,6 @@
       "checkedAt": "2026-10-18",
       "url": "https://parks.tas.gov.au/explore-our-parks/the-nut-state-reserve"
     },
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "lastWikidataLinkChecked": "2026-10-07",
     "wikidata": "Q139743356",
     "wikidataMatch": {
@@ -4058,7 +3882,6 @@
     "phone": "03 6701 2104",
     "email": "GreatWesternTiers@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -4085,8 +3908,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -4245,7 +4069,6 @@
     "phone": "03 6123 4040",
     "email": "MariaIslandEnquiries@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -4272,8 +4095,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Fossil-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/fossil-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -4580,7 +4404,6 @@
     "phone": "03 6701 2104",
     "email": "GreatWesternTiers@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -4607,8 +4430,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Meander-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/meander-falls",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "4.5-6 hours return , 10km return, Grade 4",
@@ -4666,7 +4490,6 @@
     "phone": "03 6464 3008",
     "email": "Admin.PWSNW@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -4693,8 +4516,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Mount-Duncan-Summit-Track.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-duncan-track",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "4 hours return , 8km return, Grade 3",
@@ -4753,7 +4577,6 @@
     "phone": "03 6464 3008",
     "email": "Admin.PWSNW@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -4780,8 +4603,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Mount%20Gnomon-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-gnomon-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "1 hour return , 2km return, Grade 3",
@@ -4841,7 +4665,6 @@
     "phone": "03 6123 4040",
     "email": "MariaIslandEnquiries@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -4868,8 +4691,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Painted-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/painted-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -4903,6 +4727,103 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-16"
+  },
+  {
+    "slug": "point-vision",
+    "name": "Point Vision",
+    "town": "Greens Beach",
+    "region": "Launceston & North",
+    "latitude": -41.13778,
+    "longitude": 146.6744983,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Point Vision Track is an official Parks Tasmania walk. 7 hours return , 15 km return, Grade 4 · Grade 4.",
+    "website": "https://parks.tas.gov.au/Pages/Point-Vision-Track.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/2670910824",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2670910824",
+    "wikidata": "Q21966303",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "phone": "03 6428 6277",
+    "email": "Narawntapu.Parks@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "schedule": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track",
+        "checkedAt": "2026-10-18"
+      },
+      "openingHours": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track",
+        "checkedAt": "2026-10-18"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-16",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Point Vision category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Point%20Vision%20Greens%20Beach%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track",
+      "type": "government",
+      "checkedAt": "2026-10-18"
+    },
+    "walk": {
+      "duration": "7 hours return , 15 km return, Grade 4",
+      "grade": 4
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-17T21:27:59.393Z"
+    },
+    "qualityScore": 89,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "wikidata",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-18"
   },
   {
     "slug": "allport-library-and-museum-of-fine-arts",
@@ -5034,7 +4955,6 @@
     "phone": "03 6121 7026",
     "email": "Huonville@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -5072,8 +4992,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "20 minutes return , 1 km, Grade 2",
@@ -5265,135 +5186,6 @@
     "bookingUrl": "https://www.beaconsfieldheritage.com.au/contact-us/"
   },
   {
-    "slug": "bird-hide",
-    "name": "Bird Hide",
-    "town": "Legana",
-    "region": "Launceston & North",
-    "latitude": -41.3876055,
-    "longitude": 147.0732606,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Bird Hide Walk is an official Parks Tasmania walk. 30 minutes return , 2 km, Grade 1 · Grade 1.",
-    "website": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/4032560838",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/4032560838",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Mo-Su 12:30-13:00",
-    "phone": "03 6428 6277",
-    "email": "Narawntapu.Parks@parks.tas.gov.au",
-    "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "email": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
-        "checkedAt": "2026-10-16"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
-        "checkedAt": "2026-10-16"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
-        "checkedAt": "2026-10-16"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
-        "checkedAt": "2026-10-16"
-      },
-      "openingHours": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
-        "checkedAt": "2026-10-16"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-18",
-    "lastDetailsChecked": "2026-10-18",
-    "lastOsmDetailsChecked": "2026-10-16",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Bird Hide category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": "30 minutes return , 2 km, Grade 1",
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-17T21:28:01.865Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Bird%20Hide%20Legana%20Tasmania"
-      }
-    ],
-    "schedule": {
-      "summary": "Open 7 days -&#160;(closed between 12.30pm and 1pm daily)&#160;​",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "12:30",
-      "endTime": "13:00"
-    },
-    "qualityScore": 88,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "opening-hours",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-18",
-      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
-  },
-  {
     "slug": "cape-tourville-lookout",
     "name": "Cape Tourville Lookout",
     "town": "Coles Bay",
@@ -5416,7 +5208,6 @@
     "phone": "03 6256 7000",
     "email": "Freycinet@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -5454,8 +5245,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Cape-Tourville.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "20 minute circuit , 600m circuit, Grade 1",
@@ -5730,7 +5522,6 @@
     "phone": "03 6256 7000",
     "email": "Freycinet@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -5768,8 +5559,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Sleepy-Bay.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/sleepy-bay",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "20 minutes return , 500m return, Grade 3",
@@ -5822,115 +5614,6 @@
     "discoveryStaleSince": "2026-10-16"
   },
   {
-    "slug": "springlawn-bird-hide-lookout",
-    "name": "Springlawn Bird Hide Lookout",
-    "town": "Port Sorell",
-    "region": "Hobart & South",
-    "latitude": -41.145285,
-    "longitude": 146.6105158,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Bird Hide Walk is an official Parks Tasmania walk. 30 minutes return , 2 km, Grade 1 · Grade 1.",
-    "website": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/2090793315",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2090793315",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Mo-Su 12:30-13:00",
-    "phone": "03 6428 6277",
-    "email": "Narawntapu.Parks@parks.tas.gov.au",
-    "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
-        "checkedAt": "2026-10-16"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-18",
-    "lastDetailsChecked": "2026-10-18",
-    "lastOsmDetailsChecked": "2026-10-16",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Springlawn Bird Hide Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Springlawn%20Bird%20Hide%20Lookout%20Port%20Sorell%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": "30 minutes return , 2 km, Grade 1",
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-17T21:27:53.415Z"
-    },
-    "schedule": {
-      "summary": "Open 7 days -&#160;(closed between 12.30pm and 1pm daily)&#160;​",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "12:30",
-      "endTime": "13:00"
-    },
-    "qualityScore": 88,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "opening-hours",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-18",
-      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
-  },
-  {
     "slug": "waratah-lookout",
     "name": "Waratah Lookout",
     "town": "Geeveston",
@@ -5953,7 +5636,6 @@
     "phone": "03 6121 7026",
     "email": "Huonville@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -5991,8 +5673,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "5 minutes return , 300 metres, Grade 2",
@@ -6532,8 +6215,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Hollybank.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hollybank",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "15-40 minute circuit , 2km circuit, Grade 1",
@@ -6589,7 +6273,6 @@
     "phone": "03 6701 2104",
     "email": "GreatWesternTiers@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -6616,8 +6299,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -6653,6 +6337,112 @@
     "discoveryStaleSince": "2026-10-18"
   },
   {
+    "slug": "bird-hide",
+    "name": "Bird Hide",
+    "town": "Legana",
+    "region": "Launceston & North",
+    "latitude": -41.3876055,
+    "longitude": 147.0732606,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Bird Hide Walk is an official Parks Tasmania walk. 30 minutes return , 2 km, Grade 1 · Grade 1.",
+    "website": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/4032560838",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/4032560838",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "phone": "03 6428 6277",
+    "email": "Narawntapu.Parks@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "email": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+        "checkedAt": "2026-10-16"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+        "checkedAt": "2026-10-16"
+      },
+      "schedule": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+        "checkedAt": "2026-10-18"
+      },
+      "openingHours": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+        "checkedAt": "2026-10-18"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-16",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Bird Hide category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "type": "government",
+      "checkedAt": "2026-10-18"
+    },
+    "walk": {
+      "duration": "30 minutes return , 2 km, Grade 1",
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-17T21:28:01.865Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Bird%20Hide%20Legana%20Tasmania"
+      }
+    ],
+    "qualityScore": 82,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-18"
+  },
+  {
     "slug": "calcified-forest",
     "name": "Calcified Forest",
     "town": "Grassy",
@@ -6672,14 +6462,18 @@
     "wikipediaUrl": null,
     "commonsCategory": null,
     "openingHours": null,
-    "phone": "0231591379",
     "email": "parkfees@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
-    "detailSources": {},
+    "detailSources": {
+      "phone": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)",
+        "checkedAt": "2026-10-18"
+      }
+    },
     "status": "active",
     "lastChecked": "2026-10-18",
     "lastDetailsChecked": "2026-10-18",
@@ -6702,8 +6496,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Calcified-Forest-(King-Island).aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -6761,7 +6556,6 @@
     "phone": "03 6409 1020",
     "email": "PWS.WestCoast@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -6788,8 +6582,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Huon-Pine-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "20 minutes return , 600m return, Grade 1",
@@ -7143,7 +6938,6 @@
     "phone": "03 6778 8520",
     "email": "PWS.AdminNorth@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -7170,8 +6964,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Ralphs-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/ralphs-falls",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -7229,7 +7024,6 @@
     "phone": "03 6123 4040",
     "email": "MariaIslandEnquiries@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -7256,8 +7050,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/The-Reservoir-Circuit.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/the-reservoir-circuit",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "0.5-1 hour ride , 4km return, Grade 3",
@@ -7356,11 +7151,6 @@
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/southwest-national-park",
         "checkedAt": "2026-10-06"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/southwest-national-park",
-        "checkedAt": "2026-10-06"
       }
     },
     "phone": "03 6121 7026",
@@ -7475,8 +7265,7 @@
       "status": "ok",
       "checkedAt": "2026-10-18",
       "url": "https://parks.tas.gov.au/explore-our-parks/southwest-national-park"
-    },
-    "bookingUrl": "https://parks.tas.gov.au/explore-our-parks/https&#58;//www.eventbrite.com.au/e/mt-anne-shelf-camp-lonely-tarns-circuit-walker-registration-tickets-189386097917?aff=ebdsoporgprofile"
+    }
   },
   {
     "slug": "southwest-national-park-2",
@@ -7542,11 +7331,6 @@
         "type": "official-website",
         "url": "https://parks.tas.gov.au/explore-our-parks/southwest-national-park",
         "checkedAt": "2026-10-06"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/southwest-national-park",
-        "checkedAt": "2026-10-06"
       }
     },
     "phone": "03 6121 7026",
@@ -7661,8 +7445,103 @@
       "status": "ok",
       "checkedAt": "2026-10-18",
       "url": "https://parks.tas.gov.au/explore-our-parks/southwest-national-park"
+    }
+  },
+  {
+    "slug": "springlawn-bird-hide-lookout",
+    "name": "Springlawn Bird Hide Lookout",
+    "town": "Port Sorell",
+    "region": "Hobart & South",
+    "latitude": -41.145285,
+    "longitude": 146.6105158,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Bird Hide Walk is an official Parks Tasmania walk. 30 minutes return , 2 km, Grade 1 · Grade 1.",
+    "website": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/2090793315",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2090793315",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "phone": "03 6428 6277",
+    "email": "Narawntapu.Parks@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "schedule": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/springlawn-nature-walk",
+        "checkedAt": "2026-10-18"
+      },
+      "openingHours": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/springlawn-nature-walk",
+        "checkedAt": "2026-10-18"
+      }
     },
-    "bookingUrl": "https://parks.tas.gov.au/explore-our-parks/https&#58;//www.eventbrite.com.au/e/mt-anne-shelf-camp-lonely-tarns-circuit-walker-registration-tickets-189386097917?aff=ebdsoporgprofile"
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-16",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Springlawn Bird Hide Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Springlawn%20Bird%20Hide%20Lookout%20Port%20Sorell%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "type": "government",
+      "checkedAt": "2026-10-18"
+    },
+    "walk": {
+      "duration": "30 minutes return , 2 km, Grade 1",
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-17T21:27:53.415Z"
+    },
+    "qualityScore": 82,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-18"
   },
   {
     "slug": "tall-trees-viewing-platform",
@@ -7687,7 +7566,6 @@
     "phone": "03 6288 1149",
     "email": "MtField@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -7714,8 +7592,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Tall-Trees.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park/tall-trees",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "30 minutes circuit , 1km circuit, Grade 2",
@@ -7917,7 +7796,6 @@
     "phone": "03 6250 3980",
     "email": "TasmanNP@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -7944,8 +7822,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Waterfall-Bay.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/waterfall-bay",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -9218,8 +9097,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Overland-Track.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "6 days one way , 65km one way, Grade 4",
@@ -9299,11 +9179,6 @@
         "type": "official-website",
         "url": "https://bassstrait.museum/tickets/tour-groups/",
         "checkedAt": "2026-10-18"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://bassstrait.museum/",
-        "checkedAt": "2026-10-18"
       }
     },
     "status": "active",
@@ -9377,7 +9252,6 @@
       "checkedAt": "2026-10-18",
       "url": "https://bassstrait.museum/"
     },
-    "bookingUrl": "https://bassstrait.museum/tickets/",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-18"
   },
@@ -9740,7 +9614,7 @@
       "Food & Drink"
     ],
     "summary": "Saturday produce market beside Kangaroo Bay on the eastern shore.",
-    "address": "Kangaroo Bay, Rosny Park",
+    "address": "20 Kangaroo Bay Drive, Rosny Park TAS 7018",
     "website": "https://tasproduceguide.au/markets/",
     "sourceUrl": "https://tasproduceguide.au/markets/",
     "sourceType": "curated",
@@ -9760,9 +9634,9 @@
       "endTime": "13:00"
     },
     "officialSource": {
-      "name": "Fruit Growers Tasmania seasonal produce guide",
-      "url": "https://tasproduceguide.au/markets/",
-      "type": "industry-guide"
+      "name": "Tasmanian Produce Market — Hobart Twilight Market",
+      "url": "https://hobarttwilightmarket.com.au/tasmanian-produce-market/",
+      "type": "official-operator"
     },
     "image": {
       "url": "/images/categories/markets.svg",
@@ -9776,7 +9650,7 @@
     "detailSources": {
       "address": {
         "type": "verified-source",
-        "url": "https://tasproduceguide.au/markets/",
+        "url": "https://hobarttwilightmarket.com.au/tasmanian-produce-market/",
         "checkedAt": "2026-10-18"
       },
       "schedule": {
@@ -9790,13 +9664,18 @@
         "checkedAt": "2026-10-07"
       },
       "phone": {
-        "type": "official-website",
-        "url": "https://tasproduceguide.au/markets/",
-        "checkedAt": "2026-10-07"
+        "type": "verified-source",
+        "url": "https://hobarttwilightmarket.com.au/tasmanian-produce-market/",
+        "checkedAt": "2026-10-18"
       },
       "openingHours": {
         "type": "official-website",
         "url": "https://tasproduceguide.au/markets/",
+        "checkedAt": "2026-10-18"
+      },
+      "officialSource": {
+        "type": "verified-source",
+        "url": "https://hobarttwilightmarket.com.au/tasmanian-produce-market/",
         "checkedAt": "2026-10-18"
       }
     },
@@ -9822,7 +9701,7 @@
       }
     ],
     "email": "office@fruitgrowerstas.org.au",
-    "phone": "+61361692059",
+    "phone": "0448 997 748",
     "officialSourceCheck": {
       "status": "ok",
       "checkedAt": "2026-10-18",
@@ -12141,7 +12020,6 @@
     "phone": "03 6724 7790",
     "email": "Tamar@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": "no",
     "wheelchair": null,
     "operator": null,
@@ -13705,7 +13583,6 @@
     "phone": "03 6464 3008",
     "email": "parkfees@parks.tas.gov.au",
     "address": null,
-    "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "fee": null,
     "wheelchair": null,
     "operator": null,
@@ -13732,8 +13609,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Leven-Canyon-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -21432,65 +21310,6 @@
     ]
   },
   {
-    "slug": "the-four-mile",
-    "name": "The Four Mile",
-    "town": "Tasmania",
-    "region": "East Coast",
-    "latitude": -42.17,
-    "longitude": 148.07,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor",
-      "Free"
-    ],
-    "summary": "Beach in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q21955928",
-    "sourceType": "wikidata",
-    "sourceId": "Q21955928",
-    "wikidata": "Q21955928",
-    "status": "active",
-    "lastChecked": "2026-10-17",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Four_Mile_Creek.jpg/1920px-Four_Mile_Creek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "The Four Mile, Tasmania",
-      "attribution": "Sammarkey",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Four_Mile_Creek.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "medium"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=The%20Four%20Mile%20Tasmania%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-18",
-    "qualityScore": 59,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "real-image",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "lastWikidataChecked": "2026-10-06",
-    "detailSources": {
-      "image": {
-        "type": "verified-correction",
-        "url": "https://www.wikidata.org/wiki/Q21955928",
-        "checkedAt": "2026-10-18"
-      }
-    }
-  },
-  {
     "slug": "the-sand",
     "name": "The Sand",
     "town": "Tasmania",
@@ -28732,11 +28551,6 @@
         "type": "openstreetmap",
         "url": "https://www.openstreetmap.org/node/4192557994",
         "checkedAt": "2026-10-13"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://www.frogmorecreek.com.au/",
-        "checkedAt": "2026-10-18"
       }
     },
     "status": "active",
@@ -28792,8 +28606,7 @@
       "url": "https://www.frogmorecreek.com.au/"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16",
-    "bookingUrl": "https://www.frogmorecreek.com.au/pages/shop-winemakers-reserve"
+    "discoveryStaleSince": "2026-10-16"
   },
   {
     "slug": "inala-nature-tours",
@@ -31964,11 +31777,6 @@
         "type": "openstreetmap",
         "url": "https://www.openstreetmap.org/node/14040993549",
         "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://narathaitas.com.au/",
-        "checkedAt": "2026-10-18"
       }
     },
     "status": "active",
@@ -32025,8 +31833,7 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-17",
-    "bookingUrl": "https://narathaitas.com.au/booking/"
+    "lastWikidataLinkChecked": "2026-10-17"
   },
   {
     "slug": "noodles-n-rolls-tastic",
@@ -33768,11 +33575,6 @@
         "type": "official-website",
         "url": "https://waterfrontcomplex.com.au/",
         "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://waterfrontcomplex.com.au/",
-        "checkedAt": "2026-10-18"
       }
     },
     "status": "active",
@@ -33829,8 +33631,7 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-17",
-    "bookingUrl": "https://waterfrontcomplex.com.au/accommodation"
+    "lastWikidataLinkChecked": "2026-10-17"
   },
   {
     "slug": "cradle-mountain",
@@ -40552,23 +40353,23 @@
     "wikidata": null,
     "wikipediaUrl": null,
     "commonsCategory": null,
-    "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 09:00-17:00",
+    "openingHours": "Mo-Th 10:00-16:00; Fr 10:00-21:00; Sa-Su 10:00-17:00",
     "phone": "(03) 6266 4345",
     "email": "appleshed@williesmiths.com.au",
-    "address": "Grove, Tasmania, 7109",
+    "address": "2064 Huon Highway, Grove TAS 7109",
     "fee": null,
     "wheelchair": null,
     "operator": null,
     "detailSources": {
       "openingHours": {
-        "type": "official-website",
-        "url": "https://www.williesmiths.com.au/",
-        "checkedAt": "2026-10-09"
+        "type": "verified-source",
+        "url": "https://williesmiths.com.au/pages/the-apple-shed",
+        "checkedAt": "2026-10-18"
       },
       "address": {
-        "type": "official-website",
-        "url": "https://www.williesmiths.com.au/",
-        "checkedAt": "2026-10-09"
+        "type": "verified-source",
+        "url": "https://williesmiths.com.au/pages/the-apple-shed",
+        "checkedAt": "2026-10-18"
       },
       "email": {
         "type": "official-website",
@@ -40576,9 +40377,9 @@
         "checkedAt": "2026-10-09"
       },
       "phone": {
-        "type": "official-website",
-        "url": "https://www.williesmiths.com.au/",
-        "checkedAt": "2026-10-09"
+        "type": "verified-source",
+        "url": "https://williesmiths.com.au/pages/the-apple-shed",
+        "checkedAt": "2026-10-18"
       }
     },
     "status": "active",
@@ -40622,10 +40423,9 @@
     ],
     "rankedAt": "2026-10-18",
     "officialSource": {
-      "type": "official-website",
-      "url": "https://williesmiths.com.au/",
-      "source": "openstreetmap-website",
-      "checkedAt": "2026-10-18"
+      "name": "Willie Smith's Apple Shed",
+      "url": "https://williesmiths.com.au/pages/the-apple-shed",
+      "type": "official-website"
     },
     "officialSourceCheck": {
       "status": "ok",
@@ -41153,11 +40953,6 @@
         "type": "official-website",
         "url": "https://hokkaidosushi.com.au/",
         "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://hokkaidosushi.com.au/",
-        "checkedAt": "2026-10-18"
       }
     },
     "status": "active",
@@ -41228,8 +41023,7 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12",
-    "bookingUrl": "https://hokkaidosushi.com.au/#book-anchor"
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "komatsuja-japanese",
@@ -42801,7 +42595,7 @@
     "wikidata": null,
     "wikipediaUrl": null,
     "commonsCategory": null,
-    "openingHours": "Mo-Su 09:00-17:00; Mo-Su 09:00-05:00; Mo-Su 09:30-10:30; Mo-Su 12:00-13:30; Mo-Su 11:00-15:00; Mo-Su 12:30-13:15; We,Th,Fr,Sa,Su 18:00-20:00",
+    "openingHours": "Mo-Su 11:30-14:30",
     "phone": "1800659101",
     "email": "reservations@portarthur.org.au",
     "address": null,
@@ -42811,8 +42605,8 @@
     "operator": null,
     "detailSources": {
       "openingHours": {
-        "type": "official-website",
-        "url": "https://portarthur.org.au/all-tours/",
+        "type": "verified-source",
+        "url": "https://portarthur.org.au/eat-drink/1830-restaurant-and-bar/",
         "checkedAt": "2026-10-18"
       },
       "wheelchair": {
@@ -46169,11 +45963,6 @@
         "type": "official-website",
         "url": "https://magiccurries.com.au/",
         "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://magiccurries.com.au/",
-        "checkedAt": "2026-10-18"
       }
     },
     "status": "active",
@@ -46228,8 +46017,7 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12",
-    "bookingUrl": "http://magiccurries.com.au/book-a-table"
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "margate-train",
@@ -46651,7 +46439,13 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-18",
+      "url": "https://nextdoordeluxe.com.au/",
+      "error": "404 Not Found"
+    }
   },
   {
     "slug": "on-the-bay",
@@ -51673,6 +51467,82 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-18"
+  },
+  {
+    "slug": "hastings-thermal-springs",
+    "name": "Hastings Thermal Springs",
+    "town": "Southport",
+    "region": "Hobart & South",
+    "latitude": -43.4134535,
+    "longitude": 146.8735888,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Southport.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/4203441797",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/4203441797",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "image": {
+        "type": "verified-commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Hastings_Thermal_Pool_Tasmania.jpg",
+        "checkedAt": "2026-10-18"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-13",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-13",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Hastings_Thermal_Pool_Tasmania.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hastings_Thermal_Pool_Tasmania.jpg",
+      "attribution": "Photnart",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "alt": "Naturally heated Hastings Thermal Pool in southern Tasmania, photographed in 2012",
+      "caption": "Hastings Thermal Pool — photograph by Photnart, 28 January 2012. Licensed CC BY-SA 3.0.",
+      "isFallback": false,
+      "sourceMethod": "verified-commons-place-photo",
+      "mediaType": "place-photo",
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Hastings Thermal Pool Tasmania",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Hastings_Thermal_Pool_Tasmania.jpg",
+        "checkedAt": "2026-10-18"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Hastings%20Thermal%20Springs%20Southport%20Tasmania"
+      }
+    ],
+    "qualityScore": 43,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "real-image",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-16",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-16"
   },
   {
     "slug": "heart-food",
@@ -70061,6 +69931,61 @@
     "lastWikidataLinkChecked": "2026-10-12"
   },
   {
+    "slug": "the-four-mile",
+    "name": "The Four Mile",
+    "town": "Tasmania",
+    "region": "East Coast",
+    "latitude": -42.17,
+    "longitude": 148.07,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor",
+      "Free"
+    ],
+    "summary": "Beach in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
+    "website": null,
+    "sourceUrl": "https://www.wikidata.org/wiki/Q21955928",
+    "sourceType": "wikidata",
+    "sourceId": "Q21955928",
+    "wikidata": "Q21955928",
+    "status": "active",
+    "lastChecked": "2026-10-17",
+    "image": {
+      "url": "/images/categories/discover.svg",
+      "alt": "The Four Mile category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=The%20Four%20Mile%20Tasmania%20Tasmania"
+      }
+    ],
+    "lastDetailsChecked": "2026-10-18",
+    "qualityScore": 41,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "lastWikidataChecked": "2026-10-06",
+    "detailSources": {
+      "image": {
+        "type": "verified-correction",
+        "url": "https://www.wikidata.org/wiki/Q21955928"
+      }
+    }
+  },
+  {
     "slug": "the-pancake-and-crepe-shop",
     "name": "The Pancake & Crepe Shop",
     "town": "Oatlands",
@@ -71482,6 +71407,97 @@
     "lastWikidataChecked": "2026-10-06"
   },
   {
+    "slug": "deco-lounge",
+    "name": "Deco Lounge",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "latitude": -42.8848288,
+    "longitude": 147.3296711,
+    "categories": [
+      "Food & Drink",
+      "Café"
+    ],
+    "summary": "Café in or near Hobart.",
+    "website": "https://www.sevenrooms.com/landing/decoloungehbalc",
+    "sourceUrl": "https://www.openstreetmap.org/node/12800096946",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/12800096946",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "+61 3 6240 6000",
+    "email": null,
+    "address": "12 Murray Street, Hobart, TAS, 7000",
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "phone": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/12800096946",
+        "checkedAt": "2026-10-09"
+      },
+      "address": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/12800096946",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
+    "image": {
+      "url": "/images/categories/food.svg",
+      "alt": "Deco Lounge category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "websiteCheck": {
+      "status": "dead",
+      "code": 404,
+      "checkedAt": "2026-10-17T21:27:30.833Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Deco%20Lounge%20Hobart%20Tasmania"
+      }
+    ],
+    "qualityScore": 40,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "address",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-12",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.sevenrooms.com/landing/decoloungehbalc",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-18"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://www.sevenrooms.com/landing/decoloungehbalc"
+    }
+  },
+  {
     "slug": "domino-s",
     "name": "Domino's",
     "town": "Hobart",
@@ -71727,7 +71743,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-18",
       "url": "http://www.flavourofindia.com.au/",
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -71891,7 +71907,13 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-14"
+    "lastWikidataLinkChecked": "2026-10-14",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-18",
+      "url": "https://www.hobartworkersclub.com.au/Home.html",
+      "error": "404 Not Found"
+    }
   },
   {
     "slug": "indian-tandoor-house",
@@ -79068,6 +79090,85 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
+  },
+  {
+    "slug": "the-beach-house",
+    "name": "The Beach House",
+    "town": "Blackmans Bay",
+    "region": "Hobart & South",
+    "latitude": -43.0014326,
+    "longitude": 147.3250572,
+    "categories": [
+      "Food & Drink",
+      "Restaurant"
+    ],
+    "summary": "Restaurant in or near Blackmans Bay.",
+    "website": "https://www.thebeachhousebb.com/dining",
+    "sourceUrl": "https://www.openstreetmap.org/way/559993919",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/559993919",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": "14 Ocean Esplanade, Blackmans Bay, TAS, 7052",
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "address": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/559993919",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
+    "image": {
+      "url": "/images/categories/food.svg",
+      "alt": "The Beach House category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "websiteCheck": {
+      "status": "dead",
+      "code": 404,
+      "checkedAt": "2026-10-08T23:54:53.789Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=The%20Beach%20House%20Blackmans%20Bay%20Tasmania"
+      }
+    ],
+    "qualityScore": 37,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "address",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-18",
+      "url": "https://www.thebeachhousebb.com/dining",
+      "error": "404 Not Found"
+    }
   },
   {
     "slug": "the-golden-brumby",
@@ -90266,96 +90367,6 @@
     "lastWikidataLinkChecked": "2026-10-12"
   },
   {
-    "slug": "deco-lounge",
-    "name": "Deco Lounge",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "latitude": -42.8848288,
-    "longitude": 147.3296711,
-    "categories": [
-      "Food & Drink",
-      "Café"
-    ],
-    "summary": "Café in or near Hobart.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/12800096946",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/12800096946",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "+61 3 6240 6000",
-    "email": null,
-    "address": "12 Murray Street, Hobart, TAS, 7000",
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "phone": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/12800096946",
-        "checkedAt": "2026-10-09"
-      },
-      "address": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/12800096946",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-18",
-    "lastOsmDetailsChecked": "2026-10-18",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Deco Lounge category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "websiteCheck": {
-      "status": "dead",
-      "code": 404,
-      "checkedAt": "2026-10-17T21:27:30.833Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Deco%20Lounge%20Hobart%20Tasmania"
-      }
-    ],
-    "qualityScore": 30,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "address",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12",
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://www.sevenrooms.com/landing/decoloungehbalc",
-      "source": "openstreetmap-website",
-      "checkedAt": "2026-10-18"
-    },
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-18",
-      "url": "https://www.sevenrooms.com/landing/decoloungehbalc"
-    }
-  },
-  {
     "slug": "dover-top-shop",
     "name": "Dover top shop",
     "town": "Dover",
@@ -99164,8 +99175,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Azuki Eating House category artwork",
@@ -99298,8 +99309,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Beaches Restaurant category artwork",
@@ -99365,8 +99376,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Belly's Bar N Grill category artwork",
@@ -99432,8 +99443,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Belly's Pizza and Takeaway category artwork",
@@ -99566,8 +99577,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Blacksmith Cafe & Grill category artwork",
@@ -99702,8 +99713,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Boba House category artwork",
@@ -99770,8 +99781,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Bon Thai category artwork",
@@ -99838,8 +99849,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "brewtique on blair category artwork",
@@ -99906,8 +99917,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Bridport Fish & Chips category artwork",
@@ -106136,8 +106147,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Soph Slice category artwork",
@@ -106204,8 +106215,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Spreyton Bakery category artwork",
@@ -106272,8 +106283,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "St Marys Bakery category artwork",
@@ -106476,8 +106487,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "SUN WAH category artwork",
@@ -106612,8 +106623,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Tas super Kebab category artwork",
@@ -106748,8 +106759,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Tempt Bakery category artwork",
@@ -106815,8 +106826,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "The Argosy Bistro category artwork",
@@ -106831,78 +106842,6 @@
         "provider": "google-maps",
         "label": "Reviews & visitor photos on Google Maps",
         "url": "https://www.google.com/maps/search/?api=1&query=The%20Argosy%20Bistro%20East%20Devonport%20Tasmania"
-      }
-    ],
-    "qualityScore": 27,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "address",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
-  },
-  {
-    "slug": "the-beach-house",
-    "name": "The Beach House",
-    "town": "Blackmans Bay",
-    "region": "Hobart & South",
-    "latitude": -43.0014326,
-    "longitude": 147.3250572,
-    "categories": [
-      "Food & Drink",
-      "Restaurant"
-    ],
-    "summary": "Restaurant in or near Blackmans Bay.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/way/559993919",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/559993919",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": "14 Ocean Esplanade, Blackmans Bay, TAS, 7052",
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "address": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/559993919",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "The Beach House category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "websiteCheck": {
-      "status": "dead",
-      "code": 404,
-      "checkedAt": "2026-10-08T23:54:53.789Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=The%20Beach%20House%20Blackmans%20Bay%20Tasmania"
       }
     ],
     "qualityScore": 27,
@@ -106954,8 +106893,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "The Brown Bear category artwork",
@@ -107093,8 +107032,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "The Harbourmaster Cafe category artwork",
@@ -107361,8 +107300,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "The Pavilion Cafe category artwork",
@@ -107428,8 +107367,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "The Tasmani Fish & Chips Co category artwork",
@@ -107495,8 +107434,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Thirty Three Cups category artwork",
@@ -107562,8 +107501,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Touch Of Asia category artwork",
@@ -107696,8 +107635,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Trevallyn Bakery category artwork",
@@ -107763,8 +107702,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Triabunna Take Away & Video category artwork",
@@ -107830,8 +107769,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Two Doors Down Cafe category artwork",
@@ -107897,8 +107836,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Ventura Cafe & Surf category artwork",
@@ -107964,8 +107903,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Verona Restaurant category artwork",
@@ -108031,8 +107970,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Watsons Fine Foods category artwork",
@@ -108098,8 +108037,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "West's Bakery category artwork",
@@ -108165,8 +108104,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Windermere Corner Shop & Cafe category artwork",
@@ -108304,8 +108243,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Ausing category artwork",
@@ -108815,8 +108754,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Brew category artwork",
@@ -112152,8 +112091,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Manubread category artwork",
@@ -113436,8 +113375,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Pizzakom category artwork",
@@ -113938,8 +113877,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Rialto category artwork",
@@ -114803,8 +114742,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Sisterhood category artwork",
@@ -114938,8 +114877,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Spencer's category artwork",
@@ -115494,8 +115433,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Sweetbrew category artwork",
@@ -118876,66 +118815,6 @@
         "provider": "google-maps",
         "label": "Reviews & visitor photos on Google Maps",
         "url": "https://www.google.com/maps/search/?api=1&query=Freycinet%20Sea%20Cruises%20Coles%20Bay%20Tasmania"
-      }
-    ],
-    "qualityScore": 25,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "lastWikidataLinkChecked": "2026-10-16",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
-  },
-  {
-    "slug": "hastings-thermal-springs",
-    "name": "Hastings Thermal Springs",
-    "town": "Southport",
-    "region": "Hobart & South",
-    "latitude": -43.4134535,
-    "longitude": 146.8735888,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Southport.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/4203441797",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/4203441797",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-13",
-    "lastDetailsChecked": "2026-10-13",
-    "lastOsmDetailsChecked": "2026-10-13",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "Hastings Thermal Springs category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Hastings%20Thermal%20Springs%20Southport%20Tasmania"
       }
     ],
     "qualityScore": 25,
@@ -122811,8 +122690,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "41 South Tasmania (Salmon-Ginseng Farm) category artwork",
@@ -122872,8 +122751,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "50's Diner category artwork",
@@ -122994,8 +122873,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Abel Tasman Airport Motor Inn Restaurant category artwork",
@@ -123055,8 +122934,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Acton Milk Bar category artwork",
@@ -123116,8 +122995,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Alanvale Store - Takeaway and Delivery category artwork",
@@ -123177,8 +123056,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Ali's Asian Café category artwork",
@@ -123238,8 +123117,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Alpenrose Restaurant & Bar category artwork",
@@ -123299,8 +123178,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "AMELIA espresso category artwork",
@@ -123360,8 +123239,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "AMF Bowling Café category artwork",
@@ -123482,8 +123361,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Annie's Takeaway & Cafe category artwork",
@@ -123726,8 +123605,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Aroma's Fine Foods & News category artwork",
@@ -123787,8 +123666,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Asian Kitchen category artwork",
@@ -123848,8 +123727,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Avenue Restaurant category artwork",
@@ -123909,8 +123788,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Avoca roadhouse category artwork",
@@ -124031,8 +123910,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Baba's Kebabs category artwork",
@@ -124092,8 +123971,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Bakers Dozen category artwork",
@@ -124220,8 +124099,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Bannon's Takeaway category artwork",
@@ -124281,8 +124160,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Bao Time category artwork",
@@ -124342,8 +124221,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Barilla Bay Restaurant, oyster farm category artwork",
@@ -124403,8 +124282,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Barrel Room Cafe and Cellar Door category artwork",
@@ -124531,8 +124410,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Bayviews Restaurant category artwork",
@@ -124653,8 +124532,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Beatha Milkbar Café category artwork",
@@ -124714,8 +124593,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Beijing Chinese Restaurant category artwork",
@@ -124775,8 +124654,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Belle's Tea Room category artwork",
@@ -124897,8 +124776,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Bengal Tiger category artwork",
@@ -124958,8 +124837,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Bento Box category artwork",
@@ -125019,8 +124898,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Berry Patch category artwork",
@@ -125080,8 +124959,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Bicheno takeaway category artwork",
@@ -125141,8 +125020,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Big Bite Pizzeria category artwork",
@@ -125324,8 +125203,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Bizy Bee category artwork",
@@ -125391,8 +125270,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Black Cow Bistro category artwork",
@@ -125452,8 +125331,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Black Swan category artwork",
@@ -125513,8 +125392,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Blue Seal Cafe category artwork",
@@ -125574,8 +125453,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Blue Social Eatery category artwork",
@@ -125635,8 +125514,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Bolters Pizzeria category artwork",
@@ -131210,8 +131089,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Fortuna Garden category artwork",
@@ -131332,8 +131211,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Freckles Cafe category artwork",
@@ -131454,8 +131333,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Friends Café category artwork",
@@ -131515,8 +131394,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Gabriel's on the Bay category artwork",
@@ -131576,8 +131455,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "George Town Seafoods category artwork",
@@ -131637,8 +131516,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "George Town Takeaways category artwork",
@@ -131698,8 +131577,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Get Shucked Oysters category artwork",
@@ -131820,8 +131699,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Glebe Hill Bakery category artwork",
@@ -131942,8 +131821,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Gray Cafe category artwork",
@@ -132003,8 +131882,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Gray's Hotel Restaurant category artwork",
@@ -132064,8 +131943,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Great Scot category artwork",
@@ -132125,8 +132004,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Grindelwald Bakery & Coffee Shop category artwork",
@@ -132186,8 +132065,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Groovy Penguin Cafe category artwork",
@@ -132247,8 +132126,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Guerilla Espresso Bar category artwork",
@@ -132308,8 +132187,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "H2O Cafe category artwork",
@@ -133252,7 +133131,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "ikon-cafe",
@@ -133313,7 +133192,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "imago-cafe-and-bakery",
@@ -133374,7 +133253,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "indian-corner-at-wilson",
@@ -133435,7 +133314,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "indian-empire",
@@ -133496,7 +133375,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "ingleside-bakery-cafe",
@@ -133557,7 +133436,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "invermay-takeaway",
@@ -133618,7 +133497,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "iron-horse-bar-and-grill",
@@ -133679,7 +133558,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "island-espresso",
@@ -133740,7 +133619,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "italian-pizza-house",
@@ -133801,7 +133680,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "j-zoes-pizza",
@@ -133862,7 +133741,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "jack-loves-red",
@@ -133923,7 +133802,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "jackman-and-mcross-osm-node-797244500",
@@ -133990,7 +133869,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "jean-pascal",
@@ -134051,7 +133930,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "jin-long-men",
@@ -134112,7 +133991,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "jj-s-bakery-parkside",
@@ -134173,7 +134052,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "jj-s-bakery-campbell-town",
@@ -134234,7 +134113,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "jj-s-licensed-bakery-cafe",
@@ -134295,7 +134174,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "jj-s-on-the-bay",
@@ -134356,7 +134235,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "jo-s-city-express",
@@ -134417,7 +134296,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "joe-s-supermarket-takeaways",
@@ -134478,7 +134357,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "jointleys-hot-food",
@@ -134539,7 +134418,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "joos-bar",
@@ -134600,7 +134479,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "josef-chromy-cellar-door-cafe",
@@ -134661,7 +134540,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "jungle-asian-restaurant",
@@ -134722,7 +134601,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "kai-zen-sushi-bar-japanese-restaurant",
@@ -134783,7 +134662,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "kate-s-berry-farm",
@@ -134844,7 +134723,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "khaow-thai",
@@ -134905,7 +134784,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "king-of-kebabs",
@@ -134966,7 +134845,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "kings-meadows-seafood",
@@ -135027,7 +134906,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "la-bella-pizza",
@@ -135088,7 +134967,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "la-cantina",
@@ -135149,7 +135028,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "la-provencal",
@@ -135210,7 +135089,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "legana-pizza",
@@ -135271,7 +135150,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "legs-n-breasts",
@@ -135332,7 +135211,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "limestone-cafe-bakery",
@@ -135393,7 +135272,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "links-restaurant",
@@ -135454,7 +135333,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "little-cup-espresso",
@@ -135515,7 +135394,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "lobster-ponds",
@@ -135576,7 +135455,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "long-cheng-asian-food",
@@ -135637,7 +135516,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "longford-milk-bar-and-takeaways",
@@ -135698,7 +135577,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "lot-40",
@@ -135759,7 +135638,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "low-head-pilot-station-cafe",
@@ -135820,7 +135699,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "lucky-ducks",
@@ -135881,7 +135760,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "mabel-and-george",
@@ -135942,7 +135821,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "macquarie-soul",
@@ -136003,7 +135882,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "maggies-cafe",
@@ -136064,7 +135943,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "maharajas-curry-house",
@@ -136125,7 +136004,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "mandarin-palace",
@@ -136186,7 +136065,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "mari-bruny",
@@ -136247,7 +136126,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "marina-cafe",
@@ -136308,7 +136187,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "market-square-restaurant-and-bar",
@@ -136369,7 +136248,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "martin-cash-pizza",
@@ -136430,7 +136309,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "martini-coffee-lounge",
@@ -136491,7 +136370,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "masaaki-s-sushi",
@@ -136552,7 +136431,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "me-wah",
@@ -136619,7 +136498,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "me-wah-restaurant",
@@ -136680,7 +136559,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "meadows-fish-and-chips",
@@ -136747,7 +136626,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "mekong-vietnamese-restaurant",
@@ -136808,7 +136687,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "michael-s-restaurant-on-the-bay",
@@ -136869,7 +136748,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "minh-buu-chinese-restaurant",
@@ -136930,7 +136809,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "moby-dicks-breakfast-bar-and-cafe",
@@ -136991,7 +136870,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "moo-choo",
@@ -137058,7 +136937,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "mood-food",
@@ -137119,7 +136998,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "moorilla-wine-bar",
@@ -137180,7 +137059,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "mowbray-fish-shop",
@@ -137241,7 +137120,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "mr-chippys",
@@ -137302,7 +137181,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "ms-hong-kong",
@@ -137363,7 +137242,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "new-norfolk-rsl-sub-branch",
@@ -137424,7 +137303,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "nirvana-on-collins",
@@ -137485,7 +137364,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "norwood-takeaway-and-mini-mart",
@@ -137546,7 +137425,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "novaro-s-italian-restaurant",
@@ -137613,7 +137492,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "nubeena-bakery",
@@ -137674,7 +137553,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "number-10",
@@ -137735,7 +137614,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "nunamara-general-store",
@@ -137796,7 +137675,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "oasis-george-town-rsl",
@@ -137857,7 +137736,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "old-jacks",
@@ -137918,7 +137797,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "olivers-bakery",
@@ -137979,7 +137858,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "oyster-bar",
@@ -138040,7 +137919,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "pane-cucina",
@@ -138101,7 +137980,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "paper-and-cup-cafe",
@@ -138162,7 +138041,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "parer-s-hotel",
@@ -138223,7 +138102,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "pasta-gourmet-and-coffee-house",
@@ -138284,7 +138163,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "pedro-s-the-fisherman",
@@ -138345,7 +138224,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "pedros-restaraunt",
@@ -138406,7 +138285,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "penny-s-bakery",
@@ -138467,7 +138346,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "perry-bros-bakery-and-cafe",
@@ -138528,7 +138407,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "petty-sessions-cafe",
@@ -138589,7 +138468,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "philippa-s",
@@ -138650,7 +138529,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "pickled-evenings",
@@ -138711,7 +138590,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "pie-face",
@@ -138772,7 +138651,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "piermont-retreat-and-restaurant",
@@ -138833,7 +138712,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "pigeon-whole-bakers",
@@ -138894,7 +138773,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "pink-pepper-cafe",
@@ -138955,7 +138834,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "pizza-the-top",
@@ -139016,7 +138895,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-16"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "pizza-hut-hobart",
@@ -139841,8 +139720,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Red Square Cafe category artwork",
@@ -140024,8 +139903,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Relax Café & Espresso Bar category artwork",
@@ -140085,8 +139964,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Restaurant 13 category artwork",
@@ -140146,8 +140025,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Restaurant Esca category artwork",
@@ -140268,8 +140147,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Rite Bite category artwork",
@@ -140329,8 +140208,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Ritual Coffee category artwork",
@@ -140640,8 +140519,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Round Hill Coffee category artwork",
@@ -140768,8 +140647,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Rutherglen Bar & Bistro category artwork",
@@ -140890,8 +140769,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "S'Presso 101 category artwork",
@@ -141012,8 +140891,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Saffron Corner category artwork",
@@ -141073,8 +140952,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Saigon Express category artwork",
@@ -141134,8 +141013,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Saigon Kitchen category artwork",
@@ -141256,8 +141135,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Scamander Newsagency & Mouth Cafe category artwork",
@@ -141323,8 +141202,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Scorchers by the River category artwork",
@@ -141445,8 +141324,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Seahorse Chinese Restaurant category artwork",
@@ -141506,8 +141385,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Shady Grove Cafe category artwork",
@@ -141567,8 +141446,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Shearwater Restaurant category artwork",
@@ -141689,8 +141568,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Slice Pizza category artwork",
@@ -141811,8 +141690,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Smokey Joe's Creole Café category artwork",
@@ -141872,8 +141751,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Snappers Restaurant category artwork",
@@ -141933,8 +141812,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Something Fabulous Cafe Wine Bar category artwork",
@@ -142055,8 +141934,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Sorell Fruit Farm category artwork",
@@ -147824,8 +147703,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Village Milk Bar category artwork",
@@ -147884,8 +147763,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "VJ's Bakery category artwork",
@@ -148004,8 +147883,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Waterfalls Cafe and Gallery category artwork",
@@ -148064,8 +147943,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Wattlebanks Coastal Cafe category artwork",
@@ -148124,8 +148003,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Wayside Newsagency & Take Aways category artwork",
@@ -148184,8 +148063,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "West's Star Bakery category artwork",
@@ -148244,8 +148123,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Wild Fennel category artwork",
@@ -148304,8 +148183,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Wild Restaurant Cafe category artwork",
@@ -148364,8 +148243,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Winning Post Takeaway category artwork",
@@ -148424,8 +148303,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Wivenhoe Milk and Food Bar category artwork",
@@ -148484,8 +148363,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Wok and Roll category artwork",
@@ -148544,8 +148423,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Woodbridge Village Store category artwork",
@@ -148670,8 +148549,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Wukaluwikiwayna Cafe category artwork",
@@ -148850,8 +148729,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Ye Olde Chocolate Shop category artwork",
@@ -148972,8 +148851,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Yolanda Jean Cafe category artwork",
@@ -149033,8 +148912,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Youngtown Takeaway category artwork",
@@ -149094,8 +148973,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Yum Yum Boba category artwork",
@@ -149155,8 +149034,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Yuvi Kitchen category artwork",
@@ -149227,8 +149106,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Cuccina category artwork",
@@ -149296,8 +149175,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Elements category artwork",
@@ -149500,8 +149379,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Laziko category artwork",
@@ -149568,8 +149447,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Maple category artwork",
@@ -149641,8 +149520,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Minggor category artwork",
@@ -149778,8 +149657,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Skippers category artwork",
@@ -150522,8 +150401,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Cafe R.A. category artwork",
@@ -150857,8 +150736,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Brewstone category artwork",
@@ -150925,8 +150804,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Bryher category artwork",
@@ -150993,8 +150872,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Currency category artwork",
@@ -151129,8 +151008,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Géographe category artwork",
@@ -151197,8 +151076,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Indi category artwork",
@@ -151265,8 +151144,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Kosaten category artwork",
@@ -151333,8 +151212,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Laneway category artwork",
@@ -151401,8 +151280,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Playfish category artwork",
@@ -151474,8 +151353,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Sault category artwork",
@@ -151610,8 +151489,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "alt": "Valentino's category artwork",
@@ -152151,8 +152030,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -152277,8 +152156,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -152337,8 +152216,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -152577,8 +152456,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -152823,8 +152702,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -153016,8 +152895,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -153136,8 +153015,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -153196,8 +153075,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -153256,8 +153135,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -153316,8 +153195,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -153376,8 +153255,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -153436,8 +153315,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -153748,8 +153627,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -153808,8 +153687,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -153868,8 +153747,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -154048,8 +153927,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -154108,8 +153987,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -154168,8 +154047,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -154234,8 +154113,8 @@
     },
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -154294,8 +154173,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -154354,8 +154233,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -154414,8 +154293,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -154534,8 +154413,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -154594,8 +154473,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -154654,8 +154533,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -154834,8 +154713,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -154894,8 +154773,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -154954,8 +154833,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -155014,8 +154893,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -155074,8 +154953,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -155134,8 +155013,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -155194,8 +155073,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
@@ -155254,8 +155133,8 @@
     "detailSources": {},
     "status": "active",
     "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-09",
-    "lastOsmDetailsChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
     "image": {
       "url": "/images/categories/food.svg",
       "attribution": "TassieNow",
