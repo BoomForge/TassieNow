@@ -1,15 +1,35 @@
 [
   {
     "id": "work-20261015-2803bc8060cd6705",
-    "paths": []
+    "paths": [
+      "/event/pinkup-burnie-2026-10-22-burnie/"
+    ],
+    "start": "2026-10-22",
+    "contains": [
+      "PinkUp Burnie"
+    ]
   },
   {
     "id": "work-20261015-3ab0992d68819844",
-    "paths": []
+    "paths": [
+      "/event/winter-challenge-tasmania-2027-08-15-orford/"
+    ],
+    "start": "2027-08-15",
+    "contains": [
+      "Orford",
+      "Rheban Road"
+    ]
   },
   {
     "id": "work-20261015-3e187266577dba0b",
-    "paths": []
+    "paths": [
+      "/event/mental-as-anything-new-year-and-8217-s-day-at-craigie-knowe-vineyard-2027-01-01-cranbrook/"
+    ],
+    "start": "2027-01-01",
+    "contains": [
+      "Craigie Knowe Vineyard",
+      "Cranbrook"
+    ]
   },
   {
     "id": "work-20261015-552e5ee30c808f4b",
@@ -23,7 +43,14 @@
   },
   {
     "id": "work-20261015-577bb272489e347e",
-    "paths": []
+    "paths": [
+      "/event/19-twenty-live-at-craigie-knowe-vineyard-2026-12-05-cranbrook/"
+    ],
+    "start": "2026-12-05",
+    "contains": [
+      "Craigie Knowe Vineyard",
+      "Glen Gala"
+    ]
   },
   {
     "id": "work-20261015-5fbdcb8e329d5dd2",
@@ -38,7 +65,14 @@
   },
   {
     "id": "work-20261015-89573139fcb70f6a",
-    "paths": []
+    "paths": [
+      "/event/burnie-ten-2026-10-25-burnie/"
+    ],
+    "start": "2026-10-25",
+    "contains": [
+      "Wilson",
+      "Cattley"
+    ]
   },
   {
     "id": "work-20261015-bc04b902956058a9",
@@ -53,15 +87,35 @@
   },
   {
     "id": "work-20261015-be6ddfbe1fccbbfe",
-    "paths": []
+    "paths": [
+      "/event/book-market-burnie-emu-bay-lions-club-2026-11-07-wivenhoe/"
+    ],
+    "start": "2026-11-07",
+    "contains": [
+      "Wivenhoe Shed"
+    ]
   },
   {
     "id": "work-20261015-bed4145f1ed7b429",
-    "paths": []
+    "paths": [
+      "/event/echo-festival-2027-03-12-swansea/"
+    ],
+    "start": "2027-03-12",
+    "contains": [
+      "Swansea",
+      "Tasman"
+    ]
   },
   {
     "id": "work-20261015-cb9b5e73aaa9e6ed",
-    "paths": []
+    "paths": [
+      "/event/the-beatles-show-red-and-038-blue-boxing-day-craigie-knowe-vineyard-2026-12-26-cranbrook/"
+    ],
+    "start": "2026-12-26",
+    "contains": [
+      "Craigie Knowe Vineyard",
+      "Glen Gala"
+    ]
   },
   {
     "id": "work-20261015-cc2f13915cd0f4fb",
@@ -70,7 +124,7 @@
     ],
     "contains": [
       "11:30",
-      "2:30"
+      "14:30"
     ]
   },
   {
@@ -140,6 +194,9 @@
     "contains": [
       "King Island Golf and Bowling Club",
       "$10"
+    ],
+    "legacyPaths": [
+      "/event/barefoot-social-bowls-2026-10-14-currie/"
     ]
   },
   {
@@ -159,6 +216,9 @@
     "start": "2026-10-31",
     "contains": [
       "Civic Centre"
+    ],
+    "legacyPaths": [
+      "/event/second-glance-market-2026-10-28-burnie/"
     ]
   },
   {
@@ -185,6 +245,9 @@
     "contains": [
       "Motor Yacht Club",
       "Ford Parade"
+    ],
+    "legacyPaths": [
+      "/event/rotary-club-of-lindisfarne-talks-dr-bert-shugg-2026-11-04-rosny-park/"
     ]
   },
   {
@@ -201,7 +264,10 @@
       "/place/willie-smith-s-apple-shed/"
     ],
     "contains": [
-      "11:00"
+      "10:00",
+      "16:00",
+      "21:00",
+      "17:00"
     ]
   },
   {
@@ -223,6 +289,9 @@
     "contains": [
       "Procreate",
       "Collins Street"
+    ],
+    "legacyPaths": [
+      "/event/showcase-2026-2026-10-17-hobart/"
     ]
   },
   {
@@ -260,7 +329,31 @@
   },
   {
     "id": "work-20261017-5ebe71ecbc1738a0",
-    "paths": []
+    "paths": [
+      "/place/bento-legana/",
+      "/place/little-riva/",
+      "/place/tasmanian-transport-museum/"
+    ],
+    "perPath": {
+      "/place/bento-legana/": {
+        "contains": [
+          "6330 1259"
+        ],
+        "phone": "61363301259"
+      },
+      "/place/little-riva/": {
+        "contains": [
+          "6477 5938"
+        ],
+        "phone": "61364775938"
+      },
+      "/place/tasmanian-transport-museum/": {
+        "contains": [
+          "6272 7721"
+        ],
+        "phone": "61362727721"
+      }
+    }
   },
   {
     "id": "work-20261017-76c70f61a2c7e041",
@@ -271,6 +364,9 @@
     "contains": [
       "Du Cane",
       "Elizabeth Street"
+    ],
+    "legacyPaths": [
+      "/event/launnie-monthly-storytelling-2026-2026-10-17-launceston/"
     ]
   },
   {
@@ -305,6 +401,9 @@
     "contains": [
       "Tasmanian Arboretum",
       "Old Tramway Road"
+    ],
+    "legacyPaths": [
+      "/event/the-great-bug-hunt-and-art-lab-2026-10-25-devonport/"
     ]
   },
   {
@@ -316,6 +415,9 @@
     "contains": [
       "Hobart City Hall",
       "Macquarie Street"
+    ],
+    "legacyPaths": [
+      "/event/halloween-fest-hobart-2026-10-30-hobart/"
     ]
   },
   {
