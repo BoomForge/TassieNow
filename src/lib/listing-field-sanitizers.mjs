@@ -10,6 +10,22 @@ export function normaliseTelephone(value) {
   return result || null;
 }
 
+
+/** Extract one trustworthy Australian dial target from scraped phone text. */
+export function australianTelHref(value) {
+  const raw = normaliseTelephone(value);
+  if (!raw) return null;
+  const match = raw.match(/(?<!\d)(?:\+?61[\s().-]*0?[\s().-]*[23478]|0[23478])(?:[\s().-]*\d){8}/);
+  if (match) {
+    let digits = match[0].replace(/\D/g, '');
+    if (digits.startsWith('610')) digits = '61' + digits.slice(3);
+    else if (digits.startsWith('0')) digits = '61' + digits.slice(1);
+    return /^61[23478]\d{8}$/.test(digits) ? 'tel:+' + digits : null;
+  }
+  const service = raw.match(/(?<!\d)(?:1[38]00(?:[\s().-]*\d){6}|13(?:[\s().-]*\d){4})(?!\d)/);
+  return service ? 'tel:' + service[0].replace(/\D/g, '') : null;
+}
+
 export function safeBookingUrl(value) {
   if (!value) return null;
   const raw = String(value).trim();
