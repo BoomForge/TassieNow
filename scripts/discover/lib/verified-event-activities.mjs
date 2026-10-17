@@ -37,10 +37,15 @@ export const verifiedActivitySources=[
 {topic:"Christmas carols",pattern:new RegExp("\\bcarols?\\b",'i'),url:"https://upload.wikimedia.org/wikipedia/commons/2/26/View_from_the_rear_of_the_2024_Manningham_Carols_by_Candlelight_in_Ruffey_Lake_Park_in_Doncaster%2C_Melbourne.jpg",sourceUrl:"https://commons.wikimedia.org/wiki/File:View_from_the_rear_of_the_2024_Manningham_Carols_by_Candlelight_in_Ruffey_Lake_Park_in_Doncaster,_Melbourne.jpg",credit:"Philip Mallis",license:'CC BY-SA 2.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/2.0/',scene:"a 2024 Carols by Candlelight event in Melbourne"}
 ];
 
+const rejectForeignIllustrationFor=[
+ /^spoke motorcycle festival$/i,
+ /^voices through art: arch lived experience art campaign$/i
+];
 export function applyVerifiedActivityPhotos(events){
  let added=0;
  for(const event of events){
   if(event.status!=='active')continue;
+   if(rejectForeignIllustrationFor.some(p=>p.test(String(event.name||'').trim())))continue;
   // Repair incorrectly constructed Wikimedia upload paths from an older run.
   // This never overrides a stronger event, venue, performer or organiser image.
   const priority=eventImagePriority(event.image);

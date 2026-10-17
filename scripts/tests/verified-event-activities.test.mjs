@@ -20,7 +20,7 @@ test('only specific listed activity names receive an appropriate labelled photo'
   'Roller Skating School Holiday Program','Pickleball School Holiday Sessions',
   'Burnie Orchid Society Show','National Bird Week – Aussie Bird Count',
   'Home Composting Workshop','Diwali - Festival of Light in Burnie',
-  'Orava Quartet','Spoke Motorcycle Festival','Archery Come N Try',
+  'Orava Quartet','Archery Come N Try',
   'Brixhibition Hobart 2026','Halloween Fest Hobart',
   'Carols by Candlelight','Bicheno Food and Wine Festival 2026',
   'City of Hobart Floral Shows'
@@ -100,4 +100,12 @@ test('a broken historical activity CDN path repairs without replacing licensed e
  assert.equal(applyVerifiedActivityPhotos([broken]),1);
  assert.equal(broken.image.url,canonicalCommonsImageUrl(source.sourceUrl));
  assert.equal(applyVerifiedActivityPhotos([broken]),0);
+});
+
+test('foreign photographs rejected by owner editorial policy never automatically return',()=>{
+ const events=[item('Spoke Motorcycle Festival'),item('Voices Through Art: Arch Lived Experience Art Campaign')];
+ assert.equal(applyVerifiedActivityPhotos(events),0);
+ assert.ok(events.every(e=>e.image.isFallback));
+ const normal=item('Motorcycle Safety Community Day');
+ assert.equal(applyVerifiedActivityPhotos([normal]),1);
 });

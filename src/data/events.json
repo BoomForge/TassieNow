@@ -696,24 +696,14 @@
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Art_exhibition.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Art_exhibition.jpg",
-      "attribution": "YessMendez",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "isFallback": false,
-      "sourceMethod": "verified-event-activity",
-      "mediaType": "activity-illustrative",
-      "alt": "Illustrative photograph of an art gallery exhibition in Mexico; not the advertised Voices Through Art: Arch Lived Experience Art Campaign event",
-      "caption": "Illustrative photo: an art gallery exhibition in Mexico. This does not depict the advertised event in Tasmania.",
-      "matchEvidence": {
-        "verified": true,
-        "verifiedType": "activity-illustrative",
-        "topic": "art exhibition",
-        "eventName": "Voices Through Art: Arch Lived Experience Art Campaign",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Art_exhibition.jpg",
-        "checkedAt": "2026-10-11"
-      }
+      "url": "/images/categories/events.svg",
+      "alt": "Voices Through Art: Arch Lived Experience Art Campaign — original TassieNow event artwork, not an organiser photograph",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "sourceMethod": "source-reviewed-fallback"
     },
     "status": "active",
     "lastChecked": "2026-10-18"
@@ -5579,24 +5569,14 @@
     "sourceUrl": "https://eastcoasttasmania.com/events/",
     "sourceName": "East Coast Tasmania",
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/02025_0712_motorcycle_rally.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:02025_0712_motorcycle_rally.jpg",
-      "attribution": "Marsilar",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "isFallback": false,
-      "sourceMethod": "verified-event-activity",
-      "mediaType": "activity-illustrative",
-      "alt": "Illustrative photograph of a motorcycle rally in Poland; not the advertised Spoke Motorcycle Festival event",
-      "caption": "Illustrative photo: a motorcycle rally in Poland. This does not depict the advertised event in Tasmania.",
-      "matchEvidence": {
-        "verified": true,
-        "verifiedType": "activity-illustrative",
-        "topic": "motorcycle",
-        "eventName": "Spoke Motorcycle Festival",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:02025_0712_motorcycle_rally.jpg",
-        "checkedAt": "2026-10-11"
-      }
+      "url": "/images/categories/events.svg",
+      "alt": "Spoke Motorcycle Festival — original TassieNow event artwork, not an organiser photograph",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true,
+      "sourceMethod": "source-reviewed-fallback"
     },
     "status": "active",
     "lastChecked": "2026-10-15",
