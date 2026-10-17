@@ -479,7 +479,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "emu-valley-rhododendron-garden-party-2026-10-18-burnie",
@@ -516,7 +517,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "la-follia-2026-10-18-hobart",
@@ -546,7 +548,7 @@
     "priceFrom": 50,
     "priceTo": 75,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-17"
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "orava-quartet-2026-10-18-hobart",
@@ -587,7 +589,7 @@
     "priceFrom": 50,
     "priceTo": 75,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-17"
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "season-26-the-misanthrope-national-theatre-live-albert-hall-launceston-18-oct-2026-10-18-l",
@@ -630,7 +632,7 @@
     "priceFrom": 15,
     "priceTo": 38,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-17"
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "tasmania-jackjumpers-v-nz-breakers-2026-10-18-glenorchy",
@@ -678,7 +680,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-17"
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "voices-through-art-arch-lived-experience-art-campaign-2026-10-18-burnie",
@@ -705,7 +707,8 @@
       "sourceMethod": "source-reviewed-fallback"
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "building-stronger-families-2026-10-19-burnie",
@@ -731,7 +734,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "national-bird-week-aussie-bird-count-2026-10-19-devonport",
@@ -769,7 +773,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "no-lights-no-lycra-hobart-2026-2026-10-19-hobart",
@@ -802,43 +807,6 @@
     "bookingRequired": true,
     "availability": "InStock",
     "ticketLastChecked": "2026-10-18"
-  },
-  {
-    "slug": "the-mum-connection-walking-group-burnie-2026-10-19-burnie",
-    "name": "The Mum Connection Walking Group - Burnie",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-10-19",
-    "endDate": "2026-10-19",
-    "categories": [
-      "Events"
-    ],
-    "summary": "The Mum Connection Walking Group - Burnie in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Mum-Connection-Walking-Group-Burnie",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
-    "sourceName": "Burnie City Council",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Walking_outdoors.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Walking_outdoors.jpg",
-      "attribution": "RamblerMatthew",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "isFallback": false,
-      "sourceMethod": "verified-event-activity",
-      "mediaType": "activity-illustrative",
-      "alt": "Illustrative photograph of people walking outdoors; not the advertised The Mum Connection Walking Group - Burnie event",
-      "caption": "Illustrative photo: people walking outdoors. This does not depict the advertised event in Tasmania.",
-      "matchEvidence": {
-        "verified": true,
-        "verifiedType": "activity-illustrative",
-        "topic": "walking",
-        "eventName": "The Mum Connection Walking Group - Burnie",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Walking_outdoors.jpg",
-        "checkedAt": "2026-10-11"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-18"
   },
   {
     "slug": "free-candidates-discussion-forum-for-launceston-city-council-2026-10-20-launceston",
@@ -897,7 +865,46 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
+  },
+  {
+    "slug": "the-mum-connection-walking-group-burnie-2026-10-20-burnie",
+    "name": "The Mum Connection Walking Group - Burnie",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-10-20",
+    "endDate": "2026-10-20",
+    "categories": [
+      "Events"
+    ],
+    "summary": "The Mum Connection Walking Group - Burnie in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Mum-Connection-Walking-Group-Burnie",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Walking_outdoors.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Walking_outdoors.jpg",
+      "attribution": "RamblerMatthew",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "isFallback": false,
+      "sourceMethod": "verified-event-activity",
+      "mediaType": "activity-illustrative",
+      "alt": "Illustrative photograph of people walking outdoors; not the advertised The Mum Connection Walking Group - Burnie event",
+      "caption": "Illustrative photo: people walking outdoors. This does not depict the advertised event in Tasmania.",
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "activity-illustrative",
+        "topic": "walking",
+        "eventName": "The Mum Connection Walking Group - Burnie",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Walking_outdoors.jpg",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "burnie-library-english-conversation-group-2026-10-21-burnie",
@@ -934,7 +941,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "come-and-try-disability-golf-2026-10-21-rosny-park",
@@ -971,7 +979,12 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketUrl": "https://events.humanitix.com/come-and-try-golf-for-the-disabled-golf-park-hobart-tas",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "devolving-minds-2026-10-21-hobart",
@@ -1062,6 +1075,7 @@
       "Events"
     ],
     "summary": "Intro to Computing at Burnie Library in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "venue": "Burnie Library, 30 Alexander Street, Burnie",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Intro-to-Computing-at-Burnie-Library",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -1089,8 +1103,8 @@
     "lastChecked": "2026-10-18",
     "startTime": "09:30",
     "endTime": "14:30",
-    "venue": "Burnie Library, 30 Alexander Street, Burnie",
-    "address": "30 Alexander Street, Burnie TAS 7320"
+    "address": "30 Alexander Street, Burnie TAS 7320",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "north-west-film-society-i-swear-2026-10-21-devonport",
@@ -1129,7 +1143,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "the-canopy-burnie-2026-10-21-burnie",
@@ -1155,7 +1170,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "yfcc-arvos-at-the-junction-2026-10-21-burnie",
@@ -1181,7 +1197,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "barefoot-social-bowls-2026-10-22-currie",
@@ -1208,13 +1225,9 @@
     },
     "status": "active",
     "lastChecked": "2026-10-16",
-    "ticketLastChecked": "2026-10-18",
     "startTime": "16:30",
     "venue": "King Island Golf and Bowling Club",
     "address": "1 Owen Smith Drive, Currie TAS 7256",
-    "priceFrom": 10,
-    "priceTo": 10,
-    "priceCurrency": "AUD",
     "schedule": {
       "frequency": "weekly",
       "daysOfWeek": [
@@ -1223,7 +1236,11 @@
       "startTime": "16:30",
       "endDate": "2027-03-25",
       "sourceUrl": "https://kingisland.org.au/events/barefoot-social-bowls/"
-    }
+    },
+    "priceFrom": 10,
+    "priceTo": 10,
+    "priceCurrency": "AUD",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "bringing-up-great-kids-parenting-course-2026-10-22-burnie",
@@ -1250,7 +1267,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "outspace-2026-10-22-devonport",
@@ -1277,7 +1295,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "pinkup-burnie-2026-10-22-burnie",
@@ -1303,7 +1322,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "emergency-management-preparedness-workshop-east-devonport-session-2026-10-23-devonport",
@@ -1330,7 +1350,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "gender-group-2026-10-23-devonport",
@@ -1357,7 +1378,40 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
+  },
+  {
+    "slug": "grad-show-launceston-2026-2026-10-23-launceston",
+    "name": "Grad Show Launceston 2026",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-23",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Grad Show Launceston 2026 in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "8 Invermay Rd",
+    "eventUrl": "https://events.humanitix.com/grad-show-launceston-2026",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Grad Show Launceston 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "ticketUrl": "https://events.humanitix.com/grad-show-launceston-2026",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "hits-60s-and-70s-60-four-2026-10-23-hobart",
@@ -1513,7 +1567,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "burnie-ten-2026-10-25-burnie",
@@ -1553,7 +1608,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "spring-fling-2026-10-25-devonport",
@@ -1582,7 +1638,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "the-great-bug-hunt-and-art-lab-2026-10-25-eugenana",
@@ -1614,6 +1671,7 @@
     "address": "46 Old Tramway Road, Eugenana TAS 7310",
     "startTime": "10:00",
     "endTime": "12:00",
+    "ticketLastChecked": "2026-10-18",
     "priceFrom": 0,
     "priceCurrency": "AUD"
   },
@@ -1654,6 +1712,7 @@
     },
     "status": "active",
     "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18",
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD",
@@ -1683,7 +1742,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "in-conversation-with-monica-mcinerney-2026-10-27-burnie",
@@ -1697,6 +1757,7 @@
       "Family"
     ],
     "summary": "In Conversation with Monica McInerney in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "venue": "Not Just Books, 40 Wilson Street, Burnie",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/In-Conversation-with-Monica-McInerney",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -1724,8 +1785,8 @@
     "lastChecked": "2026-10-18",
     "startTime": "18:00",
     "endTime": "20:00",
-    "venue": "Not Just Books, 40 Wilson Street, Burnie",
     "address": "40 Wilson Street, Burnie TAS 7320",
+    "ticketLastChecked": "2026-10-18",
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD"
@@ -1754,7 +1815,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "tuning-into-kids-2026-10-28-burnie",
@@ -1768,6 +1830,7 @@
       "Family"
     ],
     "summary": "Tuning into Kids in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "venue": "The Salvation Army, 99 Wilson Street, Burnie",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Tuning-into-Kids",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -1784,8 +1847,8 @@
     "lastChecked": "2026-10-18",
     "startTime": "11:00",
     "endTime": "13:00",
-    "venue": "The Salvation Army, 99 Wilson Street, Burnie",
-    "address": "99 Wilson Street, Burnie TAS 7320"
+    "address": "99 Wilson Street, Burnie TAS 7320",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "australian-government-mobile-service-centre-dover-2026-10-29-huonville",
@@ -1811,7 +1874,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "australian-government-mobile-service-centre-dover-2026-10-30-huonville",
@@ -1837,7 +1901,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "kangathon-1996-premiers-30th-anniversary-show-2026-10-30-launceston",
@@ -1989,7 +2054,6 @@
       "Events"
     ],
     "summary": "Family-friendly Halloween festival at Hobart City Hall with four separately ticketed sessions on 31 October. The first session runs 10 am–noon; confirm your selected session with the organiser.",
-    "venue": "Hobart City Hall",
     "eventUrl": "https://events.humanitix.com/halloween-fest-hobart",
     "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
     "sourceName": "Humanitix Hobart",
@@ -2017,6 +2081,7 @@
     },
     "status": "active",
     "lastChecked": "2026-10-08",
+    "venue": "Hobart City Hall",
     "ticketUrl": "https://events.humanitix.com/halloween-fest-hobart",
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
@@ -2120,6 +2185,7 @@
       "Markets"
     ],
     "summary": "Second Glance Market in Burnie. Check the official Burnie City Council listing for current time, venue and booking details.",
+    "venue": "Civic Centre – Burnie Arts, 77–79 Wilmot Street, Burnie",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2132,16 +2198,10 @@
       "sourceUrl": null,
       "isFallback": true
     },
-    "status": "superseded",
+    "status": "active",
     "lastChecked": "2026-10-18",
-    "correction": {
-      "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
-      "reason": "Date absent from the verified council session calendar",
-      "checkedAt": "2026-10-18"
-    },
     "startTime": "12:00",
     "endTime": "15:00",
-    "venue": "Civic Centre – Burnie Arts, 77–79 Wilmot Street, Burnie",
     "address": "77–79 Wilmot Street, Burnie TAS 7320",
     "priceFrom": 0,
     "priceTo": 0,
@@ -2204,6 +2264,7 @@
       "Events"
     ],
     "summary": "Diwali - Festival of Light in Burnie in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "venue": "Marist Regional College – The Harcombe Centre",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Diwali-Festival-of-Light-in-Burnie",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2231,10 +2292,8 @@
     "lastChecked": "2026-10-18",
     "startTime": "17:00",
     "endTime": "22:00",
-    "venue": "Marist Regional College – The Harcombe Centre",
     "address": "Paraka Street entrance, Burnie TAS 7320",
     "priceFrom": 10,
-    "priceTo": 10,
     "priceCurrency": "AUD"
   },
   {
@@ -2481,7 +2540,8 @@
     "categories": [
       "Events"
     ],
-    "summary": "Burnie Harness Racing Club Meet in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "summary": "Burnie Harness Racing Club Meet in Wivenhoe. Check the official event listing for current times, venue, accessibility and booking details.",
+    "venue": "Burnie Harness Racing Club, 1 Pearl Street, Wivenhoe",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Harness-Racing-Club-Season",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2498,7 +2558,6 @@
     "lastChecked": "2026-10-18",
     "startTime": "18:00",
     "endTime": "23:59",
-    "venue": "Burnie Harness Racing Club, 1 Pearl Street, Wivenhoe",
     "address": "1 Pearl Street, Wivenhoe TAS 7320"
   },
   {
@@ -2804,6 +2863,7 @@
       "Events"
     ],
     "summary": "Burnie Surf Club - Nipper Open Day in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "venue": "West Beach, Burnie",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Surf-Club-Nipper-Open-Day",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2833,7 +2893,6 @@
     "lastChecked": "2026-10-18",
     "startTime": "09:45",
     "endTime": "12:00",
-    "venue": "West Beach, Burnie",
     "address": "West Beach, Burnie TAS 7320"
   },
   {
@@ -2910,6 +2969,7 @@
       "Events"
     ],
     "summary": "National Recycling Week in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "venue": "Burnie Council City Offices, 80 Wilson Street, Burnie",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/National-Recycling-Week",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2926,7 +2986,6 @@
     "lastChecked": "2026-10-18",
     "startTime": "10:00",
     "endTime": "16:00",
-    "venue": "Burnie Council City Offices, 80 Wilson Street, Burnie",
     "address": "80 Wilson Street, Burnie TAS 7320"
   },
   {
@@ -2940,6 +2999,7 @@
       "Events"
     ],
     "summary": "In Conversation with Alan Carter in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "venue": "Europa Cafe, 1/23 Cattley Street, Burnie",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/In-Conversation-with-Alan-Carter",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2956,7 +3016,6 @@
     "lastChecked": "2026-10-18",
     "startTime": "14:30",
     "endTime": "16:00",
-    "venue": "Europa Cafe, 1/23 Cattley Street, Burnie",
     "address": "1/23 Cattley Street, Burnie TAS 7320",
     "priceFrom": 10,
     "priceTo": 10,
@@ -3083,6 +3142,7 @@
       "Events"
     ],
     "summary": "In Conversation with Peter FitzSimons in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "venue": "South Burnie Bowls Club, 2 Hale Street, Burnie",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/In-Conversation-with-Peter-FitzSimons",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -3099,7 +3159,6 @@
     "lastChecked": "2026-10-18",
     "startTime": "18:00",
     "endTime": "20:00",
-    "venue": "South Burnie Bowls Club, 2 Hale Street, Burnie",
     "address": "2 Hale Street, Burnie TAS 7320",
     "priceFrom": 10,
     "priceTo": 10,
@@ -3877,8 +3936,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "ticketLastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18"
   },
   {
     "slug": "volunteers-breakfast-2026-2026-12-02-devonport",
@@ -3906,8 +3964,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "ticketLastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18"
   },
   {
     "slug": "the-magic-of-audrey-the-ballet-school-launceston-albert-hall-launceston-04-dec-2026-12-04-",
@@ -4052,8 +4109,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "ticketLastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18"
   },
   {
     "slug": "the-greatest-christmas-show-base-entertainment-albert-hall-launceston-06-dec-2026-12-06-la",
@@ -4122,8 +4178,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "ticketLastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18"
   },
   {
     "slug": "daniel-champagne-live-at-the-tramsheds-functions-centre-launceston-2026-12-11-launceston",
@@ -4261,8 +4316,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "ticketLastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18"
   },
   {
     "slug": "variety-kids-carols-2026-12-19-glenorchy",
@@ -4510,8 +4564,7 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "ticketLastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18"
   },
   {
     "slug": "hobart-community-day-at-the-taste-of-summer-2026-12-31-hobart",
@@ -4548,8 +4601,7 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "ticketLastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18"
   },
   {
     "slug": "mental-as-anything-new-year-and-8217-s-day-at-craigie-knowe-vineyard-2027-01-01-cranbrook",
@@ -4700,12 +4752,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "ticketUrl": "https://events.humanitix.com/our-shared-space-legends-and-learners-build-day",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18"
   },
   {
     "slug": "2027-king-island-pro-am-2027-01-15-currie",
