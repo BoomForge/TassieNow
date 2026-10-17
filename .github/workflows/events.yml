@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths:
       - 'scripts/discover/events.mjs'
+      - 'scripts/discover/lib/verified-burnie-events.mjs'
+      - 'scripts/discover/lib/burnie-calendar-dates.mjs'
+      - 'src/data/event-overrides.json'
       - 'scripts/discover/public-events.mjs'
       - 'scripts/discover/verified-regional-events.mjs'
       - 'scripts/discover/independent-ticketebo.mjs'

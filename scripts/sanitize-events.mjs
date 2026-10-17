@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { applyVerifiedBurnieEvent } from './discover/lib/verified-burnie-events.mjs';
 
 const FILE = new URL('../src/data/events.json', import.meta.url);
 const CURATED_OVERRIDES = new URL('../src/data/event-overrides.json', import.meta.url);
@@ -75,10 +76,12 @@ const events = JSON.parse(await fs.readFile(FILE,'utf8'));
 const overrides = JSON.parse(await fs.readFile(CURATED_OVERRIDES,'utf8'));
 // Verified owner-reviewed corrections take precedence over lossy upstream card extracts.
 // Applied on every refresh so official venue/dates/sessions cannot silently regress.
+const TODAY=new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Hobart',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 const cleaned=[];
 let removed=0,repaired=0;
 for(const original of events){
-  const event={...original, ...(overrides[original.slug]?.fields || {})};
+  const canonical=applyVerifiedBurnieEvent(original,TODAY);
+  const event={...canonical, ...(overrides[original.slug]?.fields || {})};
   event.name=cleanText(event.name);
   if(DATE_ONLY_NAME.test(event.name)){
     const recovered=titleFromEventUrl(event.eventUrl);

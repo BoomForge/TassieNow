@@ -27,7 +27,16 @@ const VERIFIED_BURNIE_EVENTS = new Map([
     priceTo: 10,
     priceCurrency: 'AUD',
     bookingRequired: true
-  }]
+  }],
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Intro-to-Computing-at-Burnie-Library', {"startDate":"2026-10-21","endDate":"2026-10-21","startTime":"09:30","endTime":"14:30","venue":"Burnie Library, 30 Alexander Street, Burnie","address":"30 Alexander Street, Burnie TAS 7320"}],
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/In-Conversation-with-Monica-McInerney', {"startDate":"2026-10-27","endDate":"2026-10-27","startTime":"18:00","endTime":"20:00","venue":"Not Just Books, 40 Wilson Street, Burnie","address":"40 Wilson Street, Burnie TAS 7320","priceFrom":10,"priceTo":10,"priceCurrency":"AUD"}],
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Tuning-into-Kids', {"startDate":"2026-10-28","endDate":"2026-10-28","startTime":"11:00","endTime":"13:00","venue":"The Salvation Army, 99 Wilson Street, Burnie","address":"99 Wilson Street, Burnie TAS 7320"}],
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market', {"startDate":"2026-10-31","endDate":"2026-10-31","startTime":"12:00","endTime":"15:00","venue":"Civic Centre – Burnie Arts, 77–79 Wilmot Street, Burnie","address":"77–79 Wilmot Street, Burnie TAS 7320","priceFrom":0,"priceTo":0,"priceCurrency":"AUD"}],
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Diwali-Festival-of-Light-in-Burnie', {"startDate":"2026-11-01","endDate":"2026-11-01","startTime":"17:00","endTime":"22:00","venue":"Marist Regional College – The Harcombe Centre","address":"Paraka Street entrance, Burnie TAS 7320","priceFrom":10,"priceCurrency":"AUD"}],
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Harness-Racing-Club-Season', {"startDate":"2026-11-06","endDate":"2026-11-06","startTime":"18:00","endTime":"23:59","venue":"Burnie Harness Racing Club, 1 Pearl Street, Wivenhoe","address":"1 Pearl Street, Wivenhoe TAS 7320","town":"Wivenhoe"}],
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Surf-Club-Nipper-Open-Day', {"startDate":"2026-11-08","endDate":"2026-11-08","startTime":"09:45","endTime":"12:00","venue":"West Beach, Burnie","address":"West Beach, Burnie TAS 7320"}],
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/National-Recycling-Week', {"startDate":"2026-11-09","endDate":"2026-11-15","startTime":"10:00","endTime":"16:00","venue":"Burnie Council City Offices, 80 Wilson Street, Burnie","address":"80 Wilson Street, Burnie TAS 7320"}],
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/In-Conversation-with-Alan-Carter', {"startDate":"2026-11-10","endDate":"2026-11-10","startTime":"14:30","endTime":"16:00","venue":"Europa Cafe, 1/23 Cattley Street, Burnie","address":"1/23 Cattley Street, Burnie TAS 7320","priceFrom":10,"priceTo":10,"priceCurrency":"AUD"}]
 ]);
 
 const slugify = value => String(value)
