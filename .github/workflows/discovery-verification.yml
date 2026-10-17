@@ -8,7 +8,8 @@ on:
       - '.github/workflows/discovery-verification.yml'
   workflow_dispatch:
   workflow_run:
-    workflows: ['TassieNow catalogue quality pass', 'Refresh TassieNow catalogue']
+    # Quality-only runs do not generate a new discovery report/run id.
+    workflows: ['Refresh TassieNow catalogue']
     types: [completed]
     branches: [main]
 permissions:
