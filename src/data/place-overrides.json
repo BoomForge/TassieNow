@@ -1,4 +1,15 @@
 {
+  "1830": {
+    "liveDisplayOverride": true,
+    "openingHours": "Mo-Su 11:30-14:30",
+    "detailSources": {
+      "openingHours": {
+        "type": "verified-source",
+        "url": "https://portarthur.org.au/eat-drink/1830-restaurant-and-bar/",
+        "checkedAt": "2026-10-18"
+      }
+    }
+  },
   "salamanca-market": {
     "openingHours": "Sa 08:30-15:00",
     "phone": "03 6238 2430",
@@ -1206,6 +1217,17 @@
       "address": {
         "type": "verified-source",
         "url": "https://williesmiths.com.au/pages/the-apple-shed",
+        "checkedAt": "2026-10-18"
+      }
+    }
+  },
+  "calcified-forest": {
+    "liveDisplayOverride": true,
+    "removePhone": true,
+    "detailSources": {
+      "phone": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)",
         "checkedAt": "2026-10-18"
       }
     }
