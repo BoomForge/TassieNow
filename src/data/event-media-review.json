@@ -503,7 +503,13 @@
         "identity": "original-page-asset-unverified"
       }
     ],
-    "needs": "Organiser approval or an explicit reusable licence before embedding the photos"
+    "needs": "Organiser approval or an explicit reusable licence before embedding the photos",
+    "sourceEvidence": {
+      "sourceUrl": "https://www.devonport.tas.gov.au/events/realm-of-gaming-school-holiday-event/",
+      "status": "known-original-image-needs-manual-extraction",
+      "discoveredBy": "official-source-photo-link",
+      "rights": "permission-needed"
+    }
   },
   "wonder-2026-10-17-hobart": {
     "name": "Wonder",
@@ -5211,7 +5217,13 @@
         "identity": "original-page-asset-unverified"
       }
     ],
-    "needs": "Organiser approval or an explicit reusable licence before embedding the photos"
+    "needs": "Organiser approval or an explicit reusable licence before embedding the photos",
+    "sourceEvidence": {
+      "sourceUrl": "https://www.devonport.tas.gov.au/events/self-defence-for-seniors/",
+      "status": "known-original-image-needs-manual-extraction",
+      "discoveredBy": "official-source-photo-link",
+      "rights": "permission-needed"
+    }
   },
   "fundamental-pilates-2026-09-29-devonport": {
     "name": "Fundamental Pilates",
@@ -9875,7 +9887,13 @@
         "identity": "original-page-asset-unverified"
       }
     ],
-    "needs": "Original source identified; explicit permission or original reusable licence required"
+    "needs": "Original source identified; explicit permission or original reusable licence required",
+    "sourceEvidence": {
+      "sourceUrl": "https://kingisland.org.au/events/barefoot-social-bowls/",
+      "status": "known-original-image-needs-manual-extraction",
+      "discoveredBy": "official-source-photo-link",
+      "rights": "permission-needed"
+    }
   },
   "voices-through-art-arch-lived-experience-art-campaign-2026-10-15-burnie": {
     "name": "Voices Through Art: Arch Lived Experience Art Campaign",
@@ -11346,6 +11364,130 @@
         "sourcePage": "https://events.humanitix.com/lutaf-showcase-2026",
         "source": "original-page-img",
         "alt": "Lutruwita Animation Festival's logo",
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      }
+    ],
+    "needs": "Original source identified; explicit permission or original reusable licence required"
+  },
+  "daniel-champagne-live-at-the-tramsheds-functions-centre-launceston-2026-10-17-launceston": {
+    "name": "Daniel Champagne LIVE at The Tramsheds Functions Centre | Launceston",
+    "organiser": "Humanitix Launceston",
+    "source": "https://events.humanitix.com/daniel-champagne-live-at-the-tramsheds-functions-centre-or-launceston",
+    "candidates": [
+      {
+        "url": "https://events.humanitix.com/_app/immutable/assets/acnc.CHSPTMVl.png",
+        "sourcePage": "https://events.humanitix.com/daniel-champagne-live-at-the-tramsheds-functions-centre-or-launceston",
+        "source": "on-page-gallery",
+        "alt": "ACNC Registered Charity Logo",
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://images.humanitix.com/i/2441c7f3-f904-400d-99ce-8e2aa12c80eb.jpg@seo-500.jpg",
+        "sourcePage": "https://events.humanitix.com/daniel-champagne-live-at-the-tramsheds-functions-centre-or-launceston",
+        "source": "original-page-social-preview",
+        "alt": null,
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://images.humanitix.com/i/6f948ea7-0f31-4eb4-9af2-95a722e309f7.jpg@responsive-1600.webp",
+        "sourcePage": "https://events.humanitix.com/daniel-champagne-live-at-the-tramsheds-functions-centre-or-launceston",
+        "source": "original-page-img",
+        "alt": "Event logo",
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://images.humanitix.com/i/2441c7f3-f904-400d-99ce-8e2aa12c80eb.jpg@responsive-1600.webp",
+        "sourcePage": "https://events.humanitix.com/daniel-champagne-live-at-the-tramsheds-functions-centre-or-launceston",
+        "source": "original-page-img",
+        "alt": "Banner image for Daniel Champagne LIVE at The Tramsheds Functions Centre | Launceston",
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://images.humanitix.com/i/y9jWtZIQQW6As9ooaMtm@responsive-100.webp",
+        "sourcePage": "https://events.humanitix.com/daniel-champagne-live-at-the-tramsheds-functions-centre-or-launceston",
+        "source": "original-page-img",
+        "alt": "Host icon",
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://images.humanitix.com/i/de88c121-52ae-4cbe-a5c3-563ccfa68e4e.jpg@responsive-1250.webp",
+        "sourcePage": "https://events.humanitix.com/daniel-champagne-live-at-the-tramsheds-functions-centre-or-launceston",
+        "source": "original-page-img",
+        "alt": null,
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      }
+    ],
+    "needs": "Original source identified; explicit permission or original reusable licence required"
+  },
+  "halloween-fest-hobart-2026-10-17-hobart": {
+    "name": "Halloween Fest Hobart",
+    "organiser": "Humanitix Hobart",
+    "source": "https://events.humanitix.com/halloween-fest-hobart",
+    "candidates": [
+      {
+        "url": "https://events.humanitix.com/_app/immutable/assets/acnc.CHSPTMVl.png",
+        "sourcePage": "https://events.humanitix.com/halloween-fest-hobart",
+        "source": "on-page-gallery",
+        "alt": "ACNC Registered Charity Logo",
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://images.humanitix.com/i/1c71a0f8-8f91-4f30-981c-40f57a67082a.png@seo-500.jpg",
+        "sourcePage": "https://events.humanitix.com/halloween-fest-hobart",
+        "source": "original-page-social-preview",
+        "alt": null,
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://images.humanitix.com/i/7b0ced3d-b0c9-4ceb-9f95-eb1544479fc0.png@responsive-1600.webp",
+        "sourcePage": "https://events.humanitix.com/halloween-fest-hobart",
+        "source": "original-page-img",
+        "alt": "Event logo",
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://images.humanitix.com/i/1c71a0f8-8f91-4f30-981c-40f57a67082a.png@responsive-1600.webp",
+        "sourcePage": "https://events.humanitix.com/halloween-fest-hobart",
+        "source": "original-page-img",
+        "alt": "Banner image for Halloween Fest Hobart",
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://images.humanitix.com/i/84882a4f-64e2-45f7-aaba-22d626bad796.png@responsive-100.webp",
+        "sourcePage": "https://events.humanitix.com/halloween-fest-hobart",
+        "source": "original-page-img",
+        "alt": "Host icon",
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://images.humanitix.com/i/84882a4f-64e2-45f7-aaba-22d626bad796.png@responsive-50.webp",
+        "sourcePage": "https://events.humanitix.com/halloween-fest-hobart",
+        "source": "original-page-img",
+        "alt": "Tasmania's Most Haunted's logo",
         "externalAssetHost": true,
         "rights": "permission-needed",
         "identity": "original-page-asset-unverified"
