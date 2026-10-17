@@ -5,6 +5,8 @@ import AdSlot from '../../components/AdSlot.astro';
 import MarketVisitorPhotos from '../../components/MarketVisitorPhotos.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
+import placeOverrides from '../../data/place-overrides.json';
+import { applyVerifiedPlaceDisplayOverrides } from '../../lib/verified-place-display-overrides.mjs';
 import autoPhotoSources from '../../data/auto-photo-source-links.json';
 import { upcomingScheduleDates } from '../../lib/schedules.js';
 import { marketCopy, marketSeoTitle, marketSeoDescription } from '../../lib/market-seo.mjs';
@@ -13,7 +15,7 @@ import { normaliseTelephone, safeBookingUrl } from '../../lib/listing-field-sani
 export function getStaticPaths() {
   return places
     .filter((place) => place.status === 'active' && place.visibility !== 'suppressed')
-    .map((place) => ({ params: { slug: place.slug }, props: { place } }));
+    .map((place) => ({ params: { slug: place.slug }, props: { place: applyVerifiedPlaceDisplayOverrides(place, placeOverrides) } }));
 }
 
 const { place } = Astro.props;
