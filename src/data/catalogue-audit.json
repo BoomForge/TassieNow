@@ -26,7 +26,7 @@
     },
     "sources": {
       "websiteCoverage": {
-        "count": 366,
+        "count": 367,
         "percent": 17
       },
       "officialSourceCoverage": {
@@ -34,12 +34,12 @@
         "percent": 13.4
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 237,
-        "percent": 11
+        "count": 255,
+        "percent": 11.8
       },
       "wikidataLinkage": {
-        "count": 625,
-        "percent": 29
+        "count": 633,
+        "percent": 29.4
       }
     },
     "details": {
@@ -64,8 +64,8 @@
         "percent": 23.5
       },
       "bookingUrl": {
-        "count": 119,
-        "percent": 5.5
+        "count": 159,
+        "percent": 7.4
       },
       "fee": {
         "count": 27,
@@ -90,8 +90,8 @@
       "curated": 41
     },
     "qualityTiers": {
-      "standard": 774,
-      "strong": 624,
+      "standard": 773,
+      "strong": 625,
       "low": 474,
       "featured": 281
     },
@@ -196,8 +196,8 @@
       },
       "details": {
         "website": {
-          "count": 233,
-          "percent": 22.1
+          "count": 234,
+          "percent": 22.2
         },
         "openingHours": {
           "count": 327,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 155,
+    "active": 157,
     "media": {
       "licensedHeroCoverage": {
         "count": 65,
-        "percent": 41.9
+        "percent": 41.4
       },
-      "stillUsingCategoryArtwork": 90,
+      "stillUsingCategoryArtwork": 92,
       "bySource": {
         "verified-event-venue": 37,
         "verified-event-activity": 23,
@@ -246,7 +246,7 @@
         },
         "North West": {
           "count": 13,
-          "percent": 31
+          "percent": 29.5
         },
         "East Coast": {
           "count": 1,
@@ -272,11 +272,11 @@
     },
     "ticketCoverage": {
       "count": 45,
-      "percent": 29
+      "percent": 28.7
     },
     "priceCoverage": {
-      "count": 57,
-      "percent": 36.8
+      "count": 63,
+      "percent": 40.1
     },
     "providers": {
       "Humanitix": 23,
@@ -285,7 +285,7 @@
       "Ticketmaster": 1
     },
     "sources": {
-      "Burnie City Council": 26,
+      "Burnie City Council": 28,
       "MyState Bank Arena": 21,
       "Huon Valley Council": 16,
       "Theatre North Launceston": 16,
@@ -305,7 +305,7 @@
     "regions": {
       "Hobart & South": 71,
       "Launceston & North": 28,
-      "North West": 42,
+      "North West": 44,
       "East Coast": 9,
       "West Coast": 1,
       "Central Tasmania": 1,
@@ -350,7 +350,7 @@
       "missingOrOlderThan30Days": 2
     },
     "sourceRegionalMix": {
-      "North West / Burnie City Council": 26,
+      "North West / Burnie City Council": 28,
       "Hobart & South / MyState Bank Arena": 21,
       "Hobart & South / Huon Valley Council": 16,
       "Launceston & North / Theatre North Launceston": 16,
