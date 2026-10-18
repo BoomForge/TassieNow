@@ -50,8 +50,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -155,8 +156,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Archers-Knob.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -537,8 +539,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "5 hours return , 14km, Grade 4",
@@ -607,8 +610,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "5 minutes to 5 hours , 100m to 5km, Grade 2",
@@ -795,8 +799,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Wineglass-Bay-and-Hazards-Beach.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "4-5 hours circuit , 11km circuit, Grade 4",
@@ -932,94 +937,6 @@
     }
   },
   {
-    "slug": "hogarth-falls",
-    "name": "Hogarth Falls",
-    "town": "Strahan",
-    "region": "West Coast",
-    "latitude": -42.15328,
-    "longitude": 145.348696,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Hogarth Falls is an official Parks Tasmania walk. Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/10609565388",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/10609565388",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6409 1020",
-    "email": "PWS.WestCoast@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-18",
-    "lastDetailsChecked": "2026-10-18",
-    "lastOsmDetailsChecked": "2026-10-16",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Hogarth_Falls%2C_Tasmania.jpg/1280px-Hogarth_Falls%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Hogarth Falls, Tasmania",
-      "attribution": "BriYYZ from Toronto, Canada",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hogarth_Falls,_Tasmania.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Hogarth%20Falls%20Strahan%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-17T23:48:18.230Z"
-    },
-    "qualityScore": 100,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "real-image",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-18",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
-  },
-  {
     "slug": "interpretation-centre-duck-reach-power-station",
     "name": "Interpretation Centre (Duck Reach Power Station)",
     "town": "Launceston",
@@ -1072,8 +989,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Duck-Reach.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/duck-reach",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -1160,8 +1078,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Liffey-Falls-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/liffey-falls-state-reserve/liffey-falls-walk",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "45 minute return , 2km, from the top car park, Grade 2",
@@ -1283,9 +1202,10 @@
     ],
     "rankedAt": "2026-10-18",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-18",
-      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/maingon-blowhole"
+      "url": "https://parks.tas.gov.au/Pages/Maingon-Blowhole.aspx",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-16"
@@ -1341,8 +1261,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Montezuma-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -1369,141 +1290,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
-  },
-  {
-    "slug": "remarkable-cave",
-    "name": "Remarkable Cave",
-    "town": "Port Arthur",
-    "region": "Hobart & South",
-    "latitude": -43.1872347,
-    "longitude": 147.8441833,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Remarkable Cave is an official Parks Tasmania walk. 15 minutes return , TBC, Grade 3 · Grade 3.",
-    "website": "https://parks.tas.gov.au/Pages/Remarkable-Cave.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/2545503420",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2545503420",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6250 3980",
-    "email": "TasmanNP@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-18",
-    "lastDetailsChecked": "2026-10-18",
-    "lastOsmDetailsChecked": "2026-10-13",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Remarkable_Cave%2C_Tasman_National_Park%2C_Tasmania.jpg/1920px-Remarkable_Cave%2C_Tasman_National_Park%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Remarkable Cave, Tasmania",
-      "attribution": "Mooonrise",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Remarkable_Cave,_Tasman_National_Park,_Tasmania.jpg",
-      "isFallback": false,
-      "sourceMethod": "wikidata-p18",
-      "confidence": "high"
-    },
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Remarkable_Cave.jpg/1920px-Remarkable_Cave.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Remarkable Cave, Tasmania",
-        "attribution": "Tinghao Wang",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Remarkable_Cave.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Near_Remarkable_Cave_Port_Arthur_Tasmania.jpg/1920px-Near_Remarkable_Cave_Port_Arthur_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Remarkable Cave, Tasmania",
-        "attribution": "HilACT",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Near_Remarkable_Cave_Port_Arthur_Tasmania.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Near_Remarkable_Cave_Tasmania.jpg/1920px-Near_Remarkable_Cave_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Remarkable Cave, Tasmania",
-        "attribution": "HilACT",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Near_Remarkable_Cave_Tasmania.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Remarkable_Cave_Tasmania.jpg/1920px-Remarkable_Cave_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Remarkable Cave, Tasmania",
-        "attribution": "JustinH",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Remarkable_Cave_Tasmania.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      }
-    ],
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Remarkable%20Cave%20Port%20Arthur%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Remarkable-Cave.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": "15 minutes return , TBC, Grade 3",
-      "grade": 3
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-17T23:47:57.166Z"
-    },
-    "qualityScore": 100,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "real-image",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
     "rankedAt": "2026-10-18",
     "officialSourceCheck": {
       "status": "ok",
       "checkedAt": "2026-10-18",
-      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/remarkable-cave"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls"
+    }
   },
   {
     "slug": "salamanca-market",
@@ -1788,8 +1580,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/St-Columba-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -1857,8 +1650,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/St-Columba-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -1998,8 +1792,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Wineglass-Bay-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -2048,6 +1843,228 @@
       ],
       "startTime": "09:00",
       "endTime": "16:00"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-16"
+  },
+  {
+    "slug": "hogarth-falls",
+    "name": "Hogarth Falls",
+    "town": "Strahan",
+    "region": "West Coast",
+    "latitude": -42.15328,
+    "longitude": 145.348696,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Hogarth Falls is an official Parks Tasmania walk. Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/10609565388",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/10609565388",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6409 1020",
+    "email": "PWS.WestCoast@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-16",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Hogarth_Falls%2C_Tasmania.jpg/1280px-Hogarth_Falls%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Hogarth Falls, Tasmania",
+      "attribution": "BriYYZ from Toronto, Canada",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hogarth_Falls,_Tasmania.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Hogarth%20Falls%20Strahan%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
+      "type": "government"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-17T23:48:18.230Z"
+    },
+    "qualityScore": 98,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "real-image",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-18",
+      "url": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
+      "error": "The operation was aborted due to timeout"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-16"
+  },
+  {
+    "slug": "remarkable-cave",
+    "name": "Remarkable Cave",
+    "town": "Port Arthur",
+    "region": "Hobart & South",
+    "latitude": -43.1872347,
+    "longitude": 147.8441833,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Remarkable Cave is an official Parks Tasmania walk. 15 minutes return , TBC, Grade 3 · Grade 3.",
+    "website": "https://parks.tas.gov.au/Pages/Remarkable-Cave.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/2545503420",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2545503420",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6250 3980",
+    "email": "TasmanNP@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-13",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Remarkable_Cave%2C_Tasman_National_Park%2C_Tasmania.jpg/1920px-Remarkable_Cave%2C_Tasman_National_Park%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Remarkable Cave, Tasmania",
+      "attribution": "Mooonrise",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Remarkable_Cave,_Tasman_National_Park,_Tasmania.jpg",
+      "isFallback": false,
+      "sourceMethod": "wikidata-p18",
+      "confidence": "high"
+    },
+    "gallery": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Remarkable_Cave.jpg/1920px-Remarkable_Cave.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Remarkable Cave, Tasmania",
+        "attribution": "Tinghao Wang",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Remarkable_Cave.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Near_Remarkable_Cave_Port_Arthur_Tasmania.jpg/1920px-Near_Remarkable_Cave_Port_Arthur_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Remarkable Cave, Tasmania",
+        "attribution": "HilACT",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Near_Remarkable_Cave_Port_Arthur_Tasmania.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Near_Remarkable_Cave_Tasmania.jpg/1920px-Near_Remarkable_Cave_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Remarkable Cave, Tasmania",
+        "attribution": "HilACT",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Near_Remarkable_Cave_Tasmania.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Remarkable_Cave_Tasmania.jpg/1920px-Remarkable_Cave_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Remarkable Cave, Tasmania",
+        "attribution": "JustinH",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Remarkable_Cave_Tasmania.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      }
+    ],
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Remarkable%20Cave%20Port%20Arthur%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/remarkable-cave",
+      "type": "government",
+      "checkedAt": "2026-10-18"
+    },
+    "walk": {
+      "duration": "15 minutes return , TBC, Grade 3",
+      "grade": 3
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-17T23:47:57.166Z"
+    },
+    "qualityScore": 98,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "real-image",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/remarkable-cave"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-16"
@@ -2275,8 +2292,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "5 minutes to 5 hours , 100m to 5km, Grade 2",
@@ -2725,6 +2743,126 @@
     ]
   },
   {
+    "slug": "weldborough-pass-rainforest-walk",
+    "name": "Weldborough Pass Rainforest Walk",
+    "town": "Derby",
+    "region": "Launceston & North",
+    "latitude": -41.2161683,
+    "longitude": 147.9383007,
+    "categories": [
+      "Things to Do",
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Rainforest Walk is an official Parks Tasmania walk. 10 minute circuit , 431m, Grade 1 · Grade 1.",
+    "website": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/way/142432393",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/142432393",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Mo-Su 00:00-12:00",
+    "phone": "03 6492 1110",
+    "email": "Cradle@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": "Parks and Wildlife Service Tasmania",
+    "detailSources": {
+      "operator": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/142432393",
+        "checkedAt": "2026-10-16"
+      },
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk",
+        "checkedAt": "2026-10-16"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/cradle-mountain-shuttle-bus-information",
+        "checkedAt": "2026-10-18"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-16",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Weldborough Pass Rainforest Walk category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Weldborough%20Pass%20Rainforest%20Walk%20Derby%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk",
+      "type": "government",
+      "checkedAt": "2026-10-18"
+    },
+    "walk": {
+      "duration": "10 minute circuit , 431m, Grade 1",
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-17T23:48:02.757Z"
+    },
+    "schedule": {
+      "summary": "The centre is open daily from 9.00 am to 4.00 pm (hours are&#160;extended during peak periods).&#160;",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/cradle-mountain-shuttle-bus-information",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "09:00",
+      "endTime": "16:00"
+    },
+    "qualityScore": 95,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "opening-hours",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-18"
+  },
+  {
     "slug": "hastings-caves-and-thermal-springs",
     "name": "Hastings Caves and Thermal Springs",
     "town": "Hastings",
@@ -2852,6 +2990,127 @@
     },
     "bookingUrl": "https://parks.tas.gov.au/Pages/Hastings-Caves-State-Reserve.aspx",
     "lastWikidataLinkChecked": "2026-10-13"
+  },
+  {
+    "slug": "tahune-airwalk-cafe",
+    "name": "Tahune Airwalk Cafe",
+    "town": "Geeveston",
+    "region": "Hobart & South",
+    "latitude": -43.0950077,
+    "longitude": 146.729694,
+    "categories": [
+      "Food & Drink",
+      "Café",
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Tahune Airwalk is an official Parks Tasmania walk. Grade 1.",
+    "website": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/638166922",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/638166922",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Tu,We 10:00-16:00; Mo,Tu,We,Th,Fr 10:00-16:00",
+    "phone": "03 6121 7026",
+    "email": "Huonville@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "email": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+        "checkedAt": "2026-10-09"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+        "checkedAt": "2026-10-09"
+      },
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+        "checkedAt": "2026-10-09"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-17",
+    "image": {
+      "url": "/images/categories/food.svg",
+      "alt": "Tahune Airwalk Cafe category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+      "type": "government",
+      "checkedAt": "2026-10-18"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-17T23:47:34.522Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Tahune%20Airwalk%20Cafe%20Geeveston%20Tasmania"
+      }
+    ],
+    "schedule": {
+      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
+      "sourceUrl": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+      "daysOfWeek": [
+        "Tuesday",
+        "Wednesday"
+      ],
+      "startTime": "10:00",
+      "endTime": "16:00"
+    },
+    "qualityScore": 94,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "opening-hours",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "queen-victoria-museum-and-art-gallery",
@@ -3054,243 +3313,6 @@
     ]
   },
   {
-    "slug": "weldborough-pass-rainforest-walk",
-    "name": "Weldborough Pass Rainforest Walk",
-    "town": "Derby",
-    "region": "Launceston & North",
-    "latitude": -41.2161683,
-    "longitude": 147.9383007,
-    "categories": [
-      "Things to Do",
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Rainforest Walk is an official Parks Tasmania walk. 10 minute circuit , 431m, Grade 1 · Grade 1.",
-    "website": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/way/142432393",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/142432393",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Mo-Su 00:00-12:00",
-    "phone": "03 6492 1110",
-    "email": "Cradle@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": "Parks and Wildlife Service Tasmania",
-    "detailSources": {
-      "operator": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/142432393",
-        "checkedAt": "2026-10-16"
-      },
-      "openingHours": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk",
-        "checkedAt": "2026-10-16"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/cradle-mountain-shuttle-bus-information",
-        "checkedAt": "2026-10-18"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-18",
-    "lastDetailsChecked": "2026-10-18",
-    "lastOsmDetailsChecked": "2026-10-16",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Weldborough Pass Rainforest Walk category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Weldborough%20Pass%20Rainforest%20Walk%20Derby%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": "10 minute circuit , 431m, Grade 1",
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-17T23:48:02.757Z"
-    },
-    "schedule": {
-      "summary": "The centre is open daily from 9.00 am to 4.00 pm (hours are&#160;extended during peak periods).&#160;",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/cradle-mountain-shuttle-bus-information",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "09:00",
-      "endTime": "16:00"
-    },
-    "qualityScore": 93,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "opening-hours",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-18",
-      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
-  },
-  {
-    "slug": "tahune-airwalk-cafe",
-    "name": "Tahune Airwalk Cafe",
-    "town": "Geeveston",
-    "region": "Hobart & South",
-    "latitude": -43.0950077,
-    "longitude": 146.729694,
-    "categories": [
-      "Food & Drink",
-      "Café",
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Tahune Airwalk is an official Parks Tasmania walk. Grade 1.",
-    "website": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/638166922",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/638166922",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Tu,We 10:00-16:00; Mo,Tu,We,Th,Fr 10:00-16:00",
-    "phone": "03 6121 7026",
-    "email": "Huonville@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "email": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-        "checkedAt": "2026-10-09"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-        "checkedAt": "2026-10-09"
-      },
-      "openingHours": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-        "checkedAt": "2026-10-09"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-18",
-    "lastDetailsChecked": "2026-10-18",
-    "lastOsmDetailsChecked": "2026-10-17",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Tahune Airwalk Cafe category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-17T23:47:34.522Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Tahune%20Airwalk%20Cafe%20Geeveston%20Tasmania"
-      }
-    ],
-    "schedule": {
-      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
-      "sourceUrl": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-      "daysOfWeek": [
-        "Tuesday",
-        "Wednesday"
-      ],
-      "startTime": "10:00",
-      "endTime": "16:00"
-    },
-    "qualityScore": 92,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "opening-hours",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-18",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
-  },
-  {
     "slug": "frankland-beaches",
     "name": "Frankland Beaches",
     "town": "Tasmania",
@@ -3321,8 +3343,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Frankland-Beaches-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "2 hours , 6 km return, Grade 2",
@@ -3551,8 +3574,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Trousers-Point.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/strzelecki-national-park/trousers-point",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "1.5 hours circuit , 2km circuit, Grade 2",
@@ -3880,8 +3904,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -4011,7 +4036,7 @@
     ],
     "lastWikidataLinkChecked": "2026-10-12",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-18",
       "url": "https://farmgatemarket.com.au/"
     }
@@ -4066,8 +4091,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Fossil-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/fossil-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -4351,6 +4377,93 @@
     "lastWikidataLinkChecked": "2026-10-12"
   },
   {
+    "slug": "meander-falls",
+    "name": "Meander Falls",
+    "town": "Meander",
+    "region": "Central Tasmania",
+    "latitude": -41.7326431,
+    "longitude": 146.5086383,
+    "categories": [
+      "Things to Do",
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Meander Falls is an official Parks Tasmania walk. 4.5-6 hours return , 10km return, Grade 4 · Grade 4.",
+    "website": "https://parks.tas.gov.au/Pages/Meander-Falls.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/469734407",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/469734407",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6701 2104",
+    "email": "GreatWesternTiers@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-16",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Meander Falls category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Meander%20Falls%20Meander%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/meander-falls",
+      "type": "government",
+      "checkedAt": "2026-10-18"
+    },
+    "walk": {
+      "duration": "4.5-6 hours return , 10km return, Grade 4",
+      "grade": 4
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-17T23:47:22.726Z"
+    },
+    "qualityScore": 89,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/meander-falls"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-18"
+  },
+  {
     "slug": "mount-duncan",
     "name": "Mount Duncan",
     "town": "Penguin",
@@ -4399,8 +4512,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Mount-Duncan-Summit-Track.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-duncan-track",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "4 hours return , 8km return, Grade 3",
@@ -4485,8 +4599,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Mount%20Gnomon-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-gnomon-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "1 hour return , 2km return, Grade 3",
@@ -4572,8 +4687,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Painted-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/painted-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -4667,8 +4783,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Point-Vision-Track.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "7 hours return , 15 km return, Grade 4",
@@ -4810,6 +4927,114 @@
     },
     "bookingUrl": "https://libraries.tas.gov.au/locations/bicheno-library/",
     "openingHours": "Tu 10:00-02:00; We 10:00-04:00; Th 10:00-02:00; Sa 09:30-12:30"
+  },
+  {
+    "slug": "arve-falls-lookout",
+    "name": "Arve Falls Lookout",
+    "town": "Geeveston",
+    "region": "Hobart & South",
+    "latitude": -43.2102788,
+    "longitude": 146.7733416,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Arve Falls is an official Parks Tasmania walk. 20 minutes return , 1 km, Grade 2 · Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/2423549936",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2423549936",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Tu,We 10:00-16:00; Mo,Tu,We,Th,Fr 10:00-16:00",
+    "phone": "03 6121 7026",
+    "email": "Huonville@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
+        "checkedAt": "2026-10-13"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
+        "checkedAt": "2026-10-13"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-13",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Arve Falls Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Arve%20Falls%20Lookout%20Geeveston%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
+      "type": "government",
+      "checkedAt": "2026-10-18"
+    },
+    "walk": {
+      "duration": "20 minutes return , 1 km, Grade 2",
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-17T23:47:34.055Z"
+    },
+    "schedule": {
+      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
+      "daysOfWeek": [
+        "Tuesday",
+        "Wednesday"
+      ],
+      "startTime": "10:00",
+      "endTime": "16:00"
+    },
+    "qualityScore": 88,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "opening-hours",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-16"
   },
   {
     "slug": "beaconsfield-mine-and-heritage-centre-2",
@@ -5016,8 +5241,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Cape-Tourville.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "20 minute circuit , 600m circuit, Grade 1",
@@ -5329,8 +5555,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Sleepy-Bay.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/sleepy-bay",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "20 minutes return , 500m return, Grade 3",
@@ -5442,8 +5669,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "5 minutes return , 300 metres, Grade 2",
@@ -5630,197 +5858,6 @@
       "url": "https://northernmidlands.tas.gov.au/events/liffey-valley-market"
     },
     "lastWikidataLinkChecked": "2026-10-12"
-  },
-  {
-    "slug": "meander-falls",
-    "name": "Meander Falls",
-    "town": "Meander",
-    "region": "Central Tasmania",
-    "latitude": -41.7326431,
-    "longitude": 146.5086383,
-    "categories": [
-      "Things to Do",
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Meander Falls is an official Parks Tasmania walk. 4.5-6 hours return , 10km return, Grade 4 · Grade 4.",
-    "website": "https://parks.tas.gov.au/Pages/Meander-Falls.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/469734407",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/469734407",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6701 2104",
-    "email": "GreatWesternTiers@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-18",
-    "lastDetailsChecked": "2026-10-18",
-    "lastOsmDetailsChecked": "2026-10-16",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Meander Falls category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Meander%20Falls%20Meander%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Meander-Falls.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": "4.5-6 hours return , 10km return, Grade 4",
-      "grade": 4
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-17T23:47:22.726Z"
-    },
-    "qualityScore": 87,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-18",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/meander-falls"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
-  },
-  {
-    "slug": "arve-falls-lookout",
-    "name": "Arve Falls Lookout",
-    "town": "Geeveston",
-    "region": "Hobart & South",
-    "latitude": -43.2102788,
-    "longitude": 146.7733416,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Arve Falls is an official Parks Tasmania walk. 20 minutes return , 1 km, Grade 2 · Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/2423549936",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2423549936",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Tu,We 10:00-16:00; Mo,Tu,We,Th,Fr 10:00-16:00",
-    "phone": "03 6121 7026",
-    "email": "Huonville@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "openingHours": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
-        "checkedAt": "2026-10-13"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
-        "checkedAt": "2026-10-13"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-18",
-    "lastDetailsChecked": "2026-10-18",
-    "lastOsmDetailsChecked": "2026-10-13",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Arve Falls Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Arve%20Falls%20Lookout%20Geeveston%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": "20 minutes return , 1 km, Grade 2",
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-17T23:47:34.055Z"
-    },
-    "schedule": {
-      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
-      "daysOfWeek": [
-        "Tuesday",
-        "Wednesday"
-      ],
-      "startTime": "10:00",
-      "endTime": "16:00"
-    },
-    "qualityScore": 86,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "opening-hours",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-18",
-      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
   },
   {
     "slug": "tasmania-zoo-2",
@@ -6174,8 +6211,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Hollybank.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hollybank",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "15-40 minute circuit , 2km circuit, Grade 1",
@@ -6257,8 +6295,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -6355,8 +6394,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "30 minutes return , 2 km, Grade 1",
@@ -6452,8 +6492,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Calcified-Forest-(King-Island).aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -6479,7 +6520,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)"
+    }
   },
   {
     "slug": "huon-pine-walk-lookout",
@@ -6530,8 +6576,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Huon-Pine-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "20 minutes return , 600m return, Grade 1",
@@ -6557,7 +6604,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk"
+    }
   },
   {
     "slug": "maritime-museum-of-tasmania",
@@ -6856,6 +6908,92 @@
     "discoveryStaleSince": "2026-10-16"
   },
   {
+    "slug": "ralphs-falls-lookout",
+    "name": "Ralphs Falls Lookout",
+    "town": "Ringarooma",
+    "region": "Launceston & North",
+    "latitude": -41.3085694,
+    "longitude": 147.8394932,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Ralphs Falls is an official Parks Tasmania walk. Grade 3.",
+    "website": "https://parks.tas.gov.au/Pages/Ralphs-Falls.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/7921740288",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/7921740288",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6778 8520",
+    "email": "PWS.AdminNorth@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-16",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Ralphs Falls Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Ralphs%20Falls%20Lookout%20Ringarooma%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/ralphs-falls",
+      "type": "government",
+      "checkedAt": "2026-10-18"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 3
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-17T23:48:09.911Z"
+    },
+    "qualityScore": 82,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/ralphs-falls"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-18"
+  },
+  {
     "slug": "reservoir",
     "name": "Reservoir",
     "town": "Triabunna",
@@ -6904,8 +7042,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/The-Reservoir-Circuit.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/the-reservoir-circuit",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "0.5-1 hour ride , 4km return, Grade 3",
@@ -7359,8 +7498,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "30 minutes return , 2 km, Grade 1",
@@ -7444,8 +7584,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Tall-Trees.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park/tall-trees",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "30 minutes circuit , 1km circuit, Grade 2",
@@ -7673,8 +7814,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Waterfall-Bay.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/waterfall-bay",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -7896,90 +8038,6 @@
       "checkedAt": "2026-10-18",
       "url": "https://tasmaniazoo.com.au/"
     }
-  },
-  {
-    "slug": "ralphs-falls-lookout",
-    "name": "Ralphs Falls Lookout",
-    "town": "Ringarooma",
-    "region": "Launceston & North",
-    "latitude": -41.3085694,
-    "longitude": 147.8394932,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Ralphs Falls is an official Parks Tasmania walk. Grade 3.",
-    "website": "https://parks.tas.gov.au/Pages/Ralphs-Falls.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/7921740288",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/7921740288",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6778 8520",
-    "email": "PWS.AdminNorth@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-18",
-    "lastDetailsChecked": "2026-10-18",
-    "lastOsmDetailsChecked": "2026-10-16",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Ralphs Falls Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Ralphs%20Falls%20Lookout%20Ringarooma%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Ralphs-Falls.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 3
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-17T23:48:09.911Z"
-    },
-    "qualityScore": 80,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-18",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/ralphs-falls"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
   },
   {
     "slug": "sorell-community-market",
@@ -9031,8 +9089,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Overland-Track.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": "6 days one way , 65km one way, Grade 4",
@@ -9636,9 +9695,10 @@
     "email": "office@fruitgrowerstas.org.au",
     "phone": "0448 997 748",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-18",
-      "url": "https://tasproduceguide.au/markets/"
+      "url": "https://hobarttwilightmarket.com.au/tasmanian-produce-market/",
+      "error": "403 Forbidden"
     },
     "websiteCheck": {
       "status": "ok",
@@ -13018,7 +13078,7 @@
     "openingHours": "",
     "phone": "0418684108President",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-18",
       "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/"
     },
@@ -13541,8 +13601,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Leven-Canyon-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-18"
     },
     "walk": {
       "duration": null,
@@ -21909,7 +21970,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://devilsatcradle.com/"
+    }
   },
   {
     "slug": "don-river-railway",
@@ -27468,7 +27534,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://www.wondersofwynyard.com/"
+    }
   },
   {
     "slug": "city-park-radio-museum",
@@ -27832,7 +27903,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://www.hivetasmania.com.au/conditions-of-entry/",
+        "url": "https://www.hivetasmania.com.au/tickets/",
         "checkedAt": "2026-10-18"
       }
     },
@@ -27869,7 +27940,7 @@
     },
     "schedule": {
       "summary": "10am – 4pm daily",
-      "sourceUrl": "https://www.hivetasmania.com.au/conditions-of-entry/",
+      "sourceUrl": "https://www.hivetasmania.com.au/tickets/",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -27882,7 +27953,7 @@
       ],
       "startTime": "10:00",
       "endTime": "16:00",
-      "notes": "No food or drink (except water bottles) allowed on floors 1 and 2."
+      "notes": "Christmas Day, Boxing Day, Good Friday and Anzac Day morning"
     },
     "qualityScore": 54,
     "qualityTier": "strong",
@@ -28206,7 +28277,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://www.creativepaper.com.au/"
+    }
   },
   {
     "slug": "devil-s-corner-cellar-door",
@@ -32821,7 +32897,7 @@
     ],
     "rankedAt": "2026-10-18",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-18",
       "url": "https://www.restauranttasman.com.au/"
     },
@@ -35828,7 +35904,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://davesnoodles.com.au/locations",
+        "url": "https://davesnoodles.com.au/about",
         "checkedAt": "2026-10-18"
       }
     },
@@ -35860,7 +35936,7 @@
     ],
     "schedule": {
       "summary": "03 6227 2888 Dave's Noodles, Channel Highway, Kingston TAS, Australia 11 am to 8:30 pm (7 days)",
-      "sourceUrl": "https://davesnoodles.com.au/locations",
+      "sourceUrl": "https://davesnoodles.com.au/about",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -37030,7 +37106,7 @@
     ],
     "rankedAt": "2026-10-18",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-18",
       "url": "https://lanigansvineyard.com.au/"
     },
@@ -40217,7 +40293,7 @@
     ],
     "rankedAt": "2026-10-18",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-18",
       "url": "https://whiskandco.com.au/"
     },
@@ -40332,7 +40408,7 @@
     "officialSourceCheck": {
       "status": "ok",
       "checkedAt": "2026-10-18",
-      "url": "https://williesmiths.com.au/"
+      "url": "https://williesmiths.com.au/pages/the-apple-shed"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -46650,7 +46726,7 @@
     ],
     "rankedAt": "2026-10-18",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-18",
       "url": "https://www.tasteofmalaysiahobart.com.au/"
     },
@@ -50577,7 +50653,7 @@
     ],
     "rankedAt": "2026-10-18",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-18",
       "url": "https://allthai.com.au/"
     },
@@ -60438,7 +60514,7 @@
       "type": "official-website",
       "url": "https://www.gordonrivercruises.com.au/",
       "source": "openstreetmap-website",
-      "checkedAt": "2026-10-15"
+      "checkedAt": "2026-10-18"
     },
     "websiteCheck": {
       "status": "inconclusive",
@@ -60458,10 +60534,9 @@
     ],
     "rankedAt": "2026-10-18",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-18",
-      "url": "https://www.gordonrivercruises.com.au/",
-      "error": "403 Forbidden"
+      "url": "https://www.gordonrivercruises.com.au/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-16",
@@ -66996,7 +67071,7 @@
     ],
     "rankedAt": "2026-10-18",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "identity-mismatch",
       "checkedAt": "2026-10-18",
       "url": "https://www.rendezvousloungecafe.com.au/"
     },
@@ -71211,6 +71286,97 @@
     "lastWikidataChecked": "2026-10-06"
   },
   {
+    "slug": "deco-lounge",
+    "name": "Deco Lounge",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "latitude": -42.8848288,
+    "longitude": 147.3296711,
+    "categories": [
+      "Food & Drink",
+      "Café"
+    ],
+    "summary": "Café in or near Hobart.",
+    "website": "https://www.sevenrooms.com/landing/decoloungehbalc",
+    "sourceUrl": "https://www.openstreetmap.org/node/12800096946",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/12800096946",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "+61 3 6240 6000",
+    "email": null,
+    "address": "12 Murray Street, Hobart, TAS, 7000",
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "phone": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/12800096946",
+        "checkedAt": "2026-10-09"
+      },
+      "address": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/12800096946",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
+    "image": {
+      "url": "/images/categories/food.svg",
+      "alt": "Deco Lounge category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "websiteCheck": {
+      "status": "dead",
+      "code": 404,
+      "checkedAt": "2026-10-17T23:47:34.100Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Deco%20Lounge%20Hobart%20Tasmania"
+      }
+    ],
+    "qualityScore": 40,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "address",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-12",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.sevenrooms.com/landing/decoloungehbalc",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-18"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-18",
+      "url": "https://www.sevenrooms.com/landing/decoloungehbalc"
+    }
+  },
+  {
     "slug": "domino-s",
     "name": "Domino's",
     "town": "Hobart",
@@ -71711,7 +71877,13 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-14"
+    "lastWikidataLinkChecked": "2026-10-14",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-18",
+      "url": "https://www.mountgnomonfarm.com.au/restaurant--tours.html",
+      "error": "404 Not Found"
+    }
   },
   {
     "slug": "orangepete-s",
@@ -72372,7 +72544,13 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-14"
+    "lastWikidataLinkChecked": "2026-10-14",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-18",
+      "url": "https://www.tombolofreycinet.com.au/",
+      "error": "404 Not Found"
+    }
   },
   {
     "slug": "twister-sister",
@@ -84275,6 +84453,73 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
+    "slug": "british-admiral-beach-currie",
+    "name": "British Admiral Beach",
+    "town": "Currie",
+    "region": "King Island",
+    "latitude": -39.9508403,
+    "longitude": 143.8606158,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Currie.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/2216130135",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2216130135",
+    "wikidata": "Q21956233",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "lastDetailsChecked": "2026-10-18",
+    "lastOsmDetailsChecked": "2026-10-18",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "British Admiral Beach category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=British%20Admiral%20Beach%20Currie%20Tasmania"
+      }
+    ],
+    "qualityScore": 33,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "British Admiral Beach",
+      "distanceKm": 0.53,
+      "confidence": "medium",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
     "slug": "broadview-hill",
     "name": "Broadview Hill",
     "town": "Sisters Beach",
@@ -84709,6 +84954,75 @@
     "discoveryStaleSince": "2026-10-09"
   },
   {
+    "slug": "devils-gate-dam",
+    "name": "Devils Gate Dam",
+    "town": "Sheffield",
+    "region": "North West",
+    "latitude": -41.3501977,
+    "longitude": 146.2648143,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Sheffield.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/2368049404",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2368049404",
+    "wikidata": "Q21945328",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-16",
+    "lastDetailsChecked": "2026-10-16",
+    "lastOsmDetailsChecked": "2026-10-16",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Devils Gate Dam category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Devils%20Gate%20Dam%20Sheffield%20Tasmania"
+      }
+    ],
+    "qualityScore": 33,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Devils Gate Dam",
+      "distanceKm": 1.2,
+      "confidence": "medium",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
     "slug": "fishtail-tandoor-and-curry-house",
     "name": "Fishtail Tandoor & Curry House",
     "town": "Moonah",
@@ -84926,6 +85240,75 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
+  },
+  {
+    "slug": "henry-buxton-lookout",
+    "name": "Henry Buxton Lookout",
+    "town": "Wilmot",
+    "region": "North West",
+    "latitude": -41.3633171,
+    "longitude": 146.2000105,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Wilmot.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/6902295337",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/6902295337",
+    "wikidata": "Q21970125",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-16",
+    "lastDetailsChecked": "2026-10-16",
+    "lastOsmDetailsChecked": "2026-10-16",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Henry Buxton Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Henry%20Buxton%20Lookout%20Wilmot%20Tasmania"
+      }
+    ],
+    "qualityScore": 33,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-18",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Henry Buxton Lookout",
+      "distanceKm": 1.05,
+      "confidence": "medium",
+      "checkedAt": "2026-10-18"
+    }
   },
   {
     "slug": "hungary-delights",
@@ -90019,96 +90402,6 @@
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
     "lastWikidataLinkChecked": "2026-10-12"
-  },
-  {
-    "slug": "deco-lounge",
-    "name": "Deco Lounge",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "latitude": -42.8848288,
-    "longitude": 147.3296711,
-    "categories": [
-      "Food & Drink",
-      "Café"
-    ],
-    "summary": "Café in or near Hobart.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/12800096946",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/12800096946",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "+61 3 6240 6000",
-    "email": null,
-    "address": "12 Murray Street, Hobart, TAS, 7000",
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "phone": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/12800096946",
-        "checkedAt": "2026-10-09"
-      },
-      "address": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/12800096946",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-18",
-    "lastOsmDetailsChecked": "2026-10-18",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Deco Lounge category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "websiteCheck": {
-      "status": "dead",
-      "code": 404,
-      "checkedAt": "2026-10-17T23:47:34.100Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Deco%20Lounge%20Hobart%20Tasmania"
-      }
-    ],
-    "qualityScore": 30,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "address",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12",
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://www.sevenrooms.com/landing/decoloungehbalc",
-      "source": "openstreetmap-website",
-      "checkedAt": "2026-10-18"
-    },
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-18",
-      "url": "https://www.sevenrooms.com/landing/decoloungehbalc"
-    }
   },
   {
     "slug": "dover-top-shop",
@@ -106044,7 +106337,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "summer-kitchen",
@@ -106112,7 +106405,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "sun-wah",
@@ -106180,7 +106473,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "sweet-sour-spice",
@@ -106248,7 +106541,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "tas-super-kebab",
@@ -106316,7 +106609,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "tasty-buns",
@@ -106384,7 +106677,7 @@
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "tempt-bakery",
@@ -106451,7 +106744,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "the-argosy-bistro",
@@ -106518,7 +106812,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "the-beach-house",
@@ -106596,7 +106891,8 @@
       "checkedAt": "2026-10-18",
       "url": "https://www.thebeachhousebb.com/dining",
       "error": "404 Not Found"
-    }
+    },
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "the-brown-bear",
@@ -106663,7 +106959,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "the-elizabeth-lounge",
@@ -106735,7 +107032,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "the-harbourmaster-cafe",
@@ -106802,7 +107100,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "the-lunch-company",
@@ -106869,7 +107168,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "the-main-vault-bakehouse",
@@ -106936,7 +107236,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "the-old-bank-of-geeveston",
@@ -107003,7 +107304,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "the-pavilion-cafe",
@@ -107070,7 +107372,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "the-tasmani-fish-and-chips-co",
@@ -107137,7 +107440,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "thirty-three-cups",
@@ -107204,7 +107508,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "touch-of-asia",
@@ -107271,7 +107576,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "toy-sun",
@@ -107338,7 +107644,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "trevallyn-bakery",
@@ -107405,7 +107712,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "triabunna-take-away-and-video",
@@ -107472,7 +107780,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "two-doors-down-cafe",
@@ -107539,7 +107848,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "ventura-cafe-and-surf",
@@ -107606,7 +107916,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "verona-restaurant",
@@ -107673,7 +107984,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "watsons-fine-foods",
@@ -107740,7 +108052,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "west-s-bakery",
@@ -107807,7 +108120,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "windermere-corner-shop-and-cafe",
@@ -107874,7 +108188,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "zest-the-library-cafe",
@@ -107941,7 +108256,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "ausing",
@@ -108014,7 +108330,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "bear-hil",
@@ -108074,7 +108391,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "bell-hill-lookout",
@@ -108132,7 +108450,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "belvedere",
@@ -108210,7 +108529,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "bev-s-lookout",
@@ -108270,7 +108590,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "bicentennial-lookout",
@@ -108328,7 +108649,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "bloodstone-point",
@@ -108388,7 +108710,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "brady-s-lookout",
@@ -108448,7 +108771,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "brew",
@@ -108521,65 +108845,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
-  },
-  {
-    "slug": "british-admiral-beach-currie",
-    "name": "British Admiral Beach",
-    "town": "Currie",
-    "region": "King Island",
-    "latitude": -39.9508403,
-    "longitude": 143.8606158,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Currie.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/2216130135",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2216130135",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-18",
-    "lastDetailsChecked": "2026-10-18",
-    "lastOsmDetailsChecked": "2026-10-18",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "British Admiral Beach category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=British%20Admiral%20Beach%20Currie%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "burrowing-crayfish-area",
@@ -108637,7 +108904,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "cape-deslacs-lookout",
@@ -108697,7 +108965,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "cape-lookout",
@@ -108763,7 +109032,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "cashs-gorge-lookout",
@@ -108823,7 +109093,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "cataract-lookout",
@@ -108883,7 +109154,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "cephissus-falls-viewpoint",
@@ -108943,7 +109215,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "charleys-lookout",
@@ -109003,7 +109276,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "chasm-lookout",
@@ -109063,7 +109337,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "cradle-valley-lookout",
@@ -109121,7 +109396,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "crater-peak",
@@ -109179,7 +109455,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "cruickshanks-lookout",
@@ -109239,7 +109516,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "dalton-falls",
@@ -109299,7 +109577,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "deadman-s-hollow-lookout",
@@ -109359,7 +109638,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "delaneys-falls-lookout",
@@ -109419,7 +109699,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "devil-gullets-lookout",
@@ -109479,67 +109760,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
-  },
-  {
-    "slug": "devils-gate-dam",
-    "name": "Devils Gate Dam",
-    "town": "Sheffield",
-    "region": "North West",
-    "latitude": -41.3501977,
-    "longitude": 146.2648143,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Sheffield.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/2368049404",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2368049404",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-16",
-    "lastDetailsChecked": "2026-10-16",
-    "lastOsmDetailsChecked": "2026-10-16",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Devils Gate Dam category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Devils%20Gate%20Dam%20Sheffield%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-18",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "don-s-lookout",
@@ -109599,7 +109821,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "donaghys-lookout",
@@ -109659,7 +109882,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "douglas-lookout",
@@ -109719,7 +109943,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "dunalley-bay-lookout",
@@ -109779,7 +110004,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "eagles-eyrie-lookout",
@@ -109839,7 +110065,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "edge-lookout",
@@ -109899,7 +110126,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "fisherman-s-wharf-lookout",
@@ -109957,7 +110185,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "flat-rock-at-huon-bush-retreats",
@@ -110017,7 +110246,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "forth-river-viewpoint",
@@ -110075,7 +110305,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "freelands-lookout",
@@ -110135,7 +110366,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "gentle-annie-falls-lower-viewpoint",
@@ -110195,7 +110427,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "gentle-annie-falls-upper-viewpoint",
@@ -110255,7 +110488,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "glacier-rock",
@@ -110313,7 +110547,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "glovers-bluff-lookout",
@@ -110373,7 +110608,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "gorge-lookout",
@@ -110433,7 +110669,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "goughs-tin-stamp-battery",
@@ -110493,7 +110730,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "grassy-penguin-island",
@@ -110551,7 +110789,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "gray-mare-s-lookout",
@@ -110611,7 +110850,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "h-a-jimmy-lane-memorial-lookout",
@@ -110669,67 +110909,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
-  },
-  {
-    "slug": "henry-buxton-lookout",
-    "name": "Henry Buxton Lookout",
-    "town": "Wilmot",
-    "region": "North West",
-    "latitude": -41.3633171,
-    "longitude": 146.2000105,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Wilmot.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/6902295337",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/6902295337",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-16",
-    "lastDetailsChecked": "2026-10-16",
-    "lastOsmDetailsChecked": "2026-10-16",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Henry Buxton Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Henry%20Buxton%20Lookout%20Wilmot%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
     "rankedAt": "2026-10-18",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "highfield-lookout",
@@ -110787,7 +110968,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "kalbi",
@@ -110865,7 +111047,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09"
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "kermandie-falls",
@@ -110925,7 +111108,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "king-billy-pine-lookout",
@@ -110983,7 +111167,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-18"
+    "rankedAt": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "knob-hill-lookout",
@@ -111043,7 +111228,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "labyrinth-lookout",
@@ -111103,7 +111289,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-18"
+    "discoveryStaleSince": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "lake-lookout",
@@ -111223,7 +111410,8 @@
     ],
     "rankedAt": "2026-10-18",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-16"
+    "discoveryStaleSince": "2026-10-16",
+    "lastWikidataLinkChecked": "2026-10-18"
   },
   {
     "slug": "lake-selina",
