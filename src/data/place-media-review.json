@@ -8803,5 +8803,234 @@
         "observedAt": "2026-10-18T22:24:42.919Z"
       }
     ]
+  },
+  "sticky-beaks-cafe": {
+    "name": "Sticky Beaks Café",
+    "town": "Longford",
+    "candidates": [
+      {
+        "id": "commons-geo:28489761",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Heritage-Corner-Longford-20070421-030.jpg/1280px-Heritage-Corner-Longford-20070421-030.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Heritage-Corner-Longford-20070421-030.jpg",
+        "title": "Heritage-Corner-Longford-20070421-030.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "sticky",
+            "beaks"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-18T22:29:34.458Z"
+      }
+    ]
+  },
+  "stillwater-restaurant-and-cafe": {
+    "name": "Stillwater Restaurant & Cafe",
+    "town": "Launceston",
+    "candidates": [
+      {
+        "id": "commons-geo:59353760",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Stillwater_Restaurant_%2825503799823%29.jpg/1280px-Stillwater_Restaurant_%2825503799823%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Stillwater_Restaurant_(25503799823).jpg",
+        "title": "Stillwater Restaurant (25503799823).jpg",
+        "credit": "Michael Coghlan  from Adelaide, Australia",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "stillwater"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-18T22:29:34.458Z"
+      }
+    ]
+  },
+  "the-fish-man": {
+    "name": "The Fish Man",
+    "town": "Hobart",
+    "candidates": [
+      {
+        "id": "commons-geo:31951528",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Lascar_Constitution_Dock_%28Hobart%29_%284551798599%29.jpg/1280px-Lascar_Constitution_Dock_%28Hobart%29_%284551798599%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Lascar_Constitution_Dock_(Hobart)_(4551798599).jpg",
+        "title": "Lascar Constitution Dock (Hobart) (4551798599).jpg",
+        "credit": "Jorge Láscar  from Australia",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "fish"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-18T22:29:34.458Z"
+      },
+      {
+        "id": "commons-geo:57553141",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Charming_Seahorse_-_panoramio.jpg/1280px-Charming_Seahorse_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Charming_Seahorse_-_panoramio.jpg",
+        "title": "Charming Seahorse - panoramio.jpg",
+        "credit": "Annette Teng",
+        "licence": "CC BY 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "fish"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-18T22:29:34.458Z"
+      }
+    ]
+  },
+  "the-gorge-restaurant": {
+    "name": "The Gorge Restaurant",
+    "town": "Launceston",
+    "candidates": [
+      {
+        "id": "commons-geo:17607498",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Launceston_Cataract_Gorge_%26_First_Basin%2C_Tasmania.jpg/1280px-Launceston_Cataract_Gorge_%26_First_Basin%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Launceston_Cataract_Gorge_%26_First_Basin,_Tasmania.jpg",
+        "title": "Launceston Cataract Gorge & First Basin, Tasmania.jpg",
+        "credit": "Feral Arts",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "gorge"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-18T22:29:34.458Z"
+      },
+      {
+        "id": "commons-geo:19316670",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/House_Sparrow_%28Passer_domesticus%29%2C_male.JPG/1280px-House_Sparrow_%28Passer_domesticus%29%2C_male.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:House_Sparrow_(Passer_domesticus),_male.JPG",
+        "title": "House Sparrow (Passer domesticus), male.JPG",
+        "credit": "Edoddridge",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "gorge"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-18T22:29:34.458Z"
+      },
+      {
+        "id": "commons-geo:31951494",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Lascar_Colourful_Cataract_Gorge_at_night_%284552586874%29.jpg/1280px-Lascar_Colourful_Cataract_Gorge_at_night_%284552586874%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Lascar_Colourful_Cataract_Gorge_at_night_(4552586874).jpg",
+        "title": "Lascar Colourful Cataract Gorge at night (4552586874).jpg",
+        "credit": "Jorge Láscar  from Australia",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "gorge"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-18T22:29:34.458Z"
+      }
+    ]
+  },
+  "the-river-cafe": {
+    "name": "The River Cafe",
+    "town": "Beauty Point",
+    "candidates": [
+      {
+        "id": "commons-geo:28366601",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Tamar-from-Beauty-Point-20070419-017.jpg/1280px-Tamar-from-Beauty-Point-20070419-017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Tamar-from-Beauty-Point-20070419-017.jpg",
+        "title": "Tamar-from-Beauty-Point-20070419-017.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "river"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-18T22:29:34.458Z"
+      },
+      {
+        "id": "commons-geo:173058730",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Pacific_Oyster%2C_Kanamaluka_-_River_Tamar%2C_Beauty_Point%2C_TAS%2C_AU_imported_from_iNaturalist_photo_253144394.jpg/1280px-Pacific_Oyster%2C_Kanamaluka_-_River_Tamar%2C_Beauty_Point%2C_TAS%2C_AU_imported_from_iNaturalist_photo_253144394.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pacific_Oyster,_Kanamaluka_-_River_Tamar,_Beauty_Point,_TAS,_AU_imported_from_iNaturalist_photo_253144394.jpg",
+        "title": "Pacific Oyster, Kanamaluka - River Tamar, Beauty Point, TAS, AU imported from iNaturalist photo 253144394.jpg",
+        "credit": "no rights reserved",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "river"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-18T22:29:34.458Z"
+      }
+    ]
   }
 }
