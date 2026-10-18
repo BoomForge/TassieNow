@@ -475,8 +475,38 @@
     "bookingRequired": true
   },
   {
-    "slug": "community-bake-days-2026-10-18-hobart",
-    "name": "Community Bake Days",
+    "slug": "daniel-champagne-live-at-the-tramsheds-functions-centre-launceston-2026-10-18-launceston",
+    "name": "Daniel Champagne LIVE at The Tramsheds Functions Centre | Launceston",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-10-18",
+    "endDate": "2026-10-18",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Daniel Champagne LIVE at The Tramsheds Functions Centre | Launceston in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "Venue",
+    "eventUrl": "https://events.humanitix.com/daniel-champagne-live-at-the-tramsheds-functions-centre-or-launceston",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Daniel Champagne LIVE at The Tramsheds Functions Centre | Launceston event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "ticketUrl": "https://events.humanitix.com/daniel-champagne-live-at-the-tramsheds-functions-centre-or-launceston",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true
+  },
+  {
+    "slug": "hobart-showcase-2026-2026-10-18-hobart",
+    "name": "Hobart Showcase 2026",
     "town": "Hobart",
     "region": "Hobart & South",
     "startDate": "2026-10-18",
@@ -484,32 +514,25 @@
     "categories": [
       "Events"
     ],
-    "summary": "Community Bake Days in Hobart. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.hobartcity.com.au/Things-To-Do/Upcoming-events/Community-Bake-Days",
-    "sourceUrl": "https://www.hobartcity.com.au/Things-To-Do/Upcoming-events",
-    "sourceName": "City of Hobart",
+    "summary": "Hobart Showcase 2026 in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Venue",
+    "eventUrl": "https://events.humanitix.com/hobart-showcase-2026",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/A_man_baking_bread_01.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_man_baking_bread_01.jpg",
-      "attribution": "Creative Gurus",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "isFallback": false,
-      "sourceMethod": "verified-event-activity",
-      "mediaType": "activity-illustrative",
-      "alt": "Illustrative photograph of someone baking bread in Ghana; not the advertised Community Bake Days event",
-      "caption": "Illustrative photo: someone baking bread in Ghana. This does not depict the advertised event in Tasmania.",
-      "matchEvidence": {
-        "verified": true,
-        "verifiedType": "activity-illustrative",
-        "topic": "community baking",
-        "eventName": "Community Bake Days",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:A_man_baking_bread_01.jpg",
-        "checkedAt": "2026-10-11"
-      }
+      "url": "/images/categories/events.svg",
+      "alt": "Hobart Showcase 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketUrl": "https://events.humanitix.com/hobart-showcase-2026",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true
   },
   {
     "slug": "la-follia-2026-10-18-hobart",
@@ -987,7 +1010,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "come-and-try-disability-golf-2026-10-21-rosny-park",
@@ -1024,7 +1048,12 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketUrl": "https://events.humanitix.com/come-and-try-golf-for-the-disabled-golf-park-hobart-tas",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "devolving-minds-2026-10-21-hobart",
@@ -1143,7 +1172,8 @@
     "lastChecked": "2026-10-18",
     "startTime": "09:30",
     "endTime": "14:30",
-    "address": "30 Alexander Street, Burnie TAS 7320"
+    "address": "30 Alexander Street, Burnie TAS 7320",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "north-west-film-society-i-swear-2026-10-21-devonport",
@@ -1182,7 +1212,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "the-canopy-burnie-2026-10-21-burnie",
@@ -1208,7 +1239,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "yfcc-arvos-at-the-junction-2026-10-21-burnie",
@@ -1234,7 +1266,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "barefoot-social-bowls-2026-10-22-currie",
@@ -1828,6 +1861,38 @@
     "priceCurrency": "AUD"
   },
   {
+    "slug": "an-evening-with-pip-williams-launching-her-new-book-the-german-ward-2026-10-28-launceston",
+    "name": "An Evening with Pip Williams -- Launching her new book, The German Ward",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-10-28",
+    "endDate": "2026-10-28",
+    "categories": [
+      "Events"
+    ],
+    "summary": "An Evening with Pip Williams -- Launching her new book, The German Ward in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "The Tramsheds Function Centre",
+    "eventUrl": "https://events.humanitix.com/an-evening-with-pip-williams-launch-of-her-new-book-the-german-ward",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "An Evening with Pip Williams -- Launching her new book, The German Ward event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "ticketUrl": "https://events.humanitix.com/an-evening-with-pip-williams-launch-of-her-new-book-the-german-ward",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-18"
+  },
+  {
     "slug": "meet-the-team-from-the-disability-commissioner-tasmania-2026-10-28-huonville",
     "name": "Meet the team from the Disability Commissioner Tasmania",
     "town": "Huonville",
@@ -2246,6 +2311,44 @@
     "priceCurrency": "AUD"
   },
   {
+    "slug": "community-bake-days-2026-11-01-hobart",
+    "name": "Community Bake Days",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-01",
+    "endDate": "2026-11-01",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Community Bake Days in Hobart. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.hobartcity.com.au/Things-To-Do/Upcoming-events/Community-Bake-Days",
+    "sourceUrl": "https://www.hobartcity.com.au/Things-To-Do/Upcoming-events",
+    "sourceName": "City of Hobart",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/A_man_baking_bread_01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_man_baking_bread_01.jpg",
+      "attribution": "Creative Gurus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "isFallback": false,
+      "sourceMethod": "verified-event-activity",
+      "mediaType": "activity-illustrative",
+      "alt": "Illustrative photograph of someone baking bread in Ghana; not the advertised Community Bake Days event",
+      "caption": "Illustrative photo: someone baking bread in Ghana. This does not depict the advertised event in Tasmania.",
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "activity-illustrative",
+        "topic": "community baking",
+        "eventName": "Community Bake Days",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:A_man_baking_bread_01.jpg",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-18",
+    "ticketLastChecked": "2026-10-18"
+  },
+  {
     "slug": "dia-de-muertos-kids-2026-11-01-hobart",
     "name": "Dia de Muertos ¡Kids!",
     "town": "Hobart",
@@ -2421,12 +2524,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "ticketUrl": "https://events.humanitix.com/beyond-sound-the-music-in-all-of-us",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18"
   },
   {
     "slug": "launnie-monthly-storytelling-2026-2026-11-04-launceston",
@@ -2495,11 +2593,6 @@
     "address": "1 Ford Parade, Lindisfarne TAS 7015",
     "startTime": "18:15",
     "endTime": "19:15",
-    "ticketUrl": "https://events.humanitix.com/rotary-club-of-lindisfarne-talks-dr-bert-shugg",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-10-18",
     "priceFrom": 0,
     "priceCurrency": "AUD"
   },
@@ -2557,8 +2650,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "ticketLastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18"
   },
   {
     "slug": "east-devonport-jobs-forum-2026-2026-11-05-devonport",
@@ -2586,8 +2678,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "ticketLastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18"
   },
   {
     "slug": "burnie-harness-racing-club-meet-2026-11-06-wivenhoe",
@@ -2617,8 +2708,7 @@
     "lastChecked": "2026-10-18",
     "startTime": "18:00",
     "endTime": "23:59",
-    "address": "1 Pearl Street, Wivenhoe TAS 7320",
-    "ticketLastChecked": "2026-10-18"
+    "address": "1 Pearl Street, Wivenhoe TAS 7320"
   },
   {
     "slug": "showcase-2026-2026-11-06-hobart",
@@ -2723,8 +2813,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "ticketLastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18"
   },
   {
     "slug": "burnie-in-bloom-2026-11-07-burnie",
@@ -2750,8 +2839,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "ticketLastChecked": "2026-10-18"
+    "lastChecked": "2026-10-18"
   },
   {
     "slug": "enterprising-aardvark-10-year-fundraising-gala-2026-11-07-launceston",
@@ -3961,41 +4049,6 @@
     "ticketLastChecked": "2026-10-18"
   },
   {
-    "slug": "hobart-showcase-2026-2026-11-30-hobart",
-    "name": "Hobart Showcase 2026",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "startDate": "2026-11-30",
-    "endDate": "2026-11-30",
-    "categories": [
-      "Events"
-    ],
-    "summary": "Hobart Showcase 2026 in Hobart. Check the source for current times, venue details and availability.",
-    "venue": "Village Cinemas Hobart",
-    "eventUrl": "https://events.humanitix.com/hobart-showcase-2026",
-    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
-    "sourceName": "Humanitix Hobart",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Hobart Showcase 2026 event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "ticketUrl": "https://events.humanitix.com/hobart-showcase-2026",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "priceFrom": 10,
-    "priceTo": 25,
-    "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-18"
-  },
-  {
     "slug": "launceston-showcase-2026-2026-12-01-launceston",
     "name": "Launceston Showcase 2026",
     "town": "Launceston",
@@ -4340,38 +4393,6 @@
     },
     "status": "active",
     "lastChecked": "2026-10-18"
-  },
-  {
-    "slug": "daniel-champagne-live-at-the-tramsheds-functions-centre-launceston-2026-12-11-launceston",
-    "name": "Daniel Champagne LIVE at The Tramsheds Functions Centre | Launceston",
-    "town": "Launceston",
-    "region": "Launceston & North",
-    "startDate": "2026-12-11",
-    "endDate": "2026-12-11",
-    "categories": [
-      "Events"
-    ],
-    "summary": "Daniel Champagne LIVE at The Tramsheds Functions Centre | Launceston in Launceston. Check the source for current times, venue details and availability.",
-    "venue": "The Tramsheds Function Centre",
-    "eventUrl": "https://events.humanitix.com/daniel-champagne-live-at-the-tramsheds-functions-centre-or-launceston",
-    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
-    "sourceName": "Humanitix Launceston",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Daniel Champagne LIVE at The Tramsheds Functions Centre | Launceston event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "ticketUrl": "https://events.humanitix.com/daniel-champagne-live-at-the-tramsheds-functions-centre-or-launceston",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-10-18"
   },
   {
     "slug": "queens-of-the-stone-age-2026-12-11-glenorchy",
