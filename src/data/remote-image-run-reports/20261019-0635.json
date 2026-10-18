@@ -1,0 +1,38 @@
+{
+  "schema": "tassienow-remote-image-rights-run-v1",
+  "nominalScheduledTime": "2026-10-19T06:35:00+11:00",
+  "actualExecutionTime": "2026-10-19T06:32:02+11:00",
+  "stage": "TassieNow Image Rights",
+  "case": {
+    "kind": "place",
+    "slug": "woodbridge-market-woodbridge",
+    "name": "Woodbridge Market",
+    "town": "Woodbridge, Tasmania",
+    "source": "https://woodbridgehall.wordpress.com/woodbridge-market/"
+  },
+  "result": "blocked",
+  "reason": "GitHub safety checks rejected bounded correction to src/data/place-media-review.json; no queue update committed",
+  "evidence": {
+    "verifiedIdentity": "Woodbridge Market is at Woodbridge Hall, 3445 Channel Highway, Woodbridge Tasmania",
+    "identitySource": "https://woodbridgehall.wordpress.com/woodbridge-market/",
+    "wrongRegionSources": [
+      "https://heritage.suffolk.gov.uk/Monument/MSF3549",
+      "https://www.domports.daspa.dm/index.php/seaports/woodbridge-bay-port/"
+    ],
+    "rejectedCandidateIds": [
+      "openverse:96ce0679-179e-4a74-b182-e577583d21d8",
+      "openverse:de301309-ac72-42f8-8663-8fcad89fa56c",
+      "openverse:72d1017a-4cf6-4797-8f9e-ef72d197c589",
+      "openverse:bd55d037-14fb-4775-aeea-132cfe50e78d",
+      "openverse:2cf6f4a4-0a7b-4d10-b069-03dcc5ea778a"
+    ],
+    "remainingCandidates": "Three images linked from the genuine organiser website, but no explicit commercial reuse permission established; not approved for publication"
+  },
+  "sourceFile": "src/data/place-media-review.json",
+  "sourceFilePrewriteBlobSha": "87c178a31cd36c79ebd08bc9b476161e26fa61da",
+  "changeCommitSha": null,
+  "rightsApproved": 0,
+  "actuallyPublished": 0,
+  "hostVerification": "unobserved",
+  "nextTrigger": "Owner/provider review of blocked GitHub write; do not automatically replay rejected operation"
+}
