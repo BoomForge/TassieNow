@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19",
+  "generatedAt": "2026-10-20",
   "places": {
     "total": 2219,
     "public": 2153,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 156,
+    "active": 154,
     "media": {
       "licensedHeroCoverage": {
         "count": 65,
-        "percent": 41.7
+        "percent": 42.2
       },
-      "stillUsingCategoryArtwork": 91,
+      "stillUsingCategoryArtwork": 89,
       "bySource": {
         "verified-event-venue": 37,
         "verified-event-activity": 23,
@@ -238,11 +238,11 @@
       "byRegion": {
         "Hobart & South": {
           "count": 32,
-          "percent": 45.1
+          "percent": 45.7
         },
         "Launceston & North": {
           "count": 17,
-          "percent": 56.7
+          "percent": 58.6
         },
         "North West": {
           "count": 13,
@@ -271,16 +271,17 @@
       }
     },
     "ticketCoverage": {
-      "count": 43,
-      "percent": 27.6
+      "count": 44,
+      "percent": 28.6
     },
     "priceCoverage": {
-      "count": 65,
-      "percent": 41.7
+      "count": 60,
+      "percent": 39
     },
     "providers": {
       "Humanitix": 22,
       "Ticketek": 20,
+      "Eventbrite": 1,
       "Ticketmaster": 1
     },
     "sources": {
@@ -289,12 +290,12 @@
       "Huon Valley Council": 16,
       "Theatre North Launceston": 16,
       "Devonport City Council": 15,
-      "Humanitix Launceston": 12,
       "Theatre Royal Hobart": 12,
+      "Humanitix Launceston": 11,
       "East Coast Tasmania": 9,
       "Humanitix Hobart": 9,
-      "City of Clarence": 6,
       "City of Hobart": 6,
+      "City of Clarence": 5,
       "King Island Tourism": 3,
       "City of Launceston": 2,
       "Glenorchy City Council": 1,
@@ -303,8 +304,8 @@
       "West Coast Heritage Centre": 1
     },
     "regions": {
-      "Hobart & South": 71,
-      "Launceston & North": 30,
+      "Hobart & South": 70,
+      "Launceston & North": 29,
       "North West": 41,
       "East Coast": 9,
       "West Coast": 1,
@@ -316,18 +317,20 @@
       "Flinders Island"
     ],
     "nearTerm": {
-      "today": "2026-10-19",
-      "tomorrow": "2026-10-20",
+      "today": "2026-10-20",
+      "tomorrow": "2026-10-21",
       "nextWeekendStart": "2026-10-24",
       "nextWeekendEnd": "2026-10-25",
-      "todayOrTomorrow": 22,
+      "todayOrTomorrow": 28,
       "thisWeekend": 22,
       "townsTodayOrTomorrow": {
         "Huonville": 11,
-        "Devonport": 4,
+        "Burnie": 6,
+        "Devonport": 5,
         "Launceston": 3,
-        "Burnie": 2,
-        "Hobart": 2
+        "Glenorchy": 1,
+        "Hobart": 1,
+        "Rosny Park": 1
       },
       "regionsThisWeekend": {
         "Hobart & South": 12,
@@ -356,11 +359,11 @@
       "Launceston & North / Theatre North Launceston": 16,
       "North West / Devonport City Council": 15,
       "Hobart & South / Theatre Royal Hobart": 12,
-      "Launceston & North / Humanitix Launceston": 12,
+      "Launceston & North / Humanitix Launceston": 11,
       "East Coast / East Coast Tasmania": 9,
       "Hobart & South / Humanitix Hobart": 9,
-      "Hobart & South / City of Clarence": 6,
       "Hobart & South / City of Hobart": 6,
+      "Hobart & South / City of Clarence": 5,
       "King Island / King Island Tourism": 3,
       "Launceston & North / City of Launceston": 2,
       "Central Tasmania / Highlands BushFest organising team": 1,
