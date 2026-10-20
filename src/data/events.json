@@ -2412,14 +2412,14 @@
   {
     "slug": "mobile-service-centre-south-arm-2026-11-04-rosny-park",
     "name": "Mobile service centre – South Arm",
-    "town": "Rosny Park",
+    "town": "South Arm",
     "region": "Hobart & South",
     "startDate": "2026-11-04",
     "endDate": "2026-11-04",
     "categories": [
       "Events"
     ],
-    "summary": "Mobile service centre – South Arm in Rosny Park. Check the official event listing for current times, venue, accessibility and booking details.",
+    "summary": "The Australian Government Mobile Service Centre will visit Jetty Road near the war memorial in South Arm, with hours of 9 am to 4 pm. Date discrepancy: Services Australia currently lists 3 November 2026; City of Clarence lists 4 November 2026. Check the Services Australia itinerary before travelling.",
     "eventUrl": "https://www.ccc.tas.gov.au/event/mobile-service-centre-south-arm/",
     "sourceUrl": "https://www.ccc.tas.gov.au/explore/events/",
     "sourceName": "City of Clarence",
@@ -2433,7 +2433,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "startTime": "09:00",
+    "endTime": "16:00",
+    "venue": "Near the war memorial, Jetty Road",
+    "address": "Jetty Road, South Arm TAS"
   },
   {
     "slug": "rotary-club-of-lindisfarne-talks-dr-bert-shugg-2026-11-04-lindisfarne",
