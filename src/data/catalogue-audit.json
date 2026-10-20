@@ -1,16 +1,16 @@
 {
   "generatedAt": "2026-10-21",
   "places": {
-    "total": 2204,
-    "public": 2138,
+    "total": 2203,
+    "public": 2137,
     "suppressed": 66,
     "media": {
       "realHeroCoverage": {
-        "count": 310,
-        "percent": 14.5
+        "count": 307,
+        "percent": 14.4
       },
       "twoPlusImages": {
-        "count": 172,
+        "count": 171,
         "percent": 8
       },
       "fourPlusImages": {
@@ -21,7 +21,7 @@
         "count": 72,
         "percent": 3.4
       },
-      "totalLicensedImages": 923,
+      "totalLicensedImages": 918,
       "averageImagesPerPublicListing": 0.43
     },
     "sources": {
@@ -48,24 +48,24 @@
         "percent": 19.1
       },
       "recurringSchedule": {
-        "count": 126,
-        "percent": 5.9
+        "count": 125,
+        "percent": 5.8
       },
       "phone": {
-        "count": 393,
-        "percent": 18.4
+        "count": 392,
+        "percent": 18.3
       },
       "email": {
-        "count": 205,
-        "percent": 9.6
+        "count": 204,
+        "percent": 9.5
       },
       "address": {
         "count": 507,
         "percent": 23.7
       },
       "bookingUrl": {
-        "count": 163,
-        "percent": 7.6
+        "count": 117,
+        "percent": 5.5
       },
       "fee": {
         "count": 27,
@@ -80,17 +80,17 @@
         "percent": 1.3
       },
       "reviewLinks": {
-        "count": 2138,
+        "count": 2137,
         "percent": 100
       }
     },
     "sourceTypes": {
-      "openstreetmap": 1525,
+      "openstreetmap": 1524,
       "wikidata": 572,
       "curated": 41
     },
     "qualityTiers": {
-      "standard": 776,
+      "standard": 775,
       "strong": 619,
       "low": 473,
       "featured": 270
@@ -101,7 +101,7 @@
       "North West": 345,
       "East Coast": 249,
       "Central Tasmania": 116,
-      "West Coast": 84,
+      "West Coast": 83,
       "Flinders Island": 57,
       "King Island": 38
     },
@@ -109,7 +109,7 @@
     "categories": {
       "Food & Drink": 1041,
       "Nature & Walks": 761,
-      "Things to Do": 200,
+      "Things to Do": 199,
       "Museums": 76,
       "Markets": 30,
       "Art & Culture": 16,
@@ -123,7 +123,7 @@
       "Free": 445,
       "Café": 424,
       "Restaurant": 405,
-      "Things to Do": 204,
+      "Things to Do": 203,
       "Takeaway": 162,
       "Rainy Day": 95,
       "Art & Culture": 92,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 163,
+    "active": 162,
     "media": {
       "licensedHeroCoverage": {
         "count": 65,
-        "percent": 39.9
+        "percent": 40.1
       },
-      "stillUsingCategoryArtwork": 98,
+      "stillUsingCategoryArtwork": 97,
       "bySource": {
         "verified-event-venue": 37,
         "verified-event-activity": 23,
@@ -246,7 +246,7 @@
         },
         "North West": {
           "count": 13,
-          "percent": 28.9
+          "percent": 29.5
         },
         "East Coast": {
           "count": 1,
@@ -272,11 +272,11 @@
     },
     "ticketCoverage": {
       "count": 42,
-      "percent": 25.8
+      "percent": 25.9
     },
     "priceCoverage": {
       "count": 61,
-      "percent": 37.4
+      "percent": 37.7
     },
     "providers": {
       "Humanitix": 21,
@@ -284,7 +284,7 @@
       "Ticketmaster": 1
     },
     "sources": {
-      "Burnie City Council": 29,
+      "Burnie City Council": 28,
       "MyState Bank Arena": 21,
       "Theatre North Launceston": 16,
       "Devonport City Council": 15,
@@ -306,7 +306,7 @@
     "regions": {
       "Hobart & South": 77,
       "Launceston & North": 27,
-      "North West": 45,
+      "North West": 44,
       "East Coast": 9,
       "West Coast": 1,
       "Central Tasmania": 1,
@@ -353,7 +353,7 @@
       "missingOrOlderThan30Days": 0
     },
     "sourceRegionalMix": {
-      "North West / Burnie City Council": 29,
+      "North West / Burnie City Council": 28,
       "Hobart & South / MyState Bank Arena": 21,
       "Launceston & North / Theatre North Launceston": 16,
       "Hobart & South / Huon Valley Council": 15,
