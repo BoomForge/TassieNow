@@ -61,3 +61,26 @@ test('only Commons-tagged photos enter licensed image lookup',()=>{
   assert.equal(commonsFileFromOsmImage('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Cafe_photo.jpg/800px-Cafe_photo.jpg'),'Cafe photo.jpg');
   assert.equal(commonsFileFromOsmImage('https://restaurant.example.com/hero.jpg'),null);
 });
+
+test('Sky King short business name and complete same-address restaurant merge conservatively',()=>{
+ const short=place('Sky King','node/12348261338',-41.180000,146.360000,'Food & Drink','North West');
+ short.address='132 William St, Devonport TAS 7310';
+ short.town='Devonport';
+ const full=place('Sky King Chinese Restaurant & Takeaway','way/1323357562',-41.180052,146.360043,'Food & Drink','North West');
+ full.address='132 William Street, Devonport TAS 7310';
+ full.phone='+61 3 6424 7306';full.town='Devonport';
+ const output=selectOsmCandidates([short,full],[],new Map(),opts);
+ assert.equal(output.stats.deduplicated,1);
+ assert.equal(output.selected.length,1);
+ assert.equal(output.selected[0].sourceId,'way/1323357562');
+ assert.equal(output.selected[0].phone,'+61 3 6424 7306');
+});
+test('same address and nearby coordinates do not merge distinct food traders',()=>{
+ const a=place('Sunrise Coffee','node/1',-41.19,146.35,'Food & Drink','North West');
+ const b=place('Sunrise Coffee Art Gallery','way/2',-41.19002,146.35002,'Food & Drink','North West');
+ a.address=b.address='42 Main Road Devonport TAS 7310';
+ assert.equal(selectOsmCandidates([a,b],[],new Map(),opts).selected.length,2);
+ const distant=place('Sky King Chinese Restaurant & Takeaway','way/3',-41.20,146.36,'Food & Drink','North West');
+ distant.address='132 William Street Devonport TAS 7310';
+ assert.equal(selectOsmCandidates([a,distant],[],new Map(),opts).selected.length,2);
+});
