@@ -41,7 +41,9 @@ export function renderEventPoster(event){
  const name=String(event?.name||'Tasmanian event');
  const palette=(themes.find(t=>t[0].test(name))||[null,['#182d3d','#345d72','#ffddaa']])[1];
  const rows=linesOf(name),font=rows.some(x=>x.length>25)?48:58;
- const title=rows.map((line,i)=>'<tspan x="72" y="'+(255+(i-(rows.length-1)/2)*85)+'">'+esc(line)+'</tspan>').join('');
+ // Keep the complete three-line title within the space BELOW the y=155 kicker
+ // and ABOVE the y=535 date divider. With three rows, baselines are 240/330/420.
+ const title=rows.map((line,i)=>'<tspan x="72" y="'+(330+(i-(rows.length-1)/2)*90)+'">'+esc(line)+'</tspan>').join('');
  const town=String(event?.town||'Tasmania');
  const marks=Array.from({length:7},(_,i)=>'<circle cx="'+(790+i*48)+'" cy="'+(145+i*63)+
   '" r="'+(35+i*19)+'" stroke="'+palette[2]+'" stroke-opacity=".12" stroke-width="3" fill="none"/>').join('');
