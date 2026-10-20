@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import {permittedLicence} from './discover/lib/event-media.mjs';
+import {usableCommonsCreator} from './discover/lib/commons-credit-guard.mjs';
 import {isMarketPlace,selectPhotoEnrichmentTargets} from './discover/lib/image-enrichment-targets.mjs';
 
 const FILE = new URL('../src/data/places.json', import.meta.url);
@@ -62,10 +63,12 @@ function imageFromCandidate(place, page, info, score) {
   const meta = info.extmetadata || {};
   const license = clean(meta.LicenseShortName?.value || meta.UsageTerms?.value || '');
   if (!permittedLicence(license,meta.LicenseUrl?.value)) { stats.licenceRejected++; return null; }
+  const creator=usableCommonsCreator(meta,license,meta.LicenseUrl?.value);
+  if(!creator){ stats.licenceRejected++; return null; }
   return {
     url: info.thumburl || info.url,
     alt: `${place.name}, Tasmania`,
-    attribution: clean(meta.Artist?.value || meta.Credit?.value || '') || 'Wikimedia Commons contributor',
+    attribution: creator,
     license,
     licenseUrl: meta.LicenseUrl?.value || null,
     sourceUrl: info.descriptionurl || null,
