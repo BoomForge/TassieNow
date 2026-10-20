@@ -110,3 +110,20 @@ test('Trowunna no longer inherits generic Tasmania locality or unrelated region'
  const manual={...stale,managedManually:true};
  assert.equal(applyVerifiedPlaceDisplayOverrides(manual,overrides),manual);
 });
+
+
+test('Coles Beach locality resolves to Devonport with only council-sourced facilities',()=>{
+ const override=overrides['coles-beach'];
+ assert.equal(override.town,'Devonport');
+ assert.equal(override.region,'North West');
+ assert.equal(override.detailSources.summary.url,'https://www.devonport.tas.gov.au/park-recreation/coles-beach/');
+ const stale={slug:'coles-beach',name:'Coles Beach',town:'Tasmania',region:'Hobart & South',summary:'Beach in Tasmania.'};
+ const fixed=applyVerifiedPlaceDisplayOverrides(stale,overrides);
+ assert.equal(fixed.town,'Devonport');
+ assert.equal(fixed.region,'North West');
+ assert.equal(fixed.address,'Coles Beach Road, Devonport TAS 7310');
+ assert.match(fixed.summary,/electric barbecue/);
+ assert.match(fixed.summary,/outdoor shower/);
+ const manual={...stale,managedManually:true};
+ assert.equal(applyVerifiedPlaceDisplayOverrides(manual,overrides),manual);
+});
