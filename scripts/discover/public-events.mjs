@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import { isMarketEvent } from '../../src/lib/market-category.js';
 import { regionalCardLocation } from '../../src/lib/regional-event-location.js';
+import { tasEventCalendarDate } from './lib/tas-event-calendar-date.mjs';
 
 const FILE = new URL('../../src/data/events.json', import.meta.url);
 const USER_AGENT = 'TassieNow/1.2 (+https://tassienow.pages.dev)';
@@ -71,7 +72,7 @@ function titleFromEventUrl(value=''){
     return leaf.split('-').filter(Boolean).map((token,index)=>token==='v'?'v':special[token.toLowerCase()]||(/^\d/.test(token)?token:token.charAt(0).toUpperCase()+token.slice(1))).join(' ').replace(/\s+/g,' ').trim();
   }catch{return'';}
 }
-function dateValue(value){if(!value)return null;const d=new Date(value);return Number.isNaN(d.valueOf())?null:d.toISOString().slice(0,10);}
+const dateValue=tasEventCalendarDate;
 function flatten(value,out=[]){if(!value)return out;if(Array.isArray(value)){value.forEach((x)=>flatten(x,out));return out;}if(typeof value!=='object')return out;const types=Array.isArray(value['@type'])?value['@type']:[value['@type']];if(types.includes('Event'))out.push(value);for(const child of Object.values(value))if(child&&typeof child==='object')flatten(child,out);return out;}
 function jsonld(html){const out=[];for(const match of html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)){try{flatten(JSON.parse(match[1].trim()),out);}catch{}}return out;}
 function offersFrom(event){const offers=Array.isArray(event?.offers)?event.offers:event?.offers?[event.offers]:[];const offer=offers.find((item)=>item&&typeof item==='object')||null;if(!offer)return{};const ticketUrl=offer.url||null;const rawPrice=offer.lowPrice??offer.price??null;const high=offer.highPrice??null;return{ticketUrl,priceFrom:rawPrice!==null&&rawPrice!==''&&Number.isFinite(Number(rawPrice))?Number(rawPrice):undefined,priceTo:high!==null&&high!==''&&Number.isFinite(Number(high))?Number(high):undefined,priceCurrency:offer.priceCurrency?String(offer.priceCurrency).toUpperCase():undefined,availability:typeof offer.availability==='string'?offer.availability.split('/').pop():undefined};}
