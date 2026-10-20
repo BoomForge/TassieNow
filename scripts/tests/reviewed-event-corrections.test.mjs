@@ -120,3 +120,23 @@ test('agriCULTURED and Mind Blown keep official Tasmania-local event days and ve
  assert.equal(blown.town,'Invermay');
  assert.equal(blown.address,'4 Invermay Road, Invermay TAS 7248');
 });
+
+
+test('Writing Life previous-day UTC date is corrected without resurrecting an expired event',()=>{
+ const old={
+  slug:'read-write-publish-writing-life-2026-2026-10-18-launceston',
+  eventUrl:'https://events.humanitix.com/read-write-publish-writing-life-2026',
+  name:'Read, Write, Publish... Writing Life 2026',
+  startDate:'2026-10-18',endDate:'2026-10-19',town:'Launceston'
+ };
+ for(const candidate of [old,{...old,slug:'future-reimport-with-utc-date'}]){
+  const fixed=applyReviewedEventCorrection(candidate,overrides);
+  assert.equal(fixed.startDate,'2026-10-19');
+  assert.equal(fixed.endDate,'2026-10-19');
+  assert.equal(fixed.startTime,'09:45');
+  assert.equal(fixed.endTime,'16:00');
+  assert.match(fixed.venue,/River's Edge/);
+ }
+ assert.ok(!events.some(e=>e.eventUrl===old.eventUrl && e.startDate==='2026-10-18'),
+  'TassieNow must not resurrect the erroneous 18 October listing');
+});
