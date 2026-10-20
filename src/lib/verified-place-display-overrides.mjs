@@ -30,6 +30,13 @@ export function applyVerifiedPlaceDisplayOverrides(place, overrides) {
   if (place.slug === 'trowunna-wildlife-park' && override.region === 'Launceston & North') {
     copy.region = override.region;
   }
+  // Council-verified Coles Beach is in Devonport, not the generic state
+  // locality. Keep display copy consistent until the full catalogue rebuild.
+  if (place.slug === 'coles-beach' && override.region === 'North West') {
+    copy.region = 'North West';
+    if (typeof override.summary === 'string' && override.summary.trim())
+      copy.summary = override.summary;
+  }
   if (licensedImage && place.image?.isFallback === true) copy.image = structuredClone(override.image);
   if (override.removePhone === true) delete copy.phone;
   if (override.removeOpeningHours === true) delete copy.openingHours;
