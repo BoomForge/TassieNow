@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import { phoneFromText } from '../src/lib/phone-candidate.mjs';
+import { parksTasHoursAreForListing } from '../src/lib/parks-hours-source-guard.mjs';
 import { normaliseStructuredAddress, normaliseTelephone, safeBookingUrl, sanitiseListingFields, structuredBookingUrl } from '../src/lib/listing-field-sanitizers.mjs';
 
 const FILE = new URL('../src/data/places.json', import.meta.url);
@@ -310,6 +311,7 @@ function exceptionNote(text = '') {
 function source(type, url) { return { type, url, checkedAt: TODAY }; }
 function applyField(place, key, value, srcUrl) {
   if (value == null || value === '') return false;
+  if (key === 'openingHours' && !parksTasHoursAreForListing(place.name, srcUrl)) return false;
   if (key === 'openingHours' && place.discovery?.method === 'structured-source') return false;
   if (place.managedManually && place[key]) return false;
   const existingType = place.detailSources?.[key]?.type;
