@@ -6,7 +6,7 @@ import { regionFor } from './discover/lib/regions.mjs';
 import { shouldRemoveParksContactHours } from '../src/lib/parks-hours-source-guard.mjs';
 import { correctWeldboroughSource } from '../src/lib/weldborough-source-correction.mjs';
 import { dedupeWestCoastRailwayPlaces } from '../src/lib/west-coast-railway-dedupe.mjs';
-import { dedupeIdenticalWikidataPlaces } from '../src/lib/wikidata-place-dedupe.mjs';
+import { dedupeIdenticalWikidataPlaces, dedupeReviewedBeaconsfieldCentre } from '../src/lib/wikidata-place-dedupe.mjs';
 import { correctSalamancaPhotoCredit } from '../src/lib/salamanca-attribution-correction.mjs';
 
 const file = new URL('../src/data/places.json', import.meta.url);
@@ -114,7 +114,9 @@ const railwayReview=dedupeWestCoastRailwayPlaces(places);
 // Remove only source-identical same-name nearby copies; existing public aliases
 // have independently reviewed 301s in public/_redirects.
 const wikidataReview=dedupeIdenticalWikidataPlaces(railwayReview.places);
-await fs.writeFile(file, JSON.stringify(wikidataReview.places,null,2)+'\n');
+const beaconsfieldReview=dedupeReviewedBeaconsfieldCentre(wikidataReview.places);
+await fs.writeFile(file, JSON.stringify(beaconsfieldReview.places,null,2)+'\n');
 if(railwayReview.removed)console.log('Verified West Coast Railway duplicate removed: '+railwayReview.removed);
 if(wikidataReview.removed)console.log('Same-entity Wikidata duplicates removed: '+wikidataReview.removed+' across '+wikidataReview.groups+' groups; '+wikidataReview.aliases.map(a=>a.from+'>'+a.to).join(', '));
+if(beaconsfieldReview.removed)console.log('Verified Beaconsfield same-venue cross-source duplicate removed: '+beaconsfieldReview.removed);
 console.log('Verified catalogue correction: '+fieldsCorrected+' source-backed fields updated; '+bookingLinksRemoved+' invalid booking links removed; '+places.length+' listings reviewed.');
