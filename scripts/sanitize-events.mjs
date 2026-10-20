@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import { decodeEventEntities } from '../src/lib/event-text-entities.mjs';
-import { applyVerifiedBurnieEvent } from './discover/lib/verified-burnie-events.mjs';
+import { applyVerifiedBurnieEvent, restoreVerifiedBurnieEvents } from './discover/lib/verified-burnie-events.mjs';
 import { applyReviewedEventCorrection,normaliseEventSourceUrl } from './discover/lib/reviewed-event-corrections.mjs';
 
 const FILE = new URL('../src/data/events.json', import.meta.url);
@@ -76,7 +76,7 @@ const TODAY=new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Hobart',year:'n
 
 const cleaned=[];
 let removed=0,repaired=0;
-for(const original of events){
+for(const original of restoreVerifiedBurnieEvents(events,TODAY)){
   const canonical=applyVerifiedBurnieEvent(original,TODAY);
   const event=applyReviewedEventCorrection(canonical,overrides);
   event.name=cleanText(event.name);
