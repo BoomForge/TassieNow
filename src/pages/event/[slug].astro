@@ -1,5 +1,6 @@
 ---
 import {eventDisplayImage,eventDisplayAlt} from '../../lib/event-posters.mjs';
+import { sourceEventLocation } from '../../lib/event-source-location.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
@@ -46,7 +47,8 @@ const formatEventTime = (value) => {
   return `${hour % 12 || 12}:${match[2]} ${hour >= 12 ? 'pm' : 'am'}`;
 };
 
-const hasNamedVenue = typeof event.venue === 'string' && event.venue.trim().length > 0;
+const namedVenue = sourceEventLocation({name:event.venue}).venue;
+const hasNamedVenue = Boolean(namedVenue);
 // Only publish Google Event markup when the source identifies an actual venue.
 // Other event pages stay public and indexable, but we do not invent location names.
 const eventSchema = hasNamedVenue ? {
@@ -64,7 +66,7 @@ const eventSchema = hasNamedVenue ? {
   eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
   location: {
     '@type': 'Place',
-    name: event.venue.trim(),
+    name: namedVenue,
     address: {
       '@type': 'PostalAddress',
       streetAddress: event.address || undefined,
