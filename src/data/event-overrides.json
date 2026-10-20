@@ -446,7 +446,9 @@
       "endTime": "15:00",
       "town": "Rosny Park",
       "venue": "Rosny Library",
-      "address": "Bligh Street, Rosny Park TAS, Australia"
+      "address": "Bligh Street, Rosny Park TAS 7018",
+      "slug": "beyond-sound-the-music-in-all-of-us-2026-12-03-rosny-park",
+      "summary": "Free inclusive music and movement session for children aged 0–5 and their families, including children with hearing loss. Hosted by the Shepherd Centre with an Auslan interpreter at Rosny Library on Thursday 3 December 2026, 1–3 pm. Advance registration is available through the council listing."
     },
     "eventUrl": "https://www.ccc.tas.gov.au/event/beyond-sound-the-music-in-all-of-us/",
     "evidenceUrl": "https://www.ccc.tas.gov.au/event/beyond-sound-the-music-in-all-of-us/",
@@ -459,12 +461,26 @@
       "endDate": "2026-10-26",
       "town": "Cambridge",
       "venue": "Golf Park Hobart",
-      "address": "Cranston Parade, Cambridge TAS, Australia"
+      "address": "Cranston Parade, Cambridge TAS 7170",
+      "slug": "international-day-of-people-with-disability-come-and-try-golf-2026-10-26-cambridge",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "summary": "Free inclusive Come & Try Golf clinic at Golf Park Hobart in Cambridge, Monday 26 October 2026 from 2:30 pm to 3:30 pm. Empower Golf specialist coaches welcome people living with disability; advance registration is essential so equipment can be provided.",
+      "image": {
+        "url": "/images/categories/events.svg",
+        "alt": "International Day of People with Disability Come and Try golf — original TassieNow event artwork",
+        "attribution": "TassieNow",
+        "license": "Site artwork",
+        "licenseUrl": null,
+        "sourceUrl": null,
+        "isFallback": true,
+        "sourceMethod": "source-reviewed-fallback"
+      }
     },
     "eventUrl": "https://www.ccc.tas.gov.au/event/come-and-try-disability-golf/",
     "evidenceUrl": "https://www.ccc.tas.gov.au/event/come-and-try-disability-golf/",
     "verifiedOn": "2026-10-20",
-    "reason": "Correction for original AI Ops work-20261018-570185206b4ac083; keep old URL until confirmed 301 redirect."
+    "reason": "Original AI Ops work-20261018-570185206b4ac083: council own matching 26 Oct detail confirms last-Monday 2:30–3:30 pm free accessible golf at Cambridge; reject unrelated Pinehurst golf photo and stop cross-card Rosny Park slug."
   },
   "agricultured-2026-2026-11-04-launceston": {
     "fields": {
