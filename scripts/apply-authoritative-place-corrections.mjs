@@ -2,12 +2,19 @@ import fs from 'node:fs/promises';
 import overrides from '../src/data/place-overrides.json' with { type: 'json' };
 import { sanitiseListingFields } from '../src/lib/listing-field-sanitizers.mjs';
 import { safePlaceBookingUrl } from '../src/lib/place-booking-guard.mjs';
+import { regionFor } from './discover/lib/regions.mjs';
 
 const file = new URL('../src/data/places.json', import.meta.url);
 const places = JSON.parse(await fs.readFile(file, 'utf8'));
 const sourceBacked = new Set(['ashgrove-cheese-factory','willie-smith-s-apple-shed','1830','calcified-forest','archers-knob','bird-hide','point-vision','springlawn-bird-hide-lookout','tasmanian-produce-market','hastings-thermal-springs','crabtree-crop-and-crafts-market-crabtree','the-hangout-cafe-and-restaurant','bento-legana','mr-burger','little-riva']);
 let fieldsCorrected=0, bookingLinksRemoved=0;
 for (const place of places) {
+  // Correct the exact North West town rather than the separate southern Sorell.
+  // Runs in the normal build to repair older curated and generated records alike.
+  if (/^port\s+sorell$/i.test(String(place.town||'').trim())) {
+    const correct=regionFor(place.latitude,place.longitude,place.town);
+    if (place.region!==correct) { place.region=correct; fieldsCorrected++; }
+  }
   if (sourceBacked.has(place.slug) && overrides[place.slug]) {
     for (const field of ['openingHours','phone','address']) {
       if (typeof overrides[place.slug][field] === 'string' && overrides[place.slug][field].trim()
