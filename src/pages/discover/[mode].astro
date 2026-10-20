@@ -7,6 +7,7 @@ import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import places from '../../data/places.json';
 import events from '../../data/events.json';
 import { marketOccurrences, weekendDates } from '../../lib/market-occurrences.js';
+import { eventOccursOnLocalDay, eventOccursWithin } from '../../lib/event-session-dates.js';
 import { marketCopy } from '../../lib/market-seo.mjs';
 import { rankEventDiscovery } from '../../lib/event-ranking.js';
 
@@ -146,9 +147,9 @@ const activeEvents = events
   .sort((a, b) => a.startDate.localeCompare(b.startDate) || a.name.localeCompare(b.name));
 
 const matchedEvents = config.eventMode === 'today'
-  ? activeEvents.filter((event) => event.startDate <= today && event.endDate >= today)
+  ? activeEvents.filter((event) => eventOccursOnLocalDay(event, today))
   : config.eventMode === 'weekend'
-    ? activeEvents.filter((event) => event.startDate <= sundayDate && event.endDate >= saturdayDate)
+    ? activeEvents.filter((event) => eventOccursWithin(event, saturdayDate, sundayDate))
     : [];
 
 const isEventMode = Boolean(config.eventMode);
