@@ -180,6 +180,7 @@
       "official-walk-data",
       "real-image",
       "contact-details",
+      "booking-link",
       "review-link",
       "details-checked"
     ],
@@ -243,8 +244,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Bishop-and-Clerk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/bishop-and-clerk",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "4-5 hour walk, 3-5 hour ride , 11km return, Grade 4",
@@ -273,10 +275,9 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/Pages/Bishop-and-Clerk.aspx",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/bishop-and-clerk"
     }
   },
   {
@@ -854,6 +855,7 @@
       "official-walk-data",
       "real-image",
       "contact-details",
+      "booking-link",
       "review-link",
       "details-checked"
     ],
@@ -1056,8 +1058,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Duck-Reach.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/duck-reach",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -1088,10 +1091,9 @@
       "Duck Reach Power Station Picture 1.jpg"
     ],
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/Pages/Duck-Reach.aspx",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/duck-reach"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
@@ -1274,6 +1276,95 @@
       "checkedAt": "2026-10-20",
       "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/maingon-blowhole"
     }
+  },
+  {
+    "slug": "montezuma-falls",
+    "name": "Montezuma Falls",
+    "town": "Rosebery",
+    "region": "West Coast",
+    "latitude": -41.8383247,
+    "longitude": 145.4764859,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Montezuma Falls is an official Parks Tasmania walk. Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/Montezuma-Falls.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/2938324595",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2938324595",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6409 1020",
+    "email": "PWS.WestCoast@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Montezuma_Falls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "alt": "Montezuma Falls, Tasmania",
+      "attribution": "avidd",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montezuma_Falls.jpg",
+      "isFallback": false,
+      "sourceMethod": "wikidata-p18",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Montezuma%20Falls%20Rosebery%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T02:23:34.969Z"
+    },
+    "qualityScore": 100,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "real-image",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
   },
   {
     "slug": "remarkable-cave",
@@ -1949,94 +2040,6 @@
       "checkedAt": "2026-10-20",
       "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout"
     }
-  },
-  {
-    "slug": "montezuma-falls",
-    "name": "Montezuma Falls",
-    "town": "Rosebery",
-    "region": "West Coast",
-    "latitude": -41.8383247,
-    "longitude": 145.4764859,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Montezuma Falls is an official Parks Tasmania walk. Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/Montezuma-Falls.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/2938324595",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2938324595",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6409 1020",
-    "email": "PWS.WestCoast@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Montezuma_Falls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "alt": "Montezuma Falls, Tasmania",
-      "attribution": "avidd",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montezuma_Falls.jpg",
-      "isFallback": false,
-      "sourceMethod": "wikidata-p18",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Montezuma%20Falls%20Rosebery%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls",
-      "type": "government",
-      "checkedAt": "2026-10-20"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T02:23:34.969Z"
-    },
-    "qualityScore": 98,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "real-image",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
   },
   {
     "slug": "friendly-beaches-reserve",
@@ -2968,96 +2971,6 @@
     ]
   },
   {
-    "slug": "frankland-beaches",
-    "name": "Frankland Beaches",
-    "town": "Tasmania",
-    "region": "Central Tasmania",
-    "latitude": -42.11,
-    "longitude": 146.19,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor",
-      "Free"
-    ],
-    "summary": "Frankland Beaches Walk is an official Parks Tasmania walk. 2 hours , 6 km return, Grade 2 · Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/Frankland-Beaches-Walk.aspx",
-    "sourceUrl": "https://www.wikidata.org/wiki/Q21956186",
-    "sourceType": "wikidata",
-    "sourceId": "Q21956186",
-    "wikidata": "Q21956186",
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Frankland Beaches category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
-      "type": "government",
-      "checkedAt": "2026-10-20"
-    },
-    "walk": {
-      "duration": "2 hours , 6 km return, Grade 2",
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T02:22:43.386Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Frankland%20Beaches%20Tasmania%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-20",
-    "email": "LakeStClair@parks.tas.gov.au",
-    "detailSources": {
-      "email": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
-        "checkedAt": "2026-10-06"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
-        "checkedAt": "2026-10-06"
-      }
-    },
-    "phone": "03 6289 1115",
-    "qualityScore": 91,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "wikidata",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "lastWikidataChecked": "2026-10-06",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches"
-    }
-  },
-  {
     "slug": "mona",
     "name": "Museum of Old and New Art (Mona)",
     "town": "Berriedale",
@@ -3966,6 +3879,95 @@
     }
   },
   {
+    "slug": "frankland-beaches",
+    "name": "Frankland Beaches",
+    "town": "Tasmania",
+    "region": "Central Tasmania",
+    "latitude": -42.11,
+    "longitude": 146.19,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor",
+      "Free"
+    ],
+    "summary": "Frankland Beaches Walk is an official Parks Tasmania walk. 2 hours , 6 km return, Grade 2 · Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/Frankland-Beaches-Walk.aspx",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q21956186",
+    "sourceType": "wikidata",
+    "sourceId": "Q21956186",
+    "wikidata": "Q21956186",
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Frankland Beaches category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": "2 hours , 6 km return, Grade 2",
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T02:22:43.386Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Frankland%20Beaches%20Tasmania%20Tasmania"
+      }
+    ],
+    "lastDetailsChecked": "2026-10-20",
+    "email": "LakeStClair@parks.tas.gov.au",
+    "detailSources": {
+      "email": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
+        "checkedAt": "2026-10-06"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "phone": "03 6289 1115",
+    "qualityScore": 89,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "wikidata",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "lastWikidataChecked": "2026-10-06",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches"
+    }
+  },
+  {
     "name": "Franklin Market",
     "town": "Franklin",
     "latitude": -43.0890065,
@@ -4388,6 +4390,93 @@
     "discoveryStaleSince": "2026-10-20"
   },
   {
+    "slug": "mount-gnomon",
+    "name": "Mount Gnomon",
+    "town": "Penguin",
+    "region": "North West",
+    "latitude": -41.1748751,
+    "longitude": 146.033143,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Mount Gnomon Lookout is an official Parks Tasmania walk. 1 hour return , 2km return, Grade 3 · Grade 3.",
+    "website": "https://parks.tas.gov.au/Pages/Mount%20Gnomon-Lookout.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/2347530456",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2347530456",
+    "wikidata": "Q21938707",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6464 3008",
+    "email": "Admin.PWSNW@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Mount Gnomon category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Mount%20Gnomon%20Penguin%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-gnomon-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": "1 hour return , 2km return, Grade 3",
+      "grade": 3
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T02:23:32.717Z"
+    },
+    "qualityScore": 89,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "wikidata",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-gnomon-lookout"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
     "slug": "painted-cliffs",
     "name": "Painted Cliffs",
     "town": "Triabunna",
@@ -4637,7 +4726,7 @@
       },
       "openingHours": {
         "type": "official-website",
-        "url": "https://libraries.tas.gov.au/locations/beaconsfield-library/",
+        "url": "https://libraries.tas.gov.au/locations/bicheno-library/",
         "checkedAt": "2026-10-20"
       }
     },
@@ -4674,7 +4763,7 @@
       "url": "https://libraries.tas.gov.au/locations/allport-library-and-museum-of-fine-arts/"
     },
     "bookingUrl": "https://libraries.tas.gov.au/locations/bicheno-library/",
-    "openingHours": "Mo 02:15-05:00; Tu 02:15-05:00; We 02:15-05:00; Th 02:15-05:00; Fr 10:00-01:00; Sa 09:30-12:30; Sa 08:30-14:00"
+    "openingHours": "Tu 10:00-02:00; We 10:00-04:00; Th 10:00-02:00; Sa 09:30-12:30"
   },
   {
     "slug": "beaconsfield-mine-and-heritage-centre-2",
@@ -5022,6 +5111,120 @@
     "bookingUrl": "https://mona.net.au/tickets"
   },
   {
+    "slug": "tahune-airwalk-cafe",
+    "name": "Tahune Airwalk Cafe",
+    "town": "Geeveston",
+    "region": "Hobart & South",
+    "latitude": -43.0950077,
+    "longitude": 146.729694,
+    "categories": [
+      "Food & Drink",
+      "Café",
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Tahune Airwalk is an official Parks Tasmania walk. Grade 1.",
+    "website": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/638166922",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/638166922",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "phone": "03 6121 7026",
+    "email": "Huonville@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "email": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+        "checkedAt": "2026-10-09"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+        "checkedAt": "2026-10-09"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-17",
+    "image": {
+      "url": "/images/categories/food.svg",
+      "alt": "Tahune Airwalk Cafe category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T02:22:55.721Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Tahune%20Airwalk%20Cafe%20Geeveston%20Tasmania"
+      }
+    ],
+    "schedule": {
+      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
+      "sourceUrl": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+      "daysOfWeek": [
+        "Tuesday",
+        "Wednesday"
+      ],
+      "startTime": "10:00",
+      "endTime": "16:00"
+    },
+    "qualityScore": 88,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-12"
+  },
+  {
     "name": "Liffey Valley Market",
     "slug": "liffey-valley-market-liffey",
     "town": "Liffey",
@@ -5161,205 +5364,6 @@
       "checkedAt": "2026-10-20",
       "url": "https://northernmidlands.tas.gov.au/events/liffey-valley-market"
     },
-    "lastWikidataLinkChecked": "2026-10-12"
-  },
-  {
-    "slug": "mount-gnomon",
-    "name": "Mount Gnomon",
-    "town": "Penguin",
-    "region": "North West",
-    "latitude": -41.1748751,
-    "longitude": 146.033143,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Mount Gnomon Lookout is an official Parks Tasmania walk. 1 hour return , 2km return, Grade 3 · Grade 3.",
-    "website": "https://parks.tas.gov.au/Pages/Mount%20Gnomon-Lookout.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/2347530456",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2347530456",
-    "wikidata": "Q21938707",
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6464 3008",
-    "email": "Admin.PWSNW@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Mount Gnomon category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Mount%20Gnomon%20Penguin%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-gnomon-lookout",
-      "type": "government",
-      "checkedAt": "2026-10-20"
-    },
-    "walk": {
-      "duration": "1 hour return , 2km return, Grade 3",
-      "grade": 3
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T02:23:32.717Z"
-    },
-    "qualityScore": 87,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "wikidata",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-gnomon-lookout"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
-    "slug": "tahune-airwalk-cafe",
-    "name": "Tahune Airwalk Cafe",
-    "town": "Geeveston",
-    "region": "Hobart & South",
-    "latitude": -43.0950077,
-    "longitude": 146.729694,
-    "categories": [
-      "Food & Drink",
-      "Café",
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Tahune Airwalk is an official Parks Tasmania walk. Grade 1.",
-    "website": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/638166922",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/638166922",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "phone": "03 6121 7026",
-    "email": "Huonville@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "email": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-        "checkedAt": "2026-10-09"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-        "checkedAt": "2026-10-09"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-17",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Tahune Airwalk Cafe category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-      "type": "government",
-      "checkedAt": "2026-10-20"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T02:22:55.721Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Tahune%20Airwalk%20Cafe%20Geeveston%20Tasmania"
-      }
-    ],
-    "schedule": {
-      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
-      "sourceUrl": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-      "daysOfWeek": [
-        "Tuesday",
-        "Wednesday"
-      ],
-      "startTime": "10:00",
-      "endTime": "16:00"
-    },
-    "qualityScore": 86,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09",
     "lastWikidataLinkChecked": "2026-10-12"
   },
   {
@@ -6249,6 +6253,92 @@
     }
   },
   {
+    "slug": "huon-pine-walk-lookout",
+    "name": "Huon Pine Walk Lookout",
+    "town": "Savage River",
+    "region": "West Coast",
+    "latitude": -41.6505711,
+    "longitude": 145.0735713,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Huon Pine Walk is an official Parks Tasmania walk. 20 minutes return , 600m return, Grade 1 · Grade 1.",
+    "website": "https://parks.tas.gov.au/Pages/Huon-Pine-Walk.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/5222588343",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/5222588343",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6409 1020",
+    "email": "PWS.WestCoast@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Huon Pine Walk Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Huon%20Pine%20Walk%20Lookout%20Savage%20River%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": "20 minutes return , 600m return, Grade 1",
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T02:23:35.120Z"
+    },
+    "qualityScore": 82,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
     "slug": "maritime-museum-of-tasmania",
     "name": "Maritime Museum of Tasmania",
     "town": "Hobart",
@@ -6627,6 +6717,90 @@
     "discoveryStaleSince": "2026-10-20"
   },
   {
+    "slug": "reservoir",
+    "name": "Reservoir",
+    "town": "Triabunna",
+    "region": "East Coast",
+    "latitude": -42.5898395,
+    "longitude": 148.0853474,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "The Reservoir Circuit is an official Parks Tasmania walk. 0.5-1 hour ride , 4km return, Grade 3 · Grade 3.",
+    "website": "https://parks.tas.gov.au/Pages/The-Reservoir-Circuit.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/582540521",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/582540521",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6123 4040",
+    "email": "MariaIslandEnquiries@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Reservoir category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Reservoir%20Triabunna%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/the-reservoir-circuit",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": "0.5-1 hour ride , 4km return, Grade 3",
+      "grade": 3
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T02:22:46.638Z"
+    },
+    "qualityScore": 82,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/the-reservoir-circuit"
+    }
+  },
+  {
     "slug": "sleepy-bay-lookout",
     "name": "Sleepy Bay Lookout",
     "town": "Coles Bay",
@@ -6681,8 +6855,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Sleepy-Bay.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/sleepy-bay",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "20 minutes return , 500m return, Grade 3",
@@ -6710,10 +6885,9 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/Pages/Sleepy-Bay.aspx",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/sleepy-bay"
     },
     "schedule": {
       "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
@@ -6791,8 +6965,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "30 minutes return , 2 km, Grade 1",
@@ -6820,10 +6995,9 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
@@ -7110,8 +7284,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "5 minutes return , 300 metres, Grade 2",
@@ -7149,10 +7324,9 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout"
     }
   },
   {
@@ -7424,174 +7598,6 @@
       "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://tasmaniazoo.com.au/"
-    }
-  },
-  {
-    "slug": "huon-pine-walk-lookout",
-    "name": "Huon Pine Walk Lookout",
-    "town": "Savage River",
-    "region": "West Coast",
-    "latitude": -41.6505711,
-    "longitude": 145.0735713,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Huon Pine Walk is an official Parks Tasmania walk. 20 minutes return , 600m return, Grade 1 · Grade 1.",
-    "website": "https://parks.tas.gov.au/Pages/Huon-Pine-Walk.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/5222588343",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/5222588343",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6409 1020",
-    "email": "PWS.WestCoast@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Huon Pine Walk Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Huon%20Pine%20Walk%20Lookout%20Savage%20River%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk",
-      "type": "government",
-      "checkedAt": "2026-10-20"
-    },
-    "walk": {
-      "duration": "20 minutes return , 600m return, Grade 1",
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T02:23:35.120Z"
-    },
-    "qualityScore": 80,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
-    "slug": "reservoir",
-    "name": "Reservoir",
-    "town": "Triabunna",
-    "region": "East Coast",
-    "latitude": -42.5898395,
-    "longitude": 148.0853474,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "The Reservoir Circuit is an official Parks Tasmania walk. 0.5-1 hour ride , 4km return, Grade 3 · Grade 3.",
-    "website": "https://parks.tas.gov.au/Pages/The-Reservoir-Circuit.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/582540521",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/582540521",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6123 4040",
-    "email": "MariaIslandEnquiries@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Reservoir category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Reservoir%20Triabunna%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/the-reservoir-circuit",
-      "type": "government",
-      "checkedAt": "2026-10-20"
-    },
-    "walk": {
-      "duration": "0.5-1 hour ride , 4km return, Grade 3",
-      "grade": 3
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T02:22:46.638Z"
-    },
-    "qualityScore": 80,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/the-reservoir-circuit"
     }
   },
   {
@@ -13012,90 +13018,6 @@
     "bookingUrl": "https://ecom.roller.app/zoodoozoo/httpsecomrollerappzoodoozoomyvenuecheckout/en/product/526793"
   },
   {
-    "slug": "lookout",
-    "name": "Lookout",
-    "town": "Adventure Bay",
-    "region": "Hobart & South",
-    "latitude": -43.3610277,
-    "longitude": 147.2951949,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Leven Canyon Lookout is an official Parks Tasmania walk. Grade 3.",
-    "website": "https://parks.tas.gov.au/Pages/Leven-Canyon-Lookout.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/6252933086",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/6252933086",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6464 3008",
-    "email": "parkfees@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Lookout%20Adventure%20Bay%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout",
-      "type": "government",
-      "checkedAt": "2026-10-20"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 3
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T02:22:48.651Z"
-    },
-    "qualityScore": 62,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "weak-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout"
-    }
-  },
-  {
     "slug": "cygnet-market",
     "name": "Cygnet Market",
     "town": "Cygnet",
@@ -13972,6 +13894,89 @@
         "confidence": "high"
       }
     ]
+  },
+  {
+    "slug": "lookout",
+    "name": "Lookout",
+    "town": "Adventure Bay",
+    "region": "Hobart & South",
+    "latitude": -43.3610277,
+    "longitude": 147.2951949,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Leven Canyon Lookout is an official Parks Tasmania walk. Grade 3.",
+    "website": "https://parks.tas.gov.au/Pages/Leven-Canyon-Lookout.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/6252933086",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/6252933086",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6464 3008",
+    "email": "parkfees@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Lookout%20Adventure%20Bay%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 3
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T02:22:48.651Z"
+    },
+    "qualityScore": 60,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "weak-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout"
+    }
   },
   {
     "slug": "tasmanian-transport-museum-glenorchy",
@@ -34378,10 +34383,9 @@
       "checkedAt": "2026-10-20"
     },
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://www.barwaizakaya.com/",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://www.barwaizakaya.com/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -36492,10 +36496,9 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://anvers-chocolate.com.au/",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://anvers-chocolate.com.au/"
     },
     "schedule": {
       "summary": "Open daily, 7am to 5pm, 7 days a week",
@@ -45764,7 +45767,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-20",
       "url": "https://www.mudbar.com.au/",
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -46552,10 +46555,9 @@
     "rankedAt": "2026-10-20",
     "lastOfficialDetailsChecked": "2026-10-20",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://www.gordonrivercruises.com.au/",
-      "error": "403 Forbidden"
+      "url": "https://www.gordonrivercruises.com.au/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
@@ -46896,10 +46898,9 @@
       "checkedAt": "2026-10-20"
     },
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://www.abundanceonthequay.com.au/",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://www.abundanceonthequay.com.au/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
@@ -47923,9 +47924,10 @@
       "checkedAt": "2026-10-20"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-20",
-      "url": "https://www.harbourlightscafe.com.au/"
+      "url": "https://www.harbourlightscafe.com.au/",
+      "error": "fetch failed"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
@@ -54255,10 +54257,9 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://www.basalttasmania.com/",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://www.basalttasmania.com/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -71179,7 +71180,7 @@
       "status": "unreachable",
       "checkedAt": "2026-10-20",
       "url": "http://www.flavourofindia.com.au/",
-      "error": "The operation was aborted due to timeout"
+      "error": "fetch failed"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
