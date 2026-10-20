@@ -30,3 +30,17 @@ test('ignores attempted non-display modifications', () => {
   assert.equal(out.status,'active');
   assert.equal(out.address,'Verified address');
 });
+
+
+test('Archers Knob and every Port Sorell detail page use North West',()=>{
+ for(const slug of ['archers-knob','springlawn-bird-hide-lookout','ghost-rock','brewstone']){
+  const stale={slug,town:'Port Sorell',region:'Hobart & South'};
+  const fixed=applyVerifiedPlaceDisplayOverrides(stale,overrides);
+  assert.equal(fixed.region,'North West',slug);
+  assert.equal(stale.region,'Hobart & South');
+ }
+ const southern={slug:'sorell-market',town:'Sorell',region:'Hobart & South'};
+ assert.equal(applyVerifiedPlaceDisplayOverrides(southern,overrides),southern);
+ const manual={slug:'archers-knob',town:'Port Sorell',region:'Hobart & South',managedManually:true};
+ assert.equal(applyVerifiedPlaceDisplayOverrides(manual,overrides),manual);
+});
