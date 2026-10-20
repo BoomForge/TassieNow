@@ -73,3 +73,22 @@ test('Bento Legana and Little Riva source-reviewed contact fields override malfo
   assert.ok(p.address.length>20,slug);
  }
 });
+
+
+test('Bakers Delight Claremont Plaza overrides Victoria head-office address and stale hours',()=>{
+ const verified=overrides['bakers-delight'];
+ assert.equal(verified.liveDisplayOverride,true);
+ assert.equal(verified.name,'Bakers Delight Claremont Plaza');
+ assert.equal(verified.town,'Claremont');
+ assert.equal(verified.openingHours,'Mo-Fr 06:00-18:00; Sa-Su 08:00-18:00');
+ assert.equal(verified.phone,'03 6249 9117');
+ assert.match(verified.address,/Shop 15.*35 Main Road.*Claremont TAS 7011/);
+ assert.equal(verified.detailSources.openingHours.url,'https://claremontplaza.com.au/stores/bakers-delight/');
+ const stale={slug:'bakers-delight',town:'Glenorchy',
+   address:'293 Camberwell Road, Camberwell, Victoria, 3124',openingHours:'Mo-Sa 08:30-18:00'};
+ const fixed=applyVerifiedPlaceDisplayOverrides(stale,overrides);
+ assert.equal(fixed.town,'Claremont');
+ assert.equal(fixed.address,verified.address);
+ assert.equal(fixed.openingHours,verified.openingHours);
+ assert.equal(applyVerifiedPlaceDisplayOverrides({...stale,managedManually:true},overrides).address,stale.address);
+});
