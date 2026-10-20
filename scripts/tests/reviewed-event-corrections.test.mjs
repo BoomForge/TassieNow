@@ -140,3 +140,47 @@ test('Writing Life previous-day UTC date is corrected without resurrecting an ex
  assert.ok(!events.some(e=>e.eventUrl===old.eventUrl && e.startDate==='2026-10-18'),
   'TassieNow must not resurrect the erroneous 18 October listing');
 });
+
+
+test('Clarence disability golf and Beyond Sound canonical pages and redirects are source-accurate',()=>{
+ const specs=[
+  {url:'https://www.ccc.tas.gov.au/event/come-and-try-disability-golf/',
+   slug:'international-day-of-people-with-disability-come-and-try-golf-2026-10-26-cambridge',
+   old:['international-day-of-people-with-disability-come-and-try-golf-2026-10-21-rosny-park','come-and-try-disability-golf-2026-10-21-rosny-park'],
+   date:'2026-10-26',town:'Cambridge',venue:'Golf Park Hobart',start:'14:30',end:'15:30'},
+  {url:'https://www.ccc.tas.gov.au/event/beyond-sound-the-music-in-all-of-us/',
+   slug:'beyond-sound-the-music-in-all-of-us-2026-12-03-rosny-park',
+   old:['beyond-sound-the-music-in-all-of-us-2026-11-04-rosny-park'],
+   date:'2026-12-03',town:'Rosny Park',venue:'Rosny Library',start:'13:00',end:'15:00'}
+ ];
+ for(const spec of specs){
+  const matching=events.filter(e=>e.eventUrl===spec.url);
+  assert.equal(matching.length,1,'one source-specific record for '+spec.url);
+  const e=matching[0];
+  assert.equal(e.slug,spec.slug);
+  assert.equal(e.startDate,spec.date);
+  assert.equal(e.endDate,spec.date);
+  assert.equal(e.startTime,spec.start);
+  assert.equal(e.endTime,spec.end);
+  assert.equal(e.town,spec.town);
+  assert.equal(e.venue,spec.venue);
+  assert.ok(e.summary?.length>120,'specific first-party summary');
+  for(const old of spec.old){
+   const expected='/event/'+old+'/ /event/'+spec.slug+'/ 301';
+   assert.ok(redirects.includes(expected),'missing safe legacy alias '+old);
+   assert.ok(!events.some(event=>event.slug===old),'do not publish original incorrect slug');
+  }
+  const reset={...e,slug:'bad-previous-card-date',startDate:'2026-10-21',town:'Rosny Park',startTime:undefined,venue:'Venue'};
+  const corrected=applyReviewedEventCorrection(reset,overrides);
+  assert.equal(corrected.slug,spec.slug,'source URL survives regenerated wrong slug');
+  assert.equal(corrected.startDate,spec.date);
+  assert.equal(corrected.town,spec.town);
+  assert.equal(corrected.startTime,spec.start);
+ }
+ const golf=events.find(e=>e.eventUrl===specs[0].url);
+ assert.equal(golf.image.isFallback,true,'unrelated US green image must not depict an advertised Tasmanian clinic');
+ assert.equal(golf.image.attribution,'TassieNow');
+ assert.match(golf.summary,/registration is essential/i);
+ const sound=events.find(e=>e.eventUrl===specs[1].url);
+ assert.match(sound.summary,/Auslan interpreter/i);
+});
