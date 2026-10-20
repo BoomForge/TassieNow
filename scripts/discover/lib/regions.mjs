@@ -17,6 +17,9 @@ export function regionFor(lat, lon, town = '') {
 
   if (includesAny(t, CENTRAL_TOWNS)) return 'Central Tasmania';
 
+  // Port Sorell is on the North West coast; substring matching 'sorell' below
+  // previously misclassified it as the separate southern town of Sorell.
+  if (t.includes('port sorell')) return 'North West';
   if (includesAny(t, ['stanley', 'smithton', 'burnie', 'wynyard', 'penguin', 'ulverstone', 'devonport', 'latrobe', 'sheffield', 'cradle mountain'])) return 'North West';
   if (includesAny(t, ['launceston', 'george town', 'deloraine', 'longford', 'evandale', 'scottsdale', 'derby', 'bridport', 'beaconsfield', 'westbury', 'mole creek'])) return 'Launceston & North';
   if (includesAny(t, ['st helens', 'bicheno', 'swansea', 'coles bay', 'orford', 'triabunna', 'scamander', 'binalong bay'])) return 'East Coast';
