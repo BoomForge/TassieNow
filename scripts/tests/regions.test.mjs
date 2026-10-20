@@ -20,3 +20,10 @@ test('border towns remain in their established regions', () => {
   assert.equal(regionFor(-39.93, 143.85, 'Currie'), 'King Island');
   assert.equal(regionFor(-40.12, 148.02, 'Whitemark'), 'Flinders Island');
 });
+
+test('Port Sorell is not confused with the southern Sorell township', () => {
+  assert.equal(regionFor(-41.15,146.56,'Port Sorell'), 'North West');
+  assert.equal(regionFor(-41.15,146.56,'PORT SORELL'), 'North West');
+  assert.equal(regionFor(-41.15,146.56,'Port Sorell, TAS'), 'North West');
+  assert.equal(regionFor(-42.78,147.56,'Sorell'), 'Hobart & South');
+});
