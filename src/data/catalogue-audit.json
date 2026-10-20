@@ -21,21 +21,21 @@
         "count": 77,
         "percent": 3.6
       },
-      "totalLicensedImages": 962,
-      "averageImagesPerPublicListing": 0.45
+      "totalLicensedImages": 957,
+      "averageImagesPerPublicListing": 0.44
     },
     "sources": {
       "websiteCoverage": {
-        "count": 366,
-        "percent": 17
+        "count": 367,
+        "percent": 17.1
       },
       "officialSourceCoverage": {
         "count": 290,
         "percent": 13.5
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 263,
-        "percent": 12.2
+        "count": 274,
+        "percent": 12.7
       },
       "wikidataLinkage": {
         "count": 633,
@@ -48,24 +48,24 @@
         "percent": 19.1
       },
       "recurringSchedule": {
-        "count": 128,
+        "count": 129,
         "percent": 6
       },
       "phone": {
-        "count": 396,
-        "percent": 18.4
+        "count": 397,
+        "percent": 18.5
       },
       "email": {
-        "count": 207,
-        "percent": 9.6
+        "count": 208,
+        "percent": 9.7
       },
       "address": {
         "count": 508,
         "percent": 23.6
       },
       "bookingUrl": {
-        "count": 119,
-        "percent": 5.5
+        "count": 168,
+        "percent": 7.8
       },
       "fee": {
         "count": 27,
@@ -90,10 +90,10 @@
       "curated": 41
     },
     "qualityTiers": {
-      "standard": 775,
+      "standard": 774,
       "strong": 624,
       "low": 473,
-      "featured": 279
+      "featured": 280
     },
     "regions": {
       "Hobart & South": 781,
@@ -196,8 +196,8 @@
       },
       "details": {
         "website": {
-          "count": 233,
-          "percent": 22.1
+          "count": 234,
+          "percent": 22.2
         },
         "openingHours": {
           "count": 326,
@@ -215,30 +215,30 @@
     }
   },
   "events": {
-    "active": 168,
+    "active": 169,
     "media": {
       "licensedHeroCoverage": {
-        "count": 65,
-        "percent": 38.7
+        "count": 66,
+        "percent": 39.1
       },
       "stillUsingCategoryArtwork": 103,
       "bySource": {
         "verified-event-venue": 37,
-        "verified-event-activity": 23,
+        "verified-event-activity": 24,
         "verified-event-performer": 3,
         "commons-venue": 1,
         "verified-event-history": 1
       },
       "byMediaType": {
         "contextual": 38,
-        "activity-illustrative": 23,
+        "activity-illustrative": 24,
         "performer-context": 3,
         "historical-event": 1
       },
       "byRegion": {
         "Hobart & South": {
-          "count": 32,
-          "percent": 40.5
+          "count": 33,
+          "percent": 41.8
         },
         "Launceston & North": {
           "count": 17,
@@ -246,7 +246,7 @@
         },
         "North West": {
           "count": 13,
-          "percent": 29.5
+          "percent": 28.9
         },
         "East Coast": {
           "count": 1,
@@ -272,11 +272,11 @@
     },
     "ticketCoverage": {
       "count": 47,
-      "percent": 28
+      "percent": 27.8
     },
     "priceCoverage": {
-      "count": 52,
-      "percent": 31
+      "count": 57,
+      "percent": 33.7
     },
     "providers": {
       "Humanitix": 25,
@@ -285,7 +285,7 @@
       "Ticketmaster": 1
     },
     "sources": {
-      "Burnie City Council": 28,
+      "Burnie City Council": 29,
       "MyState Bank Arena": 21,
       "Huon Valley Council": 16,
       "Theatre North Launceston": 16,
@@ -307,7 +307,7 @@
     "regions": {
       "Hobart & South": 79,
       "Launceston & North": 31,
-      "North West": 44,
+      "North West": 45,
       "East Coast": 9,
       "West Coast": 1,
       "Central Tasmania": 1,
@@ -353,7 +353,7 @@
       "missingOrOlderThan30Days": 2
     },
     "sourceRegionalMix": {
-      "North West / Burnie City Council": 28,
+      "North West / Burnie City Council": 29,
       "Hobart & South / MyState Bank Arena": 21,
       "Hobart & South / Huon Valley Council": 16,
       "Launceston & North / Theatre North Launceston": 16,
