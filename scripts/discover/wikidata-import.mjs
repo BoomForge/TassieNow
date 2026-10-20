@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import { regionFor } from './lib/regions.mjs';
+import { verifiedWikidataLocality } from './lib/wikidata-locality.mjs';
 
 const FILE = new URL('../../src/data/places.json', import.meta.url);
 const USER_AGENT = 'TassieNow/1.1 (+https://tassienow.pages.dev)';
@@ -88,8 +89,10 @@ for (const binding of data.results?.bindings || []) {
   const [latitude, longitude] = parsePoint(binding.coord?.value); if (!inTasmania(latitude, longitude)) continue;
   const tooClose = current.some((place) => norm(place.name) === norm(name) || (Number.isFinite(place.latitude) && Number.isFinite(place.longitude) && km(latitude, longitude, place.latitude, place.longitude) < 0.08));
   if (tooClose) continue;
-  let town = clean(binding.adminLabel?.value || 'Tasmania');
-  if (!town || town === 'Tasmania' || /^Q\d+$/.test(town)) town = 'Tasmania';
+  // An administrative parent is not automatically a town. Refuse state/council
+  // fallbacks rather than adding more unusable "Tasmania" locality breadcrumbs.
+  const town = verifiedWikidataLocality(clean(binding.adminLabel?.value));
+  if (!town) continue;
   const categories = [...config.categories];
   const sourceUrl = `https://www.wikidata.org/wiki/${id}`;
   candidates.push({
