@@ -21,10 +21,10 @@ for (const place of places) {
   }
   // Source-specific branch/locality evidence overrides unrelated head-office
   // or state-level fallback addresses. Never overwrite owner-managed entries.
-  if (['bakers-delight','trowunna-wildlife-park'].includes(place.slug) &&
+  if (['bakers-delight','trowunna-wildlife-park','coles-beach'].includes(place.slug) &&
       !place.managedManually && overrides[place.slug]?.liveDisplayOverride === true) {
     const review=overrides[place.slug];
-    for (const field of ['name','town','region','address','phone','openingHours']) {
+    for (const field of ['name','town','region','address','phone','openingHours','summary']) {
       if (typeof review[field] !== 'string' || !review[field].trim()) continue;
       if (place[field] === review[field]) continue;
       place[field]=review[field];
