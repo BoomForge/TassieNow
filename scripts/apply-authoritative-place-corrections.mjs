@@ -5,6 +5,7 @@ import { safePlaceBookingUrl } from '../src/lib/place-booking-guard.mjs';
 import { regionFor } from './discover/lib/regions.mjs';
 import { shouldRemoveParksContactHours } from '../src/lib/parks-hours-source-guard.mjs';
 import { correctWeldboroughSource } from '../src/lib/weldborough-source-correction.mjs';
+import { dedupeWestCoastRailwayPlaces } from '../src/lib/west-coast-railway-dedupe.mjs';
 
 const file = new URL('../src/data/places.json', import.meta.url);
 const places = JSON.parse(await fs.readFile(file, 'utf8'));
@@ -101,5 +102,7 @@ for (const place of places) {
   }
   if (original && !place.bookingUrl) bookingLinksRemoved++;
 }
-await fs.writeFile(file, JSON.stringify(places,null,2)+'\n');
+const railwayReview=dedupeWestCoastRailwayPlaces(places);
+await fs.writeFile(file, JSON.stringify(railwayReview.places,null,2)+'\n');
+if(railwayReview.removed)console.log('Verified West Coast Railway duplicate removed: '+railwayReview.removed);
 console.log('Verified catalogue correction: '+fieldsCorrected+' source-backed fields updated; '+bookingLinksRemoved+' invalid booking links removed; '+places.length+' listings reviewed.');
