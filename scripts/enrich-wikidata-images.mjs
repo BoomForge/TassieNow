@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import {permittedLicence} from './discover/lib/event-media.mjs';
+import {usableCommonsCreator} from './discover/lib/commons-credit-guard.mjs';
 
 const FILE = new URL('../src/data/places.json', import.meta.url);
 const USER_AGENT = 'TassieNow/1.5 (+https://tassienow.com)';
@@ -40,12 +41,14 @@ function imageFromInfo(page,info,sourceMethod){
   // Commons metadata is not automatically a licence. Exclude NC/ND,
   // unverifiable rights and invalid source/image URLs before publication.
   if(!permittedLicence(license,meta.LicenseUrl?.value)||blockedTitle(page.title||''))return null;
+  const creator=usableCommonsCreator(meta,license,meta.LicenseUrl?.value);
+  if(!creator)return null;
   if(!info?.descriptionurl?.startsWith('https://') ||
      !(info.thumburl||info.url)?.startsWith('https://'))return null;
   return{
     url:info.thumburl||info.url,
     alt:'',
-    attribution:clean(meta.Artist?.value||meta.Credit?.value||'')||'Wikimedia Commons contributor',
+    attribution:creator,
     license,
     licenseUrl:meta.LicenseUrl?.value||null,
     sourceUrl:info.descriptionurl||null,
