@@ -92,3 +92,21 @@ test('Bakers Delight Claremont Plaza overrides Victoria head-office address and 
  assert.equal(fixed.openingHours,verified.openingHours);
  assert.equal(applyVerifiedPlaceDisplayOverrides({...stale,managedManually:true},overrides).address,stale.address);
 });
+
+test('Trowunna no longer inherits generic Tasmania locality or unrelated region',()=>{
+ const official=overrides['trowunna-wildlife-park'];
+ assert.equal(official.town,'Mole Creek');
+ assert.equal(official.region,'Launceston & North');
+ assert.equal(official.detailSources.town.url,'https://www.trowunna.com.au/contact-us');
+ const stale={
+   slug:'trowunna-wildlife-park',name:'Trowunna Wildlife Park',town:'Tasmania',
+   region:'Hobart & South',address:'Tasmania'
+ };
+ const fixed=applyVerifiedPlaceDisplayOverrides(stale,overrides);
+ assert.equal(fixed.town,'Mole Creek');
+ assert.equal(fixed.region,'Launceston & North');
+ assert.equal(fixed.address,'1892 Mole Creek Road, Mole Creek TAS 7304');
+ assert.equal(fixed.name,stale.name,'do not rename business without evidence');
+ const manual={...stale,managedManually:true};
+ assert.equal(applyVerifiedPlaceDisplayOverrides(manual,overrides),manual);
+});
