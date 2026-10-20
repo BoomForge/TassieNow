@@ -23,7 +23,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "huon-valley-alphabet-mafia-2026-01-05-huonville",
@@ -49,7 +50,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "cygnet-men-s-circle-2026-01-14-huonville",
@@ -75,7 +77,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "rock-and-rhyme-at-huonville-library-2026-01-14-huonville",
@@ -85,7 +88,8 @@
     "startDate": "2026-01-14",
     "endDate": "2026-12-23",
     "categories": [
-      "Events"
+      "Events",
+      "Free"
     ],
     "summary": "Rock and Rhyme at Huonville Library in Huonville. Check the official event listing for current times, venue, accessibility and booking details.",
     "eventUrl": "https://www.huonvalley.tas.gov.au/event/rock-and-rhyme-and-storytime-at-huonville-library/",
@@ -112,7 +116,15 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketUrl": "https://www.eventbrite.com/e/rock-and-rhyme-and-storytime-at-huonville-library-tickets-862619898337?aff=ebdsoporgprofile&amp;keep_tld=1",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "priceFrom": 0,
+    "priceTo": 0,
+    "priceCurrency": "AUD",
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "herbalists-without-borders-2026-01-16-huonville",
@@ -367,6 +379,7 @@
     ],
     "summary": "Self Defence for Seniors Living Well Devonport Program Build confidence, improve awareness and learn practical personal safety skills in a supportive and encouraging environment. Designed specifically for older adults, these sessions focus on simple self-defence techniques, confi",
     "venue": "Devonport Recreation Centre",
+    "address": "34 Forbes Street Devonport",
     "eventUrl": "https://www.devonport.tas.gov.au/events/self-defence-for-seniors/",
     "sourceUrl": "https://www.devonport.tas.gov.au/whats-on-devonport/",
     "sourceName": "Devonport City Council",
@@ -394,6 +407,7 @@
     ],
     "summary": "Celebrate National Bird Week by taking part in the Aussie Bird Count 2026, one of Australia's largest citizen science events. From 19–25 October 2026, thousands of Australians will spend just 20 minutes observing the birds in their local area, helping BirdLife Australia monitor t",
     "venue": "Devonport and Surrounds",
+    "address": ".",
     "eventUrl": "https://birdlife.org.au/events/aussie-bird-count-2026/",
     "sourceUrl": "https://www.devonport.tas.gov.au/whats-on-devonport/",
     "sourceName": "Devonport City Council",
@@ -712,6 +726,7 @@
     ],
     "summary": "Intro to Computing at Burnie Library in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
     "venue": "Burnie Library, 30 Alexander Street, Burnie",
+    "address": "30 Alexander Street, Burnie TAS 7320",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Intro-to-Computing-at-Burnie-Library",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -738,8 +753,7 @@
     "status": "active",
     "lastChecked": "2026-10-20",
     "startTime": "09:30",
-    "endTime": "14:30",
-    "address": "30 Alexander Street, Burnie TAS 7320"
+    "endTime": "14:30"
   },
   {
     "slug": "north-west-film-society-i-swear-2026-10-21-devonport",
@@ -754,6 +768,7 @@
     ],
     "summary": "I Swear follows the true story of campaigner John Davidson's experience with Tourette's through his troubled teen years. Initially alienated from his peers and his family, Davidson perseveres in his attempt to live a normal life, finding some unlikely champions along the way. Dir",
     "venue": "Reading Cinema",
+    "address": "5-7 Best Street, Devonport TAS, Australia",
     "eventUrl": "https://www.devonport.tas.gov.au/events/north-west-film-society-i-swear/",
     "sourceUrl": "https://www.devonport.tas.gov.au/whats-on-devonport/",
     "sourceName": "Devonport City Council",
@@ -781,7 +796,7 @@
     "lastChecked": "2026-10-20"
   },
   {
-    "slug": "rotary-club-of-lindisfarne-talks-pam-scott-oam-2026-10-25-rosny-park",
+    "slug": "rotary-club-of-lindisfarne-talks-pam-scott-oam-2026-10-21-rosny-park",
     "name": "Rotary Club of Lindisfarne Talks – Pam Scott OAM",
     "town": "Lindisfarne",
     "region": "Hobart & South",
@@ -944,6 +959,7 @@
     ],
     "summary": "OUTspace is a social and peer support group for LGBTIQA+ young people, and for young people who are not sure about their gender and/or sexuality. It’s an opportunity to meet, hang out and learn from your community. OUTspace is a confidential group, which means we can’t tell anyon",
     "venue": "Devonport Library",
+    "address": "Ground and Level 1, paranaple centre, 137 Rooke Street, Devonport",
     "eventUrl": "https://www.devonport.tas.gov.au/events/outspace/",
     "sourceUrl": "https://www.devonport.tas.gov.au/whats-on-devonport/",
     "sourceName": "Devonport City Council",
@@ -997,6 +1013,7 @@
     ],
     "summary": "Emergency Management Preparedness Workshop Living Well Devonport Program East Devonport Session Date: Friday 23 October 2026 Time: 10:00am - 12:00pm Location: Community Room, East Devonport Recreation Centre Prepared communities are resilient communities. Join this practical work",
     "venue": "East Devonport Recreation and Function Centre",
+    "address": "63 Caroline Street, East Devonport TAS, Australia",
     "eventUrl": "https://www.devonport.tas.gov.au/events/emergency-management-preparedness-workshop-east-devonport-session/",
     "sourceUrl": "https://www.devonport.tas.gov.au/whats-on-devonport/",
     "sourceName": "Devonport City Council",
@@ -1281,6 +1298,7 @@
     ],
     "summary": "Welcome to Spring Fling 2026 Celebrate the arrival of spring with a fun filled day for the whole family! Join us at Spring Fling, a vibrant community event packed with free and low cost activities, live entertainment, delicious food and plenty of reasons to spend the day outdoors",
     "venue": "Haines Park",
+    "address": "1-3 Best St, Devonport TAS 7310",
     "eventUrl": "https://www.devonport.tas.gov.au/events/spring-fling/",
     "sourceUrl": "https://www.devonport.tas.gov.au/whats-on-devonport/",
     "sourceName": "Devonport City Council",
@@ -1309,6 +1327,7 @@
     ],
     "summary": "A free family bug hunt and art lab at the Tasmanian Arboretum, with hands-on insect discovery and nature-inspired art. Parent or guardian supervision is required for children under 15.",
     "venue": "The Tasmanian Arboretum",
+    "address": "46 Old Tramway Road, Eugenana TAS 7310",
     "eventUrl": "https://www.devonport.tas.gov.au/events/the-great-bug-hunt-and-art-lab/",
     "sourceUrl": "https://www.devonport.tas.gov.au/whats-on-devonport/",
     "sourceName": "Devonport City Council",
@@ -1323,7 +1342,6 @@
     },
     "status": "active",
     "lastChecked": "2026-10-20",
-    "address": "46 Old Tramway Road, Eugenana TAS 7310",
     "startTime": "10:00",
     "endTime": "12:00",
     "priceFrom": 0,
@@ -1372,7 +1390,7 @@
     "bookingRequired": true
   },
   {
-    "slug": "international-day-of-people-with-disability-come-and-try-golf-2026-10-21-rosny-park",
+    "slug": "international-day-of-people-with-disability-come-and-try-golf-2026-10-26-rosny-park",
     "name": "International Day of People with Disability Come and Try golf",
     "town": "Cambridge",
     "region": "Hobart & South",
@@ -1381,7 +1399,7 @@
     "categories": [
       "Events"
     ],
-    "summary": "International Day of People with Disability Come and Try golf in Rosny Park. Check the official event listing for current times, venue, accessibility and booking details.",
+    "summary": "International Day of People with Disability Come and Try golf in Cambridge. Check the official event listing for current times, venue, accessibility and booking details.",
     "eventUrl": "https://www.ccc.tas.gov.au/event/come-and-try-disability-golf/",
     "sourceUrl": "https://www.ccc.tas.gov.au/explore/events/",
     "sourceName": "City of Clarence",
@@ -1469,32 +1487,6 @@
     "lastChecked": "2026-10-20"
   },
   {
-    "slug": "youth-eoi-open-tin-camp-at-rosny-farm-2026-10-26-rosny-park",
-    "name": "Youth EOI Open: Tin Camp at Rosny Farm",
-    "town": "Rosny Park",
-    "region": "Hobart & South",
-    "startDate": "2026-10-26",
-    "endDate": "2026-10-26",
-    "categories": [
-      "Events"
-    ],
-    "summary": "Youth EOI Open: Tin Camp at Rosny Farm",
-    "eventUrl": "https://www.ccc.tas.gov.au/explore/events/",
-    "sourceUrl": "https://www.ccc.tas.gov.au/explore/events/",
-    "sourceName": "City of Clarence",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Youth EOI Open: Tin Camp at Rosny Farm event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-10-20"
-  },
-  {
     "slug": "in-conversation-with-monica-mcinerney-2026-10-27-burnie",
     "name": "In Conversation with Monica McInerney",
     "town": "Burnie",
@@ -1507,6 +1499,7 @@
     ],
     "summary": "In Conversation with Monica McInerney in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
     "venue": "Not Just Books, 40 Wilson Street, Burnie",
+    "address": "40 Wilson Street, Burnie TAS 7320",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/In-Conversation-with-Monica-McInerney",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -1534,7 +1527,6 @@
     "lastChecked": "2026-10-20",
     "startTime": "18:00",
     "endTime": "20:00",
-    "address": "40 Wilson Street, Burnie TAS 7320",
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD"
@@ -1647,6 +1639,7 @@
     ],
     "summary": "Tuning into Kids in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
     "venue": "The Salvation Army, 99 Wilson Street, Burnie",
+    "address": "99 Wilson Street, Burnie TAS 7320",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Tuning-into-Kids",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -1662,8 +1655,7 @@
     "status": "active",
     "lastChecked": "2026-10-20",
     "startTime": "11:00",
-    "endTime": "13:00",
-    "address": "99 Wilson Street, Burnie TAS 7320"
+    "endTime": "13:00"
   },
   {
     "slug": "australian-government-mobile-service-centre-dover-2026-10-29-huonville",
@@ -1999,6 +1991,7 @@
     ],
     "summary": "Second Glance Market in Burnie. Check the official Burnie City Council listing for current time, venue and booking details.",
     "venue": "Civic Centre – Burnie Arts, 77–79 Wilmot Street, Burnie",
+    "address": "77–79 Wilmot Street, Burnie TAS 7320",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Second-Glance-Market",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2015,7 +2008,6 @@
     "lastChecked": "2026-10-20",
     "startTime": "12:00",
     "endTime": "15:00",
-    "address": "77–79 Wilmot Street, Burnie TAS 7320",
     "priceFrom": 0,
     "priceTo": 0,
     "priceCurrency": "AUD"
@@ -2115,6 +2107,7 @@
     ],
     "summary": "Diwali - Festival of Light in Burnie in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
     "venue": "Marist Regional College – The Harcombe Centre",
+    "address": "Paraka Street entrance, Burnie TAS 7320",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Diwali-Festival-of-Light-in-Burnie",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2142,7 +2135,6 @@
     "lastChecked": "2026-10-20",
     "startTime": "17:00",
     "endTime": "22:00",
-    "address": "Paraka Street entrance, Burnie TAS 7320",
     "priceFrom": 10,
     "priceCurrency": "AUD"
   },
@@ -2163,6 +2155,32 @@
     "image": {
       "url": "/images/categories/events.svg",
       "alt": "Dover Fun Run 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20"
+  },
+  {
+    "slug": "footsteps-through-time-2026-11-01-rosny-park",
+    "name": "Footsteps through time",
+    "town": "Rosny Park",
+    "region": "Hobart & South",
+    "startDate": "2026-11-01",
+    "endDate": "2026-11-01",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Footsteps through time in Rosny Park. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.ccc.tas.gov.au/event/footsteps-through-time/",
+    "sourceUrl": "https://www.ccc.tas.gov.au/explore/events/",
+    "sourceName": "City of Clarence",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Footsteps through time event category image",
       "attribution": "TassieNow",
       "license": "Site artwork",
       "licenseUrl": null,
@@ -2275,6 +2293,32 @@
     "priceCurrency": "AUD"
   },
   {
+    "slug": "mobile-service-centre-south-arm-2026-11-04-rosny-park",
+    "name": "Mobile service centre – South Arm",
+    "town": "Rosny Park",
+    "region": "Hobart & South",
+    "startDate": "2026-11-04",
+    "endDate": "2026-11-04",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Mobile service centre – South Arm in Rosny Park. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.ccc.tas.gov.au/event/mobile-service-centre-south-arm/",
+    "sourceUrl": "https://www.ccc.tas.gov.au/explore/events/",
+    "sourceName": "City of Clarence",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Mobile service centre – South Arm event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20"
+  },
+  {
     "slug": "rotary-club-of-lindisfarne-talks-dr-bert-shugg-2026-11-04-lindisfarne",
     "name": "Rotary Club of Lindisfarne Talks – Dr Bert Shugg",
     "town": "Lindisfarne",
@@ -2375,6 +2419,7 @@
     ],
     "summary": "Looking for work, considering a career change, or curious about local employment opportunities? Come along to the East Devonport Jobs Forum and connect directly with local employers, training providers and employment services. This free community event is a great opportunity to e",
     "venue": "East Devonport Primary School",
+    "address": "19-21 Thomas St, East Devonport TAS, Australia",
     "eventUrl": "https://www.devonport.tas.gov.au/events/east-devonport-jobs-forum-2/",
     "sourceUrl": "https://www.devonport.tas.gov.au/whats-on-devonport/",
     "sourceName": "Devonport City Council",
@@ -2402,6 +2447,7 @@
     ],
     "summary": "Burnie Harness Racing Club Meet in Wivenhoe. Check the official event listing for current times, venue, accessibility and booking details.",
     "venue": "Burnie Harness Racing Club, 1 Pearl Street, Wivenhoe",
+    "address": "1 Pearl Street, Wivenhoe TAS 7320",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Harness-Racing-Club-Season",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2417,8 +2463,7 @@
     "status": "active",
     "lastChecked": "2026-10-20",
     "startTime": "18:00",
-    "endTime": "23:59",
-    "address": "1 Pearl Street, Wivenhoe TAS 7320"
+    "endTime": "23:59"
   },
   {
     "slug": "showcase-2026-2026-11-06-hobart",
@@ -2786,6 +2831,7 @@
     ],
     "summary": "Burnie Surf Club - Nipper Open Day in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
     "venue": "West Beach, Burnie",
+    "address": "West Beach, Burnie TAS 7320",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Surf-Club-Nipper-Open-Day",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2814,8 +2860,7 @@
     "status": "active",
     "lastChecked": "2026-10-20",
     "startTime": "09:45",
-    "endTime": "12:00",
-    "address": "West Beach, Burnie TAS 7320"
+    "endTime": "12:00"
   },
   {
     "slug": "home-composting-workshop-2026-11-08-hobart",
@@ -2896,6 +2941,7 @@
     ],
     "summary": "National Recycling Week in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
     "venue": "Burnie Council City Offices, 80 Wilson Street, Burnie",
+    "address": "80 Wilson Street, Burnie TAS 7320",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/National-Recycling-Week",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2911,8 +2957,7 @@
     "status": "active",
     "lastChecked": "2026-10-20",
     "startTime": "10:00",
-    "endTime": "16:00",
-    "address": "80 Wilson Street, Burnie TAS 7320"
+    "endTime": "16:00"
   },
   {
     "slug": "in-conversation-with-alan-carter-2026-11-10-burnie",
@@ -2926,6 +2971,7 @@
     ],
     "summary": "In Conversation with Alan Carter in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
     "venue": "Europa Cafe, 1/23 Cattley Street, Burnie",
+    "address": "1/23 Cattley Street, Burnie TAS 7320",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/In-Conversation-with-Alan-Carter",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -2942,7 +2988,6 @@
     "lastChecked": "2026-10-20",
     "startTime": "14:30",
     "endTime": "16:00",
-    "address": "1/23 Cattley Street, Burnie TAS 7320",
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD"
@@ -3045,6 +3090,7 @@
     ],
     "summary": "In Conversation with Peter FitzSimons in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
     "venue": "South Burnie Bowls Club, 2 Hale Street, Burnie",
+    "address": "2 Hale Street, Burnie TAS 7320",
     "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/In-Conversation-with-Peter-FitzSimons",
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
@@ -3061,7 +3107,6 @@
     "lastChecked": "2026-10-20",
     "startTime": "18:00",
     "endTime": "20:00",
-    "address": "2 Hale Street, Burnie TAS 7320",
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD"
@@ -3210,6 +3255,32 @@
     "priceTo": 153,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-10-20"
+  },
+  {
+    "slug": "st-david-s-park-100th-birthday-garden-party-2026-11-13-hobart",
+    "name": "St David’s Park 100th birthday garden party",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-13",
+    "endDate": "2026-11-13",
+    "categories": [
+      "Events"
+    ],
+    "summary": "St David’s Park 100th birthday garden party in Hobart. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.hobartcity.com.au/Things-To-Do/Upcoming-events/St-David%E2%80%99s-Park-100th-birthday-garden-party",
+    "sourceUrl": "https://www.hobartcity.com.au/Things-To-Do/Upcoming-events",
+    "sourceName": "City of Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "St David’s Park 100th birthday garden party event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "urban-wine-walk-hobart-tas-2026-11-14-hobart",
@@ -3873,8 +3944,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20",
-    "ticketLastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "volunteers-breakfast-2026-2026-12-02-devonport",
@@ -3889,6 +3959,7 @@
     ],
     "summary": "WHAT: Thank You Devonport Volunteers Breakfast WHEN: Wednesday 2 December 2026, 7–9.00am WHERE: Market Square Pavilion, Devonport COST: Free BOOKINGS: Registrations are essential and close 20 November 2026. A special thank you to the wonderful volunteers who give their time, skil",
     "venue": "Market Square Pavilion",
+    "address": "13-17 Oldaker Street, Devonport 7310",
     "eventUrl": "https://www.devonport.tas.gov.au/events/volunteers-breakfast-2026/",
     "sourceUrl": "https://www.devonport.tas.gov.au/whats-on-devonport/",
     "sourceName": "Devonport City Council",
@@ -3906,7 +3977,7 @@
     "ticketLastChecked": "2026-10-20"
   },
   {
-    "slug": "beyond-sound-the-music-in-all-of-us-2026-11-04-rosny-park",
+    "slug": "beyond-sound-the-music-in-all-of-us-2026-12-03-rosny-park",
     "name": "Beyond Sound: The Music in All of Us",
     "town": "Rosny Park",
     "region": "Hobart & South",
@@ -3933,7 +4004,12 @@
     "startTime": "13:00",
     "endTime": "15:00",
     "venue": "Rosny Library",
-    "address": "Bligh Street, Rosny Park TAS, Australia"
+    "address": "Bligh Street, Rosny Park TAS, Australia",
+    "ticketUrl": "https://events.humanitix.com/beyond-sound-the-music-in-all-of-us",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "the-magic-of-audrey-the-ballet-school-launceston-albert-hall-launceston-04-dec-2026-12-04-",
@@ -4242,6 +4318,7 @@
     ],
     "summary": "Celebrate Christmas in the Mall and make a day of shopping local! Enjoy festive spot prizes, free face painting, glitter tattoos and Christmas crafts, plus gift wrapping for a gold coin donation and a special visit from Santa and friends. With plenty of festive fun while you shop",
     "venue": "Rooke Street Mall",
+    "address": "Rooke Street, Devonport 7310",
     "eventUrl": "https://www.devonport.tas.gov.au/events/festive-friday-2026/",
     "sourceUrl": "https://www.devonport.tas.gov.au/whats-on-devonport/",
     "sourceName": "Devonport City Council",
@@ -5498,13 +5575,13 @@
     },
     "status": "active",
     "lastChecked": "2026-10-19",
-    "priceFrom": 74.95,
-    "priceTo": 89.95,
-    "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-20",
     "venue": "Albert Hall",
     "address": "47 Tamar Street, Launceston TAS 7250",
     "startTime": "19:30",
-    "endTime": "21:40"
+    "endTime": "21:40",
+    "priceFrom": 74.95,
+    "priceTo": 89.95,
+    "priceCurrency": "AUD",
+    "ticketLastChecked": "2026-10-20"
   }
 ]
