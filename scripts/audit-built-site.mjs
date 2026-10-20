@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { marketCopy, tasmaniaDate } from '../src/lib/market-seo.mjs';
+import { sourceEventLocation } from '../src/lib/event-source-location.mjs';
 
 const root=path.resolve('dist');
 const sourceEvents=JSON.parse(await fs.readFile('src/data/events.json','utf8'));
@@ -51,7 +52,7 @@ for(const file of files){
      const event=nodes.find(node=>node['@type']==='Event');
      const slug=decodeURIComponent(relative.slice('event/'.length).replace(/\/index\.html$/, '').replace(/\/$/, ''));
      const sourceEvent=eventsBySlug.get(slug);
-     const hasNamedVenue=typeof sourceEvent?.venue==='string' && sourceEvent.venue.trim().length>0;
+     const hasNamedVenue=Boolean(sourceEventLocation({name:sourceEvent?.venue}).venue);
      if(!event && hasNamedVenue)results.issues.push('Missing Event schema for named venue: '+relative);
      if(event && !hasNamedVenue)results.issues.push('Event schema without verified venue: '+relative);
      if(event){
