@@ -75,6 +75,27 @@ test('three City of Clarence wrong-date cards use source-specific corrections',(
  }
 });
 
+
+test('Skill Share 2027 false future date is corrected to its real past council session',()=>{
+ const original={
+  slug:'our-shared-space-skill-share-day-2027-01-14-rosny-park',
+  name:'Our shared space - Skill share day',
+  eventUrl:'https://www.ccc.tas.gov.au/event/our-shared-space-skill-share-day/',
+  startDate:'2027-01-14',endDate:'2027-01-14',town:'Rosny Park'
+ };
+ for(const candidate of [original,{...original,slug:'regenerated-bad-date-from-neighbour'}]){
+  const fixed=applyReviewedEventCorrection(candidate,overrides);
+  assert.equal(fixed.startDate,'2026-10-20');
+  assert.equal(fixed.endDate,'2026-10-20');
+  assert.equal(fixed.startTime,'15:30');
+  assert.equal(fixed.endTime,'16:30');
+  assert.equal(fixed.venue,'Rosny Library');
+  assert.match(fixed.address,/Bligh Street/);
+ }
+ assert.ok(!events.some(e=>e.eventUrl===original.eventUrl&&e.startDate==='2027-01-14'),
+  'source data must not advertise an already completed event as January 2027');
+});
+
 test('agriCULTURED and Mind Blown keep official Tasmania-local event days and venue',()=>{
  const pairs=[
   ['agricultured-2026-2026-11-04-launceston','2026-11-05','2026-11-08','09:00','19:00','Launceston & Surrounds'],
