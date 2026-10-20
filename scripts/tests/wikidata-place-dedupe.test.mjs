@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {dedupeIdenticalWikidataPlaces} from '../../src/lib/wikidata-place-dedupe.mjs';
+import {dedupeIdenticalWikidataPlaces,dedupeReviewedBeaconsfieldCentre} from '../../src/lib/wikidata-place-dedupe.mjs';
 
 const base=(slug,id,extra={})=>({
  slug,name:'Trowunna Wildlife Park',town:'Tasmania',region:'North West',
@@ -77,4 +77,40 @@ test('Wikidata importer consolidates repeated within-batch QIDs, not just alread
  assert.match(source,/const queued=newCandidateByQid\.get\(id\)/);
  assert.match(source,/queued\.categories=\[\.\.\.new Set/);
  assert.match(source,/newCandidateByQid\.set\(id,fresh\)/);
+});
+
+
+test('Beaconsfield has one official museum despite OSM and Wikidata identity sources',()=>{
+ const osm={slug:'beaconsfield-mine-and-heritage-centre',name:'Beaconsfield Mine & Heritage Centre',sourceType:'openstreetmap',wikidata:'Q4876028',
+ latitude:-41.2017508,longitude:146.814144,website:'https://www.beaconsfieldheritage.com.au/',phone:'0363831473',
+ town:'Beaconsfield',categories:['Museums'],image:{isFallback:true}};
+ const wikidata={slug:'beaconsfield-mine-and-heritage-centre-2',name:'Beaconsfield Mine and Heritage Centre',sourceType:'wikidata',sourceId:'Q4876028',wikidata:'Q4876028',
+ latitude:-41.2017,longitude:146.816,website:'https://www.beaconsfieldheritage.com.au/',phone:'03 6383 1473',
+ town:'Beaconsfield',address:'West Street, Beaconsfield, Tasmania 7270',categories:['Museums','Art & Culture']};
+ const merged=dedupeReviewedBeaconsfieldCentre([wikidata,osm]);
+ assert.equal(merged.removed,1);
+ assert.equal(merged.places.length,1);
+ assert.equal(merged.places[0].slug,osm.slug);
+ assert.equal(merged.places[0].name,'Beaconsfield Mine and Heritage Centre');
+ assert.equal(merged.places[0].address,wikidata.address);
+ assert.ok(merged.places[0].categories.includes('Art & Culture'));
+ assert.deepEqual(merged.aliases,[{from:wikidata.slug,to:osm.slug,qid:'Q4876028'}]);
+ assert.equal(dedupeReviewedBeaconsfieldCentre(merged.places).removed,0);
+ const redirects=readFileSync(new URL('../../public/_redirects',import.meta.url),'utf8');
+ for(const root of ['/place/','/places/'])
+  assert.ok(redirects.includes(root+wikidata.slug+'/ /place/'+osm.slug+'/ 301'));
+});
+test('cross-source museum protection rejects unverified same-name or edited places',()=>{
+ const valid={slug:'beaconsfield-mine-and-heritage-centre',name:'Beaconsfield Mine & Heritage Centre',
+  sourceType:'openstreetmap',wikidata:'Q4876028',latitude:-41.2017508,longitude:146.814144,
+  website:'https://www.beaconsfieldheritage.com.au/',phone:'0363831473'};
+ const match={...valid,slug:'beaconsfield-mine-and-heritage-centre-2',
+  sourceType:'wikidata',sourceId:'Q4876028',name:'Beaconsfield Mine and Heritage Centre',latitude:-41.2017,longitude:146.816};
+ for(const changed of [{...match,website:'https://example.org/'},
+    {...match,phone:'03 6333 1111'},{...match,latitude:-42},
+    {...match,sourceId:'Q22'},{...match,managedManually:true}]){
+  const source=[{...valid},{...changed}];
+  const result=dedupeReviewedBeaconsfieldCentre(source);
+  assert.equal(result.removed,0,'unsafe unverified source merger refused');
+ }
 });
