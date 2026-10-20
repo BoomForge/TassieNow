@@ -3,6 +3,7 @@ import { decodeEventEntities } from '../../src/lib/event-text-entities.mjs';
 import { isMarketEvent } from '../../src/lib/market-category.js';
 import { regionalCardLocation } from '../../src/lib/regional-event-location.js';
 import { tasEventCalendarDate } from './lib/tas-event-calendar-date.mjs';
+import { theatreNorthDetail } from './lib/theatre-north-detail.mjs';
 
 const FILE = new URL('../../src/data/events.json', import.meta.url);
 const USER_AGENT = 'TassieNow/1.2 (+https://tassienow.pages.dev)';
@@ -121,6 +122,30 @@ function preference(event){let score=0;if(event.ticketUrl)score+=6;if(event.venu
 function dedupe(items){const out=[];for(const event of items){const name=norm(event.name);let index=-1;for(let i=0;i<out.length;i++){const other=out[i];if(other.startDate!==event.startDate)continue;const on=norm(other.name);if(name===on||(name.length>=9&&on.length>=9&&(name.includes(on)||on.includes(name)))){index=i;break;}}if(index<0)out.push(event);else if(preference(event)>preference(out[index]))out[index]={...out[index],...event};}return out;}
 
 const previous=JSON.parse(await fs.readFile(FILE,'utf8')).filter((event)=>event.status==='active'&&event.endDate>=TODAY);
+// Only detail pages at the exact official Theatre North host are trusted. 
+// A listing card combines show, presenter, venue and date into one title.
+async function enrichTheatreNorth(events){
+ const candidates=events.filter(e=>{try{return new URL(e.eventUrl).hostname==='theatrenorth.com.au';}catch{return false;}}).slice(0,24);
+ let cursor=0;
+ await Promise.all(Array.from({length:3},async()=>{
+  while(cursor<candidates.length){
+   const event=candidates[cursor++];
+   try{
+    const response=await fetch(event.eventUrl,{headers:{'user-agent':USER_AGENT,accept:'text/html'},signal:AbortSignal.timeout(8000),redirect:'follow'});
+    if(!response.ok||new URL(response.url).hostname!=='theatrenorth.com.au')continue;
+    const detail=theatreNorthDetail(await response.text());
+    if(!detail)continue; // No guessed headline, venue or clock time.
+    const existing=previous.find(x=>x.eventUrl===event.eventUrl);
+    event.name=detail.name;
+    event.venue=detail.venue;
+    event.summary=detail.name+' at '+detail.venue+'. Check Theatre North for current session times, tickets and accessibility.';
+    if(existing?.slug)event.slug=existing.slug; // Preserve old URLs until tested 301s exist.
+   }catch{/* Leave source untouched when show detail is unreachable. */}
+  }
+ }));
+ return events;
+}
+
 const found=[];
 for(const source of SOURCES){try{const{html}=await fetchHtml(source.url);const structured=structuredEvents(html,source);const anchors=source.regionalCards?regionalListingEvents(html,source):(source.structuredOnly?[]:anchorEvents(html,source));let events=dedupe([...structured,...anchors]);
   // The show society's own ticketing page explicitly publishes 16 October
@@ -138,6 +163,7 @@ for(const source of SOURCES){try{const{html}=await fetchHtml(source.url);const s
       if(show)events=[show];
     }
   }
+  if(source.name==='Theatre North Launceston')events=await enrichTheatreNorth(events);
   found.push(...events);console.log(`${source.name}: ${events.length} high-confidence event(s) (${structured.length} structured, ${anchors.length} linked).`);}catch(error){console.warn(`${source.name}: skipped (${error.message}).`);}}
 const merged=dedupe([...previous,...found]).sort((a,b)=>a.startDate.localeCompare(b.startDate)||a.name.localeCompare(b.name));
 await fs.writeFile(FILE,`${JSON.stringify(merged,null,2)}\n`);
