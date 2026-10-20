@@ -40,10 +40,11 @@ test('built-site SEO audit rejects noindex and canonical-mismatched sitemap URLs
 test('event rich-result markup uses event-specific artwork and never invents unknown venues', async () => {
   const event = await source('src/pages/event/[slug].astro');
   const audit = await source('scripts/audit-built-site.mjs');
-  assert.match(event, /const hasNamedVenue = typeof event\.venue/);
+  assert.match(event, /const namedVenue = sourceEventLocation\(\{name:event\.venue\}\)\.venue/);
+  assert.match(event, /const hasNamedVenue = Boolean\(namedVenue\)/);
   assert.match(event, /const eventSchema = hasNamedVenue \? \{/);
   assert.match(event, /image: \[absoluteImage\]/);
-  assert.match(event, /name: event\.venue\.trim\(\)/);
+  assert.match(event, /name: namedVenue/);
   assert.match(event, /\{eventSchema && <script type="application\/ld\+json"/);
   assert.match(audit, /Missing Event schema for named venue/);
   assert.match(audit, /Event schema without verified venue/);
