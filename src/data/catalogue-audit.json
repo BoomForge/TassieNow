@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 163,
+    "active": 164,
     "media": {
       "licensedHeroCoverage": {
         "count": 65,
-        "percent": 39.9
+        "percent": 39.6
       },
-      "stillUsingCategoryArtwork": 98,
+      "stillUsingCategoryArtwork": 99,
       "bySource": {
         "verified-event-venue": 37,
         "verified-event-activity": 23,
@@ -242,7 +242,7 @@
         },
         "Launceston & North": {
           "count": 17,
-          "percent": 63
+          "percent": 60.7
         },
         "North West": {
           "count": 13,
@@ -271,16 +271,17 @@
       }
     },
     "ticketCoverage": {
-      "count": 42,
-      "percent": 25.8
+      "count": 44,
+      "percent": 26.8
     },
     "priceCoverage": {
-      "count": 61,
-      "percent": 37.4
+      "count": 68,
+      "percent": 41.5
     },
     "providers": {
-      "Humanitix": 21,
+      "Humanitix": 22,
       "Ticketek": 20,
+      "Eventbrite": 1,
       "Ticketmaster": 1
     },
     "sources": {
@@ -291,8 +292,8 @@
       "Huon Valley Council": 15,
       "Theatre Royal Hobart": 12,
       "East Coast Tasmania": 10,
+      "Humanitix Launceston": 10,
       "Humanitix Hobart": 9,
-      "Humanitix Launceston": 9,
       "City of Clarence": 7,
       "City of Hobart": 7,
       "Glenorchy City Council": 6,
@@ -305,7 +306,7 @@
     },
     "regions": {
       "Hobart & South": 77,
-      "Launceston & North": 27,
+      "Launceston & North": 28,
       "North West": 44,
       "East Coast": 10,
       "West Coast": 1,
@@ -350,7 +351,7 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 0
+      "missingOrOlderThan30Days": 1
     },
     "sourceRegionalMix": {
       "North West / Burnie City Council": 28,
@@ -360,8 +361,8 @@
       "North West / Devonport City Council": 15,
       "Hobart & South / Theatre Royal Hobart": 12,
       "East Coast / East Coast Tasmania": 10,
+      "Launceston & North / Humanitix Launceston": 10,
       "Hobart & South / Humanitix Hobart": 9,
-      "Launceston & North / Humanitix Launceston": 9,
       "Hobart & South / City of Clarence": 7,
       "Hobart & South / City of Hobart": 7,
       "Hobart & South / Glenorchy City Council": 6,
