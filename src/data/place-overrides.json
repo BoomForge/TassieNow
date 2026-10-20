@@ -7,7 +7,21 @@
         "type": "verified-source",
         "url": "https://portarthur.org.au/eat-drink/1830-restaurant-and-bar/",
         "checkedAt": "2026-10-18"
+      },
+      "image": {
+        "type": "verified-correction",
+        "url": "https://portarthur.org.au/eat-drink/1830-restaurant-and-bar/",
+        "checkedAt": "2026-10-20"
       }
+    },
+    "image": {
+      "url": "/images/categories/discover.svg",
+      "alt": "Original TassieNow category artwork for 1830 Restaurant & Bar at Port Arthur",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
     }
   },
   "salamanca-market": {
@@ -1401,6 +1415,24 @@
       "openingHours": {
         "type": "verified-source",
         "url": "https://claremontplaza.com.au/stores/bakers-delight/",
+        "checkedAt": "2026-10-20"
+      }
+    }
+  },
+  "central-channel-marine-conservation-area": {
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Original TassieNow category artwork for Central Channel Marine Conservation Area, Tasmania",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "detailSources": {
+      "image": {
+        "type": "verified-correction",
+        "url": "https://parks.tas.gov.au/",
         "checkedAt": "2026-10-20"
       }
     }
