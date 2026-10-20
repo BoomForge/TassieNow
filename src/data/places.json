@@ -50,9 +50,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -62,7 +61,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:44.609Z"
+      "checkedAt": "2026-10-20T16:51:18.162Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -156,9 +155,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Archers-Knob.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -168,7 +166,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:34.617Z"
+      "checkedAt": "2026-10-20T16:51:43.198Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -246,9 +244,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/bishop-and-clerk",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Bishop-and-Clerk.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "4-5 hour walk, 3-5 hour ride , 11km return, Grade 4",
@@ -258,7 +255,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:09.481Z"
+      "checkedAt": "2026-10-20T16:50:55.348Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -316,7 +313,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:15.318Z"
+      "checkedAt": "2026-10-20T16:51:01.589Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -477,6 +474,106 @@
     ]
   },
   {
+    "slug": "cape-raoul-lookout",
+    "name": "Cape Raoul Lookout",
+    "town": "Port Arthur",
+    "region": "Hobart & South",
+    "latitude": -43.2083593,
+    "longitude": 147.7753293,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Cape Raoul is an official Parks Tasmania walk. 5 hours return , 14km, Grade 4 · Grade 4.",
+    "website": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/1080419326",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/1080419326",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6250 3980",
+    "email": "TasmanNP@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-21",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Cape_Raoul_from_Lookout.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
+      "alt": "Cape Raoul photographed from the lookout on the Tasman Peninsula",
+      "attribution": "JJ Harrison",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "isFallback": false,
+      "useMode": "external-embed",
+      "sourceMethod": "ai-verified-remote",
+      "usagePermission": "open-licence",
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Cape Raoul photographed from the lookout on the Tasman Peninsula; exact named Tasmanian destination shown in the original Commons image description",
+        "checkedAt": "2026-10-13",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
+        "rightsPage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
+        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to JJ Harrison, identifies the Tasmanian subject, and specifies CC BY-SA 3.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
+        "listingSlug": "cape-raoul-lookout",
+        "listingName": "Cape Raoul Lookout",
+        "listingTown": "Port Arthur"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Cape%20Raoul%20Lookout%20Port%20Arthur%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
+      "type": "government"
+    },
+    "walk": {
+      "duration": "5 hours return , 14km, Grade 4",
+      "grade": 4
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T16:51:24.952Z"
+    },
+    "qualityScore": 100,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "real-image",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
     "slug": "friendly-beaches",
     "name": "Friendly Beaches",
     "town": "Tasmania",
@@ -509,9 +606,8 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "5 minutes to 5 hours , 100m to 5km, Grade 2",
@@ -521,7 +617,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:08.238Z"
+      "checkedAt": "2026-10-20T16:50:55.227Z"
     },
     "reviewLinks": [
       {
@@ -691,9 +787,8 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Wineglass-Bay-and-Hazards-Beach.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "4-5 hours circuit , 11km circuit, Grade 4",
@@ -703,7 +798,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:09.194Z"
+      "checkedAt": "2026-10-20T16:50:55.327Z"
     },
     "reviewLinks": [
       {
@@ -872,9 +967,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -884,7 +978,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:40.676Z"
+      "checkedAt": "2026-10-20T16:51:45.860Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -963,9 +1057,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/duck-reach",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Duck-Reach.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -975,7 +1068,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:09.985Z"
+      "checkedAt": "2026-10-20T16:51:32.119Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1052,9 +1145,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/liffey-falls-state-reserve/liffey-falls-walk",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Liffey-Falls-Walk.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "45 minute return , 2km, from the top car park, Grade 2",
@@ -1064,7 +1156,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:05.671Z"
+      "checkedAt": "2026-10-20T16:50:52.553Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1078,7 +1170,6 @@
       "official-walk-data",
       "real-image",
       "contact-details",
-      "booking-link",
       "review-link",
       "details-checked"
     ],
@@ -1146,9 +1237,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/maingon-blowhole",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Maingon-Blowhole.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -1158,7 +1248,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:52.598Z"
+      "checkedAt": "2026-10-20T16:51:24.948Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1235,9 +1325,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Montezuma-Falls.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -1247,7 +1336,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:26.201Z"
+      "checkedAt": "2026-10-20T16:51:45.423Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1264,14 +1353,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls"
-    }
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "remarkable-cave",
@@ -1370,9 +1452,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/remarkable-cave",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Remarkable-Cave.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "15 minutes return , TBC, Grade 3",
@@ -1382,7 +1463,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:53.558Z"
+      "checkedAt": "2026-10-20T16:51:25.352Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1441,7 +1522,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:41.134Z"
+      "checkedAt": "2026-10-20T16:51:14.192Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1691,9 +1772,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/St-Columba-Falls.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -1703,7 +1783,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:14.684Z"
+      "checkedAt": "2026-10-20T16:51:36.635Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1761,9 +1841,8 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/St-Columba-Falls.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -1773,7 +1852,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:16.010Z"
+      "checkedAt": "2026-10-20T16:51:38.211Z"
     },
     "reviewLinks": [
       {
@@ -1898,9 +1977,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Wineglass-Bay-Lookout.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -1910,7 +1988,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:07.155Z"
+      "checkedAt": "2026-10-20T16:50:53.979Z"
     },
     "schedule": {
       "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
@@ -1985,7 +2063,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:12.807Z"
+      "checkedAt": "2026-10-20T16:51:35.111Z"
     },
     "qualityScore": 97,
     "qualityTier": "featured",
@@ -2153,106 +2231,6 @@
     ]
   },
   {
-    "slug": "cape-raoul-lookout",
-    "name": "Cape Raoul Lookout",
-    "town": "Port Arthur",
-    "region": "Hobart & South",
-    "latitude": -43.2083593,
-    "longitude": 147.7753293,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Cape Raoul is an official Parks Tasmania walk. 5 hours return , 14km, Grade 4 · Grade 4.",
-    "website": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/1080419326",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/1080419326",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6250 3980",
-    "email": "TasmanNP@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-21",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Cape_Raoul_from_Lookout.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
-      "alt": "Cape Raoul photographed from the lookout on the Tasman Peninsula",
-      "attribution": "JJ Harrison",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "isFallback": false,
-      "useMode": "external-embed",
-      "sourceMethod": "ai-verified-remote",
-      "usagePermission": "open-licence",
-      "matchEvidence": {
-        "verified": true,
-        "subject": "Cape Raoul photographed from the lookout on the Tasman Peninsula; exact named Tasmanian destination shown in the original Commons image description",
-        "checkedAt": "2026-10-13",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
-        "rightsPage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
-        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to JJ Harrison, identifies the Tasmanian subject, and specifies CC BY-SA 3.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
-        "listingSlug": "cape-raoul-lookout",
-        "listingName": "Cape Raoul Lookout",
-        "listingTown": "Port Arthur"
-      }
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Cape%20Raoul%20Lookout%20Port%20Arthur%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul",
-      "type": "government",
-      "checkedAt": "2026-10-21"
-    },
-    "walk": {
-      "duration": "5 hours return , 14km, Grade 4",
-      "grade": 4
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "inconclusive",
-      "code": null,
-      "checkedAt": "2026-10-20T16:14:12.243Z"
-    },
-    "qualityScore": 96,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "government-source",
-      "official-walk-data",
-      "real-image",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
     "slug": "friendly-beaches-reserve",
     "name": "Friendly Beaches Reserve",
     "town": "Tasmania",
@@ -2282,9 +2260,8 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "5 minutes to 5 hours , 100m to 5km, Grade 2",
@@ -2294,7 +2271,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:07.980Z"
+      "checkedAt": "2026-10-20T16:50:55.111Z"
     },
     "reviewLinks": [
       {
@@ -2402,7 +2379,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:56.877Z"
+      "checkedAt": "2026-10-20T16:51:20.831Z"
     },
     "qualityScore": 95,
     "qualityTier": "featured",
@@ -2566,7 +2543,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:51.420Z"
+      "checkedAt": "2026-10-20T16:51:23.364Z"
     },
     "qualityScore": 95,
     "qualityTier": "featured",
@@ -2776,7 +2753,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:20.648Z"
+      "checkedAt": "2026-10-20T16:51:04.328Z"
     },
     "qualityScore": 94,
     "qualityTier": "featured",
@@ -2895,7 +2872,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:19.176Z"
+      "checkedAt": "2026-10-20T16:51:42.962Z"
     },
     "reviewLinks": [
       {
@@ -3081,9 +3058,8 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Frankland-Beaches-Walk.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "2 hours , 6 km return, Grade 2",
@@ -3093,7 +3069,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:05.158Z"
+      "checkedAt": "2026-10-20T16:50:52.937Z"
     },
     "reviewLinks": [
       {
@@ -3172,7 +3148,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:12.365Z"
+      "checkedAt": "2026-10-20T16:50:58.325Z"
     },
     "qualityScore": 91,
     "qualityTier": "featured",
@@ -3312,9 +3288,8 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/strzelecki-national-park/trousers-point",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Trousers-Point.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "1.5 hours circuit , 2km circuit, Grade 2",
@@ -3324,7 +3299,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:10.316Z"
+      "checkedAt": "2026-10-20T16:50:57.330Z"
     },
     "reviewLinks": [
       {
@@ -3470,7 +3445,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:03.431Z"
+      "checkedAt": "2026-10-20T16:51:28.864Z"
     },
     "reviewLinks": [
       {
@@ -3520,7 +3495,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:04.748Z"
+      "checkedAt": "2026-10-20T16:50:51.607Z"
     },
     "qualityScore": 90,
     "qualityTier": "featured",
@@ -3718,7 +3693,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:23.130Z"
+      "checkedAt": "2026-10-20T16:51:43.150Z"
     },
     "qualityScore": 90,
     "qualityTier": "featured",
@@ -3828,9 +3803,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -3840,7 +3814,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:07.828Z"
+      "checkedAt": "2026-10-20T16:51:28.270Z"
     },
     "qualityScore": 89,
     "qualityTier": "featured",
@@ -3949,7 +3923,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:23.066Z"
+      "checkedAt": "2026-10-20T16:51:06.373Z"
     },
     "reviewLinks": [
       {
@@ -4015,9 +3989,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/fossil-cliffs",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Fossil-Cliffs.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -4027,7 +4000,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:09.621Z"
+      "checkedAt": "2026-10-20T16:50:55.921Z"
     },
     "qualityScore": 89,
     "qualityTier": "featured",
@@ -4141,7 +4114,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:18.159Z"
+      "checkedAt": "2026-10-20T16:51:02.715Z"
     },
     "reviewLinks": [
       {
@@ -4265,7 +4238,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:41.891Z"
+      "checkedAt": "2026-10-20T16:51:14.648Z"
     },
     "reviewLinks": [
       {
@@ -4299,93 +4272,6 @@
       "url": "https://www.huonvalley.tas.gov.au/service/judbury-market/"
     },
     "lastWikidataLinkChecked": "2026-10-12"
-  },
-  {
-    "slug": "meander-falls",
-    "name": "Meander Falls",
-    "town": "Meander",
-    "region": "Central Tasmania",
-    "latitude": -41.7326431,
-    "longitude": 146.5086383,
-    "categories": [
-      "Things to Do",
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Meander Falls is an official Parks Tasmania walk. 4.5-6 hours return , 10km return, Grade 4 · Grade 4.",
-    "website": "https://parks.tas.gov.au/Pages/Meander-Falls.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/469734407",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/469734407",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6701 2104",
-    "email": "GreatWesternTiers@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-21",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Meander Falls category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Meander%20Falls%20Meander%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/meander-falls",
-      "type": "government",
-      "checkedAt": "2026-10-21"
-    },
-    "walk": {
-      "duration": "4.5-6 hours return , 10km return, Grade 4",
-      "grade": 4
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T16:13:05.216Z"
-    },
-    "qualityScore": 89,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/meander-falls"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
   },
   {
     "slug": "mount-duncan",
@@ -4436,9 +4322,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-duncan-track",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Mount-Duncan-Summit-Track.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "4 hours return , 8km return, Grade 3",
@@ -4448,7 +4333,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:21.785Z"
+      "checkedAt": "2026-10-20T16:51:42.881Z"
     },
     "qualityScore": 89,
     "qualityTier": "featured",
@@ -4523,9 +4408,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-gnomon-lookout",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Mount%20Gnomon-Lookout.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "1 hour return , 2km return, Grade 3",
@@ -4535,7 +4419,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:22.323Z"
+      "checkedAt": "2026-10-20T16:51:43.170Z"
     },
     "qualityScore": 89,
     "qualityTier": "featured",
@@ -4611,9 +4495,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/painted-cliffs",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Painted-Cliffs.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -4623,7 +4506,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:09.575Z"
+      "checkedAt": "2026-10-20T16:50:56.145Z"
     },
     "qualityScore": 89,
     "qualityTier": "featured",
@@ -4707,9 +4590,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Point-Vision-Track.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "7 hours return , 15 km return, Grade 4",
@@ -4719,7 +4601,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:06.812Z"
+      "checkedAt": "2026-10-20T16:51:31.804Z"
     },
     "qualityScore": 89,
     "qualityTier": "featured",
@@ -4744,6 +4626,95 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
+  },
+  {
+    "slug": "weldborough-pass-rainforest-walk",
+    "name": "Weldborough Pass Rainforest Walk",
+    "town": "Derby",
+    "region": "Launceston & North",
+    "latitude": -41.2161683,
+    "longitude": 147.9383007,
+    "categories": [
+      "Things to Do",
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "A short rainforest walking loop at Weldborough Pass State Reserve beside the Tasman Highway between Derby and St Helens. Follow local track signage and check current conditions before visiting.",
+    "website": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/way/142432393",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/142432393",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": "Parks and Wildlife Service Tasmania",
+    "detailSources": {
+      "operator": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/142432393",
+        "checkedAt": "2026-10-20"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-21",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Weldborough Pass Rainforest Walk category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Weldborough%20Pass%20Rainforest%20Walk%20Derby%20Tasmania"
+      }
+    ],
+    "walk": {
+      "duration": "10 minute circuit , 431m, Grade 1",
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T16:51:30.198Z"
+    },
+    "qualityScore": 89,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20",
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
+      "type": "government"
+    }
   },
   {
     "slug": "allport-library-and-museum-of-fine-arts",
@@ -4779,7 +4750,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:56.623Z"
+      "checkedAt": "2026-10-20T16:51:27.213Z"
     },
     "reviewLinks": [
       {
@@ -4886,7 +4857,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:15.976Z"
+      "checkedAt": "2026-10-20T16:50:59.939Z"
     },
     "reviewLinks": [
       {
@@ -5053,120 +5024,6 @@
     "bookingUrl": "https://mona.net.au/tickets"
   },
   {
-    "slug": "tahune-airwalk-cafe",
-    "name": "Tahune Airwalk Cafe",
-    "town": "Geeveston",
-    "region": "Hobart & South",
-    "latitude": -43.0950077,
-    "longitude": 146.729694,
-    "categories": [
-      "Food & Drink",
-      "Café",
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Tahune Airwalk is an official Parks Tasmania walk. Grade 1.",
-    "website": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/638166922",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/638166922",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "phone": "03 6121 7026",
-    "email": "Huonville@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "email": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-        "checkedAt": "2026-10-09"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-        "checkedAt": "2026-10-09"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-21",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-17",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Tahune Airwalk Cafe category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-      "type": "government",
-      "checkedAt": "2026-10-21"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T16:13:20.851Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Tahune%20Airwalk%20Cafe%20Geeveston%20Tasmania"
-      }
-    ],
-    "schedule": {
-      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
-      "sourceUrl": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-      "daysOfWeek": [
-        "Tuesday",
-        "Wednesday"
-      ],
-      "startTime": "10:00",
-      "endTime": "16:00"
-    },
-    "qualityScore": 88,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
-  },
-  {
     "name": "Liffey Valley Market",
     "slug": "liffey-valley-market-liffey",
     "town": "Liffey",
@@ -5273,7 +5130,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:13.123Z"
+      "checkedAt": "2026-10-20T16:51:36.422Z"
     },
     "reviewLinks": [
       {
@@ -5306,6 +5163,203 @@
       "checkedAt": "2026-10-21",
       "url": "https://northernmidlands.tas.gov.au/events/liffey-valley-market"
     },
+    "lastWikidataLinkChecked": "2026-10-12"
+  },
+  {
+    "slug": "meander-falls",
+    "name": "Meander Falls",
+    "town": "Meander",
+    "region": "Central Tasmania",
+    "latitude": -41.7326431,
+    "longitude": 146.5086383,
+    "categories": [
+      "Things to Do",
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Meander Falls is an official Parks Tasmania walk. 4.5-6 hours return , 10km return, Grade 4 · Grade 4.",
+    "website": "https://parks.tas.gov.au/Pages/Meander-Falls.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/469734407",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/469734407",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6701 2104",
+    "email": "GreatWesternTiers@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-21",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Meander Falls category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Meander%20Falls%20Meander%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Meander-Falls.aspx",
+      "type": "government"
+    },
+    "walk": {
+      "duration": "4.5-6 hours return , 10km return, Grade 4",
+      "grade": 4
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T16:50:52.065Z"
+    },
+    "qualityScore": 87,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/meander-falls"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
+    "slug": "tahune-airwalk-cafe",
+    "name": "Tahune Airwalk Cafe",
+    "town": "Geeveston",
+    "region": "Hobart & South",
+    "latitude": -43.0950077,
+    "longitude": 146.729694,
+    "categories": [
+      "Food & Drink",
+      "Café",
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Tahune Airwalk is an official Parks Tasmania walk. Grade 1.",
+    "website": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/638166922",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/638166922",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "phone": "03 6121 7026",
+    "email": "Huonville@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "email": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+        "checkedAt": "2026-10-09"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+        "checkedAt": "2026-10-09"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-21",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-17",
+    "image": {
+      "url": "/images/categories/food.svg",
+      "alt": "Tahune Airwalk Cafe category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
+      "type": "government"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T16:51:05.111Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Tahune%20Airwalk%20Cafe%20Geeveston%20Tasmania"
+      }
+    ],
+    "schedule": {
+      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
+      "sourceUrl": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+      "daysOfWeek": [
+        "Tuesday",
+        "Wednesday"
+      ],
+      "startTime": "10:00",
+      "endTime": "16:00"
+    },
+    "qualityScore": 86,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
     "lastWikidataLinkChecked": "2026-10-12"
   },
   {
@@ -5349,7 +5403,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:28.155Z"
+      "checkedAt": "2026-10-20T16:51:47.580Z"
     },
     "reviewLinks": [
       {
@@ -5472,9 +5526,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hollybank",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Hollybank.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "15-40 minute circuit , 2km circuit, Grade 1",
@@ -5484,7 +5537,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:25.252Z"
+      "checkedAt": "2026-10-20T16:51:36.099Z"
     },
     "qualityScore": 84,
     "qualityTier": "featured",
@@ -5556,9 +5609,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -5568,7 +5620,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:14.073Z"
+      "checkedAt": "2026-10-20T16:51:37.259Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -5589,6 +5641,107 @@
       "status": "ok",
       "checkedAt": "2026-10-21",
       "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
+    "slug": "arve-falls-lookout",
+    "name": "Arve Falls Lookout",
+    "town": "Geeveston",
+    "region": "Hobart & South",
+    "latitude": -43.2102788,
+    "longitude": 146.7733416,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Arve Falls is an official Parks Tasmania walk. 20 minutes return , 1 km, Grade 2 · Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/2423549936",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2423549936",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6121 7026",
+    "email": "Huonville@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
+        "checkedAt": "2026-10-20"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-21",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Arve Falls Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Arve%20Falls%20Lookout%20Geeveston%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx",
+      "type": "government"
+    },
+    "walk": {
+      "duration": "20 minutes return , 1 km, Grade 2",
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T16:51:04.995Z"
+    },
+    "schedule": {
+      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
+      "daysOfWeek": [
+        "Tuesday",
+        "Wednesday"
+      ],
+      "startTime": "10:00",
+      "endTime": "16:00"
+    },
+    "qualityScore": 82,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
@@ -5675,7 +5828,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:59.168Z"
+      "checkedAt": "2026-10-20T16:51:27.987Z"
     },
     "schedule": {
       "summary": "Open 7 Days &#8211; 10am to 4pm",
@@ -5781,9 +5934,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "30 minutes return , 2 km, Grade 1",
@@ -5793,7 +5945,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:23.656Z"
+      "checkedAt": "2026-10-20T16:51:36.096Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -5872,9 +6024,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Calcified-Forest-(King-Island).aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -5884,7 +6035,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:03.464Z"
+      "checkedAt": "2026-10-20T16:51:29.874Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -5900,14 +6051,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)"
-    }
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "cape-tourville-lookout",
@@ -5964,9 +6108,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Cape-Tourville.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "20 minute circuit , 600m circuit, Grade 1",
@@ -5976,7 +6119,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:06.130Z"
+      "checkedAt": "2026-10-20T16:50:53.362Z"
     },
     "schedule": {
       "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
@@ -6066,9 +6209,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Huon-Pine-Walk.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "20 minutes return , 600m return, Grade 1",
@@ -6078,7 +6220,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:25.252Z"
+      "checkedAt": "2026-10-20T16:51:45.439Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -6094,14 +6236,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk"
-    }
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "maritime-museum-of-tasmania",
@@ -6206,7 +6341,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:27.779Z"
+      "checkedAt": "2026-10-20T16:51:08.151Z"
     },
     "schedule": {
       "summary": "Located on Hobart's waterfront, opposite Constitution Dock, Maritime Museum Tasmania is open every day of the year (except Christmas Day).",
@@ -6358,7 +6493,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:09.869Z"
+      "checkedAt": "2026-10-20T16:50:56.524Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -6448,9 +6583,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/ralphs-falls",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Ralphs-Falls.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -6460,7 +6594,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:16.041Z"
+      "checkedAt": "2026-10-20T16:51:38.345Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -6534,9 +6668,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/the-reservoir-circuit",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/The-Reservoir-Circuit.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "0.5-1 hour ride , 4km return, Grade 3",
@@ -6546,7 +6679,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:09.493Z"
+      "checkedAt": "2026-10-20T16:50:56.062Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -6626,9 +6759,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/sleepy-bay",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Sleepy-Bay.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "20 minutes return , 500m return, Grade 3",
@@ -6638,7 +6770,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:07.156Z"
+      "checkedAt": "2026-10-20T16:50:53.793Z"
     },
     "schedule": {
       "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
@@ -6738,9 +6870,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "30 minutes return , 2 km, Grade 1",
@@ -6750,7 +6881,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:22.503Z"
+      "checkedAt": "2026-10-20T16:51:43.202Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -6824,9 +6955,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park/tall-trees",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Tall-Trees.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "30 minutes circuit , 1km circuit, Grade 2",
@@ -6836,7 +6966,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:59.776Z"
+      "checkedAt": "2026-10-20T16:51:29.510Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -6894,7 +7024,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:40.271Z"
+      "checkedAt": "2026-10-20T16:51:12.336Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -7005,6 +7135,107 @@
     ]
   },
   {
+    "slug": "waratah-lookout",
+    "name": "Waratah Lookout",
+    "town": "Geeveston",
+    "region": "Hobart & South",
+    "latitude": -43.195509,
+    "longitude": 146.7674009,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Waratah Lookout is an official Parks Tasmania walk. 5 minutes return , 300 metres, Grade 2 · Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/5381596945",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/5381596945",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6121 7026",
+    "email": "Huonville@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
+        "checkedAt": "2026-10-20"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-21",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Waratah Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Waratah%20Lookout%20Geeveston%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
+      "type": "government"
+    },
+    "walk": {
+      "duration": "5 minutes return , 300 metres, Grade 2",
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T16:51:05.078Z"
+    },
+    "schedule": {
+      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
+      "daysOfWeek": [
+        "Tuesday",
+        "Wednesday"
+      ],
+      "startTime": "10:00",
+      "endTime": "16:00"
+    },
+    "qualityScore": 82,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
     "slug": "waterfall-bay-lookout",
     "name": "Waterfall Bay Lookout",
     "town": "Port Arthur",
@@ -7053,9 +7284,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/waterfall-bay",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Waterfall-Bay.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": null,
@@ -7065,7 +7295,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:53.557Z"
+      "checkedAt": "2026-10-20T16:51:26.198Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -7233,7 +7463,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:12.828Z"
+      "checkedAt": "2026-10-20T16:51:34.961Z"
     },
     "schedule": {
       "summary": "Free entry, open 10am to 4pm daily",
@@ -7371,7 +7601,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:54.932Z"
+      "checkedAt": "2026-10-20T16:51:26.694Z"
     },
     "reviewLinks": [
       {
@@ -7489,7 +7719,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:24.078Z"
+      "checkedAt": "2026-10-20T16:51:43.858Z"
     },
     "reviewLinks": [
       {
@@ -7543,7 +7773,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:02.896Z"
+      "checkedAt": "2026-10-20T16:51:30.682Z"
     },
     "reviewLinks": [
       {
@@ -7647,7 +7877,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:25.435Z"
+      "checkedAt": "2026-10-20T16:51:44.790Z"
     },
     "reviewLinks": [
       {
@@ -7776,107 +8006,6 @@
     ]
   },
   {
-    "slug": "arve-falls-lookout",
-    "name": "Arve Falls Lookout",
-    "town": "Geeveston",
-    "region": "Hobart & South",
-    "latitude": -43.2102788,
-    "longitude": 146.7733416,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Arve Falls is an official Parks Tasmania walk. 20 minutes return , 1 km, Grade 2 · Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/2423549936",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2423549936",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6121 7026",
-    "email": "Huonville@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-21",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Arve Falls Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Arve%20Falls%20Lookout%20Geeveston%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
-      "type": "government",
-      "checkedAt": "2026-10-21"
-    },
-    "walk": {
-      "duration": "20 minutes return , 1 km, Grade 2",
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "inconclusive",
-      "code": null,
-      "checkedAt": "2026-10-20T16:13:39.306Z"
-    },
-    "schedule": {
-      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
-      "daysOfWeek": [
-        "Tuesday",
-        "Wednesday"
-      ],
-      "startTime": "10:00",
-      "endTime": "16:00"
-    },
-    "qualityScore": 78,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
     "slug": "cascades-female-factory",
     "name": "Cascades Female Factory",
     "town": "South Hobart",
@@ -7956,7 +8085,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:56.606Z"
+      "checkedAt": "2026-10-20T16:51:27.547Z"
     },
     "reviewLinks": [
       {
@@ -8086,107 +8215,6 @@
     "discoveryStaleSince": "2026-10-11"
   },
   {
-    "slug": "waratah-lookout",
-    "name": "Waratah Lookout",
-    "town": "Geeveston",
-    "region": "Hobart & South",
-    "latitude": -43.195509,
-    "longitude": 146.7674009,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Waratah Lookout is an official Parks Tasmania walk. 5 minutes return , 300 metres, Grade 2 · Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/5381596945",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/5381596945",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6121 7026",
-    "email": "Huonville@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-21",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Waratah Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Waratah%20Lookout%20Geeveston%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
-      "type": "government",
-      "checkedAt": "2026-10-21"
-    },
-    "walk": {
-      "duration": "5 minutes return , 300 metres, Grade 2",
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "inconclusive",
-      "code": null,
-      "checkedAt": "2026-10-20T16:13:41.643Z"
-    },
-    "schedule": {
-      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
-      "daysOfWeek": [
-        "Tuesday",
-        "Wednesday"
-      ],
-      "startTime": "10:00",
-      "endTime": "16:00"
-    },
-    "qualityScore": 78,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
     "slug": "view-of-overland-track-northern-peaks",
     "name": "View of Overland Track Northern Peaks",
     "town": "Mole Creek",
@@ -8236,9 +8264,8 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track",
-      "type": "government",
-      "checkedAt": "2026-10-21"
+      "url": "https://parks.tas.gov.au/Pages/Overland-Track.aspx",
+      "type": "government"
     },
     "walk": {
       "duration": "6 days one way , 65km one way, Grade 4",
@@ -8248,7 +8275,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:15.801Z"
+      "checkedAt": "2026-10-20T16:51:37.986Z"
     },
     "qualityScore": 77,
     "qualityTier": "featured",
@@ -8304,7 +8331,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:56.946Z"
+      "checkedAt": "2026-10-20T16:51:27.787Z"
     },
     "reviewLinks": [
       {
@@ -8477,7 +8504,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:56.982Z"
+      "checkedAt": "2026-10-20T16:51:27.781Z"
     },
     "reviewLinks": [
       {
@@ -8697,7 +8724,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:19.043Z"
+      "checkedAt": "2026-10-20T16:51:41.441Z"
     },
     "schedule": {
       "summary": "Open Daily: Mon – Sun 10.00am – 3.00pm",
@@ -8831,7 +8858,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:03.971Z"
+      "checkedAt": "2026-10-20T16:51:25.007Z"
     },
     "qualityScore": 75,
     "qualityTier": "featured",
@@ -8934,7 +8961,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:17.642Z"
+      "checkedAt": "2026-10-20T16:51:01.596Z"
     },
     "reviewLinks": [
       {
@@ -9045,7 +9072,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:43.381Z"
+      "checkedAt": "2026-10-20T16:51:17.143Z"
     },
     "reviewLinks": [
       {
@@ -9111,7 +9138,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:57.831Z"
+      "checkedAt": "2026-10-20T16:51:28.538Z"
     },
     "reviewLinks": [
       {
@@ -9301,7 +9328,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:53.814Z"
+      "checkedAt": "2026-10-20T16:51:25.891Z"
     },
     "lastWikidataLinkChecked": "2026-10-13"
   },
@@ -9386,7 +9413,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:18.768Z"
+      "checkedAt": "2026-10-20T16:51:38.850Z"
     },
     "qualityScore": 74,
     "qualityTier": "featured",
@@ -9492,7 +9519,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:08.611Z"
+      "checkedAt": "2026-10-20T16:51:31.915Z"
     },
     "reviewLinks": [
       {
@@ -9612,7 +9639,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:49.065Z"
+      "checkedAt": "2026-10-20T16:51:22.104Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "lastDetailsChecked": "2026-10-21",
@@ -9742,7 +9769,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:20.026Z"
+      "checkedAt": "2026-10-20T16:51:40.756Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -9861,7 +9888,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:34.065Z"
+      "checkedAt": "2026-10-20T16:51:09.834Z"
     },
     "schedule": {
       "summary": "In 2016, the Foundation also held the inaugural Australian Antarctic Festival that is held every two years attracting tourists from around Australia and overseas.",
@@ -10177,7 +10204,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:16.509Z"
+      "checkedAt": "2026-10-20T16:51:00.581Z"
     },
     "qualityScore": 71,
     "qualityTier": "featured",
@@ -10492,7 +10519,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:57.597Z"
+      "checkedAt": "2026-10-20T16:51:27.187Z"
     },
     "reviewLinks": [
       {
@@ -10608,7 +10635,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:24.365Z"
+      "checkedAt": "2026-10-20T16:51:43.915Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -10782,7 +10809,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:13.528Z"
+      "checkedAt": "2026-10-20T16:51:34.458Z"
     },
     "schedule": {
       "summary": "Animal feeding starts at 10.15am daily.",
@@ -10934,7 +10961,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:52.460Z"
+      "checkedAt": "2026-10-20T16:51:24.752Z"
     },
     "schedule": {
       "summary": "Open every day except Christmas Day.",
@@ -11060,7 +11087,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:16.326Z"
+      "checkedAt": "2026-10-20T16:51:00.552Z"
     },
     "reviewLinks": [
       {
@@ -11163,7 +11190,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:20.070Z"
+      "checkedAt": "2026-10-20T16:51:42.352Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 68,
@@ -11266,7 +11293,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:20.875Z"
+      "checkedAt": "2026-10-20T16:51:41.702Z"
     },
     "qualityScore": 68,
     "qualityTier": "featured",
@@ -11501,7 +11528,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:42.743Z"
+      "checkedAt": "2026-10-20T16:51:16.826Z"
     },
     "reviewLinks": [
       {
@@ -11621,7 +11648,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:04.004Z"
+      "checkedAt": "2026-10-20T16:50:50.661Z"
     },
     "reviewLinks": [
       {
@@ -11718,7 +11745,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:04.632Z"
+      "checkedAt": "2026-10-20T16:50:51.656Z"
     },
     "reviewLinks": [
       {
@@ -11911,7 +11938,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:18.702Z"
+      "checkedAt": "2026-10-20T16:51:02.892Z"
     },
     "qualityScore": 67,
     "qualityTier": "featured",
@@ -12049,7 +12076,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:04.078Z"
+      "checkedAt": "2026-10-20T16:51:29.240Z"
     },
     "reviewLinks": [
       {
@@ -12151,7 +12178,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:24.777Z"
+      "checkedAt": "2026-10-20T16:51:05.941Z"
     },
     "reviewLinks": [
       {
@@ -12252,7 +12279,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:53.382Z"
+      "checkedAt": "2026-10-20T16:51:25.379Z"
     },
     "reviewLinks": [
       {
@@ -12313,7 +12340,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:01.733Z"
+      "checkedAt": "2026-10-20T16:50:49.947Z"
     },
     "reviewLinks": [
       {
@@ -12469,7 +12496,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:58.057Z"
+      "checkedAt": "2026-10-20T16:51:27.922Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -12741,7 +12768,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:13.924Z"
+      "checkedAt": "2026-10-20T16:51:35.213Z"
     },
     "reviewLinks": [
       {
@@ -12832,7 +12859,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:58.033Z"
+      "checkedAt": "2026-10-20T16:51:28.069Z"
     },
     "reviewLinks": [
       {
@@ -12898,117 +12925,6 @@
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
     "lastWikidataLinkChecked": "2026-10-20"
-  },
-  {
-    "slug": "coles-beach",
-    "name": "Coles Beach",
-    "town": "Devonport",
-    "region": "North West",
-    "latitude": -41.16,
-    "longitude": 146.34,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor",
-      "Free"
-    ],
-    "summary": "Coles Beach, accessed via Coles Beach Road in Devonport, has nearby public toilets, a walking and cycling track, electric barbecue, picnic shelters, a car park and an outdoor shower. Devonport City Council monitors beach water quality in summer.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q21956215",
-    "sourceType": "wikidata",
-    "sourceId": "Q21956215",
-    "wikidata": "Q21956215",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Coles_bay_beach.JPG/1920px-Coles_bay_beach.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Coles Beach, Tasmania",
-      "attribution": "Aaroncrick",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coles_bay_beach.JPG",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Coles%20Beach%20Tasmania%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-21",
-    "qualityScore": 62,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "real-image",
-      "address",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "lastWikidataChecked": "2026-10-06",
-    "address": "Coles Beach Road, Devonport TAS 7310",
-    "detailSources": {
-      "town": {
-        "type": "verified-source",
-        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
-        "checkedAt": "2026-10-21"
-      },
-      "region": {
-        "type": "verified-source",
-        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
-        "checkedAt": "2026-10-21"
-      },
-      "address": {
-        "type": "verified-source",
-        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
-        "checkedAt": "2026-10-21"
-      },
-      "summary": {
-        "type": "verified-source",
-        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
-        "checkedAt": "2026-10-21"
-      }
-    },
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Mary_Ellen_at_Coles_Bay_beach_%283-3%29_-_Flickr_-_brewbooks.jpg/1920px-Mary_Ellen_at_Coles_Bay_beach_%283-3%29_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coles Beach, Tasmania",
-        "attribution": "brewbooks from near Seattle, USA",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Ellen_at_Coles_Bay_beach_(3-3)_-_Flickr_-_brewbooks.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Mary_Ellen_at_Coles_Bay_beach_%282-3%29_-_Flickr_-_brewbooks.jpg/1920px-Mary_Ellen_at_Coles_Bay_beach_%282-3%29_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coles Beach, Tasmania",
-        "attribution": "brewbooks from near Seattle, USA",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Ellen_at_Coles_Bay_beach_(2-3)_-_Flickr_-_brewbooks.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Mary_Ellen_at_Coles_Bay_beach_%281-3%29_-_Flickr_-_brewbooks.jpg/1920px-Mary_Ellen_at_Coles_Bay_beach_%281-3%29_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coles Beach, Tasmania",
-        "attribution": "brewbooks from near Seattle, USA",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Ellen_at_Coles_Bay_beach_(1-3)_-_Flickr_-_brewbooks.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      }
-    ]
   },
   {
     "slug": "east-coast-heritage-museum",
@@ -13113,93 +13029,6 @@
     ]
   },
   {
-    "slug": "lookout",
-    "name": "Lookout",
-    "town": "Adventure Bay",
-    "region": "Hobart & South",
-    "latitude": -43.3610277,
-    "longitude": 147.2951949,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Leven Canyon Lookout is an official Parks Tasmania walk. Grade 3.",
-    "website": "https://parks.tas.gov.au/Pages/Leven-Canyon-Lookout.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/6252933086",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/6252933086",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6464 3008",
-    "email": "parkfees@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-21",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Lookout%20Adventure%20Bay%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout",
-      "type": "government",
-      "checkedAt": "2026-10-21"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 3
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T16:13:10.973Z"
-    },
-    "qualityScore": 62,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "weak-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-20"
-  },
-  {
     "slug": "cygnet-market",
     "name": "Cygnet Market",
     "town": "Cygnet",
@@ -13274,7 +13103,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:17.466Z"
+      "checkedAt": "2026-10-20T16:51:01.993Z"
     },
     "reviewLinks": [
       {
@@ -13353,7 +13182,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:26.438Z"
+      "checkedAt": "2026-10-20T16:51:06.803Z"
     },
     "reviewLinks": [
       {
@@ -13535,7 +13364,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:08.749Z"
+      "checkedAt": "2026-10-20T16:51:31.620Z"
     },
     "qualityScore": 61,
     "qualityTier": "featured",
@@ -13630,7 +13459,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:41.758Z"
+      "checkedAt": "2026-10-20T16:51:14.121Z"
     },
     "qualityScore": 61,
     "qualityTier": "featured",
@@ -13736,7 +13565,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:53.612Z"
+      "checkedAt": "2026-10-20T16:51:26.252Z"
     },
     "qualityScore": 60,
     "qualityTier": "featured",
@@ -13944,7 +13773,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:13.261Z"
+      "checkedAt": "2026-10-20T16:51:36.512Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -14094,6 +13923,91 @@
         "confidence": "high"
       }
     ]
+  },
+  {
+    "slug": "lookout",
+    "name": "Lookout",
+    "town": "Adventure Bay",
+    "region": "Hobart & South",
+    "latitude": -43.3610277,
+    "longitude": 147.2951949,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Leven Canyon Lookout is an official Parks Tasmania walk. Grade 3.",
+    "website": "https://parks.tas.gov.au/Pages/Leven-Canyon-Lookout.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/6252933086",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/6252933086",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6464 3008",
+    "email": "parkfees@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-21",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Lookout%20Adventure%20Bay%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Leven-Canyon-Lookout.aspx",
+      "type": "government"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 3
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T16:50:57.333Z"
+    },
+    "qualityScore": 60,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "weak-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "adventure-bay-beach",
@@ -15602,7 +15516,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:21.427Z"
+      "checkedAt": "2026-10-20T16:51:04.866Z"
     },
     "reviewLinks": [
       {
@@ -16671,7 +16585,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:03.935Z"
+      "checkedAt": "2026-10-20T16:50:50.936Z"
     },
     "qualityScore": 59,
     "qualityTier": "featured",
@@ -20522,89 +20436,6 @@
     "lastWikidataChecked": "2026-10-06"
   },
   {
-    "slug": "weldborough-pass-rainforest-walk",
-    "name": "Weldborough Pass Rainforest Walk",
-    "town": "Derby",
-    "region": "Launceston & North",
-    "latitude": -41.2161683,
-    "longitude": 147.9383007,
-    "categories": [
-      "Things to Do",
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "A short rainforest walking loop at Weldborough Pass State Reserve beside the Tasman Highway between Derby and St Helens. Follow local track signage and check current conditions before visiting.",
-    "website": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/way/142432393",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/142432393",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": "Parks and Wildlife Service Tasmania",
-    "detailSources": {
-      "operator": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/142432393",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-21",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Weldborough Pass Rainforest Walk category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Weldborough%20Pass%20Rainforest%20Walk%20Derby%20Tasmania"
-      }
-    ],
-    "walk": {
-      "duration": "10 minute circuit , 431m, Grade 1",
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T16:14:14.586Z"
-    },
-    "qualityScore": 59,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
     "slug": "west-beach",
     "name": "West Beach",
     "town": "Tasmania",
@@ -20956,7 +20787,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:22.643Z"
+      "checkedAt": "2026-10-20T16:51:39.501Z"
     },
     "schedule": {
       "summary": "9.30am to 5pm Daily",
@@ -20989,14 +20820,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://devilsatcradle.com/"
-    }
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "don-river-railway",
@@ -21192,7 +21016,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:02.070Z"
+      "checkedAt": "2026-10-20T16:50:49.794Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -24695,7 +24519,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:12.934Z"
+      "checkedAt": "2026-10-20T16:50:59.929Z"
     },
     "qualityScore": 57,
     "qualityTier": "featured",
@@ -24921,7 +24745,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:17.663Z"
+      "checkedAt": "2026-10-20T16:51:02.195Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 57,
@@ -25715,9 +25539,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "gunns-plains-cave",
@@ -26173,7 +25995,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:24.751Z"
+      "checkedAt": "2026-10-20T16:51:43.306Z"
     },
     "qualityScore": 55,
     "qualityTier": "featured",
@@ -26188,14 +26010,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://www.wondersofwynyard.com/"
-    }
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "city-park-radio-museum",
@@ -26266,7 +26081,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:07.528Z"
+      "checkedAt": "2026-10-20T16:51:32.062Z"
     },
     "schedule": {
       "summary": "Monday to Friday 10am &#8211; 2pm (Closed July &#8211; but open to bookings)",
@@ -26582,7 +26397,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:29.660Z"
+      "checkedAt": "2026-10-20T16:51:44.839Z"
     },
     "schedule": {
       "summary": "10am – 4pm daily",
@@ -26858,7 +26673,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:23.365Z"
+      "checkedAt": "2026-10-20T16:51:43.232Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 53,
@@ -26875,14 +26690,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://www.creativepaper.com.au/"
-    }
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "devil-s-corner-cellar-door",
@@ -26956,7 +26764,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:02.179Z"
+      "checkedAt": "2026-10-20T16:50:50.082Z"
     },
     "schedule": {
       "summary": "Devil&#x27;s Corner Cellar Door open from 10am-5pm 7 days.",
@@ -27157,7 +26965,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:15.162Z"
+      "checkedAt": "2026-10-20T16:50:59.696Z"
     },
     "qualityScore": 53,
     "qualityTier": "strong",
@@ -27255,7 +27063,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:02.182Z"
+      "checkedAt": "2026-10-20T16:51:27.141Z"
     },
     "qualityScore": 53,
     "qualityTier": "strong",
@@ -27642,7 +27450,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:15.780Z"
+      "checkedAt": "2026-10-20T16:51:37.270Z"
     },
     "qualityScore": 53,
     "qualityTier": "strong",
@@ -27742,7 +27550,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:53.056Z"
+      "checkedAt": "2026-10-20T16:51:24.875Z"
     },
     "schedule": {
       "summary": "Wine tastings are available seven days a week from 10 am - 4:30 pm.",
@@ -28332,7 +28140,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:11.704Z"
+      "checkedAt": "2026-10-20T16:50:57.361Z"
     },
     "reviewLinks": [
       {
@@ -28417,7 +28225,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:51.474Z"
+      "checkedAt": "2026-10-20T16:51:23.723Z"
     },
     "reviewLinks": [
       {
@@ -28522,7 +28330,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:20.974Z"
+      "checkedAt": "2026-10-20T16:51:04.605Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -28656,7 +28464,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:11.285Z"
+      "checkedAt": "2026-10-20T16:51:33.612Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 52,
@@ -28756,7 +28564,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:06.595Z"
+      "checkedAt": "2026-10-20T16:51:30.925Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 52,
@@ -28863,7 +28671,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:15.869Z"
+      "checkedAt": "2026-10-20T16:51:00.030Z"
     },
     "reviewLinks": [
       {
@@ -28988,7 +28796,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:21.201Z"
+      "checkedAt": "2026-10-20T16:51:04.705Z"
     },
     "reviewLinks": [
       {
@@ -29092,7 +28900,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:44.766Z"
+      "checkedAt": "2026-10-20T16:51:18.126Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -29207,7 +29015,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:03.026Z"
+      "checkedAt": "2026-10-20T16:50:50.199Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -29334,7 +29142,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:14.612Z"
+      "checkedAt": "2026-10-20T16:51:00.793Z"
     },
     "reviewLinks": [
       {
@@ -29453,7 +29261,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:24.516Z"
+      "checkedAt": "2026-10-20T16:51:06.028Z"
     },
     "reviewLinks": [
       {
@@ -29570,7 +29378,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:25.710Z"
+      "checkedAt": "2026-10-20T16:51:06.766Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -29680,7 +29488,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:51.161Z"
+      "checkedAt": "2026-10-20T16:51:23.963Z"
     },
     "reviewLinks": [
       {
@@ -29810,7 +29618,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:10.766Z"
+      "checkedAt": "2026-10-20T16:50:57.349Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -29944,7 +29752,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:23.068Z"
+      "checkedAt": "2026-10-20T16:51:43.354Z"
     },
     "qualityScore": 52,
     "qualityTier": "strong",
@@ -30041,7 +29849,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:41.294Z"
+      "checkedAt": "2026-10-20T16:51:14.031Z"
     },
     "reviewLinks": [
       {
@@ -30160,7 +29968,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:15.953Z"
+      "checkedAt": "2026-10-20T16:51:00.181Z"
     },
     "reviewLinks": [
       {
@@ -30289,7 +30097,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:53.174Z"
+      "checkedAt": "2026-10-20T16:51:25.666Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -30404,7 +30212,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:34.911Z"
+      "checkedAt": "2026-10-20T16:51:09.785Z"
     },
     "reviewLinks": [
       {
@@ -30519,7 +30327,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:44.782Z"
+      "checkedAt": "2026-10-20T16:51:18.525Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -30637,7 +30445,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:09.288Z"
+      "checkedAt": "2026-10-20T16:51:32.647Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 52,
@@ -30734,7 +30542,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:51.737Z"
+      "checkedAt": "2026-10-20T16:51:24.101Z"
     },
     "reviewLinks": [
       {
@@ -30838,7 +30646,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:44.610Z"
+      "checkedAt": "2026-10-20T16:51:18.220Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -30948,7 +30756,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:21.934Z"
+      "checkedAt": "2026-10-20T16:51:08.192Z"
     },
     "reviewLinks": [
       {
@@ -31071,7 +30879,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:51.029Z"
+      "checkedAt": "2026-10-20T16:51:23.638Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -31181,7 +30989,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:39.167Z"
+      "checkedAt": "2026-10-20T16:51:11.556Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -31286,7 +31094,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:45.845Z"
+      "checkedAt": "2026-10-20T16:51:19.943Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -31391,7 +31199,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:18.499Z"
+      "checkedAt": "2026-10-20T16:51:02.861Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -31506,7 +31314,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:44.830Z"
+      "checkedAt": "2026-10-20T16:51:18.529Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -31621,7 +31429,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:40.726Z"
+      "checkedAt": "2026-10-20T16:51:12.820Z"
     },
     "reviewLinks": [
       {
@@ -31744,7 +31552,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:18.160Z"
+      "checkedAt": "2026-10-20T16:51:02.590Z"
     },
     "qualityScore": 52,
     "qualityTier": "strong",
@@ -31845,7 +31653,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:50.925Z"
+      "checkedAt": "2026-10-20T16:51:25.764Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -31966,7 +31774,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:45.304Z"
+      "checkedAt": "2026-10-20T16:51:18.852Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -32076,7 +31884,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:40.920Z"
+      "checkedAt": "2026-10-20T16:51:13.621Z"
     },
     "reviewLinks": [
       {
@@ -32195,7 +32003,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:41.447Z"
+      "checkedAt": "2026-10-20T16:51:13.894Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -32325,7 +32133,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:20.415Z"
+      "checkedAt": "2026-10-20T16:51:40.891Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 52,
@@ -32481,9 +32289,7 @@
     "rankedAt": "2026-10-21",
     "wikidataImages": [
       "Cradle Mountain Behind Dove Lake.jpg"
-    ],
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    ]
   },
   {
     "slug": "devonport-farmers-market",
@@ -32632,7 +32438,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:55.775Z"
+      "checkedAt": "2026-10-20T16:51:26.640Z"
     },
     "reviewLinks": [
       {
@@ -32840,7 +32646,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:19.949Z"
+      "checkedAt": "2026-10-20T16:51:41.106Z"
     },
     "schedule": {
       "summary": "Open: September to May: Tuesday - Friday, 1.30pm – 3.30pm",
@@ -32954,7 +32760,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:54.000Z"
+      "checkedAt": "2026-10-20T16:51:32.440Z"
     },
     "schedule": {
       "summary": "OPEN 7 days from 10am to 5pm",
@@ -33104,6 +32910,61 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_Bridge_20201113-005.jpg",
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Ross_Bridge_20201113-006.jpg/1920px-Ross_Bridge_20201113-006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Ross Bridge, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_Bridge_20201113-006.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Ross_Bridge_20201113-008.jpg/1920px-Ross_Bridge_20201113-008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Ross Bridge, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_Bridge_20201113-008.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ross_Bridge_20201113-009.jpg/1920px-Ross_Bridge_20201113-009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Ross Bridge, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_Bridge_20201113-009.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Ross_Bridge_20201113-010.jpg/1920px-Ross_Bridge_20201113-010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Ross Bridge, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_Bridge_20201113-010.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Ross_Bridge_20201113-011.jpg/1920px-Ross_Bridge_20201113-011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Ross Bridge, Tasmania",
+        "attribution": "Gary Houston",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_Bridge_20201113-011.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
         "confidence": "high"
       }
     ],
@@ -33339,7 +33200,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:24.588Z"
+      "checkedAt": "2026-10-20T16:51:44.324Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -33453,7 +33314,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:13.595Z"
+      "checkedAt": "2026-10-20T16:51:35.464Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 50,
@@ -33559,7 +33420,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:16.736Z"
+      "checkedAt": "2026-10-20T16:51:01.302Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -33658,7 +33519,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:45.051Z"
+      "checkedAt": "2026-10-20T16:51:17.157Z"
     },
     "reviewLinks": [
       {
@@ -33761,7 +33622,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:20.568Z"
+      "checkedAt": "2026-10-20T16:51:04.442Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -33864,7 +33725,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:06.706Z"
+      "checkedAt": "2026-10-20T16:50:52.951Z"
     },
     "reviewLinks": [
       {
@@ -33991,7 +33852,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:04.632Z"
+      "checkedAt": "2026-10-20T16:51:29.296Z"
     },
     "qualityScore": 50,
     "qualityTier": "strong",
@@ -34081,7 +33942,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:44.275Z"
+      "checkedAt": "2026-10-20T16:51:17.386Z"
     },
     "reviewLinks": [
       {
@@ -34320,7 +34181,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:04.732Z"
+      "checkedAt": "2026-10-20T16:51:29.377Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 50,
@@ -34413,7 +34274,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:07.299Z"
+      "checkedAt": "2026-10-20T16:51:32.946Z"
     },
     "schedule": {
       "summary": "Thursday – Saturday open 10am – 3pm",
@@ -34513,7 +34374,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:11.455Z"
+      "checkedAt": "2026-10-20T16:50:57.928Z"
     },
     "reviewLinks": [
       {
@@ -34690,7 +34551,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:17.200Z"
+      "checkedAt": "2026-10-20T16:51:04.325Z"
     },
     "reviewLinks": [
       {
@@ -34803,7 +34664,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:11.137Z"
+      "checkedAt": "2026-10-20T16:50:56.675Z"
     },
     "reviewLinks": [
       {
@@ -34906,7 +34767,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:21.274Z"
+      "checkedAt": "2026-10-20T16:51:04.815Z"
     },
     "reviewLinks": [
       {
@@ -35014,7 +34875,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:20.973Z"
+      "checkedAt": "2026-10-20T16:51:04.624Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -35134,7 +34995,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:21.097Z"
+      "checkedAt": "2026-10-20T16:51:04.809Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -35238,7 +35099,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:21.334Z"
+      "checkedAt": "2026-10-20T16:51:04.928Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -35469,7 +35330,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:23.723Z"
+      "checkedAt": "2026-10-20T16:51:05.341Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -35586,7 +35447,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:18.102Z"
+      "checkedAt": "2026-10-20T16:51:02.467Z"
     },
     "schedule": {
       "summary": "POP UP OPEN Saturday 10th 9am to 2pm",
@@ -35693,7 +35554,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:24.114Z"
+      "checkedAt": "2026-10-20T16:51:44.267Z"
     },
     "qualityScore": 50,
     "qualityTier": "strong",
@@ -35788,7 +35649,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:25.870Z"
+      "checkedAt": "2026-10-20T16:51:06.512Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -35894,7 +35755,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:22.085Z"
+      "checkedAt": "2026-10-20T16:51:43.362Z"
     },
     "schedule": {
       "summary": "Open daily, 7am to 5pm, 7 days a week",
@@ -35994,7 +35855,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:41.640Z"
+      "checkedAt": "2026-10-20T16:51:14.991Z"
     },
     "reviewLinks": [
       {
@@ -36081,7 +35942,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:18.243Z"
+      "checkedAt": "2026-10-20T16:51:02.490Z"
     },
     "reviewLinks": [
       {
@@ -36186,7 +36047,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:23.389Z"
+      "checkedAt": "2026-10-20T16:51:45.651Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 50,
@@ -36290,7 +36151,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:02.174Z"
+      "checkedAt": "2026-10-20T16:50:49.720Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -36394,7 +36255,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:12.402Z"
+      "checkedAt": "2026-10-20T16:50:58.300Z"
     },
     "reviewLinks": [
       {
@@ -36486,7 +36347,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:12.244Z"
+      "checkedAt": "2026-10-20T16:50:58.093Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -36592,7 +36453,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:05.969Z"
+      "checkedAt": "2026-10-20T16:50:53.166Z"
     },
     "schedule": {
       "summary": "Open hours are Thursday/Friday/Saturday/Sunday/Monday - 11.00 am - 5.00 pm",
@@ -36694,7 +36555,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:16.749Z"
+      "checkedAt": "2026-10-20T16:51:00.958Z"
     },
     "reviewLinks": [
       {
@@ -36797,7 +36658,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:34.295Z"
+      "checkedAt": "2026-10-20T16:51:11.089Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -36906,7 +36767,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:34.902Z"
+      "checkedAt": "2026-10-20T16:51:09.786Z"
     },
     "reviewLinks": [
       {
@@ -37025,7 +36886,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:47.170Z"
+      "checkedAt": "2026-10-20T16:51:20.825Z"
     },
     "reviewLinks": [
       {
@@ -37187,7 +37048,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:53.376Z"
+      "checkedAt": "2026-10-20T16:51:25.356Z"
     },
     "reviewLinks": [
       {
@@ -37303,7 +37164,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:11.410Z"
+      "checkedAt": "2026-10-20T16:51:33.735Z"
     },
     "qualityScore": 50,
     "qualityTier": "strong",
@@ -37393,7 +37254,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:09.840Z"
+      "checkedAt": "2026-10-20T16:50:56.267Z"
     },
     "reviewLinks": [
       {
@@ -37491,7 +37352,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:35.846Z"
+      "checkedAt": "2026-10-20T16:51:11.295Z"
     },
     "reviewLinks": [
       {
@@ -37773,7 +37634,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:20.542Z"
+      "checkedAt": "2026-10-20T16:51:40.850Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -37884,7 +37745,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:53.226Z"
+      "checkedAt": "2026-10-20T16:51:25.610Z"
     },
     "reviewLinks": [
       {
@@ -38081,7 +37942,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:46.658Z"
+      "checkedAt": "2026-10-20T16:51:21.220Z"
     },
     "reviewLinks": [
       {
@@ -38200,7 +38061,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:43.923Z"
+      "checkedAt": "2026-10-20T16:51:17.149Z"
     },
     "reviewLinks": [
       {
@@ -38320,7 +38181,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:52.064Z"
+      "checkedAt": "2026-10-20T16:51:23.084Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -38565,7 +38426,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:39.378Z"
+      "checkedAt": "2026-10-20T16:51:11.568Z"
     },
     "reviewLinks": [
       {
@@ -38840,7 +38701,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:02.573Z"
+      "checkedAt": "2026-10-20T16:50:50.015Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 50,
@@ -38931,7 +38792,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:06.097Z"
+      "checkedAt": "2026-10-20T16:50:54.767Z"
     },
     "reviewLinks": [
       {
@@ -39063,7 +38924,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:02.621Z"
+      "checkedAt": "2026-10-20T16:50:49.810Z"
     },
     "schedule": {
       "summary": "Our opening hours are 7 days per week 11am to 7pm",
@@ -39183,7 +39044,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:04.776Z"
+      "checkedAt": "2026-10-20T16:51:29.339Z"
     },
     "schedule": {
       "summary": "7 Days: 12pm – 8pm",
@@ -39302,7 +39163,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:24.397Z"
+      "checkedAt": "2026-10-20T16:51:43.896Z"
     },
     "schedule": {
       "summary": "Open Monday - Saturday | 7:00 am – 10:00 pm Sunday | 7:00 am – 3:00 pm",
@@ -39406,7 +39267,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:12.660Z"
+      "checkedAt": "2026-10-20T16:51:36.305Z"
     },
     "reviewLinks": [
       {
@@ -39504,7 +39365,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:50.576Z"
+      "checkedAt": "2026-10-20T16:51:22.365Z"
     },
     "reviewLinks": [
       {
@@ -39602,7 +39463,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:45.727Z"
+      "checkedAt": "2026-10-20T16:51:20.628Z"
     },
     "reviewLinks": [
       {
@@ -39709,7 +39570,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:19.459Z"
+      "checkedAt": "2026-10-20T16:51:03.956Z"
     },
     "lastOfficialDetailsChecked": "2026-10-16",
     "reviewLinks": [
@@ -39824,7 +39685,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:23.157Z"
+      "checkedAt": "2026-10-20T16:51:07.110Z"
     },
     "reviewLinks": [
       {
@@ -39935,7 +39796,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:02.663Z"
+      "checkedAt": "2026-10-20T16:51:27.874Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -40042,7 +39903,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:44.236Z"
+      "checkedAt": "2026-10-20T16:51:17.306Z"
     },
     "reviewLinks": [
       {
@@ -40177,7 +40038,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:08.035Z"
+      "checkedAt": "2026-10-20T16:50:54.189Z"
     },
     "qualityScore": 49,
     "qualityTier": "strong",
@@ -40423,7 +40284,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:15.362Z"
+      "checkedAt": "2026-10-20T16:50:59.914Z"
     },
     "reviewLinks": [
       {
@@ -40537,7 +40398,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:42.113Z"
+      "checkedAt": "2026-10-20T16:51:11.105Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -40644,7 +40505,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:10.105Z"
+      "checkedAt": "2026-10-20T16:51:32.085Z"
     },
     "schedule": {
       "summary": "Daily | Lunch 11:45am &#8211; 2:30pm",
@@ -40755,7 +40616,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:33.822Z"
+      "checkedAt": "2026-10-20T16:51:09.446Z"
     },
     "reviewLinks": [
       {
@@ -40870,7 +40731,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:36.216Z"
+      "checkedAt": "2026-10-20T16:51:10.941Z"
     },
     "reviewLinks": [
       {
@@ -41123,7 +40984,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:40.560Z"
+      "checkedAt": "2026-10-20T16:51:12.621Z"
     },
     "reviewLinks": [
       {
@@ -41303,7 +41164,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:18.359Z"
+      "checkedAt": "2026-10-20T16:51:38.981Z"
     },
     "schedule": {
       "summary": "Open daily 8:30 am–5 pm",
@@ -41732,7 +41593,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:23.239Z"
+      "checkedAt": "2026-10-20T16:51:45.329Z"
     },
     "schedule": {
       "summary": "Open to the Public first Saturday and Sunday each month (Running Days) 10am &#8211; 3pm and during Steamfest&#8221;.",
@@ -41833,7 +41694,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:05.970Z"
+      "checkedAt": "2026-10-20T16:50:52.844Z"
     },
     "schedule": {
       "summary": "Opening Hours Monday to Friday | 10.00am – 4.00pm",
@@ -42097,7 +41958,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:08.102Z"
+      "checkedAt": "2026-10-20T16:51:32.248Z"
     },
     "schedule": {
       "summary": "Open: 7.00am - 5.00pm every day.",
@@ -42192,7 +42053,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:21.363Z"
+      "checkedAt": "2026-10-20T16:51:05.004Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -42295,7 +42156,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:20.637Z"
+      "checkedAt": "2026-10-20T16:51:04.601Z"
     },
     "reviewLinks": [
       {
@@ -42402,7 +42263,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:43.508Z"
+      "checkedAt": "2026-10-20T16:51:17.089Z"
     },
     "reviewLinks": [
       {
@@ -42507,7 +42368,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:23.529Z"
+      "checkedAt": "2026-10-20T16:51:43.695Z"
     },
     "qualityScore": 47,
     "qualityTier": "strong",
@@ -42586,7 +42447,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:41.849Z"
+      "checkedAt": "2026-10-20T16:51:14.786Z"
     },
     "reviewLinks": [
       {
@@ -42678,7 +42539,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:42.348Z"
+      "checkedAt": "2026-10-20T16:51:16.088Z"
     },
     "reviewLinks": [
       {
@@ -42839,7 +42700,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:35.328Z"
+      "checkedAt": "2026-10-20T16:51:10.438Z"
     },
     "reviewLinks": [
       {
@@ -42931,7 +42792,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:18.691Z"
+      "checkedAt": "2026-10-20T16:51:02.852Z"
     },
     "reviewLinks": [
       {
@@ -43023,7 +42884,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:42.080Z"
+      "checkedAt": "2026-10-20T16:51:16.077Z"
     },
     "reviewLinks": [
       {
@@ -43124,7 +42985,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:39.937Z"
+      "checkedAt": "2026-10-20T16:51:11.888Z"
     },
     "reviewLinks": [
       {
@@ -43223,7 +43084,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:12.370Z"
+      "checkedAt": "2026-10-20T16:51:33.818Z"
     },
     "qualityScore": 47,
     "qualityTier": "strong",
@@ -43326,7 +43187,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:14.651Z"
+      "checkedAt": "2026-10-20T16:50:57.326Z"
     },
     "qualityScore": 47,
     "qualityTier": "strong",
@@ -43412,7 +43273,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:05.572Z"
+      "checkedAt": "2026-10-20T16:50:52.976Z"
     },
     "qualityScore": 47,
     "qualityTier": "strong",
@@ -43499,7 +43360,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:10.896Z"
+      "checkedAt": "2026-10-20T16:51:33.296Z"
     },
     "qualityScore": 47,
     "qualityTier": "strong",
@@ -43583,7 +43444,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:30.383Z"
+      "checkedAt": "2026-10-20T16:51:02.959Z"
     },
     "reviewLinks": [
       {
@@ -43687,7 +43548,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:00.487Z"
+      "checkedAt": "2026-10-20T16:50:48.673Z"
     },
     "qualityScore": 47,
     "qualityTier": "strong",
@@ -43767,7 +43628,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:48.242Z"
+      "checkedAt": "2026-10-20T16:51:21.236Z"
     },
     "reviewLinks": [
       {
@@ -43859,7 +43720,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:55.662Z"
+      "checkedAt": "2026-10-20T16:51:26.309Z"
     },
     "reviewLinks": [
       {
@@ -43945,7 +43806,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:40.887Z"
+      "checkedAt": "2026-10-20T16:51:13.551Z"
     },
     "reviewLinks": [
       {
@@ -44066,9 +43927,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "ajikoma",
@@ -44140,7 +43999,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:20.035Z"
+      "checkedAt": "2026-10-20T16:51:03.906Z"
     },
     "reviewLinks": [
       {
@@ -44240,7 +44099,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:06.159Z"
+      "checkedAt": "2026-10-20T16:50:53.321Z"
     },
     "qualityScore": 46,
     "qualityTier": "strong",
@@ -44337,7 +44196,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:04.044Z"
+      "checkedAt": "2026-10-20T16:51:27.576Z"
     },
     "qualityScore": 46,
     "qualityTier": "strong",
@@ -44432,7 +44291,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:16.311Z"
+      "checkedAt": "2026-10-20T16:51:00.412Z"
     },
     "reviewLinks": [
       {
@@ -44620,7 +44479,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:16.095Z"
+      "checkedAt": "2026-10-20T16:51:37.726Z"
     },
     "qualityScore": 46,
     "qualityTier": "strong",
@@ -44710,7 +44569,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:24.113Z"
+      "checkedAt": "2026-10-20T16:51:05.741Z"
     },
     "reviewLinks": [
       {
@@ -44802,7 +44661,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:09.611Z"
+      "checkedAt": "2026-10-20T16:51:30.331Z"
     },
     "reviewLinks": [
       {
@@ -44899,7 +44758,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:06.900Z"
+      "checkedAt": "2026-10-20T16:50:53.144Z"
     },
     "reviewLinks": [
       {
@@ -44996,7 +44855,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:13.013Z"
+      "checkedAt": "2026-10-20T16:50:59.133Z"
     },
     "reviewLinks": [
       {
@@ -45099,7 +44958,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:09.290Z"
+      "checkedAt": "2026-10-20T16:50:55.631Z"
     },
     "reviewLinks": [
       {
@@ -45207,7 +45066,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:04.290Z"
+      "checkedAt": "2026-10-20T16:50:51.580Z"
     },
     "reviewLinks": [
       {
@@ -45304,7 +45163,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:12.051Z"
+      "checkedAt": "2026-10-20T16:50:57.901Z"
     },
     "reviewLinks": [
       {
@@ -45402,7 +45261,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:33.602Z"
+      "checkedAt": "2026-10-20T16:51:10.446Z"
     },
     "reviewLinks": [
       {
@@ -45506,7 +45365,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:28.228Z"
+      "checkedAt": "2026-10-20T16:51:51.822Z"
     },
     "lastOfficialDetailsChecked": "2026-10-17",
     "qualityScore": 46,
@@ -45592,7 +45451,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:50.824Z"
+      "checkedAt": "2026-10-20T16:51:22.715Z"
     },
     "reviewLinks": [
       {
@@ -45689,7 +45548,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:35.437Z"
+      "checkedAt": "2026-10-20T16:51:10.023Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -45886,7 +45745,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:17.641Z"
+      "checkedAt": "2026-10-20T16:51:38.507Z"
     },
     "qualityScore": 46,
     "qualityTier": "strong",
@@ -45976,7 +45835,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:41.295Z"
+      "checkedAt": "2026-10-20T16:51:13.896Z"
     },
     "reviewLinks": [
       {
@@ -46074,7 +45933,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:45.958Z"
+      "checkedAt": "2026-10-20T16:51:20.423Z"
     },
     "reviewLinks": [
       {
@@ -46177,7 +46036,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:07.954Z"
+      "checkedAt": "2026-10-20T16:50:54.180Z"
     },
     "reviewLinks": [
       {
@@ -46293,7 +46152,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:09.812Z"
+      "checkedAt": "2026-10-20T16:51:32.300Z"
     },
     "qualityScore": 45,
     "qualityTier": "strong",
@@ -46374,7 +46233,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:27.665Z"
+      "checkedAt": "2026-10-20T16:51:07.595Z"
     },
     "qualityScore": 45,
     "qualityTier": "strong",
@@ -46453,7 +46312,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:20.393Z"
+      "checkedAt": "2026-10-20T16:51:04.385Z"
     },
     "qualityScore": 44,
     "qualityTier": "strong",
@@ -46537,7 +46396,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:19.636Z"
+      "checkedAt": "2026-10-20T16:51:03.369Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -46635,7 +46494,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:20.196Z"
+      "checkedAt": "2026-10-20T16:51:03.973Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -46934,7 +46793,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:11.372Z"
+      "checkedAt": "2026-10-20T16:50:57.909Z"
     },
     "reviewLinks": [
       {
@@ -47047,6 +46906,116 @@
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20",
     "lastWikidataLinkChecked": "2026-10-20"
+  },
+  {
+    "slug": "coles-beach",
+    "name": "Coles Beach",
+    "town": "Devonport",
+    "region": "North West",
+    "latitude": -41.16,
+    "longitude": 146.34,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor",
+      "Free"
+    ],
+    "summary": "Coles Beach, accessed via Coles Beach Road in Devonport, has nearby public toilets, a walking and cycling track, electric barbecue, picnic shelters, a car park and an outdoor shower. Devonport City Council monitors beach water quality in summer.",
+    "website": null,
+    "sourceUrl": "https://www.wikidata.org/wiki/Q21956215",
+    "sourceType": "wikidata",
+    "sourceId": "Q21956215",
+    "wikidata": "Q21956215",
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Coles_bay_beach.JPG/1920px-Coles_bay_beach.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Coles Beach, Tasmania",
+      "attribution": "Aaroncrick",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coles_bay_beach.JPG",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Coles%20Beach%20Tasmania%20Tasmania"
+      }
+    ],
+    "lastDetailsChecked": "2026-10-21",
+    "qualityScore": 44,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "address",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "lastWikidataChecked": "2026-10-06",
+    "address": "Coles Beach Road, Devonport TAS 7310",
+    "detailSources": {
+      "town": {
+        "type": "verified-source",
+        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
+        "checkedAt": "2026-10-21"
+      },
+      "region": {
+        "type": "verified-source",
+        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
+        "checkedAt": "2026-10-21"
+      },
+      "address": {
+        "type": "verified-source",
+        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
+        "checkedAt": "2026-10-21"
+      },
+      "summary": {
+        "type": "verified-source",
+        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
+        "checkedAt": "2026-10-21"
+      }
+    },
+    "gallery": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Mary_Ellen_at_Coles_Bay_beach_%283-3%29_-_Flickr_-_brewbooks.jpg/1920px-Mary_Ellen_at_Coles_Bay_beach_%283-3%29_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Coles Beach, Tasmania",
+        "attribution": "brewbooks from near Seattle, USA",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Ellen_at_Coles_Bay_beach_(3-3)_-_Flickr_-_brewbooks.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Mary_Ellen_at_Coles_Bay_beach_%282-3%29_-_Flickr_-_brewbooks.jpg/1920px-Mary_Ellen_at_Coles_Bay_beach_%282-3%29_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Coles Beach, Tasmania",
+        "attribution": "brewbooks from near Seattle, USA",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Ellen_at_Coles_Bay_beach_(2-3)_-_Flickr_-_brewbooks.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Mary_Ellen_at_Coles_Bay_beach_%281-3%29_-_Flickr_-_brewbooks.jpg/1920px-Mary_Ellen_at_Coles_Bay_beach_%281-3%29_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Coles Beach, Tasmania",
+        "attribution": "brewbooks from near Seattle, USA",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Ellen_at_Coles_Bay_beach_(1-3)_-_Flickr_-_brewbooks.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      }
+    ]
   },
   {
     "slug": "fergusson-falls",
@@ -47178,7 +47147,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:21.689Z"
+      "checkedAt": "2026-10-20T16:51:05.007Z"
     },
     "reviewLinks": [
       {
@@ -47350,9 +47319,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "gordon-dam-lookout",
@@ -47479,7 +47446,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:42.230Z"
+      "checkedAt": "2026-10-20T16:51:15.148Z"
     },
     "reviewLinks": [
       {
@@ -47575,7 +47542,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:26.731Z"
+      "checkedAt": "2026-10-20T16:51:07.443Z"
     },
     "reviewLinks": [
       {
@@ -47672,7 +47639,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:25.139Z"
+      "checkedAt": "2026-10-20T16:51:06.202Z"
     },
     "reviewLinks": [
       {
@@ -47852,7 +47819,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:22.161Z"
+      "checkedAt": "2026-10-20T16:51:41.914Z"
     },
     "qualityScore": 44,
     "qualityTier": "strong",
@@ -47953,9 +47920,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "lower-chasm-falls",
@@ -48086,9 +48051,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "mount-nelson-signal-station",
@@ -48419,7 +48382,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:17.299Z"
+      "checkedAt": "2026-10-20T16:51:00.767Z"
     },
     "reviewLinks": [
       {
@@ -48510,7 +48473,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:54.409Z"
+      "checkedAt": "2026-10-20T16:51:26.427Z"
     },
     "reviewLinks": [
       {
@@ -48933,7 +48896,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:10.795Z"
+      "checkedAt": "2026-10-20T16:50:57.889Z"
     },
     "reviewLinks": [
       {
@@ -49053,9 +49016,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "the-york-hotel-12-mile-steakhouse",
@@ -49112,7 +49073,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:18.963Z"
+      "checkedAt": "2026-10-20T16:51:03.035Z"
     },
     "reviewLinks": [
       {
@@ -49193,7 +49154,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:41.460Z"
+      "checkedAt": "2026-10-20T16:51:13.756Z"
     },
     "reviewLinks": [
       {
@@ -49291,7 +49252,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:17.727Z"
+      "checkedAt": "2026-10-20T16:51:38.732Z"
     },
     "qualityScore": 44,
     "qualityTier": "strong",
@@ -49481,7 +49442,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:23.014Z"
+      "checkedAt": "2026-10-20T16:51:43.108Z"
     },
     "qualityScore": 44,
     "qualityTier": "strong",
@@ -49560,7 +49521,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:20.857Z"
+      "checkedAt": "2026-10-20T16:51:04.641Z"
     },
     "reviewLinks": [
       {
@@ -49906,7 +49867,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:01.184Z"
+      "checkedAt": "2026-10-20T16:50:48.898Z"
     },
     "reviewLinks": [
       {
@@ -49992,7 +49953,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:13.956Z"
+      "checkedAt": "2026-10-20T16:50:59.221Z"
     },
     "reviewLinks": [
       {
@@ -50221,7 +50182,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:25.675Z"
+      "checkedAt": "2026-10-20T16:51:05.947Z"
     },
     "reviewLinks": [
       {
@@ -50534,7 +50495,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:02.946Z"
+      "checkedAt": "2026-10-20T16:51:27.234Z"
     },
     "qualityScore": 43,
     "qualityTier": "strong",
@@ -51161,7 +51122,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:39.343Z"
+      "checkedAt": "2026-10-20T16:51:12.003Z"
     },
     "reviewLinks": [
       {
@@ -51256,9 +51217,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "tasmanian-devil-unzoo",
@@ -51778,7 +51737,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:00.399Z"
+      "checkedAt": "2026-10-20T16:50:49.044Z"
     },
     "qualityScore": 42,
     "qualityTier": "strong",
@@ -52062,7 +52021,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:15.364Z"
+      "checkedAt": "2026-10-20T16:50:59.981Z"
     },
     "qualityScore": 42,
     "qualityTier": "strong",
@@ -52691,7 +52650,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:16.864Z"
+      "checkedAt": "2026-10-20T16:51:38.207Z"
     },
     "schedule": {
       "summary": "Open from 8:00 AM daily",
@@ -53282,7 +53241,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:17.118Z"
+      "checkedAt": "2026-10-20T16:51:38.543Z"
     },
     "schedule": {
       "summary": "Open Tuesday to Saturday from 3:00 PM.",
@@ -53619,7 +53578,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:15.664Z"
+      "checkedAt": "2026-10-20T16:51:37.230Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -53692,7 +53651,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:07.734Z"
+      "checkedAt": "2026-10-20T16:50:53.913Z"
     },
     "reviewLinks": [
       {
@@ -54727,7 +54686,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:21.735Z"
+      "checkedAt": "2026-10-20T16:51:41.787Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -55202,7 +55161,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:08.649Z"
+      "checkedAt": "2026-10-20T16:50:54.532Z"
     },
     "reviewLinks": [
       {
@@ -55496,7 +55455,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:15.184Z"
+      "checkedAt": "2026-10-20T16:51:37.482Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -59092,7 +59051,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:14:24.040Z"
+      "checkedAt": "2026-10-20T16:51:43.899Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -61510,7 +61469,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:28.427Z"
+      "checkedAt": "2026-10-20T16:51:08.778Z"
     },
     "reviewLinks": [
       {
@@ -61694,7 +61653,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:15.708Z"
+      "checkedAt": "2026-10-20T16:50:59.678Z"
     },
     "reviewLinks": [
       {
@@ -64513,7 +64472,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:35.779Z"
+      "checkedAt": "2026-10-20T16:51:11.175Z"
     },
     "reviewLinks": [
       {
@@ -64887,7 +64846,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:49.212Z"
+      "checkedAt": "2026-10-20T16:51:22.144Z"
     },
     "reviewLinks": [
       {
@@ -65560,7 +65519,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:36.836Z"
+      "checkedAt": "2026-10-20T16:51:11.893Z"
     },
     "reviewLinks": [
       {
@@ -65766,7 +65725,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:12.567Z"
+      "checkedAt": "2026-10-20T16:51:34.786Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -66427,7 +66386,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:38.203Z"
+      "checkedAt": "2026-10-20T16:51:11.117Z"
     },
     "reviewLinks": [
       {
@@ -67438,7 +67397,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:52.896Z"
+      "checkedAt": "2026-10-20T16:51:25.308Z"
     },
     "reviewLinks": [
       {
@@ -68310,7 +68269,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:04.609Z"
+      "checkedAt": "2026-10-20T16:50:51.797Z"
     },
     "reviewLinks": [
       {
@@ -68440,7 +68399,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:00.901Z"
+      "checkedAt": "2026-10-20T16:50:48.758Z"
     },
     "reviewLinks": [
       {
@@ -68678,7 +68637,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:14.999Z"
+      "checkedAt": "2026-10-20T16:51:36.435Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -69003,7 +68962,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:16.156Z"
+      "checkedAt": "2026-10-20T16:51:37.568Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -69401,7 +69360,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:41.742Z"
+      "checkedAt": "2026-10-20T16:51:14.447Z"
     },
     "reviewLinks": [
       {
@@ -69690,7 +69649,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:17.791Z"
+      "checkedAt": "2026-10-20T16:51:39.290Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -69812,97 +69771,6 @@
     "lastWikidataChecked": "2026-10-06"
   },
   {
-    "slug": "deco-lounge",
-    "name": "Deco Lounge",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "latitude": -42.8848288,
-    "longitude": 147.3296711,
-    "categories": [
-      "Food & Drink",
-      "Café"
-    ],
-    "summary": "Café in or near Hobart.",
-    "website": "https://www.sevenrooms.com/landing/decoloungehbalc",
-    "sourceUrl": "https://www.openstreetmap.org/node/12800096946",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/12800096946",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "+61 3 6240 6000",
-    "email": null,
-    "address": "12 Murray Street, Hobart, TAS, 7000",
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "phone": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/12800096946",
-        "checkedAt": "2026-10-09"
-      },
-      "address": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/12800096946",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-18",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Deco Lounge category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "websiteCheck": {
-      "status": "dead",
-      "code": 404,
-      "checkedAt": "2026-10-20T15:31:59.016Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Deco%20Lounge%20Hobart%20Tasmania"
-      }
-    ],
-    "qualityScore": 40,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "address",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-20",
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://www.sevenrooms.com/landing/decoloungehbalc",
-      "source": "openstreetmap-website",
-      "checkedAt": "2026-10-21"
-    },
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://www.sevenrooms.com/landing/decoloungehbalc"
-    }
-  },
-  {
     "slug": "domino-s",
     "name": "Domino's",
     "town": "Hobart",
@@ -69952,7 +69820,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:21.644Z"
+      "checkedAt": "2026-10-20T16:51:04.950Z"
     },
     "reviewLinks": [
       {
@@ -70037,7 +69905,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:14.279Z"
+      "checkedAt": "2026-10-20T16:50:58.383Z"
     },
     "reviewLinks": [
       {
@@ -70123,7 +69991,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:37.706Z"
+      "checkedAt": "2026-10-20T16:51:20.785Z"
     },
     "reviewLinks": [
       {
@@ -70211,7 +70079,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:06.850Z"
+      "checkedAt": "2026-10-20T16:51:30.571Z"
     },
     "qualityScore": 40,
     "qualityTier": "strong",
@@ -70302,7 +70170,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:14:16.700Z"
+      "checkedAt": "2026-10-20T16:51:38.237Z"
     },
     "qualityScore": 40,
     "qualityTier": "strong",
@@ -70382,7 +70250,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:35.154Z"
+      "checkedAt": "2026-10-20T16:51:44.608Z"
     },
     "qualityScore": 40,
     "qualityTier": "strong",
@@ -70535,7 +70403,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:48.941Z"
+      "checkedAt": "2026-10-20T16:51:18.481Z"
     },
     "reviewLinks": [
       {
@@ -70631,7 +70499,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:17.425Z"
+      "checkedAt": "2026-10-20T16:51:38.556Z"
     },
     "qualityScore": 40,
     "qualityTier": "strong",
@@ -70790,7 +70658,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:48.236Z"
+      "checkedAt": "2026-10-20T16:51:21.208Z"
     },
     "reviewLinks": [
       {
@@ -70881,7 +70749,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:10.816Z"
+      "checkedAt": "2026-10-20T16:50:57.721Z"
     },
     "reviewLinks": [
       {
@@ -70967,7 +70835,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:41.070Z"
+      "checkedAt": "2026-10-20T16:51:13.710Z"
     },
     "reviewLinks": [
       {
@@ -71060,7 +70928,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:18.407Z"
+      "checkedAt": "2026-10-20T16:51:38.700Z"
     },
     "qualityScore": 40,
     "qualityTier": "strong",
@@ -72017,7 +71885,7 @@
       "image": {
         "type": "verified-correction",
         "url": "https://parks.tas.gov.au/",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-20"
       }
     }
   },
@@ -72453,7 +72321,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:01.744Z"
+      "checkedAt": "2026-10-20T16:50:49.456Z"
     },
     "qualityScore": 39,
     "qualityTier": "standard",
@@ -73950,7 +73818,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:13.964Z"
+      "checkedAt": "2026-10-20T16:51:36.063Z"
     },
     "qualityScore": 39,
     "qualityTier": "standard",
@@ -75971,7 +75839,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:01.512Z"
+      "checkedAt": "2026-10-20T16:50:49.068Z"
     },
     "qualityScore": 38,
     "qualityTier": "standard",
@@ -76117,7 +75985,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:02.523Z"
+      "checkedAt": "2026-10-20T16:51:28.145Z"
     },
     "qualityScore": 38,
     "qualityTier": "standard",
@@ -76189,7 +76057,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:06.298Z"
+      "checkedAt": "2026-10-20T16:51:30.902Z"
     },
     "qualityScore": 38,
     "qualityTier": "standard",
@@ -76254,7 +76122,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:04.448Z"
+      "checkedAt": "2026-10-20T16:50:51.556Z"
     },
     "reviewLinks": [
       {
@@ -76321,7 +76189,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:24.608Z"
+      "checkedAt": "2026-10-20T16:51:05.669Z"
     },
     "reviewLinks": [
       {
@@ -76399,7 +76267,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:26.923Z"
+      "checkedAt": "2026-10-20T16:51:07.755Z"
     },
     "reviewLinks": [
       {
@@ -76477,7 +76345,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:28.243Z"
+      "checkedAt": "2026-10-20T16:51:07.654Z"
     },
     "reviewLinks": [
       {
@@ -76562,7 +76430,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:09.577Z"
+      "checkedAt": "2026-10-20T16:51:32.879Z"
     },
     "qualityScore": 38,
     "qualityTier": "standard",
@@ -76634,7 +76502,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:14:05.444Z"
+      "checkedAt": "2026-10-20T16:51:30.283Z"
     },
     "qualityScore": 38,
     "qualityTier": "standard",
@@ -76705,7 +76573,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:19.305Z"
+      "checkedAt": "2026-10-20T16:51:03.325Z"
     },
     "reviewLinks": [
       {
@@ -76796,7 +76664,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:20.392Z"
+      "checkedAt": "2026-10-20T16:51:40.793Z"
     },
     "qualityScore": 37,
     "qualityTier": "standard",
@@ -76875,7 +76743,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:18.612Z"
+      "checkedAt": "2026-10-20T16:51:39.018Z"
     },
     "qualityScore": 37,
     "qualityTier": "standard",
@@ -76947,7 +76815,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:26.867Z"
+      "checkedAt": "2026-10-20T16:51:07.029Z"
     },
     "reviewLinks": [
       {
@@ -77026,7 +76894,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:26.302Z"
+      "checkedAt": "2026-10-20T16:51:06.626Z"
     },
     "reviewLinks": [
       {
@@ -77155,7 +77023,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:38.927Z"
+      "checkedAt": "2026-10-20T16:51:10.501Z"
     },
     "reviewLinks": [
       {
@@ -77239,7 +77107,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:12.108Z"
+      "checkedAt": "2026-10-20T16:50:57.776Z"
     },
     "reviewLinks": [
       {
@@ -77363,7 +77231,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:54.138Z"
+      "checkedAt": "2026-10-20T16:51:25.932Z"
     },
     "reviewLinks": [
       {
@@ -77449,7 +77317,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:14:10.488Z"
+      "checkedAt": "2026-10-20T16:51:33.020Z"
     },
     "qualityScore": 37,
     "qualityTier": "standard",
@@ -77566,7 +77434,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:40.999Z"
+      "checkedAt": "2026-10-20T16:51:13.719Z"
     },
     "reviewLinks": [
       {
@@ -77652,7 +77520,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:19.092Z"
+      "checkedAt": "2026-10-20T16:51:39.133Z"
     },
     "qualityScore": 37,
     "qualityTier": "standard",
@@ -77724,7 +77592,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:13:41.046Z"
+      "checkedAt": "2026-10-20T16:51:13.668Z"
     },
     "reviewLinks": [
       {
@@ -81106,7 +80974,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:04.322Z"
+      "checkedAt": "2026-10-20T16:51:29.033Z"
     },
     "qualityScore": 35,
     "qualityTier": "standard",
@@ -81191,9 +81059,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "rupertswood-farm-crop-maze",
@@ -81245,7 +81111,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:07.115Z"
+      "checkedAt": "2026-10-20T16:51:31.071Z"
     },
     "qualityScore": 35,
     "qualityTier": "standard",
@@ -81317,7 +81183,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:58.649Z"
+      "checkedAt": "2026-10-20T16:51:27.207Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -81389,7 +81255,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:14:04.718Z"
+      "checkedAt": "2026-10-20T16:51:29.189Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -81749,7 +81615,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:09.588Z"
+      "checkedAt": "2026-10-20T16:51:31.896Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -81821,7 +81687,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:13.138Z"
+      "checkedAt": "2026-10-20T16:51:35.042Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -81965,7 +81831,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:01.414Z"
+      "checkedAt": "2026-10-20T16:50:48.896Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -82038,7 +81904,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:12.857Z"
+      "checkedAt": "2026-10-20T16:51:35.401Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -82111,7 +81977,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T16:14:10.949Z"
+      "checkedAt": "2026-10-20T16:51:33.330Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -82184,7 +82050,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:14:34.488Z"
+      "checkedAt": "2026-10-20T16:51:56.881Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -82865,9 +82731,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "cafe-xoxo",
@@ -85969,9 +85833,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "tracks-cafe",
@@ -88374,6 +88236,96 @@
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
     "lastWikidataLinkChecked": "2026-10-20"
+  },
+  {
+    "slug": "deco-lounge",
+    "name": "Deco Lounge",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "latitude": -42.8848288,
+    "longitude": 147.3296711,
+    "categories": [
+      "Food & Drink",
+      "Café"
+    ],
+    "summary": "Café in or near Hobart.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/12800096946",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/12800096946",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "+61 3 6240 6000",
+    "email": null,
+    "address": "12 Murray Street, Hobart, TAS, 7000",
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "phone": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/12800096946",
+        "checkedAt": "2026-10-09"
+      },
+      "address": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/12800096946",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-18",
+    "image": {
+      "url": "/images/categories/food.svg",
+      "alt": "Deco Lounge category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "websiteCheck": {
+      "status": "dead",
+      "code": 404,
+      "checkedAt": "2026-10-20T16:51:04.803Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Deco%20Lounge%20Hobart%20Tasmania"
+      }
+    ],
+    "qualityScore": 30,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "address",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-20",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.sevenrooms.com/landing/decoloungehbalc",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-21"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://www.sevenrooms.com/landing/decoloungehbalc"
+    }
   },
   {
     "slug": "dover-top-shop",
@@ -94674,7 +94626,7 @@
       "image": {
         "type": "verified-correction",
         "url": "https://portarthur.org.au/eat-drink/1830-restaurant-and-bar/",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-20"
       }
     },
     "status": "active",
@@ -94693,7 +94645,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T16:13:51.682Z"
+      "checkedAt": "2026-10-20T16:51:24.282Z"
     },
     "reviewLinks": [
       {
@@ -95171,9 +95123,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "dover-museum-and-art-gallery",
@@ -95299,9 +95249,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "maritime-museum",
@@ -95494,9 +95442,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "national-automobile-museum",
@@ -95757,9 +95703,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "rosebery-heritage-center",
@@ -95818,9 +95762,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "schoolmasters-house",
@@ -96129,9 +96071,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "woodsdale-museum",
@@ -96383,9 +96323,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "home-hill-wines",
@@ -106739,9 +106677,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "belvedere",
@@ -106939,9 +106875,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "bloodstone-point",
@@ -107139,6 +107073,64 @@
     "lastWikidataLinkChecked": "2026-10-20"
   },
   {
+    "slug": "british-admiral-beach-currie",
+    "name": "British Admiral Beach",
+    "town": "Currie",
+    "region": "King Island",
+    "latitude": -39.9508403,
+    "longitude": 143.8606158,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Currie.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/2216130135",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2216130135",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-21",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-21",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "British Admiral Beach category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=British%20Admiral%20Beach%20Currie%20Tasmania"
+      }
+    ],
+    "qualityScore": 26,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21"
+  },
+  {
     "slug": "burrowing-crayfish-area",
     "name": "Burrowing Crayfish Area",
     "town": "Savage River",
@@ -107194,9 +107186,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "cape-deslacs-lookout",
@@ -107683,9 +107673,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "crater-peak",
@@ -107743,9 +107731,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "cruickshanks-lookout",
@@ -108524,9 +108510,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "flat-rock-at-huon-bush-retreats",
@@ -108645,9 +108629,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "freelands-lookout",
@@ -108887,9 +108869,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "glovers-bluff-lookout",
@@ -109128,9 +109108,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "gray-mare-s-lookout",
@@ -109248,9 +109226,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "henry-buxton-lookout",
@@ -109368,9 +109344,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "kalbi",
@@ -109568,9 +109542,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "knob-hill-lookout",
@@ -109868,9 +109840,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "lillico-beach-little-penguin-viewing-platform",
@@ -110168,9 +110138,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "little-plains-lookout",
@@ -111388,9 +111356,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "peppermint-hill-lookout",
@@ -111568,9 +111534,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "pipe-head-well-viewing-platform",
@@ -111882,9 +111846,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "princes-peak",
@@ -112062,9 +112024,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "red-knoll-lookout",
@@ -112188,9 +112148,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "rialto",
@@ -112382,9 +112340,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "rocking-stone",
@@ -112502,9 +112458,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "savage-river-lookout",
@@ -112562,9 +112516,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "scorpion-rock-lookout",
@@ -112808,9 +112760,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "seal-spa",
@@ -113616,9 +113566,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "street-art",
@@ -113676,9 +113624,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "sumac-lookout",
@@ -113736,9 +113682,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "surprise-valley",
@@ -114050,9 +113994,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "the-needle-viewpoint",
@@ -114350,9 +114292,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "tim-shea-lookout",
@@ -114477,7 +114417,7 @@
   {
     "slug": "top-of-moraine",
     "name": "Top of moraine",
-    "town": "Queenstown",
+    "town": "Zeehan",
     "region": "West Coast",
     "latitude": -41.9928529,
     "longitude": 145.494811,
@@ -114485,7 +114425,7 @@
       "Nature & Walks",
       "Outdoor"
     ],
-    "summary": "Scenic viewpoint in or near Queenstown.",
+    "summary": "Scenic viewpoint in or near Zeehan.",
     "website": null,
     "sourceUrl": "https://www.openstreetmap.org/node/13333011108",
     "sourceType": "openstreetmap",
@@ -114530,9 +114470,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "trethewies-lookout",
@@ -114590,9 +114528,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "trevallyn-dam-lookout",
@@ -115310,9 +115246,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "white-spur-lookout",
@@ -115430,9 +115364,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "wilf-campbell-memorial-lookout",
@@ -115496,9 +115428,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "windermere-lake-viewpoint",
@@ -115556,9 +115486,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "wombat-pool-lookout",
@@ -115616,9 +115544,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "zambrero-hobart",
@@ -116169,9 +116095,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "benchmark-tasmania-wine-gallery",
@@ -117250,9 +117174,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "former-st-john-s-schoolhouse",
@@ -117845,9 +117767,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "kia-ora-falls",
@@ -118325,9 +118245,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "moores-hill-winery",
@@ -118504,9 +118422,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "nigel-peck-centre",
@@ -119945,9 +119861,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "spiky-bridge",
@@ -120125,9 +120039,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "steam-locomotive",
@@ -120365,9 +120277,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "tasman-blowhole",
@@ -121029,9 +120939,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "water-wheel",
@@ -148565,9 +148473,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "good-grief-studio",
@@ -148925,9 +148831,7 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "cafe-r-a",
@@ -151340,7 +151244,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:23.582Z"
+      "checkedAt": "2026-10-20T16:51:04.910Z"
     },
     "reviewLinks": [
       {
@@ -153705,7 +153609,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T16:13:36.109Z"
+      "checkedAt": "2026-10-20T16:51:21.910Z"
     },
     "reviewLinks": [
       {
@@ -153844,9 +153748,7 @@
       "details-checked",
       "weak-object"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "beach-entrance-arthur-river",
@@ -153905,9 +153807,7 @@
       "details-checked",
       "minor-feature"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "goat-island-access-point",
@@ -154026,9 +153926,7 @@
       "details-checked",
       "minor-feature"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "highest-point-on-road",
@@ -154272,9 +154170,7 @@
       "details-checked",
       "weak-object"
     ],
-    "rankedAt": "2026-10-21",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-21"
+    "rankedAt": "2026-10-21"
   },
   {
     "slug": "a-total-car-rentals",
