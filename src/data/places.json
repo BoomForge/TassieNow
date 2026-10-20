@@ -3758,7 +3758,7 @@
     ],
     "lastWikidataLinkChecked": "2026-10-12",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://farmgatemarket.com.au/"
     }
@@ -4535,90 +4535,6 @@
       "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
-    "slug": "weldborough-pass-rainforest-walk",
-    "name": "Weldborough Pass Rainforest Walk",
-    "town": "Derby",
-    "region": "Launceston & North",
-    "latitude": -41.2161683,
-    "longitude": 147.9383007,
-    "categories": [
-      "Things to Do",
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "A short rainforest walking loop at Weldborough Pass State Reserve beside the Tasman Highway between Derby and St Helens. Follow local track signage and check current conditions before visiting.",
-    "website": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/way/142432393",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/142432393",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": "Parks and Wildlife Service Tasmania",
-    "detailSources": {
-      "operator": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/142432393",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Weldborough Pass Rainforest Walk category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Weldborough%20Pass%20Rainforest%20Walk%20Derby%20Tasmania"
-      }
-    ],
-    "walk": {
-      "duration": "10 minute circuit , 431m, Grade 1",
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T07:50:47.151Z"
-    },
-    "qualityScore": 89,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
@@ -12637,7 +12553,7 @@
     "openingHours": "",
     "phone": "0418684108President",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://lilydaletasmania.com.au/faq/lilydale-market-dates-and-stall-info/"
     },
@@ -21054,6 +20970,89 @@
     ],
     "rankedAt": "2026-10-20",
     "lastWikidataChecked": "2026-10-06"
+  },
+  {
+    "slug": "weldborough-pass-rainforest-walk",
+    "name": "Weldborough Pass Rainforest Walk",
+    "town": "Derby",
+    "region": "Launceston & North",
+    "latitude": -41.2161683,
+    "longitude": 147.9383007,
+    "categories": [
+      "Things to Do",
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "A short rainforest walking loop at Weldborough Pass State Reserve beside the Tasman Highway between Derby and St Helens. Follow local track signage and check current conditions before visiting.",
+    "website": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/way/142432393",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/142432393",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": "Parks and Wildlife Service Tasmania",
+    "detailSources": {
+      "operator": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/142432393",
+        "checkedAt": "2026-10-20"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Weldborough Pass Rainforest Walk category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Weldborough%20Pass%20Rainforest%20Walk%20Derby%20Tasmania"
+      }
+    ],
+    "walk": {
+      "duration": "10 minute circuit , 431m, Grade 1",
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T07:50:47.151Z"
+    },
+    "qualityScore": 59,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
   },
   {
     "slug": "west-beach",
@@ -32684,7 +32683,7 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://www.restauranttasman.com.au/"
     },
@@ -36224,9 +36223,10 @@
       "checkedAt": "2026-10-20"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-20",
-      "url": "https://davesnoodles.com.au/"
+      "url": "https://davesnoodles.com.au/",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -37365,7 +37365,7 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://lanigansvineyard.com.au/"
     },
@@ -40550,7 +40550,7 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://whiskandco.com.au/"
     },
@@ -46731,7 +46731,7 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://www.tasteofmalaysiahobart.com.au/"
     },
@@ -47044,9 +47044,10 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-20",
-      "url": "https://www.gordonrivercruises.com.au/"
+      "url": "https://www.gordonrivercruises.com.au/",
+      "error": "403 Forbidden"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20",
@@ -48221,9 +48222,10 @@
       "checkedAt": "2026-10-20"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-20",
-      "url": "https://www.harbourlightscafe.com.au/"
+      "url": "https://www.harbourlightscafe.com.au/",
+      "error": "fetch failed"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -50325,7 +50327,7 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://allthai.com.au/"
     },
@@ -66712,7 +66714,7 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "identity-mismatch",
+      "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://www.rendezvousloungecafe.com.au/"
     },
@@ -87164,7 +87166,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-wharf-bar-and-kitchen",
