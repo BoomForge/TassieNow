@@ -44,3 +44,26 @@ test('Archers Knob and every Port Sorell detail page use North West',()=>{
  const manual={slug:'archers-knob',town:'Port Sorell',region:'Hobart & South',managedManually:true};
  assert.equal(applyVerifiedPlaceDisplayOverrides(manual,overrides),manual);
 });
+
+
+test('Salamanca third gallery photo credits Dysprosia with explicit BSD three-clause licence',()=>{
+ const file='https://commons.wikimedia.org/wiki/File:Salamanca_Market,_Hobart,_Tasmania.jpg';
+ const input={slug:'salamanca-market',gallery:[
+  {sourceUrl:'https://commons.wikimedia.org/wiki/File:Different.jpg',attribution:'Photographer A'},
+  {sourceUrl:'https://commons.wikimedia.org/wiki/File:Another.jpg',attribution:'Photographer B'},
+  {sourceUrl:file,attribution:'Wikimedia Commons contributor',license:'BSD'}
+ ]};
+ const corrected=applyVerifiedPlaceDisplayOverrides(input,overrides);
+ assert.equal(corrected.gallery[2].attribution,'Dysprosia');
+ assert.equal(corrected.gallery[2].license,'BSD 3-Clause');
+ assert.equal(corrected.gallery[2].licenseUrl,'https://opensource.org/license/bsd-3-clause');
+ assert.equal(corrected.gallery[2].sourceUrl,file);
+ assert.equal(corrected.gallery[0].attribution,'Photographer A');
+ assert.equal(corrected.gallery[1].attribution,'Photographer B');
+ assert.equal(input.gallery[2].attribution,'Wikimedia Commons contributor','never mutate source fixture');
+ assert.equal(applyVerifiedPlaceDisplayOverrides(corrected,overrides),corrected,'idempotent correction');
+ const manual={...input,managedManually:true};
+ assert.equal(applyVerifiedPlaceDisplayOverrides(manual,overrides),manual,'preserve owner managed media');
+ const other={...input,slug:'other-place'};
+ assert.equal(applyVerifiedPlaceDisplayOverrides(other,overrides),other,'do not change unrelated places');
+});
