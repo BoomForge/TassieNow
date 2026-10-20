@@ -789,5 +789,20 @@
     "evidenceUrl": "https://theatrenorth.com.au/tasmanian-fibre-festival-27",
     "verifiedOn": "2026-10-20",
     "reason": "Original work-20261019-48595d6b066587f9: exact Theatre North show H1 and presenter, not related-events list-card title; corrected canonical slug and separate venue, preserving sourced date and existing session times."
+  },
+  "mobile-service-centre-south-arm-2026-11-04-rosny-park": {
+    "fields": {
+      "town": "South Arm",
+      "region": "Hobart & South",
+      "startTime": "09:00",
+      "endTime": "16:00",
+      "venue": "Near the war memorial, Jetty Road",
+      "address": "Jetty Road, South Arm TAS",
+      "summary": "The Australian Government Mobile Service Centre will visit Jetty Road near the war memorial in South Arm, with hours of 9 am to 4 pm. Date discrepancy: Services Australia currently lists 3 November 2026; City of Clarence lists 4 November 2026. Check the Services Australia itinerary before travelling."
+    },
+    "eventUrl": "https://www.ccc.tas.gov.au/event/mobile-service-centre-south-arm/",
+    "evidenceUrl": "https://www.servicesaustralia.gov.au/when-and-where-to-find-mobile-service-centres?context=22651",
+    "verifiedOn": "2026-10-20",
+    "reason": "Partial verified original work-20261018-5c54276dc8523778: both first-party sources establish South Arm Jetty Road, 09:00–16:00, but Services Australia lists 3 Nov while City of Clarence lists 4 Nov. Do not overwrite the date or migrate slug until resolved."
   }
 }
