@@ -16,6 +16,21 @@ for (const place of places) {
     const correct=regionFor(place.latitude,place.longitude,place.town);
     if (place.region!==correct) { place.region=correct; fieldsCorrected++; }
   }
+  // Store-specific branch evidence overrides Bakers Delight's unrelated VIC
+  // head-office Organization JSON-LD. Never overwrite owner-managed entries.
+  if (place.slug === 'bakers-delight' && !place.managedManually &&
+      overrides['bakers-delight']?.liveDisplayOverride === true) {
+    const review=overrides['bakers-delight'];
+    for (const field of ['name','town','region','address','phone','openingHours']) {
+      if (typeof review[field] !== 'string' || !review[field].trim()) continue;
+      if (place[field] === review[field]) continue;
+      place[field]=review[field];
+      place.detailSources ||= {};
+      if (review.detailSources?.[field])
+        place.detailSources[field]=structuredClone(review.detailSources[field]);
+      fieldsCorrected++;
+    }
+  }
   if (sourceBacked.has(place.slug) && overrides[place.slug]) {
     for (const field of ['openingHours','phone','address']) {
       if (typeof overrides[place.slug][field] === 'string' && overrides[place.slug][field].trim()
