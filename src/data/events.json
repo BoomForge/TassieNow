@@ -23,8 +23,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20",
-    "ticketLastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "huon-valley-alphabet-mafia-2026-01-05-huonville",
@@ -50,8 +49,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20",
-    "ticketLastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "cygnet-men-s-circle-2026-01-14-huonville",
@@ -77,8 +75,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20",
-    "ticketLastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "rock-and-rhyme-at-huonville-library-2026-01-14-huonville",
@@ -88,8 +85,7 @@
     "startDate": "2026-01-14",
     "endDate": "2026-12-23",
     "categories": [
-      "Events",
-      "Free"
+      "Events"
     ],
     "summary": "Rock and Rhyme at Huonville Library in Huonville. Check the official event listing for current times, venue, accessibility and booking details.",
     "eventUrl": "https://www.huonvalley.tas.gov.au/event/rock-and-rhyme-and-storytime-at-huonville-library/",
@@ -116,15 +112,7 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-20",
-    "ticketUrl": "https://www.eventbrite.com/e/rock-and-rhyme-and-storytime-at-huonville-library-tickets-862619898337?aff=ebdsoporgprofile&amp;keep_tld=1",
-    "ticketProvider": "Eventbrite",
-    "bookingRequired": true,
-    "priceFrom": 0,
-    "priceTo": 0,
-    "priceCurrency": "AUD",
-    "availability": "InStock",
-    "ticketLastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "herbalists-without-borders-2026-01-16-huonville",
@@ -546,6 +534,35 @@
     },
     "status": "active",
     "lastChecked": "2026-10-20"
+  },
+  {
+    "slug": "hobofopo2026-2026-10-20-hobart",
+    "name": "HOBOFOPO2026",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-10-20",
+    "endDate": "2026-10-20",
+    "categories": [
+      "Events"
+    ],
+    "summary": "HOBOFOPO2026 in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://events.humanitix.com/hobofopo2026",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "HOBOFOPO2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "ticketUrl": "https://events.humanitix.com/hobofopo2026",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true
   },
   {
     "slug": "voices-through-art-arch-lived-experience-art-campaign-2026-10-20-burnie",
@@ -1285,6 +1302,38 @@
     "lastChecked": "2026-10-20"
   },
   {
+    "slug": "coats-patons-patons-and-baldwins-history-tours-sunday-2026-10-25-launceston",
+    "name": "Coats Patons (Patons & Baldwins) History Tours - Sunday",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-10-25",
+    "endDate": "2026-10-25",
+    "categories": [
+      "Events",
+      "History",
+      "Tours"
+    ],
+    "summary": "Free tour of the historic Patons and Baldwins woollen mill, departing from the Door of Hope Welcome Desk. Organiser lists the next session Sunday 25 October 2026 from 11:30am to 1:30pm; confirm later session dates directly with the host.",
+    "venue": "Door of Hope Christian Church",
+    "address": "50 Glen Dhu Street, South Launceston TAS 7249",
+    "startTime": "11:30",
+    "endTime": "13:30",
+    "eventUrl": "https://events.humanitix.com/coats-patons-patons-and-baldwins-history-tours",
+    "sourceUrl": "https://events.humanitix.com/coats-patons-patons-and-baldwins-history-tours",
+    "sourceName": "Door of Hope Centenary Committee",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Coats Patons (Patons & Baldwins) History Tours - Sunday category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20"
+  },
+  {
     "slug": "spring-fling-2026-10-25-devonport",
     "name": "Spring Fling",
     "town": "Devonport",
@@ -1388,6 +1437,32 @@
     "priceTo": 10,
     "priceCurrency": "AUD",
     "bookingRequired": true
+  },
+  {
+    "slug": "explore-discover-connect-with-26ten-2026-10-26-glenorchy",
+    "name": "Explore, Discover, Connect with 26Ten!",
+    "town": "Glenorchy",
+    "region": "Hobart & South",
+    "startDate": "2026-10-26",
+    "endDate": "2026-10-26",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Explore, Discover, Connect with 26Ten! in Glenorchy. Check the official Glenorchy City Council listing for current time, venue and booking details.",
+    "eventUrl": "https://www.gcc.tas.gov.au/event/explore-discover-connect-with-26ten/",
+    "sourceUrl": "https://www.gcc.tas.gov.au/our-city/events/",
+    "sourceName": "Glenorchy City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Explore, Discover, Connect with 26Ten! event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "international-day-of-people-with-disability-come-and-try-golf-2026-10-26-rosny-park",
@@ -1599,6 +1674,33 @@
     "bookingRequired": true,
     "availability": "InStock",
     "ticketLastChecked": "2026-10-20"
+  },
+  {
+    "slug": "family-fun-day-children-s-week-2026-2026-10-28-glenorchy",
+    "name": "Family Fun Day – Children’s Week 2026",
+    "town": "Glenorchy",
+    "region": "Hobart & South",
+    "startDate": "2026-10-28",
+    "endDate": "2026-10-28",
+    "categories": [
+      "Events",
+      "Family"
+    ],
+    "summary": "Family Fun Day – Children’s Week 2026 in Glenorchy. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.gcc.tas.gov.au/event/family-fun-day-childrens-week-2026/",
+    "sourceUrl": "https://www.gcc.tas.gov.au/our-city/events/",
+    "sourceName": "Glenorchy City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Family Fun Day – Children’s Week 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "meet-the-team-from-the-disability-commissioner-tasmania-2026-10-28-huonville",
@@ -2191,38 +2293,6 @@
     "lastChecked": "2026-10-20"
   },
   {
-    "slug": "agricultured-2026-2026-11-04-launceston",
-    "name": "agriCULTURED 2026",
-    "town": "Launceston",
-    "region": "Launceston & North",
-    "startDate": "2026-11-04",
-    "endDate": "2026-11-08",
-    "categories": [
-      "Events"
-    ],
-    "summary": "agriCULTURED 2026 in Launceston. Check the source for current times, venue details and availability.",
-    "venue": "Launceston & Surrounds",
-    "eventUrl": "https://events.humanitix.com/agricultured-2026",
-    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
-    "sourceName": "Humanitix Launceston",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "agriCULTURED 2026 event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-10-08",
-    "ticketUrl": "https://events.humanitix.com/agricultured-2026",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-10-20"
-  },
-  {
     "slug": "andrew-blanch-tierra-album-launch-hobart-2026-11-04-hobart",
     "name": "Andrew Blanch Tierra Album Launch (Hobart)",
     "town": "Hobart",
@@ -2265,7 +2335,6 @@
       "Events"
     ],
     "summary": "An open-mic evening of personal stories hosted by The Listening Projects at Du Cane Brewery's Map Room. Wednesday 4 November, 6–8:30 pm; free booking.",
-    "venue": "Du Cane Brewery & Dining Hall — The Map Room",
     "eventUrl": "https://events.humanitix.com/launnie-monthly-storytelling-833uhfeq",
     "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
     "sourceName": "Humanitix Launceston",
@@ -2279,18 +2348,17 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "startTime": "18:00",
-    "endTime": "20:30",
-    "address": "60/64 Elizabeth Street, Launceston TAS 7250",
+    "lastChecked": "2026-10-20",
     "ticketUrl": "https://events.humanitix.com/launnie-monthly-storytelling-833uhfeq",
     "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-10-20",
+    "startTime": "18:00",
+    "endTime": "20:30",
+    "venue": "Du Cane Brewery & Dining Hall — The Map Room",
+    "address": "60/64 Elizabeth Street, Launceston TAS 7250",
     "priceFrom": 0,
     "priceTo": 0,
-    "priceCurrency": "AUD"
+    "priceCurrency": "AUD",
+    "bookingRequired": true
   },
   {
     "slug": "mobile-service-centre-south-arm-2026-11-04-rosny-park",
@@ -2349,6 +2417,40 @@
     "endTime": "19:15",
     "priceFrom": 0,
     "priceCurrency": "AUD"
+  },
+  {
+    "slug": "agricultured-2026-2026-11-04-launceston",
+    "name": "agriCULTURED 2026",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-11-05",
+    "endDate": "2026-11-08",
+    "categories": [
+      "Events"
+    ],
+    "summary": "agriCULTURED 2026 in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "Launceston & Surrounds",
+    "eventUrl": "https://events.humanitix.com/agricultured-2026",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "agriCULTURED 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-08",
+    "ticketUrl": "https://events.humanitix.com/agricultured-2026",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-20",
+    "startTime": "09:00",
+    "endTime": "19:00"
   },
   {
     "slug": "amy-sherwin-comes-home-2026-11-05-hobart",
@@ -2705,7 +2807,7 @@
   {
     "slug": "mind-blown-the-mentalist-and-the-medium-in-launceston-2026-11-07-launceston",
     "name": "Mind Blown - The Mentalist & The Medium in Launceston",
-    "town": "Launceston",
+    "town": "Invermay",
     "region": "Launceston & North",
     "startDate": "2026-11-07",
     "endDate": "2026-11-07",
@@ -2732,7 +2834,10 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-10-20"
+    "ticketLastChecked": "2026-10-20",
+    "startTime": "18:45",
+    "endTime": "22:00",
+    "address": "4 Invermay Road, Invermay TAS 7248"
   },
   {
     "slug": "the-sweet-uk-the-final-blitz-tour-albert-hall-launceston-07-nov-2026-11-07-launceston",
@@ -3107,6 +3212,7 @@
     "lastChecked": "2026-10-20",
     "startTime": "18:00",
     "endTime": "20:00",
+    "ticketLastChecked": "2026-10-20",
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD"
@@ -3162,7 +3268,8 @@
         "startTime": "09:00",
         "endTime": "17:00"
       }
-    ]
+    ],
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "comedy-night-tabish-2026-11-13-hobart",
@@ -3273,6 +3380,33 @@
     "image": {
       "url": "/images/categories/events.svg",
       "alt": "St David’s Park 100th birthday garden party event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
+  },
+  {
+    "slug": "world-kindness-day-2026-11-13-glenorchy",
+    "name": "World Kindness Day",
+    "town": "Glenorchy",
+    "region": "Hobart & South",
+    "startDate": "2026-11-13",
+    "endDate": "2026-11-13",
+    "categories": [
+      "Events"
+    ],
+    "summary": "World Kindness Day in Glenorchy. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.gcc.tas.gov.au/event/world-kindness-day/",
+    "sourceUrl": "https://www.gcc.tas.gov.au/our-city/events/",
+    "sourceName": "Glenorchy City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "World Kindness Day event category image",
       "attribution": "TassieNow",
       "license": "Site artwork",
       "licenseUrl": null,
@@ -3422,6 +3556,32 @@
     "priceTo": 25,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-10-20"
+  },
+  {
+    "slug": "glenorchy-treasure-trail-showcase-2026-11-19-glenorchy",
+    "name": "Glenorchy Treasure Trail Showcase",
+    "town": "Glenorchy",
+    "region": "Hobart & South",
+    "startDate": "2026-11-19",
+    "endDate": "2026-11-19",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Glenorchy Treasure Trail Showcase in Glenorchy. Check the official Glenorchy City Council listing for current time, venue and booking details.",
+    "eventUrl": "https://www.gcc.tas.gov.au/event/glenorchy-treasure-trail-showcase/",
+    "sourceUrl": "https://www.gcc.tas.gov.au/our-city/events/",
+    "sourceName": "Glenorchy City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Glenorchy Treasure Trail Showcase event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "bicheno-food-and-wine-festival-2026-2026-11-21-bicheno",
@@ -3944,7 +4104,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "volunteers-breakfast-2026-2026-12-02-devonport",
@@ -4273,39 +4434,6 @@
     "ticketLastChecked": "2026-10-20"
   },
   {
-    "slug": "tassie-pop-culture-market-2026-12-12-upper-burnie",
-    "name": "Tassie Pop Culture Market",
-    "town": "Upper Burnie",
-    "region": "North West",
-    "startDate": "2026-12-12",
-    "endDate": "2026-12-12",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Upper Burnie Hall, 242 Mount st, Upper Burnie, 7320,",
-    "summary": "Tassie Pop Culture Market in Upper Burnie. The council lists this session for 2026-12-12; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-20"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Tassie Pop Culture Market market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "10:00",
-    "endTime": "14:00"
-  },
-  {
     "slug": "festive-friday-2026-2026-12-18-devonport",
     "name": "Festive Friday 2026",
     "town": "Devonport",
@@ -4336,6 +4464,51 @@
     "ticketLastChecked": "2026-10-20"
   },
   {
+    "slug": "carols-by-candlelight-2026-12-19-glenorchy",
+    "name": "Carols by Candlelight",
+    "town": "Glenorchy",
+    "region": "Hobart & South",
+    "startDate": "2026-12-19",
+    "endDate": "2026-12-19",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Carols by Candlelight in Glenorchy. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.gcc.tas.gov.au/event/carols-by-candlelight/",
+    "sourceUrl": "https://www.gcc.tas.gov.au/our-city/events/",
+    "sourceName": "Glenorchy City Council",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/View_from_the_rear_of_the_2024_Manningham_Carols_by_Candlelight_in_Ruffey_Lake_Park_in_Doncaster%2C_Melbourne.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_the_rear_of_the_2024_Manningham_Carols_by_Candlelight_in_Ruffey_Lake_Park_in_Doncaster,_Melbourne.jpg",
+      "attribution": "Philip Mallis",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "isFallback": false,
+      "sourceMethod": "verified-event-activity",
+      "mediaType": "activity-illustrative",
+      "alt": "Illustrative photograph of a 2024 Carols by Candlelight event in Melbourne; not the advertised Carols by Candlelight event",
+      "caption": "Illustrative photo: a 2024 Carols by Candlelight event in Melbourne. This does not depict the advertised event in Tasmania.",
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "activity-illustrative",
+        "topic": "Christmas carols",
+        "eventName": "Carols by Candlelight",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:View_from_the_rear_of_the_2024_Manningham_Carols_by_Candlelight_in_Ruffey_Lake_Park_in_Doncaster,_Melbourne.jpg",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "priceFrom": 15,
+    "priceTo": 15,
+    "priceCurrency": "AUD",
+    "ticketUrl": "https://events.humanitix.com/variety-carols-2026?_gl=1*2cf98m*_gcl_au*MTUyNjA2NDYxOS4xNzg1Mjc5NjQ4LjIxMTY5OTQxMjcuMTc4ODIzNTA2NS4xNzg4MjM1Njg2LjE3MjYxNjU1MzkuMTc4ODIzNDg3My4xNzg4MjM1Njg2*_ga*OTEwNDYxMTgzLjE3NjE4Nzc4ODY.*_ga_LHKW5FR9N6*czE3ODgyMzMwNjEkbzI3MCRnMSR0MTc4ODIzNjEyMyRqNCRsMCRoMA",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-20"
+  },
+  {
     "slug": "variety-kids-carols-2026-12-19-glenorchy",
     "name": "Variety Kids Carols",
     "town": "Glenorchy",
@@ -4346,8 +4519,8 @@
       "Events",
       "Family"
     ],
-    "summary": "Glenorchy City Council acknowledges the Muwinina people as the traditional owners of this Land. We recognise all Tasmanian Aboriginal people as the original owners and continuing c",
-    "eventUrl": "https://www.gcc.tas.gov.au/our-city/events/",
+    "summary": "Glenorchy City Council acknowledges the Muwinina people as the traditional owners of this Land. We recognise all Tasmanian Aboriginal people as the original owners and continuing custodians of the land and waters of",
+    "eventUrl": "https://www.gcc.tas.gov.au/event/variety-kids-carols/",
     "sourceUrl": "https://www.gcc.tas.gov.au/our-city/events/",
     "sourceName": "Glenorchy City Council",
     "image": {
@@ -4371,7 +4544,15 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "priceFrom": 5,
+    "priceTo": 10,
+    "priceCurrency": "AUD",
+    "ticketUrl": "https://events.humanitix.com/variety-carols-2026?_gl=1*2cf98m*_gcl_au*MTUyNjA2NDYxOS4xNzg1Mjc5NjQ4LjIxMTY5OTQxMjcuMTc4ODIzNTA2NS4xNzg4MjM1Njg2LjE3MjYxNjU1MzkuMTc4ODIzNDg3My4xNzg4MjM1Njg2*_ga*OTEwNDYxMTgzLjE3NjE4Nzc4ODY.*_ga_LHKW5FR9N6*czE3ODgyMzMwNjEkbzI3MCRnMSR0MTc4ODIzNjEyMyRqNCRsMCRoMA",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "tasmania-jackjumpers-v-adelaide-36ers-2026-12-21-glenorchy",
