@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { decodeEventEntities } from '../../src/lib/event-text-entities.mjs';
 import { isMarketEvent } from '../../src/lib/market-category.js';
 import { regionalCardLocation } from '../../src/lib/regional-event-location.js';
 import { tasEventCalendarDate } from './lib/tas-event-calendar-date.mjs';
@@ -41,7 +42,7 @@ function tasDate(date = new Date()) { const p = new Intl.DateTimeFormat('en-AU',
 const TODAY = tasDate();
 const horizonDate = new Date(`${TODAY}T00:00:00Z`); horizonDate.setUTCDate(horizonDate.getUTCDate() + 550); const HORIZON = horizonDate.toISOString().slice(0,10);
 const slugify=(v)=>String(v).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,90);
-const decode=(v='')=>String(v).replace(/&nbsp;|&#160;/gi,' ').replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replace(/&#39;|&apos;|&#x27;/gi,"'").replace(/&ndash;|&#8211;/gi,'–').replace(/&mdash;|&#8212;/gi,'—');
+const decode=decodeEventEntities;
 const clean=(v='')=>decode(String(v).replace(/<[^>]*>/g,' ')).replace(/\s+/g,' ').trim();
 const norm=(v='')=>clean(v).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 function fallback(name){return{url:'/images/categories/events.svg',alt:`${name} event category image`,attribution:'TassieNow',license:'Site artwork',licenseUrl:null,sourceUrl:null,isFallback:true};}
