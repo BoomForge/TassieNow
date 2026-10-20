@@ -40,3 +40,20 @@ test('Brixhibition Sorell 10–11 October is kept despite Hobart branding',()=>{
   assert.equal(verifiedRegionalEvent(source,organiserHtml.replace('2026','2025'),'2026-10-10'),null);
   assert.equal(verifiedRegionalEvent(source,organiserHtml,'2026-10-12'),null);
 });
+
+test('Halloweek Big Top requires organiser-specific 31 Oct evidence',()=>{
+ const source=SOURCES.find(s=>s.event==='Halloweek 2026: Big Top');
+ assert.ok(source);
+ const original='<h1>𝐇𝐚𝐥𝐥𝐨𝐰𝐞𝐞𝐤 𝟐𝟎𝟐𝟔: 𝐁𝐈𝐆 𝐓𝐎𝐏</h1><p>13 DJs gathered under the Big Top</p><time>Sat, 31 Oct, 9pm - Sun, 1 Nov, 5am AEDT</time>';
+ const event=verifiedRegionalEvent(source,original,'2026-10-20');
+ assert.equal(event?.name,'Halloweek 2026: Big Top');
+ assert.equal(event?.startDate,'2026-10-31');
+ assert.equal(event?.endDate,'2026-11-01');
+ assert.equal(event?.startTime,'21:00');
+ assert.equal(event?.endTime,'05:00');
+ assert.equal(event?.venue,'Twisted Lime');
+ assert.equal(event?.image?.isFallback,true);
+ assert.equal(verifiedRegionalEvent(source,'13 DJs gathered under the Big Top, no date','2026-10-20'),null);
+ assert.equal(verifiedRegionalEvent(source,'Sat, 31 Oct, 9pm, unrelated show','2026-10-20'),null);
+ assert.equal(verifiedRegionalEvent(source,original,'2026-11-02'),null);
+});
