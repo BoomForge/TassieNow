@@ -1,13 +1,13 @@
 {
   "generatedAt": "2026-10-21",
   "places": {
-    "total": 2203,
-    "public": 2137,
+    "total": 2202,
+    "public": 2136,
     "suppressed": 66,
     "media": {
       "realHeroCoverage": {
-        "count": 307,
-        "percent": 14.4
+        "count": 309,
+        "percent": 14.5
       },
       "twoPlusImages": {
         "count": 171,
@@ -21,7 +21,7 @@
         "count": 72,
         "percent": 3.4
       },
-      "totalLicensedImages": 918,
+      "totalLicensedImages": 920,
       "averageImagesPerPublicListing": 0.43
     },
     "sources": {
@@ -39,7 +39,7 @@
       },
       "wikidataLinkage": {
         "count": 627,
-        "percent": 29.3
+        "percent": 29.4
       }
     },
     "details": {
@@ -48,24 +48,24 @@
         "percent": 19.1
       },
       "recurringSchedule": {
-        "count": 125,
-        "percent": 5.8
+        "count": 126,
+        "percent": 5.9
       },
       "phone": {
-        "count": 392,
-        "percent": 18.3
+        "count": 393,
+        "percent": 18.4
       },
       "email": {
-        "count": 204,
-        "percent": 9.5
+        "count": 205,
+        "percent": 9.6
       },
       "address": {
         "count": 507,
         "percent": 23.7
       },
       "bookingUrl": {
-        "count": 117,
-        "percent": 5.5
+        "count": 168,
+        "percent": 7.9
       },
       "fee": {
         "count": 27,
@@ -80,18 +80,18 @@
         "percent": 1.3
       },
       "reviewLinks": {
-        "count": 2137,
+        "count": 2136,
         "percent": 100
       }
     },
     "sourceTypes": {
-      "openstreetmap": 1524,
+      "openstreetmap": 1523,
       "wikidata": 572,
       "curated": 41
     },
     "qualityTiers": {
-      "standard": 775,
-      "strong": 619,
+      "standard": 773,
+      "strong": 620,
       "low": 473,
       "featured": 270
     },
@@ -103,12 +103,12 @@
       "Central Tasmania": 116,
       "West Coast": 83,
       "Flinders Island": 57,
-      "King Island": 38
+      "King Island": 37
     },
     "towns": 207,
     "categories": {
       "Food & Drink": 1041,
-      "Nature & Walks": 761,
+      "Nature & Walks": 760,
       "Things to Do": 199,
       "Museums": 76,
       "Markets": 30,
@@ -118,8 +118,8 @@
     },
     "categoryMembership": {
       "Food & Drink": 1055,
-      "Outdoor": 773,
-      "Nature & Walks": 771,
+      "Outdoor": 772,
+      "Nature & Walks": 770,
       "Free": 445,
       "Café": 424,
       "Restaurant": 405,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 162,
+    "active": 163,
     "media": {
       "licensedHeroCoverage": {
         "count": 65,
-        "percent": 40.1
+        "percent": 39.9
       },
-      "stillUsingCategoryArtwork": 97,
+      "stillUsingCategoryArtwork": 98,
       "bySource": {
         "verified-event-venue": 37,
         "verified-event-activity": 23,
@@ -246,7 +246,7 @@
         },
         "North West": {
           "count": 13,
-          "percent": 29.5
+          "percent": 28.9
         },
         "East Coast": {
           "count": 1,
@@ -272,11 +272,11 @@
     },
     "ticketCoverage": {
       "count": 42,
-      "percent": 25.9
+      "percent": 25.8
     },
     "priceCoverage": {
       "count": 61,
-      "percent": 37.7
+      "percent": 37.4
     },
     "providers": {
       "Humanitix": 21,
@@ -284,7 +284,7 @@
       "Ticketmaster": 1
     },
     "sources": {
-      "Burnie City Council": 28,
+      "Burnie City Council": 29,
       "MyState Bank Arena": 21,
       "Theatre North Launceston": 16,
       "Devonport City Council": 15,
@@ -306,7 +306,7 @@
     "regions": {
       "Hobart & South": 77,
       "Launceston & North": 27,
-      "North West": 44,
+      "North West": 45,
       "East Coast": 9,
       "West Coast": 1,
       "Central Tasmania": 1,
@@ -353,7 +353,7 @@
       "missingOrOlderThan30Days": 0
     },
     "sourceRegionalMix": {
-      "North West / Burnie City Council": 28,
+      "North West / Burnie City Council": 29,
       "Hobart & South / MyState Bank Arena": 21,
       "Launceston & North / Theatre North Launceston": 16,
       "Hobart & South / Huon Valley Council": 15,
