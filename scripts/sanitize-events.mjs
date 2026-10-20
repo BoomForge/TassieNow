@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { decodeEventEntities } from '../src/lib/event-text-entities.mjs';
 import { applyVerifiedBurnieEvent } from './discover/lib/verified-burnie-events.mjs';
 import { applyReviewedEventCorrection,normaliseEventSourceUrl } from './discover/lib/reviewed-event-corrections.mjs';
 
@@ -8,15 +9,7 @@ const JUNK_NAME = /\b(?:for visit the event on rosny farm|living well devonport 
 const HTML_LEAK = /<\/?[a-z!]|\b(?:src|srcset|class|media|href)\s*=|&(?:lt|gt);/i;
 const DATE_ONLY_NAME = /^(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\s+\d{1,2}(?:st|nd|rd|th)?(?:,?\s+20\d{2})?$/i;
 
-function decode(value=''){
-  return String(value)
-    .replace(/&nbsp;|&#160;/gi,' ')
-    .replace(/&amp;/gi,'&')
-    .replace(/&quot;/gi,'"')
-    .replace(/&#39;|&apos;|&#x27;/gi,"'")
-    .replace(/&ndash;|&#8211;/gi,'–')
-    .replace(/&mdash;|&#8212;/gi,'—');
-}
+const decode=decodeEventEntities;
 function cleanText(value=''){
   return decode(String(value))
     .replace(/<script[\s\S]*?<\/script>/gi,' ')
