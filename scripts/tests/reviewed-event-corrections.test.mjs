@@ -184,3 +184,23 @@ test('Clarence disability golf and Beyond Sound canonical pages and redirects ar
  const sound=events.find(e=>e.eventUrl===specs[1].url);
  assert.match(sound.summary,/Auslan interpreter/i);
 });
+
+
+test('South Arm source-backed venue survives unrelated Clarence card reimports with disputed day untouched',()=>{
+ const url='https://www.ccc.tas.gov.au/event/mobile-service-centre-south-arm/';
+ const original=events.filter(e=>e.eventUrl===url);
+ assert.equal(original.length,1);
+ const e=original[0];
+ assert.equal(e.town,'South Arm');
+ assert.equal(e.startTime,'09:00');
+ assert.equal(e.endTime,'16:00');
+ assert.match(e.venue,/Jetty Road/);
+ assert.match(e.summary,/Services Australia currently lists 3 November 2026/);
+ assert.match(e.summary,/City of Clarence lists 4 November 2026/);
+ assert.equal(e.startDate,'2026-11-04','do not silently decide conflicting first-party dates');
+ const future=applyReviewedEventCorrection({...e,slug:'wrong-rosny-card-reimport',town:'Rosny Park',venue:'Venue',startTime:undefined},overrides);
+ assert.equal(future.town,'South Arm');
+ assert.equal(future.startTime,'09:00');
+ assert.match(future.address,/Jetty Road/);
+ assert.equal(future.startDate,'2026-11-04','unresolved date is not invented');
+});
