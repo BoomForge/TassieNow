@@ -18,6 +18,15 @@ const VERIFIED_BURNIE_EVENTS = new Map([
     address:'242 Mount Street, Upper Burnie TAS 7320',
     summary:'TasPop market for anime, manga, video games, D&D, cosplay, art and pop-culture vendors, Saturday 12 December 2026 from 10:00 am to 2:00 pm at Upper Burnie Hall, 242 Mount Street.'
   }],
+  // Organiser and council confirm an artwork SUBMISSION CAMPAIGN spanning
+  // 14 September–20 November, not a newly scheduled daily public exhibition.
+  // Do not infer opening hours from the rolling "Next date" list entry.
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Voices-Through-Art', {
+    name:'Voices Through Art: Arch Lived Experience Art Campaign',
+    town:'Burnie',region:'North West',startDate:'2026-09-14',endDate:'2026-11-20',
+    venue:'Arch Burnie',address:'36 Wilmot Street, Burnie TAS 7320',
+    summary:'Voices Through Art is an Arch community art submission campaign exploring hope, healing and recovery. Submissions are open from 14 September to 20 November 2026, with a showcase planned for December. This date range is a submission window, not daily exhibition opening hours. Participation is free; check the official Arch website for submission details.'
+  }],
   ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Pink-Up-Your-Town', {
     startDate: '2026-10-22',
     endDate: '2026-10-22',
@@ -82,7 +91,8 @@ export function restoreVerifiedBurnieEvents(events,today){
   if(!Array.isArray(events))return events;
   const expected=[
     ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Free-Household-Chemical-Disposal',['Events','Free']],
-    ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market',['Events','Markets']]
+    ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market',['Events','Markets']],
+    ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Voices-Through-Art',['Events','Art & Culture','Community','Free']]
   ];
   let output=events;
   for(const [official,categories] of expected){
