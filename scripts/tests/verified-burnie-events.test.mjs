@@ -35,7 +35,7 @@ test('leaves unrelated and differently sourced records unchanged', () => {
 test('Burnie household chemical drop-off survives page-two list omissions until its actual date',()=>{
  const official='https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Free-Household-Chemical-Disposal';
  const restored=restoreVerifiedBurnieEvents([], '2026-10-20');
- assert.equal(restored.length,2,'both independently verified Burnie page-two events restored');
+ assert.equal(restored.length,3,'all independently verified Burnie events restored');
  assert.equal(restored[0].eventUrl,official);
  assert.equal(restored[0].slug,'free-household-chemical-disposal-2026-11-15-burnie');
  assert.equal(restored[0].startDate,'2026-11-15');
@@ -66,4 +66,24 @@ test('Tassie Pop Culture Market stays correct after missing council pagination o
  const old=applyVerifiedBurnieEvent({...market,startDate:'2026-06-20',town:'Burnie'},'2026-10-20');
  assert.equal(old.slug,market.slug,'old date corrected to current official session');
  assert.deepEqual(restoreVerifiedBurnieEvents([],'2026-12-13'),[],'expired markets stay expired');
+});
+
+
+test('Voices Through Art never becomes a fabricated daily session or rolls its slug',()=>{
+ const source='https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Voices-Through-Art';
+ for(const wrongDay of ['2026-10-16','2026-10-18','2026-10-20','2026-11-01']){
+  const rolling=event('Voices Through Art: Arch Lived Experience Art Campaign',source,wrongDay);
+  const corrected=applyVerifiedBurnieEvent(rolling,'2026-10-20');
+  assert.equal(corrected.startDate,'2026-09-14');
+  assert.equal(corrected.endDate,'2026-11-20');
+  assert.equal(corrected.slug,'voices-through-art-arch-lived-experience-art-campaign-2026-09-14-burnie');
+  assert.equal(corrected.venue,'Arch Burnie');
+  assert.match(corrected.address,/36 Wilmot Street/);
+  assert.match(corrected.summary,/submission window, not daily exhibition opening hours/);
+  assert.equal(corrected.startTime,undefined,'the organiser does not advertise daily sessions');
+ }
+ const restored=restoreVerifiedBurnieEvents([],'2026-10-20');
+ assert.equal(restored.filter(e=>e.eventUrl===source).length,1);
+ assert.equal(restoreVerifiedBurnieEvents(restored,'2026-11-19').filter(e=>e.eventUrl===source).length,1);
+ assert.equal(restoreVerifiedBurnieEvents([],'2026-11-21').filter(e=>e.eventUrl===source).length,0);
 });
