@@ -19,11 +19,11 @@ for (const place of places) {
     const correct=regionFor(place.latitude,place.longitude,place.town);
     if (place.region!==correct) { place.region=correct; fieldsCorrected++; }
   }
-  // Store-specific branch evidence overrides Bakers Delight's unrelated VIC
-  // head-office Organization JSON-LD. Never overwrite owner-managed entries.
-  if (place.slug === 'bakers-delight' && !place.managedManually &&
-      overrides['bakers-delight']?.liveDisplayOverride === true) {
-    const review=overrides['bakers-delight'];
+  // Source-specific branch/locality evidence overrides unrelated head-office
+  // or state-level fallback addresses. Never overwrite owner-managed entries.
+  if (['bakers-delight','trowunna-wildlife-park'].includes(place.slug) &&
+      !place.managedManually && overrides[place.slug]?.liveDisplayOverride === true) {
+    const review=overrides[place.slug];
     for (const field of ['name','town','region','address','phone','openingHours']) {
       if (typeof review[field] !== 'string' || !review[field].trim()) continue;
       if (place[field] === review[field]) continue;
