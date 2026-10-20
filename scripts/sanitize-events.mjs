@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import { decodeEventEntities } from '../src/lib/event-text-entities.mjs';
 import { applyVerifiedBurnieEvent, restoreVerifiedBurnieEvents } from './discover/lib/verified-burnie-events.mjs';
 import { applyReviewedEventCorrection,normaliseEventSourceUrl } from './discover/lib/reviewed-event-corrections.mjs';
+import { correctDoverMobileServiceCentre } from '../src/lib/dover-mobile-event-correction.mjs';
 
 const FILE = new URL('../src/data/events.json', import.meta.url);
 const CURATED_OVERRIDES = new URL('../src/data/event-overrides.json', import.meta.url);
@@ -76,7 +77,7 @@ const TODAY=new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Hobart',year:'n
 
 const cleaned=[];
 let removed=0,repaired=0;
-for(const original of restoreVerifiedBurnieEvents(events,TODAY)){
+for(const original of correctDoverMobileServiceCentre(restoreVerifiedBurnieEvents(events,TODAY))){
   const canonical=applyVerifiedBurnieEvent(original,TODAY);
   const event=applyReviewedEventCorrection(canonical,overrides);
   event.name=cleanText(event.name);
