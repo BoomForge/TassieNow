@@ -6,6 +6,7 @@ import { regionFor } from './discover/lib/regions.mjs';
 import { shouldRemoveParksContactHours } from '../src/lib/parks-hours-source-guard.mjs';
 import { correctWeldboroughSource } from '../src/lib/weldborough-source-correction.mjs';
 import { dedupeWestCoastRailwayPlaces } from '../src/lib/west-coast-railway-dedupe.mjs';
+import { correctSalamancaPhotoCredit } from '../src/lib/salamanca-attribution-correction.mjs';
 
 const file = new URL('../src/data/places.json', import.meta.url);
 const places = JSON.parse(await fs.readFile(file, 'utf8'));
@@ -101,6 +102,11 @@ for (const place of places) {
     if (place.detailSources) delete place.detailSources.bookingUrl;
   }
   if (original && !place.bookingUrl) bookingLinksRemoved++;
+}
+// Preserve exact-source Commons author attribution during every standard build.
+for(let i=0;i<places.length;i++){
+ const corrected=correctSalamancaPhotoCredit(places[i]);
+ if(corrected!==places[i]){places[i]=corrected;fieldsCorrected++;}
 }
 const railwayReview=dedupeWestCoastRailwayPlaces(places);
 await fs.writeFile(file, JSON.stringify(railwayReview.places,null,2)+'\n');
