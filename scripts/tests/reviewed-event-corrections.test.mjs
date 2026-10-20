@@ -66,6 +66,10 @@ test('three City of Clarence wrong-date cards use source-specific corrections',(
   assert.equal(corrected.endDate,date,prefix);
   assert.equal(corrected.venue,venue,prefix);
   if(time)assert.equal(corrected.startTime,time,prefix);
+  if(prefix.includes('pam-scott')){
+   assert.equal(corrected.address,'1 Ford Parade, Lindisfarne TAS 7015');
+   assert.match(corrected.summary,/forensic scientist/i,'neighbouring council event summary must not leak into Pam Scott');
+  }
   const reimported=applyReviewedEventCorrection({...item,slug:'new-search-card-wrong-date',startDate:'2026-10-20'},overrides);
   assert.equal(reimported.startDate,date,'source URL survives reimport '+prefix);
  }
@@ -77,8 +81,10 @@ test('agriCULTURED and Mind Blown keep official Tasmania-local event days and ve
   ['mind-blown-the-mentalist-and-the-medium-in-launceston-2026-11-07-launceston','2026-11-07','2026-11-07','18:45','22:00','The Tramsheds Function Centre']
  ];
  for(const [slug,first,last,begin,end,venue] of pairs){
-  const e=events.find(e=>e.slug===slug);
-  assert.ok(e,'Original event exists: '+slug);
+  const sourceUrl=overrides[slug]?.eventUrl;
+  const matches=events.filter(e=>e.slug===slug||(sourceUrl&&e.eventUrl===sourceUrl));
+  assert.equal(matches.length,1,'One correct event exists under verified source URL: '+slug);
+  const e=matches[0];
   const fixed=applyReviewedEventCorrection(e,overrides);
   assert.equal(fixed.startDate,first);
   assert.equal(fixed.endDate,last);
@@ -89,7 +95,7 @@ test('agriCULTURED and Mind Blown keep official Tasmania-local event days and ve
   const fixedAgain=applyReviewedEventCorrection(changedSlug,overrides);
   assert.equal(fixedAgain.startDate,first,'stable official URL correction survives reimport');
  }
- const blown=applyReviewedEventCorrection(events.find(e=>e.slug===pairs[1][0]),overrides);
+ const blown=applyReviewedEventCorrection(events.find(e=>e.eventUrl==='https://events.humanitix.com/mindblown'),overrides);
  assert.equal(blown.town,'Invermay');
  assert.equal(blown.address,'4 Invermay Road, Invermay TAS 7248');
 });
