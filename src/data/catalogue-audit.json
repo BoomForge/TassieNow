@@ -1,16 +1,16 @@
 {
   "generatedAt": "2026-10-21",
   "places": {
-    "total": 2203,
-    "public": 2137,
+    "total": 2202,
+    "public": 2136,
     "suppressed": 66,
     "media": {
       "realHeroCoverage": {
-        "count": 310,
+        "count": 309,
         "percent": 14.5
       },
       "twoPlusImages": {
-        "count": 172,
+        "count": 171,
         "percent": 8
       },
       "fourPlusImages": {
@@ -21,13 +21,13 @@
         "count": 72,
         "percent": 3.4
       },
-      "totalLicensedImages": 922,
+      "totalLicensedImages": 920,
       "averageImagesPerPublicListing": 0.43
     },
     "sources": {
       "websiteCoverage": {
-        "count": 363,
-        "percent": 17
+        "count": 362,
+        "percent": 16.9
       },
       "officialSourceCoverage": {
         "count": 287,
@@ -38,21 +38,21 @@
         "percent": 12
       },
       "wikidataLinkage": {
-        "count": 625,
+        "count": 624,
         "percent": 29.2
       }
     },
     "details": {
       "openingHours": {
-        "count": 409,
+        "count": 408,
         "percent": 19.1
       },
       "recurringSchedule": {
-        "count": 126,
+        "count": 125,
         "percent": 5.9
       },
       "phone": {
-        "count": 394,
+        "count": 393,
         "percent": 18.4
       },
       "email": {
@@ -64,8 +64,8 @@
         "percent": 23.7
       },
       "bookingUrl": {
-        "count": 168,
-        "percent": 7.9
+        "count": 166,
+        "percent": 7.8
       },
       "fee": {
         "count": 27,
@@ -80,24 +80,24 @@
         "percent": 1.3
       },
       "reviewLinks": {
-        "count": 2137,
+        "count": 2136,
         "percent": 100
       }
     },
     "sourceTypes": {
       "openstreetmap": 1523,
-      "wikidata": 573,
+      "wikidata": 572,
       "curated": 41
     },
     "qualityTiers": {
       "standard": 773,
       "strong": 621,
       "low": 473,
-      "featured": 270
+      "featured": 269
     },
     "regions": {
       "Hobart & South": 776,
-      "Launceston & North": 474,
+      "Launceston & North": 473,
       "North West": 345,
       "East Coast": 249,
       "Central Tasmania": 116,
@@ -110,7 +110,7 @@
       "Food & Drink": 1041,
       "Nature & Walks": 760,
       "Things to Do": 199,
-      "Museums": 77,
+      "Museums": 76,
       "Markets": 30,
       "Art & Culture": 16,
       "Wildlife": 11,
@@ -125,9 +125,9 @@
       "Restaurant": 405,
       "Things to Do": 203,
       "Takeaway": 162,
-      "Rainy Day": 96,
-      "Art & Culture": 93,
-      "Museums": 77,
+      "Rainy Day": 95,
+      "Art & Culture": 92,
+      "Museums": 76,
       "Bakery": 43,
       "Family": 31,
       "Markets": 30,
@@ -271,17 +271,16 @@
       }
     },
     "ticketCoverage": {
-      "count": 43,
-      "percent": 26.2
+      "count": 42,
+      "percent": 25.6
     },
     "priceCoverage": {
-      "count": 60,
-      "percent": 36.6
+      "count": 61,
+      "percent": 37.2
     },
     "providers": {
       "Humanitix": 21,
       "Ticketek": 20,
-      "Eventbrite": 1,
       "Ticketmaster": 1
     },
     "sources": {
