@@ -1,70 +1,70 @@
 {
   "generatedAt": "2026-10-20",
   "places": {
-    "total": 2217,
-    "public": 2151,
+    "total": 2205,
+    "public": 2139,
     "suppressed": 66,
     "media": {
       "realHeroCoverage": {
-        "count": 316,
-        "percent": 14.7
+        "count": 311,
+        "percent": 14.5
       },
       "twoPlusImages": {
-        "count": 179,
-        "percent": 8.3
+        "count": 173,
+        "percent": 8.1
       },
       "fourPlusImages": {
-        "count": 101,
-        "percent": 4.7
+        "count": 95,
+        "percent": 4.4
       },
       "sixPlusImages": {
-        "count": 77,
-        "percent": 3.6
+        "count": 72,
+        "percent": 3.4
       },
-      "totalLicensedImages": 957,
-      "averageImagesPerPublicListing": 0.44
+      "totalLicensedImages": 925,
+      "averageImagesPerPublicListing": 0.43
     },
     "sources": {
       "websiteCoverage": {
-        "count": 367,
-        "percent": 17.1
+        "count": 363,
+        "percent": 17
       },
       "officialSourceCoverage": {
-        "count": 290,
-        "percent": 13.5
+        "count": 287,
+        "percent": 13.4
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 272,
-        "percent": 12.6
+        "count": 265,
+        "percent": 12.4
       },
       "wikidataLinkage": {
-        "count": 633,
-        "percent": 29.4
+        "count": 618,
+        "percent": 28.9
       }
     },
     "details": {
       "openingHours": {
-        "count": 412,
-        "percent": 19.2
+        "count": 409,
+        "percent": 19.1
       },
       "recurringSchedule": {
-        "count": 130,
-        "percent": 6
+        "count": 127,
+        "percent": 5.9
       },
       "phone": {
-        "count": 397,
-        "percent": 18.5
+        "count": 394,
+        "percent": 18.4
       },
       "email": {
-        "count": 208,
-        "percent": 9.7
+        "count": 206,
+        "percent": 9.6
       },
       "address": {
-        "count": 508,
-        "percent": 23.6
+        "count": 507,
+        "percent": 23.7
       },
       "bookingUrl": {
-        "count": 171,
+        "count": 169,
         "percent": 7.9
       },
       "fee": {
@@ -80,54 +80,54 @@
         "percent": 1.3
       },
       "reviewLinks": {
-        "count": 2151,
+        "count": 2139,
         "percent": 100
       }
     },
     "sourceTypes": {
-      "openstreetmap": 1523,
-      "wikidata": 587,
+      "openstreetmap": 1525,
+      "wikidata": 573,
       "curated": 41
     },
     "qualityTiers": {
-      "standard": 774,
-      "strong": 624,
+      "standard": 775,
+      "strong": 621,
       "low": 473,
-      "featured": 280
+      "featured": 270
     },
     "regions": {
-      "Hobart & South": 781,
-      "Launceston & North": 477,
-      "North West": 347,
-      "East Coast": 251,
-      "Central Tasmania": 117,
-      "West Coast": 83,
+      "Hobart & South": 776,
+      "Launceston & North": 474,
+      "North West": 345,
+      "East Coast": 249,
+      "Central Tasmania": 116,
+      "West Coast": 84,
       "Flinders Island": 57,
       "King Island": 38
     },
-    "towns": 209,
+    "towns": 207,
     "categories": {
       "Food & Drink": 1041,
-      "Nature & Walks": 768,
-      "Things to Do": 201,
-      "Museums": 78,
+      "Nature & Walks": 761,
+      "Things to Do": 200,
+      "Museums": 77,
       "Markets": 30,
       "Art & Culture": 16,
-      "Wildlife": 14,
+      "Wildlife": 11,
       "History": 3
     },
     "categoryMembership": {
       "Food & Drink": 1055,
-      "Outdoor": 780,
-      "Nature & Walks": 778,
-      "Free": 449,
+      "Outdoor": 773,
+      "Nature & Walks": 771,
+      "Free": 445,
       "Café": 424,
       "Restaurant": 405,
-      "Things to Do": 203,
+      "Things to Do": 204,
       "Takeaway": 162,
-      "Rainy Day": 97,
-      "Art & Culture": 94,
-      "Museums": 78,
+      "Rainy Day": 96,
+      "Art & Culture": 93,
+      "Museums": 77,
       "Bakery": 43,
       "Family": 31,
       "Markets": 30,
@@ -196,8 +196,8 @@
       },
       "details": {
         "website": {
-          "count": 234,
-          "percent": 22.2
+          "count": 233,
+          "percent": 22.1
         },
         "openingHours": {
           "count": 326,
@@ -215,30 +215,30 @@
     }
   },
   "events": {
-    "active": 169,
+    "active": 168,
     "media": {
       "licensedHeroCoverage": {
-        "count": 66,
-        "percent": 39.1
+        "count": 65,
+        "percent": 38.7
       },
       "stillUsingCategoryArtwork": 103,
       "bySource": {
         "verified-event-venue": 37,
-        "verified-event-activity": 24,
+        "verified-event-activity": 23,
         "verified-event-performer": 3,
         "commons-venue": 1,
         "verified-event-history": 1
       },
       "byMediaType": {
         "contextual": 38,
-        "activity-illustrative": 24,
+        "activity-illustrative": 23,
         "performer-context": 3,
         "historical-event": 1
       },
       "byRegion": {
         "Hobart & South": {
-          "count": 33,
-          "percent": 41.8
+          "count": 32,
+          "percent": 41
         },
         "Launceston & North": {
           "count": 17,
@@ -271,15 +271,15 @@
       }
     },
     "ticketCoverage": {
-      "count": 47,
-      "percent": 27.8
+      "count": 48,
+      "percent": 28.6
     },
     "priceCoverage": {
-      "count": 57,
-      "percent": 33.7
+      "count": 52,
+      "percent": 31
     },
     "providers": {
-      "Humanitix": 25,
+      "Humanitix": 26,
       "Ticketek": 20,
       "Eventbrite": 1,
       "Ticketmaster": 1
@@ -287,9 +287,9 @@
     "sources": {
       "Burnie City Council": 29,
       "MyState Bank Arena": 21,
-      "Huon Valley Council": 16,
       "Theatre North Launceston": 16,
       "Devonport City Council": 15,
+      "Huon Valley Council": 15,
       "Humanitix Launceston": 13,
       "Theatre Royal Hobart": 12,
       "Humanitix Hobart": 10,
@@ -305,7 +305,7 @@
       "West Coast Heritage Centre": 1
     },
     "regions": {
-      "Hobart & South": 79,
+      "Hobart & South": 78,
       "Launceston & North": 31,
       "North West": 45,
       "East Coast": 9,
@@ -355,8 +355,8 @@
     "sourceRegionalMix": {
       "North West / Burnie City Council": 29,
       "Hobart & South / MyState Bank Arena": 21,
-      "Hobart & South / Huon Valley Council": 16,
       "Launceston & North / Theatre North Launceston": 16,
+      "Hobart & South / Huon Valley Council": 15,
       "North West / Devonport City Council": 15,
       "Launceston & North / Humanitix Launceston": 13,
       "Hobart & South / Theatre Royal Hobart": 12,
