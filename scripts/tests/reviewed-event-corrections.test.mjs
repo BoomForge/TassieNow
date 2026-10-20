@@ -51,3 +51,22 @@ test('old source aliases are repaired after any future discovery regeneration',(
   assert.equal(reintroduced.venue,venue);
  }
 });
+
+test('three City of Clarence wrong-date cards use source-specific corrections',()=>{
+ const cases=[
+  ['rotary-club-of-lindisfarne-talks-pam-scott-oam','2026-10-21','Motor Yacht Club of Tasmania','18:15'],
+  ['beyond-sound-the-music-in-all-of-us','2026-12-03','Rosny Library','13:00'],
+  ['international-day-of-people-with-disability-come-and-try-golf','2026-10-26','Golf Park Hobart',null]
+ ];
+ for(const [prefix,date,venue,time] of cases){
+  const item=events.find(x=>x.slug.startsWith(prefix));
+  assert.ok(item,prefix);
+  const corrected=applyReviewedEventCorrection(item,overrides);
+  assert.equal(corrected.startDate,date,prefix);
+  assert.equal(corrected.endDate,date,prefix);
+  assert.equal(corrected.venue,venue,prefix);
+  if(time)assert.equal(corrected.startTime,time,prefix);
+  const reimported=applyReviewedEventCorrection({...item,slug:'new-search-card-wrong-date',startDate:'2026-10-20'},overrides);
+  assert.equal(reimported.startDate,date,'source URL survives reimport '+prefix);
+ }
+});
