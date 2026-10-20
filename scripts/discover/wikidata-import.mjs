@@ -82,6 +82,8 @@ const current = JSON.parse(await fs.readFile(FILE, 'utf8'));
 const existingIds = new Set(current.filter((place) => place.sourceType === 'wikidata' && place.sourceId).map((place) => place.sourceId));
 const existingNames = new Set(current.map((place) => norm(place.name)).filter(Boolean));
 const candidates = [];
+// One Wikidata entity may satisfy multiple P31 classes; merge its taxonomy once.
+const newCandidateByQid=new Map();
 for (const binding of data.results?.bindings || []) {
   const id = qid(binding.item?.value); const classId = qid(binding.class?.value); const config = CLASS_MAP[classId];
   if (!id || !config || existingIds.has(id)) continue;
@@ -95,12 +97,22 @@ for (const binding of data.results?.bindings || []) {
   if (!town) continue;
   const categories = [...config.categories];
   const sourceUrl = `https://www.wikidata.org/wiki/${id}`;
-  candidates.push({
+  const queued=newCandidateByQid.get(id);
+  if(queued){
+    // Distinct class matches enrich a single entity, never make "-2" pages.
+    queued.categories=[...new Set([...queued.categories,...categories])];
+    if(queued.summary.startsWith('Visitor attraction')&&config.summary!=='Visitor attraction')
+      queued.summary=`${config.summary} in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.`;
+    continue;
+  }
+  const fresh={
     slug: slugify(name), name, town, region: regionFor(latitude, longitude, town), latitude, longitude, categories,
     summary: `${config.summary} in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.`,
     website: validUrl(binding.website?.value), sourceUrl, sourceType: 'wikidata', sourceId: id, wikidata: id,
     status: 'active', lastChecked: TODAY, image: fallback(categories, name)
-  });
+  };
+  newCandidateByQid.set(id,fresh);
+  candidates.push(fresh);
 }
 
 const usedSlugs = new Set(current.map((place) => place.slug));
