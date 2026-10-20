@@ -1,3 +1,4 @@
+import { correctSalamancaPhotoCredit } from './salamanca-attribution-correction.mjs';
 /**
  * Owner-reviewed listing facts may be used at render time before the full
  * catalogue enrichment job next runs. All other overrides stay pipeline-only.
@@ -9,8 +10,9 @@ export function applyVerifiedPlaceDisplayOverrides(place, overrides) {
   // A town-level verified correction must reach every generated place page,
   // including Archers Knob, whose older stored region survived prior imports.
   // Exact town guard avoids the unrelated southern town of Sorell.
-  const corrected = !place.managedManually && /^port\s+sorell$/i.test(String(place.town||'').trim()) &&
+  const localityCorrected = !place.managedManually && /^port\s+sorell$/i.test(String(place.town||'').trim()) &&
       place.region !== 'North West' ? {...place,region:'North West'} : place;
+  const corrected = correctSalamancaPhotoCredit(localityCorrected);
   const override = overrides?.[place.slug];
   if (!override || override.liveDisplayOverride !== true || place.managedManually) return corrected;
   const verified = Object.fromEntries(
@@ -23,7 +25,7 @@ export function applyVerifiedPlaceDisplayOverrides(place, overrides) {
   const update = Object.keys(verified).length > 0 || override.removePhone === true ||
     override.removeOpeningHours === true || override.removeSchedule === true || override.overrideOfficialSource === true ||
     (licensedImage && place.image?.isFallback === true);
-  if (!update) return place;
+  if (!update) return corrected;
   const copy = { ...corrected, ...verified };
   // Trowunna's previous state-only breadcrumb can also carry the wrong region.
   // The reviewed correction is explicitly pinned to the operator's Mole Creek address.
