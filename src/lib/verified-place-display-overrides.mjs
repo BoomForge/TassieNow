@@ -20,6 +20,11 @@ export function applyVerifiedPlaceDisplayOverrides(place, overrides) {
     (licensedImage && place.image?.isFallback === true);
   if (!update) return place;
   const copy = { ...place, ...verified };
+  // Trowunna's previous state-only breadcrumb can also carry the wrong region.
+  // The reviewed correction is explicitly pinned to the operator's Mole Creek address.
+  if (place.slug === 'trowunna-wildlife-park' && override.region === 'Launceston & North') {
+    copy.region = override.region;
+  }
   if (licensedImage && place.image?.isFallback === true) copy.image = structuredClone(override.image);
   if (override.removePhone === true) delete copy.phone;
   if (override.removeOpeningHours === true) delete copy.openingHours;
