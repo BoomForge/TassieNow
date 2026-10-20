@@ -45,6 +45,19 @@ for (const place of places) {
     place.town = overrides[place.slug].town;
     fieldsCorrected++;
   }
+  // Protect the public against two demonstrated foreign/mismatched hero images.
+  // Use only existing first-party site category artwork, not unlicensed substitutes.
+  if (['1830','central-channel-marine-conservation-area'].includes(place.slug) &&
+      !place.managedManually && overrides[place.slug]?.image?.isFallback === true) {
+    const approved=overrides[place.slug];
+    if (place.image?.url !== approved.image.url || place.image?.isFallback !== true) {
+      place.image=structuredClone(approved.image);
+      place.detailSources ||= {};
+      if (approved.detailSources?.image)
+        place.detailSources.image=structuredClone(approved.detailSources.image);
+      fieldsCorrected++;
+    }
+  }
   // Verified false-match correction: never show an unrelated photo as The Four Mile.
   if (place.slug === 'the-four-mile' && overrides[place.slug]?.image?.isFallback === true) {
     place.image = structuredClone(overrides[place.slug].image);
