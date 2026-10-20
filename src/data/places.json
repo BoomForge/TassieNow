@@ -1,5 +1,94 @@
 [
   {
+    "slug": "alum-cliffs",
+    "name": "Alum Cliffs",
+    "town": "Kingston",
+    "region": "Hobart & South",
+    "latitude": -42.9685289,
+    "longitude": 147.3393335,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Alum Cliffs is an official Parks Tasmania walk. Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/6449281085",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/6449281085",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6701 2104",
+    "email": "GreatWesternTiers@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Alum_Cliffs_at_Taroona%2C_Tasmania.jpg/1280px-Alum_Cliffs_at_Taroona%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Alum Cliffs, Tasmania",
+      "attribution": "jacobharrisau",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alum_Cliffs_at_Taroona,_Tasmania.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Alum%20Cliffs%20Kingston%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T12:00:58.128Z"
+    },
+    "qualityScore": 100,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "real-image",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
     "slug": "archers-knob",
     "name": "Archers Knob",
     "town": "Port Sorell",
@@ -67,8 +156,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Archers-Knob.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/archers-knob",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -92,6 +182,7 @@
       "official-walk-data",
       "real-image",
       "contact-details",
+      "booking-link",
       "review-link",
       "details-checked"
     ],
@@ -155,8 +246,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Bishop-and-Clerk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/bishop-and-clerk",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "4-5 hour walk, 3-5 hour ride , 11km return, Grade 4",
@@ -447,8 +539,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "5 hours return , 14km, Grade 4",
@@ -517,8 +610,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "5 minutes to 5 hours , 100m to 5km, Grade 2",
@@ -660,10 +754,9 @@
     ],
     "lastWikidataChecked": "2026-10-06",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches"
     }
   },
   {
@@ -699,8 +792,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Wineglass-Bay-and-Hazards-Beach.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "4-5 hours circuit , 11km circuit, Grade 4",
@@ -879,8 +973,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -969,8 +1064,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Duck-Reach.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/duck-reach",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -1057,8 +1153,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Liffey-Falls-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/liffey-falls-state-reserve/liffey-falls-walk",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "45 minute return , 2km, from the top car park, Grade 2",
@@ -1150,8 +1247,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Maingon-Blowhole.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/maingon-blowhole",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -1238,8 +1336,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Montezuma-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -1266,7 +1365,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/montezuma-falls"
+    }
   },
   {
     "slug": "remarkable-cave",
@@ -1365,8 +1469,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Remarkable-Cave.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/remarkable-cave",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "15 minutes return , TBC, Grade 3",
@@ -1685,8 +1790,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/St-Columba-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -1754,8 +1860,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/St-Columba-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/st-columba-falls-state-reserve/st-columba-falls",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -1890,8 +1997,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Wineglass-Bay-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -1939,93 +2047,6 @@
       "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-lookout"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
-    "slug": "alum-cliffs",
-    "name": "Alum Cliffs",
-    "town": "Kingston",
-    "region": "Hobart & South",
-    "latitude": -42.9685289,
-    "longitude": 147.3393335,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Alum Cliffs is an official Parks Tasmania walk. Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/6449281085",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/6449281085",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6701 2104",
-    "email": "GreatWesternTiers@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Alum_Cliffs_at_Taroona%2C_Tasmania.jpg/1280px-Alum_Cliffs_at_Taroona%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Alum Cliffs, Tasmania",
-      "attribution": "jacobharrisau",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alum_Cliffs_at_Taroona,_Tasmania.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Alum%20Cliffs%20Kingston%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T12:00:58.128Z"
-    },
-    "qualityScore": 98,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "real-image",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
@@ -2260,8 +2281,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "5 minutes to 5 hours , 100m to 5km, Grade 2",
@@ -3058,8 +3080,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Frankland-Beaches-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair/frankland-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "2 hours , 6 km return, Grade 2",
@@ -3288,8 +3311,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Trousers-Point.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/strzelecki-national-park/trousers-point",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "1.5 hours circuit , 2km circuit, Grade 2",
@@ -3803,8 +3827,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -3989,8 +4014,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Fossil-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/fossil-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -4323,8 +4349,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Meander-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/meander-falls",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "4.5-6 hours return , 10km return, Grade 4",
@@ -4408,8 +4435,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Mount-Duncan-Summit-Track.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-duncan-track",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "4 hours return , 8km return, Grade 3",
@@ -4494,8 +4522,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Mount%20Gnomon-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/dial-range-reserves/mount-gnomon-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "1 hour return , 2km return, Grade 3",
@@ -4581,8 +4610,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Painted-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/painted-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -4676,8 +4706,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Point-Vision-Track.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/point-vision-track",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "7 hours return , 15 km return, Grade 4",
@@ -4795,12 +4826,7 @@
       "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
     },
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20",
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
-      "type": "government"
-    }
+    "discoveryStaleSince": "2026-10-20"
   },
   {
     "slug": "allport-library-and-museum-of-fine-arts",
@@ -5168,8 +5194,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -5528,8 +5555,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Hollybank.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hollybank",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "15-40 minute circuit , 2km circuit, Grade 1",
@@ -5611,8 +5639,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Alum-Cliffs.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -5702,8 +5731,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "20 minutes return , 1 km, Grade 2",
@@ -5936,8 +5966,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "30 minutes return , 2 km, Grade 1",
@@ -6026,8 +6057,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Calcified-Forest-(King-Island).aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -6053,7 +6085,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)"
+    }
   },
   {
     "slug": "cape-tourville-lookout",
@@ -6110,8 +6147,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Cape-Tourville.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "20 minute circuit , 600m circuit, Grade 1",
@@ -6211,8 +6249,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Huon-Pine-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "20 minutes return , 600m return, Grade 1",
@@ -6238,7 +6277,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/huon-pine-walk"
+    }
   },
   {
     "slug": "maritime-museum-of-tasmania",
@@ -6585,8 +6629,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Ralphs-Falls.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/ralphs-falls",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -6670,8 +6715,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/The-Reservoir-Circuit.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/the-reservoir-circuit",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "0.5-1 hour ride , 4km return, Grade 3",
@@ -6761,8 +6807,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Sleepy-Bay.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/sleepy-bay",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "20 minutes return , 500m return, Grade 3",
@@ -6872,8 +6919,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Bird-Hide-Walk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "30 minutes return , 2 km, Grade 1",
@@ -6904,6 +6952,92 @@
       "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park/bird-hide-walk"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
+    "slug": "tall-trees-viewing-platform",
+    "name": "Tall Trees Viewing Platform",
+    "town": "Westerway",
+    "region": "Hobart & South",
+    "latitude": -42.68132,
+    "longitude": 146.706961,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Tall Trees is an official Parks Tasmania walk. 30 minutes circuit , 1km circuit, Grade 2 · Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/Tall-Trees.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/way/1472906092",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/1472906092",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6288 1149",
+    "email": "MtField@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Tall Trees Viewing Platform category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Tall%20Trees%20Viewing%20Platform%20Westerway%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park/tall-trees",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": "30 minutes circuit , 1km circuit, Grade 2",
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T12:01:14.667Z"
+    },
+    "qualityScore": 82,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park/tall-trees"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
@@ -7106,8 +7240,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "5 minutes return , 300 metres, Grade 2",
@@ -7201,8 +7336,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Waterfall-Bay.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/waterfall-bay",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -7537,90 +7673,6 @@
       "checkedAt": "2026-10-20",
       "url": "https://www.sorell.tas.gov.au/visitor-information/"
     }
-  },
-  {
-    "slug": "tall-trees-viewing-platform",
-    "name": "Tall Trees Viewing Platform",
-    "town": "Westerway",
-    "region": "Hobart & South",
-    "latitude": -42.68132,
-    "longitude": 146.706961,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Tall Trees is an official Parks Tasmania walk. 30 minutes circuit , 1km circuit, Grade 2 · Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/Tall-Trees.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/way/1472906092",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/1472906092",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6288 1149",
-    "email": "MtField@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Tall Trees Viewing Platform category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Tall%20Trees%20Viewing%20Platform%20Westerway%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Tall-Trees.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": "30 minutes circuit , 1km circuit, Grade 2",
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T12:01:14.667Z"
-    },
-    "qualityScore": 80,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/mount-field-national-park/tall-trees"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
   },
   {
     "slug": "wynyard-foreshore-market",
@@ -8265,8 +8317,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Overland-Track.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "6 days one way , 65km one way, Grade 4",
@@ -12693,6 +12746,117 @@
     "lastWikidataLinkChecked": "2026-10-20"
   },
   {
+    "slug": "coles-beach",
+    "name": "Coles Beach",
+    "town": "Devonport",
+    "region": "North West",
+    "latitude": -41.16,
+    "longitude": 146.34,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor",
+      "Free"
+    ],
+    "summary": "Coles Beach, accessed via Coles Beach Road in Devonport, has nearby public toilets, a walking and cycling track, electric barbecue, picnic shelters, a car park and an outdoor shower. Devonport City Council monitors beach water quality in summer.",
+    "website": null,
+    "sourceUrl": "https://www.wikidata.org/wiki/Q21956215",
+    "sourceType": "wikidata",
+    "sourceId": "Q21956215",
+    "wikidata": "Q21956215",
+    "status": "active",
+    "lastChecked": "2026-10-06",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Coles_bay_beach.JPG/1920px-Coles_bay_beach.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Coles Beach, Tasmania",
+      "attribution": "Aaroncrick",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coles_bay_beach.JPG",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Coles%20Beach%20Tasmania%20Tasmania"
+      }
+    ],
+    "lastDetailsChecked": "2026-10-20",
+    "qualityScore": 62,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "real-image",
+      "address",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "lastWikidataChecked": "2026-10-06",
+    "address": "Coles Beach Road, Devonport TAS 7310",
+    "detailSources": {
+      "town": {
+        "type": "verified-source",
+        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
+        "checkedAt": "2026-10-20"
+      },
+      "region": {
+        "type": "verified-source",
+        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
+        "checkedAt": "2026-10-20"
+      },
+      "address": {
+        "type": "verified-source",
+        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
+        "checkedAt": "2026-10-20"
+      },
+      "summary": {
+        "type": "verified-source",
+        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
+        "checkedAt": "2026-10-20"
+      }
+    },
+    "gallery": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Mary_Ellen_at_Coles_Bay_beach_%283-3%29_-_Flickr_-_brewbooks.jpg/1920px-Mary_Ellen_at_Coles_Bay_beach_%283-3%29_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Coles Beach, Tasmania",
+        "attribution": "brewbooks from near Seattle, USA",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Ellen_at_Coles_Bay_beach_(3-3)_-_Flickr_-_brewbooks.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Mary_Ellen_at_Coles_Bay_beach_%282-3%29_-_Flickr_-_brewbooks.jpg/1920px-Mary_Ellen_at_Coles_Bay_beach_%282-3%29_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Coles Beach, Tasmania",
+        "attribution": "brewbooks from near Seattle, USA",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Ellen_at_Coles_Bay_beach_(2-3)_-_Flickr_-_brewbooks.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Mary_Ellen_at_Coles_Bay_beach_%281-3%29_-_Flickr_-_brewbooks.jpg/1920px-Mary_Ellen_at_Coles_Bay_beach_%281-3%29_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "alt": "Coles Beach, Tasmania",
+        "attribution": "brewbooks from near Seattle, USA",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Ellen_at_Coles_Bay_beach_(1-3)_-_Flickr_-_brewbooks.jpg",
+        "isFallback": false,
+        "sourceMethod": "commons-search",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
     "slug": "deloraine-showgrounds-market",
     "name": "Deloraine Showgrounds Market",
     "town": "Deloraine",
@@ -12965,8 +13129,9 @@
     ],
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Leven-Canyon-Lookout.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -25899,7 +26064,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://www.wondersofwynyard.com/"
+    }
   },
   {
     "slug": "city-park-radio-museum",
@@ -26139,6 +26309,16 @@
         "type": "openstreetmap",
         "url": "https://www.openstreetmap.org/way/1505008232",
         "checkedAt": "2026-10-20"
+      },
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://devilsatcradle.com/visitor-information/",
+        "checkedAt": "2026-10-20"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://devilsatcradle.com/admission-tours/",
+        "checkedAt": "2026-10-20"
       }
     },
     "status": "active",
@@ -26185,7 +26365,29 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://devilsatcradle.com/"
+    },
+    "schedule": {
+      "summary": "9.30am to 5pm Daily",
+      "sourceUrl": "https://devilsatcradle.com/admission-tours/",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "09:30",
+      "endTime": "17:00",
+      "notes": "We are open to the public every day (except Christmas day) and offer a range of entry and tour options to suit all ages and interests."
+    }
   },
   {
     "slug": "hastings-caves-state-reserve",
@@ -26659,7 +26861,12 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://www.creativepaper.com.au/"
+    }
   },
   {
     "slug": "devil-s-corner-cellar-door",
@@ -32041,61 +32248,6 @@
         "isFallback": false,
         "sourceMethod": "wikimedia-category",
         "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Ross_Bridge_20201113-006.jpg/1920px-Ross_Bridge_20201113-006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Ross Bridge, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_Bridge_20201113-006.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Ross_Bridge_20201113-008.jpg/1920px-Ross_Bridge_20201113-008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Ross Bridge, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_Bridge_20201113-008.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ross_Bridge_20201113-009.jpg/1920px-Ross_Bridge_20201113-009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Ross Bridge, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_Bridge_20201113-009.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Ross_Bridge_20201113-010.jpg/1920px-Ross_Bridge_20201113-010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Ross Bridge, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_Bridge_20201113-010.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Ross_Bridge_20201113-011.jpg/1920px-Ross_Bridge_20201113-011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Ross Bridge, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_Bridge_20201113-011.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
       }
     ],
     "reviewLinks": [
@@ -33883,7 +34035,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://davesnoodles.com.au/locations",
+        "url": "https://davesnoodles.com.au/about",
         "checkedAt": "2026-10-20"
       }
     },
@@ -33915,7 +34067,7 @@
     ],
     "schedule": {
       "summary": "03 6227 2888 Dave's Noodles, Channel Highway, Kingston TAS, Australia 11 am to 8:30 pm (7 days)",
-      "sourceUrl": "https://davesnoodles.com.au/locations",
+      "sourceUrl": "https://davesnoodles.com.au/about",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -46597,116 +46749,6 @@
     "lastWikidataLinkChecked": "2026-10-20"
   },
   {
-    "slug": "coles-beach",
-    "name": "Coles Beach",
-    "town": "Devonport",
-    "region": "North West",
-    "latitude": -41.16,
-    "longitude": 146.34,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor",
-      "Free"
-    ],
-    "summary": "Coles Beach, accessed via Coles Beach Road in Devonport, has nearby public toilets, a walking and cycling track, electric barbecue, picnic shelters, a car park and an outdoor shower. Devonport City Council monitors beach water quality in summer.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q21956215",
-    "sourceType": "wikidata",
-    "sourceId": "Q21956215",
-    "wikidata": "Q21956215",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Coles_bay_beach.JPG/1920px-Coles_bay_beach.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Coles Beach, Tasmania",
-      "attribution": "Aaroncrick",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coles_bay_beach.JPG",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Coles%20Beach%20Tasmania%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-20",
-    "qualityScore": 44,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "address",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "lastWikidataChecked": "2026-10-06",
-    "address": "Coles Beach Road, Devonport TAS 7310",
-    "detailSources": {
-      "town": {
-        "type": "verified-source",
-        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
-        "checkedAt": "2026-10-20"
-      },
-      "region": {
-        "type": "verified-source",
-        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
-        "checkedAt": "2026-10-20"
-      },
-      "address": {
-        "type": "verified-source",
-        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
-        "checkedAt": "2026-10-20"
-      },
-      "summary": {
-        "type": "verified-source",
-        "url": "https://www.devonport.tas.gov.au/park-recreation/coles-beach/",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Mary_Ellen_at_Coles_Bay_beach_%283-3%29_-_Flickr_-_brewbooks.jpg/1920px-Mary_Ellen_at_Coles_Bay_beach_%283-3%29_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coles Beach, Tasmania",
-        "attribution": "brewbooks from near Seattle, USA",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Ellen_at_Coles_Bay_beach_(3-3)_-_Flickr_-_brewbooks.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Mary_Ellen_at_Coles_Bay_beach_%282-3%29_-_Flickr_-_brewbooks.jpg/1920px-Mary_Ellen_at_Coles_Bay_beach_%282-3%29_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coles Beach, Tasmania",
-        "attribution": "brewbooks from near Seattle, USA",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Ellen_at_Coles_Bay_beach_(2-3)_-_Flickr_-_brewbooks.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Mary_Ellen_at_Coles_Bay_beach_%281-3%29_-_Flickr_-_brewbooks.jpg/1920px-Mary_Ellen_at_Coles_Bay_beach_%281-3%29_-_Flickr_-_brewbooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coles Beach, Tasmania",
-        "attribution": "brewbooks from near Seattle, USA",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Ellen_at_Coles_Bay_beach_(1-3)_-_Flickr_-_brewbooks.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      }
-    ]
-  },
-  {
     "slug": "fergusson-falls",
     "name": "Fergusson Falls",
     "town": "Mole Creek",
@@ -51399,10 +51441,9 @@
       "checkedAt": "2026-10-20"
     },
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://www.derwentestate.com.au/the-shed-restaurant/",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://www.derwentestate.com.au/the-shed-restaurant/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -69719,6 +69760,97 @@
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20",
     "lastWikidataLinkChecked": "2026-10-20"
+  },
+  {
+    "slug": "deco-lounge",
+    "name": "Deco Lounge",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "latitude": -42.8848288,
+    "longitude": 147.3296711,
+    "categories": [
+      "Food & Drink",
+      "Café"
+    ],
+    "summary": "Café in or near Hobart.",
+    "website": "https://www.sevenrooms.com/landing/decoloungehbalc",
+    "sourceUrl": "https://www.openstreetmap.org/node/12800096946",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/12800096946",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "+61 3 6240 6000",
+    "email": null,
+    "address": "12 Murray Street, Hobart, TAS, 7000",
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "phone": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/12800096946",
+        "checkedAt": "2026-10-09"
+      },
+      "address": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/12800096946",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-18",
+    "image": {
+      "url": "/images/categories/food.svg",
+      "alt": "Deco Lounge category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "websiteCheck": {
+      "status": "dead",
+      "code": 404,
+      "checkedAt": "2026-10-20T12:00:41.698Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Deco%20Lounge%20Hobart%20Tasmania"
+      }
+    ],
+    "qualityScore": 40,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "address",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-20",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.sevenrooms.com/landing/decoloungehbalc",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-20"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://www.sevenrooms.com/landing/decoloungehbalc"
+    }
   },
   {
     "slug": "domino-s",
@@ -88186,96 +88318,6 @@
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
     "lastWikidataLinkChecked": "2026-10-20"
-  },
-  {
-    "slug": "deco-lounge",
-    "name": "Deco Lounge",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "latitude": -42.8848288,
-    "longitude": 147.3296711,
-    "categories": [
-      "Food & Drink",
-      "Café"
-    ],
-    "summary": "Café in or near Hobart.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/12800096946",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/12800096946",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "+61 3 6240 6000",
-    "email": null,
-    "address": "12 Murray Street, Hobart, TAS, 7000",
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "phone": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/12800096946",
-        "checkedAt": "2026-10-09"
-      },
-      "address": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/12800096946",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-18",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Deco Lounge category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "websiteCheck": {
-      "status": "dead",
-      "code": 404,
-      "checkedAt": "2026-10-20T12:00:41.698Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Deco%20Lounge%20Hobart%20Tasmania"
-      }
-    ],
-    "qualityScore": 30,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "address",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-20",
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://www.sevenrooms.com/landing/decoloungehbalc",
-      "source": "openstreetmap-website",
-      "checkedAt": "2026-10-20"
-    },
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://www.sevenrooms.com/landing/decoloungehbalc"
-    }
   },
   {
     "slug": "dover-top-shop",
@@ -120227,7 +120269,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "tasman-blowhole",
@@ -120889,7 +120932,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "water-wheel",
@@ -121987,7 +122031,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "ari-s-takeaway",
@@ -122048,7 +122092,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "arigato-sushi",
@@ -122109,7 +122153,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "aroma-s-fine-foods-and-news",
@@ -122170,7 +122214,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "asian-kitchen",
@@ -122231,7 +122275,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "avenue-restaurant",
@@ -122292,7 +122336,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "avoca-roadhouse",
@@ -122353,7 +122397,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "awu-delicious-food",
@@ -122414,7 +122458,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "baba-s-kebabs",
@@ -122475,7 +122519,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bakers-dozen",
@@ -122536,7 +122580,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bangkok-tide-thai",
@@ -122597,7 +122641,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bannon-s-takeaway",
@@ -122664,7 +122708,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bao-time",
@@ -122725,7 +122769,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "barilla-bay-restaurant-oyster-farm",
@@ -122786,7 +122830,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "barrel-room-cafe-and-cellar-door",
@@ -122847,7 +122891,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "basket-and-green",
@@ -122908,7 +122952,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bayviews-restaurant",
@@ -122975,7 +123019,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "beach-house-cafe",
@@ -123036,7 +123080,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "beatha-milkbar-cafe",
@@ -123097,7 +123141,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "beijing-chinese-restaurant",
@@ -123158,7 +123202,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "belle-s-tea-room",
@@ -123219,7 +123263,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "belly-talk",
@@ -123280,7 +123324,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bengal-tiger",
@@ -123341,7 +123385,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bento-box",
@@ -123402,7 +123446,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "berry-patch",
@@ -123463,7 +123507,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bicheno-takeaway",
@@ -123524,7 +123568,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "big-bite-pizzeria",
@@ -123585,7 +123629,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bird-in-hand-kiosk",
@@ -123646,7 +123690,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bird-in-hand-restaurant",
@@ -123707,7 +123751,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bizy-bee",
@@ -123768,7 +123812,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "black-cow-bistro",
@@ -123835,7 +123879,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "black-swan",
@@ -123896,7 +123940,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "blue-seal-cafe",
@@ -123957,7 +124001,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "blue-social-eatery",
@@ -124018,7 +124062,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bolters-pizzeria",
@@ -124079,7 +124123,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bombay-on-the-beach",
@@ -124140,7 +124184,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "boodle-beasley",
@@ -124201,7 +124245,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "boomerang-by-the-sea",
@@ -124262,7 +124306,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "botom-shop-larder-and-deli",
@@ -124321,7 +124365,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -124382,7 +124426,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -124443,7 +124487,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -124504,7 +124548,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -124565,7 +124609,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -124626,7 +124670,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -124687,7 +124731,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -124748,7 +124792,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -124809,7 +124853,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -124870,7 +124914,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -124931,7 +124975,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -124992,7 +125036,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125053,7 +125097,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125114,7 +125158,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125175,7 +125219,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125236,7 +125280,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125297,7 +125341,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125358,7 +125402,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125419,7 +125463,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125480,7 +125524,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125541,7 +125585,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125602,7 +125646,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125663,7 +125707,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125724,7 +125768,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125785,7 +125829,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125846,7 +125890,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125907,7 +125951,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -125968,7 +126012,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
