@@ -58,3 +58,37 @@ export function dedupeIdenticalWikidataPlaces(places){
  }
  return {places:source.filter(p=>!dropped.has(p)),removed:dropped.size,groups,aliases};
 }
+
+/**
+ * A second, independently verified collision: an OSM point and a Wikidata
+ * point describe Beaconsfield Mine and Heritage Centre at one West Street site.
+ * DO NOT generalize cross-source proximity dedupe: nearby galleries, entrances
+ * and separate businesses may be legitimate.
+ */
+export function dedupeReviewedBeaconsfieldCentre(places){
+ const source=Array.isArray(places)?places:[];
+ const canonical=source.find(x=>x.slug==='beaconsfield-mine-and-heritage-centre');
+ const duplicate=source.find(x=>x.slug==='beaconsfield-mine-and-heritage-centre-2');
+ if(!canonical||!duplicate||canonical.managedManually||duplicate.managedManually)
+  return {places:source,removed:0,aliases:[]};
+ if(canonical.sourceType!=='openstreetmap'||duplicate.sourceType!=='wikidata'||
+    canonical.wikidata!=='Q4876028'||duplicate.sourceId!=='Q4876028'||
+    duplicate.wikidata!=='Q4876028'||metres(canonical,duplicate)>250)
+  return {places:source,removed:0,aliases:[]};
+ const normalizedTitle=x=>norm(x).replace(/\\band\\b/g,'').replace(/\\s+/g,' ').trim();
+ if(normalizedTitle(canonical.name)!==normalizedTitle(duplicate.name))return {places:source,removed:0,aliases:[]};
+ const official='beaconsfieldheritage.com.au';
+ const websiteHost=x=>{try{return new URL(x.website).hostname.toLowerCase().replace(/^www\\./,'');}catch{return null;}};
+ if(websiteHost(canonical)!==official||websiteHost(duplicate)!==official)return {places:source,removed:0,aliases:[]};
+ const digits=x=>String(x?.phone||'').replace(/\\D/g,'');
+ if(!digits(canonical)||digits(canonical)!==digits(duplicate))return {places:source,removed:0,aliases:[]};
+ canonical.categories=[...new Set([...(canonical.categories||[]),...(duplicate.categories||[])])];
+ // The official venue website explicitly lists West Street, Beaconsfield 7270.
+ if(!canonical.address && duplicate.address)canonical.address=duplicate.address;
+ canonical.name='Beaconsfield Mine and Heritage Centre';
+ if(!canonical.gallery?.length&&duplicate.gallery?.length)canonical.gallery=structuredClone(duplicate.gallery);
+ if((!canonical.image?.url||canonical.image.isFallback)&&duplicate.image?.url&&!duplicate.image.isFallback)
+  canonical.image=structuredClone(duplicate.image);
+ return {places:source.filter(p=>p!==duplicate),removed:1,
+  aliases:[{from:duplicate.slug,to:canonical.slug,qid:'Q4876028'}]};
+}
