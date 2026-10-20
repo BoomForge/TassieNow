@@ -9709,5 +9709,109 @@
         "observedAt": "2026-10-20T00:28:15.481Z"
       }
     ]
+  },
+  "tahune-airwalk-cafe": {
+    "name": "Tahune Airwalk Cafe",
+    "town": "Geeveston",
+    "candidates": [
+      {
+        "id": "commons-geo:9371184",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Huon_river%2C_Tahune_Airwalk.jpg/1280px-Huon_river%2C_Tahune_Airwalk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Huon_river,_Tahune_Airwalk.jpg",
+        "title": "Huon river, Tahune Airwalk.jpg",
+        "credit": "Andrea Schaffer  from Sydney, Australia",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "tahune",
+            "airwalk"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-20T09:51:02.295Z"
+      },
+      {
+        "id": "commons-geo:168786992",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Tahune_Airwalk%2C_view_from_walkway%2C_January_2025_02.jpg/1280px-Tahune_Airwalk%2C_view_from_walkway%2C_January_2025_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Tahune_Airwalk,_view_from_walkway,_January_2025_02.jpg",
+        "title": "Tahune Airwalk, view from walkway, January 2025 02.jpg",
+        "credit": "Chuq",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "tahune",
+            "airwalk"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-20T09:51:02.295Z"
+      },
+      {
+        "id": "commons-geo:168786993",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Tahune_Airwalk%2C_view_from_walkway%2C_January_2025_01.jpg/1280px-Tahune_Airwalk%2C_view_from_walkway%2C_January_2025_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Tahune_Airwalk,_view_from_walkway,_January_2025_01.jpg",
+        "title": "Tahune Airwalk, view from walkway, January 2025 01.jpg",
+        "credit": "Chuq",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "tahune",
+            "airwalk"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-20T09:51:02.295Z"
+      }
+    ]
+  },
+  "cygnet-old-bank-conservatory-cafe": {
+    "name": "Cygnet Old Bank Conservatory Cafe",
+    "town": "Cygnet",
+    "candidates": [
+      {
+        "id": "commons-geo:97298354",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Former_ANZ_Bank_Cygnet_20201114-008.jpg/1280px-Former_ANZ_Bank_Cygnet_20201114-008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Former_ANZ_Bank_Cygnet_20201114-008.jpg",
+        "title": "Former ANZ Bank Cygnet 20201114-008.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "cygnet",
+            "bank"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-20T09:51:02.295Z"
+      }
+    ]
   }
 }
