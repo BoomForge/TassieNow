@@ -61,7 +61,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:45.861Z"
+      "checkedAt": "2026-10-20T16:13:44.609Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -166,7 +166,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:15.359Z"
+      "checkedAt": "2026-10-20T16:14:34.617Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -255,7 +255,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:13.900Z"
+      "checkedAt": "2026-10-20T16:13:09.481Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -313,7 +313,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:19.643Z"
+      "checkedAt": "2026-10-20T16:13:15.318Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -474,106 +474,6 @@
     ]
   },
   {
-    "slug": "cape-raoul-lookout",
-    "name": "Cape Raoul Lookout",
-    "town": "Port Arthur",
-    "region": "Hobart & South",
-    "latitude": -43.2083593,
-    "longitude": 147.7753293,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Cape Raoul is an official Parks Tasmania walk. 5 hours return , 14km, Grade 4 · Grade 4.",
-    "website": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/1080419326",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/1080419326",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6250 3980",
-    "email": "TasmanNP@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-21",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Cape_Raoul_from_Lookout.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
-      "alt": "Cape Raoul photographed from the lookout on the Tasman Peninsula",
-      "attribution": "JJ Harrison",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "isFallback": false,
-      "useMode": "external-embed",
-      "sourceMethod": "ai-verified-remote",
-      "usagePermission": "open-licence",
-      "matchEvidence": {
-        "verified": true,
-        "subject": "Cape Raoul photographed from the lookout on the Tasman Peninsula; exact named Tasmanian destination shown in the original Commons image description",
-        "checkedAt": "2026-10-13",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
-        "rightsPage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
-        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to JJ Harrison, identifies the Tasmanian subject, and specifies CC BY-SA 3.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
-        "listingSlug": "cape-raoul-lookout",
-        "listingName": "Cape Raoul Lookout",
-        "listingTown": "Port Arthur"
-      }
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Cape%20Raoul%20Lookout%20Port%20Arthur%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": "5 hours return , 14km, Grade 4",
-      "grade": 4
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T15:53:01.873Z"
-    },
-    "qualityScore": 100,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "real-image",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
     "slug": "friendly-beaches",
     "name": "Friendly Beaches",
     "town": "Tasmania",
@@ -617,7 +517,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:13.171Z"
+      "checkedAt": "2026-10-20T16:13:08.238Z"
     },
     "reviewLinks": [
       {
@@ -798,7 +698,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:13.941Z"
+      "checkedAt": "2026-10-20T16:13:09.194Z"
     },
     "reviewLinks": [
       {
@@ -978,7 +878,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:29.915Z"
+      "checkedAt": "2026-10-20T16:14:40.676Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1068,7 +968,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:03.283Z"
+      "checkedAt": "2026-10-20T16:14:09.985Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1156,7 +1056,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:08.315Z"
+      "checkedAt": "2026-10-20T16:13:05.671Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1249,7 +1149,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:02.414Z"
+      "checkedAt": "2026-10-20T16:13:52.598Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1337,7 +1237,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:29.523Z"
+      "checkedAt": "2026-10-20T16:14:26.201Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1471,7 +1371,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:52.291Z"
+      "checkedAt": "2026-10-20T16:13:53.558Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1530,7 +1430,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:42.177Z"
+      "checkedAt": "2026-10-20T16:13:41.134Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1791,7 +1691,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:08.448Z"
+      "checkedAt": "2026-10-20T16:14:14.684Z"
     },
     "qualityScore": 100,
     "qualityTier": "featured",
@@ -1860,7 +1760,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:08.825Z"
+      "checkedAt": "2026-10-20T16:14:16.010Z"
     },
     "reviewLinks": [
       {
@@ -1996,7 +1896,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:10.243Z"
+      "checkedAt": "2026-10-20T16:13:07.155Z"
     },
     "schedule": {
       "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
@@ -2071,7 +1971,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:06.063Z"
+      "checkedAt": "2026-10-20T16:14:12.807Z"
     },
     "qualityScore": 97,
     "qualityTier": "featured",
@@ -2239,6 +2139,105 @@
     ]
   },
   {
+    "slug": "cape-raoul-lookout",
+    "name": "Cape Raoul Lookout",
+    "town": "Port Arthur",
+    "region": "Hobart & South",
+    "latitude": -43.2083593,
+    "longitude": 147.7753293,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Cape Raoul is an official Parks Tasmania walk. 5 hours return , 14km, Grade 4 · Grade 4.",
+    "website": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/1080419326",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/1080419326",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6250 3980",
+    "email": "TasmanNP@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-21",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Cape_Raoul_from_Lookout.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
+      "alt": "Cape Raoul photographed from the lookout on the Tasman Peninsula",
+      "attribution": "JJ Harrison",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "isFallback": false,
+      "useMode": "external-embed",
+      "sourceMethod": "ai-verified-remote",
+      "usagePermission": "open-licence",
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Cape Raoul photographed from the lookout on the Tasman Peninsula; exact named Tasmanian destination shown in the original Commons image description",
+        "checkedAt": "2026-10-13",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
+        "rightsPage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
+        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to JJ Harrison, identifies the Tasmanian subject, and specifies CC BY-SA 3.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
+        "listingSlug": "cape-raoul-lookout",
+        "listingName": "Cape Raoul Lookout",
+        "listingTown": "Port Arthur"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Cape%20Raoul%20Lookout%20Port%20Arthur%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
+      "type": "government"
+    },
+    "walk": {
+      "duration": "5 hours return , 14km, Grade 4",
+      "grade": 4
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "inconclusive",
+      "code": null,
+      "checkedAt": "2026-10-20T16:14:12.243Z"
+    },
+    "qualityScore": 96,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "government-source",
+      "official-walk-data",
+      "real-image",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
     "slug": "friendly-beaches-reserve",
     "name": "Friendly Beaches Reserve",
     "town": "Tasmania",
@@ -2279,7 +2278,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:13.240Z"
+      "checkedAt": "2026-10-20T16:13:07.980Z"
     },
     "reviewLinks": [
       {
@@ -2387,7 +2386,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:47.957Z"
+      "checkedAt": "2026-10-20T16:13:56.877Z"
     },
     "qualityScore": 95,
     "qualityTier": "featured",
@@ -2551,7 +2550,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:49.979Z"
+      "checkedAt": "2026-10-20T16:13:51.420Z"
     },
     "qualityScore": 95,
     "qualityTier": "featured",
@@ -2761,7 +2760,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:24.557Z"
+      "checkedAt": "2026-10-20T16:13:20.648Z"
     },
     "qualityScore": 94,
     "qualityTier": "featured",
@@ -2880,7 +2879,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:13.135Z"
+      "checkedAt": "2026-10-20T16:14:19.176Z"
     },
     "reviewLinks": [
       {
@@ -3077,7 +3076,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:08.877Z"
+      "checkedAt": "2026-10-20T16:13:05.158Z"
     },
     "reviewLinks": [
       {
@@ -3156,7 +3155,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:17.229Z"
+      "checkedAt": "2026-10-20T16:13:12.365Z"
     },
     "qualityScore": 91,
     "qualityTier": "featured",
@@ -3307,7 +3306,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:14.316Z"
+      "checkedAt": "2026-10-20T16:13:10.316Z"
     },
     "reviewLinks": [
       {
@@ -3453,7 +3452,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:58.202Z"
+      "checkedAt": "2026-10-20T16:14:03.431Z"
     },
     "reviewLinks": [
       {
@@ -3503,7 +3502,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:07.461Z"
+      "checkedAt": "2026-10-20T16:13:04.748Z"
     },
     "qualityScore": 90,
     "qualityTier": "featured",
@@ -3701,7 +3700,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:16.203Z"
+      "checkedAt": "2026-10-20T16:14:23.130Z"
     },
     "qualityScore": 90,
     "qualityTier": "featured",
@@ -3822,7 +3821,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:56.771Z"
+      "checkedAt": "2026-10-20T16:14:07.828Z"
     },
     "qualityScore": 89,
     "qualityTier": "featured",
@@ -3931,7 +3930,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:27.481Z"
+      "checkedAt": "2026-10-20T16:13:23.066Z"
     },
     "reviewLinks": [
       {
@@ -4008,7 +4007,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:13.934Z"
+      "checkedAt": "2026-10-20T16:13:09.621Z"
     },
     "qualityScore": 89,
     "qualityTier": "featured",
@@ -4122,7 +4121,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:23.178Z"
+      "checkedAt": "2026-10-20T16:13:18.159Z"
     },
     "reviewLinks": [
       {
@@ -4246,7 +4245,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:43.108Z"
+      "checkedAt": "2026-10-20T16:13:41.891Z"
     },
     "reviewLinks": [
       {
@@ -4342,7 +4341,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:08.312Z"
+      "checkedAt": "2026-10-20T16:13:05.216Z"
     },
     "qualityScore": 89,
     "qualityTier": "featured",
@@ -4427,7 +4426,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:15.133Z"
+      "checkedAt": "2026-10-20T16:14:21.785Z"
     },
     "qualityScore": 89,
     "qualityTier": "featured",
@@ -4513,7 +4512,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:15.201Z"
+      "checkedAt": "2026-10-20T16:14:22.323Z"
     },
     "qualityScore": 89,
     "qualityTier": "featured",
@@ -4600,7 +4599,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:14.423Z"
+      "checkedAt": "2026-10-20T16:13:09.575Z"
     },
     "qualityScore": 89,
     "qualityTier": "featured",
@@ -4695,7 +4694,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:01.857Z"
+      "checkedAt": "2026-10-20T16:14:06.812Z"
     },
     "qualityScore": 89,
     "qualityTier": "featured",
@@ -4780,7 +4779,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:00.216Z"
+      "checkedAt": "2026-10-20T16:14:14.586Z"
     },
     "qualityScore": 89,
     "qualityTier": "featured",
@@ -4844,7 +4843,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:55.173Z"
+      "checkedAt": "2026-10-20T16:13:56.623Z"
     },
     "reviewLinks": [
       {
@@ -4951,7 +4950,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:20.201Z"
+      "checkedAt": "2026-10-20T16:13:15.976Z"
     },
     "reviewLinks": [
       {
@@ -5118,6 +5117,119 @@
     "bookingUrl": "https://mona.net.au/tickets"
   },
   {
+    "slug": "tahune-airwalk-cafe",
+    "name": "Tahune Airwalk Cafe",
+    "town": "Geeveston",
+    "region": "Hobart & South",
+    "latitude": -43.0950077,
+    "longitude": 146.729694,
+    "categories": [
+      "Food & Drink",
+      "Café",
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Tahune Airwalk is an official Parks Tasmania walk. Grade 1.",
+    "website": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/638166922",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/638166922",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "phone": "03 6121 7026",
+    "email": "Huonville@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "email": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+        "checkedAt": "2026-10-09"
+      },
+      "phone": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+        "checkedAt": "2026-10-09"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-21",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-17",
+    "image": {
+      "url": "/images/categories/food.svg",
+      "alt": "Tahune Airwalk Cafe category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
+      "type": "government"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T16:13:20.851Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Tahune%20Airwalk%20Cafe%20Geeveston%20Tasmania"
+      }
+    ],
+    "schedule": {
+      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
+      "sourceUrl": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+      "daysOfWeek": [
+        "Tuesday",
+        "Wednesday"
+      ],
+      "startTime": "10:00",
+      "endTime": "16:00"
+    },
+    "qualityScore": 88,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-12"
+  },
+  {
     "name": "Liffey Valley Market",
     "slug": "liffey-valley-market-liffey",
     "town": "Liffey",
@@ -5224,7 +5336,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:06.700Z"
+      "checkedAt": "2026-10-20T16:14:13.123Z"
     },
     "reviewLinks": [
       {
@@ -5300,7 +5412,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:21.324Z"
+      "checkedAt": "2026-10-20T16:14:28.155Z"
     },
     "reviewLinks": [
       {
@@ -5434,7 +5546,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:17.674Z"
+      "checkedAt": "2026-10-20T16:14:25.252Z"
     },
     "qualityScore": 84,
     "qualityTier": "featured",
@@ -5456,118 +5568,6 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
-  },
-  {
-    "slug": "tahune-airwalk-cafe",
-    "name": "Tahune Airwalk Cafe",
-    "town": "Geeveston",
-    "region": "Hobart & South",
-    "latitude": -43.0950077,
-    "longitude": 146.729694,
-    "categories": [
-      "Food & Drink",
-      "Café",
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Tahune Airwalk is an official Parks Tasmania walk. Grade 1.",
-    "website": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/638166922",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/638166922",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "phone": "03 6121 7026",
-    "email": "Huonville@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "email": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-        "checkedAt": "2026-10-09"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-        "checkedAt": "2026-10-09"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-21",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-17",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Tahune Airwalk Cafe category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "inconclusive",
-      "code": null,
-      "checkedAt": "2026-10-20T15:52:42.960Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Tahune%20Airwalk%20Cafe%20Geeveston%20Tasmania"
-      }
-    ],
-    "schedule": {
-      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
-      "sourceUrl": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
-      "daysOfWeek": [
-        "Tuesday",
-        "Wednesday"
-      ],
-      "startTime": "10:00",
-      "endTime": "16:00"
-    },
-    "qualityScore": 84,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-12"
   },
   {
     "slug": "alum-cliffs-lookout",
@@ -5629,7 +5629,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:08.398Z"
+      "checkedAt": "2026-10-20T16:14:14.073Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -5650,107 +5650,6 @@
       "status": "ok",
       "checkedAt": "2026-10-21",
       "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
-    "slug": "arve-falls-lookout",
-    "name": "Arve Falls Lookout",
-    "town": "Geeveston",
-    "region": "Hobart & South",
-    "latitude": -43.2102788,
-    "longitude": 146.7733416,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Arve Falls is an official Parks Tasmania walk. 20 minutes return , 1 km, Grade 2 · Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/2423549936",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2423549936",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6121 7026",
-    "email": "Huonville@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-21",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Arve Falls Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Arve%20Falls%20Lookout%20Geeveston%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": "20 minutes return , 1 km, Grade 2",
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T15:52:25.059Z"
-    },
-    "schedule": {
-      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
-      "daysOfWeek": [
-        "Tuesday",
-        "Wednesday"
-      ],
-      "startTime": "10:00",
-      "endTime": "16:00"
-    },
-    "qualityScore": 82,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
@@ -5837,7 +5736,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:56.844Z"
+      "checkedAt": "2026-10-20T16:13:59.168Z"
     },
     "schedule": {
       "summary": "Open 7 Days &#8211; 10am to 4pm",
@@ -5954,7 +5853,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:17.317Z"
+      "checkedAt": "2026-10-20T16:14:23.656Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -6044,7 +5943,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:58.592Z"
+      "checkedAt": "2026-10-20T16:14:03.464Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -6068,6 +5967,113 @@
       "checkedAt": "2026-10-21",
       "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)"
     }
+  },
+  {
+    "slug": "cape-tourville-lookout",
+    "name": "Cape Tourville Lookout",
+    "town": "Coles Bay",
+    "region": "East Coast",
+    "latitude": -42.1229113,
+    "longitude": 148.3426731,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Cape Tourville is an official Parks Tasmania walk. 20 minute circuit , 600m circuit, Grade 1 · Grade 1.",
+    "website": "https://parks.tas.gov.au/Pages/Cape-Tourville.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/360579112",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/360579112",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6256 7000",
+    "email": "Freycinet@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
+        "checkedAt": "2026-10-20"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-21",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Cape Tourville Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Cape%20Tourville%20Lookout%20Coles%20Bay%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Cape-Tourville.aspx",
+      "type": "government"
+    },
+    "walk": {
+      "duration": "20 minute circuit , 600m circuit, Grade 1",
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T16:13:06.130Z"
+    },
+    "schedule": {
+      "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "09:00",
+      "endTime": "16:00"
+    },
+    "qualityScore": 82,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
   },
   {
     "slug": "huon-pine-walk-lookout",
@@ -6129,7 +6135,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:18.859Z"
+      "checkedAt": "2026-10-20T16:14:25.252Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -6257,7 +6263,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:31.698Z"
+      "checkedAt": "2026-10-20T16:13:27.779Z"
     },
     "schedule": {
       "summary": "Located on Hobart's waterfront, opposite Constitution Dock, Maritime Museum Tasmania is open every day of the year (except Christmas Day).",
@@ -6409,7 +6415,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:14.462Z"
+      "checkedAt": "2026-10-20T16:13:09.869Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -6510,7 +6516,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:09.179Z"
+      "checkedAt": "2026-10-20T16:14:16.041Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -6595,7 +6601,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:13.905Z"
+      "checkedAt": "2026-10-20T16:13:09.493Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -6686,7 +6692,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:10.166Z"
+      "checkedAt": "2026-10-20T16:13:07.156Z"
     },
     "schedule": {
       "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
@@ -6797,7 +6803,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:15.538Z"
+      "checkedAt": "2026-10-20T16:14:22.503Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -6882,7 +6888,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:58.657Z"
+      "checkedAt": "2026-10-20T16:13:59.776Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -6940,7 +6946,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:41.199Z"
+      "checkedAt": "2026-10-20T16:13:40.271Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -7051,107 +7057,6 @@
     ]
   },
   {
-    "slug": "waratah-lookout",
-    "name": "Waratah Lookout",
-    "town": "Geeveston",
-    "region": "Hobart & South",
-    "latitude": -43.195509,
-    "longitude": 146.7674009,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Waratah Lookout is an official Parks Tasmania walk. 5 minutes return , 300 metres, Grade 2 · Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/5381596945",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/5381596945",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6121 7026",
-    "email": "Huonville@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-21",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Waratah Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Waratah%20Lookout%20Geeveston%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": "5 minutes return , 300 metres, Grade 2",
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T15:52:25.724Z"
-    },
-    "schedule": {
-      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
-      "daysOfWeek": [
-        "Tuesday",
-        "Wednesday"
-      ],
-      "startTime": "10:00",
-      "endTime": "16:00"
-    },
-    "qualityScore": 82,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
     "slug": "waterfall-bay-lookout",
     "name": "Waterfall Bay Lookout",
     "town": "Port Arthur",
@@ -7211,7 +7116,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:52.240Z"
+      "checkedAt": "2026-10-20T16:13:53.557Z"
     },
     "qualityScore": 82,
     "qualityTier": "featured",
@@ -7379,7 +7284,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:05.844Z"
+      "checkedAt": "2026-10-20T16:14:12.828Z"
     },
     "schedule": {
       "summary": "Free entry, open 10am to 4pm daily",
@@ -7421,112 +7326,6 @@
       "status": "ok",
       "checkedAt": "2026-10-21",
       "url": "https://www.qvmag.tas.gov.au/Home"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
-    "slug": "cape-tourville-lookout",
-    "name": "Cape Tourville Lookout",
-    "town": "Coles Bay",
-    "region": "East Coast",
-    "latitude": -42.1229113,
-    "longitude": 148.3426731,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Cape Tourville is an official Parks Tasmania walk. 20 minute circuit , 600m circuit, Grade 1 · Grade 1.",
-    "website": "https://parks.tas.gov.au/Pages/Cape-Tourville.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/360579112",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/360579112",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6256 7000",
-    "email": "Freycinet@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-21",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Cape Tourville Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Cape%20Tourville%20Lookout%20Coles%20Bay%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Cape-Tourville.aspx",
-      "type": "government"
-    },
-    "walk": {
-      "duration": "20 minute circuit , 600m circuit, Grade 1",
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T15:52:09.223Z"
-    },
-    "schedule": {
-      "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "09:00",
-      "endTime": "16:00"
-    },
-    "qualityScore": 80,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
@@ -7623,7 +7422,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:53.936Z"
+      "checkedAt": "2026-10-20T16:13:54.932Z"
     },
     "reviewLinks": [
       {
@@ -7741,7 +7540,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:17.120Z"
+      "checkedAt": "2026-10-20T16:14:24.078Z"
     },
     "reviewLinks": [
       {
@@ -7795,7 +7594,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:59.139Z"
+      "checkedAt": "2026-10-20T16:14:02.896Z"
     },
     "reviewLinks": [
       {
@@ -7899,7 +7698,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:18.065Z"
+      "checkedAt": "2026-10-20T16:14:25.435Z"
     },
     "reviewLinks": [
       {
@@ -8028,6 +7827,106 @@
     ]
   },
   {
+    "slug": "arve-falls-lookout",
+    "name": "Arve Falls Lookout",
+    "town": "Geeveston",
+    "region": "Hobart & South",
+    "latitude": -43.2102788,
+    "longitude": 146.7733416,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Arve Falls is an official Parks Tasmania walk. 20 minutes return , 1 km, Grade 2 · Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/2423549936",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2423549936",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6121 7026",
+    "email": "Huonville@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
+        "checkedAt": "2026-10-20"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-21",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Arve Falls Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Arve%20Falls%20Lookout%20Geeveston%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx",
+      "type": "government"
+    },
+    "walk": {
+      "duration": "20 minutes return , 1 km, Grade 2",
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "inconclusive",
+      "code": null,
+      "checkedAt": "2026-10-20T16:13:39.306Z"
+    },
+    "schedule": {
+      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls",
+      "daysOfWeek": [
+        "Tuesday",
+        "Wednesday"
+      ],
+      "startTime": "10:00",
+      "endTime": "16:00"
+    },
+    "qualityScore": 78,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/arve-falls"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
     "slug": "cascades-female-factory",
     "name": "Cascades Female Factory",
     "town": "South Hobart",
@@ -8107,7 +8006,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:55.415Z"
+      "checkedAt": "2026-10-20T16:13:56.606Z"
     },
     "reviewLinks": [
       {
@@ -8237,6 +8136,106 @@
     "discoveryStaleSince": "2026-10-11"
   },
   {
+    "slug": "waratah-lookout",
+    "name": "Waratah Lookout",
+    "town": "Geeveston",
+    "region": "Hobart & South",
+    "latitude": -43.195509,
+    "longitude": 146.7674009,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Waratah Lookout is an official Parks Tasmania walk. 5 minutes return , 300 metres, Grade 2 · Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/5381596945",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/5381596945",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6121 7026",
+    "email": "Huonville@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
+        "checkedAt": "2026-10-20"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-21",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Waratah Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Waratah%20Lookout%20Geeveston%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx",
+      "type": "government"
+    },
+    "walk": {
+      "duration": "5 minutes return , 300 metres, Grade 2",
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "inconclusive",
+      "code": null,
+      "checkedAt": "2026-10-20T16:13:41.643Z"
+    },
+    "schedule": {
+      "summary": "Huonville Office 22 Main Street Office usually staffed 10am - 4pm Tuesday to Wednesday Huonville TAS 7109 Phone: 03 6121 7026 Email: Huonville@parks.tas.gov.au ​Visitor centre opening hours",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout",
+      "daysOfWeek": [
+        "Tuesday",
+        "Wednesday"
+      ],
+      "startTime": "10:00",
+      "endTime": "16:00"
+    },
+    "qualityScore": 78,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park/waratah-lookout"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
     "slug": "view-of-overland-track-northern-peaks",
     "name": "View of Overland Track Northern Peaks",
     "town": "Mole Creek",
@@ -8297,7 +8296,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:09.069Z"
+      "checkedAt": "2026-10-20T16:14:15.801Z"
     },
     "qualityScore": 77,
     "qualityTier": "featured",
@@ -8353,7 +8352,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:55.491Z"
+      "checkedAt": "2026-10-20T16:13:56.946Z"
     },
     "reviewLinks": [
       {
@@ -8526,7 +8525,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:55.543Z"
+      "checkedAt": "2026-10-20T16:13:56.982Z"
     },
     "reviewLinks": [
       {
@@ -8746,7 +8745,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:12.377Z"
+      "checkedAt": "2026-10-20T16:14:19.043Z"
     },
     "schedule": {
       "summary": "Open Daily: Mon – Sun 10.00am – 3.00pm",
@@ -8880,7 +8879,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:51.776Z"
+      "checkedAt": "2026-10-20T16:14:03.971Z"
     },
     "qualityScore": 75,
     "qualityTier": "featured",
@@ -8983,7 +8982,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:21.996Z"
+      "checkedAt": "2026-10-20T16:13:17.642Z"
     },
     "reviewLinks": [
       {
@@ -9094,7 +9093,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:45.041Z"
+      "checkedAt": "2026-10-20T16:13:43.381Z"
     },
     "reviewLinks": [
       {
@@ -9160,7 +9159,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:55.863Z"
+      "checkedAt": "2026-10-20T16:13:57.831Z"
     },
     "reviewLinks": [
       {
@@ -9350,7 +9349,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:53.122Z"
+      "checkedAt": "2026-10-20T16:13:53.814Z"
     },
     "lastWikidataLinkChecked": "2026-10-13"
   },
@@ -9435,7 +9434,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:11.737Z"
+      "checkedAt": "2026-10-20T16:14:18.768Z"
     },
     "qualityScore": 74,
     "qualityTier": "featured",
@@ -9541,7 +9540,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:02.398Z"
+      "checkedAt": "2026-10-20T16:14:08.611Z"
     },
     "reviewLinks": [
       {
@@ -9661,7 +9660,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:49.611Z"
+      "checkedAt": "2026-10-20T16:13:49.065Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "lastDetailsChecked": "2026-10-21",
@@ -9791,7 +9790,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:13.023Z"
+      "checkedAt": "2026-10-20T16:14:20.026Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -9910,7 +9909,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:38.886Z"
+      "checkedAt": "2026-10-20T16:13:34.065Z"
     },
     "schedule": {
       "summary": "In 2016, the Foundation also held the inaugural Australian Antarctic Festival that is held every two years attracting tourists from around Australia and overseas.",
@@ -10226,7 +10225,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:21.163Z"
+      "checkedAt": "2026-10-20T16:13:16.509Z"
     },
     "qualityScore": 71,
     "qualityTier": "featured",
@@ -10541,7 +10540,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:55.761Z"
+      "checkedAt": "2026-10-20T16:13:57.597Z"
     },
     "reviewLinks": [
       {
@@ -10657,7 +10656,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:17.159Z"
+      "checkedAt": "2026-10-20T16:14:24.365Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -10831,7 +10830,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:05.969Z"
+      "checkedAt": "2026-10-20T16:14:13.528Z"
     },
     "schedule": {
       "summary": "Animal feeding starts at 10.15am daily.",
@@ -10983,7 +10982,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:51.393Z"
+      "checkedAt": "2026-10-20T16:13:52.460Z"
     },
     "schedule": {
       "summary": "Open every day except Christmas Day.",
@@ -11109,7 +11108,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:20.944Z"
+      "checkedAt": "2026-10-20T16:13:16.326Z"
     },
     "reviewLinks": [
       {
@@ -11212,7 +11211,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:13.528Z"
+      "checkedAt": "2026-10-20T16:14:20.070Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 68,
@@ -11315,7 +11314,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:14.581Z"
+      "checkedAt": "2026-10-20T16:14:20.875Z"
     },
     "qualityScore": 68,
     "qualityTier": "featured",
@@ -11550,7 +11549,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:44.409Z"
+      "checkedAt": "2026-10-20T16:13:42.743Z"
     },
     "reviewLinks": [
       {
@@ -11670,7 +11669,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:06.992Z"
+      "checkedAt": "2026-10-20T16:13:04.004Z"
     },
     "reviewLinks": [
       {
@@ -11767,7 +11766,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:07.337Z"
+      "checkedAt": "2026-10-20T16:13:04.632Z"
     },
     "reviewLinks": [
       {
@@ -11960,7 +11959,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:23.509Z"
+      "checkedAt": "2026-10-20T16:13:18.702Z"
     },
     "qualityScore": 67,
     "qualityTier": "featured",
@@ -12098,7 +12097,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:59.194Z"
+      "checkedAt": "2026-10-20T16:14:04.078Z"
     },
     "reviewLinks": [
       {
@@ -12200,7 +12199,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:28.155Z"
+      "checkedAt": "2026-10-20T16:13:24.777Z"
     },
     "reviewLinks": [
       {
@@ -12301,7 +12300,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:52.542Z"
+      "checkedAt": "2026-10-20T16:13:53.382Z"
     },
     "reviewLinks": [
       {
@@ -12362,7 +12361,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:05.642Z"
+      "checkedAt": "2026-10-20T16:13:01.733Z"
     },
     "reviewLinks": [
       {
@@ -12518,7 +12517,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:55.726Z"
+      "checkedAt": "2026-10-20T16:13:58.057Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -12790,7 +12789,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:06.420Z"
+      "checkedAt": "2026-10-20T16:14:13.924Z"
     },
     "reviewLinks": [
       {
@@ -12881,7 +12880,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:55.755Z"
+      "checkedAt": "2026-10-20T16:13:58.033Z"
     },
     "reviewLinks": [
       {
@@ -13110,7 +13109,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:16.520Z"
+      "checkedAt": "2026-10-20T16:13:10.973Z"
     },
     "qualityScore": 62,
     "qualityTier": "featured",
@@ -13211,7 +13210,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:22.203Z"
+      "checkedAt": "2026-10-20T16:13:17.466Z"
     },
     "reviewLinks": [
       {
@@ -13290,7 +13289,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:30.232Z"
+      "checkedAt": "2026-10-20T16:13:26.438Z"
     },
     "reviewLinks": [
       {
@@ -13472,7 +13471,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:02.340Z"
+      "checkedAt": "2026-10-20T16:14:08.749Z"
     },
     "qualityScore": 61,
     "qualityTier": "featured",
@@ -13567,7 +13566,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:42.762Z"
+      "checkedAt": "2026-10-20T16:13:41.758Z"
     },
     "qualityScore": 61,
     "qualityTier": "featured",
@@ -13673,7 +13672,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:52.520Z"
+      "checkedAt": "2026-10-20T16:13:53.612Z"
     },
     "qualityScore": 60,
     "qualityTier": "featured",
@@ -13881,7 +13880,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:06.534Z"
+      "checkedAt": "2026-10-20T16:14:13.261Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -15539,7 +15538,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:25.935Z"
+      "checkedAt": "2026-10-20T16:13:21.427Z"
     },
     "reviewLinks": [
       {
@@ -16608,7 +16607,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:07.357Z"
+      "checkedAt": "2026-10-20T16:13:03.935Z"
     },
     "qualityScore": 59,
     "qualityTier": "featured",
@@ -20810,7 +20809,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:11.158Z"
+      "checkedAt": "2026-10-20T16:14:22.643Z"
     },
     "schedule": {
       "summary": "9.30am to 5pm Daily",
@@ -21046,7 +21045,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:05.889Z"
+      "checkedAt": "2026-10-20T16:13:02.070Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -24549,7 +24548,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:18.531Z"
+      "checkedAt": "2026-10-20T16:13:12.934Z"
     },
     "qualityScore": 57,
     "qualityTier": "featured",
@@ -24775,7 +24774,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:22.578Z"
+      "checkedAt": "2026-10-20T16:13:17.663Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 57,
@@ -26027,7 +26026,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:16.589Z"
+      "checkedAt": "2026-10-20T16:14:24.751Z"
     },
     "qualityScore": 55,
     "qualityTier": "featured",
@@ -26120,7 +26119,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:02.110Z"
+      "checkedAt": "2026-10-20T16:14:07.528Z"
     },
     "schedule": {
       "summary": "Monday to Friday 10am &#8211; 2pm (Closed July &#8211; but open to bookings)",
@@ -26436,7 +26435,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:17.807Z"
+      "checkedAt": "2026-10-20T16:14:29.660Z"
     },
     "schedule": {
       "summary": "10am – 4pm daily",
@@ -26712,7 +26711,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:16.273Z"
+      "checkedAt": "2026-10-20T16:14:23.365Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 53,
@@ -26810,7 +26809,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:05.957Z"
+      "checkedAt": "2026-10-20T16:13:02.179Z"
     },
     "schedule": {
       "summary": "Devil&#x27;s Corner Cellar Door open from 10am-5pm 7 days.",
@@ -27011,7 +27010,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:20.104Z"
+      "checkedAt": "2026-10-20T16:13:15.162Z"
     },
     "qualityScore": 53,
     "qualityTier": "strong",
@@ -27109,7 +27108,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:57.259Z"
+      "checkedAt": "2026-10-20T16:14:02.182Z"
     },
     "qualityScore": 53,
     "qualityTier": "strong",
@@ -27496,7 +27495,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:09.252Z"
+      "checkedAt": "2026-10-20T16:14:15.780Z"
     },
     "qualityScore": 53,
     "qualityTier": "strong",
@@ -27596,7 +27595,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:51.746Z"
+      "checkedAt": "2026-10-20T16:13:53.056Z"
     },
     "schedule": {
       "summary": "Wine tastings are available seven days a week from 10 am - 4:30 pm.",
@@ -28186,7 +28185,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:16.059Z"
+      "checkedAt": "2026-10-20T16:13:11.704Z"
     },
     "reviewLinks": [
       {
@@ -28271,7 +28270,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:50.529Z"
+      "checkedAt": "2026-10-20T16:13:51.474Z"
     },
     "reviewLinks": [
       {
@@ -28376,7 +28375,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:25.836Z"
+      "checkedAt": "2026-10-20T16:13:20.974Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -28510,7 +28509,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:05.205Z"
+      "checkedAt": "2026-10-20T16:14:11.285Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 52,
@@ -28610,7 +28609,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:00.880Z"
+      "checkedAt": "2026-10-20T16:14:06.595Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 52,
@@ -28717,7 +28716,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:19.978Z"
+      "checkedAt": "2026-10-20T16:13:15.869Z"
     },
     "reviewLinks": [
       {
@@ -28842,7 +28841,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:25.785Z"
+      "checkedAt": "2026-10-20T16:13:21.201Z"
     },
     "reviewLinks": [
       {
@@ -28946,7 +28945,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:45.615Z"
+      "checkedAt": "2026-10-20T16:13:44.766Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -29061,7 +29060,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:06.377Z"
+      "checkedAt": "2026-10-20T16:13:03.026Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -29188,7 +29187,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:19.463Z"
+      "checkedAt": "2026-10-20T16:13:14.612Z"
     },
     "reviewLinks": [
       {
@@ -29307,7 +29306,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:27.811Z"
+      "checkedAt": "2026-10-20T16:13:24.516Z"
     },
     "reviewLinks": [
       {
@@ -29424,7 +29423,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:29.252Z"
+      "checkedAt": "2026-10-20T16:13:25.710Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -29534,7 +29533,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:50.347Z"
+      "checkedAt": "2026-10-20T16:13:51.161Z"
     },
     "reviewLinks": [
       {
@@ -29664,7 +29663,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:16.514Z"
+      "checkedAt": "2026-10-20T16:13:10.766Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -29798,7 +29797,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:15.688Z"
+      "checkedAt": "2026-10-20T16:14:23.068Z"
     },
     "qualityScore": 52,
     "qualityTier": "strong",
@@ -29895,7 +29894,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:42.288Z"
+      "checkedAt": "2026-10-20T16:13:41.294Z"
     },
     "reviewLinks": [
       {
@@ -30014,7 +30013,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:19.637Z"
+      "checkedAt": "2026-10-20T16:13:15.953Z"
     },
     "reviewLinks": [
       {
@@ -30143,7 +30142,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:52.477Z"
+      "checkedAt": "2026-10-20T16:13:53.174Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -30258,7 +30257,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:38.394Z"
+      "checkedAt": "2026-10-20T16:13:34.911Z"
     },
     "reviewLinks": [
       {
@@ -30373,7 +30372,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:46.279Z"
+      "checkedAt": "2026-10-20T16:13:44.782Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -30491,7 +30490,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:03.183Z"
+      "checkedAt": "2026-10-20T16:14:09.288Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 52,
@@ -30588,7 +30587,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:49.521Z"
+      "checkedAt": "2026-10-20T16:13:51.737Z"
     },
     "reviewLinks": [
       {
@@ -30692,7 +30691,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:46.280Z"
+      "checkedAt": "2026-10-20T16:13:44.610Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -30802,7 +30801,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:25.032Z"
+      "checkedAt": "2026-10-20T16:13:21.934Z"
     },
     "reviewLinks": [
       {
@@ -30925,7 +30924,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:50.739Z"
+      "checkedAt": "2026-10-20T16:13:51.029Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -31035,7 +31034,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:40.724Z"
+      "checkedAt": "2026-10-20T16:13:39.167Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -31140,7 +31139,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:47.276Z"
+      "checkedAt": "2026-10-20T16:13:45.845Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -31245,7 +31244,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:23.451Z"
+      "checkedAt": "2026-10-20T16:13:18.499Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -31360,7 +31359,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:46.700Z"
+      "checkedAt": "2026-10-20T16:13:44.830Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -31475,7 +31474,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:42.013Z"
+      "checkedAt": "2026-10-20T16:13:40.726Z"
     },
     "reviewLinks": [
       {
@@ -31598,7 +31597,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:22.974Z"
+      "checkedAt": "2026-10-20T16:13:18.160Z"
     },
     "qualityScore": 52,
     "qualityTier": "strong",
@@ -31699,7 +31698,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:52.861Z"
+      "checkedAt": "2026-10-20T16:13:50.925Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -31820,7 +31819,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:46.995Z"
+      "checkedAt": "2026-10-20T16:13:45.304Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -31930,7 +31929,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:41.764Z"
+      "checkedAt": "2026-10-20T16:13:40.920Z"
     },
     "reviewLinks": [
       {
@@ -32049,7 +32048,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:42.409Z"
+      "checkedAt": "2026-10-20T16:13:41.447Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -32179,7 +32178,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:13.587Z"
+      "checkedAt": "2026-10-20T16:14:20.415Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 52,
@@ -32486,7 +32485,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:54.402Z"
+      "checkedAt": "2026-10-20T16:13:55.775Z"
     },
     "reviewLinks": [
       {
@@ -32694,7 +32693,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:13.268Z"
+      "checkedAt": "2026-10-20T16:14:19.949Z"
     },
     "schedule": {
       "summary": "Open: September to May: Tuesday - Friday, 1.30pm – 3.30pm",
@@ -32808,7 +32807,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:52.945Z"
+      "checkedAt": "2026-10-20T16:13:54.000Z"
     },
     "schedule": {
       "summary": "OPEN 7 days from 10am to 5pm",
@@ -33248,7 +33247,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:17.376Z"
+      "checkedAt": "2026-10-20T16:14:24.588Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -33362,7 +33361,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:06.866Z"
+      "checkedAt": "2026-10-20T16:14:13.595Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 50,
@@ -33468,7 +33467,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:21.814Z"
+      "checkedAt": "2026-10-20T16:13:16.736Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -33567,7 +33566,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:45.349Z"
+      "checkedAt": "2026-10-20T16:13:45.051Z"
     },
     "reviewLinks": [
       {
@@ -33670,7 +33669,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:25.473Z"
+      "checkedAt": "2026-10-20T16:13:20.568Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -33773,7 +33772,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:09.151Z"
+      "checkedAt": "2026-10-20T16:13:06.706Z"
     },
     "reviewLinks": [
       {
@@ -33900,7 +33899,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:59.365Z"
+      "checkedAt": "2026-10-20T16:14:04.632Z"
     },
     "qualityScore": 50,
     "qualityTier": "strong",
@@ -33990,7 +33989,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:45.290Z"
+      "checkedAt": "2026-10-20T16:13:44.275Z"
     },
     "reviewLinks": [
       {
@@ -34229,7 +34228,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:59.417Z"
+      "checkedAt": "2026-10-20T16:14:04.732Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 50,
@@ -34322,7 +34321,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:01.729Z"
+      "checkedAt": "2026-10-20T16:14:07.299Z"
     },
     "schedule": {
       "summary": "Thursday – Saturday open 10am – 3pm",
@@ -34422,7 +34421,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:16.126Z"
+      "checkedAt": "2026-10-20T16:13:11.455Z"
     },
     "reviewLinks": [
       {
@@ -34599,7 +34598,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:21.775Z"
+      "checkedAt": "2026-10-20T16:13:17.200Z"
     },
     "reviewLinks": [
       {
@@ -34712,7 +34711,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:13.548Z"
+      "checkedAt": "2026-10-20T16:13:11.137Z"
     },
     "reviewLinks": [
       {
@@ -34815,7 +34814,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:25.715Z"
+      "checkedAt": "2026-10-20T16:13:21.274Z"
     },
     "reviewLinks": [
       {
@@ -34903,7 +34902,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://davesnoodles.com.au/about",
+        "url": "https://davesnoodles.com.au/locations",
         "checkedAt": "2026-10-21"
       }
     },
@@ -34923,7 +34922,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:25.634Z"
+      "checkedAt": "2026-10-20T16:13:20.973Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -34935,7 +34934,7 @@
     ],
     "schedule": {
       "summary": "03 6227 2888 Dave's Noodles, Channel Highway, Kingston TAS, Australia 11 am to 8:30 pm (7 days)",
-      "sourceUrl": "https://davesnoodles.com.au/about",
+      "sourceUrl": "https://davesnoodles.com.au/locations",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -35043,7 +35042,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:25.721Z"
+      "checkedAt": "2026-10-20T16:13:21.097Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -35147,7 +35146,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:25.893Z"
+      "checkedAt": "2026-10-20T16:13:21.334Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -35378,7 +35377,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:26.977Z"
+      "checkedAt": "2026-10-20T16:13:23.723Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -35495,7 +35494,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:22.855Z"
+      "checkedAt": "2026-10-20T16:13:18.102Z"
     },
     "schedule": {
       "summary": "POP UP OPEN Saturday 10th 9am to 2pm",
@@ -35602,7 +35601,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:17.114Z"
+      "checkedAt": "2026-10-20T16:14:24.114Z"
     },
     "qualityScore": 50,
     "qualityTier": "strong",
@@ -35697,7 +35696,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:29.341Z"
+      "checkedAt": "2026-10-20T16:13:25.870Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -35803,7 +35802,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:16.316Z"
+      "checkedAt": "2026-10-20T16:14:22.085Z"
     },
     "schedule": {
       "summary": "Open daily, 7am to 5pm, 7 days a week",
@@ -35904,7 +35903,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:42.797Z"
+      "checkedAt": "2026-10-20T16:13:41.640Z"
     },
     "reviewLinks": [
       {
@@ -35991,7 +35990,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:23.323Z"
+      "checkedAt": "2026-10-20T16:13:18.243Z"
     },
     "reviewLinks": [
       {
@@ -36096,7 +36095,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:16.613Z"
+      "checkedAt": "2026-10-20T16:14:23.389Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 50,
@@ -36200,7 +36199,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:05.626Z"
+      "checkedAt": "2026-10-20T16:13:02.174Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -36304,7 +36303,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:17.162Z"
+      "checkedAt": "2026-10-20T16:13:12.402Z"
     },
     "reviewLinks": [
       {
@@ -36396,7 +36395,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:16.943Z"
+      "checkedAt": "2026-10-20T16:13:12.244Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -36502,7 +36501,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:09.259Z"
+      "checkedAt": "2026-10-20T16:13:05.969Z"
     },
     "schedule": {
       "summary": "Open hours are Thursday/Friday/Saturday/Sunday/Monday - 11.00 am - 5.00 pm",
@@ -36604,7 +36603,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:21.239Z"
+      "checkedAt": "2026-10-20T16:13:16.749Z"
     },
     "reviewLinks": [
       {
@@ -36707,7 +36706,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:38.455Z"
+      "checkedAt": "2026-10-20T16:13:34.295Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -36816,7 +36815,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:38.392Z"
+      "checkedAt": "2026-10-20T16:13:34.902Z"
     },
     "reviewLinks": [
       {
@@ -36935,7 +36934,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:47.516Z"
+      "checkedAt": "2026-10-20T16:13:47.170Z"
     },
     "reviewLinks": [
       {
@@ -37097,7 +37096,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:52.562Z"
+      "checkedAt": "2026-10-20T16:13:53.376Z"
     },
     "reviewLinks": [
       {
@@ -37213,7 +37212,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:05.363Z"
+      "checkedAt": "2026-10-20T16:14:11.410Z"
     },
     "qualityScore": 50,
     "qualityTier": "strong",
@@ -37303,7 +37302,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:14.360Z"
+      "checkedAt": "2026-10-20T16:13:09.840Z"
     },
     "reviewLinks": [
       {
@@ -37401,7 +37400,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:41.952Z"
+      "checkedAt": "2026-10-20T16:13:35.846Z"
     },
     "reviewLinks": [
       {
@@ -37683,7 +37682,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:13.276Z"
+      "checkedAt": "2026-10-20T16:14:20.542Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -37794,7 +37793,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:54.101Z"
+      "checkedAt": "2026-10-20T16:13:53.226Z"
     },
     "reviewLinks": [
       {
@@ -37991,7 +37990,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:48.494Z"
+      "checkedAt": "2026-10-20T16:13:46.658Z"
     },
     "reviewLinks": [
       {
@@ -38110,7 +38109,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:44.804Z"
+      "checkedAt": "2026-10-20T16:13:43.923Z"
     },
     "reviewLinks": [
       {
@@ -38230,7 +38229,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:52.966Z"
+      "checkedAt": "2026-10-20T16:13:52.064Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -38475,7 +38474,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:40.430Z"
+      "checkedAt": "2026-10-20T16:13:39.378Z"
     },
     "reviewLinks": [
       {
@@ -38750,7 +38749,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:06.115Z"
+      "checkedAt": "2026-10-20T16:13:02.573Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "qualityScore": 50,
@@ -38841,7 +38840,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:12.500Z"
+      "checkedAt": "2026-10-20T16:13:06.097Z"
     },
     "reviewLinks": [
       {
@@ -38973,7 +38972,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:06.173Z"
+      "checkedAt": "2026-10-20T16:13:02.621Z"
     },
     "schedule": {
       "summary": "Our opening hours are 7 days per week 11am to 7pm",
@@ -39093,7 +39092,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:01.187Z"
+      "checkedAt": "2026-10-20T16:14:04.776Z"
     },
     "schedule": {
       "summary": "7 Days: 12pm – 8pm",
@@ -39212,7 +39211,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:16.585Z"
+      "checkedAt": "2026-10-20T16:14:24.397Z"
     },
     "schedule": {
       "summary": "Open Monday - Saturday | 7:00 am – 10:00 pm Sunday | 7:00 am – 3:00 pm",
@@ -39316,7 +39315,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:06.805Z"
+      "checkedAt": "2026-10-20T16:14:12.660Z"
     },
     "reviewLinks": [
       {
@@ -39414,7 +39413,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:49.421Z"
+      "checkedAt": "2026-10-20T16:13:50.576Z"
     },
     "reviewLinks": [
       {
@@ -39512,7 +39511,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:46.734Z"
+      "checkedAt": "2026-10-20T16:13:45.727Z"
     },
     "reviewLinks": [
       {
@@ -39619,7 +39618,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:23.996Z"
+      "checkedAt": "2026-10-20T16:13:19.459Z"
     },
     "lastOfficialDetailsChecked": "2026-10-16",
     "reviewLinks": [
@@ -39734,7 +39733,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:26.113Z"
+      "checkedAt": "2026-10-20T16:13:23.157Z"
     },
     "reviewLinks": [
       {
@@ -39845,7 +39844,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:57.191Z"
+      "checkedAt": "2026-10-20T16:14:02.663Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "schedule": {
@@ -39952,7 +39951,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:45.132Z"
+      "checkedAt": "2026-10-20T16:13:44.236Z"
     },
     "reviewLinks": [
       {
@@ -40087,7 +40086,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:12.941Z"
+      "checkedAt": "2026-10-20T16:13:08.035Z"
     },
     "qualityScore": 49,
     "qualityTier": "strong",
@@ -40333,7 +40332,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:19.703Z"
+      "checkedAt": "2026-10-20T16:13:15.362Z"
     },
     "reviewLinks": [
       {
@@ -40447,7 +40446,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:34.993Z"
+      "checkedAt": "2026-10-20T16:13:42.113Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -40554,7 +40553,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:03.693Z"
+      "checkedAt": "2026-10-20T16:14:10.105Z"
     },
     "schedule": {
       "summary": "Daily | Lunch 11:45am &#8211; 2:30pm",
@@ -40665,7 +40664,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:32.402Z"
+      "checkedAt": "2026-10-20T16:13:33.822Z"
     },
     "reviewLinks": [
       {
@@ -40780,7 +40779,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:39.437Z"
+      "checkedAt": "2026-10-20T16:13:36.216Z"
     },
     "reviewLinks": [
       {
@@ -41033,7 +41032,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:41.583Z"
+      "checkedAt": "2026-10-20T16:13:40.560Z"
     },
     "reviewLinks": [
       {
@@ -41213,7 +41212,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:10.959Z"
+      "checkedAt": "2026-10-20T16:14:18.359Z"
     },
     "schedule": {
       "summary": "Open daily 8:30 am–5 pm",
@@ -41642,7 +41641,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:16.025Z"
+      "checkedAt": "2026-10-20T16:14:23.239Z"
     },
     "schedule": {
       "summary": "Open to the Public first Saturday and Sunday each month (Running Days) 10am &#8211; 3pm and during Steamfest&#8221;.",
@@ -41743,7 +41742,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:11.796Z"
+      "checkedAt": "2026-10-20T16:13:05.970Z"
     },
     "schedule": {
       "summary": "Opening Hours Monday to Friday | 10.00am – 4.00pm",
@@ -42007,7 +42006,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:03.245Z"
+      "checkedAt": "2026-10-20T16:14:08.102Z"
     },
     "schedule": {
       "summary": "Open: 7.00am - 5.00pm every day.",
@@ -42102,7 +42101,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:26.031Z"
+      "checkedAt": "2026-10-20T16:13:21.363Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -42135,6 +42134,123 @@
       "status": "ok",
       "checkedAt": "2026-10-21",
       "url": "https://northhobart.cyclo.com.au/"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-20"
+  },
+  {
+    "slug": "dino-pizza-claremont",
+    "name": "Dino Pizza Claremont",
+    "town": "Glenorchy",
+    "region": "Hobart & South",
+    "latitude": -42.7900179,
+    "longitude": 147.2466809,
+    "categories": [
+      "Food & Drink",
+      "Takeaway"
+    ],
+    "summary": "Takeaway food venue in or near Glenorchy.",
+    "website": "https://dinopizza.com.au",
+    "sourceUrl": "https://www.openstreetmap.org/node/9769256555",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/9769256555",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Mo-Su 16:00-21:30",
+    "phone": "+61 3 6249 1999",
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": "yes",
+    "operator": null,
+    "detailSources": {
+      "openingHours": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/9769256555",
+        "checkedAt": "2026-10-09"
+      },
+      "phone": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/9769256555",
+        "checkedAt": "2026-10-09"
+      },
+      "wheelchair": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/9769256555",
+        "checkedAt": "2026-10-09"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://dinopizza.com.au/",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-18",
+    "image": {
+      "url": "/images/categories/food.svg",
+      "alt": "Dino Pizza Claremont category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T16:13:20.637Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Dino%20Pizza%20Claremont%20Glenorchy%20Tasmania"
+      }
+    ],
+    "schedule": {
+      "summary": "Shop 7/22 WYNDHAM ROAD, CLAREMONT OPEN 7 Days a week, 4PM till late",
+      "sourceUrl": "https://dinopizza.com.au/",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "16:00"
+    },
+    "qualityScore": 47,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "opening-hours",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://dinopizza.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-21"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://dinopizza.com.au/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -42195,7 +42311,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:44.716Z"
+      "checkedAt": "2026-10-20T16:13:43.508Z"
     },
     "reviewLinks": [
       {
@@ -42300,7 +42416,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:16.943Z"
+      "checkedAt": "2026-10-20T16:14:23.529Z"
     },
     "qualityScore": 47,
     "qualityTier": "strong",
@@ -42379,7 +42495,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:47.589Z"
+      "checkedAt": "2026-10-20T16:13:41.849Z"
     },
     "reviewLinks": [
       {
@@ -42471,7 +42587,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:43.999Z"
+      "checkedAt": "2026-10-20T16:13:42.348Z"
     },
     "reviewLinks": [
       {
@@ -42632,7 +42748,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:33.306Z"
+      "checkedAt": "2026-10-20T16:13:35.328Z"
     },
     "reviewLinks": [
       {
@@ -42724,7 +42840,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:23.657Z"
+      "checkedAt": "2026-10-20T16:13:18.691Z"
     },
     "reviewLinks": [
       {
@@ -42816,7 +42932,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:43.382Z"
+      "checkedAt": "2026-10-20T16:13:42.080Z"
     },
     "reviewLinks": [
       {
@@ -42917,7 +43033,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:40.994Z"
+      "checkedAt": "2026-10-20T16:13:39.937Z"
     },
     "reviewLinks": [
       {
@@ -43016,7 +43132,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:04.274Z"
+      "checkedAt": "2026-10-20T16:14:12.370Z"
     },
     "qualityScore": 47,
     "qualityTier": "strong",
@@ -43119,7 +43235,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:15.990Z"
+      "checkedAt": "2026-10-20T16:13:14.651Z"
     },
     "qualityScore": 47,
     "qualityTier": "strong",
@@ -43205,7 +43321,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:08.293Z"
+      "checkedAt": "2026-10-20T16:13:05.572Z"
     },
     "qualityScore": 47,
     "qualityTier": "strong",
@@ -43292,7 +43408,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:04.414Z"
+      "checkedAt": "2026-10-20T16:14:10.896Z"
     },
     "qualityScore": 47,
     "qualityTier": "strong",
@@ -43376,7 +43492,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:19.521Z"
+      "checkedAt": "2026-10-20T16:13:30.383Z"
     },
     "reviewLinks": [
       {
@@ -43480,7 +43596,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:04.052Z"
+      "checkedAt": "2026-10-20T16:13:00.487Z"
     },
     "qualityScore": 47,
     "qualityTier": "strong",
@@ -43560,7 +43676,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:48.690Z"
+      "checkedAt": "2026-10-20T16:13:48.242Z"
     },
     "reviewLinks": [
       {
@@ -43652,7 +43768,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:53.412Z"
+      "checkedAt": "2026-10-20T16:13:55.662Z"
     },
     "reviewLinks": [
       {
@@ -43738,7 +43854,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:41.773Z"
+      "checkedAt": "2026-10-20T16:13:40.887Z"
     },
     "reviewLinks": [
       {
@@ -43933,7 +44049,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:25.133Z"
+      "checkedAt": "2026-10-20T16:13:20.035Z"
     },
     "reviewLinks": [
       {
@@ -44033,7 +44149,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:10.036Z"
+      "checkedAt": "2026-10-20T16:13:06.159Z"
     },
     "qualityScore": 46,
     "qualityTier": "strong",
@@ -44130,7 +44246,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:56.864Z"
+      "checkedAt": "2026-10-20T16:14:04.044Z"
     },
     "qualityScore": 46,
     "qualityTier": "strong",
@@ -44225,7 +44341,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:21.495Z"
+      "checkedAt": "2026-10-20T16:13:16.311Z"
     },
     "reviewLinks": [
       {
@@ -44413,7 +44529,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:08.794Z"
+      "checkedAt": "2026-10-20T16:14:16.095Z"
     },
     "qualityScore": 46,
     "qualityTier": "strong",
@@ -44503,7 +44619,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:27.752Z"
+      "checkedAt": "2026-10-20T16:13:24.113Z"
     },
     "reviewLinks": [
       {
@@ -44595,7 +44711,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:01.162Z"
+      "checkedAt": "2026-10-20T16:14:09.611Z"
     },
     "reviewLinks": [
       {
@@ -44692,7 +44808,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:11.657Z"
+      "checkedAt": "2026-10-20T16:13:06.900Z"
     },
     "reviewLinks": [
       {
@@ -44719,6 +44835,109 @@
       "checkedAt": "2026-10-21",
       "url": "https://galleryartspaces.com/",
       "error": "fetch failed"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-09",
+    "lastWikidataLinkChecked": "2026-10-20"
+  },
+  {
+    "slug": "himalayan-tandoor-and-curry-house",
+    "name": "Himalayan Tandoor & Curry House",
+    "town": "Bellerive",
+    "region": "Hobart & South",
+    "latitude": -42.874352,
+    "longitude": 147.3680736,
+    "categories": [
+      "Food & Drink",
+      "Restaurant"
+    ],
+    "summary": "Restaurant in or near Bellerive.",
+    "website": "https://www.himalayantandoorandcurryhouse.com.au/",
+    "sourceUrl": "https://www.openstreetmap.org/way/1527798602",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/1527798602",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "+61 3 6289 6262",
+    "email": "himalayantandoorhouse@gmail.com",
+    "address": "60 Cambridge Road, Bellerive, TAS, 7018",
+    "bookingUrl": "https://www.himalayantandoorandcurryhouse.com.au/reservation.html",
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "phone": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/1527798602",
+        "checkedAt": "2026-10-09"
+      },
+      "address": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/1527798602",
+        "checkedAt": "2026-10-09"
+      },
+      "email": {
+        "type": "official-website",
+        "url": "https://www.himalayantandoorandcurryhouse.com.au/",
+        "checkedAt": "2026-10-09"
+      },
+      "bookingUrl": {
+        "type": "official-website",
+        "url": "https://www.himalayantandoorandcurryhouse.com.au/",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-09",
+    "lastDetailsChecked": "2026-10-21",
+    "lastOsmDetailsChecked": "2026-10-18",
+    "image": {
+      "url": "/images/categories/food.svg",
+      "alt": "Himalayan Tandoor & Curry House category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T16:13:13.013Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Himalayan%20Tandoor%20%26%20Curry%20House%20Bellerive%20Tasmania"
+      }
+    ],
+    "qualityScore": 46,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "address",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-21",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.himalayantandoorandcurryhouse.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-21"
+    },
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-21",
+      "url": "https://www.himalayantandoorandcurryhouse.com.au/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -44789,7 +45008,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:14.033Z"
+      "checkedAt": "2026-10-20T16:13:09.290Z"
     },
     "reviewLinks": [
       {
@@ -44897,7 +45116,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:07.368Z"
+      "checkedAt": "2026-10-20T16:13:04.290Z"
     },
     "reviewLinks": [
       {
@@ -44994,7 +45213,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:16.342Z"
+      "checkedAt": "2026-10-20T16:13:12.051Z"
     },
     "reviewLinks": [
       {
@@ -45092,7 +45311,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:37.829Z"
+      "checkedAt": "2026-10-20T16:13:33.602Z"
     },
     "reviewLinks": [
       {
@@ -45196,7 +45415,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:22.397Z"
+      "checkedAt": "2026-10-20T16:14:28.228Z"
     },
     "lastOfficialDetailsChecked": "2026-10-17",
     "qualityScore": 46,
@@ -45282,7 +45501,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:49.330Z"
+      "checkedAt": "2026-10-20T16:13:50.824Z"
     },
     "reviewLinks": [
       {
@@ -45379,7 +45598,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:38.867Z"
+      "checkedAt": "2026-10-20T16:13:35.437Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -45576,7 +45795,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:10.562Z"
+      "checkedAt": "2026-10-20T16:14:17.641Z"
     },
     "qualityScore": 46,
     "qualityTier": "strong",
@@ -45666,7 +45885,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:42.524Z"
+      "checkedAt": "2026-10-20T16:13:41.295Z"
     },
     "reviewLinks": [
       {
@@ -45764,7 +45983,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:47.699Z"
+      "checkedAt": "2026-10-20T16:13:45.958Z"
     },
     "reviewLinks": [
       {
@@ -45867,7 +46086,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:12.879Z"
+      "checkedAt": "2026-10-20T16:13:07.954Z"
     },
     "reviewLinks": [
       {
@@ -45983,7 +46202,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:03.438Z"
+      "checkedAt": "2026-10-20T16:14:09.812Z"
     },
     "qualityScore": 45,
     "qualityTier": "strong",
@@ -46064,7 +46283,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:31.664Z"
+      "checkedAt": "2026-10-20T16:13:27.665Z"
     },
     "qualityScore": 45,
     "qualityTier": "strong",
@@ -46143,7 +46362,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:25.335Z"
+      "checkedAt": "2026-10-20T16:13:20.393Z"
     },
     "qualityScore": 44,
     "qualityTier": "strong",
@@ -46227,7 +46446,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:24.470Z"
+      "checkedAt": "2026-10-20T16:13:19.636Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -46325,7 +46544,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:25.067Z"
+      "checkedAt": "2026-10-20T16:13:20.196Z"
     },
     "lastOfficialDetailsChecked": "2026-10-21",
     "reviewLinks": [
@@ -46624,7 +46843,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:15.948Z"
+      "checkedAt": "2026-10-20T16:13:11.372Z"
     },
     "reviewLinks": [
       {
@@ -46978,7 +47197,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:26.210Z"
+      "checkedAt": "2026-10-20T16:13:21.689Z"
     },
     "reviewLinks": [
       {
@@ -47279,7 +47498,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:43.189Z"
+      "checkedAt": "2026-10-20T16:13:42.230Z"
     },
     "reviewLinks": [
       {
@@ -47375,7 +47594,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:30.269Z"
+      "checkedAt": "2026-10-20T16:13:26.731Z"
     },
     "reviewLinks": [
       {
@@ -47472,7 +47691,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:28.561Z"
+      "checkedAt": "2026-10-20T16:13:25.139Z"
     },
     "reviewLinks": [
       {
@@ -47652,7 +47871,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:15.202Z"
+      "checkedAt": "2026-10-20T16:14:22.161Z"
     },
     "qualityScore": 44,
     "qualityTier": "strong",
@@ -48219,7 +48438,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:21.752Z"
+      "checkedAt": "2026-10-20T16:13:17.299Z"
     },
     "reviewLinks": [
       {
@@ -48310,7 +48529,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:53.348Z"
+      "checkedAt": "2026-10-20T16:13:54.409Z"
     },
     "reviewLinks": [
       {
@@ -48733,7 +48952,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:15.513Z"
+      "checkedAt": "2026-10-20T16:13:10.795Z"
     },
     "reviewLinks": [
       {
@@ -48912,7 +49131,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:23.865Z"
+      "checkedAt": "2026-10-20T16:13:18.963Z"
     },
     "reviewLinks": [
       {
@@ -48993,7 +49212,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:42.249Z"
+      "checkedAt": "2026-10-20T16:13:41.460Z"
     },
     "reviewLinks": [
       {
@@ -49091,7 +49310,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:10.797Z"
+      "checkedAt": "2026-10-20T16:14:17.727Z"
     },
     "qualityScore": 44,
     "qualityTier": "strong",
@@ -49281,7 +49500,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:16.045Z"
+      "checkedAt": "2026-10-20T16:14:23.014Z"
     },
     "qualityScore": 44,
     "qualityTier": "strong",
@@ -49360,7 +49579,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:25.676Z"
+      "checkedAt": "2026-10-20T16:13:20.857Z"
     },
     "reviewLinks": [
       {
@@ -49652,122 +49871,6 @@
     "discoveryStaleSince": "2026-10-20"
   },
   {
-    "slug": "dino-pizza-claremont",
-    "name": "Dino Pizza Claremont",
-    "town": "Glenorchy",
-    "region": "Hobart & South",
-    "latitude": -42.7900179,
-    "longitude": 147.2466809,
-    "categories": [
-      "Food & Drink",
-      "Takeaway"
-    ],
-    "summary": "Takeaway food venue in or near Glenorchy.",
-    "website": "https://dinopizza.com.au",
-    "sourceUrl": "https://www.openstreetmap.org/node/9769256555",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/9769256555",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": "Mo-Su 16:00-21:30",
-    "phone": "+61 3 6249 1999",
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": "yes",
-    "operator": null,
-    "detailSources": {
-      "openingHours": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/9769256555",
-        "checkedAt": "2026-10-09"
-      },
-      "phone": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/9769256555",
-        "checkedAt": "2026-10-09"
-      },
-      "wheelchair": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/9769256555",
-        "checkedAt": "2026-10-09"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://dinopizza.com.au/",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-18",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Dino Pizza Claremont category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "websiteCheck": {
-      "status": "inconclusive",
-      "code": null,
-      "checkedAt": "2026-10-20T15:52:44.956Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Dino%20Pizza%20Claremont%20Glenorchy%20Tasmania"
-      }
-    ],
-    "schedule": {
-      "summary": "Shop 7/22 WYNDHAM ROAD, CLAREMONT OPEN 7 Days a week, 4PM till late",
-      "sourceUrl": "https://dinopizza.com.au/",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "16:00"
-    },
-    "qualityScore": 43,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "opening-hours",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://dinopizza.com.au/",
-      "source": "openstreetmap-website",
-      "checkedAt": "2026-10-21"
-    },
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://dinopizza.com.au/"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-20"
-  },
-  {
     "slug": "ellendale-general-store",
     "name": "Ellendale General Store",
     "town": "Ellendale",
@@ -49822,7 +49925,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:05.217Z"
+      "checkedAt": "2026-10-20T16:13:01.184Z"
     },
     "reviewLinks": [
       {
@@ -49908,7 +50011,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:18.224Z"
+      "checkedAt": "2026-10-20T16:13:13.956Z"
     },
     "reviewLinks": [
       {
@@ -50137,7 +50240,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:28.113Z"
+      "checkedAt": "2026-10-20T16:13:25.675Z"
     },
     "reviewLinks": [
       {
@@ -50450,7 +50553,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:56.656Z"
+      "checkedAt": "2026-10-20T16:14:02.946Z"
     },
     "qualityScore": 43,
     "qualityTier": "strong",
@@ -51077,7 +51180,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:40.822Z"
+      "checkedAt": "2026-10-20T16:13:39.343Z"
     },
     "reviewLinks": [
       {
@@ -51694,7 +51797,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:04.288Z"
+      "checkedAt": "2026-10-20T16:13:00.399Z"
     },
     "qualityScore": 42,
     "qualityTier": "strong",
@@ -51978,7 +52081,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:19.115Z"
+      "checkedAt": "2026-10-20T16:13:15.364Z"
     },
     "qualityScore": 42,
     "qualityTier": "strong",
@@ -51999,108 +52102,6 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-20"
-  },
-  {
-    "slug": "himalayan-tandoor-and-curry-house",
-    "name": "Himalayan Tandoor & Curry House",
-    "town": "Bellerive",
-    "region": "Hobart & South",
-    "latitude": -42.874352,
-    "longitude": 147.3680736,
-    "categories": [
-      "Food & Drink",
-      "Restaurant"
-    ],
-    "summary": "Restaurant in or near Bellerive.",
-    "website": "https://www.himalayantandoorandcurryhouse.com.au/",
-    "sourceUrl": "https://www.openstreetmap.org/way/1527798602",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/1527798602",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "+61 3 6289 6262",
-    "email": "himalayantandoorhouse@gmail.com",
-    "address": "60 Cambridge Road, Bellerive, TAS, 7018",
-    "bookingUrl": "https://www.himalayantandoorandcurryhouse.com.au/reservation.html",
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "phone": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/1527798602",
-        "checkedAt": "2026-10-09"
-      },
-      "address": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/1527798602",
-        "checkedAt": "2026-10-09"
-      },
-      "email": {
-        "type": "official-website",
-        "url": "https://www.himalayantandoorandcurryhouse.com.au/",
-        "checkedAt": "2026-10-09"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://www.himalayantandoorandcurryhouse.com.au/",
-        "checkedAt": "2026-10-09"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-09",
-    "lastDetailsChecked": "2026-10-21",
-    "lastOsmDetailsChecked": "2026-10-18",
-    "image": {
-      "url": "/images/categories/food.svg",
-      "alt": "Himalayan Tandoor & Curry House category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "websiteCheck": {
-      "status": "inconclusive",
-      "code": null,
-      "checkedAt": "2026-10-20T15:52:36.469Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Himalayan%20Tandoor%20%26%20Curry%20House%20Bellerive%20Tasmania"
-      }
-    ],
-    "qualityScore": 42,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "address",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-21",
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://www.himalayantandoorandcurryhouse.com.au/",
-      "source": "openstreetmap-website",
-      "checkedAt": "2026-10-21"
-    },
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-21",
-      "url": "https://www.himalayantandoorandcurryhouse.com.au/"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-09",
     "lastWikidataLinkChecked": "2026-10-20"
   },
   {
@@ -52709,7 +52710,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:09.847Z"
+      "checkedAt": "2026-10-20T16:14:16.864Z"
     },
     "schedule": {
       "summary": "Open from 8:00 AM daily",
@@ -53300,7 +53301,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:10.356Z"
+      "checkedAt": "2026-10-20T16:14:17.118Z"
     },
     "schedule": {
       "summary": "Open Tuesday to Saturday from 3:00 PM.",
@@ -53637,7 +53638,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:08.588Z"
+      "checkedAt": "2026-10-20T16:14:15.664Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -53710,7 +53711,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:13.041Z"
+      "checkedAt": "2026-10-20T16:13:07.734Z"
     },
     "reviewLinks": [
       {
@@ -54745,7 +54746,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:14.504Z"
+      "checkedAt": "2026-10-20T16:14:21.735Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -55220,7 +55221,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:13.418Z"
+      "checkedAt": "2026-10-20T16:13:08.649Z"
     },
     "reviewLinks": [
       {
@@ -55514,7 +55515,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:08.261Z"
+      "checkedAt": "2026-10-20T16:14:15.184Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -59110,7 +59111,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:53:16.914Z"
+      "checkedAt": "2026-10-20T16:14:24.040Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -61528,7 +61529,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:33.079Z"
+      "checkedAt": "2026-10-20T16:13:28.427Z"
     },
     "reviewLinks": [
       {
@@ -61712,7 +61713,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:19.674Z"
+      "checkedAt": "2026-10-20T16:13:15.708Z"
     },
     "reviewLinks": [
       {
@@ -64531,7 +64532,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:39.079Z"
+      "checkedAt": "2026-10-20T16:13:35.779Z"
     },
     "reviewLinks": [
       {
@@ -64905,7 +64906,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:49.267Z"
+      "checkedAt": "2026-10-20T16:13:49.212Z"
     },
     "reviewLinks": [
       {
@@ -65578,7 +65579,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:40.186Z"
+      "checkedAt": "2026-10-20T16:13:36.836Z"
     },
     "reviewLinks": [
       {
@@ -65784,7 +65785,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:05.989Z"
+      "checkedAt": "2026-10-20T16:14:12.567Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -66445,7 +66446,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:39.803Z"
+      "checkedAt": "2026-10-20T16:13:38.203Z"
     },
     "reviewLinks": [
       {
@@ -67456,7 +67457,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:52.326Z"
+      "checkedAt": "2026-10-20T16:13:52.896Z"
     },
     "reviewLinks": [
       {
@@ -68328,7 +68329,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:07.477Z"
+      "checkedAt": "2026-10-20T16:13:04.609Z"
     },
     "reviewLinks": [
       {
@@ -68458,7 +68459,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:05.072Z"
+      "checkedAt": "2026-10-20T16:13:00.901Z"
     },
     "reviewLinks": [
       {
@@ -68696,7 +68697,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:07.817Z"
+      "checkedAt": "2026-10-20T16:14:14.999Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -69021,7 +69022,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:09.193Z"
+      "checkedAt": "2026-10-20T16:14:16.156Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -69419,7 +69420,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:42.847Z"
+      "checkedAt": "2026-10-20T16:13:41.742Z"
     },
     "reviewLinks": [
       {
@@ -69708,7 +69709,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:11.071Z"
+      "checkedAt": "2026-10-20T16:14:17.791Z"
     },
     "qualityScore": 41,
     "qualityTier": "strong",
@@ -69879,7 +69880,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:26.200Z"
+      "checkedAt": "2026-10-20T16:13:21.644Z"
     },
     "reviewLinks": [
       {
@@ -69964,7 +69965,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:18.182Z"
+      "checkedAt": "2026-10-20T16:13:14.279Z"
     },
     "reviewLinks": [
       {
@@ -70050,7 +70051,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:39.134Z"
+      "checkedAt": "2026-10-20T16:13:37.706Z"
     },
     "reviewLinks": [
       {
@@ -70138,7 +70139,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:01.024Z"
+      "checkedAt": "2026-10-20T16:14:06.850Z"
     },
     "qualityScore": 40,
     "qualityTier": "strong",
@@ -70229,7 +70230,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:53:10.298Z"
+      "checkedAt": "2026-10-20T16:14:16.700Z"
     },
     "qualityScore": 40,
     "qualityTier": "strong",
@@ -70309,7 +70310,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:28.436Z"
+      "checkedAt": "2026-10-20T16:14:35.154Z"
     },
     "qualityScore": 40,
     "qualityTier": "strong",
@@ -70462,7 +70463,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:46.465Z"
+      "checkedAt": "2026-10-20T16:13:48.941Z"
     },
     "reviewLinks": [
       {
@@ -70558,7 +70559,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:10.443Z"
+      "checkedAt": "2026-10-20T16:14:17.425Z"
     },
     "qualityScore": 40,
     "qualityTier": "strong",
@@ -70717,7 +70718,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:48.397Z"
+      "checkedAt": "2026-10-20T16:13:48.236Z"
     },
     "reviewLinks": [
       {
@@ -70808,7 +70809,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:16.092Z"
+      "checkedAt": "2026-10-20T16:13:10.816Z"
     },
     "reviewLinks": [
       {
@@ -70894,7 +70895,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:42.017Z"
+      "checkedAt": "2026-10-20T16:13:41.070Z"
     },
     "reviewLinks": [
       {
@@ -70987,7 +70988,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:11.003Z"
+      "checkedAt": "2026-10-20T16:14:18.407Z"
     },
     "qualityScore": 40,
     "qualityTier": "strong",
@@ -72380,7 +72381,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:05.541Z"
+      "checkedAt": "2026-10-20T16:13:01.744Z"
     },
     "qualityScore": 39,
     "qualityTier": "standard",
@@ -73877,7 +73878,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:07.187Z"
+      "checkedAt": "2026-10-20T16:14:13.964Z"
     },
     "qualityScore": 39,
     "qualityTier": "standard",
@@ -75898,7 +75899,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:05.380Z"
+      "checkedAt": "2026-10-20T16:13:01.512Z"
     },
     "qualityScore": 38,
     "qualityTier": "standard",
@@ -76044,7 +76045,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:57.524Z"
+      "checkedAt": "2026-10-20T16:14:02.523Z"
     },
     "qualityScore": 38,
     "qualityTier": "standard",
@@ -76116,7 +76117,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:00.782Z"
+      "checkedAt": "2026-10-20T16:14:06.298Z"
     },
     "qualityScore": 38,
     "qualityTier": "standard",
@@ -76181,7 +76182,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:08.267Z"
+      "checkedAt": "2026-10-20T16:13:04.448Z"
     },
     "reviewLinks": [
       {
@@ -76248,7 +76249,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:27.701Z"
+      "checkedAt": "2026-10-20T16:13:24.608Z"
     },
     "reviewLinks": [
       {
@@ -76326,7 +76327,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:30.862Z"
+      "checkedAt": "2026-10-20T16:13:26.923Z"
     },
     "reviewLinks": [
       {
@@ -76404,7 +76405,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:31.123Z"
+      "checkedAt": "2026-10-20T16:13:28.243Z"
     },
     "reviewLinks": [
       {
@@ -76489,7 +76490,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:03.519Z"
+      "checkedAt": "2026-10-20T16:14:09.577Z"
     },
     "qualityScore": 38,
     "qualityTier": "standard",
@@ -76561,7 +76562,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:53:00.141Z"
+      "checkedAt": "2026-10-20T16:14:05.444Z"
     },
     "qualityScore": 38,
     "qualityTier": "standard",
@@ -76632,7 +76633,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:24.117Z"
+      "checkedAt": "2026-10-20T16:13:19.305Z"
     },
     "reviewLinks": [
       {
@@ -76723,7 +76724,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:13.465Z"
+      "checkedAt": "2026-10-20T16:14:20.392Z"
     },
     "qualityScore": 37,
     "qualityTier": "standard",
@@ -76802,7 +76803,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:11.990Z"
+      "checkedAt": "2026-10-20T16:14:18.612Z"
     },
     "qualityScore": 37,
     "qualityTier": "standard",
@@ -76874,7 +76875,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:30.780Z"
+      "checkedAt": "2026-10-20T16:13:26.867Z"
     },
     "reviewLinks": [
       {
@@ -76953,7 +76954,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:30.056Z"
+      "checkedAt": "2026-10-20T16:13:26.302Z"
     },
     "reviewLinks": [
       {
@@ -77082,7 +77083,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:39.594Z"
+      "checkedAt": "2026-10-20T16:13:38.927Z"
     },
     "reviewLinks": [
       {
@@ -77166,7 +77167,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:16.820Z"
+      "checkedAt": "2026-10-20T16:13:12.108Z"
     },
     "reviewLinks": [
       {
@@ -77290,7 +77291,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:52.727Z"
+      "checkedAt": "2026-10-20T16:13:54.138Z"
     },
     "reviewLinks": [
       {
@@ -77376,7 +77377,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:53:03.945Z"
+      "checkedAt": "2026-10-20T16:14:10.488Z"
     },
     "qualityScore": 37,
     "qualityTier": "standard",
@@ -77493,7 +77494,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:41.997Z"
+      "checkedAt": "2026-10-20T16:13:40.999Z"
     },
     "reviewLinks": [
       {
@@ -77579,7 +77580,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:12.195Z"
+      "checkedAt": "2026-10-20T16:14:19.092Z"
     },
     "qualityScore": 37,
     "qualityTier": "standard",
@@ -77651,7 +77652,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:41.988Z"
+      "checkedAt": "2026-10-20T16:13:41.046Z"
     },
     "reviewLinks": [
       {
@@ -81033,7 +81034,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:59.156Z"
+      "checkedAt": "2026-10-20T16:14:04.322Z"
     },
     "qualityScore": 35,
     "qualityTier": "standard",
@@ -81172,7 +81173,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:00.925Z"
+      "checkedAt": "2026-10-20T16:14:07.115Z"
     },
     "qualityScore": 35,
     "qualityTier": "standard",
@@ -81244,7 +81245,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:56.507Z"
+      "checkedAt": "2026-10-20T16:13:58.649Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -81316,7 +81317,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:52:59.089Z"
+      "checkedAt": "2026-10-20T16:14:04.718Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -81676,7 +81677,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:02.676Z"
+      "checkedAt": "2026-10-20T16:14:09.588Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -81748,7 +81749,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:06.552Z"
+      "checkedAt": "2026-10-20T16:14:13.138Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -81892,7 +81893,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:05.447Z"
+      "checkedAt": "2026-10-20T16:13:01.414Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -81965,7 +81966,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:06.255Z"
+      "checkedAt": "2026-10-20T16:14:12.857Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -82038,7 +82039,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": 403,
-      "checkedAt": "2026-10-20T15:53:04.482Z"
+      "checkedAt": "2026-10-20T16:14:10.949Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -82111,7 +82112,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:53:27.520Z"
+      "checkedAt": "2026-10-20T16:14:34.488Z"
     },
     "qualityScore": 34,
     "qualityTier": "standard",
@@ -94710,7 +94711,7 @@
     "websiteCheck": {
       "status": "ok",
       "code": 200,
-      "checkedAt": "2026-10-20T15:52:50.824Z"
+      "checkedAt": "2026-10-20T16:13:51.682Z"
     },
     "reviewLinks": [
       {
@@ -151357,7 +151358,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:27.063Z"
+      "checkedAt": "2026-10-20T16:13:23.582Z"
     },
     "reviewLinks": [
       {
@@ -153722,7 +153723,7 @@
     "websiteCheck": {
       "status": "inconclusive",
       "code": null,
-      "checkedAt": "2026-10-20T15:52:40.521Z"
+      "checkedAt": "2026-10-20T16:13:36.109Z"
     },
     "reviewLinks": [
       {
