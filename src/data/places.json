@@ -477,107 +477,6 @@
     ]
   },
   {
-    "slug": "cape-raoul-lookout",
-    "name": "Cape Raoul Lookout",
-    "town": "Port Arthur",
-    "region": "Hobart & South",
-    "latitude": -43.2083593,
-    "longitude": 147.7753293,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Cape Raoul is an official Parks Tasmania walk. 5 hours return , 14km, Grade 4 · Grade 4.",
-    "website": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/1080419326",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/1080419326",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6250 3980",
-    "email": "TasmanNP@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Cape_Raoul_from_Lookout.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
-      "alt": "Cape Raoul photographed from the lookout on the Tasman Peninsula",
-      "attribution": "JJ Harrison",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "isFallback": false,
-      "useMode": "external-embed",
-      "sourceMethod": "ai-verified-remote",
-      "usagePermission": "open-licence",
-      "matchEvidence": {
-        "verified": true,
-        "subject": "Cape Raoul photographed from the lookout on the Tasman Peninsula; exact named Tasmanian destination shown in the original Commons image description",
-        "checkedAt": "2026-10-13",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
-        "rightsPage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
-        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to JJ Harrison, identifies the Tasmanian subject, and specifies CC BY-SA 3.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
-        "listingSlug": "cape-raoul-lookout",
-        "listingName": "Cape Raoul Lookout",
-        "listingTown": "Port Arthur"
-      }
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Cape%20Raoul%20Lookout%20Port%20Arthur%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul",
-      "type": "government",
-      "checkedAt": "2026-10-20"
-    },
-    "walk": {
-      "duration": "5 hours return , 14km, Grade 4",
-      "grade": 4
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T11:21:10.005Z"
-    },
-    "qualityScore": 100,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "real-image",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
     "slug": "friendly-beaches",
     "name": "Friendly Beaches",
     "town": "Tasmania",
@@ -754,9 +653,10 @@
     ],
     "lastWikidataChecked": "2026-10-06",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
+      "error": "The operation was aborted due to timeout"
     }
   },
   {
@@ -920,93 +820,6 @@
       "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/wineglass-bay-and-hazards-beach"
-    }
-  },
-  {
-    "slug": "hogarth-falls",
-    "name": "Hogarth Falls",
-    "town": "Strahan",
-    "region": "West Coast",
-    "latitude": -42.15328,
-    "longitude": 145.348696,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Hogarth Falls is an official Parks Tasmania walk. Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/10609565388",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/10609565388",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6409 1020",
-    "email": "PWS.WestCoast@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Hogarth_Falls%2C_Tasmania.jpg/1280px-Hogarth_Falls%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Hogarth Falls, Tasmania",
-      "attribution": "BriYYZ from Toronto, Canada",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hogarth_Falls,_Tasmania.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Hogarth%20Falls%20Strahan%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls",
-      "type": "government",
-      "checkedAt": "2026-10-20"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T11:21:31.455Z"
-    },
-    "qualityScore": 100,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "real-image",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls"
     }
   },
   {
@@ -1892,7 +1705,6 @@
       "official-walk-data",
       "real-image",
       "contact-details",
-      "booking-link",
       "review-link",
       "details-checked"
     ],
@@ -2048,6 +1860,192 @@
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
+  },
+  {
+    "slug": "cape-raoul-lookout",
+    "name": "Cape Raoul Lookout",
+    "town": "Port Arthur",
+    "region": "Hobart & South",
+    "latitude": -43.2083593,
+    "longitude": 147.7753293,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Cape Raoul is an official Parks Tasmania walk. 5 hours return , 14km, Grade 4 · Grade 4.",
+    "website": "https://parks.tas.gov.au/Pages/Cape-Raoul.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/1080419326",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/1080419326",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6250 3980",
+    "email": "TasmanNP@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Cape_Raoul_from_Lookout.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
+      "alt": "Cape Raoul photographed from the lookout on the Tasman Peninsula",
+      "attribution": "JJ Harrison",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "isFallback": false,
+      "useMode": "external-embed",
+      "sourceMethod": "ai-verified-remote",
+      "usagePermission": "open-licence",
+      "matchEvidence": {
+        "verified": true,
+        "subject": "Cape Raoul photographed from the lookout on the Tasman Peninsula; exact named Tasmanian destination shown in the original Commons image description",
+        "checkedAt": "2026-10-13",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
+        "rightsPage": "https://commons.wikimedia.org/wiki/File:Cape_Raoul_from_Lookout.jpg",
+        "details": "Original Wikimedia Commons image metadata attributes the exact photograph to JJ Harrison, identifies the Tasmanian subject, and specifies CC BY-SA 3.0 as a reusable commercial-use licence. Original source page and licensing details retained.",
+        "listingSlug": "cape-raoul-lookout",
+        "listingName": "Cape Raoul Lookout",
+        "listingTown": "Port Arthur"
+      }
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Cape%20Raoul%20Lookout%20Port%20Arthur%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": "5 hours return , 14km, Grade 4",
+      "grade": 4
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T11:21:10.005Z"
+    },
+    "qualityScore": 98,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "real-image",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park/cape-raoul"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
+    "slug": "hogarth-falls",
+    "name": "Hogarth Falls",
+    "town": "Strahan",
+    "region": "West Coast",
+    "latitude": -42.15328,
+    "longitude": 145.348696,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Hogarth Falls is an official Parks Tasmania walk. Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/Hogarth-Falls.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/10609565388",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/10609565388",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6409 1020",
+    "email": "PWS.WestCoast@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Hogarth_Falls%2C_Tasmania.jpg/1280px-Hogarth_Falls%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Hogarth Falls, Tasmania",
+      "attribution": "BriYYZ from Toronto, Canada",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hogarth_Falls,_Tasmania.jpg",
+      "isFallback": false,
+      "sourceMethod": "commons-search",
+      "confidence": "high"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Hogarth%20Falls%20Strahan%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T11:21:31.455Z"
+    },
+    "qualityScore": 98,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "real-image",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/hogarth-falls"
+    }
   },
   {
     "slug": "queen-victoria-museum-and-art-gallery",
@@ -4743,90 +4741,6 @@
     "discoveryStaleSince": "2026-10-20"
   },
   {
-    "slug": "weldborough-pass-rainforest-walk",
-    "name": "Weldborough Pass Rainforest Walk",
-    "town": "Derby",
-    "region": "Launceston & North",
-    "latitude": -41.2161683,
-    "longitude": 147.9383007,
-    "categories": [
-      "Things to Do",
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "A short rainforest walking loop at Weldborough Pass State Reserve beside the Tasman Highway between Derby and St Helens. Follow local track signage and check current conditions before visiting.",
-    "website": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/way/142432393",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/142432393",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": "Parks and Wildlife Service Tasmania",
-    "detailSources": {
-      "operator": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/142432393",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Weldborough Pass Rainforest Walk category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Weldborough%20Pass%20Rainforest%20Walk%20Derby%20Tasmania"
-      }
-    ],
-    "walk": {
-      "duration": "10 minute circuit , 431m, Grade 1",
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T11:21:10.974Z"
-    },
-    "qualityScore": 89,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
     "slug": "allport-library-and-museum-of-fine-arts",
     "name": "Allport Library and Museum of Fine Arts",
     "town": "Tasmania",
@@ -6089,114 +6003,6 @@
       "checkedAt": "2026-10-20",
       "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)"
     }
-  },
-  {
-    "slug": "cape-tourville-lookout",
-    "name": "Cape Tourville Lookout",
-    "town": "Coles Bay",
-    "region": "East Coast",
-    "latitude": -42.1229113,
-    "longitude": 148.3426731,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Cape Tourville is an official Parks Tasmania walk. 20 minute circuit , 600m circuit, Grade 1 · Grade 1.",
-    "website": "https://parks.tas.gov.au/Pages/Cape-Tourville.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/360579112",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/360579112",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6256 7000",
-    "email": "Freycinet@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "schedule": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Cape Tourville Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Cape%20Tourville%20Lookout%20Coles%20Bay%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
-      "type": "government",
-      "checkedAt": "2026-10-20"
-    },
-    "walk": {
-      "duration": "20 minute circuit , 600m circuit, Grade 1",
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T11:20:23.408Z"
-    },
-    "schedule": {
-      "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
-      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "09:00",
-      "endTime": "16:00"
-    },
-    "qualityScore": 82,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
   },
   {
     "slug": "huon-pine-walk-lookout",
@@ -7556,6 +7362,113 @@
       "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://www.qvmag.tas.gov.au/Home"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
+    "slug": "cape-tourville-lookout",
+    "name": "Cape Tourville Lookout",
+    "town": "Coles Bay",
+    "region": "East Coast",
+    "latitude": -42.1229113,
+    "longitude": 148.3426731,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Cape Tourville is an official Parks Tasmania walk. 20 minute circuit , 600m circuit, Grade 1 · Grade 1.",
+    "website": "https://parks.tas.gov.au/Pages/Cape-Tourville.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/360579112",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/360579112",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6256 7000",
+    "email": "Freycinet@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "schedule": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
+        "checkedAt": "2026-10-20"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Cape Tourville Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Cape%20Tourville%20Lookout%20Coles%20Bay%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": "20 minute circuit , 600m circuit, Grade 1",
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T11:20:23.408Z"
+    },
+    "schedule": {
+      "summary": "The centre is open daily from 9am to 4pm with friendly staff on hand to assist with enquiries.​",
+      "sourceUrl": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "09:00",
+      "endTime": "16:00"
+    },
+    "qualityScore": 80,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/cape-tourville"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
@@ -20601,6 +20514,89 @@
     "lastWikidataChecked": "2026-10-06"
   },
   {
+    "slug": "weldborough-pass-rainforest-walk",
+    "name": "Weldborough Pass Rainforest Walk",
+    "town": "Derby",
+    "region": "Launceston & North",
+    "latitude": -41.2161683,
+    "longitude": 147.9383007,
+    "categories": [
+      "Things to Do",
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "A short rainforest walking loop at Weldborough Pass State Reserve beside the Tasman Highway between Derby and St Helens. Follow local track signage and check current conditions before visiting.",
+    "website": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/way/142432393",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/142432393",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": "Parks and Wildlife Service Tasmania",
+    "detailSources": {
+      "operator": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/142432393",
+        "checkedAt": "2026-10-20"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Weldborough Pass Rainforest Walk category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Weldborough%20Pass%20Rainforest%20Walk%20Derby%20Tasmania"
+      }
+    ],
+    "walk": {
+      "duration": "10 minute circuit , 431m, Grade 1",
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T11:21:10.974Z"
+    },
+    "qualityScore": 59,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
     "slug": "west-beach",
     "name": "West Beach",
     "town": "Tasmania",
@@ -32978,10 +32974,9 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://www.puddleduck.com.au/",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://www.puddleduck.com.au/"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20",
@@ -34983,7 +34978,7 @@
       },
       "schedule": {
         "type": "official-website",
-        "url": "https://davesnoodles.com.au/about",
+        "url": "https://davesnoodles.com.au/locations",
         "checkedAt": "2026-10-20"
       }
     },
@@ -35015,7 +35010,7 @@
     ],
     "schedule": {
       "summary": "03 6227 2888 Dave's Noodles, Channel Highway, Kingston TAS, Australia 11 am to 8:30 pm (7 days)",
-      "sourceUrl": "https://davesnoodles.com.au/about",
+      "sourceUrl": "https://davesnoodles.com.au/locations",
       "frequency": "daily",
       "daysOfWeek": [
         "Monday",
@@ -43597,9 +43592,10 @@
       "checkedAt": "2026-10-20"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-20",
-      "url": "https://www.derwentestate.com.au/the-shed-restaurant/"
+      "url": "https://www.derwentestate.com.au/the-shed-restaurant/",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -86438,6 +86434,352 @@
     "discoveryStaleSince": "2026-10-20"
   },
   {
+    "slug": "kangaroo-bluff-battery",
+    "name": "Kangaroo Bluff Battery",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "latitude": -42.8817461,
+    "longitude": 147.3672448,
+    "categories": [
+      "Things to Do",
+      "History"
+    ],
+    "summary": "Visitor attraction in or near Hobart.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/way/207539315",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/207539315",
+    "wikidata": "Q68124928",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/discover.svg",
+      "alt": "Kangaroo Bluff Battery category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Kangaroo%20Bluff%20Battery%20Hobart%20Tasmania"
+      }
+    ],
+    "websiteCheck": {
+      "status": "dead",
+      "code": 404,
+      "checkedAt": "2026-10-20T07:50:27.240Z"
+    },
+    "qualityScore": 32,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Kangaroo Bluff Battery",
+      "distanceKm": 0.05,
+      "confidence": "high",
+      "checkedAt": "2026-10-20"
+    }
+  },
+  {
+    "slug": "kelvedon-beach-conservation-area",
+    "name": "Kelvedon Beach Conservation Area",
+    "town": "Swansea",
+    "region": "East Coast",
+    "latitude": -42.205258,
+    "longitude": 148.043414,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Swansea.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/3320078461",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/3320078461",
+    "wikidata": "Q139745971",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/discover.svg",
+      "alt": "Kelvedon Beach Conservation Area category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Kelvedon%20Beach%20Conservation%20Area%20Swansea%20Tasmania"
+      }
+    ],
+    "qualityScore": 32,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Kelvedon Beach Conservation Area",
+      "distanceKm": 1.27,
+      "confidence": "medium",
+      "checkedAt": "2026-10-20"
+    }
+  },
+  {
+    "slug": "lost-falls",
+    "name": "Lost Falls",
+    "town": "Swansea",
+    "region": "East Coast",
+    "latitude": -42.0441195,
+    "longitude": 147.8900245,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Swansea.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/324834945",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/324834945",
+    "wikidata": "Q139746071",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/discover.svg",
+      "alt": "Lost Falls category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Lost%20Falls%20Swansea%20Tasmania"
+      }
+    ],
+    "qualityScore": 32,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Lost Falls Conservation Area",
+      "distanceKm": 1.62,
+      "confidence": "medium",
+      "checkedAt": "2026-10-20"
+    }
+  },
+  {
+    "slug": "meetus-falls",
+    "name": "Meetus Falls",
+    "town": "Avoca",
+    "region": "Launceston & North",
+    "latitude": -41.9501415,
+    "longitude": 147.882999,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Avoca.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/322003512",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/322003512",
+    "wikidata": "Q139746098",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/discover.svg",
+      "alt": "Meetus Falls category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Meetus%20Falls%20Avoca%20Tasmania"
+      }
+    ],
+    "qualityScore": 32,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Meetus Falls Conservation Area",
+      "distanceKm": 0.77,
+      "confidence": "high",
+      "checkedAt": "2026-10-20"
+    }
+  },
+  {
+    "slug": "north-east-river-game-reserve",
+    "name": "North East River Game Reserve",
+    "town": "Whitemark",
+    "region": "Flinders Island",
+    "latitude": -39.7606488,
+    "longitude": 147.958956,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Whitemark.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/573061807",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/573061807",
+    "wikidata": "Q139677845",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/discover.svg",
+      "alt": "North East River Game Reserve category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=North%20East%20River%20Game%20Reserve%20Whitemark%20Tasmania"
+      }
+    ],
+    "qualityScore": 32,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "North East River Game Reserve",
+      "distanceKm": 3.76,
+      "confidence": "medium",
+      "checkedAt": "2026-10-20"
+    }
+  },
+  {
     "slug": "scottsdale-military-museum",
     "name": "Scottsdale Military Museum",
     "town": "Scottsdale",
@@ -86505,6 +86847,74 @@
     "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
+  },
+  {
+    "slug": "spiky-beach-conservation-area",
+    "name": "Spiky Beach Conservation Area",
+    "town": "Swansea",
+    "region": "East Coast",
+    "latitude": -42.186065,
+    "longitude": 148.067188,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Swansea.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/3320076661",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/3320076661",
+    "wikidata": "Q139746373",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/discover.svg",
+      "alt": "Spiky Beach Conservation Area category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Spiky%20Beach%20Conservation%20Area%20Swansea%20Tasmania"
+      }
+    ],
+    "qualityScore": 32,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Spiky Beach Conservation Area",
+      "distanceKm": 0.07,
+      "confidence": "high",
+      "checkedAt": "2026-10-20"
+    }
   },
   {
     "slug": "gatekeeper-cottage",
@@ -117218,7 +117628,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "josef-chromy-wines",
@@ -117277,131 +117688,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
-    "slug": "kangaroo-bluff-battery",
-    "name": "Kangaroo Bluff Battery",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "latitude": -42.8817461,
-    "longitude": 147.3672448,
-    "categories": [
-      "Things to Do",
-      "History"
-    ],
-    "summary": "Visitor attraction in or near Hobart.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/way/207539315",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/207539315",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "Kangaroo Bluff Battery category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Kangaroo%20Bluff%20Battery%20Hobart%20Tasmania"
-      }
-    ],
-    "websiteCheck": {
-      "status": "dead",
-      "code": 404,
-      "checkedAt": "2026-10-20T07:50:27.240Z"
-    },
-    "qualityScore": 25,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
-    "slug": "kelvedon-beach-conservation-area",
-    "name": "Kelvedon Beach Conservation Area",
-    "town": "Swansea",
-    "region": "East Coast",
-    "latitude": -42.205258,
-    "longitude": 148.043414,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Swansea.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/3320078461",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/3320078461",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "Kelvedon Beach Conservation Area category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Kelvedon%20Beach%20Conservation%20Area%20Swansea%20Tasmania"
-      }
-    ],
-    "qualityScore": 25,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "kenworthy-s-stamper-mill",
@@ -117458,7 +117746,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "kia-ora-falls",
@@ -117517,7 +117806,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "lavender-house",
@@ -117576,7 +117866,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "leaning-church-wines",
@@ -117635,7 +117926,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "leopard-as1-tank",
@@ -117695,7 +117987,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "lilydale-falls-reserve",
@@ -117754,125 +118047,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
-    "slug": "lost-falls",
-    "name": "Lost Falls",
-    "town": "Swansea",
-    "region": "East Coast",
-    "latitude": -42.0441195,
-    "longitude": 147.8900245,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Swansea.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/324834945",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/324834945",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "Lost Falls category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Lost%20Falls%20Swansea%20Tasmania"
-      }
-    ],
-    "qualityScore": 25,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
-    "slug": "meetus-falls",
-    "name": "Meetus Falls",
-    "town": "Avoca",
-    "region": "Launceston & North",
-    "latitude": -41.9501415,
-    "longitude": 147.882999,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Avoca.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/322003512",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/322003512",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "Meetus Falls category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Meetus%20Falls%20Avoca%20Tasmania"
-      }
-    ],
-    "qualityScore": 25,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "melita-honey-farm",
@@ -117931,7 +118107,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "mickey-s-beach",
@@ -117990,7 +118167,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "monkey-puzzle-tree",
@@ -118047,7 +118225,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "moores-hill-winery",
@@ -118106,7 +118285,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "morannon-black-gate",
@@ -118165,7 +118345,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "mt-farrell-mines",
@@ -118222,7 +118403,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "nigel-peck-centre",
@@ -118281,66 +118463,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
-    "slug": "north-east-river-game-reserve",
-    "name": "North East River Game Reserve",
-    "town": "Whitemark",
-    "region": "Flinders Island",
-    "latitude": -39.7606488,
-    "longitude": 147.958956,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Whitemark.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/573061807",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/573061807",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "North East River Game Reserve category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=North%20East%20River%20Game%20Reserve%20Whitemark%20Tasmania"
-      }
-    ],
-    "qualityScore": 25,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "oast-house",
@@ -118400,7 +118524,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "octopus-tree",
@@ -118459,7 +118584,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "old-brisbane-hotel-facade",
@@ -118519,7 +118645,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "old-fire-station",
@@ -118578,7 +118705,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "old-kempton-distillery",
@@ -118637,7 +118765,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "oyster-picking",
@@ -118696,7 +118825,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "penguin-spotting",
@@ -118755,7 +118885,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "penguins-nests-bicheno",
@@ -118814,7 +118945,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "penny-royal-watermill",
@@ -118873,7 +119005,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "platypus-house",
@@ -118932,7 +119065,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "poatina-labyrinth",
@@ -118991,7 +119125,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "poppy-garden",
@@ -119050,7 +119185,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "prominent-rock",
@@ -119109,7 +119245,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "providence-wines",
@@ -119168,7 +119305,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "ritchie-s-mill",
@@ -119227,7 +119365,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "rock-arch",
@@ -119286,7 +119425,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "rocking-rock",
@@ -119345,7 +119485,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "school-of-wooden-boat-building",
@@ -119404,7 +119545,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "seahorse-world",
@@ -119463,7 +119605,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "semaphore-station",
@@ -119522,7 +119665,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "senses-garden-fountain",
@@ -119581,7 +119725,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "simpson-and-his-donkey",
@@ -119640,7 +119785,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "sink-hole",
@@ -119697,66 +119843,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
-  },
-  {
-    "slug": "spiky-beach-conservation-area",
-    "name": "Spiky Beach Conservation Area",
-    "town": "Swansea",
-    "region": "East Coast",
-    "latitude": -42.186065,
-    "longitude": 148.067188,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Swansea.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/3320076661",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/3320076661",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "Spiky Beach Conservation Area category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Spiky%20Beach%20Conservation%20Area%20Swansea%20Tasmania"
-      }
-    ],
-    "qualityScore": 25,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
     "rankedAt": "2026-10-20",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "spiky-bridge",
@@ -119815,7 +119903,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "springvale-winery",
@@ -119874,7 +119963,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "ss-croydon-shipwreck",
@@ -119932,7 +120022,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "steam-locomotive",
@@ -119991,7 +120082,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "stone-water-tower-of-1896",
@@ -120051,7 +120143,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "supply-river-mill",
@@ -120110,7 +120203,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "tarkine-forest-adventures-at-dismal-swamp",
@@ -120167,7 +120261,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "tasman-blowhole",
@@ -120226,7 +120321,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "tasmanian-copper-and-metal-art-gallery",
@@ -120285,7 +120381,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "tasmanian-flour-mills",
@@ -120344,7 +120441,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "tasmanian-stained-glass",
@@ -120403,7 +120501,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "tazmazia-and-the-village-of-lower-crackpot",
@@ -120462,7 +120561,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-big-spud",
@@ -120526,7 +120626,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-old-umbrella-shop",
@@ -120585,7 +120686,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-sheeps-back",
@@ -120644,7 +120746,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-springs",
@@ -120703,7 +120806,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "underwater-cave-blowhole",
@@ -120762,7 +120866,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "water-tunnel",
@@ -120819,7 +120924,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "water-wheel",
@@ -120878,7 +120984,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "westbury-maze-and-tea-rooms",
@@ -120942,7 +121049,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "westhaven-dairy",
@@ -121001,7 +121109,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "whitehouse-bakery-museum",
@@ -121060,7 +121169,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "wiggins-slate-quarry",
@@ -121119,7 +121229,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "41-south-tasmania-salmon-ginseng-farm",
@@ -121180,7 +121291,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "50-s-diner",
@@ -121241,7 +121352,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "63-degree-espresso-and-bar",
@@ -121302,7 +121413,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "abel-tasman-airport-motor-inn-restaurant",
@@ -121363,7 +121474,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "acton-milk-bar",
@@ -121424,7 +121535,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "alanvale-store-takeaway-and-delivery",
@@ -121485,7 +121596,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "ali-s-asian-cafe",
@@ -121546,7 +121657,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "alpenrose-restaurant-and-bar",
@@ -121607,7 +121718,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "amelia-espresso",
@@ -121668,7 +121779,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "amf-bowling-cafe",
@@ -121729,7 +121840,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "angie-s-takeaway",
@@ -121790,7 +121901,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "annie-s-takeaway-and-cafe",
@@ -121851,7 +121962,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "argyle-pantry-japanese-kitchen",
