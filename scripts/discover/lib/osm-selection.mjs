@@ -8,6 +8,26 @@ const normalized = (text='') => String(text).normalize('NFKD').replace(/[\u0300-
 const slugify = text => String(text).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,90);
 const isFood = place => (place.categories||[]).includes('Food & Drink');
 
+const streetKey=place=>{
+ const addr=String(place.address||'').toLowerCase()
+  .replace(/\bst\b/g,'street').replace(/\brd\b/g,'road').replace(/\bave\b/g,'avenue')
+  .replace(/\s+/g,' ');
+ return (/(\b\d{1,5}[a-z]?\s+[\w\s]+?\s+(?:street|road|avenue|drive|parade|lane|highway))\b/.exec(addr)||[])[1]?.replace(/\s+/g,' ').trim()||'';
+};
+const detailScore=place=>['phone','openingHours','website','address'].filter(k=>Boolean(place[k])).length;
+const foodAliasDuplicate=(place,old)=>{
+ if(!isFood(place)||!isFood(old)||!Number.isFinite(place.latitude)||!Number.isFinite(place.longitude)||
+    !Number.isFinite(old.latitude)||!Number.isFinite(old.longitude)||kilometres(place,old)>0.025)return false;
+ const address=streetKey(place);
+ if(!address||address!==streetKey(old))return false;
+ const x=normalized(place.name),y=normalized(old.name);
+ const [short,long]=x.length<y.length?[x,y]:[y,x];
+ if(short.length<7||!long.startsWith(short)||long===short)return false;
+ // Only extend an existing name by generic restaurant/trading-type words.
+ return /^(?:(?:chinese|restaurant|and|takeaway|takeaways|food|shop|cafe|coffee|bar|grill|diner|kitchen|milkbar|bakery|pizza))+$/i.test(long.slice(short.length));
+};
+
+
 function kilometres(a,b) {
   const rad=n=>n*Math.PI/180, dy=rad(b.latitude-a.latitude), dx=rad(b.longitude-a.longitude);
   const val=Math.sin(dy/2)**2+Math.cos(rad(a.latitude))*Math.cos(rad(b.latitude))*Math.sin(dx/2)**2;
@@ -60,12 +80,13 @@ export function selectOsmCandidates(candidates,curated,previousOsm,{retainVerifi
   }
   let rejectedDuplicates=0,preservedImages=0;
   const accepted=[];
-  for(const place of [...candidates].sort((a,b)=>(b._score||0)-(a._score||0)||a.name.localeCompare(b.name))) {
+  for(const place of [...candidates].sort((a,b)=>(b._score||0)-(a._score||0)||detailScore(b)-detailScore(a)||a.name.localeCompare(b.name))) {
     const key=normalized(place.name);
     if(!key)continue;
     // A same-name café in Launceston is NOT a duplicate of one in Hobart.
     // Proximity alone is also NOT evidence that two differently named shops are duplicates.
-    if((byName.get(key)||[]).some(old => Number.isFinite(old.latitude)&&Number.isFinite(old.longitude)&&kilometres(place,old)<0.15)) {
+    if((byName.get(key)||[]).some(old => Number.isFinite(old.latitude)&&Number.isFinite(old.longitude)&&kilometres(place,old)<0.15) ||
+       [...byName.values()].some(matches=>matches.some(old=>foodAliasDuplicate(place,old)))) {
       rejectedDuplicates++;
       continue;
     }
