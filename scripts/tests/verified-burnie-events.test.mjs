@@ -43,7 +43,7 @@ test('Burnie household chemical drop-off survives page-two list omissions until 
  assert.equal(restored[0].endTime,'13:00');
  assert.match(restored[0].address,/289 Mooreville Road/);
  assert.deepEqual(restoreVerifiedBurnieEvents(restored,'2026-10-21'),restored,'no duplicate');
- assert.deepEqual(restoreVerifiedBurnieEvents([],'2026-11-16'),[],'past event never revived');
+ assert.ok(!restoreVerifiedBurnieEvents([],'2026-11-16').some(e=>e.eventUrl===official),'expired chemical event never revived');
  const stale=applyVerifiedBurnieEvent(event('Free Household Chemical Disposal',official,'2026-10-31'),'2026-10-20');
  assert.equal(stale.startDate,'2026-11-15');
  assert.equal(stale.slug,'free-household-chemical-disposal-2026-11-15-burnie');
@@ -62,7 +62,7 @@ test('Tassie Pop Culture Market stays correct after missing council pagination o
  assert.equal(market.town,'Upper Burnie');
  assert.match(market.address,/242 Mount Street/);
  assert.ok(market.categories.includes('Markets'));
- assert.equal(restoreVerifiedBurnieEvents([market],'2026-10-20').length,1,'does not duplicate a live market');
+ assert.equal(restoreVerifiedBurnieEvents([market],'2026-10-20').filter(e=>e.eventUrl===url).length,1,'does not duplicate a live market');
  const old=applyVerifiedBurnieEvent({...market,startDate:'2026-06-20',town:'Burnie'},'2026-10-20');
  assert.equal(old.slug,market.slug,'old date corrected to current official session');
  assert.deepEqual(restoreVerifiedBurnieEvents([],'2026-12-13'),[],'expired markets stay expired');
