@@ -513,5 +513,22 @@
     "evidenceUrl": "https://www.ccc.tas.gov.au/event/our-shared-space-skill-share-day/",
     "verifiedOn": "2026-10-20",
     "reason": "Original AI Ops work-20261018-df6112108bfbc2df: prevent a now-past 20 October session from being misrepresented as an upcoming 14 January 2027 event; old slug 301 deferred until confirmed canonical target exists."
+  },
+  "read-write-publish-writing-life-2026-2026-10-18-launceston": {
+    "fields": {
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-19",
+      "startTime": "09:45",
+      "endTime": "16:00",
+      "town": "Invermay",
+      "region": "Launceston & North",
+      "venue": "River's Edge Building, UTAS Inveresk Campus",
+      "address": "Invermay TAS 7248",
+      "summary": "University of Tasmania writing-life conversations, workshops and masterclasses at River's Edge, Inveresk Campus, on Monday 19 October 2026. The free talks were separately registered from ticketed workshops."
+    },
+    "eventUrl": "https://events.humanitix.com/read-write-publish-writing-life-2026",
+    "evidenceUrl": "https://events.humanitix.com/read-write-publish-writing-life-2026",
+    "verifiedOn": "2026-10-20",
+    "reason": "Correct original AI Ops work-20261018-b15b95071ae41ae1: Humanitix official listing explicitly says 19 October 2026, 09:45–16:00 AEDT, not the UTC-derived 18 October. Keep old slug until a real canonical 301 target exists."
   }
 }
