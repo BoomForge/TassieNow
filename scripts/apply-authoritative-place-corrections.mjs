@@ -4,12 +4,14 @@ import { sanitiseListingFields } from '../src/lib/listing-field-sanitizers.mjs';
 import { safePlaceBookingUrl } from '../src/lib/place-booking-guard.mjs';
 import { regionFor } from './discover/lib/regions.mjs';
 import { shouldRemoveParksContactHours } from '../src/lib/parks-hours-source-guard.mjs';
+import { correctWeldboroughSource } from '../src/lib/weldborough-source-correction.mjs';
 
 const file = new URL('../src/data/places.json', import.meta.url);
 const places = JSON.parse(await fs.readFile(file, 'utf8'));
 const sourceBacked = new Set(['ashgrove-cheese-factory','willie-smith-s-apple-shed','1830','calcified-forest','archers-knob','bird-hide','point-vision','springlawn-bird-hide-lookout','tasmanian-produce-market','hastings-thermal-springs','crabtree-crop-and-crafts-market-crabtree','the-hangout-cafe-and-restaurant','bento-legana','mr-burger','little-riva']);
 let fieldsCorrected=0, bookingLinksRemoved=0;
 for (const place of places) {
+  if (correctWeldboroughSource(place)) fieldsCorrected++;
   // Correct the exact North West town rather than the separate southern Sorell.
   // Runs in the normal build to repair older curated and generated records alike.
   if (/^port\s+sorell$/i.test(String(place.town||'').trim())) {
