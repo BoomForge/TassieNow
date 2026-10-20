@@ -25,3 +25,22 @@ test('single-card text is capped and never absorbs trailing page content',()=>{
  assert.match(text,/20 October 2026/);
  assert.doesNotMatch(text,/4 November 2026/);
 });
+
+test('Glenorchy /event/ links keep their own council listing-card date',()=>{
+ const markup='<article><a href="/event/world-kindness-day-2026/">World Kindness Day</a>13 Nov 2026</article>'+
+  '<article><a href="/event/family-fun-day-childrens-week-2026/">Family Fun Day – Children’s Week 2026</a>28 Oct 2026</article>';
+ const list=anchors(markup);
+ assert.equal(list.length,2);
+ const first=clarenceListingCardText(markup,list[0],list);
+ const second=clarenceListingCardText(markup,list[1],list);
+ assert.match(first,/World Kindness Day/);
+ assert.match(first,/13 Nov 2026/);
+ assert.doesNotMatch(first,/28 Oct 2026/);
+ assert.match(second,/28 Oct 2026/);
+ assert.doesNotMatch(second,/13 Nov 2026/);
+});
+test('Glenorchy importer explicitly targets singular /event/ detail paths',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const src=await readFile(new URL('../discover/events.mjs',import.meta.url),'utf8');
+ assert.match(src,/name:'Glenorchy City Council'[^\\n]+detail:\/\\\\\/event\\\\\/\/i,textMode:'never'/);
+});
