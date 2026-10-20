@@ -9,6 +9,15 @@ const VERIFIED_BURNIE_EVENTS = new Map([
     address:'289 Mooreville Road, Burnie TAS 7320',
     summary:'Free household chemical disposal at Burnie Waste Transfer Station, 289 Mooreville Road, on Sunday 15 November 2026 from 10:00 am to 1:00 pm. Check Burnie City Council for accepted materials and any changes.'
   }],
+  // Rechecked 20 October 2026 against council's current Marketplace / December event list.
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market', {
+    name:'Tassie Pop Culture Market',town:'Upper Burnie',region:'North West',
+    startDate:'2026-12-12',endDate:'2026-12-12',
+    startTime:'10:00',endTime:'14:00',
+    venue:'Upper Burnie Hall',
+    address:'242 Mount Street, Upper Burnie TAS 7320',
+    summary:'TasPop market for anime, manga, video games, D&D, cosplay, art and pop-culture vendors, Saturday 12 December 2026 from 10:00 am to 2:00 pm at Upper Burnie Hall, 242 Mount Street.'
+  }],
   ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Pink-Up-Your-Town', {
     startDate: '2026-10-22',
     endDate: '2026-10-22',
@@ -71,22 +80,23 @@ export function applyVerifiedBurnieEvent(event, checkedAt) {
  */
 export function restoreVerifiedBurnieEvents(events,today){
   if(!Array.isArray(events))return events;
-  const official='https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Free-Household-Chemical-Disposal';
-  const date='2026-11-15';
-  if(today>date||events.some(event=>event.eventUrl===official))return events;
-  const event={
-    slug:'free-household-chemical-disposal-2026-11-15-burnie',
-    name:'Free Household Chemical Disposal',
-    town:'Burnie',region:'North West',startDate:date,endDate:date,
-    startTime:'10:00',endTime:'13:00',
-    venue:'Burnie Waste Transfer Station',
-    address:'289 Mooreville Road, Burnie TAS 7320',
-    categories:['Events','Free'],
-    summary:'Free household chemical disposal at Burnie Waste Transfer Station, 289 Mooreville Road, on Sunday 15 November 2026 from 10:00 am to 1:00 pm. Check Burnie City Council for accepted materials and any changes.',
-    eventUrl:official,sourceUrl:official,sourceName:'Burnie City Council',
-    image:{url:'/images/categories/events.svg',alt:'Free Household Chemical Disposal event category artwork',
-      attribution:'TassieNow',license:'Site artwork',isFallback:true},
-    status:'active',lastChecked:'2026-10-20'
-  };
-  return [...events,event];
+  const expected=[
+    ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Free-Household-Chemical-Disposal',['Events','Free']],
+    ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market',['Events','Markets']]
+  ];
+  let output=events;
+  for(const [official,categories] of expected){
+    const details=VERIFIED_BURNIE_EVENTS.get(official);
+    if(!details||today>details.endDate||output.some(event=>event.eventUrl===official))continue;
+    const event={
+      ...details,
+      slug:slugify(`${details.name}-${details.startDate}-${details.town}`),
+      categories,eventUrl:official,sourceUrl:official,sourceName:'Burnie City Council',
+      image:{url:'/images/categories/events.svg',alt:details.name+' event category artwork',
+        attribution:'TassieNow',license:'Site artwork',isFallback:true},
+      status:'active',lastChecked:'2026-10-20'
+    };
+    output=[...output,event];
+  }
+  return output;
 }
