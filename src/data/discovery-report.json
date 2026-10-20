@@ -1,8 +1,9 @@
 {
-  "checkedAt": "2026-10-20T02:01:10.122Z",
+  "checkedAt": "2026-10-20T02:23:47.716Z",
   "added": [],
   "addedEvents": [
-    "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe"
+    "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe",
+    "tassie-pop-culture-market-2026-12-12-upper-burnie"
   ],
   "correctedEvents": [],
   "updated": [],
@@ -36,7 +37,7 @@
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
       "pagesFetched": 7,
-      "candidatesFound": 12,
+      "candidatesFound": 11,
       "errors": []
     },
     {
@@ -86,13 +87,13 @@
     "existing": 55,
     "added": 0,
     "events": 3,
-    "addedEvents": 1,
+    "addedEvents": 2,
     "updated": 0,
     "failedSources": 0
   },
   "run": {
-    "id": "39354676053",
+    "id": "39354789522",
     "event": "push",
-    "sourceCommit": "774895f2216050187e5cfbd08e9757b473ce0ea2"
+    "sourceCommit": "0e0879a5fe876dbbe0cffe2be0cec5dc55d45445"
   }
 }
