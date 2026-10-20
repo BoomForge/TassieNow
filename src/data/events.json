@@ -1740,7 +1740,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "tuning-into-kids-2026-10-28-burnie",
@@ -3239,8 +3240,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20",
-    "ticketLastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "come-and-try-golf-for-the-disabled-riverside-golf-club-tas-2026-11-12-launceston",
@@ -3582,6 +3582,35 @@
     "bookingRequired": true,
     "availability": "InStock",
     "ticketLastChecked": "2026-10-20"
+  },
+  {
+    "name": "Free Household Chemical Disposal",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-11-15",
+    "endDate": "2026-11-15",
+    "startTime": "10:00",
+    "endTime": "13:00",
+    "venue": "Burnie Waste Transfer Station",
+    "address": "289 Mooreville Road, Burnie TAS 7320",
+    "summary": "Free household chemical disposal at Burnie Waste Transfer Station, 289 Mooreville Road, on Sunday 15 November 2026 from 10:00 am to 1:00 pm. Check Burnie City Council for accepted materials and any changes.",
+    "slug": "free-household-chemical-disposal-2026-11-15-burnie",
+    "categories": [
+      "Events",
+      "Free"
+    ],
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Free-Household-Chemical-Disposal",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Free-Household-Chemical-Disposal",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Free Household Chemical Disposal event category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "toni-and-ryan-live-podcast-recording-2026-11-15-hobart",
@@ -4498,6 +4527,35 @@
     "ticketProvider": "Ticketmaster",
     "bookingRequired": true,
     "ticketLastChecked": "2026-10-20"
+  },
+  {
+    "name": "Tassie Pop Culture Market",
+    "town": "Upper Burnie",
+    "region": "North West",
+    "startDate": "2026-12-12",
+    "endDate": "2026-12-12",
+    "startTime": "10:00",
+    "endTime": "14:00",
+    "venue": "Upper Burnie Hall",
+    "address": "242 Mount Street, Upper Burnie TAS 7320",
+    "summary": "TasPop market for anime, manga, video games, D&D, cosplay, art and pop-culture vendors, Saturday 12 December 2026 from 10:00 am to 2:00 pm at Upper Burnie Hall, 242 Mount Street.",
+    "slug": "tassie-pop-culture-market-2026-12-12-upper-burnie",
+    "categories": [
+      "Events",
+      "Markets"
+    ],
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Tassie Pop Culture Market event category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "festive-friday-2026-2026-12-18-devonport",
