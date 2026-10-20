@@ -1,4 +1,14 @@
 const VERIFIED_BURNIE_EVENTS = new Map([
+  // Source rechecked 20 October 2026: council event lists Sunday 15 November,
+  // 10 am–1 pm at the Burnie Waste Transfer Station. Preserve across pagination gaps.
+  ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Free-Household-Chemical-Disposal', {
+    name:'Free Household Chemical Disposal',
+    town:'Burnie',region:'North West',startDate:'2026-11-15',endDate:'2026-11-15',
+    startTime:'10:00',endTime:'13:00',
+    venue:'Burnie Waste Transfer Station',
+    address:'289 Mooreville Road, Burnie TAS 7320',
+    summary:'Free household chemical disposal at Burnie Waste Transfer Station, 289 Mooreville Road, on Sunday 15 November 2026 from 10:00 am to 1:00 pm. Check Burnie City Council for accepted materials and any changes.'
+  }],
   ['https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Pink-Up-Your-Town', {
     startDate: '2026-10-22',
     endDate: '2026-10-22',
@@ -51,4 +61,32 @@ export function applyVerifiedBurnieEvent(event, checkedAt) {
   const corrected = {...event, ...override, lastChecked: checkedAt};
   corrected.slug = slugify(`${corrected.name}-${corrected.startDate}-${corrected.town}`);
   return corrected;
+}
+
+/**
+ * Safeguard one independently confirmed council session against disappearance
+ * from the short, paginated list feed. A previous-date duplicate is corrected
+ * by applyVerifiedBurnieEvent and deduplicated during normal event sanitisation.
+ * Never bring the record back after its official end date.
+ */
+export function restoreVerifiedBurnieEvents(events,today){
+  if(!Array.isArray(events))return events;
+  const official='https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Free-Household-Chemical-Disposal';
+  const date='2026-11-15';
+  if(today>date||events.some(event=>event.eventUrl===official))return events;
+  const event={
+    slug:'free-household-chemical-disposal-2026-11-15-burnie',
+    name:'Free Household Chemical Disposal',
+    town:'Burnie',region:'North West',startDate:date,endDate:date,
+    startTime:'10:00',endTime:'13:00',
+    venue:'Burnie Waste Transfer Station',
+    address:'289 Mooreville Road, Burnie TAS 7320',
+    categories:['Events','Free'],
+    summary:'Free household chemical disposal at Burnie Waste Transfer Station, 289 Mooreville Road, on Sunday 15 November 2026 from 10:00 am to 1:00 pm. Check Burnie City Council for accepted materials and any changes.',
+    eventUrl:official,sourceUrl:official,sourceName:'Burnie City Council',
+    image:{url:'/images/categories/events.svg',alt:'Free Household Chemical Disposal event category artwork',
+      attribution:'TassieNow',license:'Site artwork',isFallback:true},
+    status:'active',lastChecked:'2026-10-20'
+  };
+  return [...events,event];
 }
