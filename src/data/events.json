@@ -516,6 +516,35 @@
     "ticketLastChecked": "2026-10-20"
   },
   {
+    "slug": "fresh-comedy-presents-tom-ballard-live-2026-10-20-launceston",
+    "name": "Fresh Comedy Presents TOM BALLARD - LIVE",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-10-20",
+    "endDate": "2026-10-20",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Fresh Comedy Presents TOM BALLARD - LIVE in Launceston. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://events.humanitix.com/tom-ballard-live",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Fresh Comedy Presents TOM BALLARD - LIVE event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "ticketUrl": "https://events.humanitix.com/tom-ballard-live",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true
+  },
+  {
     "slug": "get-emergencyredi-workshops-huon-valley-2026-2026-10-20-huonville",
     "name": "Get EmergencyRedi Workshops – Huon Valley 2026",
     "town": "Huonville",
@@ -878,7 +907,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "yfcc-arvos-at-the-junction-2026-10-21-burnie",
@@ -904,7 +934,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "barefoot-social-bowls-2026-10-22-currie",
@@ -973,7 +1004,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "outspace-2026-10-22-devonport",
@@ -1001,7 +1033,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "pinkup-burnie-2026-10-22-burnie",
@@ -1027,7 +1060,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "emergency-management-preparedness-workshop-east-devonport-session-2026-10-23-devonport",
@@ -1055,7 +1089,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "gender-group-2026-10-23-devonport",
@@ -1082,7 +1117,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "grad-show-launceston-2026-2026-10-23-launceston",
@@ -1270,7 +1306,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "burnie-ten-2026-10-25-burnie",
@@ -1310,7 +1347,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "coats-patons-patons-and-baldwins-history-tours-sunday-2026-10-25-launceston",
@@ -1377,7 +1415,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "the-great-bug-hunt-and-art-lab-2026-10-25-eugenana",
@@ -1409,6 +1448,7 @@
     "lastChecked": "2026-10-20",
     "startTime": "10:00",
     "endTime": "12:00",
+    "ticketLastChecked": "2026-10-20",
     "priceFrom": 0,
     "priceCurrency": "AUD"
   },
@@ -1449,6 +1489,7 @@
     },
     "status": "active",
     "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20",
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD",
@@ -1509,7 +1550,12 @@
     "venue": "Golf Park Hobart",
     "address": "Cranston Parade, Cambridge TAS 7170",
     "startTime": "14:30",
-    "endTime": "15:30"
+    "endTime": "15:30",
+    "ticketUrl": "https://events.humanitix.com/come-and-try-golf-for-the-disabled-golf-park-hobart-tas",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "no-lights-no-lycra-hobart-2026-2026-10-26-hobart",
@@ -1567,7 +1613,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "in-conversation-with-monica-mcinerney-2026-10-27-burnie",
@@ -1610,6 +1657,7 @@
     "lastChecked": "2026-10-20",
     "startTime": "18:00",
     "endTime": "20:00",
+    "ticketLastChecked": "2026-10-20",
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD"
@@ -1649,7 +1697,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20",
+    "ticketLastChecked": "2026-10-20"
   },
   {
     "slug": "an-evening-with-pip-williams-launching-her-new-book-the-german-ward-2026-10-28-launceston",
@@ -2407,8 +2456,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20",
-    "ticketLastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "rotary-club-of-lindisfarne-talks-dr-bert-shugg-2026-11-04-lindisfarne",
@@ -2439,11 +2487,6 @@
     "address": "1 Ford Parade, Lindisfarne TAS 7015",
     "startTime": "18:15",
     "endTime": "19:15",
-    "ticketUrl": "https://events.humanitix.com/rotary-club-of-lindisfarne-talks-dr-bert-shugg",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-10-20",
     "priceFrom": 0,
     "priceCurrency": "AUD"
   },
@@ -2535,8 +2578,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20",
-    "ticketLastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "east-devonport-jobs-forum-2026-2026-11-05-devonport",
@@ -2565,8 +2607,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20",
-    "ticketLastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "burnie-harness-racing-club-meet-2026-11-06-wivenhoe",
@@ -2596,8 +2637,7 @@
     "status": "active",
     "lastChecked": "2026-10-20",
     "startTime": "18:00",
-    "endTime": "23:59",
-    "ticketLastChecked": "2026-10-20"
+    "endTime": "23:59"
   },
   {
     "slug": "showcase-2026-2026-11-06-hobart",
@@ -2702,8 +2742,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20",
-    "ticketLastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "burnie-in-bloom-2026-11-07-burnie",
@@ -2729,8 +2768,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20",
-    "ticketLastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "enterprising-aardvark-10-year-fundraising-gala-2026-11-07-launceston",
@@ -2788,12 +2826,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20",
-    "ticketUrl": "https://events.humanitix.com/host/greenstem-education",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "infinite-spirit-southern-spectacular-2026-2026-11-07-glenorchy",
@@ -3007,8 +3040,7 @@
     "status": "active",
     "lastChecked": "2026-10-20",
     "startTime": "09:45",
-    "endTime": "12:00",
-    "ticketLastChecked": "2026-10-20"
+    "endTime": "12:00"
   },
   {
     "slug": "home-composting-workshop-2026-11-08-hobart",
@@ -3045,8 +3077,7 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-20",
-    "ticketLastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "sweet-uk-final-blitz-tour-2026-11-08-hobart",
@@ -3106,8 +3137,7 @@
     "status": "active",
     "lastChecked": "2026-10-20",
     "startTime": "10:00",
-    "endTime": "16:00",
-    "ticketLastChecked": "2026-10-20"
+    "endTime": "16:00"
   },
   {
     "slug": "in-conversation-with-alan-carter-2026-11-10-burnie",
@@ -3138,7 +3168,6 @@
     "lastChecked": "2026-10-20",
     "startTime": "14:30",
     "endTime": "16:00",
-    "ticketLastChecked": "2026-10-20",
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD"
@@ -3167,8 +3196,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-20",
-    "ticketLastChecked": "2026-10-20"
+    "lastChecked": "2026-10-20"
   },
   {
     "slug": "arts-night-kings-at-the-albert-2026-11-12-launceston",
