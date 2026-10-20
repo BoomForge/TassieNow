@@ -1368,5 +1368,41 @@
         "checkedAt": "2026-10-18"
       }
     }
+  },
+  "bakers-delight": {
+    "liveDisplayOverride": true,
+    "name": "Bakers Delight Claremont Plaza",
+    "town": "Claremont",
+    "region": "Hobart & South",
+    "address": "Shop 15, Claremont Plaza, 35 Main Road, Claremont TAS 7011",
+    "phone": "03 6249 9117",
+    "openingHours": "Mo-Fr 06:00-18:00; Sa-Su 08:00-18:00",
+    "detailSources": {
+      "name": {
+        "type": "verified-source",
+        "url": "https://claremontplaza.com.au/stores/bakers-delight/",
+        "checkedAt": "2026-10-20"
+      },
+      "town": {
+        "type": "verified-source",
+        "url": "https://claremontplaza.com.au/stores/bakers-delight/",
+        "checkedAt": "2026-10-20"
+      },
+      "address": {
+        "type": "verified-source",
+        "url": "https://claremontplaza.com.au/stores/bakers-delight/",
+        "checkedAt": "2026-10-20"
+      },
+      "phone": {
+        "type": "verified-source",
+        "url": "https://claremontplaza.com.au/stores/bakers-delight/",
+        "checkedAt": "2026-10-20"
+      },
+      "openingHours": {
+        "type": "verified-source",
+        "url": "https://claremontplaza.com.au/stores/bakers-delight/",
+        "checkedAt": "2026-10-20"
+      }
+    }
   }
 }
