@@ -35,3 +35,19 @@ test('very long titles remain bounded by a three-line visual treatment',()=>{
  const lines=(svg.match(/<tspan /g)||[]).length;
  assert.ok(lines<=3);
 });
+
+test('one-, two-, and three-row poster titles stay between kicker and date divider',()=>{
+ const names=[
+  'Short Event',
+  'A Wonderful Local Community Concert Celebration',
+  'Daniel Champagne Live at the Tramsheds Functions Centre Launceston'
+ ];
+ for(const name of names){
+  const svg=renderEventPoster({name,town:'Launceston',startDate:'2026-12-11'});
+  const positions=[...svg.matchAll(/<tspan x="72" y="([\d.]+)">/g)].map(m=>Number(m[1]));
+  assert.ok(positions.length>=1 && positions.length<=3,name);
+  assert.ok(positions[0]>=235,'title overlaps the y=155 kicker: '+name);
+  assert.ok(positions.at(-1)<=450,'title overlaps the y=535 divider: '+name);
+  assert.ok(positions.every((v,i)=>i===0||v>positions[i-1]),'baselines are ordered');
+ }
+});
