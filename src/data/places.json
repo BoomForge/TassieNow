@@ -83,9 +83,10 @@
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/alum-cliffs",
+      "error": "The operation was aborted due to timeout"
     }
   },
   {
@@ -277,9 +278,10 @@
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/bishop-and-clerk"
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park/bishop-and-clerk",
+      "error": "The operation was aborted due to timeout"
     }
   },
   {
@@ -677,7 +679,6 @@
       "official-walk-data",
       "real-image",
       "contact-details",
-      "booking-link",
       "review-link",
       "details-checked"
     ],
@@ -859,7 +860,6 @@
       "official-walk-data",
       "real-image",
       "contact-details",
-      "booking-link",
       "review-link",
       "details-checked"
     ],
@@ -1264,7 +1264,6 @@
       "official-walk-data",
       "real-image",
       "contact-details",
-      "booking-link",
       "review-link",
       "details-checked"
     ],
@@ -2073,8 +2072,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": "5 minutes to 5 hours , 100m to 5km, Grade 2",
@@ -2155,10 +2155,9 @@
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Friendly_Beaches_Reserve",
     "lastWikidataChecked": "2026-10-06",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park/friendly-beaches"
     }
   },
   {
@@ -2522,89 +2521,6 @@
     "wikidataImages": [
       "Old Convict Church Port Arthur.jpg"
     ]
-  },
-  {
-    "slug": "weldborough-pass-rainforest-walk",
-    "name": "Weldborough Pass Rainforest Walk",
-    "town": "Derby",
-    "region": "Launceston & North",
-    "latitude": -41.2161683,
-    "longitude": 147.9383007,
-    "categories": [
-      "Things to Do",
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "A short rainforest walking loop at Weldborough Pass State Reserve beside the Tasman Highway between Derby and St Helens. Follow local track signage and check current conditions before visiting.",
-    "website": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/way/142432393",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/142432393",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": "Parks and Wildlife Service Tasmania",
-    "detailSources": {
-      "operator": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/142432393",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Weldborough Pass Rainforest Walk category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Weldborough%20Pass%20Rainforest%20Walk%20Derby%20Tasmania"
-      }
-    ],
-    "walk": {
-      "duration": "10 minute circuit , 431m, Grade 1",
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T05:07:33.796Z"
-    },
-    "qualityScore": 95,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "opening-hours",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
-    }
   },
   {
     "slug": "hastings-caves-and-thermal-springs",
@@ -6006,97 +5922,6 @@
     }
   },
   {
-    "slug": "calcified-forest",
-    "name": "Calcified Forest",
-    "town": "Grassy",
-    "region": "King Island",
-    "latitude": -40.1069493,
-    "longitude": 143.8808057,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Calcified Forest is an official Parks Tasmania walk. Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/Calcified-Forest-(King-Island).aspx",
-    "sourceUrl": "https://www.openstreetmap.org/way/261062257",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/261062257",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "email": "parkfees@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {
-      "phone": {
-        "type": "verified-absence",
-        "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Calcified Forest category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Calcified%20Forest%20Grassy%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)",
-      "type": "government",
-      "checkedAt": "2026-10-20"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T05:07:32.374Z"
-    },
-    "qualityScore": 82,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
-  },
-  {
     "slug": "cape-tourville-lookout",
     "name": "Cape Tourville Lookout",
     "town": "Coles Bay",
@@ -6584,90 +6409,6 @@
       "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://www.narryna.com.au/"
-    }
-  },
-  {
-    "slug": "ralphs-falls-lookout",
-    "name": "Ralphs Falls Lookout",
-    "town": "Ringarooma",
-    "region": "Launceston & North",
-    "latitude": -41.3085694,
-    "longitude": 147.8394932,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Ralphs Falls is an official Parks Tasmania walk. Grade 3.",
-    "website": "https://parks.tas.gov.au/Pages/Ralphs-Falls.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/7921740288",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/7921740288",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6778 8520",
-    "email": "PWS.AdminNorth@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Ralphs Falls Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Ralphs%20Falls%20Lookout%20Ringarooma%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/ralphs-falls",
-      "type": "government",
-      "checkedAt": "2026-10-20"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 3
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T05:07:40.083Z"
-    },
-    "qualityScore": 82,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/ralphs-falls"
     }
   },
   {
@@ -7560,6 +7301,179 @@
       "status": "ok",
       "checkedAt": "2026-10-20",
       "url": "https://tasmaniazoo.com.au/"
+    }
+  },
+  {
+    "slug": "calcified-forest",
+    "name": "Calcified Forest",
+    "town": "Grassy",
+    "region": "King Island",
+    "latitude": -40.1069493,
+    "longitude": 143.8808057,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Calcified Forest is an official Parks Tasmania walk. Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/Calcified-Forest-(King-Island).aspx",
+    "sourceUrl": "https://www.openstreetmap.org/way/261062257",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/261062257",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "email": "parkfees@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {
+      "phone": {
+        "type": "verified-absence",
+        "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)",
+        "checkedAt": "2026-10-20"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Calcified Forest category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Calcified%20Forest%20Grassy%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T05:07:32.374Z"
+    },
+    "qualityScore": 80,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/explore-our-parks/seal-rocks-state-reserve/calcified-forest-(king-island)"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20"
+  },
+  {
+    "slug": "ralphs-falls-lookout",
+    "name": "Ralphs Falls Lookout",
+    "town": "Ringarooma",
+    "region": "Launceston & North",
+    "latitude": -41.3085694,
+    "longitude": 147.8394932,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Ralphs Falls is an official Parks Tasmania walk. Grade 3.",
+    "website": "https://parks.tas.gov.au/Pages/Ralphs-Falls.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/7921740288",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/7921740288",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6778 8520",
+    "email": "PWS.AdminNorth@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Ralphs Falls Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Ralphs%20Falls%20Lookout%20Ringarooma%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/ralphs-falls",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 3
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T05:07:40.083Z"
+    },
+    "qualityScore": 80,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/ralphs-falls"
     }
   },
   {
@@ -12978,92 +12892,6 @@
     "bookingUrl": "https://ecom.roller.app/zoodoozoo/httpsecomrollerappzoodoozoomyvenuecheckout/en/product/526793"
   },
   {
-    "slug": "lookout",
-    "name": "Lookout",
-    "town": "Adventure Bay",
-    "region": "Hobart & South",
-    "latitude": -43.3610277,
-    "longitude": 147.2951949,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Leven Canyon Lookout is an official Parks Tasmania walk. Grade 3.",
-    "website": "https://parks.tas.gov.au/Pages/Leven-Canyon-Lookout.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/node/6252933086",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/6252933086",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "03 6464 3008",
-    "email": "parkfees@parks.tas.gov.au",
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Lookout category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Lookout%20Adventure%20Bay%20Tasmania"
-      }
-    ],
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout",
-      "type": "government",
-      "checkedAt": "2026-10-20"
-    },
-    "walk": {
-      "duration": null,
-      "grade": 3
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T05:06:53.394Z"
-    },
-    "qualityScore": 62,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "weak-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout"
-    }
-  },
-  {
     "slug": "cygnet-market",
     "name": "Cygnet Market",
     "town": "Cygnet",
@@ -13944,6 +13772,91 @@
         "confidence": "high"
       }
     ]
+  },
+  {
+    "slug": "lookout",
+    "name": "Lookout",
+    "town": "Adventure Bay",
+    "region": "Hobart & South",
+    "latitude": -43.3610277,
+    "longitude": 147.2951949,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Leven Canyon Lookout is an official Parks Tasmania walk. Grade 3.",
+    "website": "https://parks.tas.gov.au/Pages/Leven-Canyon-Lookout.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/node/6252933086",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/6252933086",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": "03 6464 3008",
+    "email": "parkfees@parks.tas.gov.au",
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Lookout category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Lookout%20Adventure%20Bay%20Tasmania"
+      }
+    ],
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": null,
+      "grade": 3
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T05:06:53.394Z"
+    },
+    "qualityScore": 60,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "weak-name",
+      "website",
+      "verified-website",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/leven-canyon-lookout"
+    }
   },
   {
     "slug": "tasmanian-transport-museum-glenorchy",
@@ -21032,6 +20945,87 @@
     ],
     "rankedAt": "2026-10-20",
     "lastWikidataChecked": "2026-10-06"
+  },
+  {
+    "slug": "weldborough-pass-rainforest-walk",
+    "name": "Weldborough Pass Rainforest Walk",
+    "town": "Derby",
+    "region": "Launceston & North",
+    "latitude": -41.2161683,
+    "longitude": 147.9383007,
+    "categories": [
+      "Things to Do",
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "A short rainforest walking loop at Weldborough Pass State Reserve beside the Tasman Highway between Derby and St Helens. Follow local track signage and check current conditions before visiting.",
+    "website": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/way/142432393",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/142432393",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": "Parks and Wildlife Service Tasmania",
+    "detailSources": {
+      "operator": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/142432393",
+        "checkedAt": "2026-10-20"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Weldborough Pass Rainforest Walk category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Weldborough%20Pass%20Rainforest%20Walk%20Derby%20Tasmania"
+      }
+    ],
+    "walk": {
+      "duration": "10 minute circuit , 431m, Grade 1",
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T05:07:33.796Z"
+    },
+    "qualityScore": 59,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
+    }
   },
   {
     "slug": "west-beach",
@@ -47538,9 +47532,10 @@
     "discoveryStaleSince": "2026-10-20",
     "lastWikidataLinkChecked": "2026-10-20",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-20",
-      "url": "https://aboveandbeyond.flights/"
+      "url": "https://aboveandbeyond.flights/",
+      "error": "The operation was aborted due to timeout"
     }
   },
   {
@@ -84493,6 +84488,73 @@
     "lastWikidataLinkChecked": "2026-10-18"
   },
   {
+    "slug": "devils-gate-dam",
+    "name": "Devils Gate Dam",
+    "town": "Sheffield",
+    "region": "North West",
+    "latitude": -41.3501977,
+    "longitude": 146.2648143,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "Scenic viewpoint in or near Sheffield.",
+    "website": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/2368049404",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2368049404",
+    "wikidata": "Q21945328",
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "bookingUrl": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": null,
+    "detailSources": {},
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Devils Gate Dam category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Devils%20Gate%20Dam%20Sheffield%20Tasmania"
+      }
+    ],
+    "qualityScore": 33,
+    "qualityTier": "standard",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "wikidata",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20",
+    "wikidataMatch": {
+      "method": "name-coordinate",
+      "label": "Devils Gate Dam",
+      "distanceKm": 1.2,
+      "confidence": "medium",
+      "checkedAt": "2026-10-20"
+    }
+  },
+  {
     "slug": "fishtail-tandoor-and-curry-house",
     "name": "Fishtail Tandoor & Curry House",
     "town": "Moonah",
@@ -103486,7 +103548,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -103554,7 +103616,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -103622,7 +103684,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -103690,7 +103752,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -103758,7 +103820,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -103826,7 +103888,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -103894,7 +103956,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -103962,7 +104024,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -104030,7 +104092,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -104098,7 +104160,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -104166,7 +104228,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -104234,7 +104296,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -104307,7 +104369,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
     "officialSourceCheck": {
@@ -104386,7 +104448,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -104454,7 +104516,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -104522,7 +104584,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -104590,7 +104652,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -104658,7 +104720,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -104726,7 +104788,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -104794,7 +104856,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -104862,7 +104924,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -104935,7 +104997,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -105003,7 +105065,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-18",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -105073,7 +105135,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "smolt-kitchen",
@@ -105139,7 +105201,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -105207,7 +105269,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -105275,7 +105337,7 @@
       "details-checked"
     ],
     "rankedAt": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-11",
+    "lastWikidataLinkChecked": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09"
   },
@@ -105345,7 +105407,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-11"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "still-thai",
@@ -105413,7 +105475,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "summer-kitchen",
@@ -105481,7 +105543,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "sun-wah",
@@ -105549,7 +105611,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "sweet-sour-spice",
@@ -105617,7 +105679,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "tas-super-kebab",
@@ -105685,7 +105747,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "tasty-buns",
@@ -105753,7 +105815,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "tempt-bakery",
@@ -105821,7 +105883,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-argosy-bistro",
@@ -105889,7 +105951,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-beach-house",
@@ -105968,7 +106030,7 @@
       "url": "https://www.thebeachhousebb.com/dining",
       "error": "404 Not Found"
     },
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-brown-bear",
@@ -106036,7 +106098,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-elizabeth-lounge",
@@ -106109,7 +106171,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-harbourmaster-cafe",
@@ -106177,7 +106239,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-lunch-company",
@@ -106245,7 +106307,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-main-vault-bakehouse",
@@ -106313,7 +106375,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-old-bank-of-geeveston",
@@ -106381,7 +106443,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-pavilion-cafe",
@@ -106449,7 +106511,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "the-tasmani-fish-and-chips-co",
@@ -106517,7 +106579,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "thirty-three-cups",
@@ -106585,7 +106647,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "touch-of-asia",
@@ -106653,7 +106715,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "toy-sun",
@@ -106721,7 +106783,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "trevallyn-bakery",
@@ -106789,7 +106851,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "triabunna-take-away-and-video",
@@ -106857,7 +106919,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "two-doors-down-cafe",
@@ -106925,7 +106987,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "ventura-cafe-and-surf",
@@ -106993,7 +107055,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "verona-restaurant",
@@ -107061,7 +107123,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "watsons-fine-foods",
@@ -107129,7 +107191,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "west-s-bakery",
@@ -107197,7 +107259,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "windermere-corner-shop-and-cafe",
@@ -107265,7 +107327,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "zest-the-library-cafe",
@@ -107333,7 +107395,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "ausing",
@@ -107407,7 +107469,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bear-hil",
@@ -107467,7 +107529,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bell-hill-lookout",
@@ -107527,7 +107590,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "belvedere",
@@ -107606,7 +107670,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bev-s-lookout",
@@ -107666,7 +107730,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bicentennial-lookout",
@@ -107726,7 +107791,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "bloodstone-point",
@@ -107786,7 +107852,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "brady-s-lookout",
@@ -107844,7 +107911,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "brew",
@@ -107918,7 +107986,7 @@
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
-    "lastWikidataLinkChecked": "2026-10-18"
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "burrowing-crayfish-area",
@@ -107978,7 +108046,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "cape-deslacs-lookout",
@@ -108038,7 +108107,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "cape-lookout",
@@ -108104,7 +108174,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "cashs-gorge-lookout",
@@ -108162,7 +108233,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "cataract-lookout",
@@ -108220,7 +108292,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "cephissus-falls-viewpoint",
@@ -108278,7 +108351,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "charleys-lookout",
@@ -108336,7 +108410,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "chasm-lookout",
@@ -108396,7 +108471,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "cradle-valley-lookout",
@@ -108456,7 +108532,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "crater-peak",
@@ -108516,7 +108593,8 @@
     ],
     "rankedAt": "2026-10-20",
     "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20"
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "cruickshanks-lookout",
@@ -108574,7 +108652,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "dalton-falls",
@@ -108632,7 +108711,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "deadman-s-hollow-lookout",
@@ -108690,7 +108770,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "delaneys-falls-lookout",
@@ -108748,7 +108829,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "devil-gullets-lookout",
@@ -108806,65 +108888,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
-  },
-  {
-    "slug": "devils-gate-dam",
-    "name": "Devils Gate Dam",
-    "town": "Sheffield",
-    "region": "North West",
-    "latitude": -41.3501977,
-    "longitude": 146.2648143,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Scenic viewpoint in or near Sheffield.",
-    "website": null,
-    "sourceUrl": "https://www.openstreetmap.org/node/2368049404",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2368049404",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": null,
-    "email": null,
-    "address": null,
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": null,
-    "detailSources": {},
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Devils Gate Dam category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Devils%20Gate%20Dam%20Sheffield%20Tasmania"
-      }
-    ],
-    "qualityScore": 26,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "don-s-lookout",
@@ -108922,7 +108947,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "donaghys-lookout",
@@ -108980,7 +109006,8 @@
       "review-link",
       "details-checked"
     ],
-    "rankedAt": "2026-10-20"
+    "rankedAt": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20"
   },
   {
     "slug": "douglas-lookout",
