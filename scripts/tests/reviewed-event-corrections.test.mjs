@@ -70,3 +70,26 @@ test('three City of Clarence wrong-date cards use source-specific corrections',(
   assert.equal(reimported.startDate,date,'source URL survives reimport '+prefix);
  }
 });
+
+test('agriCULTURED and Mind Blown keep official Tasmania-local event days and venue',()=>{
+ const pairs=[
+  ['agricultured-2026-2026-11-04-launceston','2026-11-05','2026-11-08','09:00','19:00','Launceston & Surrounds'],
+  ['mind-blown-the-mentalist-and-the-medium-in-launceston-2026-11-07-launceston','2026-11-07','2026-11-07','18:45','22:00','The Tramsheds Function Centre']
+ ];
+ for(const [slug,first,last,begin,end,venue] of pairs){
+  const e=events.find(e=>e.slug===slug);
+  assert.ok(e,'Original event exists: '+slug);
+  const fixed=applyReviewedEventCorrection(e,overrides);
+  assert.equal(fixed.startDate,first);
+  assert.equal(fixed.endDate,last);
+  assert.equal(fixed.startTime,begin);
+  assert.equal(fixed.endTime,end);
+  assert.equal(fixed.venue,venue);
+  const changedSlug={...e,slug:'future-reimport-new-slug'};
+  const fixedAgain=applyReviewedEventCorrection(changedSlug,overrides);
+  assert.equal(fixedAgain.startDate,first,'stable official URL correction survives reimport');
+ }
+ const blown=applyReviewedEventCorrection(events.find(e=>e.slug===pairs[1][0]),overrides);
+ assert.equal(blown.town,'Invermay');
+ assert.equal(blown.address,'4 Invermay Road, Invermay TAS 7248');
+});
