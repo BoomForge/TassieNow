@@ -1436,5 +1436,28 @@
         "checkedAt": "2026-10-20"
       }
     }
+  },
+  "trowunna-wildlife-park": {
+    "liveDisplayOverride": true,
+    "town": "Mole Creek",
+    "region": "Launceston & North",
+    "address": "1892 Mole Creek Road, Mole Creek TAS 7304",
+    "detailSources": {
+      "town": {
+        "type": "verified-source",
+        "url": "https://www.trowunna.com.au/contact-us",
+        "checkedAt": "2026-10-20"
+      },
+      "region": {
+        "type": "verified-source",
+        "url": "https://www.trowunna.com.au/contact-us",
+        "checkedAt": "2026-10-20"
+      },
+      "address": {
+        "type": "verified-source",
+        "url": "https://www.trowunna.com.au/contact-us",
+        "checkedAt": "2026-10-20"
+      }
+    }
   }
 }
