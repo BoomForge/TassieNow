@@ -35,7 +35,7 @@ test('leaves unrelated and differently sourced records unchanged', () => {
 test('Burnie household chemical drop-off survives page-two list omissions until its actual date',()=>{
  const official='https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Free-Household-Chemical-Disposal';
  const restored=restoreVerifiedBurnieEvents([], '2026-10-20');
- assert.equal(restored.length,1);
+ assert.equal(restored.length,2,'both independently verified Burnie page-two events restored');
  assert.equal(restored[0].eventUrl,official);
  assert.equal(restored[0].slug,'free-household-chemical-disposal-2026-11-15-burnie');
  assert.equal(restored[0].startDate,'2026-11-15');
@@ -48,4 +48,22 @@ test('Burnie household chemical drop-off survives page-two list omissions until 
  assert.equal(stale.startDate,'2026-11-15');
  assert.equal(stale.slug,'free-household-chemical-disposal-2026-11-15-burnie');
  assert.equal(stale.venue,'Burnie Waste Transfer Station');
+});
+
+
+test('Tassie Pop Culture Market stays correct after missing council pagination or re-dating',()=>{
+ const url='https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/TasPop-Geek-market';
+ const restored=restoreVerifiedBurnieEvents([],'2026-10-20');
+ const market=restored.find(e=>e.eventUrl===url);
+ assert.ok(market,'verified future market restored');
+ assert.equal(market.startDate,'2026-12-12');
+ assert.equal(market.startTime,'10:00');
+ assert.equal(market.endTime,'14:00');
+ assert.equal(market.town,'Upper Burnie');
+ assert.match(market.address,/242 Mount Street/);
+ assert.ok(market.categories.includes('Markets'));
+ assert.equal(restoreVerifiedBurnieEvents([market],'2026-10-20').length,1,'does not duplicate a live market');
+ const old=applyVerifiedBurnieEvent({...market,startDate:'2026-06-20',town:'Burnie'},'2026-10-20');
+ assert.equal(old.slug,market.slug,'old date corrected to current official session');
+ assert.deepEqual(restoreVerifiedBurnieEvents([],'2026-12-13'),[],'expired markets stay expired');
 });
