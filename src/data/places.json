@@ -1621,6 +1621,7 @@
       "official-walk-data",
       "real-image",
       "contact-details",
+      "booking-link",
       "review-link",
       "details-checked"
     ],
@@ -3083,6 +3084,96 @@
     "lastWikidataLinkChecked": "2026-10-12"
   },
   {
+    "slug": "trousers-point-beach",
+    "name": "Trousers Point Beach",
+    "town": "Tasmania",
+    "region": "Flinders Island",
+    "latitude": -40.23,
+    "longitude": 148.04,
+    "categories": [
+      "Nature & Walks",
+      "Outdoor",
+      "Free"
+    ],
+    "summary": "Trousers Point is an official Parks Tasmania walk. 1.5 hours circuit , 2km circuit, Grade 2 · Grade 2.",
+    "website": "https://parks.tas.gov.au/Pages/Trousers-Point.aspx",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q21955987",
+    "sourceType": "wikidata",
+    "sourceId": "Q21955987",
+    "wikidata": "Q21955987",
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Trousers Point Beach category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "officialSource": {
+      "name": "Parks & Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/strzelecki-national-park/trousers-point",
+      "type": "government",
+      "checkedAt": "2026-10-20"
+    },
+    "walk": {
+      "duration": "1.5 hours circuit , 2km circuit, Grade 2",
+      "grade": 2
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T10:15:18.347Z"
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Trousers%20Point%20Beach%20Tasmania%20Tasmania"
+      }
+    ],
+    "lastDetailsChecked": "2026-10-20",
+    "phone": "0231591379",
+    "detailSources": {
+      "phone": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/explore-our-parks/strzelecki-national-park/trousers-point",
+        "checkedAt": "2026-10-06"
+      },
+      "email": {
+        "type": "official-website",
+        "url": "https://parks.tas.gov.au/about-us/contact-us",
+        "checkedAt": "2026-10-06"
+      }
+    },
+    "email": "parkfees@parks.tas.gov.au",
+    "qualityScore": 91,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "wikidata",
+      "government-source",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "lastWikidataChecked": "2026-10-06",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/explore-our-parks/strzelecki-national-park/trousers-point"
+    }
+  },
+  {
     "slug": "evandale-sunday-market",
     "name": "Evandale Sunday Market",
     "town": "Evandale",
@@ -4364,177 +4455,6 @@
     }
   },
   {
-    "slug": "trousers-point-beach",
-    "name": "Trousers Point Beach",
-    "town": "Tasmania",
-    "region": "Flinders Island",
-    "latitude": -40.23,
-    "longitude": 148.04,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor",
-      "Free"
-    ],
-    "summary": "Trousers Point is an official Parks Tasmania walk. 1.5 hours circuit , 2km circuit, Grade 2 · Grade 2.",
-    "website": "https://parks.tas.gov.au/Pages/Trousers-Point.aspx",
-    "sourceUrl": "https://www.wikidata.org/wiki/Q21955987",
-    "sourceType": "wikidata",
-    "sourceId": "Q21955987",
-    "wikidata": "Q21955987",
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Trousers Point Beach category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "officialSource": {
-      "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/explore-our-parks/strzelecki-national-park/trousers-point",
-      "type": "government",
-      "checkedAt": "2026-10-20"
-    },
-    "walk": {
-      "duration": "1.5 hours circuit , 2km circuit, Grade 2",
-      "grade": 2
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T10:15:18.347Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Trousers%20Point%20Beach%20Tasmania%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-20",
-    "phone": "0231591379",
-    "detailSources": {
-      "phone": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/explore-our-parks/strzelecki-national-park/trousers-point",
-        "checkedAt": "2026-10-06"
-      },
-      "email": {
-        "type": "official-website",
-        "url": "https://parks.tas.gov.au/about-us/contact-us",
-        "checkedAt": "2026-10-06"
-      }
-    },
-    "email": "parkfees@parks.tas.gov.au",
-    "qualityScore": 89,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "wikidata",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "lastWikidataChecked": "2026-10-06",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/strzelecki-national-park/trousers-point"
-    }
-  },
-  {
-    "slug": "weldborough-pass-rainforest-walk",
-    "name": "Weldborough Pass Rainforest Walk",
-    "town": "Derby",
-    "region": "Launceston & North",
-    "latitude": -41.2161683,
-    "longitude": 147.9383007,
-    "categories": [
-      "Things to Do",
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "A short rainforest walking loop at Weldborough Pass State Reserve beside the Tasman Highway between Derby and St Helens. Follow local track signage and check current conditions before visiting.",
-    "website": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
-    "sourceUrl": "https://www.openstreetmap.org/way/142432393",
-    "sourceType": "openstreetmap",
-    "sourceId": "way/142432393",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "address": null,
-    "fee": null,
-    "wheelchair": null,
-    "operator": "Parks and Wildlife Service Tasmania",
-    "detailSources": {
-      "operator": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/way/142432393",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Weldborough Pass Rainforest Walk category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Weldborough%20Pass%20Rainforest%20Walk%20Derby%20Tasmania"
-      }
-    ],
-    "walk": {
-      "duration": "10 minute circuit , 431m, Grade 1",
-      "grade": 1
-    },
-    "parksTasmaniaMatched": true,
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T10:15:51.498Z"
-    },
-    "qualityScore": 89,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "government-source",
-      "official-walk-data",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
-    }
-  },
-  {
     "slug": "allport-library-and-museum-of-fine-arts",
     "name": "Allport Library and Museum of Fine Arts",
     "town": "Tasmania",
@@ -5045,8 +4965,9 @@
     },
     "officialSource": {
       "name": "Parks & Wildlife Service Tasmania",
-      "url": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
-      "type": "government"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk",
+      "type": "government",
+      "checkedAt": "2026-10-20"
     },
     "walk": {
       "duration": null,
@@ -5091,10 +5012,9 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://parks.tas.gov.au/Pages/Tahune-Airwalk.aspx",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://parks.tas.gov.au/things-to-do/60-great-short-walks/tahune-airwalk"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -5241,194 +5161,6 @@
       "url": "https://northernmidlands.tas.gov.au/events/liffey-valley-market"
     },
     "lastWikidataLinkChecked": "2026-10-12"
-  },
-  {
-    "slug": "tasmania-zoo-2",
-    "name": "Tasmania Zoo",
-    "town": "Tasmania",
-    "region": "Launceston & North",
-    "latitude": -41.43095,
-    "longitude": 146.978461,
-    "categories": [
-      "Wildlife",
-      "Family"
-    ],
-    "summary": "Zoo or wildlife attraction in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": "http://www.tasmaniazoo.com.au/",
-    "sourceUrl": "https://www.wikidata.org/wiki/Q7687422",
-    "sourceType": "wikidata",
-    "sourceId": "Q7687422",
-    "wikidata": "Q7687422",
-    "status": "active",
-    "lastChecked": "2026-10-08",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Callocephalon_fimbriatum_-Tasmania_Zoo%2C_Launceston%2C_Australia_-male-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "alt": "Tasmania Zoo, Tasmania",
-      "attribution": "Luke Fabish",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Callocephalon_fimbriatum_-Tasmania_Zoo,_Launceston,_Australia_-male-8.jpg",
-      "isFallback": false,
-      "sourceMethod": "wikimedia-category",
-      "confidence": "high"
-    },
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T10:16:00.876Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Tasmania%20Zoo%20Tasmania%20Tasmania"
-      }
-    ],
-    "bookingUrl": "https://tasmaniazoo.com.au/contact/",
-    "detailSources": {
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://tasmaniazoo.com.au/contact/",
-        "checkedAt": "2026-10-17"
-      },
-      "email": {
-        "type": "official-website",
-        "url": "https://tasmaniazoo.com.au/",
-        "checkedAt": "2026-10-08"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "https://tasmaniazoo.com.au/",
-        "checkedAt": "2026-10-08"
-      },
-      "openingHours": {
-        "type": "official-website",
-        "url": "https://tasmaniazoo.com.au/",
-        "checkedAt": "2026-10-08"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://tasmaniazoo.com.au/contact/",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "email": "zoo@tasmaniazoo.com.au",
-    "phone": "0363966100",
-    "openingHours": "Mo-Su 10:00-16:00",
-    "schedule": {
-      "summary": "Open 10:00am &#8211; 4:00pm Daily",
-      "sourceUrl": "https://tasmaniazoo.com.au/contact/",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "10:00",
-      "endTime": "16:00",
-      "notes": "CLOSED Christmas Day"
-    },
-    "lastDetailsChecked": "2026-10-20",
-    "qualityScore": 86,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "wikidata",
-      "real-image",
-      "opening-hours",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "commonsCategory": "Tasmania Zoo",
-    "gallery": [
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Brushtailed_Possum_Tasmania_Zoo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Tasmania Zoo, Tasmania",
-        "attribution": "Sgerbic",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brushtailed_Possum_Tasmania_Zoo.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Tasmania_Zoo_Bird_and_Man.JPG/1920px-Tasmania_Zoo_Bird_and_Man.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Tasmania Zoo, Tasmania",
-        "attribution": "Sgerbic",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasmania_Zoo_Bird_and_Man.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Tasmanian_Devils_Cuddle.JPG/1920px-Tasmanian_Devils_Cuddle.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Tasmania Zoo, Tasmania",
-        "attribution": "Sgerbic",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasmanian_Devils_Cuddle.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Tasmanian_Devils_fighting_over_food.JPG/1920px-Tasmanian_Devils_fighting_over_food.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Tasmania Zoo, Tasmania",
-        "attribution": "Sgerbic",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasmanian_Devils_fighting_over_food.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Tasmania_Zoo_Bird.JPG/1920px-Tasmania_Zoo_Bird.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Tasmania Zoo, Tasmania",
-        "attribution": "Sgerbic",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasmania_Zoo_Bird.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Monkey_Tasmania_Zoo.JPG/1920px-Monkey_Tasmania_Zoo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Tasmania Zoo, Tasmania",
-        "attribution": "Sgerbic",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monkey_Tasmania_Zoo.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      }
-    ],
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://tasmaniazoo.com.au/",
-      "source": "verified-website",
-      "checkedAt": "2026-10-20"
-    },
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://tasmaniazoo.com.au/"
-    }
   },
   {
     "slug": "mount-gnomon",
@@ -7472,7 +7204,9 @@
     "latitude": -41.43095,
     "longitude": 146.978461,
     "categories": [
-      "Things to Do"
+      "Things to Do",
+      "Wildlife",
+      "Family"
     ],
     "summary": "Visitor attraction in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
     "website": "http://www.tasmaniazoo.com.au/",
@@ -11595,7 +11329,8 @@
     "longitude": 147.376,
     "categories": [
       "Wildlife",
-      "Family"
+      "Family",
+      "Things to Do"
     ],
     "summary": "Zoo or wildlife attraction in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
     "website": "http://www.zoodoo.com.au/",
@@ -12164,116 +11899,6 @@
     "lastWikidataLinkChecked": "2026-10-13"
   },
   {
-    "slug": "australasian-golf-museum-2",
-    "name": "Australasian Golf Museum",
-    "town": "Central Highlands Council",
-    "region": "Central Tasmania",
-    "latitude": -42.3834,
-    "longitude": 147.00824,
-    "categories": [
-      "Museums",
-      "Art & Culture",
-      "Rainy Day"
-    ],
-    "summary": "Museum in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": "http://www.ausgolfmuseum.com/",
-    "sourceUrl": "https://www.wikidata.org/wiki/Q64411897",
-    "sourceType": "wikidata",
-    "sourceId": "Q64411897",
-    "wikidata": "Q64411897",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "/images/categories/indoor.svg",
-      "alt": "Australasian Golf Museum category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T10:15:10.783Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Australasian%20Golf%20Museum%20Central%20Highlands%20Council%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-20",
-    "email": "info@ausgolfmuseum.com",
-    "detailSources": {
-      "email": {
-        "type": "official-website",
-        "url": "http://www.ausgolfmuseum.com/",
-        "checkedAt": "2026-10-06"
-      },
-      "phone": {
-        "type": "official-website",
-        "url": "http://www.ausgolfmuseum.com/",
-        "checkedAt": "2026-10-06"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "http://www.ausgolfmuseum.com/contact/",
-        "checkedAt": "2026-10-20"
-      },
-      "openingHours": {
-        "type": "official-website",
-        "url": "http://www.ausgolfmuseum.com/",
-        "checkedAt": "2026-10-06"
-      }
-    },
-    "phone": "03 6259 4033",
-    "schedule": {
-      "summary": "11am - 3pm daily",
-      "sourceUrl": "http://www.ausgolfmuseum.com/contact/",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "11:00",
-      "endTime": "15:00"
-    },
-    "openingHours": "Mo-Su 11:00-15:00",
-    "qualityScore": 65,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "wikidata",
-      "opening-hours",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSource": {
-      "type": "official-website",
-      "url": "http://www.ausgolfmuseum.com/",
-      "source": "wikidata:P856",
-      "checkedAt": "2026-10-20"
-    },
-    "lastWikidataChecked": "2026-10-06",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "http://www.ausgolfmuseum.com/"
-    }
-  },
-  {
     "slug": "australasian-golf-museum",
     "name": "Australasian Golf Museum",
     "town": "Tasmania",
@@ -12624,124 +12249,6 @@
     "lastWikidataLinkChecked": "2026-10-13"
   },
   {
-    "slug": "something-wild-wildlife-sanctuary-2",
-    "name": "Something Wild Wildlife Sanctuary",
-    "town": "Tasmania",
-    "region": "Hobart & South",
-    "latitude": -42.680116203,
-    "longitude": 146.746752218,
-    "categories": [
-      "Wildlife",
-      "Family"
-    ],
-    "summary": "Zoo or wildlife attraction in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q123339719",
-    "sourceType": "wikidata",
-    "sourceId": "Q123339719",
-    "wikidata": "Q123339719",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Tasmania_3.jpg/1920px-Tasmania_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Something Wild Wildlife Sanctuary, Tasmania",
-      "attribution": "LBM1948",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasmania_3.jpg",
-      "isFallback": false,
-      "sourceMethod": "wikimedia-category",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Something%20Wild%20Wildlife%20Sanctuary%20Tasmania%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-06",
-    "qualityScore": 64,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "real-image",
-      "address",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "address": "2082 Gordon River Rd, National Park TAS 7140",
-    "detailSources": {
-      "address": {
-        "type": "wikidata:P6375",
-        "url": "https://www.wikidata.org/wiki/Q123339719",
-        "checkedAt": "2026-10-06"
-      }
-    },
-    "commonsCategory": "Something Wild Wildlife Sanctuary",
-    "lastWikidataChecked": "2026-10-06",
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Tasmania_2.jpg/1920px-Tasmania_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Something Wild Wildlife Sanctuary, Tasmania",
-        "attribution": "LBM1948",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasmania_2.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Tasmania_5.jpg/1920px-Tasmania_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Something Wild Wildlife Sanctuary, Tasmania",
-        "attribution": "LBM1948",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasmania_5.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Tasmania_4.jpg/1920px-Tasmania_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Something Wild Wildlife Sanctuary, Tasmania",
-        "attribution": "LBM1948",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasmania_4.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Tasmania_6.jpg/1920px-Tasmania_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Something Wild Wildlife Sanctuary, Tasmania",
-        "attribution": "LBM1948",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasmania_6.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Possum_dorado.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Something Wild Wildlife Sanctuary, Tasmania",
-        "attribution": "LBM1948",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Possum_dorado.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      }
-    ]
-  },
-  {
     "slug": "the-richmond-arms-hotel",
     "name": "The Richmond Arms Hotel",
     "town": "Richmond",
@@ -12889,7 +12396,8 @@
     "longitude": 146.45228,
     "categories": [
       "Wildlife",
-      "Family"
+      "Family",
+      "Things to Do"
     ],
     "summary": "Zoo or wildlife attraction in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
     "website": null,
@@ -12949,115 +12457,6 @@
       }
     },
     "lastDetailsChecked": "2026-10-20"
-  },
-  {
-    "slug": "zoodoo-wildlife-park-2",
-    "name": "Zoodoo Wildlife Park",
-    "town": "Tasmania",
-    "region": "Hobart & South",
-    "latitude": -42.7057,
-    "longitude": 147.376,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": "http://www.zoodoo.com.au/",
-    "sourceUrl": "https://www.wikidata.org/wiki/Q8074096",
-    "sourceType": "wikidata",
-    "sourceId": "Q8074096",
-    "wikidata": "Q8074096",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "Zoodoo Wildlife Park category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "websiteCheck": {
-      "status": "ok",
-      "code": 200,
-      "checkedAt": "2026-10-20T10:15:49.146Z"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Zoodoo%20Wildlife%20Park%20Tasmania%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-20",
-    "phone": "0362602444",
-    "detailSources": {
-      "phone": {
-        "type": "official-website",
-        "url": "https://www.hzaa.com.au/",
-        "checkedAt": "2026-10-06"
-      },
-      "schedule": {
-        "type": "official-website",
-        "url": "https://www.hzaa.com.au/plan-your-visit/faqs/general-faqs/",
-        "checkedAt": "2026-10-20"
-      },
-      "openingHours": {
-        "type": "official-website",
-        "url": "https://www.hzaa.com.au/plan-your-visit/faqs/general-faqs/",
-        "checkedAt": "2026-10-20"
-      },
-      "bookingUrl": {
-        "type": "official-website",
-        "url": "https://www.hzaa.com.au/",
-        "checkedAt": "2026-10-06"
-      }
-    },
-    "schedule": {
-      "summary": "We’re open 7 days a week from 9:00 AM to 5:00 PM , including all public holidays and Christmas Day.",
-      "sourceUrl": "https://www.hzaa.com.au/plan-your-visit/faqs/general-faqs/",
-      "frequency": "daily",
-      "daysOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "startTime": "09:00",
-      "endTime": "17:00"
-    },
-    "openingHours": "Mo-Su 09:00-17:00; Mo-Su 09:00-05:00",
-    "qualityScore": 63,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "verified-website",
-      "wikidata",
-      "opening-hours",
-      "contact-details",
-      "booking-link",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://www.hzaa.com.au/",
-      "source": "wikidata:P856",
-      "checkedAt": "2026-10-20"
-    },
-    "lastWikidataChecked": "2026-10-06",
-    "officialSourceCheck": {
-      "status": "ok",
-      "checkedAt": "2026-10-20",
-      "url": "https://www.hzaa.com.au/"
-    },
-    "bookingUrl": "https://ecom.roller.app/zoodoozoo/httpsecomrollerappzoodoozoomyvenuecheckout/en/product/526793"
   },
   {
     "slug": "coles-beach",
@@ -13347,130 +12746,6 @@
       "url": "https://cygnetmarket.com.au/"
     },
     "lastWikidataLinkChecked": "2026-10-13"
-  },
-  {
-    "slug": "hobart-zoo-2",
-    "name": "Hobart Zoo",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "latitude": -42.870555555,
-    "longitude": 147.3325,
-    "categories": [
-      "Wildlife",
-      "Family"
-    ],
-    "summary": "Zoo or wildlife attraction in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q4271849",
-    "sourceType": "wikidata",
-    "sourceId": "Q4271849",
-    "wikidata": "Q4271849",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Beaumaris_Zoo_site.jpg/1920px-Beaumaris_Zoo_site.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "attribution": "MagicFlute1983",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beaumaris_Zoo_site.jpg",
-      "isFallback": false,
-      "sourceMethod": "wikidata-p18",
-      "confidence": "high",
-      "alt": "Hobart Zoo, Tasmania"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Hobart%20Zoo%20Hobart%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-06",
-    "qualityScore": 61,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "real-image",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Beaumaris_Zoo_Hobart_entrance.jpg/1920px-Beaumaris_Zoo_Hobart_entrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Hobart Zoo, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beaumaris_Zoo_Hobart_entrance.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/ThylacineHobart1933.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Hobart Zoo, Tasmania",
-        "attribution": "(Series relates to Australian Information Bureau and successor agencies)",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ThylacineHobart1933.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Thylacines.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Hobart Zoo, Tasmania",
-        "attribution": "Unknown author Unknown author",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacines.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/%22Benjamin%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Hobart Zoo, Tasmania",
-        "attribution": "David Fleay",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22Benjamin%22.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Thylacine_cubs.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "alt": "Hobart Zoo, Tasmania",
-        "attribution": "Unknown author Unknown author",
-        "license": "Public domain",
-        "licenseUrl": null,
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacine_cubs.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Beaumaris_polarbear.JPG/1920px-Beaumaris_polarbear.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Hobart Zoo, Tasmania",
-        "attribution": "Xiphias29",
-        "license": "CC BY 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beaumaris_polarbear.JPG",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      }
-    ],
-    "commonsCategory": "Beaumaris Zoo",
-    "wikidataImages": [
-      "Beaumaris Zoo site.jpg"
-    ],
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/Hobart_Zoo",
-    "lastWikidataChecked": "2026-10-06"
   },
   {
     "slug": "in-the-hanging-garden",
@@ -15433,133 +14708,9 @@
     "lastWikidataChecked": "2026-10-06"
   },
   {
-    "slug": "coningham-beach-2",
-    "name": "Coningham Beach",
-    "town": "Coningham",
-    "region": "Hobart & South",
-    "latitude": -43.07,
-    "longitude": 147.28,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor",
-      "Free"
-    ],
-    "summary": "Beach in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q21956212",
-    "sourceType": "wikidata",
-    "sourceId": "Q21956212",
-    "wikidata": "Q21956212",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Afternoon_stroll_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "attribution": "Stephen Edmonds",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Afternoon_stroll_-_panoramio.jpg",
-      "isFallback": false,
-      "sourceMethod": "wikidata-p18",
-      "confidence": "high",
-      "alt": "Coningham Beach, Tasmania"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Coningham%20Beach%20Coningham%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-06",
-    "qualityScore": 59,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "real-image",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Coningham_Beach_02.jpg/1920px-Coningham_Beach_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_02.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Coningham_Beach_01.jpg/1920px-Coningham_Beach_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_01.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Coningham_Beach_03.jpg/1920px-Coningham_Beach_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_03.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Coningham_Beach_05.jpg/1920px-Coningham_Beach_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_05.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Coningham_Beach_06.jpg/1920px-Coningham_Beach_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_06.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Coningham_Beach_04.jpg/1920px-Coningham_Beach_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_04.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      }
-    ],
-    "commonsCategory": "Coningham Beach",
-    "wikidataImages": [
-      "Afternoon stroll - panoramio.jpg"
-    ],
-    "lastWikidataChecked": "2026-10-06"
-  },
-  {
     "slug": "coningham-beach",
     "name": "Coningham Beach",
-    "town": "Kingborough Council",
+    "town": "Coningham",
     "region": "Hobart & South",
     "latitude": -43.07,
     "longitude": 147.28,
@@ -15679,130 +14830,6 @@
         "confidence": "high"
       }
     ]
-  },
-  {
-    "slug": "coningham-beach-3",
-    "name": "Coningham Beach",
-    "town": "Tasmania",
-    "region": "Hobart & South",
-    "latitude": -43.07,
-    "longitude": 147.28,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor",
-      "Free"
-    ],
-    "summary": "Beach in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q21956212",
-    "sourceType": "wikidata",
-    "sourceId": "Q21956212",
-    "wikidata": "Q21956212",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Afternoon_stroll_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "attribution": "Stephen Edmonds",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Afternoon_stroll_-_panoramio.jpg",
-      "isFallback": false,
-      "sourceMethod": "wikidata-p18",
-      "confidence": "high",
-      "alt": "Coningham Beach, Tasmania"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Coningham%20Beach%20Tasmania%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-06",
-    "qualityScore": 59,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "real-image",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Coningham_Beach_02.jpg/1920px-Coningham_Beach_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_02.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Coningham_Beach_01.jpg/1920px-Coningham_Beach_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_01.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Coningham_Beach_03.jpg/1920px-Coningham_Beach_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_03.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Coningham_Beach_05.jpg/1920px-Coningham_Beach_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_05.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Coningham_Beach_06.jpg/1920px-Coningham_Beach_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_06.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Coningham_Beach_04.jpg/1920px-Coningham_Beach_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Coningham Beach, Tasmania",
-        "attribution": "Jimmyjrg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coningham_Beach_04.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      }
-    ],
-    "commonsCategory": "Coningham Beach",
-    "wikidataImages": [
-      "Afternoon stroll - panoramio.jpg"
-    ],
-    "lastWikidataChecked": "2026-10-06"
   },
   {
     "slug": "crayfish-creek-beach",
@@ -20390,7 +19417,9 @@
     "latitude": -42.680116203,
     "longitude": 146.746752218,
     "categories": [
-      "Things to Do"
+      "Things to Do",
+      "Wildlife",
+      "Family"
     ],
     "summary": "Visitor attraction in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
     "website": null,
@@ -21089,6 +20118,87 @@
     ],
     "rankedAt": "2026-10-20",
     "lastWikidataChecked": "2026-10-06"
+  },
+  {
+    "slug": "weldborough-pass-rainforest-walk",
+    "name": "Weldborough Pass Rainforest Walk",
+    "town": "Derby",
+    "region": "Launceston & North",
+    "latitude": -41.2161683,
+    "longitude": 147.9383007,
+    "categories": [
+      "Things to Do",
+      "Nature & Walks",
+      "Outdoor"
+    ],
+    "summary": "A short rainforest walking loop at Weldborough Pass State Reserve beside the Tasman Highway between Derby and St Helens. Follow local track signage and check current conditions before visiting.",
+    "website": "https://parks.tas.gov.au/Pages/Pencil-Pine-Falls-and-Rainforest-walk.aspx",
+    "sourceUrl": "https://www.openstreetmap.org/way/142432393",
+    "sourceType": "openstreetmap",
+    "sourceId": "way/142432393",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "address": null,
+    "fee": null,
+    "wheelchair": null,
+    "operator": "Parks and Wildlife Service Tasmania",
+    "detailSources": {
+      "operator": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/142432393",
+        "checkedAt": "2026-10-20"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/nature.svg",
+      "alt": "Weldborough Pass Rainforest Walk category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Weldborough%20Pass%20Rainforest%20Walk%20Derby%20Tasmania"
+      }
+    ],
+    "walk": {
+      "duration": "10 minute circuit , 431m, Grade 1",
+      "grade": 1
+    },
+    "parksTasmaniaMatched": true,
+    "websiteCheck": {
+      "status": "ok",
+      "code": 200,
+      "checkedAt": "2026-10-20T10:15:51.498Z"
+    },
+    "qualityScore": 59,
+    "qualityTier": "featured",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "verified-website",
+      "official-walk-data",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "ok",
+      "checkedAt": "2026-10-20",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/pencil-pine-falls-and-rainforest-walk"
+    }
   },
   {
     "slug": "west-beach",
@@ -22278,111 +21388,9 @@
     ]
   },
   {
-    "slug": "black-pyramid-rock-2",
-    "name": "Black Pyramid Rock",
-    "town": "Circular Head",
-    "region": "King Island",
-    "latitude": -40.472,
-    "longitude": 144.344,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Nature reserve in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q4921516",
-    "sourceType": "wikidata",
-    "sourceId": "Q4921516",
-    "wikidata": "Q4921516",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/The_black_pyramid_Bass_Straight_view_from_the_west.jpg/1920px-The_black_pyramid_Bass_Straight_view_from_the_west.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "attribution": "Lazy sussan",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_black_pyramid_Bass_Straight_view_from_the_west.jpg",
-      "isFallback": false,
-      "sourceMethod": "wikidata-p18",
-      "confidence": "high",
-      "alt": "Black Pyramid Rock, Tasmania"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Black%20Pyramid%20Rock%20Circular%20Head%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-06",
-    "qualityScore": 57,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "real-image",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "commonsCategory": "Black Pyramid Rock",
-    "wikidataImages": [
-      "The black pyramid Bass Straight view from the west.jpg"
-    ],
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/Black_Pyramid_Rock",
-    "lastWikidataChecked": "2026-10-06",
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/The_black_pyramid_Bass_Straight_view_from_the_northern_side.jpg/1920px-The_black_pyramid_Bass_Straight_view_from_the_northern_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Black Pyramid Rock, Tasmania",
-        "attribution": "Lazy sussan",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_black_pyramid_Bass_Straight_view_from_the_northern_side.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/The_black_pyramid_Bass_Straight.jpg/1920px-The_black_pyramid_Bass_Straight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Black Pyramid Rock, Tasmania",
-        "attribution": "Lazy sussan",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_black_pyramid_Bass_Straight.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/The_black_pyramid_Bass_Straight_view_from_the_anchorage.jpg/1920px-The_black_pyramid_Bass_Straight_view_from_the_anchorage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Black Pyramid Rock, Tasmania",
-        "attribution": "Lazy sussan",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_black_pyramid_Bass_Straight_view_from_the_anchorage.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/The_black_pyramid_Bass_Straight_approaching_from_the_north_west.jpg/1920px-The_black_pyramid_Bass_Straight_approaching_from_the_north_west.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Black Pyramid Rock, Tasmania",
-        "attribution": "Lazy sussan",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_black_pyramid_Bass_Straight_approaching_from_the_north_west.jpg",
-        "isFallback": false,
-        "sourceMethod": "wikimedia-category",
-        "confidence": "high"
-      }
-    ]
-  },
-  {
     "slug": "black-pyramid-rock",
     "name": "Black Pyramid Rock",
-    "town": "Tasmania",
+    "town": "Circular Head",
     "region": "King Island",
     "latitude": -40.472,
     "longitude": 144.344,
@@ -23597,70 +22605,6 @@
     "region": "East Coast",
     "latitude": -41.872,
     "longitude": 148.313,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Nature reserve in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q139747731",
-    "sourceType": "wikidata",
-    "sourceId": "Q139747731",
-    "wikidata": "Q139747731",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Governor_Island_Tasmania_201907025-013.jpg/1920px-Governor_Island_Tasmania_201907025-013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Governor Island Marine Nature Reserve, Tasmania",
-      "attribution": "Gary Houston",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Governor_Island_Tasmania_201907025-013.jpg",
-      "isFallback": false,
-      "sourceMethod": "commons-search",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Governor%20Island%20Marine%20Nature%20Reserve%20Tasmania%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-06",
-    "qualityScore": 57,
-    "qualityTier": "featured",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "real-image",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "lastWikidataChecked": "2026-10-06",
-    "gallery": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Governor_Island_Tasmania_201907025-015.jpg/1920px-Governor_Island_Tasmania_201907025-015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "alt": "Governor Island Marine Nature Reserve, Tasmania",
-        "attribution": "Gary Houston",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Governor_Island_Tasmania_201907025-015.jpg",
-        "isFallback": false,
-        "sourceMethod": "commons-search",
-        "confidence": "high"
-      }
-    ]
-  },
-  {
-    "slug": "governor-island-marine-nature-reserve-2",
-    "name": "Governor Island Marine Nature Reserve",
-    "town": "Tasmania",
-    "region": "East Coast",
-    "latitude": -41.872,
-    "longitude": 148.315,
     "categories": [
       "Nature & Walks",
       "Outdoor"
@@ -26548,7 +25492,9 @@
     "latitude": -42.870555555,
     "longitude": 147.3325,
     "categories": [
-      "Things to Do"
+      "Things to Do",
+      "Wildlife",
+      "Family"
     ],
     "summary": "Visitor attraction in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
     "website": null,
@@ -27680,54 +26626,6 @@
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
     "lastWikidataLinkChecked": "2026-10-17"
-  },
-  {
-    "slug": "trowunna-wildlife-park-2",
-    "name": "Trowunna Wildlife Park",
-    "town": "Tasmania",
-    "region": "North West",
-    "latitude": -41.55577,
-    "longitude": 146.45228,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q21924192",
-    "sourceType": "wikidata",
-    "sourceId": "Q21924192",
-    "wikidata": "Q21924192",
-    "status": "active",
-    "lastChecked": "2026-10-08",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Trowunna_welcome.jpg/1920px-Trowunna_welcome.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Trowunna Wildlife Park, Tasmania",
-      "attribution": "-jkb-",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trowunna_welcome.jpg",
-      "isFallback": false,
-      "sourceMethod": "wikimedia-category",
-      "confidence": "high"
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Trowunna%20Wildlife%20Park%20Tasmania%20Tasmania"
-      }
-    ],
-    "qualityScore": 54,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "real-image",
-      "review-link"
-    ],
-    "rankedAt": "2026-10-20",
-    "commonsCategory": "Trowunna Wildlife Park"
   },
   {
     "slug": "axeman-s-hall-of-fame",
@@ -36183,9 +35081,10 @@
       "checkedAt": "2026-10-20"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-20",
-      "url": "https://davesnoodles.com.au/"
+      "url": "https://davesnoodles.com.au/",
+      "error": "The operation was aborted due to timeout"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -37047,10 +35946,9 @@
     ],
     "rankedAt": "2026-10-20",
     "officialSourceCheck": {
-      "status": "unreachable",
+      "status": "ok",
       "checkedAt": "2026-10-20",
-      "url": "https://anvers-chocolate.com.au/",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://anvers-chocolate.com.au/"
     }
   },
   {
@@ -41299,6 +40197,135 @@
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
     "lastWikidataLinkChecked": "2026-10-20"
+  },
+  {
+    "slug": "bruny-island-cruises",
+    "name": "Bruny Island Cruises",
+    "town": "Adventure Bay",
+    "region": "Hobart & South",
+    "latitude": -43.3642343,
+    "longitude": 147.3559165,
+    "categories": [
+      "Things to Do"
+    ],
+    "summary": "Visitor attraction in or near Adventure Bay.",
+    "website": "https://www.brunycruises.com.au/",
+    "sourceUrl": "https://www.openstreetmap.org/node/2397993273",
+    "sourceType": "openstreetmap",
+    "sourceId": "node/2397993273",
+    "wikidata": null,
+    "wikipediaUrl": null,
+    "commonsCategory": null,
+    "openingHours": "Mo-Su 09:00-16:00",
+    "phone": "+61 3 6293 1465",
+    "email": null,
+    "address": "1005 Adventure Bay Road, Adventure Bay, TAS, 7150",
+    "bookingUrl": "https://www.brunycruises.com.au/#collapseOne",
+    "fee": null,
+    "wheelchair": "yes",
+    "operator": null,
+    "detailSources": {
+      "phone": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/2397993273",
+        "checkedAt": "2026-10-20"
+      },
+      "address": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/2397993273",
+        "checkedAt": "2026-10-20"
+      },
+      "wheelchair": {
+        "type": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/2397993273",
+        "checkedAt": "2026-10-20"
+      },
+      "bookingUrl": {
+        "type": "official-website",
+        "url": "https://www.brunycruises.com.au/",
+        "checkedAt": "2026-10-20"
+      },
+      "openingHours": {
+        "type": "official-website",
+        "url": "https://www.brunycruises.com.au/visitor-centre/",
+        "checkedAt": "2026-10-20"
+      },
+      "schedule": {
+        "type": "official-website",
+        "url": "https://www.brunycruises.com.au/visitor-centre/",
+        "checkedAt": "2026-10-20"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-10-20",
+    "lastDetailsChecked": "2026-10-20",
+    "lastOsmDetailsChecked": "2026-10-20",
+    "image": {
+      "url": "/images/categories/discover.svg",
+      "alt": "Bruny Island Cruises category artwork",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "reviewLinks": [
+      {
+        "provider": "google-maps",
+        "label": "Reviews & visitor photos on Google Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Bruny%20Island%20Cruises%20Adventure%20Bay%20Tasmania"
+      }
+    ],
+    "websiteCheck": {
+      "status": "inconclusive",
+      "code": 403,
+      "checkedAt": "2026-10-20T10:15:15.586Z"
+    },
+    "qualityScore": 49,
+    "qualityTier": "strong",
+    "visibility": "public",
+    "qualitySignals": [
+      "proper-name",
+      "website",
+      "opening-hours",
+      "address",
+      "contact-details",
+      "booking-link",
+      "review-link",
+      "details-checked"
+    ],
+    "rankedAt": "2026-10-20",
+    "officialSourceCheck": {
+      "status": "unreachable",
+      "checkedAt": "2026-10-20",
+      "url": "https://www.brunycruises.com.au/",
+      "error": "403 Forbidden"
+    },
+    "discoveryStale": true,
+    "discoveryStaleSince": "2026-10-20",
+    "lastWikidataLinkChecked": "2026-10-20",
+    "officialSource": {
+      "type": "official-website",
+      "url": "https://www.brunycruises.com.au/",
+      "source": "openstreetmap-website",
+      "checkedAt": "2026-10-20"
+    },
+    "schedule": {
+      "summary": "Hours of Operation: 9am to 4pm, 7 days a week",
+      "sourceUrl": "https://www.brunycruises.com.au/visitor-centre/",
+      "frequency": "daily",
+      "daysOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "startTime": "09:00",
+      "endTime": "16:00"
+    }
   },
   {
     "slug": "bruny-island-cruises-restaurant",
@@ -47280,9 +46307,10 @@
     "rankedAt": "2026-10-20",
     "lastWikidataLinkChecked": "2026-10-20",
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-20",
-      "url": "https://www.gordonrivercruises.com.au/"
+      "url": "https://www.gordonrivercruises.com.au/",
+      "error": "403 Forbidden"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-20"
@@ -48661,9 +47689,10 @@
       "checkedAt": "2026-10-20"
     },
     "officialSourceCheck": {
-      "status": "ok",
+      "status": "unreachable",
       "checkedAt": "2026-10-20",
-      "url": "https://www.harbourlightscafe.com.au/"
+      "url": "https://www.harbourlightscafe.com.au/",
+      "error": "fetch failed"
     },
     "discoveryStale": true,
     "discoveryStaleSince": "2026-10-09",
@@ -56300,102 +55329,6 @@
     "lastWikidataLinkChecked": "2026-10-20"
   },
   {
-    "slug": "bruny-island-cruises",
-    "name": "Bruny Island Cruises",
-    "town": "Adventure Bay",
-    "region": "Hobart & South",
-    "latitude": -43.3642343,
-    "longitude": 147.3559165,
-    "categories": [
-      "Things to Do"
-    ],
-    "summary": "Visitor attraction in or near Adventure Bay.",
-    "website": "https://www.brunycruises.com.au/",
-    "sourceUrl": "https://www.openstreetmap.org/node/2397993273",
-    "sourceType": "openstreetmap",
-    "sourceId": "node/2397993273",
-    "wikidata": null,
-    "wikipediaUrl": null,
-    "commonsCategory": null,
-    "openingHours": null,
-    "phone": "+61 3 6293 1465",
-    "email": null,
-    "address": "1005 Adventure Bay Road, Adventure Bay, TAS, 7150",
-    "bookingUrl": null,
-    "fee": null,
-    "wheelchair": "yes",
-    "operator": null,
-    "detailSources": {
-      "phone": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/2397993273",
-        "checkedAt": "2026-10-20"
-      },
-      "address": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/2397993273",
-        "checkedAt": "2026-10-20"
-      },
-      "wheelchair": {
-        "type": "openstreetmap",
-        "url": "https://www.openstreetmap.org/node/2397993273",
-        "checkedAt": "2026-10-20"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-10-20",
-    "lastDetailsChecked": "2026-10-20",
-    "lastOsmDetailsChecked": "2026-10-20",
-    "image": {
-      "url": "/images/categories/discover.svg",
-      "alt": "Bruny Island Cruises category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Bruny%20Island%20Cruises%20Adventure%20Bay%20Tasmania"
-      }
-    ],
-    "websiteCheck": {
-      "status": "inconclusive",
-      "code": 403,
-      "checkedAt": "2026-10-20T10:15:15.586Z"
-    },
-    "qualityScore": 41,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "website",
-      "address",
-      "contact-details",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "officialSourceCheck": {
-      "status": "unreachable",
-      "checkedAt": "2026-10-20",
-      "url": "https://www.brunycruises.com.au/",
-      "error": "403 Forbidden"
-    },
-    "discoveryStale": true,
-    "discoveryStaleSince": "2026-10-20",
-    "lastWikidataLinkChecked": "2026-10-20",
-    "officialSource": {
-      "type": "official-website",
-      "url": "https://www.brunycruises.com.au/",
-      "source": "openstreetmap-website",
-      "checkedAt": "2026-10-20"
-    }
-  },
-  {
     "slug": "bryans-beach",
     "name": "Bryans Beach",
     "town": "Tasmania",
@@ -58812,55 +57745,6 @@
         "provider": "google-maps",
         "label": "Reviews & visitor photos on Google Maps",
         "url": "https://www.google.com/maps/search/?api=1&query=Edgcumbe%20Beach%20Circular%20Head%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-06",
-    "qualityScore": 41,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "lastWikidataChecked": "2026-10-06"
-  },
-  {
-    "slug": "edgcumbe-beach-2",
-    "name": "Edgcumbe Beach",
-    "town": "Tasmania",
-    "region": "North West",
-    "latitude": -40.85,
-    "longitude": 145.41,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor",
-      "Free"
-    ],
-    "summary": "Beach in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q21957475",
-    "sourceType": "wikidata",
-    "sourceId": "Q21957475",
-    "wikidata": "Q21957475",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Edgcumbe Beach category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Edgcumbe%20Beach%20Tasmania%20Tasmania"
       }
     ],
     "lastDetailsChecked": "2026-10-06",
@@ -64337,55 +63221,6 @@
         "provider": "google-maps",
         "label": "Reviews & visitor photos on Google Maps",
         "url": "https://www.google.com/maps/search/?api=1&query=Nudists%20Beach%20George%20Town%20Council%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-06",
-    "qualityScore": 41,
-    "qualityTier": "strong",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "lastWikidataChecked": "2026-10-06"
-  },
-  {
-    "slug": "nudists-beach-2",
-    "name": "Nudists Beach",
-    "town": "Tasmania",
-    "region": "Launceston & North",
-    "latitude": -41.07,
-    "longitude": 146.72,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor",
-      "Free"
-    ],
-    "summary": "Beach in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q21922505",
-    "sourceType": "wikidata",
-    "sourceId": "Q21922505",
-    "wikidata": "Q21922505",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Nudists Beach category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Nudists%20Beach%20Tasmania%20Tasmania"
       }
     ],
     "lastDetailsChecked": "2026-10-06",
@@ -72572,55 +71407,6 @@
     "lastWikidataChecked": "2026-10-06"
   },
   {
-    "slug": "beagle-marine-park-2",
-    "name": "Beagle Marine Park",
-    "town": "Tasmania",
-    "region": "Launceston & North",
-    "latitude": -39.34,
-    "longitude": 147.12,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Nature reserve in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q30589004",
-    "sourceType": "wikidata",
-    "sourceId": "Q30589004",
-    "wikidata": "Q30589004",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Beagle Marine Park category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Beagle%20Marine%20Park%20Tasmania%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-06",
-    "qualityScore": 39,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/Beagle_Commonwealth_Marine_Reserve",
-    "lastWikidataChecked": "2026-10-06"
-  },
-  {
     "slug": "beagle-marine-park",
     "name": "Beagle Marine Park",
     "town": "Victoria",
@@ -74940,54 +73726,6 @@
         "provider": "google-maps",
         "label": "Reviews & visitor photos on Google Maps",
         "url": "https://www.google.com/maps/search/?api=1&query=Little%20Christmas%20Island%20Nature%20Reserve%20Little%20Swanport%20Tasmania"
-      }
-    ],
-    "lastDetailsChecked": "2026-10-06",
-    "qualityScore": 39,
-    "qualityTier": "standard",
-    "visibility": "public",
-    "qualitySignals": [
-      "proper-name",
-      "wikidata",
-      "review-link",
-      "details-checked"
-    ],
-    "rankedAt": "2026-10-20",
-    "lastWikidataChecked": "2026-10-06"
-  },
-  {
-    "slug": "little-christmas-island-nature-reserve-2",
-    "name": "Little Christmas Island Nature Reserve",
-    "town": "Tasmania",
-    "region": "East Coast",
-    "latitude": -42.253219444,
-    "longitude": 148.025980555,
-    "categories": [
-      "Nature & Walks",
-      "Outdoor"
-    ],
-    "summary": "Nature reserve in Tasmania. This listing was independently discovered through Wikidata and is cross-checked during TassieNow quality passes.",
-    "website": null,
-    "sourceUrl": "https://www.wikidata.org/wiki/Q123679441",
-    "sourceType": "wikidata",
-    "sourceId": "Q123679441",
-    "wikidata": "Q123679441",
-    "status": "active",
-    "lastChecked": "2026-10-06",
-    "image": {
-      "url": "/images/categories/nature.svg",
-      "alt": "Little Christmas Island Nature Reserve category artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "reviewLinks": [
-      {
-        "provider": "google-maps",
-        "label": "Reviews & visitor photos on Google Maps",
-        "url": "https://www.google.com/maps/search/?api=1&query=Little%20Christmas%20Island%20Nature%20Reserve%20Tasmania%20Tasmania"
       }
     ],
     "lastDetailsChecked": "2026-10-06",
