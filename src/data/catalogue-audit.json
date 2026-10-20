@@ -6,8 +6,8 @@
     "suppressed": 66,
     "media": {
       "realHeroCoverage": {
-        "count": 318,
-        "percent": 14.8
+        "count": 316,
+        "percent": 14.7
       },
       "twoPlusImages": {
         "count": 179,
@@ -21,7 +21,7 @@
         "count": 77,
         "percent": 3.6
       },
-      "totalLicensedImages": 966,
+      "totalLicensedImages": 964,
       "averageImagesPerPublicListing": 0.45
     },
     "sources": {
@@ -48,24 +48,24 @@
         "percent": 19.1
       },
       "recurringSchedule": {
-        "count": 129,
+        "count": 128,
         "percent": 6
       },
       "phone": {
-        "count": 397,
-        "percent": 18.5
+        "count": 396,
+        "percent": 18.4
       },
       "email": {
-        "count": 208,
-        "percent": 9.7
+        "count": 207,
+        "percent": 9.6
       },
       "address": {
         "count": 506,
         "percent": 23.5
       },
       "bookingUrl": {
-        "count": 169,
-        "percent": 7.9
+        "count": 119,
+        "percent": 5.5
       },
       "fee": {
         "count": 27,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 166,
+    "active": 163,
     "media": {
       "licensedHeroCoverage": {
         "count": 66,
-        "percent": 39.8
+        "percent": 40.5
       },
-      "stillUsingCategoryArtwork": 100,
+      "stillUsingCategoryArtwork": 97,
       "bySource": {
         "verified-event-venue": 37,
         "verified-event-activity": 24,
@@ -242,11 +242,11 @@
         },
         "Launceston & North": {
           "count": 17,
-          "percent": 56.7
+          "percent": 58.6
         },
         "North West": {
           "count": 13,
-          "percent": 30.2
+          "percent": 31.7
         },
         "East Coast": {
           "count": 1,
@@ -271,21 +271,21 @@
       }
     },
     "ticketCoverage": {
-      "count": 47,
-      "percent": 28.3
+      "count": 44,
+      "percent": 27
     },
     "priceCoverage": {
-      "count": 50,
-      "percent": 30.1
+      "count": 58,
+      "percent": 35.6
     },
     "providers": {
-      "Humanitix": 25,
+      "Humanitix": 22,
       "Ticketek": 20,
       "Eventbrite": 1,
       "Ticketmaster": 1
     },
     "sources": {
-      "Burnie City Council": 27,
+      "Burnie City Council": 25,
       "MyState Bank Arena": 21,
       "Huon Valley Council": 16,
       "Theatre North Launceston": 16,
@@ -298,7 +298,7 @@
       "City of Hobart": 7,
       "Glenorchy City Council": 6,
       "King Island Tourism": 3,
-      "City of Launceston": 2,
+      "City of Launceston": 1,
       "Door of Hope Centenary Committee": 1,
       "Highlands BushFest organising team": 1,
       "Ticketebo": 1,
@@ -306,8 +306,8 @@
     },
     "regions": {
       "Hobart & South": 79,
-      "Launceston & North": 30,
-      "North West": 43,
+      "Launceston & North": 29,
+      "North West": 41,
       "East Coast": 9,
       "West Coast": 1,
       "Central Tasmania": 1,
@@ -322,13 +322,13 @@
       "tomorrow": "2026-10-21",
       "nextWeekendStart": "2026-10-24",
       "nextWeekendEnd": "2026-10-25",
-      "todayOrTomorrow": 29,
+      "todayOrTomorrow": 28,
       "thisWeekend": 22,
       "townsTodayOrTomorrow": {
         "Huonville": 11,
         "Burnie": 5,
         "Devonport": 5,
-        "Launceston": 4,
+        "Launceston": 3,
         "Hobart": 2,
         "Glenorchy": 1,
         "Lindisfarne": 1
@@ -350,10 +350,10 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 0
+      "missingOrOlderThan30Days": 1
     },
     "sourceRegionalMix": {
-      "North West / Burnie City Council": 27,
+      "North West / Burnie City Council": 25,
       "Hobart & South / MyState Bank Arena": 21,
       "Hobart & South / Huon Valley Council": 16,
       "Launceston & North / Theatre North Launceston": 16,
@@ -366,8 +366,8 @@
       "Hobart & South / City of Hobart": 7,
       "Hobart & South / Glenorchy City Council": 6,
       "King Island / King Island Tourism": 3,
-      "Launceston & North / City of Launceston": 2,
       "Central Tasmania / Highlands BushFest organising team": 1,
+      "Launceston & North / City of Launceston": 1,
       "Launceston & North / Door of Hope Centenary Committee": 1,
       "North West / Ticketebo": 1,
       "West Coast / West Coast Heritage Centre": 1
