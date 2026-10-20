@@ -6,8 +6,13 @@
 const DISPLAY_FIELDS = ['openingHours', 'phone', 'address', 'town'];
 
 export function applyVerifiedPlaceDisplayOverrides(place, overrides) {
+  // A town-level verified correction must reach every generated place page,
+  // including Archers Knob, whose older stored region survived prior imports.
+  // Exact town guard avoids the unrelated southern town of Sorell.
+  const corrected = !place.managedManually && /^port\s+sorell$/i.test(String(place.town||'').trim()) &&
+      place.region !== 'North West' ? {...place,region:'North West'} : place;
   const override = overrides?.[place.slug];
-  if (!override || override.liveDisplayOverride !== true || place.managedManually) return place;
+  if (!override || override.liveDisplayOverride !== true || place.managedManually) return corrected;
   const verified = Object.fromEntries(
     DISPLAY_FIELDS.filter((field) => typeof override[field] === 'string' && override[field].trim())
       .map((field) => [field, override[field]])
@@ -19,7 +24,7 @@ export function applyVerifiedPlaceDisplayOverrides(place, overrides) {
     override.removeOpeningHours === true || override.removeSchedule === true || override.overrideOfficialSource === true ||
     (licensedImage && place.image?.isFallback === true);
   if (!update) return place;
-  const copy = { ...place, ...verified };
+  const copy = { ...corrected, ...verified };
   // Trowunna's previous state-only breadcrumb can also carry the wrong region.
   // The reviewed correction is explicitly pinned to the operator's Mole Creek address.
   if (place.slug === 'trowunna-wildlife-park' && override.region === 'Launceston & North') {
