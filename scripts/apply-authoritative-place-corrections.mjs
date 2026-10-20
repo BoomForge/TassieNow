@@ -3,6 +3,7 @@ import overrides from '../src/data/place-overrides.json' with { type: 'json' };
 import { sanitiseListingFields } from '../src/lib/listing-field-sanitizers.mjs';
 import { safePlaceBookingUrl } from '../src/lib/place-booking-guard.mjs';
 import { regionFor } from './discover/lib/regions.mjs';
+import { shouldRemoveParksContactHours } from '../src/lib/parks-hours-source-guard.mjs';
 
 const file = new URL('../src/data/places.json', import.meta.url);
 const places = JSON.parse(await fs.readFile(file, 'utf8'));
@@ -54,6 +55,12 @@ for (const place of places) {
     place.image = structuredClone(overrides[place.slug].image);
     place.detailSources ||= {};
     place.detailSources.image = structuredClone(overrides[place.slug].detailSources.image);
+    fieldsCorrected++;
+  }
+  // Previously imported Parks office/contact hours must not survive new builds.
+  if (shouldRemoveParksContactHours(place)) {
+    delete place.openingHours;
+    if (place.detailSources) delete place.detailSources.openingHours;
     fieldsCorrected++;
   }
   const original = place.bookingUrl;
