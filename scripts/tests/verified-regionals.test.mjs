@@ -57,3 +57,21 @@ test('Halloweek Big Top requires organiser-specific 31 Oct evidence',()=>{
  assert.equal(verifiedRegionalEvent(source,'Sat, 31 Oct, 9pm, unrelated show','2026-10-20'),null);
  assert.equal(verifiedRegionalEvent(source,original,'2026-11-02'),null);
 });
+
+test('Coats Patons tour requires actual 25 October organiser session before restoring',()=>{
+ const source=SOURCES.find(x=>x.event.includes('Coats Patons (Patons'));
+ assert.ok(source);
+ const valid='<h1>Coats Patons (Patons & Baldwins) History Tours - Sunday</h1>'+
+  '<p>Sun, 25 Oct, 11:30am - 1:30pm AEDT</p>'+
+  '<p>Door of Hope Christian Church, 50 Glen Dhu St, Launceston</p>';
+ const found=verifiedRegionalEvent(source,valid,'2026-10-20');
+ assert.equal(found?.startDate,'2026-10-25');
+ assert.equal(found?.startTime,'11:30');
+ assert.equal(found?.endTime,'13:30');
+ assert.equal(found?.venue,'Door of Hope Christian Church');
+ assert.equal(found?.address,'50 Glen Dhu Street, South Launceston TAS 7249');
+ assert.equal(found?.image?.isFallback,true);
+ assert.equal(verifiedRegionalEvent(source,valid.replace('25 Oct','22 Nov'),'2026-10-20'),null);
+ assert.equal(verifiedRegionalEvent(source,'Sun, 25 Oct, 11:30am - 1:30pm AEDT but an unrelated concert','2026-10-20'),null);
+ assert.equal(verifiedRegionalEvent(source,valid,'2026-10-26'),null);
+});
