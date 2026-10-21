@@ -5569,6 +5569,50 @@
         "identity": "candidate-not-verified",
         "reason": "Official page image; source owner reuse rights and exact photo identity unverified",
         "observedAt": "2026-10-14T23:11:46.984Z"
+      },
+      {
+        "id": "commons-geo:149783334",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Hobart_Rivulet_looking_towards_Mt_Wellington%2C_July_2021.jpg/1280px-Hobart_Rivulet_looking_towards_Mt_Wellington%2C_July_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hobart_Rivulet_looking_towards_Mt_Wellington,_July_2021.jpg",
+        "title": "Hobart Rivulet looking towards Mt Wellington, July 2021.jpg",
+        "credit": "Thomas & Olivia Williams",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "rivulet"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-21T23:28:40.393Z"
+      },
+      {
+        "id": "commons-geo:149783360",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Hobart_Rivulet_McFarlane_St_bridge%2C_July_2021.jpg/1280px-Hobart_Rivulet_McFarlane_St_bridge%2C_July_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hobart_Rivulet_McFarlane_St_bridge,_July_2021.jpg",
+        "title": "Hobart Rivulet McFarlane St bridge, July 2021.jpg",
+        "credit": "Thomas & Olivia Williams",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "rivulet"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-21T23:28:40.393Z"
       }
     ]
   },
@@ -9861,6 +9905,316 @@
           "localityInMetadata": true
         },
         "observedAt": "2026-10-20T09:51:02.295Z"
+      }
+    ]
+  },
+  "the-pier-hotel-restaurant": {
+    "name": "The Pier Hotel Restaurant",
+    "town": "George Town",
+    "candidates": [
+      {
+        "id": "commons-geo:28457028",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Pier-Hotel-George-Town-20070421-004.jpg/1280px-Pier-Hotel-George-Town-20070421-004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pier-Hotel-George-Town-20070421-004.jpg",
+        "title": "Pier-Hotel-George-Town-20070421-004.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "pier",
+            "hotel"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-21T23:28:40.393Z"
+      },
+      {
+        "id": "commons-geo:28457029",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Pier-Hotel-George-Town-20070421-005.jpg/1280px-Pier-Hotel-George-Town-20070421-005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pier-Hotel-George-Town-20070421-005.jpg",
+        "title": "Pier-Hotel-George-Town-20070421-005.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "pier",
+            "hotel"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-21T23:28:40.393Z"
+      },
+      {
+        "id": "commons-geo:168724786",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/View_of_York_Cove_and_George_Town_parkrun_start_location%2C_Tasmania.jpg/1280px-View_of_York_Cove_and_George_Town_parkrun_start_location%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:View_of_York_Cove_and_George_Town_parkrun_start_location,_Tasmania.jpg",
+        "title": "View of York Cove and George Town parkrun start location, Tasmania.jpg",
+        "credit": "Chuq",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "pier",
+            "hotel"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-21T23:28:40.393Z"
+      }
+    ]
+  },
+  "bruny-island-cheese-company": {
+    "name": "Bruny Island Cheese Company",
+    "town": "Middleton",
+    "candidates": [
+      {
+        "id": "commons-geo:123329597",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bruny_Island_Main_Road_in_Great_Bay.jpg/1280px-Bruny_Island_Main_Road_in_Great_Bay.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bruny_Island_Main_Road_in_Great_Bay.jpg",
+        "title": "Bruny Island Main Road in Great Bay.jpg",
+        "credit": "Mx. Granger",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "bruny",
+            "island"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-21T23:28:40.393Z"
+      }
+    ]
+  },
+  "fish-frenzy-hobart": {
+    "name": "Fish Frenzy",
+    "town": "Hobart",
+    "candidates": [
+      {
+        "id": "commons-geo:64673281",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Elizabeth_Street_Pier_20171120-086.jpg/1280px-Elizabeth_Street_Pier_20171120-086.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Elizabeth_Street_Pier_20171120-086.jpg",
+        "title": "Elizabeth Street Pier 20171120-086.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "fish",
+            "frenzy"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-21T23:28:40.393Z"
+      },
+      {
+        "id": "commons-geo:126513444",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Fish_and_chips_from_Fish_Frenzy_in_Hobart_July_2017.jpg/1280px-Fish_and_chips_from_Fish_Frenzy_in_Hobart_July_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Fish_and_chips_from_Fish_Frenzy_in_Hobart_July_2017.jpg",
+        "title": "Fish and chips from Fish Frenzy in Hobart July 2017.jpg",
+        "credit": "Nick-D",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "fish",
+            "frenzy"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-21T23:28:40.393Z"
+      }
+    ]
+  },
+  "orient-bar-and-restaurant": {
+    "name": "Orient Bar & Restaurant",
+    "town": "Hobart",
+    "candidates": [
+      {
+        "id": "commons-geo:149783812",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Thursday%2C_October_26%2C_2017_-_26644747109.jpg/1280px-Thursday%2C_October_26%2C_2017_-_26644747109.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Thursday,_October_26,_2017_-_26644747109.jpg",
+        "title": "Thursday, October 26, 2017 - 26644747109.jpg",
+        "credit": "Dennis Sylvester Hurd",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "orient"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-21T23:28:40.393Z"
+      },
+      {
+        "id": "commons-geo:155592255",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Hadley%E2%80%99s_Orient_Hotel_-_Street_View.jpg/1280px-Hadley%E2%80%99s_Orient_Hotel_-_Street_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hadley%E2%80%99s_Orient_Hotel_-_Street_View.jpg",
+        "title": "Hadley’s Orient Hotel - Street View.jpg",
+        "credit": "Diggers2004",
+        "licence": "CC BY 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "orient"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-21T23:28:40.393Z"
+      }
+    ]
+  },
+  "bruny-island-cruises-restaurant": {
+    "name": "Bruny Island Cruises Restaurant",
+    "town": "Adventure Bay",
+    "candidates": [
+      {
+        "id": "commons-geo:10794516",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Melanodryas_vittata.jpg/1280px-Melanodryas_vittata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Melanodryas_vittata.jpg",
+        "title": "Melanodryas vittata.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "bruny",
+            "island"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-21T23:28:40.393Z"
+      },
+      {
+        "id": "commons-geo:12200793",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Cacomantis_flabelliformis.jpg/1280px-Cacomantis_flabelliformis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cacomantis_flabelliformis.jpg",
+        "title": "Cacomantis flabelliformis.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "bruny",
+            "island"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-21T23:28:40.393Z"
+      },
+      {
+        "id": "commons-geo:12200830",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Melanodryas_vittata_Bruny.jpg/1280px-Melanodryas_vittata_Bruny.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Melanodryas_vittata_Bruny.jpg",
+        "title": "Melanodryas vittata Bruny.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "bruny",
+            "island"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-21T23:28:40.393Z"
+      }
+    ]
+  },
+  "the-york-hotel-12-mile-steakhouse": {
+    "name": "The York Hotel 12 Mile Steakhouse",
+    "town": "Granton",
+    "candidates": [
+      {
+        "id": "commons-geo:167361991",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/York_Hotel_Granton_Tasmania.jpg/1280px-York_Hotel_Granton_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:York_Hotel_Granton_Tasmania.jpg",
+        "title": "York Hotel Granton Tasmania.jpg",
+        "credit": "Chuq",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "york",
+            "hotel"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-21T23:28:40.393Z"
       }
     ]
   }
