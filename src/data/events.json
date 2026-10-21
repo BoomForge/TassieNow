@@ -23,7 +23,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22",
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "huon-valley-alphabet-mafia-2026-01-05-huonville",
@@ -49,7 +50,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22",
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "cygnet-men-s-circle-2026-01-14-huonville",
@@ -75,7 +77,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22",
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "rock-and-rhyme-at-huonville-library-2026-01-14-huonville",
@@ -85,7 +88,8 @@
     "startDate": "2026-01-14",
     "endDate": "2026-12-23",
     "categories": [
-      "Events"
+      "Events",
+      "Free"
     ],
     "summary": "Rock and Rhyme at Huonville Library in Huonville. Check the official event listing for current times, venue, accessibility and booking details.",
     "eventUrl": "https://www.huonvalley.tas.gov.au/event/rock-and-rhyme-and-storytime-at-huonville-library/",
@@ -112,7 +116,15 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22",
+    "ticketUrl": "https://www.eventbrite.com/e/rock-and-rhyme-and-storytime-at-huonville-library-tickets-862619898337?aff=ebdsoporgprofile&amp;keep_tld=1",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "priceFrom": 0,
+    "priceTo": 0,
+    "priceCurrency": "AUD",
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "herbalists-without-borders-2026-01-16-huonville",
@@ -138,7 +150,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22",
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "franklin-movie-nights-2026-02-01-huonville",
@@ -175,7 +188,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22",
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "smoother-movers-strength-training-program-2026-02-02-huonville",
@@ -2727,8 +2741,7 @@
     "status": "active",
     "lastChecked": "2026-10-22",
     "startTime": "09:45",
-    "endTime": "12:00",
-    "ticketLastChecked": "2026-10-22"
+    "endTime": "12:00"
   },
   {
     "slug": "home-composting-workshop-2026-11-08-hobart",
@@ -2765,8 +2778,7 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-22",
-    "ticketLastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22"
   },
   {
     "slug": "sweet-uk-final-blitz-tour-2026-11-08-hobart",
@@ -2826,8 +2838,7 @@
     "status": "active",
     "lastChecked": "2026-10-22",
     "startTime": "10:00",
-    "endTime": "16:00",
-    "ticketLastChecked": "2026-10-22"
+    "endTime": "16:00"
   },
   {
     "slug": "in-conversation-with-alan-carter-2026-11-10-burnie",
@@ -2858,7 +2869,6 @@
     "lastChecked": "2026-10-22",
     "startTime": "14:30",
     "endTime": "16:00",
-    "ticketLastChecked": "2026-10-22",
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD"
@@ -2887,8 +2897,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-22",
-    "ticketLastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22"
   },
   {
     "slug": "arts-night-kings-at-the-albert-2026-11-12-launceston",
@@ -2960,8 +2969,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-22",
-    "ticketLastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22"
   },
   {
     "slug": "come-and-try-golf-for-the-disabled-riverside-golf-club-tas-2026-11-12-launceston",
@@ -3035,7 +3043,6 @@
     "lastChecked": "2026-10-22",
     "startTime": "18:00",
     "endTime": "20:00",
-    "ticketLastChecked": "2026-10-22",
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD"
@@ -3091,8 +3098,7 @@
         "startTime": "09:00",
         "endTime": "17:00"
       }
-    ],
-    "ticketLastChecked": "2026-10-22"
+    ]
   },
   {
     "slug": "comedy-night-tabish-2026-11-13-hobart",
@@ -3210,12 +3216,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-22",
-    "ticketUrl": "https://events.humanitix.com/st-david-s-park-100th-birthday-garden-party",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22"
   },
   {
     "slug": "st-david-s-park-100th-birthday-garden-party-2026-11-13-hobart",
@@ -3241,8 +3242,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-22",
-    "ticketLastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22"
   },
   {
     "slug": "world-kindness-day-2026-11-13-glenorchy",
@@ -3365,8 +3365,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-22",
-    "ticketLastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22"
   },
   {
     "slug": "toni-and-ryan-live-podcast-recording-2026-11-15-hobart",
@@ -4036,8 +4035,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-22",
-    "ticketLastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22"
   },
   {
     "slug": "volunteers-breakfast-2026-2026-12-02-devonport",
@@ -4066,8 +4064,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-22",
-    "ticketLastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22"
   },
   {
     "slug": "beyond-sound-the-music-in-all-of-us-2026-12-03-rosny-park",
@@ -4097,12 +4094,7 @@
     "startTime": "13:00",
     "endTime": "15:00",
     "venue": "Rosny Library",
-    "address": "Bligh Street, Rosny Park TAS 7018",
-    "ticketUrl": "https://events.humanitix.com/beyond-sound-the-music-in-all-of-us",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-10-22"
+    "address": "Bligh Street, Rosny Park TAS 7018"
   },
   {
     "slug": "the-magic-of-audrey-2026-12-04-launceston",
@@ -4224,7 +4216,7 @@
     "priceFrom": 28,
     "priceTo": 58,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-20"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "santa-s-street-spectacular-2026-2026-12-06-devonport",
@@ -4250,7 +4242,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22",
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "the-greatest-christmas-show-2026-12-06-launceston",
@@ -4296,7 +4289,7 @@
     "priceFrom": 39.9,
     "priceTo": 79.9,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-20"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "daniel-champagne-live-at-the-tramsheds-functions-centre-launceston-2026-12-11-launceston",
@@ -4327,7 +4320,9 @@
     "lastChecked": "2026-10-21",
     "ticketUrl": "https://events.humanitix.com/daniel-champagne-live-at-the-tramsheds-functions-centre-or-launceston",
     "ticketProvider": "Humanitix",
-    "bookingRequired": true
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "queens-of-the-stone-age-2026-12-11-glenorchy",
@@ -4372,7 +4367,7 @@
     "ticketUrl": "https://www.ticketmaster.com.au/event/130064E7C55D3F2B",
     "ticketProvider": "Ticketmaster",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-10-20"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "name": "Tassie Pop Culture Market",
@@ -4401,7 +4396,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22",
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "festive-friday-2026-2026-12-18-devonport",
@@ -4430,7 +4426,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22",
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "carols-by-candlelight-2026-12-19-glenorchy",
@@ -4467,7 +4464,15 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22",
+    "priceFrom": 15,
+    "priceTo": 15,
+    "priceCurrency": "AUD",
+    "ticketUrl": "https://events.humanitix.com/variety-carols-2026?_gl=1*2cf98m*_gcl_au*MTUyNjA2NDYxOS4xNzg1Mjc5NjQ4LjIxMTY5OTQxMjcuMTc4ODIzNTA2NS4xNzg4MjM1Njg2LjE3MjYxNjU1MzkuMTc4ODIzNDg3My4xNzg4MjM1Njg2*_ga*OTEwNDYxMTgzLjE3NjE4Nzc4ODY.*_ga_LHKW5FR9N6*czE3ODgyMzMwNjEkbzI3MCRnMSR0MTc4ODIzNjEyMyRqNCRsMCRoMA",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "variety-kids-carols-2026-12-19-glenorchy",
@@ -4505,7 +4510,15 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-22",
+    "priceFrom": 5,
+    "priceTo": 10,
+    "priceCurrency": "AUD",
+    "ticketUrl": "https://events.humanitix.com/variety-carols-2026?_gl=1*2cf98m*_gcl_au*MTUyNjA2NDYxOS4xNzg1Mjc5NjQ4LjIxMTY5OTQxMjcuMTc4ODIzNTA2NS4xNzg4MjM1Njg2LjE3MjYxNjU1MzkuMTc4ODIzNDg3My4xNzg4MjM1Njg2*_ga*OTEwNDYxMTgzLjE3NjE4Nzc4ODY.*_ga_LHKW5FR9N6*czE3ODgyMzMwNjEkbzI3MCRnMSR0MTc4ODIzNjEyMyRqNCRsMCRoMA",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "tasmania-jackjumpers-v-adelaide-36ers-2026-12-21-glenorchy",
@@ -4553,7 +4566,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "tasmania-jackjumpers-v-se-melbourne-phoenix-2026-12-26-glenorchy",
@@ -4601,7 +4614,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "the-beatles-show-red-and-038-blue-boxing-day-craigie-knowe-vineyard-2026-12-26-cranbrook",
@@ -4630,7 +4643,7 @@
     "lastChecked": "2026-10-15",
     "venue": "Craigie Knowe Vineyard",
     "address": "80 Glen Gala Road, Cranbrook TAS 7190",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "tasmania-jewels-v-bendigo-spirit-2026-12-27-glenorchy",
@@ -4678,7 +4691,7 @@
     "priceFrom": 15,
     "priceTo": 470,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "mental-as-anything-new-year-and-8217-s-day-at-craigie-knowe-vineyard-2027-01-01-cranbrook",
@@ -4707,7 +4720,7 @@
     "lastChecked": "2026-10-15",
     "venue": "Craigie Knowe Vineyard",
     "address": "80 Glen Gala Road, Cranbrook TAS 7190",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "tasmania-jackjumpers-v-perth-wildcats-2027-01-01-glenorchy",
@@ -4755,7 +4768,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "tasmania-jewels-v-adelaide-lightning-2027-01-07-glenorchy",
@@ -4803,7 +4816,7 @@
     "priceFrom": 15,
     "priceTo": 470,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "2027-king-island-pro-am-2027-01-15-currie",
@@ -4844,7 +4857,7 @@
     "priceFrom": 2875,
     "priceTo": 2875,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "tasmania-jewels-v-townsville-fire-2027-01-21-glenorchy",
@@ -4892,7 +4905,7 @@
     "priceFrom": 15,
     "priceTo": 470,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "tasmania-jackjumpers-v-cairns-taipans-2027-01-22-glenorchy",
@@ -4940,7 +4953,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "tasmania-jewels-v-sydney-flames-2027-01-25-glenorchy",
@@ -4988,7 +5001,7 @@
     "priceFrom": 15,
     "priceTo": 470,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "ignite-cup-tasmania-jackjumpers-v-illawarra-hawks-2027-01-27-glenorchy",
@@ -5036,7 +5049,7 @@
     "priceFrom": 2,
     "priceTo": 490,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "tasmania-jackjumpers-v-brisbane-bullets-2027-01-31-glenorchy",
@@ -5084,7 +5097,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "tasmania-jackjumpers-v-melbourne-united-2027-02-05-glenorchy",
@@ -5132,7 +5145,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "tasmania-jackjumpers-v-perth-wildcats-2027-02-10-glenorchy",
@@ -5180,7 +5193,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "an-evening-with-gillian-welch-and-david-rawlings-2027-02-11-launceston",
@@ -5226,7 +5239,7 @@
     "priceFrom": 107.08,
     "priceTo": 153.79,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "festival-of-king-island-2027-2027-02-12-currie",
@@ -5257,7 +5270,7 @@
     "priceFrom": 30,
     "priceTo": 75,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "seventh-wonder-performs-fleetwood-mac-orchestrated-2027-02-19-launceston",
@@ -5303,7 +5316,7 @@
     "priceFrom": 55,
     "priceTo": 89,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "arj-barker-the-eleventh-hour-albert-hall-launceston-20-feb-2027-02-20-launceston",
@@ -5346,7 +5359,7 @@
     "priceFrom": 59.9,
     "priceTo": 64.9,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "drum-tao-samurai-of-the-drum-2027-02-23-launceston",
@@ -5392,7 +5405,7 @@
     "priceFrom": 54.9,
     "priceTo": 99.9,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "spoke-motorcycle-festival-2027-02-26-little-swanport",
@@ -5423,7 +5436,7 @@
     "lastChecked": "2026-10-15",
     "venue": "100 Mayfield Jetty Road",
     "address": "100 Mayfield Jetty Road, Little Swanport TAS 7190",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "echo-festival-2027-03-12-swansea",
@@ -5453,7 +5466,7 @@
     "lastChecked": "2026-10-15",
     "venue": "13512 Tasman Hwy",
     "address": "13512 Tasman Hwy, Swansea TAS 7190",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "dolly-and-kenny-forever-2027-04-10-launceston",
@@ -5499,7 +5512,7 @@
     "priceFrom": 67.5,
     "priceTo": 79,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "delta-goodrem-pure-world-tour-2027-04-26-glenorchy",
@@ -5546,7 +5559,7 @@
     "priceFrom": 99.9,
     "priceTo": 611.6,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "bicheno-beams-2027-06-26-bicheno",
@@ -5575,7 +5588,7 @@
     "lastChecked": "2026-10-15",
     "venue": "78 Burgess Street",
     "address": "78 Burgess Street, Bicheno TAS 7215",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "tasmanian-fibre-festival-2027-07-09-launceston",
@@ -5622,7 +5635,7 @@
     "priceFrom": 5,
     "priceTo": 40,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "winter-challenge-tasmania-2027-08-15-orford",
@@ -5651,7 +5664,7 @@
     "lastChecked": "2026-10-15",
     "venue": "31 Rheban Road",
     "address": "31 Rheban Road, Orford TAS 7190",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "the-60-four-studio-64-2027-09-03-launceston",
@@ -5699,7 +5712,7 @@
     "priceFrom": 74.95,
     "priceTo": 89.95,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   },
   {
     "slug": "freycinet-challenge-2027-10-02-st-helens",
@@ -5726,6 +5739,6 @@
     },
     "status": "active",
     "lastChecked": "2026-10-21",
-    "ticketLastChecked": "2026-10-21"
+    "ticketLastChecked": "2026-10-22"
   }
 ]

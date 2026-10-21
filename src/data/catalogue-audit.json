@@ -271,16 +271,17 @@
       }
     },
     "ticketCoverage": {
-      "count": 42,
-      "percent": 25.9
+      "count": 43,
+      "percent": 26.5
     },
     "priceCoverage": {
-      "count": 63,
-      "percent": 38.9
+      "count": 68,
+      "percent": 42
     },
     "providers": {
       "Humanitix": 22,
       "Ticketek": 19,
+      "Eventbrite": 1,
       "Ticketmaster": 1
     },
     "sources": {
@@ -348,7 +349,7 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 1
+      "missingOrOlderThan30Days": 0
     },
     "sourceRegionalMix": {
       "North West / Burnie City Council": 27,
