@@ -10239,5 +10239,111 @@
         "observedAt": "2026-10-21T23:28:40.393Z"
       }
     ]
+  },
+  "bayviews-restaurant": {
+    "name": "Bayviews Restaurant",
+    "town": "Burnie",
+    "candidates": [
+      {
+        "id": "commons-geo:39457368",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Fish-Frenzy-Burnie-20150408-001.jpg/1280px-Fish-Frenzy-Burnie-20150408-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Fish-Frenzy-Burnie-20150408-001.jpg",
+        "title": "Fish-Frenzy-Burnie-20150408-001.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "bayviews"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-22T23:28:22.617Z"
+      },
+      {
+        "id": "commons-geo:196672822",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Fish-Frenzy-Burnie-20150408-001_%28cropped%29.jpg/1280px-Fish-Frenzy-Burnie-20150408-001_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Fish-Frenzy-Burnie-20150408-001_(cropped).jpg",
+        "title": "Fish-Frenzy-Burnie-20150408-001 (cropped).jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "bayviews"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-22T23:28:22.617Z"
+      }
+    ]
+  },
+  "bridport-bay-inn": {
+    "name": "Bridport Bay Inn",
+    "town": "Bridport",
+    "candidates": [
+      {
+        "id": "commons-geo:179842414",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Semipallium_aktinos%2C_Bridport_TAS_7262%2C_Australia_imported_from_iNaturalist_photo_68348881.jpg/1280px-Semipallium_aktinos%2C_Bridport_TAS_7262%2C_Australia_imported_from_iNaturalist_photo_68348881.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Semipallium_aktinos,_Bridport_TAS_7262,_Australia_imported_from_iNaturalist_photo_68348881.jpg",
+        "title": "Semipallium aktinos, Bridport TAS 7262, Australia imported from iNaturalist photo 68348881.jpg",
+        "credit": "(c) Tim, some rights reserved (CC BY-SA)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "bridport"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-22T23:28:22.617Z"
+      }
+    ]
+  },
+  "cafe-on-columnar": {
+    "name": "Cafe on Columnar",
+    "town": "Burnie",
+    "candidates": [
+      {
+        "id": "commons-geo:30457370",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Columnar_Basalt_Burnie_Tasmania_Australia_01.jpg/1280px-Columnar_Basalt_Burnie_Tasmania_Australia_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Columnar_Basalt_Burnie_Tasmania_Australia_01.jpg",
+        "title": "Columnar Basalt Burnie Tasmania Australia 01.jpg",
+        "credit": "cprevot  https://www.geodiversite.net/auteur193",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "columnar"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-22T23:28:22.617Z"
+      }
+    ]
   }
 }
