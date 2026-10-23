@@ -10345,5 +10345,86 @@
         "observedAt": "2026-10-22T23:28:22.617Z"
       }
     ]
+  },
+  "wombat-pool-lookout": {
+    "name": "Wombat Pool Lookout",
+    "town": "Tullah",
+    "candidates": [
+      {
+        "id": "commons-geo:123611169",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Wombat_Pool%2C_Cradle_Mountain.jpg/1280px-Wombat_Pool%2C_Cradle_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Wombat_Pool,_Cradle_Mountain.jpg",
+        "title": "Wombat Pool, Cradle Mountain.jpg",
+        "credit": "Mx. Granger",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "wombat",
+            "pool"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-23T23:15:18.314Z"
+      }
+    ]
+  },
+  "abandoned-train-tunnel": {
+    "name": "Abandoned Train Tunnel",
+    "town": "Lilydale",
+    "candidates": [
+      {
+        "id": "commons-geo:64467572",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Tunnel%2C_Near_Lillydale%2C_Tasmania_%2833398986950%29.jpg/1280px-Tunnel%2C_Near_Lillydale%2C_Tasmania_%2833398986950%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Tunnel,_Near_Lillydale,_Tasmania_(33398986950).jpg",
+        "title": "Tunnel, Near Lillydale, Tasmania (33398986950).jpg",
+        "credit": "Steven Penton  from Bakers Beach, Tasmania Australia",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "abandoned",
+            "tunnel"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-23T23:15:18.314Z"
+      },
+      {
+        "id": "commons-geo:64467576",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Tunnel%2C_Near_Lillydale%2C_Tasmania_%2832940563674%29.jpg/1280px-Tunnel%2C_Near_Lillydale%2C_Tasmania_%2832940563674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Tunnel,_Near_Lillydale,_Tasmania_(32940563674).jpg",
+        "title": "Tunnel, Near Lillydale, Tasmania (32940563674).jpg",
+        "credit": "Steven Penton  from Bakers Beach, Tasmania Australia",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "abandoned",
+            "tunnel"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-23T23:15:18.314Z"
+      }
+    ]
   }
 }
