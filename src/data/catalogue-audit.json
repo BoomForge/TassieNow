@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23",
+  "generatedAt": "2026-10-24",
   "places": {
     "total": 2203,
     "public": 2137,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 170,
+    "active": 163,
     "media": {
       "licensedHeroCoverage": {
         "count": 63,
-        "percent": 37.1
+        "percent": 38.7
       },
-      "stillUsingCategoryArtwork": 107,
+      "stillUsingCategoryArtwork": 100,
       "bySource": {
         "verified-event-venue": 38,
         "verified-event-activity": 20,
@@ -238,15 +238,15 @@
       "byRegion": {
         "Hobart & South": {
           "count": 29,
-          "percent": 37.2
+          "percent": 38.7
         },
         "Launceston & North": {
           "count": 19,
-          "percent": 55.9
+          "percent": 59.4
         },
         "North West": {
           "count": 12,
-          "percent": 27.9
+          "percent": 29.3
         },
         "East Coast": {
           "count": 1,
@@ -271,29 +271,29 @@
       }
     },
     "ticketCoverage": {
-      "count": 53,
-      "percent": 31.2
+      "count": 46,
+      "percent": 28.2
     },
     "priceCoverage": {
-      "count": 70,
-      "percent": 41.2
+      "count": 62,
+      "percent": 38
     },
     "providers": {
-      "Humanitix": 29,
+      "Humanitix": 25,
       "Ticketek": 19,
-      "Rezdy": 4,
+      "Rezdy": 1,
       "Ticketmaster": 1
     },
     "sources": {
       "Burnie City Council": 27,
       "MyState Bank Arena": 20,
       "Theatre North Launceston": 18,
-      "Devonport City Council": 15,
       "Huon Valley Council": 15,
-      "Theatre Royal Hobart": 14,
-      "Humanitix Launceston": 13,
-      "Humanitix Hobart": 11,
+      "Devonport City Council": 13,
+      "Theatre Royal Hobart": 12,
+      "Humanitix Launceston": 11,
       "East Coast Tasmania": 10,
+      "Humanitix Hobart": 10,
       "Glenorchy City Council": 7,
       "City of Clarence": 6,
       "City of Hobart": 5,
@@ -305,9 +305,9 @@
       "West Coast Heritage Centre": 1
     },
     "regions": {
-      "Hobart & South": 78,
-      "Launceston & North": 34,
-      "North West": 43,
+      "Hobart & South": 75,
+      "Launceston & North": 32,
+      "North West": 41,
       "East Coast": 10,
       "West Coast": 1,
       "Central Tasmania": 1,
@@ -318,24 +318,25 @@
       "Flinders Island"
     ],
     "nearTerm": {
-      "today": "2026-10-23",
-      "tomorrow": "2026-10-24",
+      "today": "2026-10-24",
+      "tomorrow": "2026-10-25",
       "nextWeekendStart": "2026-10-24",
       "nextWeekendEnd": "2026-10-25",
-      "todayOrTomorrow": 28,
-      "thisWeekend": 26,
+      "todayOrTomorrow": 27,
+      "thisWeekend": 27,
       "townsTodayOrTomorrow": {
         "Huonville": 10,
-        "Devonport": 8,
-        "Hobart": 4,
+        "Devonport": 7,
+        "Burnie": 3,
         "Launceston": 3,
-        "Burnie": 1,
         "Cranbrook": 1,
-        "Currie": 1
+        "Currie": 1,
+        "Eugenana": 1,
+        "Hobart": 1
       },
       "regionsThisWeekend": {
         "Hobart & South": 11,
-        "Launceston & North": 2,
+        "Launceston & North": 3,
         "North West": 11,
         "East Coast": 1,
         "West Coast": 0,
@@ -350,18 +351,18 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 3
+      "missingOrOlderThan30Days": 0
     },
     "sourceRegionalMix": {
       "North West / Burnie City Council": 27,
       "Hobart & South / MyState Bank Arena": 20,
       "Launceston & North / Theatre North Launceston": 18,
       "Hobart & South / Huon Valley Council": 15,
-      "North West / Devonport City Council": 15,
-      "Hobart & South / Theatre Royal Hobart": 14,
-      "Launceston & North / Humanitix Launceston": 13,
-      "Hobart & South / Humanitix Hobart": 11,
+      "North West / Devonport City Council": 13,
+      "Hobart & South / Theatre Royal Hobart": 12,
+      "Launceston & North / Humanitix Launceston": 11,
       "East Coast / East Coast Tasmania": 10,
+      "Hobart & South / Humanitix Hobart": 10,
       "Hobart & South / Glenorchy City Council": 7,
       "Hobart & South / City of Clarence": 6,
       "Hobart & South / City of Hobart": 5,
