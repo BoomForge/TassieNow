@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 163,
+    "active": 165,
     "media": {
       "licensedHeroCoverage": {
         "count": 63,
-        "percent": 38.7
+        "percent": 38.2
       },
-      "stillUsingCategoryArtwork": 100,
+      "stillUsingCategoryArtwork": 102,
       "bySource": {
         "verified-event-venue": 38,
         "verified-event-activity": 20,
@@ -246,7 +246,7 @@
         },
         "North West": {
           "count": 12,
-          "percent": 29.3
+          "percent": 27.9
         },
         "East Coast": {
           "count": 1,
@@ -271,25 +271,25 @@
       }
     },
     "ticketCoverage": {
-      "count": 46,
-      "percent": 28.2
+      "count": 51,
+      "percent": 30.9
     },
     "priceCoverage": {
-      "count": 62,
-      "percent": 38
+      "count": 63,
+      "percent": 38.2
     },
     "providers": {
-      "Humanitix": 25,
+      "Humanitix": 24,
       "Ticketek": 19,
-      "Rezdy": 1,
+      "Rezdy": 7,
       "Ticketmaster": 1
     },
     "sources": {
       "Burnie City Council": 27,
       "MyState Bank Arena": 20,
       "Theatre North Launceston": 18,
+      "Devonport City Council": 15,
       "Huon Valley Council": 15,
-      "Devonport City Council": 13,
       "Theatre Royal Hobart": 12,
       "Humanitix Launceston": 11,
       "East Coast Tasmania": 10,
@@ -307,7 +307,7 @@
     "regions": {
       "Hobart & South": 75,
       "Launceston & North": 32,
-      "North West": 41,
+      "North West": 43,
       "East Coast": 10,
       "West Coast": 1,
       "Central Tasmania": 1,
@@ -322,11 +322,11 @@
       "tomorrow": "2026-10-25",
       "nextWeekendStart": "2026-10-24",
       "nextWeekendEnd": "2026-10-25",
-      "todayOrTomorrow": 27,
-      "thisWeekend": 27,
+      "todayOrTomorrow": 28,
+      "thisWeekend": 28,
       "townsTodayOrTomorrow": {
         "Huonville": 10,
-        "Devonport": 7,
+        "Devonport": 8,
         "Burnie": 3,
         "Launceston": 3,
         "Cranbrook": 1,
@@ -337,7 +337,7 @@
       "regionsThisWeekend": {
         "Hobart & South": 11,
         "Launceston & North": 3,
-        "North West": 11,
+        "North West": 12,
         "East Coast": 1,
         "West Coast": 0,
         "Central Tasmania": 0,
@@ -358,7 +358,7 @@
       "Hobart & South / MyState Bank Arena": 20,
       "Launceston & North / Theatre North Launceston": 18,
       "Hobart & South / Huon Valley Council": 15,
-      "North West / Devonport City Council": 13,
+      "North West / Devonport City Council": 15,
       "Hobart & South / Theatre Royal Hobart": 12,
       "Launceston & North / Humanitix Launceston": 11,
       "East Coast / East Coast Tasmania": 10,
