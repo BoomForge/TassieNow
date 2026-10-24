@@ -959,14 +959,24 @@
     "sourceUrl": "https://www.ccc.tas.gov.au/explore/events/",
     "sourceName": "City of Clarence",
     "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "International Day of People with Disability Come and Try golf — original TassieNow event artwork",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true,
-      "sourceMethod": "source-reviewed-fallback"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Golf_green.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Golf_green.jpg",
+      "attribution": "Dan Perry",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "isFallback": false,
+      "sourceMethod": "verified-event-activity",
+      "mediaType": "activity-illustrative",
+      "alt": "Illustrative photograph of a golf putting green at Pinehurst, USA; not the advertised International Day of People with Disability Come and Try golf event",
+      "caption": "Illustrative photo: a golf putting green at Pinehurst, USA. This does not depict the advertised event in Tasmania.",
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "activity-illustrative",
+        "topic": "golf",
+        "eventName": "International Day of People with Disability Come and Try golf",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Golf_green.jpg",
+        "checkedAt": "2026-10-11"
+      }
     },
     "status": "active",
     "lastChecked": "2026-10-25",
