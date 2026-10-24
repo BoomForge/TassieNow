@@ -10631,5 +10631,51 @@
         "observedAt": "2026-10-24T22:35:53.856Z"
       }
     ]
+  },
+  "parklands-store": {
+    "name": "Parklands Store",
+    "town": "Parklands",
+    "candidates": [
+      {
+        "id": "openverse:cd270ff7-a032-4a2c-9c23-8730d5f5e216",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Co-op_local_store%2C_Oliver_Whitby_Road%2C_Parklands%2C_Chichester_%2820220619_094315_504%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/w/index.php?curid=119673095",
+        "discoveryPage": "https://api.openverse.org/v1/images/cd270ff7-a032-4a2c-9c23-8730d5f5e216/",
+        "title": "Co-op local store, Oliver Whitby Road, Parklands, Chichester (20220619 094315 504)",
+        "credit": "Djm-leighpark",
+        "licence": "BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "provider": "wikimedia",
+        "width": 4160,
+        "height": 3120,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive words and town only; identity unverified",
+        "observedAt": "2026-10-24T23:27:37.397Z"
+      }
+    ]
+  },
+  "pilgrim-coffee": {
+    "name": "Pilgrim Coffee",
+    "town": "Hobart",
+    "candidates": [
+      {
+        "id": "openverse:adb1c5e2-12bd-4d4a-8fd1-e52aa54714b8",
+        "url": "https://live.staticflickr.com/2826/33648841271_1c74b0bc12_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/24314126@N05/33648841271",
+        "discoveryPage": "https://api.openverse.org/v1/images/adb1c5e2-12bd-4d4a-8fd1-e52aa54714b8/",
+        "title": "Pilgrim Coffee, Hobart",
+        "credit": "jamesonf",
+        "licence": "BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "provider": "flickr",
+        "width": 768,
+        "height": 1024,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Exact listing and town in source title",
+        "observedAt": "2026-10-24T23:27:37.397Z"
+      }
+    ]
   }
 }
