@@ -42,5 +42,8 @@ test('Glenorchy /event/ links keep their own council listing-card date',()=>{
 test('Glenorchy importer explicitly targets singular /event/ detail paths',async()=>{
  const {readFile}=await import('node:fs/promises');
  const src=await readFile(new URL('../discover/events.mjs',import.meta.url),'utf8');
- assert.match(src,/name:'Glenorchy City Council'[^\\n]+detail:\/\\\\\/event\\\\\/\/i,textMode:'never'/);
+ const glenorchy=src.split('\n').find(line=>line.includes("name:'Glenorchy City Council'"));
+ assert.ok(glenorchy,'Glenorchy source definition must remain present');
+ assert.ok(glenorchy.includes('detail:/\\/event\\//i'),'Glenorchy must match only /event/ detail paths');
+ assert.ok(glenorchy.includes("textMode:'never'"),'Glenorchy must not fall back to unscoped listing text');
 });
