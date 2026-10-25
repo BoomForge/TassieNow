@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25",
+  "generatedAt": "2026-10-26",
   "places": {
     "total": 2203,
     "public": 2137,
@@ -215,22 +215,22 @@
     }
   },
   "events": {
-    "active": 170,
+    "active": 168,
     "media": {
       "licensedHeroCoverage": {
-        "count": 62,
-        "percent": 36.5
+        "count": 61,
+        "percent": 36.3
       },
-      "stillUsingCategoryArtwork": 108,
+      "stillUsingCategoryArtwork": 107,
       "bySource": {
         "verified-event-venue": 38,
-        "verified-event-activity": 20,
+        "verified-event-activity": 18,
         "verified-event-performer": 3,
-        "commons-venue": 1
+        "commons-venue": 2
       },
       "byMediaType": {
-        "contextual": 39,
-        "activity-illustrative": 20,
+        "contextual": 40,
+        "activity-illustrative": 18,
         "performer-context": 3
       },
       "byRegion": {
@@ -240,11 +240,11 @@
         },
         "Launceston & North": {
           "count": 19,
-          "percent": 55.9
+          "percent": 57.6
         },
         "North West": {
-          "count": 11,
-          "percent": 25
+          "count": 10,
+          "percent": 23.3
         },
         "East Coast": {
           "count": 1,
@@ -269,15 +269,15 @@
       }
     },
     "ticketCoverage": {
-      "count": 54,
-      "percent": 31.8
+      "count": 53,
+      "percent": 31.5
     },
     "priceCoverage": {
-      "count": 69,
-      "percent": 40.6
+      "count": 68,
+      "percent": 40.5
     },
     "providers": {
-      "Humanitix": 30,
+      "Humanitix": 29,
       "Ticketek": 19,
       "Rezdy": 4,
       "Ticketmaster": 1
@@ -286,8 +286,8 @@
       "Burnie City Council": 28,
       "MyState Bank Arena": 20,
       "Theatre North Launceston": 18,
-      "Devonport City Council": 15,
       "Huon Valley Council": 15,
+      "Devonport City Council": 14,
       "Humanitix Hobart": 13,
       "Humanitix Launceston": 13,
       "Theatre Royal Hobart": 12,
@@ -297,15 +297,14 @@
       "City of Hobart": 5,
       "King Island Tourism": 3,
       "City of Launceston": 2,
-      "Door of Hope Centenary Committee": 1,
       "Highlands BushFest organising team": 1,
       "Ticketebo": 1,
       "West Coast Heritage Centre": 1
     },
     "regions": {
       "Hobart & South": 78,
-      "Launceston & North": 34,
-      "North West": 44,
+      "Launceston & North": 33,
+      "North West": 43,
       "East Coast": 9,
       "West Coast": 1,
       "Central Tasmania": 1,
@@ -316,25 +315,24 @@
       "Flinders Island"
     ],
     "nearTerm": {
-      "today": "2026-10-25",
-      "tomorrow": "2026-10-26",
+      "today": "2026-10-26",
+      "tomorrow": "2026-10-27",
       "nextWeekendStart": "2026-10-31",
       "nextWeekendEnd": "2026-11-01",
-      "todayOrTomorrow": 32,
-      "thisWeekend": 26,
+      "todayOrTomorrow": 29,
+      "thisWeekend": 27,
       "townsTodayOrTomorrow": {
         "Huonville": 10,
-        "Devonport": 8,
-        "Burnie": 4,
-        "Hobart": 3,
+        "Burnie": 6,
+        "Devonport": 5,
         "Glenorchy": 2,
+        "Hobart": 2,
         "Launceston": 2,
         "Cambridge": 1,
-        "Currie": 1,
-        "Eugenana": 1
+        "Currie": 1
       },
       "regionsThisWeekend": {
-        "Hobart & South": 19,
+        "Hobart & South": 20,
         "Launceston & North": 0,
         "North West": 6,
         "East Coast": 0,
@@ -359,7 +357,7 @@
       "Hobart & South / MyState Bank Arena": 20,
       "Launceston & North / Theatre North Launceston": 18,
       "Hobart & South / Huon Valley Council": 15,
-      "North West / Devonport City Council": 15,
+      "North West / Devonport City Council": 14,
       "Hobart & South / Humanitix Hobart": 13,
       "Launceston & North / Humanitix Launceston": 13,
       "Hobart & South / Theatre Royal Hobart": 12,
@@ -370,7 +368,6 @@
       "King Island / King Island Tourism": 3,
       "Launceston & North / City of Launceston": 2,
       "Central Tasmania / Highlands BushFest organising team": 1,
-      "Launceston & North / Door of Hope Centenary Committee": 1,
       "North West / Ticketebo": 1,
       "West Coast / West Coast Heritage Centre": 1
     }
