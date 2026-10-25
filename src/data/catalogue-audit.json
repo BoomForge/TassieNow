@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 168,
+    "active": 170,
     "media": {
       "licensedHeroCoverage": {
         "count": 62,
-        "percent": 36.9
+        "percent": 36.5
       },
-      "stillUsingCategoryArtwork": 106,
+      "stillUsingCategoryArtwork": 108,
       "bySource": {
         "verified-event-venue": 38,
         "verified-event-activity": 20,
@@ -236,11 +236,11 @@
       "byRegion": {
         "Hobart & South": {
           "count": 29,
-          "percent": 37.7
+          "percent": 37.2
         },
         "Launceston & North": {
           "count": 19,
-          "percent": 57.6
+          "percent": 55.9
         },
         "North West": {
           "count": 11,
@@ -270,17 +270,16 @@
     },
     "ticketCoverage": {
       "count": 54,
-      "percent": 32.1
+      "percent": 31.8
     },
     "priceCoverage": {
-      "count": 60,
-      "percent": 35.7
+      "count": 69,
+      "percent": 40.6
     },
     "providers": {
       "Humanitix": 30,
       "Ticketek": 19,
-      "Rezdy": 3,
-      "Eventbrite": 1,
+      "Rezdy": 4,
       "Ticketmaster": 1
     },
     "sources": {
@@ -289,8 +288,8 @@
       "Theatre North Launceston": 18,
       "Devonport City Council": 15,
       "Huon Valley Council": 15,
-      "Humanitix Hobart": 12,
-      "Humanitix Launceston": 12,
+      "Humanitix Hobart": 13,
+      "Humanitix Launceston": 13,
       "Theatre Royal Hobart": 12,
       "East Coast Tasmania": 9,
       "Glenorchy City Council": 7,
@@ -304,8 +303,8 @@
       "West Coast Heritage Centre": 1
     },
     "regions": {
-      "Hobart & South": 77,
-      "Launceston & North": 33,
+      "Hobart & South": 78,
+      "Launceston & North": 34,
       "North West": 44,
       "East Coast": 9,
       "West Coast": 1,
@@ -353,7 +352,7 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 1
+      "missingOrOlderThan30Days": 3
     },
     "sourceRegionalMix": {
       "North West / Burnie City Council": 28,
@@ -361,9 +360,9 @@
       "Launceston & North / Theatre North Launceston": 18,
       "Hobart & South / Huon Valley Council": 15,
       "North West / Devonport City Council": 15,
-      "Hobart & South / Humanitix Hobart": 12,
+      "Hobart & South / Humanitix Hobart": 13,
+      "Launceston & North / Humanitix Launceston": 13,
       "Hobart & South / Theatre Royal Hobart": 12,
-      "Launceston & North / Humanitix Launceston": 12,
       "East Coast / East Coast Tasmania": 9,
       "Hobart & South / Glenorchy City Council": 7,
       "Hobart & South / City of Clarence": 6,
