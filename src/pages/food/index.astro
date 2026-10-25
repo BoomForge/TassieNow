@@ -64,7 +64,7 @@ const schema = {
     <div class="eat-grid">
       {mobileVendors.map(vendor => (
         <article class="eat-card mobile-operator" data-type="food-van" data-region={vendor.region} data-search={`${vendor.name} ${vendor.town} ${vendor.region} food van food truck mobile vendor`.toLowerCase()}>
-          <a href={vendor.sourceUrl} target="_blank" rel="noopener noreferrer" aria-label={`Visit the official ${vendor.name} website`}>
+          <a href={vendor.sourceUrl} target="_blank" rel="noopener noreferrer">
             <img src="/images/categories/food.svg" alt="" loading="lazy" decoding="async" />
             <div class="eat-card-body">
               <small>Mobile operator · {vendor.region}</small>
