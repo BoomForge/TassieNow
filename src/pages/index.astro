@@ -160,7 +160,7 @@ const formatEventDate = (startDate, endDate) => {
       <div class="featured-grid">
         {featuredPlaces.map((place, index) => (
           <article class:list={['featured-card', index === 0 && 'featured-card-large']}>
-            <a href={`/place/${place.slug}/`} class="featured-image-link" aria-label={`View ${place.name}`}>
+            <a href={`/place/${place.slug}/`} class="featured-image-link">
               <img
                 src={place.image?.url || '/images/categories/discover.svg'}
                 alt={place.image?.alt || `${place.name}, Tasmania`}
@@ -295,7 +295,7 @@ const formatEventDate = (startDate, endDate) => {
             data-lon={place.longitude}
             data-distance=""
           >
-            <a class="card-image-link" href={`/place/${place.slug}/`} aria-label={`View ${place.name}`}>
+            <a class="card-image-link" href={`/place/${place.slug}/`}>
               <img
                 class="card-image"
                 src={place.image?.url || '/images/categories/discover.svg'}
@@ -381,7 +381,7 @@ const formatEventDate = (startDate, endDate) => {
       const cats=Array.isArray(place.categories)?place.categories:[];
       const tags=cats.slice(0,3).map(cat=>'<span class="tag">'+escapeHtml(cat)+'</span>').join('');
       const dist=Number.isFinite(distance)?'<span class="distance" aria-live="polite">'+distance.toFixed(distance<10?1:0)+' km away</span>':'<span class="distance" aria-live="polite"></span>';
-      return '<article class="place-card"><a class="card-image-link" href="/place/'+slug+'/" aria-label="View '+name+'">'
+      return '<article class="place-card"><a class="card-image-link" href="/place/'+slug+'/">'
         +'<img class="card-image" src="'+escapeHtml(place.image||'/images/categories/discover.svg')+'" alt="'+escapeHtml(place.alt||place.name)+'" loading="lazy" decoding="async">'
         +'<span class="image-badge">'+escapeHtml(cats[0]||'Discover')+'</span></a>'
         +'<div class="card-body"><p class="location"><a href="/town/'+townSlug(place.town)+'/">'+town+'</a> <span>·</span> <a href="/region/'+townSlug(place.region)+'/">'+region+'</a></p>'
