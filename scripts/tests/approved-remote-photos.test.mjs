@@ -43,10 +43,13 @@ test('preserve existing approved images, prevent identity mixups and HTTP failur
 });
 test('publish verified event images only for exact dated event identity and labelled context',()=>{
  const p=structuredClone(pick);p.kind='event';p.image.mediaType='contextual';p.image.caption='Venue image, not the current event';
- const events=[{slug:p.slug,name:p.name,town:p.town,status:'active',startDate:'2026-10-20',endDate:'2026-10-21',image:{isFallback:true}}];
+ const futureDate=new Date(Date.now()+14*86400000).toISOString().slice(0,10);
+ const events=[{slug:p.slug,name:p.name,town:p.town,status:'active',startDate:futureDate,endDate:futureDate,image:{isFallback:true}}];
  assert.equal(verifyApprovedRemotePick(p),null);
  assert.equal(applyApprovedRemotePhotos([],events,[p],new Set([p.image.url])).eventsAdded,1);
  assert.equal(events[0].image.mediaType,'contextual');
+ const expired=[{...structuredClone(events[0]),startDate:'2020-01-01',endDate:'2020-01-01',image:{isFallback:true}}];
+ assert.equal(applyApprovedRemotePhotos([],expired,[p],new Set([p.image.url])).eventsAdded,0,'expired events must never receive newly published photographs');
  const bad=structuredClone(p);delete bad.image.caption;
  assert.match(verifyApprovedRemotePick(bad),/caption/);
 });
