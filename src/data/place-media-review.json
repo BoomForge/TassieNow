@@ -10677,5 +10677,57 @@
         "observedAt": "2026-10-24T23:27:37.397Z"
       }
     ]
+  },
+  "port-cygnet-pizza": {
+    "name": "Port Cygnet Pizza",
+    "town": "Cygnet",
+    "candidates": [
+      {
+        "id": "commons-geo:97390520",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Cygnet_founding_plaques_20201114-014.jpg/1280px-Cygnet_founding_plaques_20201114-014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cygnet_founding_plaques_20201114-014.jpg",
+        "title": "Cygnet founding plaques 20201114-014.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "port",
+            "cygnet"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-25T22:40:58.348Z"
+      },
+      {
+        "id": "commons-geo:97423340",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Port_Hole_Cafe%2C_Cygnet_20201114-019.jpg/1280px-Port_Hole_Cafe%2C_Cygnet_20201114-019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Port_Hole_Cafe,_Cygnet_20201114-019.jpg",
+        "title": "Port Hole Cafe, Cygnet 20201114-019.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "port",
+            "cygnet"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-25T22:40:58.348Z"
+      }
+    ]
   }
 }
