@@ -7,11 +7,16 @@ import {applyReviewedEventCorrection} from '../discover/lib/reviewed-event-corre
 const redirects=readFileSync(new URL('../../public/_redirects',import.meta.url),'utf8');
 const selected=events.filter(e=>e.eventUrl?.startsWith('https://theatrenorth.com.au/'));
 
-test('all sixteen Theatre North records have standalone primary-source headings and distinct presenters',()=>{
- assert.equal(selected.length,16);
- assert.equal(new Set(selected.map(e=>e.eventUrl)).size,16);
- assert.equal(new Set(selected.map(e=>e.slug)).size,16);
- for(const e of selected){
+test('original sixteen canonical Theatre North shows remain verified as new listings appear',()=>{
+ const originalUrls=new Set(Object.values(overrides)
+  .filter(v=>v.eventUrl?.startsWith('https://theatrenorth.com.au/'))
+  .map(v=>v.eventUrl));
+ const canonical=selected.filter(e=>originalUrls.has(e.eventUrl));
+ assert.equal(originalUrls.size,16,'the sixteen reviewed source identities must remain protected');
+ assert.equal(canonical.length,16,'all sixteen original shows must still exist');
+ assert.equal(new Set(selected.map(e=>e.eventUrl)).size,selected.length,'newly added shows must have unique source URLs');
+ assert.equal(new Set(selected.map(e=>e.slug)).size,selected.length,'newly added shows must have unique slugs');
+ for(const e of canonical){
   assert.equal(e.venue,'Albert Hall',e.slug);
   assert.equal(e.address,'47 Tamar Street, Launceston TAS 7250',e.slug);
   assert.equal(e.town,'Launceston',e.slug);
