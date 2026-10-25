@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import events from '../../src/data/events.json' with { type:'json' };
 import overrides from '../../src/data/event-overrides.json' with { type:'json' };
 import {readFileSync} from 'node:fs';
+import {applyReviewedEventCorrection} from '../discover/lib/reviewed-event-corrections.mjs';
 const redirects=readFileSync(new URL('../../public/_redirects',import.meta.url),'utf8');
 for(const [source,oldSlug,newSlug,town,venue,time] of [
  ['https://www.ccc.tas.gov.au/event/rotary-club-of-lindisfarne-talks-dr-bert-shugg/','rotary-club-of-lindisfarne-talks-dr-bert-shugg-2026-11-04-rosny-park','rotary-club-of-lindisfarne-talks-dr-bert-shugg-2026-11-04-lindisfarne','Lindisfarne','Motor Yacht Club of Tasmania','18:15'],
@@ -10,8 +11,15 @@ for(const [source,oldSlug,newSlug,town,venue,time] of [
 ]){
  test(oldSlug+' is canonicalised from its individual first-party source',()=>{
   const matching=events.filter(e=>e.eventUrl===source);
-  assert.equal(matching.length,1);
-  const e=matching[0];
+  const correction=overrides[oldSlug];
+  assert.ok(correction?.fields,'verified historical source correction is required');
+  // Completed events are removed from the live feed; preserve and test their
+  // primary-source correction without resurrecting an expired listing.
+  const expired=correction.fields.endDate < new Date().toLocaleDateString('en-CA',{timeZone:'Australia/Hobart'});
+  assert.equal(matching.length,expired?0:1,'active vs expired event presence');
+  const e=expired
+    ? applyReviewedEventCorrection({slug:oldSlug,eventUrl:source,name:'Unverified listing',town:'Devonport',startDate:'2026-10-25'},overrides)
+    : matching[0];
   assert.equal(e.slug,newSlug);
   assert.equal(e.town,town);
   assert.equal(e.venue,venue);
