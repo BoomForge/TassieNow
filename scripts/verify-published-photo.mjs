@@ -45,7 +45,10 @@ const results=await Promise.all(verified.slice(0,15).map(async place=>{
    const response=await fetch(url,{headers:{'user-agent':'TassieNow-Photo-Publication-Check/1.0','cache-control':'no-cache'},signal:AbortSignal.timeout(12000)});
    const html=await response.text();
    const photo=htmlContainsPhotoImage(html,place.image.url);
-   const credit=html.includes(place.image.attribution);
+   // Astro escapes ampersands in rendered human-visible credit text.
+   // Verify the rendered HTML entity as well as the raw literal; do not waive credit.
+   const renderedCredit=String(place.image.attribution).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+   const credit=html.includes(place.image.attribution)||html.includes(renderedCredit);
    const placeholder=html.includes(place.name+' category artwork');
    last={status:response.ok&&photo&&credit&&!placeholder?'verified':'not-visible',http:response.status,photo,credit,placeholder,attempt};
    if(last.status==='verified')break;
