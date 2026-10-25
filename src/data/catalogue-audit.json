@@ -269,17 +269,18 @@
       }
     },
     "ticketCoverage": {
-      "count": 53,
-      "percent": 31.5
+      "count": 54,
+      "percent": 32.1
     },
     "priceCoverage": {
-      "count": 68,
-      "percent": 40.5
+      "count": 65,
+      "percent": 38.7
     },
     "providers": {
-      "Humanitix": 29,
+      "Humanitix": 28,
       "Ticketek": 19,
-      "Rezdy": 4,
+      "Rezdy": 5,
+      "Eventbrite": 1,
       "Ticketmaster": 1
     },
     "sources": {
