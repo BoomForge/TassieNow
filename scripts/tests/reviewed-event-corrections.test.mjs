@@ -59,8 +59,14 @@ test('three City of Clarence wrong-date cards use source-specific corrections',(
   ['international-day-of-people-with-disability-come-and-try-golf','2026-10-26','Golf Park Hobart',null]
  ];
  for(const [prefix,date,venue,time] of cases){
-  const item=events.find(x=>x.slug.startsWith(prefix));
-  assert.ok(item,prefix);
+  const matching=events.find(x=>x.slug.startsWith(prefix));
+  const [originalSlug,record]=Object.entries(overrides).find(([slug,v])=>slug.startsWith(prefix)&&v.eventUrl&&v.fields?.startDate===date)||[];
+  assert.ok(record?.eventUrl&&record.fields,'source-specific correction missing: '+prefix);
+  const expired=date<new Date().toLocaleDateString('en-CA',{timeZone:'Australia/Hobart'});
+  if(!matching)assert.ok(expired,'only completed events may disappear from the live feed: '+prefix);
+  // Live expiry must never erase the source-scoped correction: the same
+  // historical identity still needs to be repaired on future reimport.
+  const item=matching||{slug:originalSlug,eventUrl:record.eventUrl,startDate:'2026-10-20',town:'Rosny Park'};
   const corrected=applyReviewedEventCorrection(item,overrides);
   assert.equal(corrected.startDate,date,prefix);
   assert.equal(corrected.endDate,date,prefix);
