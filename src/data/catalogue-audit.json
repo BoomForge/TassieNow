@@ -1,16 +1,16 @@
 {
   "generatedAt": "2026-10-27",
   "places": {
-    "total": 2203,
-    "public": 2137,
+    "total": 2202,
+    "public": 2136,
     "suppressed": 66,
     "media": {
       "realHeroCoverage": {
-        "count": 313,
-        "percent": 14.6
+        "count": 310,
+        "percent": 14.5
       },
       "twoPlusImages": {
-        "count": 172,
+        "count": 171,
         "percent": 8
       },
       "fourPlusImages": {
@@ -21,13 +21,13 @@
         "count": 72,
         "percent": 3.4
       },
-      "totalLicensedImages": 925,
+      "totalLicensedImages": 921,
       "averageImagesPerPublicListing": 0.43
     },
     "sources": {
       "websiteCoverage": {
-        "count": 367,
-        "percent": 17.2
+        "count": 366,
+        "percent": 17.1
       },
       "officialSourceCoverage": {
         "count": 290,
@@ -38,25 +38,25 @@
         "percent": 12.1
       },
       "wikidataLinkage": {
-        "count": 630,
-        "percent": 29.5
+        "count": 629,
+        "percent": 29.4
       }
     },
     "details": {
       "openingHours": {
-        "count": 409,
+        "count": 408,
         "percent": 19.1
       },
       "recurringSchedule": {
-        "count": 127,
+        "count": 125,
         "percent": 5.9
       },
       "phone": {
-        "count": 394,
+        "count": 392,
         "percent": 18.4
       },
       "email": {
-        "count": 206,
+        "count": 205,
         "percent": 9.6
       },
       "address": {
@@ -64,8 +64,8 @@
         "percent": 23.7
       },
       "bookingUrl": {
-        "count": 145,
-        "percent": 6.8
+        "count": 118,
+        "percent": 5.5
       },
       "fee": {
         "count": 27,
@@ -80,24 +80,24 @@
         "percent": 1.3
       },
       "reviewLinks": {
-        "count": 2137,
+        "count": 2136,
         "percent": 100
       }
     },
     "sourceTypes": {
       "openstreetmap": 1523,
-      "wikidata": 573,
+      "wikidata": 572,
       "curated": 41
     },
     "qualityTiers": {
       "standard": 772,
       "strong": 622,
       "low": 470,
-      "featured": 273
+      "featured": 272
     },
     "regions": {
       "Hobart & South": 776,
-      "Launceston & North": 474,
+      "Launceston & North": 473,
       "North West": 345,
       "East Coast": 249,
       "Central Tasmania": 116,
@@ -110,7 +110,7 @@
       "Food & Drink": 1041,
       "Nature & Walks": 760,
       "Things to Do": 199,
-      "Museums": 77,
+      "Museums": 76,
       "Markets": 30,
       "Art & Culture": 16,
       "Wildlife": 11,
@@ -125,9 +125,9 @@
       "Restaurant": 405,
       "Things to Do": 203,
       "Takeaway": 162,
-      "Rainy Day": 96,
-      "Art & Culture": 93,
-      "Museums": 77,
+      "Rainy Day": 95,
+      "Art & Culture": 92,
+      "Museums": 76,
       "Bakery": 43,
       "Family": 31,
       "Markets": 30,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 167,
+    "active": 166,
     "media": {
       "licensedHeroCoverage": {
         "count": 62,
-        "percent": 37.1
+        "percent": 37.3
       },
-      "stillUsingCategoryArtwork": 105,
+      "stillUsingCategoryArtwork": 104,
       "bySource": {
         "verified-event-venue": 40,
         "verified-event-activity": 17,
@@ -244,7 +244,7 @@
         },
         "North West": {
           "count": 9,
-          "percent": 20.9
+          "percent": 21.4
         },
         "East Coast": {
           "count": 1,
@@ -270,11 +270,11 @@
     },
     "ticketCoverage": {
       "count": 51,
-      "percent": 30.5
+      "percent": 30.7
     },
     "priceCoverage": {
       "count": 67,
-      "percent": 40.1
+      "percent": 40.4
     },
     "providers": {
       "Humanitix": 25,
@@ -284,7 +284,7 @@
       "Ticketmaster": 1
     },
     "sources": {
-      "Burnie City Council": 28,
+      "Burnie City Council": 27,
       "MyState Bank Arena": 20,
       "Theatre North Launceston": 20,
       "Huon Valley Council": 15,
@@ -305,7 +305,7 @@
     "regions": {
       "Hobart & South": 74,
       "Launceston & North": 36,
-      "North West": 43,
+      "North West": 42,
       "East Coast": 9,
       "West Coast": 1,
       "Central Tasmania": 1,
@@ -353,7 +353,7 @@
       "missingOrOlderThan30Days": 2
     },
     "sourceRegionalMix": {
-      "North West / Burnie City Council": 28,
+      "North West / Burnie City Council": 27,
       "Hobart & South / MyState Bank Arena": 20,
       "Launceston & North / Theatre North Launceston": 20,
       "Hobart & South / Huon Valley Council": 15,
