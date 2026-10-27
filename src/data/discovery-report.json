@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-26T22:54:59.553Z",
+  "checkedAt": "2026-10-27T22:40:54.362Z",
   "added": [],
   "addedEvents": [
     "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe"
@@ -41,7 +41,7 @@
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
       "pagesFetched": 7,
-      "candidatesFound": 12,
+      "candidatesFound": 14,
       "errors": []
     },
     {
@@ -49,7 +49,7 @@
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
       "pagesFetched": 7,
-      "candidatesFound": 40,
+      "candidatesFound": 42,
       "errors": []
     },
     {
@@ -81,7 +81,7 @@
       "name": "Waratah-Wynyard Council",
       "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
       "pagesFetched": 1,
-      "candidatesFound": 4,
+      "candidatesFound": 3,
       "errors": []
     }
   ],
@@ -96,8 +96,8 @@
     "failedSources": 1
   },
   "run": {
-    "id": "40415862888",
+    "id": "40596461341",
     "event": "schedule",
-    "sourceCommit": "fff00349325a779f49509da6cf35fae9c9a8c665"
+    "sourceCommit": "418b07658b3f77c0465951e01dd37843ad5601b4"
   }
 }
