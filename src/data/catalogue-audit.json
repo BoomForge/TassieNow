@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28",
+  "generatedAt": "2026-10-29",
   "places": {
     "total": 2202,
     "public": 2136,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 170,
+    "active": 166,
     "media": {
       "licensedHeroCoverage": {
         "count": 63,
-        "percent": 37.1
+        "percent": 38
       },
-      "stillUsingCategoryArtwork": 107,
+      "stillUsingCategoryArtwork": 103,
       "bySource": {
         "verified-event-venue": 41,
         "verified-event-activity": 17,
@@ -236,11 +236,11 @@
       "byRegion": {
         "Hobart & South": {
           "count": 30,
-          "percent": 38.5
+          "percent": 40
         },
         "Launceston & North": {
           "count": 22,
-          "percent": 61.1
+          "percent": 62.9
         },
         "North West": {
           "count": 8,
@@ -269,33 +269,33 @@
       }
     },
     "ticketCoverage": {
-      "count": 59,
-      "percent": 34.7
+      "count": 54,
+      "percent": 32.5
     },
     "priceCoverage": {
-      "count": 66,
-      "percent": 38.8
+      "count": 63,
+      "percent": 38
     },
     "providers": {
-      "Humanitix": 30,
+      "Humanitix": 27,
       "Ticketek": 19,
-      "Rezdy": 7,
-      "Eventbrite": 2,
+      "Rezdy": 6,
+      "Eventbrite": 1,
       "Ticketmaster": 1
     },
     "sources": {
       "Burnie City Council": 27,
       "Theatre North Launceston": 21,
       "MyState Bank Arena": 20,
-      "Humanitix Hobart": 15,
-      "Huon Valley Council": 15,
+      "Huon Valley Council": 16,
       "Devonport City Council": 14,
-      "Humanitix Launceston": 14,
+      "Humanitix Launceston": 13,
+      "Humanitix Hobart": 12,
       "Theatre Royal Hobart": 12,
       "East Coast Tasmania": 9,
       "City of Clarence": 6,
       "City of Hobart": 5,
-      "Glenorchy City Council": 5,
+      "Glenorchy City Council": 4,
       "King Island Tourism": 3,
       "City of Launceston": 1,
       "Highlands BushFest organising team": 1,
@@ -303,8 +303,8 @@
       "West Coast Heritage Centre": 1
     },
     "regions": {
-      "Hobart & South": 78,
-      "Launceston & North": 36,
+      "Hobart & South": 75,
+      "Launceston & North": 35,
       "North West": 42,
       "East Coast": 9,
       "West Coast": 1,
@@ -316,21 +316,20 @@
       "Flinders Island"
     ],
     "nearTerm": {
-      "today": "2026-10-28",
-      "tomorrow": "2026-10-29",
+      "today": "2026-10-29",
+      "tomorrow": "2026-10-30",
       "nextWeekendStart": "2026-10-31",
       "nextWeekendEnd": "2026-11-01",
-      "todayOrTomorrow": 29,
+      "todayOrTomorrow": 24,
       "thisWeekend": 28,
       "townsTodayOrTomorrow": {
         "Huonville": 11,
-        "Devonport": 6,
         "Burnie": 4,
-        "Hobart": 3,
+        "Devonport": 4,
         "Launceston": 2,
         "Currie": 1,
         "Dover": 1,
-        "Glenorchy": 1
+        "Hobart": 1
       },
       "regionsThisWeekend": {
         "Hobart & South": 21,
@@ -351,21 +350,21 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 2
+      "missingOrOlderThan30Days": 1
     },
     "sourceRegionalMix": {
       "North West / Burnie City Council": 27,
       "Launceston & North / Theatre North Launceston": 21,
       "Hobart & South / MyState Bank Arena": 20,
-      "Hobart & South / Humanitix Hobart": 15,
-      "Hobart & South / Huon Valley Council": 15,
-      "Launceston & North / Humanitix Launceston": 14,
+      "Hobart & South / Huon Valley Council": 16,
       "North West / Devonport City Council": 14,
+      "Launceston & North / Humanitix Launceston": 13,
+      "Hobart & South / Humanitix Hobart": 12,
       "Hobart & South / Theatre Royal Hobart": 12,
       "East Coast / East Coast Tasmania": 9,
       "Hobart & South / City of Clarence": 6,
       "Hobart & South / City of Hobart": 5,
-      "Hobart & South / Glenorchy City Council": 5,
+      "Hobart & South / Glenorchy City Council": 4,
       "King Island / King Island Tourism": 3,
       "Central Tasmania / Highlands BushFest organising team": 1,
       "Launceston & North / City of Launceston": 1,
