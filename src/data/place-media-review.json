@@ -10818,5 +10818,80 @@
         "observedAt": "2026-10-25T22:40:58.348Z"
       }
     ]
+  },
+  "kings-bridge-bar-and-restaurant": {
+    "name": "Kings Bridge Bar & Restaurant",
+    "town": "Launceston",
+    "candidates": [
+      {
+        "id": "commons-geo:28461606",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Kings-Bridge-Launceston-20070421-015.jpg/1280px-Kings-Bridge-Launceston-20070421-015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Kings-Bridge-Launceston-20070421-015.jpg",
+        "title": "Kings-Bridge-Launceston-20070421-015.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "kings",
+            "bridge"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-29T00:06:03.295Z"
+      },
+      {
+        "id": "commons-geo:31951509",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Lascar_Kings_Bridge_%28Launceston%29_%284551899923%29.jpg/1280px-Lascar_Kings_Bridge_%28Launceston%29_%284551899923%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Lascar_Kings_Bridge_(Launceston)_(4551899923).jpg",
+        "title": "Lascar Kings Bridge (Launceston) (4551899923).jpg",
+        "credit": "Jorge Láscar  from Australia",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "kings",
+            "bridge"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-29T00:06:03.295Z"
+      },
+      {
+        "id": "commons-geo:31951516",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Lascar_Tamac_River%2C_Kings_and_Paterson_bridges_%28Launceston%29_%284552524640%29.jpg/1280px-Lascar_Tamac_River%2C_Kings_and_Paterson_bridges_%28Launceston%29_%284552524640%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Lascar_Tamac_River,_Kings_and_Paterson_bridges_(Launceston)_(4552524640).jpg",
+        "title": "Lascar Tamac River, Kings and Paterson bridges (Launceston) (4552524640).jpg",
+        "credit": "Jorge Láscar  from Australia",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "kings",
+            "bridge"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-29T00:06:03.295Z"
+      }
+    ]
   }
 }
