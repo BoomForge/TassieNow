@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-10-28T22:54:54.667Z",
+  "checkedAt": "2026-10-29T23:01:48.801Z",
   "added": [],
   "addedEvents": [
-    "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe",
-    "the-fairy-godmothers-christmas-market-2026-11-29-burnie"
+    "the-fairy-godmothers-christmas-market-2026-11-29-burnie",
+    "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe"
   ],
   "correctedEvents": [],
   "updated": [],
@@ -42,7 +42,7 @@
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
       "pagesFetched": 7,
-      "candidatesFound": 11,
+      "candidatesFound": 14,
       "errors": []
     },
     {
@@ -50,7 +50,7 @@
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
       "pagesFetched": 7,
-      "candidatesFound": 41,
+      "candidatesFound": 43,
       "errors": []
     },
     {
@@ -97,8 +97,8 @@
     "failedSources": 1
   },
   "run": {
-    "id": "40783376794",
+    "id": "40970042668",
     "event": "schedule",
-    "sourceCommit": "eede64ca5183e4efaf4503226c77721d6700fe28"
+    "sourceCommit": "ad91fcdef8df7a589878f368c4ed794fd1728b44"
   }
 }
