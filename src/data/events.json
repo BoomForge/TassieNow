@@ -3892,6 +3892,54 @@
     "ticketLastChecked": "2026-10-29"
   },
   {
+    "slug": "the-fairy-godmothers-christmas-market-2026-11-29-burnie",
+    "name": "The Fairy Godmothers Christmas Market",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-11-29",
+    "endDate": "2026-11-29",
+    "categories": [
+      "Events",
+      "Markets"
+    ],
+    "venue": "Burnie High School, Burnie, 7320,",
+    "summary": "The Fairy Godmothers Christmas Market in Burnie. The council lists this session for 2026-11-29; check the source for changes.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Fairy-Godmothers-Christmas-Market",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Fairy-Godmothers-Christmas-Market",
+    "sourceName": "Burnie City Council",
+    "status": "active",
+    "lastChecked": "2026-10-30",
+    "discovery": {
+      "sourceId": "burnie-marketplace",
+      "method": "council-calendar",
+      "verifiedAt": "2026-10-30"
+    },
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Burnie-High-School-domestic-arts-20131126-001.jpg/1280px-Burnie-High-School-domestic-arts-20131126-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Burnie-High-School-domestic-arts-20131126-001.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attribution": "Gary Houston",
+      "alt": "Burnie High School, Burnie — venue photograph, not the advertised event",
+      "mediaType": "contextual",
+      "caption": "Venue photograph: Burnie High School, Burnie. This does not depict the advertised event.",
+      "sourceMethod": "commons-venue",
+      "isFallback": false,
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "contextual",
+        "venue": "Burnie High School",
+        "town": "Burnie",
+        "sourceFileTitle": "File:Burnie-High-School-domestic-arts-20131126-001.jpg",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Burnie-High-School-domestic-arts-20131126-001.jpg",
+        "checkedAt": "2026-10-29",
+        "evidence": "Full venue name in Commons file title and Tasmania/town in source description"
+      }
+    },
+    "startTime": "09:00",
+    "endTime": "13:00"
+  },
+  {
     "slug": "hobart-showcase-2026-2026-11-30-hobart",
     "name": "Hobart Showcase 2026",
     "town": "Hobart",
@@ -5922,71 +5970,5 @@
     "status": "active",
     "lastChecked": "2026-10-21",
     "ticketLastChecked": "2026-10-27"
-  },
-  {
-    "slug": "the-fairy-godmothers-christmas-market-2026-11-29-burnie",
-    "name": "The Fairy Godmothers Christmas Market",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-11-29",
-    "endDate": "2026-11-29",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Burnie High School, Burnie, 7320,",
-    "summary": "The Fairy Godmothers Christmas Market in Burnie. The council lists this session for 2026-11-29; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Fairy-Godmothers-Christmas-Market",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Fairy-Godmothers-Christmas-Market",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-30",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-30"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "The Fairy Godmothers Christmas Market market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "09:00",
-    "endTime": "13:00"
-  },
-  {
-    "slug": "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe",
-    "name": "Book Market : Burnie Emu Bay Lions Club",
-    "town": "Wivenhoe",
-    "region": "North West",
-    "startDate": "2026-12-05",
-    "endDate": "2026-12-05",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Wivenhoe Shed, Smith and Angelsea Street, Wivenhoe, 7320,",
-    "summary": "Book Market : Burnie Emu Bay Lions Club in Wivenhoe. The council lists this session for 2026-12-05; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Book-Market-Burnie-Emu-Bay-Lions-Club",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-10-30",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-10-30"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "Book Market : Burnie Emu Bay Lions Club market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "10:00",
-    "endTime": "12:00"
   }
 ]
