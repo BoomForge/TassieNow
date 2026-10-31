@@ -10893,5 +10893,34 @@
         "observedAt": "2026-10-29T00:06:03.295Z"
       }
     ]
+  },
+  "criterion-street-cafe": {
+    "name": "Criterion Street Cafe",
+    "town": "Hobart",
+    "candidates": [
+      {
+        "id": "commons-geo:163126848",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Allurity_Hotel%2C_Hobart.jpg/1280px-Allurity_Hotel%2C_Hobart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Allurity_Hotel,_Hobart.jpg",
+        "title": "Allurity Hotel, Hobart.jpg",
+        "credit": "Ron Wilson",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "criterion",
+            "street"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-10-31T23:29:33.613Z"
+      }
+    ]
   }
 }
