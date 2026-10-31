@@ -409,7 +409,7 @@
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-29"
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "spring-in-the-vines-2026-10-30-huonville",
@@ -435,7 +435,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-31"
+    "lastChecked": "2026-10-31",
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "active-launceston-spring-program-2026-10-31-launceston",
@@ -461,7 +462,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-31"
+    "lastChecked": "2026-10-31",
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "art-of-the-score-the-music-of-john-williams-2026-10-31-glenorchy",
@@ -509,7 +511,7 @@
     "priceFrom": 1,
     "priceTo": 981.3,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-30"
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "halloween-fest-hobart-2026-10-31-hobart",
@@ -579,7 +581,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-10-30"
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "halloween-rave-aboard-the-fun-bus-2026-10-31-hobart",
@@ -623,7 +625,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-10-30"
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "mark-vincent-presents-amore-2026-10-31-hobart",
@@ -653,7 +655,7 @@
     "priceFrom": 95,
     "priceTo": 95,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-30"
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "monthly-migrant-talent-connect-oct-2026-2026-10-31-hobart",
@@ -685,7 +687,38 @@
     "ticketUrl": "https://events.humanitix.com/copy-of-monthly-migrant-talent-connect-october-2026",
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-10-30"
+    "ticketLastChecked": "2026-10-31"
+  },
+  {
+    "slug": "nanna-bingo-launceston-2026-10-31-launceston",
+    "name": "Nanna Bingo - Launceston",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-10-31",
+    "endDate": "2026-10-31",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Nanna Bingo - Launceston in Launceston. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://events.humanitix.com/nanna-bingo-launceston",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Nanna Bingo - Launceston event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-31",
+    "ticketUrl": "https://events.humanitix.com/nanna-bingo-launceston",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "sat-31-oct-9pm-halloweek-2026-big-top-hobart-2026-10-31-hobart",
@@ -714,7 +747,8 @@
     "lastChecked": "2026-10-31",
     "ticketUrl": "https://events.humanitix.com/big-top?hxref=srf%3Aside%7Cmodel%3Ablend%7Ccpos%3A1%7Cgeo%3Aau--hobart--7000&hxchl=mkt-loc",
     "ticketProvider": "Humanitix",
-    "bookingRequired": true
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "child-and-family-learning-centre-what-s-on-2026-11-01-devonport",
@@ -743,7 +777,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-31"
+    "lastChecked": "2026-10-31",
+    "ticketUrl": "https://nationaltrusttas.rezdy.com/777979/home-hill-fireside-chats",
+    "ticketProvider": "Rezdy",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "community-bake-days-2026-11-01-hobart",
@@ -780,7 +818,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-31"
+    "lastChecked": "2026-10-31",
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "dia-de-muertos-kids-2026-11-01-hobart",
@@ -826,7 +865,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-10-30"
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "diwali-festival-of-light-in-burnie-2026-11-01-burnie",
@@ -868,6 +907,10 @@
     "lastChecked": "2026-10-31",
     "startTime": "17:00",
     "endTime": "22:00",
+    "ticketUrl": "https://www.eventbrite.com.au/e/diwali-in-burnie-a-celebration-of-light-culture-community-tickets-1992801636339?aff=oddtdtcreator&fbclid=IwY2xjawTiTbpwZG9mAWV4dG4DYWVtAjEwAGJyaWQRMWdZZUZjbjdQWFNQZmJqQ1lzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEejyDeNMG2h5xJDSMiMYLPvH68UONxI3Y-r1DJCXh4mK__EpJ_FuI2Scz3Tec_aem_ceEADx8RaPFLXolP9-RESQ",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-31",
     "priceFrom": 10,
     "priceCurrency": "AUD"
   },
@@ -895,7 +938,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-31"
+    "lastChecked": "2026-10-31",
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "east-devonport-neighbourhood-house-what-s-on-2026-11-01-devonport",
@@ -923,7 +967,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-31"
+    "lastChecked": "2026-10-31",
+    "ticketUrl": "https://nationaltrusttas.rezdy.com/777979/home-hill-fireside-chats",
+    "ticketProvider": "Rezdy",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "footsteps-through-time-2026-11-01-rosny-park",
@@ -949,7 +997,14 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-31"
+    "lastChecked": "2026-10-31",
+    "ticketUrl": "https://events.humanitix.com/claireangelbonnerbellerive/tickets",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "priceFrom": 2.19,
+    "priceTo": 120,
+    "priceCurrency": "AUD",
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "fireside-chat-with-royce-fairbrother-2026-11-03-devonport",
@@ -990,7 +1045,10 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-31"
+    "lastChecked": "2026-10-31",
+    "ticketUrl": "https://nationaltrusttas.rezdy.com/777979/home-hill-fireside-chats",
+    "ticketProvider": "Rezdy",
+    "bookingRequired": true
   },
   {
     "slug": "the-mum-connection-walking-group-burnie-2026-11-03-burnie",
@@ -1027,7 +1085,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-31"
+    "lastChecked": "2026-10-31",
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "ai-in-action-part-2-of-2-applying-generative-ai-in-your-business-2026-11-04-huonville",
@@ -1053,7 +1112,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-31"
+    "lastChecked": "2026-10-31",
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "andrew-blanch-tierra-album-launch-hobart-2026-11-04-hobart",
@@ -1123,7 +1183,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-10-31"
+    "lastChecked": "2026-10-31",
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "launnie-monthly-storytelling-2026-2026-11-04-launceston",
@@ -1191,7 +1252,8 @@
     "startTime": "09:00",
     "endTime": "16:00",
     "venue": "Near the war memorial, Jetty Road",
-    "address": "Jetty Road, South Arm TAS"
+    "address": "Jetty Road, South Arm TAS",
+    "ticketLastChecked": "2026-10-31"
   },
   {
     "slug": "rotary-club-of-lindisfarne-talks-dr-bert-shugg-2026-11-04-lindisfarne",
@@ -1618,7 +1680,9 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-23",
+    "lastChecked": "2026-10-31",
+    "ticketUrl": "https://events.humanitix.com/lutaf-showcase-2026",
+    "ticketProvider": "Humanitix",
     "startTime": "17:00",
     "endTime": "00:00",
     "venue": "Procreate — In-house Cinema",
@@ -1635,11 +1699,7 @@
         "endTime": "19:00"
       }
     ],
-    "ticketUrl": "https://events.humanitix.com/lutaf-showcase-2026",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-10-31"
+    "bookingRequired": true
   },
   {
     "slug": "tim-winton-conversation-2026-11-06-hobart",
@@ -3029,6 +3089,32 @@
     "image": {
       "url": "/images/categories/events.svg",
       "alt": "Targa Tasmania 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-10-31"
+  },
+  {
+    "slug": "building-stronger-families-2026-11-17-burnie",
+    "name": "Building Stronger Families",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-11-17",
+    "endDate": "2026-11-17",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Building Stronger Families in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Building-Stronger-Families",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Building Stronger Families event category image",
       "attribution": "TassieNow",
       "license": "Site artwork",
       "licenseUrl": null,
