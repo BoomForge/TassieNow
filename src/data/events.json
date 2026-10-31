@@ -3810,11 +3810,26 @@
       "verifiedAt": "2026-10-31"
     },
     "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "The Fairy Godmothers Christmas Market market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Burnie-High-School-domestic-arts-20131126-001.jpg/1280px-Burnie-High-School-domestic-arts-20131126-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Burnie-High-School-domestic-arts-20131126-001.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attribution": "Gary Houston",
+      "alt": "Burnie High School, Burnie — venue photograph, not the advertised event",
+      "mediaType": "contextual",
+      "caption": "Venue photograph: Burnie High School, Burnie. This does not depict the advertised event.",
+      "sourceMethod": "commons-venue",
+      "isFallback": false,
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "contextual",
+        "venue": "Burnie High School",
+        "town": "Burnie",
+        "sourceFileTitle": "File:Burnie-High-School-domestic-arts-20131126-001.jpg",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Burnie-High-School-domestic-arts-20131126-001.jpg",
+        "checkedAt": "2026-10-30",
+        "evidence": "Full venue name in Commons file title and Tasmania/town in source description"
+      }
     },
     "startTime": "09:00",
     "endTime": "13:00"

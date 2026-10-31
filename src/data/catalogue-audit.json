@@ -91,9 +91,9 @@
     },
     "qualityTiers": {
       "standard": 770,
-      "strong": 622,
+      "strong": 623,
       "low": 470,
-      "featured": 274
+      "featured": 273
     },
     "regions": {
       "Hobart & South": 776,
@@ -218,18 +218,18 @@
     "active": 164,
     "media": {
       "licensedHeroCoverage": {
-        "count": 62,
-        "percent": 37.8
+        "count": 63,
+        "percent": 38.4
       },
-      "stillUsingCategoryArtwork": 102,
+      "stillUsingCategoryArtwork": 101,
       "bySource": {
         "verified-event-venue": 41,
         "verified-event-activity": 16,
-        "verified-event-performer": 3,
-        "commons-venue": 2
+        "commons-venue": 3,
+        "verified-event-performer": 3
       },
       "byMediaType": {
-        "contextual": 43,
+        "contextual": 44,
         "activity-illustrative": 16,
         "performer-context": 3
       },
@@ -243,8 +243,8 @@
           "percent": 64.7
         },
         "North West": {
-          "count": 7,
-          "percent": 17.1
+          "count": 8,
+          "percent": 19.5
         },
         "East Coast": {
           "count": 1,
