@@ -10933,5 +10933,80 @@
         "observedAt": "2026-10-31T23:29:33.613Z"
       }
     ]
+  },
+  "wilf-campbell-memorial-lookout": {
+    "name": "Wilf Campbell Memorial Lookout",
+    "town": "Burnie",
+    "candidates": [
+      {
+        "id": "commons-geo:45561050",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Menai-Hotel-Burnie-20151209-002.jpg/1280px-Menai-Hotel-Burnie-20151209-002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Menai-Hotel-Burnie-20151209-002.jpg",
+        "title": "Menai-Hotel-Burnie-20151209-002.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "wilf",
+            "campbell"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-11-01T23:42:57.161Z"
+      },
+      {
+        "id": "commons-geo:45561054",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Wilf-Campbell-Hill-track-20151209-001.jpg/1280px-Wilf-Campbell-Hill-track-20151209-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Wilf-Campbell-Hill-track-20151209-001.jpg",
+        "title": "Wilf-Campbell-Hill-track-20151209-001.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "wilf",
+            "campbell"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-11-01T23:42:57.161Z"
+      },
+      {
+        "id": "commons-geo:124295419",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/View_of_Burnie_from_Upper_Burnie_lookout_in_Wilfred_Campbell_Memorial_Reserve.jpg/1280px-View_of_Burnie_from_Upper_Burnie_lookout_in_Wilfred_Campbell_Memorial_Reserve.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:View_of_Burnie_from_Upper_Burnie_lookout_in_Wilfred_Campbell_Memorial_Reserve.jpg",
+        "title": "View of Burnie from Upper Burnie lookout in Wilfred Campbell Memorial Reserve.jpg",
+        "credit": "Psypherium",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "campbell",
+            "memorial"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-11-01T23:42:57.161Z"
+      }
+    ]
   }
 }
