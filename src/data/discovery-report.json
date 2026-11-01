@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-31T21:56:39.342Z",
+  "checkedAt": "2026-11-01T22:29:01.537Z",
   "added": [],
   "addedEvents": [
     "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe",
@@ -41,17 +41,27 @@
       "id": "southern-markets",
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
-      "pagesFetched": 7,
-      "candidatesFound": 11,
-      "errors": []
+      "pagesFetched": 1,
+      "candidatesFound": 0,
+      "errors": [
+        {
+          "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
+          "message": "No market candidates parsed; source may need a parser update or browser rendering"
+        }
+      ]
     },
     {
       "id": "southern-market-guide",
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
-      "pagesFetched": 7,
-      "candidatesFound": 40,
-      "errors": []
+      "pagesFetched": 1,
+      "candidatesFound": 0,
+      "errors": [
+        {
+          "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
+          "message": "No market candidates parsed; source may need a parser update or browser rendering"
+        }
+      ]
     },
     {
       "id": "hobart-market-finder",
@@ -82,8 +92,13 @@
       "name": "Waratah-Wynyard Council",
       "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
       "pagesFetched": 1,
-      "candidatesFound": 3,
-      "errors": []
+      "candidatesFound": 0,
+      "errors": [
+        {
+          "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
+          "message": "No market candidates parsed; source may need a parser update or browser rendering"
+        }
+      ]
     }
   ],
   "totals": {
@@ -94,11 +109,11 @@
     "events": 4,
     "addedEvents": 2,
     "updated": 0,
-    "failedSources": 1
+    "failedSources": 4
   },
   "run": {
-    "id": "41245789148",
+    "id": "41357239923",
     "event": "schedule",
-    "sourceCommit": "5d9d19e82c56d2c4dc6810f5dd2b4aefc67bba15"
+    "sourceCommit": "72a084daae5f586d6747801beb60b2d88cd173e6"
   }
 }
