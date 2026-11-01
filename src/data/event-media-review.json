@@ -25101,7 +25101,13 @@
         "identity": "original-page-asset-unverified"
       }
     ],
-    "needs": "Original source identified; explicit permission or original reusable licence required"
+    "needs": "Original source identified; explicit permission or original reusable licence required",
+    "sourceEvidence": {
+      "sourceUrl": "https://www.devonport.tas.gov.au/events/author-event-alan-carter-at-devonport-library/",
+      "status": "known-original-image-needs-manual-extraction",
+      "discoveredBy": "official-source-photo-link",
+      "rights": "permission-needed"
+    }
   },
   "glenorchy-treasure-trail-the-market-2026-11-19-glenorchy": {
     "name": "Glenorchy Treasure Trail: The Market",
