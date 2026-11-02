@@ -23,7 +23,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "huon-valley-alphabet-mafia-2026-01-05-huonville",
@@ -49,7 +50,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "cygnet-men-s-circle-2026-01-14-huonville",
@@ -75,7 +77,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "rock-and-rhyme-at-huonville-library-2026-01-14-huonville",
@@ -85,7 +88,8 @@
     "startDate": "2026-01-14",
     "endDate": "2026-12-09",
     "categories": [
-      "Events"
+      "Events",
+      "Free"
     ],
     "summary": "Rock and Rhyme at Huonville Library in Huonville. Check the official event listing for current times, venue, accessibility and booking details.",
     "eventUrl": "https://www.huonvalley.tas.gov.au/event/rock-and-rhyme-and-storytime-at-huonville-library/",
@@ -112,7 +116,15 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketUrl": "https://www.eventbrite.com/e/rock-and-rhyme-and-storytime-at-huonville-library-tickets-862619898337?aff=ebdsoporgprofile&amp;keep_tld=1",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "priceFrom": 0,
+    "priceTo": 0,
+    "priceCurrency": "AUD",
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "herbalists-without-borders-2026-01-16-huonville",
@@ -138,7 +150,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "franklin-movie-nights-2026-02-01-huonville",
@@ -175,7 +188,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "smoother-movers-strength-training-program-2026-02-02-huonville",
@@ -201,7 +215,35 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
+  },
+  {
+    "slug": "huon-valley-quilters-2026-07-14-huonville",
+    "name": "Huon Valley Quilters",
+    "town": "Huonville",
+    "region": "Hobart & South",
+    "startDate": "2026-07-14",
+    "endDate": "2026-12-31",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Huon Valley Quilters in Huonville. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.huonvalley.tas.gov.au/event/huon-valley-quilters/",
+    "sourceUrl": "https://www.huonvalley.tas.gov.au/events/",
+    "sourceName": "Huon Valley Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Huon Valley Quilters event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "oxy-moron-games-2026-07-14-huonville",
@@ -227,7 +269,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "little-swans-playgroup-2026-09-03-huonville",
@@ -253,7 +296,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "voices-through-art-arch-lived-experience-art-campaign-2026-09-14-burnie",
@@ -281,7 +325,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "fundamental-pilates-2026-09-29-devonport",
@@ -318,7 +363,11 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketUrl": "https://nationaltrusttas.rezdy.com/777979/home-hill-fireside-chats",
+    "ticketProvider": "Rezdy",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "get-emergencyredi-workshops-huon-valley-2026-2026-10-20-huonville",
@@ -344,7 +393,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "barefoot-social-bowls-2026-10-22-currie",
@@ -386,7 +436,7 @@
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-31"
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "child-and-family-learning-centre-what-s-on-2026-11-01-devonport",
@@ -415,7 +465,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketUrl": "https://nationaltrusttas.rezdy.com/777979/home-hill-fireside-chats",
+    "ticketProvider": "Rezdy",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "east-devonport-neighbourhood-house-what-s-on-2026-11-01-devonport",
@@ -443,7 +497,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketUrl": "https://nationaltrusttas.rezdy.com/777979/home-hill-fireside-chats",
+    "ticketProvider": "Rezdy",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "active-launceston-spring-program-2026-11-02-launceston",
@@ -469,7 +527,101 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
+  },
+  {
+    "slug": "hobart-christmas-celebration-2026-11-02-hobart",
+    "name": "Hobart Christmas Celebration",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-02",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Hobart Christmas Celebration in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://events.humanitix.com/hobart-christmas-celebration",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Hobart Christmas Celebration event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-02",
+    "ticketUrl": "https://events.humanitix.com/hobart-christmas-celebration",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-02"
+  },
+  {
+    "slug": "spirit-song-2-2026-11-02-hobart",
+    "name": "Spirit Song 2",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-02",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Spirit Song 2 in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://events.humanitix.com/spirit-song-2",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Spirit Song 2 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-02",
+    "ticketUrl": "https://events.humanitix.com/spirit-song-2",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-02"
+  },
+  {
+    "slug": "vinyl-lounge-2026-11-02-launceston",
+    "name": "Vinyl Lounge",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-02",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Vinyl Lounge in Launceston. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://events.humanitix.com/vinyl-lounge",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Vinyl Lounge event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-02",
+    "ticketUrl": "https://events.humanitix.com/vinyl-lounge",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "fireside-chat-with-royce-fairbrother-2026-11-03-devonport",
@@ -510,7 +662,10 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketUrl": "https://nationaltrusttas.rezdy.com/777979/home-hill-fireside-chats",
+    "ticketProvider": "Rezdy",
+    "bookingRequired": true
   },
   {
     "slug": "fit-to-rent-healthy-homes-in-hot-summers-and-cold-winters-renters-forum-hobart-tasmania-20",
@@ -541,7 +696,9 @@
     "lastChecked": "2026-11-02",
     "ticketUrl": "https://events.humanitix.com/renew-renters-forum-tas",
     "ticketProvider": "Humanitix",
-    "bookingRequired": true
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "the-mum-connection-walking-group-burnie-2026-11-03-burnie",
@@ -578,7 +735,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "ai-in-action-part-2-of-2-applying-generative-ai-in-your-business-2026-11-04-huonville",
@@ -604,7 +762,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "andrew-blanch-tierra-album-launch-hobart-2026-11-04-hobart",
@@ -636,7 +795,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-10-31"
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "burnie-library-english-conversation-group-2026-11-04-burnie",
@@ -674,7 +833,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "launnie-monthly-storytelling-2026-2026-11-04-launceston",
@@ -709,7 +869,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-10-31",
+    "ticketLastChecked": "2026-11-02",
     "priceFrom": 0,
     "priceTo": 0,
     "priceCurrency": "AUD"
@@ -742,7 +902,8 @@
     "startTime": "09:00",
     "endTime": "16:00",
     "venue": "Near the war memorial, Jetty Road",
-    "address": "Jetty Road, South Arm TAS"
+    "address": "Jetty Road, South Arm TAS",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "rotary-club-of-lindisfarne-talks-dr-bert-shugg-2026-11-04-lindisfarne",
@@ -773,6 +934,11 @@
     "address": "1 Ford Parade, Lindisfarne TAS 7015",
     "startTime": "18:15",
     "endTime": "19:15",
+    "ticketUrl": "https://events.humanitix.com/rotary-club-of-lindisfarne-talks-dr-bert-shugg",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-02",
     "priceFrom": 0,
     "priceCurrency": "AUD"
   },
@@ -800,7 +966,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "yfcc-arvos-at-the-junction-2026-11-04-burnie",
@@ -826,10 +993,11 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketLastChecked": "2026-11-02"
   },
   {
-    "slug": "agricultured-2026-2026-11-01-launceston",
+    "slug": "agricultured-2026-2026-11-02-launceston",
     "name": "agriCULTURED 2026",
     "town": "Launceston",
     "region": "Launceston & North",
@@ -852,13 +1020,15 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-01",
-    "ticketUrl": "https://events.humanitix.com/agricultured-2026",
-    "ticketProvider": "Humanitix",
+    "lastChecked": "2026-11-02",
     "startTime": "09:00",
     "endTime": "19:00",
     "venue": "Launceston & Surrounds",
-    "bookingRequired": true
+    "ticketUrl": "https://events.humanitix.com/agricultured-2026",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "ai-in-action-part-2-of-2-applying-generative-ai-in-your-business-2026-11-05-huonville",
@@ -884,7 +1054,12 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02",
+    "ticketUrl": "https://events.humanitix.com/ai-in-action-applying-generative-ai-in-your-business-huonville",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "amy-sherwin-comes-home-2026-11-05-hobart",
@@ -1958,6 +2133,32 @@
     "lastChecked": "2026-11-02"
   },
   {
+    "slug": "remembrance-day-service-dover-2026-2026-11-11-huonville",
+    "name": "Remembrance Day Service – Dover 2026",
+    "town": "Huonville",
+    "region": "Hobart & South",
+    "startDate": "2026-11-11",
+    "endDate": "2026-11-11",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Remembrance Day Service – Dover 2026 in Huonville. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.huonvalley.tas.gov.au/event/remembrance-day-service-dover-2026/",
+    "sourceUrl": "https://www.huonvalley.tas.gov.au/events/",
+    "sourceName": "Huon Valley Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Remembrance Day Service – Dover 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-02"
+  },
+  {
     "slug": "arcia-sundowner-launceston-12-november-2026-2026-11-12-launceston",
     "name": "ARCIA Sundowner: Launceston 12 November, 2026",
     "town": "Launceston",
@@ -2277,33 +2478,6 @@
     "priceTo": 110,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-11-02"
-  },
-  {
-    "slug": "free-community-dance-party-shake-it-off-2026-11-13-huonville",
-    "name": "Free community dance party – SHAKE IT OFF",
-    "town": "Huonville",
-    "region": "Hobart & South",
-    "startDate": "2026-11-13",
-    "endDate": "2026-11-13",
-    "categories": [
-      "Events",
-      "Free"
-    ],
-    "summary": "Free community dance party – SHAKE IT OFF in Huonville. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.huonvalley.tas.gov.au/event/free-community-dance-party-shake-it-off/",
-    "sourceUrl": "https://www.huonvalley.tas.gov.au/events/",
-    "sourceName": "Huon Valley Council",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Free community dance party – SHAKE IT OFF event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-11-02"
   },
   {
     "slug": "katie-noonan-alone-all-one-2026-11-13-hobart",
@@ -3031,9 +3205,10 @@
     "startDate": "2026-11-22",
     "endDate": "2026-11-22",
     "categories": [
-      "Events"
+      "Events",
+      "Free"
     ],
-    "summary": "Beyond Sound: The Music in All of Us Join us for this event to celebrate International Day of People with Disability (4 December).",
+    "summary": "International Day of People with Disability Come and Try golf Empower Golf is hosting a FREE Come & Try Golf clinic at Golf Park Hobart&h",
     "eventUrl": "https://www.ccc.tas.gov.au/event/targafest/",
     "sourceUrl": "https://www.ccc.tas.gov.au/explore/events/",
     "sourceName": "City of Clarence",
@@ -3398,6 +3573,32 @@
     "ticketLastChecked": "2026-11-02"
   },
   {
+    "slug": "very-christmas-ballet-2026-11-28-hobart",
+    "name": "Very Christmas Ballet",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-28",
+    "endDate": "2026-11-28",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Very Christmas Ballet in Hobart. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.theatreroyal.com.au/shows/very-christmas-ballet",
+    "sourceUrl": "https://www.theatreroyal.com.au/what-s-on",
+    "sourceName": "Theatre Royal Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Very Christmas Ballet event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-02"
+  },
+  {
     "slug": "foxton-and-sugerman-present-the-gospel-project-a-christmas-special-2026-11-29-hobart",
     "name": "Foxton & Sugerman present The Gospel Project: A Christmas Special",
     "town": "Hobart",
@@ -3477,39 +3678,6 @@
     "priceTo": 470,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-11-02"
-  },
-  {
-    "slug": "the-fairy-godmothers-christmas-market-2026-11-29-burnie",
-    "name": "The Fairy Godmothers Christmas Market",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-11-29",
-    "endDate": "2026-11-29",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Burnie High School, Burnie, 7320,",
-    "summary": "The Fairy Godmothers Christmas Market in Burnie. The council lists this session for 2026-11-29; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Fairy-Godmothers-Christmas-Market",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Fairy-Godmothers-Christmas-Market",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-11-02",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-11-02"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "The Fairy Godmothers Christmas Market market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "09:00",
-    "endTime": "13:00"
   },
   {
     "slug": "hobart-showcase-2026-2026-11-30-hobart",
@@ -3651,11 +3819,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02",
-    "ticketUrl": "https://nationaltrusttas.rezdy.com/777979/home-hill-fireside-chats",
-    "ticketProvider": "Rezdy",
-    "bookingRequired": true,
-    "ticketLastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02"
   },
   {
     "slug": "volunteers-breakfast-2026-2026-12-02-devonport",
@@ -3684,11 +3848,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02",
-    "ticketUrl": "https://nationaltrusttas.rezdy.com/777979/home-hill-fireside-chats",
-    "ticketProvider": "Rezdy",
-    "bookingRequired": true,
-    "ticketLastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02"
   },
   {
     "slug": "beyond-sound-the-music-in-all-of-us-2026-12-03-rosny-park",
@@ -3718,12 +3878,7 @@
     "startTime": "13:00",
     "endTime": "15:00",
     "venue": "Rosny Library",
-    "address": "Bligh Street, Rosny Park TAS 7018",
-    "ticketUrl": "https://events.humanitix.com/beyond-sound-the-music-in-all-of-us",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-11-02"
+    "address": "Bligh Street, Rosny Park TAS 7018"
   },
   {
     "slug": "the-magic-of-audrey-2026-12-04-launceston",
@@ -3901,11 +4056,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02",
-    "ticketUrl": "https://nationaltrusttas.rezdy.com/777979/home-hill-fireside-chats",
-    "ticketProvider": "Rezdy",
-    "bookingRequired": true,
-    "ticketLastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02"
   },
   {
     "slug": "the-greatest-christmas-show-2026-12-06-launceston",
@@ -4101,8 +4252,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02",
-    "ticketLastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02"
   },
   {
     "slug": "britishmania-bme-entertainment-albert-hall-launceston-18-dec-2026-12-18-launceston",
@@ -4174,11 +4324,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-02",
-    "ticketUrl": "https://nationaltrusttas.rezdy.com/777979/home-hill-fireside-chats",
-    "ticketProvider": "Rezdy",
-    "bookingRequired": true,
-    "ticketLastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02"
   },
   {
     "slug": "carols-by-candlelight-2026-12-19-glenorchy",
@@ -4215,15 +4361,7 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-02",
-    "priceFrom": 15,
-    "priceTo": 15,
-    "priceCurrency": "AUD",
-    "ticketUrl": "https://events.humanitix.com/variety-carols-2026?_gl=1*2cf98m*_gcl_au*MTUyNjA2NDYxOS4xNzg1Mjc5NjQ4LjIxMTY5OTQxMjcuMTc4ODIzNTA2NS4xNzg4MjM1Njg2LjE3MjYxNjU1MzkuMTc4ODIzNDg3My4xNzg4MjM1Njg2*_ga*OTEwNDYxMTgzLjE3NjE4Nzc4ODY.*_ga_LHKW5FR9N6*czE3ODgyMzMwNjEkbzI3MCRnMSR0MTc4ODIzNjEyMyRqNCRsMCRoMA",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02"
   },
   {
     "slug": "variety-kids-carols-2026-12-19-glenorchy",
@@ -4261,15 +4399,7 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-02",
-    "priceFrom": 5,
-    "priceTo": 10,
-    "priceCurrency": "AUD",
-    "ticketUrl": "https://events.humanitix.com/variety-carols-2026?_gl=1*2cf98m*_gcl_au*MTUyNjA2NDYxOS4xNzg1Mjc5NjQ4LjIxMTY5OTQxMjcuMTc4ODIzNTA2NS4xNzg4MjM1Njg2LjE3MjYxNjU1MzkuMTc4ODIzNDg3My4xNzg4MjM1Njg2*_ga*OTEwNDYxMTgzLjE3NjE4Nzc4ODY.*_ga_LHKW5FR9N6*czE3ODgyMzMwNjEkbzI3MCRnMSR0MTc4ODIzNjEyMyRqNCRsMCRoMA",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-11-02"
+    "lastChecked": "2026-11-02"
   },
   {
     "slug": "tasmania-jackjumpers-v-adelaide-36ers-2026-12-21-glenorchy",
@@ -5250,7 +5380,7 @@
     "lastChecked": "2026-10-15",
     "venue": "13512 Tasman Hwy",
     "address": "13512 Tasman Hwy, Swansea TAS 7190",
-    "ticketLastChecked": "2026-11-01"
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "denise-scott-tickety-boo-2027-04-02-launceston",
@@ -5281,7 +5411,9 @@
     "lastChecked": "2026-11-02",
     "ticketUrl": "https://events.humanitix.com/denise-scott-tickety-boo",
     "ticketProvider": "Humanitix",
-    "bookingRequired": true
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "dolly-and-kenny-forever-2027-04-10-launceston",
@@ -5327,7 +5459,7 @@
     "priceFrom": 67.5,
     "priceTo": 79,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-01"
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "delta-goodrem-pure-world-tour-2027-04-26-glenorchy",
@@ -5374,7 +5506,7 @@
     "priceFrom": 99.9,
     "priceTo": 611.6,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-01"
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "the-everly-brothers-and-roy-orbison-the-robertson-brothers-albert-hall-launceston-23-jun-2",
@@ -5417,7 +5549,7 @@
     "priceFrom": 74.95,
     "priceTo": 79.95,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-01"
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "bicheno-beams-2027-06-26-bicheno",
@@ -5446,7 +5578,7 @@
     "lastChecked": "2026-10-15",
     "venue": "78 Burgess Street",
     "address": "78 Burgess Street, Bicheno TAS 7215",
-    "ticketLastChecked": "2026-11-01"
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "urzila-carlson-that-s-enough-already-albert-hall-launceston-27-jun-2027-06-27-launceston",
@@ -5489,7 +5621,7 @@
     "priceFrom": 69.9,
     "priceTo": 69.9,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-01"
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "tasmanian-fibre-festival-2027-07-09-launceston",
@@ -5536,7 +5668,7 @@
     "priceFrom": 5,
     "priceTo": 40,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-31"
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "winter-challenge-tasmania-2027-08-15-orford",
@@ -5565,7 +5697,7 @@
     "lastChecked": "2026-10-15",
     "venue": "31 Rheban Road",
     "address": "31 Rheban Road, Orford TAS 7190",
-    "ticketLastChecked": "2026-10-31"
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "the-60-four-studio-64-2027-09-03-launceston",
@@ -5613,7 +5745,7 @@
     "priceFrom": 74.95,
     "priceTo": 89.95,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-10-31"
+    "ticketLastChecked": "2026-11-02"
   },
   {
     "slug": "freycinet-challenge-2027-10-02-st-helens",
@@ -5640,6 +5772,6 @@
     },
     "status": "active",
     "lastChecked": "2026-10-21",
-    "ticketLastChecked": "2026-10-31"
+    "ticketLastChecked": "2026-11-02"
   }
 ]
