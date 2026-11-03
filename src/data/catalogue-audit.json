@@ -6,8 +6,8 @@
     "suppressed": 66,
     "media": {
       "realHeroCoverage": {
-        "count": 312,
-        "percent": 14.6
+        "count": 310,
+        "percent": 14.5
       },
       "twoPlusImages": {
         "count": 171,
@@ -21,7 +21,7 @@
         "count": 72,
         "percent": 3.4
       },
-      "totalLicensedImages": 923,
+      "totalLicensedImages": 921,
       "averageImagesPerPublicListing": 0.43
     },
     "sources": {
@@ -48,15 +48,15 @@
         "percent": 19.1
       },
       "recurringSchedule": {
-        "count": 126,
+        "count": 125,
         "percent": 5.9
       },
       "phone": {
-        "count": 395,
-        "percent": 18.5
+        "count": 394,
+        "percent": 18.4
       },
       "email": {
-        "count": 208,
+        "count": 207,
         "percent": 9.7
       },
       "address": {
@@ -64,8 +64,8 @@
         "percent": 23.7
       },
       "bookingUrl": {
-        "count": 171,
-        "percent": 8
+        "count": 118,
+        "percent": 5.5
       },
       "fee": {
         "count": 27,
@@ -215,38 +215,38 @@
     }
   },
   "events": {
-    "active": 168,
+    "active": 206,
     "media": {
       "licensedHeroCoverage": {
-        "count": 59,
-        "percent": 35.1
+        "count": 60,
+        "percent": 29.1
       },
-      "stillUsingCategoryArtwork": 109,
+      "stillUsingCategoryArtwork": 146,
       "bySource": {
-        "verified-event-venue": 38,
+        "verified-event-venue": 39,
         "verified-event-activity": 15,
         "verified-event-performer": 3,
         "commons-venue": 2,
         "commons-event": 1
       },
       "byMediaType": {
-        "contextual": 40,
+        "contextual": 41,
         "activity-illustrative": 15,
         "performer-context": 3,
         "event-photo": 1
       },
       "byRegion": {
         "Hobart & South": {
-          "count": 26,
-          "percent": 35.6
+          "count": 27,
+          "percent": 28.1
         },
         "Launceston & North": {
           "count": 22,
-          "percent": 61.1
+          "percent": 41.5
         },
         "North West": {
           "count": 8,
-          "percent": 17.8
+          "percent": 18.6
         },
         "East Coast": {
           "count": 1,
@@ -271,23 +271,26 @@
       }
     },
     "ticketCoverage": {
-      "count": 50,
-      "percent": 29.8
+      "count": 86,
+      "percent": 41.7
     },
     "priceCoverage": {
-      "count": 65,
-      "percent": 38.7
+      "count": 67,
+      "percent": 32.5
     },
     "providers": {
+      "Eventbrite": 36,
       "Humanitix": 27,
       "Ticketek": 18,
       "Rezdy": 4,
       "Ticketmaster": 1
     },
     "sources": {
-      "Burnie City Council": 28,
+      "Burnie City Council": 26,
+      "Eventbrite Hobart": 23,
       "Theatre North Launceston": 21,
       "MyState Bank Arena": 19,
+      "Eventbrite Launceston": 17,
       "Huon Valley Council": 17,
       "Devonport City Council": 16,
       "Humanitix Launceston": 14,
@@ -304,9 +307,9 @@
       "West Coast Heritage Centre": 1
     },
     "regions": {
-      "Hobart & South": 73,
-      "Launceston & North": 36,
-      "North West": 45,
+      "Hobart & South": 96,
+      "Launceston & North": 53,
+      "North West": 43,
       "East Coast": 9,
       "West Coast": 1,
       "Central Tasmania": 1,
@@ -321,21 +324,21 @@
       "tomorrow": "2026-11-04",
       "nextWeekendStart": "2026-11-07",
       "nextWeekendEnd": "2026-11-08",
-      "todayOrTomorrow": 30,
-      "thisWeekend": 36,
+      "todayOrTomorrow": 33,
+      "thisWeekend": 41,
       "townsTodayOrTomorrow": {
         "Huonville": 12,
+        "Hobart": 6,
         "Burnie": 4,
         "Devonport": 4,
-        "Hobart": 4,
-        "Launceston": 3,
+        "Launceston": 4,
         "Currie": 1,
         "Lindisfarne": 1,
         "South Arm": 1
       },
       "regionsThisWeekend": {
-        "Hobart & South": 19,
-        "Launceston & North": 4,
+        "Hobart & South": 22,
+        "Launceston & North": 6,
         "North West": 11,
         "East Coast": 0,
         "West Coast": 1,
@@ -350,13 +353,15 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 4
+      "missingOrOlderThan30Days": 29
     },
     "sourceRegionalMix": {
-      "North West / Burnie City Council": 28,
+      "North West / Burnie City Council": 26,
+      "Hobart & South / Eventbrite Hobart": 23,
       "Launceston & North / Theatre North Launceston": 21,
       "Hobart & South / MyState Bank Arena": 19,
       "Hobart & South / Huon Valley Council": 17,
+      "Launceston & North / Eventbrite Launceston": 17,
       "North West / Devonport City Council": 16,
       "Launceston & North / Humanitix Launceston": 14,
       "Hobart & South / Theatre Royal Hobart": 12,
