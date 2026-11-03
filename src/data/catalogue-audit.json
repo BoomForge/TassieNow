@@ -215,22 +215,22 @@
     }
   },
   "events": {
-    "active": 202,
+    "active": 203,
     "media": {
       "licensedHeroCoverage": {
-        "count": 60,
-        "percent": 29.7
+        "count": 61,
+        "percent": 30
       },
       "stillUsingCategoryArtwork": 142,
       "bySource": {
-        "verified-event-venue": 39,
+        "verified-event-venue": 40,
         "verified-event-activity": 15,
         "verified-event-performer": 3,
         "commons-venue": 2,
         "commons-event": 1
       },
       "byMediaType": {
-        "contextual": 41,
+        "contextual": 42,
         "activity-illustrative": 15,
         "performer-context": 3,
         "event-photo": 1
@@ -241,8 +241,8 @@
           "percent": 30.4
         },
         "Launceston & North": {
-          "count": 22,
-          "percent": 40.7
+          "count": 23,
+          "percent": 41.8
         },
         "North West": {
           "count": 7,
@@ -271,23 +271,23 @@
       }
     },
     "ticketCoverage": {
-      "count": 77,
-      "percent": 38.1
+      "count": 75,
+      "percent": 36.9
     },
     "priceCoverage": {
-      "count": 68,
-      "percent": 33.7
+      "count": 69,
+      "percent": 34
     },
     "providers": {
-      "Eventbrite": 36,
-      "Humanitix": 22,
+      "Eventbrite": 35,
+      "Humanitix": 21,
       "Ticketek": 18,
       "Ticketmaster": 1
     },
     "sources": {
       "Burnie City Council": 26,
       "Eventbrite Hobart": 22,
-      "Theatre North Launceston": 21,
+      "Theatre North Launceston": 22,
       "MyState Bank Arena": 19,
       "Eventbrite Launceston": 17,
       "Huon Valley Council": 17,
@@ -307,7 +307,7 @@
     },
     "regions": {
       "Hobart & South": 92,
-      "Launceston & North": 54,
+      "Launceston & North": 55,
       "North West": 42,
       "East Coast": 9,
       "West Coast": 1,
@@ -353,12 +353,12 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 18
+      "missingOrOlderThan30Days": 12
     },
     "sourceRegionalMix": {
       "North West / Burnie City Council": 26,
       "Hobart & South / Eventbrite Hobart": 22,
-      "Launceston & North / Theatre North Launceston": 21,
+      "Launceston & North / Theatre North Launceston": 22,
       "Hobart & South / MyState Bank Arena": 19,
       "Hobart & South / Huon Valley Council": 17,
       "Launceston & North / Eventbrite Launceston": 17,
