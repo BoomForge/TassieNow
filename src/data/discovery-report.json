@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-01T22:29:01.537Z",
+  "checkedAt": "2026-11-03T00:07:49.855Z",
   "added": [],
   "addedEvents": [
     "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe",
@@ -41,27 +41,17 @@
       "id": "southern-markets",
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
-      "pagesFetched": 1,
-      "candidatesFound": 0,
-      "errors": [
-        {
-          "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
-          "message": "No market candidates parsed; source may need a parser update or browser rendering"
-        }
-      ]
+      "pagesFetched": 7,
+      "candidatesFound": 13,
+      "errors": []
     },
     {
       "id": "southern-market-guide",
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
-      "pagesFetched": 1,
-      "candidatesFound": 0,
-      "errors": [
-        {
-          "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
-          "message": "No market candidates parsed; source may need a parser update or browser rendering"
-        }
-      ]
+      "pagesFetched": 7,
+      "candidatesFound": 44,
+      "errors": []
     },
     {
       "id": "hobart-market-finder",
@@ -84,7 +74,7 @@
       "name": "Huon Valley Council",
       "url": "https://www.huonvalley.tas.gov.au/events/",
       "pagesFetched": 2,
-      "candidatesFound": 3,
+      "candidatesFound": 2,
       "errors": []
     },
     {
@@ -92,13 +82,8 @@
       "name": "Waratah-Wynyard Council",
       "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
       "pagesFetched": 1,
-      "candidatesFound": 0,
-      "errors": [
-        {
-          "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
-          "message": "No market candidates parsed; source may need a parser update or browser rendering"
-        }
-      ]
+      "candidatesFound": 3,
+      "errors": []
     }
   ],
   "totals": {
@@ -109,11 +94,11 @@
     "events": 4,
     "addedEvents": 2,
     "updated": 0,
-    "failedSources": 4
+    "failedSources": 1
   },
   "run": {
-    "id": "41357239923",
+    "id": "41548798189",
     "event": "schedule",
-    "sourceCommit": "72a084daae5f586d6747801beb60b2d88cd173e6"
+    "sourceCommit": "dfa1a4351dd754f1451bd80794f9f96e0d4e8765"
   }
 }
