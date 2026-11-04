@@ -587,43 +587,6 @@
     "bookingRequired": true
   },
   {
-    "slug": "burnie-library-english-conversation-group-2026-11-04-burnie",
-    "name": "Burnie Library - English Conversation Group",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-11-04",
-    "endDate": "2026-11-04",
-    "categories": [
-      "Events"
-    ],
-    "summary": "Burnie Library - English Conversation Group in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Library-English-Conversation-Group",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
-    "sourceName": "Burnie City Council",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Books_on_shelves_IMG_8422.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Books_on_shelves_IMG_8422.jpg",
-      "attribution": "Glossyqueen",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "isFallback": false,
-      "sourceMethod": "verified-event-activity",
-      "mediaType": "activity-illustrative",
-      "alt": "Illustrative photograph of library bookshelves photographed in Kwara State, Nigeria; not the advertised Burnie Library - English Conversation Group event",
-      "caption": "Illustrative photo: library bookshelves photographed in Kwara State, Nigeria. This does not depict the advertised event in Tasmania.",
-      "matchEvidence": {
-        "verified": true,
-        "verifiedType": "activity-illustrative",
-        "topic": "books and reading",
-        "eventName": "Burnie Library - English Conversation Group",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Books_on_shelves_IMG_8422.jpg",
-        "checkedAt": "2026-10-11"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-11-04"
-  },
-  {
     "slug": "gunpowder-plot-punishing-the-plotters-2026-11-04-hobart",
     "name": "Gunpowder Plot - punishing the plotters",
     "town": "Hobart",
@@ -750,22 +713,22 @@
     "priceCurrency": "AUD"
   },
   {
-    "slug": "the-canopy-burnie-2026-11-04-burnie",
-    "name": "The Canopy Burnie",
-    "town": "Burnie",
-    "region": "North West",
+    "slug": "st-david-s-park-100th-birthday-garden-party-2026-11-04-hobart",
+    "name": "St David’s Park 100th birthday garden party",
+    "town": "Hobart",
+    "region": "Hobart & South",
     "startDate": "2026-11-04",
     "endDate": "2026-11-04",
     "categories": [
       "Events"
     ],
-    "summary": "The Canopy Burnie in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Canopy",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
-    "sourceName": "Burnie City Council",
+    "summary": "St David’s Park 100th birthday garden party in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://events.humanitix.com/st-david-s-park-100th-birthday-garden-party",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
     "image": {
       "url": "/images/categories/events.svg",
-      "alt": "The Canopy Burnie event category image",
+      "alt": "St David’s Park 100th birthday garden party event category image",
       "attribution": "TassieNow",
       "license": "Site artwork",
       "licenseUrl": null,
@@ -773,36 +736,13 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-04"
+    "lastChecked": "2026-11-04",
+    "ticketUrl": "https://events.humanitix.com/st-david-s-park-100th-birthday-garden-party",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true
   },
   {
-    "slug": "yfcc-arvos-at-the-junction-2026-11-04-burnie",
-    "name": "YFCC - Arvos at the Junction",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-11-04",
-    "endDate": "2026-11-04",
-    "categories": [
-      "Events"
-    ],
-    "summary": "YFCC - Arvos at the Junction in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/YFCC-Arvos",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
-    "sourceName": "Burnie City Council",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "YFCC - Arvos at the Junction event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-11-04"
-  },
-  {
-    "slug": "agricultured-2026-2026-11-03-launceston",
+    "slug": "agricultured-2026-2026-11-04-launceston",
     "name": "agriCULTURED 2026",
     "town": "Launceston",
     "region": "Launceston & North",
@@ -825,7 +765,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-03",
+    "lastChecked": "2026-11-04",
     "ticketUrl": "https://events.humanitix.com/agricultured-2026",
     "ticketProvider": "Humanitix",
     "startTime": "09:00",
@@ -1197,7 +1137,9 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-04",
+    "ticketUrl": "https://events.humanitix.com/lutaf-showcase-2026",
+    "ticketProvider": "Humanitix",
     "startTime": "17:00",
     "endTime": "00:00",
     "venue": "Procreate — In-house Cinema",
@@ -1214,11 +1156,7 @@
         "endTime": "19:00"
       }
     ],
-    "ticketUrl": "https://events.humanitix.com/lutaf-showcase-2026",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-11-03"
+    "bookingRequired": true
   },
   {
     "slug": "tim-winton-conversation-2026-11-06-hobart",
@@ -1745,6 +1683,37 @@
     "bookingRequired": true
   },
   {
+    "slug": "subtropfest-2026-a-celebration-of-tassie-indie-filmmaking-hobart-screening-2026-11-07-hoba",
+    "name": "SubTropFest 2026 - A celebration of Tassie Indie Filmmaking - HOBART Screening",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-07",
+    "categories": [
+      "Events"
+    ],
+    "summary": "SubTropFest 2026 - A celebration of Tassie Indie Filmmaking - HOBART Screening in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Youth Arts & Recreation Centre",
+    "address": "1 Market Pl, Hobart TAS 7000, Australia",
+    "eventUrl": "https://events.humanitix.com/subtropfest-hobart",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "SubTropFest 2026 - A celebration of Tassie Indie Filmmaking - HOBART Screening event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-04",
+    "ticketUrl": "https://events.humanitix.com/subtropfest-hobart",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true
+  },
+  {
     "slug": "the-cottage-school-fair-2026-11-07-rosny-park",
     "name": "The Cottage School Fair",
     "town": "Rosny Park",
@@ -2217,6 +2186,44 @@
     "lastChecked": "2026-11-04"
   },
   {
+    "slug": "burnie-library-english-conversation-group-2026-11-11-burnie",
+    "name": "Burnie Library - English Conversation Group",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-11-11",
+    "endDate": "2026-11-11",
+    "categories": [
+      "Events",
+      "Family"
+    ],
+    "summary": "Burnie Library - English Conversation Group in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Library-English-Conversation-Group",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Books_on_shelves_IMG_8422.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Books_on_shelves_IMG_8422.jpg",
+      "attribution": "Glossyqueen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "isFallback": false,
+      "sourceMethod": "verified-event-activity",
+      "mediaType": "activity-illustrative",
+      "alt": "Illustrative photograph of library bookshelves photographed in Kwara State, Nigeria; not the advertised Burnie Library - English Conversation Group event",
+      "caption": "Illustrative photo: library bookshelves photographed in Kwara State, Nigeria. This does not depict the advertised event in Tasmania.",
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "activity-illustrative",
+        "topic": "books and reading",
+        "eventName": "Burnie Library - English Conversation Group",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Books_on_shelves_IMG_8422.jpg",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-11-04"
+  },
+  {
     "slug": "community-connections-and-services-2026-11-11-rosny-park",
     "name": "Community Connections & Services",
     "town": "Rosny Park",
@@ -2299,6 +2306,58 @@
     "image": {
       "url": "/images/categories/events.svg",
       "alt": "Remembrance Day Service – Dover 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-04"
+  },
+  {
+    "slug": "the-canopy-burnie-2026-11-11-burnie",
+    "name": "The Canopy Burnie",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-11-11",
+    "endDate": "2026-11-11",
+    "categories": [
+      "Events"
+    ],
+    "summary": "The Canopy Burnie in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Canopy",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "The Canopy Burnie event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-04"
+  },
+  {
+    "slug": "yfcc-arvos-at-the-junction-2026-11-11-burnie",
+    "name": "YFCC - Arvos at the Junction",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-11-11",
+    "endDate": "2026-11-11",
+    "categories": [
+      "Events"
+    ],
+    "summary": "YFCC - Arvos at the Junction in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/YFCC-Arvos",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "YFCC - Arvos at the Junction event category image",
       "attribution": "TassieNow",
       "license": "Site artwork",
       "licenseUrl": null,
@@ -2476,6 +2535,32 @@
     "image": {
       "url": "/images/categories/events.svg",
       "alt": "Discovery Session: Explore Early Childhood Education and Care event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-04"
+  },
+  {
+    "slug": "energy-symposium-2026-11-12-burnie",
+    "name": "Energy Symposium",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-11-12",
+    "endDate": "2026-11-12",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Energy Symposium in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Energy-Symposium",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Energy Symposium event category image",
       "attribution": "TassieNow",
       "license": "Site artwork",
       "licenseUrl": null,
@@ -2730,6 +2815,37 @@
     "priceTo": 110,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-11-04"
+  },
+  {
+    "slug": "hobofopo2026-2026-11-13-hobart",
+    "name": "HOBOFOPO2026",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-13",
+    "endDate": "2026-11-15",
+    "categories": [
+      "Events"
+    ],
+    "summary": "HOBOFOPO2026 in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "nipaluna",
+    "address": "The Simple Complex, 189 Elizabeth St, Hobart TAS 7000, Australia",
+    "eventUrl": "https://events.humanitix.com/hobofopo2026",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "HOBOFOPO2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-04",
+    "ticketUrl": "https://events.humanitix.com/hobofopo2026",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true
   },
   {
     "slug": "katie-noonan-alone-all-one-2026-11-13-hobart",
@@ -3097,8 +3213,7 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-04",
-    "ticketLastChecked": "2026-11-04"
+    "lastChecked": "2026-11-04"
   },
   {
     "slug": "cygnet-folk-festival-launch-party-at-hobart-brewing-co-2026-11-15-hobart",
@@ -3162,8 +3277,7 @@
     "status": "active",
     "lastChecked": "2026-11-04",
     "startTime": "10:00",
-    "endTime": "13:00",
-    "ticketLastChecked": "2026-11-04"
+    "endTime": "13:00"
   },
   {
     "slug": "harcourts-321-go-kids-race-2026-11-15-burnie",
@@ -3190,8 +3304,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-04",
-    "ticketLastChecked": "2026-11-04"
+    "lastChecked": "2026-11-04"
   },
   {
     "slug": "toni-and-ryan-live-podcast-recording-2026-11-15-hobart",
@@ -3304,8 +3417,7 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-04",
-    "ticketLastChecked": "2026-11-04"
+    "lastChecked": "2026-11-04"
   },
   {
     "slug": "building-stronger-families-2026-11-17-burnie",
@@ -3331,8 +3443,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-04",
-    "ticketLastChecked": "2026-11-04"
+    "lastChecked": "2026-11-04"
   },
   {
     "slug": "early-english-cricket-tour-of-australia-a-new-acquisition-unveiled-2026-11-17-hobart",
@@ -3685,44 +3796,6 @@
     "ticketLastChecked": "2026-11-04"
   },
   {
-    "slug": "archery-come-n-try-2026-11-22-burnie",
-    "name": "Archery Come N Try",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-11-22",
-    "endDate": "2026-11-22",
-    "categories": [
-      "Events"
-    ],
-    "summary": "Archery Come N Try in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Archery-Come-N-Try",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
-    "sourceName": "Burnie City Council",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/WA_targets_used_at_a_Robin-Hood_archery_shooting.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:WA_targets_used_at_a_Robin-Hood_archery_shooting.jpg",
-      "attribution": "Gunnar Richter",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "isFallback": false,
-      "sourceMethod": "verified-event-activity",
-      "mediaType": "activity-illustrative",
-      "alt": "Illustrative photograph of an archery target; not the advertised Archery Come N Try event",
-      "caption": "Illustrative photo: an archery target. This does not depict the advertised event in Tasmania.",
-      "matchEvidence": {
-        "verified": true,
-        "verifiedType": "activity-illustrative",
-        "topic": "archery",
-        "eventName": "Archery Come N Try",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:WA_targets_used_at_a_Robin-Hood_archery_shooting.jpg",
-        "checkedAt": "2026-10-11"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-11-04",
-    "ticketLastChecked": "2026-11-04"
-  },
-  {
     "slug": "targafest-2026-2026-11-22-rosny-park",
     "name": "Targafest 2026",
     "town": "Rosny Park",
@@ -3747,8 +3820,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-04",
-    "ticketLastChecked": "2026-11-04"
+    "lastChecked": "2026-11-04"
   },
   {
     "slug": "women-talking-money-with-equity-mates-2026-11-23-launceston",
@@ -4401,39 +4473,6 @@
     "priceTo": 470,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-11-04"
-  },
-  {
-    "slug": "the-fairy-godmothers-christmas-market-2026-11-29-burnie",
-    "name": "The Fairy Godmothers Christmas Market",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-11-29",
-    "endDate": "2026-11-29",
-    "categories": [
-      "Events",
-      "Markets"
-    ],
-    "venue": "Burnie High School, Burnie, 7320,",
-    "summary": "The Fairy Godmothers Christmas Market in Burnie. The council lists this session for 2026-11-29; check the source for changes.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Fairy-Godmothers-Christmas-Market",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Fairy-Godmothers-Christmas-Market",
-    "sourceName": "Burnie City Council",
-    "status": "active",
-    "lastChecked": "2026-11-04",
-    "discovery": {
-      "sourceId": "burnie-marketplace",
-      "method": "council-calendar",
-      "verifiedAt": "2026-11-04"
-    },
-    "image": {
-      "url": "/images/categories/markets.svg",
-      "alt": "The Fairy Godmothers Christmas Market market illustration",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "isFallback": true
-    },
-    "startTime": "09:00",
-    "endTime": "13:00"
   },
   {
     "slug": "hobart-showcase-2026-2026-11-30-hobart",
@@ -5139,7 +5178,7 @@
     "ticketUrl": "https://www.ticketmaster.com.au/event/130064E7C55D3F2B",
     "ticketProvider": "Ticketmaster",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "decade-the-dance-collective-albert-hall-launceston-12-dec-12-dec-2026-12-12-launceston",
@@ -5182,7 +5221,7 @@
     "priceFrom": 21,
     "priceTo": 31,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "name": "Tassie Pop Culture Market",
@@ -5211,7 +5250,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-04"
+    "lastChecked": "2026-11-04",
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "britishmania-bme-entertainment-albert-hall-launceston-18-dec-2026-12-18-launceston",
@@ -5254,7 +5294,7 @@
     "priceFrom": 69.9,
     "priceTo": 79.9,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "festive-friday-2026-2026-12-18-devonport",
@@ -5283,7 +5323,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-04"
+    "lastChecked": "2026-11-04",
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "but-that-s-what-they-said-conceptual-accuracy-beyond-the-words-2026-12-19-hobart",
@@ -5313,7 +5354,7 @@
     "ticketUrl": "https://www.eventbrite.com/e/but-thats-what-they-said-conceptual-accuracy-beyond-the-words-tickets-2002824849038?aff=ebdssbcitybrowse",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "carols-by-candlelight-2026-12-19-glenorchy",
@@ -5350,7 +5391,15 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-04"
+    "lastChecked": "2026-11-04",
+    "priceFrom": 15,
+    "priceTo": 15,
+    "priceCurrency": "AUD",
+    "ticketUrl": "https://events.humanitix.com/variety-carols-2026?_gl=1*2cf98m*_gcl_au*MTUyNjA2NDYxOS4xNzg1Mjc5NjQ4LjIxMTY5OTQxMjcuMTc4ODIzNTA2NS4xNzg4MjM1Njg2LjE3MjYxNjU1MzkuMTc4ODIzNDg3My4xNzg4MjM1Njg2*_ga*OTEwNDYxMTgzLjE3NjE4Nzc4ODY.*_ga_LHKW5FR9N6*czE3ODgyMzMwNjEkbzI3MCRnMSR0MTc4ODIzNjEyMyRqNCRsMCRoMA",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "variety-kids-carols-2026-12-19-glenorchy",
@@ -5388,7 +5437,15 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-04"
+    "lastChecked": "2026-11-04",
+    "priceFrom": 5,
+    "priceTo": 10,
+    "priceCurrency": "AUD",
+    "ticketUrl": "https://events.humanitix.com/variety-carols-2026?_gl=1*2cf98m*_gcl_au*MTUyNjA2NDYxOS4xNzg1Mjc5NjQ4LjIxMTY5OTQxMjcuMTc4ODIzNTA2NS4xNzg4MjM1Njg2LjE3MjYxNjU1MzkuMTc4ODIzNDg3My4xNzg4MjM1Njg2*_ga*OTEwNDYxMTgzLjE3NjE4Nzc4ODY.*_ga_LHKW5FR9N6*czE3ODgyMzMwNjEkbzI3MCRnMSR0MTc4ODIzNjEyMyRqNCRsMCRoMA",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "washington-crossing-the-delaware-the-crossing-film-history-livestream-2026-12-19-hobart",
@@ -5418,7 +5475,7 @@
     "ticketUrl": "https://www.eventbrite.com/e/washington-crossing-the-delaware-the-crossing-film-history-livestream-tickets-1288476210029?aff=ebdssbcitybrowse",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "tasmania-jackjumpers-v-adelaide-36ers-2026-12-21-glenorchy",
@@ -5466,7 +5523,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "christmas-buffet-lunch-2026-2026-12-25-hobart",
@@ -5498,7 +5555,7 @@
     "ticketUrl": "https://www.eventbrite.com.au/e/christmas-buffet-lunch-2026-tickets-1993298298870",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "christmas-day-buffet-dinner-2026-2026-12-25-hobart",
@@ -5533,7 +5590,7 @@
     "priceFrom": 70,
     "priceTo": 125,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "tasmania-jackjumpers-v-se-melbourne-phoenix-2026-12-26-glenorchy",
@@ -5581,7 +5638,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "the-beatles-show-red-and-038-blue-boxing-day-craigie-knowe-vineyard-2026-12-26-cranbrook",
@@ -5610,7 +5667,7 @@
     "lastChecked": "2026-10-15",
     "venue": "Craigie Knowe Vineyard",
     "address": "80 Glen Gala Road, Cranbrook TAS 7190",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "kundalini-activation-and-breathwork-hobart-27-dec-2026-12-27-hobart",
@@ -5642,7 +5699,7 @@
     "ticketUrl": "https://www.eventbrite.com.au/e/kundalini-activation-breathwork-hobart-27-dec-tickets-2003644775460",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "tasmania-jewels-v-bendigo-spirit-2026-12-27-glenorchy",
@@ -5690,7 +5747,7 @@
     "priceFrom": 15,
     "priceTo": 470,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "launceston-beerfest-nye-30-and-31-december-2026-12-30-launceston",
@@ -5722,7 +5779,7 @@
     "ticketUrl": "https://www.eventbrite.com.au/e/launceston-beerfest-nye-30-31-december-tickets-1999969747352",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "launceston-beerfest-nye-30-and-31-december-2026-12-31-launceston",
@@ -5752,7 +5809,7 @@
     "ticketUrl": "https://www.eventbrite.com.au/e/launceston-beerfest-nye-30-31-december-tickets-1999969747352?aff=ebdssbcitybrowse",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "mental-as-anything-new-year-and-8217-s-day-at-craigie-knowe-vineyard-2027-01-01-cranbrook",
@@ -5781,7 +5838,7 @@
     "lastChecked": "2026-10-15",
     "venue": "Craigie Knowe Vineyard",
     "address": "80 Glen Gala Road, Cranbrook TAS 7190",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "tasmania-jackjumpers-v-perth-wildcats-2027-01-01-glenorchy",
@@ -5829,7 +5886,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "tasmania-jewels-v-adelaide-lightning-2027-01-07-glenorchy",
@@ -5877,7 +5934,7 @@
     "priceFrom": 15,
     "priceTo": 470,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "2027-king-island-pro-am-2027-01-15-currie",
@@ -5918,7 +5975,7 @@
     "priceFrom": 2875,
     "priceTo": 2875,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "tasmania-jewels-v-townsville-fire-2027-01-21-glenorchy",
@@ -5966,7 +6023,7 @@
     "priceFrom": 15,
     "priceTo": 470,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "tasmania-jackjumpers-v-cairns-taipans-2027-01-22-glenorchy",
@@ -6014,7 +6071,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "tasmania-jewels-v-sydney-flames-2027-01-25-glenorchy",
@@ -6062,7 +6119,7 @@
     "priceFrom": 15,
     "priceTo": 470,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "ignite-cup-tasmania-jackjumpers-v-illawarra-hawks-2027-01-27-glenorchy",
@@ -6110,7 +6167,7 @@
     "priceFrom": 2,
     "priceTo": 490,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "tasmania-jackjumpers-v-brisbane-bullets-2027-01-31-glenorchy",
@@ -6158,7 +6215,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "tasmania-jackjumpers-v-melbourne-united-2027-02-05-glenorchy",
@@ -6206,7 +6263,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "tasmania-jackjumpers-v-perth-wildcats-2027-02-10-glenorchy",
@@ -6254,7 +6311,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "an-evening-with-gillian-welch-and-david-rawlings-2027-02-11-launceston",
@@ -6300,7 +6357,7 @@
     "priceFrom": 107.08,
     "priceTo": 153.79,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-03"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "festival-of-king-island-2027-2027-02-12-currie",
@@ -6331,7 +6388,7 @@
     "priceFrom": 30,
     "priceTo": 75,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-02"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "seventh-wonder-performs-fleetwood-mac-orchestrated-2027-02-19-launceston",
@@ -6377,7 +6434,7 @@
     "priceFrom": 55,
     "priceTo": 89,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-01"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "arj-barker-the-eleventh-hour-albert-hall-launceston-20-feb-2027-02-20-launceston",
@@ -6420,7 +6477,7 @@
     "priceFrom": 59.9,
     "priceTo": 64.9,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-01"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "drum-tao-samurai-of-the-drum-2027-02-23-launceston",
@@ -6466,7 +6523,7 @@
     "priceFrom": 54.9,
     "priceTo": 99.9,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-01"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "clover-hill-cup-marquee-launceston-2027-2027-02-24-mowbray",
@@ -6497,7 +6554,8 @@
     "lastChecked": "2026-11-03",
     "ticketUrl": "https://www.eventbrite.com.au/e/clover-hill-cup-marquee-launceston-2027-tickets-1998847722345",
     "ticketProvider": "Eventbrite",
-    "bookingRequired": true
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "fresh-comedy-presents-tom-ballard-live-2027-02-26-launceston",
@@ -6530,7 +6588,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-11-01"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "spoke-motorcycle-festival-2027-02-26-little-swanport",
@@ -6561,7 +6619,7 @@
     "lastChecked": "2026-10-15",
     "venue": "100 Mayfield Jetty Road",
     "address": "100 Mayfield Jetty Road, Little Swanport TAS 7190",
-    "ticketLastChecked": "2026-11-01"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "echo-festival-2027-03-12-swansea",
@@ -6591,7 +6649,7 @@
     "lastChecked": "2026-10-15",
     "venue": "13512 Tasman Hwy",
     "address": "13512 Tasman Hwy, Swansea TAS 7190",
-    "ticketLastChecked": "2026-11-02"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "denise-scott-tickety-boo-2027-04-02-launceston",
@@ -6624,7 +6682,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-11-02"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "dolly-and-kenny-forever-2027-04-10-launceston",
@@ -6670,7 +6728,7 @@
     "priceFrom": 67.5,
     "priceTo": 79,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-02"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "delta-goodrem-pure-world-tour-2027-04-26-glenorchy",
@@ -6717,7 +6775,7 @@
     "priceFrom": 99.9,
     "priceTo": 611.6,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-02"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "the-everly-brothers-and-roy-orbison-the-robertson-brothers-albert-hall-launceston-23-jun-2",
@@ -6760,7 +6818,7 @@
     "priceFrom": 74.95,
     "priceTo": 79.95,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-02"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "bicheno-beams-2027-06-26-bicheno",
@@ -6789,7 +6847,7 @@
     "lastChecked": "2026-10-15",
     "venue": "78 Burgess Street",
     "address": "78 Burgess Street, Bicheno TAS 7215",
-    "ticketLastChecked": "2026-11-02"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "urzila-carlson-that-s-enough-already-albert-hall-launceston-27-jun-2027-06-27-launceston",
@@ -6832,7 +6890,7 @@
     "priceFrom": 69.9,
     "priceTo": 69.9,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-02"
+    "ticketLastChecked": "2026-11-04"
   },
   {
     "slug": "tasmanian-fibre-festival-2027-07-09-launceston",
