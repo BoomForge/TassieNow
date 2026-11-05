@@ -11080,5 +11080,80 @@
         "observedAt": "2026-11-03T02:16:16.946Z"
       }
     ]
+  },
+  "wynyard-wharf-seafoods": {
+    "name": "Wynyard Wharf Seafoods",
+    "town": "Wynyard",
+    "candidates": [
+      {
+        "id": "commons-geo:28651518",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Inglis-River-Wynyard-20070423-013.jpg/1280px-Inglis-River-Wynyard-20070423-013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Inglis-River-Wynyard-20070423-013.jpg",
+        "title": "Inglis-River-Wynyard-20070423-013.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "wynyard",
+            "wharf"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-11-05T00:57:12.848Z"
+      },
+      {
+        "id": "commons-geo:28651519",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Inglis-River-Wynyard-20070423-014.jpg/1280px-Inglis-River-Wynyard-20070423-014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Inglis-River-Wynyard-20070423-014.jpg",
+        "title": "Inglis-River-Wynyard-20070423-014.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "wynyard",
+            "wharf"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-11-05T00:57:12.848Z"
+      },
+      {
+        "id": "commons-geo:28651530",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Wharf-Wynyard-20070423-010.jpg/1280px-Wharf-Wynyard-20070423-010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Wharf-Wynyard-20070423-010.jpg",
+        "title": "Wharf-Wynyard-20070423-010.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "wynyard",
+            "wharf"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-11-05T00:57:12.848Z"
+      }
+    ]
   }
 }
