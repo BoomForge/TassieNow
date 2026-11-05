@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-04T23:58:39.485Z",
+  "checkedAt": "2026-11-05T23:53:15.090Z",
   "added": [],
   "addedEvents": [
     "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe",
@@ -74,7 +74,7 @@
       "name": "Huon Valley Council",
       "url": "https://www.huonvalley.tas.gov.au/events/",
       "pagesFetched": 2,
-      "candidatesFound": 2,
+      "candidatesFound": 3,
       "errors": []
     },
     {
@@ -87,8 +87,8 @@
     }
   ],
   "totals": {
-    "discovered": 70,
-    "review": 11,
+    "discovered": 71,
+    "review": 12,
     "existing": 55,
     "added": 0,
     "events": 4,
@@ -97,8 +97,8 @@
     "failedSources": 1
   },
   "run": {
-    "id": "41937679851",
+    "id": "42132600228",
     "event": "schedule",
-    "sourceCommit": "9bea0aa20ac177a645de0dca6f0b6c56823ef3cd"
+    "sourceCommit": "5f944068c95c0de6f03a03da407e9732af492591"
   }
 }
