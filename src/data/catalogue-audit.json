@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 186,
+    "active": 187,
     "media": {
       "licensedHeroCoverage": {
         "count": 57,
-        "percent": 30.6
+        "percent": 30.5
       },
-      "stillUsingCategoryArtwork": 129,
+      "stillUsingCategoryArtwork": 130,
       "bySource": {
         "verified-event-venue": 37,
         "verified-event-activity": 14,
@@ -238,7 +238,7 @@
       "byRegion": {
         "Hobart & South": {
           "count": 25,
-          "percent": 30.9
+          "percent": 30.5
         },
         "Launceston & North": {
           "count": 24,
@@ -271,16 +271,16 @@
       }
     },
     "ticketCoverage": {
-      "count": 69,
-      "percent": 37.1
+      "count": 71,
+      "percent": 38
     },
     "priceCoverage": {
-      "count": 62,
-      "percent": 33.3
+      "count": 64,
+      "percent": 34.2
     },
     "providers": {
-      "Eventbrite": 30,
-      "Humanitix": 21,
+      "Eventbrite": 31,
+      "Humanitix": 22,
       "Ticketek": 17,
       "Ticketmaster": 1
     },
@@ -294,8 +294,8 @@
       "East Coast Tasmania": 13,
       "Eventbrite Launceston": 13,
       "Humanitix Launceston": 11,
+      "Humanitix Hobart": 9,
       "Theatre Royal Hobart": 9,
-      "Humanitix Hobart": 8,
       "City of Clarence": 4,
       "City of Hobart": 4,
       "Glenorchy City Council": 4,
@@ -305,7 +305,7 @@
       "Ticketebo": 1
     },
     "regions": {
-      "Hobart & South": 81,
+      "Hobart & South": 82,
       "Launceston & North": 48,
       "North West": 40,
       "East Coast": 13,
@@ -364,8 +364,8 @@
       "East Coast / East Coast Tasmania": 13,
       "Launceston & North / Eventbrite Launceston": 13,
       "Launceston & North / Humanitix Launceston": 11,
+      "Hobart & South / Humanitix Hobart": 9,
       "Hobart & South / Theatre Royal Hobart": 9,
-      "Hobart & South / Humanitix Hobart": 8,
       "Hobart & South / City of Clarence": 4,
       "Hobart & South / City of Hobart": 4,
       "Hobart & South / Glenorchy City Council": 4,
