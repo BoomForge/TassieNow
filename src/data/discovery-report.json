@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-07T22:22:38.893Z",
+  "checkedAt": "2026-11-08T22:32:34.972Z",
   "added": [],
   "addedEvents": [
     "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe"
@@ -41,16 +41,21 @@
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
       "pagesFetched": 7,
-      "candidatesFound": 12,
+      "candidatesFound": 13,
       "errors": []
     },
     {
       "id": "southern-market-guide",
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
-      "pagesFetched": 7,
-      "candidatesFound": 41,
-      "errors": []
+      "pagesFetched": 6,
+      "candidatesFound": 40,
+      "errors": [
+        {
+          "url": "https://hobartandbeyond.com.au/event/judbury-market",
+          "message": "HTTP 404"
+        }
+      ]
     },
     {
       "id": "hobart-market-finder",
@@ -93,11 +98,11 @@
     "events": 4,
     "addedEvents": 1,
     "updated": 0,
-    "failedSources": 1
+    "failedSources": 2
   },
   "run": {
-    "id": "42420225684",
+    "id": "42530638744",
     "event": "schedule",
-    "sourceCommit": "d088382234309c97cdf099260e983e0b4c12f924"
+    "sourceCommit": "33be7f53936adbd47cdc4741a97d32eb3c897beb"
   }
 }
