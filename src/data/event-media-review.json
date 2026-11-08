@@ -4207,7 +4207,13 @@
         "identity": "original-page-asset-unverified"
       }
     ],
-    "needs": "Organiser approval or an explicit reusable licence before embedding the photos"
+    "needs": "Organiser approval or an explicit reusable licence before embedding the photos",
+    "sourceEvidence": {
+      "sourceUrl": "https://www.devonport.tas.gov.au/events/santas-street-spectacular-2026/",
+      "status": "known-original-image-needs-manual-extraction",
+      "discoveredBy": "official-source-photo-link",
+      "rights": "permission-needed"
+    }
   },
   "the-greatest-christmas-show-base-entertainment-albert-hall-launceston-06-dec-2026-12-06-la": {
     "name": "The Greatest Christmas Show Base Entertainment Albert Hall, Launceston 06 Dec",
@@ -27040,7 +27046,13 @@
         "identity": "original-page-asset-unverified"
       }
     ],
-    "needs": "Original source identified; explicit permission or original reusable licence required"
+    "needs": "Original source identified; explicit permission or original reusable licence required",
+    "sourceEvidence": {
+      "sourceUrl": "https://www.devonport.tas.gov.au/events/the-great-gingerbread-house-hunt-2026/",
+      "status": "known-original-image-needs-manual-extraction",
+      "discoveredBy": "official-source-photo-link",
+      "rights": "permission-needed"
+    }
   },
   "active-launceston-spring-program-2026-11-01-launceston": {
     "name": "Active Launceston Spring Program",
@@ -27597,7 +27609,13 @@
         "identity": "original-page-asset-unverified"
       }
     ],
-    "needs": "Original source identified; explicit permission or original reusable licence required"
+    "needs": "Original source identified; explicit permission or original reusable licence required",
+    "sourceEvidence": {
+      "sourceUrl": "https://www.devonport.tas.gov.au/events/volunteers-breakfast-2026/",
+      "status": "known-original-image-needs-manual-extraction",
+      "discoveredBy": "official-source-photo-link",
+      "rights": "permission-needed"
+    }
   },
   "free-community-first-aid-workshops-2026-11-09-huonville": {
     "name": "Free Community First Aid Workshops",
@@ -31165,6 +31183,130 @@
         "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Archery-Come-N-Try",
         "source": "on-page-gallery",
         "alt": "IMG_0941.jpeg",
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://www.burnie.tas.gov.au/files/sharedassets/public/v/1/templatetiles/img_3939.jpeg?w=1200",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+        "source": "social-preview",
+        "alt": null,
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://www.burnie.tas.gov.au/files/sharedassets/public/v/1/templatetiles/img_3939.jpeg?w=1080",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+        "source": "social-preview",
+        "alt": null,
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      }
+    ],
+    "needs": "Original source identified; explicit permission or original reusable licence required"
+  },
+  "burnie-ballet-academy-peter-pan-2026-11-29-burnie": {
+    "name": "Burnie Ballet Academy - Peter Pan",
+    "organiser": "Burnie City Council",
+    "source": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Ballet-Academy",
+    "candidates": [
+      {
+        "url": "https://www.burnie.tas.gov.au/files/content/public/v/7/community/whats-on-events/2026/burnie-ballet-academy/img_3694.jpeg?w=1200",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Ballet-Academy",
+        "source": "social-preview",
+        "alt": null,
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://www.burnie.tas.gov.au/files/content/public/v/7/community/whats-on-events/2026/burnie-ballet-academy/img_3694.jpeg?w=1080",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Ballet-Academy",
+        "source": "social-preview",
+        "alt": null,
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://www.burnie.tas.gov.au/files/assets/public/templateimages/print-header.png",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Ballet-Academy",
+        "source": "on-page-gallery",
+        "alt": "Burnie City Council - Logo",
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://www.burnie.tas.gov.au/files/content/public/v/7/community/whats-on-events/2026/burnie-ballet-academy/img_3694.jpeg?dimension=pageimagefullwidth&w=1140",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Ballet-Academy",
+        "source": "on-page-gallery",
+        "alt": "IMG_3694.jpeg",
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/tf0/1/16/1f338.png",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Ballet-Academy",
+        "source": "original-page-img",
+        "alt": "��",
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/tf4/1/16/2728.png",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Ballet-Academy",
+        "source": "original-page-img",
+        "alt": "✨",
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      }
+    ],
+    "needs": "Original source identified; explicit permission or original reusable licence required"
+  },
+  "rates-instalments-due-2026-27-2026-11-30-burnie": {
+    "name": "Rates instalments due 2026-27",
+    "organiser": "Burnie City Council",
+    "source": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/Services/Rates-instalments-due",
+    "candidates": [
+      {
+        "url": "https://www.burnie.tas.gov.au/files/content/public/v/23/community/whats-on-events/services/rates-instalments-due/img_3651.jpeg?w=1200",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/Services/Rates-instalments-due",
+        "source": "social-preview",
+        "alt": null,
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://www.burnie.tas.gov.au/files/content/public/v/23/community/whats-on-events/services/rates-instalments-due/img_3651.jpeg?w=1080",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/Services/Rates-instalments-due",
+        "source": "social-preview",
+        "alt": null,
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://www.burnie.tas.gov.au/files/assets/public/templateimages/print-header.png",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/Services/Rates-instalments-due",
+        "source": "on-page-gallery",
+        "alt": "Burnie City Council - Logo",
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://www.burnie.tas.gov.au/files/content/public/v/23/community/whats-on-events/services/rates-instalments-due/img_3651.jpeg?dimension=pageimage&w=480",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/Services/Rates-instalments-due",
+        "source": "on-page-gallery",
+        "alt": "IMG_3651.jpeg",
         "externalAssetHost": false,
         "rights": "permission-needed",
         "identity": "original-page-asset-unverified"
