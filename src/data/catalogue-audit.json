@@ -30,7 +30,7 @@
         "percent": 17.6
       },
       "officialSourceCoverage": {
-        "count": 291,
+        "count": 290,
         "percent": 13.6
       },
       "verifiedOfficialSourceCoverage": {
@@ -64,8 +64,8 @@
         "percent": 23.9
       },
       "bookingUrl": {
-        "count": 145,
-        "percent": 6.8
+        "count": 119,
+        "percent": 5.6
       },
       "fee": {
         "count": 28,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 188,
+    "active": 187,
     "media": {
       "licensedHeroCoverage": {
         "count": 57,
-        "percent": 30.3
+        "percent": 30.5
       },
-      "stillUsingCategoryArtwork": 131,
+      "stillUsingCategoryArtwork": 130,
       "bySource": {
         "verified-event-venue": 37,
         "verified-event-activity": 14,
@@ -246,7 +246,7 @@
         },
         "North West": {
           "count": 6,
-          "percent": 14.6
+          "percent": 15
         },
         "East Coast": {
           "count": 1,
@@ -272,11 +272,11 @@
     },
     "ticketCoverage": {
       "count": 71,
-      "percent": 37.8
+      "percent": 38
     },
     "priceCoverage": {
       "count": 64,
-      "percent": 34
+      "percent": 34.2
     },
     "providers": {
       "Eventbrite": 31,
@@ -285,7 +285,7 @@
       "Ticketmaster": 1
     },
     "sources": {
-      "Burnie City Council": 26,
+      "Burnie City Council": 25,
       "Theatre North Launceston": 22,
       "MyState Bank Arena": 18,
       "Eventbrite Hobart": 17,
@@ -307,7 +307,7 @@
     "regions": {
       "Hobart & South": 82,
       "Launceston & North": 48,
-      "North West": 41,
+      "North West": 40,
       "East Coast": 13,
       "West Coast": 0,
       "Central Tasmania": 1,
@@ -355,7 +355,7 @@
       "missingOrOlderThan30Days": 2
     },
     "sourceRegionalMix": {
-      "North West / Burnie City Council": 26,
+      "North West / Burnie City Council": 25,
       "Launceston & North / Theatre North Launceston": 22,
       "Hobart & South / MyState Bank Arena": 18,
       "Hobart & South / Eventbrite Hobart": 17,
