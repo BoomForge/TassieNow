@@ -626,49 +626,6 @@
     "lastChecked": "2026-11-08"
   },
   {
-    "slug": "burnie-surf-club-nipper-open-day-2026-11-08-burnie",
-    "name": "Burnie Surf Club - Nipper Open Day",
-    "town": "Burnie",
-    "region": "North West",
-    "startDate": "2026-11-08",
-    "endDate": "2026-11-08",
-    "categories": [
-      "Events"
-    ],
-    "summary": "Burnie Surf Club - Nipper Open Day in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
-    "venue": "West Beach, Burnie",
-    "address": "West Beach, Burnie TAS 7320",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Surf-Club-Nipper-Open-Day",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
-    "sourceName": "Burnie City Council",
-    "image": {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/West-Beach-Burnie-20150307-001.jpg/1280px-West-Beach-Burnie-20150307-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:West-Beach-Burnie-20150307-001.jpg",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "attribution": "Gary Houston",
-      "alt": "West Beach, Burnie — venue photograph, not the advertised event",
-      "mediaType": "contextual",
-      "caption": "Venue photograph: West Beach, Burnie. This does not depict the advertised event.",
-      "sourceMethod": "commons-venue",
-      "isFallback": false,
-      "matchEvidence": {
-        "verified": true,
-        "verifiedType": "contextual",
-        "venue": "West Beach",
-        "town": "Burnie",
-        "sourceFileTitle": "File:West-Beach-Burnie-20150307-001.jpg",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:West-Beach-Burnie-20150307-001.jpg",
-        "checkedAt": "2026-10-17",
-        "evidence": "Full venue name in Commons file title and Tasmania/town in source description"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-11-08",
-    "startTime": "09:45",
-    "endTime": "12:00"
-  },
-  {
     "slug": "calm-together-parent-child-yin-yoga-2026-11-08-hobart",
     "name": "Calm. Together. parent-child yin yoga",
     "town": "Hobart",
@@ -727,8 +684,8 @@
     "lastChecked": "2026-11-08"
   },
   {
-    "slug": "home-composting-workshop-2026-11-08-hobart",
-    "name": "Home Composting Workshop",
+    "slug": "hobart-christmas-celebration-2026-11-08-hobart",
+    "name": "Hobart Christmas Celebration",
     "town": "Hobart",
     "region": "Hobart & South",
     "startDate": "2026-11-08",
@@ -736,32 +693,82 @@
     "categories": [
       "Events"
     ],
-    "summary": "Home Composting Workshop in Hobart. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.hobartcity.com.au/Things-To-Do/Upcoming-events/Home-Composting-Workshop",
-    "sourceUrl": "https://www.hobartcity.com.au/Things-To-Do/Upcoming-events",
-    "sourceName": "City of Hobart",
+    "summary": "Hobart Christmas Celebration in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://events.humanitix.com/hobart-christmas-celebration",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Compost_bins_in_a_community_garden.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Compost_bins_in_a_community_garden.jpg",
-      "attribution": "Troy Sankey",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "isFallback": false,
-      "sourceMethod": "verified-event-activity",
-      "mediaType": "activity-illustrative",
-      "alt": "Illustrative photograph of compost bins in an American community garden; not the advertised Home Composting Workshop event",
-      "caption": "Illustrative photo: compost bins in an American community garden. This does not depict the advertised event in Tasmania.",
-      "matchEvidence": {
-        "verified": true,
-        "verifiedType": "activity-illustrative",
-        "topic": "composting",
-        "eventName": "Home Composting Workshop",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Compost_bins_in_a_community_garden.jpg",
-        "checkedAt": "2026-10-11"
-      }
+      "url": "/images/categories/events.svg",
+      "alt": "Hobart Christmas Celebration event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketUrl": "https://events.humanitix.com/hobart-christmas-celebration",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true
+  },
+  {
+    "slug": "life-food-hub-and-churchill-fellowship-community-briefing-2026-11-08-launceston",
+    "name": "LIFE Food Hub and Churchill Fellowship Community Briefing",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-11-08",
+    "endDate": "2026-11-08",
+    "categories": [
+      "Events"
+    ],
+    "summary": "LIFE Food Hub and Churchill Fellowship Community Briefing in Launceston. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://events.humanitix.com/lifefoodhubchurchillbriefing",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "LIFE Food Hub and Churchill Fellowship Community Briefing event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-08",
+    "ticketUrl": "https://events.humanitix.com/lifefoodhubchurchillbriefing",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true
+  },
+  {
+    "slug": "st-david-s-park-100th-birthday-garden-party-2026-11-08-hobart",
+    "name": "St David’s Park 100th birthday garden party",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-08",
+    "endDate": "2026-11-08",
+    "categories": [
+      "Events"
+    ],
+    "summary": "St David’s Park 100th birthday garden party in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://events.humanitix.com/st-david-s-park-100th-birthday-garden-party",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "St David’s Park 100th birthday garden party event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-08",
+    "ticketUrl": "https://events.humanitix.com/st-david-s-park-100th-birthday-garden-party",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true
   },
   {
     "slug": "sweet-uk-final-blitz-tour-2026-11-08-hobart",
@@ -1415,7 +1422,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "come-and-try-golf-for-the-disabled-riverside-golf-club-tas-2026-11-12-launceston",
@@ -1458,7 +1466,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-11-07"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "discovery-session-explore-early-childhood-education-and-care-2026-11-12-devonport",
@@ -1487,7 +1495,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "energy-symposium-2026-11-12-burnie",
@@ -1513,7 +1522,12 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketUrl": "https://events.humanitix.com/tasmania-s-inaugural-new-energy-symposium-2026?utm_id=97758_v0_s00_e0_tv4&fbclid=IwY2xjawVXpIpleHRuA2FlbQIxMABwZG9mA2JyaWQRMXVBY1dkMk9zbWZvMmpIbTRzcnRjBmFwcF9pZA81MTQ3NzE1NjkyMjgwNjEAAR8CDg7ShVJY50M6aw7SOsPXD4EPbBpc5r8TimYFpQIoy_6ixuDml9EIcKFywg_aem__TnWwLEkrxoCDahCzwMOxA",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "hobart-roadshow-2026-11-12-hobart",
@@ -1558,7 +1572,7 @@
     "ticketUrl": "https://www.eventbrite.com.au/e/hobart-roadshow-tickets-1997426364024",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-06"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "in-conversation-with-peter-fitzsimons-2026-11-12-burnie",
@@ -1589,6 +1603,7 @@
     "lastChecked": "2026-11-08",
     "startTime": "18:00",
     "endTime": "20:00",
+    "ticketLastChecked": "2026-11-08",
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD"
@@ -1621,7 +1636,7 @@
     "ticketUrl": "https://www.eventbrite.com/e/lean-global-connection-2026-tickets-1992427899482?aff=ebdssbcitybrowse",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-06"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "the-walrus-talks-at-home-canada-after-america-2026-11-12-hobart",
@@ -1648,7 +1663,7 @@
     },
     "status": "active",
     "lastChecked": "2026-11-03",
-    "ticketLastChecked": "2026-11-06"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "author-event-peter-fitzsimons-at-devonport-library-2026-11-13-devonport",
@@ -1658,7 +1673,8 @@
     "startDate": "2026-11-13",
     "endDate": "2026-11-13",
     "categories": [
-      "Events"
+      "Events",
+      "Free"
     ],
     "summary": "Peter FitzSimons, one of the nation’s bestselling non-fiction writers, will join us at Devonport Library to discuss his new book. The Race to the Top of the World is an epic work profiling two of the world’s greatest adventurers – George Mallory and Sir Edmund Hillary – and the m",
     "venue": "Devonport Library",
@@ -1676,7 +1692,15 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketUrl": "https://www.eventbrite.com.au/e/author-event-peter-fitzsimons-at-devonport-library-tickets-2000246596415",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "priceFrom": 0,
+    "priceTo": 0,
+    "priceCurrency": "AUD",
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "city-of-hobart-floral-shows-2026-11-13-hobart",
@@ -1729,7 +1753,8 @@
         "startTime": "09:00",
         "endTime": "17:00"
       }
-    ]
+    ],
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "comedy-night-tabish-2026-11-13-hobart",
@@ -1759,7 +1784,7 @@
     "priceFrom": 55,
     "priceTo": 110,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-06"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "free-community-dance-party-shake-it-off-2026-11-13-huonville",
@@ -1786,7 +1811,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "hobofopo2026-2026-11-13-hobart",
@@ -1819,7 +1845,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-11-06"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "katie-noonan-alone-all-one-2026-11-13-hobart",
@@ -1849,7 +1875,7 @@
     "priceFrom": 59.9,
     "priceTo": 59.9,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-06"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "mount-roland-folk-festival-2026-2026-11-13-sheffield",
@@ -1881,7 +1907,7 @@
     "priceFrom": 0,
     "priceTo": 153,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-06"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "st-david-s-park-100th-birthday-garden-party-2026-11-13-hobart",
@@ -1907,7 +1933,12 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketUrl": "https://events.humanitix.com/st-david-s-park-100th-birthday-garden-party",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "world-kindness-day-2026-11-13-glenorchy",
@@ -1965,7 +1996,7 @@
     "ticketUrl": "https://www.eventbrite.com.au/e/blood-on-the-clocktower-at-hobart-library-tickets-2001872061224",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-06"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "burnie-amateur-swimming-club-s-burnie-100-2026-11-14-burnie",
@@ -1991,7 +2022,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "peter-tanfield-out-of-the-vault-and-onto-the-strings-2026-11-14-launceston",
@@ -2027,7 +2059,7 @@
     "priceTo": 45.44,
     "priceCurrency": "AUD",
     "availability": "InStock",
-    "ticketLastChecked": "2026-11-06"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "physicians-financial-wellness-conference-2026-2026-11-14-hobart",
@@ -2054,7 +2086,7 @@
     },
     "status": "active",
     "lastChecked": "2026-11-03",
-    "ticketLastChecked": "2026-11-06"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "taste-the-tamar-2026-2026-11-14-exeter",
@@ -2089,7 +2121,7 @@
     "priceFrom": 5,
     "priceTo": 5,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-06"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "urban-wine-walk-hobart-tas-2026-11-14-hobart",
@@ -2124,7 +2156,7 @@
     "priceFrom": 10,
     "priceTo": 25,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-07"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "community-bake-days-2026-11-15-hobart",
@@ -2161,7 +2193,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "cygnet-folk-festival-launch-party-at-hobart-brewing-co-2026-11-15-hobart",
@@ -2194,7 +2227,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-11-07"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "free-household-chemical-disposal-2026-11-15-burnie",
@@ -2225,7 +2258,8 @@
     "status": "active",
     "lastChecked": "2026-11-08",
     "startTime": "10:00",
-    "endTime": "13:00"
+    "endTime": "13:00",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "harcourts-321-go-kids-race-2026-11-15-burnie",
@@ -2252,7 +2286,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "naturetrackers-together-2026-2026-11-15-burnie",
@@ -2278,7 +2313,12 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketUrl": "https://events.humanitix.com/naturetrackers-together-2026",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "toni-and-ryan-live-podcast-recording-2026-11-15-hobart",
@@ -2308,7 +2348,7 @@
     "priceFrom": 44,
     "priceTo": 44,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-07"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "ali-baba-and-the-forty-thieves-2026-11-16-launceston",
@@ -2354,7 +2394,7 @@
     "priceFrom": 17,
     "priceTo": 25,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-07"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "author-event-sarah-thornton-at-devonport-library-2026-11-16-devonport",
@@ -2364,7 +2404,8 @@
     "startDate": "2026-11-16",
     "endDate": "2026-11-16",
     "categories": [
-      "Events"
+      "Events",
+      "Free"
     ],
     "summary": "Explore the remarkable true story that inspired Unwoven with author Sarah Thornton. From the bestselling author of Lapse and White Throat comes Unwoven, a powerful historical novel inspired by the true story of Thomas Burbury, whose arrest following a violent 1831 uprising in Cov",
     "venue": "Devonport Library",
@@ -2382,7 +2423,15 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketUrl": "https://www.eventbrite.com.au/e/author-event-sarah-thornton-at-devonport-library-tickets-2003180229992",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "priceFrom": 0,
+    "priceTo": 0,
+    "priceCurrency": "AUD",
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "surges-bay-homeschool-and-after-school-drop-in-program-2026-11-16-huonville",
@@ -2408,7 +2457,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "targa-tasmania-2026-2026-11-16-burnie",
@@ -2445,7 +2495,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "the-huon-valley-hosts-a-variety-of-regular-activities-and-gatherings-organised-by-communit",
@@ -2471,7 +2522,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "building-stronger-families-2026-11-17-burnie",
@@ -2497,7 +2549,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "early-english-cricket-tour-of-australia-a-new-acquisition-unveiled-2026-11-17-hobart",
@@ -2530,7 +2583,7 @@
     "ticketUrl": "https://www.eventbrite.com.au/e/early-english-cricket-tour-of-australia-a-new-acquisition-unveiled-tickets-2003903203425",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-07"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "learn-how-to-beat-the-heat-this-summer-2026-11-18-hobart",
@@ -2556,7 +2609,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "social-swim-club-2026-11-18-devonport",
@@ -2585,7 +2639,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "building-stronger-families-the-burnout-reset-2026-11-19-devonport",
@@ -2614,7 +2669,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08",
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "glenorchy-treasure-trail-the-market-2026-11-19-glenorchy",
@@ -2672,7 +2728,7 @@
     "ticketUrl": "https://www.eventbrite.com.au/e/non-profit-advanced-financial-management-training-hobart-november-2026-registration-1997327305738",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-07"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "reel-rock-20-film-tour-launceston-2026-11-19-launceston",
@@ -2708,7 +2764,7 @@
     "priceTo": 31.76,
     "priceCurrency": "AUD",
     "availability": "InStock",
-    "ticketLastChecked": "2026-11-07"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "bicheno-food-and-wine-festival-2026-2026-11-21-bicheno",
@@ -2749,7 +2805,7 @@
     "lastChecked": "2026-10-15",
     "venue": "78 Burgess Street",
     "address": "78 Burgess Street, Bicheno TAS 7215",
-    "ticketLastChecked": "2026-11-07"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "highlands-bushfest-2026-2026-11-21-bothwell",
@@ -2777,7 +2833,7 @@
     },
     "status": "active",
     "lastChecked": "2026-11-08",
-    "ticketLastChecked": "2026-11-07"
+    "ticketLastChecked": "2026-11-08"
   },
   {
     "slug": "kenny-rogers-friends-2026-11-21-hobart",
@@ -2968,8 +3024,7 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-08",
-    "ticketLastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08"
   },
   {
     "slug": "targafest-2026-2026-11-22-rosny-park",
@@ -2996,8 +3051,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08",
-    "ticketLastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08"
   },
   {
     "slug": "emusicians-end-of-year-concert-2026-11-23-burnie",
@@ -3023,8 +3077,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08",
-    "ticketLastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08"
   },
   {
     "slug": "women-talking-money-with-equity-mates-2026-11-23-launceston",
@@ -3736,8 +3789,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08",
-    "ticketLastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08"
   },
   {
     "slug": "hobart-showcase-2026-2026-11-30-hobart",
@@ -3773,6 +3825,32 @@
     "priceTo": 25,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-11-08"
+  },
+  {
+    "slug": "rates-instalments-due-2026-27-2026-11-30-burnie",
+    "name": "Rates instalments due 2026-27",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-11-30",
+    "endDate": "2026-11-30",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Rates instalments due 2026-27 in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/Services/Rates-instalments-due",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Rates instalments due 2026-27 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-08"
   },
   {
     "slug": "launceston-showcase-2026-2026-12-01-launceston",
@@ -3879,8 +3957,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08",
-    "ticketLastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08"
   },
   {
     "slug": "crafty-people-wreath-making-and-sustainable-gifts-at-hobart-library-2026-12-02-hobart",
@@ -3973,8 +4050,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08",
-    "ticketLastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08"
   },
   {
     "slug": "beyond-sound-the-music-in-all-of-us-2026-12-03-rosny-park",
@@ -4004,12 +4080,7 @@
     "startTime": "13:00",
     "endTime": "15:00",
     "venue": "Rosny Library",
-    "address": "Bligh Street, Rosny Park TAS 7018",
-    "ticketUrl": "https://events.humanitix.com/beyond-sound-the-music-in-all-of-us",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-11-08"
+    "address": "Bligh Street, Rosny Park TAS 7018"
   },
   {
     "slug": "business-excellence-and-service-awards-2026-12-03-rosny-park",
@@ -4035,11 +4106,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08",
-    "priceFrom": 45,
-    "priceTo": 45,
-    "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08"
   },
   {
     "slug": "cosmic-breath-ceremony-candlelit-sound-bath-2026-12-04-hobart",
@@ -4368,8 +4435,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-08",
-    "ticketLastChecked": "2026-11-08"
+    "lastChecked": "2026-11-08"
   },
   {
     "slug": "the-greatest-christmas-show-2026-12-06-launceston",
