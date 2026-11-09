@@ -2,8 +2,11 @@ name: Refresh TassieNow calendar pages
 
 on:
   schedule:
-    # 02:20 AEDT / 01:20 AEST. A daily commit triggers the existing Pages build.
-    - cron: '20 15 * * *'
+    # Several idempotent recovery opportunities for a missed/delayed GitHub schedule.
+    # 15:20Z is 02:20 AEDT / 01:20 AEST; 17:20Z, 19:20Z, 21:20Z
+    # provide early-morning recovery, with 03:20Z and 09:20Z later.
+    # The checkpoint script commits only when Tasmania's date has changed.
+    - cron: '20 3,9,15,17,19,21 * * *'
   workflow_dispatch:
   push:
     branches: [main]
