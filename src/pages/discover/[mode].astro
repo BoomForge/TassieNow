@@ -383,7 +383,8 @@ const siblingModes = [
       const stale = discoveryRoot.dataset.renderedDay !== tasmanianCalendarDay();
       if (!stale) return;
       document.querySelector('#discover-stale-notice')?.removeAttribute('hidden');
-      for (const selector of ['.discover-feature-grid', '#discover-results', '.discover-stats']) {
+      document.querySelector('.discover-feature-grid')?.closest('.discover-section')?.setAttribute('hidden', '');
+      for (const selector of ['#discover-results', '.discover-stats', '.discover-hero-badge']) {
         document.querySelector(selector)?.setAttribute('hidden', '');
       }
       document.querySelector('.discover-actions a[href="#discover-results"]')?.setAttribute('hidden', '');
