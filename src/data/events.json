@@ -498,7 +498,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-11-09"
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "national-recycling-week-2026-11-09-burnie",
@@ -528,7 +528,8 @@
     "status": "active",
     "lastChecked": "2026-11-10",
     "startTime": "10:00",
-    "endTime": "16:00"
+    "endTime": "16:00",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "active-launceston-spring-program-2026-11-10-launceston",
@@ -554,7 +555,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "electrical-testing-and-tagging-launceston-2026-11-10-launceston",
@@ -586,7 +588,38 @@
     "ticketUrl": "https://www.eventbrite.com.au/e/electrical-testing-tagging-launceston-tickets-1997431379024",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-09"
+    "ticketLastChecked": "2026-11-10"
+  },
+  {
+    "slug": "geniedoes-presents-catch-22-2026-11-10-hobart",
+    "name": "GenieDoes Presents: Catch 22",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-10",
+    "endDate": "2026-11-10",
+    "categories": [
+      "Events"
+    ],
+    "summary": "GenieDoes Presents: Catch 22 in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://events.humanitix.com/geniedoes-presents-catch-22",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "GenieDoes Presents: Catch 22 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-10",
+    "ticketUrl": "https://events.humanitix.com/geniedoes-presents-catch-22",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "in-conversation-with-alan-carter-2026-11-10-burnie",
@@ -617,46 +650,72 @@
     "lastChecked": "2026-11-10",
     "startTime": "14:30",
     "endTime": "16:00",
+    "ticketLastChecked": "2026-11-10",
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD"
   },
   {
-    "slug": "the-mum-connection-walking-group-burnie-2026-11-10-burnie",
-    "name": "The Mum Connection Walking Group - Burnie",
-    "town": "Burnie",
-    "region": "North West",
+    "slug": "primary-stompin-presents-must-impress-2026-11-10-launceston",
+    "name": "Primary Stompin presents: 'must IMPRESS'",
+    "town": "Launceston",
+    "region": "Launceston & North",
     "startDate": "2026-11-10",
     "endDate": "2026-11-10",
     "categories": [
       "Events"
     ],
-    "summary": "The Mum Connection Walking Group - Burnie in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Mum-Connection-Walking-Group-Burnie",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
-    "sourceName": "Burnie City Council",
+    "summary": "Primary Stompin presents: 'must IMPRESS' in Launceston. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://events.humanitix.com/primary-stompin-presents-must-impress",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Walking_outdoors.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Walking_outdoors.jpg",
-      "attribution": "RamblerMatthew",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "isFallback": false,
-      "sourceMethod": "verified-event-activity",
-      "mediaType": "activity-illustrative",
-      "alt": "Illustrative photograph of people walking outdoors; not the advertised The Mum Connection Walking Group - Burnie event",
-      "caption": "Illustrative photo: people walking outdoors. This does not depict the advertised event in Tasmania.",
-      "matchEvidence": {
-        "verified": true,
-        "verifiedType": "activity-illustrative",
-        "topic": "walking",
-        "eventName": "The Mum Connection Walking Group - Burnie",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Walking_outdoors.jpg",
-        "checkedAt": "2026-10-11"
-      }
+      "url": "/images/categories/events.svg",
+      "alt": "Primary Stompin presents: 'must IMPRESS' event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10",
+    "ticketUrl": "https://events.humanitix.com/primary-stompin-presents-must-impress",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-10"
+  },
+  {
+    "slug": "transcendent-breath-launceston-sunday-13-december-2026-11-10-launceston",
+    "name": "TRANSCENDENT BREATH | LAUNCESTON | SUNDAY 13 DECEMBER",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-11-10",
+    "endDate": "2026-11-10",
+    "categories": [
+      "Events"
+    ],
+    "summary": "TRANSCENDENT BREATH | LAUNCESTON | SUNDAY 13 DECEMBER in Launceston. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://events.humanitix.com/transcendent-breath-or-launceston-or-sunday-13-december",
+    "sourceUrl": "https://humanitix.com/au/events/au--tas--launceston",
+    "sourceName": "Humanitix Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "TRANSCENDENT BREATH | LAUNCESTON | SUNDAY 13 DECEMBER event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-10",
+    "ticketUrl": "https://events.humanitix.com/transcendent-breath-or-launceston-or-sunday-13-december",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "burnie-library-english-conversation-group-2026-11-11-burnie",
@@ -693,7 +752,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "community-connections-and-services-2026-11-11-rosny-park",
@@ -719,7 +779,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "north-west-film-society-the-christophers-2026-11-11-devonport",
@@ -759,7 +820,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "remembrance-day-2026-11-11-burnie",
@@ -786,7 +848,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "the-canopy-burnie-2026-11-11-burnie",
@@ -812,7 +875,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "yfcc-arvos-at-the-junction-2026-11-11-burnie",
@@ -838,7 +902,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "arcia-sundowner-launceston-12-november-2026-2026-11-12-launceston",
@@ -871,7 +936,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-11-09"
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "arts-night-kings-at-the-albert-2026-11-12-launceston",
@@ -914,7 +979,10 @@
     "venue": "Albert Hall",
     "address": "47 Tamar Street, Launceston TAS 7250",
     "presenter": "Kings Meadows High School",
-    "ticketLastChecked": "2026-11-09"
+    "priceFrom": 10,
+    "priceTo": 15,
+    "priceCurrency": "AUD",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "bringing-up-great-kids-parenting-course-2026-11-12-burnie",
@@ -941,7 +1009,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "burnie-rostrum-club-2026-11-12-burnie",
@@ -967,7 +1036,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "cancelled-carr-villa-flora-reserve-working-bee-2026-11-12-launceston",
@@ -993,7 +1063,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "come-and-try-golf-for-the-disabled-riverside-golf-club-tas-2026-11-12-launceston",
@@ -1036,7 +1107,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-11-09"
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "discovery-session-explore-early-childhood-education-and-care-2026-11-12-devonport",
@@ -1065,7 +1136,8 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "energy-symposium-2026-11-12-burnie",
@@ -1091,7 +1163,12 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10",
+    "ticketUrl": "https://events.humanitix.com/tasmania-s-inaugural-new-energy-symposium-2026?utm_id=97758_v0_s00_e0_tv4&fbclid=IwY2xjawVXpIpleHRuA2FlbQIxMABwZG9mA2JyaWQRMXVBY1dkMk9zbWZvMmpIbTRzcnRjBmFwcF9pZA81MTQ3NzE1NjkyMjgwNjEAAR8CDg7ShVJY50M6aw7SOsPXD4EPbBpc5r8TimYFpQIoy_6ixuDml9EIcKFywg_aem__TnWwLEkrxoCDahCzwMOxA",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "hobart-roadshow-2026-11-12-hobart",
@@ -1136,7 +1213,7 @@
     "ticketUrl": "https://www.eventbrite.com.au/e/hobart-roadshow-tickets-1997426364024",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-09"
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "in-conversation-with-peter-fitzsimons-2026-11-12-burnie",
@@ -1167,6 +1244,7 @@
     "lastChecked": "2026-11-10",
     "startTime": "18:00",
     "endTime": "20:00",
+    "ticketLastChecked": "2026-11-10",
     "priceFrom": 10,
     "priceTo": 10,
     "priceCurrency": "AUD"
@@ -1199,7 +1277,7 @@
     "ticketUrl": "https://www.eventbrite.com/e/lean-global-connection-2026-tickets-1992427899482?aff=ebdssbcitybrowse",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-09"
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "the-walrus-talks-at-home-canada-after-america-2026-11-12-hobart",
@@ -1226,7 +1304,7 @@
     },
     "status": "active",
     "lastChecked": "2026-11-03",
-    "ticketLastChecked": "2026-11-09"
+    "ticketLastChecked": "2026-11-10"
   },
   {
     "slug": "author-event-peter-fitzsimons-at-devonport-library-2026-11-13-devonport",
@@ -1343,11 +1421,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-10-18",
-    "priceFrom": 55,
-    "priceTo": 110,
-    "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-10-18"
   },
   {
     "slug": "free-community-dance-party-shake-it-off-2026-11-13-huonville",
@@ -1870,11 +1944,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10",
-    "ticketUrl": "https://www.eventbrite.com.au/e/franklin-forest-guided-walk-november-tickets-2003486829038?aff=ebdssbdestsearch",
-    "ticketProvider": "Eventbrite",
-    "bookingRequired": true,
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10"
   },
   {
     "slug": "free-household-chemical-disposal-2026-11-15-burnie",
@@ -1905,8 +1975,7 @@
     "status": "active",
     "lastChecked": "2026-11-10",
     "startTime": "10:00",
-    "endTime": "13:00",
-    "ticketLastChecked": "2026-11-10"
+    "endTime": "13:00"
   },
   {
     "slug": "harcourts-321-go-kids-race-2026-11-15-burnie",
@@ -1933,8 +2002,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10"
   },
   {
     "slug": "lone-pine-dedication-at-dover-cenotaph-2026-11-15-huonville",
@@ -1960,8 +2028,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10"
   },
   {
     "slug": "naturetrackers-together-2026-2026-11-15-burnie",
@@ -1987,12 +2054,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10",
-    "ticketUrl": "https://events.humanitix.com/naturetrackers-together-2026",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true,
-    "availability": "InStock",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10"
   },
   {
     "slug": "toni-and-ryan-live-podcast-recording-2026-11-15-hobart",
@@ -2078,8 +2140,7 @@
     "startDate": "2026-11-16",
     "endDate": "2026-11-16",
     "categories": [
-      "Events",
-      "Free"
+      "Events"
     ],
     "summary": "Explore the remarkable true story that inspired Unwoven with author Sarah Thornton. From the bestselling author of Lapse and White Throat comes Unwoven, a powerful historical novel inspired by the true story of Thomas Burbury, whose arrest following a violent 1831 uprising in Cov",
     "venue": "Devonport Library",
@@ -2097,15 +2158,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10",
-    "ticketUrl": "https://www.eventbrite.com.au/e/author-event-sarah-thornton-at-devonport-library-tickets-2003180229992",
-    "ticketProvider": "Eventbrite",
-    "bookingRequired": true,
-    "priceFrom": 0,
-    "priceTo": 0,
-    "priceCurrency": "AUD",
-    "availability": "InStock",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10"
   },
   {
     "slug": "surges-bay-homeschool-and-after-school-drop-in-program-2026-11-16-huonville",
@@ -2131,8 +2184,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10"
   },
   {
     "slug": "targa-tasmania-2026-2026-11-16-burnie",
@@ -2169,8 +2221,7 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-10",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10"
   },
   {
     "slug": "the-huon-valley-hosts-a-variety-of-regular-activities-and-gatherings-organised-by-communit",
@@ -2196,8 +2247,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10"
   },
   {
     "slug": "building-stronger-families-2026-11-17-burnie",
@@ -2223,8 +2273,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10"
   },
   {
     "slug": "early-english-cricket-tour-of-australia-a-new-acquisition-unveiled-2026-11-17-hobart",
@@ -2260,6 +2309,43 @@
     "ticketLastChecked": "2026-11-10"
   },
   {
+    "slug": "the-mum-connection-walking-group-burnie-2026-11-17-burnie",
+    "name": "The Mum Connection Walking Group - Burnie",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-11-17",
+    "endDate": "2026-11-17",
+    "categories": [
+      "Events"
+    ],
+    "summary": "The Mum Connection Walking Group - Burnie in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/The-Mum-Connection-Walking-Group-Burnie",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Walking_outdoors.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Walking_outdoors.jpg",
+      "attribution": "RamblerMatthew",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "isFallback": false,
+      "sourceMethod": "verified-event-activity",
+      "mediaType": "activity-illustrative",
+      "alt": "Illustrative photograph of people walking outdoors; not the advertised The Mum Connection Walking Group - Burnie event",
+      "caption": "Illustrative photo: people walking outdoors. This does not depict the advertised event in Tasmania.",
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "activity-illustrative",
+        "topic": "walking",
+        "eventName": "The Mum Connection Walking Group - Burnie",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Walking_outdoors.jpg",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-11-10"
+  },
+  {
     "slug": "learn-how-to-beat-the-heat-this-summer-2026-11-18-hobart",
     "name": "Learn how to beat the heat this summer",
     "town": "Hobart",
@@ -2283,8 +2369,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10"
   },
   {
     "slug": "life-food-hub-and-churchill-fellowship-community-briefing-2026-11-18-launceston",
@@ -2346,8 +2431,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10"
   },
   {
     "slug": "building-stronger-families-the-burnout-reset-2026-11-19-devonport",
@@ -2376,8 +2460,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10"
   },
   {
     "slug": "emergency-management-preparedness-workshop-devonport-session-2-2026-11-19-devonport",
@@ -2405,8 +2488,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10"
   },
   {
     "slug": "glenorchy-treasure-trail-the-market-2026-11-19-glenorchy",
@@ -2492,8 +2574,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-10",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10"
   },
   {
     "slug": "reel-rock-20-film-tour-launceston-2026-11-19-launceston",
