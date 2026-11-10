@@ -215,38 +215,38 @@
     }
   },
   "events": {
-    "active": 191,
+    "active": 192,
     "media": {
       "licensedHeroCoverage": {
-        "count": 57,
-        "percent": 29.8
+        "count": 58,
+        "percent": 30.2
       },
       "stillUsingCategoryArtwork": 134,
       "bySource": {
         "verified-event-venue": 38,
         "verified-event-activity": 13,
+        "commons-venue": 3,
         "verified-event-performer": 3,
-        "commons-venue": 2,
         "commons-event": 1
       },
       "byMediaType": {
-        "contextual": 40,
+        "contextual": 41,
         "activity-illustrative": 13,
         "performer-context": 3,
         "event-photo": 1
       },
       "byRegion": {
         "Hobart & South": {
-          "count": 25,
-          "percent": 29.8
+          "count": 26,
+          "percent": 30.6
         },
         "Launceston & North": {
           "count": 25,
-          "percent": 49
+          "percent": 48.1
         },
         "North West": {
           "count": 5,
-          "percent": 12.8
+          "percent": 13.2
         },
         "East Coast": {
           "count": 1,
@@ -272,31 +272,31 @@
     },
     "ticketCoverage": {
       "count": 72,
-      "percent": 37.7
+      "percent": 37.5
     },
     "priceCoverage": {
       "count": 63,
-      "percent": 33
+      "percent": 32.8
     },
     "providers": {
-      "Eventbrite": 28,
-      "Humanitix": 26,
+      "Eventbrite": 27,
+      "Humanitix": 27,
       "Ticketek": 17,
       "Ticketmaster": 1
     },
     "sources": {
-      "Burnie City Council": 25,
+      "Burnie City Council": 24,
       "Theatre North Launceston": 23,
       "MyState Bank Arena": 18,
       "Huon Valley Council": 17,
       "Eventbrite Hobart": 16,
+      "Humanitix Launceston": 14,
       "Devonport City Council": 13,
       "East Coast Tasmania": 13,
       "Eventbrite Launceston": 13,
-      "Humanitix Launceston": 13,
       "Humanitix Hobart": 11,
       "Theatre Royal Hobart": 9,
-      "Glenorchy City Council": 5,
+      "Glenorchy City Council": 6,
       "City of Clarence": 4,
       "City of Hobart": 4,
       "King Island Tourism": 3,
@@ -305,9 +305,9 @@
       "Ticketebo": 1
     },
     "regions": {
-      "Hobart & South": 84,
-      "Launceston & North": 51,
-      "North West": 39,
+      "Hobart & South": 85,
+      "Launceston & North": 52,
+      "North West": 38,
       "East Coast": 13,
       "West Coast": 0,
       "Central Tasmania": 1,
@@ -323,11 +323,11 @@
       "tomorrow": "2026-11-11",
       "nextWeekendStart": "2026-11-14",
       "nextWeekendEnd": "2026-11-15",
-      "todayOrTomorrow": 30,
+      "todayOrTomorrow": 29,
       "thisWeekend": 35,
       "townsTodayOrTomorrow": {
         "Huonville": 11,
-        "Burnie": 7,
+        "Burnie": 6,
         "Launceston": 4,
         "Devonport": 3,
         "Hobart": 2,
@@ -353,21 +353,21 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 1
+      "missingOrOlderThan30Days": 2
     },
     "sourceRegionalMix": {
-      "North West / Burnie City Council": 25,
+      "North West / Burnie City Council": 24,
       "Launceston & North / Theatre North Launceston": 23,
       "Hobart & South / MyState Bank Arena": 18,
       "Hobart & South / Huon Valley Council": 17,
       "Hobart & South / Eventbrite Hobart": 16,
+      "Launceston & North / Humanitix Launceston": 14,
       "East Coast / East Coast Tasmania": 13,
       "Launceston & North / Eventbrite Launceston": 13,
-      "Launceston & North / Humanitix Launceston": 13,
       "North West / Devonport City Council": 13,
       "Hobart & South / Humanitix Hobart": 11,
       "Hobart & South / Theatre Royal Hobart": 9,
-      "Hobart & South / Glenorchy City Council": 5,
+      "Hobart & South / Glenorchy City Council": 6,
       "Hobart & South / City of Clarence": 4,
       "Hobart & South / City of Hobart": 4,
       "King Island / King Island Tourism": 3,
