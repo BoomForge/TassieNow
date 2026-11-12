@@ -12274,5 +12274,92 @@
         "observedAt": "2026-11-10T03:40:01.647Z"
       }
     ]
+  },
+  "cubed-espresso-van": {
+    "name": "cubed espresso van",
+    "town": "Eaglehawk Neck",
+    "candidates": [
+      {
+        "id": "commons-geo:97541841",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Cubed_Espresso_Bar_20201115-011.jpg/1280px-Cubed_Espresso_Bar_20201115-011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cubed_Espresso_Bar_20201115-011.jpg",
+        "title": "Cubed Espresso Bar 20201115-011.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "cubed",
+            "espresso"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-11-12T01:57:36.371Z"
+      }
+    ]
+  },
+  "halfway-cafe-and-diner": {
+    "name": "Halfway Cafe & Diner",
+    "town": "Campbell Town",
+    "candidates": [
+      {
+        "id": "commons-geo:82377605",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Brickhill_Memorial_Church%2C_Campbell_Town_20190726-002.jpg/1280px-Brickhill_Memorial_Church%2C_Campbell_Town_20190726-002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Brickhill_Memorial_Church,_Campbell_Town_20190726-002.jpg",
+        "title": "Brickhill Memorial Church, Campbell Town 20190726-002.jpg",
+        "credit": "Gary Houston",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "halfway",
+            "diner"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-11-12T01:57:36.371Z"
+      }
+    ]
+  },
+  "oyster-cove-inn": {
+    "name": "Oyster Cove Inn",
+    "town": "Kettering",
+    "candidates": [
+      {
+        "id": "commons-geo:69689368",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Oyster_Cove_Marina%2C_Kettering.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Oyster_Cove_Marina,_Kettering.jpg",
+        "title": "Oyster Cove Marina, Kettering.jpg",
+        "credit": "Timox14",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "oyster",
+            "cove"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-11-12T01:57:36.371Z"
+      }
+    ]
   }
 }
