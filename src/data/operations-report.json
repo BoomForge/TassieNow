@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T08:22:16.438Z",
+  "generatedAt": "2026-11-12T08:49:35.516Z",
   "source": "Observed GitHub Actions and HTTP requests",
   "workflows": [
     {
@@ -13,114 +13,114 @@
     {
       "name": "events.yml",
       "status": "scheduled-run-failed",
-      "lastScheduled": "2026-11-11T06:01:54Z",
+      "lastScheduled": "2026-11-12T00:34:32Z",
       "lastResult": "failure",
-      "lastRunAt": "2026-11-11T06:01:54Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42969585332"
+      "lastRunAt": "2026-11-12T00:34:32Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43128274060"
     },
     {
       "name": "catalogue-quality.yml",
       "status": "scheduled-run-failed",
-      "lastScheduled": "2026-11-10T23:45:27Z",
+      "lastScheduled": "2026-11-12T01:03:15Z",
       "lastResult": "failure",
-      "lastRunAt": "2026-11-10T23:45:27Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42925959590"
+      "lastRunAt": "2026-11-12T01:03:15Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43131763548"
     },
     {
       "name": "images.yml",
       "status": "ok",
-      "lastScheduled": "2026-11-11T00:43:03Z",
+      "lastScheduled": "2026-11-12T01:56:44Z",
       "lastResult": "success",
-      "lastRunAt": "2026-11-11T00:43:03Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42933529020"
+      "lastRunAt": "2026-11-12T01:56:44Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43137944444"
     },
     {
       "name": "auto-photo-sources.yml",
       "status": "ok",
-      "lastScheduled": "2026-11-11T01:29:22Z",
+      "lastScheduled": "2026-11-12T02:32:52Z",
       "lastResult": "success",
-      "lastRunAt": "2026-11-11T01:29:22Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42939310651"
+      "lastRunAt": "2026-11-12T02:32:52Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43142171050"
     },
     {
       "name": "place-photo-research.yml",
       "status": "latest-run-cancelled",
-      "lastScheduled": "2026-11-11T01:19:47Z",
+      "lastScheduled": "2026-11-12T02:20:05Z",
       "lastResult": "cancelled",
-      "lastRunAt": "2026-11-11T01:19:47Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42938150363"
+      "lastRunAt": "2026-11-12T02:20:05Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43140667914"
     },
     {
       "name": "verify-published-photos.yml",
       "status": "ok",
-      "lastScheduled": "2026-11-10T13:44:29Z",
+      "lastScheduled": "2026-11-11T12:55:37Z",
       "lastResult": "success",
-      "lastRunAt": "2026-11-11T00:50:55Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42934543808"
+      "lastRunAt": "2026-11-12T02:04:22Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43138819819"
     },
     {
       "name": "verify-published-event-images.yml",
       "status": "ok",
-      "lastScheduled": "2026-11-10T13:48:01Z",
+      "lastScheduled": "2026-11-11T12:58:38Z",
       "lastResult": "success",
-      "lastRunAt": "2026-11-11T00:50:57Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42934546867"
+      "lastRunAt": "2026-11-12T02:04:24Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43138822412"
     },
     {
       "name": "verify-event-artwork.yml",
       "status": "ok",
-      "lastScheduled": "2026-11-10T13:48:24Z",
+      "lastScheduled": "2026-11-11T12:59:16Z",
       "lastResult": "success",
-      "lastRunAt": "2026-11-11T00:50:58Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42934549793"
+      "lastRunAt": "2026-11-12T02:04:25Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43138825296"
     },
     {
       "name": "verify-event-image-files.yml",
       "status": "ok",
-      "lastScheduled": "2026-11-10T13:43:01Z",
+      "lastScheduled": "2026-11-11T12:54:45Z",
       "lastResult": "success",
-      "lastRunAt": "2026-11-11T00:51:00Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42934552829"
+      "lastRunAt": "2026-11-12T02:04:26Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43138827844"
     },
     {
       "name": "verify-market-photo-access.yml",
       "status": "ok",
-      "lastScheduled": "2026-11-10T13:43:56Z",
+      "lastScheduled": "2026-11-11T12:55:21Z",
       "lastResult": "success",
-      "lastRunAt": "2026-11-10T13:43:56Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42827195572"
+      "lastRunAt": "2026-11-11T12:55:21Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43024518187"
     },
     {
       "name": "event-photo-research.yml",
       "status": "scheduled-run-failed",
-      "lastScheduled": "2026-11-11T00:38:09Z",
+      "lastScheduled": "2026-11-12T01:53:22Z",
       "lastResult": "failure",
-      "lastRunAt": "2026-11-11T00:38:09Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42932895363"
+      "lastRunAt": "2026-11-12T01:53:22Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43137574608"
     },
     {
       "name": "quality.yml",
       "status": "scheduled-run-failed",
-      "lastScheduled": "2026-11-11T00:06:06Z",
+      "lastScheduled": "2026-11-12T01:34:24Z",
       "lastResult": "failure",
-      "lastRunAt": "2026-11-11T00:06:06Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42928654903"
+      "lastRunAt": "2026-11-12T01:34:24Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43135421163"
     },
     {
       "name": "automation-health.yml",
       "status": "ok",
-      "lastScheduled": "2026-11-11T07:37:37Z",
+      "lastScheduled": "2026-11-12T08:06:04Z",
       "lastResult": "success",
-      "lastRunAt": "2026-11-11T07:37:37Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42980866721"
+      "lastRunAt": "2026-11-12T08:06:04Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43180197801"
     },
     {
       "name": "indexnow.yml",
       "status": "ok",
-      "lastScheduled": "2026-11-11T00:53:45Z",
+      "lastScheduled": "2026-11-12T01:59:36Z",
       "lastResult": "success",
-      "lastRunAt": "2026-11-11T00:53:45Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42934901432"
+      "lastRunAt": "2026-11-12T01:59:36Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43138256066"
     },
     {
       "name": "recover-images.yml",
@@ -135,8 +135,8 @@
       "status": "ok",
       "lastScheduled": null,
       "lastResult": "success",
-      "lastRunAt": "2026-11-10T11:33:21Z",
-      "url": "https://github.com/BoomForge/TassieNow/actions/runs/42808422980"
+      "lastRunAt": "2026-11-11T11:21:16Z",
+      "url": "https://github.com/BoomForge/TassieNow/actions/runs/43011246233"
     }
   ],
   "site": {
@@ -148,7 +148,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a58be36d68baf7a9-LAX"
+        "cloudflareRay": "a59448ceeaa86a41-MSP"
       },
       {
         "name": "Food discovery",
@@ -156,7 +156,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a58be36d69866e2c-LAX"
+        "cloudflareRay": "a59448ceea21a215-MSP"
       },
       {
         "name": "Service status",
@@ -164,7 +164,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a58be36d6ca278d7-LAX"
+        "cloudflareRay": "a59448cefeb7f6da-MSP"
       },
       {
         "name": "Robots",
@@ -172,7 +172,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/plain; charset=utf-8",
-        "cloudflareRay": "a58be36d6b18dba2-LAX"
+        "cloudflareRay": "a59448ced8eb072c-MSP"
       },
       {
         "name": "Sitemap",
@@ -180,7 +180,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "application/xml",
-        "cloudflareRay": "a58be36d6aa5de8b-LAX"
+        "cloudflareRay": "a59448ceeec71ee8-MSP"
       },
       {
         "name": "Markets freshness",
@@ -188,7 +188,7 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "text/html; charset=utf-8",
-        "cloudflareRay": "a58be36d6caa5708-LAX"
+        "cloudflareRay": "a59448ceeeca9007-MSP"
       },
       {
         "name": "Build date",
@@ -196,8 +196,8 @@
         "status": "ok",
         "httpCode": 200,
         "contentType": "application/json",
-        "cloudflareRay": "a58be36d6bdaf7a7-LAX",
-        "publishedDay": "2026-11-11"
+        "cloudflareRay": "a59448ceea82a218-MSP",
+        "publishedDay": "2026-11-12"
       }
     ]
   },
@@ -205,44 +205,44 @@
     {
       "component": "events.yml",
       "status": "scheduled-run-failed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/42969585332"
-    },
-    {
-      "component": "catalogue-quality.yml",
-      "status": "scheduled-run-failed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/42925959590"
+      "action": "https://github.com/BoomForge/TassieNow/actions/runs/43128274060"
     },
     {
       "component": "event-photo-research.yml",
       "status": "scheduled-run-failed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/42932895363"
+      "action": "https://github.com/BoomForge/TassieNow/actions/runs/43137574608"
     },
     {
       "component": "quality.yml",
       "status": "scheduled-run-failed",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/42928654903"
+      "action": "https://github.com/BoomForge/TassieNow/actions/runs/43135421163"
+    },
+    {
+      "component": "catalogue-quality.yml",
+      "status": "scheduled-run-failed",
+      "action": "https://github.com/BoomForge/TassieNow/actions/runs/43131763548"
     },
     {
       "component": "place-photo-research.yml",
       "status": "latest-run-cancelled",
-      "action": "https://github.com/BoomForge/TassieNow/actions/runs/42938150363"
+      "action": "https://github.com/BoomForge/TassieNow/actions/runs/43140667914"
     }
   ],
   "imageCoverage": {
-    "activeEvents": 185,
-    "publishedEventPhotos": 58,
-    "auditedPublishedPhotos": 58
+    "activeEvents": 179,
+    "publishedEventPhotos": 56,
+    "auditedPublishedPhotos": 56
   },
   "photoSourceDiscovery": {
     "linkedPlacePages": 70,
     "linkedEventPages": 322,
     "scannedRecords": 728,
-    "lastSourceScan": "2026-11-11T01:29:29.185Z",
+    "lastSourceScan": "2026-11-11T17:28:43.997Z",
     "realHeroPhotosAddedByLinks": 0
   },
   "aiopsClosures": {
     "schema": "tassienow-aiops-live-closure-v1",
-    "checkedAt": "2026-11-11T08:22:18.582Z",
+    "checkedAt": "2026-11-12T08:49:37.481Z",
     "base": "https://tassienow.com",
     "scope": "11 existing TassieNow source-repaired Pixelwolf AI Ops cards; observed live HTML + redirect",
     "cards": [
@@ -310,7 +310,7 @@
             "location": "/event/mental-as-anything-new-year-and-8217-s-day-at-craigie-knowe-vineyard-2027-01-01-cranbrook/"
           }
         ],
-        "observed_at_utc": "2026-11-11T08:22:18.804Z",
+        "observed_at_utc": "2026-11-12T08:49:37.773Z",
         "expected": {
           "name_contains": "Mental As Anything:",
           "startDate": "2027-01-01",
@@ -372,7 +372,7 @@
             "location": "/event/19-twenty-live-at-craigie-knowe-vineyard-2026-12-05-cranbrook/"
           }
         ],
-        "observed_at_utc": "2026-11-11T08:22:19.035Z",
+        "observed_at_utc": "2026-11-12T08:49:38.030Z",
         "expected": {
           "name_contains": "19-Twenty live",
           "startDate": "2026-12-05",
@@ -486,7 +486,7 @@
             "location": "/event/the-beatles-show-red-and-038-blue-boxing-day-craigie-knowe-vineyard-2026-12-26-cranbrook/"
           }
         ],
-        "observed_at_utc": "2026-11-11T08:22:19.302Z",
+        "observed_at_utc": "2026-11-12T08:49:38.275Z",
         "expected": {
           "name_contains": "The Beatles Show:",
           "startDate": "2026-12-26",
