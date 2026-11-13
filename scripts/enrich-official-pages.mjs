@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import { phoneFromText } from '../src/lib/phone-candidate.mjs';
+import { oneTokenTitleIdentityMatches } from '../src/lib/place-source-identity.mjs';
 import { parksTasHoursAreForListing } from '../src/lib/parks-hours-source-guard.mjs';
 import { normaliseStructuredAddress, normaliseTelephone, safeBookingUrl, sanitiseListingFields, structuredBookingUrl } from '../src/lib/listing-field-sanitizers.mjs';
 
@@ -72,6 +73,9 @@ function pageMatches(place, html) {
   const hay = tokens(titleText(html));
   const wanted = tokens(place.name);
   if (!wanted.length || !hay.length) return false;
+  // A generic one-word match such as "Kitchen" on "Devils Kitchen Circuit"
+  // is not sufficient to attach unrelated official-source data to a café.
+  if (wanted.length === 1 && !oneTokenTitleIdentityMatches(place.name, titleText(html))) return false;
   const set = new Set(hay);
   const overlap = wanted.filter((token) => set.has(token)).length;
   return overlap >= Math.max(1, Math.ceil(wanted.length * 0.45));
