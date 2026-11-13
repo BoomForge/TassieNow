@@ -20,10 +20,11 @@ export function repairImportedEventLinks(event) {
   const current = absoluteEventUrl(corrected.eventUrl);
   const source = absoluteEventUrl(corrected.sourceUrl);
   let repaired = false;
-  if (!current) {
-    const reviewedFestival = corrected.name === AMTF
-      && corrected.startDate === '2027-05-19'
-      && corrected.endDate === '2027-05-23';
+  const reviewedFestival = corrected.name === AMTF
+    && corrected.startDate === '2027-05-19'
+    && corrected.endDate === '2027-05-23';
+  // A generic discovery index is not the event's own page.
+  if (!current || (reviewedFestival && source && current === source)) {
     const fallback = reviewedFestival ? AMTF_OFFICIAL : source;
     if (!fallback) return {event: corrected, valid: false, repaired: false};
     corrected.eventUrl = fallback;
