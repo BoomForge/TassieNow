@@ -212,6 +212,15 @@ const siblingModes = [
   ]} />
 
   <div class="discover-page" data-rendered-day={today} data-discovery-mode={mode}>
+    {mode === 'today' && (
+      <section id="discover-stale-notice" class="discover-stale-notice" role="alert" hidden>
+        <h2>Today's event listings are being refreshed</h2>
+        <p>This page was last prepared for <time datetime={today}>{today}</time> (Tasmania time).
+          The calendar has moved on, so those older event and market dates are hidden until
+          the next verified site refresh. Check official organiser pages before travelling.</p>
+        <a href="/discover/markets/">Explore Tasmanian market information →</a>
+      </section>
+    )}
     <nav class="discover-breadcrumbs" aria-label="Breadcrumb">
       <a href="/">TassieNow</a><span>›</span><span>{config.label}</span>
     </nav>
@@ -359,6 +368,31 @@ const siblingModes = [
     const loadMore = document.querySelector('#discover-load-more');
     const clear = document.querySelector('#discover-clear');
 
+    // A missed GitHub schedule must not show yesterday's cards as "today".
+    // This is a fail-closed visitor safeguard, not an alternative event discovery job.
+    const discoveryRoot = document.querySelector('.discover-page');
+    function tasmanianCalendarDay() {
+      const parts = new Intl.DateTimeFormat('en-AU', {
+        timeZone: 'Australia/Hobart', year: 'numeric', month: '2-digit', day: '2-digit'
+      }).formatToParts(new Date());
+      const field = (type) => parts.find((part) => part.type === type)?.value;
+      return [field('year'), field('month'), field('day')].join('-');
+    }
+    function checkTodayFreshness() {
+      if (discoveryRoot?.dataset.discoveryMode !== 'today') return;
+      const stale = discoveryRoot.dataset.renderedDay !== tasmanianCalendarDay();
+      if (!stale) return;
+      document.querySelector('#discover-stale-notice')?.removeAttribute('hidden');
+      document.querySelector('.discover-feature-grid')?.closest('.discover-section')?.setAttribute('hidden', '');
+      for (const selector of ['#discover-results', '.discover-stats', '.discover-hero-badge']) {
+        document.querySelector(selector)?.setAttribute('hidden', '');
+      }
+      document.querySelector('.discover-actions a[href="#discover-results"]')?.setAttribute('hidden', '');
+    }
+    checkTodayFreshness();
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) checkTodayFreshness(); });
+    window.setInterval(checkTodayFreshness, 60000);
+
     let visibleLimit = 18;
 
     function matches(card) {
@@ -402,6 +436,11 @@ const siblingModes = [
   </script>
 
   <style>
+    .discover-page [hidden]{display:none!important}
+    .discover-stale-notice{margin:0 0 1.5rem;padding:1.2rem 1.4rem;border:2px solid #af7b18;border-radius:1rem;background:#fff6df;color:#42330f}
+    .discover-stale-notice h2{margin:0 0 .6rem;font-size:1.3rem}
+    .discover-stale-notice p{margin:.4rem 0 .8rem;line-height:1.5}
+    .discover-stale-notice a{color:#694000;font-weight:800}
     .discover-page{max-width:1180px;margin:0 auto;padding:2rem 1.25rem 6rem}
     .discover-breadcrumbs{display:flex;gap:.45rem;align-items:center;margin-bottom:1rem;color:var(--muted);font-size:.8rem;font-weight:750}.discover-breadcrumbs a{text-decoration:none}.discover-breadcrumbs a:hover{color:var(--brand);text-decoration:underline}
     .discover-hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(340px,.75fr);min-height:500px;border:1px solid var(--line);border-radius:1.8rem;overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
