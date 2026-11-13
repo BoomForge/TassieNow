@@ -85,6 +85,10 @@ jobs:
             node scripts/reapply-event-review.mjs /tmp/tassienow-event-media-candidates.json
             node scripts/reapply-place-photo-review.mjs /tmp/tassienow-place-media-candidates.json
             node scripts/reapply-event-image-upgrades.mjs /tmp/tassienow-events-independent-before.json /tmp/tassienow-events-independent-after.json
+            # The live catalogue source may still contain yesterday's events
+            # when this independently scheduled research job starts. Do not
+            # fail unrelated licensed-image work on expected expiry turnover.
+            node scripts/prune-expired-events.mjs
             node scripts/catalogue-audit.mjs
             node scripts/validate-data.mjs
             if git diff --quiet -- src/data/events.json src/data/event-media-review.json src/data/place-media-review.json src/data/catalogue-audit.json; then

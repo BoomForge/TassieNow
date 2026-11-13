@@ -25,6 +25,16 @@ try{
   const page=await context.newPage();
   for(const path of paths){
    try{
+    // The dedicated member-browser job tests the real D1-backed account API at all eight widths.
+    // The broader visitor sweep only needs a deterministic anonymous response to test
+    // account layout and signup controls without repeating live member API calls.
+    if(path==='/account/'&&!memberOnly){
+      await page.route('**/api/member/profile',route=>route.fulfill({
+        status:401,
+        contentType:'application/json',
+        body:JSON.stringify({error:'Login required'})
+      }));
+    }
     const response=await page.goto(BASE+path,{waitUntil:'domcontentloaded',timeout:30000});
     if(response?.status()!==200){add('Page load',false,{width,path,httpCode:response?.status()});continue;}
     await page.waitForFunction(()=>getComputedStyle(document.body).margin==='0px',null,{timeout:10000});
@@ -34,8 +44,13 @@ try{
     if(!noOverflow) await page.screenshot({path:'reports/browser-screenshots/overflow-'+width+'-'+path.replace(/[^a-z0-9]+/gi,'-')+'.png',fullPage:false});
     add('Heading and main landmark',geometry.h1===1&&geometry.main,{width,path,h1:geometry.h1,main:geometry.main});
     if(path==='/account/'){
-      await page.getByText('Log in or create a free account to get started.',{exact:true}).waitFor({state:'visible',timeout:25000});
-      add('Member account initialises from live D1',await page.locator('#auth-area').isVisible(),{width,path});
+      // Wait for functional UI rather than hanging on a copy-dependent exact-text locator.
+      await page.locator('#auth-area').waitFor({state:'visible',timeout:15000});
+      const accountStatus=(await page.locator('#account-status').innerText()).trim();
+      const anonymousReady=accountStatus==='Log in or create a free account to get started.';
+      add(memberOnly?'Member account initialises from live D1':'Member login UI renders with simulated unauthenticated response',
+        anonymousReady,{width,path,accountStatus:accountStatus.slice(0,220),backend:memberOnly?'live':'mocked-401'});
+
       await page.locator('[data-auth="signup"]').click();
       add('Member signup form works',await page.locator('#member-auth-form [name="name"]').isVisible()&&await page.locator('#member-auth-form [name="terms"]').isVisible(),{width,path});
       add('Member CAPTCHA has production key',Boolean(await page.locator('[data-turnstile-key]').getAttribute('data-turnstile-key')),{width,path});
@@ -112,7 +127,7 @@ try{
     }
     if((width===375||width===1440)&&['/','/food/','/discover/markets/','/suggest-update/','/advertise/'].includes(path)){
       const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa']).analyze();
-      const problems=axe.violations.map(v=>({id:v.id,impact:v.impact,description:v.description,affected:v.nodes.length,examples:v.nodes.slice(0,3).map(n=>n.target.join(' '))}));
+      const problems=axe.violations.map(v=>({id:v.id,impact:v.impact,description:v.description,affected:v.nodes.length,examples:v.nodes.slice(0,3).map(n=>n.target.join(' ')),htmlExamples:v.nodes.slice(0,3).map(n=>(n.html||'').slice(0,280))}));
       add('Automated WCAG 2.1 AA',!problems.length,{width,path,violations:problems});
       if(problems.length)await page.screenshot({path:'reports/browser-screenshots/a11y-'+width+'-'+path.replace(/[^a-z0-9]+/gi,'-')+'.png',fullPage:false});
     }

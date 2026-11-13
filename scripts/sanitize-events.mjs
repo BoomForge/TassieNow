@@ -3,6 +3,7 @@ import { decodeEventEntities } from '../src/lib/event-text-entities.mjs';
 import { applyVerifiedBurnieEvent, restoreVerifiedBurnieEvents } from './discover/lib/verified-burnie-events.mjs';
 import { applyReviewedEventCorrection,normaliseEventSourceUrl } from './discover/lib/reviewed-event-corrections.mjs';
 import { correctDoverMobileServiceCentre } from '../src/lib/dover-mobile-event-correction.mjs';
+import { repairImportedEventLinks } from '../src/lib/event-url-policy.mjs';
 
 const FILE = new URL('../src/data/events.json', import.meta.url);
 const CURATED_OVERRIDES = new URL('../src/data/event-overrides.json', import.meta.url);
@@ -79,7 +80,11 @@ const cleaned=[];
 let removed=0,repaired=0;
 for(const original of correctDoverMobileServiceCentre(restoreVerifiedBurnieEvents(events,TODAY))){
   const canonical=applyVerifiedBurnieEvent(original,TODAY);
-  const event=applyReviewedEventCorrection(canonical,overrides);
+  const reviewed=applyReviewedEventCorrection(canonical,overrides);
+  const checked=repairImportedEventLinks(reviewed);
+  if (!checked.valid) { removed++; continue; }
+  if (checked.repaired) repaired++;
+  const event=checked.event;
   event.name=cleanText(event.name);
   // Rosny Farm Poochibald "Call for Entries" is a submission opportunity, not
   // a public Event. Old importer guessed a single-day event from a card date.

@@ -5,6 +5,7 @@ import { applyVerifiedBurnieEvent } from './lib/verified-burnie-events.mjs';
 import { burnieListingCardDate, localEventCalendarDate } from './lib/burnie-calendar-dates.mjs';
 import { clarenceListingCardText } from './lib/clarence-listing-dates.mjs';
 import { sourceEventLocation } from '../../src/lib/event-source-location.mjs';
+import { absoluteEventUrl } from '../../src/lib/event-url-policy.mjs';
 
 const FILE=new URL('../../src/data/events.json',import.meta.url);
 const UA='TassieNow/1.0 (+https://tassienow.pages.dev)';
@@ -95,7 +96,7 @@ function lines(html){return dec(String(html).replace(/<script[\s\S]*?<\/script>/
 function makeEvent({name,s,startDate,endDate,town=s.town,venue=null,address=null,eventUrl=s.url,description=''}){
   const cleanName=finalName(name);if(!plausibleName(cleanName))return null;
   const context=`${cleanName} ${description}`;
-  return{slug:slug(`${cleanName}-${startDate}-${town}`),name:cleanName,town,region:s.region,startDate,endDate,categories:categories(context, cleanName),summary:description?clean(description).slice(0,280):`${cleanName} in ${town}. Check the official ${s.name} listing for current time, venue and booking details.`,venue:venue||undefined,address:address||undefined,eventUrl,sourceUrl:s.url,sourceName:s.name,image:fallback(cleanName),status:'active',lastChecked:TODAY};
+  return{slug:slug(`${cleanName}-${startDate}-${town}`),name:cleanName,town,region:s.region,startDate,endDate,categories:categories(context, cleanName),summary:description?clean(description).slice(0,280):`${cleanName} in ${town}. Check the official ${s.name} listing for current time, venue and booking details.`,venue:venue||undefined,address:address||undefined,eventUrl:absoluteEventUrl(eventUrl)||s.url,sourceUrl:s.url,sourceName:s.name,image:fallback(cleanName),status:'active',lastChecked:TODAY};
 }
 function anchorEvents(html,s){const out=[],anchors=[...html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)];for(const a of anchors){let href;try{href=new URL(dec(a[1]),s.url).href}catch{continue}if(new URL(href).hostname!==new URL(s.url).hostname)continue;if(!s.detail.test(new URL(href).pathname))continue;const raw=clean(a[2]);const name=anchorTitle(a[2]);if(!plausibleName(name))continue;const before=html.slice(Math.max(0,a.index-500),a.index),after=html.slice(a.index+a[0].length,a.index+a[0].length+700);const r=s.name==='Burnie City Council' ? burnieListingCardDate(a[2]) : (s.name==='City of Clarence'||s.name==='Glenorchy City Council') ? dateRange(clean(clarenceListingCardText(html,a,anchors))) : dateRange(`${clean(before).slice(-300)} ${raw} ${clean(after).slice(0,420)}`);if(!validRange(r))continue;const e=makeEvent({name,s,startDate:r.startDate,endDate:r.endDate,eventUrl:href,description:clean(after).slice(0,220)});if(e)out.push(e)}return out}
 function textEvents(html,s){const l=lines(html),out=[];for(let i=0;i<l.length;i++){const r=dateRange(l[i]);if(!validRange(r))continue;let name=finalName(l[i].replace(r.raw,''));if(!plausibleName(name)){const options=[l[i-1],l[i+1],l[i-2],l[i+2],l[i-3],l[i+3]].map(finalName).filter(plausibleName);name=options[0]||''}if(!plausibleName(name))continue;const e=makeEvent({name,s,startDate:r.startDate,endDate:r.endDate,description:clean(l[i+1]||'').slice(0,180)});if(e)out.push(e)}return out}

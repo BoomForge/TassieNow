@@ -8,6 +8,7 @@ import { correctWeldboroughSource } from '../src/lib/weldborough-source-correcti
 import { dedupeWestCoastRailwayPlaces } from '../src/lib/west-coast-railway-dedupe.mjs';
 import { dedupeIdenticalWikidataPlaces, dedupeReviewedBeaconsfieldCentre } from '../src/lib/wikidata-place-dedupe.mjs';
 import { correctSalamancaPhotoCredit } from '../src/lib/salamanca-attribution-correction.mjs';
+import { quarantineTheKitchenSourceCollision } from '../src/lib/place-source-identity.mjs';
 
 const file = new URL('../src/data/places.json', import.meta.url);
 const places = JSON.parse(await fs.readFile(file, 'utf8'));
@@ -15,6 +16,9 @@ const sourceBacked = new Set(['ashgrove-cheese-factory','willie-smith-s-apple-sh
 let fieldsCorrected=0, bookingLinksRemoved=0;
 for (const place of places) {
   if (correctWeldboroughSource(place)) fieldsCorrected++;
+  // Source-identity quarantine is performed on every normal build so later
+  // refreshes cannot accidentally republish this cross-entity record.
+  if (quarantineTheKitchenSourceCollision(place)) fieldsCorrected++;
   // Correct the exact North West town rather than the separate southern Sorell.
   // Runs in the normal build to repair older curated and generated records alike.
   if (/^port\s+sorell$/i.test(String(place.town||'').trim())) {
