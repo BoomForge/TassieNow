@@ -12361,5 +12361,77 @@
         "observedAt": "2026-11-12T01:57:36.371Z"
       }
     ]
+  },
+  "victoria-s-cafe": {
+    "name": "Victoria's Cafe",
+    "town": "Launceston",
+    "candidates": [
+      {
+        "id": "commons-geo:44151557",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Launceston_City_Park_Drinking_Fountain_001.JPG/1280px-Launceston_City_Park_Drinking_Fountain_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Launceston_City_Park_Drinking_Fountain_001.JPG",
+        "title": "Launceston City Park Drinking Fountain 001.JPG",
+        "credit": "Mattinbgn  ( talk    ·    contribs )",
+        "licence": "CC BY 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "victoria"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-11-13T01:14:07.180Z"
+      },
+      {
+        "id": "commons-geo:44151564",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Launceston_City_Park_Drinking_Fountain_002.JPG/1280px-Launceston_City_Park_Drinking_Fountain_002.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Launceston_City_Park_Drinking_Fountain_002.JPG",
+        "title": "Launceston City Park Drinking Fountain 002.JPG",
+        "credit": "Mattinbgn  ( talk    ·    contribs )",
+        "licence": "CC BY 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "victoria"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-11-13T01:14:07.180Z"
+      },
+      {
+        "id": "commons-geo:44151574",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Launceston_City_Park_Drinking_Fountain_003.JPG/1280px-Launceston_City_Park_Drinking_Fountain_003.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Launceston_City_Park_Drinking_Fountain_003.JPG",
+        "title": "Launceston City Park Drinking Fountain 003.JPG",
+        "credit": "Mattinbgn  ( talk    ·    contribs )",
+        "licence": "CC BY 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive name words and nearby geotag; exact identity needs review",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "victoria"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-11-13T01:14:07.180Z"
+      }
+    ]
   }
 }
