@@ -88,6 +88,8 @@ jobs:
             src/data/discovery-report.json
             src/data/discovery-candidates.json
           retention-days: 30
+      - name: Remove expired events before validating discovery data
+        run: node scripts/prune-expired-events.mjs
       - name: Validate discovery data
         run: npm run validate:data
       - name: Publish discovery results before long enrichment
