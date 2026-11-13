@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {oneTokenTitleIdentityMatches,quarantineTheKitchenSourceCollision} from '../../src/lib/place-source-identity.mjs';
+import places from '../../src/data/places.json' with {type:'json'};
 
 test('a single shared word does not join an unrelated Parks walking track to The Kitchen',()=>{
  assert.equal(oneTokenTitleIdentityMatches('The Kitchen','Tasmans Arch and Devils Kitchen Circuit | Parks Tasmania'),false);
@@ -30,4 +31,12 @@ test('do not suppress a manually managed listing or a correctly sourced café',(
  verified.summary='Tasmans Arch and Devils Kitchen Circuit';
  verified.managedManually=true;
  assert.equal(quarantineTheKitchenSourceCollision(verified),false);
+});
+
+test('the real Zeehan OSM record is detected and cannot remain public with unrelated Parks data',()=>{
+ const liveRecords=places.filter(place => place.slug==='the-kitchen' && /^Zeehan$/i.test(place.town || ''));
+ assert.equal(liveRecords.length,1,'expected one reviewed Zeehan source record');
+ const reviewed=structuredClone(liveRecords[0]);
+ assert.equal(quarantineTheKitchenSourceCollision(reviewed),true,'source fingerprint or contamination changed; investigate before claiming repair');
+ assert.equal(reviewed.visibility,'suppressed');
 });
