@@ -47,10 +47,23 @@ jobs:
           node --input-type=module -e '
             import fs from "node:fs";
             const r = JSON.parse(fs.readFileSync("src/data/discovery-report.json"));
-            if (r.run.id !== process.env.GITHUB_RUN_ID || !r.sources.length || r.sources.some(s => !s.pagesFetched || s.errors.length)) {
-              throw new Error("Market discovery sources need attention; inspect market-discovery-check.");
+            if (r.run.id !== process.env.GITHUB_RUN_ID || !Array.isArray(r.sources) || r.sources.length < 6) {
+              throw new Error("Market discovery report is missing or has insufficient source coverage.");
             }
-            console.log(`Verified ${r.sources.length} live discovery sources; ${r.totals.review} records remain for review.`);
+            const verified=r.sources.filter(source => source.pagesFetched > 0 && !(source.errors || []).length);
+            const degraded=r.sources.filter(source => !source.pagesFetched || (source.errors || []).length);
+            const pages=r.sources.reduce((n,source) => n+(source.pagesFetched || 0),0);
+            // Third-party sites occasionally return 403 or retire a child link.
+            // Never silently pass a broad source outage, but do not block all
+            // safe catalogue work when independent healthy sources still verify.
+            if (verified.length < 6 || pages < 6) {
+              throw new Error("Too few healthy market discovery sources; inspect market-discovery-check.");
+            }
+            for (const source of degraded) {
+              const issues=(source.errors || []).map(err => err.message).join(", ") || "no pages fetched";
+              console.log("::warning::Market source degraded: "+source.name+" ("+issues+"). Review discovery report.");
+            }
+            console.log(`Verified ${verified.length}/${r.sources.length} market source groups over ${pages} pages; ${degraded.length} degraded; ${r.totals.review} records remain for review.`);
           '
   enrich-catalogue:
     needs: verify-discovery
