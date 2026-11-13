@@ -4,6 +4,13 @@ import events from '../../src/data/events.json' with { type:'json' };
 import overrides from '../../src/data/event-overrides.json' with { type:'json' };
 import {normaliseEventSourceUrl,applyReviewedEventCorrection} from '../discover/lib/reviewed-event-corrections.mjs';
 import {readFileSync} from 'node:fs';
+import {tasmaniaDate} from '../../src/lib/market-seo.mjs';
+const currentDay=tasmaniaDate();
+const reviewedSample=(slug)=>{
+ const rule=overrides[slug];
+ assert.ok(rule?.eventUrl,'missing durable source correction: '+slug);
+ return events.find(e=>e.slug===slug) || applyReviewedEventCorrection({slug,eventUrl:rule.eventUrl},overrides);
+};
 const redirects=readFileSync(new URL('../../public/_redirects',import.meta.url),'utf8');
 const expected=[
  ['halloween-fest-hobart-2026-10-31-hobart','2026-10-31','Hobart City Hall','10:00',2],
@@ -11,21 +18,32 @@ const expected=[
  ['launnie-monthly-storytelling-2026-2026-11-04-launceston','2026-11-04','Du Cane Brewery & Dining Hall — The Map Room','18:00',1],
  ['barefoot-social-bowls-2026-10-22-currie','2026-10-22','King Island Golf and Bowling Club','16:30',2]
 ];
-test('the corrected four events have one canonical record each',()=>{
+
+test('reviewed event identities survive expiry without resurrecting old dates',()=>{
  for(const [slug,date,venue,time] of expected){
+  const rule=overrides[slug];
+  assert.ok(rule?.eventUrl && rule.fields,'source correction must survive expiry: '+slug);
   const records=events.filter(e=>e.slug===slug);
-  assert.equal(records.length,1,slug);
-  assert.equal(records[0].startDate,date);
-  assert.equal(records[0].venue,venue);
-  assert.equal(records[0].startTime,time);
+  const shouldPublish=(rule.fields.endDate||date)>=currentDay;
+  assert.equal(records.length,shouldPublish?1:0,slug+' active/live cardinality');
+  const e=reviewedSample(slug);
+  assert.equal(e.slug,slug);
+  assert.equal(e.startDate,date);
+  assert.equal(e.venue,venue);
+  assert.equal(e.startTime,time);
  }
 });
-test('Halloween ticket session list includes all four official times and no duplicates',()=>{
- const event=events.find(x=>x.slug===expected[0][0]);
+
+
+test('Halloween source correction preserves every ticket session but is no longer live',()=>{
+ const slug=expected[0][0];
+ const event=reviewedSample(slug);
  assert.deepEqual(event.sessions.map(x=>x.startTime),['10:00','12:00','14:00','15:00']);
- assert.equal(events.filter(x=>x.eventUrl?.split('?')[0]===event.eventUrl).length,1);
- assert.equal(event.image.sourceMethod,'verified-event-venue');
+ assert.equal(events.filter(x=>x.eventUrl?.split('?')[0]===event.eventUrl).length,
+  event.endDate>=currentDay?1:0,'past sessions must not remain in public catalogue');
+ if(events.some(x=>x.slug===slug))assert.equal(event.image.sourceMethod,'verified-event-venue');
 });
+
 test('verified redirects cover previous source slugs',()=>{
  const aliases=['halloween-fest-hobart-2026-10-30-hobart','sat-oct-31-10am-halloween-fest-hobart-hobart-2026-10-31-hobart',
   'barefoot-social-bowls-2026-10-14-currie'];
@@ -43,9 +61,10 @@ test('tracking-only Humanitix referral aliases collapse to canonical URL',()=>{
  assert.equal(normaliseEventSourceUrl('https://events.humanitix.com/halloween-fest-hobart?dateId=123'),
   'https://events.humanitix.com/halloween-fest-hobart?dateId=123');
 });
+
 test('old source aliases are repaired after any future discovery regeneration',()=>{
  for(const [slug,date,venue,time] of expected){
-  const original=events.find(e=>e.slug===slug);
+  const original=reviewedSample(slug);
   const reintroduced=applyReviewedEventCorrection({...original,slug:'new-bad-search-card',startDate:'2026-10-17',venue:'Venue'},overrides);
   assert.equal(reintroduced.startDate,date);assert.equal(reintroduced.slug,slug);
   assert.equal(reintroduced.venue,venue);
@@ -102,31 +121,31 @@ test('Skill Share 2027 false future date is corrected to its real past council s
   'source data must not advertise an already completed event as January 2027');
 });
 
-test('agriCULTURED and Mind Blown keep official Tasmania-local event days and venue',()=>{
+
+test('agriCULTURED and Mind Blown preserve verified corrections after their sessions expire',()=>{
  const pairs=[
   ['agricultured-2026-2026-11-04-launceston','2026-11-05','2026-11-08','09:00','19:00','Launceston & Surrounds'],
   ['mind-blown-the-mentalist-and-the-medium-in-launceston-2026-11-07-launceston','2026-11-07','2026-11-07','18:45','22:00','The Tramsheds Function Centre']
  ];
  for(const [slug,first,last,begin,end,venue] of pairs){
   const sourceUrl=overrides[slug]?.eventUrl;
-  const matches=events.filter(e=>e.slug===slug||(sourceUrl&&e.eventUrl===sourceUrl));
-  assert.equal(matches.length,1,'One correct event exists under verified source URL: '+slug);
-  const e=matches[0];
+  assert.ok(sourceUrl,'reviewed source URL must remain canonical');
+  const matches=events.filter(e=>e.slug===slug||e.eventUrl===sourceUrl);
+  assert.equal(matches.length,last>=currentDay?1:0,'correct active cardinality for '+slug);
+  const e=matches[0]||{slug,eventUrl:sourceUrl};
   const fixed=applyReviewedEventCorrection(e,overrides);
   assert.equal(fixed.startDate,first);
   assert.equal(fixed.endDate,last);
   assert.equal(fixed.startTime,begin);
   assert.equal(fixed.endTime,end);
   assert.equal(fixed.venue,venue);
-  const changedSlug={...e,slug:'future-reimport-new-slug'};
-  const fixedAgain=applyReviewedEventCorrection(changedSlug,overrides);
-  assert.equal(fixedAgain.startDate,first,'stable official URL correction survives reimport');
+  const fixedAgain=applyReviewedEventCorrection({...e,slug:'future-reimport-new-slug'},overrides);
+  assert.equal(fixedAgain.startDate,first,'source URL correction survives reimport');
  }
- const blown=applyReviewedEventCorrection(events.find(e=>e.eventUrl==='https://events.humanitix.com/mindblown'),overrides);
+ const blown=applyReviewedEventCorrection({slug:pairs[1][0],eventUrl:'https://events.humanitix.com/mindblown'},overrides);
  assert.equal(blown.town,'Invermay');
  assert.equal(blown.address,'4 Invermay Road, Invermay TAS 7248');
 });
-
 
 test('Writing Life previous-day UTC date is corrected without resurrecting an expired event',()=>{
  const old={
@@ -148,7 +167,8 @@ test('Writing Life previous-day UTC date is corrected without resurrecting an ex
 });
 
 
-test('Clarence disability golf and Beyond Sound canonical pages and redirects are source-accurate',()=>{
+
+test('Clarence historical golf and future Beyond Sound retain correct source data and redirects',()=>{
  const specs=[
   {url:'https://www.ccc.tas.gov.au/event/come-and-try-disability-golf/',
    slug:'international-day-of-people-with-disability-come-and-try-golf-2026-10-26-cambridge',
@@ -161,8 +181,8 @@ test('Clarence disability golf and Beyond Sound canonical pages and redirects ar
  ];
  for(const spec of specs){
   const matching=events.filter(e=>e.eventUrl===spec.url);
-  assert.equal(matching.length,1,'one source-specific record for '+spec.url);
-  const e=matching[0];
+  assert.equal(matching.length,spec.date>=currentDay?1:0,'correct active cardinality for '+spec.url);
+  const e=applyReviewedEventCorrection(matching[0]||{slug:'old-incorrect-source-card',eventUrl:spec.url},overrides);
   assert.equal(e.slug,spec.slug);
   assert.equal(e.startDate,spec.date);
   assert.equal(e.endDate,spec.date);
@@ -170,33 +190,35 @@ test('Clarence disability golf and Beyond Sound canonical pages and redirects ar
   assert.equal(e.endTime,spec.end);
   assert.equal(e.town,spec.town);
   assert.equal(e.venue,spec.venue);
-  assert.ok(e.summary?.length>120,'specific first-party summary');
+  assert.ok(e.summary?.length>120,'source-specific reviewed summary');
   for(const old of spec.old){
-   const expected='/event/'+old+'/ /event/'+spec.slug+'/ 301';
-   assert.ok(redirects.includes(expected),'missing safe legacy alias '+old);
-   assert.ok(!events.some(event=>event.slug===old),'do not publish original incorrect slug');
+   assert.ok(redirects.includes('/event/'+old+'/ /event/'+spec.slug+'/ 301'),'missing safe legacy alias '+old);
+   assert.ok(!events.some(event=>event.slug===old),'incorrect slug must not return');
   }
   const reset={...e,slug:'bad-previous-card-date',startDate:'2026-10-21',town:'Rosny Park',startTime:undefined,venue:'Venue'};
   const corrected=applyReviewedEventCorrection(reset,overrides);
-  assert.equal(corrected.slug,spec.slug,'source URL survives regenerated wrong slug');
+  assert.equal(corrected.slug,spec.slug);
   assert.equal(corrected.startDate,spec.date);
   assert.equal(corrected.town,spec.town);
   assert.equal(corrected.startTime,spec.start);
  }
- const golf=events.find(e=>e.eventUrl===specs[0].url);
- assert.equal(golf.image.isFallback,true,'unrelated US green image must not depict an advertised Tasmanian clinic');
+ const golf=applyReviewedEventCorrection({slug:'old-incorrect-source-card',eventUrl:specs[0].url},overrides);
+ assert.equal(golf.image.isFallback,true,'unrelated US photo must not depict an advertised Tasmanian clinic');
  assert.equal(golf.image.attribution,'TassieNow');
  assert.match(golf.summary,/registration is essential/i);
- const sound=events.find(e=>e.eventUrl===specs[1].url);
+ const sound=applyReviewedEventCorrection({slug:'old-incorrect-source-card',eventUrl:specs[1].url},overrides);
  assert.match(sound.summary,/Auslan interpreter/i);
 });
 
 
-test('South Arm source-backed venue survives unrelated Clarence card reimports with disputed day untouched',()=>{
+test('South Arm correction survives expiry with disputed day untouched',()=>{
  const url='https://www.ccc.tas.gov.au/event/mobile-service-centre-south-arm/';
  const original=events.filter(e=>e.eventUrl===url);
- assert.equal(original.length,1);
- const e=original[0];
+ assert.equal(original.length,'2026-11-04'>=currentDay?1:0,'expired service centre must not remain public');
+ const e=applyReviewedEventCorrection(original[0]||{
+  slug:'mobile-service-centre-south-arm-2026-11-04-rosny-park',
+  eventUrl:url,startDate:'2026-11-04',endDate:'2026-11-04',town:'Rosny Park'
+ },overrides);
  assert.equal(e.town,'South Arm');
  assert.equal(e.startTime,'09:00');
  assert.equal(e.endTime,'16:00');
