@@ -392,10 +392,10 @@
       "endDate": "2027-03-25",
       "sourceUrl": "https://kingisland.org.au/events/barefoot-social-bowls/"
     },
+    "ticketLastChecked": "2026-11-15",
     "priceFrom": 10,
     "priceTo": 10,
-    "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-15"
+    "priceCurrency": "AUD"
   },
   {
     "slug": "child-and-family-learning-centre-what-s-on-2026-11-01-devonport",
@@ -893,9 +893,6 @@
     "venue": "Albert Hall",
     "address": "47 Tamar Street, Launceston TAS 7250",
     "presenter": "Launceston Youth Theatre Ensemble",
-    "priceFrom": 17,
-    "priceTo": 25,
-    "priceCurrency": "AUD",
     "ticketLastChecked": "2026-11-15"
   },
   {
@@ -1278,7 +1275,8 @@
     "lastChecked": "2026-11-14",
     "ticketUrl": "https://www.eventbrite.com.au/e/rock-and-rhyme-at-launceston-library-tickets-1980933375050",
     "ticketProvider": "Eventbrite",
-    "bookingRequired": true
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-11-15"
   },
   {
     "slug": "the-mum-connection-walking-group-burnie-2026-11-17-burnie",
@@ -1315,7 +1313,8 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-15"
+    "lastChecked": "2026-11-15",
+    "ticketLastChecked": "2026-11-15"
   },
   {
     "slug": "giant-climate-fresk-hobart-citizen-cop-2026-2026-11-18-hobart",
@@ -1346,7 +1345,9 @@
     "lastChecked": "2026-11-14",
     "ticketUrl": "https://events.humanitix.com/giant-climate-fresk-hobart-citizen-cop-2026",
     "ticketProvider": "Humanitix",
-    "bookingRequired": true
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-15"
   },
   {
     "slug": "hip-hop-dance-with-joe-at-quadrant-mall-2026-11-18-launceston",
@@ -1377,7 +1378,8 @@
     "lastChecked": "2026-11-14",
     "ticketUrl": "https://www.eventbrite.com.au/e/hip-hop-dance-with-joe-at-quadrant-mall-tickets-2003490182067",
     "ticketProvider": "Eventbrite",
-    "bookingRequired": true
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-11-15"
   },
   {
     "slug": "learn-how-to-beat-the-heat-this-summer-2026-11-18-hobart",
@@ -1438,6 +1440,35 @@
     "bookingRequired": true,
     "availability": "InStock",
     "ticketLastChecked": "2026-11-14"
+  },
+  {
+    "slug": "singing-and-emotional-regulation-2026-11-18-hobart",
+    "name": "Singing & Emotional Regulation",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-18",
+    "endDate": "2026-11-18",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Singing & Emotional Regulation in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://www.eventbrite.com/e/singing-emotional-regulation-tickets-2001158778777",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Singing & Emotional Regulation event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-15",
+    "ticketUrl": "https://www.eventbrite.com/e/singing-emotional-regulation-tickets-2001158778777",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "social-swim-club-2026-11-18-devonport",
@@ -1946,6 +1977,37 @@
     "bookingRequired": true
   },
   {
+    "slug": "sewcials-at-the-redress-hub-creative-get-togethers-2026-11-21-launceston",
+    "name": "Sewcials at The ReDress Hub - creative get-togethers",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-21",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Sewcials at The ReDress Hub - creative get-togethers in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "The ReDress Hub",
+    "address": "Shop 6 & 7, Launceston 7250",
+    "eventUrl": "https://www.eventbrite.com.au/e/sewcials-at-the-redress-hub-creative-get-togethers-tickets-1980382007896",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+    "sourceName": "Eventbrite Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Sewcials at The ReDress Hub - creative get-togethers event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-15",
+    "ticketUrl": "https://www.eventbrite.com.au/e/sewcials-at-the-redress-hub-creative-get-togethers-tickets-1980382007896",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
+  },
+  {
     "slug": "sinbad-the-sailor-2026-11-21-launceston",
     "name": "Sinbad the Sailor",
     "town": "Launceston",
@@ -1990,6 +2052,37 @@
     "priceTo": 25,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-11-14"
+  },
+  {
+    "slug": "tamar-ridge-x-turner-stillhouse-2026-11-21-rosevears",
+    "name": "Tamar Ridge x Turner Stillhouse",
+    "town": "Rosevears",
+    "region": "Launceston & North",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-21",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Tamar Ridge x Turner Stillhouse in Rosevears. Check the source for current times, venue details and availability.",
+    "venue": "Tamar Ridge & PIRIE Cellar Door",
+    "address": "1A Waldhorn Drive, Rosevears 7277",
+    "eventUrl": "https://www.eventbrite.com.au/e/tamar-ridge-x-turner-stillhouse-tickets-2003746611053",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+    "sourceName": "Eventbrite Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Tamar Ridge x Turner Stillhouse event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-15",
+    "ticketUrl": "https://www.eventbrite.com.au/e/tamar-ridge-x-turner-stillhouse-tickets-2003746611053",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "tasmania-jackjumpers-v-illawarra-hawks-2026-11-21-glenorchy",
@@ -2406,7 +2499,36 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14"
+    "lastChecked": "2026-11-15"
+  },
+  {
+    "slug": "hbr-press-webinar-unspeakable-2026-11-23-hobart",
+    "name": "HBR Press Webinar: Unspeakable",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-23",
+    "endDate": "2026-11-23",
+    "categories": [
+      "Events"
+    ],
+    "summary": "5&sharp=10&fp-x=0.5&fp-y=0.5&s=096b7839499ebcae7aafacf9cd86f438 640w, https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196845866%2F24792341007%2F1%2Foriginal.20261029-115629?crop=focalpoint&fit=crop&w=1024&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=249f8619a84c3d8d820867c4",
+    "eventUrl": "https://www.eventbrite.com/e/hbr-press-webinar-unspeakable-tickets-2004063230069?aff=ebdssbcitybrowse",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "HBR Press Webinar: Unspeakable event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-15",
+    "ticketUrl": "https://www.eventbrite.com/e/hbr-press-webinar-unspeakable-tickets-2004063230069?aff=ebdssbcitybrowse",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "women-talking-money-with-equity-mates-2026-11-23-launceston",
@@ -2958,13 +3080,26 @@
     "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
     "sourceName": "Eventbrite Hobart",
     "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "The Best of the Best. 7 Whiskies. One Great Night event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Hadley%E2%80%99s_Orient_Hotel_-_Street_View.jpg/1280px-Hadley%E2%80%99s_Orient_Hotel_-_Street_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hadley%E2%80%99s_Orient_Hotel_-_Street_View.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "attribution": "Diggers2004",
+      "alt": "Hadley's Orient Hotel, Hobart — venue photograph, not the advertised event",
+      "mediaType": "contextual",
+      "caption": "Venue photograph: Hadley's Orient Hotel, Hobart. This does not depict the advertised event.",
+      "sourceMethod": "commons-venue",
+      "isFallback": false,
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "contextual",
+        "venue": "Hadley's Orient Hotel",
+        "town": "Hobart",
+        "sourceFileTitle": "File:Hadley’s Orient Hotel - Street View.jpg",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Hadley%E2%80%99s_Orient_Hotel_-_Street_View.jpg",
+        "checkedAt": "2026-11-14",
+        "evidence": "Full venue name in Commons file title and Tasmania/town in source description"
+      }
     },
     "status": "active",
     "lastChecked": "2026-11-14",
@@ -3257,6 +3392,37 @@
     },
     "status": "active",
     "lastChecked": "2026-11-15"
+  },
+  {
+    "slug": "farm-gate-pass-sunday-29th-november-2026-10-30-11-00am-2026-11-29-glengarry",
+    "name": "Farm Gate Pass Sunday 29th November 2026 - 10:30 - 11:00am",
+    "town": "Glengarry",
+    "region": "Launceston & North",
+    "startDate": "2026-11-29",
+    "endDate": "2026-11-29",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Farm Gate Pass Sunday 29th November 2026 - 10:30 - 11:00am in Glengarry. Check the source for current times, venue details and availability.",
+    "venue": "Killiecrankie Farm Christmas Trees",
+    "address": "228 Glengarry Road 7275",
+    "eventUrl": "https://www.eventbrite.com.au/e/farm-gate-pass-sunday-29th-november-2026-1030-1100am-tickets-2004178848888",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+    "sourceName": "Eventbrite Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Farm Gate Pass Sunday 29th November 2026 - 10:30 - 11:00am event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-15",
+    "ticketUrl": "https://www.eventbrite.com.au/e/farm-gate-pass-sunday-29th-november-2026-1030-1100am-tickets-2004178848888",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "farm-gate-pass-sunday-29th-november-2026-11-30am-12-00pm-2026-11-29-glengarry",
@@ -3698,6 +3864,37 @@
     "ticketLastChecked": "2026-11-08"
   },
   {
+    "slug": "octomore-17-whisky-series-release-2026-12-02-hobart",
+    "name": "Octomore 17 Whisky Series Release",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-12-02",
+    "endDate": "2026-12-02",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Octomore 17 Whisky Series Release in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Hadley's Orient Hotel",
+    "address": "34 Murray Steet, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/octomore-17-whisky-series-release-tickets-2004757109481",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Octomore 17 Whisky Series Release event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-15",
+    "ticketUrl": "https://www.eventbrite.com.au/e/octomore-17-whisky-series-release-tickets-2004757109481",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
+  },
+  {
     "slug": "volunteers-breakfast-2026-2026-12-02-devonport",
     "name": "Volunteers Breakfast 2026",
     "town": "Devonport",
@@ -3806,7 +4003,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14"
+    "lastChecked": "2026-11-15"
   },
   {
     "slug": "northern-mbt-christmas-drinks-2026-12-03-launceston",
@@ -4110,6 +4307,32 @@
     "priceTo": 30,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-11-10"
+  },
+  {
+    "slug": "sorted-live-a-food-nightmare-before-christmas-2026-12-05-hobart",
+    "name": "Sorted Live: A Food Nightmare Before Christmas",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-06",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Sorted Live: A Food Nightmare Before Christmas in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://www.eventbrite.co.uk/e/sorted-live-a-food-nightmare-before-christmas-tickets-2003030292525",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Sorted Live: A Food Nightmare Before Christmas event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-15"
   },
   {
     "slug": "tcw-presents-reckoning-2026-12-05-launceston",
@@ -5405,6 +5628,37 @@
     "priceTo": 470,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-11-14"
+  },
+  {
+    "slug": "kundalini-activation-and-breathwork-hobart-8-jan-2027-01-08-hobart",
+    "name": "Kundalini Activation & Breathwork - Hobart 8 Jan",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2027-01-08",
+    "endDate": "2027-01-08",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Kundalini Activation & Breathwork - Hobart 8 Jan in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Lotus Centre",
+    "address": "45 Victoria Street, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/kundalini-activation-breathwork-hobart-8-jan-tickets-2003645538743",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Kundalini Activation & Breathwork - Hobart 8 Jan event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-15",
+    "ticketUrl": "https://www.eventbrite.com.au/e/kundalini-activation-breathwork-hobart-8-jan-tickets-2003645538743",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "2027-king-island-pro-am-2027-01-15-currie",
