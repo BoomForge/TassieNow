@@ -33,8 +33,11 @@ permissions:
   contents: write
   actions: write
 
+# This job publishes places.json, events.json and catalogue-audit.json.
+# Use the same queue as other catalogue writers to avoid losing a long-running
+# verified discovery refresh to a concurrent image commit.
 concurrency:
-  group: tassienow-image-publishing
+  group: tassienow-data-writes
   queue: max
   cancel-in-progress: false
 

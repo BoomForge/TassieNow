@@ -16,8 +16,11 @@ permissions:
   contents: write
   actions: write
 
+# Approved remote photos also write events.json and places.json; serialize
+# publication with catalogue refreshes instead of racing their final rebase.
 concurrency:
-  group: tassienow-ai-photo-fast-publication
+  group: tassienow-data-writes
+  queue: max
   cancel-in-progress: false
 
 jobs:
