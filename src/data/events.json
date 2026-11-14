@@ -643,22 +643,24 @@
     "ticketLastChecked": "2026-11-10"
   },
   {
-    "slug": "burnie-amateur-swimming-club-s-burnie-100-2026-11-14-burnie",
-    "name": "Burnie Amateur Swimming Club's BURNIE 100",
-    "town": "Burnie",
-    "region": "North West",
+    "slug": "digital-help-drop-in-at-launceston-library-2026-11-14-launceston",
+    "name": "Digital help drop-in at Launceston Library",
+    "town": "Launceston",
+    "region": "Launceston & North",
     "startDate": "2026-11-14",
     "endDate": "2026-11-14",
     "categories": [
       "Events"
     ],
-    "summary": "Burnie Amateur Swimming Club's BURNIE 100 in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Burnie-Amateur-Swimming-Club-BURNIE-100",
-    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
-    "sourceName": "Burnie City Council",
+    "summary": "Digital help drop-in at Launceston Library in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "Launceston Library",
+    "address": "71 Civic Square, Launceston 7250",
+    "eventUrl": "https://www.eventbrite.com.au/e/digital-help-drop-in-at-launceston-library-tickets-1981828204509",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+    "sourceName": "Eventbrite Launceston",
     "image": {
       "url": "/images/categories/events.svg",
-      "alt": "Burnie Amateur Swimming Club's BURNIE 100 event category image",
+      "alt": "Digital help drop-in at Launceston Library event category image",
       "attribution": "TassieNow",
       "license": "Site artwork",
       "licenseUrl": null,
@@ -666,44 +668,10 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14"
-  },
-  {
-    "slug": "city-of-hobart-floral-shows-2026-11-14-hobart",
-    "name": "City of Hobart Floral Shows",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "startDate": "2026-11-14",
-    "endDate": "2026-11-14",
-    "categories": [
-      "Events"
-    ],
-    "summary": "City of Hobart Floral Shows in Hobart. Check the official event listing for current times, venue, accessibility and booking details.",
-    "eventUrl": "https://www.hobartcity.com.au/Things-To-Do/Upcoming-events/City-of-Hobart-Floral-Shows",
-    "sourceUrl": "https://www.hobartcity.com.au/Things-To-Do/Upcoming-events",
-    "sourceName": "City of Hobart",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Flower_show_at_Lalbagh_botanical_garden_2026_(63981).jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flower_show_at_Lalbagh_botanical_garden_2026_(63981).jpg",
-      "attribution": "Kaartic",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "isFallback": false,
-      "sourceMethod": "verified-event-activity",
-      "mediaType": "activity-illustrative",
-      "alt": "Illustrative photograph of a bonsai display at an Indian botanical garden flower show; not the advertised City of Hobart Floral Shows event",
-      "caption": "Illustrative photo: a bonsai display at an Indian botanical garden flower show. This does not depict the advertised event in Tasmania.",
-      "matchEvidence": {
-        "verified": true,
-        "verifiedType": "activity-illustrative",
-        "topic": "flower show",
-        "eventName": "City of Hobart Floral Shows",
-        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Flower_show_at_Lalbagh_botanical_garden_2026_(63981).jpg",
-        "checkedAt": "2026-10-11"
-      }
-    },
-    "status": "active",
-    "lastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/digital-help-drop-in-at-launceston-library-tickets-1981828204509",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "find-your-next-treasure-on-the-garage-sale-trail-2026-11-14-burnie",
@@ -730,35 +698,6 @@
     },
     "status": "active",
     "lastChecked": "2026-11-14"
-  },
-  {
-    "slug": "giant-climate-fresk-hobart-citizen-cop-2026-2026-11-14-hobart",
-    "name": "Giant Climate Fresk Hobart - Citizen COP 2026",
-    "town": "Hobart",
-    "region": "Hobart & South",
-    "startDate": "2026-11-14",
-    "endDate": "2026-11-14",
-    "categories": [
-      "Events"
-    ],
-    "summary": "Giant Climate Fresk Hobart - Citizen COP 2026 in Hobart. Check the source for current times, venue details and availability.",
-    "eventUrl": "https://events.humanitix.com/giant-climate-fresk-hobart-citizen-cop-2026",
-    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
-    "sourceName": "Humanitix Hobart",
-    "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Giant Climate Fresk Hobart - Citizen COP 2026 event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
-    },
-    "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketUrl": "https://events.humanitix.com/giant-climate-fresk-hobart-citizen-cop-2026",
-    "ticketProvider": "Humanitix",
-    "bookingRequired": true
   },
   {
     "slug": "grandmother-of-all-rallies-hobart-tas-2026-11-14-hobart",
@@ -849,8 +788,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-03",
-    "ticketLastChecked": "2026-11-10"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "taste-the-tamar-2026-2026-11-14-exeter",
@@ -886,6 +824,35 @@
     "priceTo": 5,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-11-10"
+  },
+  {
+    "slug": "the-clubhouse-presents-celia-pacquola-gift-horse-2026-11-14-hobart",
+    "name": "The Clubhouse presents Celia Pacquola: Gift Horse",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-14",
+    "endDate": "2026-11-14",
+    "categories": [
+      "Events"
+    ],
+    "summary": "The Clubhouse presents Celia Pacquola: Gift Horse in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://events.humanitix.com/the-clubhouse-presents-celia-pacquola-gift-horse",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "The Clubhouse presents Celia Pacquola: Gift Horse event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://events.humanitix.com/the-clubhouse-presents-celia-pacquola-gift-horse",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true
   },
   {
     "slug": "thrown-io-performance-2026-11-14-launceston",
@@ -1241,8 +1208,7 @@
     "startDate": "2026-11-16",
     "endDate": "2026-11-16",
     "categories": [
-      "Events",
-      "Free"
+      "Events"
     ],
     "summary": "Explore the remarkable true story that inspired Unwoven with author Sarah Thornton. From the bestselling author of Lapse and White Throat comes Unwoven, a powerful historical novel inspired by the true story of Thomas Burbury, whose arrest following a violent 1831 uprising in Cov",
     "venue": "Devonport Library",
@@ -1260,15 +1226,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketUrl": "https://www.eventbrite.com.au/e/author-event-sarah-thornton-at-devonport-library-tickets-2003180229992",
-    "ticketProvider": "Eventbrite",
-    "bookingRequired": true,
-    "priceFrom": 0,
-    "priceTo": 0,
-    "priceCurrency": "AUD",
-    "availability": "InStock",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "surges-bay-homeschool-and-after-school-drop-in-program-2026-11-16-huonville",
@@ -1294,8 +1252,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "surges-bay-supporters-community-meeting-2026-11-16-huonville",
@@ -1321,8 +1278,33 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
+  },
+  {
+    "slug": "svpg-product-masterclass-nov-16-18-2026-2026-11-16-hobart",
+    "name": "SVPG Product Masterclass - Nov 16-18, 2026",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-16",
+    "endDate": "2026-11-18",
+    "categories": [
+      "Events"
+    ],
+    "summary": "SVPG Product Masterclass - Nov 16-18, 2026 in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://www.eventbrite.co.uk/e/svpg-product-masterclass-nov-16-18-2026-tickets-1999787190319",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "SVPG Product Masterclass - Nov 16-18, 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "targa-tasmania-2026-2026-11-16-burnie",
@@ -1359,8 +1341,7 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "the-huon-valley-hosts-a-variety-of-regular-activities-and-gatherings-organised-by-communit",
@@ -1386,8 +1367,38 @@
       "isFallback": true
     },
     "status": "active",
+    "lastChecked": "2026-11-14"
+  },
+  {
+    "slug": "ai-minus-the-hype-practical-tips-for-project-managers-2026-11-17-hobart",
+    "name": "AI Minus the Hype: Practical Tips for Project Managers",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-17",
+    "endDate": "2026-11-17",
+    "categories": [
+      "Events"
+    ],
+    "summary": "AI Minus the Hype: Practical Tips for Project Managers in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "UTAS The Forest Building",
+    "address": "83A Melville Street, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/ai-minus-the-hype-practical-tips-for-project-managers-tickets-2004283095693",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "AI Minus the Hype: Practical Tips for Project Managers event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
     "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "ticketUrl": "https://www.eventbrite.com.au/e/ai-minus-the-hype-practical-tips-for-project-managers-tickets-2004283095693",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "building-stronger-families-2026-11-17-burnie",
@@ -1413,8 +1424,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "early-english-cricket-tour-of-australia-a-new-acquisition-unveiled-2026-11-17-hobart",
@@ -1448,6 +1458,111 @@
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
     "ticketLastChecked": "2026-11-14"
+  },
+  {
+    "slug": "first-english-cricket-tour-of-australia-a-new-acquisition-unveiled-2026-11-17-hobart",
+    "name": "First English cricket tour of Australia: a new acquisition unveiled",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-17",
+    "endDate": "2026-11-17",
+    "categories": [
+      "Events",
+      "Sport"
+    ],
+    "summary": "First English cricket tour of Australia: a new acquisition unveiled in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "State Library and Archives of Tasmania",
+    "address": "91 Murray Street, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/first-english-cricket-tour-of-australia-a-new-acquisition-unveiled-tickets-2003903203425",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "First English cricket tour of Australia: a new acquisition unveiled event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/first-english-cricket-tour-of-australia-a-new-acquisition-unveiled-tickets-2003903203425",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
+  },
+  {
+    "slug": "midday-yoga-reset-2026-11-17-hobart",
+    "name": "Midday Yoga Reset",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-17",
+    "endDate": "2026-11-17",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Midday Yoga Reset in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "St Lukes Hobart",
+    "address": "72 Elizabeth Street, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/midday-yoga-reset-tickets-1998659975790",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Midday Yoga Reset event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/midday-yoga-reset-tickets-1998659975790",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
+  },
+  {
+    "slug": "rock-and-rhyme-at-launceston-library-2026-11-17-launceston",
+    "name": "Rock and Rhyme at Launceston Library",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-11-17",
+    "endDate": "2026-11-17",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Rock and Rhyme at Launceston Library in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "Launceston Library",
+    "address": "71 Civic Square, Launceston 7250",
+    "eventUrl": "https://www.eventbrite.com.au/e/rock-and-rhyme-at-launceston-library-tickets-1980933375050",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+    "sourceName": "Eventbrite Launceston",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Books_on_shelves_IMG_8422.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Books_on_shelves_IMG_8422.jpg",
+      "attribution": "Glossyqueen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "isFallback": false,
+      "sourceMethod": "verified-event-activity",
+      "mediaType": "activity-illustrative",
+      "alt": "Illustrative photograph of library bookshelves photographed in Kwara State, Nigeria; not the advertised Rock and Rhyme at Launceston Library event",
+      "caption": "Illustrative photo: library bookshelves photographed in Kwara State, Nigeria. This does not depict the advertised event in Tasmania.",
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "activity-illustrative",
+        "topic": "books and reading",
+        "eventName": "Rock and Rhyme at Launceston Library",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Books_on_shelves_IMG_8422.jpg",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/rock-and-rhyme-at-launceston-library-tickets-1980933375050",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "the-mum-connection-walking-group-burnie-2026-11-17-burnie",
@@ -1484,8 +1599,69 @@
       }
     },
     "status": "active",
+    "lastChecked": "2026-11-14"
+  },
+  {
+    "slug": "giant-climate-fresk-hobart-citizen-cop-2026-2026-11-18-hobart",
+    "name": "Giant Climate Fresk Hobart - Citizen COP 2026",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-18",
+    "endDate": "2026-11-18",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Giant Climate Fresk Hobart - Citizen COP 2026 in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Parliament Coworking / Hobart",
+    "address": "107 Murray St, Hobart TAS 7000, Australia",
+    "eventUrl": "https://events.humanitix.com/giant-climate-fresk-hobart-citizen-cop-2026",
+    "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
+    "sourceName": "Humanitix Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Giant Climate Fresk Hobart - Citizen COP 2026 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
     "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "ticketUrl": "https://events.humanitix.com/giant-climate-fresk-hobart-citizen-cop-2026",
+    "ticketProvider": "Humanitix",
+    "bookingRequired": true
+  },
+  {
+    "slug": "hip-hop-dance-with-joe-at-quadrant-mall-2026-11-18-launceston",
+    "name": "Hip Hop Dance with Joe at Quadrant Mall",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-11-18",
+    "endDate": "2026-11-18",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Hip Hop Dance with Joe at Quadrant Mall in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "Quadrant Mall",
+    "address": "Quadrant Mall, Launceston 7250",
+    "eventUrl": "https://www.eventbrite.com.au/e/hip-hop-dance-with-joe-at-quadrant-mall-tickets-2003490182067",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+    "sourceName": "Eventbrite Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Hip Hop Dance with Joe at Quadrant Mall event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/hip-hop-dance-with-joe-at-quadrant-mall-tickets-2003490182067",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "learn-how-to-beat-the-heat-this-summer-2026-11-18-hobart",
@@ -1512,8 +1688,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "life-food-hub-and-churchill-fellowship-community-briefing-2026-11-18-launceston",
@@ -1575,8 +1750,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "the-canopy-burnie-2026-11-18-burnie",
@@ -1603,8 +1777,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "yfcc-arvos-at-the-junction-2026-11-18-burnie",
@@ -1630,8 +1803,38 @@
       "isFallback": true
     },
     "status": "active",
+    "lastChecked": "2026-11-14"
+  },
+  {
+    "slug": "ardnahoe-single-cask-preview-with-andrew-laing-hobart-2026-11-19-hobart",
+    "name": "Ardnahoe single cask preview with Andrew Laing – Hobart",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-19",
+    "endDate": "2026-11-19",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Ardnahoe single cask preview with Andrew Laing – Hobart in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "New Sydney Hotel",
+    "address": "87 Bathurst Street, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/ardnahoe-single-cask-preview-with-andrew-laing-hobart-tickets-2004337147363",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Ardnahoe single cask preview with Andrew Laing – Hobart event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
     "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "ticketUrl": "https://www.eventbrite.com.au/e/ardnahoe-single-cask-preview-with-andrew-laing-hobart-tickets-2004337147363",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "bringing-up-great-kids-parenting-course-2026-11-19-burnie",
@@ -1658,8 +1861,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "building-stronger-families-the-burnout-reset-2026-11-19-devonport",
@@ -1688,8 +1890,38 @@
       "isFallback": true
     },
     "status": "active",
+    "lastChecked": "2026-11-14"
+  },
+  {
+    "slug": "embellish-vip-shop-and-sip-event-2026-11-19-launceston",
+    "name": "Embellish VIP Shop & Sip Event",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-11-19",
+    "endDate": "2026-11-19",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Embellish VIP Shop & Sip Event in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "151-155 Brisbane St",
+    "address": "151-155 Brisbane Street, Launceston 7250",
+    "eventUrl": "https://www.eventbrite.com/e/embellish-vip-shop-sip-event-tickets-2002924929381",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+    "sourceName": "Eventbrite Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Embellish VIP Shop & Sip Event event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
     "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "ticketUrl": "https://www.eventbrite.com/e/embellish-vip-shop-sip-event-tickets-2002924929381",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "emergency-management-preparedness-workshop-devonport-session-2-2026-11-19-devonport",
@@ -1717,8 +1949,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "glenorchy-treasure-trail-the-market-2026-11-19-glenorchy",
@@ -1804,8 +2035,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "reel-rock-20-film-tour-launceston-2026-11-19-launceston",
@@ -1842,6 +2072,32 @@
     "priceCurrency": "AUD",
     "availability": "InStock",
     "ticketLastChecked": "2026-11-14"
+  },
+  {
+    "slug": "school-of-prophets-vi-dreams-and-visions-iii-interpretation-and-alignment-2026-11-19-hobar",
+    "name": "SCHOOL OF PROPHETS VI: Dreams & Visions III - Interpretation and Alignment",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-19",
+    "endDate": "2026-11-21",
+    "categories": [
+      "Events"
+    ],
+    "summary": "SCHOOL OF PROPHETS VI: Dreams & Visions III - Interpretation and Alignment in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://www.eventbrite.ca/e/school-of-prophets-vi-dreams-visions-iii-interpretation-and-alignment-tickets-2003064401546",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "SCHOOL OF PROPHETS VI: Dreams & Visions III - Interpretation and Alignment event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "bicheno-food-and-wine-festival-2026-2026-11-21-bicheno",
@@ -1941,6 +2197,37 @@
     "priceTo": 75,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-11-14"
+  },
+  {
+    "slug": "qvmag-presents-2026-tata-members-exhibition-2026-11-21-invermay",
+    "name": "QVMAG presents: 2026 TATA Members Exhibition",
+    "town": "Invermay",
+    "region": "Launceston & North",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-21",
+    "categories": [
+      "Events"
+    ],
+    "summary": "QVMAG presents: 2026 TATA Members Exhibition in Invermay. Check the source for current times, venue details and availability.",
+    "venue": "Queen Victoria Museum at Inveresk",
+    "address": "2 Invermay Road 7248",
+    "eventUrl": "https://www.eventbrite.com.au/e/qvmag-presents-2026-tata-members-exhibition-tickets-2002986532638",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+    "sourceName": "Eventbrite Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "QVMAG presents: 2026 TATA Members Exhibition event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/qvmag-presents-2026-tata-members-exhibition-tickets-2002986532638",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "sinbad-the-sailor-2026-11-21-launceston",
@@ -2067,6 +2354,37 @@
     "ticketLastChecked": "2026-11-14"
   },
   {
+    "slug": "void-saturdays-amir-ozzy-hulmes-and-jai-negri-2026-11-21-launceston",
+    "name": "VOID Saturdays - Amir, Ozzy Hulmes & Jai Negri",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-21",
+    "categories": [
+      "Events"
+    ],
+    "summary": "VOID Saturdays - Amir, Ozzy Hulmes & Jai Negri in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "Dechaineux Way",
+    "address": "Dechaineux Way, Launceston 7250",
+    "eventUrl": "https://www.eventbrite.com/e/void-saturdays-amir-ozzy-hulmes-jai-negri-tickets-2003635935018",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+    "sourceName": "Eventbrite Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "VOID Saturdays - Amir, Ozzy Hulmes & Jai Negri event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com/e/void-saturdays-amir-ozzy-hulmes-jai-negri-tickets-2003635935018",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
+  },
+  {
     "slug": "annual-report-2025-2026-community-forum-2026-11-22-huonville",
     "name": "Annual Report 2025–2026 Community Forum",
     "town": "Huonville",
@@ -2090,8 +2408,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "archery-come-n-try-2026-11-22-burnie",
@@ -2128,8 +2445,7 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "home-hill-fete-2026-11-22-devonport",
@@ -2148,17 +2464,29 @@
     "sourceUrl": "https://www.devonport.tas.gov.au/whats-on-devonport/",
     "sourceName": "Devonport City Council",
     "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Home Hill Fete event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Home_Hill_%2845067495661%29.jpg/1280px-Home_Hill_%2845067495661%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Home_Hill_(45067495661).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Steve Bittinger from Canberra, Australia",
+      "alt": "Home Hill, Devonport — venue photograph, not the advertised event",
+      "mediaType": "contextual",
+      "caption": "Venue photograph: Home Hill, Devonport. This does not depict the advertised event.",
+      "sourceMethod": "commons-venue",
+      "isFallback": false,
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "contextual",
+        "venue": "Home Hill",
+        "town": "Devonport",
+        "sourceFileTitle": "File:Home Hill (45067495661).jpg",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Home_Hill_(45067495661).jpg",
+        "checkedAt": "2026-11-14",
+        "evidence": "Full venue name in Commons file title and Tasmania/town in source description"
+      }
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "home-hill-garden-fete-2026-11-22-devonport",
@@ -2177,17 +2505,29 @@
     "sourceUrl": "https://www.devonport.tas.gov.au/whats-on-devonport/",
     "sourceName": "Devonport City Council",
     "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Home Hill Garden Fete event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Home_Hill_%2845067495661%29.jpg/1280px-Home_Hill_%2845067495661%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Home_Hill_(45067495661).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Steve Bittinger from Canberra, Australia",
+      "alt": "Home Hill, Devonport — venue photograph, not the advertised event",
+      "mediaType": "contextual",
+      "caption": "Venue photograph: Home Hill, Devonport. This does not depict the advertised event.",
+      "sourceMethod": "commons-venue",
+      "isFallback": false,
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "contextual",
+        "venue": "Home Hill",
+        "town": "Devonport",
+        "sourceFileTitle": "File:Home Hill (45067495661).jpg",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Home_Hill_(45067495661).jpg",
+        "checkedAt": "2026-11-14",
+        "evidence": "Full venue name in Commons file title and Tasmania/town in source description"
+      }
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "music-in-nature-igniting-the-imagination-2026-11-22-hobart",
@@ -2213,8 +2553,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "targafest-2026-2026-11-22-rosny-park",
@@ -2241,8 +2580,38 @@
       "isFallback": true
     },
     "status": "active",
+    "lastChecked": "2026-11-14"
+  },
+  {
+    "slug": "adaptive-yoga-for-every-body-2026-11-23-hobart",
+    "name": "Adaptive Yoga for Every Body",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-23",
+    "endDate": "2026-11-23",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Adaptive Yoga for Every Body in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "St Lukes Hobart",
+    "address": "72 Elizabeth Street, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/adaptive-yoga-for-every-body-tickets-1998997586593",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Adaptive Yoga for Every Body event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
     "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "ticketUrl": "https://www.eventbrite.com.au/e/adaptive-yoga-for-every-body-tickets-1998997586593",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "emusicians-end-of-year-concert-2026-11-23-burnie",
@@ -2268,8 +2637,7 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "gender-group-2026-11-23-devonport",
@@ -2296,8 +2664,33 @@
       "isFallback": true
     },
     "status": "active",
-    "lastChecked": "2026-11-14",
-    "ticketLastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14"
+  },
+  {
+    "slug": "hbr-book-webinar-unspeakable-2026-11-23-hobart",
+    "name": "HBR Book Webinar: Unspeakable",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-23",
+    "endDate": "2026-11-23",
+    "categories": [
+      "Events"
+    ],
+    "summary": "HBR Book Webinar: Unspeakable in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://www.eventbrite.co.uk/e/hbr-book-webinar-unspeakable-tickets-2003706919334",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "HBR Book Webinar: Unspeakable event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14"
   },
   {
     "slug": "women-talking-money-with-equity-mates-2026-11-23-launceston",
@@ -2455,6 +2848,37 @@
     "bookingRequired": true,
     "availability": "InStock",
     "ticketLastChecked": "2026-11-14"
+  },
+  {
+    "slug": "palawa-food-and-cultural-experience-at-hobart-library-2026-11-25-hobart",
+    "name": "Palawa food and cultural experience at Hobart library",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-25",
+    "endDate": "2026-11-25",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Palawa food and cultural experience at Hobart library in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Hobart Library",
+    "address": "91 Murray Street, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/palawa-food-and-cultural-experience-at-hobart-library-tickets-2003696061859",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Palawa food and cultural experience at Hobart library event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/palawa-food-and-cultural-experience-at-hobart-library-tickets-2003696061859",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "2026-with-tas-christmas-event-2026-11-26-hobart",
@@ -2802,6 +3226,63 @@
     "ticketLastChecked": "2026-11-09"
   },
   {
+    "slug": "the-best-of-the-best-7-whiskies-one-great-night-2026-11-27-hobart",
+    "name": "The Best of the Best. 7 Whiskies. One Great Night",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-27",
+    "categories": [
+      "Events"
+    ],
+    "summary": "The Best of the Best. 7 Whiskies. One Great Night in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Hadley's Orient Hotel",
+    "address": "34 Murray Steet, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/the-best-of-the-best-7-whiskies-one-great-night-tickets-2004342347918",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "The Best of the Best. 7 Whiskies. One Great Night event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/the-best-of-the-best-7-whiskies-one-great-night-tickets-2004342347918",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
+  },
+  {
+    "slug": "the-mi5-archive-official-secrets-2026-11-27-hobart",
+    "name": "The MI5 Archive: Official Secrets",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-27",
+    "categories": [
+      "Events"
+    ],
+    "summary": "The MI5 Archive: Official Secrets in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://www.eventbrite.co.uk/e/the-mi5-archive-official-secrets-tickets-1997551526388",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "The MI5 Archive: Official Secrets event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14"
+  },
+  {
     "slug": "bjorn-again-abba-forever-tour-2026-11-28-launceston",
     "name": "Björn Again – ABBA Forever Tour",
     "town": "Launceston",
@@ -3035,6 +3516,37 @@
     "lastChecked": "2026-11-14"
   },
   {
+    "slug": "farm-gate-pass-sunday-29th-november-2026-11-30am-12-00pm-2026-11-29-glengarry",
+    "name": "Farm Gate Pass Sunday 29th November 2026 - 11:30am - 12:00pm",
+    "town": "Glengarry",
+    "region": "Launceston & North",
+    "startDate": "2026-11-29",
+    "endDate": "2026-11-29",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Farm Gate Pass Sunday 29th November 2026 - 11:30am - 12:00pm in Glengarry. Check the source for current times, venue details and availability.",
+    "venue": "Killiecrankie Farm Christmas Trees",
+    "address": "228 Glengarry Road 7275",
+    "eventUrl": "https://www.eventbrite.com.au/e/farm-gate-pass-sunday-29th-november-2026-1130am-1200pm-tickets-2004178878978",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+    "sourceName": "Eventbrite Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Farm Gate Pass Sunday 29th November 2026 - 11:30am - 12:00pm event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/farm-gate-pass-sunday-29th-november-2026-1130am-1200pm-tickets-2004178878978",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
+  },
+  {
     "slug": "foxton-and-sugerman-present-the-gospel-project-a-christmas-special-2026-11-29-hobart",
     "name": "Foxton & Sugerman present The Gospel Project: A Christmas Special",
     "town": "Hobart",
@@ -3143,6 +3655,37 @@
     "lastChecked": "2026-11-14"
   },
   {
+    "slug": "trivia-afternoon-with-mark-at-mountain-culture-supporting-pets-in-the-park-2026-11-29-hoba",
+    "name": "Trivia afternoon with Mark at Mountain Culture supporting Pets in the Park.",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-11-29",
+    "endDate": "2026-11-29",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Trivia afternoon with Mark at Mountain Culture supporting Pets in the Park. in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Mountain Culture Brewery - Hobart",
+    "address": "105 Murray Street, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/trivia-afternoon-with-mark-at-mountain-culture-supporting-pets-in-the-park-tickets-2004180996311",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Trivia afternoon with Mark at Mountain Culture supporting Pets in the Park. event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/trivia-afternoon-with-mark-at-mountain-culture-supporting-pets-in-the-park-tickets-2004180996311",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
+  },
+  {
     "slug": "hobart-showcase-2026-2026-11-30-hobart",
     "name": "Hobart Showcase 2026",
     "town": "Hobart",
@@ -3204,6 +3747,38 @@
     "lastChecked": "2026-11-14"
   },
   {
+    "slug": "16-days-of-activism-free-screening-of-silenced-in-launceston-2026-12-01-launceston",
+    "name": "16 Days of Activism: Free Screening of Silenced in Launceston",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-12-01",
+    "endDate": "2026-12-01",
+    "categories": [
+      "Events",
+      "Free"
+    ],
+    "summary": "16 Days of Activism: Free Screening of Silenced in Launceston in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "Queen Victoria Museum & Art Ga",
+    "address": "2-8 Wellington Street, Launceston 7250",
+    "eventUrl": "https://www.eventbrite.com.au/e/16-days-of-activism-free-screening-of-silenced-in-launceston-tickets-2004618760676",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+    "sourceName": "Eventbrite Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "16 Days of Activism: Free Screening of Silenced in Launceston event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/16-days-of-activism-free-screening-of-silenced-in-launceston-tickets-2004618760676",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
+  },
+  {
     "slug": "launceston-showcase-2026-2026-12-01-launceston",
     "name": "Launceston Showcase 2026",
     "town": "Launceston",
@@ -3237,6 +3812,37 @@
     "priceTo": 25,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-11-09"
+  },
+  {
+    "slug": "lunchtime-talks-series-graeme-foale-oam-egeria-2026-12-01-hobart",
+    "name": "Lunchtime Talks Series | Graeme Foale OAM, Egeria",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-12-01",
+    "endDate": "2026-12-01",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Lunchtime Talks Series | Graeme Foale OAM, Egeria in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Tasmanian Museum and Art Gallery, Royal Society Room",
+    "address": "Dunn Place, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/lunchtime-talks-series-graeme-foale-oam-egeria-tickets-2004566371980",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Lunchtime Talks Series | Graeme Foale OAM, Egeria event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/lunchtime-talks-series-graeme-foale-oam-egeria-tickets-2004566371980",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "magic-of-the-faraway-tree-launceston-christmas-pantomime-2026-12-01-launceston",
@@ -3434,6 +4040,63 @@
     "lastChecked": "2026-11-14"
   },
   {
+    "slug": "how-to-choose-a-new-career-fast-2026-12-03-hobart",
+    "name": "How to Choose a (New) Career Fast",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-12-03",
+    "endDate": "2026-12-03",
+    "categories": [
+      "Events"
+    ],
+    "summary": "How to Choose a (New) Career Fast in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://www.eventbrite.co.uk/e/how-to-choose-a-new-career-fast-tickets-1993681331531",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "How to Choose a (New) Career Fast event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14"
+  },
+  {
+    "slug": "northern-mbt-christmas-drinks-2026-12-03-launceston",
+    "name": "Northern MBT - Christmas Drinks",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-12-03",
+    "endDate": "2026-12-03",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Northern MBT - Christmas Drinks in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "James Boag Brewhouse, Launceston",
+    "address": "39 William Street, Launceston 7250",
+    "eventUrl": "https://www.eventbrite.com.au/e/northern-mbt-christmas-drinks-tickets-2003273695550",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+    "sourceName": "Eventbrite Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Northern MBT - Christmas Drinks event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/northern-mbt-christmas-drinks-tickets-2003273695550",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
+  },
+  {
     "slug": "cosmic-breath-ceremony-candlelit-sound-bath-2026-12-04-hobart",
     "name": "COSMIC BREATH CEREMONY + CANDLELIT SOUND BATH",
     "town": "Hobart",
@@ -3541,6 +4204,37 @@
     "ticketLastChecked": "2026-11-10"
   },
   {
+    "slug": "aeg-post-purchase-cooking-demo-2026-12-05-hobart",
+    "name": "AEG POST Purchase Cooking Demo",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-05",
+    "categories": [
+      "Events"
+    ],
+    "summary": "AEG POST Purchase Cooking Demo in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "e&s Hobart",
+    "address": "133 Bathurst Street, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/aeg-post-purchase-cooking-demo-tickets-2003997861550",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "AEG POST Purchase Cooking Demo event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/aeg-post-purchase-cooking-demo-tickets-2003997861550",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
+  },
+  {
     "slug": "bravo-2026-dance-pointe-academy-albert-hall-launceston-05-dec-05-dec-2026-12-05-launceston",
     "name": "Bravo 2026 Dance Pointe Academy Albert Hall, Launceston 05 Dec - 05 Dec",
     "town": "Launceston",
@@ -3582,6 +4276,38 @@
     "priceTo": 32,
     "priceCurrency": "AUD",
     "ticketLastChecked": "2026-11-10"
+  },
+  {
+    "slug": "free-community-bus-to-mannalargenna-day-2026-12-05-launceston",
+    "name": "FREE COMMUNITY BUS TO MANNALARGENNA DAY",
+    "town": "Launceston",
+    "region": "Launceston & North",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-05",
+    "categories": [
+      "Events",
+      "Free"
+    ],
+    "summary": "FREE COMMUNITY BUS TO MANNALARGENNA DAY in Launceston. Check the source for current times, venue details and availability.",
+    "venue": "Launceston",
+    "address": "Launceston Bus Depot 7250",
+    "eventUrl": "https://www.eventbrite.com.au/e/free-community-bus-to-mannalargenna-day-tickets-2004689499257",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+    "sourceName": "Eventbrite Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "FREE COMMUNITY BUS TO MANNALARGENNA DAY event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/free-community-bus-to-mannalargenna-day-tickets-2004689499257",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "hug-mug-and-snack-plate-workshop-2026-12-05-binalong-bay",
@@ -4002,6 +4728,32 @@
     "ticketLastChecked": "2026-11-10"
   },
   {
+    "slug": "santa-s-photos-and-winter-wonderland-2026-12-11-burnie",
+    "name": "Santa’s Photos and Winter Wonderland",
+    "town": "Burnie",
+    "region": "North West",
+    "startDate": "2026-12-11",
+    "endDate": "2026-12-11",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Santa’s Photos and Winter Wonderland in Burnie. Check the official event listing for current times, venue, accessibility and booking details.",
+    "eventUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Santas-Photos",
+    "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
+    "sourceName": "Burnie City Council",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Santa’s Photos and Winter Wonderland event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14"
+  },
+  {
     "slug": "decade-the-dance-collective-albert-hall-launceston-12-dec-12-dec-2026-12-12-launceston",
     "name": "Decade The Dance Collective Albert Hall, Launceston 12 Dec - 12 Dec",
     "town": "Launceston",
@@ -4098,6 +4850,37 @@
     },
     "status": "active",
     "lastChecked": "2026-11-14"
+  },
+  {
+    "slug": "lunchtime-lecture-who-was-margaret-scott-and-why-is-she-a-tasmanian-voice-2026-12-16-hobar",
+    "name": "Lunchtime Lecture: Who was Margaret Scott and why is she a Tasmanian Voice?",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2026-12-16",
+    "endDate": "2026-12-16",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Lunchtime Lecture: Who was Margaret Scott and why is she a Tasmanian Voice? in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "State Library and Archives of Tasmania",
+    "address": "91 Murray Street, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/lunchtime-lecture-who-was-margaret-scott-and-why-is-she-a-tasmanian-voice-tickets-2004633050417",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Lunchtime Lecture: Who was Margaret Scott and why is she a Tasmanian Voice? event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/lunchtime-lecture-who-was-margaret-scott-and-why-is-she-a-tasmanian-voice-tickets-2004633050417",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true
   },
   {
     "slug": "britishmania-bme-entertainment-albert-hall-launceston-18-dec-2026-12-18-launceston",
@@ -4555,7 +5338,7 @@
     "ticketUrl": "https://www.eventbrite.com.au/e/kundalini-activation-breathwork-hobart-27-dec-tickets-2003644775460",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "tasmania-jewels-v-bendigo-spirit-2026-12-27-glenorchy",
@@ -4603,7 +5386,7 @@
     "priceFrom": 15,
     "priceTo": 470,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "launceston-beerfest-nye-30-and-31-december-2026-12-30-launceston",
@@ -4635,7 +5418,7 @@
     "ticketUrl": "https://www.eventbrite.com.au/e/launceston-beerfest-nye-30-31-december-tickets-1999969747352",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "launceston-beerfest-nye-30-and-31-december-2026-12-31-launceston",
@@ -4665,7 +5448,7 @@
     "ticketUrl": "https://www.eventbrite.com.au/e/launceston-beerfest-nye-30-31-december-tickets-1999969747352?aff=ebdssbcitybrowse",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "mental-as-anything-new-year-and-8217-s-day-at-craigie-knowe-vineyard-2027-01-01-cranbrook",
@@ -4694,7 +5477,7 @@
     "lastChecked": "2026-10-15",
     "venue": "Craigie Knowe Vineyard",
     "address": "80 Glen Gala Road, Cranbrook TAS 7190",
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "tasmania-jackjumpers-v-perth-wildcats-2027-01-01-glenorchy",
@@ -4742,7 +5525,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "luxury-coral-sculpture-experience-2027-01-04-binalong-bay",
@@ -4771,7 +5554,7 @@
     },
     "status": "active",
     "lastChecked": "2026-11-05",
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "clay-play-parent-and-child-workshop-2027-01-06-binalong-bay",
@@ -4800,7 +5583,7 @@
     },
     "status": "active",
     "lastChecked": "2026-11-05",
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "clay-whale-tail-summer-family-workshop-2027-01-06-binalong-bay",
@@ -4830,7 +5613,7 @@
     },
     "status": "active",
     "lastChecked": "2026-11-05",
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "tasmania-jewels-v-adelaide-lightning-2027-01-07-glenorchy",
@@ -4878,7 +5661,7 @@
     "priceFrom": 15,
     "priceTo": 470,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "2027-king-island-pro-am-2027-01-15-currie",
@@ -4919,7 +5702,40 @@
     "priceFrom": 2875,
     "priceTo": 2875,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
+  },
+  {
+    "slug": "gin-uary-hobart-gin-festival-2027-2027-01-16-hobart",
+    "name": "Gin-uary Hobart Gin Festival 2027",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2027-01-16",
+    "endDate": "2027-01-17",
+    "categories": [
+      "Events",
+      "Music"
+    ],
+    "summary": "Gin-uary Hobart Gin Festival 2027 in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Princes Wharf 1",
+    "address": "Castray Esplanade, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/gin-uary-hobart-gin-festival-2027-tickets-2004406980235",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Gin-uary Hobart Gin Festival 2027 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/gin-uary-hobart-gin-festival-2027-tickets-2004406980235",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "tasmania-jewels-v-townsville-fire-2027-01-21-glenorchy",
@@ -4967,7 +5783,7 @@
     "priceFrom": 15,
     "priceTo": 470,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "tasmania-jackjumpers-v-cairns-taipans-2027-01-22-glenorchy",
@@ -5015,7 +5831,37 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
+  },
+  {
+    "slug": "playful-architecture-drawing-in-colour-and-monochrome-2027-01-23-hobart",
+    "name": "PLAYFUL ARCHITECTURE: Drawing in Colour and Monochrome",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2027-01-23",
+    "endDate": "2027-01-23",
+    "categories": [
+      "Events"
+    ],
+    "summary": "PLAYFUL ARCHITECTURE: Drawing in Colour and Monochrome in Hobart. Check the source for current times, venue details and availability.",
+    "eventUrl": "https://www.eventbrite.co.uk/e/playful-architecture-drawing-in-colour-and-monochrome-tickets-2001505293211",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "PLAYFUL ARCHITECTURE: Drawing in Colour and Monochrome event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com/e/drawing-andy-warhol-christmas-at-tiffanys-recording-only-tickets-1967607036613?aff=oddtdtcreator",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "tasmania-jewels-v-sydney-flames-2027-01-25-glenorchy",
@@ -5063,7 +5909,7 @@
     "priceFrom": 15,
     "priceTo": 470,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "ignite-cup-tasmania-jackjumpers-v-illawarra-hawks-2027-01-27-glenorchy",
@@ -5111,7 +5957,7 @@
     "priceFrom": 2,
     "priceTo": 490,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "tasmania-jackjumpers-v-brisbane-bullets-2027-01-31-glenorchy",
@@ -5159,7 +6005,42 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-10"
+    "ticketLastChecked": "2026-11-14"
+  },
+  {
+    "slug": "farewell-libba-tom-liberatore-retirement-show-live-in-launceston-2027-02-05-invermay",
+    "name": "Farewell Libba! Tom Liberatore Retirement Show LIVE in Launceston!",
+    "town": "Invermay",
+    "region": "Launceston & North",
+    "startDate": "2027-02-05",
+    "endDate": "2027-02-05",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Farewell Libba! Tom Liberatore Retirement Show LIVE in Launceston! in Invermay. Check the source for current times, venue details and availability.",
+    "venue": "The Tramsheds Function Centre",
+    "address": "4 Invermay Road 7248",
+    "eventUrl": "https://www.eventbrite.com.au/e/farewell-libba-tom-liberatore-retirement-show-live-in-launceston-tickets-2002014231459",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+    "sourceName": "Eventbrite Launceston",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Farewell Libba! Tom Liberatore Retirement Show LIVE in Launceston! event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/farewell-libba-tom-liberatore-retirement-show-live-in-launceston-tickets-2002014231459",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "priceFrom": 29,
+    "priceTo": 450,
+    "priceCurrency": "AUD",
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "tasmania-jackjumpers-v-melbourne-united-2027-02-05-glenorchy",
@@ -5207,7 +6088,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-04"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "tasmania-jackjumpers-v-perth-wildcats-2027-02-10-glenorchy",
@@ -5255,7 +6136,7 @@
     "priceFrom": 30,
     "priceTo": 660,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-04"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "an-evening-with-gillian-welch-and-david-rawlings-2027-02-11-launceston",
@@ -5301,7 +6182,7 @@
     "priceFrom": 107.08,
     "priceTo": 153.79,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-04"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "festival-of-king-island-2027-2027-02-12-currie",
@@ -5332,7 +6213,7 @@
     "priceFrom": 30,
     "priceTo": 75,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-04"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "seventh-wonder-performs-fleetwood-mac-orchestrated-2027-02-19-launceston",
@@ -5378,7 +6259,7 @@
     "priceFrom": 55,
     "priceTo": 89,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-04"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "arj-barker-the-eleventh-hour-albert-hall-launceston-20-feb-2027-02-20-launceston",
@@ -5421,7 +6302,7 @@
     "priceFrom": 59.9,
     "priceTo": 64.9,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-04"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "drum-tao-samurai-of-the-drum-2027-02-23-launceston",
@@ -5467,7 +6348,7 @@
     "priceFrom": 54.9,
     "priceTo": 99.9,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-05"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "clover-hill-cup-marquee-launceston-2027-2027-02-24-mowbray",
@@ -5499,7 +6380,7 @@
     "ticketUrl": "https://www.eventbrite.com.au/e/clover-hill-cup-marquee-launceston-2027-tickets-1998847722345",
     "ticketProvider": "Eventbrite",
     "bookingRequired": true,
-    "ticketLastChecked": "2026-11-05"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "fresh-comedy-presents-tom-ballard-live-2027-02-26-launceston",
@@ -5532,7 +6413,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-11-05"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "spoke-motorcycle-festival-2027-02-26-little-swanport",
@@ -5563,7 +6444,7 @@
     "lastChecked": "2026-10-15",
     "venue": "100 Mayfield Jetty Road",
     "address": "100 Mayfield Jetty Road, Little Swanport TAS 7190",
-    "ticketLastChecked": "2026-11-05"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "echo-festival-2027-03-12-swansea",
@@ -5593,7 +6474,7 @@
     "lastChecked": "2026-10-15",
     "venue": "13512 Tasman Hwy",
     "address": "13512 Tasman Hwy, Swansea TAS 7190",
-    "ticketLastChecked": "2026-11-05"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "denise-scott-tickety-boo-2027-04-02-launceston",
@@ -5626,7 +6507,7 @@
     "ticketProvider": "Humanitix",
     "bookingRequired": true,
     "availability": "InStock",
-    "ticketLastChecked": "2026-11-05"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "kick-at-40-dellacoma-rio-and-the-australian-inxs-tribute-show-albert-hall-launceston-08-ap",
@@ -5665,7 +6546,11 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-06"
+    "lastChecked": "2026-11-06",
+    "priceFrom": 55,
+    "priceTo": 75,
+    "priceCurrency": "AUD",
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "dolly-and-kenny-forever-2027-04-10-launceston",
@@ -5711,7 +6596,7 @@
     "priceFrom": 67.5,
     "priceTo": 79,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-05"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "delta-goodrem-pure-world-tour-2027-04-26-glenorchy",
@@ -5758,7 +6643,7 @@
     "priceFrom": 99.9,
     "priceTo": 611.6,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-05"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "banff-mountain-film-festival-world-tour-2027-launceston-thurs-27-may-6-30pm-2027-05-27-lau",
@@ -5790,7 +6675,9 @@
     "lastChecked": "2026-11-10",
     "ticketUrl": "https://events.humanitix.com/banff-mountain-film-festival-world-tour-2027-launceston-thurs-27-may-630pm",
     "ticketProvider": "Humanitix",
-    "bookingRequired": true
+    "bookingRequired": true,
+    "availability": "InStock",
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "the-everly-brothers-and-roy-orbison-the-robertson-brothers-albert-hall-launceston-23-jun-2",
@@ -5833,7 +6720,7 @@
     "priceFrom": 74.95,
     "priceTo": 79.95,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-05"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "bicheno-beams-2027-06-26-bicheno",
@@ -5862,7 +6749,7 @@
     "lastChecked": "2026-10-15",
     "venue": "78 Burgess Street",
     "address": "78 Burgess Street, Bicheno TAS 7215",
-    "ticketLastChecked": "2026-11-05"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "urzila-carlson-that-s-enough-already-albert-hall-launceston-27-jun-2027-06-27-launceston",
@@ -5905,7 +6792,7 @@
     "priceFrom": 69.9,
     "priceTo": 69.9,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-05"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "tasmanian-fibre-festival-2027-07-09-launceston",
@@ -5952,7 +6839,39 @@
     "priceFrom": 5,
     "priceTo": 40,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-05"
+    "ticketLastChecked": "2026-11-14"
+  },
+  {
+    "slug": "hobart-international-student-summit-2027-2027-07-17-hobart",
+    "name": "Hobart International Student Summit 2027",
+    "town": "Hobart",
+    "region": "Hobart & South",
+    "startDate": "2027-07-17",
+    "endDate": "2027-07-17",
+    "categories": [
+      "Events"
+    ],
+    "summary": "Hobart International Student Summit 2027 in Hobart. Check the source for current times, venue details and availability.",
+    "venue": "Hotel Grand Chancellor Hobart",
+    "address": "1 Davey Street, Hobart 7000",
+    "eventUrl": "https://www.eventbrite.com.au/e/hobart-international-student-summit-2027-tickets-2002675513371",
+    "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
+    "sourceName": "Eventbrite Hobart",
+    "image": {
+      "url": "/images/categories/events.svg",
+      "alt": "Hobart International Student Summit 2027 event category image",
+      "attribution": "TassieNow",
+      "license": "Site artwork",
+      "licenseUrl": null,
+      "sourceUrl": null,
+      "isFallback": true
+    },
+    "status": "active",
+    "lastChecked": "2026-11-14",
+    "ticketUrl": "https://www.eventbrite.com.au/e/hobart-international-student-summit-2027-tickets-2002675513371",
+    "ticketProvider": "Eventbrite",
+    "bookingRequired": true,
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "i-am-woman-mj-enterprises-albert-hall-launceston-24-jul-2027-07-24-launceston",
@@ -5991,7 +6910,11 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-14"
+    "lastChecked": "2026-11-14",
+    "priceFrom": 60,
+    "priceTo": 74.9,
+    "priceCurrency": "AUD",
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "winter-challenge-tasmania-2027-08-15-orford",
@@ -6020,7 +6943,7 @@
     "lastChecked": "2026-10-15",
     "venue": "31 Rheban Road",
     "address": "31 Rheban Road, Orford TAS 7190",
-    "ticketLastChecked": "2026-11-05"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "the-60-four-studio-64-2027-09-03-launceston",
@@ -6068,7 +6991,7 @@
     "priceFrom": 74.95,
     "priceTo": 89.95,
     "priceCurrency": "AUD",
-    "ticketLastChecked": "2026-11-05"
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "nazeem-hussain-i-am-being-calm-albert-hall-launceston-04-sep-2027-09-04-launceston",
@@ -6107,7 +7030,11 @@
       }
     },
     "status": "active",
-    "lastChecked": "2026-11-09"
+    "lastChecked": "2026-11-09",
+    "priceFrom": 50.7,
+    "priceTo": 50.7,
+    "priceCurrency": "AUD",
+    "ticketLastChecked": "2026-11-14"
   },
   {
     "slug": "australian-musical-theatre-festival-2027-09-26-launceston",
