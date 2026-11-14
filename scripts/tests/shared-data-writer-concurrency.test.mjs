@@ -30,3 +30,10 @@ test('overlapping data publishers use the non-cancelling shared write queue', ()
     ), file + ' must not race another shared data writer or cancel an older verified refresh');
   }
 });
+
+test('event publisher preserves unrelated build edits during its final rebase', () => {
+  const workflow = readFileSync(new URL('../../.github/workflows/events.yml', import.meta.url), 'utf8');
+  assert.match(workflow, /git commit -m "data: refresh Tasmanian events and verified booking links"/);
+  assert.match(workflow, /git pull --rebase --autostash origin main/);
+  assert.match(workflow, /git add src\/data\/events\.json src\/data\/event-media-review\.json src\/data\/catalogue-audit\.json/);
+});
