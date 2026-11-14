@@ -19,6 +19,14 @@ permissions:
   contents: write
   actions: write
 
+# This workflow writes events.json and catalogue-audit.json, just like the
+# long-running discovery/event jobs. A photo-only commit must not advance main
+# underneath a catalogue job's final git pull --rebase.
+concurrency:
+  group: tassienow-data-writes
+  queue: max
+  cancel-in-progress: false
+
 jobs:
   inspect-event-photos:
     runs-on: ubuntu-latest
