@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-14T22:47:02.886Z",
+  "checkedAt": "2026-11-15T23:13:26.473Z",
   "added": [],
   "addedEvents": [
     "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe"
@@ -40,25 +40,20 @@
       "id": "southern-markets",
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
-      "pagesFetched": 1,
-      "candidatesFound": 0,
-      "errors": [
-        {
-          "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
-          "message": "No market candidates parsed; source may need a parser update or browser rendering"
-        }
-      ]
+      "pagesFetched": 7,
+      "candidatesFound": 12,
+      "errors": []
     },
     {
       "id": "southern-market-guide",
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
-      "pagesFetched": 1,
-      "candidatesFound": 0,
+      "pagesFetched": 6,
+      "candidatesFound": 40,
       "errors": [
         {
-          "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
-          "message": "No market candidates parsed; source may need a parser update or browser rendering"
+          "url": "https://hobartandbeyond.com.au/event/judbury-market",
+          "message": "HTTP 404"
         }
       ]
     },
@@ -82,8 +77,8 @@
       "id": "huon-valley-markets",
       "name": "Huon Valley Council",
       "url": "https://www.huonvalley.tas.gov.au/events/",
-      "pagesFetched": 2,
-      "candidatesFound": 3,
+      "pagesFetched": 3,
+      "candidatesFound": 5,
       "errors": []
     },
     {
@@ -91,13 +86,8 @@
       "name": "Waratah-Wynyard Council",
       "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
       "pagesFetched": 1,
-      "candidatesFound": 0,
-      "errors": [
-        {
-          "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
-          "message": "No market candidates parsed; source may need a parser update or browser rendering"
-        }
-      ]
+      "candidatesFound": 3,
+      "errors": []
     }
   ],
   "totals": {
@@ -108,11 +98,11 @@
     "events": 4,
     "addedEvents": 1,
     "updated": 0,
-    "failedSources": 4
+    "failedSources": 2
   },
   "run": {
-    "id": "43649767508",
+    "id": "43773483037",
     "event": "schedule",
-    "sourceCommit": "155766fcd2eaa5a22f4d379959eae571bce3750e"
+    "sourceCommit": "c8638b8bcaec871733716a9c9f5e36190d356d5d"
   }
 }
