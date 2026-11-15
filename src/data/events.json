@@ -3880,13 +3880,26 @@
     "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
     "sourceName": "Eventbrite Hobart",
     "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Octomore 17 Whisky Series Release event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Hadley%E2%80%99s_Orient_Hotel_-_Street_View.jpg/1280px-Hadley%E2%80%99s_Orient_Hotel_-_Street_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hadley%E2%80%99s_Orient_Hotel_-_Street_View.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "attribution": "Diggers2004",
+      "alt": "Hadley's Orient Hotel, Hobart — venue photograph, not the advertised event",
+      "mediaType": "contextual",
+      "caption": "Venue photograph: Hadley's Orient Hotel, Hobart. This does not depict the advertised event.",
+      "sourceMethod": "commons-venue",
+      "isFallback": false,
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "contextual",
+        "venue": "Hadley's Orient Hotel",
+        "town": "Hobart",
+        "sourceFileTitle": "File:Hadley’s Orient Hotel - Street View.jpg",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Hadley%E2%80%99s_Orient_Hotel_-_Street_View.jpg",
+        "checkedAt": "2026-11-14",
+        "evidence": "Full venue name in Commons file title and Tasmania/town in source description"
+      }
     },
     "status": "active",
     "lastChecked": "2026-11-15",
