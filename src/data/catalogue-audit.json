@@ -215,38 +215,38 @@
     }
   },
   "events": {
-    "active": 223,
+    "active": 225,
     "media": {
       "licensedHeroCoverage": {
-        "count": 61,
-        "percent": 27.4
+        "count": 60,
+        "percent": 26.7
       },
-      "stillUsingCategoryArtwork": 162,
+      "stillUsingCategoryArtwork": 165,
       "bySource": {
         "verified-event-venue": 38,
-        "verified-event-activity": 10,
         "commons-venue": 9,
+        "verified-event-activity": 9,
         "verified-event-performer": 3,
         "commons-event": 1
       },
       "byMediaType": {
         "contextual": 47,
-        "activity-illustrative": 10,
+        "activity-illustrative": 9,
         "performer-context": 3,
         "event-photo": 1
       },
       "byRegion": {
         "Hobart & South": {
           "count": 28,
-          "percent": 26.4
+          "percent": 26.2
         },
         "Launceston & North": {
           "count": 26,
-          "percent": 37.7
+          "percent": 37.1
         },
         "North West": {
-          "count": 5,
-          "percent": 16.1
+          "count": 4,
+          "percent": 12.9
         },
         "East Coast": {
           "count": 1,
@@ -271,16 +271,16 @@
       }
     },
     "ticketCoverage": {
-      "count": 106,
-      "percent": 47.5
+      "count": 105,
+      "percent": 46.7
     },
     "priceCoverage": {
-      "count": 65,
-      "percent": 29.1
+      "count": 64,
+      "percent": 28.4
     },
     "providers": {
       "Eventbrite": 64,
-      "Humanitix": 24,
+      "Humanitix": 23,
       "Ticketek": 17,
       "Ticketmaster": 1
     },
@@ -293,19 +293,19 @@
       "MyState Bank Arena": 18,
       "Devonport City Council": 13,
       "East Coast Tasmania": 13,
-      "Humanitix Hobart": 11,
+      "Humanitix Hobart": 12,
       "Humanitix Launceston": 11,
       "Glenorchy City Council": 6,
       "Theatre Royal Hobart": 6,
       "City of Clarence": 3,
       "City of Hobart": 3,
       "King Island Tourism": 3,
-      "City of Launceston": 1,
+      "City of Launceston": 2,
       "Highlands BushFest organising team": 1
     },
     "regions": {
-      "Hobart & South": 106,
-      "Launceston & North": 69,
+      "Hobart & South": 107,
+      "Launceston & North": 70,
       "North West": 31,
       "East Coast": 13,
       "West Coast": 0,
@@ -322,20 +322,20 @@
       "tomorrow": "2026-11-18",
       "nextWeekendStart": "2026-11-21",
       "nextWeekendEnd": "2026-11-22",
-      "todayOrTomorrow": 36,
-      "thisWeekend": 37,
+      "todayOrTomorrow": 37,
+      "thisWeekend": 39,
       "townsTodayOrTomorrow": {
         "Huonville": 13,
-        "Hobart": 8,
-        "Launceston": 6,
-        "Burnie": 5,
+        "Hobart": 9,
+        "Launceston": 7,
+        "Burnie": 4,
         "Devonport": 3,
         "Currie": 1
       },
       "regionsThisWeekend": {
         "Hobart & South": 19,
-        "Launceston & North": 10,
-        "North West": 5,
+        "Launceston & North": 11,
+        "North West": 6,
         "East Coast": 1,
         "West Coast": 0,
         "Central Tasmania": 1,
@@ -348,7 +348,7 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 21
+      "missingOrOlderThan30Days": 8
     },
     "sourceRegionalMix": {
       "Hobart & South / Eventbrite Hobart": 41,
@@ -359,15 +359,15 @@
       "North West / Burnie City Council": 18,
       "East Coast / East Coast Tasmania": 13,
       "North West / Devonport City Council": 13,
-      "Hobart & South / Humanitix Hobart": 11,
+      "Hobart & South / Humanitix Hobart": 12,
       "Launceston & North / Humanitix Launceston": 11,
       "Hobart & South / Glenorchy City Council": 6,
       "Hobart & South / Theatre Royal Hobart": 6,
       "Hobart & South / City of Clarence": 3,
       "Hobart & South / City of Hobart": 3,
       "King Island / King Island Tourism": 3,
-      "Central Tasmania / Highlands BushFest organising team": 1,
-      "Launceston & North / City of Launceston": 1
+      "Launceston & North / City of Launceston": 2,
+      "Central Tasmania / Highlands BushFest organising team": 1
     }
   }
 }
