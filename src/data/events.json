@@ -4976,13 +4976,26 @@
     "sourceUrl": "https://humanitix.com/events/au--hobart--7000",
     "sourceName": "Humanitix Hobart",
     "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Masked Owl Ball event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Facade_of_City_Hall%2C_Hobart%2C_Tasmania.jpg/1280px-Facade_of_City_Hall%2C_Hobart%2C_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Facade_of_City_Hall,_Hobart,_Tasmania.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Michael Coghlan",
+      "alt": "City Hall, Hobart — venue photograph, not the advertised event",
+      "mediaType": "contextual",
+      "caption": "Venue photograph: City Hall, Hobart. This does not depict the advertised event.",
+      "sourceMethod": "commons-venue",
+      "isFallback": false,
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "contextual",
+        "venue": "City Hall",
+        "town": "Hobart",
+        "sourceFileTitle": "File:Facade of City Hall, Hobart, Tasmania.jpg",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Facade_of_City_Hall,_Hobart,_Tasmania.jpg",
+        "checkedAt": "2026-11-17",
+        "evidence": "Full venue name in Commons file title and Tasmania/town in source description"
+      }
     },
     "status": "active",
     "lastChecked": "2026-11-17",
