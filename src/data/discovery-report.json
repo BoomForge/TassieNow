@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T02:08:52.415Z",
+  "checkedAt": "2026-11-18T01:22:46.986Z",
   "added": [],
   "addedEvents": [
     "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe"
@@ -40,20 +40,25 @@
       "id": "southern-markets",
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
-      "pagesFetched": 7,
-      "candidatesFound": 16,
-      "errors": []
+      "pagesFetched": 1,
+      "candidatesFound": 0,
+      "errors": [
+        {
+          "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
+          "message": "No market candidates parsed; source may need a parser update or browser rendering"
+        }
+      ]
     },
     {
       "id": "southern-market-guide",
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
-      "pagesFetched": 6,
-      "candidatesFound": 43,
+      "pagesFetched": 1,
+      "candidatesFound": 0,
       "errors": [
         {
-          "url": "https://hobartandbeyond.com.au/event/judbury-market",
-          "message": "HTTP 404"
+          "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
+          "message": "No market candidates parsed; source may need a parser update or browser rendering"
         }
       ]
     },
@@ -86,8 +91,13 @@
       "name": "Waratah-Wynyard Council",
       "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
       "pagesFetched": 1,
-      "candidatesFound": 3,
-      "errors": []
+      "candidatesFound": 0,
+      "errors": [
+        {
+          "url": "https://www.warwyn.tas.gov.au/community-events/wynyard-foreshore-market/",
+          "message": "No market candidates parsed; source may need a parser update or browser rendering"
+        }
+      ]
     }
   ],
   "totals": {
@@ -98,11 +108,11 @@
     "events": 4,
     "addedEvents": 1,
     "updated": 0,
-    "failedSources": 2
+    "failedSources": 4
   },
   "run": {
-    "id": "44000651580",
+    "id": "44215152512",
     "event": "schedule",
-    "sourceCommit": "5a6406b80535885b200a6ebea6dc499cb82396f3"
+    "sourceCommit": "de5555c49bb1802414ee1df514affdccd3ad8485"
   }
 }
