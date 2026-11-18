@@ -6,23 +6,23 @@
     "suppressed": 66,
     "media": {
       "realHeroCoverage": {
-        "count": 310,
-        "percent": 14.5
+        "count": 314,
+        "percent": 14.7
       },
       "twoPlusImages": {
-        "count": 171,
-        "percent": 8
+        "count": 174,
+        "percent": 8.1
       },
       "fourPlusImages": {
-        "count": 95,
-        "percent": 4.4
+        "count": 97,
+        "percent": 4.5
       },
       "sixPlusImages": {
-        "count": 72,
+        "count": 73,
         "percent": 3.4
       },
-      "totalLicensedImages": 921,
-      "averageImagesPerPublicListing": 0.43
+      "totalLicensedImages": 1030,
+      "averageImagesPerPublicListing": 0.48
     },
     "sources": {
       "websiteCoverage": {
@@ -34,8 +34,8 @@
         "percent": 13.7
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 256,
-        "percent": 12
+        "count": 248,
+        "percent": 11.6
       },
       "wikidataLinkage": {
         "count": 630,
@@ -48,7 +48,7 @@
         "percent": 19.2
       },
       "recurringSchedule": {
-        "count": 126,
+        "count": 127,
         "percent": 5.9
       },
       "phone": {
@@ -64,8 +64,8 @@
         "percent": 23.9
       },
       "bookingUrl": {
-        "count": 162,
-        "percent": 7.6
+        "count": 155,
+        "percent": 7.2
       },
       "fee": {
         "count": 28,
@@ -90,10 +90,10 @@
       "curated": 41
     },
     "qualityTiers": {
-      "standard": 772,
+      "standard": 770,
       "strong": 624,
       "low": 469,
-      "featured": 273
+      "featured": 275
     },
     "regions": {
       "Hobart & South": 778,
@@ -183,11 +183,11 @@
         "Flinders Island": 4,
         "King Island": 8
       },
-      "missingRealPhoto": 1020,
+      "missingRealPhoto": 1019,
       "media": {
         "realHeroCoverage": {
-          "count": 35,
-          "percent": 3.3
+          "count": 36,
+          "percent": 3.4
         },
         "twoPlusImages": {
           "count": 9,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 219,
+    "active": 218,
     "media": {
       "licensedHeroCoverage": {
         "count": 59,
-        "percent": 26.9
+        "percent": 27.1
       },
-      "stillUsingCategoryArtwork": 160,
+      "stillUsingCategoryArtwork": 159,
       "bySource": {
         "verified-event-venue": 38,
         "commons-venue": 9,
@@ -246,7 +246,7 @@
         },
         "North West": {
           "count": 4,
-          "percent": 12.5
+          "percent": 12.9
         },
         "East Coast": {
           "count": 1,
@@ -272,11 +272,11 @@
     },
     "ticketCoverage": {
       "count": 100,
-      "percent": 45.7
+      "percent": 45.9
     },
     "priceCoverage": {
       "count": 66,
-      "percent": 30.1
+      "percent": 30.3
     },
     "providers": {
       "Eventbrite": 60,
@@ -289,7 +289,7 @@
       "Eventbrite Hobart": 37,
       "Eventbrite Launceston": 32,
       "Theatre North Launceston": 24,
-      "Burnie City Council": 19,
+      "Burnie City Council": 18,
       "Huon Valley Council": 18,
       "MyState Bank Arena": 18,
       "Devonport City Council": 13,
@@ -307,7 +307,7 @@
     "regions": {
       "Hobart & South": 102,
       "Launceston & North": 68,
-      "North West": 32,
+      "North West": 31,
       "East Coast": 13,
       "West Coast": 0,
       "Central Tasmania": 1,
@@ -356,9 +356,9 @@
       "Hobart & South / Eventbrite Hobart": 37,
       "Launceston & North / Eventbrite Launceston": 32,
       "Launceston & North / Theatre North Launceston": 24,
-      "North West / Burnie City Council": 19,
       "Hobart & South / Huon Valley Council": 18,
       "Hobart & South / MyState Bank Arena": 18,
+      "North West / Burnie City Council": 18,
       "East Coast / East Coast Tasmania": 13,
       "North West / Devonport City Council": 13,
       "Hobart & South / Humanitix Hobart": 11,
