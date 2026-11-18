@@ -18857,7 +18857,13 @@
         "identity": "original-page-asset-unverified"
       }
     ],
-    "needs": "Original source identified; explicit permission or original reusable licence required"
+    "needs": "Original source identified; explicit permission or original reusable licence required",
+    "sourceEvidence": {
+      "sourceUrl": "https://form.jotform.com/261237457215860",
+      "status": "known-original-image-needs-manual-extraction",
+      "discoveredBy": "official-source-photo-link",
+      "rights": "permission-needed"
+    }
   },
   "agricultured-2026-2026-10-21-launceston": {
     "name": "agriCULTURED 2026",
@@ -35692,6 +35698,15 @@
         "externalAssetHost": true,
         "rights": "permission-needed",
         "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://cdn.evbstatic.com/s3-build/fe/build/images/3f96dddb80dd0a06eb9e5836cc641f33-generic_2_desktop.webp",
+        "sourcePage": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+        "source": "original-page-img",
+        "alt": "Launceston",
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
       }
     ],
     "needs": "Original source identified; explicit permission or original reusable licence required"
@@ -37331,6 +37346,102 @@
         "sourcePage": "https://www.devonport.tas.gov.au/events/festive-friday-2026/",
         "source": "on-page-gallery",
         "alt": null,
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      }
+    ],
+    "needs": "Original source identified; explicit permission or original reusable licence required"
+  },
+  "sketching-on-the-move-at-brisbane-street-mall-2026-11-20-launceston": {
+    "name": "Sketching on the Move at Brisbane Street Mall",
+    "organiser": "Eventbrite Launceston",
+    "source": "https://www.eventbrite.com.au/e/sketching-on-the-move-at-brisbane-street-mall-tickets-2003490389688",
+    "candidates": [
+      {
+        "url": "https://cdn.evbstatic.com/s3-build/fe/build/images/3f96dddb80dd0a06eb9e5836cc641f33-generic_2_desktop.webp",
+        "sourcePage": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+        "source": "original-page-img",
+        "alt": "Launceston",
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      }
+    ],
+    "needs": "Original source identified; explicit permission or original reusable licence required"
+  },
+  "school-of-prophets-vi-dreams-and-visions-iii-interpretation-and-alignment-2026-11-19-launc": {
+    "name": "SCHOOL OF PROPHETS VI: Dreams & Visions III - Interpretation and Alignment",
+    "organiser": "Eventbrite Launceston",
+    "source": "https://www.eventbrite.ca/e/school-of-prophets-vi-dreams-visions-iii-interpretation-and-alignment-tickets-2003064401546",
+    "candidates": [
+      {
+        "url": "https://cdn.evbstatic.com/s3-build/fe/build/images/39ac4703250a1d0fb15911c2c5f10174-generic_1_desktop.webp",
+        "sourcePage": "https://www.eventbrite.com.au/d/australia--launceston/events/",
+        "source": "original-page-img",
+        "alt": "Launceston",
+        "externalAssetHost": true,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      }
+    ],
+    "needs": "Original source identified; explicit permission or original reusable licence required"
+  },
+  "targa-tasmania-2026-2026-11-19-burnie": {
+    "name": "Targa Tasmania 2026",
+    "organiser": "Burnie City Council",
+    "source": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Targa-Tasmania-2026",
+    "candidates": [
+      {
+        "url": "https://www.burnie.tas.gov.au/files/content/public/v/11/community/whats-on-events/2026/targa-tasmania-2026/social-tiles-1080-x-1350-16.jpg?w=1200",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Targa-Tasmania-2026",
+        "source": "social-preview",
+        "alt": null,
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://www.burnie.tas.gov.au/files/content/public/v/11/community/whats-on-events/2026/targa-tasmania-2026/social-tiles-1080-x-1350-16.jpg?w=1080",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Targa-Tasmania-2026",
+        "source": "social-preview",
+        "alt": null,
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://www.burnie.tas.gov.au/files/assets/public/templateimages/print-header.png",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Targa-Tasmania-2026",
+        "source": "on-page-gallery",
+        "alt": "Burnie City Council - Logo",
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://www.burnie.tas.gov.au/files/content/public/v/11/community/whats-on-events/2026/targa-tasmania-2026/social-tiles-1080-x-1350-16.jpg?dimension=pageimage&w=480",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Targa-Tasmania-2026",
+        "source": "on-page-gallery",
+        "alt": "Social Tiles (1080 x 1350) (16).jpg",
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://www.burnie.tas.gov.au/files/content/public/v/11/community/whats-on-events/2026/targa-tasmania-2026/event.png",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Targa-Tasmania-2026",
+        "source": "on-page-gallery",
+        "alt": "event.png",
+        "externalAssetHost": false,
+        "rights": "permission-needed",
+        "identity": "original-page-asset-unverified"
+      },
+      {
+        "url": "https://www.burnie.tas.gov.au/files/assets/public/v/1/images/events/targa/img_3613.jpeg?w=375",
+        "sourcePage": "https://www.burnie.tas.gov.au/Community/Whats-On-Events/2026/Targa-Tasmania-2026",
+        "source": "on-page-gallery",
+        "alt": "IMG_3613.jpeg",
         "externalAssetHost": false,
         "rights": "permission-needed",
         "identity": "original-page-asset-unverified"
