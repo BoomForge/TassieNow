@@ -12896,5 +12896,79 @@
         "observedAt": "2026-11-17T04:01:57.492Z"
       }
     ]
+  },
+  "richmond-bakery": {
+    "name": "Richmond Bakery",
+    "town": "Richmond",
+    "candidates": [
+      {
+        "id": "openverse:4f6876b6-b3ec-4ff5-9fa4-151772db2140",
+        "url": "https://live.staticflickr.com/3183/3067139171_4d639524fc_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/89165847@N00/3067139171",
+        "discoveryPage": "https://api.openverse.org/v1/images/4f6876b6-b3ec-4ff5-9fa4-151772db2140/",
+        "title": "Richmond Bakery",
+        "credit": "mikecogh",
+        "licence": "BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 768,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Exact listing and town in source title",
+        "observedAt": "2026-11-19T02:41:12.617Z"
+      },
+      {
+        "id": "openverse:75aabd12-9f74-48a5-a2c7-5fd721e1ff64",
+        "url": "https://live.staticflickr.com/3280/3067139409_743fcf7827_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/89165847@N00/3067139409",
+        "discoveryPage": "https://api.openverse.org/v1/images/75aabd12-9f74-48a5-a2c7-5fd721e1ff64/",
+        "title": "Cafe",
+        "credit": "mikecogh",
+        "licence": "BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 768,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive words and town only; identity unverified",
+        "observedAt": "2026-11-19T02:41:12.617Z"
+      },
+      {
+        "id": "openverse:41e78f3c-a348-463c-b958-fc90cf79498d",
+        "url": "https://live.staticflickr.com/7152/6769692499_3a55eb59ff_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/37804160@N00/6769692499",
+        "discoveryPage": "https://api.openverse.org/v1/images/41e78f3c-a348-463c-b958-fc90cf79498d/",
+        "title": "fair dinkum sweets",
+        "credit": "SqueakyMarmot",
+        "licence": "BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "provider": "flickr",
+        "width": 768,
+        "height": 1024,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive words and town only; identity unverified",
+        "observedAt": "2026-11-19T02:41:12.617Z"
+      },
+      {
+        "id": "openverse:0eac19d0-a7a8-4129-80b8-37b72141ff81",
+        "url": "https://live.staticflickr.com/2005/2363876228_82a54a5d29_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/10559879@N00/2363876228",
+        "discoveryPage": "https://api.openverse.org/v1/images/0eac19d0-a7a8-4129-80b8-37b72141ff81/",
+        "title": "Profiteroles - Chimmy's Bakery, Richmond",
+        "credit": "avlxyz",
+        "licence": "BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 768,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full name and town in indexed metadata; verify original",
+        "observedAt": "2026-11-19T02:41:12.617Z"
+      }
+    ]
   }
 }
