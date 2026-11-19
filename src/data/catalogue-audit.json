@@ -21,8 +21,8 @@
         "count": 73,
         "percent": 3.4
       },
-      "totalLicensedImages": 1027,
-      "averageImagesPerPublicListing": 0.48
+      "totalLicensedImages": 934,
+      "averageImagesPerPublicListing": 0.44
     },
     "sources": {
       "websiteCoverage": {
@@ -30,33 +30,33 @@
         "percent": 17.2
       },
       "officialSourceCoverage": {
-        "count": 291,
-        "percent": 13.6
+        "count": 292,
+        "percent": 13.7
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 248,
-        "percent": 11.6
+        "count": 273,
+        "percent": 12.8
       },
       "wikidataLinkage": {
-        "count": 630,
-        "percent": 29.5
+        "count": 633,
+        "percent": 29.6
       }
     },
     "details": {
       "openingHours": {
-        "count": 410,
+        "count": 411,
         "percent": 19.2
       },
       "recurringSchedule": {
-        "count": 126,
+        "count": 127,
         "percent": 5.9
       },
       "phone": {
-        "count": 395,
+        "count": 396,
         "percent": 18.5
       },
       "email": {
-        "count": 207,
+        "count": 208,
         "percent": 9.7
       },
       "address": {
@@ -64,8 +64,8 @@
         "percent": 23.9
       },
       "bookingUrl": {
-        "count": 119,
-        "percent": 5.6
+        "count": 171,
+        "percent": 8
       },
       "fee": {
         "count": 28,
@@ -91,9 +91,9 @@
     },
     "qualityTiers": {
       "standard": 772,
-      "strong": 624,
+      "strong": 623,
       "low": 469,
-      "featured": 273
+      "featured": 274
     },
     "regions": {
       "Hobart & South": 778,
@@ -200,8 +200,8 @@
           "percent": 22.4
         },
         "openingHours": {
-          "count": 327,
-          "percent": 31
+          "count": 328,
+          "percent": 31.1
         },
         "address": {
           "count": 419,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 226,
+    "active": 227,
     "media": {
       "licensedHeroCoverage": {
         "count": 58,
-        "percent": 25.7
+        "percent": 25.6
       },
-      "stillUsingCategoryArtwork": 168,
+      "stillUsingCategoryArtwork": 169,
       "bySource": {
         "verified-event-venue": 38,
         "verified-event-activity": 9,
@@ -244,7 +244,7 @@
         },
         "North West": {
           "count": 3,
-          "percent": 9.7
+          "percent": 9.4
         },
         "East Coast": {
           "count": 1,
@@ -270,11 +270,11 @@
     },
     "ticketCoverage": {
       "count": 108,
-      "percent": 47.8
+      "percent": 47.6
     },
     "priceCoverage": {
       "count": 63,
-      "percent": 27.9
+      "percent": 27.8
     },
     "providers": {
       "Eventbrite": 65,
@@ -287,7 +287,7 @@
       "Eventbrite Hobart": 42,
       "Eventbrite Launceston": 33,
       "Theatre North Launceston": 24,
-      "Burnie City Council": 18,
+      "Burnie City Council": 19,
       "Huon Valley Council": 18,
       "MyState Bank Arena": 18,
       "Devonport City Council": 13,
@@ -305,7 +305,7 @@
     "regions": {
       "Hobart & South": 107,
       "Launceston & North": 71,
-      "North West": 31,
+      "North West": 32,
       "East Coast": 13,
       "West Coast": 0,
       "Central Tasmania": 1,
@@ -354,9 +354,9 @@
       "Hobart & South / Eventbrite Hobart": 42,
       "Launceston & North / Eventbrite Launceston": 33,
       "Launceston & North / Theatre North Launceston": 24,
+      "North West / Burnie City Council": 19,
       "Hobart & South / Huon Valley Council": 18,
       "Hobart & South / MyState Bank Arena": 18,
-      "North West / Burnie City Council": 18,
       "East Coast / East Coast Tasmania": 13,
       "North West / Devonport City Council": 13,
       "Launceston & North / Humanitix Launceston": 12,
