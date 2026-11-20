@@ -1083,13 +1083,24 @@
     "sourceUrl": "https://www.burnie.tas.gov.au/Community/Whats-On-Events",
     "sourceName": "Burnie City Council",
     "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Targa Tasmania 2026 event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
+      "mediaType": "event-photo",
+      "caption": null,
+      "alt": "Targa Tasmania 2026 event photograph",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/FPV_BA_GT_-_Targa_Tasmania.jpg/1280px-FPV_BA_GT_-_Targa_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:FPV_BA_GT_-_Targa_Tasmania.jpg",
+      "attribution": "Dcolvin ( talk )",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceMethod": "commons-event",
+      "isFallback": false,
+      "matchEvidence": {
+        "verified": true,
+        "eventName": "Targa Tasmania 2026",
+        "sourceFileTitle": "File:FPV BA GT - Targa Tasmania.jpg",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:FPV_BA_GT_-_Targa_Tasmania.jpg",
+        "verifiedType": "event-photo",
+        "checkedAt": "2026-11-20"
+      }
     },
     "status": "active",
     "lastChecked": "2026-11-20"
