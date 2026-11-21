@@ -4768,13 +4768,26 @@
     "sourceUrl": "https://www.eventbrite.com.au/d/australia--hobart/events/",
     "sourceName": "Eventbrite Hobart",
     "image": {
-      "url": "/images/categories/events.svg",
-      "alt": "Frequency: The Secret of Everything screening in Hobart, Australia event category image",
-      "attribution": "TassieNow",
-      "license": "Site artwork",
-      "licenseUrl": null,
-      "sourceUrl": null,
-      "isFallback": true
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Interior_of_Baha%27i_Centre_of_Learning_Tasmania.jpg/1280px-Interior_of_Baha%27i_Centre_of_Learning_Tasmania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Interior_of_Baha%27i_Centre_of_Learning_Tasmania.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Owen Allen",
+      "alt": "Bahá’í Centre of Learning, Hobart — venue photograph, not the advertised event",
+      "mediaType": "contextual",
+      "caption": "Venue photograph: Bahá’í Centre of Learning, Hobart. This does not depict the advertised event.",
+      "sourceMethod": "commons-venue",
+      "isFallback": false,
+      "matchEvidence": {
+        "verified": true,
+        "verifiedType": "contextual",
+        "venue": "Bahá’í Centre of Learning",
+        "town": "Hobart",
+        "sourceFileTitle": "File:Interior of Baha'i Centre of Learning Tasmania.jpg",
+        "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Interior_of_Baha%27i_Centre_of_Learning_Tasmania.jpg",
+        "checkedAt": "2026-11-21",
+        "evidence": "Full venue name in Commons file title and Tasmania/town in source description"
+      }
     },
     "status": "active",
     "lastChecked": "2026-11-20",
