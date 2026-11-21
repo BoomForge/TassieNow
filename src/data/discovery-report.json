@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-20T00:57:51.192Z",
+  "checkedAt": "2026-11-21T00:21:06.283Z",
   "added": [],
   "addedEvents": [
     "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe"
@@ -11,14 +11,9 @@
       "id": "northern-midlands-markets",
       "name": "Northern Midlands Council",
       "url": "https://northernmidlands.tas.gov.au/community/news-events/tourism/markets-within-the-northern-midlands",
-      "pagesFetched": 0,
-      "candidatesFound": 0,
-      "errors": [
-        {
-          "url": "https://northernmidlands.tas.gov.au/community/news-events/tourism/markets-within-the-northern-midlands",
-          "message": "HTTP 403"
-        }
-      ]
+      "pagesFetched": 1,
+      "candidatesFound": 3,
+      "errors": []
     },
     {
       "id": "seasonal-produce-markets",
@@ -98,11 +93,11 @@
     "events": 4,
     "addedEvents": 1,
     "updated": 0,
-    "failedSources": 2
+    "failedSources": 1
   },
   "run": {
-    "id": "44649812867",
+    "id": "44843038219",
     "event": "schedule",
-    "sourceCommit": "90afb90566742394225ff8d56a2b8555b7eb4823"
+    "sourceCommit": "f3c08ac69a93720b2299f8a675b44c6d42ed9a48"
   }
 }
