@@ -9833,6 +9833,40 @@
           "localityInMetadata": true
         },
         "observedAt": "2026-10-19T23:49:29.140Z"
+      },
+      {
+        "id": "openverse:60da6e97-9d0c-4f7b-ba18-9de4f6043060",
+        "url": "https://live.staticflickr.com/1699/25667410433_979a2b34d6_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/89165847@N00/25667410433",
+        "discoveryPage": "https://api.openverse.org/v1/images/60da6e97-9d0c-4f7b-ba18-9de4f6043060/",
+        "title": "Spirit of the Sea v All The Things You Can't Do",
+        "credit": "mikecogh",
+        "licence": "BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "provider": "flickr",
+        "width": 751,
+        "height": 1024,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive words and town only; identity unverified",
+        "observedAt": "2026-11-21T02:37:06.028Z"
+      },
+      {
+        "id": "openverse:c575e8d8-e6e7-4473-a7a2-79e84acc71dc",
+        "url": "https://live.staticflickr.com/1594/26239382806_a1a87da0cb_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/89165847@N00/26239382806",
+        "discoveryPage": "https://api.openverse.org/v1/images/c575e8d8-e6e7-4473-a7a2-79e84acc71dc/",
+        "title": "Spirit of the Sea",
+        "credit": "mikecogh",
+        "licence": "BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 768,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive words and town only; identity unverified",
+        "observedAt": "2026-11-21T02:37:06.028Z"
       }
     ]
   },
@@ -13042,6 +13076,29 @@
         "identity": "candidate-not-verified",
         "reason": "Exact listing and town in source title",
         "observedAt": "2026-11-20T02:27:15.567Z"
+      }
+    ]
+  },
+  "harbour-lights": {
+    "name": "Harbour Lights",
+    "town": "Hobart",
+    "candidates": [
+      {
+        "id": "openverse:d5470c23-5cde-47da-b3f1-4f62d1c56b67",
+        "url": "https://live.staticflickr.com/5018/5391694806_1546dbe65e_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/89165847@N00/5391694806",
+        "discoveryPage": "https://api.openverse.org/v1/images/d5470c23-5cde-47da-b3f1-4f62d1c56b67/",
+        "title": "Lights on the Water",
+        "credit": "mikecogh",
+        "licence": "BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 768,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive words and town only; identity unverified",
+        "observedAt": "2026-11-21T02:37:06.028Z"
       }
     ]
   }
