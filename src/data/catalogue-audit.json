@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22",
+  "generatedAt": "2026-11-23",
   "places": {
     "total": 2204,
     "public": 2138,
@@ -215,38 +215,36 @@
     }
   },
   "events": {
-    "active": 216,
+    "active": 209,
     "media": {
       "licensedHeroCoverage": {
-        "count": 59,
+        "count": 57,
         "percent": 27.3
       },
-      "stillUsingCategoryArtwork": 157,
+      "stillUsingCategoryArtwork": 152,
       "bySource": {
         "verified-event-venue": 36,
-        "verified-event-activity": 10,
-        "commons-venue": 9,
-        "verified-event-performer": 3,
-        "commons-event": 1
+        "verified-event-activity": 11,
+        "commons-venue": 7,
+        "verified-event-performer": 3
       },
       "byMediaType": {
-        "contextual": 45,
-        "activity-illustrative": 10,
-        "performer-context": 3,
-        "event-photo": 1
+        "contextual": 43,
+        "activity-illustrative": 11,
+        "performer-context": 3
       },
       "byRegion": {
         "Hobart & South": {
-          "count": 29,
-          "percent": 26.9
+          "count": 30,
+          "percent": 28.3
         },
         "Launceston & North": {
           "count": 24,
-          "percent": 38.7
+          "percent": 40
         },
         "North West": {
-          "count": 5,
-          "percent": 16.7
+          "count": 2,
+          "percent": 7.1
         },
         "East Coast": {
           "count": 0,
@@ -271,70 +269,67 @@
       }
     },
     "ticketCoverage": {
-      "count": 102,
-      "percent": 47.2
+      "count": 97,
+      "percent": 46.4
     },
     "priceCoverage": {
-      "count": 58,
-      "percent": 26.9
+      "count": 57,
+      "percent": 27.3
     },
     "providers": {
-      "Eventbrite": 63,
-      "Humanitix": 21,
+      "Eventbrite": 60,
+      "Humanitix": 20,
       "Ticketek": 16,
-      "Ticketmaster": 1,
-      "TryBooking": 1
+      "Ticketmaster": 1
     },
     "sources": {
-      "Eventbrite Hobart": 46,
-      "Eventbrite Launceston": 28,
+      "Eventbrite Hobart": 45,
+      "Eventbrite Launceston": 27,
       "Theatre North Launceston": 23,
       "Huon Valley Council": 18,
-      "Burnie City Council": 17,
       "MyState Bank Arena": 17,
-      "Devonport City Council": 13,
+      "Burnie City Council": 16,
+      "Devonport City Council": 12,
       "East Coast Tasmania": 12,
       "Humanitix Hobart": 11,
-      "Humanitix Launceston": 10,
+      "Humanitix Launceston": 9,
       "Glenorchy City Council": 5,
       "Theatre Royal Hobart": 5,
-      "City of Clarence": 3,
       "City of Hobart": 3,
       "King Island Tourism": 3,
-      "City of Launceston": 1,
-      "Highlands BushFest organising team": 1
+      "City of Clarence": 2,
+      "City of Launceston": 1
     },
     "regions": {
-      "Hobart & South": 108,
-      "Launceston & North": 62,
-      "North West": 30,
+      "Hobart & South": 106,
+      "Launceston & North": 60,
+      "North West": 28,
       "East Coast": 12,
       "West Coast": 0,
-      "Central Tasmania": 1,
+      "Central Tasmania": 0,
       "Flinders Island": 0,
       "King Island": 3
     },
     "regionsWithNoEvents": [
       "West Coast",
+      "Central Tasmania",
       "Flinders Island"
     ],
     "nearTerm": {
-      "today": "2026-11-22",
-      "tomorrow": "2026-11-23",
+      "today": "2026-11-23",
+      "tomorrow": "2026-11-24",
       "nextWeekendStart": "2026-11-28",
       "nextWeekendEnd": "2026-11-29",
-      "todayOrTomorrow": 36,
+      "todayOrTomorrow": 30,
       "thisWeekend": 37,
       "townsTodayOrTomorrow": {
-        "Huonville": 14,
-        "Devonport": 6,
-        "Hobart": 4,
-        "Launceston": 4,
-        "Burnie": 3,
-        "Invermay": 2,
-        "Bothwell": 1,
+        "Huonville": 12,
+        "Hobart": 6,
+        "Launceston": 5,
+        "Devonport": 4,
+        "Burnie": 1,
         "Currie": 1,
-        "Rosny Park": 1
+        "Invermay": 1
       },
       "regionsThisWeekend": {
         "Hobart & South": 20,
@@ -354,25 +349,24 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 7
+      "missingOrOlderThan30Days": 6
     },
     "sourceRegionalMix": {
-      "Hobart & South / Eventbrite Hobart": 46,
-      "Launceston & North / Eventbrite Launceston": 28,
+      "Hobart & South / Eventbrite Hobart": 45,
+      "Launceston & North / Eventbrite Launceston": 27,
       "Launceston & North / Theatre North Launceston": 23,
       "Hobart & South / Huon Valley Council": 18,
       "Hobart & South / MyState Bank Arena": 17,
-      "North West / Burnie City Council": 17,
-      "North West / Devonport City Council": 13,
+      "North West / Burnie City Council": 16,
       "East Coast / East Coast Tasmania": 12,
+      "North West / Devonport City Council": 12,
       "Hobart & South / Humanitix Hobart": 11,
-      "Launceston & North / Humanitix Launceston": 10,
+      "Launceston & North / Humanitix Launceston": 9,
       "Hobart & South / Glenorchy City Council": 5,
       "Hobart & South / Theatre Royal Hobart": 5,
-      "Hobart & South / City of Clarence": 3,
       "Hobart & South / City of Hobart": 3,
       "King Island / King Island Tourism": 3,
-      "Central Tasmania / Highlands BushFest organising team": 1,
+      "Hobart & South / City of Clarence": 2,
       "Launceston & North / City of Launceston": 1
     }
   }
