@@ -1,5 +1,6 @@
 import { automationRequest, automationPhoto, memberCSV, applyDecision } from '../../_lib/member-automation.js';
 import { isAdmin, validOwnerCredentials, createSession, sessionCookie as ownerCookie } from '../../_lib/auth.js';
+import { queueAndTryNotify } from '../../_lib/site-notifications.js';
 import { placeMap,placeRows } from '../../_lib/member-places.js';
 import { MemberError,fail,reply,memberDB,text,randomToken,digest,checkPassword,passwordHash,passwordMatches,recoveryHash,emailAddress,captcha,assertOrigin,boundedBody,jsonBody,limit,currentUser,requireUser,newSession,logout,sessionCookie,cleanJPEG } from '../../_lib/members.js';
 
@@ -163,7 +164,11 @@ async function handle(context){
     const body=await jsonBody(request),kind=body.kind;if(!['reviews','photos'].includes(kind))fail('Invalid contribution.');
     const table=kind==='reviews'?'member_reviews':'member_photos',reason=text(body.reason,500);if(reason.length<5)fail('Please explain the problem.');
     if(!await database.prepare(`SELECT id FROM ${table} WHERE id=? AND status='approved'`).bind(String(body.id)).first())fail('Contribution not found.',404);
-    await database.prepare('INSERT INTO member_reports(kind,target_id,user_id,reason,created_at) VALUES(?,?,?,?,?) ON CONFLICT(kind,target_id,user_id) DO UPDATE SET reason=excluded.reason,created_at=excluded.created_at').bind(kind,String(body.id),user.id,reason,Date.now()).run();return reply({ok:true});
+    await database.prepare('INSERT INTO member_reports(kind,target_id,user_id,reason,created_at) VALUES(?,?,?,?,?) ON CONFLICT(kind,target_id,user_id) DO UPDATE SET reason=excluded.reason,created_at=excluded.created_at').bind(kind,String(body.id),user.id,reason,Date.now()).run();
+    // Report is stored first. The owner receives the first report without exposing credentials to members.
+    try{await queueAndTryNotify(database,env,'report',JSON.stringify([kind,String(body.id),user.id]));}
+    catch(error){console.error('Community owner notification could not be queued',error?.message);}
+    return reply({ok:true});
   }
   fail('Not found.',404);
 }

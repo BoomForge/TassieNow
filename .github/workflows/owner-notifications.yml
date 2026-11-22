@@ -1,0 +1,35 @@
+name: TassieNow owner email notification tests
+
+on:
+  pull_request:
+    paths:
+      - 'functions/_lib/site-notifications.js'
+      - 'functions/api/advertise.js'
+      - 'functions/api/listing-corrections.js'
+      - 'functions/api/member/**'
+      - 'functions/api/admin/notifications.js'
+      - 'tests/site-notifications.test.mjs'
+      - 'package.json'
+      - '.github/workflows/owner-notifications.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-notifications:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: package.json
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Test owner email outbox and secure delivery
+        run: npm run test:notifications
+      - name: Regression-test member accounts and moderation
+        run: npm run test:members
