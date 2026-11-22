@@ -1,5 +1,6 @@
 import { db, cleanText, httpsUrl } from '../_lib/db.js';
 import { verifyTurnstile } from '../_lib/turnstile.js';
+import { queueAndTryNotify } from '../_lib/site-notifications.js';
 
 const FIELDS=new Set(['opening-hours','website','phone','email','address','location','description','image','photo-submission','closure','other']);
 const PHOTO_RIGHTS=new Set(['needs-review','owner-authorised','open-license','written-permission']);
@@ -44,8 +45,14 @@ export async function onRequestPost(context) {
     const database=await db(context.env);
     const existing=await database.prepare("SELECT COUNT(*) AS count FROM listing_corrections WHERE requester_email = ? AND submitted_at >= datetime('now', '-1 day')").bind(email).first();
     if(Number(existing?.count||0)>=5) return Response.json({error:'Submission limit reached; please try again tomorrow.'},{status:429});
-    await database.prepare('INSERT INTO listing_corrections (place_slug,place_name,requester_name,requester_email,relationship,field,suggested_value,reason,source_url) VALUES (?,?,?,?,?,?,?,?,?)')
+    const inserted = await database.prepare('INSERT INTO listing_corrections (place_slug,place_name,requester_name,requester_email,relationship,field,suggested_value,reason,source_url) VALUES (?,?,?,?,?,?,?,?,?)')
       .bind(slug,placeName,name,email,relationship,field,value,reason,source).run();
+    // Submission persistence is independent of mail availability.
+    const sourceId=Number(inserted.meta?.last_row_id);
+    if(Number.isSafeInteger(sourceId)&&sourceId>0){
+      try{await queueAndTryNotify(database,context.env,'correction',String(sourceId));}
+      catch(error){console.error('Correction owner notification could not be queued',error?.message);}
+    }else console.error('Correction notification missing insert ID');
     return Response.json({ok:true,message:'Your suggested update is queued for review. Nothing has been changed automatically.'},{status:201});
   }catch(error){
     const unavailable=String(error?.message||'').includes('not configured');
