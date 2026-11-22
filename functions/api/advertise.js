@@ -22,6 +22,7 @@ function addDays(date, days) {
 }
 
 export async function onRequestPost(context) {
+  if(Number(context.request.headers.get('content-length')||0)>12000) return Response.json({error:'Request too large'},{status:413});
   try {
     const body = await context.request.json();
     if (body.company_url) return Response.json({ ok: true });
@@ -35,7 +36,7 @@ export async function onRequestPost(context) {
 
     const name = cleanText(body.name, 120);
     const business = cleanText(body.business, 160);
-    const email = cleanText(body.email, 180);
+    const email = cleanText(body.email, 180).toLowerCase();
     const phone = cleanText(body.phone, 80) || null;
     const packageCode = cleanText(body.package_code, 80);
     const selected = PACKAGES.get(packageCode);
