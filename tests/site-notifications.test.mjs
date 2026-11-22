@@ -10,6 +10,7 @@ const owner='theevansorrell@gmail.com';
 const configured={
   NOTIFY_CF_ACCOUNT_ID:'a'.repeat(32),
   NOTIFY_CF_EMAIL_TOKEN:'unit-test-token-not-real',
+  NOTIFY_VERIFIED_DESTINATION:'theevansorrell@gmail.com',
   NOTIFY_FROM_EMAIL:'notifications@tassienow.com'
 };
 
@@ -55,6 +56,8 @@ function mockAccepted(){
 test('only fixed owner recipient and fixed subject are used, not visitor content',async()=>{
   assert.equal(emailServiceConfigured(configured),true);
   assert.equal(emailServiceConfigured({...configured,NOTIFY_FROM_EMAIL:'spoof@example.org'}),false);
+  assert.equal(emailServiceConfigured({...configured,NOTIFY_VERIFIED_DESTINATION:''}),false);
+  assert.equal(emailServiceConfigured({...configured,NOTIFY_VERIFIED_DESTINATION:'other@example.com'}),false);
   const crafted=formatOwnerNotification('advertising',{id:7,name:'Visitor\r\nBcc: attacker@example.org',message:'<script>alert(1)</script>'});
   assert.equal(crafted.subject,'[TassieNow] Advertising enquiry #7');
   assert.ok(!crafted.subject.includes('attacker'));
