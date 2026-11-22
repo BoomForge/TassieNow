@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-21T23:37:50.933Z",
+  "checkedAt": "2026-11-22T23:54:20.576Z",
   "added": [],
   "addedEvents": [
     "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe"
@@ -36,21 +36,16 @@
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
       "pagesFetched": 7,
-      "candidatesFound": 14,
+      "candidatesFound": 20,
       "errors": []
     },
     {
       "id": "southern-market-guide",
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
-      "pagesFetched": 6,
-      "candidatesFound": 42,
-      "errors": [
-        {
-          "url": "https://hobartandbeyond.com.au/event/judbury-market",
-          "message": "HTTP 404"
-        }
-      ]
+      "pagesFetched": 7,
+      "candidatesFound": 47,
+      "errors": []
     },
     {
       "id": "hobart-market-finder",
@@ -72,8 +67,8 @@
       "id": "huon-valley-markets",
       "name": "Huon Valley Council",
       "url": "https://www.huonvalley.tas.gov.au/events/",
-      "pagesFetched": 3,
-      "candidatesFound": 4,
+      "pagesFetched": 4,
+      "candidatesFound": 6,
       "errors": []
     },
     {
@@ -93,11 +88,11 @@
     "events": 4,
     "addedEvents": 1,
     "updated": 0,
-    "failedSources": 1
+    "failedSources": 0
   },
   "run": {
-    "id": "44962619157",
+    "id": "45085622212",
     "event": "schedule",
-    "sourceCommit": "7fac1caac71c6de109c3880790e6d2dc0d161dca"
+    "sourceCommit": "3a63d51eeb13b9a012de472deab4ca0a98073c7f"
   }
 }
