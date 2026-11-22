@@ -111,6 +111,9 @@ export function emailServiceConfigured(env) {
   return Boolean(
     /^[a-f0-9]{32}$/i.test(String(env.NOTIFY_CF_ACCOUNT_ID || '')) &&
     String(env.NOTIFY_CF_EMAIL_TOKEN || '').length >= 12 &&
+    // Never send until the fixed Gmail destination is verified in Cloudflare Email Routing.
+    // Verified-destination sends are $0 on Cloudflare Free and Paid plans.
+    String(env.NOTIFY_VERIFIED_DESTINATION || '').toLowerCase() === DESTINATION &&
     /^[^\s@]+@(?:[a-z0-9-]+\.)?tassienow\.com$/i.test(String(env.NOTIFY_FROM_EMAIL || ''))
   );
 }
