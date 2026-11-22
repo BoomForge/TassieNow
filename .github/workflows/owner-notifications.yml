@@ -4,11 +4,13 @@ on:
   pull_request:
     paths:
       - 'functions/_lib/site-notifications.js'
+      - 'functions/_lib/db.js'
       - 'functions/api/advertise.js'
       - 'functions/api/listing-corrections.js'
       - 'functions/api/member/**'
       - 'functions/api/admin/notifications.js'
       - 'tests/site-notifications.test.mjs'
+      - 'tests/d1-schema.test.mjs'
       - 'package.json'
       - '.github/workflows/owner-notifications.yml'
   workflow_dispatch:
@@ -29,6 +31,8 @@ jobs:
           cache-dependency-path: package.json
       - name: Install dependencies
         run: npm install --no-audit --no-fund
+      - name: Test D1 schema repairs and old data preservation
+        run: node --test tests/d1-schema.test.mjs
       - name: Test owner email outbox and secure delivery
         run: npm run test:notifications
       - name: Regression-test member accounts and moderation
