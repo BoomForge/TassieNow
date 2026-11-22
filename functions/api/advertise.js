@@ -1,5 +1,6 @@
 import { db, cleanText, httpsUrl, jsonError } from '../_lib/db.js';
 import { verifyTurnstile } from '../_lib/turnstile.js';
+import { queueAndTryNotify } from '../_lib/site-notifications.js';
 
 const PACKAGES = new Map([
   ['homepage-top-7', { placement: 'homepage-top', durationDays: 7, priceAud: 50 }],
@@ -49,11 +50,20 @@ export async function onRequestPost(context) {
 
     const desiredEnd = desiredStart ? addDays(desiredStart, selected.durationDays) : null;
     const database = await db(context.env);
-    await database.prepare(`INSERT INTO ad_inquiries (
+    const previous = await database.prepare("SELECT COUNT(*) AS count FROM ad_inquiries WHERE email=? AND created_at >= datetime('now','-1 day')").bind(email).first();
+    if (Number(previous?.count || 0) >= 5) return Response.json({error:'Submission limit reached; please try again tomorrow.'},{status:429});
+    const inserted = await database.prepare(`INSERT INTO ad_inquiries (
       name, business, email, phone, website, placement, package_code, duration_days, price_aud, payment_method, desired_start, desired_end, message
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`)
       .bind(name, business, email, phone, website, selected.placement, packageCode, selected.durationDays, selected.priceAud, 'paypal-transfer', desiredStart, desiredEnd, message)
       .run();
+
+    // The enquiry is already saved: a mail outage must never lose the public submission.
+    const sourceId=Number(inserted.meta?.last_row_id);
+    if (Number.isSafeInteger(sourceId) && sourceId>0) {
+      try { await queueAndTryNotify(database,context.env,'advertising',String(sourceId)); }
+      catch (error) { console.error('Advertising owner notification could not be queued',error?.message); }
+    } else console.error('Advertising notification missing insert ID');
 
     return Response.json({ ok: true, package: { code: packageCode, placement: selected.placement, durationDays: selected.durationDays, priceAud: selected.priceAud, paymentMethod: 'paypal-transfer' } }, { status: 201 });
   } catch (error) { return jsonError(error, error?.message?.includes('not configured') ? 503 : 400); }
