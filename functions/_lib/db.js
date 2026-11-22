@@ -68,6 +68,11 @@ CREATE INDEX IF NOT EXISTS idx_discovery_metrics_day ON discovery_metrics (day,e
 
 `;
 
+// D1's exec() splits on newlines and rejects multiline CREATE TABLE statements
+// with "incomplete input". Build one prepared statement per fixed schema entry.
+// All statements are CREATE ... IF NOT EXISTS: existing D1 rows are preserved.
+const SCHEMA_STATEMENTS = SCHEMA.split(';').map(statement => statement.trim()).filter(Boolean);
+
 const INQUIRY_COLUMNS = [
   ['package_code', 'TEXT'],
   ['duration_days', 'INTEGER'],
@@ -85,7 +90,9 @@ async function migrateInquiryColumns(database) {
 
 export async function db(env) {
   if (!env.DB) throw new Error('Cloudflare D1 binding DB is not configured');
-  await env.DB.exec(SCHEMA);
+  // Batch static DDL in one transaction; never split on newlines or run
+  // the old multiline schema via exec(). Do not drop or replace tables.
+  await env.DB.batch(SCHEMA_STATEMENTS.map(sql => env.DB.prepare(sql)));
   await migrateInquiryColumns(env.DB);
   return env.DB;
 }
