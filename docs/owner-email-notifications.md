@@ -14,21 +14,32 @@ Notifications go **only** to `theevansorrell@gmail.com`. The address is constant
 
 The canonical submissions remain in Cloudflare D1. Email is a separate, best-effort notification. Failed deliveries remain in `site_notification_outbox`, visible from the owner's **Email alerts** admin tab. Automatic attempts have a 15-minute retry delay and a five-attempt cap. A fresh submission can retry pending records; the owner can also press **Retry undelivered notifications** on `/admin/`. Owner-only status and retry actions are protected by the existing admin session and same-origin checks. A successful API response means *accepted by Cloudflare* (delivered or queued), not proof that Gmail received it.
 
-## Required Cloudflare setup (owner action)
+## Zero-cost requirement — verified destination only
 
-1. On the Cloudflare account hosting TassieNow, open **Email Service → Send emails**, complete sending-domain onboarding for `tassienow.com` and the DNS/authentication checks for the sender. Choose `notifications@tassienow.com` as the fixed send-from identity, or another address under `tassienow.com`. Do not guess sender verification status.
-2. Add and verify `theevansorrell@gmail.com` as a Cloudflare Email Routing destination if this account requires it. Cloudflare currently supports sending to a verified destination before full sending-domain onboarding.
-3. Create a **separate, narrowly scoped Cloudflare API token** with the Email Sending: Edit permission, limited to the applicable Cloudflare account. Do not reuse a global API key or paste it into GitHub, Google Docs or public source.
-4. On **Workers & Pages → TassieNow Pages project → Settings → Variables and Secrets**, configure for the *production* environment:
-   - Secret `NOTIFY_CF_EMAIL_TOKEN` = scoped API token.
-   - Environment variable `NOTIFY_CF_ACCOUNT_ID` = Cloudflare account ID (32 hexadecimal characters).
-   - Environment variable `NOTIFY_FROM_EMAIL` = verified sender, e.g. `notifications@tassienow.com`.
-5. After owner approval, merge the reviewed pull request and redeploy the Pages project so the variables are available to Functions. Never use the token in client-side JavaScript, Astro public variables, GitHub workflow logs, or a third-party redirect.
-6. On `/admin/`, open **Email alerts**. Confirm `Email service configured`. Submit ONE controlled test advertising enquiry with valid Turnstile from the public form and check all three: the enquiry exists in D1/admin, the outbox reports accepted, and the email arrived in Gmail. Repeat with a listing correction and, if appropriate, a member report. A provider acceptance is not a Gmail delivery receipt.
-7. If delivery fails, review the safe outbox status and configuration, then press **Retry undelivered notifications**. Do not repeatedly post public test enquiries. Do not retry after five failed attempts without diagnosis.
+**Non-negotiable: $0 recurring or per-message email charges.** Cloudflare's official documentation confirms that sending **only to destination addresses verified in Email Routing** is free on Workers Free **and** Workers Paid, and does **not** consume the monthly/daily paid sending allowance. Sending to arbitrary/unverified recipients requires Workers Paid and is not allowed for this project.
 
-Cloudflare API reference: https://developers.cloudflare.com/email-service/api/send-emails/rest-api/
-Cloudflare Pages bindings: https://developers.cloudflare.com/pages/functions/bindings/
+- Official pricing: https://developers.cloudflare.com/email-service/platform/pricing/
+- Verified destination limits: https://developers.cloudflare.com/email-service/platform/limits/
+- Destination verification: https://developers.cloudflare.com/email-service/get-started/route-emails/
+
+The code fixes the sole recipient to `theevansorrell@gmail.com`. It additionally **fails closed** unless `NOTIFY_VERIFIED_DESTINATION` exactly confirms that address. Never configure this assertion until the actual verification email has been accepted by Cloudflare. This is an operator acknowledgement; it does not replace Cloudflare's independent verified-recipient enforcement. Never change the recipient to an unverified address or enable paid sending to arbitrary recipients.
+
+### Required Cloudflare setup (owner action, no subscription upgrade)
+
+1. **Keep the existing Workers Free plan. Do not purchase Workers Paid, add pay-as-you-go, or submit payment details for email notifications.** A Workers Paid account can also send to verified destinations for free, but no upgrade is required.
+2. In the Cloudflare account owning `tassienow.com`, go to **Compute → Email Service → Email Routing**. Configure the **routing domain** if not already configured; check current DNS/MX before onboarding so existing mail handling is not disrupted. Do not configure Email Sending to arbitrary recipients. Cloudflare DNS is required for Email Service.
+3. Under **Email Routing → Destination Addresses**, add `theevansorrell@gmail.com`. Open the verification email Cloudflare sends to Gmail and verify it. Confirm Cloudflare displays the destination as **Verified**.
+4. Use the current `tassienow.com` routing domain for sender `notifications@tassienow.com` (or an appropriately configured routing subdomain). Cloudflare allows sending to verified destination addresses from routing domains without a full outbound-sending-domain upgrade.
+5. Create a **separate, account-scoped Cloudflare API token** with only the **Email Sending: Edit** permission. Do not use a global API key; never paste credentials into GitHub or project documents. If the dashboard requires an upgrade to produce the needed token or send to the verified address, **STOP — do not pay**. Reassess the integration first.
+6. On **Workers & Pages → TassieNow Pages project → Settings → Variables and Secrets**, set for production:
+   - Secret `NOTIFY_CF_EMAIL_TOKEN`: scoped API token.
+   - Variable `NOTIFY_CF_ACCOUNT_ID`: Cloudflare account ID (32 hexadecimal characters).
+   - Variable `NOTIFY_FROM_EMAIL`: routing-domain sender, e.g. `notifications@tassienow.com`.
+   - Variable `NOTIFY_VERIFIED_DESTINATION`: **`theevansorrell@gmail.com`**, set **only after** verifying that destination in Cloudflare.
+7. After owner approval, merge the reviewed PR and redeploy the existing Pages project on its free allocation. Check **/admin → Email alerts** for `Email service configured`. Submit ONE controlled Turnstile-verified advertising enquiry and verify the D1 record, Cloudflare API acceptance and actual Gmail receipt. Repeat once for a listing correction and, if needed, a member report.
+8. If delivery fails, leave submissions saved in D1 and inspect the outbox; press **Retry undelivered notifications** when configured. Never pay to clear a backlog and do not generate repeated public test submissions.
+
+Do not replace or delete existing DNS/MX records blindly. Cloudflare free plan execution and D1 quotas are still subject to fair-use/resource limits; this implementation adds no paid service and must halt/retry rather than incur charges if free quotas are exhausted.
 
 ## Limits / follow-up
 
