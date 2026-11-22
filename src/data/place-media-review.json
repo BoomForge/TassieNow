@@ -13101,5 +13101,28 @@
         "observedAt": "2026-11-21T02:37:06.028Z"
       }
     ]
+  },
+  "edge-of-the-world": {
+    "name": "Edge of the World",
+    "town": "Arthur River",
+    "candidates": [
+      {
+        "id": "openverse:722e7e2b-55bd-4780-8ee4-951b2e2b37ad",
+        "url": "https://live.staticflickr.com/3940/15751359955_031172d4a6_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/39297387@N00/15751359955",
+        "discoveryPage": "https://api.openverse.org/v1/images/722e7e2b-55bd-4780-8ee4-951b2e2b37ad/",
+        "title": "Arthur River - Edge of the World",
+        "credit": "minuseleven",
+        "licence": "BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 683,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Exact listing and town in source title",
+        "observedAt": "2026-11-22T01:27:11.707Z"
+      }
+    ]
   }
 }
