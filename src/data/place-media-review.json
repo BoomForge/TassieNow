@@ -13124,5 +13124,28 @@
         "observedAt": "2026-11-22T01:27:11.707Z"
       }
     ]
+  },
+  "old-kempton-distillery": {
+    "name": "Old Kempton Distillery",
+    "town": "Kempton",
+    "candidates": [
+      {
+        "id": "openverse:c33b3560-9ef2-4d99-a5b9-58c292ae1e82",
+        "url": "https://live.staticflickr.com/65535/52027850194_b4e3b20d79_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/70554537@N00/52027850194",
+        "discoveryPage": "https://api.openverse.org/v1/images/c33b3560-9ef2-4d99-a5b9-58c292ae1e82/",
+        "title": "Old Kempton Distillery, Apr 2022",
+        "credit": "thomasswilliams",
+        "licence": "BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 768,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Exact listing and town in source title",
+        "observedAt": "2026-11-23T01:52:43.751Z"
+      }
+    ]
   }
 }
