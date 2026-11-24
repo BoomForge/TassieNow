@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-22T23:54:20.576Z",
+  "checkedAt": "2026-11-24T03:33:19.295Z",
   "added": [],
   "addedEvents": [
     "book-market-burnie-emu-bay-lions-club-2026-12-05-wivenhoe"
@@ -20,7 +20,7 @@
       "name": "Tasmanian Seasonal Produce Guide",
       "url": "https://tasproduceguide.au/markets/",
       "pagesFetched": 1,
-      "candidatesFound": 35,
+      "candidatesFound": 33,
       "errors": []
     },
     {
@@ -36,7 +36,7 @@
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/events/?_product_type=markets",
       "pagesFetched": 7,
-      "candidatesFound": 20,
+      "candidatesFound": 18,
       "errors": []
     },
     {
@@ -44,7 +44,7 @@
       "name": "Hobart and Beyond",
       "url": "https://hobartandbeyond.com.au/blog/a-guide-to-local-markets/",
       "pagesFetched": 7,
-      "candidatesFound": 47,
+      "candidatesFound": 43,
       "errors": []
     },
     {
@@ -81,9 +81,9 @@
     }
   ],
   "totals": {
-    "discovered": 73,
+    "discovered": 74,
     "review": 14,
-    "existing": 55,
+    "existing": 56,
     "added": 0,
     "events": 4,
     "addedEvents": 1,
@@ -91,8 +91,8 @@
     "failedSources": 0
   },
   "run": {
-    "id": "45085622212",
+    "id": "45318779447",
     "event": "schedule",
-    "sourceCommit": "3a63d51eeb13b9a012de472deab4ca0a98073c7f"
+    "sourceCommit": "303993d95390f36523fcc235fc72df250b3330bf"
   }
 }

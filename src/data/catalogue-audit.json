@@ -6,12 +6,12 @@
     "suppressed": 66,
     "media": {
       "realHeroCoverage": {
-        "count": 311,
-        "percent": 14.5
+        "count": 314,
+        "percent": 14.7
       },
       "twoPlusImages": {
-        "count": 174,
-        "percent": 8.1
+        "count": 175,
+        "percent": 8.2
       },
       "fourPlusImages": {
         "count": 97,
@@ -21,21 +21,21 @@
         "count": 73,
         "percent": 3.4
       },
-      "totalLicensedImages": 934,
+      "totalLicensedImages": 939,
       "averageImagesPerPublicListing": 0.44
     },
     "sources": {
       "websiteCoverage": {
-        "count": 369,
-        "percent": 17.3
+        "count": 367,
+        "percent": 17.2
       },
       "officialSourceCoverage": {
-        "count": 291,
-        "percent": 13.6
+        "count": 292,
+        "percent": 13.7
       },
       "verifiedOfficialSourceCoverage": {
-        "count": 267,
-        "percent": 12.5
+        "count": 266,
+        "percent": 12.4
       },
       "wikidataLinkage": {
         "count": 634,
@@ -48,15 +48,15 @@
         "percent": 19.2
       },
       "recurringSchedule": {
-        "count": 126,
+        "count": 127,
         "percent": 5.9
       },
       "phone": {
-        "count": 395,
+        "count": 396,
         "percent": 18.5
       },
       "email": {
-        "count": 207,
+        "count": 208,
         "percent": 9.7
       },
       "address": {
@@ -64,8 +64,8 @@
         "percent": 23.9
       },
       "bookingUrl": {
-        "count": 119,
-        "percent": 5.6
+        "count": 170,
+        "percent": 8
       },
       "fee": {
         "count": 28,
@@ -90,26 +90,26 @@
       "curated": 41
     },
     "qualityTiers": {
-      "standard": 772,
-      "strong": 623,
+      "standard": 775,
+      "strong": 619,
       "low": 469,
-      "featured": 274
+      "featured": 275
     },
     "regions": {
       "Hobart & South": 778,
       "Launceston & North": 472,
       "North West": 345,
       "East Coast": 249,
-      "Central Tasmania": 116,
-      "West Coast": 83,
+      "Central Tasmania": 115,
+      "West Coast": 85,
       "Flinders Island": 57,
-      "King Island": 38
+      "King Island": 37
     },
     "towns": 207,
     "categories": {
       "Food & Drink": 1041,
-      "Nature & Walks": 761,
-      "Things to Do": 199,
+      "Nature & Walks": 760,
+      "Things to Do": 200,
       "Museums": 76,
       "Markets": 30,
       "Art & Culture": 17,
@@ -118,12 +118,12 @@
     },
     "categoryMembership": {
       "Food & Drink": 1055,
-      "Outdoor": 774,
-      "Nature & Walks": 772,
+      "Outdoor": 773,
+      "Nature & Walks": 771,
       "Free": 446,
       "Café": 424,
       "Restaurant": 405,
-      "Things to Do": 203,
+      "Things to Do": 204,
       "Takeaway": 162,
       "Rainy Day": 96,
       "Art & Culture": 93,
@@ -196,8 +196,8 @@
       },
       "details": {
         "website": {
-          "count": 237,
-          "percent": 22.5
+          "count": 235,
+          "percent": 22.3
         },
         "openingHours": {
           "count": 328,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 205,
+    "active": 207,
     "media": {
       "licensedHeroCoverage": {
         "count": 58,
-        "percent": 28.3
+        "percent": 28
       },
-      "stillUsingCategoryArtwork": 147,
+      "stillUsingCategoryArtwork": 149,
       "bySource": {
         "verified-event-venue": 36,
         "verified-event-activity": 12,
@@ -240,11 +240,11 @@
         },
         "Launceston & North": {
           "count": 24,
-          "percent": 41.4
+          "percent": 40.7
         },
         "North West": {
           "count": 2,
-          "percent": 7.4
+          "percent": 7.1
         },
         "East Coast": {
           "count": 0,
@@ -269,16 +269,16 @@
       }
     },
     "ticketCoverage": {
-      "count": 96,
-      "percent": 46.8
+      "count": 97,
+      "percent": 46.9
     },
     "priceCoverage": {
       "count": 62,
-      "percent": 30.2
+      "percent": 30
     },
     "providers": {
-      "Eventbrite": 57,
-      "Humanitix": 22,
+      "Eventbrite": 56,
+      "Humanitix": 24,
       "Ticketek": 16,
       "Ticketmaster": 1
     },
@@ -288,11 +288,11 @@
       "Theatre North Launceston": 23,
       "Huon Valley Council": 18,
       "MyState Bank Arena": 17,
-      "Burnie City Council": 15,
+      "Burnie City Council": 16,
       "Devonport City Council": 12,
       "East Coast Tasmania": 12,
       "Humanitix Hobart": 12,
-      "Humanitix Launceston": 9,
+      "Humanitix Launceston": 10,
       "Glenorchy City Council": 5,
       "Theatre Royal Hobart": 5,
       "City of Clarence": 4,
@@ -302,8 +302,8 @@
     },
     "regions": {
       "Hobart & South": 105,
-      "Launceston & North": 58,
-      "North West": 27,
+      "Launceston & North": 59,
+      "North West": 28,
       "East Coast": 12,
       "West Coast": 0,
       "Central Tasmania": 0,
@@ -320,12 +320,12 @@
       "tomorrow": "2026-11-25",
       "nextWeekendStart": "2026-11-28",
       "nextWeekendEnd": "2026-11-29",
-      "todayOrTomorrow": 29,
+      "todayOrTomorrow": 30,
       "thisWeekend": 37,
       "townsTodayOrTomorrow": {
         "Huonville": 12,
+        "Launceston": 6,
         "Hobart": 5,
-        "Launceston": 5,
         "Burnie": 3,
         "Devonport": 3,
         "Currie": 1
@@ -348,7 +348,7 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 2
+      "missingOrOlderThan30Days": 3
     },
     "sourceRegionalMix": {
       "Hobart & South / Eventbrite Hobart": 42,
@@ -356,11 +356,11 @@
       "Launceston & North / Theatre North Launceston": 23,
       "Hobart & South / Huon Valley Council": 18,
       "Hobart & South / MyState Bank Arena": 17,
-      "North West / Burnie City Council": 15,
+      "North West / Burnie City Council": 16,
       "East Coast / East Coast Tasmania": 12,
       "Hobart & South / Humanitix Hobart": 12,
       "North West / Devonport City Council": 12,
-      "Launceston & North / Humanitix Launceston": 9,
+      "Launceston & North / Humanitix Launceston": 10,
       "Hobart & South / Glenorchy City Council": 5,
       "Hobart & South / Theatre Royal Hobart": 5,
       "Hobart & South / City of Clarence": 4,
