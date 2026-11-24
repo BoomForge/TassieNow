@@ -215,32 +215,32 @@
     }
   },
   "events": {
-    "active": 206,
+    "active": 209,
     "media": {
       "licensedHeroCoverage": {
-        "count": 58,
+        "count": 59,
         "percent": 28.2
       },
-      "stillUsingCategoryArtwork": 148,
+      "stillUsingCategoryArtwork": 150,
       "bySource": {
         "verified-event-venue": 36,
-        "verified-event-activity": 12,
+        "verified-event-activity": 13,
         "commons-venue": 7,
         "verified-event-performer": 3
       },
       "byMediaType": {
         "contextual": 43,
-        "activity-illustrative": 12,
+        "activity-illustrative": 13,
         "performer-context": 3
       },
       "byRegion": {
         "Hobart & South": {
-          "count": 31,
-          "percent": 29.5
+          "count": 32,
+          "percent": 29.9
         },
         "Launceston & North": {
           "count": 24,
-          "percent": 40.7
+          "percent": 40
         },
         "North West": {
           "count": 2,
@@ -270,15 +270,15 @@
     },
     "ticketCoverage": {
       "count": 97,
-      "percent": 47.1
+      "percent": 46.4
     },
     "priceCoverage": {
       "count": 62,
-      "percent": 30.1
+      "percent": 29.7
     },
     "providers": {
-      "Eventbrite": 56,
-      "Humanitix": 24,
+      "Eventbrite": 57,
+      "Humanitix": 23,
       "Ticketek": 16,
       "Ticketmaster": 1
     },
@@ -293,16 +293,16 @@
       "East Coast Tasmania": 12,
       "Humanitix Hobart": 12,
       "Humanitix Launceston": 10,
-      "Glenorchy City Council": 5,
+      "Glenorchy City Council": 7,
       "Theatre Royal Hobart": 5,
       "City of Clarence": 4,
       "King Island Tourism": 3,
       "City of Hobart": 2,
-      "City of Launceston": 1
+      "City of Launceston": 2
     },
     "regions": {
-      "Hobart & South": 105,
-      "Launceston & North": 59,
+      "Hobart & South": 107,
+      "Launceston & North": 60,
       "North West": 27,
       "East Coast": 12,
       "West Coast": 0,
@@ -321,7 +321,7 @@
       "nextWeekendStart": "2026-11-28",
       "nextWeekendEnd": "2026-11-29",
       "todayOrTomorrow": 30,
-      "thisWeekend": 37,
+      "thisWeekend": 38,
       "townsTodayOrTomorrow": {
         "Huonville": 12,
         "Launceston": 6,
@@ -332,7 +332,7 @@
       },
       "regionsThisWeekend": {
         "Hobart & South": 21,
-        "Launceston & North": 9,
+        "Launceston & North": 10,
         "North West": 6,
         "East Coast": 0,
         "West Coast": 0,
@@ -348,7 +348,7 @@
       ]
     },
     "ticketLinkChecks": {
-      "missingOrOlderThan30Days": 3
+      "missingOrOlderThan30Days": 2
     },
     "sourceRegionalMix": {
       "Hobart & South / Eventbrite Hobart": 42,
@@ -361,12 +361,12 @@
       "Hobart & South / Humanitix Hobart": 12,
       "North West / Devonport City Council": 12,
       "Launceston & North / Humanitix Launceston": 10,
-      "Hobart & South / Glenorchy City Council": 5,
+      "Hobart & South / Glenorchy City Council": 7,
       "Hobart & South / Theatre Royal Hobart": 5,
       "Hobart & South / City of Clarence": 4,
       "King Island / King Island Tourism": 3,
       "Hobart & South / City of Hobart": 2,
-      "Launceston & North / City of Launceston": 1
+      "Launceston & North / City of Launceston": 2
     }
   }
 }
