@@ -13147,5 +13147,34 @@
         "observedAt": "2026-11-23T01:52:43.751Z"
       }
     ]
+  },
+  "bird-hide-brighton": {
+    "name": "Bird Hide",
+    "town": "Brighton",
+    "candidates": [
+      {
+        "id": "commons-geo:5560257",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Egretta_novaehollandiae_Tasmania_1.jpg/1280px-Egretta_novaehollandiae_Tasmania_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Egretta_novaehollandiae_Tasmania_1.jpg",
+        "title": "Egretta novaehollandiae Tasmania 1.jpg",
+        "credit": "JJ Harrison  ( https://www.jjharrison.com.au/ )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "provider": "Wikimedia Commons GeoData",
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Full place name in Commons metadata; locality needs confirmation",
+        "evidence": {
+          "nearbyGeotag": true,
+          "searchRadiusMetres": 350,
+          "matchedWords": [
+            "bird",
+            "hide"
+          ],
+          "localityInMetadata": true
+        },
+        "observedAt": "2026-11-25T03:58:38.375Z"
+      }
+    ]
   }
 }
