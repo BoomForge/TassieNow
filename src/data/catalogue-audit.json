@@ -30,8 +30,8 @@
         "percent": 18
       },
       "officialSourceCoverage": {
-        "count": 292,
-        "percent": 13.7
+        "count": 291,
+        "percent": 13.6
       },
       "verifiedOfficialSourceCoverage": {
         "count": 269,
@@ -48,15 +48,15 @@
         "percent": 19.3
       },
       "recurringSchedule": {
-        "count": 127,
+        "count": 126,
         "percent": 5.9
       },
       "phone": {
-        "count": 396,
+        "count": 395,
         "percent": 18.5
       },
       "email": {
-        "count": 208,
+        "count": 207,
         "percent": 9.7
       },
       "address": {
@@ -64,8 +64,8 @@
         "percent": 24
       },
       "bookingUrl": {
-        "count": 171,
-        "percent": 8
+        "count": 119,
+        "percent": 5.6
       },
       "fee": {
         "count": 28,
@@ -91,9 +91,9 @@
     },
     "qualityTiers": {
       "standard": 769,
-      "strong": 625,
+      "strong": 626,
       "low": 466,
-      "featured": 277
+      "featured": 276
     },
     "regions": {
       "Hobart & South": 778,
@@ -215,13 +215,13 @@
     }
   },
   "events": {
-    "active": 202,
+    "active": 201,
     "media": {
       "licensedHeroCoverage": {
         "count": 57,
-        "percent": 28.2
+        "percent": 28.4
       },
-      "stillUsingCategoryArtwork": 145,
+      "stillUsingCategoryArtwork": 144,
       "bySource": {
         "verified-event-venue": 37,
         "verified-event-activity": 11,
@@ -244,7 +244,7 @@
         },
         "North West": {
           "count": 2,
-          "percent": 7.1
+          "percent": 7.4
         },
         "East Coast": {
           "count": 0,
@@ -270,11 +270,11 @@
     },
     "ticketCoverage": {
       "count": 88,
-      "percent": 43.6
+      "percent": 43.8
     },
     "priceCoverage": {
       "count": 63,
-      "percent": 31.2
+      "percent": 31.3
     },
     "providers": {
       "Eventbrite": 52,
@@ -288,7 +288,7 @@
       "Eventbrite Launceston": 22,
       "Huon Valley Council": 18,
       "MyState Bank Arena": 17,
-      "Burnie City Council": 16,
+      "Burnie City Council": 15,
       "Devonport City Council": 12,
       "East Coast Tasmania": 12,
       "Humanitix Hobart": 10,
@@ -303,7 +303,7 @@
     "regions": {
       "Hobart & South": 102,
       "Launceston & North": 57,
-      "North West": 28,
+      "North West": 27,
       "East Coast": 12,
       "West Coast": 0,
       "Central Tasmania": 0,
@@ -357,7 +357,7 @@
       "Launceston & North / Eventbrite Launceston": 22,
       "Hobart & South / Huon Valley Council": 18,
       "Hobart & South / MyState Bank Arena": 17,
-      "North West / Burnie City Council": 16,
+      "North West / Burnie City Council": 15,
       "East Coast / East Coast Tasmania": 12,
       "North West / Devonport City Council": 12,
       "Hobart & South / Humanitix Hobart": 10,
