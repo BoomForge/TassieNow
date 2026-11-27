@@ -13261,5 +13261,45 @@
         "observedAt": "2026-11-25T03:58:38.375Z"
       }
     ]
+  },
+  "sushi-sushi": {
+    "name": "Sushi Sushi",
+    "town": "Kingston",
+    "candidates": [
+      {
+        "id": "openverse:22d8fdd1-0d8e-4906-b302-8e5fdd82d77c",
+        "url": "https://live.staticflickr.com/2643/4113391375_8dab36bf64_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/30624156@N00/4113391375",
+        "discoveryPage": "https://api.openverse.org/v1/images/22d8fdd1-0d8e-4906-b302-8e5fdd82d77c/",
+        "title": "Kingston and Midland",
+        "credit": "Loozrboy",
+        "licence": "BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 768,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive words and town only; identity unverified",
+        "observedAt": "2026-11-27T03:41:20.930Z"
+      },
+      {
+        "id": "openverse:10fdff5d-bb30-43ef-8184-7f461d70a4bc",
+        "url": "https://live.staticflickr.com/2739/4113391359_1ff775cfeb_b.jpg",
+        "sourcePage": "https://www.flickr.com/photos/30624156@N00/4113391359",
+        "discoveryPage": "https://api.openverse.org/v1/images/10fdff5d-bb30-43ef-8184-7f461d70a4bc/",
+        "title": "Kingston? Midland?",
+        "credit": "Loozrboy",
+        "licence": "BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "provider": "flickr",
+        "width": 1024,
+        "height": 768,
+        "rights": "independent-verification-needed",
+        "identity": "candidate-not-verified",
+        "reason": "Distinctive words and town only; identity unverified",
+        "observedAt": "2026-11-27T03:41:20.930Z"
+      }
+    ]
   }
 }
